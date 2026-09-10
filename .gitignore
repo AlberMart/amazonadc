@@ -1,0 +1,30 @@
+build
+dist / media
+node_modules
+.DS_Store
+.env
+.next
+next-env.d.ts
+.vercel
+
+# Payload default media upload directory
+public/media/
+
+public/robots.txt
+public/sitemap*.xml
+
+
+# Playwright
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+
+# Local import of old Laravel site
+tmp-old/
+
+# Local npm/debug artifacts
+npm-err.txt
+npm-out.txt
+test.env
