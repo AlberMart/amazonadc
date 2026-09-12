@@ -11,10 +11,11 @@ import {
 } from '@/utilities/scriptIds'
 
 type SiteIntegrationsProps = {
-  settings: SiteSetting
+  settings?: SiteSetting | null
 }
 
 export function SiteIntegrations({ settings }: SiteIntegrationsProps) {
+  if (!settings) return null
   const analytics = settings.analytics
   const chat = settings.chat
   const a11y = settings.accessibility

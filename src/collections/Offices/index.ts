@@ -4,23 +4,25 @@ import { revalidatePath } from 'next/cache'
 
 import { anyone } from '../../access/anyone'
 import { authenticated } from '../../access/authenticated'
+import { scheduleRevalidate } from '@/utilities/scheduleRevalidate'
+
+function revalidateOfficeCaches(slug?: string) {
+  revalidatePath('/')
+  if (slug) revalidatePath(`/locations/${slug}`)
+}
 
 const revalidateOfficePaths: CollectionAfterChangeHook = ({ doc, req: { context } }) => {
   if (!context.disableRevalidate) {
-    revalidatePath('/')
-    if (typeof doc?.slug === 'string' && doc.slug) {
-      revalidatePath(`/locations/${doc.slug}`)
-    }
+    const slug = typeof doc?.slug === 'string' ? doc.slug : undefined
+    scheduleRevalidate(() => revalidateOfficeCaches(slug))
   }
   return doc
 }
 
 const revalidateOfficeDelete: CollectionAfterDeleteHook = ({ doc, req: { context } }) => {
   if (!context.disableRevalidate) {
-    revalidatePath('/')
-    if (typeof doc?.slug === 'string' && doc.slug) {
-      revalidatePath(`/locations/${doc.slug}`)
-    }
+    const slug = typeof doc?.slug === 'string' ? doc.slug : undefined
+    scheduleRevalidate(() => revalidateOfficeCaches(slug))
   }
   return doc
 }

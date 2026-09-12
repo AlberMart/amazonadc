@@ -146,6 +146,7 @@
   --site-link-on-dark: #bae6fd;
   --site-border: #d5dee8;
   --site-badges: #232f3e;
+  --site-header-height: 4.5rem;
   --site-btn-primary-bg: #fbbf24;
   --site-btn-primary-text: #0b1c2c;
   --site-btn-primary-hover: #fcd34d;
@@ -281,12 +282,22 @@ html[data-theme='light'] {
   background: var(--section-bg, var(--site-bg));
 }
 
+.site-section-edge-top {
+  border-top: 1px solid var(--section-edge, var(--site-border));
+}
+
+.site-section-edge-bottom {
+  border-bottom: 1px solid var(--section-edge, var(--site-border));
+}
+
 .site-hero {
   position: relative;
   isolation: isolate;
   overflow: hidden;
   background: var(--site-dark);
   color: var(--site-on-dark);
+  margin-top: calc(-1 * var(--site-header-height));
+  padding-top: var(--site-header-height);
 }
 
 .site-hero-wash {
@@ -294,6 +305,7 @@ html[data-theme='light'] {
   position: absolute;
   inset: 0;
   background:
+    linear-gradient(to bottom, var(--site-dark) 0, var(--site-dark) var(--site-header-height), transparent 7rem),
     radial-gradient(
       ellipse at 20% 20%,
       color-mix(in srgb, var(--site-tertiary) 28%, transparent),
@@ -499,8 +511,13 @@ html[data-theme='light'] {
 }
 
 .site-header {
-  background: color-mix(in srgb, var(--site-dark) 95%, transparent);
+  background: var(--site-dark);
   color: var(--site-on-dark);
+  box-shadow: 0 1px 0 var(--site-dark);
+}
+
+.site-header.site-header-edge {
+  box-shadow: none;
 }
 
 .site-badges {

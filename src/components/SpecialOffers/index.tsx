@@ -22,7 +22,7 @@ export function SpecialOffers({
   if (!services.length) return null
 
   const cards = services
-    .filter((service) => typeof service.price === 'number' && service.thumb)
+    .filter((service) => typeof service.price === 'number' && service.price > 0 && service.thumb)
     .map((service) => ({
       slug: service.slug,
       title: service.title,

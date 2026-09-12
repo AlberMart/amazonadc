@@ -3,10 +3,12 @@ import { getPayload } from 'payload'
 
 import type { HomeContent } from '@/content/home'
 import { homeContentSeed } from '@/content/home'
+import { loadPageSections } from '@/utilities/partials'
+import { withDbRetry } from '@/utilities/dbRetry'
 import {
+  faqItemsFromSections,
   homeContentToSections,
   homeSectionsSeed,
-  mapHomeSection,
   type HomeSection,
 } from '@/utilities/homeSections'
 
@@ -138,35 +140,39 @@ export type HomePageData = {
 }
 
 export async function getHomeContent(): Promise<HomePageData> {
-  const payload = await getPayload({ config: configPromise })
-  const result = await payload.find({
-    collection: 'pages',
-    where: {
-      and: [{ slug: { equals: 'home' } }, { pageKind: { equals: 'home' } }],
-    },
-    limit: 1,
-    pagination: false,
-    depth: 1,
+  const result = await withDbRetry(async () => {
+    const payload = await getPayload({ config: configPromise })
+    return payload.find({
+      collection: 'pages',
+      where: {
+        and: [{ slug: { equals: 'home' } }, { pageKind: { equals: 'home' } }],
+      },
+      limit: 1,
+      pagination: false,
+      depth: 2,
+    })
   })
 
   const doc = result.docs[0] as Record<string, unknown> | undefined
   const meta =
     (doc?.meta as { title?: string | null; description?: string | null } | undefined) || {}
 
-  const fromCms = ((doc?.homeSections as unknown[]) || [])
-    .map((row) => mapHomeSection(row as Record<string, unknown>))
-    .filter((row): row is HomeSection => Boolean(row))
+  const fromCms = await loadPageSections(doc?.homeSections)
 
-  const sections =
+  const baseSections =
     fromCms.length > 0
       ? fromCms
       : homeContentToSections(mapLegacyHomeContent(doc?.homeContent as Record<string, unknown>))
 
-  const faqSection = sections.find((section) => section.type === 'faq')
+  const sections = baseSections.some((section) => section.type === 'trustBadges')
+    ? baseSections
+    : [{ type: 'trustBadges' as const, tone: 'white' as const, appearance: { padding: 'compact' as const, divider: 'none' as const, background: 'badges' as const } }, ...baseSections]
+
+  const fromSections = faqItemsFromSections(sections).filter((item) => item.q && item.a)
   const faqItems =
-    faqSection?.faqItems?.filter((item) => item.q && item.a) ||
-    homeSectionsSeed.find((section) => section.type === 'faq')?.faqItems ||
-    []
+    fromSections.length > 0
+      ? fromSections
+      : homeSectionsSeed.find((section) => section.type === 'faq')?.faqItems || []
 
   return {
     sections,

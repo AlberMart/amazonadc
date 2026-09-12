@@ -6,8 +6,10 @@ import { ContactForm } from '@/components/ContactForm'
 import { TextWithLinks } from '@/components/TextWithLinks'
 import { ServiceArea } from '@/components/ServiceArea'
 import { ServiceOfferCards } from '@/components/ServiceOfferCards'
+import { RenderPageSections } from '@/components/RenderPageSections'
 import {
   getRelatedServices,
+  servicePrimaryCta,
   type ServiceContent,
 } from '@/utilities/services'
 
@@ -26,6 +28,9 @@ function CheckList({ items }: { items: string[] }) {
 
 export async function ServicePage({ service }: { service: ServiceContent }) {
   const related = await getRelatedServices(service.slug)
+  const cta = servicePrimaryCta(service)
+  const beforeAfter = (service.beforeAfter || []).filter((photo) => photo.src)
+  const useSections = Boolean(service.sections?.length)
 
   return (
     <article>
@@ -46,19 +51,28 @@ export async function ServicePage({ service }: { service: ServiceContent }) {
               {service.title}
             </h1>
             <p className="mt-6 text-3xl font-semibold text-white">
-              ${service.price}
-              <span className="ml-3 text-lg font-normal text-sky-100/70 line-through">
-                ${service.compareAtPrice}
-              </span>
+              {typeof service.price === 'number' ? (
+                <>
+                  ${service.price}
+                  {typeof service.compareAtPrice === 'number' ? (
+                    <span className="ml-3 text-lg font-normal text-sky-100/70 line-through">
+                      ${service.compareAtPrice}
+                    </span>
+                  ) : null}
+                </>
+              ) : (
+                <span className="text-2xl font-semibold sm:text-3xl">Free estimate</span>
+              )}
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <a
-                href={service.orderUrl}
-                target="_blank"
-                rel="noopener noreferrer"
+                href={cta.href}
+                {...(cta.isCheckout
+                  ? { target: '_blank', rel: 'noopener noreferrer' }
+                  : {})}
                 className="site-btn site-btn-primary"
               >
-                Order now
+                {cta.label}
               </a>
               <a
                 href="tel:+18006063334"
@@ -81,6 +95,15 @@ export async function ServicePage({ service }: { service: ServiceContent }) {
         </div>
       </section>
 
+      {useSections ? (
+        <RenderPageSections
+          sections={service.sections || []}
+          services={related}
+          sourcePage={`/${service.slug}`}
+          offersExcludeSlug={service.slug}
+        />
+      ) : (
+        <>
       <section className="bg-[var(--site-muted)] py-16 md:py-20">
         <div className="container grid gap-10 lg:grid-cols-2 lg:items-center">
           <div className="relative aspect-[4/3] site-media">
@@ -103,24 +126,26 @@ export async function ServicePage({ service }: { service: ServiceContent }) {
               <CheckList items={service.includes} />
             </div>
             <a
-              href={service.orderUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={cta.href}
+              {...(cta.isCheckout
+                ? { target: '_blank', rel: 'noopener noreferrer' }
+                : {})}
               className="mt-8 inline-flex site-btn site-btn-secondary"
             >
-              Order now
+              {cta.label}
             </a>
           </div>
         </div>
       </section>
 
+      {beforeAfter.length ? (
       <section className="bg-white py-16 md:py-20">
         <div className="container">
           <h2 className="font-display text-3xl font-semibold tracking-tight text-[var(--site-heading)]">
             Proof of Cleaning with Before/After photos
           </h2>
           <div className="mt-8 grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-4">
-            {service.beforeAfter.map((photo) => (
+            {beforeAfter.map((photo) => (
               <div key={photo.src} className="relative aspect-[3/4] site-media">
                 <Image
                   src={photo.src}
@@ -134,6 +159,7 @@ export async function ServicePage({ service }: { service: ServiceContent }) {
           </div>
         </div>
       </section>
+      ) : null}
 
       {service.processAside ? (
         <section className="bg-[var(--site-dark)] py-16 text-white md:py-20">
@@ -271,12 +297,13 @@ export async function ServicePage({ service }: { service: ServiceContent }) {
               </p>
             ))}
             <a
-              href={service.orderUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={cta.href}
+              {...(cta.isCheckout
+                ? { target: '_blank', rel: 'noopener noreferrer' }
+                : {})}
               className="mt-8 inline-flex site-btn site-btn-primary"
             >
-              Order now
+              {cta.label}
             </a>
           </div>
         </section>
@@ -287,7 +314,7 @@ export async function ServicePage({ service }: { service: ServiceContent }) {
           <div className="container">
             <div className="mx-auto max-w-2xl text-center">
               <h2 className="font-display text-3xl font-semibold tracking-tight text-[var(--site-heading)] md:text-4xl">
-                More Air Duct Cleaning Services
+                More Services
               </h2>
               <p className="mt-3 site-body">
                 Interested? Contact us at{' '}
@@ -329,6 +356,8 @@ export async function ServicePage({ service }: { service: ServiceContent }) {
 
       <ServiceArea />
       <ContactForm sourcePage={`/${service.slug}`} />
+        </>
+      )}
     </article>
   )
 }

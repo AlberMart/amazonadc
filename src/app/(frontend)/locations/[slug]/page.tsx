@@ -5,6 +5,7 @@ import React from 'react'
 import { JsonLd } from '@/components/JsonLd'
 import { LocationPage } from '@/components/LocationPage'
 import { getAllLocationSlugs, getLocationContent } from '@/utilities/locations'
+import { faqItemsFromSections } from '@/utilities/homeSections'
 import {
   absoluteUrl,
   breadcrumb,
@@ -112,7 +113,11 @@ export default async function Page({ params }: Args) {
     }),
     crumbs,
     localBusiness,
-    faqNode(location.faq, {
+    faqNode(
+      faqItemsFromSections(location.sections || []).length
+        ? faqItemsFromSections(location.sections || [])
+        : location.faq,
+      {
       pagePath: path,
       aboutId: location.isOfficeHub ? localId : officeId,
       publisherId: `${absoluteUrl('/')}#organization`,

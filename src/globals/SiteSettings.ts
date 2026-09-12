@@ -3,6 +3,7 @@ import type { GlobalConfig } from 'payload'
 import { revalidateTag } from 'next/cache'
 
 import { themeFields } from '@/fields/theme'
+import { scheduleRevalidate } from '@/utilities/scheduleRevalidate'
 
 export const SiteSettings: GlobalConfig = {
   slug: 'site-settings',
@@ -309,7 +310,7 @@ export const SiteSettings: GlobalConfig = {
               labels: { singular: 'Badge', plural: 'Badges' },
               admin: {
                 description:
-                  'Strip under the footer on every page. Leave empty to hide (or seed defaults apply until you save).',
+                  'Logo library for Trust badges sections. Placement is per-page (add a Trust badges section). Leave empty to hide.',
               },
               fields: [
                 {
@@ -336,7 +337,7 @@ export const SiteSettings: GlobalConfig = {
             {
               name: 'serviceAreaMapEmbedUrl',
               type: 'text',
-              admin: { description: 'Google Maps embed URL for the Service Area section' },
+              admin: { description: 'Fallback Google Maps embed URL if a Service area section/Partial has none.' },
             },
             {
               name: 'serviceAreaMapTitle',
@@ -349,7 +350,7 @@ export const SiteSettings: GlobalConfig = {
               labels: { singular: 'Region', plural: 'Regions' },
               admin: {
                 description:
-                  'Region rows shown in Service Area (any geography — not hardcoded to VA/MD/DC).',
+                  'Fallback region rows if a Service area section/Partial has none. Prefer editing a Partial (Content → Partials) and including it on pages.',
               },
               fields: [
                 { name: 'name', type: 'text', required: true },
@@ -384,7 +385,9 @@ export const SiteSettings: GlobalConfig = {
     afterChange: [
       ({ doc, req: { context } }) => {
         if (!context.disableRevalidate) {
-          revalidateTag('global_site-settings', 'max')
+          scheduleRevalidate(() => {
+            revalidateTag('global_site-settings', 'max')
+          })
         }
         return doc
       },

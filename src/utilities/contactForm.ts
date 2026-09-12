@@ -3,7 +3,7 @@ import { getPayload } from 'payload'
 import configPromise from '@payload-config'
 
 import type { Form } from '@/payload-types'
-import { getCachedGlobal } from '@/utilities/getGlobals'
+import { getCachedGlobalSafe } from '@/utilities/getGlobals'
 import { lexicalPlainText } from '@/utilities/lexicalPlain'
 import {
   FALLBACK_CONTACT_FIELDS,
@@ -97,8 +97,8 @@ export async function getPublicContactForm(formId?: number | null): Promise<Publ
     if (byId) return byId
   }
 
-  const settings = await getCachedGlobal('site-settings', 1)()
-  const related = settings.contactForm
+  const settings = await getCachedGlobalSafe('site-settings', 1)
+  const related = settings?.contactForm
   const relatedId =
     typeof related === 'object' && related ? related.id : typeof related === 'number' ? related : null
 

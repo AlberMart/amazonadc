@@ -7,6 +7,7 @@ import { ContactForm } from '@/components/ContactForm'
 import { ServiceArea } from '@/components/ServiceArea'
 import { SpecialOffers } from '@/components/SpecialOffers'
 import { TextWithLinks } from '@/components/TextWithLinks'
+import { RenderPageSections } from '@/components/RenderPageSections'
 import type { LocationContent } from '@/utilities/locations'
 import { getAllOffices } from '@/utilities/offices'
 import { getAllServiceCards } from '@/utilities/services'
@@ -38,6 +39,7 @@ export async function LocationPage({ location }: { location: LocationContent }) 
 
   const office = location.office
   const hubSibling = offices.find((o) => o.slug !== office.slug)
+  const useSections = Boolean(location.sections?.length)
 
   return (
     <article>
@@ -99,6 +101,16 @@ export async function LocationPage({ location }: { location: LocationContent }) 
         </div>
       </section>
 
+      {useSections ? (
+        <RenderPageSections
+          sections={location.sections || []}
+          services={cards}
+          sourcePage={`/locations/${location.slug}`}
+          defaultPhoneDisplay={office.phoneDisplay}
+          defaultPhoneHref={`tel:${office.phone}`}
+        />
+      ) : (
+        <>
       <section className="bg-[var(--site-muted)] py-16 md:py-20">
         <div className="container max-w-4xl">
           <h2 className="font-display text-3xl font-semibold tracking-tight text-[var(--site-heading)]">
@@ -129,7 +141,9 @@ export async function LocationPage({ location }: { location: LocationContent }) 
                 <h3 className="font-display text-xl font-semibold text-[var(--site-heading)]">
                   {item.title}
                 </h3>
-                <p className="mt-3 text-sm leading-relaxed site-body">{item.text}</p>
+                <p className="mt-3 text-sm leading-relaxed site-body">
+                  <TextWithLinks text={item.text} />
+                </p>
               </div>
             ))}
           </div>
@@ -240,6 +254,8 @@ export async function LocationPage({ location }: { location: LocationContent }) 
           phoneHref={office.phone}
         />
       </div>
+        </>
+      )}
     </article>
   )
 }

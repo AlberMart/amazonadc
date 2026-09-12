@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { getCachedGlobal } from '@/utilities/getGlobals'
+import { getCachedGlobalSafe } from '@/utilities/getGlobals'
 import { resolveBrandMark } from '@/utilities/brandMark'
 import { resolveCmsLink, type ResolvedNavLink } from '@/utilities/cmsLink'
 import { resolveMobileCall } from '@/utilities/mobileCall'
@@ -27,7 +27,7 @@ function asTel(value: string) {
 
 export async function Header() {
   const [headerData, site] = await Promise.all([
-    getCachedGlobal('header', 1)(),
+    getCachedGlobalSafe('header', 1),
     getSiteSeo(),
   ])
 
@@ -54,6 +54,7 @@ export async function Header() {
         phoneDisplay,
         phoneHref,
       })}
+      bottomEdge={headerData?.bottomEdge || 'none'}
     />
   )
 }

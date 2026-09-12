@@ -43,11 +43,11 @@ export const arlington: LocationContentSeed = {
       },
       {
         title: 'Ventilation & HVAC Mold Treatment',
-        text: 'River humidity lets mold colonize ducts and evaporator coils. We treat the ventilation system with EPA-registered antimicrobial products that are safe for children and pets, then check airflow so moisture does not sit in the same dead ends.',
+        text: 'River humidity lets mold colonize ducts and evaporator coils. We treat the ventilation system with EPA-registered antimicrobial products that are safe for children and pets, then check airflow so moisture does not sit in the same dead ends. Learn more about [mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
       {
         title: 'Whole-Home Mold Remediation',
-        text: 'When musty air has moved past the vents into crawl spaces, basements, or drywall — common in older Arlington houses and ground-floor condos — we find the moisture source, contain the area, remove the growth, and restore a dry air path.',
+        text: 'When musty air has moved past the vents into crawl spaces, basements, or drywall — common in older Arlington houses and ground-floor condos — we find the moisture source, contain the area, remove the growth, and restore a dry air path. See [mold remediation for your home](/mold-remediation-house).',
       },
     ],
   },

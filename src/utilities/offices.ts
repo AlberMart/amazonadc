@@ -2,6 +2,7 @@ import configPromise from '@payload-config'
 import { getPayload } from 'payload'
 
 import { officesSeedSource } from '@/content/offices'
+import { withDbRetry } from '@/utilities/dbRetry'
 
 export type OfficeReview = {
   initials: string
@@ -130,13 +131,15 @@ export function mapOffice(doc: Record<string, unknown>): OfficeContent {
 }
 
 export async function getAllOffices(): Promise<OfficeContent[]> {
-  const payload = await getPayload({ config: configPromise })
-  const result = await payload.find({
-    collection: 'offices',
-    limit: 50,
-    pagination: false,
-    depth: 0,
-    sort: 'city',
+  const result = await withDbRetry(async () => {
+    const payload = await getPayload({ config: configPromise })
+    return payload.find({
+      collection: 'offices',
+      limit: 50,
+      pagination: false,
+      depth: 0,
+      sort: 'city',
+    })
   })
   return result.docs.map((doc) => mapOffice(doc as unknown as Record<string, unknown>))
 }

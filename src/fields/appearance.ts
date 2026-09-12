@@ -23,7 +23,7 @@ export const appearanceFields: Field = {
   admin: {
     initCollapsed: true,
     description:
-      'Leave as Inherit to use Site Settings → Appearance. Override only what this block needs.',
+      'Leave as Inherit to use Site Settings → Appearance. Override background, padding, and edges when two blocks should sit flush or show a hairline.',
   },
   fields: [
     {
@@ -107,6 +107,33 @@ export const appearanceFields: Field = {
             { label: 'Secondary', value: 'secondary' },
             { label: 'Tertiary / outline', value: 'tertiary' },
           ],
+        },
+        {
+          name: 'padding',
+          type: 'select',
+          label: 'Vertical padding',
+          defaultValue: 'inherit',
+          options: [
+            { label: 'Default for this block', value: 'inherit' },
+            { label: 'Comfortable', value: 'default' },
+            { label: 'Compact', value: 'compact' },
+            { label: 'None (flush)', value: 'none' },
+          ],
+        },
+        {
+          name: 'divider',
+          type: 'select',
+          label: 'Section edges',
+          defaultValue: 'none',
+          options: [
+            { label: 'None', value: 'none' },
+            { label: 'Top hairline', value: 'top' },
+            { label: 'Bottom hairline', value: 'bottom' },
+            { label: 'Top and bottom', value: 'both' },
+          ],
+          admin: {
+            description: 'Hairlines between this block and its neighbors. Footer/Header edges are set on those globals.',
+          },
         },
       ],
     },

@@ -5,6 +5,12 @@ import { authenticated } from '../../access/authenticated'
 import { slugField } from 'payload'
 import { seoMetaTabFields } from '../../fields/seoMeta'
 import { INLINE_LINKS_HINT } from '../../fields/inlineLinksHint'
+import { pageSectionsFields } from '../../fields/pageSections'
+
+const hiddenLegacy = {
+  condition: () => false,
+  description: 'Deprecated — use Sections.',
+}
 
 const textItem = (name = 'text'): Field => ({
   name,
@@ -62,9 +68,8 @@ export const Services: CollectionConfig = {
     {
       name: 'price',
       type: 'number',
-      required: true,
       admin: {
-        description: 'Current offer price in USD',
+        description: 'Current offer price in USD. Leave empty for estimate-only services.',
       },
     },
     {
@@ -77,7 +82,9 @@ export const Services: CollectionConfig = {
     {
       name: 'orderUrl',
       type: 'text',
-      required: true,
+      admin: {
+        description: 'Checkout URL (Stripe). Empty = “Get a Free Quote” to the contact form.',
+      },
     },
     {
       name: 'thumbMedia',
@@ -111,35 +118,44 @@ export const Services: CollectionConfig = {
       type: 'text',
       required: true,
     },
+    pageSectionsFields({
+      name: 'sections',
+      allowInclude: true,
+      description:
+        'Page body. Unique copy lives here; reuse Partials via Include. Empty = legacy layout until you seed.',
+    }),
     {
       name: 'includesIntro',
       type: 'textarea',
+      admin: hiddenLegacy,
     },
     {
       name: 'includesMedia',
       type: 'upload',
       relationTo: 'media',
+      admin: hiddenLegacy,
     },
     {
       name: 'includesImage',
       type: 'text',
-      required: true,
-      admin: { description: 'Or public path if no upload' },
+      admin: { ...hiddenLegacy, description: 'Deprecated — use Sections.' },
     },
     {
       name: 'includesImageAlt',
       type: 'text',
-      required: true,
+      admin: hiddenLegacy,
     },
     {
       name: 'includes',
       type: 'array',
       labels: { singular: 'Item', plural: 'Included items' },
+      admin: hiddenLegacy,
       fields: [textItem('item')],
     },
     {
       name: 'beforeAfter',
       type: 'array',
+      admin: hiddenLegacy,
       fields: [
         {
           name: 'media',
@@ -147,12 +163,13 @@ export const Services: CollectionConfig = {
           relationTo: 'media',
         },
         { name: 'src', type: 'text' },
-        { name: 'alt', type: 'text', required: true },
+        { name: 'alt', type: 'text' },
       ],
     },
     {
       name: 'why',
       type: 'group',
+      admin: hiddenLegacy,
       fields: [
         { name: 'heading', type: 'text' },
         {
@@ -168,8 +185,9 @@ export const Services: CollectionConfig = {
     {
       name: 'columns',
       type: 'array',
+      admin: hiddenLegacy,
       fields: [
-        { name: 'heading', type: 'text', required: true },
+        { name: 'heading', type: 'text' },
         {
           name: 'items',
           type: 'array',
@@ -180,8 +198,9 @@ export const Services: CollectionConfig = {
     {
       name: 'listBlocks',
       type: 'array',
+      admin: hiddenLegacy,
       fields: [
-        { name: 'heading', type: 'text', required: true },
+        { name: 'heading', type: 'text' },
         {
           name: 'items',
           type: 'array',
@@ -192,6 +211,7 @@ export const Services: CollectionConfig = {
     {
       name: 'process',
       type: 'group',
+      admin: hiddenLegacy,
       fields: [
         { name: 'heading', type: 'text' },
         { name: 'intro', type: 'textarea' },
@@ -201,6 +221,7 @@ export const Services: CollectionConfig = {
     {
       name: 'processAside',
       type: 'group',
+      admin: hiddenLegacy,
       fields: [
         { name: 'heading', type: 'text' },
         {
@@ -214,6 +235,7 @@ export const Services: CollectionConfig = {
     {
       name: 'scheduleCta',
       type: 'group',
+      admin: hiddenLegacy,
       fields: [
         { name: 'heading', type: 'text' },
         {
@@ -226,12 +248,14 @@ export const Services: CollectionConfig = {
     {
       name: 'faqIntro',
       type: 'textarea',
+      admin: hiddenLegacy,
     },
     {
       name: 'faq',
       type: 'array',
       admin: {
-        description: 'Shown on the page and emitted as FAQPage JSON-LD for this URL.',
+        ...hiddenLegacy,
+        description: 'Deprecated — FAQ now lives in Sections.',
       },
       fields: [
         { name: 'question', type: 'text', required: true },

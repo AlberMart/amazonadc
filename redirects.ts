@@ -23,6 +23,11 @@ export const redirects: NextConfig['redirects'] = async () => {
       permanent: true,
     },
     {
+      source: '/mold-remediation-whole-house',
+      destination: '/mold-remediation-house',
+      permanent: true,
+    },
+    {
       destination: '/ie-incompatible.html',
       has: [
         {

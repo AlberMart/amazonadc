@@ -1,13 +1,13 @@
 import 'dotenv/config'
 import { getPayload } from 'payload'
 import config from '../payload.config'
-import { locationsSeed, officesSeed, servicesSeed, siteSettingsSeed, headerSeed, footerSeed } from './amazonadc'
+import { locationsSeed, officesSeed, servicesSeed, siteSettingsSeed, headerSeed, footerSeed, defaultServiceAreaPartialSeed } from './amazonadc'
 import { homePageSeed, legalPagesSeed, postsSeed } from './blog-and-legal'
 import { contactFormSeed } from './contact-form'
 
 async function upsertBySlug(
   payload: Awaited<ReturnType<typeof getPayload>>,
-  collection: 'services' | 'locations' | 'offices' | 'posts' | 'pages',
+  collection: 'services' | 'locations' | 'offices' | 'posts' | 'pages' | 'partials',
   slug: string,
   data: Record<string, unknown>,
   context: { disableRevalidate: boolean },
@@ -36,6 +36,25 @@ async function upsertBySlug(
   })
   console.log('created', collection, slug)
   return created.id
+}
+
+function bindIncludes<T extends Record<string, unknown>>(data: T, partialId: number | string): T {
+  const bind = (rows: unknown) =>
+    Array.isArray(rows)
+      ? rows.map((row) => {
+          const section = row as { type?: string; partial?: unknown }
+          if (section.type === 'include' && !section.partial) {
+            return { ...section, partial: partialId }
+          }
+          return section
+        })
+      : rows
+
+  return {
+    ...data,
+    sections: bind(data.sections),
+    homeSections: bind(data.homeSections),
+  }
 }
 
 async function run() {
@@ -89,8 +108,16 @@ async function run() {
   })
   console.log('updated footer')
 
+  const serviceAreaPartialId = await upsertBySlug(
+    payload,
+    'partials',
+    defaultServiceAreaPartialSeed.slug,
+    defaultServiceAreaPartialSeed,
+    context,
+  )
+
   for (const service of servicesSeed) {
-    await upsertBySlug(payload, 'services', service.slug, service, context)
+    await upsertBySlug(payload, 'services', service.slug, bindIncludes(service, serviceAreaPartialId), context)
   }
 
   const officeIds = new Map<string, number | string>()
@@ -110,31 +137,43 @@ async function run() {
       'locations',
       location.slug,
       {
-        ...rest,
+        ...bindIncludes(rest, serviceAreaPartialId),
         servedBy: officeId,
       },
       context,
     )
   }
 
-  for (const post of postsSeed) {
-    await upsertBySlug(
-      payload,
-      'posts',
-      post.slug,
-      {
-        ...post,
-        publishedAt: new Date().toISOString(),
-      },
-      context,
-    )
+  try {
+    for (const page of legalPagesSeed) {
+      await upsertBySlug(payload, 'pages', page.slug, page, context)
+    }
+  } catch (error) {
+    console.warn('legal pages seed skipped:', error instanceof Error ? error.message : error)
   }
 
-  for (const page of legalPagesSeed) {
-    await upsertBySlug(payload, 'pages', page.slug, page, context)
+  try {
+    await upsertBySlug(payload, 'pages', homePageSeed.slug, bindIncludes(homePageSeed, serviceAreaPartialId), context)
+  } catch (error) {
+    console.warn('home page seed skipped:', error instanceof Error ? error.message : error)
   }
 
-  await upsertBySlug(payload, 'pages', homePageSeed.slug, homePageSeed, context)
+  try {
+    for (const post of postsSeed) {
+      await upsertBySlug(
+        payload,
+        'posts',
+        post.slug,
+        {
+          ...post,
+          publishedAt: new Date().toISOString(),
+        },
+        context,
+      )
+    }
+  } catch (error) {
+    console.warn('posts seed skipped:', error instanceof Error ? error.message : error)
+  }
 
   console.log('Seed complete')
   process.exit(0)

@@ -3,16 +3,13 @@ import React from 'react'
 
 import { getCityPageLinks } from '@/utilities/locations'
 import { getAllOffices } from '@/utilities/offices'
-import { getCachedGlobal } from '@/utilities/getGlobals'
+import { getCachedGlobalSafe } from '@/utilities/getGlobals'
 import { getSiteSeo } from '@/utilities/seo'
+import { getDefaultServiceAreaSection } from '@/utilities/partials'
+import { mapServiceAreaRegions, type HomeSection, type ServiceAreaRegion } from '@/utilities/homeSections'
+import { appearanceVars } from '@/utilities/theme'
 
-type RegionRow = {
-  name: string
-  cities: string[]
-  href?: string | null
-  linkLabel?: string | null
-  emptyLinkLabel?: string | null
-}
+type RegionRow = ServiceAreaRegion
 
 const fallbackRegions: RegionRow[] = [
   {
@@ -56,6 +53,10 @@ export async function ServiceArea({
   mapTitle,
   estimateHref = '/#contact',
   estimateLabel = 'Free estimate',
+  regions: regionsProp,
+  tone,
+  appearance,
+  anchorId = 'service_area',
 }: {
   callHref?: string
   callLabel?: string
@@ -67,44 +68,39 @@ export async function ServiceArea({
   mapTitle?: string
   estimateHref?: string
   estimateLabel?: string
+  regions?: RegionRow[]
+  tone?: HomeSection['tone']
+  appearance?: HomeSection['appearance']
+  anchorId?: string
 }) {
-  const [offices, cityPages, site, settings] = await Promise.all([
+  const [offices, cityPages, site, settings, defaultPartial] = await Promise.all([
     getAllOffices(),
     getCityPageLinks(),
     getSiteSeo(),
-    getCachedGlobal('site-settings', 0)(),
+    getCachedGlobalSafe('site-settings', 0),
+    regionsProp?.length ? Promise.resolve(null) : getDefaultServiceAreaSection(),
   ])
 
-  const fromCms: RegionRow[] = ((settings as { serviceAreaRegions?: unknown[] })?.serviceAreaRegions || [])
-    .map((row) => {
-      const r = row as {
-        name?: string
-        cities?: Array<{ name?: string } | string>
-        href?: string | null
-        linkLabel?: string | null
-        emptyLinkLabel?: string | null
-      }
-      return {
-        name: r.name || '',
-        cities: (r.cities || [])
-          .map((c) => (typeof c === 'string' ? c : c?.name || ''))
-          .filter(Boolean),
-        href: r.href || null,
-        linkLabel: r.linkLabel || null,
-        emptyLinkLabel: r.emptyLinkLabel || null,
-      }
-    })
-    .filter((r) => r.name)
-
-  const regions = fromCms.length ? fromCms : fallbackRegions
+  const fromSettings = mapServiceAreaRegions(
+    (settings as { serviceAreaRegions?: unknown[] })?.serviceAreaRegions,
+  )
+  const fromPartial = defaultPartial?.regions || []
+  const regions =
+    (regionsProp && regionsProp.length ? regionsProp : null) ||
+    (fromPartial.length ? fromPartial : null) ||
+    (fromSettings.length ? fromSettings : null) ||
+    fallbackRegions
   const resolvedMapUrl =
     mapEmbedUrl ||
+    defaultPartial?.mapEmbedUrl ||
     (settings as { serviceAreaMapEmbedUrl?: string })?.serviceAreaMapEmbedUrl ||
     'https://www.google.com/maps/d/u/1/embed?mid=11Gt4y_RRlKcln8C0JIn5j3intMv4_0U&ehbc=2E312F&noprof=1'
   const resolvedMapTitle =
     mapTitle ||
+    defaultPartial?.mapTitle ||
     (settings as { serviceAreaMapTitle?: string })?.serviceAreaMapTitle ||
     'Service area map'
+  const resolvedHeading = heading || defaultPartial?.heading || 'Service Area'
 
   const resolvedEmail = email || site.email
   const resolvedCallHref =
@@ -116,14 +112,16 @@ export async function ServiceArea({
   const seoCities = cityPages.filter((page) => !offices.some((o) => o.slug === page.slug))
   const resolvedIntro =
     intro ||
+    defaultPartial?.intro ||
     `We serve homes and businesses across Virginia, Maryland, and Washington, DC — with local offices in Burke and Bethesda`
+  const sectionStyle = appearanceVars(appearance, tone || 'white') as React.CSSProperties
 
   return (
-    <section id="service_area" className="scroll-mt-24 bg-white py-16 md:py-20">
+    <section id={anchorId} className="site-section scroll-mt-24 py-16 md:py-20" style={sectionStyle}>
       <div className="container">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="font-display text-3xl font-semibold tracking-tight text-[var(--site-heading)] md:text-4xl">
-            {heading}
+            {resolvedHeading}
           </h2>
           <p className="mt-4 site-body leading-relaxed">
             {resolvedIntro}

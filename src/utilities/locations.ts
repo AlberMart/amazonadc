@@ -3,6 +3,8 @@ import { getPayload } from 'payload'
 
 import { resolveCmsImage, resolveCmsImageAlt } from '@/utilities/cmsImage'
 import { mapOffice, type OfficeContent } from './offices'
+import { mapRawSections, type HomeSection } from '@/utilities/homeSections'
+import { loadPageSections } from '@/utilities/partials'
 
 export type LocationFaq = { q: string; a: string }
 
@@ -47,6 +49,7 @@ export type LocationContent = {
   }
   faqIntro: string
   faq: LocationFaq[]
+  sections?: HomeSection[]
   meta?: {
     title?: string | null
     description?: string | null
@@ -185,6 +188,7 @@ function mapLocation(doc: Record<string, unknown>): LocationContent | null {
     faq: ((doc.faq as Array<{ question?: string | null; answer?: string | null } | null>) || [])
       .filter(Boolean)
       .map((item) => ({ q: String(item?.question || ''), a: String(item?.answer || '') })),
+    sections: mapRawSections(doc.sections),
     meta: (() => {
       const meta = doc.meta as
         | {
@@ -218,10 +222,16 @@ export async function getLocationContent(slug: string): Promise<LocationContent 
     where: { slug: { equals: slug } },
     limit: 1,
     pagination: false,
-    depth: 1,
+    depth: 2,
   })
   const doc = result.docs[0]
-  return doc ? mapLocation(doc as unknown as Record<string, unknown>) : null
+  if (!doc) return null
+  const mapped = mapLocation(doc as unknown as Record<string, unknown>)
+  if (!mapped) return null
+  mapped.sections = await loadPageSections(
+    (doc as unknown as Record<string, unknown>).sections,
+  )
+  return mapped
 }
 
 export async function getAllLocationSlugs(): Promise<string[]> {

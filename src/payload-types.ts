@@ -72,6 +72,7 @@ export interface Config {
     services: Service;
     locations: Location;
     offices: Office;
+    partials: Partial;
     leads: Lead;
     media: Media;
     categories: Category;
@@ -98,6 +99,7 @@ export interface Config {
     services: ServicesSelect<false> | ServicesSelect<true>;
     locations: LocationsSelect<false> | LocationsSelect<true>;
     offices: OfficesSelect<false> | OfficesSelect<true>;
+    partials: PartialsSelect<false> | PartialsSelect<true>;
     leads: LeadsSelect<false> | LeadsSelect<true>;
     media: MediaSelect<false> | MediaSelect<true>;
     categories: CategoriesSelect<false> | CategoriesSelect<true>;
@@ -216,7 +218,7 @@ export interface Page {
   };
   layout?: (CallToActionBlock | ContentBlock | MediaBlock | ArchiveBlock | FormBlock)[] | null;
   /**
-   * Ordered homepage sections. Add, remove, or reorder freely. Use portable types (featureSplit for any image+copy block — not “air duct” / “dryer” field names).
+   * Ordered homepage sections. Add, remove, or reorder freely. Use portable types (featureSplit for any image+copy block — not “air duct” / “dryer” field names). Include a Partial to reuse Service area, trust badges, or other shared chunks.
    */
   homeSections?:
     | {
@@ -232,7 +234,11 @@ export interface Page {
           | 'blogTeaser'
           | 'faq'
           | 'reviews'
-          | 'contact';
+          | 'contact'
+          | 'trustBadges'
+          | 'gallery'
+          | 'listColumns'
+          | 'include';
         /**
          * Optional HTML id for in-page links (about, contact, …)
          */
@@ -249,6 +255,8 @@ export interface Page {
                 | 'background'
                 | 'muted'
                 | 'dark'
+                | 'footer'
+                | 'badges'
                 | 'card'
                 | 'heading'
                 | 'body'
@@ -267,6 +275,8 @@ export interface Page {
                 | 'background'
                 | 'muted'
                 | 'dark'
+                | 'footer'
+                | 'badges'
                 | 'card'
                 | 'heading'
                 | 'body'
@@ -285,6 +295,8 @@ export interface Page {
                 | 'background'
                 | 'muted'
                 | 'dark'
+                | 'footer'
+                | 'badges'
                 | 'card'
                 | 'heading'
                 | 'body'
@@ -297,7 +309,16 @@ export interface Page {
           radius?: ('inherit' | 'none' | 'sm' | 'md' | 'lg' | 'xl' | 'full') | null;
           listStyle?: ('inherit' | 'check' | 'disc' | 'numbered' | 'none') | null;
           ctaVariant?: ('inherit' | 'primary' | 'secondary' | 'tertiary') | null;
+          padding?: ('inherit' | 'default' | 'compact' | 'none') | null;
+          /**
+           * Hairlines between this block and its neighbors. Footer/Header edges are set on those globals.
+           */
+          divider?: ('none' | 'top' | 'bottom' | 'both') | null;
         };
+        /**
+         * Reusable Partial to insert here (same idea as a Blade @include).
+         */
+        partial?: (number | null) | Partial;
         eyebrow?: string | null;
         heading?: string | null;
         subheadline?: string | null;
@@ -321,15 +342,17 @@ export interface Page {
               id?: string | null;
             }[]
           | null;
+        gridCols?: ('2' | '3' | '4') | null;
         steps?:
           | {
-              title: string;
+              title?: string | null;
               text: string;
               id?: string | null;
             }[]
           | null;
+        stepsLayout?: ('list' | 'cards') | null;
         /**
-         * Also feeds FAQPage JSON-LD when present on the home page.
+         * Also feeds FAQPage JSON-LD when present on the page.
          */
         faqItems?:
           | {
@@ -370,6 +393,77 @@ export interface Page {
          * Text after the phone link, e.g. “or unlock special pricing online.”
          */
         phoneSuffix?: string | null;
+        /**
+         * Google Maps embed URL. Empty = Site Settings fallback / default Partial.
+         */
+        mapEmbedUrl?: string | null;
+        mapTitle?: string | null;
+        /**
+         * Empty = fallback to the default Service area Partial, then Site Settings.
+         */
+        regions?:
+          | {
+              name: string;
+              cities?:
+                | {
+                    name: string;
+                    id?: string | null;
+                  }[]
+                | null;
+              /**
+               * Optional link, e.g. /locations/burke
+               */
+              href?: string | null;
+              /**
+               * Label for href; if empty and no href, shows emptyLinkLabel
+               */
+              linkLabel?: string | null;
+              /**
+               * Shown when href is empty (e.g. All neighborhoods)
+               */
+              emptyLinkLabel?: string | null;
+              id?: string | null;
+            }[]
+          | null;
+        /**
+         * Empty = Site Settings → Trust badges (logo library).
+         */
+        badges?:
+          | {
+              /**
+               * Upload (preferred)
+               */
+              image?: (number | null) | Media;
+              /**
+               * Or public path, e.g. /img/reviews/bbb.webp
+               */
+              src?: string | null;
+              alt?: string | null;
+              width?: number | null;
+              height?: number | null;
+              id?: string | null;
+            }[]
+          | null;
+        photos?:
+          | {
+              media?: (number | null) | Media;
+              src?: string | null;
+              alt?: string | null;
+              id?: string | null;
+            }[]
+          | null;
+        listColumns?:
+          | {
+              heading: string;
+              items?:
+                | {
+                    item: string;
+                    id?: string | null;
+                  }[]
+                | null;
+              id?: string | null;
+            }[]
+          | null;
         id?: string | null;
       }[]
     | null;
@@ -1157,6 +1251,272 @@ export interface Form {
   createdAt: string;
 }
 /**
+ * Reusable section chunks (like Blade includes). Edit once, then insert on Home / Services / Locations via an Include section.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "partials".
+ */
+export interface Partial {
+  id: number;
+  title: string;
+  /**
+   * Sections in this Partial. Include is not allowed here (no nested includes). Insert this Partial onto a page with an Include section.
+   */
+  sections?:
+    | {
+        type:
+          | 'hero'
+          | 'prose'
+          | 'offers'
+          | 'pricing'
+          | 'featureSplit'
+          | 'cardGrid'
+          | 'steps'
+          | 'serviceArea'
+          | 'blogTeaser'
+          | 'faq'
+          | 'reviews'
+          | 'contact'
+          | 'trustBadges'
+          | 'gallery'
+          | 'listColumns';
+        /**
+         * Optional HTML id for in-page links (about, contact, …)
+         */
+        anchorId?: string | null;
+        tone?: ('white' | 'muted' | 'dark') | null;
+        appearance?: {
+          background?:
+            | (
+                | 'inherit'
+                | 'primary'
+                | 'secondary'
+                | 'tertiary'
+                | 'accent'
+                | 'background'
+                | 'muted'
+                | 'dark'
+                | 'footer'
+                | 'badges'
+                | 'card'
+                | 'heading'
+                | 'body'
+                | 'onDark'
+                | 'custom'
+              )
+            | null;
+          backgroundCustom?: string | null;
+          headingColor?:
+            | (
+                | 'inherit'
+                | 'primary'
+                | 'secondary'
+                | 'tertiary'
+                | 'accent'
+                | 'background'
+                | 'muted'
+                | 'dark'
+                | 'footer'
+                | 'badges'
+                | 'card'
+                | 'heading'
+                | 'body'
+                | 'onDark'
+                | 'custom'
+              )
+            | null;
+          headingCustom?: string | null;
+          bodyColor?:
+            | (
+                | 'inherit'
+                | 'primary'
+                | 'secondary'
+                | 'tertiary'
+                | 'accent'
+                | 'background'
+                | 'muted'
+                | 'dark'
+                | 'footer'
+                | 'badges'
+                | 'card'
+                | 'heading'
+                | 'body'
+                | 'onDark'
+                | 'custom'
+              )
+            | null;
+          bodyCustom?: string | null;
+          cardStyle?: ('inherit' | 'bordered' | 'filled' | 'elevated' | 'plain') | null;
+          radius?: ('inherit' | 'none' | 'sm' | 'md' | 'lg' | 'xl' | 'full') | null;
+          listStyle?: ('inherit' | 'check' | 'disc' | 'numbered' | 'none') | null;
+          ctaVariant?: ('inherit' | 'primary' | 'secondary' | 'tertiary') | null;
+          padding?: ('inherit' | 'default' | 'compact' | 'none') | null;
+          /**
+           * Hairlines between this block and its neighbors. Footer/Header edges are set on those globals.
+           */
+          divider?: ('none' | 'top' | 'bottom' | 'both') | null;
+        };
+        /**
+         * Reusable Partial to insert here (same idea as a Blade @include).
+         */
+        partial?: (number | null) | Partial;
+        eyebrow?: string | null;
+        heading?: string | null;
+        subheadline?: string | null;
+        intro?: string | null;
+        paragraphs?:
+          | {
+              text: string;
+              id?: string | null;
+            }[]
+          | null;
+        highlights?:
+          | {
+              item: string;
+              id?: string | null;
+            }[]
+          | null;
+        items?:
+          | {
+              title: string;
+              text: string;
+              id?: string | null;
+            }[]
+          | null;
+        gridCols?: ('2' | '3' | '4') | null;
+        steps?:
+          | {
+              title?: string | null;
+              text: string;
+              id?: string | null;
+            }[]
+          | null;
+        stepsLayout?: ('list' | 'cards') | null;
+        /**
+         * Also feeds FAQPage JSON-LD when present on the page.
+         */
+        faqItems?:
+          | {
+              question: string;
+              answer: string;
+              id?: string | null;
+            }[]
+          | null;
+        /**
+         * Upload (preferred). You can crop/focal-point the file in Media.
+         */
+        imageUpload?: (number | null) | Media;
+        /**
+         * Or public path, e.g. /img/… (used if no upload)
+         */
+        image?: string | null;
+        /**
+         * Alt text. Falls back to the Media alt if empty.
+         */
+        imageAlt?: string | null;
+        imagePosition?: ('right' | 'left') | null;
+        ctaLabel?: string | null;
+        ctaHref?: string | null;
+        phoneDisplay?: string | null;
+        phoneHref?: string | null;
+        /**
+         * Optional. Empty = Site Settings → Contact form. Emails for this form are edited on the Form itself.
+         */
+        form?: (number | null) | Form;
+        /**
+         * Optional line before phone link
+         */
+        closingText?: string | null;
+        viewAllLabel?: string | null;
+        viewAllHref?: string | null;
+        cardLinkLabel?: string | null;
+        /**
+         * Text after the phone link, e.g. “or unlock special pricing online.”
+         */
+        phoneSuffix?: string | null;
+        /**
+         * Google Maps embed URL. Empty = Site Settings fallback / default Partial.
+         */
+        mapEmbedUrl?: string | null;
+        mapTitle?: string | null;
+        /**
+         * Empty = fallback to the default Service area Partial, then Site Settings.
+         */
+        regions?:
+          | {
+              name: string;
+              cities?:
+                | {
+                    name: string;
+                    id?: string | null;
+                  }[]
+                | null;
+              /**
+               * Optional link, e.g. /locations/burke
+               */
+              href?: string | null;
+              /**
+               * Label for href; if empty and no href, shows emptyLinkLabel
+               */
+              linkLabel?: string | null;
+              /**
+               * Shown when href is empty (e.g. All neighborhoods)
+               */
+              emptyLinkLabel?: string | null;
+              id?: string | null;
+            }[]
+          | null;
+        /**
+         * Empty = Site Settings → Trust badges (logo library).
+         */
+        badges?:
+          | {
+              /**
+               * Upload (preferred)
+               */
+              image?: (number | null) | Media;
+              /**
+               * Or public path, e.g. /img/reviews/bbb.webp
+               */
+              src?: string | null;
+              alt?: string | null;
+              width?: number | null;
+              height?: number | null;
+              id?: string | null;
+            }[]
+          | null;
+        photos?:
+          | {
+              media?: (number | null) | Media;
+              src?: string | null;
+              alt?: string | null;
+              id?: string | null;
+            }[]
+          | null;
+        listColumns?:
+          | {
+              heading: string;
+              items?:
+                | {
+                    item: string;
+                    id?: string | null;
+                  }[]
+                | null;
+              id?: string | null;
+            }[]
+          | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * When enabled, the slug will auto-generate from the title field on save and autosave.
+   */
+  generateSlug?: boolean | null;
+  slug: string;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "services".
  */
@@ -1169,14 +1529,17 @@ export interface Service {
    */
   description: string;
   /**
-   * Current offer price in USD
+   * Current offer price in USD. Leave empty for estimate-only services.
    */
-  price: number;
+  price?: number | null;
   /**
    * Original / strikethrough price in USD
    */
   compareAtPrice?: number | null;
-  orderUrl: string;
+  /**
+   * Checkout URL (Stripe). Empty = “Get a Free Quote” to the contact form.
+   */
+  orderUrl?: string | null;
   /**
    * Small card image upload (preferred)
    */
@@ -1194,27 +1557,295 @@ export interface Service {
    */
   heroImage: string;
   heroAlt: string;
+  /**
+   * Page body. Unique copy lives here; reuse Partials via Include. Empty = legacy layout until you seed.
+   */
+  sections?:
+    | {
+        type:
+          | 'hero'
+          | 'prose'
+          | 'offers'
+          | 'pricing'
+          | 'featureSplit'
+          | 'cardGrid'
+          | 'steps'
+          | 'serviceArea'
+          | 'blogTeaser'
+          | 'faq'
+          | 'reviews'
+          | 'contact'
+          | 'trustBadges'
+          | 'gallery'
+          | 'listColumns'
+          | 'include';
+        /**
+         * Optional HTML id for in-page links (about, contact, …)
+         */
+        anchorId?: string | null;
+        tone?: ('white' | 'muted' | 'dark') | null;
+        appearance?: {
+          background?:
+            | (
+                | 'inherit'
+                | 'primary'
+                | 'secondary'
+                | 'tertiary'
+                | 'accent'
+                | 'background'
+                | 'muted'
+                | 'dark'
+                | 'footer'
+                | 'badges'
+                | 'card'
+                | 'heading'
+                | 'body'
+                | 'onDark'
+                | 'custom'
+              )
+            | null;
+          backgroundCustom?: string | null;
+          headingColor?:
+            | (
+                | 'inherit'
+                | 'primary'
+                | 'secondary'
+                | 'tertiary'
+                | 'accent'
+                | 'background'
+                | 'muted'
+                | 'dark'
+                | 'footer'
+                | 'badges'
+                | 'card'
+                | 'heading'
+                | 'body'
+                | 'onDark'
+                | 'custom'
+              )
+            | null;
+          headingCustom?: string | null;
+          bodyColor?:
+            | (
+                | 'inherit'
+                | 'primary'
+                | 'secondary'
+                | 'tertiary'
+                | 'accent'
+                | 'background'
+                | 'muted'
+                | 'dark'
+                | 'footer'
+                | 'badges'
+                | 'card'
+                | 'heading'
+                | 'body'
+                | 'onDark'
+                | 'custom'
+              )
+            | null;
+          bodyCustom?: string | null;
+          cardStyle?: ('inherit' | 'bordered' | 'filled' | 'elevated' | 'plain') | null;
+          radius?: ('inherit' | 'none' | 'sm' | 'md' | 'lg' | 'xl' | 'full') | null;
+          listStyle?: ('inherit' | 'check' | 'disc' | 'numbered' | 'none') | null;
+          ctaVariant?: ('inherit' | 'primary' | 'secondary' | 'tertiary') | null;
+          padding?: ('inherit' | 'default' | 'compact' | 'none') | null;
+          /**
+           * Hairlines between this block and its neighbors. Footer/Header edges are set on those globals.
+           */
+          divider?: ('none' | 'top' | 'bottom' | 'both') | null;
+        };
+        /**
+         * Reusable Partial to insert here (same idea as a Blade @include).
+         */
+        partial?: (number | null) | Partial;
+        eyebrow?: string | null;
+        heading?: string | null;
+        subheadline?: string | null;
+        intro?: string | null;
+        paragraphs?:
+          | {
+              text: string;
+              id?: string | null;
+            }[]
+          | null;
+        highlights?:
+          | {
+              item: string;
+              id?: string | null;
+            }[]
+          | null;
+        items?:
+          | {
+              title: string;
+              text: string;
+              id?: string | null;
+            }[]
+          | null;
+        gridCols?: ('2' | '3' | '4') | null;
+        steps?:
+          | {
+              title?: string | null;
+              text: string;
+              id?: string | null;
+            }[]
+          | null;
+        stepsLayout?: ('list' | 'cards') | null;
+        /**
+         * Also feeds FAQPage JSON-LD when present on the page.
+         */
+        faqItems?:
+          | {
+              question: string;
+              answer: string;
+              id?: string | null;
+            }[]
+          | null;
+        /**
+         * Upload (preferred). You can crop/focal-point the file in Media.
+         */
+        imageUpload?: (number | null) | Media;
+        /**
+         * Or public path, e.g. /img/… (used if no upload)
+         */
+        image?: string | null;
+        /**
+         * Alt text. Falls back to the Media alt if empty.
+         */
+        imageAlt?: string | null;
+        imagePosition?: ('right' | 'left') | null;
+        ctaLabel?: string | null;
+        ctaHref?: string | null;
+        phoneDisplay?: string | null;
+        phoneHref?: string | null;
+        /**
+         * Optional. Empty = Site Settings → Contact form. Emails for this form are edited on the Form itself.
+         */
+        form?: (number | null) | Form;
+        /**
+         * Optional line before phone link
+         */
+        closingText?: string | null;
+        viewAllLabel?: string | null;
+        viewAllHref?: string | null;
+        cardLinkLabel?: string | null;
+        /**
+         * Text after the phone link, e.g. “or unlock special pricing online.”
+         */
+        phoneSuffix?: string | null;
+        /**
+         * Google Maps embed URL. Empty = Site Settings fallback / default Partial.
+         */
+        mapEmbedUrl?: string | null;
+        mapTitle?: string | null;
+        /**
+         * Empty = fallback to the default Service area Partial, then Site Settings.
+         */
+        regions?:
+          | {
+              name: string;
+              cities?:
+                | {
+                    name: string;
+                    id?: string | null;
+                  }[]
+                | null;
+              /**
+               * Optional link, e.g. /locations/burke
+               */
+              href?: string | null;
+              /**
+               * Label for href; if empty and no href, shows emptyLinkLabel
+               */
+              linkLabel?: string | null;
+              /**
+               * Shown when href is empty (e.g. All neighborhoods)
+               */
+              emptyLinkLabel?: string | null;
+              id?: string | null;
+            }[]
+          | null;
+        /**
+         * Empty = Site Settings → Trust badges (logo library).
+         */
+        badges?:
+          | {
+              /**
+               * Upload (preferred)
+               */
+              image?: (number | null) | Media;
+              /**
+               * Or public path, e.g. /img/reviews/bbb.webp
+               */
+              src?: string | null;
+              alt?: string | null;
+              width?: number | null;
+              height?: number | null;
+              id?: string | null;
+            }[]
+          | null;
+        photos?:
+          | {
+              media?: (number | null) | Media;
+              src?: string | null;
+              alt?: string | null;
+              id?: string | null;
+            }[]
+          | null;
+        listColumns?:
+          | {
+              heading: string;
+              items?:
+                | {
+                    item: string;
+                    id?: string | null;
+                  }[]
+                | null;
+              id?: string | null;
+            }[]
+          | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Deprecated — use Sections.
+   */
   includesIntro?: string | null;
+  /**
+   * Deprecated — use Sections.
+   */
   includesMedia?: (number | null) | Media;
   /**
-   * Or public path if no upload
+   * Deprecated — use Sections.
    */
-  includesImage: string;
-  includesImageAlt: string;
+  includesImage?: string | null;
+  /**
+   * Deprecated — use Sections.
+   */
+  includesImageAlt?: string | null;
+  /**
+   * Deprecated — use Sections.
+   */
   includes?:
     | {
         item: string;
         id?: string | null;
       }[]
     | null;
+  /**
+   * Deprecated — use Sections.
+   */
   beforeAfter?:
     | {
         media?: (number | null) | Media;
         src?: string | null;
-        alt: string;
+        alt?: string | null;
         id?: string | null;
       }[]
     | null;
+  /**
+   * Deprecated — use Sections.
+   */
   why?: {
     heading?: string | null;
     paragraphs?:
@@ -1230,9 +1861,12 @@ export interface Service {
     image?: string | null;
     imageAlt?: string | null;
   };
+  /**
+   * Deprecated — use Sections.
+   */
   columns?:
     | {
-        heading: string;
+        heading?: string | null;
         items?:
           | {
               item: string;
@@ -1242,9 +1876,12 @@ export interface Service {
         id?: string | null;
       }[]
     | null;
+  /**
+   * Deprecated — use Sections.
+   */
   listBlocks?:
     | {
-        heading: string;
+        heading?: string | null;
         items?:
           | {
               item: string;
@@ -1254,6 +1891,9 @@ export interface Service {
         id?: string | null;
       }[]
     | null;
+  /**
+   * Deprecated — use Sections.
+   */
   process?: {
     heading?: string | null;
     intro?: string | null;
@@ -1265,6 +1905,9 @@ export interface Service {
         }[]
       | null;
   };
+  /**
+   * Deprecated — use Sections.
+   */
   processAside?: {
     heading?: string | null;
     paragraphs?:
@@ -1284,6 +1927,9 @@ export interface Service {
         }[]
       | null;
   };
+  /**
+   * Deprecated — use Sections.
+   */
   scheduleCta?: {
     heading?: string | null;
     paragraphs?:
@@ -1296,9 +1942,12 @@ export interface Service {
         }[]
       | null;
   };
+  /**
+   * Deprecated — use Sections.
+   */
   faqIntro?: string | null;
   /**
-   * Shown on the page and emitted as FAQPage JSON-LD for this URL.
+   * Deprecated — FAQ now lives in Sections.
    */
   faq?:
     | {
@@ -1363,9 +2012,265 @@ export interface Location {
    * Physical office that serves this city. Phone and address on the page come from this office.
    */
   servedBy: number | Office;
-  offersTitle: string;
-  about: {
-    heading: string;
+  /**
+   * Page body. Unique copy lives here; reuse Partials via Include. Empty = legacy layout until you seed.
+   */
+  sections?:
+    | {
+        type:
+          | 'hero'
+          | 'prose'
+          | 'offers'
+          | 'pricing'
+          | 'featureSplit'
+          | 'cardGrid'
+          | 'steps'
+          | 'serviceArea'
+          | 'blogTeaser'
+          | 'faq'
+          | 'reviews'
+          | 'contact'
+          | 'trustBadges'
+          | 'gallery'
+          | 'listColumns'
+          | 'include';
+        /**
+         * Optional HTML id for in-page links (about, contact, …)
+         */
+        anchorId?: string | null;
+        tone?: ('white' | 'muted' | 'dark') | null;
+        appearance?: {
+          background?:
+            | (
+                | 'inherit'
+                | 'primary'
+                | 'secondary'
+                | 'tertiary'
+                | 'accent'
+                | 'background'
+                | 'muted'
+                | 'dark'
+                | 'footer'
+                | 'badges'
+                | 'card'
+                | 'heading'
+                | 'body'
+                | 'onDark'
+                | 'custom'
+              )
+            | null;
+          backgroundCustom?: string | null;
+          headingColor?:
+            | (
+                | 'inherit'
+                | 'primary'
+                | 'secondary'
+                | 'tertiary'
+                | 'accent'
+                | 'background'
+                | 'muted'
+                | 'dark'
+                | 'footer'
+                | 'badges'
+                | 'card'
+                | 'heading'
+                | 'body'
+                | 'onDark'
+                | 'custom'
+              )
+            | null;
+          headingCustom?: string | null;
+          bodyColor?:
+            | (
+                | 'inherit'
+                | 'primary'
+                | 'secondary'
+                | 'tertiary'
+                | 'accent'
+                | 'background'
+                | 'muted'
+                | 'dark'
+                | 'footer'
+                | 'badges'
+                | 'card'
+                | 'heading'
+                | 'body'
+                | 'onDark'
+                | 'custom'
+              )
+            | null;
+          bodyCustom?: string | null;
+          cardStyle?: ('inherit' | 'bordered' | 'filled' | 'elevated' | 'plain') | null;
+          radius?: ('inherit' | 'none' | 'sm' | 'md' | 'lg' | 'xl' | 'full') | null;
+          listStyle?: ('inherit' | 'check' | 'disc' | 'numbered' | 'none') | null;
+          ctaVariant?: ('inherit' | 'primary' | 'secondary' | 'tertiary') | null;
+          padding?: ('inherit' | 'default' | 'compact' | 'none') | null;
+          /**
+           * Hairlines between this block and its neighbors. Footer/Header edges are set on those globals.
+           */
+          divider?: ('none' | 'top' | 'bottom' | 'both') | null;
+        };
+        /**
+         * Reusable Partial to insert here (same idea as a Blade @include).
+         */
+        partial?: (number | null) | Partial;
+        eyebrow?: string | null;
+        heading?: string | null;
+        subheadline?: string | null;
+        intro?: string | null;
+        paragraphs?:
+          | {
+              text: string;
+              id?: string | null;
+            }[]
+          | null;
+        highlights?:
+          | {
+              item: string;
+              id?: string | null;
+            }[]
+          | null;
+        items?:
+          | {
+              title: string;
+              text: string;
+              id?: string | null;
+            }[]
+          | null;
+        gridCols?: ('2' | '3' | '4') | null;
+        steps?:
+          | {
+              title?: string | null;
+              text: string;
+              id?: string | null;
+            }[]
+          | null;
+        stepsLayout?: ('list' | 'cards') | null;
+        /**
+         * Also feeds FAQPage JSON-LD when present on the page.
+         */
+        faqItems?:
+          | {
+              question: string;
+              answer: string;
+              id?: string | null;
+            }[]
+          | null;
+        /**
+         * Upload (preferred). You can crop/focal-point the file in Media.
+         */
+        imageUpload?: (number | null) | Media;
+        /**
+         * Or public path, e.g. /img/… (used if no upload)
+         */
+        image?: string | null;
+        /**
+         * Alt text. Falls back to the Media alt if empty.
+         */
+        imageAlt?: string | null;
+        imagePosition?: ('right' | 'left') | null;
+        ctaLabel?: string | null;
+        ctaHref?: string | null;
+        phoneDisplay?: string | null;
+        phoneHref?: string | null;
+        /**
+         * Optional. Empty = Site Settings → Contact form. Emails for this form are edited on the Form itself.
+         */
+        form?: (number | null) | Form;
+        /**
+         * Optional line before phone link
+         */
+        closingText?: string | null;
+        viewAllLabel?: string | null;
+        viewAllHref?: string | null;
+        cardLinkLabel?: string | null;
+        /**
+         * Text after the phone link, e.g. “or unlock special pricing online.”
+         */
+        phoneSuffix?: string | null;
+        /**
+         * Google Maps embed URL. Empty = Site Settings fallback / default Partial.
+         */
+        mapEmbedUrl?: string | null;
+        mapTitle?: string | null;
+        /**
+         * Empty = fallback to the default Service area Partial, then Site Settings.
+         */
+        regions?:
+          | {
+              name: string;
+              cities?:
+                | {
+                    name: string;
+                    id?: string | null;
+                  }[]
+                | null;
+              /**
+               * Optional link, e.g. /locations/burke
+               */
+              href?: string | null;
+              /**
+               * Label for href; if empty and no href, shows emptyLinkLabel
+               */
+              linkLabel?: string | null;
+              /**
+               * Shown when href is empty (e.g. All neighborhoods)
+               */
+              emptyLinkLabel?: string | null;
+              id?: string | null;
+            }[]
+          | null;
+        /**
+         * Empty = Site Settings → Trust badges (logo library).
+         */
+        badges?:
+          | {
+              /**
+               * Upload (preferred)
+               */
+              image?: (number | null) | Media;
+              /**
+               * Or public path, e.g. /img/reviews/bbb.webp
+               */
+              src?: string | null;
+              alt?: string | null;
+              width?: number | null;
+              height?: number | null;
+              id?: string | null;
+            }[]
+          | null;
+        photos?:
+          | {
+              media?: (number | null) | Media;
+              src?: string | null;
+              alt?: string | null;
+              id?: string | null;
+            }[]
+          | null;
+        listColumns?:
+          | {
+              heading: string;
+              items?:
+                | {
+                    item: string;
+                    id?: string | null;
+                  }[]
+                | null;
+              id?: string | null;
+            }[]
+          | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Deprecated — use Sections.
+   */
+  offersTitle?: string | null;
+  /**
+   * Deprecated — use Sections.
+   */
+  about?: {
+    heading?: string | null;
     paragraphs?:
       | {
           /**
@@ -1382,52 +2287,67 @@ export interface Location {
         }[]
       | null;
   };
-  services: {
-    heading: string;
-    intro: string;
+  /**
+   * Deprecated — use Sections.
+   */
+  services?: {
+    heading?: string | null;
+    intro?: string | null;
     items?:
       | {
-          title: string;
-          text: string;
+          title?: string | null;
+          text?: string | null;
           id?: string | null;
         }[]
       | null;
   };
-  why: {
-    heading: string;
+  /**
+   * Deprecated — use Sections.
+   */
+  why?: {
+    heading?: string | null;
     items?:
       | {
-          title: string;
-          text: string;
+          title?: string | null;
+          text?: string | null;
           id?: string | null;
         }[]
       | null;
   };
-  communities: {
-    heading: string;
-    intro: string;
+  /**
+   * Deprecated — use Sections.
+   */
+  communities?: {
+    heading?: string | null;
+    intro?: string | null;
     groups?:
       | {
-          title: string;
-          places: string;
+          title?: string | null;
+          places?: string | null;
           id?: string | null;
         }[]
       | null;
   };
-  process: {
-    heading: string;
-    intro: string;
+  /**
+   * Deprecated — use Sections.
+   */
+  process?: {
+    heading?: string | null;
+    intro?: string | null;
     steps?:
       | {
-          title: string;
-          text: string;
+          title?: string | null;
+          text?: string | null;
           id?: string | null;
         }[]
       | null;
   };
+  /**
+   * Deprecated — use Sections.
+   */
   faqIntro?: string | null;
   /**
-   * Shown on the page and emitted as FAQPage JSON-LD for this URL.
+   * Deprecated — FAQ now lives in Sections.
    */
   faq?:
     | {
@@ -1439,6 +2359,9 @@ export interface Location {
         id?: string | null;
       }[]
     | null;
+  /**
+   * Deprecated — use Sections.
+   */
   mapUrl?: string | null;
   meta?: {
     title?: string | null;
@@ -1798,6 +2721,10 @@ export interface PayloadLockedDocument {
         value: number | Office;
       } | null)
     | ({
+        relationTo: 'partials';
+        value: number | Partial;
+      } | null)
+    | ({
         relationTo: 'leads';
         value: number | Lead;
       } | null)
@@ -1932,7 +2859,10 @@ export interface PagesSelect<T extends boolean = true> {
               radius?: T;
               listStyle?: T;
               ctaVariant?: T;
+              padding?: T;
+              divider?: T;
             };
+        partial?: T;
         eyebrow?: T;
         heading?: T;
         subheadline?: T;
@@ -1956,6 +2886,7 @@ export interface PagesSelect<T extends boolean = true> {
               text?: T;
               id?: T;
             };
+        gridCols?: T;
         steps?:
           | T
           | {
@@ -1963,6 +2894,7 @@ export interface PagesSelect<T extends boolean = true> {
               text?: T;
               id?: T;
             };
+        stepsLayout?: T;
         faqItems?:
           | T
           | {
@@ -1984,6 +2916,53 @@ export interface PagesSelect<T extends boolean = true> {
         viewAllHref?: T;
         cardLinkLabel?: T;
         phoneSuffix?: T;
+        mapEmbedUrl?: T;
+        mapTitle?: T;
+        regions?:
+          | T
+          | {
+              name?: T;
+              cities?:
+                | T
+                | {
+                    name?: T;
+                    id?: T;
+                  };
+              href?: T;
+              linkLabel?: T;
+              emptyLinkLabel?: T;
+              id?: T;
+            };
+        badges?:
+          | T
+          | {
+              image?: T;
+              src?: T;
+              alt?: T;
+              width?: T;
+              height?: T;
+              id?: T;
+            };
+        photos?:
+          | T
+          | {
+              media?: T;
+              src?: T;
+              alt?: T;
+              id?: T;
+            };
+        listColumns?:
+          | T
+          | {
+              heading?: T;
+              items?:
+                | T
+                | {
+                    item?: T;
+                    id?: T;
+                  };
+              id?: T;
+            };
         id?: T;
       };
   homeContent?:
@@ -2307,6 +3286,131 @@ export interface ServicesSelect<T extends boolean = true> {
   heroMedia?: T;
   heroImage?: T;
   heroAlt?: T;
+  sections?:
+    | T
+    | {
+        type?: T;
+        anchorId?: T;
+        tone?: T;
+        appearance?:
+          | T
+          | {
+              background?: T;
+              backgroundCustom?: T;
+              headingColor?: T;
+              headingCustom?: T;
+              bodyColor?: T;
+              bodyCustom?: T;
+              cardStyle?: T;
+              radius?: T;
+              listStyle?: T;
+              ctaVariant?: T;
+              padding?: T;
+              divider?: T;
+            };
+        partial?: T;
+        eyebrow?: T;
+        heading?: T;
+        subheadline?: T;
+        intro?: T;
+        paragraphs?:
+          | T
+          | {
+              text?: T;
+              id?: T;
+            };
+        highlights?:
+          | T
+          | {
+              item?: T;
+              id?: T;
+            };
+        items?:
+          | T
+          | {
+              title?: T;
+              text?: T;
+              id?: T;
+            };
+        gridCols?: T;
+        steps?:
+          | T
+          | {
+              title?: T;
+              text?: T;
+              id?: T;
+            };
+        stepsLayout?: T;
+        faqItems?:
+          | T
+          | {
+              question?: T;
+              answer?: T;
+              id?: T;
+            };
+        imageUpload?: T;
+        image?: T;
+        imageAlt?: T;
+        imagePosition?: T;
+        ctaLabel?: T;
+        ctaHref?: T;
+        phoneDisplay?: T;
+        phoneHref?: T;
+        form?: T;
+        closingText?: T;
+        viewAllLabel?: T;
+        viewAllHref?: T;
+        cardLinkLabel?: T;
+        phoneSuffix?: T;
+        mapEmbedUrl?: T;
+        mapTitle?: T;
+        regions?:
+          | T
+          | {
+              name?: T;
+              cities?:
+                | T
+                | {
+                    name?: T;
+                    id?: T;
+                  };
+              href?: T;
+              linkLabel?: T;
+              emptyLinkLabel?: T;
+              id?: T;
+            };
+        badges?:
+          | T
+          | {
+              image?: T;
+              src?: T;
+              alt?: T;
+              width?: T;
+              height?: T;
+              id?: T;
+            };
+        photos?:
+          | T
+          | {
+              media?: T;
+              src?: T;
+              alt?: T;
+              id?: T;
+            };
+        listColumns?:
+          | T
+          | {
+              heading?: T;
+              items?:
+                | T
+                | {
+                    item?: T;
+                    id?: T;
+                  };
+              id?: T;
+            };
+        id?: T;
+      };
   includesIntro?: T;
   includesMedia?: T;
   includesImage?: T;
@@ -2441,6 +3545,131 @@ export interface LocationsSelect<T extends boolean = true> {
   city?: T;
   state?: T;
   servedBy?: T;
+  sections?:
+    | T
+    | {
+        type?: T;
+        anchorId?: T;
+        tone?: T;
+        appearance?:
+          | T
+          | {
+              background?: T;
+              backgroundCustom?: T;
+              headingColor?: T;
+              headingCustom?: T;
+              bodyColor?: T;
+              bodyCustom?: T;
+              cardStyle?: T;
+              radius?: T;
+              listStyle?: T;
+              ctaVariant?: T;
+              padding?: T;
+              divider?: T;
+            };
+        partial?: T;
+        eyebrow?: T;
+        heading?: T;
+        subheadline?: T;
+        intro?: T;
+        paragraphs?:
+          | T
+          | {
+              text?: T;
+              id?: T;
+            };
+        highlights?:
+          | T
+          | {
+              item?: T;
+              id?: T;
+            };
+        items?:
+          | T
+          | {
+              title?: T;
+              text?: T;
+              id?: T;
+            };
+        gridCols?: T;
+        steps?:
+          | T
+          | {
+              title?: T;
+              text?: T;
+              id?: T;
+            };
+        stepsLayout?: T;
+        faqItems?:
+          | T
+          | {
+              question?: T;
+              answer?: T;
+              id?: T;
+            };
+        imageUpload?: T;
+        image?: T;
+        imageAlt?: T;
+        imagePosition?: T;
+        ctaLabel?: T;
+        ctaHref?: T;
+        phoneDisplay?: T;
+        phoneHref?: T;
+        form?: T;
+        closingText?: T;
+        viewAllLabel?: T;
+        viewAllHref?: T;
+        cardLinkLabel?: T;
+        phoneSuffix?: T;
+        mapEmbedUrl?: T;
+        mapTitle?: T;
+        regions?:
+          | T
+          | {
+              name?: T;
+              cities?:
+                | T
+                | {
+                    name?: T;
+                    id?: T;
+                  };
+              href?: T;
+              linkLabel?: T;
+              emptyLinkLabel?: T;
+              id?: T;
+            };
+        badges?:
+          | T
+          | {
+              image?: T;
+              src?: T;
+              alt?: T;
+              width?: T;
+              height?: T;
+              id?: T;
+            };
+        photos?:
+          | T
+          | {
+              media?: T;
+              src?: T;
+              alt?: T;
+              id?: T;
+            };
+        listColumns?:
+          | T
+          | {
+              heading?: T;
+              items?:
+                | T
+                | {
+                    item?: T;
+                    id?: T;
+                  };
+              id?: T;
+            };
+        id?: T;
+      };
   offersTitle?: T;
   about?:
     | T
@@ -2582,6 +3811,142 @@ export interface OfficesSelect<T extends boolean = true> {
         googleUrl?: T;
         id?: T;
       };
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "partials_select".
+ */
+export interface PartialsSelect<T extends boolean = true> {
+  title?: T;
+  sections?:
+    | T
+    | {
+        type?: T;
+        anchorId?: T;
+        tone?: T;
+        appearance?:
+          | T
+          | {
+              background?: T;
+              backgroundCustom?: T;
+              headingColor?: T;
+              headingCustom?: T;
+              bodyColor?: T;
+              bodyCustom?: T;
+              cardStyle?: T;
+              radius?: T;
+              listStyle?: T;
+              ctaVariant?: T;
+              padding?: T;
+              divider?: T;
+            };
+        partial?: T;
+        eyebrow?: T;
+        heading?: T;
+        subheadline?: T;
+        intro?: T;
+        paragraphs?:
+          | T
+          | {
+              text?: T;
+              id?: T;
+            };
+        highlights?:
+          | T
+          | {
+              item?: T;
+              id?: T;
+            };
+        items?:
+          | T
+          | {
+              title?: T;
+              text?: T;
+              id?: T;
+            };
+        gridCols?: T;
+        steps?:
+          | T
+          | {
+              title?: T;
+              text?: T;
+              id?: T;
+            };
+        stepsLayout?: T;
+        faqItems?:
+          | T
+          | {
+              question?: T;
+              answer?: T;
+              id?: T;
+            };
+        imageUpload?: T;
+        image?: T;
+        imageAlt?: T;
+        imagePosition?: T;
+        ctaLabel?: T;
+        ctaHref?: T;
+        phoneDisplay?: T;
+        phoneHref?: T;
+        form?: T;
+        closingText?: T;
+        viewAllLabel?: T;
+        viewAllHref?: T;
+        cardLinkLabel?: T;
+        phoneSuffix?: T;
+        mapEmbedUrl?: T;
+        mapTitle?: T;
+        regions?:
+          | T
+          | {
+              name?: T;
+              cities?:
+                | T
+                | {
+                    name?: T;
+                    id?: T;
+                  };
+              href?: T;
+              linkLabel?: T;
+              emptyLinkLabel?: T;
+              id?: T;
+            };
+        badges?:
+          | T
+          | {
+              image?: T;
+              src?: T;
+              alt?: T;
+              width?: T;
+              height?: T;
+              id?: T;
+            };
+        photos?:
+          | T
+          | {
+              media?: T;
+              src?: T;
+              alt?: T;
+              id?: T;
+            };
+        listColumns?:
+          | T
+          | {
+              heading?: T;
+              items?:
+                | T
+                | {
+                    item?: T;
+                    id?: T;
+                  };
+              id?: T;
+            };
+        id?: T;
+      };
+  generateSlug?: T;
+  slug?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -3042,6 +4407,10 @@ export interface Header {
     logoAlt?: string | null;
   };
   /**
+   * Line under the header. “After scroll” appears only once the page has moved.
+   */
+  bottomEdge?: ('none' | 'hairline' | 'scrolled') | null;
+  /**
    * Text button in the desktop nav. Uses Site Settings phone unless overridden below.
    */
   showPhoneCta?: boolean | null;
@@ -3144,6 +4513,10 @@ export interface Footer {
     logoPath?: string | null;
     logoAlt?: string | null;
   };
+  /**
+   * Line above the footer, between the last page section and the footer.
+   */
+  topEdge?: ('none' | 'hairline') | null;
   /**
    * Under the brand. Empty → Site Settings organization description.
    */
@@ -3419,7 +4792,7 @@ export interface SiteSetting {
     widgetId?: string | null;
   };
   /**
-   * Strip under the footer on every page. Leave empty to hide (or seed defaults apply until you save).
+   * Logo library for Trust badges sections. Placement is per-page (add a Trust badges section). Leave empty to hide.
    */
   trustBadges?:
     | {
@@ -3438,12 +4811,12 @@ export interface SiteSetting {
       }[]
     | null;
   /**
-   * Google Maps embed URL for the Service Area section
+   * Fallback Google Maps embed URL if a Service area section/Partial has none.
    */
   serviceAreaMapEmbedUrl?: string | null;
   serviceAreaMapTitle?: string | null;
   /**
-   * Region rows shown in Service Area (any geography — not hardcoded to VA/MD/DC).
+   * Fallback region rows if a Service area section/Partial has none. Prefer editing a Partial (Content → Partials) and including it on pages.
    */
   serviceAreaRegions?:
     | {
@@ -3486,6 +4859,7 @@ export interface HeaderSelect<T extends boolean = true> {
         logoPath?: T;
         logoAlt?: T;
       };
+  bottomEdge?: T;
   showPhoneCta?: T;
   phoneDisplay?: T;
   phoneHref?: T;
@@ -3540,6 +4914,7 @@ export interface FooterSelect<T extends boolean = true> {
         logoPath?: T;
         logoAlt?: T;
       };
+  topEdge?: T;
   tagline?: T;
   showContactInBrand?: T;
   columns?:

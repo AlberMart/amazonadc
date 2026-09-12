@@ -10,6 +10,7 @@ import { Locations } from './collections/Locations'
 import { Media } from './collections/Media'
 import { Offices } from './collections/Offices'
 import { Pages } from './collections/Pages'
+import { Partials } from './collections/Partials'
 import { Posts } from './collections/Posts'
 import { Services } from './collections/Services'
 import { Users } from './collections/Users'
@@ -66,11 +67,15 @@ export default buildConfig({
   db: postgresAdapter({
     pool: {
       connectionString: process.env.DATABASE_URL || '',
+      max: 20,
+      idleTimeoutMillis: 20_000,
+      connectionTimeoutMillis: 20_000,
+      allowExitOnIdle: true,
     },
     // Schema synced via seed + additive SQL; interactive drizzle push hangs headless shells.
     push: false,
   }),
-  collections: [Pages, Posts, Services, Locations, Offices, Leads, Media, Categories, Users],
+  collections: [Pages, Posts, Services, Locations, Offices, Partials, Leads, Media, Categories, Users],
   cors: [getServerSideURL()].filter(Boolean),
   email: siteEmailAdapter,
   globals: [Header, Footer, SiteSettings],

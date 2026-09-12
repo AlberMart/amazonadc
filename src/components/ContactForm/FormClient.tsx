@@ -14,6 +14,24 @@ import {
 const inputClass =
   'w-full rounded-md border border-[var(--site-border)] bg-white px-3 py-2 text-[var(--site-heading)]'
 
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+const SUBMIT_TIMEOUT_MS = 15000
+const FRIENDLY_ERROR = 'Unable to send message. Please try again or call us.'
+
+function validateValues(fields: PublicFormField[], values: Record<string, string>): string | null {
+  for (const field of fields) {
+    if (!field.name || field.blockType === 'message') continue
+    const value = (values[field.name] || '').trim()
+    if (field.required && field.blockType !== 'checkbox' && !value) {
+      return `${field.label || field.name} is required`
+    }
+    if (field.blockType === 'email' && value && !EMAIL_RE.test(value)) {
+      return 'Enter a valid email'
+    }
+  }
+  return null
+}
+
 type ContactFormClientProps = {
   sourcePage?: string
   phoneDisplay?: string
@@ -167,7 +185,7 @@ export function ContactFormClient({
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
-    setStatus('loading')
+    e.stopPropagation()
     setError(null)
 
     const formEl = e.currentTarget
@@ -183,6 +201,15 @@ export function ContactFormClient({
       values[field.name] = String(formData.get(field.name) || '')
     })
 
+    const validationError = validateValues(fields, values)
+    if (validationError) {
+      setStatus('error')
+      setError(validationError)
+      return
+    }
+
+    setStatus('loading')
+
     const payload = {
       formId: form?.id,
       values,
@@ -195,29 +222,47 @@ export function ContactFormClient({
       turnstileToken: String(formData.get('cf-turnstile-response') || ''),
     }
 
+    const controller = new AbortController()
+    const timer = window.setTimeout(() => controller.abort(), SUBMIT_TIMEOUT_MS)
+
     try {
       const res = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),
+        signal: controller.signal,
       })
-      const data = await res.json()
+
+      let data: {
+        error?: string
+        formToken?: string
+        confirmationMessage?: string
+      } = {}
+      try {
+        data = await res.json()
+      } catch {
+        throw new Error(FRIENDLY_ERROR)
+      }
+
       if (data.formToken) setToken(data.formToken)
       if (!res.ok) {
-        throw new Error(data.error || 'Something went wrong')
+        throw new Error(data.error || FRIENDLY_ERROR)
       }
 
       const nextMessage = data.confirmationMessage || form?.confirmationMessage || successMessage
       setDoneMessage(nextMessage)
       setStatus('success')
       formEl.reset()
-
-      if (form?.confirmationType === 'redirect' && (data.redirectUrl || form.redirectUrl)) {
-        window.location.assign(data.redirectUrl || form.redirectUrl)
-      }
     } catch (err) {
       setStatus('error')
-      setError(err instanceof Error ? err.message : 'Unable to send message')
+      if (err instanceof DOMException && err.name === 'AbortError') {
+        setError(FRIENDLY_ERROR)
+        return
+      }
+      const message = err instanceof Error ? err.message : FRIENDLY_ERROR
+      setError(message === 'Failed to fetch' ? FRIENDLY_ERROR : message)
+    } finally {
+      window.clearTimeout(timer)
     }
   }
 
@@ -246,7 +291,13 @@ export function ContactFormClient({
           )}
         </p>
 
-        <form onSubmit={onSubmit} className="relative grid gap-4" noValidate>
+        <form
+          action="#contact"
+          method="post"
+          onSubmit={onSubmit}
+          className="relative grid gap-4"
+          noValidate
+        >
           <div className="hidden" aria-hidden="true">
             <label>
               Website
@@ -278,8 +329,16 @@ export function ContactFormClient({
             </>
           ) : null}
 
-          {status === 'success' ? <p className="text-sm text-green-700">{doneMessage}</p> : null}
-          {status === 'error' && error ? <p className="text-sm text-red-600">{error}</p> : null}
+          {status === 'success' ? (
+            <p className="text-sm text-green-700" role="status" aria-live="polite">
+              {doneMessage}
+            </p>
+          ) : null}
+          {status === 'error' && error ? (
+            <p className="text-sm text-red-600" role="alert" aria-live="assertive">
+              {error}
+            </p>
+          ) : null}
 
           <button
             type="submit"

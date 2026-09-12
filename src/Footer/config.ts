@@ -1,6 +1,7 @@
 import type { GlobalConfig } from 'payload'
 
 import { brandMarkFields } from '@/fields/brandMark'
+import { footerTopEdgeField } from '@/fields/chromeEdges'
 import { link } from '@/fields/link'
 import { revalidateFooter } from './hooks/revalidateFooter'
 
@@ -16,6 +17,12 @@ export const Footer: GlobalConfig = {
   },
   fields: [
     brandMarkFields(),
+    {
+      type: 'collapsible',
+      label: 'Edges',
+      admin: { initCollapsed: true },
+      fields: [footerTopEdgeField],
+    },
     {
       name: 'tagline',
       type: 'textarea',

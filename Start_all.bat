@@ -3,6 +3,8 @@ setlocal EnableExtensions
 cd /d "%~dp0"
 title Amazon Air Duct Cleaning
 
+set "PS_HELPER=%~dp0scripts\start-all.ps1"
+
 echo.
 echo Amazon Air Duct Cleaning
 echo Site:  http://localhost:3000
@@ -35,20 +37,12 @@ if errorlevel 1 (
 )
 
 echo Waiting for Postgres ...
-set /a DB_TRIES=0
-:wait_db
-set /a DB_TRIES+=1
-docker compose exec -T postgres pg_isready -U payload -d amazonadc >nul 2>&1
-if not errorlevel 1 goto db_ready
-if %DB_TRIES% GEQ 30 (
+powershell -NoProfile -ExecutionPolicy Bypass -File "%PS_HELPER%" -Action wait-db -TimeoutSec 90
+if errorlevel 1 (
   echo Postgres did not become ready. Check Docker Desktop.
   pause
   exit /b 1
 )
-timeout /t 2 /nobreak >nul
-goto wait_db
-
-:db_ready
 echo Postgres is ready.
 
 call :resolve_pnpm
@@ -67,24 +61,45 @@ if not exist "node_modules\" (
   )
 )
 
-call :site_is_up
+netstat -ano | findstr ":3000" | findstr "LISTENING" >nul
 if not errorlevel 1 (
-  echo Site is already running.
-  start "" "http://localhost:3000"
-  echo.
-  echo Close this window. The site stays up in the other terminal.
-  pause
-  exit /b 0
+  echo Port 3000 is in use. Checking if the site responds ...
+  powershell -NoProfile -ExecutionPolicy Bypass -File "%PS_HELPER%" -Action wait-http -TimeoutSec 90
+  if not errorlevel 1 (
+    echo Site is already running.
+    start "" "http://localhost:3000"
+    echo.
+    echo Close this window. The site stays up in the other terminal.
+    pause
+    exit /b 0
+  )
+  echo Site is not responding. Stopping the stale process on port 3000 ...
+  powershell -NoProfile -ExecutionPolicy Bypass -File "%PS_HELPER%" -Action free-port -Port 3000
+  if errorlevel 1 (
+    echo Could not free port 3000. Close the other Node process and try again.
+    pause
+    exit /b 1
+  )
+  if exist ".next\" (
+    echo Clearing interrupted Next.js cache ...
+    rmdir /s /q ".next" 2>nul
+  )
 )
 
-echo Starting Next.js. Wait until this window says Ready, then open the site.
-echo The first page can take one to two minutes. Do not refresh until it loads.
+echo Starting Next.js. This window must stay open.
+echo The first page can take one to two minutes. Browser opens when it is ready.
+echo Admin at /admin compiles in the background after that — wait for Login, do not refresh.
 echo Close this window to stop the site.
 echo.
-start "" /min powershell -NoProfile -ExecutionPolicy Bypass -Command "Start-Sleep -Seconds 25; Start-Process 'http://localhost:3000'"
+start "" /min powershell -NoProfile -ExecutionPolicy Bypass -File "%PS_HELPER%" -Action open-when-ready -TimeoutSec 180
 
 call %PNPM% run dev
-exit /b %ERRORLEVEL%
+set "DEV_EXIT=%ERRORLEVEL%"
+if not "%DEV_EXIT%"=="0" (
+  echo Next.js exited with code %DEV_EXIT%.
+  pause
+)
+exit /b %DEV_EXIT%
 
 :ensure_docker
 docker info >nul 2>&1
@@ -128,7 +143,3 @@ if errorlevel 1 (
 )
 set "PNPM=npx --yes pnpm@9.15.9"
 exit /b 0
-
-:site_is_up
-powershell -NoProfile -ExecutionPolicy Bypass -Command "try { $r = Invoke-WebRequest -UseBasicParsing -TimeoutSec 4 http://127.0.0.1:3000/; if ($r.StatusCode -ge 200) { exit 0 } else { exit 1 } } catch { exit 1 }"
-exit /b %ERRORLEVEL%

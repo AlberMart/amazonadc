@@ -2,7 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 
 import { BrandMark } from '@/components/BrandMark'
-import { getCachedGlobal } from '@/utilities/getGlobals'
+import { getCachedGlobalSafe } from '@/utilities/getGlobals'
 import { resolveBrandMark } from '@/utilities/brandMark'
 import { resolveCmsLink } from '@/utilities/cmsLink'
 import { getSiteSeo } from '@/utilities/seo'
@@ -42,8 +42,8 @@ function ColumnHeading({ children }: { children: React.ReactNode }) {
 
 export async function Footer() {
   const [footerData, settings, site] = await Promise.all([
-    getCachedGlobal('footer', 2)(),
-    getCachedGlobal('site-settings', 0)(),
+    getCachedGlobalSafe('footer', 2),
+    getCachedGlobalSafe('site-settings', 0),
     getSiteSeo(),
   ])
 
@@ -76,7 +76,7 @@ export async function Footer() {
       ]
 
   return (
-    <footer className="site-footer mt-auto border-t border-white/10">
+    <footer className={`site-footer mt-auto ${footerData?.topEdge === 'hairline' ? 'border-t border-white/10' : ''}`}>
       <div className="container grid gap-10 py-12 lg:grid-cols-[minmax(220px,1.1fr)_minmax(0,2.4fr)]">
         <div>
           <BrandMark

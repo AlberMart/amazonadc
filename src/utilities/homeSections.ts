@@ -16,6 +16,25 @@ export type HomeSectionType =
   | 'faq'
   | 'reviews'
   | 'contact'
+  | 'trustBadges'
+  | 'gallery'
+  | 'listColumns'
+  | 'include'
+
+export type ServiceAreaRegion = {
+  name: string
+  cities: string[]
+  href?: string | null
+  linkLabel?: string | null
+  emptyLinkLabel?: string | null
+}
+
+export type SectionBadge = {
+  src: string
+  alt: string
+  width?: number
+  height?: number
+}
 
 export type HomeSection = {
   type: HomeSectionType
@@ -29,6 +48,8 @@ export type HomeSection = {
   highlights?: string[]
   items?: Array<{ title: string; text: string }>
   steps?: Array<{ title: string; text: string }>
+  stepsLayout?: 'list' | 'cards'
+  gridCols?: 2 | 3 | 4
   faqItems?: Array<{ q: string; a: string }>
   image?: string
   imageAlt?: string
@@ -44,6 +65,14 @@ export type HomeSection = {
   cardLinkLabel?: string
   phoneSuffix?: string
   appearance?: SectionAppearance
+  mapEmbedUrl?: string
+  mapTitle?: string
+  regions?: ServiceAreaRegion[]
+  badges?: SectionBadge[]
+  photos?: Array<{ src: string; alt: string }>
+  listColumns?: Array<{ heading: string; items: string[] }>
+  partialId?: number | string
+  includedSections?: HomeSection[]
 }
 
 function texts(rows?: Array<{ text?: string | null } | null> | null): string[] {
@@ -68,13 +97,95 @@ function mapAppearance(raw: unknown): SectionAppearance | undefined {
     radius: (value.radius as SectionAppearance['radius']) || 'inherit',
     listStyle: (value.listStyle as SectionAppearance['listStyle']) || 'inherit',
     ctaVariant: (value.ctaVariant as SectionAppearance['ctaVariant']) || 'inherit',
+    padding: (value.padding as SectionAppearance['padding']) || 'inherit',
+    divider: (value.divider as SectionAppearance['divider']) || 'none',
   }
   return appearance
 }
 
-export function mapHomeSection(raw: Record<string, unknown>): HomeSection | null {
+export function mapServiceAreaRegions(raw: unknown): ServiceAreaRegion[] {
+  return ((raw as unknown[]) || [])
+    .map((row) => {
+      const r = row as {
+        name?: string
+        cities?: Array<{ name?: string } | string>
+        href?: string | null
+        linkLabel?: string | null
+        emptyLinkLabel?: string | null
+      }
+      return {
+        name: r.name || '',
+        cities: (r.cities || [])
+          .map((c) => (typeof c === 'string' ? c : c?.name || ''))
+          .filter(Boolean),
+        href: r.href || null,
+        linkLabel: r.linkLabel || null,
+        emptyLinkLabel: r.emptyLinkLabel || null,
+      }
+    })
+    .filter((r) => r.name)
+}
+
+function mapBadges(raw: unknown): SectionBadge[] {
+  return ((raw as unknown[]) || [])
+    .map((row) => {
+      const badge = row as {
+        image?: unknown
+        src?: string | null
+        alt?: string | null
+        width?: number | null
+        height?: number | null
+      }
+      const src = resolveCmsImage(badge.image, badge.src) || ''
+      const alt = badge.alt || ''
+      if (!src || !alt) return null
+      return {
+        src,
+        alt,
+        width: badge.width || undefined,
+        height: badge.height || undefined,
+      }
+    })
+    .filter((row): row is SectionBadge => Boolean(row))
+}
+
+const SECTION_TYPES: HomeSectionType[] = [
+  'hero',
+  'prose',
+  'offers',
+  'pricing',
+  'featureSplit',
+  'cardGrid',
+  'steps',
+  'serviceArea',
+  'blogTeaser',
+  'faq',
+  'reviews',
+  'contact',
+  'trustBadges',
+  'gallery',
+  'listColumns',
+  'include',
+]
+
+export function mapHomeSection(raw: Record<string, unknown>, nested = false): HomeSection | null {
   const type = String(raw.type || '') as HomeSectionType
-  if (!type) return null
+  if (!SECTION_TYPES.includes(type)) return null
+  if (nested && type === 'include') return null
+
+  const partial = raw.partial
+  let partialId: number | string | undefined
+  let includedSections: HomeSection[] | undefined
+  if (typeof partial === 'number' || typeof partial === 'string') {
+    partialId = partial
+  } else if (partial && typeof partial === 'object') {
+    const doc = partial as { id?: number | string; sections?: unknown[] }
+    if (doc.id != null) partialId = doc.id
+    includedSections = ((doc.sections as unknown[]) || [])
+      .map((row) => mapHomeSection(row as Record<string, unknown>, true))
+      .filter((row): row is HomeSection => Boolean(row))
+  }
+
   return {
     type,
     anchorId: raw.anchorId ? String(raw.anchorId) : undefined,
@@ -95,6 +206,8 @@ export function mapHomeSection(raw: Record<string, unknown>): HomeSection | null
     )
       .filter(Boolean)
       .map((item) => ({ title: String(item?.title || ''), text: String(item?.text || '') })),
+    stepsLayout: raw.stepsLayout === 'cards' ? 'cards' : 'list',
+    gridCols: raw.gridCols === '2' || raw.gridCols === 2 ? 2 : raw.gridCols === '3' || raw.gridCols === 3 ? 3 : 4,
     faqItems: (
       (raw.faqItems as Array<{ question?: string | null; answer?: string | null } | null>) ||
       []
@@ -124,12 +237,65 @@ export function mapHomeSection(raw: Record<string, unknown>): HomeSection | null
     cardLinkLabel: raw.cardLinkLabel ? String(raw.cardLinkLabel) : undefined,
     phoneSuffix: raw.phoneSuffix ? String(raw.phoneSuffix) : undefined,
     appearance: mapAppearance(raw.appearance),
+    mapEmbedUrl: raw.mapEmbedUrl ? String(raw.mapEmbedUrl) : undefined,
+    mapTitle: raw.mapTitle ? String(raw.mapTitle) : undefined,
+    regions: mapServiceAreaRegions(raw.regions),
+    badges: mapBadges(raw.badges),
+    photos: (
+      (raw.photos as Array<{ src?: string | null; alt?: string | null; media?: unknown } | null>) ||
+      []
+    )
+      .filter(Boolean)
+      .map((row) => ({
+        src: resolveCmsImage(row?.media, row?.src) || '',
+        alt: String(row?.alt || ''),
+      }))
+      .filter((row) => row.src),
+    listColumns: (
+      (raw.listColumns as Array<{
+        heading?: string | null
+        items?: Array<{ item?: string | null } | null> | null
+      } | null>) || []
+    )
+      .filter(Boolean)
+      .map((col) => ({
+        heading: String(col?.heading || ''),
+        items: items(col?.items),
+      })),
+    partialId,
+    includedSections,
   }
+}
+
+export function flattenPageSections(sections: HomeSection[]): HomeSection[] {
+  const out: HomeSection[] = []
+  for (const section of sections) {
+    if (section.type === 'include') {
+      out.push(...flattenPageSections(section.includedSections || []))
+      continue
+    }
+    out.push(section)
+  }
+  return out
+}
+
+export function mapRawSections(raw: unknown, options?: { flatten?: boolean }): HomeSection[] {
+  const mapped = ((raw as unknown[]) || [])
+    .map((row) => mapHomeSection(row as Record<string, unknown>))
+    .filter((row): row is HomeSection => Boolean(row))
+  return options?.flatten === false ? mapped : flattenPageSections(mapped)
+}
+
+export function faqItemsFromSections(sections: HomeSection[]): Array<{ q: string; a: string }> {
+  return flattenPageSections(sections)
+    .filter((section) => section.type === 'faq')
+    .flatMap((section) => (section.faqItems || []).filter((item) => item.q && item.a))
 }
 
 /** Convert legacy flat homeContent into portable sections (seed + fallback). */
 export function homeContentToSections(content: HomeContent = homeContentSeed): HomeSection[] {
   return [
+    { type: 'trustBadges', tone: 'white', appearance: { padding: 'compact', divider: 'none', background: 'badges' } },
     {
       type: 'hero',
       tone: 'dark',
@@ -259,6 +425,8 @@ export function mapHomeSectionsToSeed(sections: HomeSection[]) {
     highlights: (section.highlights || []).map((item) => ({ item })),
     items: section.items || [],
     steps: section.steps || [],
+    stepsLayout: section.stepsLayout || 'list',
+    gridCols: section.gridCols ? String(section.gridCols) : undefined,
     faqItems: (section.faqItems || []).map((item) => ({
       question: item.q,
       answer: item.a,
@@ -276,7 +444,33 @@ export function mapHomeSectionsToSeed(sections: HomeSection[]) {
     viewAllHref: section.viewAllHref || undefined,
     cardLinkLabel: section.cardLinkLabel || undefined,
     phoneSuffix: section.phoneSuffix || undefined,
+    mapEmbedUrl: section.mapEmbedUrl || undefined,
+    mapTitle: section.mapTitle || undefined,
+    regions: (section.regions || []).map((region) => ({
+      name: region.name,
+      cities: region.cities.map((name) => ({ name })),
+      href: region.href || undefined,
+      linkLabel: region.linkLabel || undefined,
+      emptyLinkLabel: region.emptyLinkLabel || undefined,
+    })),
+    badges: (section.badges || []).map((badge) => ({
+      src: badge.src,
+      alt: badge.alt,
+      width: badge.width,
+      height: badge.height,
+    })),
+    photos: (section.photos || []).map((photo) => ({
+      src: photo.src,
+      alt: photo.alt,
+    })),
+    listColumns: (section.listColumns || []).map((col) => ({
+      heading: col.heading,
+      items: col.items.map((item) => ({ item })),
+    })),
+    partial: section.partialId || undefined,
   }))
 }
 
-export const homeSectionsSeed = homeContentToSections(homeContentSeed)
+export const homeSectionsSeed = homeContentToSections(homeContentSeed).map((section) =>
+  section.type === 'serviceArea' ? { type: 'include' as const } : section,
+)

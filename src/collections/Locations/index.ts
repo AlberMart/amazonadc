@@ -6,6 +6,12 @@ import { slugField } from 'payload'
 import { revalidateLocation, revalidateLocationDelete } from './hooks/revalidateLocation'
 import { seoMetaTabFields } from '../../fields/seoMeta'
 import { INLINE_LINKS_HINT } from '../../fields/inlineLinksHint'
+import { pageSectionsFields } from '../../fields/pageSections'
+
+const hiddenLegacy = {
+  condition: () => false,
+  description: 'Deprecated — use Sections.',
+}
 
 const textItem = (name = 'text'): Field => ({
   name,
@@ -105,16 +111,23 @@ export const Locations: CollectionConfig = {
         description: 'Physical office that serves this city. Phone and address on the page come from this office.',
       },
     },
+    pageSectionsFields({
+      name: 'sections',
+      allowInclude: true,
+      description:
+        'Page body. Unique copy lives here; reuse Partials via Include. Empty = legacy layout until you seed.',
+    }),
     {
       name: 'offersTitle',
       type: 'text',
-      required: true,
+      admin: hiddenLegacy,
     },
     {
       name: 'about',
       type: 'group',
+      admin: hiddenLegacy,
       fields: [
-        { name: 'heading', type: 'text', required: true },
+        { name: 'heading', type: 'text' },
         {
           name: 'paragraphs',
           type: 'array',
@@ -130,15 +143,16 @@ export const Locations: CollectionConfig = {
     {
       name: 'services',
       type: 'group',
+      admin: hiddenLegacy,
       fields: [
-        { name: 'heading', type: 'text', required: true },
-        { name: 'intro', type: 'textarea', required: true },
+        { name: 'heading', type: 'text' },
+        { name: 'intro', type: 'textarea' },
         {
           name: 'items',
           type: 'array',
           fields: [
-            { name: 'title', type: 'text', required: true },
-            { name: 'text', type: 'textarea', required: true },
+            { name: 'title', type: 'text' },
+            { name: 'text', type: 'textarea' },
           ],
         },
       ],
@@ -146,14 +160,15 @@ export const Locations: CollectionConfig = {
     {
       name: 'why',
       type: 'group',
+      admin: hiddenLegacy,
       fields: [
-        { name: 'heading', type: 'text', required: true },
+        { name: 'heading', type: 'text' },
         {
           name: 'items',
           type: 'array',
           fields: [
-            { name: 'title', type: 'text', required: true },
-            { name: 'text', type: 'textarea', required: true },
+            { name: 'title', type: 'text' },
+            { name: 'text', type: 'textarea' },
           ],
         },
       ],
@@ -161,15 +176,16 @@ export const Locations: CollectionConfig = {
     {
       name: 'communities',
       type: 'group',
+      admin: hiddenLegacy,
       fields: [
-        { name: 'heading', type: 'text', required: true },
-        { name: 'intro', type: 'textarea', required: true },
+        { name: 'heading', type: 'text' },
+        { name: 'intro', type: 'textarea' },
         {
           name: 'groups',
           type: 'array',
           fields: [
-            { name: 'title', type: 'text', required: true },
-            { name: 'places', type: 'textarea', required: true },
+            { name: 'title', type: 'text' },
+            { name: 'places', type: 'textarea' },
           ],
         },
       ],
@@ -177,15 +193,16 @@ export const Locations: CollectionConfig = {
     {
       name: 'process',
       type: 'group',
+      admin: hiddenLegacy,
       fields: [
-        { name: 'heading', type: 'text', required: true },
-        { name: 'intro', type: 'textarea', required: true },
+        { name: 'heading', type: 'text' },
+        { name: 'intro', type: 'textarea' },
         {
           name: 'steps',
           type: 'array',
           fields: [
-            { name: 'title', type: 'text', required: true },
-            { name: 'text', type: 'textarea', required: true },
+            { name: 'title', type: 'text' },
+            { name: 'text', type: 'textarea' },
           ],
         },
       ],
@@ -193,12 +210,14 @@ export const Locations: CollectionConfig = {
     {
       name: 'faqIntro',
       type: 'textarea',
+      admin: hiddenLegacy,
     },
     {
       name: 'faq',
       type: 'array',
       admin: {
-        description: 'Shown on the page and emitted as FAQPage JSON-LD for this URL.',
+        ...hiddenLegacy,
+        description: 'Deprecated — FAQ now lives in Sections.',
       },
       fields: [
         { name: 'question', type: 'text', required: true },
@@ -208,6 +227,7 @@ export const Locations: CollectionConfig = {
     {
       name: 'mapUrl',
       type: 'text',
+      admin: hiddenLegacy,
     },
     {
       type: 'tabs',

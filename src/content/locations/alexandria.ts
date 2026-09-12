@@ -45,11 +45,11 @@ export const alexandria: LocationContentSeed = {
       },
       {
         title: 'Ventilation & HVAC Mold Treatment',
-        text: 'Mold likes the dark, damp interior of ducts and AC coils. When river humidity condenses inside the system, spores colonize the ductwork and blow into every room when the system starts. We eradicate that growth with EPA-approved antimicrobial treatment and sanitize the ventilation so the air is safe to breathe.',
+        text: 'Mold likes the dark, damp interior of ducts and AC coils. When river humidity condenses inside the system, spores colonize the ductwork and blow into every room when the system starts. We eradicate that growth with EPA-approved antimicrobial treatment and sanitize the ventilation so the air is safe to breathe. Learn more about [mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
       {
         title: 'Whole-Home Mold Remediation',
-        text: 'Mold spreads past the HVAC into crawl spaces, basements, and drywall — especially in historic Old Town homes and houses that take on seasonal river dampness. We find the moisture source, contain the area, remove the growth, and restore a healthy living space.',
+        text: 'Mold spreads past the HVAC into crawl spaces, basements, and drywall — especially in historic Old Town homes and houses that take on seasonal river dampness. We find the moisture source, contain the area, remove the growth, and restore a healthy living space. See [mold remediation for your home](/mold-remediation-house).',
       },
       {
         title: 'Commercial Duct Cleaning',

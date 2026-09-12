@@ -132,7 +132,7 @@ export type PageMetaInput = {
   imageAlt?: string
   type?: 'website' | 'article'
   ogTypeProduct?: boolean
-  productPrice?: number
+  productPrice?: number | null
   site?: SiteSeo
 }
 
@@ -516,7 +516,7 @@ export function organizationNode(site: SiteSeo, primaryOffice?: OfficeContent | 
 export function businessNode(
   site: SiteSeo,
   offices: OfficeContent[],
-  services?: Array<{ title: string; slug: string; price: number }>,
+  services?: Array<{ title: string; slug: string; price?: number | null }>,
 ) {
   const url = absoluteUrl('/')
   const primary = offices.find((o) => o.slug === 'bethesda') || offices[0] || null
@@ -572,10 +572,14 @@ export function businessNode(
             itemListElement: services.map((service) => ({
               '@type': 'Offer',
               name: service.title,
-              price: String(service.price),
-              priceCurrency: 'USD',
+              ...(typeof service.price === 'number'
+                ? {
+                    price: String(service.price),
+                    priceCurrency: 'USD',
+                    priceValidUntil: site.priceValidUntil,
+                  }
+                : {}),
               availability: 'https://schema.org/InStock',
-              priceValidUntil: site.priceValidUntil,
               url: absoluteUrl(`/${service.slug}`),
               itemOffered: {
                 '@type': 'Service',
@@ -592,6 +596,8 @@ export function businessNode(
 
 function inferServiceType(title: string) {
   const lower = title.toLowerCase()
+  if (lower.includes('mold') && lower.includes('duct')) return 'Air Duct Mold Remediation'
+  if (lower.includes('mold')) return 'Mold Remediation'
   if (lower.includes('dryer') && lower.includes('air duct')) return 'Air Duct and Dryer Vent Cleaning'
   if (lower.includes('dryer')) return 'Dryer Vent Cleaning'
   return 'Air Duct Cleaning'
@@ -610,7 +616,7 @@ export function serviceOfferNode({
   title: string
   slug: string
   description: string
-  price: number
+  price?: number | null
   image: string
   site: SiteSeo
   priceValidUntil?: string
@@ -624,6 +630,14 @@ export function serviceOfferNode({
     idMode === 'home' ? `${absoluteUrl('/')}#service-${slug}` : `${pageUrl}#service`
   const serviceType = inferServiceType(title)
   const validUntil = priceValidUntil || site.priceValidUntil
+  const priced =
+    typeof price === 'number'
+      ? {
+          price: String(price),
+          priceCurrency: 'USD',
+          priceValidUntil: validUntil,
+        }
+      : {}
 
   return {
     '@type': 'Service',
@@ -631,7 +645,7 @@ export function serviceOfferNode({
     name: title,
     description,
     serviceType,
-    category: 'HVAC Cleaning',
+    category: title.toLowerCase().includes('mold') ? 'Mold Remediation' : 'HVAC Cleaning',
     image: {
       '@type': 'ImageObject',
       url: absoluteUrl(image),
@@ -649,10 +663,8 @@ export function serviceOfferNode({
           '@type': 'Offer',
           name: title,
           description,
-          price: String(price),
-          priceCurrency: 'USD',
+          ...priced,
           availability: 'https://schema.org/InStock',
-          priceValidUntil: validUntil,
           url: pageUrl,
           seller: { '@id': businessId },
         },
@@ -661,11 +673,9 @@ export function serviceOfferNode({
     offers: {
       '@type': 'Offer',
       name: title,
-      price: String(price),
-      priceCurrency: 'USD',
+      ...priced,
       availability: 'https://schema.org/InStock',
       url: pageUrl,
-      priceValidUntil: validUntil,
       seller: { '@id': businessId },
     },
   }

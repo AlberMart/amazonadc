@@ -3,6 +3,7 @@ import type { CollectionAfterChangeHook, CollectionAfterDeleteHook } from 'paylo
 import { revalidatePath } from 'next/cache'
 
 import type { Location } from '../../../payload-types'
+import { scheduleRevalidate } from '@/utilities/scheduleRevalidate'
 
 function revalidateLocationPaths(slug?: string | null) {
   if (!slug) return
@@ -18,10 +19,12 @@ export const revalidateLocation: CollectionAfterChangeHook<Location> = ({
   if (context.disableRevalidate) return doc
 
   payload.logger.info(`Revalidating location: ${doc.slug}`)
-  revalidateLocationPaths(doc.slug)
-  if (previousDoc?.slug && previousDoc.slug !== doc.slug) {
-    revalidateLocationPaths(previousDoc.slug)
-  }
+  scheduleRevalidate(() => {
+    revalidateLocationPaths(doc.slug)
+    if (previousDoc?.slug && previousDoc.slug !== doc.slug) {
+      revalidateLocationPaths(previousDoc.slug)
+    }
+  })
   return doc
 }
 
@@ -29,6 +32,8 @@ export const revalidateLocationDelete: CollectionAfterDeleteHook<Location> = ({
   doc,
   req: { context },
 }) => {
-  if (!context.disableRevalidate) revalidateLocationPaths(doc?.slug)
+  if (!context.disableRevalidate) {
+    scheduleRevalidate(() => revalidateLocationPaths(doc?.slug))
+  }
   return doc
 }

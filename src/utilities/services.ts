@@ -2,24 +2,34 @@ import configPromise from '@payload-config'
 import { getPayload } from 'payload'
 
 import { resolveCmsImage, resolveCmsImageAlt } from '@/utilities/cmsImage'
+import { mapRawSections, type HomeSection } from '@/utilities/homeSections'
+import { loadPageSections } from '@/utilities/partials'
+import { withDbRetry } from '@/utilities/dbRetry'
 
 export type ServiceFaq = { q: string; a: string }
+
+export function optionalUsd(value: unknown): number | null {
+  if (value == null || value === '') return null
+  const n = Number(value)
+  if (!Number.isFinite(n) || n <= 0) return null
+  return n
+}
 
 export type ServiceContent = {
   slug: string
   title: string
   description: string
   summary: string
-  price: number
-  compareAtPrice: number
-  orderUrl: string
+  price?: number | null
+  compareAtPrice?: number | null
+  orderUrl?: string
   heroImage: string
   heroAlt: string
   includesIntro?: string
   includesImage: string
   includesImageAlt: string
   includes: string[]
-  beforeAfter: Array<{ src: string; alt: string }>
+  beforeAfter?: Array<{ src: string; alt: string }>
   why?: {
     heading: string
     paragraphs: string[]
@@ -44,6 +54,7 @@ export type ServiceContent = {
   }
   faqIntro?: string
   faq: ServiceFaq[]
+  sections?: HomeSection[]
   meta?: {
     title?: string | null
     description?: string | null
@@ -55,11 +66,21 @@ export type ServiceContent = {
 export type ServiceCard = {
   slug: string
   title: string
-  price: number
-  compareAtPrice: number
+  price?: number | null
+  compareAtPrice?: number | null
   thumb: string
   href: string
   summary: string
+}
+
+export function servicePrimaryCta(service: { price?: number | null; orderUrl?: string | null }) {
+  const href = service.orderUrl?.trim() || '#contact'
+  const isCheckout = /^https?:\/\//i.test(href)
+  return {
+    href,
+    isCheckout,
+    label: isCheckout ? 'Order now' : 'Get a Free Quote',
+  }
 }
 
 function slugValue(slug: unknown): string {
@@ -123,9 +144,9 @@ function mapService(doc: Record<string, unknown>): ServiceContent {
     title: String(doc.title || ''),
     description: String(doc.description || ''),
     summary: String(doc.summary || ''),
-    price: Number(doc.price || 0),
-    compareAtPrice: Number(doc.compareAtPrice || 0),
-    orderUrl: String(doc.orderUrl || ''),
+    price: optionalUsd(doc.price),
+    compareAtPrice: optionalUsd(doc.compareAtPrice),
+    orderUrl: doc.orderUrl ? String(doc.orderUrl) : undefined,
     heroImage: resolveCmsImage(doc.heroMedia, doc.heroImage ? String(doc.heroImage) : undefined) || '',
     heroAlt: resolveCmsImageAlt(
       doc.heroAlt ? String(doc.heroAlt) : undefined,
@@ -211,6 +232,7 @@ function mapService(doc: Record<string, unknown>): ServiceContent {
     faq: ((doc.faq as Array<{ question?: string | null; answer?: string | null } | null>) || [])
       .filter(Boolean)
       .map((item) => ({ q: String(item?.question || ''), a: String(item?.answer || '') })),
+    sections: mapRawSections(doc.sections),
     meta: (() => {
       const meta = doc.meta as
         | {
@@ -244,10 +266,15 @@ export async function getServiceContent(slug: string): Promise<ServiceContent | 
     where: { slug: { equals: slug } },
     limit: 1,
     pagination: false,
-    depth: 1,
+    depth: 2,
   })
   const doc = result.docs[0]
-  return doc ? mapService(doc as unknown as Record<string, unknown>) : null
+  if (!doc) return null
+  const mapped = mapService(doc as unknown as Record<string, unknown>)
+  mapped.sections = await loadPageSections(
+    (doc as unknown as Record<string, unknown>).sections,
+  )
+  return mapped
 }
 
 export async function getAllServiceSlugs(): Promise<string[]> {
@@ -263,16 +290,18 @@ export async function getAllServiceSlugs(): Promise<string[]> {
 }
 
 export async function getAllServiceCards(): Promise<ServiceCard[]> {
-  const payload = await getPayload({ config: configPromise })
-  const result = await payload.find({
-    collection: 'services',
-    limit: 100,
-    pagination: false,
-    depth: 1,
-    sort: 'price',
+  const result = await withDbRetry(async () => {
+    const payload = await getPayload({ config: configPromise })
+    return payload.find({
+      collection: 'services',
+      limit: 100,
+      pagination: false,
+      depth: 1,
+      sort: 'price',
+    })
   })
 
-  return result.docs.map((doc) => {
+  const cards = result.docs.map((doc) => {
     const mapped = mapService(doc as unknown as Record<string, unknown>)
     const thumb =
       resolveCmsImage(doc.thumbMedia, typeof doc.thumbImage === 'string' ? doc.thumbImage : undefined) ||
@@ -286,6 +315,13 @@ export async function getAllServiceCards(): Promise<ServiceCard[]> {
       href: `/${mapped.slug}`,
       summary: mapped.summary,
     }
+  })
+
+  return cards.sort((a, b) => {
+    const aPrice = a.price ?? Number.POSITIVE_INFINITY
+    const bPrice = b.price ?? Number.POSITIVE_INFINITY
+    if (aPrice !== bPrice) return aPrice - bPrice
+    return a.title.localeCompare(b.title)
   })
 }
 

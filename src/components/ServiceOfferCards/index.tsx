@@ -5,7 +5,7 @@ import React from 'react'
 export type ServiceOfferCard = {
   slug: string
   title: string
-  price: number
+  price?: number | null
   compareAtPrice?: number | null
   summary?: string | null
   thumb: string
@@ -37,12 +37,18 @@ export function ServiceOfferCards({ services }: { services: ServiceOfferCard[] }
             {item.title}
           </h3>
           <p className="mt-4 text-3xl font-semibold text-[var(--site-heading)]">
-            ${item.price}
-            {typeof item.compareAtPrice === 'number' ? (
-              <span className="ml-2 text-base font-normal site-muted line-through">
-                ${item.compareAtPrice}
-              </span>
-            ) : null}
+            {typeof item.price === 'number' ? (
+              <>
+                ${item.price}
+                {typeof item.compareAtPrice === 'number' ? (
+                  <span className="ml-2 text-base font-normal site-muted line-through">
+                    ${item.compareAtPrice}
+                  </span>
+                ) : null}
+              </>
+            ) : (
+              <span className="text-xl">Free estimate</span>
+            )}
           </p>
           {item.summary ? (
             <p className="mt-3 line-clamp-3 flex-1 text-sm site-body">{item.summary}</p>

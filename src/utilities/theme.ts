@@ -309,6 +309,8 @@ export const COLOR_TOKEN_OPTIONS = [
   { label: 'Page background', value: 'background' },
   { label: 'Muted', value: 'muted' },
   { label: 'Dark', value: 'dark' },
+  { label: 'Footer', value: 'footer' },
+  { label: 'Badges bar', value: 'badges' },
   { label: 'Card', value: 'card' },
   { label: 'Heading text', value: 'heading' },
   { label: 'Body text', value: 'body' },
@@ -317,6 +319,9 @@ export const COLOR_TOKEN_OPTIONS = [
 ] as const
 
 export type ColorToken = (typeof COLOR_TOKEN_OPTIONS)[number]['value']
+
+export type SectionPadding = 'inherit' | 'default' | 'compact' | 'none'
+export type SectionDivider = 'none' | 'top' | 'bottom' | 'both'
 
 export type SectionAppearance = {
   background?: ColorToken
@@ -329,6 +334,8 @@ export type SectionAppearance = {
   radius?: 'inherit' | RadiusToken
   listStyle?: 'inherit' | 'check' | 'disc' | 'numbered' | 'none'
   ctaVariant?: 'inherit' | 'primary' | 'secondary' | 'tertiary'
+  padding?: SectionPadding
+  divider?: SectionDivider
 }
 
 const TOKEN_VARS: Record<string, string> = {
@@ -339,6 +346,8 @@ const TOKEN_VARS: Record<string, string> = {
   background: 'var(--site-bg)',
   muted: 'var(--site-muted)',
   dark: 'var(--site-dark)',
+  footer: 'var(--site-footer)',
+  badges: 'var(--site-badges)',
   card: 'var(--site-card)',
   heading: 'var(--site-heading)',
   body: 'var(--site-body)',
@@ -351,9 +360,12 @@ export function tokenColor(token?: string, custom?: string): string | undefined 
   return TOKEN_VARS[token]
 }
 
+const DARK_BG_TOKENS = new Set(['dark', 'footer', 'badges', 'primary', 'secondary', 'onDark'])
+
 export function appearanceVars(
   appearance?: SectionAppearance,
   tone?: string,
+  fallbackBg?: string,
 ): Record<string, string> {
   const vars: Record<string, string> = {}
   const background =
@@ -362,8 +374,15 @@ export function appearanceVars(
       ? 'var(--site-muted)'
       : tone === 'dark'
         ? 'var(--site-dark)'
-        : 'var(--site-bg)')
+        : fallbackBg || 'var(--site-bg)')
   vars['--section-bg'] = background
+  const usedFallback =
+    !tokenColor(appearance?.background, appearance?.backgroundCustom) &&
+    tone !== 'muted' &&
+    tone !== 'dark'
+  const darkEdge =
+    tone === 'dark' || DARK_BG_TOKENS.has(appearance?.background || '') || (usedFallback && Boolean(fallbackBg))
+  vars['--section-edge'] = darkEdge ? 'rgb(255 255 255 / 0.1)' : 'var(--site-border)'
 
   const heading = tokenColor(appearance?.headingColor, appearance?.headingCustom)
   const body = tokenColor(appearance?.bodyColor, appearance?.bodyCustom)
@@ -395,6 +414,23 @@ export function cardClassName(style?: SectionAppearance['cardStyle']): string {
   if (style === 'plain') return 'site-card site-card-plain'
   if (style === 'bordered') return 'site-card'
   return 'site-card'
+}
+
+export function sectionPadClass(
+  padding?: SectionPadding | null,
+  fallback: Exclude<SectionPadding, 'inherit'> = 'default',
+): string {
+  const value = !padding || padding === 'inherit' ? fallback : padding
+  if (value === 'none') return 'py-0'
+  if (value === 'compact') return 'py-6 md:py-8'
+  return 'py-16 md:py-20'
+}
+
+export function sectionDividerClass(divider?: SectionDivider | null): string {
+  if (!divider || divider === 'none') return ''
+  if (divider === 'top') return 'site-section-edge-top'
+  if (divider === 'bottom') return 'site-section-edge-bottom'
+  return 'site-section-edge-top site-section-edge-bottom'
 }
 
 export function listClassName(style?: SectionAppearance['listStyle']): string {

@@ -15,6 +15,7 @@ import { JsonLd } from '@/components/JsonLd'
 import { generateMeta } from '@/utilities/generateMeta'
 import { getAllLegalSlugs, getLegalPage } from '@/utilities/legal'
 import { getAllServiceSlugs, getServiceContent } from '@/utilities/services'
+import { faqItemsFromSections } from '@/utilities/homeSections'
 import {
   absoluteUrl,
   breadcrumb,
@@ -125,7 +126,7 @@ export default async function Page({ params: paramsPromise }: Args) {
         site,
         idMode: 'page',
       }),
-      faqNode(serviceContent.faq, {
+      faqNode(faqItemsFromSections(serviceContent.sections || []).length ? faqItemsFromSections(serviceContent.sections || []) : serviceContent.faq, {
         pagePath: path,
         aboutId: businessId,
         publisherId: `${absoluteUrl('/')}#organization`,
@@ -134,12 +135,16 @@ export default async function Page({ params: paramsPromise }: Args) {
 
     return (
       <>
-        <meta property="og:type" content="product" />
-        <meta property="product:price:amount" content={String(serviceContent.price)} />
-        <meta property="product:price:currency" content="USD" />
-        <meta property="product:availability" content="in stock" />
-        <meta property="product:brand" content={site.siteName} />
-        <meta property="product:condition" content="new" />
+        {typeof serviceContent.price === 'number' ? (
+          <>
+            <meta property="og:type" content="product" />
+            <meta property="product:price:amount" content={String(serviceContent.price)} />
+            <meta property="product:price:currency" content="USD" />
+            <meta property="product:availability" content="in stock" />
+            <meta property="product:brand" content={site.siteName} />
+            <meta property="product:condition" content="new" />
+          </>
+        ) : null}
         <PageClient />
         <JsonLd data={structuredData} />
         <ServicePage service={serviceContent} />
@@ -212,15 +217,18 @@ export async function generateMetadata({ params: paramsPromise }: Args): Promise
 
   const serviceContent = await getServiceContent(decodedSlug)
   if (serviceContent) {
+    const priced = typeof serviceContent.price === 'number'
     return resolvePageMeta(
       {
         path: `/${serviceContent.slug}`,
         meta: serviceContent.meta,
-        fallbackTitle: `${serviceContent.title} – $${serviceContent.price}`,
+        fallbackTitle: priced
+          ? `${serviceContent.title} – $${serviceContent.price}`
+          : serviceContent.title,
         fallbackDescription: serviceContent.description,
         fallbackImage: serviceContent.heroImage,
         imageAlt: serviceContent.heroAlt,
-        ogTypeProduct: true,
+        ogTypeProduct: priced,
         productPrice: serviceContent.price,
       },
       site,

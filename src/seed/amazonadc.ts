@@ -2,6 +2,8 @@ import { themeSeed } from '@/utilities/theme'
 import { airDuctCleaning } from '@/content/services/air-duct-cleaning'
 import { airDuctAndDryerVentCleaning } from '@/content/services/air-duct-and-dryer-vent-cleaning'
 import { dryerVentCleaning } from '@/content/services/dryer-vent-cleaning'
+import { moldRemediationAirDucts } from '@/content/services/mold-remediation-air-ducts'
+import { moldRemediationHouse } from '@/content/services/mold-remediation-house'
 import { bethesda } from '@/content/locations/bethesda'
 import { alexandria } from '@/content/locations/alexandria'
 import { arlington } from '@/content/locations/arlington'
@@ -9,6 +11,9 @@ import { burke } from '@/content/locations/burke'
 import { officesSeedSource } from '@/content/offices'
 import type { LocationContentSeed } from '@/utilities/locations'
 import type { ServiceContent } from '@/utilities/services'
+import { mapHomeSectionsToSeed } from '@/utilities/homeSections'
+import { locationContentToSections, serviceContentToSections } from '@/utilities/sectionSeeds'
+import { DEFAULT_SERVICE_AREA_SLUG } from '@/utilities/partials'
 
 /**
  * Seed data for Amazon Air Duct Cleaning.
@@ -113,6 +118,23 @@ export const siteSettingsSeed = {
   ],
 }
 
+export const defaultServiceAreaPartialSeed = {
+  title: 'Service area — DC Metro',
+  slug: DEFAULT_SERVICE_AREA_SLUG,
+  generateSlug: false,
+  sections: [
+    {
+      type: 'serviceArea' as const,
+      anchorId: 'service_area',
+      tone: 'white' as const,
+      heading: 'Service Area',
+      mapEmbedUrl: siteSettingsSeed.serviceAreaMapEmbedUrl,
+      mapTitle: siteSettingsSeed.serviceAreaMapTitle,
+      regions: siteSettingsSeed.serviceAreaRegions,
+    },
+  ],
+}
+
 function customNav(label: string, url: string, detail?: string) {
   return {
     link: {
@@ -132,6 +154,7 @@ export const headerSeed = {
     logoAlt: 'Amazon Air Duct Cleaning',
   },
   showPhoneCta: true,
+  bottomEdge: 'none' as const,
   mobileCall: {
     enabled: true,
     display: 'icon' as const,
@@ -165,6 +188,7 @@ export const footerSeed = {
   tagline:
     'Professional air duct and dryer vent cleaning for homes and businesses across Virginia, Maryland, and Washington DC.',
   showContactInBrand: true,
+  topEdge: 'none' as const,
   copyrightText: '',
   columns: [
     {
@@ -199,6 +223,8 @@ export const footerSeed = {
         customNav('Air Duct Cleaning', '/air-duct-cleaning'),
         customNav('Dryer Vent Cleaning', '/dryer-vent-cleaning'),
         customNav('Combo Package', '/air-duct-and-dryer-vent-cleaning'),
+        customNav('Mold Remediation for Your Home', '/mold-remediation-house'),
+        customNav('Mold Remediation for Air Ducts', '/mold-remediation-air-ducts'),
         customNav('Blog', '/blog'),
         customNav('Privacy Policy', '/privacy-policy'),
         customNav('Terms of Service', '/terms-of-service'),
@@ -217,6 +243,8 @@ const serviceThumbs: Record<string, string> = {
   'air-duct-cleaning': '/img/services/Amazon_AIR_DUCT_CLEANING_small.webp',
   'dryer-vent-cleaning': '/img/services/AmazonDC-179_small.webp',
   'air-duct-and-dryer-vent-cleaning': '/img/services/Amazon_DRYER_VENT_CLEANING_small.webp',
+  'mold-remediation-house': '/img/Amazon.webp',
+  'mold-remediation-air-ducts': '/img/services/Amazon_AIR_DUCT_CLEANING_small.webp',
 }
 
 function mapService(service: ServiceContent) {
@@ -225,9 +253,9 @@ function mapService(service: ServiceContent) {
     slug: service.slug,
     summary: service.summary,
     description: service.description,
-    price: service.price,
-    compareAtPrice: service.compareAtPrice,
-    orderUrl: service.orderUrl,
+    price: service.price ?? null,
+    compareAtPrice: service.compareAtPrice ?? null,
+    orderUrl: service.orderUrl || '',
     thumbImage: serviceThumbs[service.slug] || service.heroImage,
     heroImage: service.heroImage,
     heroAlt: service.heroAlt,
@@ -235,7 +263,7 @@ function mapService(service: ServiceContent) {
     includesImage: service.includesImage,
     includesImageAlt: service.includesImageAlt,
     includes: service.includes.map((item) => ({ item })),
-    beforeAfter: service.beforeAfter,
+    beforeAfter: service.beforeAfter || [],
     why: service.why
       ? {
           heading: service.why.heading,
@@ -274,6 +302,7 @@ function mapService(service: ServiceContent) {
       : undefined,
     faqIntro: service.faqIntro,
     faq: service.faq.map((item) => ({ question: item.q, answer: item.a })),
+    sections: mapHomeSectionsToSeed(serviceContentToSections(service)),
     meta: {
       title: service.title,
       description: service.description,
@@ -321,6 +350,7 @@ function mapLocation(location: LocationContentSeed) {
     },
     faqIntro: location.faqIntro,
     faq: location.faq.map((item) => ({ question: item.q, answer: item.a })),
+    sections: mapHomeSectionsToSeed(locationContentToSections(location)),
     meta: {
       title: location.title,
       description: location.description,
@@ -332,6 +362,8 @@ export const servicesSeed = [
   mapService(airDuctCleaning),
   mapService(dryerVentCleaning),
   mapService(airDuctAndDryerVentCleaning),
+  mapService(moldRemediationHouse),
+  mapService(moldRemediationAirDucts),
 ]
 
 export const officesSeed = officesSeedSource.map((office) => ({

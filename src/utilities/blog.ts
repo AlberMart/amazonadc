@@ -2,6 +2,7 @@ import configPromise from '@payload-config'
 import { getPayload } from 'payload'
 
 import { resolveCmsImage, resolveCmsImageAlt } from '@/utilities/cmsImage'
+import { withDbRetry } from '@/utilities/dbRetry'
 
 export type BlogIndexItem = {
   slug: string
@@ -125,28 +126,35 @@ function mapPost(doc: Record<string, unknown>): BlogPost {
 }
 
 export async function getBlogIndex(): Promise<BlogIndexItem[]> {
-  const payload = await getPayload({ config: configPromise })
-  const result = await payload.find({
-    collection: 'posts',
-    draft: false,
-    limit: 100,
-    pagination: false,
-    depth: 1,
-    where: {
-      _status: { equals: 'published' },
-    },
-    sort: '-publishedAt',
-  })
+  try {
+    const result = await withDbRetry(async () => {
+      const payload = await getPayload({ config: configPromise })
+      return payload.find({
+        collection: 'posts',
+        draft: false,
+        limit: 100,
+        pagination: false,
+        depth: 1,
+        where: {
+          _status: { equals: 'published' },
+        },
+        sort: '-publishedAt',
+      })
+    })
 
-  return result.docs.map((doc) => {
-    const mapped = mapPost(doc as unknown as Record<string, unknown>)
-    return {
-      slug: mapped.slug,
-      title: mapped.title,
-      description: mapped.description,
-      hero: mapped.heroImage,
-    }
-  })
+    return result.docs.map((doc) => {
+      const mapped = mapPost(doc as unknown as Record<string, unknown>)
+      return {
+        slug: mapped.slug,
+        title: mapped.title,
+        description: mapped.description,
+        hero: mapped.heroImage,
+      }
+    })
+  } catch (error) {
+    console.error('Blog index unavailable', error)
+    return []
+  }
 }
 
 export async function getBlogPost(slug: string): Promise<BlogPost | null> {

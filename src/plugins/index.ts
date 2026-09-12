@@ -1,4 +1,5 @@
 import { revalidateTag } from 'next/cache'
+import { scheduleRevalidate } from '@/utilities/scheduleRevalidate'
 import { formBuilderPlugin } from '@payloadcms/plugin-form-builder'
 import { nestedDocsPlugin } from '@payloadcms/plugin-nested-docs'
 import { redirectsPlugin } from '@payloadcms/plugin-redirects'
@@ -70,7 +71,9 @@ export const plugins: Plugin[] = [
         afterChange: [
           ({ doc, req: { context } }) => {
             if (!context?.disableRevalidate) {
-              revalidateTag('contact_form', 'max')
+              scheduleRevalidate(() => {
+                revalidateTag('contact_form', 'max')
+              })
             }
             return doc
           },

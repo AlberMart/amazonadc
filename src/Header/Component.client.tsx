@@ -11,6 +11,8 @@ import type { ResolvedBrandMark } from '@/utilities/brandMark'
 import type { ResolvedNavLink } from '@/utilities/cmsLink'
 import type { ResolvedMobileCall } from '@/utilities/mobileCall'
 
+export type HeaderBottomEdge = 'none' | 'hairline' | 'scrolled'
+
 function isActive(pathname: string, hash: string, item: ResolvedNavLink) {
   const href = item.href
   const hashIndex = href.indexOf('#')
@@ -44,12 +46,14 @@ export const HeaderClient: React.FC<{
   phoneHref: string
   navItems: ResolvedNavLink[]
   mobileCall: ResolvedMobileCall | null
-}> = ({ brand, showPhoneCta, phoneDisplay, phoneHref, navItems, mobileCall }) => {
+  bottomEdge?: HeaderBottomEdge | null
+}> = ({ brand, showPhoneCta, phoneDisplay, phoneHref, navItems, mobileCall, bottomEdge = 'none' }) => {
   const { headerTheme, setHeaderTheme } = useHeaderTheme()
   const pathname = usePathname()
   const [theme, setTheme] = useState<string | null>(null)
   const [open, setOpen] = useState(false)
   const [hash, setHash] = useState('')
+  const [scrolled, setScrolled] = useState(false)
 
   useEffect(() => {
     setHeaderTheme(null)
@@ -101,12 +105,29 @@ export const HeaderClient: React.FC<{
     setHash(id)
   }
 
+  useEffect(() => {
+    if (bottomEdge !== 'scrolled') {
+      setScrolled(false)
+      return
+    }
+    const onScroll = () => setScrolled(window.scrollY > 8)
+    onScroll()
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [bottomEdge])
+
   const headerCall = showInHeader(mobileCall) ? mobileCall : null
   const floatingCall = showFloating(mobileCall) ? mobileCall : null
 
+  const showBottomEdge = bottomEdge === 'hairline' || (bottomEdge === 'scrolled' && scrolled)
+
   return (
     <header
-      className="site-header sticky top-0 z-40 border-b border-white/10 backdrop-blur"
+      className={`site-header sticky top-0 z-40 ${
+        showBottomEdge
+          ? 'site-header-edge border-b border-white/10 bg-[color-mix(in_srgb,var(--site-dark)_95%,transparent)] backdrop-blur'
+          : ''
+      }`}
       {...(theme ? { 'data-theme': theme } : {})}
     >
       <div className="container flex h-[72px] items-center justify-between gap-4">

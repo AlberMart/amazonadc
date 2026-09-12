@@ -59,7 +59,7 @@ export function TrustBadges({ badges }: { badges?: TrustBadgeItem[] }) {
   if (!items.length) return null
 
   return (
-    <section aria-label="Trust and review badges" className="site-badges py-3 text-center">
+    <div aria-label="Trust and review badges" className="text-center" role="region">
       <div
         ref={rowRef}
         className={`container flex flex-wrap items-center justify-center transition-[opacity,transform] duration-[400ms] ease-out motion-reduce:transform-none motion-reduce:opacity-100 ${
@@ -83,6 +83,6 @@ export function TrustBadges({ badges }: { badges?: TrustBadgeItem[] }) {
           </div>
         ))}
       </div>
-    </section>
+    </div>
   )
 }

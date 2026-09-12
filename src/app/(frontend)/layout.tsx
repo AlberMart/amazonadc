@@ -4,7 +4,6 @@ import React from 'react'
 
 import { AdminBar } from '@/components/AdminBar'
 import { ThemeVars } from '@/components/ThemeVars'
-import { TrustBadges } from '@/components/TrustBadges'
 import { AccessibilityWidget } from '@/components/AccessibilityWidget'
 import { SiteIntegrations } from '@/components/SiteIntegrations'
 import { Footer } from '@/Footer/Component'
@@ -12,9 +11,8 @@ import { Header } from '@/Header/Component'
 import { Providers } from '@/providers'
 import { InitTheme } from '@/providers/Theme/InitTheme'
 import { mergeOpenGraph } from '@/utilities/mergeOpenGraph'
-import { getCachedGlobal } from '@/utilities/getGlobals'
+import { getCachedGlobalSafe } from '@/utilities/getGlobals'
 import { draftMode } from 'next/headers'
-import { resolveCmsImage } from '@/utilities/cmsImage'
 import { resolveTheme } from '@/utilities/theme'
 
 import './globals.css'
@@ -22,16 +20,8 @@ import { getServerSideURL } from '@/utilities/getURL'
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const { isEnabled } = await draftMode()
-  const settings = await getCachedGlobal('site-settings', 1)()
+  const settings = await getCachedGlobalSafe('site-settings', 1)
   const theme = resolveTheme(settings?.theme)
-  const trustBadges = (settings?.trustBadges || [])
-    .map((badge) => ({
-      src: resolveCmsImage(badge.image, badge.src) || '',
-      alt: badge.alt || '',
-      width: badge.width || undefined,
-      height: badge.height || undefined,
-    }))
-    .filter((badge) => badge.src && badge.alt)
 
   return (
     <html
@@ -60,7 +50,6 @@ export default async function RootLayout({ children }: { children: React.ReactNo
 
           <Header />
           <main id="main">{children}</main>
-          <TrustBadges badges={trustBadges} />
           <Footer />
           {settings?.accessibility?.widget === 'builtin' ? <AccessibilityWidget /> : null}
         </Providers>

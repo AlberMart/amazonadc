@@ -1,6 +1,7 @@
 import type { GlobalConfig } from 'payload'
 
 import { brandMarkFields } from '@/fields/brandMark'
+import { headerBottomEdgeField } from '@/fields/chromeEdges'
 import { cmsImageFields } from '@/fields/cmsImage'
 import { colorField } from '@/fields/color'
 import { link } from '@/fields/link'
@@ -20,6 +21,12 @@ export const Header: GlobalConfig = {
   },
   fields: [
     brandMarkFields(),
+    {
+      type: 'collapsible',
+      label: 'Edges',
+      admin: { initCollapsed: true },
+      fields: [headerBottomEdgeField],
+    },
     {
       name: 'showPhoneCta',
       type: 'checkbox',
