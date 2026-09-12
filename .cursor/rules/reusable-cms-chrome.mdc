@@ -1,0 +1,29 @@
+---
+description: Reusable CMS chrome (Header/Footer/brand) — no project-domain hardcoding; keep layouts portable across sites.
+alwaysApply: true
+---
+
+# Reusable CMS chrome (закон)
+
+Header, Footer, brand mark и похожий chrome — **переносимый каркас**, не кусок одного бизнеса.
+
+## Правила
+
+1. **Нет доменных сущностей в схеме chrome/page sections.** Не `showOffices` / `airDuctHeading`. Используй portable типы: `featureSplit`, `cardGrid`, `prose`, колонки `links|contact|social`.
+2. **Композиция:** Footer/Home = массивы секций/колонок. Нет блока — нет секции. Порядок = порядок в админке.
+3. **Brand mark настраиваем:** `text` | `logo` | `both`. Текст и/или лого (upload / path). Не хардкодь только имя компании в JSX.
+4. **Site Settings** = NAP/бренд/соцсети/SEO defaults. Chrome их читает, не дублирует под один бизнес.
+5. **Seed = адаптер проекта.** Специфика живёт в seed/content, не в именах полей глобалов.
+6. **Процессы:** не оставляй лишние shell/python/curl/playwright; не плоди вторые `next dev`. Dev пользователя не убивай.
+
+## Плохо / хорошо
+
+```ts
+// ❌
+{ name: 'showOffices', type: 'checkbox' }
+{ name: 'insertOfficeLinks', type: 'checkbox' }
+
+// ✅
+columns: [{ title: 'Offices', type: 'links', links: [...] }]
+navItems: [{ link: { type: 'custom', url: '/locations/burke', label: 'Burke, VA' } }]
+```

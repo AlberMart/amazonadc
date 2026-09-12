@@ -23,16 +23,6 @@ export const redirects: NextConfig['redirects'] = async () => {
       permanent: true,
     },
     {
-      source: '/posts',
-      destination: '/blog',
-      permanent: true,
-    },
-    {
-      source: '/posts/:slug',
-      destination: '/blog/:slug',
-      permanent: true,
-    },
-    {
       destination: '/ie-incompatible.html',
       has: [
         {

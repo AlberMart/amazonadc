@@ -1,6 +1,6 @@
-import type { LocationContent } from '@/utilities/locations'
+import type { LocationContentSeed } from '@/utilities/locations'
 
-export const bethesda: LocationContent = {
+export const bethesda: LocationContentSeed = {
   slug: 'bethesda',
   title: 'Air Duct Cleaning in Bethesda, MD',
   headline: 'Serving Bethesda and All of Montgomery County',
@@ -10,13 +10,9 @@ export const bethesda: LocationContent = {
     'Trusted by homeowners and property managers across Bethesda, Rockville, Gaithersburg, Silver Spring, and dozens of surrounding communities. Our licensed technicians deliver professional air duct, dryer vent, chimney, and HVAC cleaning — with honest pricing and lasting results.',
   heroImage: '/img/Amazon.webp',
   heroAlt: 'Air Duct Cleaning Bethesda MD — Amazon Air Duct Cleaning',
-  phone: '+13018094544',
-  phoneDisplay: '(301) 809-4544',
-  email: 'support@amazonadc.com',
-  streetAddress: '7815 Old Georgetown Rd Ste 201',
   city: 'Bethesda',
   state: 'MD',
-  postalCode: '20814',
+  servedBy: 'bethesda',
   about: {
     heading: 'Your Local Bethesda Branch',
     paragraphs: [

@@ -28,3 +28,8 @@ tmp-old/
 npm-err.txt
 npm-out.txt
 test.env
+
+# Generated Cursor context dumps (run: python context_maker.py)
+project_context.txt
+db_schema.txt
+tsconfig.tsbuildinfo

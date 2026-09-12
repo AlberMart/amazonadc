@@ -1,0 +1,30 @@
+---
+description: Local Windows setup — Docker Postgres, Next/Payload dev server, seed, Fly deploy. Use when starting services, fixing DB connection, or running the site.
+globs:
+  - docker-compose.yml
+  - .env.example
+  - fly.toml
+  - package.json
+  - context_maker.py
+alwaysApply: false
+---
+
+# Local dev (Windows)
+
+## Run
+1. Postgres: `docker compose up -d` — host port **5433** → container 5432, db `amazonadc`, user/pass `payload`.
+2. App: `npm run dev` → http://localhost:3000 · admin http://localhost:3000/admin
+3. Seed CMS: `npm run seed` (needs running Postgres + `.env`).
+
+`.env` keys: `DATABASE_URL=postgresql://payload:payload@127.0.0.1:5433/amazonadc`, `PAYLOAD_SECRET`, `NEXT_PUBLIC_SERVER_URL=http://localhost:3000`.
+
+## Do not confuse
+- README may mention 5432; **this machine uses 5433** (`docker-compose.yml` + `.env.example`).
+- `/blog` is a rewrite to `/posts`. Service pages live at `/{slug}`, locations at `/locations/{slug}`.
+- Do not treat Payload media uploads (`public/media`) or `.next` as source.
+
+## After schema or seed changes
+`python context_maker.py` → refreshes `db_schema.txt` and `project_context.txt`.
+
+## Deploy
+`fly.toml` app `amazadc-next`, region `iad`. Secrets via `fly secrets`. Do not deploy unless the user asks.

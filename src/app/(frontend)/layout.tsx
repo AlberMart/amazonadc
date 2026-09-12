@@ -1,41 +1,49 @@
 import type { Metadata } from 'next'
 
-import { cn } from '@/utilities/ui'
-import { Fraunces, Outfit } from 'next/font/google'
 import React from 'react'
 
 import { AdminBar } from '@/components/AdminBar'
+import { ThemeVars } from '@/components/ThemeVars'
+import { TrustBadges } from '@/components/TrustBadges'
 import { Footer } from '@/Footer/Component'
 import { Header } from '@/Header/Component'
 import { Providers } from '@/providers'
 import { InitTheme } from '@/providers/Theme/InitTheme'
 import { mergeOpenGraph } from '@/utilities/mergeOpenGraph'
+import { getCachedGlobal } from '@/utilities/getGlobals'
 import { draftMode } from 'next/headers'
+import { resolveCmsImage } from '@/utilities/cmsImage'
+import { resolveTheme } from '@/utilities/theme'
 
 import './globals.css'
 import { getServerSideURL } from '@/utilities/getURL'
 
-const outfit = Outfit({
-  subsets: ['latin'],
-  variable: '--font-sans',
-  display: 'swap',
-})
-
-const fraunces = Fraunces({
-  subsets: ['latin'],
-  variable: '--font-display',
-  display: 'swap',
-})
-
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const { isEnabled } = await draftMode()
+  const settings = await getCachedGlobal('site-settings', 1)()
+  const theme = resolveTheme(settings?.theme)
+  const trustBadges = (settings?.trustBadges || [])
+    .map((badge) => ({
+      src: resolveCmsImage(badge.image, badge.src) || '',
+      alt: badge.alt || '',
+      width: badge.width || undefined,
+      height: badge.height || undefined,
+    }))
+    .filter((badge) => badge.src && badge.alt)
 
   return (
-    <html className={cn(outfit.variable, fraunces.variable)} lang="en" suppressHydrationWarning>
+    <html
+      data-card-style={theme.containers.cardStyle}
+      data-list-style={theme.containers.listStyle}
+      lang="en"
+      suppressHydrationWarning
+    >
       <head>
         <InitTheme />
-        <link href="/favicon.ico" rel="icon" sizes="32x32" />
-        <link href="/favicon.svg" rel="icon" type="image/svg+xml" />
+        <ThemeVars theme={settings?.theme} />
+        <link href="/favicon.ico" rel="icon" sizes="48x48" />
+        <link href="/favicon-32.png" rel="icon" type="image/png" sizes="32x32" />
+        <link href="/apple-touch-icon.png" rel="apple-touch-icon" />
       </head>
       <body className="font-[family-name:var(--font-sans)] antialiased">
         <Providers>
@@ -47,6 +55,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
 
           <Header />
           {children}
+          <TrustBadges badges={trustBadges} />
           <Footer />
         </Providers>
       </body>
@@ -69,5 +78,12 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+  },
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: '48x48' },
+      { url: '/favicon-32.png', type: 'image/png', sizes: '32x32' },
+    ],
+    apple: [{ url: '/apple-touch-icon.png', sizes: '180x180' }],
   },
 }

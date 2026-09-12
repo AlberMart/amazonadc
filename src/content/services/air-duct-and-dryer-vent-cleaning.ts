@@ -118,7 +118,7 @@ export const airDuctAndDryerVentCleaning: ServiceContent = {
     },
     {
       q: 'Which areas do you serve?',
-      a: 'Amazon Air Duct Cleaning serves Virginia, Maryland, and Washington DC. Call (800) 606-3334 to confirm availability in your area.',
+      a: 'We serve Virginia, Maryland, and Washington DC, including [Arlington, VA](/locations/arlington) and [Alexandria, VA](/locations/alexandria). Call (800) 606-3334 to confirm availability.',
     },
   ],
 }

@@ -1,8 +1,10 @@
 import Image from 'next/image'
 import React from 'react'
 
+import { Breadcrumbs } from '@/components/Breadcrumbs'
 import { ContactForm } from '@/components/ContactForm'
-import { ServiceArea, type ServiceAreaLocation } from '@/components/ServiceArea'
+import { TextWithLinks } from '@/components/TextWithLinks'
+import { ServiceArea } from '@/components/ServiceArea'
 import { ServiceOfferCards } from '@/components/ServiceOfferCards'
 import {
   getRelatedServices,
@@ -13,8 +15,8 @@ function CheckList({ items }: { items: string[] }) {
   return (
     <ul className="space-y-3">
       {items.map((item) => (
-        <li key={item} className="flex gap-3 text-[#0b1c2c]">
-          <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-amber-400" />
+        <li key={item} className="flex gap-3 text-[var(--site-heading)]">
+          <span className="site-list-marker" />
           <span>{item}</span>
         </li>
       ))}
@@ -22,25 +24,25 @@ function CheckList({ items }: { items: string[] }) {
   )
 }
 
-export async function ServicePage({
-  service,
-  locations,
-}: {
-  service: ServiceContent
-  locations: ServiceAreaLocation[]
-}) {
+export async function ServicePage({ service }: { service: ServiceContent }) {
   const related = await getRelatedServices(service.slug)
 
   return (
     <article>
-      <section className="relative isolate overflow-hidden bg-[#0b1c2c] text-white">
+      <section className="site-hero">
         <div
           aria-hidden
-          className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_20%_20%,rgba(56,189,248,0.22),transparent_45%),linear-gradient(160deg,#0b1c2c_0%,#12324a_55%,#0b1c2c_100%)]"
+          className="site-hero-wash"
         />
         <div className="container relative grid gap-10 py-16 md:grid-cols-[1.05fr_0.95fr] md:items-center md:py-20">
           <div>
-            <h1 className="font-[family-name:var(--font-display)] text-3xl leading-tight font-semibold tracking-tight sm:text-4xl md:text-5xl">
+            <Breadcrumbs
+              items={[
+                { label: 'Home', href: '/' },
+                { label: service.title },
+              ]}
+            />
+            <h1 className="font-display text-3xl leading-tight font-semibold tracking-tight sm:text-4xl md:text-5xl">
               {service.title}
             </h1>
             <p className="mt-6 text-3xl font-semibold text-white">
@@ -54,7 +56,7 @@ export async function ServicePage({
                 href={service.orderUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-md bg-amber-400 px-5 py-3 text-sm font-semibold text-[#0b1c2c] transition hover:bg-amber-300"
+                className="site-btn site-btn-primary"
               >
                 Order now
               </a>
@@ -66,7 +68,7 @@ export async function ServicePage({
               </a>
             </div>
           </div>
-          <div className="relative aspect-[4/3] overflow-hidden bg-[#12324a] shadow-[0_24px_60px_rgba(0,0,0,0.35)]">
+          <div className="relative aspect-[4/3] site-media shadow-[0_24px_60px_rgba(0,0,0,0.35)]">
             <Image
               src={service.heroImage}
               alt={service.heroAlt}
@@ -79,9 +81,9 @@ export async function ServicePage({
         </div>
       </section>
 
-      <section className="bg-[#f4f7fa] py-16 md:py-20">
+      <section className="bg-[var(--site-muted)] py-16 md:py-20">
         <div className="container grid gap-10 lg:grid-cols-2 lg:items-center">
-          <div className="relative aspect-[4/3] overflow-hidden bg-[#0b1c2c]">
+          <div className="relative aspect-[4/3] site-media">
             <Image
               src={service.includesImage}
               alt={service.includesImageAlt}
@@ -91,11 +93,11 @@ export async function ServicePage({
             />
           </div>
           <div>
-            <h2 className="font-[family-name:var(--font-display)] text-3xl font-semibold tracking-tight text-[#0b1c2c]">
+            <h2 className="font-display text-3xl font-semibold tracking-tight text-[var(--site-heading)]">
               What&apos;s included
             </h2>
             {service.includesIntro ? (
-              <p className="mt-3 text-[#516579]">{service.includesIntro}</p>
+              <p className="mt-3 site-body">{service.includesIntro}</p>
             ) : null}
             <div className="mt-6">
               <CheckList items={service.includes} />
@@ -104,7 +106,7 @@ export async function ServicePage({
               href={service.orderUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-8 inline-flex rounded-md bg-[#0b1c2c] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#12324a]"
+              className="mt-8 inline-flex site-btn site-btn-secondary"
             >
               Order now
             </a>
@@ -114,12 +116,12 @@ export async function ServicePage({
 
       <section className="bg-white py-16 md:py-20">
         <div className="container">
-          <h2 className="font-[family-name:var(--font-display)] text-3xl font-semibold tracking-tight text-[#0b1c2c]">
+          <h2 className="font-display text-3xl font-semibold tracking-tight text-[var(--site-heading)]">
             Proof of Cleaning with Before/After photos
           </h2>
           <div className="mt-8 grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-4">
             {service.beforeAfter.map((photo) => (
-              <div key={photo.src} className="relative aspect-[3/4] overflow-hidden bg-[#0b1c2c]">
+              <div key={photo.src} className="relative aspect-[3/4] site-media">
                 <Image
                   src={photo.src}
                   alt={photo.alt}
@@ -134,14 +136,14 @@ export async function ServicePage({
       </section>
 
       {service.processAside ? (
-        <section className="bg-[#0b1c2c] py-16 text-white md:py-20">
+        <section className="bg-[var(--site-dark)] py-16 text-white md:py-20">
           <div className="container grid gap-10 lg:grid-cols-2 lg:items-center">
             <div>
-              <h2 className="font-[family-name:var(--font-display)] text-3xl font-semibold tracking-tight">
+              <h2 className="font-display text-3xl font-semibold tracking-tight">
                 {service.processAside.heading}
               </h2>
               {service.processAside.paragraphs.map((p) => (
-                <p key={p} className="mt-4 text-sky-50/85 leading-relaxed">
+                <p key={p} className="mt-4 site-copy-on-dark leading-relaxed">
                   {p}
                 </p>
               ))}
@@ -149,7 +151,7 @@ export async function ServicePage({
             <ol className="space-y-5">
               {service.processAside.steps.map((step, i) => (
                 <li key={`${step.title}-${i}`} className="flex gap-4">
-                  <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-amber-400 text-sm font-semibold text-[#0b1c2c]">
+                  <span className="site-step-index">
                     {i + 1}
                   </span>
                   <p className="pt-1 text-sky-50/90 leading-relaxed">{step.text}</p>
@@ -161,7 +163,7 @@ export async function ServicePage({
       ) : null}
 
       {service.why ? (
-        <section className="bg-[#f4f7fa] py-16 md:py-20">
+        <section className="bg-[var(--site-muted)] py-16 md:py-20">
           <div className="container">
             <div
               className={
@@ -171,17 +173,17 @@ export async function ServicePage({
               }
             >
               <div>
-                <h2 className="font-[family-name:var(--font-display)] text-3xl font-semibold tracking-tight text-[#0b1c2c]">
+                <h2 className="font-display text-3xl font-semibold tracking-tight text-[var(--site-heading)]">
                   {service.why.heading}
                 </h2>
                 {service.why.paragraphs.map((p) => (
-                  <p key={p} className="mt-4 text-[#516579] leading-relaxed">
+                  <p key={p} className="mt-4 site-body leading-relaxed">
                     {p}
                   </p>
                 ))}
               </div>
               {service.why.image ? (
-                <div className="relative aspect-[4/3] overflow-hidden bg-[#0b1c2c]">
+                <div className="relative aspect-[4/3] site-media">
                   <Image
                     src={service.why.image}
                     alt={service.why.imageAlt || service.why.heading}
@@ -201,7 +203,7 @@ export async function ServicePage({
           <div className="container grid gap-10 md:grid-cols-2">
             {service.columns.map((col) => (
               <div key={col.heading}>
-                <h2 className="font-[family-name:var(--font-display)] text-2xl font-semibold tracking-tight text-[#0b1c2c] md:text-3xl">
+                <h2 className="font-display text-2xl font-semibold tracking-tight text-[var(--site-heading)] md:text-3xl">
                   {col.heading}
                 </h2>
                 <div className="mt-6">
@@ -216,10 +218,10 @@ export async function ServicePage({
       {service.listBlocks?.map((block, index) => (
         <section
           key={block.heading}
-          className={index % 2 === 0 ? 'bg-white py-16 md:py-20' : 'bg-[#f4f7fa] py-16 md:py-20'}
+          className={index % 2 === 0 ? 'bg-white py-16 md:py-20' : 'bg-[var(--site-muted)] py-16 md:py-20'}
         >
           <div className="container max-w-4xl">
-            <h2 className="font-[family-name:var(--font-display)] text-3xl font-semibold tracking-tight text-[#0b1c2c]">
+            <h2 className="font-display text-3xl font-semibold tracking-tight text-[var(--site-heading)]">
               {block.heading}
             </h2>
             <div className="mt-6">
@@ -231,25 +233,25 @@ export async function ServicePage({
 
       {service.process ? (
         <section
-          className={`${service.listBlocks?.length ? 'bg-white' : 'bg-[#f4f7fa]'} py-16 md:py-20`}
+          className={`${service.listBlocks?.length ? 'bg-white' : 'bg-[var(--site-muted)]'} py-16 md:py-20`}
         >
           <div className="container">
-            <h2 className="font-[family-name:var(--font-display)] text-3xl font-semibold tracking-tight text-[#0b1c2c]">
+            <h2 className="font-display text-3xl font-semibold tracking-tight text-[var(--site-heading)]">
               {service.process.heading}
             </h2>
             {service.process.intro ? (
-              <p className="mt-3 max-w-3xl text-[#516579]">{service.process.intro}</p>
+              <p className="mt-3 max-w-3xl site-body">{service.process.intro}</p>
             ) : null}
             <div className="mt-10 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
               {service.process.steps.map((step, i) => (
-                <div key={step.title} className="border border-[#d5dee8] bg-white p-5">
-                  <p className="text-sm font-semibold tracking-[0.16em] text-sky-700 uppercase">
+                <div key={step.title} className="site-card p-5">
+                  <p className="text-sm font-semibold tracking-[0.16em] text-[var(--site-link)] uppercase">
                     Step {i + 1}
                   </p>
-                  <h3 className="mt-2 font-[family-name:var(--font-display)] text-xl font-semibold text-[#0b1c2c]">
+                  <h3 className="mt-2 font-display text-xl font-semibold text-[var(--site-heading)]">
                     {step.title}
                   </h3>
-                  <p className="mt-3 text-sm leading-relaxed text-[#516579]">{step.text}</p>
+                  <p className="mt-3 text-sm leading-relaxed site-body">{step.text}</p>
                 </div>
               ))}
             </div>
@@ -260,11 +262,11 @@ export async function ServicePage({
       {service.scheduleCta ? (
         <section className="bg-white py-16 md:py-20">
           <div className="container max-w-4xl text-center">
-            <h2 className="font-[family-name:var(--font-display)] text-3xl font-semibold tracking-tight text-[#0b1c2c]">
+            <h2 className="font-display text-3xl font-semibold tracking-tight text-[var(--site-heading)]">
               {service.scheduleCta.heading}
             </h2>
             {service.scheduleCta.paragraphs.map((p) => (
-              <p key={p} className="mt-4 text-[#516579] leading-relaxed">
+              <p key={p} className="mt-4 site-body leading-relaxed">
                 {p}
               </p>
             ))}
@@ -272,7 +274,7 @@ export async function ServicePage({
               href={service.orderUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-8 inline-flex rounded-md bg-amber-400 px-6 py-3 text-sm font-semibold text-[#0b1c2c] transition hover:bg-amber-300"
+              className="mt-8 inline-flex site-btn site-btn-primary"
             >
               Order now
             </a>
@@ -281,19 +283,19 @@ export async function ServicePage({
       ) : null}
 
       {related.length ? (
-        <section className="bg-[#f4f7fa] py-16 md:py-20">
+        <section className="bg-[var(--site-muted)] py-16 md:py-20">
           <div className="container">
             <div className="mx-auto max-w-2xl text-center">
-              <h2 className="font-[family-name:var(--font-display)] text-3xl font-semibold tracking-tight text-[#0b1c2c] md:text-4xl">
+              <h2 className="font-display text-3xl font-semibold tracking-tight text-[var(--site-heading)] md:text-4xl">
                 More Air Duct Cleaning Services
               </h2>
-              <p className="mt-3 text-[#516579]">
+              <p className="mt-3 site-body">
                 Interested? Contact us at{' '}
-                <a className="font-medium text-sky-700 hover:underline" href="mailto:support@amazonadc.com">
+                <a className="site-link font-medium" href="mailto:support@amazonadc.com">
                   support@amazonadc.com
                 </a>
                 , or{' '}
-                <a className="font-medium text-sky-700 hover:underline" href="tel:+18006063334">
+                <a className="site-link font-medium" href="tel:+18006063334">
                   (800) 606-3334
                 </a>
               </p>
@@ -305,25 +307,27 @@ export async function ServicePage({
 
       <section className="bg-white py-16 md:py-20">
         <div className="container max-w-4xl">
-          <h2 className="font-[family-name:var(--font-display)] text-3xl font-semibold tracking-tight text-[#0b1c2c]">
+          <h2 className="font-display text-3xl font-semibold tracking-tight text-[var(--site-heading)]">
             Frequently Asked Questions
           </h2>
-          {service.faqIntro ? <p className="mt-3 text-[#516579]">{service.faqIntro}</p> : null}
+          {service.faqIntro ? <p className="mt-3 site-body">{service.faqIntro}</p> : null}
           <div className="mt-8 space-y-3">
             {service.faq.map((item) => (
               <details
                 key={item.q}
-                className="border border-[#d5dee8] bg-white px-4 py-3"
+                className="site-card px-4 py-3"
               >
-                <summary className="cursor-pointer font-semibold text-[#0b1c2c]">{item.q}</summary>
-                <p className="mt-3 text-[#516579] leading-relaxed">{item.a}</p>
+                <summary className="cursor-pointer font-semibold text-[var(--site-heading)]">{item.q}</summary>
+                <p className="mt-3 site-body leading-relaxed">
+                  <TextWithLinks text={item.a} />
+                </p>
               </details>
             ))}
           </div>
         </div>
       </section>
 
-      <ServiceArea locations={locations} />
+      <ServiceArea />
       <ContactForm sourcePage={`/${service.slug}`} />
     </article>
   )

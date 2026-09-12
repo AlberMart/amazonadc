@@ -3,6 +3,12 @@ import { getPayload } from 'payload'
 
 import type { HomeContent } from '@/content/home'
 import { homeContentSeed } from '@/content/home'
+import {
+  homeContentToSections,
+  homeSectionsSeed,
+  mapHomeSection,
+  type HomeSection,
+} from '@/utilities/homeSections'
 
 function texts(rows?: Array<{ text?: string | null } | null> | null): string[] {
   return (rows || []).map((row) => row?.text || '').filter(Boolean)
@@ -12,11 +18,11 @@ function items(rows?: Array<{ item?: string | null } | null> | null): string[] {
   return (rows || []).map((row) => row?.item || '').filter(Boolean)
 }
 
-function mapHomeContent(raw: Record<string, unknown> | null | undefined): HomeContent {
+function mapLegacyHomeContent(raw: Record<string, unknown> | null | undefined): HomeContent {
   if (!raw) return homeContentSeed
 
   return {
-    heroEyebrow: String(raw.heroEyebrow || homeContentSeed.heroEyebrow),
+    heroEyebrow: raw.heroEyebrow == null ? homeContentSeed.heroEyebrow : String(raw.heroEyebrow),
     heroHeadline: String(raw.heroHeadline || homeContentSeed.heroHeadline),
     heroSubheadline: String(raw.heroSubheadline || homeContentSeed.heroSubheadline),
     heroCtaLabel: String(raw.heroCtaLabel || homeContentSeed.heroCtaLabel),
@@ -26,7 +32,8 @@ function mapHomeContent(raw: Record<string, unknown> | null | undefined): HomeCo
     heroImage: String(raw.heroImage || homeContentSeed.heroImage),
     heroImageAlt: String(raw.heroImageAlt || homeContentSeed.heroImageAlt),
     aboutHeading: String(raw.aboutHeading || homeContentSeed.aboutHeading),
-    aboutParagraphs: texts(raw.aboutParagraphs as Array<{ text?: string | null }>) ||
+    aboutParagraphs:
+      texts(raw.aboutParagraphs as Array<{ text?: string | null }>) ||
       homeContentSeed.aboutParagraphs,
     aboutClosing: raw.aboutClosing ? String(raw.aboutClosing) : homeContentSeed.aboutClosing,
     aboutPhoneDisplay: raw.aboutPhoneDisplay
@@ -83,9 +90,9 @@ function mapHomeContent(raw: Record<string, unknown> | null | undefined): HomeCo
       (raw.processSteps as Array<{ title?: string | null; text?: string | null } | null>) || []
     )
       .filter(Boolean)
-      .map((step) => ({
-        title: String(step?.title || ''),
-        text: String(step?.text || ''),
+      .map((item) => ({
+        title: String(item?.title || ''),
+        text: String(item?.text || ''),
       })),
     servicesHeading: String(raw.servicesHeading || homeContentSeed.servicesHeading),
     servicesIntro: String(raw.servicesIntro || homeContentSeed.servicesIntro),
@@ -116,84 +123,57 @@ function mapHomeContent(raw: Record<string, unknown> | null | undefined): HomeCo
       })),
     reviewsHeading: String(raw.reviewsHeading || homeContentSeed.reviewsHeading),
     reviewsIntro: String(raw.reviewsIntro || homeContentSeed.reviewsIntro),
-    reviews: (
-      (raw.reviews as Array<{
-        initials?: string | null
-        author?: string | null
-        text?: string | null
-        googleUrl?: string | null
-      } | null>) || []
-    )
-      .filter(Boolean)
-      .map((review) => ({
-        initials: String(review?.initials || ''),
-        author: String(review?.author || ''),
-        text: String(review?.text || ''),
-        googleUrl: String(review?.googleUrl || ''),
-      })),
+    reviews: homeContentSeed.reviews,
   }
 }
 
-function withFallbackArrays(content: HomeContent): HomeContent {
-  return {
-    ...content,
-    aboutParagraphs: content.aboutParagraphs.length
-      ? content.aboutParagraphs
-      : homeContentSeed.aboutParagraphs,
-    pricingHighlights: content.pricingHighlights.length
-      ? content.pricingHighlights
-      : homeContentSeed.pricingHighlights,
-    pricingParagraphs: content.pricingParagraphs.length
-      ? content.pricingParagraphs
-      : homeContentSeed.pricingParagraphs,
-    airDuctParagraphs: content.airDuctParagraphs.length
-      ? content.airDuctParagraphs
-      : homeContentSeed.airDuctParagraphs,
-    dryerParagraphs: content.dryerParagraphs.length
-      ? content.dryerParagraphs
-      : homeContentSeed.dryerParagraphs,
-    whyItems: content.whyItems.length ? content.whyItems : homeContentSeed.whyItems,
-    processSteps: content.processSteps.length
-      ? content.processSteps
-      : homeContentSeed.processSteps,
-    serviceItems: content.serviceItems.length
-      ? content.serviceItems
-      : homeContentSeed.serviceItems,
-    faqItems: content.faqItems.length ? content.faqItems : homeContentSeed.faqItems,
-    reviews: content.reviews.length ? content.reviews : homeContentSeed.reviews,
+export type HomePageData = {
+  sections: HomeSection[]
+  /** FAQ items for JSON-LD (from faq section) */
+  faqItems: Array<{ q: string; a: string }>
+  meta: {
+    title?: string | null
+    description?: string | null
   }
 }
 
-export async function getHomeContent(): Promise<{
-  content: HomeContent
-  meta: { title?: string | null; description?: string | null }
-}> {
+export async function getHomeContent(): Promise<HomePageData> {
   const payload = await getPayload({ config: configPromise })
   const result = await payload.find({
     collection: 'pages',
-    draft: false,
+    where: {
+      and: [{ slug: { equals: 'home' } }, { pageKind: { equals: 'home' } }],
+    },
     limit: 1,
     pagination: false,
-    depth: 0,
-    where: {
-      and: [
-        { slug: { equals: 'home' } },
-        { pageKind: { equals: 'home' } },
-        { _status: { equals: 'published' } },
-      ],
-    },
+    depth: 1,
   })
 
-  const doc = result.docs[0]
-  const mapped = withFallbackArrays(
-    mapHomeContent(doc?.homeContent as Record<string, unknown> | null | undefined),
-  )
+  const doc = result.docs[0] as Record<string, unknown> | undefined
+  const meta =
+    (doc?.meta as { title?: string | null; description?: string | null } | undefined) || {}
+
+  const fromCms = ((doc?.homeSections as unknown[]) || [])
+    .map((row) => mapHomeSection(row as Record<string, unknown>))
+    .filter((row): row is HomeSection => Boolean(row))
+
+  const sections =
+    fromCms.length > 0
+      ? fromCms
+      : homeContentToSections(mapLegacyHomeContent(doc?.homeContent as Record<string, unknown>))
+
+  const faqSection = sections.find((section) => section.type === 'faq')
+  const faqItems =
+    faqSection?.faqItems?.filter((item) => item.q && item.a) ||
+    homeSectionsSeed.find((section) => section.type === 'faq')?.faqItems ||
+    []
 
   return {
-    content: mapped,
+    sections,
+    faqItems,
     meta: {
-      title: doc?.meta?.title,
-      description: doc?.meta?.description,
+      title: meta.title,
+      description: meta.description,
     },
   }
 }

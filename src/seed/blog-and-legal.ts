@@ -4,10 +4,13 @@ import whyDryer from '@/content/blog/why-clean-dryer-vents.json'
 import energyBills from '@/content/blog/how-dirty-air-ducts-increase-energy-bills.json'
 import allergies from '@/content/blog/can-dirty-air-ducts-cause-allergies.json'
 import neverClean from '@/content/blog/never-clean-air-ducts.json'
+import arlingtonHumidity from '@/content/blog/how-potomac-humidity-affects-arlington-air-quality.json'
+import alexandriaHumidity from '@/content/blog/how-potomac-humidity-affects-alexandria-air-quality.json'
 import {
   homeContentSeed,
   mapHomeContentToSeed,
 } from '@/content/home'
+import { mapHomeSectionsToSeed, homeSectionsSeed } from '@/utilities/homeSections'
 import {
   privacyPolicy,
   refundPolicy,
@@ -70,6 +73,8 @@ export const postsSeed = [
   mapPost(energyBills as BlogPost),
   mapPost(allergies as BlogPost),
   mapPost(neverClean as BlogPost),
+  mapPost(arlingtonHumidity as BlogPost),
+  mapPost(alexandriaHumidity as BlogPost),
 ]
 
 export const legalPagesSeed = [
@@ -87,6 +92,7 @@ export const homePageSeed = {
     type: 'none' as const,
   },
   layout: [],
+  homeSections: mapHomeSectionsToSeed(homeSectionsSeed),
   homeContent: mapHomeContentToSeed(homeContentSeed),
   meta: {
     title: 'Air Duct Cleaning in Virginia, Maryland & Washington DC',

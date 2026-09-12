@@ -116,7 +116,7 @@ export const airDuctCleaning: ServiceContent = {
     },
     {
       q: 'Which areas do you serve?',
-      a: 'Amazon Air Duct Cleaning serves Virginia, Maryland, and Washington DC. Call (800) 606-3334 to confirm availability in your area.',
+      a: 'We serve Virginia, Maryland, and Washington DC from offices in Burke and Bethesda, including [air duct cleaning in Arlington, VA](/locations/arlington) and [Alexandria, VA](/locations/alexandria). Call (800) 606-3334 to confirm availability.',
     },
   ],
 }

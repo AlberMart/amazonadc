@@ -2,19 +2,22 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
+import { Breadcrumbs } from '@/components/Breadcrumbs'
 import { ContactForm } from '@/components/ContactForm'
 import { ServiceArea } from '@/components/ServiceArea'
 import { SpecialOffers } from '@/components/SpecialOffers'
+import { TextWithLinks } from '@/components/TextWithLinks'
 import type { LocationContent } from '@/utilities/locations'
+import { getAllOffices } from '@/utilities/offices'
 import { getAllServiceCards } from '@/utilities/services'
 
 function CheckList({ items }: { items: string[] }) {
   return (
     <ul className="space-y-3">
       {items.map((item) => (
-        <li key={item} className="flex gap-3 text-[#0b1c2c]">
-          <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-amber-400" />
-          <span>{item}</span>
+        <li key={item} className="flex gap-3 text-[var(--site-heading)]">
+          <span className="site-list-marker" />
+          <TextWithLinks text={item} />
         </li>
       ))}
     </ul>
@@ -22,7 +25,7 @@ function CheckList({ items }: { items: string[] }) {
 }
 
 export async function LocationPage({ location }: { location: LocationContent }) {
-  const cards = await getAllServiceCards()
+  const [cards, offices] = await Promise.all([getAllServiceCards(), getAllOffices()])
   const offers = cards.map((service) => ({
     id: service.slug,
     title: service.title,
@@ -33,31 +36,32 @@ export async function LocationPage({ location }: { location: LocationContent }) 
     thumb: service.thumb,
   }))
 
-  const sibling =
-    location.slug === 'burke'
-      ? { href: '/locations/bethesda', label: 'Bethesda, MD' }
-      : { href: '/locations/burke', label: 'Burke, VA' }
+  const office = location.office
+  const hubSibling = offices.find((o) => o.slug !== office.slug)
 
   return (
     <article>
-      <section className="relative isolate overflow-hidden bg-[#0b1c2c] text-white">
+      <section className="site-hero">
         <div
           aria-hidden
-          className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_20%_20%,rgba(56,189,248,0.22),transparent_45%),linear-gradient(160deg,#0b1c2c_0%,#12324a_55%,#0b1c2c_100%)]"
+          className="site-hero-wash"
         />
         <div className="container relative grid gap-10 py-16 md:grid-cols-[1.05fr_0.95fr] md:items-center md:py-20">
           <div>
-            <h1 className="font-[family-name:var(--font-display)] text-3xl leading-tight font-semibold tracking-tight sm:text-4xl md:text-5xl">
+            <Breadcrumbs
+              items={[{ label: 'Home', href: '/' }, { label: location.city }]}
+            />
+            <h1 className="font-display text-3xl leading-tight font-semibold tracking-tight sm:text-4xl md:text-5xl">
               {location.title}
             </h1>
             <p className="mt-4 text-lg text-sky-100/90 md:text-xl">{location.headline}</p>
-            <p className="mt-5 max-w-xl text-sky-50/85 leading-relaxed">{location.intro}</p>
+            <p className="mt-5 max-w-xl site-copy-on-dark leading-relaxed">{location.intro}</p>
             <div className="mt-8 flex flex-wrap gap-4">
               <a
-                href={`tel:${location.phone}`}
-                className="rounded-md bg-amber-400 px-5 py-3 text-sm font-semibold text-[#0b1c2c] transition hover:bg-amber-300"
+                href={`tel:${office.phone}`}
+                className="site-btn site-btn-primary"
               >
-                Call {location.phoneDisplay}
+                Call {office.phoneDisplay}
               </a>
               <Link
                 href="#contact"
@@ -67,12 +71,22 @@ export async function LocationPage({ location }: { location: LocationContent }) 
               </Link>
             </div>
             <p className="mt-6 text-sm text-sky-100/80">
-              {location.streetAddress}
-              <br />
-              {location.city}, {location.state} {location.postalCode}
+              {location.isOfficeHub ? (
+                <>
+                  {office.streetAddress}
+                  <br />
+                  {office.city}, {office.state} {office.postalCode}
+                </>
+              ) : (
+                <>
+                  Served from our {office.city} office
+                  <br />
+                  {office.streetAddress}, {office.city}, {office.state} {office.postalCode}
+                </>
+              )}
             </p>
           </div>
-          <div className="relative aspect-[4/3] overflow-hidden bg-[#12324a] shadow-[0_24px_60px_rgba(0,0,0,0.35)]">
+          <div className="relative aspect-[4/3] site-media shadow-[0_24px_60px_rgba(0,0,0,0.35)]">
             <Image
               src={location.heroImage}
               alt={location.heroAlt}
@@ -85,14 +99,14 @@ export async function LocationPage({ location }: { location: LocationContent }) 
         </div>
       </section>
 
-      <section className="bg-[#f4f7fa] py-16 md:py-20">
+      <section className="bg-[var(--site-muted)] py-16 md:py-20">
         <div className="container max-w-4xl">
-          <h2 className="font-[family-name:var(--font-display)] text-3xl font-semibold tracking-tight text-[#0b1c2c]">
+          <h2 className="font-display text-3xl font-semibold tracking-tight text-[var(--site-heading)]">
             {location.about.heading}
           </h2>
           {location.about.paragraphs.map((p) => (
-            <p key={p} className="mt-4 text-[#516579] leading-relaxed">
-              {p}
+            <p key={p} className="mt-4 site-body leading-relaxed">
+              <TextWithLinks text={p} />
             </p>
           ))}
           <div className="mt-8">
@@ -103,19 +117,19 @@ export async function LocationPage({ location }: { location: LocationContent }) 
 
       <SpecialOffers services={offers} title={location.offersTitle} />
 
-      <section className="bg-[#f4f7fa] py-16 md:py-20">
+      <section className="bg-[var(--site-muted)] py-16 md:py-20">
         <div className="container">
-          <h2 className="font-[family-name:var(--font-display)] text-3xl font-semibold tracking-tight text-[#0b1c2c]">
+          <h2 className="font-display text-3xl font-semibold tracking-tight text-[var(--site-heading)]">
             {location.services.heading}
           </h2>
-          <p className="mt-3 max-w-3xl text-[#516579]">{location.services.intro}</p>
+          <p className="mt-3 max-w-3xl site-body">{location.services.intro}</p>
           <div className="mt-10 grid gap-4 md:grid-cols-2">
             {location.services.items.map((item) => (
-              <div key={item.title} className="border border-[#d5dee8] bg-white p-5">
-                <h3 className="font-[family-name:var(--font-display)] text-xl font-semibold text-[#0b1c2c]">
+              <div key={item.title} className="site-card p-5">
+                <h3 className="font-display text-xl font-semibold text-[var(--site-heading)]">
                   {item.title}
                 </h3>
-                <p className="mt-3 text-sm leading-relaxed text-[#516579]">{item.text}</p>
+                <p className="mt-3 text-sm leading-relaxed site-body">{item.text}</p>
               </div>
             ))}
           </div>
@@ -124,121 +138,95 @@ export async function LocationPage({ location }: { location: LocationContent }) 
 
       <section className="bg-white py-16 md:py-20">
         <div className="container">
-          <h2 className="font-[family-name:var(--font-display)] text-3xl font-semibold tracking-tight text-[#0b1c2c]">
+          <h2 className="font-display text-3xl font-semibold tracking-tight text-[var(--site-heading)]">
             {location.why.heading}
           </h2>
           <div className="mt-10 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
             {location.why.items.map((item) => (
-              <div key={item.title} className="border border-[#d5dee8] bg-[#f8fafc] p-5">
-                <h3 className="font-[family-name:var(--font-display)] text-lg font-semibold text-[#0b1c2c]">
+              <div key={item.title} className="site-card site-card-filled p-5">
+                <h3 className="font-display text-lg font-semibold text-[var(--site-heading)]">
                   {item.title}
                 </h3>
-                <p className="mt-3 text-sm leading-relaxed text-[#516579]">{item.text}</p>
+                <p className="mt-3 text-sm leading-relaxed site-body">{item.text}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="bg-[#f4f7fa] py-16 md:py-20">
+      <section className="bg-[var(--site-muted)] py-16 md:py-20">
         <div className="container">
-          <h2 className="font-[family-name:var(--font-display)] text-3xl font-semibold tracking-tight text-[#0b1c2c]">
+          <h2 className="font-display text-3xl font-semibold tracking-tight text-[var(--site-heading)]">
             {location.communities.heading}
           </h2>
-          <p className="mt-3 max-w-3xl text-[#516579]">{location.communities.intro}</p>
+          <p className="mt-3 max-w-3xl site-body">{location.communities.intro}</p>
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {location.communities.groups.map((group) => (
-              <div key={group.title} className="border border-[#d5dee8] bg-white p-5">
-                <h3 className="font-[family-name:var(--font-display)] text-lg font-semibold text-[#0b1c2c]">
+              <div key={group.title} className="site-card p-5">
+                <h3 className="font-display text-lg font-semibold text-[var(--site-heading)]">
                   {group.title}
                 </h3>
-                <p className="mt-3 text-sm leading-relaxed text-[#516579]">{group.places}</p>
+                <p className="mt-3 text-sm leading-relaxed site-body">
+                  <TextWithLinks text={group.places} />
+                </p>
               </div>
             ))}
           </div>
-          <p className="mt-8 text-sm text-[#516579]">
-            Also serving from our{' '}
-            <Link href={sibling.href} className="font-semibold text-sky-700 hover:underline">
-              {sibling.label}
-            </Link>{' '}
-            office.
-          </p>
+          {hubSibling ? (
+            <p className="mt-8 text-sm site-body">
+              Also serving from our{' '}
+              <Link
+                href={`/locations/${hubSibling.slug}`}
+                className="site-link"
+              >
+                {hubSibling.city}, {hubSibling.state}
+              </Link>{' '}
+              office.
+            </p>
+          ) : null}
         </div>
       </section>
 
       <ServiceArea
-        locations={[
-          {
-            id: location.slug,
-            title: location.title,
-            slug: location.slug,
-            city: location.city,
-            state: location.state,
-            streetAddress: location.streetAddress,
-            postalCode: location.postalCode,
-            phone: location.phone,
-          },
-          ...(location.slug === 'burke'
-            ? [
-                {
-                  id: 'bethesda',
-                  title: 'Air Duct Cleaning in Bethesda, MD',
-                  slug: 'bethesda',
-                  city: 'Bethesda',
-                  state: 'MD',
-                  streetAddress: '7815 Old Georgetown Rd Ste 201',
-                  postalCode: '20814',
-                  phone: '+13018094544',
-                },
-              ]
-            : [
-                {
-                  id: 'burke',
-                  title: 'Air Duct Cleaning in Burke, VA',
-                  slug: 'burke',
-                  city: 'Burke',
-                  state: 'VA',
-                  streetAddress: '5641 Burke Centre Pkwy Ste 119',
-                  postalCode: '22015',
-                  phone: '+15714600001',
-                },
-              ]),
-        ]}
+        callHref={`tel:${office.phone}`}
+        callLabel={`Call ${office.phoneDisplay}`}
       />
 
       <section className="bg-white py-16 md:py-20">
         <div className="container">
-          <h2 className="font-[family-name:var(--font-display)] text-3xl font-semibold tracking-tight text-[#0b1c2c]">
+          <h2 className="font-display text-3xl font-semibold tracking-tight text-[var(--site-heading)]">
             {location.process.heading}
           </h2>
-          <p className="mt-3 max-w-3xl text-[#516579]">{location.process.intro}</p>
+          <p className="mt-3 max-w-3xl site-body">{location.process.intro}</p>
           <div className="mt-10 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
             {location.process.steps.map((step, i) => (
-              <div key={step.title} className="border border-[#d5dee8] bg-[#f8fafc] p-5">
-                <p className="text-sm font-semibold tracking-[0.16em] text-sky-700 uppercase">
+              <div key={step.title} className="site-card site-card-filled p-5">
+                <p className="text-sm font-semibold tracking-[0.16em] text-[var(--site-link)] uppercase">
                   Step {i + 1}
                 </p>
-                <h3 className="mt-2 font-[family-name:var(--font-display)] text-xl font-semibold text-[#0b1c2c]">
+                <h3 className="mt-2 font-display text-xl font-semibold text-[var(--site-heading)]">
                   {step.title}
                 </h3>
-                <p className="mt-3 text-sm leading-relaxed text-[#516579]">{step.text}</p>
+                <p className="mt-3 text-sm leading-relaxed site-body">{step.text}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="bg-[#f4f7fa] py-16 md:py-20">
+      <section className="bg-[var(--site-muted)] py-16 md:py-20">
         <div className="container max-w-4xl">
-          <h2 className="font-[family-name:var(--font-display)] text-3xl font-semibold tracking-tight text-[#0b1c2c]">
-            Frequently Asked Questions — {location.city} Location
+          <h2 className="font-display text-3xl font-semibold tracking-tight text-[var(--site-heading)]">
+            Frequently Asked Questions — {location.city}
           </h2>
-          <p className="mt-3 text-[#516579]">{location.faqIntro}</p>
+          <p className="mt-3 site-body">{location.faqIntro}</p>
           <div className="mt-8 space-y-3">
             {location.faq.map((item) => (
-              <details key={item.q} className="border border-[#d5dee8] bg-white px-4 py-3">
-                <summary className="cursor-pointer font-semibold text-[#0b1c2c]">{item.q}</summary>
-                <p className="mt-3 text-[#516579] leading-relaxed">{item.a}</p>
+              <details key={item.q} className="site-card px-4 py-3">
+                <summary className="cursor-pointer font-semibold text-[var(--site-heading)]">{item.q}</summary>
+                <p className="mt-3 site-body leading-relaxed">
+                  <TextWithLinks text={item.a} />
+                </p>
               </details>
             ))}
           </div>
@@ -248,8 +236,8 @@ export async function LocationPage({ location }: { location: LocationContent }) 
       <div id="contact">
         <ContactForm
           sourcePage={`/locations/${location.slug}`}
-          phoneDisplay={location.phoneDisplay}
-          phoneHref={location.phone}
+          phoneDisplay={office.phoneDisplay}
+          phoneHref={office.phone}
         />
       </div>
     </article>

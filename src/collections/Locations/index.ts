@@ -3,13 +3,8 @@ import type { CollectionConfig, Field } from 'payload'
 import { anyone } from '../../access/anyone'
 import { authenticated } from '../../access/authenticated'
 import { slugField } from 'payload'
-import {
-  MetaDescriptionField,
-  MetaImageField,
-  MetaTitleField,
-  OverviewField,
-  PreviewField,
-} from '@payloadcms/plugin-seo/fields'
+import { revalidateLocation, revalidateLocationDelete } from './hooks/revalidateLocation'
+import { seoMetaTabFields } from '../../fields/seoMeta'
 
 const textItem = (name = 'text'): Field => ({
   name,
@@ -32,8 +27,18 @@ export const Locations: CollectionConfig = {
     update: authenticated,
   },
   admin: {
-    defaultColumns: ['title', 'slug', 'phone', 'updatedAt'],
+    group: 'Content',
+    defaultColumns: ['title', 'slug', 'city', 'updatedAt'],
     useAsTitle: 'title',
+    description: 'City SEO pages. Public URL: /locations/[slug]. Link each page to the serving office via servedBy.',
+    preview: (doc) => {
+      const slug = typeof doc?.slug === 'string' ? doc.slug : ''
+      return slug ? `/locations/${slug}` : null
+    },
+  },
+  hooks: {
+    afterChange: [revalidateLocation],
+    afterDelete: [revalidateLocationDelete],
   },
   fields: [
     {
@@ -60,9 +65,16 @@ export const Locations: CollectionConfig = {
       required: true,
     },
     {
+      name: 'heroMedia',
+      type: 'upload',
+      relationTo: 'media',
+      admin: { description: 'Hero image upload (preferred). Edit crop in Media.' },
+    },
+    {
       name: 'heroImage',
       type: 'text',
       required: true,
+      admin: { description: 'Or public path if no upload' },
     },
     {
       name: 'heroAlt',
@@ -73,6 +85,9 @@ export const Locations: CollectionConfig = {
       name: 'city',
       type: 'text',
       required: true,
+      admin: {
+        description: 'City this page targets (e.g. Arlington — not the office city unless this is an office hub page).',
+      },
     },
     {
       name: 'state',
@@ -80,29 +95,13 @@ export const Locations: CollectionConfig = {
       required: true,
     },
     {
-      name: 'phone',
-      type: 'text',
+      name: 'servedBy',
+      type: 'relationship',
+      relationTo: 'offices',
       required: true,
-    },
-    {
-      name: 'phoneDisplay',
-      type: 'text',
-      required: true,
-    },
-    {
-      name: 'email',
-      type: 'email',
-      defaultValue: 'support@amazonadc.com',
-    },
-    {
-      name: 'streetAddress',
-      type: 'text',
-      required: true,
-    },
-    {
-      name: 'postalCode',
-      type: 'text',
-      required: true,
+      admin: {
+        description: 'Physical office that serves this city. Phone and address on the page come from this office.',
+      },
     },
     {
       name: 'offersTitle',
@@ -196,6 +195,9 @@ export const Locations: CollectionConfig = {
     {
       name: 'faq',
       type: 'array',
+      admin: {
+        description: 'Shown on the page and emitted as FAQPage JSON-LD for this URL.',
+      },
       fields: [
         { name: 'question', type: 'text', required: true },
         { name: 'answer', type: 'textarea', required: true },
@@ -211,25 +213,7 @@ export const Locations: CollectionConfig = {
         {
           name: 'meta',
           label: 'SEO',
-          fields: [
-            OverviewField({
-              titlePath: 'meta.title',
-              descriptionPath: 'meta.description',
-              imagePath: 'meta.image',
-            }),
-            MetaTitleField({
-              hasGenerateFn: true,
-            }),
-            MetaImageField({
-              relationTo: 'media',
-            }),
-            MetaDescriptionField({}),
-            PreviewField({
-              hasGenerateFn: true,
-              titlePath: 'meta.title',
-              descriptionPath: 'meta.description',
-            }),
-          ],
+          fields: seoMetaTabFields(),
         },
       ],
     },

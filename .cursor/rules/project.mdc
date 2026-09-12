@@ -1,0 +1,14 @@
+---
+description: Amazon ADC autonomy, stack, and context_maker workflow
+alwaysApply: true
+---
+
+# amazonadc
+
+- Stack: Next.js 15 App Router + Payload CMS 3 + Postgres + Tailwind. Deploy: Fly.io (`amazadc-next`).
+- Before coding: search the repo yourself. Use `db_schema.txt`, `src/payload.config.ts`, collections, routes. Prefer targeted file search over dumping `project_context.txt` into every chat.
+- Schema changes: edit Payload collection/global configs, run `npm run generate:types`, then `python context_maker.py`. Payload Postgres adapter syncs tables on app start — do not invent raw SQL migrations unless asked.
+- Never commit or push unless the user explicitly asks. Never commit `.env`.
+- Prefer existing patterns in collections / frontend pages / `src/content` over new architecture.
+- Public site: `src/app/(frontend)`, `src/components`. CMS admin: `/admin`. Seed: `npm run seed`.
+- After DB/CMS schema work, refresh context: `python context_maker.py`.

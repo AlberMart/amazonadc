@@ -4,11 +4,12 @@ import type { Media, Page, Post, Config } from '../payload-types'
 
 import { mergeOpenGraph } from './mergeOpenGraph'
 import { getServerSideURL } from './getURL'
+import { pageTitle, SITE_NAME } from './seo'
 
 const getImageURL = (image?: Media | Config['db']['defaultIDType'] | null) => {
   const serverUrl = getServerSideURL()
 
-  let url = serverUrl + '/website-template-OG.webp'
+  let url = serverUrl + '/img/Amazon.webp'
 
   if (image && typeof image === 'object' && 'url' in image) {
     const ogUrl = image.sizes?.og?.url
@@ -26,12 +27,12 @@ export const generateMeta = async (args: {
 
   const ogImage = getImageURL(doc?.meta?.image)
 
-  const title = doc?.meta?.title
-    ? doc?.meta?.title + ' | Payload Website Template'
-    : 'Payload Website Template'
+  const path = Array.isArray(doc?.slug) ? `/${doc.slug.join('/')}` : doc?.slug ? `/${doc.slug}` : '/'
+  const title = pageTitle(doc?.meta?.title || SITE_NAME)
 
   return {
     description: doc?.meta?.description,
+    alternates: { canonical: `${getServerSideURL().replace(/\/$/, '')}${path === '/home' ? '/' : path}` },
     openGraph: mergeOpenGraph({
       description: doc?.meta?.description || '',
       images: ogImage
@@ -42,8 +43,8 @@ export const generateMeta = async (args: {
           ]
         : undefined,
       title,
-      url: Array.isArray(doc?.slug) ? doc?.slug.join('/') : '/',
+      url: path === '/home' ? '/' : path,
     }),
-    title,
+    title: { absolute: title },
   }
 }

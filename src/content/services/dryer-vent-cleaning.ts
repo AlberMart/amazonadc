@@ -95,6 +95,10 @@ export const dryerVentCleaning: ServiceContent = {
       a: 'Unfortunately, no. Gas dryer vents also release carbon monoxide, but if the vent is clogged, it may cause a dangerous buildup of carbon monoxide, putting you and your family at risk.',
     },
     {
+      q: 'Do you clean dryer vents in Arlington, VA?',
+      a: 'Yes. Schedule flat-rate dryer vent cleaning in [Arlington](/locations/arlington) or [Alexandria](/locations/alexandria) from our Burke office, or call (800) 606-3334.',
+    },
+    {
       q: 'Does air duct cleaning improve indoor air quality?',
       a: 'Yes — removing dust and allergens can significantly improve air quality and HVAC efficiency.',
     },

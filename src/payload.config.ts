@@ -8,6 +8,7 @@ import { Categories } from './collections/Categories'
 import { Leads } from './collections/Leads'
 import { Locations } from './collections/Locations'
 import { Media } from './collections/Media'
+import { Offices } from './collections/Offices'
 import { Pages } from './collections/Pages'
 import { Posts } from './collections/Posts'
 import { Services } from './collections/Services'
@@ -65,8 +66,10 @@ export default buildConfig({
     pool: {
       connectionString: process.env.DATABASE_URL || '',
     },
+    // Schema synced via seed + additive SQL; interactive drizzle push hangs headless shells.
+    push: false,
   }),
-  collections: [Pages, Posts, Services, Locations, Leads, Media, Categories, Users],
+  collections: [Pages, Posts, Services, Locations, Offices, Leads, Media, Categories, Users],
   cors: [getServerSideURL()].filter(Boolean),
   globals: [Header, Footer, SiteSettings],
   plugins,

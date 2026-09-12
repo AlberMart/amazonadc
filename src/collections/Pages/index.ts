@@ -8,6 +8,7 @@ import { Content } from '../../blocks/Content/config'
 import { FormBlock } from '../../blocks/Form/config'
 import { MediaBlock } from '../../blocks/MediaBlock/config'
 import { homeContentFields } from '@/fields/homeContent'
+import { homeSectionsFields } from '@/fields/homeSections'
 import { hero } from '@/heros/config'
 import { slugField } from 'payload'
 import { populatePublishedAt } from '../../hooks/populatePublishedAt'
@@ -104,7 +105,17 @@ export const Pages: CollectionConfig<'pages'> = {
           },
         },
         {
-          fields: [homeContentFields],
+          fields: [
+            homeSectionsFields,
+            {
+              ...homeContentFields,
+              admin: {
+                ...(homeContentFields.admin || {}),
+                condition: () => false,
+                description: 'Deprecated flat homepage fields — use Sections above.',
+              },
+            },
+          ],
           label: 'Homepage',
           admin: {
             condition: (data) => data?.pageKind === 'home',

@@ -6,12 +6,24 @@ type ContactFormProps = {
   sourcePage?: string
   phoneDisplay?: string
   phoneHref?: string
+  email?: string
+  heading?: string
+  intro?: string
+  submitLabel?: string
+  submittingLabel?: string
+  successMessage?: string
 }
 
 export function ContactForm({
   sourcePage = '/',
   phoneDisplay = '(800) 606-3334',
   phoneHref = '+18006063334',
+  email = 'support@amazonadc.com',
+  heading = 'Contact Us',
+  intro,
+  submitLabel = 'Send',
+  submittingLabel = 'Sending…',
+  successMessage = 'Your message has been sent. Thank you!',
 }: ContactFormProps) {
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
   const [error, setError] = useState<string | null>(null)
@@ -56,16 +68,20 @@ export function ContactForm({
   return (
     <section id="contact" className="container py-16">
       <div className="mx-auto max-w-2xl">
-        <h2 className="mb-2 text-3xl font-bold tracking-tight">Contact Us</h2>
-        <p className="mb-6 text-muted-foreground">
-          Our specialists will contact you immediately.{' '}
-          <a className="underline" href={`tel:${phoneHref}`}>
-            {phoneDisplay}
-          </a>{' '}
-          ·{' '}
-          <a className="underline" href="mailto:support@amazonadc.com">
-            support@amazonadc.com
-          </a>
+        <h2 className="site-heading mb-2 text-3xl font-semibold tracking-tight">{heading}</h2>
+        <p className="site-body mb-6">
+          {intro || (
+            <>
+              Our specialists will contact you immediately.{' '}
+              <a className="underline" href={`tel:${phoneHref.replace(/^tel:/, '')}`}>
+                {phoneDisplay}
+              </a>{' '}
+              ·{' '}
+              <a className="underline" href={`mailto:${email}`}>
+                {email}
+              </a>
+            </>
+          )}
         </p>
 
         <form onSubmit={onSubmit} className="grid gap-4" noValidate>
@@ -113,16 +129,16 @@ export function ContactForm({
           ) : null}
 
           {status === 'success' ? (
-            <p className="text-sm text-green-700">Your message has been sent. Thank you!</p>
+            <p className="text-sm text-green-700">{successMessage}</p>
           ) : null}
           {status === 'error' && error ? <p className="text-sm text-red-600">{error}</p> : null}
 
           <button
             type="submit"
             disabled={status === 'loading'}
-            className="rounded-md bg-neutral-900 px-5 py-3 text-sm font-semibold text-white disabled:opacity-60"
+            className="site-btn site-btn-secondary disabled:opacity-60"
           >
-            {status === 'loading' ? 'Sending…' : 'Send'}
+            {status === 'loading' ? submittingLabel : submitLabel}
           </button>
         </form>
       </div>

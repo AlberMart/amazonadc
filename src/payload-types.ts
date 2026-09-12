@@ -71,6 +71,7 @@ export interface Config {
     posts: Post;
     services: Service;
     locations: Location;
+    offices: Office;
     leads: Lead;
     media: Media;
     categories: Category;
@@ -96,6 +97,7 @@ export interface Config {
     posts: PostsSelect<false> | PostsSelect<true>;
     services: ServicesSelect<false> | ServicesSelect<true>;
     locations: LocationsSelect<false> | LocationsSelect<true>;
+    offices: OfficesSelect<false> | OfficesSelect<true>;
     leads: LeadsSelect<false> | LeadsSelect<true>;
     media: MediaSelect<false> | MediaSelect<true>;
     categories: CategoriesSelect<false> | CategoriesSelect<true>;
@@ -213,8 +215,168 @@ export interface Page {
     media?: (number | null) | Media;
   };
   layout?: (CallToActionBlock | ContentBlock | MediaBlock | ArchiveBlock | FormBlock)[] | null;
-  homeContent: {
-    heroEyebrow: string;
+  /**
+   * Ordered homepage sections. Add, remove, or reorder freely. Use portable types (featureSplit for any image+copy block — not “air duct” / “dryer” field names).
+   */
+  homeSections?:
+    | {
+        type:
+          | 'hero'
+          | 'prose'
+          | 'offers'
+          | 'pricing'
+          | 'featureSplit'
+          | 'cardGrid'
+          | 'steps'
+          | 'serviceArea'
+          | 'blogTeaser'
+          | 'faq'
+          | 'reviews'
+          | 'contact';
+        /**
+         * Optional HTML id for in-page links (about, contact, …)
+         */
+        anchorId?: string | null;
+        tone?: ('white' | 'muted' | 'dark') | null;
+        appearance?: {
+          background?:
+            | (
+                | 'inherit'
+                | 'primary'
+                | 'secondary'
+                | 'tertiary'
+                | 'accent'
+                | 'background'
+                | 'muted'
+                | 'dark'
+                | 'card'
+                | 'heading'
+                | 'body'
+                | 'onDark'
+                | 'custom'
+              )
+            | null;
+          backgroundCustom?: string | null;
+          headingColor?:
+            | (
+                | 'inherit'
+                | 'primary'
+                | 'secondary'
+                | 'tertiary'
+                | 'accent'
+                | 'background'
+                | 'muted'
+                | 'dark'
+                | 'card'
+                | 'heading'
+                | 'body'
+                | 'onDark'
+                | 'custom'
+              )
+            | null;
+          headingCustom?: string | null;
+          bodyColor?:
+            | (
+                | 'inherit'
+                | 'primary'
+                | 'secondary'
+                | 'tertiary'
+                | 'accent'
+                | 'background'
+                | 'muted'
+                | 'dark'
+                | 'card'
+                | 'heading'
+                | 'body'
+                | 'onDark'
+                | 'custom'
+              )
+            | null;
+          bodyCustom?: string | null;
+          cardStyle?: ('inherit' | 'bordered' | 'filled' | 'elevated' | 'plain') | null;
+          radius?: ('inherit' | 'none' | 'sm' | 'md' | 'lg' | 'xl' | 'full') | null;
+          listStyle?: ('inherit' | 'check' | 'disc' | 'numbered' | 'none') | null;
+          ctaVariant?: ('inherit' | 'primary' | 'secondary' | 'tertiary') | null;
+        };
+        eyebrow?: string | null;
+        heading?: string | null;
+        subheadline?: string | null;
+        intro?: string | null;
+        paragraphs?:
+          | {
+              text: string;
+              id?: string | null;
+            }[]
+          | null;
+        highlights?:
+          | {
+              item: string;
+              id?: string | null;
+            }[]
+          | null;
+        items?:
+          | {
+              title: string;
+              text: string;
+              id?: string | null;
+            }[]
+          | null;
+        steps?:
+          | {
+              title: string;
+              text: string;
+              id?: string | null;
+            }[]
+          | null;
+        /**
+         * Also feeds FAQPage JSON-LD when present on the home page.
+         */
+        faqItems?:
+          | {
+              question: string;
+              answer: string;
+              id?: string | null;
+            }[]
+          | null;
+        /**
+         * Upload (preferred). You can crop/focal-point the file in Media.
+         */
+        imageUpload?: (number | null) | Media;
+        /**
+         * Or public path, e.g. /img/… (used if no upload)
+         */
+        image?: string | null;
+        /**
+         * Alt text. Falls back to the Media alt if empty.
+         */
+        imageAlt?: string | null;
+        imagePosition?: ('right' | 'left') | null;
+        ctaLabel?: string | null;
+        ctaHref?: string | null;
+        phoneDisplay?: string | null;
+        phoneHref?: string | null;
+        /**
+         * Optional line before phone link
+         */
+        closingText?: string | null;
+        viewAllLabel?: string | null;
+        viewAllHref?: string | null;
+        cardLinkLabel?: string | null;
+        /**
+         * Text after the phone link, e.g. “or unlock special pricing online.”
+         */
+        phoneSuffix?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Deprecated flat homepage fields — use Sections above.
+   */
+  homeContent?: {
+    /**
+     * Small line above the headline. Leave empty to hide.
+     */
+    heroEyebrow?: string | null;
     heroHeadline: string;
     heroSubheadline: string;
     heroCtaLabel: string;
@@ -312,6 +474,9 @@ export interface Page {
     faqIntro: string;
     faqPhoneDisplay?: string | null;
     faqPhoneHref?: string | null;
+    /**
+     * Shown on the homepage and emitted as FAQPage JSON-LD.
+     */
     faqItems?:
       | {
           question: string;
@@ -321,6 +486,9 @@ export interface Page {
       | null;
     reviewsHeading: string;
     reviewsIntro: string;
+    /**
+     * Deprecated — featured reviews now live on each Office (Content → Offices → Featured reviews). Home carousel reads from offices.
+     */
     reviews?:
       | {
           initials: string;
@@ -383,9 +551,13 @@ export interface Post {
   headline?: string | null;
   excerpt?: string | null;
   /**
-   * Public path used by the frontend, e.g. /img/blog/....webp
+   * Or public path used if no Media upload is set, e.g. /img/blog/....webp
    */
   heroImagePath?: string | null;
+  /**
+   * Alt text for the blog hero image (accessibility + SEO).
+   */
+  heroImageAlt?: string | null;
   heroImage?: (number | null) | Media;
   sections?:
     | {
@@ -403,10 +575,17 @@ export interface Post {
               id?: string | null;
             }[]
           | null;
+        imageUpload?: (number | null) | Media;
+        /**
+         * Or public path if no upload
+         */
         image?: string | null;
         id?: string | null;
       }[]
     | null;
+  /**
+   * Shown on the article and emitted as FAQPage JSON-LD when non-empty.
+   */
   faq?:
     | {
         question: string;
@@ -438,6 +617,10 @@ export interface Post {
      */
     image?: (number | null) | Media;
     description?: string | null;
+    /**
+     * If checked, robots noindex for this URL. Overrides Site Settings defaults when title/description/image are set above.
+     */
+    noIndex?: boolean | null;
   };
   publishedAt?: string | null;
   authors?: (number | User)[] | null;
@@ -462,7 +645,10 @@ export interface Post {
  */
 export interface Media {
   id: number;
-  alt?: string | null;
+  /**
+   * Required for accessibility and image SEO.
+   */
+  alt: string;
   caption?: {
     root: {
       type: string;
@@ -980,15 +1166,27 @@ export interface Service {
   compareAtPrice?: number | null;
   orderUrl: string;
   /**
-   * Small card image path, e.g. /img/services/..._small.webp
+   * Small card image upload (preferred)
+   */
+  thumbMedia?: (number | null) | Media;
+  /**
+   * Or public path, e.g. /img/services/..._small.webp
    */
   thumbImage?: string | null;
   /**
-   * Public path, e.g. /img/Amazon_AIR_DUCT_CLEANING.webp
+   * Hero image upload (preferred). Edit crop in Media.
+   */
+  heroMedia?: (number | null) | Media;
+  /**
+   * Or public path, e.g. /img/Amazon_AIR_DUCT_CLEANING.webp
    */
   heroImage: string;
   heroAlt: string;
   includesIntro?: string | null;
+  includesMedia?: (number | null) | Media;
+  /**
+   * Or public path if no upload
+   */
   includesImage: string;
   includesImageAlt: string;
   includes?:
@@ -999,7 +1197,8 @@ export interface Service {
     | null;
   beforeAfter?:
     | {
-        src: string;
+        media?: (number | null) | Media;
+        src?: string | null;
         alt: string;
         id?: string | null;
       }[]
@@ -1012,6 +1211,7 @@ export interface Service {
           id?: string | null;
         }[]
       | null;
+    media?: (number | null) | Media;
     image?: string | null;
     imageAlt?: string | null;
   };
@@ -1076,6 +1276,9 @@ export interface Service {
       | null;
   };
   faqIntro?: string | null;
+  /**
+   * Shown on the page and emitted as FAQPage JSON-LD for this URL.
+   */
   faq?:
     | {
         question: string;
@@ -1090,6 +1293,10 @@ export interface Service {
      */
     image?: (number | null) | Media;
     description?: string | null;
+    /**
+     * If checked, robots noindex for this URL. Overrides Site Settings defaults when title/description/image are set above.
+     */
+    noIndex?: boolean | null;
   };
   /**
    * When enabled, the slug will auto-generate from the title field on save and autosave.
@@ -1100,6 +1307,8 @@ export interface Service {
   createdAt: string;
 }
 /**
+ * City SEO pages. Public URL: /locations/[slug]. Link each page to the serving office via servedBy.
+ *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "locations".
  */
@@ -1112,15 +1321,24 @@ export interface Location {
   headline: string;
   description: string;
   intro: string;
+  /**
+   * Hero image upload (preferred). Edit crop in Media.
+   */
+  heroMedia?: (number | null) | Media;
+  /**
+   * Or public path if no upload
+   */
   heroImage: string;
   heroAlt: string;
+  /**
+   * City this page targets (e.g. Arlington — not the office city unless this is an office hub page).
+   */
   city: string;
   state: string;
-  phone: string;
-  phoneDisplay: string;
-  email?: string | null;
-  streetAddress: string;
-  postalCode: string;
+  /**
+   * Physical office that serves this city. Phone and address on the page come from this office.
+   */
+  servedBy: number | Office;
   offersTitle: string;
   about: {
     heading: string;
@@ -1181,6 +1399,9 @@ export interface Location {
       | null;
   };
   faqIntro?: string | null;
+  /**
+   * Shown on the page and emitted as FAQPage JSON-LD for this URL.
+   */
   faq?:
     | {
         question: string;
@@ -1196,12 +1417,114 @@ export interface Location {
      */
     image?: (number | null) | Media;
     description?: string | null;
+    /**
+     * If checked, robots noindex for this URL. Overrides Site Settings defaults when title/description/image are set above.
+     */
+    noIndex?: boolean | null;
   };
   /**
    * When enabled, the slug will auto-generate from the title field on save and autosave.
    */
   generateSlug?: boolean | null;
   slug: string;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * Physical offices (NAP + Google rating). Source for schema branches, footer, “Our offices”, and reviews carousel.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "offices".
+ */
+export interface Office {
+  id: number;
+  /**
+   * e.g. Amazon Air Duct Cleaning - Burke
+   */
+  name: string;
+  streetAddress: string;
+  city: string;
+  state: string;
+  postalCode: string;
+  /**
+   * E.164, e.g. +15714600001
+   */
+  phone: string;
+  phoneDisplay: string;
+  email?: string | null;
+  /**
+   * Short description for LocalBusiness / HVACBusiness schema
+   */
+  description?: string | null;
+  /**
+   * When enabled, the slug will auto-generate from the title field on save and autosave.
+   */
+  generateSlug?: boolean | null;
+  slug: string;
+  latitude: number;
+  longitude: number;
+  /**
+   * GeoCircle radius for areaServed (meters)
+   */
+  geoRadiusMeters?: number | null;
+  /**
+   * Google Maps / hasMap URL
+   */
+  hasMapUrl?: string | null;
+  /**
+   * g.page URL for sameAs
+   */
+  googleBusinessUrl?: string | null;
+  /**
+   * Extra profiles (Yelp, etc.). g.page also added from googleBusinessUrl.
+   */
+  sameAs?:
+    | {
+        url: string;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Cities for LocalBusiness areaServed JSON-LD (plus GeoCircle from lat/lng).
+   */
+  areaServedCities?:
+    | {
+        name: string;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Google GBP average rating
+   */
+  aggregateRatingValue: number;
+  /**
+   * Google GBP review count
+   */
+  aggregateReviewCount: number;
+  /**
+   * Mon–Fri open (HH:mm)
+   */
+  weekdayOpens?: string | null;
+  weekdayCloses?: string | null;
+  saturdayOpens?: string | null;
+  saturdayCloses?: string | null;
+  priceRange?: string | null;
+  /**
+   * Sample Google reviews for this office — used in JSON-LD and the site reviews carousel.
+   */
+  featuredReviews?:
+    | {
+        initials: string;
+        author: string;
+        text: string;
+        rating: number;
+        /**
+         * Deep link to the Google review
+         */
+        googleUrl: string;
+        id?: string | null;
+      }[]
+    | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -1437,6 +1760,10 @@ export interface PayloadLockedDocument {
         value: number | Location;
       } | null)
     | ({
+        relationTo: 'offices';
+        value: number | Office;
+      } | null)
+    | ({
         relationTo: 'leads';
         value: number | Lead;
       } | null)
@@ -1551,6 +1878,78 @@ export interface PagesSelect<T extends boolean = true> {
         mediaBlock?: T | MediaBlockSelect<T>;
         archive?: T | ArchiveBlockSelect<T>;
         formBlock?: T | FormBlockSelect<T>;
+      };
+  homeSections?:
+    | T
+    | {
+        type?: T;
+        anchorId?: T;
+        tone?: T;
+        appearance?:
+          | T
+          | {
+              background?: T;
+              backgroundCustom?: T;
+              headingColor?: T;
+              headingCustom?: T;
+              bodyColor?: T;
+              bodyCustom?: T;
+              cardStyle?: T;
+              radius?: T;
+              listStyle?: T;
+              ctaVariant?: T;
+            };
+        eyebrow?: T;
+        heading?: T;
+        subheadline?: T;
+        intro?: T;
+        paragraphs?:
+          | T
+          | {
+              text?: T;
+              id?: T;
+            };
+        highlights?:
+          | T
+          | {
+              item?: T;
+              id?: T;
+            };
+        items?:
+          | T
+          | {
+              title?: T;
+              text?: T;
+              id?: T;
+            };
+        steps?:
+          | T
+          | {
+              title?: T;
+              text?: T;
+              id?: T;
+            };
+        faqItems?:
+          | T
+          | {
+              question?: T;
+              answer?: T;
+              id?: T;
+            };
+        imageUpload?: T;
+        image?: T;
+        imageAlt?: T;
+        imagePosition?: T;
+        ctaLabel?: T;
+        ctaHref?: T;
+        phoneDisplay?: T;
+        phoneHref?: T;
+        closingText?: T;
+        viewAllLabel?: T;
+        viewAllHref?: T;
+        cardLinkLabel?: T;
+        phoneSuffix?: T;
+        id?: T;
       };
   homeContent?:
     | T
@@ -1802,6 +2201,7 @@ export interface PostsSelect<T extends boolean = true> {
   headline?: T;
   excerpt?: T;
   heroImagePath?: T;
+  heroImageAlt?: T;
   heroImage?: T;
   sections?:
     | T
@@ -1820,6 +2220,7 @@ export interface PostsSelect<T extends boolean = true> {
               item?: T;
               id?: T;
             };
+        imageUpload?: T;
         image?: T;
         id?: T;
       };
@@ -1839,6 +2240,7 @@ export interface PostsSelect<T extends boolean = true> {
         title?: T;
         image?: T;
         description?: T;
+        noIndex?: T;
       };
   publishedAt?: T;
   authors?: T;
@@ -1865,10 +2267,13 @@ export interface ServicesSelect<T extends boolean = true> {
   price?: T;
   compareAtPrice?: T;
   orderUrl?: T;
+  thumbMedia?: T;
   thumbImage?: T;
+  heroMedia?: T;
   heroImage?: T;
   heroAlt?: T;
   includesIntro?: T;
+  includesMedia?: T;
   includesImage?: T;
   includesImageAlt?: T;
   includes?:
@@ -1880,6 +2285,7 @@ export interface ServicesSelect<T extends boolean = true> {
   beforeAfter?:
     | T
     | {
+        media?: T;
         src?: T;
         alt?: T;
         id?: T;
@@ -1894,6 +2300,7 @@ export interface ServicesSelect<T extends boolean = true> {
               text?: T;
               id?: T;
             };
+        media?: T;
         image?: T;
         imageAlt?: T;
       };
@@ -1977,6 +2384,7 @@ export interface ServicesSelect<T extends boolean = true> {
         title?: T;
         image?: T;
         description?: T;
+        noIndex?: T;
       };
   generateSlug?: T;
   slug?: T;
@@ -1992,15 +2400,12 @@ export interface LocationsSelect<T extends boolean = true> {
   headline?: T;
   description?: T;
   intro?: T;
+  heroMedia?: T;
   heroImage?: T;
   heroAlt?: T;
   city?: T;
   state?: T;
-  phone?: T;
-  phoneDisplay?: T;
-  email?: T;
-  streetAddress?: T;
-  postalCode?: T;
+  servedBy?: T;
   offersTitle?: T;
   about?:
     | T
@@ -2085,9 +2490,63 @@ export interface LocationsSelect<T extends boolean = true> {
         title?: T;
         image?: T;
         description?: T;
+        noIndex?: T;
       };
   generateSlug?: T;
   slug?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "offices_select".
+ */
+export interface OfficesSelect<T extends boolean = true> {
+  name?: T;
+  streetAddress?: T;
+  city?: T;
+  state?: T;
+  postalCode?: T;
+  phone?: T;
+  phoneDisplay?: T;
+  email?: T;
+  description?: T;
+  generateSlug?: T;
+  slug?: T;
+  latitude?: T;
+  longitude?: T;
+  geoRadiusMeters?: T;
+  hasMapUrl?: T;
+  googleBusinessUrl?: T;
+  sameAs?:
+    | T
+    | {
+        url?: T;
+        id?: T;
+      };
+  areaServedCities?:
+    | T
+    | {
+        name?: T;
+        id?: T;
+      };
+  aggregateRatingValue?: T;
+  aggregateReviewCount?: T;
+  weekdayOpens?: T;
+  weekdayCloses?: T;
+  saturdayOpens?: T;
+  saturdayCloses?: T;
+  priceRange?: T;
+  featuredReviews?:
+    | T
+    | {
+        initials?: T;
+        author?: T;
+        text?: T;
+        rating?: T;
+        googleUrl?: T;
+        id?: T;
+      };
   updatedAt?: T;
   createdAt?: T;
 }
@@ -2520,11 +2979,39 @@ export interface PayloadMigrationsSelect<T extends boolean = true> {
   createdAt?: T;
 }
 /**
+ * Portable site header: brand mark + nav links + optional phone CTA. Phone/email defaults come from Site Settings. Add any location/service links as normal nav items (no domain-specific toggles).
+ *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "header".
  */
 export interface Header {
   id: number;
+  /**
+   * Logo and/or text shown in the chrome. Empty text falls back to Site Settings → site name.
+   */
+  brand: {
+    mode: 'text' | 'logo' | 'both';
+    /**
+     * Optional override of Site Settings site name
+     */
+    text?: string | null;
+    /**
+     * Uploaded logo (preferred)
+     */
+    logo?: (number | null) | Media;
+    /**
+     * Or public path, e.g. /img/logo.png (used if no upload)
+     */
+    logoPath?: string | null;
+    logoAlt?: string | null;
+  };
+  /**
+   * Uses Site Settings phone display / href
+   */
+  showPhoneCta?: boolean | null;
+  /**
+   * All menu links live here (including city/office pages if this project has them). Use Custom URL for hashes like /#about.
+   */
   navItems?:
     | {
         link: {
@@ -2549,59 +3036,291 @@ export interface Header {
   createdAt?: string | null;
 }
 /**
+ * Portable footer: brand + optional columns. Add/remove columns as needed — nothing assumes offices or cities exist.
+ *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "footer".
  */
 export interface Footer {
   id: number;
-  navItems?:
+  /**
+   * Logo and/or text shown in the chrome. Empty text falls back to Site Settings → site name.
+   */
+  brand: {
+    mode: 'text' | 'logo' | 'both';
+    /**
+     * Optional override of Site Settings site name
+     */
+    text?: string | null;
+    /**
+     * Uploaded logo (preferred)
+     */
+    logo?: (number | null) | Media;
+    /**
+     * Or public path, e.g. /img/logo.png (used if no upload)
+     */
+    logoPath?: string | null;
+    logoAlt?: string | null;
+  };
+  /**
+   * Under the brand. Empty → Site Settings organization description.
+   */
+  tagline?: string | null;
+  /**
+   * From Site Settings
+   */
+  showContactInBrand?: boolean | null;
+  /**
+   * Footer columns. Type “Links” for any list; “Social” / “Contact” pull from Site Settings.
+   */
+  columns?:
     | {
-        link: {
-          type?: ('reference' | 'custom') | null;
-          newTab?: boolean | null;
-          reference?:
-            | ({
-                relationTo: 'pages';
-                value: number | Page;
-              } | null)
-            | ({
-                relationTo: 'posts';
-                value: number | Post;
-              } | null);
-          url?: string | null;
-          label: string;
-        };
+        title: string;
+        type: 'links' | 'contact' | 'social';
+        links?:
+          | {
+              link: {
+                type?: ('reference' | 'custom') | null;
+                newTab?: boolean | null;
+                reference?:
+                  | ({
+                      relationTo: 'pages';
+                      value: number | Page;
+                    } | null)
+                  | ({
+                      relationTo: 'posts';
+                      value: number | Post;
+                    } | null);
+                url?: string | null;
+                label: string;
+              };
+              /**
+               * Optional secondary lines under the link (address, hours, note).
+               */
+              detail?: string | null;
+              id?: string | null;
+            }[]
+          | null;
         id?: string | null;
       }[]
     | null;
+  /**
+   * Optional. Default: “© {year} {siteName}. All rights reserved.”
+   */
+  copyrightText?: string | null;
   updatedAt?: string | null;
   createdAt?: string | null;
 }
 /**
+ * Site-wide brand + SEO defaults. Per-page SEO tabs override these. Office NAP/ratings live under Offices.
+ *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "site-settings".
  */
 export interface SiteSetting {
   id: number;
   siteName: string;
+  /**
+   * Display phone (toll-free)
+   */
   phone: string;
+  /**
+   * E.164 for tel: and schema
+   */
   phoneHref: string;
   email: string;
+  organizationDescription?: string | null;
+  priceRange?: string | null;
+  /**
+   * Uploaded logo (preferred). Edit crop/focal point in Media.
+   */
+  logo?: (number | null) | Media;
+  /**
+   * Or public path, e.g. /img/logo.png
+   */
+  logoPath?: string | null;
+  /**
+   * Fallback Open Graph image upload
+   */
+  defaultOgImageUpload?: (number | null) | Media;
+  /**
+   * Or public path used when no upload is set
+   */
+  defaultOgImage?: string | null;
+  /**
+   * Site-wide look. Blocks inherit these tokens; each section can still override background, text, cards, lists, and buttons.
+   */
+  theme?: {
+    /**
+     * Main brand color (navy by default). Used for dark surfaces and secondary buttons if those are empty.
+     */
+    primary?: string | null;
+    primaryForeground?: string | null;
+    secondary?: string | null;
+    secondaryForeground?: string | null;
+    /**
+     * Third brand color. Also used for links if link color is empty.
+     */
+    tertiary?: string | null;
+    tertiaryForeground?: string | null;
+    /**
+     * Highlights, list markers, and primary buttons if button colors are empty.
+     */
+    accent?: string | null;
+    accentHover?: string | null;
+    accentForeground?: string | null;
+    background?: string | null;
+    muted?: string | null;
+    dark?: string | null;
+    footer?: string | null;
+    card?: string | null;
+    cardMuted?: string | null;
+    heading?: string | null;
+    body?: string | null;
+    mutedText?: string | null;
+    onDark?: string | null;
+    onDarkMuted?: string | null;
+    link?: string | null;
+    linkOnDark?: string | null;
+    border?: string | null;
+    badges?: string | null;
+    /**
+     * Empty = accent color
+     */
+    buttonPrimaryBg?: string | null;
+    buttonPrimaryText?: string | null;
+    buttonPrimaryHover?: string | null;
+    /**
+     * Empty = primary color
+     */
+    buttonSecondaryBg?: string | null;
+    buttonSecondaryText?: string | null;
+    buttonSecondaryHover?: string | null;
+    /**
+     * Empty = transparent (outline)
+     */
+    buttonTertiaryBg?: string | null;
+    buttonTertiaryText?: string | null;
+    buttonTertiaryBorder?: string | null;
+    buttonTertiaryHover?: string | null;
+    headingFont?:
+      | (
+          | 'Outfit'
+          | 'Inter'
+          | 'DM Sans'
+          | 'Source Sans 3'
+          | 'Lato'
+          | 'Nunito'
+          | 'Open Sans'
+          | 'Poppins'
+          | 'Montserrat'
+          | 'Plus Jakarta Sans'
+          | 'Fraunces'
+          | 'Playfair Display'
+          | 'Merriweather'
+          | 'Libre Baskerville'
+          | 'Lora'
+          | 'Source Serif 4'
+        )
+      | null;
+    bodyFont?:
+      | (
+          | 'Outfit'
+          | 'Inter'
+          | 'DM Sans'
+          | 'Source Sans 3'
+          | 'Lato'
+          | 'Nunito'
+          | 'Open Sans'
+          | 'Poppins'
+          | 'Montserrat'
+          | 'Plus Jakarta Sans'
+          | 'Fraunces'
+          | 'Playfair Display'
+          | 'Merriweather'
+          | 'Libre Baskerville'
+          | 'Lora'
+          | 'Source Serif 4'
+        )
+      | null;
+    buttonRadius?: ('none' | 'sm' | 'md' | 'lg' | 'xl' | 'full') | null;
+    cardRadius?: ('none' | 'sm' | 'md' | 'lg' | 'xl' | 'full') | null;
+    imageRadius?: ('none' | 'sm' | 'md' | 'lg' | 'xl' | 'full') | null;
+    containerRadius?: ('none' | 'sm' | 'md' | 'lg' | 'xl' | 'full') | null;
+    cardStyle?: ('bordered' | 'filled' | 'elevated' | 'plain') | null;
+    listStyle?: ('check' | 'disc' | 'numbered' | 'none') | null;
+  };
+  /**
+   * Used when a page has no meta.title. Per-page SEO tab always wins when set.
+   */
+  defaultMetaTitle?: string | null;
   defaultMetaDescription?: string | null;
-  addresses?:
-    | {
-        label: string;
-        street: string;
-        city: string;
-        state: string;
-        postalCode: string;
-        id?: string | null;
-      }[]
-    | null;
+  /**
+   * Appended to titles that do not already include the brand
+   */
+  titleSuffix?: string | null;
+  /**
+   * Offer.priceValidUntil for service schema (YYYY-MM-DD)
+   */
+  priceValidUntil?: string | null;
+  /**
+   * Also used as Organization sameAs
+   */
   socialLinks?:
     | {
         platform: string;
         url: string;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Strip under the footer on every page. Leave empty to hide (or seed defaults apply until you save).
+   */
+  trustBadges?:
+    | {
+        /**
+         * Upload (preferred)
+         */
+        image?: (number | null) | Media;
+        /**
+         * Or public path, e.g. /img/reviews/bbb.webp
+         */
+        src?: string | null;
+        alt?: string | null;
+        width?: number | null;
+        height?: number | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Google Maps embed URL for the Service Area section
+   */
+  serviceAreaMapEmbedUrl?: string | null;
+  serviceAreaMapTitle?: string | null;
+  /**
+   * Region rows shown in Service Area (any geography — not hardcoded to VA/MD/DC).
+   */
+  serviceAreaRegions?:
+    | {
+        name: string;
+        cities?:
+          | {
+              name: string;
+              id?: string | null;
+            }[]
+          | null;
+        /**
+         * Optional link, e.g. /locations/burke
+         */
+        href?: string | null;
+        /**
+         * Label for href; if empty and no href, shows emptyLinkLabel
+         */
+        linkLabel?: string | null;
+        /**
+         * Shown when href is empty (e.g. All neighborhoods)
+         */
+        emptyLinkLabel?: string | null;
         id?: string | null;
       }[]
     | null;
@@ -2613,6 +3332,16 @@ export interface SiteSetting {
  * via the `definition` "header_select".
  */
 export interface HeaderSelect<T extends boolean = true> {
+  brand?:
+    | T
+    | {
+        mode?: T;
+        text?: T;
+        logo?: T;
+        logoPath?: T;
+        logoAlt?: T;
+      };
+  showPhoneCta?: T;
   navItems?:
     | T
     | {
@@ -2636,20 +3365,40 @@ export interface HeaderSelect<T extends boolean = true> {
  * via the `definition` "footer_select".
  */
 export interface FooterSelect<T extends boolean = true> {
-  navItems?:
+  brand?:
     | T
     | {
-        link?:
+        mode?: T;
+        text?: T;
+        logo?: T;
+        logoPath?: T;
+        logoAlt?: T;
+      };
+  tagline?: T;
+  showContactInBrand?: T;
+  columns?:
+    | T
+    | {
+        title?: T;
+        type?: T;
+        links?:
           | T
           | {
-              type?: T;
-              newTab?: T;
-              reference?: T;
-              url?: T;
-              label?: T;
+              link?:
+                | T
+                | {
+                    type?: T;
+                    newTab?: T;
+                    reference?: T;
+                    url?: T;
+                    label?: T;
+                  };
+              detail?: T;
+              id?: T;
             };
         id?: T;
       };
+  copyrightText?: T;
   updatedAt?: T;
   createdAt?: T;
   globalType?: T;
@@ -2663,22 +3412,94 @@ export interface SiteSettingsSelect<T extends boolean = true> {
   phone?: T;
   phoneHref?: T;
   email?: T;
-  defaultMetaDescription?: T;
-  addresses?:
+  organizationDescription?: T;
+  priceRange?: T;
+  logo?: T;
+  logoPath?: T;
+  defaultOgImageUpload?: T;
+  defaultOgImage?: T;
+  theme?:
     | T
     | {
-        label?: T;
-        street?: T;
-        city?: T;
-        state?: T;
-        postalCode?: T;
-        id?: T;
+        primary?: T;
+        primaryForeground?: T;
+        secondary?: T;
+        secondaryForeground?: T;
+        tertiary?: T;
+        tertiaryForeground?: T;
+        accent?: T;
+        accentHover?: T;
+        accentForeground?: T;
+        background?: T;
+        muted?: T;
+        dark?: T;
+        footer?: T;
+        card?: T;
+        cardMuted?: T;
+        heading?: T;
+        body?: T;
+        mutedText?: T;
+        onDark?: T;
+        onDarkMuted?: T;
+        link?: T;
+        linkOnDark?: T;
+        border?: T;
+        badges?: T;
+        buttonPrimaryBg?: T;
+        buttonPrimaryText?: T;
+        buttonPrimaryHover?: T;
+        buttonSecondaryBg?: T;
+        buttonSecondaryText?: T;
+        buttonSecondaryHover?: T;
+        buttonTertiaryBg?: T;
+        buttonTertiaryText?: T;
+        buttonTertiaryBorder?: T;
+        buttonTertiaryHover?: T;
+        headingFont?: T;
+        bodyFont?: T;
+        buttonRadius?: T;
+        cardRadius?: T;
+        imageRadius?: T;
+        containerRadius?: T;
+        cardStyle?: T;
+        listStyle?: T;
       };
+  defaultMetaTitle?: T;
+  defaultMetaDescription?: T;
+  titleSuffix?: T;
+  priceValidUntil?: T;
   socialLinks?:
     | T
     | {
         platform?: T;
         url?: T;
+        id?: T;
+      };
+  trustBadges?:
+    | T
+    | {
+        image?: T;
+        src?: T;
+        alt?: T;
+        width?: T;
+        height?: T;
+        id?: T;
+      };
+  serviceAreaMapEmbedUrl?: T;
+  serviceAreaMapTitle?: T;
+  serviceAreaRegions?:
+    | T
+    | {
+        name?: T;
+        cities?:
+          | T
+          | {
+              name?: T;
+              id?: T;
+            };
+        href?: T;
+        linkLabel?: T;
+        emptyLinkLabel?: T;
         id?: T;
       };
   updatedAt?: T;

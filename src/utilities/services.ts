@@ -1,6 +1,8 @@
 import configPromise from '@payload-config'
 import { getPayload } from 'payload'
 
+import { resolveCmsImage, resolveCmsImageAlt } from '@/utilities/cmsImage'
+
 export type ServiceFaq = { q: string; a: string }
 
 export type ServiceContent = {
@@ -42,6 +44,12 @@ export type ServiceContent = {
   }
   faqIntro?: string
   faq: ServiceFaq[]
+  meta?: {
+    title?: string | null
+    description?: string | null
+    image?: string | null
+    noIndex?: boolean | null
+  }
 }
 
 export type ServiceCard = {
@@ -82,6 +90,7 @@ function mapService(doc: Record<string, unknown>): ServiceContent {
         paragraphs?: Array<{ text?: string | null } | null> | null
         image?: string | null
         imageAlt?: string | null
+        media?: unknown
       }
     | null
     | undefined
@@ -117,23 +126,33 @@ function mapService(doc: Record<string, unknown>): ServiceContent {
     price: Number(doc.price || 0),
     compareAtPrice: Number(doc.compareAtPrice || 0),
     orderUrl: String(doc.orderUrl || ''),
-    heroImage: String(doc.heroImage || ''),
-    heroAlt: String(doc.heroAlt || ''),
+    heroImage: resolveCmsImage(doc.heroMedia, doc.heroImage ? String(doc.heroImage) : undefined) || '',
+    heroAlt: resolveCmsImageAlt(
+      doc.heroAlt ? String(doc.heroAlt) : undefined,
+      doc.heroMedia,
+      String(doc.title || ''),
+    ),
     includesIntro: doc.includesIntro ? String(doc.includesIntro) : undefined,
-    includesImage: String(doc.includesImage || ''),
-    includesImageAlt: String(doc.includesImageAlt || ''),
+    includesImage: resolveCmsImage(doc.includesMedia, doc.includesImage ? String(doc.includesImage) : undefined) || '',
+    includesImageAlt: resolveCmsImageAlt(
+      doc.includesImageAlt ? String(doc.includesImageAlt) : undefined,
+      doc.includesMedia,
+    ),
     includes: items(doc.includes as Array<{ item?: string | null } | null>),
     beforeAfter: (
-      (doc.beforeAfter as Array<{ src?: string | null; alt?: string | null } | null>) || []
+      (doc.beforeAfter as Array<{ src?: string | null; alt?: string | null; media?: unknown } | null>) || []
     )
       .filter(Boolean)
-      .map((row) => ({ src: String(row?.src || ''), alt: String(row?.alt || '') })),
+      .map((row) => ({
+        src: resolveCmsImage(row?.media, row?.src) || '',
+        alt: String(row?.alt || ''),
+      })),
     why: why?.heading
       ? {
           heading: String(why.heading),
           paragraphs: texts(why.paragraphs),
-          image: why.image || undefined,
-          imageAlt: why.imageAlt || undefined,
+          image: resolveCmsImage(why.media, why.image),
+          imageAlt: resolveCmsImageAlt(why.imageAlt, why.media),
         }
       : undefined,
     columns: (
@@ -192,6 +211,29 @@ function mapService(doc: Record<string, unknown>): ServiceContent {
     faq: ((doc.faq as Array<{ question?: string | null; answer?: string | null } | null>) || [])
       .filter(Boolean)
       .map((item) => ({ q: String(item?.question || ''), a: String(item?.answer || '') })),
+    meta: (() => {
+      const meta = doc.meta as
+        | {
+            title?: string | null
+            description?: string | null
+            image?: unknown
+            noIndex?: boolean | null
+          }
+        | null
+        | undefined
+      if (!meta) return undefined
+      let image: string | null = null
+      if (typeof meta.image === 'string') image = meta.image
+      else if (meta.image && typeof meta.image === 'object' && 'url' in meta.image) {
+        image = String((meta.image as { url?: string | null }).url || '') || null
+      }
+      return {
+        title: meta.title,
+        description: meta.description,
+        image,
+        noIndex: meta.noIndex,
+      }
+    })(),
   }
 }
 
@@ -202,7 +244,7 @@ export async function getServiceContent(slug: string): Promise<ServiceContent | 
     where: { slug: { equals: slug } },
     limit: 1,
     pagination: false,
-    depth: 0,
+    depth: 1,
   })
   const doc = result.docs[0]
   return doc ? mapService(doc as unknown as Record<string, unknown>) : null
@@ -226,14 +268,15 @@ export async function getAllServiceCards(): Promise<ServiceCard[]> {
     collection: 'services',
     limit: 100,
     pagination: false,
-    depth: 0,
+    depth: 1,
     sort: 'price',
   })
 
   return result.docs.map((doc) => {
     const mapped = mapService(doc as unknown as Record<string, unknown>)
     const thumb =
-      typeof doc.thumbImage === 'string' && doc.thumbImage ? doc.thumbImage : mapped.heroImage
+      resolveCmsImage(doc.thumbMedia, typeof doc.thumbImage === 'string' ? doc.thumbImage : undefined) ||
+      mapped.heroImage
     return {
       slug: mapped.slug,
       title: mapped.title,

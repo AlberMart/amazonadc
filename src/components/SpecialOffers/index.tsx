@@ -37,10 +37,10 @@ export function SpecialOffers({
   return (
     <section className="bg-white py-16 md:py-20">
       <div className="container">
-        <h2 className="font-[family-name:var(--font-display)] text-3xl font-semibold tracking-tight text-[#0b1c2c] md:text-4xl">
+        <h2 className="font-display text-3xl font-semibold tracking-tight text-[var(--site-heading)] md:text-4xl">
           {title}
         </h2>
-        <p className="mt-3 max-w-2xl text-[#516579]">
+        <p className="mt-3 max-w-2xl site-body">
           Transparent flat-rate pricing. No counting vents. No surprise add-ons.
         </p>
         <ServiceOfferCards services={cards} />

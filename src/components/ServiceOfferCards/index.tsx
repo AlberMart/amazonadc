@@ -21,7 +21,7 @@ export function ServiceOfferCards({ services }: { services: ServiceOfferCard[] }
         <Link
           key={item.slug}
           href={item.href || `/${item.slug}`}
-          className="group flex w-full max-w-[380px] flex-col border border-[#d5dee8] bg-white p-6 text-left transition hover:-translate-y-0.5 hover:border-sky-300 hover:shadow-[0_18px_40px_rgba(11,28,44,0.08)]"
+          className="site-card site-card-hover group flex w-full max-w-[380px] flex-col p-6 text-left"
         >
           <div className="mx-auto mb-5 w-full max-w-[300px]">
             <Image
@@ -33,21 +33,21 @@ export function ServiceOfferCards({ services }: { services: ServiceOfferCard[] }
               sizes="300px"
             />
           </div>
-          <h3 className="font-[family-name:var(--font-display)] text-xl font-semibold text-[#0b1c2c]">
+          <h3 className="font-display text-xl font-semibold text-[var(--site-heading)]">
             {item.title}
           </h3>
-          <p className="mt-4 text-3xl font-semibold text-[#0b1c2c]">
+          <p className="mt-4 text-3xl font-semibold text-[var(--site-heading)]">
             ${item.price}
             {typeof item.compareAtPrice === 'number' ? (
-              <span className="ml-2 text-base font-normal text-[#7a8b9c] line-through">
+              <span className="ml-2 text-base font-normal site-muted line-through">
                 ${item.compareAtPrice}
               </span>
             ) : null}
           </p>
           {item.summary ? (
-            <p className="mt-3 line-clamp-3 flex-1 text-sm text-[#516579]">{item.summary}</p>
+            <p className="mt-3 line-clamp-3 flex-1 text-sm site-body">{item.summary}</p>
           ) : null}
-          <span className="mt-6 inline-block text-sm font-semibold text-sky-700 group-hover:underline">
+          <span className="mt-6 inline-block site-link text-sm group-hover:underline">
             Learn more
           </span>
         </Link>

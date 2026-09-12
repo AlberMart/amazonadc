@@ -15,16 +15,10 @@ import { Banner } from '../../blocks/Banner/config'
 import { Code } from '../../blocks/Code/config'
 import { MediaBlock } from '../../blocks/MediaBlock/config'
 import { generatePreviewPath } from '../../utilities/generatePreviewPath'
+import { seoMetaTabFields } from '../../fields/seoMeta'
 import { populateAuthors } from './hooks/populateAuthors'
 import { revalidateDelete, revalidatePost } from './hooks/revalidatePost'
 
-import {
-  MetaDescriptionField,
-  MetaImageField,
-  MetaTitleField,
-  OverviewField,
-  PreviewField,
-} from '@payloadcms/plugin-seo/fields'
 import { slugField } from 'payload'
 
 export const Posts: CollectionConfig<'posts'> = {
@@ -83,7 +77,14 @@ export const Posts: CollectionConfig<'posts'> = {
       name: 'heroImagePath',
       type: 'text',
       admin: {
-        description: 'Public path used by the frontend, e.g. /img/blog/....webp',
+        description: 'Or public path used if no Media upload is set, e.g. /img/blog/....webp',
+      },
+    },
+    {
+      name: 'heroImageAlt',
+      type: 'text',
+      admin: {
+        description: 'Alt text for the blog hero image (accessibility + SEO).',
       },
     },
     {
@@ -113,12 +114,16 @@ export const Posts: CollectionConfig<'posts'> = {
                   type: 'array',
                   fields: [{ name: 'item', type: 'text', required: true }],
                 },
-                { name: 'image', type: 'text' },
+                { name: 'imageUpload', type: 'upload', relationTo: 'media' },
+                { name: 'image', type: 'text', admin: { description: 'Or public path if no upload' } },
               ],
             },
             {
               name: 'faq',
               type: 'array',
+              admin: {
+                description: 'Shown on the article and emitted as FAQPage JSON-LD when non-empty.',
+              },
               fields: [
                 { name: 'question', type: 'text', required: true },
                 { name: 'answer', type: 'textarea', required: true },
@@ -178,29 +183,7 @@ export const Posts: CollectionConfig<'posts'> = {
         {
           name: 'meta',
           label: 'SEO',
-          fields: [
-            OverviewField({
-              titlePath: 'meta.title',
-              descriptionPath: 'meta.description',
-              imagePath: 'meta.image',
-            }),
-            MetaTitleField({
-              hasGenerateFn: true,
-            }),
-            MetaImageField({
-              relationTo: 'media',
-            }),
-
-            MetaDescriptionField({}),
-            PreviewField({
-              // if the `generateUrl` function is configured
-              hasGenerateFn: true,
-
-              // field paths to match the target field for data
-              titlePath: 'meta.title',
-              descriptionPath: 'meta.description',
-            }),
-          ],
+          fields: seoMetaTabFields(),
         },
       ],
     },

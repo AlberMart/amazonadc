@@ -1,0 +1,39 @@
+---
+description: Payload collections, public routes, and content sources. Use when editing CMS configs, pages, services, locations, leads, or seed/content files.
+globs:
+  - src/collections/**/*
+  - src/globals/**/*
+  - src/payload.config.ts
+  - src/content/**/*
+  - src/seed/**/*
+  - src/app/(frontend)/**/*
+  - src/Header/**/*
+  - src/Footer/**/*
+alwaysApply: false
+---
+
+# CMS and public content
+
+## Collections (src/payload.config.ts)
+- `pages` — home (`pageKind: home` → `/`), legal (`pageKind: legal` → `/{slug}`), default landing blocks
+- `services` — public URLs `/{slug}` (air-duct-cleaning, dryer-vent-cleaning, combo)
+- `locations` — `/locations/{slug}`
+- `posts` — blog; rewrite `/blog` → `/posts`
+- `leads` — contact form submissions (`POST /api/contact`); public create, admin read
+- `media`, `categories`, `users`
+## Globals: `header`, `footer`, `site-settings`
+- Header/Footer = portable chrome (brand mark text|logo|both, nav/columns). No `showOffices`-style fields.
+- Project-specific links (offices, cities) are seeded as normal column/nav links.
+
+## Where copy lives
+- Live CMS is source of truth after seed.
+- Defaults/seed: `src/content/*`, `src/seed/amazonadc.ts`, `src/seed/blog-and-legal.ts`.
+- Frontend mappers: `src/utilities/{home,services,locations,legal,blog}.ts`.
+- Header/Footer are **portable chrome** (brand + nav/columns). Project-specific links live in seed, not field names. See `.cursor/rules/reusable-cms-chrome.mdc`.
+- After field changes: `npm run generate:types` (writes `src/payload-types.ts`).
+
+## Contact / spam
+Honeypot field `website`, in-memory rate limit, optional Cloudflare Turnstile. Leads status: `new | contacted | closed | spam`.
+
+## Routing
+`src/app/(frontend)/[slug]/page.tsx` resolves service, legal page, or CMS page. Keep redirects in `redirects.ts` plus Payload redirects plugin. Rebuild after changing plugin `from` URLs.

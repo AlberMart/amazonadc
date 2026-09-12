@@ -1,30 +1,44 @@
 'use client'
-import { useHeaderTheme } from '@/providers/HeaderTheme'
+
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import React, { useEffect, useState } from 'react'
 
-import type { Header } from '@/payload-types'
+import { BrandMark } from '@/components/BrandMark'
+import { useHeaderTheme } from '@/providers/HeaderTheme'
+import type { ResolvedBrandMark } from '@/utilities/brandMark'
+import type { ResolvedNavLink } from '@/utilities/cmsLink'
 
-import { HeaderNav } from './Nav'
-
-interface HeaderClientProps {
-  data: Header
+function isActive(pathname: string, hash: string, item: ResolvedNavLink) {
+  const href = item.href
+  const hashIndex = href.indexOf('#')
+  if (hashIndex !== -1) {
+    const pathPart = href.slice(0, hashIndex) || '/'
+    const hashPart = href.slice(hashIndex + 1)
+    return pathname === pathPart && hash === hashPart
+  }
+  if (href === '/') return pathname === '/' && !hash
+  if (href === '/blog') {
+    return pathname === '/blog' || pathname.startsWith('/blog/') || pathname.startsWith('/posts')
+  }
+  if (href.startsWith('/locations/')) {
+    return pathname === href || pathname.startsWith(`${href}/`)
+  }
+  return pathname === href || pathname.startsWith(`${href}/`)
 }
 
-const fallbackLinks = [
-  { href: '/air-duct-cleaning', label: 'Air Duct Cleaning' },
-  { href: '/dryer-vent-cleaning', label: 'Dryer Vent' },
-  { href: '/locations/bethesda', label: 'Locations' },
-  { href: '/blog', label: 'Blog' },
-  { href: '/#contact', label: 'Contact' },
-]
-
-export const HeaderClient: React.FC<HeaderClientProps> = ({ data }) => {
-  const [theme, setTheme] = useState<string | null>(null)
+export const HeaderClient: React.FC<{
+  brand: ResolvedBrandMark
+  showPhoneCta: boolean
+  phoneDisplay: string
+  phoneHref: string
+  navItems: ResolvedNavLink[]
+}> = ({ brand, showPhoneCta, phoneDisplay, phoneHref, navItems }) => {
   const { headerTheme, setHeaderTheme } = useHeaderTheme()
   const pathname = usePathname()
-  const hasCmsNav = Boolean(data?.navItems?.length)
+  const [theme, setTheme] = useState<string | null>(null)
+  const [open, setOpen] = useState(false)
+  const [hash, setHash] = useState('')
 
   useEffect(() => {
     setHeaderTheme(null)
@@ -36,39 +50,151 @@ export const HeaderClient: React.FC<HeaderClientProps> = ({ data }) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [headerTheme])
 
+  useEffect(() => {
+    setOpen(false)
+  }, [pathname])
+
+  useEffect(() => {
+    const syncHash = () => setHash(window.location.hash.replace('#', ''))
+    syncHash()
+    window.addEventListener('hashchange', syncHash)
+    return () => window.removeEventListener('hashchange', syncHash)
+  }, [pathname])
+
+  useEffect(() => {
+    document.body.style.overflow = open ? 'hidden' : ''
+    return () => {
+      document.body.style.overflow = ''
+    }
+  }, [open])
+
+  useEffect(() => {
+    if (!open) return
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') setOpen(false)
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [open])
+
+  function onNavClick(event: React.MouseEvent<HTMLAnchorElement>, href: string) {
+    setOpen(false)
+    const hashIndex = href.indexOf('#')
+    if (hashIndex === -1 || pathname !== '/') return
+    const id = href.slice(hashIndex + 1)
+    const target = document.getElementById(id)
+    if (!target) return
+    event.preventDefault()
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    window.history.pushState(null, '', `/#${id}`)
+    setHash(id)
+  }
+
   return (
     <header
-      className="sticky top-0 z-30 border-b border-[#0b1c2c]/10 bg-[#0b1c2c]/95 text-white backdrop-blur"
+      className="site-header sticky top-0 z-40 border-b border-white/10 backdrop-blur"
       {...(theme ? { 'data-theme': theme } : {})}
     >
-      <div className="container flex items-center justify-between gap-4 py-4">
-        <Link href="/" className="min-w-0">
-          <span className="block font-[family-name:var(--font-display)] text-lg font-semibold tracking-tight sm:text-xl">
-            Amazon Air Duct Cleaning
-          </span>
-          <span className="hidden text-xs tracking-wide text-sky-200/80 sm:block">
-            VA · MD · Washington DC
-          </span>
-        </Link>
+      <div className="container flex h-[72px] items-center justify-between gap-4">
+        <BrandMark
+          brand={brand}
+          className="min-w-0 shrink-0"
+          textClassName="block font-display text-lg font-semibold tracking-tight sm:text-xl"
+          onClick={() => setOpen(false)}
+        />
 
-        {hasCmsNav ? (
-          <HeaderNav data={data} />
-        ) : (
-          <nav className="hidden items-center gap-5 text-sm md:flex">
-            {fallbackLinks.map((link) => (
-              <Link key={link.href} href={link.href} className="text-white/85 transition hover:text-amber-300">
-                {link.label}
+        <nav className="hidden items-center gap-0.5 xl:gap-1 lg:flex" aria-label="Primary">
+          {navItems.map((item) => {
+            const active = isActive(pathname, hash, item)
+            return (
+              <Link
+                key={`${item.label}-${item.href}`}
+                href={item.href}
+                onClick={(event) => onNavClick(event, item.href)}
+                className={`rounded-md px-2.5 py-2 text-sm transition xl:px-3 ${
+                  active ? 'text-[var(--site-accent)]' : 'text-white/85 hover:text-[var(--site-accent)]'
+                }`}
+                aria-current={active ? 'page' : undefined}
+              >
+                {item.label}
               </Link>
-            ))}
+            )
+          })}
+          {showPhoneCta ? (
             <a
-              href="tel:+18006063334"
-              className="rounded-md bg-amber-400 px-3 py-2 text-xs font-semibold text-[#0b1c2c]"
+              href={phoneHref}
+              className="site-btn site-btn-primary ml-2 px-3.5 py-2 xl:ml-3"
             >
-              (800) 606-3334
+              {phoneDisplay}
             </a>
-          </nav>
-        )}
+          ) : null}
+        </nav>
+
+        <div className="flex items-center gap-2 lg:hidden">
+          {showPhoneCta ? (
+            <a
+              href={phoneHref}
+              className="site-btn site-btn-primary px-3 py-2 text-xs"
+            >
+              {phoneDisplay}
+            </a>
+          ) : null}
+          <button
+            type="button"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-md border border-white/15 text-white"
+            aria-expanded={open}
+            aria-controls="mobile-nav"
+            aria-label={open ? 'Close menu' : 'Open menu'}
+            onClick={() => setOpen((value) => !value)}
+          >
+            <span className="sr-only">{open ? 'Close menu' : 'Open menu'}</span>
+            <span className="relative block h-3.5 w-5">
+              <span
+                className={`absolute left-0 h-0.5 w-5 bg-current transition ${open ? 'top-1.5 rotate-45' : 'top-0'}`}
+              />
+              <span
+                className={`absolute left-0 top-1.5 h-0.5 w-5 bg-current transition ${open ? 'opacity-0' : ''}`}
+              />
+              <span
+                className={`absolute left-0 h-0.5 w-5 bg-current transition ${open ? 'top-1.5 -rotate-45' : 'top-3'}`}
+              />
+            </span>
+          </button>
+        </div>
       </div>
+
+      {open ? (
+        <div className="lg:hidden">
+          <button
+            type="button"
+            className="fixed inset-0 top-[72px] z-30 bg-[var(--site-dark)]/40"
+            aria-label="Close menu"
+            onClick={() => setOpen(false)}
+          />
+          <nav
+            id="mobile-nav"
+            className="relative z-40 border-t border-white/10 bg-[var(--site-dark)] px-4 py-3"
+            aria-label="Mobile"
+          >
+            {navItems.map((item) => {
+              const active = isActive(pathname, hash, item)
+              return (
+                <Link
+                  key={`m-${item.label}-${item.href}`}
+                  href={item.href}
+                  onClick={(event) => onNavClick(event, item.href)}
+                  className={`block rounded-md px-3 py-3 text-base ${
+                    active ? 'bg-white/5 text-[var(--site-accent)]' : 'text-white/90'
+                  }`}
+                  aria-current={active ? 'page' : undefined}
+                >
+                  {item.label}
+                </Link>
+              )
+            })}
+          </nav>
+        </div>
+      ) : null}
     </header>
   )
 }

@@ -7,10 +7,22 @@ export type ReviewItem = {
   initials: string
   author: string
   text: string
+  rating: number
   googleUrl: string
+  officeLabel?: string
 }
 
 const INITIAL_COUNT = 4
+
+function Stars({ rating }: { rating: number }) {
+  const safe = Math.max(1, Math.min(5, Math.round(rating)))
+  return (
+    <p className="text-[var(--site-accent)]" aria-label={`${safe} star review`}>
+      {'★'.repeat(safe)}
+      <span className="text-[var(--site-border)]">{'★'.repeat(5 - safe)}</span>
+    </p>
+  )
+}
 
 export function ReviewsSection({
   reviews,
@@ -25,62 +37,66 @@ export function ReviewsSection({
   const visible = expanded ? reviews : reviews.slice(0, INITIAL_COUNT)
   const hasMore = reviews.length > INITIAL_COUNT
 
+  if (!reviews.length) return null
+
   return (
-    <section className="bg-[#f4f7fa] py-16 md:py-20">
-      <div className="container">
-        <h2 className="font-[family-name:var(--font-display)] text-3xl font-semibold tracking-tight text-[#0b1c2c] md:text-4xl">
-          {heading}
-        </h2>
-        <p className="mt-3 max-w-2xl text-[#516579]">{intro}</p>
+    <div className="container">
+      <h2 className="site-heading text-3xl font-semibold tracking-tight md:text-4xl">{heading}</h2>
+      <p className="site-body mt-3 max-w-2xl">{intro}</p>
 
-        <div className="mt-10 grid gap-5 md:grid-cols-2">
-          {visible.map((review) => (
-            <article key={review.author} className="border border-[#d5dee8] bg-white p-6">
-              <p className="text-amber-400" aria-label="5 star review">
-                ★★★★★
-              </p>
-              <p className="mt-4 text-sm leading-relaxed text-[#516579]">{review.text}</p>
-              <div className="mt-5 flex items-center justify-between gap-3">
-                <div className="flex items-center gap-3">
-                  <span className="flex h-10 w-10 items-center justify-center rounded-full bg-[#0b1c2c] text-xs font-semibold text-white">
-                    {review.initials}
-                  </span>
-                  <span className="font-semibold text-[#0b1c2c]">{review.author}</span>
+      <div className="mt-10 grid gap-5 md:grid-cols-2">
+        {visible.map((review) => (
+          <article
+            key={`${review.officeLabel || 'review'}-${review.author}`}
+            className="site-card p-6"
+          >
+            <Stars rating={review.rating} />
+            <p className="site-body mt-4 text-sm leading-relaxed">{review.text}</p>
+            <div className="mt-5 flex items-center justify-between gap-3">
+              <div className="flex items-center gap-3">
+                <span className="flex h-10 w-10 items-center justify-center rounded-full bg-[var(--site-primary)] text-xs font-semibold text-[var(--site-primary-fg)]">
+                  {review.initials}
+                </span>
+                <div>
+                  <span className="font-semibold text-[var(--site-heading)]">{review.author}</span>
+                  {review.officeLabel ? (
+                    <p className="site-muted text-xs">{review.officeLabel}</p>
+                  ) : null}
                 </div>
-                <a
-                  href={review.googleUrl}
-                  target="_blank"
-                  rel="noopener noreferrer nofollow ugc"
-                  className="inline-flex items-center gap-2 text-sm font-semibold text-sky-700 hover:underline"
-                  aria-label={`Read ${review.author}'s review on Google`}
-                >
-                  <Image
-                    src="/img/reviews/google-icon.svg"
-                    alt=""
-                    width={22}
-                    height={22}
-                    unoptimized
-                  />
-                  Google
-                </a>
               </div>
-            </article>
-          ))}
-        </div>
-
-        {hasMore ? (
-          <div className="mt-8 flex justify-center">
-            <button
-              type="button"
-              onClick={() => setExpanded((value) => !value)}
-              className="rounded-md border border-[#d5dee8] bg-white px-5 py-3 text-sm font-semibold text-[#0b1c2c] transition hover:border-sky-300"
-              aria-expanded={expanded}
-            >
-              {expanded ? 'Show less' : 'See more reviews'}
-            </button>
-          </div>
-        ) : null}
+              <a
+                href={review.googleUrl}
+                target="_blank"
+                rel="noopener noreferrer nofollow ugc"
+                className="site-link inline-flex items-center gap-2 text-sm"
+                aria-label={`Read ${review.author}'s review on Google`}
+              >
+                <Image
+                  src="/img/reviews/google-icon.svg"
+                  alt=""
+                  width={22}
+                  height={22}
+                  unoptimized
+                />
+                Google
+              </a>
+            </div>
+          </article>
+        ))}
       </div>
-    </section>
+
+      {hasMore ? (
+        <div className="mt-8 flex justify-center">
+          <button
+            type="button"
+            onClick={() => setExpanded((value) => !value)}
+            className="site-btn site-btn-tertiary"
+            aria-expanded={expanded}
+          >
+            {expanded ? 'Show less' : 'See more reviews'}
+          </button>
+        </div>
+      ) : null}
+    </div>
   )
 }

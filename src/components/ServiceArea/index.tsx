@@ -1,18 +1,20 @@
 import Link from 'next/link'
 import React from 'react'
 
-export type ServiceAreaLocation = {
-  id: string | number
-  title: string
-  slug: string
-  city?: string | null
-  state?: string | null
-  streetAddress?: string | null
-  postalCode?: string | null
-  phone?: string | null
+import { getCityPageLinks } from '@/utilities/locations'
+import { getAllOffices } from '@/utilities/offices'
+import { getCachedGlobal } from '@/utilities/getGlobals'
+import { getSiteSeo } from '@/utilities/seo'
+
+type RegionRow = {
+  name: string
+  cities: string[]
+  href?: string | null
+  linkLabel?: string | null
+  emptyLinkLabel?: string | null
 }
 
-const regions = [
+const fallbackRegions: RegionRow[] = [
   {
     name: 'Virginia',
     cities: ['Arlington', 'Alexandria', 'Fairfax', 'Springfield', 'Loudoun', 'Prince William'],
@@ -28,8 +30,7 @@ const regions = [
   {
     name: 'Washington DC',
     cities: ['Capitol Hill', 'Northwest', 'Northeast', 'Southeast'],
-    href: null,
-    linkLabel: null,
+    emptyLinkLabel: 'All DC neighborhoods',
   },
 ]
 
@@ -44,21 +45,105 @@ function formatPhone(phone: string) {
   return phone
 }
 
-export function ServiceArea({
-  locations,
+export async function ServiceArea({
+  callHref,
+  callLabel,
+  heading = 'Service Area',
+  intro,
+  email,
+  officesHeading = 'Our offices',
+  mapEmbedUrl,
+  mapTitle,
+  estimateHref = '/#contact',
+  estimateLabel = 'Free estimate',
 }: {
-  locations: ServiceAreaLocation[]
+  callHref?: string
+  callLabel?: string
+  heading?: string
+  intro?: string
+  email?: string
+  officesHeading?: string
+  mapEmbedUrl?: string
+  mapTitle?: string
+  estimateHref?: string
+  estimateLabel?: string
 }) {
+  const [offices, cityPages, site, settings] = await Promise.all([
+    getAllOffices(),
+    getCityPageLinks(),
+    getSiteSeo(),
+    getCachedGlobal('site-settings', 0)(),
+  ])
+
+  const fromCms: RegionRow[] = ((settings as { serviceAreaRegions?: unknown[] })?.serviceAreaRegions || [])
+    .map((row) => {
+      const r = row as {
+        name?: string
+        cities?: Array<{ name?: string } | string>
+        href?: string | null
+        linkLabel?: string | null
+        emptyLinkLabel?: string | null
+      }
+      return {
+        name: r.name || '',
+        cities: (r.cities || [])
+          .map((c) => (typeof c === 'string' ? c : c?.name || ''))
+          .filter(Boolean),
+        href: r.href || null,
+        linkLabel: r.linkLabel || null,
+        emptyLinkLabel: r.emptyLinkLabel || null,
+      }
+    })
+    .filter((r) => r.name)
+
+  const regions = fromCms.length ? fromCms : fallbackRegions
+  const resolvedMapUrl =
+    mapEmbedUrl ||
+    (settings as { serviceAreaMapEmbedUrl?: string })?.serviceAreaMapEmbedUrl ||
+    'https://www.google.com/maps/d/u/1/embed?mid=11Gt4y_RRlKcln8C0JIn5j3intMv4_0U&ehbc=2E312F&noprof=1'
+  const resolvedMapTitle =
+    mapTitle ||
+    (settings as { serviceAreaMapTitle?: string })?.serviceAreaMapTitle ||
+    'Service area map'
+
+  const resolvedEmail = email || site.email
+  const resolvedCallHref =
+    callHref || (site.phone.startsWith('tel:') ? site.phone : `tel:${site.phone}`)
+  const resolvedCallLabel = callLabel || `Call ${site.phoneDisplay}`
+  const cityLinks = Object.fromEntries(
+    cityPages.map((page) => [page.city, `/locations/${page.slug}`]),
+  )
+  const seoCities = cityPages.filter((page) => !offices.some((o) => o.slug === page.slug))
+  const resolvedIntro =
+    intro ||
+    `We serve homes and businesses across Virginia, Maryland, and Washington, DC — with local offices in Burke and Bethesda`
+
   return (
-    <section id="service_area" className="bg-white py-16 md:py-20">
+    <section id="service_area" className="scroll-mt-24 bg-white py-16 md:py-20">
       <div className="container">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="font-[family-name:var(--font-display)] text-3xl font-semibold tracking-tight text-[#0b1c2c] md:text-4xl">
-            Service Area
+          <h2 className="font-display text-3xl font-semibold tracking-tight text-[var(--site-heading)] md:text-4xl">
+            {heading}
           </h2>
-          <p className="mt-4 text-[#516579] leading-relaxed">
-            We serve homes and businesses across Virginia, Maryland, and Washington, DC — with
-            local offices in Burke and Bethesda.
+          <p className="mt-4 site-body leading-relaxed">
+            {resolvedIntro}
+            {seoCities.length > 0 ? (
+              <>
+                , including{' '}
+                {seoCities.map((page, index) => (
+                  <React.Fragment key={page.slug}>
+                    {index > 0 ? (index === seoCities.length - 1 ? ' and ' : ', ') : null}
+                    <Link
+                      href={`/locations/${page.slug}`}
+                      className="site-link"
+                    >
+                      {page.city}, {page.state}
+                    </Link>
+                  </React.Fragment>
+                ))}
+              </>
+            ) : null}
+            .
           </p>
         </div>
 
@@ -66,18 +151,24 @@ export function ServiceArea({
           {regions.map((region) => (
             <div
               key={region.name}
-              className="flex flex-col gap-4 border border-[#d5dee8] bg-[#f8fafc] px-5 py-5 transition hover:border-sky-300 sm:flex-row sm:items-center sm:justify-between sm:gap-8 sm:px-6"
+              className="site-card site-card-filled site-card-hover flex flex-col gap-4 px-5 py-5 sm:flex-row sm:items-center sm:justify-between sm:gap-8 sm:px-6"
             >
               <div className="min-w-[140px] shrink-0">
-                <h3 className="font-[family-name:var(--font-display)] text-xl font-semibold text-[#0b1c2c]">
+                <h3 className="font-display text-xl font-semibold text-[var(--site-heading)]">
                   {region.name}
                 </h3>
               </div>
-              <div className="flex flex-1 flex-wrap items-center gap-x-2 gap-y-2 text-sm text-[#516579]">
+              <div className="flex flex-1 flex-wrap items-center gap-x-2 gap-y-2 text-sm site-body">
                 {region.cities.map((city, i) => (
                   <React.Fragment key={city}>
                     {i > 0 ? <span className="text-[#c5d0db]">·</span> : null}
-                    <span>{city}</span>
+                    {cityLinks[city] ? (
+                      <Link href={cityLinks[city]} className="site-link font-medium">
+                        {city}
+                      </Link>
+                    ) : (
+                      <span>{city}</span>
+                    )}
                   </React.Fragment>
                 ))}
               </div>
@@ -85,88 +176,81 @@ export function ServiceArea({
                 {region.href && region.linkLabel ? (
                   <Link
                     href={region.href}
-                    className="text-sm font-semibold text-sky-700 hover:underline"
+                    className="text-sm site-link"
                   >
                     {region.linkLabel} →
                   </Link>
-                ) : (
-                  <span className="text-sm text-[#7a8b9c]">All DC neighborhoods</span>
-                )}
+                ) : region.emptyLinkLabel ? (
+                  <span className="text-sm site-muted">{region.emptyLinkLabel}</span>
+                ) : null}
               </div>
             </div>
           ))}
         </div>
 
-        <div className="mt-10 overflow-hidden border border-[#d5dee8] bg-[#f4f7fa]">
+        <div className="mt-10 overflow-hidden border border-[var(--site-border)] bg-[var(--site-muted)]">
           <iframe
-            title="Amazon Air Duct Cleaning service area map covering Virginia, Maryland, and Washington DC"
-            src="https://www.google.com/maps/d/u/1/embed?mid=11Gt4y_RRlKcln8C0JIn5j3intMv4_0U&ehbc=2E312F&noprof=1"
+            title={resolvedMapTitle}
+            src={resolvedMapUrl}
             className="h-[340px] w-full md:h-[420px]"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           />
         </div>
 
-        {locations.length > 0 ? (
-          <div className="mt-14">
-            <h3 className="text-center font-[family-name:var(--font-display)] text-2xl font-semibold text-[#0b1c2c]">
-              Our offices
-            </h3>
+        {offices.length > 0 ? (
+          <div id="offices" className="mt-14 scroll-mt-24">
+            <h2 className="text-center font-display text-3xl font-semibold tracking-tight text-[var(--site-heading)] md:text-4xl">
+              {officesHeading}
+            </h2>
             <div className="mx-auto mt-8 grid max-w-4xl gap-5 md:grid-cols-2">
-              {locations.map((loc) => {
-                const phoneDisplay = loc.phone ? formatPhone(loc.phone) : null
-                return (
-                  <Link
-                    key={loc.id}
-                    href={`/locations/${loc.slug}`}
-                    className="group border border-[#d5dee8] bg-white p-6 transition hover:-translate-y-0.5 hover:border-sky-300 hover:shadow-[0_18px_40px_rgba(11,28,44,0.08)]"
-                  >
-                    <p className="text-sm font-semibold tracking-[0.18em] text-sky-700 uppercase">
-                      {loc.state || 'Office'}
-                    </p>
-                    <p className="mt-2 font-[family-name:var(--font-display)] text-xl font-semibold text-[#0b1c2c]">
-                      {loc.city || loc.title}
-                    </p>
-                    {loc.streetAddress ? (
-                      <p className="mt-3 text-sm leading-relaxed text-[#516579]">
-                        {loc.streetAddress}
-                        <br />
-                        {loc.city}
-                        {loc.state ? `, ${loc.state}` : ''}
-                        {loc.postalCode ? ` ${loc.postalCode}` : ''}
-                      </p>
-                    ) : null}
-                    {phoneDisplay && loc.phone ? (
-                      <p className="mt-3 text-sm font-medium text-[#0b1c2c]">{phoneDisplay}</p>
-                    ) : null}
-                    <span className="mt-5 inline-block text-sm font-semibold text-sky-700 group-hover:underline">
-                      View location page →
-                    </span>
-                  </Link>
-                )
-              })}
+              {offices.map((office) => (
+                <Link
+                  key={office.slug}
+                  href={`/locations/${office.slug}`}
+                  className="site-card site-card-hover group p-6"
+                >
+                  <p className="text-sm font-semibold tracking-[0.18em] text-[var(--site-link)] uppercase">
+                    {office.state}
+                  </p>
+                  <p className="mt-2 font-display text-xl font-semibold text-[var(--site-heading)]">
+                    {office.city}
+                  </p>
+                  <p className="mt-3 text-sm leading-relaxed site-body">
+                    {office.streetAddress}
+                    <br />
+                    {office.city}, {office.state} {office.postalCode}
+                  </p>
+                  <p className="mt-3 text-sm font-medium text-[var(--site-heading)]">
+                    {formatPhone(office.phone)}
+                  </p>
+                  <span className="mt-5 inline-block site-link text-sm group-hover:underline">
+                    View location page →
+                  </span>
+                </Link>
+              ))}
             </div>
           </div>
         ) : null}
 
         <div className="mx-auto mt-12 flex max-w-4xl flex-wrap items-center justify-center gap-4">
           <a
-            href="tel:+18006063334"
-            className="rounded-md bg-amber-400 px-5 py-3 text-sm font-semibold text-[#0b1c2c] transition hover:bg-amber-300"
+            href={resolvedCallHref}
+            className="site-btn site-btn-primary"
           >
-            Call (800) 606-3334
+            {resolvedCallLabel}
           </a>
           <a
-            href="mailto:support@amazonadc.com"
-            className="rounded-md border border-[#d5dee8] bg-white px-5 py-3 text-sm font-semibold text-[#0b1c2c] transition hover:border-sky-300"
+            href={`mailto:${resolvedEmail}`}
+            className="site-btn site-btn-tertiary"
           >
-            support@amazonadc.com
+            {resolvedEmail}
           </a>
           <Link
-            href="/#contact"
-            className="rounded-md bg-[#0b1c2c] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#12324a]"
+            href={estimateHref}
+            className="site-btn site-btn-secondary"
           >
-            Free estimate
+            {estimateLabel}
           </Link>
         </div>
       </div>

@@ -3,13 +3,7 @@ import type { CollectionConfig, Field } from 'payload'
 import { anyone } from '../../access/anyone'
 import { authenticated } from '../../access/authenticated'
 import { slugField } from 'payload'
-import {
-  MetaDescriptionField,
-  MetaImageField,
-  MetaTitleField,
-  OverviewField,
-  PreviewField,
-} from '@payloadcms/plugin-seo/fields'
+import { seoMetaTabFields } from '../../fields/seoMeta'
 
 const textItem = (name = 'text'): Field => ({
   name,
@@ -84,18 +78,30 @@ export const Services: CollectionConfig = {
       required: true,
     },
     {
+      name: 'thumbMedia',
+      type: 'upload',
+      relationTo: 'media',
+      admin: { description: 'Small card image upload (preferred)' },
+    },
+    {
       name: 'thumbImage',
       type: 'text',
       admin: {
-        description: 'Small card image path, e.g. /img/services/..._small.webp',
+        description: 'Or public path, e.g. /img/services/..._small.webp',
       },
+    },
+    {
+      name: 'heroMedia',
+      type: 'upload',
+      relationTo: 'media',
+      admin: { description: 'Hero image upload (preferred). Edit crop in Media.' },
     },
     {
       name: 'heroImage',
       type: 'text',
       required: true,
       admin: {
-        description: 'Public path, e.g. /img/Amazon_AIR_DUCT_CLEANING.webp',
+        description: 'Or public path, e.g. /img/Amazon_AIR_DUCT_CLEANING.webp',
       },
     },
     {
@@ -108,9 +114,15 @@ export const Services: CollectionConfig = {
       type: 'textarea',
     },
     {
+      name: 'includesMedia',
+      type: 'upload',
+      relationTo: 'media',
+    },
+    {
       name: 'includesImage',
       type: 'text',
       required: true,
+      admin: { description: 'Or public path if no upload' },
     },
     {
       name: 'includesImageAlt',
@@ -127,7 +139,12 @@ export const Services: CollectionConfig = {
       name: 'beforeAfter',
       type: 'array',
       fields: [
-        { name: 'src', type: 'text', required: true },
+        {
+          name: 'media',
+          type: 'upload',
+          relationTo: 'media',
+        },
+        { name: 'src', type: 'text' },
         { name: 'alt', type: 'text', required: true },
       ],
     },
@@ -141,6 +158,7 @@ export const Services: CollectionConfig = {
           type: 'array',
           fields: [textareaItem()],
         },
+        { name: 'media', type: 'upload', relationTo: 'media' },
         { name: 'image', type: 'text' },
         { name: 'imageAlt', type: 'text' },
       ],
@@ -210,6 +228,9 @@ export const Services: CollectionConfig = {
     {
       name: 'faq',
       type: 'array',
+      admin: {
+        description: 'Shown on the page and emitted as FAQPage JSON-LD for this URL.',
+      },
       fields: [
         { name: 'question', type: 'text', required: true },
         { name: 'answer', type: 'textarea', required: true },
@@ -221,25 +242,7 @@ export const Services: CollectionConfig = {
         {
           name: 'meta',
           label: 'SEO',
-          fields: [
-            OverviewField({
-              titlePath: 'meta.title',
-              descriptionPath: 'meta.description',
-              imagePath: 'meta.image',
-            }),
-            MetaTitleField({
-              hasGenerateFn: true,
-            }),
-            MetaImageField({
-              relationTo: 'media',
-            }),
-            MetaDescriptionField({}),
-            PreviewField({
-              hasGenerateFn: true,
-              titlePath: 'meta.title',
-              descriptionPath: 'meta.description',
-            }),
-          ],
+          fields: seoMetaTabFields(),
         },
       ],
     },

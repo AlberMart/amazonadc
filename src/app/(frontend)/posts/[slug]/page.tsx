@@ -5,7 +5,21 @@ import { getPayload } from 'payload'
 import React from 'react'
 
 import { BlogArticle } from '@/components/BlogArticle'
+import { JsonLd } from '@/components/JsonLd'
 import { getAllBlogSlugs, getBlogPost } from '@/utilities/blog'
+import {
+  absoluteUrl,
+  blogPostingNode,
+  breadcrumb,
+  faqNode,
+  getSiteSeo,
+  jsonLd,
+  keywordsFromSlug,
+  organizationNode,
+  resolvePageMeta,
+  webPageNode,
+  websiteNode,
+} from '@/utilities/seo'
 import PageClient from './page.client'
 
 export const dynamic = 'force-dynamic'
@@ -37,24 +51,17 @@ export async function generateStaticParams() {
 export default async function Post({ params: paramsPromise }: Args) {
   const { slug = '' } = await paramsPromise
   const decodedSlug = decodeURIComponent(slug)
-  const post = await getBlogPost(decodedSlug)
+  const [post, site] = await Promise.all([getBlogPost(decodedSlug), getSiteSeo()])
 
   if (!post) notFound()
 
   const payload = await getPayload({ config: configPromise })
-  const [services, locations] = await Promise.all([
-    payload.find({
-      collection: 'services',
-      limit: 10,
-      pagination: false,
-      sort: 'price',
-    }),
-    payload.find({
-      collection: 'locations',
-      limit: 10,
-      pagination: false,
-    }),
-  ])
+  const services = await payload.find({
+    collection: 'services',
+    limit: 10,
+    pagination: false,
+    sort: 'price',
+  })
 
   const offerServices = services.docs.map((service) => ({
     id: service.id,
@@ -69,76 +76,89 @@ export default async function Post({ params: paramsPromise }: Args) {
       '',
   }))
 
-  const areaLocations = locations.docs.map((loc) => ({
-    id: loc.id,
-    title: loc.title,
-    slug: getSlugValue(loc.slug),
-    city: loc.city,
-    state: loc.state,
-    streetAddress: loc.streetAddress,
-    postalCode: loc.postalCode,
-    phone: loc.phone,
-  }))
-
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@graph': [
-      {
-        '@type': 'BlogPosting',
-        headline: post.headline || post.title,
-        description: post.description,
-        image: `https://amazonadc.com${post.heroImage}`,
-        author: {
-          '@type': 'Organization',
-          name: 'Amazon Air Duct Cleaning',
-        },
-        publisher: {
-          '@type': 'Organization',
-          name: 'Amazon Air Duct Cleaning',
-          url: 'https://amazonadc.com/',
-        },
-        mainEntityOfPage: `https://amazonadc.com/blog/${post.slug}`,
-      },
-      ...(post.faq.length
-        ? [
-            {
-              '@type': 'FAQPage',
-              mainEntity: post.faq.map((item) => ({
-                '@type': 'Question',
-                name: item.q,
-                acceptedAnswer: { '@type': 'Answer', text: item.a },
-              })),
-            },
-          ]
-        : []),
+  const path = `/blog/${post.slug}`
+  const pageUrl = absoluteUrl(path)
+  const crumbs = breadcrumb(
+    [
+      { name: 'Home', path: '/' },
+      { name: 'Blog', path: '/blog' },
+      { name: post.title, path },
     ],
-  }
+    path,
+  )
+
+  const structuredData = jsonLd([
+    organizationNode(site),
+    websiteNode(site),
+    webPageNode({
+      path,
+      name: post.title,
+      description: post.description,
+      mainEntityId: `${pageUrl}#article`,
+      breadcrumbId: `${pageUrl}#breadcrumb`,
+      image: post.heroImage,
+      dateModified: post.updatedAt || post.publishedAt || undefined,
+    }),
+    crumbs,
+    blogPostingNode({
+      path,
+      headline: post.headline || post.title,
+      description: post.description,
+      image: post.heroImage,
+      datePublished: post.publishedAt,
+      dateModified: post.updatedAt || post.publishedAt,
+      keywords: keywordsFromSlug(post.slug, [post.title]),
+      articleSection: 'Air Duct Cleaning',
+      site,
+    }),
+    ...(post.faq.length
+      ? [
+          faqNode(post.faq, {
+            pagePath: path,
+            aboutId: `${absoluteUrl('/')}#business`,
+            publisherId: `${absoluteUrl('/')}#organization`,
+          }),
+        ]
+      : []),
+  ])
 
   return (
     <>
       <PageClient />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
-      <BlogArticle post={post} services={offerServices} locations={areaLocations} />
+      <JsonLd data={structuredData} />
+      <BlogArticle post={post} services={offerServices} />
     </>
   )
 }
 
 export async function generateMetadata({ params: paramsPromise }: Args): Promise<Metadata> {
   const { slug = '' } = await paramsPromise
-  const post = await getBlogPost(decodeURIComponent(slug))
+  const [post, site] = await Promise.all([
+    getBlogPost(decodeURIComponent(slug)),
+    getSiteSeo(),
+  ])
   if (!post) return {}
 
-  return {
-    title: `${post.title} | Amazon Air Duct Cleaning`,
-    description: post.description,
-    openGraph: {
-      title: post.title,
-      description: post.description,
-      images: [{ url: post.heroImage }],
+  const meta = resolvePageMeta(
+    {
+      path: `/blog/${post.slug}`,
+      meta: post.meta,
+      fallbackTitle: post.title,
+      fallbackDescription: post.description,
+      fallbackImage: post.heroImage,
+      imageAlt: post.heroImageAlt || post.title,
       type: 'article',
+    },
+    site,
+  )
+
+  return {
+    ...meta,
+    openGraph: {
+      ...meta.openGraph,
+      type: 'article',
+      publishedTime: post.publishedAt || undefined,
+      modifiedTime: post.updatedAt || post.publishedAt || undefined,
     },
   }
 }

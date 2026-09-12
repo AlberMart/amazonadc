@@ -11,24 +11,25 @@ import { RenderBlocks } from '@/blocks/RenderBlocks'
 import { RenderHero } from '@/heros/RenderHero'
 import { LegalPage } from '@/components/LegalPage'
 import { ServicePage } from '@/components/ServicePage'
+import { JsonLd } from '@/components/JsonLd'
 import { generateMeta } from '@/utilities/generateMeta'
 import { getAllLegalSlugs, getLegalPage } from '@/utilities/legal'
 import { getAllServiceSlugs, getServiceContent } from '@/utilities/services'
+import {
+  absoluteUrl,
+  breadcrumb,
+  faqNode,
+  getSiteSeo,
+  jsonLd,
+  organizationNode,
+  pageTitle,
+  resolvePageMeta,
+  serviceOfferNode,
+  webPageNode,
+  websiteNode,
+} from '@/utilities/seo'
 import PageClient from './page.client'
 import { LivePreviewListener } from '@/components/LivePreviewListener'
-
-function getSlugValue(slug: unknown): string {
-  if (typeof slug === 'string') return slug
-  if (
-    slug &&
-    typeof slug === 'object' &&
-    'slug' in slug &&
-    typeof (slug as { slug: unknown }).slug === 'string'
-  ) {
-    return (slug as { slug: string }).slug
-  }
-  return ''
-}
 
 export async function generateStaticParams() {
   const payload = await getPayload({ config: configPromise })
@@ -71,94 +72,109 @@ export default async function Page({ params: paramsPromise }: Args) {
 
   const serviceContent = await getServiceContent(decodedSlug)
   if (serviceContent) {
-    const payload = await getPayload({ config: configPromise })
-    const locations = await payload.find({
-      collection: 'locations',
-      limit: 10,
-      pagination: false,
-    })
-
-    const areaLocations = locations.docs.map((loc) => ({
-      id: loc.id,
-      title: loc.title,
-      slug: getSlugValue(loc.slug),
-      city: loc.city,
-      state: loc.state,
-      streetAddress: loc.streetAddress,
-      postalCode: loc.postalCode,
-      phone: loc.phone,
-    }))
-
-    const jsonLd = {
-      '@context': 'https://schema.org',
-      '@graph': [
-        {
-          '@type': 'Service',
-          name: serviceContent.title,
-          description: serviceContent.description,
-          image: `https://amazonadc.com${serviceContent.heroImage}`,
-          url: `https://amazonadc.com/${serviceContent.slug}`,
-          provider: {
-            '@type': 'HVACBusiness',
-            name: 'Amazon Air Duct Cleaning',
-            url: 'https://amazonadc.com',
-            telephone: '+18006063334',
-          },
-          offers: {
-            '@type': 'Offer',
-            price: String(serviceContent.price),
-            priceCurrency: 'USD',
-            availability: 'https://schema.org/InStock',
-            url: serviceContent.orderUrl,
-          },
-          areaServed: ['Virginia', 'Maryland', 'Washington DC'],
-        },
-        {
-          '@type': 'FAQPage',
-          mainEntity: serviceContent.faq.map((item) => ({
-            '@type': 'Question',
-            name: item.q,
-            acceptedAnswer: { '@type': 'Answer', text: item.a },
-          })),
-        },
+    const site = await getSiteSeo()
+    const path = `/${serviceContent.slug}`
+    const pageUrl = absoluteUrl(path)
+    const serviceId = `${pageUrl}#service`
+    const businessId = `${absoluteUrl('/')}#business`
+    const crumbs = breadcrumb(
+      [
+        { name: 'Home', path: '/' },
+        { name: serviceContent.title, path },
       ],
-    }
+      path,
+    )
+    const structuredData = jsonLd([
+      organizationNode(site),
+      websiteNode(site),
+      webPageNode({
+        path,
+        name: pageTitle(serviceContent.title, site.titleSuffix),
+        description: serviceContent.description,
+        aboutId: businessId,
+        mainEntityId: serviceId,
+        breadcrumbId: `${pageUrl}#breadcrumb`,
+        image: serviceContent.heroImage,
+      }),
+      {
+        '@type': ['HVACBusiness', 'HomeAndConstructionBusiness'],
+        '@id': businessId,
+        name: site.siteName,
+        url: absoluteUrl('/'),
+        telephone: site.phone,
+        email: site.email,
+        logo: {
+          '@type': 'ImageObject',
+          url: absoluteUrl(site.logoPath),
+        },
+        image: absoluteUrl(serviceContent.heroImage),
+        priceRange: site.priceRange,
+        areaServed: [
+          { '@type': 'AdministrativeArea', name: 'Virginia' },
+          { '@type': 'AdministrativeArea', name: 'Maryland' },
+          { '@type': 'AdministrativeArea', name: 'Washington DC' },
+        ],
+      },
+      crumbs,
+      serviceOfferNode({
+        title: serviceContent.title,
+        slug: serviceContent.slug,
+        description: serviceContent.description,
+        price: serviceContent.price,
+        image: serviceContent.heroImage,
+        site,
+        idMode: 'page',
+      }),
+      faqNode(serviceContent.faq, {
+        pagePath: path,
+        aboutId: businessId,
+        publisherId: `${absoluteUrl('/')}#organization`,
+      }),
+    ])
 
     return (
       <>
+        <meta property="og:type" content="product" />
+        <meta property="product:price:amount" content={String(serviceContent.price)} />
+        <meta property="product:price:currency" content="USD" />
+        <meta property="product:availability" content="in stock" />
+        <meta property="product:brand" content={site.siteName} />
+        <meta property="product:condition" content="new" />
         <PageClient />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-        <ServicePage service={serviceContent} locations={areaLocations} />
+        <JsonLd data={structuredData} />
+        <ServicePage service={serviceContent} />
       </>
     )
   }
 
   const legalContent = await getLegalPage(decodedSlug)
   if (legalContent) {
-    const jsonLd = {
-      '@context': 'https://schema.org',
-      '@type': 'WebPage',
-      name: legalContent.title,
-      description: legalContent.description,
-      url: `https://amazonadc.com/${legalContent.slug}`,
-      isPartOf: { '@id': 'https://amazonadc.com/#website' },
-      publisher: {
-        '@type': 'Organization',
-        name: 'Amazon Air Duct Cleaning',
-        url: 'https://amazonadc.com/',
-      },
-    }
+    const site = await getSiteSeo()
+    const path = `/${legalContent.slug}`
+    const pageUrl = absoluteUrl(path)
+    const crumbs = breadcrumb(
+      [
+        { name: 'Home', path: '/' },
+        { name: legalContent.title, path },
+      ],
+      path,
+    )
+    const structuredData = jsonLd([
+      organizationNode(site),
+      websiteNode(site),
+      webPageNode({
+        path,
+        name: legalContent.title,
+        description: legalContent.description,
+        breadcrumbId: `${pageUrl}#breadcrumb`,
+      }),
+      crumbs,
+    ])
 
     return (
       <>
         <PageClient />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
+        <JsonLd data={structuredData} />
         <LegalPage page={legalContent} />
       </>
     )
@@ -192,35 +208,35 @@ export default async function Page({ params: paramsPromise }: Args) {
 export async function generateMetadata({ params: paramsPromise }: Args): Promise<Metadata> {
   const { slug = 'home' } = await paramsPromise
   const decodedSlug = decodeURIComponent(slug)
+  const site = await getSiteSeo()
 
   const serviceContent = await getServiceContent(decodedSlug)
   if (serviceContent) {
-    const title = `${serviceContent.title} – $${serviceContent.price} | Amazon Air Duct Cleaning`
-    return {
-      title,
-      description: serviceContent.description,
-      openGraph: {
-        title,
-        description: serviceContent.description,
-        images: [{ url: serviceContent.heroImage }],
-        type: 'website',
+    return resolvePageMeta(
+      {
+        path: `/${serviceContent.slug}`,
+        meta: serviceContent.meta,
+        fallbackTitle: `${serviceContent.title} – $${serviceContent.price}`,
+        fallbackDescription: serviceContent.description,
+        fallbackImage: serviceContent.heroImage,
+        imageAlt: serviceContent.heroAlt,
+        ogTypeProduct: true,
+        productPrice: serviceContent.price,
       },
-    }
+      site,
+    )
   }
 
   const legalContent = await getLegalPage(decodedSlug)
   if (legalContent) {
-    const title = `${legalContent.title} | Amazon Air Duct Cleaning`
-    return {
-      title,
-      description: legalContent.description,
-      openGraph: {
-        title,
-        description: legalContent.description,
-        images: [{ url: '/img/Amazon.webp' }],
-        type: 'website',
+    return resolvePageMeta(
+      {
+        path: `/${legalContent.slug}`,
+        fallbackTitle: legalContent.title,
+        fallbackDescription: legalContent.description,
       },
-    }
+      site,
+    )
   }
 
   const page = await queryPageBySlug({ slug: decodedSlug })

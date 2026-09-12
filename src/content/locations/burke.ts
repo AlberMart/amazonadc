@@ -1,6 +1,6 @@
-import type { LocationContent } from '@/utilities/locations'
+import type { LocationContentSeed } from '@/utilities/locations'
 
-export const burke: LocationContent = {
+export const burke: LocationContentSeed = {
   slug: 'burke',
   title: 'Air Duct Cleaning in Burke, VA',
   headline: 'Serving Burke, Northern Virginia, and Washington DC',
@@ -10,13 +10,9 @@ export const burke: LocationContent = {
     'Trusted by homeowners and property managers across Burke, Springfield, Alexandria, Arlington, McLean, Reston, and Washington DC. Our licensed technicians deliver professional air duct, dryer vent, chimney, and HVAC cleaning — with honest pricing and lasting results.',
   heroImage: '/img/Amazon.webp',
   heroAlt: 'Air Duct Cleaning Burke VA — Amazon Air Duct Cleaning',
-  phone: '+15714600001',
-  phoneDisplay: '(571) 460-0001',
-  email: 'support@amazonadc.com',
-  streetAddress: '5641 Burke Centre Pkwy Ste 119',
   city: 'Burke',
   state: 'VA',
-  postalCode: '22015',
+  servedBy: 'burke',
   about: {
     heading: 'Your Local Burke Branch',
     paragraphs: [
@@ -85,7 +81,10 @@ export const burke: LocationContent = {
       "Our Burke branch serves a wide region across Fairfax County, Loudoun County, Prince William County, and Washington DC. If you don't see your city listed, call us — we likely serve your area.",
     groups: [
       { title: 'Burke & Springfield', places: 'Burke, Springfield, Fair Oaks, Oakton, Lorton, Mt Vernon' },
-      { title: 'Alexandria & Arlington', places: 'Alexandria, Arlington, Falls Church, McLean' },
+      {
+        title: 'Alexandria & Arlington',
+        places: '[Alexandria](/locations/alexandria), [Arlington](/locations/arlington), Falls Church, McLean',
+      },
       { title: 'Reston & Herndon', places: 'Reston, Herndon, Great Falls, Vienna, Chantilly' },
       { title: 'Leesburg & Loudoun County', places: 'Leesburg, Ashburn, Sterling, Oatlands, Lenah' },
       {

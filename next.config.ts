@@ -26,6 +26,9 @@ const nextConfig: NextConfig = {
       {
         pathname: '/img/**',
       },
+      {
+        pathname: '/media/**',
+      },
     ],
     qualities: [100],
     remotePatterns: [
@@ -49,6 +52,7 @@ const nextConfig: NextConfig = {
     return webpackConfig
   },
   reactStrictMode: true,
+  devIndicators: false,
   redirects,
   async rewrites() {
     return [

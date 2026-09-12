@@ -63,7 +63,7 @@ export type HomeContent = {
 }
 
 export const homeContentSeed: HomeContent = {
-  heroEyebrow: 'Amazon Air Duct Cleaning',
+  heroEyebrow: '',
   heroHeadline: 'Cleaner air for homes across Virginia, Maryland & DC',
   heroSubheadline:
     'Flat-rate air duct and dryer vent cleaning with before/after proof and a 100% satisfaction guarantee.',

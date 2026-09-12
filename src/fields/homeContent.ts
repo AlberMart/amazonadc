@@ -31,7 +31,11 @@ export const homeContentFields: Field = {
         {
           label: 'Hero',
           fields: [
-            { name: 'heroEyebrow', type: 'text', required: true },
+            {
+              name: 'heroEyebrow',
+              type: 'text',
+              admin: { description: 'Small line above the headline. Leave empty to hide.' },
+            },
             { name: 'heroHeadline', type: 'textarea', required: true },
             { name: 'heroSubheadline', type: 'textarea', required: true },
             { name: 'heroCtaLabel', type: 'text', required: true },
@@ -168,6 +172,9 @@ export const homeContentFields: Field = {
             {
               name: 'faqItems',
               type: 'array',
+              admin: {
+                description: 'Shown on the homepage and emitted as FAQPage JSON-LD.',
+              },
               fields: [
                 { name: 'question', type: 'text', required: true },
                 { name: 'answer', type: 'textarea', required: true },
@@ -183,6 +190,11 @@ export const homeContentFields: Field = {
             {
               name: 'reviews',
               type: 'array',
+              admin: {
+                description:
+                  'Deprecated — featured reviews now live on each Office (Content → Offices → Featured reviews). Home carousel reads from offices.',
+                condition: () => false,
+              },
               fields: [
                 { name: 'initials', type: 'text', required: true },
                 { name: 'author', type: 'text', required: true },
