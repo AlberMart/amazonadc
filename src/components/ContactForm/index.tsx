@@ -1,6 +1,10 @@
-'use client'
+import React from 'react'
 
-import React, { useState } from 'react'
+import { ContactFormClient } from '@/components/ContactForm/FormClient'
+import { getCachedPublicContactForm } from '@/utilities/contactForm'
+import { issueFormToken } from '@/utilities/formGuard'
+import { getCachedGlobal } from '@/utilities/getGlobals'
+import { getSiteSeo } from '@/utilities/seo'
 
 type ContactFormProps = {
   sourcePage?: string
@@ -12,136 +16,46 @@ type ContactFormProps = {
   submitLabel?: string
   submittingLabel?: string
   successMessage?: string
+  formId?: number | null
 }
 
-export function ContactForm({
+export async function ContactForm({
   sourcePage = '/',
-  phoneDisplay = '(800) 606-3334',
-  phoneHref = '+18006063334',
-  email = 'support@amazonadc.com',
-  heading = 'Contact Us',
+  phoneDisplay,
+  phoneHref,
+  email,
+  heading,
   intro,
-  submitLabel = 'Send',
-  submittingLabel = 'Sending…',
-  successMessage = 'Your message has been sent. Thank you!',
+  submitLabel,
+  submittingLabel,
+  successMessage,
+  formId,
 }: ContactFormProps) {
-  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
-  const [error, setError] = useState<string | null>(null)
+  const [form, site, settings] = await Promise.all([
+    getCachedPublicContactForm(formId)(),
+    getSiteSeo(),
+    getCachedGlobal('site-settings', 1)(),
+  ])
 
-  async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault()
-    setStatus('loading')
-    setError(null)
-
-    const form = e.currentTarget
-    const formData = new FormData(form)
-
-    const payload = {
-      name: String(formData.get('name') || ''),
-      email: String(formData.get('email') || ''),
-      phone: String(formData.get('phone') || ''),
-      address: String(formData.get('address') || ''),
-      message: String(formData.get('message') || ''),
-      sourcePage,
-      website: String(formData.get('website') || ''),
-      turnstileToken: String(formData.get('cf-turnstile-response') || ''),
-    }
-
-    try {
-      const res = await fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload),
-      })
-      const data = await res.json()
-      if (!res.ok) {
-        throw new Error(data.error || 'Something went wrong')
-      }
-      setStatus('success')
-      form.reset()
-    } catch (err) {
-      setStatus('error')
-      setError(err instanceof Error ? err.message : 'Unable to send message')
-    }
-  }
+  const resolvedHref = phoneHref || site.phone
+  const tel = resolvedHref.startsWith('tel:') ? resolvedHref : `tel:${resolvedHref}`
 
   return (
-    <section id="contact" className="container py-16">
-      <div className="mx-auto max-w-2xl">
-        <h2 className="site-heading mb-2 text-3xl font-semibold tracking-tight">{heading}</h2>
-        <p className="site-body mb-6">
-          {intro || (
-            <>
-              Our specialists will contact you immediately.{' '}
-              <a className="underline" href={`tel:${phoneHref.replace(/^tel:/, '')}`}>
-                {phoneDisplay}
-              </a>{' '}
-              ·{' '}
-              <a className="underline" href={`mailto:${email}`}>
-                {email}
-              </a>
-            </>
-          )}
-        </p>
-
-        <form onSubmit={onSubmit} className="grid gap-4" noValidate>
-          {/* Honeypot */}
-          <input
-            type="text"
-            name="website"
-            tabIndex={-1}
-            autoComplete="off"
-            className="absolute left-[-9999px] h-0 w-0 opacity-0"
-            aria-hidden="true"
-          />
-
-          <div className="grid gap-4 sm:grid-cols-2">
-            <label className="grid gap-1 text-sm">
-              Full name*
-              <input required name="name" className="rounded-md border px-3 py-2" />
-            </label>
-            <label className="grid gap-1 text-sm">
-              Email*
-              <input required type="email" name="email" className="rounded-md border px-3 py-2" />
-            </label>
-          </div>
-
-          <label className="grid gap-1 text-sm">
-            Phone*
-            <input required name="phone" className="rounded-md border px-3 py-2" />
-          </label>
-
-          <label className="grid gap-1 text-sm">
-            Address
-            <input name="address" className="rounded-md border px-3 py-2" />
-          </label>
-
-          <label className="grid gap-1 text-sm">
-            Message*
-            <textarea required name="message" rows={6} className="rounded-md border px-3 py-2" />
-          </label>
-
-          {process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY ? (
-            <div
-              className="cf-turnstile"
-              data-sitekey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY}
-            />
-          ) : null}
-
-          {status === 'success' ? (
-            <p className="text-sm text-green-700">{successMessage}</p>
-          ) : null}
-          {status === 'error' && error ? <p className="text-sm text-red-600">{error}</p> : null}
-
-          <button
-            type="submit"
-            disabled={status === 'loading'}
-            className="site-btn site-btn-secondary disabled:opacity-60"
-          >
-            {status === 'loading' ? submittingLabel : submitLabel}
-          </button>
-        </form>
-      </div>
-    </section>
+    <ContactFormClient
+      sourcePage={sourcePage}
+      phoneDisplay={phoneDisplay || site.phoneDisplay}
+      phoneHref={tel}
+      email={email || site.email}
+      heading={heading || settings.contactHeading || form?.title || 'Contact Us'}
+      intro={intro || settings.contactIntro || undefined}
+      submitLabel={submitLabel || settings.contactSubmitLabel || form?.submitButtonLabel || 'Send'}
+      submittingLabel={submittingLabel}
+      successMessage={
+        successMessage || settings.contactSuccessMessage || form?.confirmationMessage
+      }
+      form={form}
+      formToken={issueFormToken()}
+      turnstileSiteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || null}
+    />
   )
 }

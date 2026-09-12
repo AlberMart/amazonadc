@@ -3,6 +3,7 @@ import { getPayload } from 'payload'
 import config from '../payload.config'
 import { locationsSeed, officesSeed, servicesSeed, siteSettingsSeed, headerSeed, footerSeed } from './amazonadc'
 import { homePageSeed, legalPagesSeed, postsSeed } from './blog-and-legal'
+import { contactFormSeed } from './contact-form'
 
 async function upsertBySlug(
   payload: Awaited<ReturnType<typeof getPayload>>,
@@ -41,9 +42,35 @@ async function run() {
   const payload = await getPayload({ config })
   const context = { disableRevalidate: true }
 
+  const existingForm = await payload.find({
+    collection: 'forms',
+    where: { title: { equals: contactFormSeed.title } },
+    limit: 1,
+  })
+  const formId = existingForm.docs[0]
+    ? (
+        await payload.update({
+          collection: 'forms',
+          id: existingForm.docs[0].id,
+          data: contactFormSeed,
+          context,
+        })
+      ).id
+    : (
+        await payload.create({
+          collection: 'forms',
+          data: contactFormSeed,
+          context,
+        })
+      ).id
+  console.log(existingForm.docs[0] ? 'updated' : 'created', 'forms', contactFormSeed.title)
+
   await payload.updateGlobal({
     slug: 'site-settings',
-    data: siteSettingsSeed,
+    data: {
+      ...siteSettingsSeed,
+      contactForm: formId,
+    },
     context,
   })
   console.log('updated site-settings')

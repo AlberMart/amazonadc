@@ -135,6 +135,172 @@ export const SiteSettings: GlobalConfig = {
           ],
         },
         {
+          label: 'Contact form',
+          fields: [
+            {
+              name: 'contactForm',
+              type: 'relationship',
+              relationTo: 'forms',
+              admin: {
+                description:
+                  'Form shown on the public site. Edit fields, labels, confirmation, and who receives emails under Collections → Forms.',
+              },
+            },
+            {
+              name: 'contactHeading',
+              type: 'text',
+              defaultValue: 'Contact Us',
+            },
+            {
+              name: 'contactIntro',
+              type: 'textarea',
+              admin: {
+                description:
+                  'Optional. If empty, the form shows phone and email from Brand.',
+              },
+            },
+            {
+              name: 'contactSubmitLabel',
+              type: 'text',
+              defaultValue: 'Send',
+              admin: {
+                description: 'Used only if the Form has no submit button label.',
+              },
+            },
+            {
+              name: 'contactSuccessMessage',
+              type: 'textarea',
+              defaultValue: 'Your message has been sent. Thank you!',
+              admin: {
+                description: 'Used only if the Form confirmation message is empty.',
+              },
+            },
+          ],
+        },
+        {
+          label: 'Tracking',
+          fields: [
+            {
+              name: 'analytics',
+              type: 'group',
+              admin: {
+                description:
+                  'Google Analytics / Tag Manager. Use a GA4 Measurement ID (G-XXXX), a GTM container (GTM-XXXX), or both. IDs are sanitized before scripts load.',
+              },
+              fields: [
+                {
+                  name: 'enabled',
+                  type: 'checkbox',
+                  defaultValue: true,
+                  label: 'Enable tracking scripts',
+                },
+                {
+                  name: 'gaMeasurementId',
+                  type: 'text',
+                  admin: { description: 'GA4 ID, e.g. G-18507TM6WB' },
+                },
+                {
+                  name: 'gtmId',
+                  type: 'text',
+                  admin: { description: 'Optional Google Tag Manager container, e.g. GTM-XXXX' },
+                },
+                {
+                  name: 'googleAdsId',
+                  type: 'text',
+                  admin: { description: 'Optional Google Ads ID, e.g. AW-XXXX' },
+                },
+              ],
+            },
+          ],
+        },
+        {
+          label: 'Chat',
+          fields: [
+            {
+              name: 'chat',
+              type: 'group',
+              admin: {
+                description:
+                  'Live chat widget. Pick a provider and paste its public widget ID. Leave provider on None to hide chat.',
+              },
+              fields: [
+                {
+                  name: 'provider',
+                  type: 'select',
+                  defaultValue: 'none',
+                  options: [
+                    { label: 'None', value: 'none' },
+                    { label: 'Chatra', value: 'chatra' },
+                    { label: 'Tawk.to', value: 'tawk' },
+                    { label: 'Crisp', value: 'crisp' },
+                    { label: 'Tidio', value: 'tidio' },
+                  ],
+                },
+                {
+                  name: 'widgetId',
+                  type: 'text',
+                  admin: {
+                    description:
+                      'Chatra / Crisp / Tidio public ID. For Tawk use propertyId/widgetId, e.g. abcdef123/default',
+                    condition: (_, sibling) => sibling?.provider && sibling.provider !== 'none',
+                  },
+                },
+                {
+                  name: 'buttonBg',
+                  type: 'text',
+                  admin: {
+                    description: 'Chatra button background (hex)',
+                    condition: (_, sibling) => sibling?.provider === 'chatra',
+                  },
+                },
+                {
+                  name: 'buttonText',
+                  type: 'text',
+                  admin: {
+                    description: 'Chatra button text (hex)',
+                    condition: (_, sibling) => sibling?.provider === 'chatra',
+                  },
+                },
+              ],
+            },
+          ],
+        },
+        {
+          label: 'Accessibility',
+          fields: [
+            {
+              name: 'accessibility',
+              type: 'group',
+              admin: {
+                description:
+                  'Free built-in widget (text size, contrast, underline links, reduce motion) plus optional UserWay / accessiBe. Skip-to-content is always on.',
+              },
+              fields: [
+                {
+                  name: 'widget',
+                  type: 'select',
+                  defaultValue: 'builtin',
+                  options: [
+                    { label: 'None', value: 'none' },
+                    { label: 'Built-in (free)', value: 'builtin' },
+                    { label: 'UserWay', value: 'userway' },
+                    { label: 'accessiBe', value: 'accessibe' },
+                  ],
+                },
+                {
+                  name: 'widgetId',
+                  type: 'text',
+                  admin: {
+                    description: 'UserWay account or accessiBe license id',
+                    condition: (_, sibling) =>
+                      sibling?.widget === 'userway' || sibling?.widget === 'accessibe',
+                  },
+                },
+              ],
+            },
+          ],
+        },
+        {
           label: 'Trust badges',
           fields: [
             {

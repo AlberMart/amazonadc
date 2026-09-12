@@ -28,7 +28,7 @@ export function seoMetaTabFields(): Field[] {
       label: 'No index',
       admin: {
         description:
-          'If checked, robots noindex for this URL. Overrides Site Settings defaults when title/description/image are set above.',
+          'If checked, this URL is omitted from /sitemap.xml and served with robots noindex. New published pages, posts, services, and locations are added to the sitemap automatically — you do not add them by hand.',
       },
     },
     PreviewField({

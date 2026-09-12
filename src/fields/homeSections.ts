@@ -188,6 +188,16 @@ export const homeSectionsFields: Field = {
       admin: { condition: when('hero', 'prose', 'cardGrid', 'faq', 'contact') },
     },
     {
+      name: 'form',
+      type: 'relationship',
+      relationTo: 'forms',
+      admin: {
+        condition: when('contact'),
+        description:
+          'Optional. Empty = Site Settings → Contact form. Emails for this form are edited on the Form itself.',
+      },
+    },
+    {
       name: 'closingText',
       type: 'textarea',
       admin: {

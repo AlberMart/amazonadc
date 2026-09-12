@@ -356,6 +356,10 @@ export interface Page {
         phoneDisplay?: string | null;
         phoneHref?: string | null;
         /**
+         * Optional. Empty = Site Settings → Contact form. Emails for this form are edited on the Form itself.
+         */
+        form?: (number | null) | Form;
+        /**
          * Optional line before phone link
          */
         closingText?: string | null;
@@ -589,6 +593,9 @@ export interface Post {
   faq?:
     | {
         question: string;
+        /**
+         * Inline links: [Air duct cleaning](/air-duct-cleaning) or [Google](https://google.com). Bare https:// URLs also become links. In rich text, use the toolbar link button instead.
+         */
         answer: string;
         id?: string | null;
       }[]
@@ -618,7 +625,7 @@ export interface Post {
     image?: (number | null) | Media;
     description?: string | null;
     /**
-     * If checked, robots noindex for this URL. Overrides Site Settings defaults when title/description/image are set above.
+     * If checked, this URL is omitted from /sitemap.xml and served with robots noindex. New published pages, posts, services, and locations are added to the sitemap automatically — you do not add them by hand.
      */
     noIndex?: boolean | null;
   };
@@ -980,6 +987,8 @@ export interface FormBlock {
   blockType: 'formBlock';
 }
 /**
+ * Public site forms. Use the Emails tab to set who receives submissions. Placeholders like {{name}} and {{email}} work in subject and body.
+ *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "forms".
  */
@@ -1115,6 +1124,9 @@ export interface Form {
   redirect?: {
     url: string;
   };
+  /**
+   * Who gets the form. emailTo can be a fixed inbox (support@…) or {{email}} for an auto-reply. Subject/body support {{fieldName}}.
+   */
   emails?:
     | {
         emailTo?: string | null;
@@ -1207,6 +1219,9 @@ export interface Service {
     heading?: string | null;
     paragraphs?:
       | {
+          /**
+           * Inline links: [Air duct cleaning](/air-duct-cleaning) or [Google](https://google.com). Bare https:// URLs also become links. In rich text, use the toolbar link button instead.
+           */
           text: string;
           id?: string | null;
         }[]
@@ -1254,6 +1269,9 @@ export interface Service {
     heading?: string | null;
     paragraphs?:
       | {
+          /**
+           * Inline links: [Air duct cleaning](/air-duct-cleaning) or [Google](https://google.com). Bare https:// URLs also become links. In rich text, use the toolbar link button instead.
+           */
           text: string;
           id?: string | null;
         }[]
@@ -1270,6 +1288,9 @@ export interface Service {
     heading?: string | null;
     paragraphs?:
       | {
+          /**
+           * Inline links: [Air duct cleaning](/air-duct-cleaning) or [Google](https://google.com). Bare https:// URLs also become links. In rich text, use the toolbar link button instead.
+           */
           text: string;
           id?: string | null;
         }[]
@@ -1282,6 +1303,9 @@ export interface Service {
   faq?:
     | {
         question: string;
+        /**
+         * Inline links: [Air duct cleaning](/air-duct-cleaning) or [Google](https://google.com). Bare https:// URLs also become links. In rich text, use the toolbar link button instead.
+         */
         answer: string;
         id?: string | null;
       }[]
@@ -1294,7 +1318,7 @@ export interface Service {
     image?: (number | null) | Media;
     description?: string | null;
     /**
-     * If checked, robots noindex for this URL. Overrides Site Settings defaults when title/description/image are set above.
+     * If checked, this URL is omitted from /sitemap.xml and served with robots noindex. New published pages, posts, services, and locations are added to the sitemap automatically — you do not add them by hand.
      */
     noIndex?: boolean | null;
   };
@@ -1344,6 +1368,9 @@ export interface Location {
     heading: string;
     paragraphs?:
       | {
+          /**
+           * Inline links: [Air duct cleaning](/air-duct-cleaning) or [Google](https://google.com). Bare https:// URLs also become links. In rich text, use the toolbar link button instead.
+           */
           text: string;
           id?: string | null;
         }[]
@@ -1405,6 +1432,9 @@ export interface Location {
   faq?:
     | {
         question: string;
+        /**
+         * Inline links: [Air duct cleaning](/air-duct-cleaning) or [Google](https://google.com). Bare https:// URLs also become links. In rich text, use the toolbar link button instead.
+         */
         answer: string;
         id?: string | null;
       }[]
@@ -1418,7 +1448,7 @@ export interface Location {
     image?: (number | null) | Media;
     description?: string | null;
     /**
-     * If checked, robots noindex for this URL. Overrides Site Settings defaults when title/description/image are set above.
+     * If checked, this URL is omitted from /sitemap.xml and served with robots noindex. New published pages, posts, services, and locations are added to the sitemap automatically — you do not add them by hand.
      */
     noIndex?: boolean | null;
   };
@@ -1535,10 +1565,14 @@ export interface Office {
 export interface Lead {
   id: number;
   name: string;
-  email: string;
-  phone: string;
+  email?: string | null;
+  phone?: string | null;
   address?: string | null;
-  message: string;
+  message?: string | null;
+  /**
+   * Form that produced this lead
+   */
+  form?: (number | null) | Form;
   sourcePage?: string | null;
   ip?: string | null;
   status?: ('new' | 'contacted' | 'closed' | 'spam') | null;
@@ -1944,6 +1978,7 @@ export interface PagesSelect<T extends boolean = true> {
         ctaHref?: T;
         phoneDisplay?: T;
         phoneHref?: T;
+        form?: T;
         closingText?: T;
         viewAllLabel?: T;
         viewAllHref?: T;
@@ -2560,6 +2595,7 @@ export interface LeadsSelect<T extends boolean = true> {
   phone?: T;
   address?: T;
   message?: T;
+  form?: T;
   sourcePage?: T;
   ip?: T;
   status?: T;
@@ -3006,9 +3042,55 @@ export interface Header {
     logoAlt?: string | null;
   };
   /**
-   * Uses Site Settings phone display / href
+   * Text button in the desktop nav. Uses Site Settings phone unless overridden below.
    */
   showPhoneCta?: boolean | null;
+  /**
+   * Optional override of Site Settings display phone
+   */
+  phoneDisplay?: string | null;
+  /**
+   * Optional override of Site Settings tel href (E.164)
+   */
+  phoneHref?: string | null;
+  /**
+   * Phone control on small screens: icon, number, or both. Styles and number are all editable here.
+   */
+  mobileCall?: {
+    enabled?: boolean | null;
+    display?: ('icon' | 'number' | 'both') | null;
+    placement?: ('header' | 'floating' | 'both') | null;
+    /**
+     * Optional. Empty = header / Site Settings number
+     */
+    phoneDisplay?: string | null;
+    /**
+     * Optional tel href override
+     */
+    phoneHref?: string | null;
+    icon?: ('phone' | 'phone-outgoing' | 'custom') | null;
+    /**
+     * Upload (preferred). You can crop/focal-point the file in Media.
+     */
+    iconUpload?: (number | null) | Media;
+    /**
+     * Or public path to an icon image
+     */
+    iconPath?: string | null;
+    /**
+     * Alt text. Falls back to the Media alt if empty.
+     */
+    iconAlt?: string | null;
+    background?: string | null;
+    iconColor?: string | null;
+    size?: ('sm' | 'md' | 'lg') | null;
+    shape?: ('circle' | 'rounded' | 'square') | null;
+    shadow?: boolean | null;
+    /**
+     * Accessible label. Empty = “Call {number}”
+     */
+    ariaLabel?: string | null;
+  };
   /**
    * All menu links live here (including city/office pages if this project has them). Use Custom URL for hashes like /#about.
    */
@@ -3274,6 +3356,69 @@ export interface SiteSetting {
       }[]
     | null;
   /**
+   * Form shown on the public site. Edit fields, labels, confirmation, and who receives emails under Collections → Forms.
+   */
+  contactForm?: (number | null) | Form;
+  contactHeading?: string | null;
+  /**
+   * Optional. If empty, the form shows phone and email from Brand.
+   */
+  contactIntro?: string | null;
+  /**
+   * Used only if the Form has no submit button label.
+   */
+  contactSubmitLabel?: string | null;
+  /**
+   * Used only if the Form confirmation message is empty.
+   */
+  contactSuccessMessage?: string | null;
+  /**
+   * Google Analytics / Tag Manager. Use a GA4 Measurement ID (G-XXXX), a GTM container (GTM-XXXX), or both. IDs are sanitized before scripts load.
+   */
+  analytics?: {
+    enabled?: boolean | null;
+    /**
+     * GA4 ID, e.g. G-18507TM6WB
+     */
+    gaMeasurementId?: string | null;
+    /**
+     * Optional Google Tag Manager container, e.g. GTM-XXXX
+     */
+    gtmId?: string | null;
+    /**
+     * Optional Google Ads ID, e.g. AW-XXXX
+     */
+    googleAdsId?: string | null;
+  };
+  /**
+   * Live chat widget. Pick a provider and paste its public widget ID. Leave provider on None to hide chat.
+   */
+  chat?: {
+    provider?: ('none' | 'chatra' | 'tawk' | 'crisp' | 'tidio') | null;
+    /**
+     * Chatra / Crisp / Tidio public ID. For Tawk use propertyId/widgetId, e.g. abcdef123/default
+     */
+    widgetId?: string | null;
+    /**
+     * Chatra button background (hex)
+     */
+    buttonBg?: string | null;
+    /**
+     * Chatra button text (hex)
+     */
+    buttonText?: string | null;
+  };
+  /**
+   * Free built-in widget (text size, contrast, underline links, reduce motion) plus optional UserWay / accessiBe. Skip-to-content is always on.
+   */
+  accessibility?: {
+    widget?: ('none' | 'builtin' | 'userway' | 'accessibe') | null;
+    /**
+     * UserWay account or accessiBe license id
+     */
+    widgetId?: string | null;
+  };
+  /**
    * Strip under the footer on every page. Leave empty to hide (or seed defaults apply until you save).
    */
   trustBadges?:
@@ -3342,6 +3487,27 @@ export interface HeaderSelect<T extends boolean = true> {
         logoAlt?: T;
       };
   showPhoneCta?: T;
+  phoneDisplay?: T;
+  phoneHref?: T;
+  mobileCall?:
+    | T
+    | {
+        enabled?: T;
+        display?: T;
+        placement?: T;
+        phoneDisplay?: T;
+        phoneHref?: T;
+        icon?: T;
+        iconUpload?: T;
+        iconPath?: T;
+        iconAlt?: T;
+        background?: T;
+        iconColor?: T;
+        size?: T;
+        shape?: T;
+        shadow?: T;
+        ariaLabel?: T;
+      };
   navItems?:
     | T
     | {
@@ -3474,6 +3640,33 @@ export interface SiteSettingsSelect<T extends boolean = true> {
         platform?: T;
         url?: T;
         id?: T;
+      };
+  contactForm?: T;
+  contactHeading?: T;
+  contactIntro?: T;
+  contactSubmitLabel?: T;
+  contactSuccessMessage?: T;
+  analytics?:
+    | T
+    | {
+        enabled?: T;
+        gaMeasurementId?: T;
+        gtmId?: T;
+        googleAdsId?: T;
+      };
+  chat?:
+    | T
+    | {
+        provider?: T;
+        widgetId?: T;
+        buttonBg?: T;
+        buttonText?: T;
+      };
+  accessibility?:
+    | T
+    | {
+        widget?: T;
+        widgetId?: T;
       };
   trustBadges?:
     | T

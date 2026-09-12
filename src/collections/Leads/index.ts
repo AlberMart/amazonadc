@@ -23,12 +23,10 @@ export const Leads: CollectionConfig = {
     {
       name: 'email',
       type: 'email',
-      required: true,
     },
     {
       name: 'phone',
       type: 'text',
-      required: true,
     },
     {
       name: 'address',
@@ -37,7 +35,15 @@ export const Leads: CollectionConfig = {
     {
       name: 'message',
       type: 'textarea',
-      required: true,
+    },
+    {
+      name: 'form',
+      type: 'relationship',
+      relationTo: 'forms',
+      admin: {
+        readOnly: true,
+        description: 'Form that produced this lead',
+      },
     },
     {
       name: 'sourcePage',

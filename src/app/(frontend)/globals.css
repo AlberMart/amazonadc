@@ -506,3 +506,120 @@ html[data-theme='light'] {
 .site-badges {
   background: var(--site-badges);
 }
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -100%;
+  z-index: 100;
+  border-radius: 0.375rem;
+  background: var(--site-accent);
+  color: var(--site-accent-fg);
+  padding: 0.5rem 0.75rem;
+  font-weight: 600;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+html[data-a11y-text='large'] {
+  font-size: 112.5%;
+}
+
+html[data-a11y-text='xl'] {
+  font-size: 125%;
+}
+
+html[data-a11y-contrast] {
+  filter: contrast(1.15);
+}
+
+html[data-a11y-underline] a {
+  text-decoration: underline !important;
+}
+
+html[data-a11y-motion] *,
+html[data-a11y-motion] *::before,
+html[data-a11y-motion] *::after {
+  animation: none !important;
+  transition: none !important;
+  scroll-behavior: auto !important;
+}
+
+.site-a11y {
+  position: fixed;
+  left: 1rem;
+  bottom: 1rem;
+  z-index: 60;
+}
+
+.site-a11y-toggle,
+.site-a11y-reset,
+.site-a11y-btns button {
+  border-radius: 999px;
+  border: 1px solid var(--site-border);
+  background: var(--site-card);
+  color: var(--site-heading);
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+
+.site-a11y-toggle {
+  box-shadow: 0 8px 24px rgb(11 28 44 / 18%);
+  padding: 0.65rem 0.9rem;
+}
+
+.site-a11y-panel {
+  position: absolute;
+  bottom: calc(100% + 0.5rem);
+  left: 0;
+  width: 16.5rem;
+  border: 1px solid var(--site-border);
+  border-radius: 0.75rem;
+  background: var(--site-card);
+  color: var(--site-heading);
+  box-shadow: 0 16px 40px rgb(11 28 44 / 18%);
+  padding: 0.9rem;
+}
+
+.site-a11y-title {
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+
+.site-a11y-row,
+.site-a11y-check {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  margin-bottom: 0.55rem;
+}
+
+.site-a11y-check {
+  justify-content: flex-start;
+}
+
+.site-a11y-btns {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.site-a11y-btns button {
+  min-width: 2rem;
+  padding: 0.2rem 0.4rem;
+}
+
+.site-a11y-btns button[aria-pressed='true'] {
+  background: var(--site-accent);
+  border-color: var(--site-accent);
+}
+
+.site-a11y-reset {
+  width: 100%;
+  margin-top: 0.35rem;
+  padding: 0.4rem;
+}
+

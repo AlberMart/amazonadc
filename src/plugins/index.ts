@@ -1,3 +1,4 @@
+import { revalidateTag } from 'next/cache'
 import { formBuilderPlugin } from '@payloadcms/plugin-form-builder'
 import { nestedDocsPlugin } from '@payloadcms/plugin-nested-docs'
 import { redirectsPlugin } from '@payloadcms/plugin-redirects'
@@ -61,6 +62,20 @@ export const plugins: Plugin[] = [
       payment: false,
     },
     formOverrides: {
+      admin: {
+        description:
+          'Public site forms. Use the Emails tab to set who receives submissions. Placeholders like {{name}} and {{email}} work in subject and body.',
+      },
+      hooks: {
+        afterChange: [
+          ({ doc, req: { context } }) => {
+            if (!context?.disableRevalidate) {
+              revalidateTag('contact_form', 'max')
+            }
+            return doc
+          },
+        ],
+      },
       fields: ({ defaultFields }) => {
         return defaultFields.map((field) => {
           if ('name' in field && field.name === 'confirmationMessage') {
@@ -75,6 +90,16 @@ export const plugins: Plugin[] = [
                   ]
                 },
               }),
+            }
+          }
+          if ('name' in field && field.name === 'emails') {
+            return {
+              ...field,
+              admin: {
+                ...(typeof field.admin === 'object' ? field.admin : {}),
+                description:
+                  'Who gets the form. emailTo can be a fixed inbox (support@…) or {{email}} for an auto-reply. Subject/body support {{fieldName}}.',
+              },
             }
           }
           return field

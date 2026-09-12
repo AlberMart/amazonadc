@@ -126,7 +126,7 @@ export async function HomePageView({
   ])
 
   return (
-    <main>
+    <div>
       <JsonLd data={structuredData} />
       {sections.map((section, index) => {
         const key = `${section.type}-${section.anchorId || section.heading || index}`
@@ -531,6 +531,7 @@ export async function HomePageView({
                 intro={section.intro}
                 phoneDisplay={section.phoneDisplay}
                 phoneHref={section.phoneHref}
+                formId={section.formId}
               />
             </div>
           )
@@ -538,6 +539,6 @@ export async function HomePageView({
 
         return null
       })}
-    </main>
+    </div>
   )
 }

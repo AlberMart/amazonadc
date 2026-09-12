@@ -16,6 +16,7 @@ import { Code } from '../../blocks/Code/config'
 import { MediaBlock } from '../../blocks/MediaBlock/config'
 import { generatePreviewPath } from '../../utilities/generatePreviewPath'
 import { seoMetaTabFields } from '../../fields/seoMeta'
+import { INLINE_LINKS_HINT } from '../../fields/inlineLinksHint'
 import { populateAuthors } from './hooks/populateAuthors'
 import { revalidateDelete, revalidatePost } from './hooks/revalidatePost'
 
@@ -126,7 +127,7 @@ export const Posts: CollectionConfig<'posts'> = {
               },
               fields: [
                 { name: 'question', type: 'text', required: true },
-                { name: 'answer', type: 'textarea', required: true },
+                { name: 'answer', type: 'textarea', required: true, admin: { description: INLINE_LINKS_HINT } },
               ],
             },
             {

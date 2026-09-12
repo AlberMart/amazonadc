@@ -61,7 +61,7 @@ export default async function LocationsIndexPage() {
   const cities = locations.filter((l) => !l.isOfficeHub)
 
   return (
-    <main>
+    <div>
       <JsonLd data={structuredData} />
       <section className="site-hero">
         <div
@@ -130,7 +130,7 @@ export default async function LocationsIndexPage() {
           </div>
         </section>
       ) : null}
-    </main>
+    </div>
   )
 }
 

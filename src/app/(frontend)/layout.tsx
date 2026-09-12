@@ -5,6 +5,8 @@ import React from 'react'
 import { AdminBar } from '@/components/AdminBar'
 import { ThemeVars } from '@/components/ThemeVars'
 import { TrustBadges } from '@/components/TrustBadges'
+import { AccessibilityWidget } from '@/components/AccessibilityWidget'
+import { SiteIntegrations } from '@/components/SiteIntegrations'
 import { Footer } from '@/Footer/Component'
 import { Header } from '@/Header/Component'
 import { Providers } from '@/providers'
@@ -46,6 +48,9 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <link href="/apple-touch-icon.png" rel="apple-touch-icon" />
       </head>
       <body className="font-[family-name:var(--font-sans)] antialiased">
+        <a href="#main" className="skip-link">
+          Skip to main content
+        </a>
         <Providers>
           <AdminBar
             adminBarProps={{
@@ -54,10 +59,12 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           />
 
           <Header />
-          {children}
+          <main id="main">{children}</main>
           <TrustBadges badges={trustBadges} />
           <Footer />
+          {settings?.accessibility?.widget === 'builtin' ? <AccessibilityWidget /> : null}
         </Providers>
+        <SiteIntegrations settings={settings} />
       </body>
     </html>
   )

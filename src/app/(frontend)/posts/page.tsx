@@ -54,7 +54,7 @@ export default async function Page() {
   ])
 
   return (
-    <main>
+    <div>
       <JsonLd data={structuredData} />
       <PageClient />
       <section className="site-hero">
@@ -107,7 +107,7 @@ export default async function Page() {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   )
 }
 

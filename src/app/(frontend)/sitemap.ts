@@ -6,6 +6,8 @@ import { absoluteUrl } from '@/utilities/seo'
 
 export const dynamic = 'force-dynamic'
 
+/** Runtime sitemap: published pages, posts, services, and locations. NoIndex documents are skipped. */
+
 function isNoIndex(meta: unknown): boolean {
   if (!meta || typeof meta !== 'object') return false
   return Boolean((meta as { noIndex?: boolean | null }).noIndex)

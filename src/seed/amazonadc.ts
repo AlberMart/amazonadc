@@ -31,6 +31,22 @@ export const siteSettingsSeed = {
     'Top-rated air duct cleaning in VA, MD & DC. Improve indoor air quality, remove dust and allergens, and clean dryer vents. Flat rates and a 100% satisfaction guarantee.',
   titleSuffix: 'Amazon Air Duct Cleaning',
   priceValidUntil: '2026-12-31',
+  contactHeading: 'Contact Us',
+  contactSubmitLabel: 'Send',
+  contactSuccessMessage: 'Your message has been sent. Thank you!',
+  analytics: {
+    enabled: true,
+    gaMeasurementId: 'G-18507TM6WB',
+  },
+  chat: {
+    provider: 'chatra' as const,
+    widgetId: 'Q4d5E3uQe9vkSrToN',
+    buttonBg: '#0071e3',
+    buttonText: '#f0f0f0',
+  },
+  accessibility: {
+    widget: 'builtin' as const,
+  },
   socialLinks: [
     { platform: 'Facebook', url: 'https://www.facebook.com/amazonductcleaning' },
     { platform: 'Instagram', url: 'https://www.instagram.com/amazonairduct' },
@@ -116,6 +132,17 @@ export const headerSeed = {
     logoAlt: 'Amazon Air Duct Cleaning',
   },
   showPhoneCta: true,
+  mobileCall: {
+    enabled: true,
+    display: 'icon' as const,
+    placement: 'header' as const,
+    icon: 'phone' as const,
+    background: '#fbbf24',
+    iconColor: '#0b1c2c',
+    size: 'md' as const,
+    shape: 'circle' as const,
+    shadow: true,
+  },
   navItems: [
     customNav('Home', '/'),
     customNav('About Us', '/#about'),

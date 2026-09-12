@@ -37,6 +37,7 @@ export type HomeSection = {
   ctaHref?: string
   phoneDisplay?: string
   phoneHref?: string
+  formId?: number
   closingText?: string
   viewAllLabel?: string
   viewAllHref?: string
@@ -111,6 +112,12 @@ export function mapHomeSection(raw: Record<string, unknown>): HomeSection | null
     ctaHref: raw.ctaHref ? String(raw.ctaHref) : undefined,
     phoneDisplay: raw.phoneDisplay ? String(raw.phoneDisplay) : undefined,
     phoneHref: raw.phoneHref ? String(raw.phoneHref) : undefined,
+    formId: (() => {
+      const form = raw.form
+      if (typeof form === 'number') return form
+      if (form && typeof form === 'object' && 'id' in form) return Number((form as { id: number }).id)
+      return undefined
+    })(),
     closingText: raw.closingText ? String(raw.closingText) : undefined,
     viewAllLabel: raw.viewAllLabel ? String(raw.viewAllLabel) : undefined,
     viewAllHref: raw.viewAllHref ? String(raw.viewAllHref) : undefined,
@@ -263,6 +270,7 @@ export function mapHomeSectionsToSeed(sections: HomeSection[]) {
     ctaHref: section.ctaHref || undefined,
     phoneDisplay: section.phoneDisplay || undefined,
     phoneHref: section.phoneHref || undefined,
+    form: section.formId || undefined,
     closingText: section.closingText || undefined,
     viewAllLabel: section.viewAllLabel || undefined,
     viewAllHref: section.viewAllHref || undefined,

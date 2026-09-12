@@ -2,6 +2,8 @@ import { absoluteUrl } from '@/utilities/seo'
 
 export const dynamic = 'force-dynamic'
 
+/** Public robots.txt. Sitemap URL is generated from CMS content at /sitemap.xml — new published URLs are included automatically. */
+
 function buildRobotsTxt() {
   const sitemap = absoluteUrl('/sitemap.xml')
   const host = absoluteUrl('/')

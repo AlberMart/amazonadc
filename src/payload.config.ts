@@ -18,6 +18,7 @@ import { Header } from './Header/config'
 import { SiteSettings } from './globals/SiteSettings'
 import { plugins } from './plugins'
 import { defaultLexical } from '@/fields/defaultLexical'
+import { siteEmailAdapter } from './utilities/emailAdapter'
 import { getServerSideURL } from './utilities/getURL'
 
 const filename = fileURLToPath(import.meta.url)
@@ -71,6 +72,7 @@ export default buildConfig({
   }),
   collections: [Pages, Posts, Services, Locations, Offices, Leads, Media, Categories, Users],
   cors: [getServerSideURL()].filter(Boolean),
+  email: siteEmailAdapter,
   globals: [Header, Footer, SiteSettings],
   plugins,
   secret: process.env.PAYLOAD_SECRET,

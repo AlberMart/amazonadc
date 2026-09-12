@@ -4,7 +4,7 @@ type ImageFieldOptions = {
   uploadName?: string
   pathName?: string
   altName?: string
-  condition?: (data: unknown, siblingData: { type?: string }) => boolean
+  condition?: (data: unknown, siblingData: Record<string, unknown>) => boolean
   requiredPath?: boolean
   pathDescription?: string
 }

@@ -5,6 +5,7 @@ import { authenticated } from '../../access/authenticated'
 import { slugField } from 'payload'
 import { revalidateLocation, revalidateLocationDelete } from './hooks/revalidateLocation'
 import { seoMetaTabFields } from '../../fields/seoMeta'
+import { INLINE_LINKS_HINT } from '../../fields/inlineLinksHint'
 
 const textItem = (name = 'text'): Field => ({
   name,
@@ -16,6 +17,7 @@ const textareaItem = (name = 'text'): Field => ({
   name,
   type: 'textarea',
   required: true,
+  admin: { description: INLINE_LINKS_HINT },
 })
 
 export const Locations: CollectionConfig = {
@@ -200,7 +202,7 @@ export const Locations: CollectionConfig = {
       },
       fields: [
         { name: 'question', type: 'text', required: true },
-        { name: 'answer', type: 'textarea', required: true },
+        { name: 'answer', type: 'textarea', required: true, admin: { description: INLINE_LINKS_HINT } },
       ],
     },
     {

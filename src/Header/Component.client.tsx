@@ -5,9 +5,11 @@ import { usePathname } from 'next/navigation'
 import React, { useEffect, useState } from 'react'
 
 import { BrandMark } from '@/components/BrandMark'
+import { MobileCallButton } from '@/components/MobileCallButton'
 import { useHeaderTheme } from '@/providers/HeaderTheme'
 import type { ResolvedBrandMark } from '@/utilities/brandMark'
 import type { ResolvedNavLink } from '@/utilities/cmsLink'
+import type { ResolvedMobileCall } from '@/utilities/mobileCall'
 
 function isActive(pathname: string, hash: string, item: ResolvedNavLink) {
   const href = item.href
@@ -27,13 +29,22 @@ function isActive(pathname: string, hash: string, item: ResolvedNavLink) {
   return pathname === href || pathname.startsWith(`${href}/`)
 }
 
+function showInHeader(call: ResolvedMobileCall | null) {
+  return Boolean(call?.enabled && (call.placement === 'header' || call.placement === 'both'))
+}
+
+function showFloating(call: ResolvedMobileCall | null) {
+  return Boolean(call?.enabled && (call.placement === 'floating' || call.placement === 'both'))
+}
+
 export const HeaderClient: React.FC<{
   brand: ResolvedBrandMark
   showPhoneCta: boolean
   phoneDisplay: string
   phoneHref: string
   navItems: ResolvedNavLink[]
-}> = ({ brand, showPhoneCta, phoneDisplay, phoneHref, navItems }) => {
+  mobileCall: ResolvedMobileCall | null
+}> = ({ brand, showPhoneCta, phoneDisplay, phoneHref, navItems, mobileCall }) => {
   const { headerTheme, setHeaderTheme } = useHeaderTheme()
   const pathname = usePathname()
   const [theme, setTheme] = useState<string | null>(null)
@@ -90,6 +101,9 @@ export const HeaderClient: React.FC<{
     setHash(id)
   }
 
+  const headerCall = showInHeader(mobileCall) ? mobileCall : null
+  const floatingCall = showFloating(mobileCall) ? mobileCall : null
+
   return (
     <header
       className="site-header sticky top-0 z-40 border-b border-white/10 backdrop-blur"
@@ -121,24 +135,14 @@ export const HeaderClient: React.FC<{
             )
           })}
           {showPhoneCta ? (
-            <a
-              href={phoneHref}
-              className="site-btn site-btn-primary ml-2 px-3.5 py-2 xl:ml-3"
-            >
+            <a href={phoneHref} className="site-btn site-btn-primary ml-2 px-3.5 py-2 xl:ml-3">
               {phoneDisplay}
             </a>
           ) : null}
         </nav>
 
         <div className="flex items-center gap-2 lg:hidden">
-          {showPhoneCta ? (
-            <a
-              href={phoneHref}
-              className="site-btn site-btn-primary px-3 py-2 text-xs"
-            >
-              {phoneDisplay}
-            </a>
-          ) : null}
+          {headerCall ? <MobileCallButton call={headerCall} /> : null}
           <button
             type="button"
             className="inline-flex h-10 w-10 items-center justify-center rounded-md border border-white/15 text-white"
@@ -193,6 +197,12 @@ export const HeaderClient: React.FC<{
               )
             })}
           </nav>
+        </div>
+      ) : null}
+
+      {floatingCall ? (
+        <div className="pointer-events-none fixed bottom-5 right-5 z-50 lg:hidden">
+          <MobileCallButton call={floatingCall} className="pointer-events-auto" />
         </div>
       ) : null}
     </header>
