@@ -583,8 +583,18 @@ html[data-a11y-motion] *::after {
 }
 
 .site-a11y-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  padding: 0;
   box-shadow: 0 8px 24px rgb(11 28 44 / 18%);
-  padding: 0.65rem 0.9rem;
+}
+
+.site-a11y-icon {
+  width: 1.45rem;
+  height: 1.45rem;
 }
 
 .site-a11y-panel {

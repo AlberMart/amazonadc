@@ -44,8 +44,12 @@ function getSlugValue(slug: unknown): string {
 }
 
 export async function generateStaticParams() {
-  const slugs = await getAllBlogSlugs()
-  return slugs.map((slug) => ({ slug }))
+  try {
+    const slugs = await getAllBlogSlugs()
+    return slugs.map((slug) => ({ slug }))
+  } catch {
+    return []
+  }
 }
 
 export default async function Post({ params: paramsPromise }: Args) {

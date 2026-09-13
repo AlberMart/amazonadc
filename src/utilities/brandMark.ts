@@ -8,7 +8,7 @@ export type BrandMarkInput = {
   logo?: number | Media | null
   logoPath?: string | null
   logoAlt?: string | null
-} | null
+} | null | undefined
 
 export type ResolvedBrandMark = {
   mode: BrandMode

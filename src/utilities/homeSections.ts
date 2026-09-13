@@ -295,7 +295,6 @@ export function faqItemsFromSections(sections: HomeSection[]): Array<{ q: string
 /** Convert legacy flat homeContent into portable sections (seed + fallback). */
 export function homeContentToSections(content: HomeContent = homeContentSeed): HomeSection[] {
   return [
-    { type: 'trustBadges', tone: 'white', appearance: { padding: 'compact', divider: 'none', background: 'badges' } },
     {
       type: 'hero',
       tone: 'dark',
@@ -409,6 +408,7 @@ export function homeContentToSections(content: HomeContent = homeContentSeed): H
       intro: content.reviewsIntro,
     },
     { type: 'contact', anchorId: 'contact', tone: 'white' },
+    { type: 'trustBadges', tone: 'white', appearance: { padding: 'compact', divider: 'none', background: 'badges' } },
   ]
 }
 

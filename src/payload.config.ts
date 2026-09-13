@@ -27,13 +27,26 @@ const dirname = path.dirname(filename)
 
 export default buildConfig({
   admin: {
+    meta: {
+      titleSuffix: '— Admin',
+      applicationName: 'Admin',
+      defaultOGImageType: 'off',
+      icons: {
+        icon: [
+          { rel: 'icon', type: 'image/x-icon', url: '/favicon.ico' },
+          { rel: 'icon', type: 'image/png', sizes: '32x32', url: '/favicon-32.png' },
+        ],
+        shortcut: '/favicon.ico',
+        apple: '/apple-touch-icon.png',
+      },
+    },
     components: {
-      // The `BeforeLogin` component renders a message that you see while logging into your admin panel.
-      // Feel free to delete this at any time. Simply remove the line below.
       beforeLogin: ['@/components/BeforeLogin'],
-      // The `BeforeDashboard` component renders the 'welcome' block that you see after logging into your admin panel.
-      // Feel free to delete this at any time. Simply remove the line below.
       beforeDashboard: ['@/components/BeforeDashboard'],
+      graphics: {
+        Logo: '@/components/AdminBrand/Logo',
+        Icon: '@/components/AdminBrand/Icon',
+      },
     },
     importMap: {
       baseDir: path.resolve(dirname),
@@ -72,8 +85,8 @@ export default buildConfig({
       connectionTimeoutMillis: 20_000,
       allowExitOnIdle: true,
     },
-    // Schema synced via seed + additive SQL; interactive drizzle push hangs headless shells.
-    push: false,
+    // Dynamic lookup so Next does not inline this at Docker build time.
+    push: process.env['PAYLOAD_DB_PUSH'] === 'true',
   }),
   collections: [Pages, Posts, Services, Locations, Offices, Partials, Leads, Media, Categories, Users],
   cors: [getServerSideURL()].filter(Boolean),

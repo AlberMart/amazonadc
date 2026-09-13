@@ -33,30 +33,34 @@ import PageClient from './page.client'
 import { LivePreviewListener } from '@/components/LivePreviewListener'
 
 export async function generateStaticParams() {
-  const payload = await getPayload({ config: configPromise })
+  try {
+    const payload = await getPayload({ config: configPromise })
 
-  const pages = await payload.find({
-    collection: 'pages',
-    draft: false,
-    limit: 1000,
-    overrideAccess: false,
-    pagination: false,
-    select: { slug: true },
-  })
+    const pages = await payload.find({
+      collection: 'pages',
+      draft: false,
+      limit: 1000,
+      overrideAccess: false,
+      pagination: false,
+      select: { slug: true },
+    })
 
-  const pageParams =
-    pages.docs
-      ?.filter((doc) => doc.slug !== 'home')
-      .map(({ slug }) => ({ slug })) || []
+    const pageParams =
+      pages.docs
+        ?.filter((doc) => doc.slug !== 'home')
+        .map(({ slug }) => ({ slug })) || []
 
-  const [serviceSlugs, legalSlugs] = await Promise.all([
-    getAllServiceSlugs(),
-    getAllLegalSlugs(),
-  ])
-  const serviceParams = serviceSlugs.map((slug) => ({ slug }))
-  const legalParams = legalSlugs.map((slug) => ({ slug }))
+    const [serviceSlugs, legalSlugs] = await Promise.all([
+      getAllServiceSlugs(),
+      getAllLegalSlugs(),
+    ])
+    const serviceParams = serviceSlugs.map((slug) => ({ slug }))
+    const legalParams = legalSlugs.map((slug) => ({ slug }))
 
-  return [...pageParams, ...serviceParams, ...legalParams]
+    return [...pageParams, ...serviceParams, ...legalParams]
+  } catch {
+    return []
+  }
 }
 
 type Args = {

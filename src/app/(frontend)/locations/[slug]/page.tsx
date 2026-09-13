@@ -26,8 +26,12 @@ type Args = {
 }
 
 export async function generateStaticParams() {
-  const slugs = await getAllLocationSlugs()
-  return slugs.map((slug) => ({ slug }))
+  try {
+    const slugs = await getAllLocationSlugs()
+    return slugs.map((slug) => ({ slug }))
+  } catch {
+    return []
+  }
 }
 
 export default async function Page({ params }: Args) {

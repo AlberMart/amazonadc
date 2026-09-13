@@ -141,16 +141,16 @@ export async function Footer() {
               )
             }
 
-            const links: FooterLink[] = (column.links || [])
-              .map((row) => {
-                const resolved = resolveCmsLink(row?.link)
-                if (!resolved) return null
-                return {
-                  ...resolved,
-                  detail: row?.detail?.trim() || undefined,
-                }
+            const links: FooterLink[] = []
+            for (const row of column.links || []) {
+              const resolved = resolveCmsLink(row?.link)
+              if (!resolved) continue
+              links.push({
+                href: resolved.href,
+                label: resolved.label,
+                detail: row?.detail?.trim() || undefined,
               })
-              .filter((item): item is FooterLink => Boolean(item))
+            }
 
             return (
               <div key={key}>

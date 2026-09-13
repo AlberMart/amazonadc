@@ -166,7 +166,14 @@ export async function getHomeContent(): Promise<HomePageData> {
 
   const sections = baseSections.some((section) => section.type === 'trustBadges')
     ? baseSections
-    : [{ type: 'trustBadges' as const, tone: 'white' as const, appearance: { padding: 'compact' as const, divider: 'none' as const, background: 'badges' as const } }, ...baseSections]
+    : [
+        ...baseSections,
+        {
+          type: 'trustBadges' as const,
+          tone: 'white' as const,
+          appearance: { padding: 'compact' as const, divider: 'none' as const, background: 'badges' as const },
+        },
+      ]
 
   const fromSections = faqItemsFromSections(sections).filter((item) => item.q && item.a)
   const faqItems =

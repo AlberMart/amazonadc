@@ -2,15 +2,18 @@
 # Deploy: fly launch / fly deploy
 # Create DB: fly postgres create && fly postgres attach <db-name>
 
-app = 'amazadc-next'
-primary_region = 'iad'
+app = 'amaz-local'
+primary_region = 'fra'
 
 [build]
+  [build.args]
+    NEXT_PUBLIC_SERVER_URL = 'https://amaz-local.fly.dev'
 
 [env]
   NODE_ENV = 'production'
   PORT = '3000'
-  NEXT_PUBLIC_SERVER_URL = 'https://amazonadc.com'
+  NEXT_PUBLIC_SERVER_URL = 'https://amaz-local.fly.dev'
+  PAYLOAD_DB_PUSH = 'true'
 
 [http_service]
   internal_port = 3000

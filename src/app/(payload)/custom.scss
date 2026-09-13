@@ -1,0 +1,23 @@
+.admin-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: inherit;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.admin-brand img {
+  display: block;
+  border-radius: 0.25rem;
+}
+
+.admin-brand__name {
+  font-size: 1.05rem;
+}
+
+.admin-brand--icon img {
+  width: 22px;
+  height: 22px;
+}

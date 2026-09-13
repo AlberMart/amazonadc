@@ -74,9 +74,17 @@ export function AccessibilityWidget() {
         className="site-a11y-toggle"
         aria-expanded={open}
         aria-controls={panelId}
+        aria-label="Accessibility options"
         onClick={() => setOpen((value) => !value)}
       >
-        Accessibility
+        <svg viewBox="0 0 24 24" aria-hidden="true" className="site-a11y-icon">
+          <circle cx="12" cy="12" r="9.25" fill="none" stroke="currentColor" strokeWidth="1.8" />
+          <circle cx="12" cy="7.1" r="1.55" fill="currentColor" />
+          <path
+            fill="currentColor"
+            d="M6.9 10.05h10.2v1.55h-3.15l.95 2.45 2.05 5.15h-1.8l-1.6-4.15h-.5l-1.6 4.15H9.6l2.05-5.15.95-2.45H6.9z"
+          />
+        </svg>
       </button>
       {open ? (
         <div id={panelId} className="site-a11y-panel" role="dialog" aria-label="Accessibility options">
