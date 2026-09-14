@@ -6,16 +6,38 @@ import { alexandria } from '@/content/locations/alexandria'
 import { arlington } from '@/content/locations/arlington'
 import { bethesda } from '@/content/locations/bethesda'
 import { burke } from '@/content/locations/burke'
+import { chantilly } from '@/content/locations/chantilly'
+import { clarksburg } from '@/content/locations/clarksburg'
 import { collegePark } from '@/content/locations/college-park'
+import { columbia } from '@/content/locations/columbia'
+import { ellicottCity } from '@/content/locations/ellicott-city'
 import { fairfax } from '@/content/locations/fairfax'
+import { frederick } from '@/content/locations/frederick'
+import { fairOaks } from '@/content/locations/fair-oaks'
+import { fallsChurch } from '@/content/locations/falls-church'
 import { gaithersburg } from '@/content/locations/gaithersburg'
+import { germantown } from '@/content/locations/germantown'
+import { greatFalls } from '@/content/locations/great-falls'
+import { herndon } from '@/content/locations/herndon'
+import { hyattsville } from '@/content/locations/hyattsville'
+import { kensington } from '@/content/locations/kensington'
+import { lorton } from '@/content/locations/lorton'
 import { loudoun } from '@/content/locations/loudoun'
 import { mclean } from '@/content/locations/mclean'
+import { montgomeryVillage } from '@/content/locations/montgomery-village'
+import { mountVernon } from '@/content/locations/mount-vernon'
+import { oakton } from '@/content/locations/oakton'
+import { olney } from '@/content/locations/olney'
+import { potomac } from '@/content/locations/potomac'
 import { princeWilliam } from '@/content/locations/prince-william'
+import { reston } from '@/content/locations/reston'
 import { rockville } from '@/content/locations/rockville'
 import { silverSpring } from '@/content/locations/silver-spring'
 import { springfield } from '@/content/locations/springfield'
+import { takomaPark } from '@/content/locations/takoma-park'
+import { vienna } from '@/content/locations/vienna'
 import { washingtonDc } from '@/content/locations/washington-dc'
+import { wheaton } from '@/content/locations/wheaton'
 import { getAllOffices, officeFromSeedSlug, type OfficeContent } from './offices'
 import { mapRawSections, type HomeSection } from '@/utilities/homeSections'
 import { loadPageSections } from '@/utilities/partials'
@@ -93,6 +115,28 @@ const LOCATION_SEEDS: LocationContentSeed[] = [
   silverSpring,
   gaithersburg,
   collegePark,
+  reston,
+  herndon,
+  vienna,
+  greatFalls,
+  fallsChurch,
+  chantilly,
+  oakton,
+  lorton,
+  mountVernon,
+  fairOaks,
+  germantown,
+  potomac,
+  wheaton,
+  takomaPark,
+  kensington,
+  olney,
+  hyattsville,
+  columbia,
+  ellicottCity,
+  frederick,
+  montgomeryVillage,
+  clarksburg,
 ]
 
 export function locationFromSeed(
@@ -309,6 +353,25 @@ function mapLocation(doc: Record<string, unknown>): LocationContent | null {
   }
 }
 
+function applySeedMedia(location: LocationContent, heroMedia?: unknown): LocationContent {
+  const seed = LOCATION_SEEDS.find((item) => item.slug === location.slug)
+  if (!seed) return location
+  const uploadedUrl =
+    heroMedia && typeof heroMedia === 'object' && typeof (heroMedia as { url?: unknown }).url === 'string'
+      ? String((heroMedia as { url: string }).url)
+      : ''
+  if (uploadedUrl && !uploadedUrl.startsWith('/img/')) return location
+  return {
+    ...location,
+    heroImage: seed.heroImage,
+    heroAlt: seed.heroAlt,
+    meta: {
+      ...(location.meta || {}),
+      image: seed.heroImage,
+    },
+  }
+}
+
 export async function getLocationContent(slug: string): Promise<LocationContent | null> {
   try {
     const payload = await getPayload({ config: configPromise })
@@ -337,6 +400,7 @@ export async function getLocationContent(slug: string): Promise<LocationContent 
         }
       }
       if (mapped) {
+        mapped = applySeedMedia(mapped, raw.heroMedia)
         mapped.sections = await loadPageSections(raw.sections)
         return mapped
       }
@@ -399,6 +463,7 @@ export async function getAllLocations(): Promise<LocationContent[]> {
         location = mapLocation({ ...raw, servedBy: officeDoc })
       }
       if (!location) continue
+      location = applySeedMedia(location, raw.heroMedia)
       const canonical = seedByCityState.get(`${location.city}|${location.state}`)
       if (canonical && canonical.slug !== location.slug) continue
       mapped.push(location)

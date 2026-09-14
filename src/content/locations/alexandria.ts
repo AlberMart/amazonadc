@@ -8,7 +8,7 @@ export const alexandria: LocationContentSeed = {
     'Professional air duct cleaning, dryer vent maintenance, and mold remediation services in Alexandria, VA. Flat rates, certified techs, 100% satisfaction guarantee.',
   intro:
     'Amazon Air Duct Cleaning is the local crew for HVAC cleaning, dryer vent maintenance, and indoor air quality in Alexandria, Virginia. Whether you live in a historic home in Old Town, a condo near the waterfront, or a house in Del Ray, our technicians keep the air fresh and the system running. Call (571) 460-0001.',
-  heroImage: '/img/locations/101221_AmazonDC-179.jpg',
+  heroImage: '/img/locations/alexandria.webp',
   heroAlt: 'Air duct cleaning in Alexandria, VA — Amazon Air Duct Cleaning',
   city: 'Alexandria',
   state: 'VA',

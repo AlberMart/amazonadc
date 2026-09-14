@@ -8,7 +8,7 @@ export const washingtonDc: LocationContentSeed = {
     'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Washington, DC. Flat rates, before-and-after photos, and crews dispatched from Burke and Bethesda. Call (800) 606-3334.',
   intro:
     'Amazon Air Duct Cleaning serves Washington, DC from our two real metro offices — Burke, VA and Bethesda, MD. We clean ducts and dryer vents in Capitol Hill row houses, Northwest condos, and Navy Yard apartments without inventing a District storefront. Call (800) 606-3334 and we send the closer crew.',
-  heroImage: '/img/locations/101221_AmazonDC-141.jpg',
+  heroImage: '/img/locations/washington-dc.webp',
   heroAlt: 'Air duct cleaning in Washington, DC — Amazon Air Duct Cleaning',
   city: 'Washington',
   state: 'DC',

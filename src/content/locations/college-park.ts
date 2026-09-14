@@ -8,7 +8,7 @@ export const collegePark: LocationContentSeed = {
     'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in College Park, MD. Flat rates from our Bethesda office for older rentals, family houses, and Route 1 apartments. Call (301) 809-4544.',
   intro:
     'Amazon Air Duct Cleaning serves College Park from our Bethesda office. University rentals, older family houses off Route 1, and apartments near the Metro all take on high occupancy, pollen, and humid summers. There is no College Park storefront. Call (301) 809-4544.',
-  heroImage: '/img/locations/101221_AmazonDC-141.jpg',
+  heroImage: '/img/locations/college-park.webp',
   heroAlt: 'Air duct cleaning in College Park, MD — Amazon Air Duct Cleaning',
   city: 'College Park',
   state: 'MD',

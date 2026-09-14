@@ -1,5 +1,137 @@
 [
   {
+    "slug": "reston-town-center-dust-air-ducts",
+    "title": "How Reston Town Center and Toll Road Dust Load Your Air Ducts",
+    "description": "Reston, VA sits on the Dulles Toll Road with planned villages and Town Center stacks. Learn why corridor dust and humid summers load ducts, and when to book a cleaning from Burke.",
+    "hero": "/img/blog/Allergies.webp"
+  },
+  {
+    "slug": "herndon-construction-dust-air-ducts",
+    "title": "How Herndon Data-Center Construction Dust Loads Your Air Ducts",
+    "description": "Herndon, VA mixes historic downtown cottages with data-center and office construction toward Dulles. Learn why gypsum dust and traffic film load ducts, and when to clean them from Burke.",
+    "hero": "/img/blog/Why-Air-Duct-Condition-Matters.webp"
+  },
+  {
+    "slug": "vienna-tree-pollen-basement-air-ducts",
+    "title": "How Vienna’s Tree Canopy and Basements Load Your Air Ducts",
+    "description": "The Town of Vienna sits under a heavy Fairfax County canopy. Learn why 1950s–70s colonials store pollen in cool basement trunks, and when to clean the ducts from Burke.",
+    "hero": "/img/blog/dirty-air-ducts-energy-bills.webp"
+  },
+  {
+    "slug": "great-falls-estates-humidity-air-ducts",
+    "title": "How Great Falls Estates and Potomac Humidity Load Your Air Ducts",
+    "description": "Great Falls, VA sits on large wooded lots near the Potomac. Learn why estate-scale ducts hold river humidity and canopy pollen, and when to clean them from Burke.",
+    "hero": "/img/blog/dirty-HVAC-unit.webp"
+  },
+  {
+    "slug": "falls-church-close-in-dust-air-ducts",
+    "title": "How Close-In Falls Church Houses Load Air Ducts With Beltway Dust",
+    "description": "The City of Falls Church sits on small lots next to the Beltway and Route 7. Learn why older trunks collect traffic dust, and when to book a cleaning from Burke.",
+    "hero": "/img/blog/Allergies.webp"
+  },
+  {
+    "slug": "chantilly-route-28-dust-air-ducts",
+    "title": "How Chantilly’s Route 28 Corridor Loads Your Air Ducts",
+    "description": "Chantilly, VA sits on Route 28 between Dulles and Centreville. Learn why HOA construction dust and airport-corridor traffic load ducts, and when to clean them from Burke.",
+    "hero": "/img/blog/Why-Air-Duct-Condition-Matters.webp"
+  },
+  {
+    "slug": "oakton-123-pollen-air-ducts",
+    "title": "How Oakton’s Route 123 Colonials Load Pollen Into Air Ducts",
+    "description": "Oakton, VA sits on Chain Bridge Road between Vienna and Fairfax. Learn why large-lot colonials store canopy pollen in cool trunks, and when to clean them from Burke.",
+    "hero": "/img/blog/dirty-air-ducts-energy-bills.webp"
+  },
+  {
+    "slug": "lorton-i95-occoquan-air-ducts",
+    "title": "How Lorton’s I-95 Dust and Occoquan Humidity Load Your Air Ducts",
+    "description": "Lorton, VA sits on I-95 south of Springfield with the Occoquan nearby. Learn why traffic dust and river humidity load ducts, and when to book a cleaning from Burke.",
+    "hero": "/img/blog/dirty-HVAC-unit.webp"
+  },
+  {
+    "slug": "mount-vernon-potomac-humidity-air-ducts",
+    "title": "How Mt Vernon Potomac Humidity Loads Older Air Ducts",
+    "description": "Mt Vernon, VA sits along the GW Parkway on the Potomac. Learn why older river-side trunks collect humidity and pollen, and when to clean them from Burke.",
+    "hero": "/img/blog/Allergies.webp"
+  },
+  {
+    "slug": "fair-oaks-townhomes-dust-air-ducts",
+    "title": "How Fair Oaks Townhomes Collect Route 50 and I-66 Dust",
+    "description": "Fair Oaks, VA sits at the I-66 / Route 50 interchange around the mall and Fair Lakes. Learn why townhome ducts load corridor dust, and when to clean them from Burke.",
+    "hero": "/img/blog/Why-Air-Duct-Condition-Matters.webp"
+  },
+  {
+    "slug": "germantown-i270-townhome-air-ducts",
+    "title": "How Germantown I-270 Townhomes Load Your Air Ducts",
+    "description": "Germantown, MD sits on I-270 north of Gaithersburg. Learn why townhome ducts collect traffic dust and drywall grit, and when to clean them from Bethesda.",
+    "hero": "/img/blog/dirty-air-ducts-energy-bills.webp"
+  },
+  {
+    "slug": "potomac-tree-canopy-humidity-air-ducts",
+    "title": "How Potomac’s Tree Canopy and River Humidity Load Your Air Ducts",
+    "description": "Potomac, MD sits on large wooded lots along the river corridor. Learn why canopy pollen and humidity load estate-scale ducts, and when to clean them from Bethesda.",
+    "hero": "/img/blog/dirty-HVAC-unit.webp"
+  },
+  {
+    "slug": "wheaton-urban-dust-air-ducts",
+    "title": "How Wheaton Brick Houses Load Urban Dust Into Air Ducts",
+    "description": "Wheaton, MD mixes 1940s–60s brick with Metro-corridor dust. Learn why older ducts collect urban grit and pollen, and when to clean them from Bethesda.",
+    "hero": "/img/blog/Allergies.webp"
+  },
+  {
+    "slug": "takoma-park-bungalow-humidity-air-ducts",
+    "title": "How Takoma Park Bungalows Hold Humidity in Older Air Ducts",
+    "description": "Takoma Park, MD bungalows sit on the DC line under a heavy canopy. Learn why later-added ducts collect humidity and leaf grit, and when to clean them from Bethesda.",
+    "hero": "/img/blog/Why-Air-Duct-Condition-Matters.webp"
+  },
+  {
+    "slug": "kensington-colonials-pollen-air-ducts",
+    "title": "How Kensington Colonials Load Connecticut Avenue Pollen Into Ducts",
+    "description": "Kensington, MD colonials sit on Connecticut Avenue under street trees. Learn why pollen and weekend grit load cool basement ducts, and when to clean them from Bethesda.",
+    "hero": "/img/blog/dirty-air-ducts-energy-bills.webp"
+  },
+  {
+    "slug": "olney-rambler-pollen-air-ducts",
+    "title": "How Olney Ramblers Load Pollen Into Finished-Basement Ducts",
+    "description": "Olney, MD ramblers sit farther up Montgomery County under a thick canopy. Learn why finished basements store pollen in cool trunks, and when to clean them from Bethesda.",
+    "hero": "/img/blog/dirty-HVAC-unit.webp"
+  },
+  {
+    "slug": "hyattsville-route-1-humidity-air-ducts",
+    "title": "How Hyattsville Route 1 Housing Loads Humidity and Corridor Dust",
+    "description": "Hyattsville, MD sits on the Route 1 spine in Prince George’s County. Learn why older ducts collect humidity and corridor grit, and when to clean them from Bethesda.",
+    "hero": "/img/blog/Allergies.webp"
+  },
+  {
+    "slug": "columbia-village-townhomes-air-ducts",
+    "title": "How Columbia Village Townhomes Load Lake Humidity Into Air Ducts",
+    "description": "Columbia, MD village townhomes sit around lakes and HOA paths. Learn why pollen and damp-season film load ducts, and when to clean them from Bethesda.",
+    "hero": "/img/blog/Why-Air-Duct-Condition-Matters.webp"
+  },
+  {
+    "slug": "ellicott-city-flood-humidity-air-ducts",
+    "title": "How Ellicott City Flood Humidity Loads Old Air Ducts",
+    "description": "Ellicott City, MD mill houses sit on the Patapsco with a real flood history. Learn why stone cellars and old ducts hold moisture, and when to clean them from Bethesda.",
+    "hero": "/img/blog/dirty-air-ducts-energy-bills.webp"
+  },
+  {
+    "slug": "frederick-downtown-humidity-air-ducts",
+    "title": "How Downtown Frederick Humidity and New-Suburb Dust Load Air Ducts",
+    "description": "Frederick, MD mixes downtown brick humidity with Urbana construction dust. Learn why ducts load on both ends of the city, and when to clean them from Bethesda.",
+    "hero": "/img/blog/dirty-HVAC-unit.webp"
+  },
+  {
+    "slug": "montgomery-village-townhomes-air-ducts",
+    "title": "How Montgomery Village Townhomes Load Lake Dust Into Air Ducts",
+    "description": "Montgomery Village, MD is a 1970s planned community next to Gaithersburg. Learn why lake-side townhome ducts collect pollen and old-closet lint, and when to clean them from Bethesda.",
+    "hero": "/img/blog/Allergies.webp"
+  },
+  {
+    "slug": "clarksburg-new-construction-dust-air-ducts",
+    "title": "How Clarksburg New Construction Loads Drywall Dust Into Air Ducts",
+    "description": "Clarksburg, MD is Montgomery County’s I-270 north boom. Learn why new-construction ducts hold drywall dust, and when to clean them from Bethesda.",
+    "hero": "/img/blog/Why-Air-Duct-Condition-Matters.webp"
+  },
+  {
     "slug": "fairfax-ramblers-pollen-air-ducts",
     "title": "How Fairfax Ramblers and County Pollen Load Your Air Ducts",
     "description": "The City of Fairfax sits inside a heavy Fairfax County tree canopy. Learn why 1950s–80s ramblers sweat at the trunks, how pollen sticks, and when to clean the ducts.",

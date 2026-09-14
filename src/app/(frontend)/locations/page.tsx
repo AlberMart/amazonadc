@@ -141,7 +141,7 @@ export async function generateMetadata(): Promise<Metadata> {
       path: '/locations',
       fallbackTitle: 'Service Locations in VA, MD & DC',
       fallbackDescription:
-        'Amazon Air Duct Cleaning offices in Burke, VA and Bethesda, MD, plus city pages for Arlington, Alexandria, and communities across the DMV.',
+        'Amazon Air Duct Cleaning offices in Burke, VA and Bethesda, MD, plus city pages for Reston, Vienna, Germantown, Potomac, Columbia, Frederick, and communities across the DMV.',
     },
     site,
   )

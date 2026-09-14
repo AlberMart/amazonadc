@@ -14,13 +14,34 @@ type RegionRow = ServiceAreaRegion
 const fallbackRegions: RegionRow[] = [
   {
     name: 'Virginia',
-    cities: ['Arlington', 'Alexandria', 'McLean', 'Fairfax', 'Springfield', 'Loudoun', 'Prince William'],
+    cities: [
+      'Arlington',
+      'Alexandria',
+      'McLean',
+      'Fairfax',
+      'Springfield',
+      'Reston',
+      'Vienna',
+      'Falls Church',
+      'Loudoun',
+      'Prince William',
+    ],
     href: '/locations/burke',
     linkLabel: 'Burke & more',
   },
   {
     name: 'Maryland',
-    cities: ['Rockville', 'Silver Spring', 'Bethesda', 'Gaithersburg', 'College Park'],
+    cities: [
+      'Rockville',
+      'Silver Spring',
+      'Bethesda',
+      'Gaithersburg',
+      'Germantown',
+      'Potomac',
+      'College Park',
+      'Columbia',
+      'Frederick',
+    ],
     href: '/locations/bethesda',
     linkLabel: 'Surrounding areas',
   },
@@ -122,6 +143,7 @@ export async function ServiceArea({
     cityPages.map((page) => [page.city, `/locations/${page.slug}`]),
   )
   const seoCities = cityPages.filter((page) => !offices.some((o) => o.slug === page.slug))
+  const featuredSeoCities = seoCities.slice(0, 12)
   const resolvedIntro =
     intro ||
     defaultPartial?.intro ||
@@ -137,12 +159,16 @@ export async function ServiceArea({
           </h2>
           <p className="mt-4 site-body leading-relaxed">
             {resolvedIntro}
-            {seoCities.length > 0 ? (
+            {featuredSeoCities.length > 0 ? (
               <>
                 , including{' '}
-                {seoCities.map((page, index) => (
+                {featuredSeoCities.map((page, index) => (
                   <React.Fragment key={page.slug}>
-                    {index > 0 ? (index === seoCities.length - 1 ? ' and ' : ', ') : null}
+                    {index > 0
+                      ? index === featuredSeoCities.length - 1 && seoCities.length <= 12
+                        ? ' and '
+                        : ', '
+                      : null}
                     <Link
                       href={`/locations/${page.slug}`}
                       className="site-link"
@@ -151,6 +177,14 @@ export async function ServiceArea({
                     </Link>
                   </React.Fragment>
                 ))}
+                {seoCities.length > featuredSeoCities.length ? (
+                  <>
+                    , and{' '}
+                    <Link href="/locations" className="site-link">
+                      more cities we serve
+                    </Link>
+                  </>
+                ) : null}
               </>
             ) : null}
             .

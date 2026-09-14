@@ -8,16 +8,38 @@ import { bethesda } from '@/content/locations/bethesda'
 import { alexandria } from '@/content/locations/alexandria'
 import { arlington } from '@/content/locations/arlington'
 import { burke } from '@/content/locations/burke'
+import { chantilly } from '@/content/locations/chantilly'
+import { clarksburg } from '@/content/locations/clarksburg'
 import { collegePark } from '@/content/locations/college-park'
+import { columbia } from '@/content/locations/columbia'
+import { ellicottCity } from '@/content/locations/ellicott-city'
 import { fairfax } from '@/content/locations/fairfax'
+import { frederick } from '@/content/locations/frederick'
+import { fairOaks } from '@/content/locations/fair-oaks'
+import { fallsChurch } from '@/content/locations/falls-church'
 import { gaithersburg } from '@/content/locations/gaithersburg'
+import { germantown } from '@/content/locations/germantown'
+import { greatFalls } from '@/content/locations/great-falls'
+import { herndon } from '@/content/locations/herndon'
+import { hyattsville } from '@/content/locations/hyattsville'
+import { kensington } from '@/content/locations/kensington'
+import { lorton } from '@/content/locations/lorton'
 import { loudoun } from '@/content/locations/loudoun'
 import { mclean } from '@/content/locations/mclean'
+import { montgomeryVillage } from '@/content/locations/montgomery-village'
+import { mountVernon } from '@/content/locations/mount-vernon'
+import { oakton } from '@/content/locations/oakton'
+import { olney } from '@/content/locations/olney'
+import { potomac } from '@/content/locations/potomac'
 import { princeWilliam } from '@/content/locations/prince-william'
+import { reston } from '@/content/locations/reston'
 import { rockville } from '@/content/locations/rockville'
 import { silverSpring } from '@/content/locations/silver-spring'
 import { springfield } from '@/content/locations/springfield'
+import { takomaPark } from '@/content/locations/takoma-park'
+import { vienna } from '@/content/locations/vienna'
 import { washingtonDc } from '@/content/locations/washington-dc'
+import { wheaton } from '@/content/locations/wheaton'
 import { officesSeedSource } from '@/content/offices'
 import type { LocationContentSeed } from '@/utilities/locations'
 import type { ServiceContent } from '@/utilities/services'
@@ -98,6 +120,9 @@ export const siteSettingsSeed = {
         { name: 'McLean' },
         { name: 'Fairfax' },
         { name: 'Springfield' },
+        { name: 'Reston' },
+        { name: 'Vienna' },
+        { name: 'Falls Church' },
         { name: 'Loudoun' },
         { name: 'Prince William' },
       ],
@@ -111,7 +136,11 @@ export const siteSettingsSeed = {
         { name: 'Silver Spring' },
         { name: 'Bethesda' },
         { name: 'Gaithersburg' },
+        { name: 'Germantown' },
+        { name: 'Potomac' },
         { name: 'College Park' },
+        { name: 'Columbia' },
+        { name: 'Frederick' },
       ],
       href: '/locations/bethesda',
       linkLabel: 'Surrounding areas',
@@ -227,6 +256,9 @@ export const footerSeed = {
         customNav('Alexandria, VA', '/locations/alexandria'),
         customNav('McLean, VA', '/locations/mclean'),
         customNav('Fairfax, VA', '/locations/fairfax'),
+        customNav('Reston, VA', '/locations/reston'),
+        customNav('Vienna, VA', '/locations/vienna'),
+        customNav('Falls Church, VA', '/locations/falls-church'),
         customNav('Springfield, VA', '/locations/springfield'),
         customNav('Loudoun, VA', '/locations/loudoun'),
         customNav('Prince William, VA', '/locations/prince-william'),
@@ -234,7 +266,11 @@ export const footerSeed = {
         customNav('Rockville, MD', '/locations/rockville'),
         customNav('Silver Spring, MD', '/locations/silver-spring'),
         customNav('Gaithersburg, MD', '/locations/gaithersburg'),
+        customNav('Germantown, MD', '/locations/germantown'),
+        customNav('Potomac, MD', '/locations/potomac'),
         customNav('College Park, MD', '/locations/college-park'),
+        customNav('Columbia, MD', '/locations/columbia'),
+        customNav('Frederick, MD', '/locations/frederick'),
         customNav('All locations', '/locations'),
       ],
     },
@@ -410,4 +446,26 @@ export const locationsSeed = [
   mapLocation(silverSpring),
   mapLocation(gaithersburg),
   mapLocation(collegePark),
+  mapLocation(reston),
+  mapLocation(herndon),
+  mapLocation(vienna),
+  mapLocation(greatFalls),
+  mapLocation(fallsChurch),
+  mapLocation(chantilly),
+  mapLocation(oakton),
+  mapLocation(lorton),
+  mapLocation(mountVernon),
+  mapLocation(fairOaks),
+  mapLocation(germantown),
+  mapLocation(potomac),
+  mapLocation(wheaton),
+  mapLocation(takomaPark),
+  mapLocation(kensington),
+  mapLocation(olney),
+  mapLocation(hyattsville),
+  mapLocation(columbia),
+  mapLocation(ellicottCity),
+  mapLocation(frederick),
+  mapLocation(montgomeryVillage),
+  mapLocation(clarksburg),
 ]

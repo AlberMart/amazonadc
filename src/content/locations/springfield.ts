@@ -8,7 +8,7 @@ export const springfield: LocationContentSeed = {
     'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Springfield, VA. Flat rates from our Burke office for split-levels, townhomes, and I-95 corridor homes. Call (571) 460-0001.',
   intro:
     'Amazon Air Duct Cleaning serves Springfield from our Burke office — the next community over, not a mailbox on Old Keene Mill. Split-levels near the Mixing Bowl, Franconia townhomes, and West Springfield colonials all take on traffic dust and humid summers. Call (571) 460-0001.',
-  heroImage: '/img/Amazon.webp',
+  heroImage: '/img/locations/springfield.webp',
   heroAlt: 'Air duct cleaning in Springfield, VA — Amazon Air Duct Cleaning',
   city: 'Springfield',
   state: 'VA',

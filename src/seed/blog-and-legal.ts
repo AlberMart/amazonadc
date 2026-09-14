@@ -16,6 +16,28 @@ import princeWilliamHumidity from '@/content/blog/prince-william-occoquan-humidi
 import silverSpringDust from '@/content/blog/silver-spring-brick-houses-urban-dust-air-ducts.json'
 import gaithersburgBasement from '@/content/blog/gaithersburg-kentlands-basement-humidity-air-ducts.json'
 import collegeParkRentals from '@/content/blog/college-park-rentals-pollen-air-ducts.json'
+import restonTownCenter from '@/content/blog/reston-town-center-dust-air-ducts.json'
+import herndonConstruction from '@/content/blog/herndon-construction-dust-air-ducts.json'
+import viennaPollen from '@/content/blog/vienna-tree-pollen-basement-air-ducts.json'
+import greatFallsEstates from '@/content/blog/great-falls-estates-humidity-air-ducts.json'
+import fallsChurchDust from '@/content/blog/falls-church-close-in-dust-air-ducts.json'
+import chantillyRoute28 from '@/content/blog/chantilly-route-28-dust-air-ducts.json'
+import oakton123 from '@/content/blog/oakton-123-pollen-air-ducts.json'
+import lortonI95 from '@/content/blog/lorton-i95-occoquan-air-ducts.json'
+import mountVernonHumidity from '@/content/blog/mount-vernon-potomac-humidity-air-ducts.json'
+import fairOaksTownhomes from '@/content/blog/fair-oaks-townhomes-dust-air-ducts.json'
+import germantownI270 from '@/content/blog/germantown-i270-townhome-air-ducts.json'
+import potomacCanopy from '@/content/blog/potomac-tree-canopy-humidity-air-ducts.json'
+import wheatonUrban from '@/content/blog/wheaton-urban-dust-air-ducts.json'
+import takomaParkBungalow from '@/content/blog/takoma-park-bungalow-humidity-air-ducts.json'
+import kensingtonColonials from '@/content/blog/kensington-colonials-pollen-air-ducts.json'
+import olneyRambler from '@/content/blog/olney-rambler-pollen-air-ducts.json'
+import hyattsvilleRoute1 from '@/content/blog/hyattsville-route-1-humidity-air-ducts.json'
+import columbiaVillage from '@/content/blog/columbia-village-townhomes-air-ducts.json'
+import ellicottCityFlood from '@/content/blog/ellicott-city-flood-humidity-air-ducts.json'
+import frederickDowntown from '@/content/blog/frederick-downtown-humidity-air-ducts.json'
+import montgomeryVillageTownhomes from '@/content/blog/montgomery-village-townhomes-air-ducts.json'
+import clarksburgConstruction from '@/content/blog/clarksburg-new-construction-dust-air-ducts.json'
 import {
   homeContentSeed,
   mapHomeContentToSeed,
@@ -95,6 +117,28 @@ export const postsSeed = [
   mapPost(silverSpringDust as BlogPost),
   mapPost(gaithersburgBasement as BlogPost),
   mapPost(collegeParkRentals as BlogPost),
+  mapPost(restonTownCenter as BlogPost),
+  mapPost(herndonConstruction as BlogPost),
+  mapPost(viennaPollen as BlogPost),
+  mapPost(greatFallsEstates as BlogPost),
+  mapPost(fallsChurchDust as BlogPost),
+  mapPost(chantillyRoute28 as BlogPost),
+  mapPost(oakton123 as BlogPost),
+  mapPost(lortonI95 as BlogPost),
+  mapPost(mountVernonHumidity as BlogPost),
+  mapPost(fairOaksTownhomes as BlogPost),
+  mapPost(germantownI270 as BlogPost),
+  mapPost(potomacCanopy as BlogPost),
+  mapPost(wheatonUrban as BlogPost),
+  mapPost(takomaParkBungalow as BlogPost),
+  mapPost(kensingtonColonials as BlogPost),
+  mapPost(olneyRambler as BlogPost),
+  mapPost(hyattsvilleRoute1 as BlogPost),
+  mapPost(columbiaVillage as BlogPost),
+  mapPost(ellicottCityFlood as BlogPost),
+  mapPost(frederickDowntown as BlogPost),
+  mapPost(montgomeryVillageTownhomes as BlogPost),
+  mapPost(clarksburgConstruction as BlogPost),
 ]
 
 export const legalPagesSeed = [

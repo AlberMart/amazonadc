@@ -8,7 +8,7 @@ export const mclean: LocationContentSeed = {
     'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in McLean, VA. Flat rates from our Burke office for large lots, finished basements, and Tysons condos. Call (571) 460-0001.',
   intro:
     'Amazon Air Duct Cleaning serves McLean from our Burke office — the same Northern Virginia crew that already covers Arlington and Alexandria. Large-lot houses under a heavy tree canopy, finished basements, and Tysons high-rises all load ducts with pollen and humidity. Call (571) 460-0001.',
-  heroImage: '/img/Amazon.webp',
+  heroImage: '/img/locations/mclean.webp',
   heroAlt: 'Air duct cleaning in McLean, VA — Amazon Air Duct Cleaning',
   city: 'McLean',
   state: 'VA',
@@ -64,7 +64,7 @@ export const mclean: LocationContentSeed = {
       },
       {
         title: 'Crews Who Know Fairfax Housing',
-        text: 'The Burke team already works McLean, Great Falls, Vienna, and Arlington. They know basement air handlers, long dryer runs, and pollen season.',
+        text: 'The Burke team already works McLean, [Great Falls](/locations/great-falls), [Vienna](/locations/vienna), and [Arlington](/locations/arlington). They know basement air handlers, long dryer runs, and pollen season.',
       },
       {
         title: '100% Satisfaction Guarantee',
@@ -87,7 +87,7 @@ export const mclean: LocationContentSeed = {
       },
       {
         title: 'North and west',
-        places: 'Great Falls edge, Wolf Trap, Vienna, Oakton — ask when you book if your street is not listed',
+        places: '[Great Falls](/locations/great-falls) edge, Wolf Trap, [Vienna](/locations/vienna), [Oakton](/locations/oakton) — ask when you book if your street is not listed',
       },
     ],
   },

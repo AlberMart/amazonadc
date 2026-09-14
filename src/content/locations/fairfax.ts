@@ -8,7 +8,7 @@ export const fairfax: LocationContentSeed = {
     'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Fairfax, VA. Flat rates from our Burke office for ramblers, townhomes, and GMU-area rentals. Call (571) 460-0001.',
   intro:
     'Amazon Air Duct Cleaning serves the City of Fairfax from our Burke office — a short run up 123, not a rented Fairfax suite. Old Town brick, Fairfax Corner townhomes, and houses near George Mason all take on Fairfax County pollen and humid summers. Call (571) 460-0001.',
-  heroImage: '/img/locations/101221_AmazonDC-141.jpg',
+  heroImage: '/img/locations/fairfax.webp',
   heroAlt: 'Air duct cleaning in Fairfax, VA — Amazon Air Duct Cleaning',
   city: 'Fairfax',
   state: 'VA',

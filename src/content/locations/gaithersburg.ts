@@ -8,7 +8,7 @@ export const gaithersburg: LocationContentSeed = {
     'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Gaithersburg, MD. Flat rates from our Bethesda office for Kentlands, Crown, and Montgomery Village. Call (301) 809-4544.',
   intro:
     'Amazon Air Duct Cleaning serves Gaithersburg from our Bethesda office — up I-270, not a rented Kentlands mailbox. Colonials, Kentlands and Lakelands townhomes, and Crown condos all take on Montgomery County pollen and basement humidity. Call (301) 809-4544.',
-  heroImage: '/img/locations/101221_AmazonDC-179.jpg',
+  heroImage: '/img/locations/gaithersburg.webp',
   heroAlt: 'Air duct cleaning in Gaithersburg, MD — Amazon Air Duct Cleaning',
   city: 'Gaithersburg',
   state: 'MD',

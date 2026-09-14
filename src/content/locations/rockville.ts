@@ -8,7 +8,7 @@ export const rockville: LocationContentSeed = {
     'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Rockville, MD. Flat rates from our Bethesda office for colonials, townhomes, and King Farm. Call (301) 809-4544.',
   intro:
     'Amazon Air Duct Cleaning serves Rockville from our Bethesda office — about fifteen minutes down Old Georgetown Road, not a rented Rockville mailbox. Colonials, King Farm townhomes, and Twinbrook ranches all take on Montgomery County pollen and basement humidity. Call (301) 809-4544.',
-  heroImage: '/img/locations/101221_AmazonDC-179.jpg',
+  heroImage: '/img/locations/rockville.webp',
   heroAlt: 'Air duct cleaning in Rockville, MD — Amazon Air Duct Cleaning',
   city: 'Rockville',
   state: 'MD',

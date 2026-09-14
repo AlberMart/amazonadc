@@ -8,7 +8,7 @@ export const bethesda: LocationContentSeed = {
     'Professional air duct, dryer vent, and chimney cleaning in Bethesda, MD and surrounding areas including Rockville, Gaithersburg, Silver Spring, and more. Call (301) 809-4544.',
   intro:
     'Trusted by homeowners and property managers across Bethesda, Rockville, Gaithersburg, Silver Spring, and dozens of surrounding communities. Our licensed technicians deliver professional air duct, dryer vent, chimney, and HVAC cleaning — with honest pricing and lasting results.',
-  heroImage: '/img/Amazon.webp',
+  heroImage: '/img/locations/bethesda.webp',
   heroAlt: 'Air Duct Cleaning Bethesda MD — Amazon Air Duct Cleaning',
   city: 'Bethesda',
   state: 'MD',
@@ -82,27 +82,33 @@ export const bethesda: LocationContentSeed = {
     groups: [
       {
         title: 'Bethesda & Silver Spring',
-        places: 'Bethesda, [Silver Spring](/locations/silver-spring), Kensington, Wheaton, Takoma Park, Aspen Hill',
+        places:
+          'Bethesda, [Silver Spring](/locations/silver-spring), [Kensington](/locations/kensington), [Wheaton](/locations/wheaton), [Takoma Park](/locations/takoma-park), Aspen Hill',
       },
       {
         title: 'Rockville & Gaithersburg',
-        places: '[Rockville](/locations/rockville), [Gaithersburg](/locations/gaithersburg), Germantown, Montgomery Village, Derwood, Darnestown, Travilah',
+        places:
+          '[Rockville](/locations/rockville), [Gaithersburg](/locations/gaithersburg), [Germantown](/locations/germantown), [Montgomery Village](/locations/montgomery-village), Derwood, Darnestown, Travilah',
       },
       {
         title: 'Potomac & Surrounding Areas',
-        places: 'Potomac, Boyds, Poolesville, Clarksburg, Damascus, Olney',
+        places:
+          '[Potomac](/locations/potomac), Boyds, Poolesville, [Clarksburg](/locations/clarksburg), Damascus, [Olney](/locations/olney)',
       },
       {
         title: 'College Park & Hyattsville',
-        places: '[College Park](/locations/college-park), Hyattsville, and surrounding Prince George\'s County communities',
+        places:
+          '[College Park](/locations/college-park), [Hyattsville](/locations/hyattsville), and surrounding Prince George\'s County communities',
       },
       {
         title: 'Howard County',
-        places: 'Columbia, Ellicott City, Clarksville, and surrounding Howard County neighborhoods',
+        places:
+          '[Columbia](/locations/columbia), [Ellicott City](/locations/ellicott-city), Clarksville, and surrounding Howard County neighborhoods',
       },
       {
         title: 'Frederick & Carroll County',
-        places: 'Frederick, Urbana, Adamstown, Mt Airy, Westminster, Sykesville, Hagerstown',
+        places:
+          '[Frederick](/locations/frederick), Urbana, Adamstown, Mt Airy, Westminster, Sykesville, Hagerstown',
       },
       {
         title: 'Washington DC',
@@ -149,7 +155,7 @@ export const bethesda: LocationContentSeed = {
     },
     {
       q: 'What areas near Bethesda do you service?',
-      a: 'We serve Rockville, Gaithersburg, Germantown, Silver Spring, Potomac, Wheaton, Kensington, Aspen Hill, Olney, Columbia, Ellicott City, Frederick, Hagerstown, and many more communities throughout the region.',
+      a: 'We serve [Rockville](/locations/rockville), [Gaithersburg](/locations/gaithersburg), [Germantown](/locations/germantown), [Silver Spring](/locations/silver-spring), [Potomac](/locations/potomac), [Wheaton](/locations/wheaton), [Kensington](/locations/kensington), [Olney](/locations/olney), [Columbia](/locations/columbia), [Ellicott City](/locations/ellicott-city), [Frederick](/locations/frederick), and many more communities throughout the region.',
     },
     {
       q: 'How do I schedule a service appointment at the Bethesda location?',

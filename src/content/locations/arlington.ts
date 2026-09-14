@@ -8,7 +8,7 @@ export const arlington: LocationContentSeed = {
     'Professional air duct cleaning, dryer vent maintenance, and mold remediation in Arlington, VA. Flat rates, certified technicians, and a 100% satisfaction guarantee.',
   intro:
     'Amazon Air Duct Cleaning serves condos, townhomes, and older brick houses across Arlington — from Rosslyn and Clarendon to Crystal City and Columbia Pike. Our Burke-based technicians bring professional HVAC cleaning, dryer vent service, and ventilation mold treatment to Arlington homes. Call (571) 460-0001.',
-  heroImage: '/img/locations/101221_AmazonDC-141.jpg',
+  heroImage: '/img/locations/arlington.webp',
   heroAlt: 'Air duct cleaning in Arlington, VA — Amazon Air Duct Cleaning',
   city: 'Arlington',
   state: 'VA',
@@ -75,7 +75,7 @@ export const arlington: LocationContentSeed = {
   communities: {
     heading: 'Neighborhoods We Serve in Arlington',
     intro:
-      'We cover residential and commercial customers across Arlington County, plus nearby [Alexandria](/locations/alexandria), [McLean](/locations/mclean), [Fairfax](/locations/fairfax), Falls Church, and [Washington, DC](/locations/washington-dc). If your building is not listed, call — we likely already work your corridor.',
+      'We cover residential and commercial customers across Arlington County, plus nearby [Alexandria](/locations/alexandria), [McLean](/locations/mclean), [Fairfax](/locations/fairfax), [Falls Church](/locations/falls-church), and [Washington, DC](/locations/washington-dc). If your building is not listed, call — we likely already work your corridor.',
     groups: [
       {
         title: 'Rosslyn to Ballston',

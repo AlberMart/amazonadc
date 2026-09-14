@@ -8,7 +8,7 @@ export const princeWilliam: LocationContentSeed = {
     'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Prince William County, VA. Flat rates from our Burke office for Woodbridge, Manassas, and Lake Ridge. Call (571) 460-0001.',
   intro:
     'Amazon Air Duct Cleaning serves Prince William County from our Burke office. Woodbridge townhomes on I-95, Lake Ridge split-levels, and Manassas colonials all take on Occoquan humidity and corridor dust. No Manassas storefront — the crew is the same one that already works Springfield. Call (571) 460-0001.',
-  heroImage: '/img/locations/101221_AmazonDC-141.jpg',
+  heroImage: '/img/locations/prince-william.webp',
   heroAlt: 'Air duct cleaning in Prince William County, VA — Amazon Air Duct Cleaning',
   city: 'Prince William',
   state: 'VA',

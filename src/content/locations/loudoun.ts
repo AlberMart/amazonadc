@@ -8,7 +8,7 @@ export const loudoun: LocationContentSeed = {
     'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Loudoun County, VA. Flat rates from our Burke office for Leesburg, Ashburn, Sterling, and South Riding. Call (571) 460-0001.',
   intro:
     'Amazon Air Duct Cleaning serves Loudoun County from our Burke office. Leesburg brick, Ashburn and Sterling new-builds, and Dulles-corridor townhomes all take on construction dust and a heavy pollen season. There is no Loudoun storefront — we will not invent one. Call (571) 460-0001.',
-  heroImage: '/img/locations/101221_AmazonDC-179.jpg',
+  heroImage: '/img/locations/loudoun.webp',
   heroAlt: 'Air duct cleaning in Loudoun County, VA — Amazon Air Duct Cleaning',
   city: 'Loudoun',
   state: 'VA',

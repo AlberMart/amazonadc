@@ -8,7 +8,7 @@ export const burke: LocationContentSeed = {
     'Professional air duct, dryer vent, and chimney cleaning in Burke, VA and surrounding areas including Fairfax, Alexandria, Arlington, Reston, and more. Call (571) 460-0001.',
   intro:
     'Trusted by homeowners and property managers across Burke, Springfield, Alexandria, Arlington, McLean, Reston, and Washington DC. Our licensed technicians deliver professional air duct, dryer vent, chimney, and HVAC cleaning — with honest pricing and lasting results.',
-  heroImage: '/img/Amazon.webp',
+  heroImage: '/img/locations/burke.webp',
   heroAlt: 'Air Duct Cleaning Burke VA — Amazon Air Duct Cleaning',
   city: 'Burke',
   state: 'VA',
@@ -80,12 +80,21 @@ export const burke: LocationContentSeed = {
     intro:
       "Our Burke branch serves a wide region across Fairfax County, Loudoun County, Prince William County, and [Washington, DC](/locations/washington-dc). If you don't see your city listed, call us — we likely serve your area.",
     groups: [
-      { title: 'Burke & Springfield', places: 'Burke, [Springfield](/locations/springfield), Fair Oaks, Oakton, Lorton, Mt Vernon' },
+      {
+        title: 'Burke & Springfield',
+        places:
+          'Burke, [Springfield](/locations/springfield), [Fair Oaks](/locations/fair-oaks), [Oakton](/locations/oakton), [Lorton](/locations/lorton), [Mt Vernon](/locations/mount-vernon)',
+      },
       {
         title: 'Alexandria & Arlington',
-        places: '[Alexandria](/locations/alexandria), [Arlington](/locations/arlington), Falls Church, [McLean](/locations/mclean), [Fairfax](/locations/fairfax)',
+        places:
+          '[Alexandria](/locations/alexandria), [Arlington](/locations/arlington), [Falls Church](/locations/falls-church), [McLean](/locations/mclean), [Fairfax](/locations/fairfax)',
       },
-      { title: 'Reston & Herndon', places: 'Reston, Herndon, Great Falls, Vienna, Chantilly' },
+      {
+        title: 'Reston & Herndon',
+        places:
+          '[Reston](/locations/reston), [Herndon](/locations/herndon), [Great Falls](/locations/great-falls), [Vienna](/locations/vienna), [Chantilly](/locations/chantilly)',
+      },
       {
         title: 'Leesburg & Loudoun County',
         places: 'See [Loudoun County](/locations/loudoun) — Leesburg, Ashburn, Sterling, Oatlands, Lenah',
@@ -135,7 +144,7 @@ export const burke: LocationContentSeed = {
     },
     {
       q: 'What areas near Burke do you service?',
-      a: 'We serve [Springfield](/locations/springfield), [Fairfax](/locations/fairfax), [Alexandria](/locations/alexandria), [Arlington](/locations/arlington), [McLean](/locations/mclean), Vienna, Reston, Herndon, [Loudoun](/locations/loudoun), [Prince William](/locations/prince-william), and [Washington, DC](/locations/washington-dc).',
+      a: 'We serve [Springfield](/locations/springfield), [Fairfax](/locations/fairfax), [Alexandria](/locations/alexandria), [Arlington](/locations/arlington), [McLean](/locations/mclean), [Vienna](/locations/vienna), [Reston](/locations/reston), [Herndon](/locations/herndon), [Falls Church](/locations/falls-church), [Loudoun](/locations/loudoun), [Prince William](/locations/prince-william), and [Washington, DC](/locations/washington-dc).',
     },
     {
       q: 'How do I schedule a service appointment at the Burke location?',

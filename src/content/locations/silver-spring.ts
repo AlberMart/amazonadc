@@ -8,7 +8,7 @@ export const silverSpring: LocationContentSeed = {
     'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Silver Spring, MD. Flat rates from our Bethesda office for brick colonials, condos, and older rentals. Call (301) 809-4544.',
   intro:
     'Amazon Air Duct Cleaning serves Silver Spring from our Bethesda office — up Georgia Avenue and East-West Highway, not a rented downtown suite. Brick colonials, Woodside bungalows, and stacked condos all take on Montgomery County pollen and urban dust. Call (301) 809-4544.',
-  heroImage: '/img/Amazon.webp',
+  heroImage: '/img/locations/silver-spring.webp',
   heroAlt: 'Air duct cleaning in Silver Spring, MD — Amazon Air Duct Cleaning',
   city: 'Silver Spring',
   state: 'MD',
