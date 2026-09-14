@@ -82,11 +82,11 @@ export const bethesda: LocationContentSeed = {
     groups: [
       {
         title: 'Bethesda & Silver Spring',
-        places: 'Bethesda, Silver Spring, Kensington, Wheaton, Takoma Park, Aspen Hill',
+        places: 'Bethesda, [Silver Spring](/locations/silver-spring), Kensington, Wheaton, Takoma Park, Aspen Hill',
       },
       {
         title: 'Rockville & Gaithersburg',
-        places: '[Rockville](/locations/rockville), Gaithersburg, Germantown, Montgomery Village, Derwood, Darnestown, Travilah',
+        places: '[Rockville](/locations/rockville), [Gaithersburg](/locations/gaithersburg), Germantown, Montgomery Village, Derwood, Darnestown, Travilah',
       },
       {
         title: 'Potomac & Surrounding Areas',
@@ -94,7 +94,7 @@ export const bethesda: LocationContentSeed = {
       },
       {
         title: 'College Park & Hyattsville',
-        places: "College Park, Hyattsville, and surrounding Prince George's County communities",
+        places: '[College Park](/locations/college-park), Hyattsville, and surrounding Prince George\'s County communities',
       },
       {
         title: 'Howard County',

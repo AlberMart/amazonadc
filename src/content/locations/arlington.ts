@@ -75,7 +75,7 @@ export const arlington: LocationContentSeed = {
   communities: {
     heading: 'Neighborhoods We Serve in Arlington',
     intro:
-      'We cover residential and commercial customers across Arlington County, plus nearby [Alexandria](/locations/alexandria), [McLean](/locations/mclean), Falls Church, and [Washington, DC](/locations/washington-dc). If your building is not listed, call — we likely already work your corridor.',
+      'We cover residential and commercial customers across Arlington County, plus nearby [Alexandria](/locations/alexandria), [McLean](/locations/mclean), [Fairfax](/locations/fairfax), Falls Church, and [Washington, DC](/locations/washington-dc). If your building is not listed, call — we likely already work your corridor.',
     groups: [
       {
         title: 'Rosslyn to Ballston',

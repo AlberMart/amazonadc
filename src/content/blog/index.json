@@ -1,5 +1,47 @@
 [
   {
+    "slug": "fairfax-ramblers-pollen-air-ducts",
+    "title": "How Fairfax Ramblers and County Pollen Load Your Air Ducts",
+    "description": "The City of Fairfax sits inside a heavy Fairfax County tree canopy. Learn why 1950s–80s ramblers sweat at the trunks, how pollen sticks, and when to clean the ducts.",
+    "hero": "/img/blog/Allergies.webp"
+  },
+  {
+    "slug": "springfield-mixing-bowl-dust-air-ducts",
+    "title": "How Springfield’s Mixing Bowl Dust Loads Your Air Ducts",
+    "description": "Springfield, VA sits on the I-95 / I-395 / Beltway Mixing Bowl. Learn why traffic dust and humid basements load ducts, and when to book a cleaning from Burke.",
+    "hero": "/img/blog/dirty-air-ducts-energy-bills.webp"
+  },
+  {
+    "slug": "loudoun-construction-dust-pollen-air-ducts",
+    "title": "How Loudoun Construction Dust and Pollen Load Your Air Ducts",
+    "description": "Loudoun County mixes historic Leesburg with active HOA construction in Ashburn and Brambleton. Learn why ducts hold drywall dust and pollen, and when to clean them.",
+    "hero": "/img/blog/Why-Air-Duct-Condition-Matters.webp"
+  },
+  {
+    "slug": "prince-william-occoquan-humidity-air-ducts",
+    "title": "How Occoquan Humidity and I-95 Dust Load Prince William Air Ducts",
+    "description": "Prince William County sits between the Occoquan and I-95. Learn why cool basement trunks sweat, how corridor dust sticks, and when to clean the ducts from Burke.",
+    "hero": "/img/blog/Allergies.webp"
+  },
+  {
+    "slug": "silver-spring-brick-houses-urban-dust-air-ducts",
+    "title": "How Silver Spring Brick Houses and Urban Dust Load Your Air Ducts",
+    "description": "Silver Spring, MD mixes pre-war brick, downtown construction, and humid basements. Learn why ducts collect urban dust and pollen, and when to clean them from Bethesda.",
+    "hero": "/img/blog/Allergies.webp"
+  },
+  {
+    "slug": "gaithersburg-kentlands-basement-humidity-air-ducts",
+    "title": "How Gaithersburg Basements and Kentlands Townhomes Load Your HVAC",
+    "description": "Gaithersburg, MD mixes split-level basements with Kentlands townhomes on I-270. Learn why ducts sweat, how pollen sticks, and when to clean them from Bethesda.",
+    "hero": "/img/blog/dirty-air-ducts-energy-bills.webp"
+  },
+  {
+    "slug": "college-park-rentals-pollen-air-ducts",
+    "title": "How College Park Rentals and UMD Pollen Load Your Air Ducts",
+    "description": "College Park, MD houses and apartments turn over fast around UMD. Learn why neglected filters, packed dryer vents, and pollen load the ducts, and when to clean them.",
+    "hero": "/img/blog/Why-Air-Duct-Condition-Matters.webp"
+  },
+  {
     "slug": "dc-humidity-row-houses-indoor-air",
     "title": "How DC Humidity and Row-House Ducts Affect Indoor Air Quality",
     "description": "Washington, DC row houses and condos sit in river humidity. Learn how condensation forms in older ducts, why dryer vents clog in high-rises, and when to book a cleaning.",

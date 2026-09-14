@@ -75,7 +75,7 @@ export const mclean: LocationContentSeed = {
   communities: {
     heading: 'Neighborhoods We Serve in McLean',
     intro:
-      'We cover McLean and the adjacent Fairfax communities we already drive every week. [Arlington](/locations/arlington) and [Washington, DC](/locations/washington-dc) are the same Burke dispatch.',
+      'We cover McLean and the adjacent Fairfax communities we already drive every week. [Fairfax](/locations/fairfax), [Arlington](/locations/arlington), and [Washington, DC](/locations/washington-dc) are the same Burke dispatch.',
     groups: [
       {
         title: 'McLean hamlet & Langley',

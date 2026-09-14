@@ -8,8 +8,15 @@ import { bethesda } from '@/content/locations/bethesda'
 import { alexandria } from '@/content/locations/alexandria'
 import { arlington } from '@/content/locations/arlington'
 import { burke } from '@/content/locations/burke'
+import { collegePark } from '@/content/locations/college-park'
+import { fairfax } from '@/content/locations/fairfax'
+import { gaithersburg } from '@/content/locations/gaithersburg'
+import { loudoun } from '@/content/locations/loudoun'
 import { mclean } from '@/content/locations/mclean'
+import { princeWilliam } from '@/content/locations/prince-william'
 import { rockville } from '@/content/locations/rockville'
+import { silverSpring } from '@/content/locations/silver-spring'
+import { springfield } from '@/content/locations/springfield'
 import { washingtonDc } from '@/content/locations/washington-dc'
 import { officesSeedSource } from '@/content/offices'
 import type { LocationContentSeed } from '@/utilities/locations'
@@ -219,8 +226,15 @@ export const footerSeed = {
         customNav('Arlington, VA', '/locations/arlington'),
         customNav('Alexandria, VA', '/locations/alexandria'),
         customNav('McLean, VA', '/locations/mclean'),
+        customNav('Fairfax, VA', '/locations/fairfax'),
+        customNav('Springfield, VA', '/locations/springfield'),
+        customNav('Loudoun, VA', '/locations/loudoun'),
+        customNav('Prince William, VA', '/locations/prince-william'),
         customNav('Washington, DC', '/locations/washington-dc'),
         customNav('Rockville, MD', '/locations/rockville'),
+        customNav('Silver Spring, MD', '/locations/silver-spring'),
+        customNav('Gaithersburg, MD', '/locations/gaithersburg'),
+        customNav('College Park, MD', '/locations/college-park'),
         customNav('All locations', '/locations'),
       ],
     },
@@ -389,4 +403,11 @@ export const locationsSeed = [
   mapLocation(mclean),
   mapLocation(washingtonDc),
   mapLocation(rockville),
+  mapLocation(fairfax),
+  mapLocation(springfield),
+  mapLocation(loudoun),
+  mapLocation(princeWilliam),
+  mapLocation(silverSpring),
+  mapLocation(gaithersburg),
+  mapLocation(collegePark),
 ]

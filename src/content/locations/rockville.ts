@@ -75,7 +75,7 @@ export const rockville: LocationContentSeed = {
   communities: {
     heading: 'Neighborhoods We Serve in Rockville',
     intro:
-      'We cover the City of Rockville and the close Montgomery County streets we already drive from Bethesda. [Bethesda](/locations/bethesda) is the office page; [Washington, DC](/locations/washington-dc) is next door on the District side.',
+      'We cover the City of Rockville and the close Montgomery County streets we already drive from Bethesda. [Bethesda](/locations/bethesda) is the office page; [Gaithersburg](/locations/gaithersburg) is next up I-270; [Silver Spring](/locations/silver-spring) and [Washington, DC](/locations/washington-dc) cover the east and District side.',
     groups: [
       {
         title: 'Town Center & Twinbrook',

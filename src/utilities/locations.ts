@@ -6,8 +6,15 @@ import { alexandria } from '@/content/locations/alexandria'
 import { arlington } from '@/content/locations/arlington'
 import { bethesda } from '@/content/locations/bethesda'
 import { burke } from '@/content/locations/burke'
+import { collegePark } from '@/content/locations/college-park'
+import { fairfax } from '@/content/locations/fairfax'
+import { gaithersburg } from '@/content/locations/gaithersburg'
+import { loudoun } from '@/content/locations/loudoun'
 import { mclean } from '@/content/locations/mclean'
+import { princeWilliam } from '@/content/locations/prince-william'
 import { rockville } from '@/content/locations/rockville'
+import { silverSpring } from '@/content/locations/silver-spring'
+import { springfield } from '@/content/locations/springfield'
 import { washingtonDc } from '@/content/locations/washington-dc'
 import { getAllOffices, officeFromSeedSlug, type OfficeContent } from './offices'
 import { mapRawSections, type HomeSection } from '@/utilities/homeSections'
@@ -79,6 +86,13 @@ const LOCATION_SEEDS: LocationContentSeed[] = [
   mclean,
   washingtonDc,
   rockville,
+  fairfax,
+  springfield,
+  loudoun,
+  princeWilliam,
+  silverSpring,
+  gaithersburg,
+  collegePark,
 ]
 
 export function locationFromSeed(

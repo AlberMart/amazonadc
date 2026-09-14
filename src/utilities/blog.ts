@@ -15,6 +15,13 @@ import alexandriaHumidity from '@/content/blog/how-potomac-humidity-affects-alex
 import dcHumidity from '@/content/blog/dc-humidity-row-houses-indoor-air.json'
 import mcleanPollen from '@/content/blog/mclean-tree-pollen-basement-humidity.json'
 import rockvilleBasement from '@/content/blog/rockville-basement-humidity-air-ducts.json'
+import fairfaxRamblers from '@/content/blog/fairfax-ramblers-pollen-air-ducts.json'
+import springfieldDust from '@/content/blog/springfield-mixing-bowl-dust-air-ducts.json'
+import loudounDust from '@/content/blog/loudoun-construction-dust-pollen-air-ducts.json'
+import princeWilliamHumidity from '@/content/blog/prince-william-occoquan-humidity-air-ducts.json'
+import silverSpringDust from '@/content/blog/silver-spring-brick-houses-urban-dust-air-ducts.json'
+import gaithersburgBasement from '@/content/blog/gaithersburg-kentlands-basement-humidity-air-ducts.json'
+import collegeParkRentals from '@/content/blog/college-park-rentals-pollen-air-ducts.json'
 
 export type BlogIndexItem = {
   slug: string
@@ -149,6 +156,13 @@ const FILE_POSTS = [
   dcHumidity,
   mcleanPollen,
   rockvilleBasement,
+  fairfaxRamblers,
+  springfieldDust,
+  loudounDust,
+  princeWilliamHumidity,
+  silverSpringDust,
+  gaithersburgBasement,
+  collegeParkRentals,
 ] as BlogPost[]
 
 function fileBlogIndex(): BlogIndexItem[] {

@@ -75,7 +75,7 @@ export const washingtonDc: LocationContentSeed = {
   communities: {
     heading: 'Neighborhoods We Serve in Washington, DC',
     intro:
-      'We cover residential and small-commercial jobs in all four quadrants. Nearby [Arlington](/locations/arlington), [Alexandria](/locations/alexandria), and [McLean](/locations/mclean) are the same Burke dispatch; [Bethesda](/locations/bethesda) and [Rockville](/locations/rockville) cover the Maryland side.',
+      'We cover residential and small-commercial jobs in all four quadrants. Nearby [Arlington](/locations/arlington), [Alexandria](/locations/alexandria), and [McLean](/locations/mclean) are the same Burke dispatch; [Bethesda](/locations/bethesda), [Silver Spring](/locations/silver-spring), [Rockville](/locations/rockville), and [College Park](/locations/college-park) cover the Maryland side.',
     groups: [
       {
         title: 'Northwest',

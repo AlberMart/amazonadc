@@ -80,16 +80,19 @@ export const burke: LocationContentSeed = {
     intro:
       "Our Burke branch serves a wide region across Fairfax County, Loudoun County, Prince William County, and [Washington, DC](/locations/washington-dc). If you don't see your city listed, call us — we likely serve your area.",
     groups: [
-      { title: 'Burke & Springfield', places: 'Burke, Springfield, Fair Oaks, Oakton, Lorton, Mt Vernon' },
+      { title: 'Burke & Springfield', places: 'Burke, [Springfield](/locations/springfield), Fair Oaks, Oakton, Lorton, Mt Vernon' },
       {
         title: 'Alexandria & Arlington',
-        places: '[Alexandria](/locations/alexandria), [Arlington](/locations/arlington), Falls Church, [McLean](/locations/mclean)',
+        places: '[Alexandria](/locations/alexandria), [Arlington](/locations/arlington), Falls Church, [McLean](/locations/mclean), [Fairfax](/locations/fairfax)',
       },
       { title: 'Reston & Herndon', places: 'Reston, Herndon, Great Falls, Vienna, Chantilly' },
-      { title: 'Leesburg & Loudoun County', places: 'Leesburg, Ashburn, Sterling, Oatlands, Lenah' },
+      {
+        title: 'Leesburg & Loudoun County',
+        places: 'See [Loudoun County](/locations/loudoun) — Leesburg, Ashburn, Sterling, Oatlands, Lenah',
+      },
       {
         title: 'Prince William County',
-        places: 'Manassas, Woodbridge, Lake Ridge, Gainesville, Buckhall, Woodburn',
+        places: 'See [Prince William](/locations/prince-william) — Manassas, Woodbridge, Lake Ridge, Gainesville, Buckhall',
       },
     ],
   },
@@ -132,7 +135,7 @@ export const burke: LocationContentSeed = {
     },
     {
       q: 'What areas near Burke do you service?',
-      a: 'We serve Springfield, Fairfax, [Alexandria](/locations/alexandria), [Arlington](/locations/arlington), [McLean](/locations/mclean), Vienna, Reston, Herndon, Ashburn, Leesburg, Manassas, Lorton, Woodbridge, and [Washington, DC](/locations/washington-dc).',
+      a: 'We serve [Springfield](/locations/springfield), [Fairfax](/locations/fairfax), [Alexandria](/locations/alexandria), [Arlington](/locations/arlington), [McLean](/locations/mclean), Vienna, Reston, Herndon, [Loudoun](/locations/loudoun), [Prince William](/locations/prince-william), and [Washington, DC](/locations/washington-dc).',
     },
     {
       q: 'How do I schedule a service appointment at the Burke location?',

@@ -81,7 +81,7 @@ export const alexandria: LocationContentSeed = {
   communities: {
     heading: 'Neighborhoods Across Alexandria',
     intro:
-      'We cover residential and commercial customers throughout Alexandria, plus nearby [Arlington](/locations/arlington), [McLean](/locations/mclean), Fairfax, and [Washington, DC](/locations/washington-dc).',
+      'We cover residential and commercial customers throughout Alexandria, plus nearby [Arlington](/locations/arlington), [McLean](/locations/mclean), [Fairfax](/locations/fairfax), [Springfield](/locations/springfield), and [Washington, DC](/locations/washington-dc).',
     groups: [
       { title: 'Old Town & downtown', places: 'Old Town, Downtown Alexandria, waterfront' },
       { title: 'Del Ray & Rosemont', places: 'Del Ray, Rosemont, Arlandria' },
