@@ -592,7 +592,7 @@ export async function RenderPageSections({
 
       if (section.type === 'contact') {
         return (
-          <div key={key} id={section.anchorId || 'contact'} className="site-section scroll-mt-24">
+          <div key={key} id={section.anchorId || 'contact'} className="site-section scroll-mt-32">
             <ContactForm
               sourcePage={sourcePage}
               heading={section.heading}

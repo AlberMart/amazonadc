@@ -12,7 +12,16 @@ import {
 } from '@/utilities/contactFormShared'
 
 const inputClass =
-  'w-full rounded-md border border-[var(--site-border)] bg-white px-3 py-2 text-[var(--site-heading)]'
+  'w-full rounded-md border border-[var(--site-border)] bg-white px-3 py-2 text-base text-[var(--site-heading)]'
+
+function FieldLabel({ label, required, compact }: { label: string; required: boolean; compact?: boolean }) {
+  return (
+    <span className={compact ? 'site-form-label site-form-label--inline' : 'site-form-label'}>
+      {label}
+      {required ? <span aria-hidden="true"> *</span> : null}
+    </span>
+  )
+}
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 const SUBMIT_TIMEOUT_MS = 15000
@@ -64,32 +73,29 @@ function FieldControl({ field }: { field: PublicFormField }) {
 
   if (field.blockType === 'checkbox') {
     return (
-      <label className={`flex items-center gap-2 text-sm ${fieldColClass(field.width)}`}>
+      <label className={`site-form-field flex items-center gap-2 ${fieldColClass(field.width)}`}>
         <input
           type="checkbox"
           name={name}
           defaultChecked={Boolean(field.defaultValue)}
           required={required}
         />
-        <span>
-          {label}
-          {required ? '*' : ''}
-        </span>
+        <FieldLabel label={label} required={required} />
       </label>
     )
   }
 
   if (field.blockType === 'textarea') {
     return (
-      <label className={`grid gap-1 text-sm ${fieldColClass(field.width)}`}>
-        {label}
-        {required ? '*' : ''}
+      <label className={`site-form-field flex flex-col ${fieldColClass(field.width)}`}>
+        <FieldLabel label={label} required={required} />
         <textarea
           required={required}
           name={name}
+          id={name}
           rows={6}
           defaultValue={defaultValue}
-          placeholder={field.placeholder}
+          placeholder={field.placeholder || label}
           className={inputClass}
         />
       </label>
@@ -105,16 +111,16 @@ function FieldControl({ field }: { field: PublicFormField }) {
           : field.options || []
 
     return (
-      <label className={`grid gap-1 text-sm ${fieldColClass(field.width)}`}>
-        {label}
-        {required ? '*' : ''}
+      <label className={`site-form-field flex flex-col ${fieldColClass(field.width)}`}>
+        <FieldLabel label={label} required={required} />
         <select
           required={required}
           name={name}
+          id={name}
           defaultValue={defaultValue || ''}
           className={inputClass}
         >
-          <option value="">{field.placeholder || 'Select…'}</option>
+          <option value="">{field.placeholder || `Select ${label}`}</option>
           {options.map((option) => (
             <option key={option.value} value={option.value}>
               {option.label}
@@ -129,15 +135,18 @@ function FieldControl({ field }: { field: PublicFormField }) {
     field.blockType === 'email' ? 'email' : field.blockType === 'number' ? 'number' : 'text'
 
   return (
-    <label className={`grid gap-1 text-sm ${fieldColClass(field.width)}`}>
-      {label}
-      {required ? '*' : ''}
+    <label className={`site-form-field flex flex-col ${fieldColClass(field.width)}`}>
+      <FieldLabel label={label} required={required} />
       <input
         required={required}
         type={type}
         name={name}
+        id={name}
         defaultValue={defaultValue}
-        placeholder={field.placeholder}
+        placeholder={field.placeholder || label}
+        autoComplete={
+          field.blockType === 'email' ? 'email' : name === 'phone' ? 'tel' : name === 'name' ? 'name' : undefined
+        }
         className={inputClass}
       />
     </label>
@@ -269,7 +278,7 @@ export function ContactFormClient({
   const telHref = phoneHref ? (phoneHref.startsWith('tel:') ? phoneHref : `tel:${phoneHref}`) : undefined
 
   return (
-    <section id="contact" className="container py-16">
+    <section className="container py-16">
       <div className="mx-auto max-w-2xl">
         <h2 className="site-heading mb-2 text-3xl font-semibold tracking-tight">{heading}</h2>
         <p className="site-body mb-6">

@@ -18,7 +18,7 @@ export const arlington: LocationContentSeed = {
     paragraphs: [
       'Arlington sits on the Potomac River, with dense neighborhoods, high-rise condos, and older brick homes that take on river humidity all summer. That moisture meets cool air inside metal ductwork and turns into condensation — the start of musty odors, mold, and dust that recirculates every time the system runs.',
       'Crystal City, Rosslyn, and Pentagon City feel this first, but the same humidity reaches Clarendon, Ballston, Shirlington, and Columbia Pike. Construction dust from nearby development, pollen, and pet dander settle in returns and stay there until the ducts are professionally cleaned.',
-      'We serve Arlington from our Burke office, so you get the same flat-rate crew without a fake local storefront. Read how [Potomac humidity affects Arlington homes](/blog/how-potomac-humidity-affects-arlington-air-quality), or book [air duct cleaning](/air-duct-cleaning) and [dryer vent cleaning](/dryer-vent-cleaning) in a single visit.',
+      'We serve Arlington from our Burke office, so you get the same flat-rate crew without a fake local storefront. Nearby [McLean](/locations/mclean) and [Washington, DC](/locations/washington-dc) use the same dispatch. Read how [Potomac humidity affects Arlington homes](/blog/how-potomac-humidity-affects-arlington-air-quality), or book [air duct cleaning](/air-duct-cleaning) and [dryer vent cleaning](/dryer-vent-cleaning) in a single visit.',
     ],
     highlights: [
       'Same-day and next-day appointments from our Burke team',
@@ -75,7 +75,7 @@ export const arlington: LocationContentSeed = {
   communities: {
     heading: 'Neighborhoods We Serve in Arlington',
     intro:
-      'We cover residential and commercial customers across Arlington County, plus nearby [Alexandria](/locations/alexandria) and Falls Church. If your building is not listed, call — we likely already work your corridor.',
+      'We cover residential and commercial customers across Arlington County, plus nearby [Alexandria](/locations/alexandria), [McLean](/locations/mclean), Falls Church, and [Washington, DC](/locations/washington-dc). If your building is not listed, call — we likely already work your corridor.',
     groups: [
       {
         title: 'Rosslyn to Ballston',

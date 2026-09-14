@@ -164,7 +164,12 @@ export function locationContentToSections(
     gridCols: 3,
   })
 
-  sections.push({ type: 'include' })
+  sections.push({
+    type: 'serviceArea',
+    tone: 'white',
+    heading: 'Service Area',
+    anchorId: 'service_area',
+  })
 
   sections.push({
     type: 'steps',

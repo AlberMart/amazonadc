@@ -15,7 +15,7 @@ export function BrandMark({
   href?: string
   className?: string
   textClassName?: string
-  onClick?: () => void
+  onClick?: React.MouseEventHandler<HTMLAnchorElement>
 }) {
   const showLogo = (brand.mode === 'logo' || brand.mode === 'both') && Boolean(brand.logoUrl)
   const showText = brand.mode === 'text' || brand.mode === 'both' || !showLogo

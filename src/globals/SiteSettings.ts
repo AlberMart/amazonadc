@@ -116,7 +116,7 @@ export const SiteSettings: GlobalConfig = {
             {
               name: 'priceValidUntil',
               type: 'text',
-              defaultValue: '2026-12-31',
+              defaultValue: '2027-12-31',
               admin: { description: 'Offer.priceValidUntil for service schema (YYYY-MM-DD)' },
             },
           ],

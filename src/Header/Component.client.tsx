@@ -10,6 +10,7 @@ import { useHeaderTheme } from '@/providers/HeaderTheme'
 import type { ResolvedBrandMark } from '@/utilities/brandMark'
 import type { ResolvedNavLink } from '@/utilities/cmsLink'
 import type { ResolvedMobileCall } from '@/utilities/mobileCall'
+import { scrollToId, scrollWindowToTop } from '@/utilities/scrollToId'
 
 export type HeaderBottomEdge = 'none' | 'hairline' | 'scrolled'
 
@@ -23,7 +24,7 @@ function isActive(pathname: string, hash: string, item: ResolvedNavLink) {
   }
   if (href === '/') return pathname === '/' && !hash
   if (href === '/blog') {
-    return pathname === '/blog' || pathname.startsWith('/blog/') || pathname.startsWith('/posts')
+    return pathname === '/blog' || pathname.startsWith('/blog/')
   }
   if (href.startsWith('/locations/')) {
     return pathname === href || pathname.startsWith(`${href}/`)
@@ -95,14 +96,22 @@ export const HeaderClient: React.FC<{
   function onNavClick(event: React.MouseEvent<HTMLAnchorElement>, href: string) {
     setOpen(false)
     const hashIndex = href.indexOf('#')
-    if (hashIndex === -1 || pathname !== '/') return
-    const id = href.slice(hashIndex + 1)
-    const target = document.getElementById(id)
-    if (!target) return
+    const pathPart = (hashIndex === -1 ? href : href.slice(0, hashIndex)) || '/'
+    const id = hashIndex === -1 ? '' : href.slice(hashIndex + 1)
+    if (pathPart !== pathname) return
+
     event.preventDefault()
-    target.scrollIntoView({ behavior: 'smooth', block: 'start' })
-    window.history.pushState(null, '', `/#${id}`)
-    setHash(id)
+    const move = () => {
+      if (id && scrollToId(id, 'smooth')) {
+        window.history.pushState(null, '', `${pathPart}#${id}`)
+        setHash(id)
+        return
+      }
+      scrollWindowToTop('smooth')
+      window.history.pushState(null, '', pathPart)
+      setHash('')
+    }
+    window.setTimeout(move, 60)
   }
 
   useEffect(() => {
@@ -135,7 +144,7 @@ export const HeaderClient: React.FC<{
           brand={brand}
           className="min-w-0 shrink-0"
           textClassName="block font-display text-lg font-semibold tracking-tight sm:text-xl"
-          onClick={() => setOpen(false)}
+          onClick={(event) => onNavClick(event, '/')}
         />
 
         <nav className="hidden items-center gap-0.5 xl:gap-1 lg:flex" aria-label="Primary">

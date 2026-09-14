@@ -78,12 +78,12 @@ export const burke: LocationContentSeed = {
   communities: {
     heading: 'Communities We Serve from Burke',
     intro:
-      "Our Burke branch serves a wide region across Fairfax County, Loudoun County, Prince William County, and Washington DC. If you don't see your city listed, call us — we likely serve your area.",
+      "Our Burke branch serves a wide region across Fairfax County, Loudoun County, Prince William County, and [Washington, DC](/locations/washington-dc). If you don't see your city listed, call us — we likely serve your area.",
     groups: [
       { title: 'Burke & Springfield', places: 'Burke, Springfield, Fair Oaks, Oakton, Lorton, Mt Vernon' },
       {
         title: 'Alexandria & Arlington',
-        places: '[Alexandria](/locations/alexandria), [Arlington](/locations/arlington), Falls Church, McLean',
+        places: '[Alexandria](/locations/alexandria), [Arlington](/locations/arlington), Falls Church, [McLean](/locations/mclean)',
       },
       { title: 'Reston & Herndon', places: 'Reston, Herndon, Great Falls, Vienna, Chantilly' },
       { title: 'Leesburg & Loudoun County', places: 'Leesburg, Ashburn, Sterling, Oatlands, Lenah' },
@@ -132,7 +132,7 @@ export const burke: LocationContentSeed = {
     },
     {
       q: 'What areas near Burke do you service?',
-      a: 'We serve Springfield, Fairfax, Alexandria, Arlington, McLean, Vienna, Reston, Herndon, Ashburn, Leesburg, Manassas, Lorton, Woodbridge, and all Washington DC neighborhoods.',
+      a: 'We serve Springfield, Fairfax, [Alexandria](/locations/alexandria), [Arlington](/locations/arlington), [McLean](/locations/mclean), Vienna, Reston, Herndon, Ashburn, Leesburg, Manassas, Lorton, Woodbridge, and [Washington, DC](/locations/washington-dc).',
     },
     {
       q: 'How do I schedule a service appointment at the Burke location?',
@@ -144,7 +144,7 @@ export const burke: LocationContentSeed = {
     },
     {
       q: 'Do you serve Washington DC from the Burke location?',
-      a: 'Yes. Our Burke team serves all Washington DC neighborhoods including Capitol Hill, NW, NE, and SE DC for air duct, dryer vent, chimney, and HVAC cleaning.',
+      a: 'Yes. Our Burke team serves [Washington, DC](/locations/washington-dc) — Capitol Hill, Northwest, Northeast, and Southeast — for air duct, dryer vent, and HVAC cleaning, dispatched alongside the Bethesda office when that crew is closer.',
     },
   ],
 }

@@ -3,6 +3,18 @@ import { getPayload } from 'payload'
 
 import { resolveCmsImage, resolveCmsImageAlt } from '@/utilities/cmsImage'
 import { withDbRetry } from '@/utilities/dbRetry'
+import blogIndexSeed from '@/content/blog/index.json'
+import howOften from '@/content/blog/how-often-clean-air-ducts.json'
+import sevenSigns from '@/content/blog/7-signs-air-ducts-need-cleaning.json'
+import whyDryer from '@/content/blog/why-clean-dryer-vents.json'
+import energyBills from '@/content/blog/how-dirty-air-ducts-increase-energy-bills.json'
+import allergies from '@/content/blog/can-dirty-air-ducts-cause-allergies.json'
+import neverClean from '@/content/blog/never-clean-air-ducts.json'
+import arlingtonHumidity from '@/content/blog/how-potomac-humidity-affects-arlington-air-quality.json'
+import alexandriaHumidity from '@/content/blog/how-potomac-humidity-affects-alexandria-air-quality.json'
+import dcHumidity from '@/content/blog/dc-humidity-row-houses-indoor-air.json'
+import mcleanPollen from '@/content/blog/mclean-tree-pollen-basement-humidity.json'
+import rockvilleBasement from '@/content/blog/rockville-basement-humidity-air-ducts.json'
 
 export type BlogIndexItem = {
   slug: string
@@ -125,6 +137,30 @@ function mapPost(doc: Record<string, unknown>): BlogPost {
   }
 }
 
+const FILE_POSTS = [
+  howOften,
+  sevenSigns,
+  whyDryer,
+  energyBills,
+  allergies,
+  neverClean,
+  arlingtonHumidity,
+  alexandriaHumidity,
+  dcHumidity,
+  mcleanPollen,
+  rockvilleBasement,
+] as BlogPost[]
+
+function fileBlogIndex(): BlogIndexItem[] {
+  return blogIndexSeed as BlogIndexItem[]
+}
+
+function mergeBlogIndex(cms: BlogIndexItem[]): BlogIndexItem[] {
+  const have = new Set(cms.map((item) => item.slug))
+  const extras = fileBlogIndex().filter((item) => !have.has(item.slug))
+  return [...extras, ...cms]
+}
+
 export async function getBlogIndex(): Promise<BlogIndexItem[]> {
   try {
     const result = await withDbRetry(async () => {
@@ -142,7 +178,7 @@ export async function getBlogIndex(): Promise<BlogIndexItem[]> {
       })
     })
 
-    return result.docs.map((doc) => {
+    const cms = result.docs.map((doc) => {
       const mapped = mapPost(doc as unknown as Record<string, unknown>)
       return {
         slug: mapped.slug,
@@ -151,26 +187,32 @@ export async function getBlogIndex(): Promise<BlogIndexItem[]> {
         hero: mapped.heroImage,
       }
     })
+    return mergeBlogIndex(cms)
   } catch (error) {
     console.error('Blog index unavailable', error)
-    return []
+    return fileBlogIndex()
   }
 }
 
 export async function getBlogPost(slug: string): Promise<BlogPost | null> {
-  const payload = await getPayload({ config: configPromise })
-  const result = await payload.find({
-    collection: 'posts',
-    draft: false,
-    limit: 1,
-    pagination: false,
-    depth: 1,
-    where: {
-      and: [{ slug: { equals: slug } }, { _status: { equals: 'published' } }],
-    },
-  })
-  const doc = result.docs[0]
-  return doc ? mapPost(doc as unknown as Record<string, unknown>) : null
+  try {
+    const payload = await getPayload({ config: configPromise })
+    const result = await payload.find({
+      collection: 'posts',
+      draft: false,
+      limit: 1,
+      pagination: false,
+      depth: 1,
+      where: {
+        and: [{ slug: { equals: slug } }, { _status: { equals: 'published' } }],
+      },
+    })
+    const doc = result.docs[0]
+    if (doc) return mapPost(doc as unknown as Record<string, unknown>)
+  } catch {
+    // Fall through to content files when CMS is missing the post.
+  }
+  return FILE_POSTS.find((post) => post.slug === slug) || null
 }
 
 export async function getAllBlogSlugs(): Promise<string[]> {

@@ -73,7 +73,10 @@ export async function hydrateIncludes(sections: HomeSection[]): Promise<HomeSect
     sections.map(async (section) => {
       if (section.type !== 'include') return section
       if (section.includedSections?.length) return section
-      if (section.partialId == null) return section
+      if (section.partialId == null) {
+        const includedSections = await getCachedPartialSections(DEFAULT_SERVICE_AREA_SLUG)()
+        return { ...section, includedSections }
+      }
       const includedSections = await getCachedPartialSectionsById(section.partialId)()
       return { ...section, includedSections }
     }),

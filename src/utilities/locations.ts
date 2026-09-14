@@ -2,9 +2,17 @@ import configPromise from '@payload-config'
 import { getPayload } from 'payload'
 
 import { resolveCmsImage, resolveCmsImageAlt } from '@/utilities/cmsImage'
-import { mapOffice, type OfficeContent } from './offices'
+import { alexandria } from '@/content/locations/alexandria'
+import { arlington } from '@/content/locations/arlington'
+import { bethesda } from '@/content/locations/bethesda'
+import { burke } from '@/content/locations/burke'
+import { mclean } from '@/content/locations/mclean'
+import { rockville } from '@/content/locations/rockville'
+import { washingtonDc } from '@/content/locations/washington-dc'
+import { getAllOffices, officeFromSeedSlug, type OfficeContent } from './offices'
 import { mapRawSections, type HomeSection } from '@/utilities/homeSections'
 import { loadPageSections } from '@/utilities/partials'
+import { locationContentToSections } from '@/utilities/sectionSeeds'
 
 export type LocationFaq = { q: string; a: string }
 
@@ -63,6 +71,69 @@ export type LocationContentSeed = Omit<LocationContent, 'office' | 'isOfficeHub'
   servedBy: string
 }
 
+const LOCATION_SEEDS: LocationContentSeed[] = [
+  burke,
+  bethesda,
+  arlington,
+  alexandria,
+  mclean,
+  washingtonDc,
+  rockville,
+]
+
+export function locationFromSeed(
+  seed: LocationContentSeed,
+  office: OfficeContent,
+): LocationContent {
+  return {
+    slug: seed.slug,
+    title: seed.title,
+    headline: seed.headline,
+    description: seed.description,
+    intro: seed.intro,
+    heroImage: seed.heroImage,
+    heroAlt: seed.heroAlt,
+    city: seed.city,
+    state: seed.state,
+    offersTitle: seed.offersTitle,
+    isOfficeHub: seed.slug === office.slug,
+    office,
+    about: seed.about,
+    services: seed.services,
+    why: seed.why,
+    communities: seed.communities,
+    process: seed.process,
+    faqIntro: seed.faqIntro,
+    faq: seed.faq,
+    sections: locationContentToSections(seed),
+    meta: seed.meta || {
+      title: seed.title,
+      description: seed.description,
+    },
+  }
+}
+
+async function officesForSeeds(): Promise<OfficeContent[]> {
+  try {
+    const offices = await getAllOffices()
+    if (offices.length) return offices
+  } catch {
+    // Content files still render city pages if Payload is down or incomplete.
+  }
+  return ['burke', 'bethesda']
+    .map((slug) => officeFromSeedSlug(slug))
+    .filter((item): item is OfficeContent => Boolean(item))
+}
+
+async function locationFromSeedSlug(slug: string): Promise<LocationContent | null> {
+  const seed = LOCATION_SEEDS.find((item) => item.slug === slug)
+  if (!seed) return null
+  const offices = await officesForSeeds()
+  const office = offices.find((item) => item.slug === seed.servedBy) || officeFromSeedSlug(seed.servedBy)
+  if (!office) return null
+  return locationFromSeed(seed, office)
+}
+
 function slugValue(slug: unknown): string {
   if (typeof slug === 'string') return slug
   if (
@@ -88,6 +159,15 @@ function resolveOffice(servedBy: unknown): OfficeContent | null {
   if (!servedBy) return null
   if (typeof servedBy === 'object') {
     return mapOffice(servedBy as Record<string, unknown>)
+  }
+  return null
+}
+
+function officeIdOf(servedBy: unknown): string | number | null {
+  if (typeof servedBy === 'number' || typeof servedBy === 'string') return servedBy
+  if (servedBy && typeof servedBy === 'object' && 'id' in servedBy) {
+    const id = (servedBy as { id?: unknown }).id
+    if (typeof id === 'number' || typeof id === 'string') return id
   }
   return null
 }
@@ -216,65 +296,152 @@ function mapLocation(doc: Record<string, unknown>): LocationContent | null {
 }
 
 export async function getLocationContent(slug: string): Promise<LocationContent | null> {
-  const payload = await getPayload({ config: configPromise })
-  const result = await payload.find({
-    collection: 'locations',
-    where: { slug: { equals: slug } },
-    limit: 1,
-    pagination: false,
-    depth: 2,
-  })
-  const doc = result.docs[0]
-  if (!doc) return null
-  const mapped = mapLocation(doc as unknown as Record<string, unknown>)
-  if (!mapped) return null
-  mapped.sections = await loadPageSections(
-    (doc as unknown as Record<string, unknown>).sections,
-  )
-  return mapped
+  try {
+    const payload = await getPayload({ config: configPromise })
+    const result = await payload.find({
+      collection: 'locations',
+      where: { slug: { equals: slug } },
+      limit: 1,
+      pagination: false,
+      depth: 2,
+      overrideAccess: true,
+    })
+    const doc = result.docs[0]
+    if (doc) {
+      const raw = doc as unknown as Record<string, unknown>
+      let mapped = mapLocation(raw)
+      if (!mapped) {
+        const officeId = officeIdOf(raw.servedBy)
+        if (officeId) {
+          const officeDoc = await payload.findByID({
+            collection: 'offices',
+            id: officeId,
+            depth: 1,
+            overrideAccess: true,
+          })
+          mapped = mapLocation({ ...raw, servedBy: officeDoc })
+        }
+      }
+      if (mapped) {
+        mapped.sections = await loadPageSections(raw.sections)
+        return mapped
+      }
+    }
+  } catch {
+    // Fall through to content files when CMS is unreachable or the row is missing.
+  }
+  return locationFromSeedSlug(slug)
 }
 
 export async function getAllLocationSlugs(): Promise<string[]> {
-  const payload = await getPayload({ config: configPromise })
-  const result = await payload.find({
-    collection: 'locations',
-    limit: 100,
-    pagination: false,
-    depth: 0,
-    select: { slug: true },
-  })
-  return result.docs.map((doc) => slugValue(doc.slug)).filter(Boolean)
+  const fromSeed = LOCATION_SEEDS.map((item) => item.slug)
+  try {
+    const payload = await getPayload({ config: configPromise })
+    const result = await payload.find({
+      collection: 'locations',
+      limit: 100,
+      pagination: false,
+      depth: 0,
+      select: { slug: true },
+      overrideAccess: true,
+    })
+    return [...new Set([...result.docs.map((doc) => slugValue(doc.slug)).filter(Boolean), ...fromSeed])]
+  } catch {
+    return fromSeed
+  }
 }
 
 export async function getAllLocations(): Promise<LocationContent[]> {
-  const payload = await getPayload({ config: configPromise })
-  const result = await payload.find({
-    collection: 'locations',
-    limit: 100,
-    pagination: false,
-    depth: 1,
-    sort: 'city',
-  })
-  return result.docs
-    .map((doc) => mapLocation(doc as unknown as Record<string, unknown>))
-    .filter((doc): doc is LocationContent => Boolean(doc))
+  const offices = await officesForSeeds()
+  const fromSeed = LOCATION_SEEDS.map((seed) => {
+    const office = offices.find((item) => item.slug === seed.servedBy) || officeFromSeedSlug(seed.servedBy)
+    return office ? locationFromSeed(seed, office) : null
+  }).filter((item): item is LocationContent => Boolean(item))
+  const seedByCityState = new Map(fromSeed.map((item) => [`${item.city}|${item.state}`, item]))
+
+  try {
+    const payload = await getPayload({ config: configPromise })
+    const result = await payload.find({
+      collection: 'locations',
+      limit: 100,
+      pagination: false,
+      depth: 1,
+      sort: 'city',
+      overrideAccess: true,
+    })
+    const mapped: LocationContent[] = []
+    for (const doc of result.docs) {
+      const raw = doc as unknown as Record<string, unknown>
+      let location = mapLocation(raw)
+      if (!location) {
+        const officeId = officeIdOf(raw.servedBy)
+        if (!officeId) continue
+        const officeDoc = await payload.findByID({
+          collection: 'offices',
+          id: officeId,
+          depth: 1,
+          overrideAccess: true,
+        })
+        location = mapLocation({ ...raw, servedBy: officeDoc })
+      }
+      if (!location) continue
+      const canonical = seedByCityState.get(`${location.city}|${location.state}`)
+      if (canonical && canonical.slug !== location.slug) continue
+      mapped.push(location)
+    }
+    const have = new Set(mapped.map((item) => item.slug))
+    for (const seedPage of fromSeed) {
+      if (!have.has(seedPage.slug)) mapped.push(seedPage)
+    }
+    return mapped.sort((a, b) => a.city.localeCompare(b.city))
+  } catch {
+    return fromSeed.sort((a, b) => a.city.localeCompare(b.city))
+  }
 }
 
 export async function getCityPageLinks(): Promise<Array<{ slug: string; city: string; state: string }>> {
-  const payload = await getPayload({ config: configPromise })
-  const result = await payload.find({
-    collection: 'locations',
-    limit: 100,
-    pagination: false,
-    depth: 0,
-    select: { slug: true, city: true, state: true },
-    sort: 'city',
-  })
-  return result.docs
-    .map((doc) => ({
-      slug: slugValue(doc.slug),
-      city: String(doc.city || ''),
-      state: String(doc.state || ''),
-    }))
-    .filter((row) => row.slug)
+  const fromSeed = LOCATION_SEEDS.map((item) => ({
+    slug: item.slug,
+    city: item.city,
+    state: item.state,
+  }))
+  try {
+    const payload = await getPayload({ config: configPromise })
+    const result = await payload.find({
+      collection: 'locations',
+      limit: 100,
+      pagination: false,
+      depth: 0,
+      select: { slug: true, city: true, state: true },
+      sort: 'city',
+      overrideAccess: true,
+    })
+    const fromCms = result.docs
+      .map((doc) => ({
+        slug: slugValue(doc.slug),
+        city: String(doc.city || ''),
+        state: String(doc.state || ''),
+      }))
+      .filter((row) => row.slug)
+    const seedByCityState = new Map(fromSeed.map((row) => [`${row.city}|${row.state}`, row]))
+    const used = new Set<string>()
+    const merged: Array<{ slug: string; city: string; state: string }> = []
+    for (const row of fromCms) {
+      const canonical = seedByCityState.get(`${row.city}|${row.state}`)
+      if (canonical) {
+        if (!used.has(canonical.slug)) {
+          merged.push(canonical)
+          used.add(canonical.slug)
+        }
+        continue
+      }
+      merged.push(row)
+    }
+    for (const row of fromSeed) {
+      if (!used.has(row.slug)) merged.push(row)
+    }
+    return merged.sort((a, b) => a.city.localeCompare(b.city))
+  } catch {
+    return fromSeed.sort((a, b) => a.city.localeCompare(b.city))
+  }
 }

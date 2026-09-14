@@ -2,49 +2,43 @@ import type { Metadata } from 'next'
 
 import type { Media, Page, Post, Config } from '../payload-types'
 
-import { mergeOpenGraph } from './mergeOpenGraph'
-import { getServerSideURL } from './getURL'
-import { pageTitle, SITE_NAME } from './seo'
+import { getSiteSeo, resolvePageMeta } from './seo'
 
-const getImageURL = (image?: Media | Config['db']['defaultIDType'] | null) => {
-  const serverUrl = getServerSideURL()
-
-  let url = serverUrl + '/img/Amazon.webp'
-
-  if (image && typeof image === 'object' && 'url' in image) {
-    const ogUrl = image.sizes?.og?.url
-
-    url = ogUrl ? serverUrl + ogUrl : serverUrl + image.url
-  }
-
-  return url
+const getImagePath = (image?: Media | Config['db']['defaultIDType'] | null) => {
+  if (!image || typeof image !== 'object' || !('url' in image)) return undefined
+  return image.sizes?.og?.url || image.url || undefined
 }
 
+const docPath = (
+  doc: Partial<Page> | Partial<Post> | null,
+  collection: 'pages' | 'posts',
+) => {
+  const slug = Array.isArray(doc?.slug) ? doc.slug.join('/') : doc?.slug
+  if (!slug || slug === 'home') return '/'
+  return collection === 'posts' ? `/blog/${slug}` : `/${slug}`
+}
+
+/** Adapter from Payload page/post docs onto the shared resolvePageMeta() path. */
 export const generateMeta = async (args: {
+  collection?: 'pages' | 'posts'
   doc: Partial<Page> | Partial<Post> | null
 }): Promise<Metadata> => {
-  const { doc } = args
+  const { collection = 'pages', doc } = args
+  const site = await getSiteSeo()
+  const fallbackTitle = typeof doc?.title === 'string' ? doc.title : undefined
 
-  const ogImage = getImageURL(doc?.meta?.image)
-
-  const path = Array.isArray(doc?.slug) ? `/${doc.slug.join('/')}` : doc?.slug ? `/${doc.slug}` : '/'
-  const title = pageTitle(doc?.meta?.title || SITE_NAME)
-
-  return {
-    description: doc?.meta?.description,
-    alternates: { canonical: `${getServerSideURL().replace(/\/$/, '')}${path === '/home' ? '/' : path}` },
-    openGraph: mergeOpenGraph({
-      description: doc?.meta?.description || '',
-      images: ogImage
-        ? [
-            {
-              url: ogImage,
-            },
-          ]
-        : undefined,
-      title,
-      url: path === '/home' ? '/' : path,
-    }),
-    title: { absolute: title },
-  }
+  return resolvePageMeta(
+    {
+      path: docPath(doc, collection),
+      meta: {
+        title: doc?.meta?.title,
+        description: doc?.meta?.description,
+        image: getImagePath(doc?.meta?.image),
+        noIndex: doc?.meta?.noIndex,
+      },
+      fallbackTitle,
+      fallbackDescription: site.defaultMetaDescription,
+    },
+    site,
+  )
 }

@@ -8,6 +8,36 @@ export const redirects: NextConfig['redirects'] = async () => {
       permanent: true,
     },
     {
+      source: '/posts',
+      destination: '/blog',
+      permanent: true,
+    },
+    {
+      source: '/posts/page/:pageNumber',
+      destination: '/blog',
+      permanent: true,
+    },
+    {
+      source: '/posts/:slug',
+      destination: '/blog/:slug',
+      permanent: true,
+    },
+    {
+      source: '/blog/page/:pageNumber',
+      destination: '/blog',
+      permanent: true,
+    },
+    {
+      source: '/pages-sitemap.xml',
+      destination: '/sitemap.xml',
+      permanent: true,
+    },
+    {
+      source: '/posts-sitemap.xml',
+      destination: '/sitemap.xml',
+      permanent: true,
+    },
+    {
       source: '/order-now/p/air-duct-cleaning-sanitization',
       destination: '/air-duct-cleaning',
       permanent: true,

@@ -1,6 +1,6 @@
 import type { CollectionAfterChangeHook, CollectionAfterDeleteHook } from 'payload'
 
-import { revalidatePath, revalidateTag } from 'next/cache'
+import { revalidatePath } from 'next/cache'
 
 import type { Page } from '../../../payload-types'
 import { scheduleRevalidate } from '@/utilities/scheduleRevalidate'
@@ -18,7 +18,7 @@ export const revalidatePage: CollectionAfterChangeHook<Page> = ({
 
       scheduleRevalidate(() => {
         revalidatePath(path)
-        revalidateTag('pages-sitemap', 'max')
+        revalidatePath('/sitemap.xml')
       })
     }
 
@@ -29,7 +29,7 @@ export const revalidatePage: CollectionAfterChangeHook<Page> = ({
 
       scheduleRevalidate(() => {
         revalidatePath(oldPath)
-        revalidateTag('pages-sitemap', 'max')
+        revalidatePath('/sitemap.xml')
       })
     }
   }
@@ -41,7 +41,7 @@ export const revalidateDelete: CollectionAfterDeleteHook<Page> = ({ doc, req: { 
     const path = doc?.slug === 'home' ? '/' : `/${doc?.slug}`
     scheduleRevalidate(() => {
       revalidatePath(path)
-      revalidateTag('pages-sitemap', 'max')
+      revalidatePath('/sitemap.xml')
     })
   }
 

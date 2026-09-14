@@ -60,13 +60,6 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   devIndicators: false,
   redirects,
-  async rewrites() {
-    return [
-      { source: '/blog', destination: '/posts' },
-      { source: '/blog/:slug', destination: '/posts/:slug' },
-      { source: '/blog/page/:pageNumber', destination: '/posts/page/:pageNumber' },
-    ]
-  },
   turbopack: {
     root: path.resolve(dirname),
   },

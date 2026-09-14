@@ -5,6 +5,7 @@ import React from 'react'
 import { AdminBar } from '@/components/AdminBar'
 import { ThemeVars } from '@/components/ThemeVars'
 import { AccessibilityWidget } from '@/components/AccessibilityWidget'
+import { ScrollOnNavigate } from '@/components/ScrollOnNavigate'
 import { SiteIntegrations } from '@/components/SiteIntegrations'
 import { Footer } from '@/Footer/Component'
 import { Header } from '@/Header/Component'
@@ -42,6 +43,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           Skip to main content
         </a>
         <Providers>
+          <ScrollOnNavigate />
           <AdminBar
             adminBarProps={{
               preview: isEnabled,

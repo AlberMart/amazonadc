@@ -130,6 +130,12 @@ export function mapOffice(doc: Record<string, unknown>): OfficeContent {
   }
 }
 
+export function officeFromSeedSlug(slug: string): OfficeContent | null {
+  const seed = officesSeedSource.find((office) => office.slug === slug)
+  if (!seed) return null
+  return mapOffice(seed as unknown as Record<string, unknown>)
+}
+
 export async function getAllOffices(): Promise<OfficeContent[]> {
   const result = await withDbRetry(async () => {
     const payload = await getPayload({ config: configPromise })

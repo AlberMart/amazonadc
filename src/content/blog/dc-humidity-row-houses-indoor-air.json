@@ -1,0 +1,68 @@
+{
+  "slug": "dc-humidity-row-houses-indoor-air",
+  "title": "How DC Humidity and Row-House Ducts Affect Indoor Air Quality",
+  "headline": "Potomac moisture, old metal trunks, and why District registers go musty",
+  "description": "Washington, DC row houses and condos sit in river humidity. Learn how condensation forms in older ducts, why dryer vents clog in high-rises, and when to book a cleaning.",
+  "heroImage": "/img/blog/Allergies.webp",
+  "sections": [
+    {
+      "id": "river_city",
+      "heading": "DC is a river city, even if your block does not face the water",
+      "paragraphs": [
+        "Capitol Hill, Georgetown, and Shaw were built as walkable row-house neighborhoods. Navy Yard and The Wharf added glass condos later. Both housing types sit in the same climate: Potomac and Anacostia humidity, hot summers, and pollen blowing off Rock Creek Park.",
+        "You feel that air on the sidewalk. It is also sitting in the one place that should stay dry — the inside of the supply trunks."
+      ],
+      "listItems": []
+    },
+    {
+      "id": "row_house_ducts",
+      "heading": "Why row-house ducts are a special case",
+      "paragraphs": [
+        "Many DC row houses did not start with central air. Metal ducts were cut in later — through joists, along English basements, into rooms that used to be coal heated. Those joints collect dust. Cold refrigerant air hitting humid basement air leaves a wet film. Pollen and street dust stick to it.",
+        "High-rises have a different failure: long dryer vents and shared corridors. Lint and moisture have nowhere to go if the cap is packed. Either way, the blower becomes a distribution system for whatever grew in the dark.",
+        "If the smell is already there, start with [air duct cleaning in Washington, DC](/locations/washington-dc) rather than candles and filters alone."
+      ],
+      "listItems": [],
+      "image": "/img/blog/dirty-HVAC-unit.webp"
+    },
+    {
+      "id": "signs",
+      "heading": "Signs the system — not the street — is the problem",
+      "paragraphs": [
+        "Outdoor DC air is not always clean. Indoor air should still not smell like a cellar when the AC starts. Households usually notice:"
+      ],
+      "listItems": [
+        "A musty or earthy odor in the first minutes after heat or AC turns on.",
+        "Black or gray film around supply registers a few days after you wipe them.",
+        "Allergy symptoms that ease when you leave the house for a weekend."
+      ]
+    },
+    {
+      "id": "protect",
+      "heading": "What actually helps in the District",
+      "paragraphs": [
+        "You cannot move the rivers. You can keep the inside of the system dry and clear. The same Burke and Bethesda crews that cover [Arlington](/locations/arlington) and [Bethesda](/locations/bethesda) dispatch into DC — there is no fake District storefront.",
+        "Book from the [Washington, DC location page](/locations/washington-dc), or pair [air duct cleaning](/air-duct-cleaning) with [dryer vent cleaning](/dryer-vent-cleaning) if laundry humidity has nowhere to exhaust."
+      ],
+      "listItems": [
+        "Keep indoor humidity under 50% in English basements and garden apartments.",
+        "Clear the full dryer run once a year in condos and stacked units.",
+        "Clean ducts every 3 to 5 years, sooner after renovations or if pets live inside."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Does Potomac humidity really affect DC air ducts?",
+      "a": "Yes. Humid outdoor air and cold supply ducts create condensation. Dust sticks to that moisture, and mold can grow inside the system, then blow into living spaces when the HVAC runs."
+    },
+    {
+      "q": "Are Capitol Hill row houses worse than Northwest condos?",
+      "a": "They fail differently. Row houses often have retrofitted trunks and damp English basements. Condos often have long dryer vents. Both need inspection if the air smells musty when the system starts."
+    },
+    {
+      "q": "Who cleans air ducts in Washington, DC?",
+      "a": "Amazon Air Duct Cleaning serves the District from Burke, VA and Bethesda, MD. Schedule on the [Washington, DC location page](/locations/washington-dc) or call (800) 606-3334."
+    }
+  ]
+}

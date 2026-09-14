@@ -1,5 +1,7 @@
 import type { Metadata } from 'next/types'
 
+import { getSiteSeo, resolvePageMeta } from '@/utilities/seo'
+
 import { CollectionArchive } from '@/components/CollectionArchive'
 import configPromise from '@payload-config'
 import { getPayload } from 'payload'
@@ -81,8 +83,15 @@ export default async function Page({ searchParams: searchParamsPromise }: Args) 
   )
 }
 
-export function generateMetadata(): Metadata {
-  return {
-    title: `Payload Website Template Search`,
-  }
+export async function generateMetadata(): Promise<Metadata> {
+  const site = await getSiteSeo()
+  return resolvePageMeta(
+    {
+      path: '/search',
+      fallbackTitle: 'Search',
+      fallbackDescription: site.defaultMetaDescription,
+      meta: { noIndex: true },
+    },
+    site,
+  )
 }

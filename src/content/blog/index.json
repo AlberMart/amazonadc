@@ -1,5 +1,23 @@
 [
   {
+    "slug": "dc-humidity-row-houses-indoor-air",
+    "title": "How DC Humidity and Row-House Ducts Affect Indoor Air Quality",
+    "description": "Washington, DC row houses and condos sit in river humidity. Learn how condensation forms in older ducts, why dryer vents clog in high-rises, and when to book a cleaning.",
+    "hero": "/img/blog/Allergies.webp"
+  },
+  {
+    "slug": "mclean-tree-pollen-basement-humidity",
+    "title": "How McLean’s Tree Canopy and Basements Affect Indoor Air Quality",
+    "description": "McLean, VA sits under mature oaks with finished basements and humid summers. Learn why returns fill with pollen, how basement trunks sweat, and when to clean the ducts.",
+    "hero": "/img/blog/Why-Air-Duct-Condition-Matters.webp"
+  },
+  {
+    "slug": "rockville-basement-humidity-air-ducts",
+    "title": "How Rockville Basements and I-270 Pollen Load Your Air Ducts",
+    "description": "Rockville colonials and King Farm townhomes sit on cool basement air handlers in Maryland humidity. Learn why registers go musty and when to clean the ducts.",
+    "hero": "/img/blog/dirty-air-ducts-energy-bills.webp"
+  },
+  {
     "slug": "how-potomac-humidity-affects-alexandria-air-quality",
     "title": "How Potomac River Humidity Impacts Your Alexandria Home’s Indoor Air Quality",
     "description": "Discover how Alexandria's local humidity affects your HVAC system, why mold thrives in riverfront climates, and how to protect your home's air quality.",

@@ -20,7 +20,7 @@ export const alexandria: LocationContentSeed = {
       'Historic and older homes: Alexandria has one of the nation’s oldest historic districts. Brick buildings and older duct runs collect decades of dust, pollen, and debris. Without regular cleaning, that material keeps recirculating through the house.',
       'Potomac River humidity: Moisture near the river settles in uncleaned ductwork. That is the environment mold, mildew, and musty odors need. Seasonal pollen and winter dust then ride the same system all year.',
       'We now offer two services built for that climate: whole-home mold remediation and HVAC ventilation mold treatment. Mold does not only stain surfaces. Airborne spores trigger respiratory problems and allergies, especially in riverfront and older Old Town houses.',
-      'Alexandria is served from our Burke office — we do not list a storefront we do not have. Read [how Potomac humidity affects Alexandria homes](/blog/how-potomac-humidity-affects-alexandria-air-quality), or book [air duct cleaning](/air-duct-cleaning) and [dryer vent cleaning](/dryer-vent-cleaning). Nearby [Arlington](/locations/arlington) is covered by the same crew.',
+      'Alexandria is served from our Burke office — we do not list a storefront we do not have. Read [how Potomac humidity affects Alexandria homes](/blog/how-potomac-humidity-affects-alexandria-air-quality), or book [air duct cleaning](/air-duct-cleaning) and [dryer vent cleaning](/dryer-vent-cleaning). Nearby [Arlington](/locations/arlington), [McLean](/locations/mclean), and [Washington, DC](/locations/washington-dc) are covered by the same crew.',
     ],
     highlights: [
       'Historic Old Town houses and newer Potomac Yard condos',
@@ -81,7 +81,7 @@ export const alexandria: LocationContentSeed = {
   communities: {
     heading: 'Neighborhoods Across Alexandria',
     intro:
-      'We cover residential and commercial customers throughout Alexandria, plus nearby Fairfax and Arlington.',
+      'We cover residential and commercial customers throughout Alexandria, plus nearby [Arlington](/locations/arlington), [McLean](/locations/mclean), Fairfax, and [Washington, DC](/locations/washington-dc).',
     groups: [
       { title: 'Old Town & downtown', places: 'Old Town, Downtown Alexandria, waterfront' },
       { title: 'Del Ray & Rosemont', places: 'Del Ray, Rosemont, Arlandria' },

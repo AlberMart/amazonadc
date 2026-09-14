@@ -14,7 +14,7 @@ type RegionRow = ServiceAreaRegion
 const fallbackRegions: RegionRow[] = [
   {
     name: 'Virginia',
-    cities: ['Arlington', 'Alexandria', 'Fairfax', 'Springfield', 'Loudoun', 'Prince William'],
+    cities: ['Arlington', 'Alexandria', 'McLean', 'Fairfax', 'Springfield', 'Loudoun', 'Prince William'],
     href: '/locations/burke',
     linkLabel: 'Burke & more',
   },
@@ -27,7 +27,8 @@ const fallbackRegions: RegionRow[] = [
   {
     name: 'Washington DC',
     cities: ['Capitol Hill', 'Northwest', 'Northeast', 'Southeast'],
-    emptyLinkLabel: 'All DC neighborhoods',
+    href: '/locations/washington-dc',
+    linkLabel: 'Washington, DC',
   },
 ]
 
@@ -85,11 +86,22 @@ export async function ServiceArea({
     (settings as { serviceAreaRegions?: unknown[] })?.serviceAreaRegions,
   )
   const fromPartial = defaultPartial?.regions || []
+  const fallbackByName = Object.fromEntries(fallbackRegions.map((row) => [row.name, row]))
   const regions =
-    (regionsProp && regionsProp.length ? regionsProp : null) ||
-    (fromPartial.length ? fromPartial : null) ||
-    (fromSettings.length ? fromSettings : null) ||
-    fallbackRegions
+    ((regionsProp && regionsProp.length ? regionsProp : null) ||
+      (fromPartial.length ? fromPartial : null) ||
+      (fromSettings.length ? fromSettings : null) ||
+      fallbackRegions)
+      .map((region) => {
+        const fallback = fallbackByName[region.name]
+        if (!fallback) return region
+        return {
+          ...region,
+          href: region.href || fallback.href,
+          linkLabel: region.linkLabel || fallback.linkLabel,
+          cities: region.cities.length ? region.cities : fallback.cities,
+        }
+      })
   const resolvedMapUrl =
     mapEmbedUrl ||
     defaultPartial?.mapEmbedUrl ||

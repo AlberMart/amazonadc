@@ -247,7 +247,7 @@ export async function LocationPage({ location }: { location: LocationContent }) 
         </div>
       </section>
 
-      <div id="contact">
+      <div id="contact" className="scroll-mt-32">
         <ContactForm
           sourcePage={`/locations/${location.slug}`}
           phoneDisplay={office.phoneDisplay}

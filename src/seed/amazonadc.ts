@@ -8,6 +8,9 @@ import { bethesda } from '@/content/locations/bethesda'
 import { alexandria } from '@/content/locations/alexandria'
 import { arlington } from '@/content/locations/arlington'
 import { burke } from '@/content/locations/burke'
+import { mclean } from '@/content/locations/mclean'
+import { rockville } from '@/content/locations/rockville'
+import { washingtonDc } from '@/content/locations/washington-dc'
 import { officesSeedSource } from '@/content/offices'
 import type { LocationContentSeed } from '@/utilities/locations'
 import type { ServiceContent } from '@/utilities/services'
@@ -35,7 +38,7 @@ export const siteSettingsSeed = {
   defaultMetaDescription:
     'Top-rated air duct cleaning in VA, MD & DC. Improve indoor air quality, remove dust and allergens, and clean dryer vents. Flat rates and a 100% satisfaction guarantee.',
   titleSuffix: 'Amazon Air Duct Cleaning',
-  priceValidUntil: '2026-12-31',
+  priceValidUntil: '2027-12-31',
   contactHeading: 'Contact Us',
   contactSubmitLabel: 'Send',
   contactSuccessMessage: 'Your message has been sent. Thank you!',
@@ -85,6 +88,7 @@ export const siteSettingsSeed = {
       cities: [
         { name: 'Arlington' },
         { name: 'Alexandria' },
+        { name: 'McLean' },
         { name: 'Fairfax' },
         { name: 'Springfield' },
         { name: 'Loudoun' },
@@ -113,7 +117,8 @@ export const siteSettingsSeed = {
         { name: 'Northeast' },
         { name: 'Southeast' },
       ],
-      emptyLinkLabel: 'All DC neighborhoods',
+      href: '/locations/washington-dc',
+      linkLabel: 'Washington, DC',
     },
   ],
 }
@@ -213,6 +218,9 @@ export const footerSeed = {
       links: [
         customNav('Arlington, VA', '/locations/arlington'),
         customNav('Alexandria, VA', '/locations/alexandria'),
+        customNav('McLean, VA', '/locations/mclean'),
+        customNav('Washington, DC', '/locations/washington-dc'),
+        customNav('Rockville, MD', '/locations/rockville'),
         customNav('All locations', '/locations'),
       ],
     },
@@ -314,6 +322,7 @@ function mapLocation(location: LocationContentSeed) {
   return {
     title: location.title,
     slug: location.slug,
+    generateSlug: false,
     headline: location.headline,
     description: location.description,
     intro: location.intro,
@@ -377,4 +386,7 @@ export const locationsSeed = [
   mapLocation(bethesda),
   mapLocation(arlington),
   mapLocation(alexandria),
+  mapLocation(mclean),
+  mapLocation(washingtonDc),
+  mapLocation(rockville),
 ]

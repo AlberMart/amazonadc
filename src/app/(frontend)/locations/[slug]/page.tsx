@@ -70,7 +70,7 @@ export default async function Page({ params }: Args) {
           addressCountry: 'US',
         },
         areaServed: [
-          { '@type': 'City', name: location.city },
+          { '@type': 'City', name: location.state === 'DC' ? 'Washington, DC' : location.city },
           {
             '@type': 'State',
             name: location.state === 'MD' ? 'Maryland' : location.state === 'DC' ? 'Washington DC' : 'Virginia',

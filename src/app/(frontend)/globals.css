@@ -328,6 +328,23 @@ html[data-theme='light'] {
   color: var(--site-body);
 }
 
+.site-form-field {
+  min-width: 0;
+}
+
+.site-form-label {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: var(--site-heading);
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.site-form-field:has(input[type='checkbox']) .site-form-label {
+  margin-bottom: 0;
+}
+
 .site-muted {
   color: var(--site-muted-text);
 }

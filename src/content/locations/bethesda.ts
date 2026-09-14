@@ -16,7 +16,7 @@ export const bethesda: LocationContentSeed = {
   about: {
     heading: 'Your Local Bethesda Branch',
     paragraphs: [
-      'Our Bethesda location is the service hub for Montgomery County and the greater Maryland region. Conveniently located at 7815 Old Georgetown Rd, Suite 201, our team serves residential and commercial properties throughout Bethesda and the surrounding communities — from the close-in suburbs of Silver Spring and Wheaton to the broader communities of Frederick, Hagerstown, and Columbia.',
+      'Our Bethesda location is the service hub for Montgomery County and the greater Maryland region. Conveniently located at 7815 Old Georgetown Rd, Suite 201, our team serves residential and commercial properties throughout Bethesda and the surrounding communities — from [Rockville](/locations/rockville), Silver Spring, and Wheaton to the broader communities of Frederick, Hagerstown, and Columbia. [Washington, DC](/locations/washington-dc) is dispatched from the closer of our two metro offices.',
       'Whether you need a routine duct cleaning, dryer vent inspection, chimney sweep, or full HVAC system service, our Bethesda technicians bring professional-grade equipment and years of regional expertise directly to your home.',
     ],
     highlights: [
@@ -86,7 +86,7 @@ export const bethesda: LocationContentSeed = {
       },
       {
         title: 'Rockville & Gaithersburg',
-        places: 'Rockville, Gaithersburg, Germantown, Montgomery Village, Derwood, Darnestown, Travilah',
+        places: '[Rockville](/locations/rockville), Gaithersburg, Germantown, Montgomery Village, Derwood, Darnestown, Travilah',
       },
       {
         title: 'Potomac & Surrounding Areas',
@@ -106,7 +106,7 @@ export const bethesda: LocationContentSeed = {
       },
       {
         title: 'Washington DC',
-        places: 'All DC neighborhoods including Capitol Hill, Northwest DC, Northeast DC, and Southeast DC',
+        places: 'See the dedicated [Washington, DC](/locations/washington-dc) page — Capitol Hill, Northwest, Northeast, and Southeast',
       },
     ],
   },

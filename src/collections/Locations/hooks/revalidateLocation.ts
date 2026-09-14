@@ -8,7 +8,9 @@ import { scheduleRevalidate } from '@/utilities/scheduleRevalidate'
 function revalidateLocationPaths(slug?: string | null) {
   if (!slug) return
   revalidatePath(`/locations/${slug}`)
+  revalidatePath('/locations')
   revalidatePath('/')
+  revalidatePath('/sitemap.xml')
 }
 
 export const revalidateLocation: CollectionAfterChangeHook<Location> = ({

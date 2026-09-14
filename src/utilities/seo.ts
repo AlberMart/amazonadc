@@ -37,7 +37,7 @@ const FALLBACK_SITE: SiteSeo = {
   defaultMetaDescription:
     'Top-rated air duct cleaning in VA, MD & DC. Improve indoor air quality, remove dust and allergens, and clean dryer vents. Flat rates and a 100% satisfaction guarantee.',
   titleSuffix: 'Amazon Air Duct Cleaning',
-  priceValidUntil: '2026-12-31',
+  priceValidUntil: '2027-12-31',
   socialSameAs: [
     'https://www.facebook.com/amazonductcleaning',
     'https://www.instagram.com/amazonairduct',
@@ -77,6 +77,15 @@ export function absoluteUrl(path = '/') {
   return `${siteUrl()}${path.startsWith('/') ? path : `/${path}`}`
 }
 
+function rollPriceValidUntil(value?: string | null): string {
+  const nextYear = new Date().getUTCFullYear() + 1
+  const rolled = `${nextYear}-12-31`
+  if (!value || !/^\d{4}-\d{2}-\d{2}$/.test(value)) return rolled
+  const expiry = Date.parse(`${value}T23:59:59.000Z`)
+  if (Number.isNaN(expiry) || expiry < Date.now()) return rolled
+  return value
+}
+
 export async function getSiteSeo(): Promise<SiteSeo> {
   try {
     const settings = await getCachedGlobal('site-settings', 1)()
@@ -105,11 +114,16 @@ export async function getSiteSeo(): Promise<SiteSeo> {
       defaultMetaDescription:
         settings.defaultMetaDescription || FALLBACK_SITE.defaultMetaDescription,
       titleSuffix: settings.titleSuffix || FALLBACK_SITE.titleSuffix,
-      priceValidUntil: settings.priceValidUntil || FALLBACK_SITE.priceValidUntil,
+      priceValidUntil: rollPriceValidUntil(
+        settings.priceValidUntil || FALLBACK_SITE.priceValidUntil,
+      ),
       socialSameAs: social.length ? social : FALLBACK_SITE.socialSameAs,
     }
   } catch {
-    return FALLBACK_SITE
+    return {
+      ...FALLBACK_SITE,
+      priceValidUntil: rollPriceValidUntil(FALLBACK_SITE.priceValidUntil),
+    }
   }
 }
 

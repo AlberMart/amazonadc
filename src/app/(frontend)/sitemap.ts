@@ -2,6 +2,8 @@ import type { MetadataRoute } from 'next'
 import { getPayload } from 'payload'
 
 import config from '@payload-config'
+import { getAllBlogSlugs } from '@/utilities/blog'
+import { getAllLocationSlugs } from '@/utilities/locations'
 import { absoluteUrl } from '@/utilities/seo'
 
 export const dynamic = 'force-dynamic'
@@ -94,6 +96,31 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: page.updatedAt ? new Date(page.updatedAt) : now,
       changeFrequency: 'yearly',
       priority: 0.4,
+    })
+  }
+
+  const have = new Set(entries.map((entry) => entry.url))
+  const [locationSlugs, postSlugs] = await Promise.all([getAllLocationSlugs(), getAllBlogSlugs()])
+  for (const slug of locationSlugs) {
+    const url = absoluteUrl(`/locations/${slug}`)
+    if (have.has(url)) continue
+    have.add(url)
+    entries.push({
+      url,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    })
+  }
+  for (const slug of postSlugs) {
+    const url = absoluteUrl(`/blog/${slug}`)
+    if (have.has(url)) continue
+    have.add(url)
+    entries.push({
+      url,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.6,
     })
   }
 

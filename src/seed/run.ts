@@ -132,16 +132,44 @@ async function run() {
     if (!officeId) {
       throw new Error(`Missing office for location ${location.slug}: ${servedBySlug}`)
     }
-    await upsertBySlug(
-      payload,
-      'locations',
-      location.slug,
-      {
-        ...bindIncludes(rest, serviceAreaPartialId),
-        servedBy: officeId,
-      },
-      context,
-    )
+    const data = {
+      ...bindIncludes(rest, serviceAreaPartialId),
+      servedBy: officeId,
+      generateSlug: false,
+      slug: rest.slug,
+    }
+    const bySlug = await payload.find({
+      collection: 'locations',
+      where: { slug: { equals: rest.slug } },
+      limit: 1,
+    })
+    const existing =
+      bySlug.docs[0] ||
+      (
+        await payload.find({
+          collection: 'locations',
+          where: {
+            and: [{ city: { equals: rest.city } }, { state: { equals: rest.state } }],
+          },
+          limit: 1,
+        })
+      ).docs[0]
+    if (existing) {
+      await payload.update({
+        collection: 'locations',
+        id: existing.id,
+        data,
+        context,
+      })
+      console.log('updated', 'locations', rest.slug, existing.slug !== rest.slug ? `(was ${existing.slug})` : '')
+    } else {
+      await payload.create({
+        collection: 'locations',
+        data,
+        context,
+      })
+      console.log('created', 'locations', rest.slug)
+    }
   }
 
   try {

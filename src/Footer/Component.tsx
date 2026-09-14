@@ -5,6 +5,7 @@ import { BrandMark } from '@/components/BrandMark'
 import { getCachedGlobalSafe } from '@/utilities/getGlobals'
 import { resolveBrandMark } from '@/utilities/brandMark'
 import { resolveCmsLink } from '@/utilities/cmsLink'
+import { getCityPageLinks } from '@/utilities/locations'
 import { getSiteSeo } from '@/utilities/seo'
 
 const fallbackSocial = [
@@ -40,11 +41,55 @@ function ColumnHeading({ children }: { children: React.ReactNode }) {
   )
 }
 
+function withLocationLinks<T extends { title?: string | null; type?: string | null; links?: unknown[] | null }>(
+  columns: T[],
+  cityPages: Array<{ slug: string; city: string; state: string }>,
+): T[] {
+  const citiesIndex = columns.findIndex(
+    (column) => column.type === 'links' && (column.title || '').trim().toLowerCase() === 'cities',
+  )
+  if (citiesIndex < 0) return columns
+
+  const hrefs = new Set<string>()
+  for (const column of columns) {
+    for (const row of column.links || []) {
+      const resolved = resolveCmsLink((row as { link?: unknown }).link)
+      if (resolved?.href) hrefs.add(resolved.href.replace(/\/$/, '') || resolved.href)
+    }
+  }
+
+  const extras = cityPages.filter((page) => !hrefs.has(`/locations/${page.slug}`))
+  if (!extras.length) return columns
+
+  const citiesColumn = columns[citiesIndex]
+  const existingLinks = [...(citiesColumn.links || [])]
+  const allLocationsIndex = existingLinks.findIndex((row) => {
+    const resolved = resolveCmsLink((row as { link?: unknown }).link)
+    return resolved?.href === '/locations' || /all locations/i.test(resolved?.label || '')
+  })
+  const extraLinks = extras.map((page) => ({
+    link: {
+      type: 'custom' as const,
+      label: page.state === 'DC' ? `${page.city}, DC` : `${page.city}, ${page.state}`,
+      url: `/locations/${page.slug}`,
+    },
+  }))
+  const links =
+    allLocationsIndex >= 0
+      ? [...existingLinks.slice(0, allLocationsIndex), ...extraLinks, ...existingLinks.slice(allLocationsIndex)]
+      : [...existingLinks, ...extraLinks]
+
+  const next = [...columns]
+  next[citiesIndex] = { ...citiesColumn, links }
+  return next
+}
+
 export async function Footer() {
-  const [footerData, settings, site] = await Promise.all([
+  const [footerData, settings, site, cityPages] = await Promise.all([
     getCachedGlobalSafe('footer', 2),
     getCachedGlobalSafe('site-settings', 0),
     getSiteSeo(),
+    getCityPageLinks(),
   ])
 
   const brand = resolveBrandMark(footerData?.brand, {
@@ -61,19 +106,22 @@ export async function Footer() {
   const copyright =
     footerData?.copyrightText?.trim() || `© ${year} ${site.siteName}. All rights reserved.`
 
-  const columns = footerData?.columns?.length
-    ? footerData.columns
-    : [
-        {
-          title: 'Explore',
-          type: 'links' as const,
-          links: [
-            { link: { type: 'custom' as const, label: 'Blog', url: '/blog' } },
-            { link: { type: 'custom' as const, label: 'Locations', url: '/locations' } },
-          ],
-        },
-        { title: 'Our Social Networks', type: 'social' as const, links: [] },
-      ]
+  const columns = withLocationLinks(
+    footerData?.columns?.length
+      ? footerData.columns
+      : [
+          {
+            title: 'Explore',
+            type: 'links' as const,
+            links: [
+              { link: { type: 'custom' as const, label: 'Blog', url: '/blog' } },
+              { link: { type: 'custom' as const, label: 'Locations', url: '/locations' } },
+            ],
+          },
+          { title: 'Our Social Networks', type: 'social' as const, links: [] },
+        ],
+    cityPages,
+  )
 
   return (
     <footer className={`site-footer mt-auto ${footerData?.topEdge === 'hairline' ? 'border-t border-white/10' : ''}`}>

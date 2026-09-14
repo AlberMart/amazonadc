@@ -6,6 +6,9 @@ import allergies from '@/content/blog/can-dirty-air-ducts-cause-allergies.json'
 import neverClean from '@/content/blog/never-clean-air-ducts.json'
 import arlingtonHumidity from '@/content/blog/how-potomac-humidity-affects-arlington-air-quality.json'
 import alexandriaHumidity from '@/content/blog/how-potomac-humidity-affects-alexandria-air-quality.json'
+import dcHumidity from '@/content/blog/dc-humidity-row-houses-indoor-air.json'
+import mcleanPollen from '@/content/blog/mclean-tree-pollen-basement-humidity.json'
+import rockvilleBasement from '@/content/blog/rockville-basement-humidity-air-ducts.json'
 import {
   homeContentSeed,
   mapHomeContentToSeed,
@@ -75,6 +78,9 @@ export const postsSeed = [
   mapPost(neverClean as BlogPost),
   mapPost(arlingtonHumidity as BlogPost),
   mapPost(alexandriaHumidity as BlogPost),
+  mapPost(dcHumidity as BlogPost),
+  mapPost(mcleanPollen as BlogPost),
+  mapPost(rockvilleBasement as BlogPost),
 ]
 
 export const legalPagesSeed = [
