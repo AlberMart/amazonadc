@@ -16,7 +16,7 @@ export const ellicottCity: LocationContentSeed = {
   servedBy: 'bethesda',
   sectionLayout: 'servicesFirst',
   about: {
-    heading: "Mill-Town Humidity, Flood History, and Old Cellars",
+    heading: 'Mill-Town Humidity, Flood History, and Old Cellars',
     paragraphs: [
       'Ellicott City is a historic mill town on the Patapsco: Main Street stone and wood, the Tiber valley, then later neighborhoods up the hills — Dorsey Hall, Turf Valley, and streets toward Catonsville. The old stock was never designed around modern HVAC. Ducts were cut through stone cellars and timber. Those cellars remember every wet year. Flood history is not a marketing line here; lower levels stay damp longer than a Beltway basement.',
       'Newer hillsides still load pollen. The historic core loads moisture. Both send film into returns. Catonsville is a next-door community we mention because neighbors ask — it is not its own page. [Columbia](/locations/columbia) is the planned-city page west.',
@@ -29,10 +29,10 @@ export const ellicottCity: LocationContentSeed = {
       'Stone-cellar and flood-side trunks we treat as moisture jobs, not a gimmick',
     ],
   },
-  offersTitle: "Ellicott City Flat Rates — Drive Time Included Honestly",
+  offersTitle: 'Ellicott City Flat Rates — Drive Time Included Honestly',
   services: {
-    heading: "Ellicott City Packages for Historic and Hillside Homes",
-    intro: "Historic and newer hillside homes — flat-rate packages after inspection.",
+    heading: 'Ellicott City Packages for Historic and Hillside Homes',
+    intro: 'Historic and newer hillside homes — flat-rate packages after inspection.',
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -46,14 +46,10 @@ export const ellicottCity: LocationContentSeed = {
         title: 'Ventilation & HVAC Mold Treatment',
         text: 'Flood-side humidity plus cool cellars let growth start on coils and old metal. Learn more about [mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
-      {
-        title: 'Whole-Home Mold Remediation',
-        text: 'When the smell has left the vents for a cellar or finished lower level, we contain, remove, and dry. See [mold remediation for your home](/mold-remediation-house).',
-      },
     ],
   },
   why: {
-    heading: "Why Flood-Season Moisture Lingers in Older Ducts",
+    heading: 'Why Flood-Season Moisture Lingers in Older Ducts',
     items: [
       {
         title: 'Served from Our Bethesda Office',
@@ -74,9 +70,8 @@ export const ellicottCity: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: "Historic Main Street Edge and Hillside Neighborhoods",
-    intro:
-      "Columbia is the sister Howard County page; both dispatch from Bethesda.",
+    heading: 'Historic Main Street Edge and Hillside Neighborhoods',
+    intro: 'Columbia is the sister Howard County page; both dispatch from Bethesda.',
     groups: [
       {
         title: 'Historic Main Street & mill district',
@@ -94,8 +89,8 @@ export const ellicottCity: LocationContentSeed = {
     ],
   },
   process: {
-    heading: "Howard County Scheduling From Bethesda",
-    intro: "Steep drives and cellar returns are noted when you book.",
+    heading: 'Howard County Scheduling From Bethesda',
+    intro: 'Steep drives and cellar returns are noted when you book.',
     steps: [
       {
         title: 'Request a Window',

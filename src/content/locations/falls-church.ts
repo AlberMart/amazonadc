@@ -15,7 +15,7 @@ export const fallsChurch: LocationContentSeed = {
   servedBy: 'burke',
   sectionLayout: 'communitiesFirst',
   about: {
-    heading: "Small Lots, Beltway Dust, and Older Close-In Trunks",
+    heading: 'Small Lots, Beltway Dust, and Older Close-In Trunks',
     paragraphs: [
       'The City of Falls Church is a small independent city — Broad Street, Washington Street, Tinner Hill, and tight blocks of older houses on small lots. That is a different place from the huge “Falls Church” Census area that sprawls through Fairfax County. This page is for the independent city and the streets that immediately touch it. Older metal trunks, unfinished or finished basements, and short yards mean returns sit close to the Beltway film that coats porches along Route 7.',
       'Small lots do not mean small dust loads. Traffic particles from I-66 and the Beltway mix with pollen from street trees. A 1920s–60s house that gained central air later often has trunks snaked through tight joist bays. Dust collects at those kinks. Laundry closets on a second floor send dryer lint on a long, bent path to a rear wall.',
@@ -28,10 +28,10 @@ export const fallsChurch: LocationContentSeed = {
       'Same Burke team that already works Arlington and McLean',
     ],
   },
-  offersTitle: "Falls Church Flat Rates — Compact Homes, Full Scopes",
+  offersTitle: 'Falls Church Flat Rates — Compact Homes, Full Scopes',
   services: {
-    heading: "Falls Church Packages for Compact City Lots",
-    intro: "Smaller footprints still get full trunk cleaning at published rates.",
+    heading: 'Falls Church Packages for Compact City Lots',
+    intro: 'Smaller footprints still get full trunk cleaning at published rates.',
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -45,14 +45,10 @@ export const fallsChurch: LocationContentSeed = {
         title: 'Ventilation & HVAC Mold Treatment',
         text: 'Older basements and humid summers let mold colonize coils and dead-end ducts. Learn more about [mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
-      {
-        title: 'Whole-Home Mold Remediation',
-        text: 'When the smell has moved past the vents into a basement or crawl, we contain and remove it. See [mold remediation for your home](/mold-remediation-house).',
-      },
     ],
   },
   why: {
-    heading: "Why Close-In Falls Church Homes Recycle Traffic Film",
+    heading: 'Why Close-In Falls Church Homes Recycle Traffic Film',
     items: [
       {
         title: 'Independent City, Honest Dispatch',
@@ -73,9 +69,8 @@ export const fallsChurch: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: "City of Falls Church Streets and Near-Edge Blocks",
-    intro:
-      "Arlington and Fairfax pages are nearby; this is the City of Falls Church.",
+    heading: 'City of Falls Church Streets and Near-Edge Blocks',
+    intro: 'Arlington and Fairfax pages are nearby; this is the City of Falls Church.',
     groups: [
       {
         title: 'City core',
@@ -93,8 +88,8 @@ export const fallsChurch: LocationContentSeed = {
     ],
   },
   process: {
-    heading: "Tight-Lot Staging From the Burke Office",
-    intro: "On-street parking plans come with the morning ETA.",
+    heading: 'Tight-Lot Staging From the Burke Office',
+    intro: 'On-street parking plans come with the morning ETA.',
     steps: [
       {
         title: 'Request a Window',

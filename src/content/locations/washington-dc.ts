@@ -16,7 +16,7 @@ export const washingtonDc: LocationContentSeed = {
   sectionLayout: 'servicesFirst',
   dispatchLabel: 'our Burke and Bethesda offices',
   about: {
-    heading: "Row Houses, Condos, and River Humidity Across Four Quadrants",
+    heading: 'Row Houses, Condos, and River Humidity Across Four Quadrants',
     paragraphs: [
       'Washington, DC is a river city with dense housing. The Potomac and Anacostia keep summer air wet. Row houses on Capitol Hill, Georgetown, and Shaw often run older metal ductwork that was added decades after the house was built. High-rises in Navy Yard, NoMa, and Foggy Bottom stack long dryer vents and shared corridors. Traffic dust, pollen from Rock Creek Park, and that humidity all settle in the same returns.',
       'When cold supply air hits humid indoor air, condensation forms inside the ducts. Dust sticks to it. That is how musty registers start in a Ward 2 condo and in a 1900s row house alike. Opening a window on a July afternoon does not dry the inside of the system — it often adds more moisture.',
@@ -29,10 +29,10 @@ export const washingtonDc: LocationContentSeed = {
       'Dispatched from Burke or Bethesda — whichever is closer that day',
     ],
   },
-  offersTitle: "Flat Rates for Capitol Hill to Navy Yard Jobs",
+  offersTitle: 'Flat Rates for Capitol Hill to Navy Yard Jobs',
   services: {
-    heading: "District Packages Dispatched From Burke or Bethesda",
-    intro: "Same published packages as the suburbs — scoped for row houses and stacked laundry.",
+    heading: 'District Packages Dispatched From Burke or Bethesda',
+    intro: 'Same published packages as the suburbs — scoped for row houses and stacked laundry.',
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -46,14 +46,10 @@ export const washingtonDc: LocationContentSeed = {
         title: 'Ventilation & HVAC Mold Treatment',
         text: 'River humidity plus cold coils is how mold colonizes DC ductwork. We treat the ventilation with EPA-registered antimicrobial products that are safe for children and pets once applied as directed. Learn more about [mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
-      {
-        title: 'Whole-Home Mold Remediation',
-        text: 'When musty air has moved past the vents into a cellar, English basement, or plaster wall — common on Capitol Hill and in older Northwest houses — we find the moisture, contain the area, and remove the growth. See [mold remediation for your home](/mold-remediation-house).',
-      },
     ],
   },
   why: {
-    heading: "Why DC Homes Book a Metro Crew Instead of a Pop-Up Shop",
+    heading: 'Why DC Homes Book a Metro Crew Instead of a Pop-Up Shop',
     items: [
       {
         title: 'Two Metro Offices',
@@ -74,9 +70,8 @@ export const washingtonDc: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: "Northwest Through Southeast — Where We Actually Park",
-    intro:
-      "Quadrant groups below; nearby Virginia and Maryland pages share the same two offices.",
+    heading: 'Northwest Through Southeast — Where We Actually Park',
+    intro: 'Quadrant groups below; nearby Virginia and Maryland pages share the same two offices.',
     groups: [
       {
         title: 'Northwest',
@@ -98,8 +93,8 @@ export const washingtonDc: LocationContentSeed = {
     ],
   },
   process: {
-    heading: "District Access: Loading, Alleys, and Condo Rules First",
-    intro: "We confirm parking and building access before the truck rolls into the District.",
+    heading: 'District Access: Loading, Alleys, and Condo Rules First',
+    intro: 'We confirm parking and building access before the truck rolls into the District.',
     steps: [
       {
         title: 'Request a Window',

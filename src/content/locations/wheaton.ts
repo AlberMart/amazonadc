@@ -16,7 +16,7 @@ export const wheaton: LocationContentSeed = {
   servedBy: 'bethesda',
   sectionLayout: 'processFirst',
   about: {
-    heading: "1940s–60s Brick, Metro Dust, and Compact Lots",
+    heading: '1940s–60s Brick, Metro Dust, and Compact Lots',
     paragraphs: [
       'Wheaton is close-in Montgomery County around the Westfield mall, the Metro, Veirs Mill Road, and Georgia Avenue. Housing is mixed on purpose: 1940s–60s brick colonials and ramblers, later split-levels, garden apartments, and newer infill. That mix shares one problem. Older ductwork was cut through plaster and joists. Joints leak. Downtown construction and bus-corridor grit add a second load the returns never sort from tree pollen.',
       'Aspen Hill sits just north as a neighborhood we already drive, not a separate city page. Kemp Mill and Glenmont fill in the same close-in ring. Basements stay cool. Maryland summers stay wet. Cold trunks sweat, and the first AC week after a pollen burst is when registers look dirty again.',
@@ -29,11 +29,10 @@ export const wheaton: LocationContentSeed = {
       'Portable HEPA gear when a truck cannot stage on a tight street',
     ],
   },
-  offersTitle: "Wheaton Flat Rates Matching Bethesda Packages",
+  offersTitle: 'Wheaton Flat Rates Matching Bethesda Packages',
   services: {
-    heading: "Wheaton Packages for Brick Ranches and Capes",
-    intro:
-      "Older brick homes and small additions — flat rates after a clear scope.",
+    heading: 'Wheaton Packages for Brick Ranches and Capes',
+    intro: 'Older brick homes and small additions — flat rates after a clear scope.',
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -47,14 +46,10 @@ export const wheaton: LocationContentSeed = {
         title: 'Ventilation & HVAC Mold Treatment',
         text: 'Cool basements plus close-in humidity let growth start on coils and dead-end ducts. Learn more about [mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
-      {
-        title: 'Whole-Home Mold Remediation',
-        text: 'When the smell has left the vents for a rec room or crawl, we contain, remove, and dry. See [mold remediation for your home](/mold-remediation-house).',
-      },
     ],
   },
   why: {
-    heading: "Why Wheaton Urban Grit Settles in Older Ducts",
+    heading: 'Why Wheaton Urban Grit Settles in Older Ducts',
     items: [
       {
         title: 'Close-In Dispatch from a Real Office',
@@ -75,9 +70,8 @@ export const wheaton: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: "Wheaton CBD Edge and Neighborhood Grids",
-    intro:
-      "Silver Spring and Kensington are adjacent pages.",
+    heading: 'Wheaton CBD Edge and Neighborhood Grids',
+    intro: 'Silver Spring and Kensington are adjacent pages.',
     groups: [
       {
         title: 'Downtown Wheaton & Westfield',
@@ -94,8 +88,8 @@ export const wheaton: LocationContentSeed = {
     ],
   },
   process: {
-    heading: "Inside-Beltway Timing From Bethesda",
-    intro: "Tight lots mean we confirm street parking with the morning ETA.",
+    heading: 'Inside-Beltway Timing From Bethesda',
+    intro: 'Tight lots mean we confirm street parking with the morning ETA.',
     steps: [
       {
         title: 'Online or Phone Intake',

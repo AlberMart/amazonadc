@@ -16,7 +16,7 @@ export const columbia: LocationContentSeed = {
   servedBy: 'bethesda',
   sectionLayout: 'servicesFirst',
   about: {
-    heading: "Village Townhomes, Lake Paths, and HOA Dryer Chases",
+    heading: 'Village Townhomes, Lake Paths, and HOA Dryer Chases',
     paragraphs: [
       'Columbia is James Rouse’s planned Howard County city: Town Center, Wilde Lake, Hickory Ridge, Owen Brown, Oakland Mills, Kings Contrivance, and the paths that stitch village centers together. A lot of the stock is 1970s–90s townhomes and colonials with HOA rules and tight mechanical closets. Dryer vents turn corners. Returns sit low over finished lower levels.',
       'The lakes and open space keep lots greener — and damper — than a Beltway brick block. Oak pollen and mowed-path dust ride the same returns. Clarksville is a neighborhood and next-door community we already drive, not its own page. [Ellicott City](/locations/ellicott-city) is the next Howard County city page.',
@@ -29,10 +29,10 @@ export const columbia: LocationContentSeed = {
       'HOA townhome closets we already clean across planned communities',
     ],
   },
-  offersTitle: "Columbia Rates With Honest Travel Windows",
+  offersTitle: 'Columbia Rates With Honest Travel Windows',
   services: {
-    heading: "Columbia Packages for Village Townhomes",
-    intro: "Townhome packages at published rates; longer drive disclosed up front.",
+    heading: 'Columbia Packages for Village Townhomes',
+    intro: 'Townhome packages at published rates; longer drive disclosed up front.',
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -46,14 +46,10 @@ export const columbia: LocationContentSeed = {
         title: 'Ventilation & HVAC Mold Treatment',
         text: 'Lake-side humidity plus cool lower-level handlers let growth start on coils. Learn more about [mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
-      {
-        title: 'Whole-Home Mold Remediation',
-        text: 'When the smell has left the vents for a finished lower level, we contain, remove, and dry. See [mold remediation for your home](/mold-remediation-house).',
-      },
     ],
   },
   why: {
-    heading: "Why Columbia Villages Recirculate Lake-Season Film",
+    heading: 'Why Columbia Villages Recirculate Lake-Season Film',
     items: [
       {
         title: 'Honest Distance, Real Bethesda Office',
@@ -74,9 +70,8 @@ export const columbia: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: "Village Clusters We Already Route Through",
-    intro:
-      "Farther than Montgomery core; Ellicott City is the next Howard page.",
+    heading: 'Village Clusters We Already Route Through',
+    intro: 'Farther than Montgomery core; Ellicott City is the next Howard page.',
     groups: [
       {
         title: 'Town Center & Wilde Lake',
@@ -94,8 +89,8 @@ export const columbia: LocationContentSeed = {
     ],
   },
   process: {
-    heading: "Howard County Drive From Bethesda — Planned",
-    intro: "We schedule Columbia with realistic Bethesda-to-Howard timing.",
+    heading: 'Howard County Drive From Bethesda — Planned',
+    intro: 'We schedule Columbia with realistic Bethesda-to-Howard timing.',
     steps: [
       {
         title: 'Online or Phone Intake',

@@ -15,7 +15,7 @@ export const bethesda: LocationContentSeed = {
   servedBy: 'bethesda',
   sectionLayout: 'hub',
   about: {
-    heading: "Old Georgetown Road Staging for Montgomery County",
+    heading: 'Old Georgetown Road Staging for Montgomery County',
     paragraphs: [
       'Our shop sits at 7815 Old Georgetown Rd, Suite 201, Bethesda, MD 20814. Crews stage here for Montgomery County, parts of Prince George’s County, Howard County runs, and Frederick when scheduled. Friendship Heights and close-in Northwest [Washington, DC](/locations/washington-dc) often share this dispatch when it is the shorter drive.',
       'Bethesda and nearby streets mix colonials, townhomes, and condo stacks. Tree pollen, humid summers, and renovation dust are the usual reasons returns look gray. We offer the same packages as the home page: air ducts, dryer vents, and mold treatment — not chimney sweeping or standalone “HVAC unit rebuild” marketing.',
@@ -28,11 +28,10 @@ export const bethesda: LocationContentSeed = {
       'Montgomery County routes we drive every week',
     ],
   },
-  offersTitle: "Published Rates From the Bethesda Office",
+  offersTitle: 'Published Rates From the Bethesda Office',
   services: {
-    heading: "Maryland Packages From the Bethesda Suite",
-    intro:
-      "The same duct, dryer, and mold packages as Virginia — staged from Bethesda.",
+    heading: 'Maryland Packages From the Bethesda Suite',
+    intro: 'The same duct, dryer, and mold packages as Virginia — staged from Bethesda.',
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -46,14 +45,10 @@ export const bethesda: LocationContentSeed = {
         title: 'Ventilation & HVAC Mold Treatment',
         text: 'When coils or dead-end ducts show growth, we treat the ventilation path with EPA-registered products used as directed. Learn about [mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
-      {
-        title: 'Whole-Home Mold Remediation',
-        text: 'When musty air has left the vents for a basement or finished room, we contain, remove, and dry. See [mold remediation for your home](/mold-remediation-house).',
-      },
     ],
   },
   why: {
-    heading: "Why Montgomery County Crews Stage on Old Georgetown Rd",
+    heading: 'Why Montgomery County Crews Stage on Old Georgetown Rd',
     items: [
       {
         title: 'Staffed Maryland Office',
@@ -74,9 +69,8 @@ export const bethesda: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: "Maryland Cities Covered From Suite 201",
-    intro:
-      "Use city pages for neighborhood names; this hub is for the Maryland office itself.",
+    heading: 'Maryland Cities Covered From Suite 201',
+    intro: 'Use city pages for neighborhood names; this hub is for the Maryland office itself.',
     groups: [
       {
         title: 'Close-in Montgomery',
@@ -101,8 +95,8 @@ export const bethesda: LocationContentSeed = {
     ],
   },
   process: {
-    heading: "Bethesda Intake, Then I-270 and Beltway Routes",
-    intro: "From the Old Georgetown suite to a Montgomery or Howard County driveway.",
+    heading: 'Bethesda Intake, Then I-270 and Beltway Routes',
+    intro: 'From the Old Georgetown suite to a Montgomery or Howard County driveway.',
     steps: [
       {
         title: 'Online or Phone Intake',
@@ -126,7 +120,8 @@ export const bethesda: LocationContentSeed = {
       },
     ],
   },
-  faqIntro: 'Questions about the Bethesda office. Call (800) 606-3334 — office line (301) 809-4544.',
+  faqIntro:
+    'Questions about the Bethesda office. Call (800) 606-3334 — office line (301) 809-4544.',
   faq: [
     {
       q: 'Where is the Bethesda office?',
@@ -134,7 +129,7 @@ export const bethesda: LocationContentSeed = {
     },
     {
       q: 'What services do you offer from Bethesda?',
-      a: 'Air duct cleaning, dryer vent cleaning, ventilation mold treatment, and whole-home mold remediation when needed. We do not offer chimney sweeping from this page.',
+      a: 'Air duct cleaning, dryer vent cleaning, and ventilation mold treatment when needed. We do not offer chimney sweeping from this page.',
     },
     {
       q: 'Do you serve Rockville, Silver Spring, and Gaithersburg from Bethesda?',

@@ -16,7 +16,7 @@ export const princeWilliam: LocationContentSeed = {
   servedBy: 'burke',
   sectionLayout: 'whyFirst',
   about: {
-    heading: "Occoquan Humidity, I-95 Townhomes, and Manassas Colonials",
+    heading: 'Occoquan Humidity, I-95 Townhomes, and Manassas Colonials',
     paragraphs: [
       'Prince William County sits between the Occoquan and the I-95 / I-66 corridors: Woodbridge, Lake Ridge, Dale City, Manassas, Gainesville, and Haymarket. A lot of the housing is 1970s–2000s townhomes and single-family houses with basements. Those basements stay cool. Summer air off the Occoquan does not. Cold supply trunks sweat. Pollen and highway dust stick to that moisture.',
       'Townhomes along Prince William Parkway pack long dryer vents. A laundry room that stays hot after a cycle is often a clogged run, not a bad dryer. Older Manassas houses add retrofitted trunks with joints that collect whatever the last decade of filters missed.',
@@ -29,11 +29,10 @@ export const princeWilliam: LocationContentSeed = {
       'Same crew that already works Springfield and Lorton',
     ],
   },
-  offersTitle: "Prince William Flat Rates — County Overview Page",
+  offersTitle: 'Prince William Flat Rates — County Overview Page',
   services: {
-    heading: "Prince William Packages From Burke Dispatch",
-    intro:
-      "Townhomes on I-95 and inland colonials share flat-rate packages.",
+    heading: 'Prince William Packages From Burke Dispatch',
+    intro: 'Townhomes on I-95 and inland colonials share flat-rate packages.',
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -47,14 +46,10 @@ export const princeWilliam: LocationContentSeed = {
         title: 'Ventilation & HVAC Mold Treatment',
         text: 'Humid basements let mold colonize coils and dead-end ducts. Learn more about [mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
-      {
-        title: 'Whole-Home Mold Remediation',
-        text: 'When growth has moved into a basement rec room or crawl space, we contain and remove it. See [mold remediation for your home](/mold-remediation-house).',
-      },
     ],
   },
   why: {
-    heading: "Why County Homes Mix Corridor Dust With River Moisture",
+    heading: 'Why County Homes Mix Corridor Dust With River Moisture',
     items: [
       {
         title: 'Real Burke Office, dispatched from our Burke office',
@@ -75,9 +70,8 @@ export const princeWilliam: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: "Woodbridge, Lake Ridge, Manassas, and Dale City Overview",
-    intro:
-      "County-level page; Lorton and Springfield cover closer Fairfax edges.",
+    heading: 'Woodbridge, Lake Ridge, Manassas, and Dale City Overview',
+    intro: 'County-level page; Lorton and Springfield cover closer Fairfax edges.',
     groups: [
       {
         title: 'Woodbridge & the river',
@@ -95,8 +89,8 @@ export const princeWilliam: LocationContentSeed = {
     ],
   },
   process: {
-    heading: "Southern Corridor Timing From Burke",
-    intro: "Drive time is real; morning ETAs reflect I-95 conditions.",
+    heading: 'Southern Corridor Timing From Burke',
+    intro: 'Drive time is real; morning ETAs reflect I-95 conditions.',
     steps: [
       {
         title: 'Estimate Request',

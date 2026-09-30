@@ -4,7 +4,6 @@ import { airDuctCleaning } from '@/content/services/air-duct-cleaning'
 import { airDuctAndDryerVentCleaning } from '@/content/services/air-duct-and-dryer-vent-cleaning'
 import { dryerVentCleaning } from '@/content/services/dryer-vent-cleaning'
 import { moldRemediationAirDucts } from '@/content/services/mold-remediation-air-ducts'
-import { moldRemediationHouse } from '@/content/services/mold-remediation-house'
 import { bethesda } from '@/content/locations/bethesda'
 import { alexandria } from '@/content/locations/alexandria'
 import { arlington } from '@/content/locations/arlington'
@@ -281,7 +280,6 @@ export const footerSeed = {
         customNav('Air Duct Cleaning', '/air-duct-cleaning'),
         customNav('Dryer Vent Cleaning', '/dryer-vent-cleaning'),
         customNav('Combo Package', '/air-duct-and-dryer-vent-cleaning'),
-        customNav('Mold Remediation for Your Home', '/mold-remediation-house'),
         customNav('Mold Remediation for Air Ducts', '/mold-remediation-air-ducts'),
         customNav('Blog', '/blog'),
         customNav('Privacy Policy', '/privacy-policy'),
@@ -301,7 +299,6 @@ const serviceThumbs: Record<string, string> = {
   'air-duct-cleaning': '/img/services/Amazon_AIR_DUCT_CLEANING_small.webp',
   'dryer-vent-cleaning': '/img/services/AmazonDC-179_small.webp',
   'air-duct-and-dryer-vent-cleaning': '/img/services/Amazon_DRYER_VENT_CLEANING_small.webp',
-  'mold-remediation-house': '/img/Amazon.webp',
   'mold-remediation-air-ducts': '/img/services/Amazon_AIR_DUCT_CLEANING_small.webp',
 }
 
@@ -421,7 +418,6 @@ export const servicesSeed = [
   mapService(airDuctCleaning),
   mapService(dryerVentCleaning),
   mapService(airDuctAndDryerVentCleaning),
-  mapService(moldRemediationHouse),
   mapService(moldRemediationAirDucts),
 ]
 

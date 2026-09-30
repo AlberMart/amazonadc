@@ -15,10 +15,10 @@ export const burke: LocationContentSeed = {
   servedBy: 'burke',
   sectionLayout: 'hub',
   about: {
-    heading: "The Burke Centre Hub Behind Northern Virginia Dispatch",
+    heading: 'The Burke Centre Hub Behind Northern Virginia Dispatch',
     paragraphs: [
       'Our shop sits at 5641 Burke Centre Pkwy, Suite 119, Burke, VA 22015. Technicians stage equipment here, confirm appointments from this address, and drive out to Springfield, Fairfax, McLean, Reston, Herndon, and the rest of the Virginia list on our [locations](/locations) page. When a [Washington, DC](/locations/washington-dc) job is closer to Virginia than Maryland, this office often takes the dispatch.',
-      'Burke and Springfield homes are mostly split-levels, colonials, and townhomes with humid summers and a heavy tree canopy. That mix loads returns with pollen and attic dust. We clean what we actually offer on the home page: air ducts, dryer vents, and mold treatment for ventilation or whole-home jobs — not chimney sweeping or full HVAC “unit rebuild” packages.',
+      'Burke and Springfield homes are mostly split-levels, colonials, and townhomes with humid summers and a heavy tree canopy. That mix loads returns with pollen and attic dust. We clean what we actually offer on the home page: air ducts, dryer vents, and ventilation mold treatment — not chimney sweeping or full HVAC “unit rebuild” packages.',
       'Prefer Montgomery County or Bethesda-side streets? See our [Bethesda office](/locations/bethesda). Same company, same flat-rate packages, different staging address.',
     ],
     highlights: [
@@ -28,10 +28,11 @@ export const burke: LocationContentSeed = {
       'Same-day and next-day windows when the schedule allows',
     ],
   },
-  offersTitle: "Flat-Rate Packages From the Burke Shop",
+  offersTitle: 'Flat-Rate Packages From the Burke Shop',
   services: {
-    heading: "What This Burke Office Actually Schedules",
-    intro: "Only the packages we publish site-wide — ducts, dryer vents, and mold treatment when inspection supports it.",
+    heading: 'What This Burke Office Actually Schedules',
+    intro:
+      'Only the packages we publish site-wide — ducts, dryer vents, and mold treatment when inspection supports it.',
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -45,14 +46,10 @@ export const burke: LocationContentSeed = {
         title: 'Ventilation & HVAC Mold Treatment',
         text: 'When inspection shows growth on coils or in dead-end ducts, we treat the ventilation path with EPA-registered products used as directed. Learn more about [mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
-      {
-        title: 'Whole-Home Mold Remediation',
-        text: 'When musty air has moved past the vents into a basement or finished room, we contain, remove, and dry. See [mold remediation for your home](/mold-remediation-house).',
-      },
     ],
   },
   why: {
-    heading: "Why Fairfax County Jobs Start on Burke Centre Pkwy",
+    heading: 'Why Fairfax County Jobs Start on Burke Centre Pkwy',
     items: [
       {
         title: 'Real Address, Real Staging',
@@ -73,9 +70,8 @@ export const burke: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: "Virginia Cities Staged From Suite 119",
-    intro:
-      "This page is the office hub. City pages below carry the neighborhood detail.",
+    heading: 'Virginia Cities Staged From Suite 119',
+    intro: 'This page is the office hub. City pages below carry the neighborhood detail.',
     groups: [
       {
         title: 'Next door',
@@ -100,8 +96,8 @@ export const burke: LocationContentSeed = {
     ],
   },
   process: {
-    heading: "Office Intake at Burke Centre — Then On the Road",
-    intro: "How a job leaves Suite 119 and arrives at a Northern Virginia address.",
+    heading: 'Office Intake at Burke Centre — Then On the Road',
+    intro: 'How a job leaves Suite 119 and arrives at a Northern Virginia address.',
     steps: [
       {
         title: 'Talk Through the Home',
@@ -133,7 +129,7 @@ export const burke: LocationContentSeed = {
     },
     {
       q: 'What services do you offer from Burke?',
-      a: 'Air duct cleaning, dryer vent cleaning, ventilation mold treatment, and whole-home mold remediation when needed. We do not offer chimney sweeping from this page.',
+      a: 'Air duct cleaning, dryer vent cleaning, and ventilation mold treatment when needed. We do not offer chimney sweeping from this page.',
     },
     {
       q: 'Do you serve Springfield, Reston, and Arlington from Burke?',

@@ -15,7 +15,7 @@ export const silverSpring: LocationContentSeed = {
   servedBy: 'bethesda',
   sectionLayout: 'faqEarly',
   about: {
-    heading: "Brick Rows, Urban Grit, and Georgia Avenue Film",
+    heading: 'Brick Rows, Urban Grit, and Georgia Avenue Film',
     paragraphs: [
       'Silver Spring is Montgomery County’s urban east side: downtown around the Metro, older streets in Woodside and Seven Oaks, Takoma Park next door, and apartments along Georgia Avenue. A lot of the housing is pre-war and 1940s–60s brick with later ductwork cut through plaster and joists. Those joints collect dust. Downtown construction and the Purple Line corridor add a second particle load. Returns do not sort brick dust from pollen.',
       'Basements stay cool. Maryland summers stay wet. Cold supply trunks sweat. Musty air on the first AC cycle after a storm is that film waking up. Condos and stacked units add long dryer vents that dump heat and lint back into the laundry if the cap is packed.',
@@ -28,10 +28,10 @@ export const silverSpring: LocationContentSeed = {
       'Portable HEPA gear when a truck cannot stage on a narrow street',
     ],
   },
-  offersTitle: "Silver Spring Flat-Rate Duct and Dryer Work",
+  offersTitle: 'Silver Spring Flat-Rate Duct and Dryer Work',
   services: {
-    heading: "Silver Spring Cleanings for Brick and Mid-Rise Homes",
-    intro: "Older brick and newer stacks — same published scopes from Bethesda.",
+    heading: 'Silver Spring Cleanings for Brick and Mid-Rise Homes',
+    intro: 'Older brick and newer stacks — same published scopes from Bethesda.',
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -45,14 +45,10 @@ export const silverSpring: LocationContentSeed = {
         title: 'Ventilation & HVAC Mold Treatment',
         text: 'Cool basements plus humid summers let mold colonize coils. Learn more about [mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
-      {
-        title: 'Whole-Home Mold Remediation',
-        text: 'When growth has left the vents for plaster or a cellar, we contain and remove it. See [mold remediation for your home](/mold-remediation-house).',
-      },
     ],
   },
   why: {
-    heading: "Why Close-In Silver Spring Ducts Collect City Dust",
+    heading: 'Why Close-In Silver Spring Ducts Collect City Dust',
     items: [
       {
         title: 'Bethesda Is Actually Nearby',
@@ -73,9 +69,8 @@ export const silverSpring: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: "Downtown, Woodside, and Forest Glen Stops",
-    intro:
-      "Inside the Beltway grit is the story; Kensington and Takoma Park are nearby pages.",
+    heading: 'Downtown, Woodside, and Forest Glen Stops',
+    intro: 'Inside the Beltway grit is the story; Kensington and Takoma Park are nearby pages.',
     groups: [
       {
         title: 'Downtown & Metro',
@@ -94,8 +89,8 @@ export const silverSpring: LocationContentSeed = {
     ],
   },
   process: {
-    heading: "Beltway-Adjacent Timing From Bethesda",
-    intro: "Street parking and mid-rise loading are planned before arrival.",
+    heading: 'Beltway-Adjacent Timing From Bethesda',
+    intro: 'Street parking and mid-rise loading are planned before arrival.',
     steps: [
       {
         title: 'Talk Through the Home',

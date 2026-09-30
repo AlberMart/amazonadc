@@ -16,7 +16,7 @@ export const clarksburg: LocationContentSeed = {
   servedBy: 'bethesda',
   sectionLayout: 'offersLate',
   about: {
-    heading: "New-Construction Dust Still Sitting in Young Trunks",
+    heading: 'New-Construction Dust Still Sitting in Young Trunks',
     paragraphs: [
       'Clarksburg is Montgomery County’s I-270 north boom: Clarksburg Village, Cabin Branch, Town Center, Skylark, then lanes toward Damascus. Damascus is a community we already drive, not its own page. [Frederick](/locations/frederick) is the next city farther up the corridor. A lot of the housing is first- or second-owner from the last two decades. Builders tape registers. Dust still gets in. Fine gypsum rides every return the first summers you live there.',
       'HOA townhomes add long dryer vents and tight closets on top of that construction load. I-270 traffic grit does not wait for the last pad to finish. Filters catch some of it. Supplies still blow a gray film onto new paint. Humid seasons then glue that powder to cool trunks.',
@@ -29,10 +29,10 @@ export const clarksburg: LocationContentSeed = {
       'Post-drywall first cleans we already do on I-270 north',
     ],
   },
-  offersTitle: "Clarksburg Flat Rates After Builder Dust Settles",
+  offersTitle: 'Clarksburg Flat Rates After Builder Dust Settles',
   services: {
-    heading: "Clarksburg Packages for New HOA Homes",
-    intro: "Post-construction cleans and routine packages at published rates.",
+    heading: 'Clarksburg Packages for New HOA Homes',
+    intro: 'Post-construction cleans and routine packages at published rates.',
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -46,14 +46,10 @@ export const clarksburg: LocationContentSeed = {
         title: 'Ventilation & HVAC Mold Treatment',
         text: 'New houses still sweat at the trunks in Maryland humidity. Learn more about [mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
-      {
-        title: 'Whole-Home Mold Remediation',
-        text: 'When the smell has left the vents for a finished basement, we contain, remove, and dry. See [mold remediation for your home](/mold-remediation-house).',
-      },
     ],
   },
   why: {
-    heading: "Why Brand-New Clarksburg Houses Still Need Duct Attention",
+    heading: 'Why Brand-New Clarksburg Houses Still Need Duct Attention',
     items: [
       {
         title: 'I-270 North from a Real Office',
@@ -74,9 +70,8 @@ export const clarksburg: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: "Clarksburg Village and Nearby New Streets",
-    intro:
-      "Germantown and Frederick are neighboring farther/closer pages.",
+    heading: 'Clarksburg Village and Nearby New Streets',
+    intro: 'Germantown and Frederick are neighboring farther/closer pages.',
     groups: [
       {
         title: 'Clarksburg Village & Town Center',
@@ -94,8 +89,8 @@ export const clarksburg: LocationContentSeed = {
     ],
   },
   process: {
-    heading: "North I-270 Dispatch From Bethesda",
-    intro: "If drywall work is still active next door, we may suggest waiting.",
+    heading: 'North I-270 Dispatch From Bethesda',
+    intro: 'If drywall work is still active next door, we may suggest waiting.',
     steps: [
       {
         title: 'Online or Phone Intake',

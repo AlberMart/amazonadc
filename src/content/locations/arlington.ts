@@ -15,7 +15,7 @@ export const arlington: LocationContentSeed = {
   servedBy: 'burke',
   sectionLayout: 'communitiesFirst',
   about: {
-    heading: "Rosslyn to Columbia Pike: Condos, Brick, and Potomac Air",
+    heading: 'Rosslyn to Columbia Pike: Condos, Brick, and Potomac Air',
     paragraphs: [
       'Arlington sits on the Potomac River, with dense neighborhoods, high-rise condos, and older brick homes that take on river humidity all summer. That moisture meets cool air inside metal ductwork and turns into condensation — the start of musty odors, mold, and dust that recirculates every time the system runs.',
       'Crystal City, Rosslyn, and Pentagon City feel this first, but the same humidity reaches Clarendon, Ballston, Shirlington, and Columbia Pike. Construction dust from nearby development, pollen, and pet dander settle in returns and stay there until the ducts are professionally cleaned.',
@@ -28,10 +28,11 @@ export const arlington: LocationContentSeed = {
       'Before-and-after photos and a 100% satisfaction guarantee',
     ],
   },
-  offersTitle: "Arlington Flat Rates — No Vent Counting",
+  offersTitle: 'Arlington Flat Rates — No Vent Counting',
   services: {
-    heading: "Arlington Packages for Condos and Older Brick Houses",
-    intro: "Condos with long dryer risers and brick houses with later-added trunks — same flat rates.",
+    heading: 'Arlington Packages for Condos and Older Brick Houses',
+    intro:
+      'Condos with long dryer risers and brick houses with later-added trunks — same flat rates.',
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -45,14 +46,10 @@ export const arlington: LocationContentSeed = {
         title: 'Ventilation & HVAC Mold Treatment',
         text: 'River humidity lets mold colonize ducts and evaporator coils. We treat the ventilation system with EPA-registered antimicrobial products that are safe for children and pets, then check airflow so moisture does not sit in the same dead ends. Learn more about [mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
-      {
-        title: 'Whole-Home Mold Remediation',
-        text: 'When musty air has moved past the vents into crawl spaces, basements, or drywall — common in older Arlington houses and ground-floor condos — we find the moisture source, contain the area, remove the growth, and restore a dry air path. See [mold remediation for your home](/mold-remediation-house).',
-      },
     ],
   },
   why: {
-    heading: "Why Close-In Arlington Homes Recycle Dust Faster",
+    heading: 'Why Close-In Arlington Homes Recycle Dust Faster',
     items: [
       {
         title: 'Upfront Flat-Rate Pricing',
@@ -73,9 +70,8 @@ export const arlington: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: "Corridors We Drive Weekly in Arlington",
-    intro:
-      "From Rosslyn high-rises to Columbia Pike splits — ask if your building is gated.",
+    heading: 'Corridors We Drive Weekly in Arlington',
+    intro: 'From Rosslyn high-rises to Columbia Pike splits — ask if your building is gated.',
     groups: [
       {
         title: 'Rosslyn to Ballston',
@@ -97,8 +93,8 @@ export const arlington: LocationContentSeed = {
     ],
   },
   process: {
-    heading: "Metro-Adjacent Scheduling From the Burke Office",
-    intro: "Garage height and loading rules matter more here than in suburban cul-de-sacs.",
+    heading: 'Metro-Adjacent Scheduling From the Burke Office',
+    intro: 'Garage height and loading rules matter more here than in suburban cul-de-sacs.',
     steps: [
       {
         title: 'Request a Window',

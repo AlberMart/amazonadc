@@ -15,7 +15,7 @@ export const chantilly: LocationContentSeed = {
   servedBy: 'burke',
   sectionLayout: 'whyFirst',
   about: {
-    heading: "Sully HOAs, Route 28 Film, and Builder Dust That Never Left",
+    heading: 'Sully HOAs, Route 28 Film, and Builder Dust That Never Left',
     paragraphs: [
       'Chantilly sits in Fairfax County’s Sully area, along Route 28 between Dulles and Centreville. A lot of the housing is 1990s–2010s HOA streets: Sully Station, Greenbriar, Franklin Farm-edge, and townhomes near Westfields. Those systems were built during overlapping construction waves. Fine gypsum and insulation fibers often stay in returns for years if the ducts were never commissioned clean. Airport-corridor traffic adds another film.',
       'New-looking vinyl and brick does not mean clean indoor air. HOA townhomes stack laundry closets and send dryer lint up a shared chase. Single-family houses along Stringfellow still sit under enough trees that spring pollen coats the same registers the construction dust already found. Centreville is next door; the dust does not stop at the CDP line.',
@@ -28,10 +28,10 @@ export const chantilly: LocationContentSeed = {
       'Same Burke team that already works Fair Oaks and Loudoun',
     ],
   },
-  offersTitle: "Chantilly Flat Rates for HOA Townhomes and Houses",
+  offersTitle: 'Chantilly Flat Rates for HOA Townhomes and Houses',
   services: {
-    heading: "Chantilly Packages for 1990s–2010s HOA Homes",
-    intro: "HOA chases and single-family trunks — flat rates either way.",
+    heading: 'Chantilly Packages for 1990s–2010s HOA Homes',
+    intro: 'HOA chases and single-family trunks — flat rates either way.',
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -45,14 +45,10 @@ export const chantilly: LocationContentSeed = {
         title: 'Ventilation & HVAC Mold Treatment',
         text: 'Attic air handlers plus humid summers let mold colonize coils. Learn more about [mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
-      {
-        title: 'Whole-Home Mold Remediation',
-        text: 'When the smell has left the vents for a finished basement, we contain, remove, and dry. See [mold remediation for your home](/mold-remediation-house).',
-      },
     ],
   },
   why: {
-    heading: "Why Newer-Looking Chantilly Houses Still Blow Gypsum",
+    heading: 'Why Newer-Looking Chantilly Houses Still Blow Gypsum',
     items: [
       {
         title: 'Route 28 HOAs We Already Service',
@@ -73,9 +69,8 @@ export const chantilly: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: "Sully Station, Greenbriar, Westfields, Stringfellow",
-    intro:
-      "Fair Oaks and Loudoun pages are neighbors; Chantilly stays Route 28–focused.",
+    heading: 'Sully Station, Greenbriar, Westfields, Stringfellow',
+    intro: 'Fair Oaks and Loudoun pages are neighbors; Chantilly stays Route 28–focused.',
     groups: [
       {
         title: 'Sully & Route 28',
@@ -93,8 +88,8 @@ export const chantilly: LocationContentSeed = {
     ],
   },
   process: {
-    heading: "Western Fairfax Dispatch Notes From Burke",
-    intro: "Gate codes and townhome dryer chases are on the intake checklist.",
+    heading: 'Western Fairfax Dispatch Notes From Burke',
+    intro: 'Gate codes and townhome dryer chases are on the intake checklist.',
     steps: [
       {
         title: 'Online or Phone Intake',

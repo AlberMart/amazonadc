@@ -15,7 +15,7 @@ export const potomac: LocationContentSeed = {
   servedBy: 'bethesda',
   sectionLayout: 'communitiesFirst',
   about: {
-    heading: "Canopy Estates, River Air, and Long Trunk Runs",
+    heading: 'Canopy Estates, River Air, and Long Trunk Runs',
     paragraphs: [
       'Potomac is Montgomery County’s large-lot west side: Cabin John and Glen Echo toward the river, Potomac Village and Falls Road, then Avenel and the streets that feel like McLean without crossing the water. The housing is colonials, contemporaries, and additions on wooded lots. Those lots are the story. The canopy is dense. Shade keeps crawl spaces and basements cool while the river corridor stays wet.',
       'Oak, maple, and pine dump pollen onto every patio each spring. Returns pull it in. Long supply runs in big houses hide dust you never see from the living room. When a humid week hits, cool trunks sweat and that pollen film turns musty on the first AC cycle. [Great Falls](/locations/great-falls), Virginia, sits across the river — we mention it because neighbors ask — but those jobs dispatch from our Burke office, not Bethesda. This page stays on the Maryland side.',
@@ -28,10 +28,10 @@ export const potomac: LocationContentSeed = {
       'Long trunk runs and wooded-lot pollen we already clean',
     ],
   },
-  offersTitle: "Potomac Flat Rates From the Bethesda Suite",
+  offersTitle: 'Potomac Flat Rates From the Bethesda Suite',
   services: {
-    heading: "Potomac Packages for Large-Lot Houses",
-    intro: "Estate-scale systems still use flat-rate residential packages after inspection.",
+    heading: 'Potomac Packages for Large-Lot Houses',
+    intro: 'Estate-scale systems still use flat-rate residential packages after inspection.',
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -45,14 +45,10 @@ export const potomac: LocationContentSeed = {
         title: 'Ventilation & HVAC Mold Treatment',
         text: 'River humidity plus cool basement air handlers let growth start on coils. Learn more about [mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
-      {
-        title: 'Whole-Home Mold Remediation',
-        text: 'When the smell has left the vents for a finished lower level or crawl space, we contain, remove, and dry. See [mold remediation for your home](/mold-remediation-house).',
-      },
     ],
   },
   why: {
-    heading: "Why Potomac Estates Need Careful Scope Walks",
+    heading: 'Why Potomac Estates Need Careful Scope Walks',
     items: [
       {
         title: 'Close Bethesda Office, Not a River-Road Mailbox',
@@ -73,9 +69,8 @@ export const potomac: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: "River Road, Falls Road, and Wooded Neighborhoods",
-    intro:
-      "Rockville and Bethesda hub pages sit nearby; Potomac stays canopy-focused.",
+    heading: 'River Road, Falls Road, and Wooded Neighborhoods',
+    intro: 'Rockville and Bethesda hub pages sit nearby; Potomac stays canopy-focused.',
     groups: [
       {
         title: 'Cabin John & the river',
@@ -93,8 +88,8 @@ export const potomac: LocationContentSeed = {
     ],
   },
   process: {
-    heading: "Short Montgomery Run From Bethesda",
-    intro: "Long driveways and multiple returns are noted at booking.",
+    heading: 'Short Montgomery Run From Bethesda',
+    intro: 'Long driveways and multiple returns are noted at booking.',
     steps: [
       {
         title: 'Talk Through the Home',

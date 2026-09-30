@@ -15,7 +15,7 @@ export const collegePark: LocationContentSeed = {
   servedBy: 'bethesda',
   sectionLayout: 'processFirst',
   about: {
-    heading: "Route 1 Rentals, Family Houses, and High-Turnover Dust",
+    heading: 'Route 1 Rentals, Family Houses, and High-Turnover Dust',
     paragraphs: [
       'College Park is a Prince George’s County city wrapped around the University of Maryland: Route 1, Old Town, Berwyn, Hollywood, and the streets toward Greenbelt and Hyattsville. A lot of the housing is older single-family rentals and small apartments with high occupant turnover. That means filters that do not get changed, dryers that run constantly, and ducts that have not been opened in a decade. Pollen from the campus canopy and Beltway dust ride the same returns.',
       'Maryland humidity still wins in summer. Cool trunks in a basement or crawl space sweat. Dust from the last semester sticks. The first AC cycle in August is when the smell shows up. Stacked student units add dryer vents that were never designed for that much lint.',
@@ -28,11 +28,10 @@ export const collegePark: LocationContentSeed = {
       'Landlords and property managers welcome',
     ],
   },
-  offersTitle: "College Park Rates for Landlords and Homeowners",
+  offersTitle: 'College Park Rates for Landlords and Homeowners',
   services: {
-    heading: "College Park Packages for Rentals and Owner-Occupied Homes",
-    intro:
-      "Turnover cleans and owner-occupied homes use the same published packages.",
+    heading: 'College Park Packages for Rentals and Owner-Occupied Homes',
+    intro: 'Turnover cleans and owner-occupied homes use the same published packages.',
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -46,14 +45,10 @@ export const collegePark: LocationContentSeed = {
         title: 'Ventilation & HVAC Mold Treatment',
         text: 'Humid summers and neglected filters let mold colonize coils. Learn more about [mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
-      {
-        title: 'Whole-Home Mold Remediation',
-        text: 'When growth has left the vents for a basement or crawl space, we contain and remove it. See [mold remediation for your home](/mold-remediation-house).',
-      },
     ],
   },
   why: {
-    heading: "Why Student Turnover Leaves Debris in Returns",
+    heading: 'Why Student Turnover Leaves Debris in Returns',
     items: [
       {
         title: 'Owners and Managers, Not a Fake Campus Shop',
@@ -74,9 +69,8 @@ export const collegePark: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: "Campus Edge, Berwyn, and Route 1 Corridors",
-    intro:
-      "Hyattsville and Takoma Park are nearby; this page is College Park specifically.",
+    heading: 'Campus Edge, Berwyn, and Route 1 Corridors',
+    intro: 'Hyattsville and Takoma Park are nearby; this page is College Park specifically.',
     groups: [
       {
         title: 'Campus & Route 1',
@@ -94,8 +88,8 @@ export const collegePark: LocationContentSeed = {
     ],
   },
   process: {
-    heading: "Prince George’s Timing From the Bethesda Office",
-    intro: "Landlords: send unit access instructions with the booking.",
+    heading: 'Prince George’s Timing From the Bethesda Office',
+    intro: 'Landlords: send unit access instructions with the booking.',
     steps: [
       {
         title: 'Request a Window',

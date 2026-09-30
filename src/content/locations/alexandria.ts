@@ -15,12 +15,12 @@ export const alexandria: LocationContentSeed = {
   servedBy: 'burke',
   sectionLayout: 'servicesFirst',
   about: {
-    heading: "Old Town Plaster, Del Ray Townhomes, and River Moisture",
+    heading: 'Old Town Plaster, Del Ray Townhomes, and River Moisture',
     paragraphs: [
       'Alexandria is a historic independent city: colonial brick along Old Town, older houses in Rosemont and Del Ray, and newer buildings at Potomac Yard. It is also humid because it sits on the Potomac River. Those two facts create specific problems for local HVAC systems.',
       'Historic and older homes: Alexandria has one of the nation’s oldest historic districts. Brick buildings and older duct runs collect decades of dust, pollen, and debris. Without regular cleaning, that material keeps recirculating through the house.',
       'Potomac River humidity: Moisture near the river settles in uncleaned ductwork. That is the environment mold, mildew, and musty odors need. Seasonal pollen and winter dust then ride the same system all year.',
-      'We now offer two services built for that climate: whole-home mold remediation and HVAC ventilation mold treatment. Mold does not only stain surfaces. Airborne spores trigger respiratory problems and allergies, especially in riverfront and older Old Town houses.',
+      'We now offer ventilation mold treatment built for that climate. Mold does not only stain surfaces. Airborne spores trigger respiratory problems and allergies, especially in riverfront and older Old Town houses.',
       'Alexandria is served from our Burke office — Read [how Potomac humidity affects Alexandria homes](/blog/how-potomac-humidity-affects-alexandria-air-quality), or book [air duct cleaning](/air-duct-cleaning) and [dryer vent cleaning](/dryer-vent-cleaning). Nearby [Arlington](/locations/arlington), [McLean](/locations/mclean), and [Washington, DC](/locations/washington-dc) are covered by the same crew.',
     ],
     highlights: [
@@ -30,11 +30,10 @@ export const alexandria: LocationContentSeed = {
       'Same Burke team that already works Alexandria and Arlington',
     ],
   },
-  offersTitle: "Alexandria Rates Matching Our Burke Packages",
+  offersTitle: 'Alexandria Rates Matching Our Burke Packages',
   services: {
-    heading: "Alexandria Cleanings for Historic and Waterfront Homes",
-    intro:
-      "Historic boots and modern condo packs get the same published scopes.",
+    heading: 'Alexandria Cleanings for Historic and Waterfront Homes',
+    intro: 'Historic boots and modern condo packs get the same published scopes.',
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -49,17 +48,13 @@ export const alexandria: LocationContentSeed = {
         text: 'Mold likes the dark, damp interior of ducts and AC coils. When river humidity condenses inside the system, spores colonize the ductwork and blow into every room when the system starts. We eradicate that growth with EPA-approved antimicrobial treatment and sanitize the ventilation so the air is safe to breathe. Learn more about [mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
       {
-        title: 'Whole-Home Mold Remediation',
-        text: 'Mold spreads past the HVAC into crawl spaces, basements, and drywall — especially in historic Old Town homes and houses that take on seasonal river dampness. We find the moisture source, contain the area, remove the growth, and restore a healthy living space. See [mold remediation for your home](/mold-remediation-house).',
-      },
-      {
         title: 'Commercial Duct Cleaning',
         text: 'We clean HVAC systems for Alexandria shops, offices, and small businesses so staff and customers are not breathing the same recirculated dust.',
       },
     ],
   },
   why: {
-    heading: "Why Alexandria Registers Film Over After Humid Weeks",
+    heading: 'Why Alexandria Registers Film Over After Humid Weeks',
     items: [
       {
         title: 'Upfront Flat-Rate Pricing',
@@ -80,9 +75,8 @@ export const alexandria: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: "Old Town, Del Ray, and West End Stops",
-    intro:
-      "Waterfront, Eisenhower, and West End streets are on the Burke dispatch list.",
+    heading: 'Old Town, Del Ray, and West End Stops',
+    intro: 'Waterfront, Eisenhower, and West End streets are on the Burke dispatch list.',
     groups: [
       { title: 'Old Town & downtown', places: 'Old Town, Downtown Alexandria, waterfront' },
       { title: 'Del Ray & Rosemont', places: 'Del Ray, Rosemont, Arlandria' },
@@ -90,8 +84,8 @@ export const alexandria: LocationContentSeed = {
     ],
   },
   process: {
-    heading: "Narrow-Street Staging Notes for Alexandria Visits",
-    intro: "We plan alley access and floor protection for plaster and narrow halls.",
+    heading: 'Narrow-Street Staging Notes for Alexandria Visits',
+    intro: 'We plan alley access and floor protection for plaster and narrow halls.',
     steps: [
       {
         title: 'Talk Through the Home',

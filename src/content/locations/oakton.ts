@@ -15,7 +15,7 @@ export const oakton: LocationContentSeed = {
   servedBy: 'burke',
   sectionLayout: 'servicesFirst',
   about: {
-    heading: "Chain Bridge Road Colonials and Canopy Pollen",
+    heading: 'Chain Bridge Road Colonials and Canopy Pollen',
     paragraphs: [
       'Oakton sits on Chain Bridge Road (Route 123) between the Town of Vienna and the City of Fairfax: large lots, 1960s–80s colonials, and streets off Vale and Hunter Mill. The canopy is dense. Spring pollen coats decks the same week it coats returns. Finished basements stay cool while July air stays wet, so supply trunks sweat and hold that film.',
       'A typical Oakton house mixed original metal with a later addition over a garage or a rec-room branch. Dust collects at those joints. Dryer runs from a second-floor laundry often travel a long, quiet path to a rear gable. Waples Mill traffic adds a finer road dust that smaller subdivisions do not see as much of.',
@@ -28,10 +28,10 @@ export const oakton: LocationContentSeed = {
       'Same Burke team that already works Vienna and Fairfax',
     ],
   },
-  offersTitle: "Oakton Flat-Rate Duct and Dryer Packages",
+  offersTitle: 'Oakton Flat-Rate Duct and Dryer Packages',
   services: {
-    heading: "Oakton Packages Between Vienna and Fairfax",
-    intro: "Large-lot colonials with long runs — quoted before equipment comes off the truck.",
+    heading: 'Oakton Packages Between Vienna and Fairfax',
+    intro: 'Large-lot colonials with long runs — quoted before equipment comes off the truck.',
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -45,14 +45,10 @@ export const oakton: LocationContentSeed = {
         title: 'Ventilation & HVAC Mold Treatment',
         text: 'Finished basements plus humid summers let mold colonize coils and dead-end ducts. Learn more about [mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
-      {
-        title: 'Whole-Home Mold Remediation',
-        text: 'When the smell has left the vents for a rec room, we contain, remove, and dry. See [mold remediation for your home](/mold-remediation-house).',
-      },
     ],
   },
   why: {
-    heading: "Why Oakton Trunks Hold Leaf-Season Debris",
+    heading: 'Why Oakton Trunks Hold Leaf-Season Debris',
     items: [
       {
         title: 'Between Vienna and Fairfax, From Burke',
@@ -73,9 +69,8 @@ export const oakton: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: "Route 123 Corridor and Neighborhood Courts",
-    intro:
-      "Vienna, Fairfax, and Fair Oaks are separate pages on related routes.",
+    heading: 'Route 123 Corridor and Neighborhood Courts',
+    intro: 'Vienna, Fairfax, and Fair Oaks are separate pages on related routes.',
     groups: [
       {
         title: 'Route 123 corridor',
@@ -93,8 +88,8 @@ export const oakton: LocationContentSeed = {
     ],
   },
   process: {
-    heading: "Mid-Fairfax Timing From the Burke Office",
-    intro: "We confirm driveway access and basement returns when you book.",
+    heading: 'Mid-Fairfax Timing From the Burke Office',
+    intro: 'We confirm driveway access and basement returns when you book.',
     steps: [
       {
         title: 'Online or Phone Intake',

@@ -15,7 +15,7 @@ export const springfield: LocationContentSeed = {
   servedBy: 'burke',
   sectionLayout: 'communitiesFirst',
   about: {
-    heading: "Mixing Bowl Dust, Split-Levels, and Franconia Townhomes",
+    heading: 'Mixing Bowl Dust, Split-Levels, and Franconia Townhomes',
     paragraphs: [
       'Springfield sits where I-95, I-395, and the Beltway braid together. That is convenient. It is also a constant source of fine dust. Returns on Old Keene Mill, Franconia, and Backlick pull it in along with Fairfax County pollen. A lot of the housing is 1960s–80s split-levels and townhomes with basements. Those rooms stay cool. Summer air does not. Cold trunks sweat. Dust sticks.',
       'Springfield Town Center and the Franconia-Springfield Metro added denser condos and long dryer runs. A dryer that needs two cycles is often a packed vent, not a dying machine. The same humidity that fogs a windshield in July is sitting in the laundry closet.',
@@ -28,11 +28,10 @@ export const springfield: LocationContentSeed = {
       'Same-day and next-day windows when the schedule allows',
     ],
   },
-  offersTitle: "Springfield Flat Rates From Minutes-Away Burke",
+  offersTitle: 'Springfield Flat Rates From Minutes-Away Burke',
   services: {
-    heading: "Springfield Packages for I-95 Corridor Homes",
-    intro:
-      "Split-levels and townhomes along the Mixing Bowl — flat rates before we start.",
+    heading: 'Springfield Packages for I-95 Corridor Homes',
+    intro: 'Split-levels and townhomes along the Mixing Bowl — flat rates before we start.',
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -46,14 +45,10 @@ export const springfield: LocationContentSeed = {
         title: 'Ventilation & HVAC Mold Treatment',
         text: 'Basement air handlers and humid summers are a mold setup. Learn more about [mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
-      {
-        title: 'Whole-Home Mold Remediation',
-        text: 'When the smell has moved past the vents into a finished basement, we contain and remove it. See [mold remediation for your home](/mold-remediation-house).',
-      },
     ],
   },
   why: {
-    heading: "Why Springfield Registers Gray Out After Beltway Weeks",
+    heading: 'Why Springfield Registers Gray Out After Beltway Weeks',
     items: [
       {
         title: 'The Next Town Over',
@@ -74,9 +69,8 @@ export const springfield: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: "West Springfield, Franconia, and Burke Centre Edge",
-    intro:
-      "Burke is the next community over; this page covers Springfield streets specifically.",
+    heading: 'West Springfield, Franconia, and Burke Centre Edge',
+    intro: 'Burke is the next community over; this page covers Springfield streets specifically.',
     groups: [
       {
         title: 'Central Springfield',
@@ -94,8 +88,8 @@ export const springfield: LocationContentSeed = {
     ],
   },
   process: {
-    heading: "Next-Community Dispatch From Burke Centre",
-    intro: "Traffic windows matter; we send a morning ETA that accounts for the Mixing Bowl.",
+    heading: 'Next-Community Dispatch From Burke Centre',
+    intro: 'Traffic windows matter; we send a morning ETA that accounts for the Mixing Bowl.',
     steps: [
       {
         title: 'Talk Through the Home',

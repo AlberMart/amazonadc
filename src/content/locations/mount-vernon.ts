@@ -16,7 +16,7 @@ export const mountVernon: LocationContentSeed = {
   servedBy: 'burke',
   sectionLayout: 'faqEarly',
   about: {
-    heading: "GW Parkway Air, Older River Houses, and Humid Cellars",
+    heading: 'GW Parkway Air, Older River Houses, and Humid Cellars',
     paragraphs: [
       'Mt Vernon (the Fairfax County community, not the estate gift shop) sits along the George Washington Memorial Parkway: Fort Hunt, Waynewood, Stratford Landing, Hollin Hills, and Mount Vernon Woods. A lot of the housing is older than the typical west-county HOA — brick colonials, ramblers, and mid-century houses with original metal trunks. The Potomac is close. Summer air is wet. Basements and crawl spaces stay cool. Cold supplies sweat; river pollen and parkway dust stick to that film.',
       'Hollin Hills and similar streets were never designed around oversized modern returns. Later central-air add-ons snake through tight joists. Fort Hunt dryer runs often travel a long exterior wall toward a rear cap in a wooded lot. The same humidity that fogs a windshield on the Parkway in July is sitting on the coil.',
@@ -29,10 +29,10 @@ export const mountVernon: LocationContentSeed = {
       'Same Burke team that already works Alexandria and Lorton',
     ],
   },
-  offersTitle: "Mt Vernon Flat Rates From the Burke Office",
+  offersTitle: 'Mt Vernon Flat Rates From the Burke Office',
   services: {
-    heading: "Mt Vernon Packages for Parkway and Fort Hunt Homes",
-    intro: "Older metal trunks and long dryer runs — flat-rate residential scopes.",
+    heading: 'Mt Vernon Packages for Parkway and Fort Hunt Homes',
+    intro: 'Older metal trunks and long dryer runs — flat-rate residential scopes.',
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -46,14 +46,10 @@ export const mountVernon: LocationContentSeed = {
         title: 'Ventilation & HVAC Mold Treatment',
         text: 'Parkway humidity and cool basements let mold colonize coils and dead-end ducts. Learn more about [mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
-      {
-        title: 'Whole-Home Mold Remediation',
-        text: 'When the smell has left the vents for a basement or crawl, we contain, remove, and dry. See [mold remediation for your home](/mold-remediation-house).',
-      },
     ],
   },
   why: {
-    heading: "Why Potomac-Side Trunks Sweat in Summer",
+    heading: 'Why Potomac-Side Trunks Sweat in Summer',
     items: [
       {
         title: 'Parkway Humidity, Fairfax Dispatch',
@@ -74,9 +70,8 @@ export const mountVernon: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: "Fort Hunt, Hollin Hills Edge, and Parkway Streets",
-    intro:
-      "Alexandria and Lorton are nearby pages; Mt Vernon keeps its river focus.",
+    heading: 'Fort Hunt, Hollin Hills Edge, and Parkway Streets',
+    intro: 'Alexandria and Lorton are nearby pages; Mt Vernon keeps its river focus.',
     groups: [
       {
         title: 'Fort Hunt',
@@ -94,8 +89,8 @@ export const mountVernon: LocationContentSeed = {
     ],
   },
   process: {
-    heading: "Southern Fairfax Route Notes From Burke",
-    intro: "We ask about cellar returns and exterior dryer caps on intake.",
+    heading: 'Southern Fairfax Route Notes From Burke',
+    intro: 'We ask about cellar returns and exterior dryer caps on intake.',
     steps: [
       {
         title: 'Online or Phone Intake',

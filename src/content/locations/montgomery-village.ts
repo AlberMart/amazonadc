@@ -16,7 +16,7 @@ export const montgomeryVillage: LocationContentSeed = {
   servedBy: 'bethesda',
   sectionLayout: 'leanNoOffers',
   about: {
-    heading: "1970s Planned Courts, Lake Edges, and Townhome Chases",
+    heading: '1970s Planned Courts, Lake Edges, and Townhome Chases',
     paragraphs: [
       'Montgomery Village is a 1970s planned community next to [Gaithersburg](/locations/gaithersburg): Stedwick, Whetstone, East Village, the lakes, and the streets that used to orbit Lakeforest. The stock is townhomes and colonials from that build-out, plus later infill. Mechanical closets are tight. Dryer vents were run for machines that no longer exist. HOA paths keep lots leafy — and the returns keep pulling that leaf grit.',
       'Lake-side humidity is the other half. Cool lower-level trunks sweat in Maryland summers. Pollen from the original tree plan sticks. Registers look clean after you wipe them and gray again when the AC cycles. [Germantown](/locations/germantown) is the next corridor page north.',
@@ -29,10 +29,10 @@ export const montgomeryVillage: LocationContentSeed = {
       '1970s closets and long dryer runs we already clean',
     ],
   },
-  offersTitle: "Montgomery Village Flat Rates From Bethesda",
+  offersTitle: 'Montgomery Village Flat Rates From Bethesda',
   services: {
-    heading: "Montgomery Village Packages for Townhomes",
-    intro: "Townhome dryer chases are the usual ask — flat rates apply.",
+    heading: 'Montgomery Village Packages for Townhomes',
+    intro: 'Townhome dryer chases are the usual ask — flat rates apply.',
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -46,14 +46,10 @@ export const montgomeryVillage: LocationContentSeed = {
         title: 'Ventilation & HVAC Mold Treatment',
         text: 'Lake humidity plus cool lower-level handlers let growth start on coils. Learn more about [mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
-      {
-        title: 'Whole-Home Mold Remediation',
-        text: 'When the smell has left the vents for a finished lower level, we contain, remove, and dry. See [mold remediation for your home](/mold-remediation-house).',
-      },
     ],
   },
   why: {
-    heading: "Why Village Townhomes Load Pollen and Old Closet Lint",
+    heading: 'Why Village Townhomes Load Pollen and Old Closet Lint',
     items: [
       {
         title: 'Same Bethesda Crew as Gaithersburg',
@@ -74,9 +70,8 @@ export const montgomeryVillage: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: "Village Centers and Lake-Adjacent Clusters",
-    intro:
-      "Gaithersburg and Germantown pages sit on either side of this corridor.",
+    heading: 'Village Centers and Lake-Adjacent Clusters',
+    intro: 'Gaithersburg and Germantown pages sit on either side of this corridor.',
     groups: [
       {
         title: 'Stedwick & Whetstone',
@@ -94,9 +89,8 @@ export const montgomeryVillage: LocationContentSeed = {
     ],
   },
   process: {
-    heading: "Between Gaithersburg and Germantown From Bethesda",
-    intro:
-      "HOA gate notes keep the truck from circling the village.",
+    heading: 'Between Gaithersburg and Germantown From Bethesda',
+    intro: 'HOA gate notes keep the truck from circling the village.',
     steps: [
       {
         title: 'Online or Phone Intake',

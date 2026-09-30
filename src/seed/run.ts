@@ -1,7 +1,15 @@
 import 'dotenv/config'
 import { getPayload } from 'payload'
 import config from '../payload.config'
-import { locationsSeed, officesSeed, servicesSeed, siteSettingsSeed, headerSeed, footerSeed, defaultServiceAreaPartialSeed } from './amazonadc'
+import {
+  locationsSeed,
+  officesSeed,
+  servicesSeed,
+  siteSettingsSeed,
+  headerSeed,
+  footerSeed,
+  defaultServiceAreaPartialSeed,
+} from './amazonadc'
 import { homePageSeed, legalPagesSeed, postsSeed } from './blog-and-legal'
 import { contactFormSeed } from './contact-form'
 
@@ -116,8 +124,28 @@ async function run() {
     context,
   )
 
+  // Removed service — delete leftover CMS rows so seed never resurrects it
+  {
+    const dead = await payload.find({
+      collection: 'services',
+      where: { slug: { equals: 'mold-remediation-house' } },
+      limit: 10,
+      overrideAccess: true,
+    })
+    for (const doc of dead.docs) {
+      await payload.delete({ collection: 'services', id: doc.id, context })
+      console.log('deleted', 'services', 'mold-remediation-house')
+    }
+  }
+
   for (const service of servicesSeed) {
-    await upsertBySlug(payload, 'services', service.slug, bindIncludes(service, serviceAreaPartialId), context)
+    await upsertBySlug(
+      payload,
+      'services',
+      service.slug,
+      bindIncludes(service, serviceAreaPartialId),
+      context,
+    )
   }
 
   const officeIds = new Map<string, number | string>()
@@ -161,7 +189,12 @@ async function run() {
         data,
         context,
       })
-      console.log('updated', 'locations', rest.slug, existing.slug !== rest.slug ? `(was ${existing.slug})` : '')
+      console.log(
+        'updated',
+        'locations',
+        rest.slug,
+        existing.slug !== rest.slug ? `(was ${existing.slug})` : '',
+      )
     } else {
       await payload.create({
         collection: 'locations',
@@ -181,7 +214,13 @@ async function run() {
   }
 
   try {
-    await upsertBySlug(payload, 'pages', homePageSeed.slug, bindIncludes(homePageSeed, serviceAreaPartialId), context)
+    await upsertBySlug(
+      payload,
+      'pages',
+      homePageSeed.slug,
+      bindIncludes(homePageSeed, serviceAreaPartialId),
+      context,
+    )
   } catch (error) {
     console.warn('home page seed skipped:', error instanceof Error ? error.message : error)
   }

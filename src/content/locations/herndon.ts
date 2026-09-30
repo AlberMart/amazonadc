@@ -16,7 +16,7 @@ export const herndon: LocationContentSeed = {
   servedBy: 'burke',
   sectionLayout: 'whyFirst',
   about: {
-    heading: "Clock Tower Cottages Meet Dulles-Corridor Construction Dust",
+    heading: 'Clock Tower Cottages Meet Dulles-Corridor Construction Dust',
     paragraphs: [
       'The Town of Herndon still has a walkable core: Elden Street, the municipal clock tower, and older cottages on small lots. A few blocks out, Worldgate and Herndon Parkway shift to townhomes and stacked laundry closets. West toward Dulles, data-center and office construction keeps a fine gypsum and soil film in the air. Returns pull that mix in along with oak pollen from the remaining canopy.',
       'Downtown brick houses often have original trunks plus later additions. Worldgate units have long dryer runs to a shared wall or roof cap. Neither layout likes a summer of humid air sitting on cool metal. A dryer that needs two cycles on a Worldgate stack is usually lint, not a dying machine.',
@@ -29,11 +29,10 @@ export const herndon: LocationContentSeed = {
       'Same Burke team that already works Reston and Loudoun',
     ],
   },
-  offersTitle: "Herndon Rates — Same Packages as Reston Dispatch",
+  offersTitle: 'Herndon Rates — Same Packages as Reston Dispatch',
   services: {
-    heading: "Herndon Cleanings for Downtown and Worldgate",
-    intro:
-      "Cottages and stacked Worldgate units share published flat rates.",
+    heading: 'Herndon Cleanings for Downtown and Worldgate',
+    intro: 'Cottages and stacked Worldgate units share published flat rates.',
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -47,14 +46,10 @@ export const herndon: LocationContentSeed = {
         title: 'Ventilation & HVAC Mold Treatment',
         text: 'Humid Dulles summers and cool basement handlers let mold colonize coils. Learn more about [mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
-      {
-        title: 'Whole-Home Mold Remediation',
-        text: 'When the smell has moved past the vents into a finished basement or townhome crawl, we contain and remove it. See [mold remediation for your home](/mold-remediation-house).',
-      },
     ],
   },
   why: {
-    heading: "Why Herndon Returns Hold Gypsum and Traffic Film",
+    heading: 'Why Herndon Returns Hold Gypsum and Traffic Film',
     items: [
       {
         title: 'Clock Tower to Dulles, One Crew',
@@ -75,9 +70,8 @@ export const herndon: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: "Elden Street, Worldgate, and Dulles-Edge Blocks",
-    intro:
-      "Historic core and corridor HOAs; Centreville-adjacent streets often share the day.",
+    heading: 'Elden Street, Worldgate, and Dulles-Edge Blocks',
+    intro: 'Historic core and corridor HOAs; Centreville-adjacent streets often share the day.',
     groups: [
       {
         title: 'Historic downtown',
@@ -95,8 +89,8 @@ export const herndon: LocationContentSeed = {
     ],
   },
   process: {
-    heading: "Downtown Alleys and Worldgate Gates From Burke",
-    intro: "We ask about alley parking downtown and gate codes at Worldgate.",
+    heading: 'Downtown Alleys and Worldgate Gates From Burke',
+    intro: 'We ask about alley parking downtown and gate codes at Worldgate.',
     steps: [
       {
         title: 'Online or Phone Intake',

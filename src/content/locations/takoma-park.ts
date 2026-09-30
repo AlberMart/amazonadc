@@ -15,7 +15,7 @@ export const takomaPark: LocationContentSeed = {
   servedBy: 'bethesda',
   sectionLayout: 'faqEarly',
   about: {
-    heading: "Bungalows, DC-Line Humidity, and Later-Added Trunks",
+    heading: 'Bungalows, DC-Line Humidity, and Later-Added Trunks',
     paragraphs: [
       'Takoma Park sits on the Montgomery–Prince George’s–District line: Old Takoma and Carroll Avenue, Takoma Junction, then streets that walk into [Washington, DC](/locations/washington-dc) or [Silver Spring](/locations/silver-spring) in a few blocks. A lot of the housing is early-century bungalows and brick cottages. Ductwork was often added later through crawl spaces and plaster. Those joints were never tight. Trees are the other half of the story — maple and oak keep lots shaded and damp.',
       'Older metal runs in a cool crawl sweat through Maryland summers. Pollen and leaf grit stick. The first cool-down in June is when the musty smell shows up at the register. Porch-to-porch lots also mean dryer vents that were patched through additions and never sized for modern machines.',
@@ -28,10 +28,10 @@ export const takomaPark: LocationContentSeed = {
       'Portable HEPA gear for narrow streets and tight crawls',
     ],
   },
-  offersTitle: "Takoma Park Flat Rates From Old Georgetown Rd",
+  offersTitle: 'Takoma Park Flat Rates From Old Georgetown Rd',
   services: {
-    heading: "Takoma Park Packages for Bungalows and Duplexes",
-    intro: "Bungalows with add-on ducts — published packages after inspection.",
+    heading: 'Takoma Park Packages for Bungalows and Duplexes',
+    intro: 'Bungalows with add-on ducts — published packages after inspection.',
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -45,14 +45,10 @@ export const takomaPark: LocationContentSeed = {
         title: 'Ventilation & HVAC Mold Treatment',
         text: 'Shaded crawls plus humidity let growth start on coils and old trunks. Learn more about [mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
-      {
-        title: 'Whole-Home Mold Remediation',
-        text: 'When the smell has left the vents for a crawl or finished attic room, we contain, remove, and dry. See [mold remediation for your home](/mold-remediation-house).',
-      },
     ],
   },
   why: {
-    heading: "Why Takoma Park Homes Hold Leaf Grit and Moisture",
+    heading: 'Why Takoma Park Homes Hold Leaf Grit and Moisture',
     items: [
       {
         title: 'Honest Bethesda Dispatch on the DC Line',
@@ -73,9 +69,8 @@ export const takomaPark: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: "Carroll Avenue Corridor and Tree Streets",
-    intro:
-      "Silver Spring and Hyattsville sit nearby; Takoma Park keeps its own notes.",
+    heading: 'Carroll Avenue Corridor and Tree Streets',
+    intro: 'Silver Spring and Hyattsville sit nearby; Takoma Park keeps its own notes.',
     groups: [
       {
         title: 'Old Takoma & Carroll Avenue',
@@ -93,8 +88,8 @@ export const takomaPark: LocationContentSeed = {
     ],
   },
   process: {
-    heading: "Border-City Scheduling From Bethesda",
-    intro: "We ask about crawlspace returns and exterior dryer caps.",
+    heading: 'Border-City Scheduling From Bethesda',
+    intro: 'We ask about crawlspace returns and exterior dryer caps.',
     steps: [
       {
         title: 'Online or Phone Intake',

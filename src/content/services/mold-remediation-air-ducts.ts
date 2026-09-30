@@ -111,7 +111,7 @@ export const moldRemediationAirDucts: ServiceContent = {
     },
     {
       q: 'Which areas do you serve?',
-      a: 'We serve Virginia, Maryland, and Washington DC from offices in Burke and Bethesda. For growth beyond the ductwork, see [mold remediation for your home](/mold-remediation-house). Call (800) 606-3334 to confirm availability.',
+      a: 'We serve Virginia, Maryland, and Washington DC from offices in Burke and Bethesda. Call (800) 606-3334 to confirm availability.',
     },
   ],
 }

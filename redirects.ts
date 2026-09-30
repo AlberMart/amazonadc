@@ -54,7 +54,12 @@ export const redirects: NextConfig['redirects'] = async () => {
     },
     {
       source: '/mold-remediation-whole-house',
-      destination: '/mold-remediation-house',
+      destination: '/mold-remediation-air-ducts',
+      permanent: true,
+    },
+    {
+      source: '/mold-remediation-house',
+      destination: '/mold-remediation-air-ducts',
       permanent: true,
     },
     {

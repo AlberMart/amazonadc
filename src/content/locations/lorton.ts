@@ -16,7 +16,7 @@ export const lorton: LocationContentSeed = {
   servedBy: 'burke',
   sectionLayout: 'leanNoOffers',
   about: {
-    heading: "I-95 Dust, Occoquan Humidity, and Newer HOA Streets",
+    heading: 'I-95 Dust, Occoquan Humidity, and Newer HOA Streets',
     paragraphs: [
       'Lorton sits on I-95 south of Springfield: Lorton Station and the VRE, Laurel Hill on the former prison grounds, Gunston-area streets, and older houses that predate the HOA wave. Traffic film from the interstate is constant. The Occoquan and nearby creeks add a humid air mass that Springfield’s Mixing Bowl does not quite match. New townhomes and 1970s split-levels share the same summer problem — cool trunks, wet air, dusty returns.',
       'Laurel Hill and Lorton Station HOAs have stacked laundry and long dryer chases. Older Lorton Road houses often have original trunks plus a later addition. Neither likes a July that sits over the river. A dryer that needs two cycles in a Station townhome is usually lint packed at a roof cap, not a dying appliance.',
@@ -29,10 +29,10 @@ export const lorton: LocationContentSeed = {
       'Same team that already works Springfield and Mount Vernon',
     ],
   },
-  offersTitle: "Lorton Rates on the Same Burke Packages",
+  offersTitle: 'Lorton Rates on the Same Burke Packages',
   services: {
-    heading: "Lorton Packages for Corridor and River-Edge Homes",
-    intro: "HOA homes and older pockets share published flat rates.",
+    heading: 'Lorton Packages for Corridor and River-Edge Homes',
+    intro: 'HOA homes and older pockets share published flat rates.',
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -46,14 +46,10 @@ export const lorton: LocationContentSeed = {
         title: 'Ventilation & HVAC Mold Treatment',
         text: 'River humidity and basement handlers let mold colonize coils. Learn more about [mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
-      {
-        title: 'Whole-Home Mold Remediation',
-        text: 'When the smell has moved past the vents into a finished basement, we contain and remove it. See [mold remediation for your home](/mold-remediation-house).',
-      },
     ],
   },
   why: {
-    heading: "Why Lorton Homes Mix Traffic Film With River Moisture",
+    heading: 'Why Lorton Homes Mix Traffic Film With River Moisture',
     items: [
       {
         title: 'Up I-95 From Burke, Not Across the River',
@@ -74,9 +70,8 @@ export const lorton: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: "Lorton Station, Occoquan Edge, and Laurel Hill",
-    intro:
-      "Springfield and Prince William pages sit nearby on the corridor.",
+    heading: 'Lorton Station, Occoquan Edge, and Laurel Hill',
+    intro: 'Springfield and Prince William pages sit nearby on the corridor.',
     groups: [
       {
         title: 'Lorton Station',
@@ -94,8 +89,8 @@ export const lorton: LocationContentSeed = {
     ],
   },
   process: {
-    heading: "South Fairfax Dispatch From Burke",
-    intro: "I-95 timing is built into the morning arrival window.",
+    heading: 'South Fairfax Dispatch From Burke',
+    intro: 'I-95 timing is built into the morning arrival window.',
     steps: [
       {
         title: 'Request a Window',

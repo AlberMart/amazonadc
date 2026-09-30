@@ -16,7 +16,7 @@ export const loudoun: LocationContentSeed = {
   servedBy: 'burke',
   sectionLayout: 'leanNoOffers',
   about: {
-    heading: "Leesburg Brick, Ashburn New-Builds, and Pollen Seasons",
+    heading: 'Leesburg Brick, Ashburn New-Builds, and Pollen Seasons',
     paragraphs: [
       'Loudoun is not one housing type. Historic Leesburg has older metal trunks and damp basements near Goose Creek and the Potomac. Ashburn, Broadlands, Brambleton, and South Riding are packed with 1990s–2010s townhomes and single-family houses that still swallow drywall dust from the next section under construction. Sterling and the Dulles Toll Road add traffic particles. Data-center growth did not make indoor air cleaner.',
       'New construction is not clean construction. Fine gypsum and insulation fibers sit in returns for years if the system was never commissioned with a proper duct cleaning. Older Leesburg houses have the opposite problem: humidity and pollen in trunks that were added after the house was built.',
@@ -29,10 +29,10 @@ export const loudoun: LocationContentSeed = {
       'Dispatched from our Burke office',
     ],
   },
-  offersTitle: "Loudoun Flat Rates With Realistic Drive Windows",
+  offersTitle: 'Loudoun Flat Rates With Realistic Drive Windows',
   services: {
-    heading: "Loudoun County Packages From the Burke Office",
-    intro: "New-build townhomes and older Leesburg houses — same published packages.",
+    heading: 'Loudoun County Packages From the Burke Office',
+    intro: 'New-build townhomes and older Leesburg houses — same published packages.',
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -46,14 +46,10 @@ export const loudoun: LocationContentSeed = {
         title: 'Ventilation & HVAC Mold Treatment',
         text: 'Leesburg basements and humid summers let mold colonize coils. Learn more about [mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
-      {
-        title: 'Whole-Home Mold Remediation',
-        text: 'When growth has left the ducts for a basement or crawl space, we contain and remove it. See [mold remediation for your home](/mold-remediation-house).',
-      },
     ],
   },
   why: {
-    heading: "Why Loudoun Construction Dust Meets Heavy Pollen",
+    heading: 'Why Loudoun Construction Dust Meets Heavy Pollen',
     items: [
       {
         title: 'Served from Our Burke Office',
@@ -74,9 +70,8 @@ export const loudoun: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: "Leesburg, Ashburn, Sterling, South Riding Overview",
-    intro:
-      "County overview page; Herndon and Chantilly cover closer Dulles-edge towns.",
+    heading: 'Leesburg, Ashburn, Sterling, South Riding Overview',
+    intro: 'County overview page; Herndon and Chantilly cover closer Dulles-edge towns.',
     groups: [
       {
         title: 'Leesburg & west',
@@ -93,8 +88,8 @@ export const loudoun: LocationContentSeed = {
     ],
   },
   process: {
-    heading: "Longer Dulles-Corridor Drive — Planned Honestly",
-    intro: "We schedule Loudoun with honest travel time from Burke.",
+    heading: 'Longer Dulles-Corridor Drive — Planned Honestly',
+    intro: 'We schedule Loudoun with honest travel time from Burke.',
     steps: [
       {
         title: 'Online or Phone Intake',

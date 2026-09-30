@@ -15,7 +15,7 @@ export const olney: LocationContentSeed = {
   servedBy: 'bethesda',
   sectionLayout: 'faqEarly',
   about: {
-    heading: "Ramblers Farther Up County With Thick Canopy Seasons",
+    heading: 'Ramblers Farther Up County With Thick Canopy Seasons',
     paragraphs: [
       'Olney sits farther up Montgomery County than [Rockville](/locations/rockville): Georgia Avenue through the village, Olney Mill, Norbeck, then lanes toward Brookeville. A lot of the housing is 1960s–80s ramblers and split-levels. Families finished the basements. The air handler stayed down there. That is a clean looking rec room over a trunk that still sweats.',
       'The county canopy is thick once you leave the Beltway. Oak and pine dump pollen onto every deck. Returns pull it into those basement trunks. Finished rooms hide the dust until the AC starts after a wet week and the smell walks upstairs. Aspen Hill is a neighborhood we already pass on the drive, not its own page. Brookeville is the next hamlet north — we mention it because the same truck covers those lanes.',
@@ -28,10 +28,10 @@ export const olney: LocationContentSeed = {
       'Finished-basement trunks we already clean across outer Montgomery',
     ],
   },
-  offersTitle: "Olney Rates With Realistic Bethesda Drive Time",
+  offersTitle: 'Olney Rates With Realistic Bethesda Drive Time',
   services: {
-    heading: "Olney Packages for Ramblers and Split-Levels",
-    intro: "Ramblers and additions — published packages after a walk-through.",
+    heading: 'Olney Packages for Ramblers and Split-Levels',
+    intro: 'Ramblers and additions — published packages after a walk-through.',
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -45,14 +45,10 @@ export const olney: LocationContentSeed = {
         title: 'Ventilation & HVAC Mold Treatment',
         text: 'Finished rec rooms over cool trunks are a mold setup after humid weeks. Learn more about [mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
-      {
-        title: 'Whole-Home Mold Remediation',
-        text: 'When the smell has left the vents for carpet and drywall downstairs, we contain, remove, and dry. See [mold remediation for your home](/mold-remediation-house).',
-      },
     ],
   },
   why: {
-    heading: "Why Olney Finished Basements Collect Pollen Film",
+    heading: 'Why Olney Finished Basements Collect Pollen Film',
     items: [
       {
         title: 'Honest Distance from Bethesda',
@@ -73,9 +69,8 @@ export const olney: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: "Olney Mill, Norbeck Edge, and Local Courts",
-    intro:
-      "Further than Rockville; we say so and plan the day accordingly.",
+    heading: 'Olney Mill, Norbeck Edge, and Local Courts',
+    intro: 'Further than Rockville; we say so and plan the day accordingly.',
     groups: [
       {
         title: 'Olney village & Olney Mill',
@@ -93,8 +88,8 @@ export const olney: LocationContentSeed = {
     ],
   },
   process: {
-    heading: "Longer Montgomery Drive — Scheduled Honestly",
-    intro: "Arrival windows include the extra drive from Bethesda.",
+    heading: 'Longer Montgomery Drive — Scheduled Honestly',
+    intro: 'Arrival windows include the extra drive from Bethesda.',
     steps: [
       {
         title: 'Talk Through the Home',

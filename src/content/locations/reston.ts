@@ -16,7 +16,7 @@ export const reston: LocationContentSeed = {
   servedBy: 'burke',
   sectionLayout: 'servicesFirst',
   about: {
-    heading: "Village Layouts, Town Center Stacks, and Toll Road Film",
+    heading: 'Village Layouts, Town Center Stacks, and Toll Road Film',
     paragraphs: [
       'Reston was laid out as a cluster of villages, not a single subdivision. Reston Town Center stacks condos over shops. Lake Anne still has the original mid-century plaza and lower-rise buildings. South Lakes and North Point mix townhomes with single-family streets under a heavy tree canopy. Returns in those buildings pull corridor dust common along Reston Parkway and the Dulles Toll Road. High-rise laundry closets add long dryer risers that pack with lint by the second summer.',
       'The Silver Line stop at Wiehle-Reston East brought more stacked units and rooftop packs. Older Lake Anne trunks often share air with denser modern traffic around the plaza. Cool supply air plus a humid Reston July is how registers look dirty a week after you wipe them. Construction along the Toll Road and infill near the Town Center keeps gypsum dust in the mix.',
@@ -29,10 +29,10 @@ export const reston: LocationContentSeed = {
       'Dispatched from our Burke office',
     ],
   },
-  offersTitle: "Reston Flat Rates From the Burke Dispatch",
+  offersTitle: 'Reston Flat Rates From the Burke Dispatch',
   services: {
-    heading: "Reston Packages for High-Rises and Lake Anne Trunks",
-    intro: "Stacked laundry and mid-century trunks — flat-rate scopes either way.",
+    heading: 'Reston Packages for High-Rises and Lake Anne Trunks',
+    intro: 'Stacked laundry and mid-century trunks — flat-rate scopes either way.',
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -46,14 +46,10 @@ export const reston: LocationContentSeed = {
         title: 'Ventilation & HVAC Mold Treatment',
         text: 'Condo packs and humid summers let mold colonize coils and dead-end ducts. Learn more about [mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
-      {
-        title: 'Whole-Home Mold Remediation',
-        text: 'When the smell has left the vents for a townhome basement or a Lake Anne unit, we contain, remove, and dry. See [mold remediation for your home](/mold-remediation-house).',
-      },
     ],
   },
   why: {
-    heading: "Why Reston Villages Recirculate Corridor Dust",
+    heading: 'Why Reston Villages Recirculate Corridor Dust',
     items: [
       {
         title: 'Village Layout We Already Drive',
@@ -74,9 +70,8 @@ export const reston: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: "Town Center, Lake Anne, South Lakes, Wiehle",
-    intro:
-      "Planned villages and Silver Line stacks; ask about loading docks early.",
+    heading: 'Town Center, Lake Anne, South Lakes, Wiehle',
+    intro: 'Planned villages and Silver Line stacks; ask about loading docks early.',
     groups: [
       {
         title: 'Reston Town Center & the Silver Line',
@@ -94,8 +89,8 @@ export const reston: LocationContentSeed = {
     ],
   },
   process: {
-    heading: "HOA Gates and Elevator Pads on the Reston Route",
-    intro: "We stage for Town Center docks or South Lakes driveways depending on the address.",
+    heading: 'HOA Gates and Elevator Pads on the Reston Route',
+    intro: 'We stage for Town Center docks or South Lakes driveways depending on the address.',
     steps: [
       {
         title: 'Estimate Request',

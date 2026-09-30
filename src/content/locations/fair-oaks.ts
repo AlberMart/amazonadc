@@ -16,7 +16,7 @@ export const fairOaks: LocationContentSeed = {
   servedBy: 'burke',
   sectionLayout: 'faqMid',
   about: {
-    heading: "Mall-Corridor Townhomes and Route 50 / I-66 Dust",
+    heading: 'Mall-Corridor Townhomes and Route 50 / I-66 Dust',
     paragraphs: [
       'Fair Oaks is the Fairfax County community around Fair Oaks Mall, West Ox, and the I-66 / Route 50 interchange — not the independent City of Fairfax. Housing here is mostly 1980s–2000s townhomes and HOA singles: stacked laundry, attic air handlers, and visitor lots that sit in traffic film. Fair Lakes is next door. Fairfax Corner is adjacent; those jobs belong on the [Fairfax](/locations/fairfax) page when you are inside the city, and here when you are in the mall / Fair Lakes grid.',
       'Townhome dryer chases clog fast. Returns pull Beltway-adjacent dust and construction film from infill along 50. Attic handlers run hot in July, then dump that dust downstairs every time the system starts. A unit that looks “too new to clean” often still has builder drywall dust in the trunks.',
@@ -29,10 +29,10 @@ export const fairOaks: LocationContentSeed = {
       'Before-and-after photos on every duct job',
     ],
   },
-  offersTitle: "Fair Oaks Flat Rates — Not a City of Fairfax Duplicate",
+  offersTitle: 'Fair Oaks Flat Rates — Not a City of Fairfax Duplicate',
   services: {
-    heading: "Fair Oaks Packages Distinct From Fairfax City",
-    intro: "Townhome packages and single-family scopes at published rates.",
+    heading: 'Fair Oaks Packages Distinct From Fairfax City',
+    intro: 'Townhome packages and single-family scopes at published rates.',
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -46,14 +46,10 @@ export const fairOaks: LocationContentSeed = {
         title: 'Ventilation & HVAC Mold Treatment',
         text: 'Attic air handlers plus humid summers let mold colonize coils. Learn more about [mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
-      {
-        title: 'Whole-Home Mold Remediation',
-        text: 'When the smell has left the vents for a finished lower level, we contain, remove, and dry. See [mold remediation for your home](/mold-remediation-house).',
-      },
     ],
   },
   why: {
-    heading: "Why Fair Lakes and Fair Oaks Stacks Load Corridor Film",
+    heading: 'Why Fair Lakes and Fair Oaks Stacks Load Corridor Film',
     items: [
       {
         title: 'Mall Grid, Not City Hall',
@@ -74,9 +70,8 @@ export const fairOaks: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: "Fair Oaks Mall Edge, Fair Lakes, Fairfax Corner Living",
-    intro:
-      "This is Fair Oaks / Fair Lakes — the City of Fairfax has its own page.",
+    heading: 'Fair Oaks Mall Edge, Fair Lakes, Fairfax Corner Living',
+    intro: 'This is Fair Oaks / Fair Lakes — the City of Fairfax has its own page.',
     groups: [
       {
         title: 'Mall & Fair Lakes',
@@ -94,8 +89,8 @@ export const fairOaks: LocationContentSeed = {
     ],
   },
   process: {
-    heading: "Western Fairfax Scheduling From Burke",
-    intro: "HOA gates near the mall corridor are confirmed the morning of.",
+    heading: 'Western Fairfax Scheduling From Burke',
+    intro: 'HOA gates near the mall corridor are confirmed the morning of.',
     steps: [
       {
         title: 'Estimate Request',

@@ -15,7 +15,7 @@ export const germantown: LocationContentSeed = {
   servedBy: 'bethesda',
   sectionLayout: 'leanNoOffers',
   about: {
-    heading: "I-270 Townhomes, Milestone Stacks, and North Corridor Dust",
+    heading: 'I-270 Townhomes, Milestone Stacks, and North Corridor Dust',
     paragraphs: [
       'Germantown sits on Montgomery County’s I-270 spine north of Gaithersburg: Milestone and Town Center, Waters Landing, Clopper Road, then streets that keep filling with new HOA clusters. A lot of the stock is 1980s–2000s townhomes and split-levels with mechanical closets and long dryer runs. Those closets were never meant to hold a decade of corridor grit.',
       'I-270 and the construction cranes do the rest. Traffic dust, brake dust, and drywall from the next pad all ride the same returns. Filters catch some of it. Registers still gray out a week after you wipe them. Humid Maryland summers add a sticky film on cool supply trunks so the next cycle blows the mix back upstairs.',
@@ -28,10 +28,10 @@ export const germantown: LocationContentSeed = {
       'HOA townhome closets and long dryer runs we already clean',
     ],
   },
-  offersTitle: "Germantown Flat Rates From Old Georgetown Rd",
+  offersTitle: 'Germantown Flat Rates From Old Georgetown Rd',
   services: {
-    heading: "Germantown Packages From the Bethesda Office",
-    intro: "Townhome dryer chases and single-family trunks at published rates.",
+    heading: 'Germantown Packages From the Bethesda Office',
+    intro: 'Townhome dryer chases and single-family trunks at published rates.',
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -45,14 +45,10 @@ export const germantown: LocationContentSeed = {
         title: 'Ventilation & HVAC Mold Treatment',
         text: 'Cool trunks plus humid corridor summers let growth start on coils and dead-end ducts. Learn more about [mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
-      {
-        title: 'Whole-Home Mold Remediation',
-        text: 'When the smell has left the vents for a finished basement or townhome rec room, we contain, remove, and dry. See [mold remediation for your home](/mold-remediation-house).',
-      },
     ],
   },
   why: {
-    heading: "Why Germantown HOAs Recirculate Construction Film",
+    heading: 'Why Germantown HOAs Recirculate Construction Film',
     items: [
       {
         title: 'Real Bethesda Dispatch Up I-270',
@@ -73,9 +69,8 @@ export const germantown: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: "Milestone, Gunners Lake Edge, and North End Streets",
-    intro:
-      "Gaithersburg and Clarksburg are neighboring pages on the corridor.",
+    heading: 'Milestone, Gunners Lake Edge, and North End Streets',
+    intro: 'Gaithersburg and Clarksburg are neighboring pages on the corridor.',
     groups: [
       {
         title: 'Milestone & Town Center',
@@ -93,8 +88,8 @@ export const germantown: LocationContentSeed = {
     ],
   },
   process: {
-    heading: "Further Up I-270 — Still Bethesda Dispatch",
-    intro: "HOA access notes help us stage without circling the community.",
+    heading: 'Further Up I-270 — Still Bethesda Dispatch',
+    intro: 'HOA access notes help us stage without circling the community.',
     steps: [
       {
         title: 'Request a Window',

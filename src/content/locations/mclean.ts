@@ -15,7 +15,7 @@ export const mclean: LocationContentSeed = {
   servedBy: 'burke',
   sectionLayout: 'offersLate',
   about: {
-    heading: "Tree Lots, Finished Basements, and Tysons-Edge Condos",
+    heading: 'Tree Lots, Finished Basements, and Tysons-Edge Condos',
     paragraphs: [
       'McLean is a Fairfax County community of large lots, mature oaks, and quiet streets — Langley, Chesterbrook, Kent Gardens, and the neighborhoods along Dolley Madison Boulevard. That tree canopy is why spring pollen coats outdoor furniture. It is also why returns fill faster than in a new treeless subdivision. Finished basements along Difficult Run and Pimmit Run sit close to damp soil. Summer humidity still moves up from the Potomac, even if you cannot see the river from the backyard.',
       'Tysons is next door. Condos and offices there have long dryer runs and rooftop packs. A McLean colonial from the 1960s–80s often has a mix of original trunk lines and later additions. Dust collects at those joints. Cold supply air plus humid basement air is how musty registers start after a wet spring.',
@@ -28,10 +28,10 @@ export const mclean: LocationContentSeed = {
       'Same Burke team that already works Fairfax County',
     ],
   },
-  offersTitle: "McLean Flat-Rate Duct and Dryer Packages",
+  offersTitle: 'McLean Flat-Rate Duct and Dryer Packages',
   services: {
-    heading: "McLean Packages for Large Lots and High-Rises",
-    intro: "Large single-family systems and Tysons stacks — quoted before we unroll hoses.",
+    heading: 'McLean Packages for Large Lots and High-Rises',
+    intro: 'Large single-family systems and Tysons stacks — quoted before we unroll hoses.',
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -45,14 +45,10 @@ export const mclean: LocationContentSeed = {
         title: 'Ventilation & HVAC Mold Treatment',
         text: 'Finished basements and humid summers let mold colonize coils and dead-end ducts. We treat the ventilation with EPA-registered antimicrobial products. Learn more about [mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
-      {
-        title: 'Whole-Home Mold Remediation',
-        text: 'When the smell has moved past the vents into a basement rec room or crawl space, we find the moisture source, contain the area, and remove the growth. See [mold remediation for your home](/mold-remediation-house).',
-      },
     ],
   },
   why: {
-    heading: "Why McLean Canopy Pollen Settles in Cool Trunks",
+    heading: 'Why McLean Canopy Pollen Settles in Cool Trunks',
     items: [
       {
         title: 'Upfront Flat-Rate Pricing',
@@ -73,9 +69,8 @@ export const mclean: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: "McLean Streets From Dolley Madison to Tysons",
-    intro:
-      "Langley, Chesterbrook, and Tysons-edge addresses share this Burke route.",
+    heading: 'McLean Streets From Dolley Madison to Tysons',
+    intro: 'Langley, Chesterbrook, and Tysons-edge addresses share this Burke route.',
     groups: [
       {
         title: 'McLean hamlet & Langley',
@@ -93,8 +88,8 @@ export const mclean: LocationContentSeed = {
     ],
   },
   process: {
-    heading: "Estate Driveways and Condo Loading From Burke",
-    intro: "Gate codes and long driveways are normal; we confirm them the morning of.",
+    heading: 'Estate Driveways and Condo Loading From Burke',
+    intro: 'Gate codes and long driveways are normal; we confirm them the morning of.',
     steps: [
       {
         title: 'Request a Window',

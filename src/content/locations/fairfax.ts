@@ -15,7 +15,7 @@ export const fairfax: LocationContentSeed = {
   servedBy: 'burke',
   sectionLayout: 'whyFirst',
   about: {
-    heading: "City of Fairfax Ramblers Under a Heavy County Canopy",
+    heading: 'City of Fairfax Ramblers Under a Heavy County Canopy',
     paragraphs: [
       'The City of Fairfax is a small independent city wrapped by Fairfax County: Old Town along Chain Bridge Road, the courthouse, Fairfax Corner, and streets that run toward Mosaic and Merrifield. A lot of the housing is 1950s–80s ramblers and split-levels with full basements. Those basements stay cool. Northern Virginia summers do not. Cold supply trunks sweat. Oak and maple pollen from the county canopy sticks to that film.',
       'GMU-area rentals and stacked townhomes add long dryer runs. Construction dust from infill near Route 50 and 29 settles in returns the same week you wipe the registers. The blower then sends it back upstairs.',
@@ -28,10 +28,10 @@ export const fairfax: LocationContentSeed = {
       'Same Burke team that already works Fairfax County',
     ],
   },
-  offersTitle: "City of Fairfax Flat-Rate Cleaning Packages",
+  offersTitle: 'City of Fairfax Flat-Rate Cleaning Packages',
   services: {
-    heading: "Fairfax City Packages Distinct From Fair Oaks",
-    intro: "Ramblers and townhomes inside the city limits — not a duplicate of Fair Oaks.",
+    heading: 'Fairfax City Packages Distinct From Fair Oaks',
+    intro: 'Ramblers and townhomes inside the city limits — not a duplicate of Fair Oaks.',
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -45,14 +45,10 @@ export const fairfax: LocationContentSeed = {
         title: 'Ventilation & HVAC Mold Treatment',
         text: 'Basement air handlers plus humid summers let mold colonize coils and dead-end ducts. Learn more about [mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
-      {
-        title: 'Whole-Home Mold Remediation',
-        text: 'When the smell has left the vents for a basement rec room, we contain, remove, and dry. See [mold remediation for your home](/mold-remediation-house).',
-      },
     ],
   },
   why: {
-    heading: "Why City of Fairfax Trunks Hold Spring Pollen",
+    heading: 'Why City of Fairfax Trunks Hold Spring Pollen',
     items: [
       {
         title: 'Close Burke Dispatch',
@@ -73,9 +69,8 @@ export const fairfax: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: "Old Town Fairfax, GMU Edge, Fairfax Corner Living",
-    intro:
-      "This page is the City of Fairfax. Fair Oaks and Oakton have their own pages.",
+    heading: 'Old Town Fairfax, GMU Edge, Fairfax Corner Living',
+    intro: 'This page is the City of Fairfax. Fair Oaks and Oakton have their own pages.',
     groups: [
       {
         title: 'Old Town & downtown',
@@ -93,8 +88,8 @@ export const fairfax: LocationContentSeed = {
     ],
   },
   process: {
-    heading: "Short Run Up 123 From the Burke Office",
-    intro: "A short Burke dispatch; we still confirm HOA rules when they apply.",
+    heading: 'Short Run Up 123 From the Burke Office',
+    intro: 'A short Burke dispatch; we still confirm HOA rules when they apply.',
     steps: [
       {
         title: 'Talk Through the Home',

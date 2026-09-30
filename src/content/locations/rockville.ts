@@ -15,7 +15,7 @@ export const rockville: LocationContentSeed = {
   servedBy: 'bethesda',
   sectionLayout: 'faqMid',
   about: {
-    heading: "King Farm Townhomes, Twinbrook Ranches, and Basement Humidity",
+    heading: 'King Farm Townhomes, Twinbrook Ranches, and Basement Humidity',
     paragraphs: [
       'Rockville is Montgomery County’s largest city and sits on the I-270 corridor: Town Center and the Metro, Twinbrook and Hungerford, King Farm and Fallsgrove, then Woodley Gardens and the West End. A lot of the housing is 1950s–90s colonials and split-levels with full basements. Those basements stay cool in summer. Maryland humidity does not. Cold supply trunks in a basement meet wet air and sweat. Dust and tree pollen stick to that film.',
       'Montgomery County’s tree canopy is not a slogan — oak, maple, and pine dump pollen onto every outdoor surface each spring. Returns pull it in. Townhomes along the Metro and newer mixed-use at Rockville Town Square add long dryer vents and tighter mechanical closets. The result is the same: registers that look clean on Monday and dusty by Friday, or a musty smell when the AC starts after a wet week.',
@@ -28,10 +28,10 @@ export const rockville: LocationContentSeed = {
       'Same-day and next-day windows when the schedule allows',
     ],
   },
-  offersTitle: "Rockville Rates Matching Bethesda Packages",
+  offersTitle: 'Rockville Rates Matching Bethesda Packages',
   services: {
-    heading: "Rockville Packages From the Bethesda Office",
-    intro: "Colonials and townhomes with humid lower levels — quoted before cleaning.",
+    heading: 'Rockville Packages From the Bethesda Office',
+    intro: 'Colonials and townhomes with humid lower levels — quoted before cleaning.',
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -45,14 +45,10 @@ export const rockville: LocationContentSeed = {
         title: 'Ventilation & HVAC Mold Treatment',
         text: 'Basement air handlers and humid summers are a mold setup. We treat the ventilation with EPA-registered antimicrobial products. Learn more about [mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
-      {
-        title: 'Whole-Home Mold Remediation',
-        text: 'When the smell has left the vents for a basement rec room or crawl space, we contain, remove, and dry. See [mold remediation for your home](/mold-remediation-house).',
-      },
     ],
   },
   why: {
-    heading: "Why Rockville Finished Basements Sweat at the Trunks",
+    heading: 'Why Rockville Finished Basements Sweat at the Trunks',
     items: [
       {
         title: 'Close Bethesda Dispatch',
@@ -73,9 +69,8 @@ export const rockville: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: "Town Center, King Farm, Twinbrook, and Fallsmead",
-    intro:
-      "Montgomery County core; Potomac and Gaithersburg are separate pages.",
+    heading: 'Town Center, King Farm, Twinbrook, and Fallsmead',
+    intro: 'Montgomery County core; Potomac and Gaithersburg are separate pages.',
     groups: [
       {
         title: 'Town Center & Twinbrook',
@@ -93,8 +88,8 @@ export const rockville: LocationContentSeed = {
     ],
   },
   process: {
-    heading: "Fifteen Minutes Down Old Georgetown — Then On Site",
-    intro: "A short Bethesda run; we still confirm basement access and dryer terminations.",
+    heading: 'Fifteen Minutes Down Old Georgetown — Then On Site',
+    intro: 'A short Bethesda run; we still confirm basement access and dryer terminations.',
     steps: [
       {
         title: 'Talk Through the Home',

@@ -15,7 +15,7 @@ export const gaithersburg: LocationContentSeed = {
   servedBy: 'bethesda',
   sectionLayout: 'faqEarly',
   about: {
-    heading: "Kentlands Basements, Crown Condos, and I-270 Dust",
+    heading: 'Kentlands Basements, Crown Condos, and I-270 Dust',
     paragraphs: [
       'Gaithersburg is Montgomery County’s big I-270 city north of [Rockville](/locations/rockville): Town Center, Kentlands and Lakelands, Crown, Washingtonian, then Montgomery Village and the streets toward Germantown. Housing mixes 1960s–80s split-levels with full basements and newer new-urbanist townhomes with tight mechanical closets. Both types load ducts. The older houses sweat in the basement. The newer ones pack dryer vents around three corners.',
       'The tree canopy is not a slogan. Oak and pine dump pollen onto every deck each spring. Returns pull it in. I-270 adds traffic dust. When the AC starts after a wet week, that mix is what you smell at the register.',
@@ -28,10 +28,10 @@ export const gaithersburg: LocationContentSeed = {
       'Same crew that already works Rockville and Germantown',
     ],
   },
-  offersTitle: "Gaithersburg Flat Rates From Old Georgetown Rd",
+  offersTitle: 'Gaithersburg Flat Rates From Old Georgetown Rd',
   services: {
-    heading: "Gaithersburg Packages for HOAs and Condos",
-    intro: "HOA townhomes and Crown stacks — flat-rate packages either way.",
+    heading: 'Gaithersburg Packages for HOAs and Condos',
+    intro: 'HOA townhomes and Crown stacks — flat-rate packages either way.',
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -45,14 +45,10 @@ export const gaithersburg: LocationContentSeed = {
         title: 'Ventilation & HVAC Mold Treatment',
         text: 'Basement air handlers and humid summers are a mold setup. Learn more about [mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
-      {
-        title: 'Whole-Home Mold Remediation',
-        text: 'When the smell has left the vents for a basement rec room, we contain and remove it. See [mold remediation for your home](/mold-remediation-house).',
-      },
     ],
   },
   why: {
-    heading: "Why Kentlands and Lakelands Trunks Hold Humidity",
+    heading: 'Why Kentlands and Lakelands Trunks Hold Humidity',
     items: [
       {
         title: 'I-270 Dispatch from a Real Office',
@@ -73,9 +69,8 @@ export const gaithersburg: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: "Kentlands, Lakelands, Crown, and Old Town Edge",
-    intro:
-      "Germantown and Montgomery Village are separate pages on the same corridor.",
+    heading: 'Kentlands, Lakelands, Crown, and Old Town Edge',
+    intro: 'Germantown and Montgomery Village are separate pages on the same corridor.',
     groups: [
       {
         title: 'Kentlands, Lakelands & Crown',
@@ -93,8 +88,8 @@ export const gaithersburg: LocationContentSeed = {
     ],
   },
   process: {
-    heading: "I-270 North Dispatch From Bethesda",
-    intro: "We plan for HOA gates and condo elevator rules when you book.",
+    heading: 'I-270 North Dispatch From Bethesda',
+    intro: 'We plan for HOA gates and condo elevator rules when you book.',
     steps: [
       {
         title: 'Estimate Request',

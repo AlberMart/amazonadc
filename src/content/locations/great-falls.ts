@@ -16,7 +16,7 @@ export const greatFalls: LocationContentSeed = {
   servedBy: 'burke',
   sectionLayout: 'whyFirst',
   about: {
-    heading: "Estate-Scale Trunks, River Humidity, and Wooded Lots",
+    heading: 'Estate-Scale Trunks, River Humidity, and Wooded Lots',
     paragraphs: [
       'Great Falls is large lots, mature oaks, and houses set far back from Georgetown Pike and Walker Road. Many properties still use a well, a septic field, or both. That does not change how we clean ducts, but it does mean long dryer runs, multiple returns, and air handlers in walk-out basements that sit close to damp soil. The Potomac is close enough that summer humidity moves inland even when you cannot see the river.',
       'Estate-scale systems often mix original metal trunks with later additions over a garage or a guest wing. Dust collects at those joints. Tree pollen from the canopy coats outdoor furniture in April and the same film sits in returns. A dryer that sits fifty feet from the exterior wall will pack with lint long before a short ranch run would.',
@@ -29,10 +29,10 @@ export const greatFalls: LocationContentSeed = {
       'Dispatched from our Burke office',
     ],
   },
-  offersTitle: "Great Falls Rates With Honest Drive Time",
+  offersTitle: 'Great Falls Rates With Honest Drive Time',
   services: {
-    heading: "Great Falls Packages for Large Single-Family Systems",
-    intro: "Larger systems and longer dryer runs — still flat-rate residential packages.",
+    heading: 'Great Falls Packages for Large Single-Family Systems',
+    intro: 'Larger systems and longer dryer runs — still flat-rate residential packages.',
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -46,14 +46,10 @@ export const greatFalls: LocationContentSeed = {
         title: 'Ventilation & HVAC Mold Treatment',
         text: 'Walk-out basements and river humidity let mold colonize coils and dead-end ducts. Learn more about [mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
-      {
-        title: 'Whole-Home Mold Remediation',
-        text: 'When the smell has left the vents for a lower-level rec room, we contain, remove, and dry. See [mold remediation for your home](/mold-remediation-house).',
-      },
     ],
   },
   why: {
-    heading: "Why Estate Homes Need Longer Inspection Windows",
+    heading: 'Why Estate Homes Need Longer Inspection Windows',
     items: [
       {
         title: 'Estate Layouts, Quoted Up Front',
@@ -74,9 +70,8 @@ export const greatFalls: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: "Georgetown Pike and River-Edge Properties",
-    intro:
-      "McLean and Reston are closer-in pages; Great Falls is scheduled deliberately.",
+    heading: 'Georgetown Pike and River-Edge Properties',
+    intro: 'McLean and Reston are closer-in pages; Great Falls is scheduled deliberately.',
     groups: [
       {
         title: 'Village & Georgetown Pike',
@@ -94,8 +89,8 @@ export const greatFalls: LocationContentSeed = {
     ],
   },
   process: {
-    heading: "Longer Drive Planning From Burke — Said Up Front",
-    intro: "We quote arrival windows that respect the drive from Burke Centre.",
+    heading: 'Longer Drive Planning From Burke — Said Up Front',
+    intro: 'We quote arrival windows that respect the drive from Burke Centre.',
     steps: [
       {
         title: 'Request a Window',
