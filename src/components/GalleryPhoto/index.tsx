@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import React from 'react'
 
+import { overlayFromAltOrSrc } from '@/utilities/galleryOverlay'
+
 export type GalleryPhotoItem = {
   src: string
   alt: string
@@ -18,19 +20,13 @@ export function resolvePhotoOverlay(photo: GalleryPhotoItem): string | null {
     const text = (photo.overlayText || '').trim()
     return text || null
   }
-  const alt = (photo.alt || '').toLowerCase()
-  if (/\bbefore\b/.test(alt)) return 'Before'
-  if (/\bafter\b/.test(alt)) return 'After'
+  const inferred = overlayFromAltOrSrc(photo.alt, photo.src)
+  if (inferred === 'before') return 'Before'
+  if (inferred === 'after') return 'After'
   return null
 }
 
-/** Infer overlay for seed content from alt / path. */
-export function overlayFromAltOrSrc(alt: string, src?: string): 'before' | 'after' | 'none' {
-  const hay = `${alt} ${src || ''}`.toLowerCase()
-  if (hay.includes('before')) return 'before'
-  if (hay.includes('after')) return 'after'
-  return 'none'
-}
+export { overlayFromAltOrSrc }
 
 type Props = {
   photo: GalleryPhotoItem

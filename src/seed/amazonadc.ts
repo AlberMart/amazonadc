@@ -1,5 +1,6 @@
 import { SEO_META_DESCRIPTION, SEO_META_TITLE } from '@/utilities/seoCopy'
 import { themeSeed } from '@/utilities/theme'
+import { overlayFromAltOrSrc } from '@/utilities/galleryOverlay'
 import { airDuctCleaning } from '@/content/services/air-duct-cleaning'
 import { airDuctAndDryerVentCleaning } from '@/content/services/air-duct-and-dryer-vent-cleaning'
 import { dryerVentCleaning } from '@/content/services/dryer-vent-cleaning'
@@ -324,13 +325,7 @@ function mapService(service: ServiceContent, cardOrder = 100) {
     beforeAfter: (service.beforeAfter || []).map((photo) => ({
       src: photo.src,
       alt: photo.alt,
-      overlay:
-        photo.overlay ||
-        (/\bbefore\b/i.test(photo.alt) || /before/i.test(photo.src)
-          ? 'before'
-          : /\bafter\b/i.test(photo.alt) || /after/i.test(photo.src)
-            ? 'after'
-            : 'auto'),
+      overlay: photo.overlay || overlayFromAltOrSrc(photo.alt, photo.src),
       overlayText: photo.overlayText,
     })),
     why: service.why

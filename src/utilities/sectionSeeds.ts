@@ -1,4 +1,5 @@
 import type { HomeSection } from '@/utilities/homeSections'
+import { overlayFromAltOrSrc } from '@/utilities/galleryOverlay'
 import { servicePrimaryCta, type ServiceContent } from '@/utilities/services'
 import type {
   LocationContent,
@@ -32,13 +33,7 @@ export function serviceContentToSections(service: ServiceContent): HomeSection[]
       heading: 'Proof of Cleaning with Before/After photos',
       photos: service.beforeAfter.map((photo) => ({
         ...photo,
-        overlay:
-          photo.overlay ||
-          (/\bbefore\b/i.test(photo.alt) || /before/i.test(photo.src)
-            ? 'before'
-            : /\bafter\b/i.test(photo.alt) || /after/i.test(photo.src)
-              ? 'after'
-              : 'none'),
+        overlay: photo.overlay || overlayFromAltOrSrc(photo.alt, photo.src),
       })),
     })
   }
