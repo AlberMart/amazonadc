@@ -225,6 +225,30 @@ async function run() {
     console.warn('home page seed skipped:', error instanceof Error ? error.message : error)
   }
 
+  // Remove leftover Payload-template pages (e.g. empty "contact" with Hero+blocks and no content)
+  try {
+    const keep = new Set([
+      homePageSeed.slug,
+      ...legalPagesSeed.map((page) => page.slug),
+    ])
+    const orphanPages = await payload.find({
+      collection: 'pages',
+      limit: 100,
+      pagination: false,
+      overrideAccess: true,
+    })
+    for (const doc of orphanPages.docs) {
+      const slug = typeof doc.slug === 'string' ? doc.slug : ''
+      const kind = (doc as { pageKind?: string | null }).pageKind
+      if (!slug || keep.has(slug)) continue
+      if (kind === 'home' || kind === 'legal') continue
+      await payload.delete({ collection: 'pages', id: doc.id, context })
+      console.log('deleted orphan page', slug)
+    }
+  } catch (error) {
+    console.warn('orphan pages cleanup skipped:', error instanceof Error ? error.message : error)
+  }
+
   try {
     for (const post of postsSeed) {
       await upsertBySlug(

@@ -3,9 +3,10 @@ import React from 'react'
 
 import { Breadcrumbs } from '@/components/Breadcrumbs'
 import { ContactForm } from '@/components/ContactForm'
+import { GalleryPhoto } from '@/components/GalleryPhoto'
 import { TextWithLinks } from '@/components/TextWithLinks'
 import { ServiceArea } from '@/components/ServiceArea'
-import { ServiceOfferCards } from '@/components/ServiceOfferCards'
+import { PriceLine, ServiceOfferCards } from '@/components/ServiceOfferCards'
 import { RenderPageSections } from '@/components/RenderPageSections'
 import {
   getRelatedServices,
@@ -50,20 +51,16 @@ export async function ServicePage({ service }: { service: ServiceContent }) {
             <h1 className="font-display text-3xl leading-tight font-semibold tracking-tight sm:text-4xl md:text-5xl">
               {service.title}
             </h1>
-            <p className="mt-6 text-3xl font-semibold text-white">
-              {typeof service.price === 'number' ? (
-                <>
-                  ${service.price}
-                  {typeof service.compareAtPrice === 'number' ? (
-                    <span className="ml-3 text-lg font-normal text-sky-100/70 line-through">
-                      ${service.compareAtPrice}
-                    </span>
-                  ) : null}
-                </>
-              ) : (
-                <span className="text-2xl font-semibold sm:text-3xl">Free estimate</span>
-              )}
-            </p>
+            <div className="mt-6 text-white [&_.site-muted]:text-sky-100/70">
+              <PriceLine
+                price={service.price}
+                compareAtPrice={service.compareAtPrice}
+                emptyPriceDisplay={service.emptyPriceDisplay}
+                emptyPriceText={service.emptyPriceText}
+                amountClassName="text-3xl font-semibold text-white"
+                textClassName="text-2xl font-semibold sm:text-3xl"
+              />
+            </div>
             <div className="mt-8 flex flex-wrap gap-4">
               <a
                 href={cta.href}
@@ -146,15 +143,7 @@ export async function ServicePage({ service }: { service: ServiceContent }) {
           </h2>
           <div className="mt-8 grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-4">
             {beforeAfter.map((photo) => (
-              <div key={photo.src} className="relative aspect-[3/4] site-media">
-                <Image
-                  src={photo.src}
-                  alt={photo.alt}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 50vw, 25vw"
-                />
-              </div>
+              <GalleryPhoto key={photo.src} photo={photo} />
             ))}
           </div>
         </div>

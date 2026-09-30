@@ -164,7 +164,7 @@ export interface UserAuthOperations {
   };
 }
 /**
- * Edit Home for the public homepage (/). Legal pages power /privacy-policy and similar URLs. Current Offers cards come from Services.
+ * Use pageKind Home for / and Legal for /privacy-policy etc. Avoid “Default” — that is the old Payload template layout (Hero + Content blocks) and often looks empty. Contact lives in Homepage / Location sections, not a separate Pages doc. Current Offers cards come from Services (card order + empty-price text).
  *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "pages".
@@ -172,7 +172,10 @@ export interface UserAuthOperations {
 export interface Page {
   id: number;
   title: string;
-  pageKind?: ('default' | 'home' | 'legal') | null;
+  /**
+   * Home = homepage sections. Legal = policy body. Legacy template is leftover Payload demo layout — prefer deleting unused docs over creating new ones.
+   */
+  pageKind?: ('home' | 'legal' | 'default') | null;
   hero: {
     type: 'none' | 'highImpact' | 'mediumImpact' | 'lowImpact';
     richText?: {
@@ -449,6 +452,14 @@ export interface Page {
               media?: (number | null) | Media;
               src?: string | null;
               alt?: string | null;
+              /**
+               * Bottom transparent bar on the photo (Before / After).
+               */
+              overlay?: ('auto' | 'before' | 'after' | 'custom' | 'none') | null;
+              /**
+               * Shown on the transparent bar when overlay is Custom.
+               */
+              overlayText?: string | null;
               id?: string | null;
             }[]
           | null;
@@ -1490,6 +1501,14 @@ export interface Partial {
               media?: (number | null) | Media;
               src?: string | null;
               alt?: string | null;
+              /**
+               * Bottom transparent bar on the photo (Before / After).
+               */
+              overlay?: ('auto' | 'before' | 'after' | 'custom' | 'none') | null;
+              /**
+               * Shown on the transparent bar when overlay is Custom.
+               */
+              overlayText?: string | null;
               id?: string | null;
             }[]
           | null;
@@ -1529,13 +1548,25 @@ export interface Service {
    */
   description: string;
   /**
-   * Current offer price in USD. Leave empty for estimate-only services.
+   * Sort order for Current Offers / related service cards (lower = first). Reorder freely from here.
+   */
+  cardOrder?: number | null;
+  /**
+   * Current offer price in USD. Leave empty to use the empty-price settings below.
    */
   price?: number | null;
   /**
    * Original / strikethrough price in USD
    */
   compareAtPrice?: number | null;
+  /**
+   * When Price is empty — show a label or hide the price row on cards and hero.
+   */
+  emptyPriceDisplay?: ('text' | 'hidden') | null;
+  /**
+   * Text when there is no numeric price (e.g. Free estimate, Call for quote).
+   */
+  emptyPriceText?: string | null;
   /**
    * Checkout URL (Stripe). Empty = “Get a Free Quote” to the contact form.
    */
@@ -1789,6 +1820,14 @@ export interface Service {
               media?: (number | null) | Media;
               src?: string | null;
               alt?: string | null;
+              /**
+               * Bottom transparent bar on the photo (Before / After).
+               */
+              overlay?: ('auto' | 'before' | 'after' | 'custom' | 'none') | null;
+              /**
+               * Shown on the transparent bar when overlay is Custom.
+               */
+              overlayText?: string | null;
               id?: string | null;
             }[]
           | null;
@@ -1840,6 +1879,8 @@ export interface Service {
         media?: (number | null) | Media;
         src?: string | null;
         alt?: string | null;
+        overlay?: ('auto' | 'before' | 'after' | 'custom' | 'none') | null;
+        overlayText?: string | null;
         id?: string | null;
       }[]
     | null;
@@ -2244,6 +2285,14 @@ export interface Location {
               media?: (number | null) | Media;
               src?: string | null;
               alt?: string | null;
+              /**
+               * Bottom transparent bar on the photo (Before / After).
+               */
+              overlay?: ('auto' | 'before' | 'after' | 'custom' | 'none') | null;
+              /**
+               * Shown on the transparent bar when overlay is Custom.
+               */
+              overlayText?: string | null;
               id?: string | null;
             }[]
           | null;
@@ -2949,6 +2998,8 @@ export interface PagesSelect<T extends boolean = true> {
               media?: T;
               src?: T;
               alt?: T;
+              overlay?: T;
+              overlayText?: T;
               id?: T;
             };
         listColumns?:
@@ -3278,8 +3329,11 @@ export interface ServicesSelect<T extends boolean = true> {
   title?: T;
   summary?: T;
   description?: T;
+  cardOrder?: T;
   price?: T;
   compareAtPrice?: T;
+  emptyPriceDisplay?: T;
+  emptyPriceText?: T;
   orderUrl?: T;
   thumbMedia?: T;
   thumbImage?: T;
@@ -3395,6 +3449,8 @@ export interface ServicesSelect<T extends boolean = true> {
               media?: T;
               src?: T;
               alt?: T;
+              overlay?: T;
+              overlayText?: T;
               id?: T;
             };
         listColumns?:
@@ -3427,6 +3483,8 @@ export interface ServicesSelect<T extends boolean = true> {
         media?: T;
         src?: T;
         alt?: T;
+        overlay?: T;
+        overlayText?: T;
         id?: T;
       };
   why?:
@@ -3654,6 +3712,8 @@ export interface LocationsSelect<T extends boolean = true> {
               media?: T;
               src?: T;
               alt?: T;
+              overlay?: T;
+              overlayText?: T;
               id?: T;
             };
         listColumns?:
@@ -3929,6 +3989,8 @@ export interface PartialsSelect<T extends boolean = true> {
               media?: T;
               src?: T;
               alt?: T;
+              overlay?: T;
+              overlayText?: T;
               id?: T;
             };
         listColumns?:

@@ -390,6 +390,29 @@ export function pageSectionsFields(options: PageSectionsFieldOptions = {}): Fiel
           },
           { name: 'src', type: 'text' },
           { name: 'alt', type: 'text' },
+          {
+            name: 'overlay',
+            type: 'select',
+            defaultValue: 'auto',
+            options: [
+              { label: 'Auto (from alt text)', value: 'auto' },
+              { label: 'Before', value: 'before' },
+              { label: 'After', value: 'after' },
+              { label: 'Custom label', value: 'custom' },
+              { label: 'No label', value: 'none' },
+            ],
+            admin: {
+              description: 'Bottom transparent bar on the photo (Before / After).',
+            },
+          },
+          {
+            name: 'overlayText',
+            type: 'text',
+            admin: {
+              condition: (_: unknown, sibling: { overlay?: string }) => sibling?.overlay === 'custom',
+              description: 'Shown on the transparent bar when overlay is Custom.',
+            },
+          },
         ],
       },
       {

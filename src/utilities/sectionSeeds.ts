@@ -30,7 +30,16 @@ export function serviceContentToSections(service: ServiceContent): HomeSection[]
       type: 'gallery',
       tone: 'white',
       heading: 'Proof of Cleaning with Before/After photos',
-      photos: service.beforeAfter,
+      photos: service.beforeAfter.map((photo) => ({
+        ...photo,
+        overlay:
+          photo.overlay ||
+          (/\bbefore\b/i.test(photo.alt) || /before/i.test(photo.src)
+            ? 'before'
+            : /\bafter\b/i.test(photo.alt) || /after/i.test(photo.src)
+              ? 'after'
+              : 'none'),
+      })),
     })
   }
 

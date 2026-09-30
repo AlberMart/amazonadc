@@ -7,9 +7,44 @@ export type ServiceOfferCard = {
   title: string
   price?: number | null
   compareAtPrice?: number | null
+  emptyPriceDisplay?: 'text' | 'hidden'
+  emptyPriceText?: string | null
   summary?: string | null
   thumb: string
   href?: string
+}
+
+export function PriceLine({
+  price,
+  compareAtPrice,
+  emptyPriceDisplay = 'text',
+  emptyPriceText = 'Free estimate',
+  amountClassName = 'text-3xl font-semibold text-[var(--site-heading)]',
+  textClassName = 'text-xl',
+}: {
+  price?: number | null
+  compareAtPrice?: number | null
+  emptyPriceDisplay?: 'text' | 'hidden'
+  emptyPriceText?: string | null
+  amountClassName?: string
+  textClassName?: string
+}) {
+  if (typeof price === 'number') {
+    return (
+      <p className={amountClassName}>
+        ${price}
+        {typeof compareAtPrice === 'number' ? (
+          <span className="ml-2 text-base font-normal site-muted line-through">${compareAtPrice}</span>
+        ) : null}
+      </p>
+    )
+  }
+  if (emptyPriceDisplay === 'hidden') return null
+  return (
+    <p className={amountClassName}>
+      <span className={textClassName}>{emptyPriceText || 'Free estimate'}</span>
+    </p>
+  )
 }
 
 export function ServiceOfferCards({ services }: { services: ServiceOfferCard[] }) {
@@ -36,20 +71,14 @@ export function ServiceOfferCards({ services }: { services: ServiceOfferCard[] }
           <h3 className="font-display text-xl font-semibold text-[var(--site-heading)]">
             {item.title}
           </h3>
-          <p className="mt-4 text-3xl font-semibold text-[var(--site-heading)]">
-            {typeof item.price === 'number' ? (
-              <>
-                ${item.price}
-                {typeof item.compareAtPrice === 'number' ? (
-                  <span className="ml-2 text-base font-normal site-muted line-through">
-                    ${item.compareAtPrice}
-                  </span>
-                ) : null}
-              </>
-            ) : (
-              <span className="text-xl">Free estimate</span>
-            )}
-          </p>
+          <div className="mt-4">
+            <PriceLine
+              price={item.price}
+              compareAtPrice={item.compareAtPrice}
+              emptyPriceDisplay={item.emptyPriceDisplay}
+              emptyPriceText={item.emptyPriceText}
+            />
+          </div>
           {item.summary ? (
             <p className="mt-3 line-clamp-3 flex-1 text-sm site-body">{item.summary}</p>
           ) : null}

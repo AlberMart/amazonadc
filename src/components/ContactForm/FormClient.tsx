@@ -13,7 +13,9 @@ import {
 import { toTelHref } from '@/utilities/tel'
 
 const inputClass =
-  'w-full rounded-md border border-[var(--site-border)] bg-white px-3 py-2 text-base text-[var(--site-heading)]'
+  'site-input w-full rounded-md border border-[var(--site-border)] bg-white px-3 py-2.5 text-base text-[var(--site-heading)] outline-none transition-[border-color,box-shadow] placeholder:text-[var(--site-muted-text)] focus:border-[var(--site-tertiary)] focus:ring-2 focus:ring-[color-mix(in_srgb,var(--site-tertiary)_35%,transparent)]'
+
+const selectClass = `${inputClass} site-select`
 
 function FieldLabel({ label, required, compact }: { label: string; required: boolean; compact?: boolean }) {
   return (
@@ -119,7 +121,7 @@ function FieldControl({ field }: { field: PublicFormField }) {
           name={name}
           id={name}
           defaultValue={defaultValue || ''}
-          className={inputClass}
+          className={selectClass}
         >
           <option value="">{field.placeholder || `Select ${label}`}</option>
           {options.map((option) => (

@@ -41,7 +41,7 @@ export const Pages: CollectionConfig<'pages'> = {
   admin: {
     defaultColumns: ['title', 'slug', 'pageKind', 'updatedAt'],
     description:
-      'Edit Home for the public homepage (/). Legal pages power /privacy-policy and similar URLs. Current Offers cards come from Services.',
+      'Use pageKind Home for / and Legal for /privacy-policy etc. Avoid “Default” — that is the old Payload template layout (Hero + Content blocks) and often looks empty. Contact lives in Homepage / Location sections, not a separate Pages doc. Current Offers cards come from Services (card order + empty-price text).',
     livePreview: {
       url: ({ data, req }) =>
         generatePreviewPath({
@@ -69,12 +69,17 @@ export const Pages: CollectionConfig<'pages'> = {
       type: 'select',
       defaultValue: 'default',
       options: [
-        { label: 'Default', value: 'default' },
         { label: 'Home', value: 'home' },
         { label: 'Legal', value: 'legal' },
+        {
+          label: 'Legacy template (Hero + blocks — usually empty)',
+          value: 'default',
+        },
       ],
       admin: {
         position: 'sidebar',
+        description:
+          'Home = homepage sections. Legal = policy body. Legacy template is leftover Payload demo layout — prefer deleting unused docs over creating new ones.',
       },
     },
     {

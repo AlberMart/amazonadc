@@ -345,6 +345,34 @@ html[data-theme='light'] {
   margin-bottom: 0;
 }
 
+.site-input,
+.site-select {
+  color: var(--site-heading);
+  background-color: #fff;
+  border-color: var(--site-border);
+}
+
+.site-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-right: 2.75rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%237a8b9c' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.85rem center;
+  background-size: 1rem 1rem;
+  cursor: pointer;
+}
+
+.site-select:focus {
+  border-color: var(--site-tertiary);
+}
+
+.site-select option {
+  color: var(--site-heading);
+  background: #fff;
+}
+
 .site-muted {
   color: var(--site-muted-text);
 }

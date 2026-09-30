@@ -29,7 +29,17 @@ export type ServiceContent = {
   includesImage: string
   includesImageAlt: string
   includes: string[]
-  beforeAfter?: Array<{ src: string; alt: string }>
+  beforeAfter?: Array<{
+    src: string
+    alt: string
+    overlay?: 'none' | 'before' | 'after' | 'custom' | 'auto'
+    overlayText?: string
+  }>
+  /** Lower = earlier in Current Offers / related cards */
+  cardOrder?: number
+  /** When price is empty: show text or hide the price line */
+  emptyPriceDisplay?: 'text' | 'hidden'
+  emptyPriceText?: string
   why?: {
     heading: string
     paragraphs: string[]
@@ -68,6 +78,9 @@ export type ServiceCard = {
   title: string
   price?: number | null
   compareAtPrice?: number | null
+  emptyPriceDisplay?: 'text' | 'hidden'
+  emptyPriceText?: string
+  cardOrder?: number
   thumb: string
   href: string
   summary: string
@@ -161,13 +174,26 @@ function mapService(doc: Record<string, unknown>): ServiceContent {
     ),
     includes: items(doc.includes as Array<{ item?: string | null } | null>),
     beforeAfter: (
-      (doc.beforeAfter as Array<{ src?: string | null; alt?: string | null; media?: unknown } | null>) || []
+      (doc.beforeAfter as Array<{
+        src?: string | null
+        alt?: string | null
+        media?: unknown
+        overlay?: string | null
+        overlayText?: string | null
+      } | null>) || []
     )
       .filter(Boolean)
       .map((row) => ({
         src: resolveCmsImage(row?.media, row?.src) || '',
         alt: String(row?.alt || ''),
+        overlay: (['none', 'before', 'after', 'custom', 'auto'].includes(String(row?.overlay || ''))
+          ? String(row?.overlay)
+          : 'auto') as 'none' | 'before' | 'after' | 'custom' | 'auto',
+        overlayText: row?.overlayText ? String(row.overlayText) : undefined,
       })),
+    cardOrder: typeof doc.cardOrder === 'number' ? doc.cardOrder : 100,
+    emptyPriceDisplay: doc.emptyPriceDisplay === 'hidden' ? 'hidden' : 'text',
+    emptyPriceText: doc.emptyPriceText ? String(doc.emptyPriceText) : 'Free estimate',
     why: why?.heading
       ? {
           heading: String(why.heading),
@@ -297,7 +323,7 @@ export async function getAllServiceCards(): Promise<ServiceCard[]> {
       limit: 100,
       pagination: false,
       depth: 1,
-      sort: 'price',
+      sort: 'cardOrder',
     })
   })
 
@@ -311,6 +337,9 @@ export async function getAllServiceCards(): Promise<ServiceCard[]> {
       title: mapped.title,
       price: mapped.price,
       compareAtPrice: mapped.compareAtPrice,
+      emptyPriceDisplay: mapped.emptyPriceDisplay,
+      emptyPriceText: mapped.emptyPriceText,
+      cardOrder: mapped.cardOrder ?? 100,
       thumb,
       href: `/${mapped.slug}`,
       summary: mapped.summary,
@@ -318,6 +347,8 @@ export async function getAllServiceCards(): Promise<ServiceCard[]> {
   })
 
   return cards.sort((a, b) => {
+    const orderDiff = (a.cardOrder ?? 100) - (b.cardOrder ?? 100)
+    if (orderDiff !== 0) return orderDiff
     const aPrice = a.price ?? Number.POSITIVE_INFINITY
     const bPrice = b.price ?? Number.POSITIVE_INFINITY
     if (aPrice !== bPrice) return aPrice - bPrice

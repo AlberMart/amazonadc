@@ -72,7 +72,12 @@ export type HomeSection = {
   /** Location pages: offices + short intro only (no state lists / map / city dump). */
   compact?: boolean
   badges?: SectionBadge[]
-  photos?: Array<{ src: string; alt: string }>
+  photos?: Array<{
+    src: string
+    alt: string
+    overlay?: 'none' | 'before' | 'after' | 'custom' | 'auto'
+    overlayText?: string
+  }>
   listColumns?: Array<{ heading: string; items: string[] }>
   partialId?: number | string
   includedSections?: HomeSection[]
@@ -246,13 +251,22 @@ export function mapHomeSection(raw: Record<string, unknown>, nested = false): Ho
     regions: mapServiceAreaRegions(raw.regions),
     badges: mapBadges(raw.badges),
     photos: (
-      (raw.photos as Array<{ src?: string | null; alt?: string | null; media?: unknown } | null>) ||
-      []
+      (raw.photos as Array<{
+        src?: string | null
+        alt?: string | null
+        media?: unknown
+        overlay?: string | null
+        overlayText?: string | null
+      } | null>) || []
     )
       .filter(Boolean)
       .map((row) => ({
         src: resolveCmsImage(row?.media, row?.src) || '',
         alt: String(row?.alt || ''),
+        overlay: (['none', 'before', 'after', 'custom', 'auto'].includes(String(row?.overlay || ''))
+          ? String(row?.overlay)
+          : 'auto') as 'none' | 'before' | 'after' | 'custom' | 'auto',
+        overlayText: row?.overlayText ? String(row.overlayText) : undefined,
       }))
       .filter((row) => row.src),
     listColumns: (
@@ -467,6 +481,8 @@ export function mapHomeSectionsToSeed(sections: HomeSection[]) {
     photos: (section.photos || []).map((photo) => ({
       src: photo.src,
       alt: photo.alt,
+      overlay: photo.overlay || 'auto',
+      overlayText: photo.overlayText || undefined,
     })),
     listColumns: (section.listColumns || []).map((col) => ({
       heading: col.heading,

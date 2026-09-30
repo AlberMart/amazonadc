@@ -3,6 +3,7 @@ import Link from 'next/link'
 import React from 'react'
 
 import { ContactForm } from '@/components/ContactForm'
+import { GalleryPhoto } from '@/components/GalleryPhoto'
 import { ReviewsSection } from '@/components/ReviewsSection'
 import { ServiceArea } from '@/components/ServiceArea'
 import { ServiceOfferCards } from '@/components/ServiceOfferCards'
@@ -636,15 +637,7 @@ export async function RenderPageSections({
               {section.intro ? <p className="mt-3 max-w-3xl site-body">{section.intro}</p> : null}
               <div className="mt-8 grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-4">
                 {photos.map((photo) => (
-                  <div key={photo.src} className="relative aspect-[3/4] site-media">
-                    <Image
-                      src={photo.src}
-                      alt={photo.alt}
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 768px) 50vw, 25vw"
-                    />
-                  </div>
+                  <GalleryPhoto key={photo.src} photo={photo} />
                 ))}
               </div>
             </div>

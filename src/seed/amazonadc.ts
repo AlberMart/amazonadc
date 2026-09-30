@@ -302,7 +302,7 @@ const serviceThumbs: Record<string, string> = {
   'mold-remediation-air-ducts': '/img/services/Amazon_AIR_DUCT_CLEANING_small.webp',
 }
 
-function mapService(service: ServiceContent) {
+function mapService(service: ServiceContent, cardOrder = 100) {
   return {
     title: service.title,
     slug: service.slug,
@@ -310,6 +310,9 @@ function mapService(service: ServiceContent) {
     description: service.description,
     price: service.price ?? null,
     compareAtPrice: service.compareAtPrice ?? null,
+    cardOrder,
+    emptyPriceDisplay: 'text' as const,
+    emptyPriceText: 'Free estimate',
     orderUrl: service.orderUrl || '',
     thumbImage: serviceThumbs[service.slug] || service.heroImage,
     heroImage: service.heroImage,
@@ -318,7 +321,18 @@ function mapService(service: ServiceContent) {
     includesImage: service.includesImage,
     includesImageAlt: service.includesImageAlt,
     includes: service.includes.map((item) => ({ item })),
-    beforeAfter: service.beforeAfter || [],
+    beforeAfter: (service.beforeAfter || []).map((photo) => ({
+      src: photo.src,
+      alt: photo.alt,
+      overlay:
+        photo.overlay ||
+        (/\bbefore\b/i.test(photo.alt) || /before/i.test(photo.src)
+          ? 'before'
+          : /\bafter\b/i.test(photo.alt) || /after/i.test(photo.src)
+            ? 'after'
+            : 'auto'),
+      overlayText: photo.overlayText,
+    })),
     why: service.why
       ? {
           heading: service.why.heading,
@@ -415,10 +429,10 @@ function mapLocation(location: LocationContentSeed) {
 }
 
 export const servicesSeed = [
-  mapService(airDuctCleaning),
-  mapService(dryerVentCleaning),
-  mapService(airDuctAndDryerVentCleaning),
-  mapService(moldRemediationAirDucts),
+  mapService(airDuctCleaning, 10),
+  mapService(dryerVentCleaning, 20),
+  mapService(airDuctAndDryerVentCleaning, 30),
+  mapService(moldRemediationAirDucts, 40),
 ]
 
 export const officesSeed = officesSeedSource.map((office) => ({

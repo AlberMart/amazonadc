@@ -66,10 +66,20 @@ export const Services: CollectionConfig = {
       },
     },
     {
+      name: 'cardOrder',
+      type: 'number',
+      defaultValue: 100,
+      admin: {
+        description:
+          'Sort order for Current Offers / related service cards (lower = first). Reorder freely from here.',
+        position: 'sidebar',
+      },
+    },
+    {
       name: 'price',
       type: 'number',
       admin: {
-        description: 'Current offer price in USD. Leave empty for estimate-only services.',
+        description: 'Current offer price in USD. Leave empty to use the empty-price settings below.',
       },
     },
     {
@@ -77,6 +87,28 @@ export const Services: CollectionConfig = {
       type: 'number',
       admin: {
         description: 'Original / strikethrough price in USD',
+      },
+    },
+    {
+      name: 'emptyPriceDisplay',
+      type: 'select',
+      defaultValue: 'text',
+      options: [
+        { label: 'Show custom text', value: 'text' },
+        { label: 'Hide price line', value: 'hidden' },
+      ],
+      admin: {
+        description: 'When Price is empty — show a label or hide the price row on cards and hero.',
+      },
+    },
+    {
+      name: 'emptyPriceText',
+      type: 'text',
+      defaultValue: 'Free estimate',
+      admin: {
+        condition: (_: unknown, sibling: { emptyPriceDisplay?: string }) =>
+          sibling?.emptyPriceDisplay !== 'hidden',
+        description: 'Text when there is no numeric price (e.g. Free estimate, Call for quote).',
       },
     },
     {
@@ -164,6 +196,19 @@ export const Services: CollectionConfig = {
         },
         { name: 'src', type: 'text' },
         { name: 'alt', type: 'text' },
+        {
+          name: 'overlay',
+          type: 'select',
+          defaultValue: 'auto',
+          options: [
+            { label: 'Auto', value: 'auto' },
+            { label: 'Before', value: 'before' },
+            { label: 'After', value: 'after' },
+            { label: 'Custom', value: 'custom' },
+            { label: 'None', value: 'none' },
+          ],
+        },
+        { name: 'overlayText', type: 'text' },
       ],
     },
     {
