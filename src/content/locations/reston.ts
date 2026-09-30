@@ -16,7 +16,7 @@ export const reston: LocationContentSeed = {
   servedBy: 'burke',
   sectionLayout: 'servicesFirst',
   about: {
-    heading: 'Why Reston’s Planned Villages Load Ducts With Toll-Road Dust',
+    heading: "Village Layouts, Town Center Stacks, and Toll Road Film",
     paragraphs: [
       'Reston was laid out as a cluster of villages, not a single subdivision. Reston Town Center stacks condos over shops. Lake Anne still has the original mid-century plaza and lower-rise buildings. South Lakes and North Point mix townhomes with single-family streets under a heavy tree canopy. Returns in those buildings pull corridor dust common along Reston Parkway and the Dulles Toll Road. High-rise laundry closets add long dryer risers that pack with lint by the second summer.',
       'The Silver Line stop at Wiehle-Reston East brought more stacked units and rooftop packs. Older Lake Anne trunks often share air with denser modern traffic around the plaza. Cool supply air plus a humid Reston July is how registers look dirty a week after you wipe them. Construction along the Toll Road and infill near the Town Center keeps gypsum dust in the mix.',
@@ -29,10 +29,10 @@ export const reston: LocationContentSeed = {
       'Dispatched from our Burke office',
     ],
   },
-  offersTitle: 'Special Offers — Reston, VA',
+  offersTitle: "Reston Flat Rates From the Burke Dispatch",
   services: {
-    heading: 'Our Services in Reston, VA',
-    intro: 'Reston residents book the same published packages as the rest of our metro area.',
+    heading: "Reston Packages for High-Rises and Lake Anne Trunks",
+    intro: "Stacked laundry and mid-century trunks — flat-rate scopes either way.",
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -53,7 +53,7 @@ export const reston: LocationContentSeed = {
     ],
   },
   why: {
-    heading: 'Reasons Neighbors in Reston Book Repeat Visits',
+    heading: "Why Reston Villages Recirculate Corridor Dust",
     items: [
       {
         title: 'Village Layout We Already Drive',
@@ -74,9 +74,9 @@ export const reston: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: 'Neighborhoods We Serve in Reston',
+    heading: "Town Center, Lake Anne, South Lakes, Wiehle",
     intro:
-      'We cover Reston’s villages from the Burke office. [Herndon](/locations/herndon) and [Great Falls](/locations/great-falls) are the same dispatch.',
+      "Planned villages and Silver Line stacks; ask about loading docks early.",
     groups: [
       {
         title: 'Reston Town Center & the Silver Line',
@@ -94,8 +94,8 @@ export const reston: LocationContentSeed = {
     ],
   },
   process: {
-    heading: 'What Happens After You Request Reston Service',
-    intro: 'Practical timing notes for Reston homeowners and property managers.',
+    heading: "HOA Gates and Elevator Pads on the Reston Route",
+    intro: "We stage for Town Center docks or South Lakes driveways depending on the address.",
     steps: [
       {
         title: 'Estimate Request',

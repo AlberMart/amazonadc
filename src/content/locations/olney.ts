@@ -15,7 +15,7 @@ export const olney: LocationContentSeed = {
   servedBy: 'bethesda',
   sectionLayout: 'faqEarly',
   about: {
-    heading: 'Why Olney Ramblers Load Pollen in Finished Basements',
+    heading: "Ramblers Farther Up County With Thick Canopy Seasons",
     paragraphs: [
       'Olney sits farther up Montgomery County than [Rockville](/locations/rockville): Georgia Avenue through the village, Olney Mill, Norbeck, then lanes toward Brookeville. A lot of the housing is 1960s–80s ramblers and split-levels. Families finished the basements. The air handler stayed down there. That is a clean looking rec room over a trunk that still sweats.',
       'The county canopy is thick once you leave the Beltway. Oak and pine dump pollen onto every deck. Returns pull it into those basement trunks. Finished rooms hide the dust until the AC starts after a wet week and the smell walks upstairs. Aspen Hill is a neighborhood we already pass on the drive, not its own page. Brookeville is the next hamlet north — we mention it because the same truck covers those lanes.',
@@ -28,10 +28,10 @@ export const olney: LocationContentSeed = {
       'Finished-basement trunks we already clean across outer Montgomery',
     ],
   },
-  offersTitle: 'Special Offers — Olney, MD',
+  offersTitle: "Olney Rates With Realistic Bethesda Drive Time",
   services: {
-    heading: 'Our Services in Olney, MD',
-    intro: 'Flat-rate options for Olney houses, townhomes, and light commercial.',
+    heading: "Olney Packages for Ramblers and Split-Levels",
+    intro: "Ramblers and additions — published packages after a walk-through.",
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -52,7 +52,7 @@ export const olney: LocationContentSeed = {
     ],
   },
   why: {
-    heading: 'What Sets This Olney Crew Apart',
+    heading: "Why Olney Finished Basements Collect Pollen Film",
     items: [
       {
         title: 'Honest Distance from Bethesda',
@@ -73,9 +73,9 @@ export const olney: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: 'Neighborhoods We Serve in Olney',
+    heading: "Olney Mill, Norbeck Edge, and Local Courts",
     intro:
-      'We cover Olney and the close outer-Montgomery streets we already drive from Bethesda. [Rockville](/locations/rockville) is the next city page south. Aspen Hill and Brookeville are neighborhoods and lanes on this dispatch, not separate city pages.',
+      "Further than Rockville; we say so and plan the day accordingly.",
     groups: [
       {
         title: 'Olney village & Olney Mill',
@@ -93,8 +93,8 @@ export const olney: LocationContentSeed = {
     ],
   },
   process: {
-    heading: 'Booking Olney Service from Bethesda',
-    intro: 'Simple steps our Bethesda crew follows for Olney appointments.',
+    heading: "Longer Montgomery Drive — Scheduled Honestly",
+    intro: "Arrival windows include the extra drive from Bethesda.",
     steps: [
       {
         title: 'Talk Through the Home',

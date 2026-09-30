@@ -16,7 +16,7 @@ export const princeWilliam: LocationContentSeed = {
   servedBy: 'burke',
   sectionLayout: 'whyFirst',
   about: {
-    heading: 'Why Prince William Ducts Hold Humidity and Dust',
+    heading: "Occoquan Humidity, I-95 Townhomes, and Manassas Colonials",
     paragraphs: [
       'Prince William County sits between the Occoquan and the I-95 / I-66 corridors: Woodbridge, Lake Ridge, Dale City, Manassas, Gainesville, and Haymarket. A lot of the housing is 1970s–2000s townhomes and single-family houses with basements. Those basements stay cool. Summer air off the Occoquan does not. Cold supply trunks sweat. Pollen and highway dust stick to that moisture.',
       'Townhomes along Prince William Parkway pack long dryer vents. A laundry room that stays hot after a cycle is often a clogged run, not a bad dryer. Older Manassas houses add retrofitted trunks with joints that collect whatever the last decade of filters missed.',
@@ -29,11 +29,11 @@ export const princeWilliam: LocationContentSeed = {
       'Same crew that already works Springfield and Lorton',
     ],
   },
-  offersTitle: 'Special Offers — Prince William County, VA',
+  offersTitle: "Prince William Flat Rates — County Overview Page",
   services: {
-    heading: 'Our Services in Prince William County',
+    heading: "Prince William Packages From Burke Dispatch",
     intro:
-      'Choose duct cleaning, dryer vents, or mold treatment for ventilation when inspection calls for it.',
+      "Townhomes on I-95 and inland colonials share flat-rate packages.",
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -54,7 +54,7 @@ export const princeWilliam: LocationContentSeed = {
     ],
   },
   why: {
-    heading: 'Prince William Service — Straight Answers',
+    heading: "Why County Homes Mix Corridor Dust With River Moisture",
     items: [
       {
         title: 'Real Burke Office, dispatched from our Burke office',
@@ -75,9 +75,9 @@ export const princeWilliam: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: 'Communities We Serve in Prince William County',
+    heading: "Woodbridge, Lake Ridge, Manassas, and Dale City Overview",
     intro:
-      'We cover the cities and CDPs we already drive from Burke. [Springfield](/locations/springfield) is the next Fairfax County page north.',
+      "County-level page; Lorton and Springfield cover closer Fairfax edges.",
     groups: [
       {
         title: 'Woodbridge & the river',
@@ -95,8 +95,8 @@ export const princeWilliam: LocationContentSeed = {
     ],
   },
   process: {
-    heading: 'Prince William Scheduling Checklist',
-    intro: 'Practical timing notes for Prince William homeowners and property managers.',
+    heading: "Southern Corridor Timing From Burke",
+    intro: "Drive time is real; morning ETAs reflect I-95 conditions.",
     steps: [
       {
         title: 'Estimate Request',

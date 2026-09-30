@@ -15,7 +15,7 @@ export const hyattsville: LocationContentSeed = {
   servedBy: 'bethesda',
   sectionLayout: 'whyFirst',
   about: {
-    heading: 'Why Hyattsville Route 1 Housing Loads Humidity and Corridor Dust',
+    heading: "Route 1 Arts-District Density and Humid Older Trunks",
     paragraphs: [
       'Hyattsville is a Prince George’s city on the Route 1 spine: the arts district and Gateway, West Hyattsville, then streets toward [College Park](/locations/college-park) and the District. Housing mixes early brick, later rentals, and new stacked units over older mechanical rooms. Route 1 construction and traffic add grit the returns do not sort from pollen.',
       'PG County summers are wet. Cool trunks in a basement or crawl sweat. Arts-district renovations kick drywall into shared chases. The first AC week after a humid spell is when registers gray out and the laundry smells like a packed dryer vent. [Takoma Park](/locations/takoma-park) and [Washington, DC](/locations/washington-dc) sit on the same metro ring.',
@@ -28,11 +28,11 @@ export const hyattsville: LocationContentSeed = {
       'Older PG trunks and stacked-unit dryer runs we already clean',
     ],
   },
-  offersTitle: 'Special Offers — Hyattsville, MD',
+  offersTitle: "Hyattsville Flat Rates From the Maryland Office",
   services: {
-    heading: 'Our Services in Hyattsville, MD',
+    heading: "Hyattsville Packages for Row and Semi-Detached Homes",
     intro:
-      'Choose duct cleaning, dryer vents, or mold treatment for ventilation when inspection calls for it.',
+      "Older trunks and compact footprints — flat rates after scope lock.",
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -53,7 +53,7 @@ export const hyattsville: LocationContentSeed = {
     ],
   },
   why: {
-    heading: 'Hyattsville Service — Straight Answers',
+    heading: "Why Route 1 Housing Mixes Humidity With Corridor Dust",
     items: [
       {
         title: 'Honest Bethesda Dispatch into PG County',
@@ -74,9 +74,9 @@ export const hyattsville: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: 'Neighborhoods We Serve in Hyattsville',
+    heading: "Route 1, Arts District Edge, and Neighborhood Grids",
     intro:
-      'We cover the City of Hyattsville and the close Prince George’s streets we already drive from Bethesda. [College Park](/locations/college-park) is the next city north; [Washington, DC](/locations/washington-dc) and [Takoma Park](/locations/takoma-park) sit west.',
+      "College Park and Takoma Park are neighboring pages.",
     groups: [
       {
         title: 'Arts district & Route 1',
@@ -94,8 +94,8 @@ export const hyattsville: LocationContentSeed = {
     ],
   },
   process: {
-    heading: 'Hyattsville Scheduling Checklist',
-    intro: 'Practical timing notes for Hyattsville homeowners and property managers.',
+    heading: "Prince George’s Timing From Bethesda",
+    intro: "Street parking and unit access notes help the morning ETA.",
     steps: [
       {
         title: 'Estimate Request',

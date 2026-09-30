@@ -16,7 +16,7 @@ export const vienna: LocationContentSeed = {
   servedBy: 'burke',
   sectionLayout: 'faqMid',
   about: {
-    heading: 'Why Vienna Colonials Trap Pollen in Finished Basements',
+    heading: "1950s–70s Colonials Under a Dense Tree Canopy",
     paragraphs: [
       'The Town of Vienna grew along Maple Avenue and Chain Bridge Road: walkable blocks, Church Street shops, and a lot of 1950s–70s colonials with full basements. Those rooms stay cool. Northern Virginia summers do not. Cold supply trunks sweat. Oak, maple, and the Wolf Trap canopy dump pollen onto that film. Glyndon Park and the streets off Nutley sit under the same trees.',
       'Vienna/Fairfax-GMU Metro and the Tysons edge add denser townhomes and longer dryer runs. A colonial that gained a rec room in the 1990s often has original trunks plus a later branch. Dust collects at those joints. The same humidity that fogs a windshield on Maple Avenue in July is sitting on the air handler.',
@@ -29,10 +29,10 @@ export const vienna: LocationContentSeed = {
       'Same Burke team that already works McLean and Oakton',
     ],
   },
-  offersTitle: 'Special Offers — Vienna, VA',
+  offersTitle: "Vienna Flat-Rate Cleaning Packages",
   services: {
-    heading: 'Our Services in Vienna, VA',
-    intro: 'Flat-rate options for Vienna houses, townhomes, and light commercial.',
+    heading: "Vienna Packages for Basement Trunks and Dryer Runs",
+    intro: "Colonials with finished basements are the usual Vienna job — flat rates apply.",
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -53,7 +53,7 @@ export const vienna: LocationContentSeed = {
     ],
   },
   why: {
-    heading: 'What Sets This Vienna Crew Apart',
+    heading: "Why Vienna Pollen Seasons Stick to Cool Metal",
     items: [
       {
         title: 'Maple Avenue From Burke, Not Maryland',
@@ -74,9 +74,9 @@ export const vienna: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: 'Neighborhoods We Serve in Vienna',
+    heading: "Maple Avenue Corridor and Neighborhood Cul-de-Sacs",
     intro:
-      'We cover the Town of Vienna and the close county streets we already drive from Burke. [McLean](/locations/mclean) and [Oakton](/locations/oakton) are the same dispatch.',
+      "Oakton and McLean are nearby pages; Vienna stays on its own route notes.",
     groups: [
       {
         title: 'Maple Avenue & downtown',
@@ -95,8 +95,8 @@ export const vienna: LocationContentSeed = {
     ],
   },
   process: {
-    heading: 'Booking Vienna Service from Burke',
-    intro: 'Practical timing notes for Vienna homeowners and property managers.',
+    heading: "Fairfax Canopy Route From the Burke Office",
+    intro: "Leaf season and basement returns are part of the intake questions.",
     steps: [
       {
         title: 'Estimate Request',

@@ -16,7 +16,7 @@ export const lorton: LocationContentSeed = {
   servedBy: 'burke',
   sectionLayout: 'leanNoOffers',
   about: {
-    heading: 'Why Lorton Ducts Collect I-95 Dust and Occoquan Moisture',
+    heading: "I-95 Dust, Occoquan Humidity, and Newer HOA Streets",
     paragraphs: [
       'Lorton sits on I-95 south of Springfield: Lorton Station and the VRE, Laurel Hill on the former prison grounds, Gunston-area streets, and older houses that predate the HOA wave. Traffic film from the interstate is constant. The Occoquan and nearby creeks add a humid air mass that Springfield’s Mixing Bowl does not quite match. New townhomes and 1970s split-levels share the same summer problem — cool trunks, wet air, dusty returns.',
       'Laurel Hill and Lorton Station HOAs have stacked laundry and long dryer chases. Older Lorton Road houses often have original trunks plus a later addition. Neither likes a July that sits over the river. A dryer that needs two cycles in a Station townhome is usually lint packed at a roof cap, not a dying appliance.',
@@ -29,10 +29,10 @@ export const lorton: LocationContentSeed = {
       'Same team that already works Springfield and Mount Vernon',
     ],
   },
-  offersTitle: 'Special Offers — Lorton, VA',
+  offersTitle: "Lorton Rates on the Same Burke Packages",
   services: {
-    heading: 'Our Services in Lorton, VA',
-    intro: 'Packages we actually sell for Lorton homes — quoted before work starts.',
+    heading: "Lorton Packages for Corridor and River-Edge Homes",
+    intro: "HOA homes and older pockets share published flat rates.",
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -53,7 +53,7 @@ export const lorton: LocationContentSeed = {
     ],
   },
   why: {
-    heading: 'Why Lorton Homeowners Call Us',
+    heading: "Why Lorton Homes Mix Traffic Film With River Moisture",
     items: [
       {
         title: 'Up I-95 From Burke, Not Across the River',
@@ -74,9 +74,9 @@ export const lorton: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: 'Neighborhoods We Serve in Lorton',
+    heading: "Lorton Station, Occoquan Edge, and Laurel Hill",
     intro:
-      'We cover Lorton from Burke. [Springfield](/locations/springfield) and [Mt Vernon](/locations/mount-vernon) are the same dispatch.',
+      "Springfield and Prince William pages sit nearby on the corridor.",
     groups: [
       {
         title: 'Lorton Station',
@@ -94,8 +94,8 @@ export const lorton: LocationContentSeed = {
     ],
   },
   process: {
-    heading: 'How a Lorton Visit Usually Runs',
-    intro: 'A clear path from estimate to finished job for Lorton homes.',
+    heading: "South Fairfax Dispatch From Burke",
+    intro: "I-95 timing is built into the morning arrival window.",
     steps: [
       {
         title: 'Request a Window',

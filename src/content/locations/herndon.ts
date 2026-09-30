@@ -16,7 +16,7 @@ export const herndon: LocationContentSeed = {
   servedBy: 'burke',
   sectionLayout: 'whyFirst',
   about: {
-    heading: 'Why Herndon Ducts Collect Construction Dust Faster Than Downtown Suggests',
+    heading: "Clock Tower Cottages Meet Dulles-Corridor Construction Dust",
     paragraphs: [
       'The Town of Herndon still has a walkable core: Elden Street, the municipal clock tower, and older cottages on small lots. A few blocks out, Worldgate and Herndon Parkway shift to townhomes and stacked laundry closets. West toward Dulles, data-center and office construction keeps a fine gypsum and soil film in the air. Returns pull that mix in along with oak pollen from the remaining canopy.',
       'Downtown brick houses often have original trunks plus later additions. Worldgate units have long dryer runs to a shared wall or roof cap. Neither layout likes a summer of humid air sitting on cool metal. A dryer that needs two cycles on a Worldgate stack is usually lint, not a dying machine.',
@@ -29,11 +29,11 @@ export const herndon: LocationContentSeed = {
       'Same Burke team that already works Reston and Loudoun',
     ],
   },
-  offersTitle: 'Special Offers — Herndon, VA',
+  offersTitle: "Herndon Rates — Same Packages as Reston Dispatch",
   services: {
-    heading: 'Our Services in Herndon, VA',
+    heading: "Herndon Cleanings for Downtown and Worldgate",
     intro:
-      'Choose duct cleaning, dryer vents, or mold treatment for ventilation when inspection calls for it.',
+      "Cottages and stacked Worldgate units share published flat rates.",
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -54,7 +54,7 @@ export const herndon: LocationContentSeed = {
     ],
   },
   why: {
-    heading: 'Herndon Service — Straight Answers',
+    heading: "Why Herndon Returns Hold Gypsum and Traffic Film",
     items: [
       {
         title: 'Clock Tower to Dulles, One Crew',
@@ -75,9 +75,9 @@ export const herndon: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: 'Neighborhoods We Serve in Herndon',
+    heading: "Elden Street, Worldgate, and Dulles-Edge Blocks",
     intro:
-      'We cover the Town of Herndon and the close Dulles-corridor streets we already drive from Burke. [Reston](/locations/reston) and [Chantilly](/locations/chantilly) are the same dispatch.',
+      "Historic core and corridor HOAs; Centreville-adjacent streets often share the day.",
     groups: [
       {
         title: 'Historic downtown',
@@ -95,8 +95,8 @@ export const herndon: LocationContentSeed = {
     ],
   },
   process: {
-    heading: 'Herndon Scheduling Checklist',
-    intro: 'What to expect when we schedule Herndon from 5641 Burke Centre Pkwy Ste 119.',
+    heading: "Downtown Alleys and Worldgate Gates From Burke",
+    intro: "We ask about alley parking downtown and gate codes at Worldgate.",
     steps: [
       {
         title: 'Online or Phone Intake',

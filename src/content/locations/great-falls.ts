@@ -16,7 +16,7 @@ export const greatFalls: LocationContentSeed = {
   servedBy: 'burke',
   sectionLayout: 'whyFirst',
   about: {
-    heading: 'Why Great Falls Estates Hold Humidity in Long Duct Runs',
+    heading: "Estate-Scale Trunks, River Humidity, and Wooded Lots",
     paragraphs: [
       'Great Falls is large lots, mature oaks, and houses set far back from Georgetown Pike and Walker Road. Many properties still use a well, a septic field, or both. That does not change how we clean ducts, but it does mean long dryer runs, multiple returns, and air handlers in walk-out basements that sit close to damp soil. The Potomac is close enough that summer humidity moves inland even when you cannot see the river.',
       'Estate-scale systems often mix original metal trunks with later additions over a garage or a guest wing. Dust collects at those joints. Tree pollen from the canopy coats outdoor furniture in April and the same film sits in returns. A dryer that sits fifty feet from the exterior wall will pack with lint long before a short ranch run would.',
@@ -29,10 +29,10 @@ export const greatFalls: LocationContentSeed = {
       'Dispatched from our Burke office',
     ],
   },
-  offersTitle: 'Special Offers — Great Falls, VA',
+  offersTitle: "Great Falls Rates With Honest Drive Time",
   services: {
-    heading: 'Our Services in Great Falls, VA',
-    intro: 'Clear scopes for Great Falls. No per-vent games.',
+    heading: "Great Falls Packages for Large Single-Family Systems",
+    intro: "Larger systems and longer dryer runs — still flat-rate residential packages.",
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -53,7 +53,7 @@ export const greatFalls: LocationContentSeed = {
     ],
   },
   why: {
-    heading: 'Booking Confidence for Great Falls Homes',
+    heading: "Why Estate Homes Need Longer Inspection Windows",
     items: [
       {
         title: 'Estate Layouts, Quoted Up Front',
@@ -74,9 +74,9 @@ export const greatFalls: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: 'Neighborhoods We Serve in Great Falls',
+    heading: "Georgetown Pike and River-Edge Properties",
     intro:
-      'We cover Great Falls from Burke. [McLean](/locations/mclean) and [Reston](/locations/reston) are the same dispatch.',
+      "McLean and Reston are closer-in pages; Great Falls is scheduled deliberately.",
     groups: [
       {
         title: 'Village & Georgetown Pike',
@@ -94,8 +94,8 @@ export const greatFalls: LocationContentSeed = {
     ],
   },
   process: {
-    heading: 'From First Call to Walkthrough in Great Falls',
-    intro: 'A clear path from estimate to finished job for Great Falls homes.',
+    heading: "Longer Drive Planning From Burke — Said Up Front",
+    intro: "We quote arrival windows that respect the drive from Burke Centre.",
     steps: [
       {
         title: 'Request a Window',

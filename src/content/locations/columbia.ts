@@ -16,7 +16,7 @@ export const columbia: LocationContentSeed = {
   servedBy: 'bethesda',
   sectionLayout: 'servicesFirst',
   about: {
-    heading: 'Why Columbia Village Townhomes Load Lake Humidity and Pollen',
+    heading: "Village Townhomes, Lake Paths, and HOA Dryer Chases",
     paragraphs: [
       'Columbia is James Rouse’s planned Howard County city: Town Center, Wilde Lake, Hickory Ridge, Owen Brown, Oakland Mills, Kings Contrivance, and the paths that stitch village centers together. A lot of the stock is 1970s–90s townhomes and colonials with HOA rules and tight mechanical closets. Dryer vents turn corners. Returns sit low over finished lower levels.',
       'The lakes and open space keep lots greener — and damper — than a Beltway brick block. Oak pollen and mowed-path dust ride the same returns. Clarksville is a neighborhood and next-door community we already drive, not its own page. [Ellicott City](/locations/ellicott-city) is the next Howard County city page.',
@@ -29,10 +29,10 @@ export const columbia: LocationContentSeed = {
       'HOA townhome closets we already clean across planned communities',
     ],
   },
-  offersTitle: 'Special Offers — Columbia, MD',
+  offersTitle: "Columbia Rates With Honest Travel Windows",
   services: {
-    heading: 'Our Services in Columbia, MD',
-    intro: 'Columbia residents book the same published packages as the rest of our metro area.',
+    heading: "Columbia Packages for Village Townhomes",
+    intro: "Townhome packages at published rates; longer drive disclosed up front.",
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -53,7 +53,7 @@ export const columbia: LocationContentSeed = {
     ],
   },
   why: {
-    heading: 'Reasons Neighbors in Columbia Book Repeat Visits',
+    heading: "Why Columbia Villages Recirculate Lake-Season Film",
     items: [
       {
         title: 'Honest Distance, Real Bethesda Office',
@@ -74,9 +74,9 @@ export const columbia: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: 'Neighborhoods We Serve in Columbia',
+    heading: "Village Clusters We Already Route Through",
     intro:
-      'We cover Columbia’s villages and the close Howard County streets we already drive from Bethesda. [Ellicott City](/locations/ellicott-city) is the next city page. Clarksville is a neighborhood on this dispatch, not a separate page.',
+      "Farther than Montgomery core; Ellicott City is the next Howard page.",
     groups: [
       {
         title: 'Town Center & Wilde Lake',
@@ -94,8 +94,8 @@ export const columbia: LocationContentSeed = {
     ],
   },
   process: {
-    heading: 'What Happens After You Request Columbia Service',
-    intro: 'What to expect when we schedule Columbia from 7815 Old Georgetown Rd Ste 201.',
+    heading: "Howard County Drive From Bethesda — Planned",
+    intro: "We schedule Columbia with realistic Bethesda-to-Howard timing.",
     steps: [
       {
         title: 'Online or Phone Intake',

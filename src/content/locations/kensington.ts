@@ -16,7 +16,7 @@ export const kensington: LocationContentSeed = {
   servedBy: 'bethesda',
   sectionLayout: 'communitiesFirst',
   about: {
-    heading: 'Why Kensington Colonials Load Connecticut Avenue Pollen',
+    heading: "Connecticut Avenue Colonials and Street-Tree Pollen",
     paragraphs: [
       'Kensington is a close-in Montgomery town between [Bethesda](/locations/bethesda) and [Wheaton](/locations/wheaton): Antique Row on Howard Avenue, Connecticut Avenue through the middle, then Kensington Heights and the streets toward Silver Spring. A lot of the housing is early- and mid-century colonials with full basements. Those basements stay cool. The street trees do not take a season off.',
       'Connecticut Avenue is a pollen and grit corridor. Oak and maple dump debris onto every stoop. Returns pull it in. Weekend traffic from Antique Row does not help. When humid air hits cold supply trunks, that film turns the first AC cycle into a dust event you can see on the registers.',
@@ -29,10 +29,10 @@ export const kensington: LocationContentSeed = {
       'Close-in basement trunks we already clean from Bethesda',
     ],
   },
-  offersTitle: 'Special Offers — Kensington, MD',
+  offersTitle: "Kensington Flat Rates From the Maryland Office",
   services: {
-    heading: 'Our Services in Kensington, MD',
-    intro: 'Flat-rate options for Kensington houses, townhomes, and light commercial.',
+    heading: "Kensington Packages for Close-In Colonials",
+    intro: "Colonials with finished basements — flat-rate scopes.",
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -53,7 +53,7 @@ export const kensington: LocationContentSeed = {
     ],
   },
   why: {
-    heading: 'What Sets This Kensington Crew Apart',
+    heading: "Why Kensington Basement Trunks Hold Spring Debris",
     items: [
       {
         title: 'Minutes from a Real Bethesda Office',
@@ -74,9 +74,9 @@ export const kensington: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: 'Neighborhoods We Serve in Kensington',
+    heading: "Connecticut Avenue and Neighborhood Courts",
     intro:
-      'We cover the Town of Kensington and the close Montgomery streets we already drive from Bethesda. [Bethesda](/locations/bethesda) is the office page; [Wheaton](/locations/wheaton) and [Silver Spring](/locations/silver-spring) sit east and south.',
+      "Wheaton and Bethesda hub pages are nearby.",
     groups: [
       {
         title: 'Antique Row & downtown',
@@ -94,8 +94,8 @@ export const kensington: LocationContentSeed = {
     ],
   },
   process: {
-    heading: 'Booking Kensington Service from Bethesda',
-    intro: 'A clear path from estimate to finished job for Kensington homes.',
+    heading: "Short Bethesda Run Into Kensington",
+    intro: "Basement access and dryer terminations are on the intake list.",
     steps: [
       {
         title: 'Request a Window',

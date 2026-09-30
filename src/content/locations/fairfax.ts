@@ -15,7 +15,7 @@ export const fairfax: LocationContentSeed = {
   servedBy: 'burke',
   sectionLayout: 'whyFirst',
   about: {
-    heading: 'Why Fairfax HVAC Systems Load Dust Faster Than You Expect',
+    heading: "City of Fairfax Ramblers Under a Heavy County Canopy",
     paragraphs: [
       'The City of Fairfax is a small independent city wrapped by Fairfax County: Old Town along Chain Bridge Road, the courthouse, Fairfax Corner, and streets that run toward Mosaic and Merrifield. A lot of the housing is 1950s–80s ramblers and split-levels with full basements. Those basements stay cool. Northern Virginia summers do not. Cold supply trunks sweat. Oak and maple pollen from the county canopy sticks to that film.',
       'GMU-area rentals and stacked townhomes add long dryer runs. Construction dust from infill near Route 50 and 29 settles in returns the same week you wipe the registers. The blower then sends it back upstairs.',
@@ -28,10 +28,10 @@ export const fairfax: LocationContentSeed = {
       'Same Burke team that already works Fairfax County',
     ],
   },
-  offersTitle: 'Special Offers — Fairfax, VA',
+  offersTitle: "City of Fairfax Flat-Rate Cleaning Packages",
   services: {
-    heading: 'Our Services in Fairfax, VA',
-    intro: 'Flat-rate options for Fairfax houses, townhomes, and light commercial.',
+    heading: "Fairfax City Packages Distinct From Fair Oaks",
+    intro: "Ramblers and townhomes inside the city limits — not a duplicate of Fair Oaks.",
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -52,7 +52,7 @@ export const fairfax: LocationContentSeed = {
     ],
   },
   why: {
-    heading: 'What Sets This Fairfax Crew Apart',
+    heading: "Why City of Fairfax Trunks Hold Spring Pollen",
     items: [
       {
         title: 'Close Burke Dispatch',
@@ -73,9 +73,9 @@ export const fairfax: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: 'Neighborhoods We Serve in Fairfax',
+    heading: "Old Town Fairfax, GMU Edge, Fairfax Corner Living",
     intro:
-      'We cover the City of Fairfax and the close county streets we already drive from Burke. [Springfield](/locations/springfield) and [McLean](/locations/mclean) are the same dispatch.',
+      "This page is the City of Fairfax. Fair Oaks and Oakton have their own pages.",
     groups: [
       {
         title: 'Old Town & downtown',
@@ -93,8 +93,8 @@ export const fairfax: LocationContentSeed = {
     ],
   },
   process: {
-    heading: 'Booking Fairfax Service from Burke',
-    intro: 'Simple steps our Burke crew follows for Fairfax appointments.',
+    heading: "Short Run Up 123 From the Burke Office",
+    intro: "A short Burke dispatch; we still confirm HOA rules when they apply.",
     steps: [
       {
         title: 'Talk Through the Home',

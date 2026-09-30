@@ -15,7 +15,7 @@ export const oakton: LocationContentSeed = {
   servedBy: 'burke',
   sectionLayout: 'servicesFirst',
   about: {
-    heading: 'Why Oakton’s Route 123 Colonials Load Pollen Into Cool Trunks',
+    heading: "Chain Bridge Road Colonials and Canopy Pollen",
     paragraphs: [
       'Oakton sits on Chain Bridge Road (Route 123) between the Town of Vienna and the City of Fairfax: large lots, 1960s–80s colonials, and streets off Vale and Hunter Mill. The canopy is dense. Spring pollen coats decks the same week it coats returns. Finished basements stay cool while July air stays wet, so supply trunks sweat and hold that film.',
       'A typical Oakton house mixed original metal with a later addition over a garage or a rec-room branch. Dust collects at those joints. Dryer runs from a second-floor laundry often travel a long, quiet path to a rear gable. Waples Mill traffic adds a finer road dust that smaller subdivisions do not see as much of.',
@@ -28,10 +28,10 @@ export const oakton: LocationContentSeed = {
       'Same Burke team that already works Vienna and Fairfax',
     ],
   },
-  offersTitle: 'Special Offers — Oakton, VA',
+  offersTitle: "Oakton Flat-Rate Duct and Dryer Packages",
   services: {
-    heading: 'Our Services in Oakton, VA',
-    intro: 'Oakton residents book the same published packages as the rest of our metro area.',
+    heading: "Oakton Packages Between Vienna and Fairfax",
+    intro: "Large-lot colonials with long runs — quoted before equipment comes off the truck.",
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -52,7 +52,7 @@ export const oakton: LocationContentSeed = {
     ],
   },
   why: {
-    heading: 'Reasons Neighbors in Oakton Book Repeat Visits',
+    heading: "Why Oakton Trunks Hold Leaf-Season Debris",
     items: [
       {
         title: 'Between Vienna and Fairfax, From Burke',
@@ -73,9 +73,9 @@ export const oakton: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: 'Neighborhoods We Serve in Oakton',
+    heading: "Route 123 Corridor and Neighborhood Courts",
     intro:
-      'We cover Oakton and the close 123-corridor streets we already drive from Burke. [Vienna](/locations/vienna) and [Fairfax](/locations/fairfax) are the same dispatch.',
+      "Vienna, Fairfax, and Fair Oaks are separate pages on related routes.",
     groups: [
       {
         title: 'Route 123 corridor',
@@ -93,8 +93,8 @@ export const oakton: LocationContentSeed = {
     ],
   },
   process: {
-    heading: 'What Happens After You Request Oakton Service',
-    intro: 'What to expect when we schedule Oakton from 5641 Burke Centre Pkwy Ste 119.',
+    heading: "Mid-Fairfax Timing From the Burke Office",
+    intro: "We confirm driveway access and basement returns when you book.",
     steps: [
       {
         title: 'Online or Phone Intake',

@@ -15,7 +15,7 @@ export const alexandria: LocationContentSeed = {
   servedBy: 'burke',
   sectionLayout: 'servicesFirst',
   about: {
-    heading: 'Why Alexandria Homes Require Special Indoor Air Care',
+    heading: "Old Town Plaster, Del Ray Townhomes, and River Moisture",
     paragraphs: [
       'Alexandria is a historic independent city: colonial brick along Old Town, older houses in Rosemont and Del Ray, and newer buildings at Potomac Yard. It is also humid because it sits on the Potomac River. Those two facts create specific problems for local HVAC systems.',
       'Historic and older homes: Alexandria has one of the nation’s oldest historic districts. Brick buildings and older duct runs collect decades of dust, pollen, and debris. Without regular cleaning, that material keeps recirculating through the house.',
@@ -30,11 +30,11 @@ export const alexandria: LocationContentSeed = {
       'Same Burke team that already works Alexandria and Arlington',
     ],
   },
-  offersTitle: 'Special Offers — Alexandria, VA',
+  offersTitle: "Alexandria Rates Matching Our Burke Packages",
   services: {
-    heading: 'Our Services in Alexandria, VA',
+    heading: "Alexandria Cleanings for Historic and Waterfront Homes",
     intro:
-      'Choose duct cleaning, dryer vents, or mold treatment for ventilation when inspection calls for it.',
+      "Historic boots and modern condo packs get the same published scopes.",
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -59,7 +59,7 @@ export const alexandria: LocationContentSeed = {
     ],
   },
   why: {
-    heading: 'Alexandria Service — Straight Answers',
+    heading: "Why Alexandria Registers Film Over After Humid Weeks",
     items: [
       {
         title: 'Upfront Flat-Rate Pricing',
@@ -80,9 +80,9 @@ export const alexandria: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: 'Neighborhoods Across Alexandria',
+    heading: "Old Town, Del Ray, and West End Stops",
     intro:
-      'We cover residential and commercial customers throughout Alexandria, plus nearby [Arlington](/locations/arlington), [McLean](/locations/mclean), [Fairfax](/locations/fairfax), [Springfield](/locations/springfield), and [Washington, DC](/locations/washington-dc).',
+      "Waterfront, Eisenhower, and West End streets are on the Burke dispatch list.",
     groups: [
       { title: 'Old Town & downtown', places: 'Old Town, Downtown Alexandria, waterfront' },
       { title: 'Del Ray & Rosemont', places: 'Del Ray, Rosemont, Arlandria' },
@@ -90,8 +90,8 @@ export const alexandria: LocationContentSeed = {
     ],
   },
   process: {
-    heading: 'Alexandria Scheduling Checklist',
-    intro: 'Simple steps our Burke crew follows for Alexandria appointments.',
+    heading: "Narrow-Street Staging Notes for Alexandria Visits",
+    intro: "We plan alley access and floor protection for plaster and narrow halls.",
     steps: [
       {
         title: 'Talk Through the Home',

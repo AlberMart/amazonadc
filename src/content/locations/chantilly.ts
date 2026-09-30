@@ -15,7 +15,7 @@ export const chantilly: LocationContentSeed = {
   servedBy: 'burke',
   sectionLayout: 'whyFirst',
   about: {
-    heading: 'Why Chantilly HOAs Fill Returns With Route 28 and Airport Dust',
+    heading: "Sully HOAs, Route 28 Film, and Builder Dust That Never Left",
     paragraphs: [
       'Chantilly sits in Fairfax County’s Sully area, along Route 28 between Dulles and Centreville. A lot of the housing is 1990s–2010s HOA streets: Sully Station, Greenbriar, Franklin Farm-edge, and townhomes near Westfields. Those systems were built during overlapping construction waves. Fine gypsum and insulation fibers often stay in returns for years if the ducts were never commissioned clean. Airport-corridor traffic adds another film.',
       'New-looking vinyl and brick does not mean clean indoor air. HOA townhomes stack laundry closets and send dryer lint up a shared chase. Single-family houses along Stringfellow still sit under enough trees that spring pollen coats the same registers the construction dust already found. Centreville is next door; the dust does not stop at the CDP line.',
@@ -28,10 +28,10 @@ export const chantilly: LocationContentSeed = {
       'Same Burke team that already works Fair Oaks and Loudoun',
     ],
   },
-  offersTitle: 'Special Offers — Chantilly, VA',
+  offersTitle: "Chantilly Flat Rates for HOA Townhomes and Houses",
   services: {
-    heading: 'Our Services in Chantilly, VA',
-    intro: 'Chantilly residents book the same published packages as the rest of our metro area.',
+    heading: "Chantilly Packages for 1990s–2010s HOA Homes",
+    intro: "HOA chases and single-family trunks — flat rates either way.",
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -52,7 +52,7 @@ export const chantilly: LocationContentSeed = {
     ],
   },
   why: {
-    heading: 'Reasons Neighbors in Chantilly Book Repeat Visits',
+    heading: "Why Newer-Looking Chantilly Houses Still Blow Gypsum",
     items: [
       {
         title: 'Route 28 HOAs We Already Service',
@@ -73,9 +73,9 @@ export const chantilly: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: 'Neighborhoods We Serve in Chantilly',
+    heading: "Sully Station, Greenbriar, Westfields, Stringfellow",
     intro:
-      'We cover Chantilly and the close Sully streets we already drive from Burke. [Fair Oaks](/locations/fair-oaks) and [Herndon](/locations/herndon) are the same dispatch.',
+      "Fair Oaks and Loudoun pages are neighbors; Chantilly stays Route 28–focused.",
     groups: [
       {
         title: 'Sully & Route 28',
@@ -93,8 +93,8 @@ export const chantilly: LocationContentSeed = {
     ],
   },
   process: {
-    heading: 'What Happens After You Request Chantilly Service',
-    intro: 'What to expect when we schedule Chantilly from 5641 Burke Centre Pkwy Ste 119.',
+    heading: "Western Fairfax Dispatch Notes From Burke",
+    intro: "Gate codes and townhome dryer chases are on the intake checklist.",
     steps: [
       {
         title: 'Online or Phone Intake',

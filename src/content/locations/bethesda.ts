@@ -15,7 +15,7 @@ export const bethesda: LocationContentSeed = {
   servedBy: 'bethesda',
   sectionLayout: 'hub',
   about: {
-    heading: 'Why Bethesda Is Our Maryland Hub',
+    heading: "Old Georgetown Road Staging for Montgomery County",
     paragraphs: [
       'Our shop sits at 7815 Old Georgetown Rd, Suite 201, Bethesda, MD 20814. Crews stage here for Montgomery County, parts of Prince George’s County, Howard County runs, and Frederick when scheduled. Friendship Heights and close-in Northwest [Washington, DC](/locations/washington-dc) often share this dispatch when it is the shorter drive.',
       'Bethesda and nearby streets mix colonials, townhomes, and condo stacks. Tree pollen, humid summers, and renovation dust are the usual reasons returns look gray. We offer the same packages as the home page: air ducts, dryer vents, and mold treatment — not chimney sweeping or standalone “HVAC unit rebuild” marketing.',
@@ -28,11 +28,11 @@ export const bethesda: LocationContentSeed = {
       'Montgomery County routes we drive every week',
     ],
   },
-  offersTitle: 'Special Offers — Bethesda Office',
+  offersTitle: "Published Rates From the Bethesda Office",
   services: {
-    heading: 'Services from the Bethesda Office',
+    heading: "Maryland Packages From the Bethesda Suite",
     intro:
-      'Choose duct cleaning, dryer vents, or mold treatment for ventilation when inspection calls for it.',
+      "The same duct, dryer, and mold packages as Virginia — staged from Bethesda.",
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -53,7 +53,7 @@ export const bethesda: LocationContentSeed = {
     ],
   },
   why: {
-    heading: 'Bethesda Service — Straight Answers',
+    heading: "Why Montgomery County Crews Stage on Old Georgetown Rd",
     items: [
       {
         title: 'Staffed Maryland Office',
@@ -74,9 +74,9 @@ export const bethesda: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: 'Communities Served from Bethesda',
+    heading: "Maryland Cities Covered From Suite 201",
     intro:
-      'Use the city pages for neighborhood detail. This hub is for the Bethesda office and Maryland dispatch.',
+      "Use city pages for neighborhood names; this hub is for the Maryland office itself.",
     groups: [
       {
         title: 'Close-in Montgomery',
@@ -101,8 +101,8 @@ export const bethesda: LocationContentSeed = {
     ],
   },
   process: {
-    heading: 'Bethesda Scheduling Checklist',
-    intro: 'What to expect when we schedule Bethesda from 7815 Old Georgetown Rd Ste 201.',
+    heading: "Bethesda Intake, Then I-270 and Beltway Routes",
+    intro: "From the Old Georgetown suite to a Montgomery or Howard County driveway.",
     steps: [
       {
         title: 'Online or Phone Intake',

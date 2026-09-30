@@ -16,7 +16,7 @@ export const wheaton: LocationContentSeed = {
   servedBy: 'bethesda',
   sectionLayout: 'processFirst',
   about: {
-    heading: 'Why Wheaton Brick Houses Load Urban Dust and Pollen',
+    heading: "1940s–60s Brick, Metro Dust, and Compact Lots",
     paragraphs: [
       'Wheaton is close-in Montgomery County around the Westfield mall, the Metro, Veirs Mill Road, and Georgia Avenue. Housing is mixed on purpose: 1940s–60s brick colonials and ramblers, later split-levels, garden apartments, and newer infill. That mix shares one problem. Older ductwork was cut through plaster and joists. Joints leak. Downtown construction and bus-corridor grit add a second load the returns never sort from tree pollen.',
       'Aspen Hill sits just north as a neighborhood we already drive, not a separate city page. Kemp Mill and Glenmont fill in the same close-in ring. Basements stay cool. Maryland summers stay wet. Cold trunks sweat, and the first AC week after a pollen burst is when registers look dirty again.',
@@ -29,11 +29,11 @@ export const wheaton: LocationContentSeed = {
       'Portable HEPA gear when a truck cannot stage on a tight street',
     ],
   },
-  offersTitle: 'Special Offers — Wheaton, MD',
+  offersTitle: "Wheaton Flat Rates Matching Bethesda Packages",
   services: {
-    heading: 'Our Services in Wheaton, MD',
+    heading: "Wheaton Packages for Brick Ranches and Capes",
     intro:
-      'Choose duct cleaning, dryer vents, or mold treatment for ventilation when inspection calls for it.',
+      "Older brick homes and small additions — flat rates after a clear scope.",
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -54,7 +54,7 @@ export const wheaton: LocationContentSeed = {
     ],
   },
   why: {
-    heading: 'Wheaton Service — Straight Answers',
+    heading: "Why Wheaton Urban Grit Settles in Older Ducts",
     items: [
       {
         title: 'Close-In Dispatch from a Real Office',
@@ -75,9 +75,9 @@ export const wheaton: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: 'Neighborhoods We Serve in Wheaton',
+    heading: "Wheaton CBD Edge and Neighborhood Grids",
     intro:
-      'We cover Wheaton and the close-in Montgomery streets we already drive from Bethesda. [Silver Spring](/locations/silver-spring) is the next urban page south; [Kensington](/locations/kensington) sits west. Aspen Hill is a neighborhood on this dispatch, not its own page.',
+      "Silver Spring and Kensington are adjacent pages.",
     groups: [
       {
         title: 'Downtown Wheaton & Westfield',
@@ -94,8 +94,8 @@ export const wheaton: LocationContentSeed = {
     ],
   },
   process: {
-    heading: 'Wheaton Scheduling Checklist',
-    intro: 'What to expect when we schedule Wheaton from 7815 Old Georgetown Rd Ste 201.',
+    heading: "Inside-Beltway Timing From Bethesda",
+    intro: "Tight lots mean we confirm street parking with the morning ETA.",
     steps: [
       {
         title: 'Online or Phone Intake',

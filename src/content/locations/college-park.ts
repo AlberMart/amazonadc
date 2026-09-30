@@ -15,7 +15,7 @@ export const collegePark: LocationContentSeed = {
   servedBy: 'bethesda',
   sectionLayout: 'processFirst',
   about: {
-    heading: 'Why College Park HVAC Systems Take More Abuse Than They Look',
+    heading: "Route 1 Rentals, Family Houses, and High-Turnover Dust",
     paragraphs: [
       'College Park is a Prince George’s County city wrapped around the University of Maryland: Route 1, Old Town, Berwyn, Hollywood, and the streets toward Greenbelt and Hyattsville. A lot of the housing is older single-family rentals and small apartments with high occupant turnover. That means filters that do not get changed, dryers that run constantly, and ducts that have not been opened in a decade. Pollen from the campus canopy and Beltway dust ride the same returns.',
       'Maryland humidity still wins in summer. Cool trunks in a basement or crawl space sweat. Dust from the last semester sticks. The first AC cycle in August is when the smell shows up. Stacked student units add dryer vents that were never designed for that much lint.',
@@ -28,11 +28,11 @@ export const collegePark: LocationContentSeed = {
       'Landlords and property managers welcome',
     ],
   },
-  offersTitle: 'Special Offers — College Park, MD',
+  offersTitle: "College Park Rates for Landlords and Homeowners",
   services: {
-    heading: 'Our Services in College Park, MD',
+    heading: "College Park Packages for Rentals and Owner-Occupied Homes",
     intro:
-      'Choose duct cleaning, dryer vents, or mold treatment for ventilation when inspection calls for it.',
+      "Turnover cleans and owner-occupied homes use the same published packages.",
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -53,7 +53,7 @@ export const collegePark: LocationContentSeed = {
     ],
   },
   why: {
-    heading: 'College Park Service — Straight Answers',
+    heading: "Why Student Turnover Leaves Debris in Returns",
     items: [
       {
         title: 'Owners and Managers, Not a Fake Campus Shop',
@@ -74,9 +74,9 @@ export const collegePark: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: 'Neighborhoods We Serve in College Park',
+    heading: "Campus Edge, Berwyn, and Route 1 Corridors",
     intro:
-      'We cover College Park and the close Prince George’s streets we already drive from Bethesda. [Silver Spring](/locations/silver-spring) is west; [Washington, DC](/locations/washington-dc) is the District page.',
+      "Hyattsville and Takoma Park are nearby; this page is College Park specifically.",
     groups: [
       {
         title: 'Campus & Route 1',
@@ -94,8 +94,8 @@ export const collegePark: LocationContentSeed = {
     ],
   },
   process: {
-    heading: 'College Park Scheduling Checklist',
-    intro: 'A clear path from estimate to finished job for College Park homes.',
+    heading: "Prince George’s Timing From the Bethesda Office",
+    intro: "Landlords: send unit access instructions with the booking.",
     steps: [
       {
         title: 'Request a Window',

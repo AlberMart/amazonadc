@@ -15,7 +15,7 @@ export const arlington: LocationContentSeed = {
   servedBy: 'burke',
   sectionLayout: 'communitiesFirst',
   about: {
-    heading: 'Why Arlington Homes Need Extra Indoor Air Care',
+    heading: "Rosslyn to Columbia Pike: Condos, Brick, and Potomac Air",
     paragraphs: [
       'Arlington sits on the Potomac River, with dense neighborhoods, high-rise condos, and older brick homes that take on river humidity all summer. That moisture meets cool air inside metal ductwork and turns into condensation — the start of musty odors, mold, and dust that recirculates every time the system runs.',
       'Crystal City, Rosslyn, and Pentagon City feel this first, but the same humidity reaches Clarendon, Ballston, Shirlington, and Columbia Pike. Construction dust from nearby development, pollen, and pet dander settle in returns and stay there until the ducts are professionally cleaned.',
@@ -28,10 +28,10 @@ export const arlington: LocationContentSeed = {
       'Before-and-after photos and a 100% satisfaction guarantee',
     ],
   },
-  offersTitle: 'Special Offers — Arlington, VA',
+  offersTitle: "Arlington Flat Rates — No Vent Counting",
   services: {
-    heading: 'Our Services in Arlington, VA',
-    intro: 'Clear scopes for Arlington. No per-vent games.',
+    heading: "Arlington Packages for Condos and Older Brick Houses",
+    intro: "Condos with long dryer risers and brick houses with later-added trunks — same flat rates.",
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -52,7 +52,7 @@ export const arlington: LocationContentSeed = {
     ],
   },
   why: {
-    heading: 'Booking Confidence for Arlington Homes',
+    heading: "Why Close-In Arlington Homes Recycle Dust Faster",
     items: [
       {
         title: 'Upfront Flat-Rate Pricing',
@@ -73,9 +73,9 @@ export const arlington: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: 'Neighborhoods We Serve in Arlington',
+    heading: "Corridors We Drive Weekly in Arlington",
     intro:
-      'We cover residential and commercial customers across Arlington County, plus nearby [Alexandria](/locations/alexandria), [McLean](/locations/mclean), [Fairfax](/locations/fairfax), [Falls Church](/locations/falls-church), and [Washington, DC](/locations/washington-dc). If your building is not listed, call — we likely already work your corridor.',
+      "From Rosslyn high-rises to Columbia Pike splits — ask if your building is gated.",
     groups: [
       {
         title: 'Rosslyn to Ballston',
@@ -97,8 +97,8 @@ export const arlington: LocationContentSeed = {
     ],
   },
   process: {
-    heading: 'From First Call to Walkthrough in Arlington',
-    intro: 'A clear path from estimate to finished job for Arlington homes.',
+    heading: "Metro-Adjacent Scheduling From the Burke Office",
+    intro: "Garage height and loading rules matter more here than in suburban cul-de-sacs.",
     steps: [
       {
         title: 'Request a Window',

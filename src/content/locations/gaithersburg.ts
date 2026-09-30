@@ -15,7 +15,7 @@ export const gaithersburg: LocationContentSeed = {
   servedBy: 'bethesda',
   sectionLayout: 'faqEarly',
   about: {
-    heading: 'Why Gaithersburg Ducts Collect Pollen and Basement Moisture',
+    heading: "Kentlands Basements, Crown Condos, and I-270 Dust",
     paragraphs: [
       'Gaithersburg is Montgomery County’s big I-270 city north of [Rockville](/locations/rockville): Town Center, Kentlands and Lakelands, Crown, Washingtonian, then Montgomery Village and the streets toward Germantown. Housing mixes 1960s–80s split-levels with full basements and newer new-urbanist townhomes with tight mechanical closets. Both types load ducts. The older houses sweat in the basement. The newer ones pack dryer vents around three corners.',
       'The tree canopy is not a slogan. Oak and pine dump pollen onto every deck each spring. Returns pull it in. I-270 adds traffic dust. When the AC starts after a wet week, that mix is what you smell at the register.',
@@ -28,10 +28,10 @@ export const gaithersburg: LocationContentSeed = {
       'Same crew that already works Rockville and Germantown',
     ],
   },
-  offersTitle: 'Special Offers — Gaithersburg, MD',
+  offersTitle: "Gaithersburg Flat Rates From Old Georgetown Rd",
   services: {
-    heading: 'Our Services in Gaithersburg, MD',
-    intro: 'Flat-rate options for Gaithersburg houses, townhomes, and light commercial.',
+    heading: "Gaithersburg Packages for HOAs and Condos",
+    intro: "HOA townhomes and Crown stacks — flat-rate packages either way.",
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -52,7 +52,7 @@ export const gaithersburg: LocationContentSeed = {
     ],
   },
   why: {
-    heading: 'What Sets This Gaithersburg Crew Apart',
+    heading: "Why Kentlands and Lakelands Trunks Hold Humidity",
     items: [
       {
         title: 'I-270 Dispatch from a Real Office',
@@ -73,9 +73,9 @@ export const gaithersburg: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: 'Neighborhoods We Serve in Gaithersburg',
+    heading: "Kentlands, Lakelands, Crown, and Old Town Edge",
     intro:
-      'We cover the City of Gaithersburg and the close streets we already drive from Bethesda. [Rockville](/locations/rockville) is the next city south; [Silver Spring](/locations/silver-spring) is the east-county page.',
+      "Germantown and Montgomery Village are separate pages on the same corridor.",
     groups: [
       {
         title: 'Kentlands, Lakelands & Crown',
@@ -93,8 +93,8 @@ export const gaithersburg: LocationContentSeed = {
     ],
   },
   process: {
-    heading: 'Booking Gaithersburg Service from Bethesda',
-    intro: 'Practical timing notes for Gaithersburg homeowners and property managers.',
+    heading: "I-270 North Dispatch From Bethesda",
+    intro: "We plan for HOA gates and condo elevator rules when you book.",
     steps: [
       {
         title: 'Estimate Request',

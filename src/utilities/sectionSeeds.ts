@@ -158,7 +158,15 @@ function locationSectionParts(
       type: 'offers',
       tone: 'white',
       heading: location.offersTitle,
-      intro: 'Transparent flat-rate pricing. No counting vents. No surprise add-ons.',
+      intro: [
+        'Transparent flat-rate pricing. No counting vents. No surprise add-ons.',
+        'Published packages — the number we quote before work starts is what you pay.',
+        'Choose a package below or ask for a combined duct and dryer visit.',
+        'Same rates we list on our service pages. Scoped on site before we begin.',
+        'No vent counting games. Residential packages are flat-rate.',
+      ][
+        Math.abs([...location.slug].reduce((h, c) => (h * 31 + c.charCodeAt(0)) | 0, 0)) % 5
+      ],
     },
     services: {
       type: 'cardGrid',
@@ -186,14 +194,42 @@ function locationSectionParts(
       })),
       gridCols: 3,
     },
-    nearby: {
-      type: 'serviceArea',
-      tone: 'white',
-      heading: `Serving ${location.city} from ${dispatch}`,
-      intro: `We cover ${location.city} and nearby communities from ${dispatch}. For the full list of cities, see our locations index.`,
-      compact: true,
-      anchorId: 'service_area',
-    },
+    nearby: (() => {
+      const nearbyPacks = [
+        {
+          heading: `Serving ${location.city} from ${dispatch}`,
+          intro: `We cover ${location.city} and nearby communities from ${dispatch}. For the full list of cities, see our locations index.`,
+        },
+        {
+          heading: `${location.city} Routes Staged at ${dispatch}`,
+          intro: `${location.city} jobs leave from ${dispatch}. Nearby city pages share the same crew list.`,
+        },
+        {
+          heading: `Where Else We Drive Near ${location.city}`,
+          intro: `Beyond ${location.city}, the same team covers neighboring streets from ${dispatch}.`,
+        },
+        {
+          heading: `${location.city} Coverage Map — Compact View`,
+          intro: `A short list of neighboring communities on the ${location.city} route from ${dispatch}.`,
+        },
+        {
+          heading: `Next Stops After ${location.city}`,
+          intro: `Same office (${dispatch}). Different city pages below for neighborhood-level detail.`,
+        },
+      ]
+      const i =
+        Math.abs([...location.slug].reduce((h, c) => (h * 31 + c.charCodeAt(0)) | 0, 0)) %
+        nearbyPacks.length
+      const pack = nearbyPacks[i]
+      return {
+        type: 'serviceArea' as const,
+        tone: 'white' as const,
+        heading: pack.heading,
+        intro: pack.intro,
+        compact: true,
+        anchorId: 'service_area',
+      }
+    })(),
     process: {
       type: 'steps',
       tone: 'white',
@@ -206,7 +242,22 @@ function locationSectionParts(
       ? {
           type: 'faq',
           tone: 'muted',
-          heading: `Frequently Asked Questions — ${location.city}`,
+          heading:
+            location.slug === 'burke' || location.slug === 'bethesda'
+              ? `Office FAQs — ${location.city}`
+              : location.state === 'DC'
+                ? 'District Service Questions'
+                : ([
+                    `${location.city} Homeowner Questions`,
+                    `Before You Book in ${location.city}`,
+                    `Answers for ${location.city}, ${location.state}`,
+                    `${location.city} Scheduling & Scope FAQs`,
+                    `Common ${location.city} Service Questions`,
+                  ][
+                    Math.abs(
+                      [...location.slug].reduce((h, c) => (h * 31 + c.charCodeAt(0)) | 0, 0),
+                    ) % 5
+                  ]),
           intro: location.faqIntro,
           faqItems: location.faq,
         }

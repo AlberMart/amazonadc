@@ -16,7 +16,7 @@ export const clarksburg: LocationContentSeed = {
   servedBy: 'bethesda',
   sectionLayout: 'offersLate',
   about: {
-    heading: 'Why Clarksburg New Construction Loads Drywall Dust into HVAC',
+    heading: "New-Construction Dust Still Sitting in Young Trunks",
     paragraphs: [
       'Clarksburg is Montgomery County’s I-270 north boom: Clarksburg Village, Cabin Branch, Town Center, Skylark, then lanes toward Damascus. Damascus is a community we already drive, not its own page. [Frederick](/locations/frederick) is the next city farther up the corridor. A lot of the housing is first- or second-owner from the last two decades. Builders tape registers. Dust still gets in. Fine gypsum rides every return the first summers you live there.',
       'HOA townhomes add long dryer vents and tight closets on top of that construction load. I-270 traffic grit does not wait for the last pad to finish. Filters catch some of it. Supplies still blow a gray film onto new paint. Humid seasons then glue that powder to cool trunks.',
@@ -29,10 +29,10 @@ export const clarksburg: LocationContentSeed = {
       'Post-drywall first cleans we already do on I-270 north',
     ],
   },
-  offersTitle: 'Special Offers — Clarksburg, MD',
+  offersTitle: "Clarksburg Flat Rates After Builder Dust Settles",
   services: {
-    heading: 'Our Services in Clarksburg, MD',
-    intro: 'Flat-rate options for Clarksburg houses, townhomes, and light commercial.',
+    heading: "Clarksburg Packages for New HOA Homes",
+    intro: "Post-construction cleans and routine packages at published rates.",
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -53,7 +53,7 @@ export const clarksburg: LocationContentSeed = {
     ],
   },
   why: {
-    heading: 'What Sets This Clarksburg Crew Apart',
+    heading: "Why Brand-New Clarksburg Houses Still Need Duct Attention",
     items: [
       {
         title: 'I-270 North from a Real Office',
@@ -74,9 +74,9 @@ export const clarksburg: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: 'Neighborhoods We Serve in Clarksburg',
+    heading: "Clarksburg Village and Nearby New Streets",
     intro:
-      'We cover Clarksburg and the close I-270 north streets we already drive from Bethesda. [Germantown](/locations/germantown) is the next city south; [Frederick](/locations/frederick) is farther north. Damascus is a community on this dispatch, not a separate page.',
+      "Germantown and Frederick are neighboring farther/closer pages.",
     groups: [
       {
         title: 'Clarksburg Village & Town Center',
@@ -94,8 +94,8 @@ export const clarksburg: LocationContentSeed = {
     ],
   },
   process: {
-    heading: 'Booking Clarksburg Service from Bethesda',
-    intro: 'What to expect when we schedule Clarksburg from 7815 Old Georgetown Rd Ste 201.',
+    heading: "North I-270 Dispatch From Bethesda",
+    intro: "If drywall work is still active next door, we may suggest waiting.",
     steps: [
       {
         title: 'Online or Phone Intake',

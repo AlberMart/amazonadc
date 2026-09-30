@@ -16,7 +16,7 @@ export const loudoun: LocationContentSeed = {
   servedBy: 'burke',
   sectionLayout: 'leanNoOffers',
   about: {
-    heading: 'Why Loudoun HVAC Systems Work Harder Than Newer Houses Suggest',
+    heading: "Leesburg Brick, Ashburn New-Builds, and Pollen Seasons",
     paragraphs: [
       'Loudoun is not one housing type. Historic Leesburg has older metal trunks and damp basements near Goose Creek and the Potomac. Ashburn, Broadlands, Brambleton, and South Riding are packed with 1990s–2010s townhomes and single-family houses that still swallow drywall dust from the next section under construction. Sterling and the Dulles Toll Road add traffic particles. Data-center growth did not make indoor air cleaner.',
       'New construction is not clean construction. Fine gypsum and insulation fibers sit in returns for years if the system was never commissioned with a proper duct cleaning. Older Leesburg houses have the opposite problem: humidity and pollen in trunks that were added after the house was built.',
@@ -29,10 +29,10 @@ export const loudoun: LocationContentSeed = {
       'Dispatched from our Burke office',
     ],
   },
-  offersTitle: 'Special Offers — Loudoun County, VA',
+  offersTitle: "Loudoun Flat Rates With Realistic Drive Windows",
   services: {
-    heading: 'Our Services in Loudoun County',
-    intro: 'Flat-rate options for Loudoun houses, townhomes, and light commercial.',
+    heading: "Loudoun County Packages From the Burke Office",
+    intro: "New-build townhomes and older Leesburg houses — same published packages.",
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -53,7 +53,7 @@ export const loudoun: LocationContentSeed = {
     ],
   },
   why: {
-    heading: 'What Sets This Loudoun Crew Apart',
+    heading: "Why Loudoun Construction Dust Meets Heavy Pollen",
     items: [
       {
         title: 'Served from Our Burke Office',
@@ -74,9 +74,9 @@ export const loudoun: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: 'Communities We Serve in Loudoun County',
+    heading: "Leesburg, Ashburn, Sterling, South Riding Overview",
     intro:
-      'We cover the towns we already drive from Burke. [McLean](/locations/mclean) and [Fairfax](/locations/fairfax) are closer-in pages on the same dispatch.',
+      "County overview page; Herndon and Chantilly cover closer Dulles-edge towns.",
     groups: [
       {
         title: 'Leesburg & west',
@@ -93,8 +93,8 @@ export const loudoun: LocationContentSeed = {
     ],
   },
   process: {
-    heading: 'Booking Loudoun Service from Burke',
-    intro: 'What to expect when we schedule Loudoun from 5641 Burke Centre Pkwy Ste 119.',
+    heading: "Longer Dulles-Corridor Drive — Planned Honestly",
+    intro: "We schedule Loudoun with honest travel time from Burke.",
     steps: [
       {
         title: 'Online or Phone Intake',

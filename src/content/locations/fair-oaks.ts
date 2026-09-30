@@ -16,7 +16,7 @@ export const fairOaks: LocationContentSeed = {
   servedBy: 'burke',
   sectionLayout: 'faqMid',
   about: {
-    heading: 'Why Fair Oaks Townhomes Load Ducts With 50/66 Corridor Dust',
+    heading: "Mall-Corridor Townhomes and Route 50 / I-66 Dust",
     paragraphs: [
       'Fair Oaks is the Fairfax County community around Fair Oaks Mall, West Ox, and the I-66 / Route 50 interchange — not the independent City of Fairfax. Housing here is mostly 1980s–2000s townhomes and HOA singles: stacked laundry, attic air handlers, and visitor lots that sit in traffic film. Fair Lakes is next door. Fairfax Corner is adjacent; those jobs belong on the [Fairfax](/locations/fairfax) page when you are inside the city, and here when you are in the mall / Fair Lakes grid.',
       'Townhome dryer chases clog fast. Returns pull Beltway-adjacent dust and construction film from infill along 50. Attic handlers run hot in July, then dump that dust downstairs every time the system starts. A unit that looks “too new to clean” often still has builder drywall dust in the trunks.',
@@ -29,10 +29,10 @@ export const fairOaks: LocationContentSeed = {
       'Before-and-after photos on every duct job',
     ],
   },
-  offersTitle: 'Special Offers — Fair Oaks, VA',
+  offersTitle: "Fair Oaks Flat Rates — Not a City of Fairfax Duplicate",
   services: {
-    heading: 'Our Services in Fair Oaks, VA',
-    intro: 'Packages we actually sell for Fair Oaks homes — quoted before work starts.',
+    heading: "Fair Oaks Packages Distinct From Fairfax City",
+    intro: "Townhome packages and single-family scopes at published rates.",
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -53,7 +53,7 @@ export const fairOaks: LocationContentSeed = {
     ],
   },
   why: {
-    heading: 'Why Fair Oaks Homeowners Call Us',
+    heading: "Why Fair Lakes and Fair Oaks Stacks Load Corridor Film",
     items: [
       {
         title: 'Mall Grid, Not City Hall',
@@ -74,9 +74,9 @@ export const fairOaks: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: 'Neighborhoods We Serve in Fair Oaks',
+    heading: "Fair Oaks Mall Edge, Fair Lakes, Fairfax Corner Living",
     intro:
-      'We cover Fair Oaks and Fair Lakes from Burke. The City of [Fairfax](/locations/fairfax) has its own page. [Oakton](/locations/oakton) is the same dispatch.',
+      "This is Fair Oaks / Fair Lakes — the City of Fairfax has its own page.",
     groups: [
       {
         title: 'Mall & Fair Lakes',
@@ -94,8 +94,8 @@ export const fairOaks: LocationContentSeed = {
     ],
   },
   process: {
-    heading: 'How a Fair Oaks Visit Usually Runs',
-    intro: 'Practical timing notes for Fair Oaks homeowners and property managers.',
+    heading: "Western Fairfax Scheduling From Burke",
+    intro: "HOA gates near the mall corridor are confirmed the morning of.",
     steps: [
       {
         title: 'Estimate Request',

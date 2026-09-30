@@ -16,7 +16,7 @@ export const washingtonDc: LocationContentSeed = {
   sectionLayout: 'servicesFirst',
   dispatchLabel: 'our Burke and Bethesda offices',
   about: {
-    heading: 'Why DC Homes Load Ducts Faster Than the Suburbs',
+    heading: "Row Houses, Condos, and River Humidity Across Four Quadrants",
     paragraphs: [
       'Washington, DC is a river city with dense housing. The Potomac and Anacostia keep summer air wet. Row houses on Capitol Hill, Georgetown, and Shaw often run older metal ductwork that was added decades after the house was built. High-rises in Navy Yard, NoMa, and Foggy Bottom stack long dryer vents and shared corridors. Traffic dust, pollen from Rock Creek Park, and that humidity all settle in the same returns.',
       'When cold supply air hits humid indoor air, condensation forms inside the ducts. Dust sticks to it. That is how musty registers start in a Ward 2 condo and in a 1900s row house alike. Opening a window on a July afternoon does not dry the inside of the system — it often adds more moisture.',
@@ -29,10 +29,10 @@ export const washingtonDc: LocationContentSeed = {
       'Dispatched from Burke or Bethesda — whichever is closer that day',
     ],
   },
-  offersTitle: 'Special Offers — Washington, DC',
+  offersTitle: "Flat Rates for Capitol Hill to Navy Yard Jobs",
   services: {
-    heading: 'Our Services in Washington, DC',
-    intro: 'Packages we actually sell for Washington homes — quoted before work starts.',
+    heading: "District Packages Dispatched From Burke or Bethesda",
+    intro: "Same published packages as the suburbs — scoped for row houses and stacked laundry.",
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -53,7 +53,7 @@ export const washingtonDc: LocationContentSeed = {
     ],
   },
   why: {
-    heading: 'Why Washington Homeowners Call Us',
+    heading: "Why DC Homes Book a Metro Crew Instead of a Pop-Up Shop",
     items: [
       {
         title: 'Two Metro Offices',
@@ -74,9 +74,9 @@ export const washingtonDc: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: 'Neighborhoods We Serve in Washington, DC',
+    heading: "Northwest Through Southeast — Where We Actually Park",
     intro:
-      'We cover residential and small-commercial jobs in all four quadrants. Nearby [Arlington](/locations/arlington), [Alexandria](/locations/alexandria), and [McLean](/locations/mclean) are the same Burke dispatch; [Bethesda](/locations/bethesda), [Silver Spring](/locations/silver-spring), [Rockville](/locations/rockville), and [College Park](/locations/college-park) cover the Maryland side.',
+      "Quadrant groups below; nearby Virginia and Maryland pages share the same two offices.",
     groups: [
       {
         title: 'Northwest',
@@ -98,8 +98,8 @@ export const washingtonDc: LocationContentSeed = {
     ],
   },
   process: {
-    heading: 'How a Washington Visit Usually Runs',
-    intro: 'A clear path from estimate to finished job for Washington homes.',
+    heading: "District Access: Loading, Alleys, and Condo Rules First",
+    intro: "We confirm parking and building access before the truck rolls into the District.",
     steps: [
       {
         title: 'Request a Window',

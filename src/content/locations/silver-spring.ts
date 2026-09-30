@@ -15,7 +15,7 @@ export const silverSpring: LocationContentSeed = {
   servedBy: 'bethesda',
   sectionLayout: 'faqEarly',
   about: {
-    heading: 'Why Silver Spring Ducts Load Dust and Moisture',
+    heading: "Brick Rows, Urban Grit, and Georgia Avenue Film",
     paragraphs: [
       'Silver Spring is Montgomery County’s urban east side: downtown around the Metro, older streets in Woodside and Seven Oaks, Takoma Park next door, and apartments along Georgia Avenue. A lot of the housing is pre-war and 1940s–60s brick with later ductwork cut through plaster and joists. Those joints collect dust. Downtown construction and the Purple Line corridor add a second particle load. Returns do not sort brick dust from pollen.',
       'Basements stay cool. Maryland summers stay wet. Cold supply trunks sweat. Musty air on the first AC cycle after a storm is that film waking up. Condos and stacked units add long dryer vents that dump heat and lint back into the laundry if the cap is packed.',
@@ -28,10 +28,10 @@ export const silverSpring: LocationContentSeed = {
       'Portable HEPA gear when a truck cannot stage on a narrow street',
     ],
   },
-  offersTitle: 'Special Offers — Silver Spring, MD',
+  offersTitle: "Silver Spring Flat-Rate Duct and Dryer Work",
   services: {
-    heading: 'Our Services in Silver Spring, MD',
-    intro: 'Flat-rate options for Silver Spring houses, townhomes, and light commercial.',
+    heading: "Silver Spring Cleanings for Brick and Mid-Rise Homes",
+    intro: "Older brick and newer stacks — same published scopes from Bethesda.",
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -52,7 +52,7 @@ export const silverSpring: LocationContentSeed = {
     ],
   },
   why: {
-    heading: 'What Sets This Silver Spring Crew Apart',
+    heading: "Why Close-In Silver Spring Ducts Collect City Dust",
     items: [
       {
         title: 'Bethesda Is Actually Nearby',
@@ -73,9 +73,9 @@ export const silverSpring: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: 'Neighborhoods We Serve in Silver Spring',
+    heading: "Downtown, Woodside, and Forest Glen Stops",
     intro:
-      'We cover Silver Spring and the close Montgomery County streets we already drive from Bethesda. [Bethesda](/locations/bethesda) is the office page; [College Park](/locations/college-park) is the Prince George’s page next door.',
+      "Inside the Beltway grit is the story; Kensington and Takoma Park are nearby pages.",
     groups: [
       {
         title: 'Downtown & Metro',
@@ -94,8 +94,8 @@ export const silverSpring: LocationContentSeed = {
     ],
   },
   process: {
-    heading: 'Booking Silver Spring Service from Bethesda',
-    intro: 'Simple steps our Bethesda crew follows for Silver Spring appointments.',
+    heading: "Beltway-Adjacent Timing From Bethesda",
+    intro: "Street parking and mid-rise loading are planned before arrival.",
     steps: [
       {
         title: 'Talk Through the Home',

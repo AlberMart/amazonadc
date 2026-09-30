@@ -16,7 +16,7 @@ export const montgomeryVillage: LocationContentSeed = {
   servedBy: 'bethesda',
   sectionLayout: 'leanNoOffers',
   about: {
-    heading: 'Why Montgomery Village Townhomes Load Lake Dust and Old Closets',
+    heading: "1970s Planned Courts, Lake Edges, and Townhome Chases",
     paragraphs: [
       'Montgomery Village is a 1970s planned community next to [Gaithersburg](/locations/gaithersburg): Stedwick, Whetstone, East Village, the lakes, and the streets that used to orbit Lakeforest. The stock is townhomes and colonials from that build-out, plus later infill. Mechanical closets are tight. Dryer vents were run for machines that no longer exist. HOA paths keep lots leafy — and the returns keep pulling that leaf grit.',
       'Lake-side humidity is the other half. Cool lower-level trunks sweat in Maryland summers. Pollen from the original tree plan sticks. Registers look clean after you wipe them and gray again when the AC cycles. [Germantown](/locations/germantown) is the next corridor page north.',
@@ -29,10 +29,10 @@ export const montgomeryVillage: LocationContentSeed = {
       '1970s closets and long dryer runs we already clean',
     ],
   },
-  offersTitle: 'Special Offers — Montgomery Village, MD',
+  offersTitle: "Montgomery Village Flat Rates From Bethesda",
   services: {
-    heading: 'Our Services in Montgomery Village, MD',
-    intro: 'Flat-rate options for Montgomery Village houses, townhomes, and light commercial.',
+    heading: "Montgomery Village Packages for Townhomes",
+    intro: "Townhome dryer chases are the usual ask — flat rates apply.",
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -53,7 +53,7 @@ export const montgomeryVillage: LocationContentSeed = {
     ],
   },
   why: {
-    heading: 'What Sets This Montgomery Village Crew Apart',
+    heading: "Why Village Townhomes Load Pollen and Old Closet Lint",
     items: [
       {
         title: 'Same Bethesda Crew as Gaithersburg',
@@ -74,9 +74,9 @@ export const montgomeryVillage: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: 'Neighborhoods We Serve in Montgomery Village',
+    heading: "Village Centers and Lake-Adjacent Clusters",
     intro:
-      'We cover Montgomery Village and the close streets we already drive from Bethesda. [Gaithersburg](/locations/gaithersburg) wraps the south and west; [Germantown](/locations/germantown) is the next I-270 page north.',
+      "Gaithersburg and Germantown pages sit on either side of this corridor.",
     groups: [
       {
         title: 'Stedwick & Whetstone',
@@ -94,9 +94,9 @@ export const montgomeryVillage: LocationContentSeed = {
     ],
   },
   process: {
-    heading: 'Booking Montgomery Village Service from Bethesda',
+    heading: "Between Gaithersburg and Germantown From Bethesda",
     intro:
-      'What to expect when we schedule Montgomery Village from 7815 Old Georgetown Rd Ste 201.',
+      "HOA gate notes keep the truck from circling the village.",
     steps: [
       {
         title: 'Online or Phone Intake',

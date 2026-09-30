@@ -15,7 +15,7 @@ export const springfield: LocationContentSeed = {
   servedBy: 'burke',
   sectionLayout: 'communitiesFirst',
   about: {
-    heading: 'Why Springfield Ducts Collect Traffic Dust and Moisture',
+    heading: "Mixing Bowl Dust, Split-Levels, and Franconia Townhomes",
     paragraphs: [
       'Springfield sits where I-95, I-395, and the Beltway braid together. That is convenient. It is also a constant source of fine dust. Returns on Old Keene Mill, Franconia, and Backlick pull it in along with Fairfax County pollen. A lot of the housing is 1960s–80s split-levels and townhomes with basements. Those rooms stay cool. Summer air does not. Cold trunks sweat. Dust sticks.',
       'Springfield Town Center and the Franconia-Springfield Metro added denser condos and long dryer runs. A dryer that needs two cycles is often a packed vent, not a dying machine. The same humidity that fogs a windshield in July is sitting in the laundry closet.',
@@ -28,11 +28,11 @@ export const springfield: LocationContentSeed = {
       'Same-day and next-day windows when the schedule allows',
     ],
   },
-  offersTitle: 'Special Offers — Springfield, VA',
+  offersTitle: "Springfield Flat Rates From Minutes-Away Burke",
   services: {
-    heading: 'Our Services in Springfield, VA',
+    heading: "Springfield Packages for I-95 Corridor Homes",
     intro:
-      'Choose duct cleaning, dryer vents, or mold treatment for ventilation when inspection calls for it.',
+      "Split-levels and townhomes along the Mixing Bowl — flat rates before we start.",
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -53,7 +53,7 @@ export const springfield: LocationContentSeed = {
     ],
   },
   why: {
-    heading: 'Springfield Service — Straight Answers',
+    heading: "Why Springfield Registers Gray Out After Beltway Weeks",
     items: [
       {
         title: 'The Next Town Over',
@@ -74,9 +74,9 @@ export const springfield: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: 'Neighborhoods We Serve in Springfield',
+    heading: "West Springfield, Franconia, and Burke Centre Edge",
     intro:
-      'We cover Springfield and the close Fairfax County streets we already drive from Burke. [Fairfax](/locations/fairfax) and [Alexandria](/locations/alexandria) are the same dispatch.',
+      "Burke is the next community over; this page covers Springfield streets specifically.",
     groups: [
       {
         title: 'Central Springfield',
@@ -94,8 +94,8 @@ export const springfield: LocationContentSeed = {
     ],
   },
   process: {
-    heading: 'Springfield Scheduling Checklist',
-    intro: 'Simple steps our Burke crew follows for Springfield appointments.',
+    heading: "Next-Community Dispatch From Burke Centre",
+    intro: "Traffic windows matter; we send a morning ETA that accounts for the Mixing Bowl.",
     steps: [
       {
         title: 'Talk Through the Home',

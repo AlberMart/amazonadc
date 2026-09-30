@@ -15,7 +15,7 @@ export const rockville: LocationContentSeed = {
   servedBy: 'bethesda',
   sectionLayout: 'faqMid',
   about: {
-    heading: 'Why Rockville Ducts Collect Moisture and Pollen',
+    heading: "King Farm Townhomes, Twinbrook Ranches, and Basement Humidity",
     paragraphs: [
       'Rockville is Montgomery County’s largest city and sits on the I-270 corridor: Town Center and the Metro, Twinbrook and Hungerford, King Farm and Fallsgrove, then Woodley Gardens and the West End. A lot of the housing is 1950s–90s colonials and split-levels with full basements. Those basements stay cool in summer. Maryland humidity does not. Cold supply trunks in a basement meet wet air and sweat. Dust and tree pollen stick to that film.',
       'Montgomery County’s tree canopy is not a slogan — oak, maple, and pine dump pollen onto every outdoor surface each spring. Returns pull it in. Townhomes along the Metro and newer mixed-use at Rockville Town Square add long dryer vents and tighter mechanical closets. The result is the same: registers that look clean on Monday and dusty by Friday, or a musty smell when the AC starts after a wet week.',
@@ -28,10 +28,10 @@ export const rockville: LocationContentSeed = {
       'Same-day and next-day windows when the schedule allows',
     ],
   },
-  offersTitle: 'Special Offers — Rockville, MD',
+  offersTitle: "Rockville Rates Matching Bethesda Packages",
   services: {
-    heading: 'Our Services in Rockville, MD',
-    intro: 'Flat-rate options for Rockville houses, townhomes, and light commercial.',
+    heading: "Rockville Packages From the Bethesda Office",
+    intro: "Colonials and townhomes with humid lower levels — quoted before cleaning.",
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -52,7 +52,7 @@ export const rockville: LocationContentSeed = {
     ],
   },
   why: {
-    heading: 'What Sets This Rockville Crew Apart',
+    heading: "Why Rockville Finished Basements Sweat at the Trunks",
     items: [
       {
         title: 'Close Bethesda Dispatch',
@@ -73,9 +73,9 @@ export const rockville: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: 'Neighborhoods We Serve in Rockville',
+    heading: "Town Center, King Farm, Twinbrook, and Fallsmead",
     intro:
-      'We cover the City of Rockville and the close Montgomery County streets we already drive from Bethesda. [Bethesda](/locations/bethesda) is the office page; [Gaithersburg](/locations/gaithersburg) is next up I-270; [Silver Spring](/locations/silver-spring) and [Washington, DC](/locations/washington-dc) cover the east and District side.',
+      "Montgomery County core; Potomac and Gaithersburg are separate pages.",
     groups: [
       {
         title: 'Town Center & Twinbrook',
@@ -93,8 +93,8 @@ export const rockville: LocationContentSeed = {
     ],
   },
   process: {
-    heading: 'Booking Rockville Service from Bethesda',
-    intro: 'Simple steps our Bethesda crew follows for Rockville appointments.',
+    heading: "Fifteen Minutes Down Old Georgetown — Then On Site",
+    intro: "A short Bethesda run; we still confirm basement access and dryer terminations.",
     steps: [
       {
         title: 'Talk Through the Home',

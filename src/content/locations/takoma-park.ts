@@ -15,7 +15,7 @@ export const takomaPark: LocationContentSeed = {
   servedBy: 'bethesda',
   sectionLayout: 'faqEarly',
   about: {
-    heading: 'Why Takoma Park Bungalows Hold Humidity in Older Ducts',
+    heading: "Bungalows, DC-Line Humidity, and Later-Added Trunks",
     paragraphs: [
       'Takoma Park sits on the Montgomery–Prince George’s–District line: Old Takoma and Carroll Avenue, Takoma Junction, then streets that walk into [Washington, DC](/locations/washington-dc) or [Silver Spring](/locations/silver-spring) in a few blocks. A lot of the housing is early-century bungalows and brick cottages. Ductwork was often added later through crawl spaces and plaster. Those joints were never tight. Trees are the other half of the story — maple and oak keep lots shaded and damp.',
       'Older metal runs in a cool crawl sweat through Maryland summers. Pollen and leaf grit stick. The first cool-down in June is when the musty smell shows up at the register. Porch-to-porch lots also mean dryer vents that were patched through additions and never sized for modern machines.',
@@ -28,10 +28,10 @@ export const takomaPark: LocationContentSeed = {
       'Portable HEPA gear for narrow streets and tight crawls',
     ],
   },
-  offersTitle: 'Special Offers — Takoma Park, MD',
+  offersTitle: "Takoma Park Flat Rates From Old Georgetown Rd",
   services: {
-    heading: 'Our Services in Takoma Park, MD',
-    intro: 'Flat-rate options for Takoma Park houses, townhomes, and light commercial.',
+    heading: "Takoma Park Packages for Bungalows and Duplexes",
+    intro: "Bungalows with add-on ducts — published packages after inspection.",
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -52,7 +52,7 @@ export const takomaPark: LocationContentSeed = {
     ],
   },
   why: {
-    heading: 'What Sets This Takoma Park Crew Apart',
+    heading: "Why Takoma Park Homes Hold Leaf Grit and Moisture",
     items: [
       {
         title: 'Honest Bethesda Dispatch on the DC Line',
@@ -73,9 +73,9 @@ export const takomaPark: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: 'Neighborhoods We Serve in Takoma Park',
+    heading: "Carroll Avenue Corridor and Tree Streets",
     intro:
-      'We cover the City of Takoma Park and the DC-line streets we already drive from Bethesda. [Silver Spring](/locations/silver-spring) and [Washington, DC](/locations/washington-dc) sit next door; [Hyattsville](/locations/hyattsville) is the next Prince George’s page.',
+      "Silver Spring and Hyattsville sit nearby; Takoma Park keeps its own notes.",
     groups: [
       {
         title: 'Old Takoma & Carroll Avenue',
@@ -93,8 +93,8 @@ export const takomaPark: LocationContentSeed = {
     ],
   },
   process: {
-    heading: 'Booking Takoma Park Service from Bethesda',
-    intro: 'What to expect when we schedule Takoma Park from 7815 Old Georgetown Rd Ste 201.',
+    heading: "Border-City Scheduling From Bethesda",
+    intro: "We ask about crawlspace returns and exterior dryer caps.",
     steps: [
       {
         title: 'Online or Phone Intake',

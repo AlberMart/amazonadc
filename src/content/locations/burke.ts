@@ -15,7 +15,7 @@ export const burke: LocationContentSeed = {
   servedBy: 'burke',
   sectionLayout: 'hub',
   about: {
-    heading: 'Why Burke Is Our Virginia Hub',
+    heading: "The Burke Centre Hub Behind Northern Virginia Dispatch",
     paragraphs: [
       'Our shop sits at 5641 Burke Centre Pkwy, Suite 119, Burke, VA 22015. Technicians stage equipment here, confirm appointments from this address, and drive out to Springfield, Fairfax, McLean, Reston, Herndon, and the rest of the Virginia list on our [locations](/locations) page. When a [Washington, DC](/locations/washington-dc) job is closer to Virginia than Maryland, this office often takes the dispatch.',
       'Burke and Springfield homes are mostly split-levels, colonials, and townhomes with humid summers and a heavy tree canopy. That mix loads returns with pollen and attic dust. We clean what we actually offer on the home page: air ducts, dryer vents, and mold treatment for ventilation or whole-home jobs — not chimney sweeping or full HVAC “unit rebuild” packages.',
@@ -28,10 +28,10 @@ export const burke: LocationContentSeed = {
       'Same-day and next-day windows when the schedule allows',
     ],
   },
-  offersTitle: 'Special Offers — Burke Office',
+  offersTitle: "Flat-Rate Packages From the Burke Shop",
   services: {
-    heading: 'Services from the Burke Office',
-    intro: 'Burke residents book the same published packages as the rest of our metro area.',
+    heading: "What This Burke Office Actually Schedules",
+    intro: "Only the packages we publish site-wide — ducts, dryer vents, and mold treatment when inspection supports it.",
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -52,7 +52,7 @@ export const burke: LocationContentSeed = {
     ],
   },
   why: {
-    heading: 'Reasons Neighbors in Burke Book Repeat Visits',
+    heading: "Why Fairfax County Jobs Start on Burke Centre Pkwy",
     items: [
       {
         title: 'Real Address, Real Staging',
@@ -73,9 +73,9 @@ export const burke: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: 'Communities Served from Burke',
+    heading: "Virginia Cities Staged From Suite 119",
     intro:
-      'City pages below are the detailed service landings. This hub page is for the office itself and the wider Virginia dispatch.',
+      "This page is the office hub. City pages below carry the neighborhood detail.",
     groups: [
       {
         title: 'Next door',
@@ -100,8 +100,8 @@ export const burke: LocationContentSeed = {
     ],
   },
   process: {
-    heading: 'What Happens After You Request Burke Service',
-    intro: 'Simple steps our Burke crew follows for Burke appointments.',
+    heading: "Office Intake at Burke Centre — Then On the Road",
+    intro: "How a job leaves Suite 119 and arrives at a Northern Virginia address.",
     steps: [
       {
         title: 'Talk Through the Home',

@@ -15,7 +15,7 @@ export const germantown: LocationContentSeed = {
   servedBy: 'bethesda',
   sectionLayout: 'leanNoOffers',
   about: {
-    heading: 'Why Germantown Townhomes Load I-270 Dust So Fast',
+    heading: "I-270 Townhomes, Milestone Stacks, and North Corridor Dust",
     paragraphs: [
       'Germantown sits on Montgomery County’s I-270 spine north of Gaithersburg: Milestone and Town Center, Waters Landing, Clopper Road, then streets that keep filling with new HOA clusters. A lot of the stock is 1980s–2000s townhomes and split-levels with mechanical closets and long dryer runs. Those closets were never meant to hold a decade of corridor grit.',
       'I-270 and the construction cranes do the rest. Traffic dust, brake dust, and drywall from the next pad all ride the same returns. Filters catch some of it. Registers still gray out a week after you wipe them. Humid Maryland summers add a sticky film on cool supply trunks so the next cycle blows the mix back upstairs.',
@@ -28,10 +28,10 @@ export const germantown: LocationContentSeed = {
       'HOA townhome closets and long dryer runs we already clean',
     ],
   },
-  offersTitle: 'Special Offers — Germantown, MD',
+  offersTitle: "Germantown Flat Rates From Old Georgetown Rd",
   services: {
-    heading: 'Our Services in Germantown, MD',
-    intro: 'Germantown residents book the same published packages as the rest of our metro area.',
+    heading: "Germantown Packages From the Bethesda Office",
+    intro: "Townhome dryer chases and single-family trunks at published rates.",
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -52,7 +52,7 @@ export const germantown: LocationContentSeed = {
     ],
   },
   why: {
-    heading: 'Reasons Neighbors in Germantown Book Repeat Visits',
+    heading: "Why Germantown HOAs Recirculate Construction Film",
     items: [
       {
         title: 'Real Bethesda Dispatch Up I-270',
@@ -73,9 +73,9 @@ export const germantown: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: 'Neighborhoods We Serve in Germantown',
+    heading: "Milestone, Gunners Lake Edge, and North End Streets",
     intro:
-      'We cover Germantown and the close I-270 streets we already drive from Bethesda. [Gaithersburg](/locations/gaithersburg) is the next city south; [Clarksburg](/locations/clarksburg) and [Montgomery Village](/locations/montgomery-village) share the same dispatch.',
+      "Gaithersburg and Clarksburg are neighboring pages on the corridor.",
     groups: [
       {
         title: 'Milestone & Town Center',
@@ -93,8 +93,8 @@ export const germantown: LocationContentSeed = {
     ],
   },
   process: {
-    heading: 'What Happens After You Request Germantown Service',
-    intro: 'A clear path from estimate to finished job for Germantown homes.',
+    heading: "Further Up I-270 — Still Bethesda Dispatch",
+    intro: "HOA access notes help us stage without circling the community.",
     steps: [
       {
         title: 'Request a Window',

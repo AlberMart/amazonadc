@@ -16,7 +16,7 @@ export const frederick: LocationContentSeed = {
   servedBy: 'bethesda',
   sectionLayout: 'servicesFirst',
   about: {
-    heading: 'Why Frederick Mixes Downtown Humidity with New-Suburb Dust',
+    heading: "Downtown Brick Humidity Meets Newer Suburb Dust",
     paragraphs: [
       'Frederick is the I-270 city’s north end: downtown brick and Carroll Creek, then newer suburbs that keep filling south and east. Housing is mixed on purpose — 19th-century and early-20th stock near Market Street, mid-century neighborhoods, and large new clusters in Urbana and Adamstown. Those last two are communities on this page, not separate city sites. Mt Airy sits east on the same farther dispatch.',
       'Downtown cellars stay cool and wet. New pads kick drywall into returns the first year. Both load ducts. Humid Piedmont summers do the rest. When the AC starts after a storm week, older trunks smell musty and new houses still blow construction grit.',
@@ -29,10 +29,10 @@ export const frederick: LocationContentSeed = {
       'Old brick and new-construction dust on the same crew',
     ],
   },
-  offersTitle: 'Special Offers — Frederick, MD',
+  offersTitle: "Frederick Rates With Clear Drive Expectations",
   services: {
-    heading: 'Our Services in Frederick, MD',
-    intro: 'Frederick residents book the same published packages as the rest of our metro area.',
+    heading: "Frederick Packages for Downtown and Urbana-Edge Homes",
+    intro: "Downtown brick and newer suburbs — published packages either way.",
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -53,7 +53,7 @@ export const frederick: LocationContentSeed = {
     ],
   },
   why: {
-    heading: 'Reasons Neighbors in Frederick Book Repeat Visits',
+    heading: "Why Frederick Jobs Need Honest I-270 Planning",
     items: [
       {
         title: 'Farther Drive, Real Office',
@@ -74,9 +74,9 @@ export const frederick: LocationContentSeed = {
     ],
   },
   communities: {
-    heading: 'Neighborhoods We Serve in Frederick',
+    heading: "Downtown, North End, and Newer Southern Suburbs",
     intro:
-      'We cover the City of Frederick and close Frederick County communities we already drive from Bethesda. Urbana, Adamstown, and Mt Airy do not have separate pages. [Clarksburg](/locations/clarksburg) and [Gaithersburg](/locations/gaithersburg) sit south on I-270.',
+      "Farther than Clarksburg; we schedule Frederick deliberately.",
     groups: [
       {
         title: 'Downtown & Carroll Creek',
@@ -93,8 +93,8 @@ export const frederick: LocationContentSeed = {
     ],
   },
   process: {
-    heading: 'What Happens After You Request Frederick Service',
-    intro: 'Simple steps our Bethesda crew follows for Frederick appointments.',
+    heading: "Longest Regular Maryland Run From Bethesda",
+    intro: "We will not hide the drive — arrival windows reflect it.",
     steps: [
       {
         title: 'Talk Through the Home',
