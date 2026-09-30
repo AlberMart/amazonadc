@@ -1,10 +1,32 @@
 {
   "slug": "gaithersburg-kentlands-basement-humidity-air-ducts",
-  "title": "How Gaithersburg Basements and Kentlands Townhomes Load Your HVAC",
+  "title": "Gaithersburg Indoor Air: Corridor Dust vs Household Debris",
   "headline": "I-270 humidity, cool trunks, and why Crown dryer vents pack with lint",
-  "description": "Gaithersburg, MD mixes split-level basements with Kentlands townhomes on I-270. Learn why ducts sweat, how pollen sticks, and when to clean them from Bethesda.",
-  "heroImage": "/img/blog/dirty-air-ducts-energy-bills.webp",
+  "description": "Gaithersburg, MD mixes split-level basements with Kentlands townhomes on I-270. An educational look at why ducts sweat, how pollen sticks.",
+  "heroImage": "/img/locations/gaithersburg.webp",
   "sections": [
+    {
+      "id": "sweat",
+      "heading": "The basement air handler is doing two jobs",
+      "paragraphs": [
+        "It cools the house. It also sits in the dampest room. Cold trunks sweat. Dust from the last pollen season is already inside. Together they are what mold needs.",
+        "If wiping the registers only lasts a few days, when you are ready to book, use the [Gaithersburg, MD location page](/locations/gaithersburg)."
+      ],
+      "listItems": [],
+      "image": "/img/blog/Allergies.webp"
+    },
+    {
+      "id": "signs",
+      "heading": "Typical signs in a Gaithersburg house",
+      "paragraphs": [
+        "Watch for:"
+      ],
+      "listItems": [
+        "Musty air from basement supplies in July and August.",
+        "Gray film on upstairs registers during peak pollen.",
+        "A dryer that needs two cycles in Kentlands or Crown."
+      ]
+    },
     {
       "id": "north_270",
       "heading": "Gaithersburg is Rockville’s problem, one exit north",
@@ -15,31 +37,12 @@
       "listItems": []
     },
     {
-      "id": "sweat",
-      "heading": "The basement air handler is doing two jobs",
-      "paragraphs": [
-        "It cools the house. It also sits in the dampest room. Cold trunks sweat. Dust from the last pollen season is already inside. Together they are what mold needs.",
-        "If wiping the registers only lasts a few days, start with [air duct cleaning in Gaithersburg, MD](/locations/gaithersburg)."
-      ],
-      "listItems": [],
-      "image": "/img/blog/dirty-HVAC-unit.webp"
-    },
-    {
-      "id": "signs",
-      "heading": "Typical signs in a Gaithersburg house",
-      "paragraphs": ["Watch for:"],
-      "listItems": [
-        "Musty air from basement supplies in July and August.",
-        "Gray film on upstairs registers during peak pollen.",
-        "A dryer that needs two cycles in Kentlands or Crown."
-      ]
-    },
-    {
       "id": "protect",
-      "heading": "Bethesda dispatch — not a Kentlands mailbox",
+      "heading": "Keeping trunks and dryer runs healthier between cleanings",
       "paragraphs": [
+        "Gaithersburg jobs are scheduled from our metro offices. This article is educational — use the [location page](/locations/gaithersburg) when you are ready to book.",
         "Gaithersburg is served from our [Bethesda](/locations/bethesda) office. [Rockville](/locations/rockville) is the next city south.",
-        "Book on the [Gaithersburg location page](/locations/gaithersburg). Add [dryer vent cleaning](/dryer-vent-cleaning) if the laundry room is humid."
+        "Service details live on the [Gaithersburg location page](/locations/gaithersburg). Add [dryer vent cleaning](/dryer-vent-cleaning) if the laundry room is humid."
       ],
       "listItems": [
         "Dehumidify the basement in summer.",
@@ -50,16 +53,20 @@
   ],
   "faq": [
     {
-      "q": "Why do Gaithersburg basements make air ducts smell musty?",
-      "a": "Cool metal trunks in a humid basement sweat. Dust and pollen stick to that moisture. The blower then pushes the odor upstairs."
+      "q": "Is this a sales page for Gaithersburg duct cleaning?",
+      "a": "No. This post explains mechanisms and signs. Service details live on the Gaithersburg location page."
     },
     {
-      "q": "Do you also serve Germantown from Gaithersburg?",
-      "a": "Yes. Germantown and Montgomery Village are on the same Bethesda dispatch. Tell us the address when you book."
+      "q": "What usually causes gray film on supply registers?",
+      "a": "Fine particles that bypass or overload filters settle in cool trunks and recirculate when the blower runs."
     },
     {
-      "q": "Who cleans air ducts in Gaithersburg, MD?",
-      "a": "Amazon Air Duct Cleaning serves Gaithersburg from the Bethesda office. Book on the [Gaithersburg location page](/locations/gaithersburg) or call (301) 809-4544."
+      "q": "When is dryer vent cleaning the better first step?",
+      "a": "When laundry closets stay hot, dry times double, or you smell burnt lint — clear the vent to the exterior cap."
+    },
+    {
+      "q": "How is this different from a location page?",
+      "a": "Location pages cover packages, booking, and office dispatch. Articles cover climate and housing patterns."
     }
   ]
 }

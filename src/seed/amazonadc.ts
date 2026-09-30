@@ -1,3 +1,4 @@
+import { SEO_META_DESCRIPTION, SEO_META_TITLE } from '@/utilities/seoCopy'
 import { themeSeed } from '@/utilities/theme'
 import { airDuctCleaning } from '@/content/services/air-duct-cleaning'
 import { airDuctAndDryerVentCleaning } from '@/content/services/air-duct-and-dryer-vent-cleaning'
@@ -63,9 +64,8 @@ export const siteSettingsSeed = {
   priceRange: '$$-$$$',
   logoPath: '/img/logo.png',
   defaultOgImage: '/img/Amazon.webp',
-  defaultMetaTitle: 'Air Duct Cleaning in Virginia, Maryland & Washington DC',
-  defaultMetaDescription:
-    'Top-rated air duct cleaning in VA, MD & DC. Improve indoor air quality, remove dust and allergens, and clean dryer vents. Flat rates and a 100% satisfaction guarantee.',
+  defaultMetaTitle: SEO_META_TITLE,
+  defaultMetaDescription: SEO_META_DESCRIPTION,
   titleSuffix: 'Amazon Air Duct Cleaning',
   priceValidUntil: '2027-12-31',
   contactHeading: 'Contact Us',

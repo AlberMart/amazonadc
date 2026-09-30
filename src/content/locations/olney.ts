@@ -5,20 +5,21 @@ export const olney: LocationContentSeed = {
   title: 'Air Duct Cleaning in Olney, MD',
   headline: 'Air duct and dryer vent cleaning for Olney ramblers, Norbeck, and finished basements',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Olney, MD. Flat rates from our Bethesda office for farther Montgomery ramblers, pollen, and finished basements. Call (301) 809-4544.',
+    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Olney, MD. Flat rates from our Bethesda office for farther Montgomery ramblers, pollen, and finished basements. Call (800) 606-3334.',
   intro:
-    'Amazon Air Duct Cleaning serves Olney from our Bethesda office — up Georgia Avenue, not a rented Olney Mill suite. Ramblers, split-levels, and finished basements take on county pollen and cool-trunk humidity. Call (301) 809-4544.',
+    'Amazon Air Duct Cleaning serves Olney from our Bethesda office — up Georgia Avenue, not a rented Olney Mill suite. Ramblers, split-levels, and finished basements take on county pollen and cool-trunk humidity. Call (800) 606-3334.',
   heroImage: '/img/locations/olney.webp',
   heroAlt: 'Air duct cleaning in Olney, MD — Amazon Air Duct Cleaning',
   city: 'Olney',
   state: 'MD',
   servedBy: 'bethesda',
+  sectionLayout: 'faqEarly',
   about: {
     heading: 'Why Olney Ramblers Load Pollen in Finished Basements',
     paragraphs: [
       'Olney sits farther up Montgomery County than [Rockville](/locations/rockville): Georgia Avenue through the village, Olney Mill, Norbeck, then lanes toward Brookeville. A lot of the housing is 1960s–80s ramblers and split-levels. Families finished the basements. The air handler stayed down there. That is a clean looking rec room over a trunk that still sweats.',
       'The county canopy is thick once you leave the Beltway. Oak and pine dump pollen onto every deck. Returns pull it into those basement trunks. Finished rooms hide the dust until the AC starts after a wet week and the smell walks upstairs. Aspen Hill is a neighborhood we already pass on the drive, not its own page. Brookeville is the next hamlet north — we mention it because the same truck covers those lanes.',
-      'We serve Olney from [Bethesda](/locations/bethesda). There is no Olney storefront. The drive is honest: farther than Wheaton, still the same Maryland crew. Read [how Olney ramblers and pollen load air ducts](/blog/olney-rambler-pollen-air-ducts).',
+      'We serve Olney from [Bethesda](/locations/bethesda). The drive is honest: farther than Wheaton, still the same Maryland crew. For background reading (not a booking page), see [olney-rambler-pollen-air-ducts](/blog/olney-rambler-pollen-air-ducts).',
     ],
     highlights: [
       'Olney Mill, Norbeck, Georgia Avenue ramblers, Brookeville lanes',
@@ -30,7 +31,7 @@ export const olney: LocationContentSeed = {
   offersTitle: 'Special Offers — Olney, MD',
   services: {
     heading: 'Our Services in Olney, MD',
-    intro: 'The same honest packages we use in Rockville and Bethesda. The quote is the price.',
+    intro: 'Flat-rate options for Olney houses, townhomes, and light commercial.',
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -51,15 +52,15 @@ export const olney: LocationContentSeed = {
     ],
   },
   why: {
-    heading: 'Why Olney Homeowners Book Us',
+    heading: 'What Sets This Olney Crew Apart',
     items: [
       {
         title: 'Honest Distance from Bethesda',
-        text: 'Olney is a farther Montgomery run, not a fake local shop. The office is still 7815 Old Georgetown Rd.',
+        text: 'Olney is a farther Montgomery run from Bethesda. The office is still 7815 Old Georgetown Rd.',
       },
       {
         title: 'Flat-Rate Pricing',
-        text: 'No per-vent games on a rambler with a finished basement. The quote is the price.',
+        text: 'No per-vent games on a rambler with a finished basement. Pricing is quoted before work starts.',
       },
       {
         title: 'Outer-County Housing We Already Clean',
@@ -86,61 +87,62 @@ export const olney: LocationContentSeed = {
       },
       {
         title: 'Toward Brookeville',
-        places: 'Brookeville lanes, Sunshine, streets toward Laytonsville — ask if your road is not listed',
+        places:
+          'Brookeville lanes, Sunshine, streets toward Laytonsville — ask if your road is not listed',
       },
     ],
   },
   process: {
-    heading: 'What to Expect When You Book',
-    intro: 'Simple scheduling from the Bethesda office that covers Olney.',
+    heading: 'Booking Olney Service from Bethesda',
+    intro: 'Simple steps our Bethesda crew follows for Olney appointments.',
     steps: [
       {
-        title: 'Schedule Online or by Phone',
-        text: 'Use the form on this page or call (301) 809-4544. We confirm the appointment by the next business day.',
+        title: 'Talk Through the Home',
+        text: 'Tell us about pets, renovations, and laundry layout common in Olney.',
       },
       {
-        title: 'Pre-Visit Confirmation',
-        text: 'The morning of the job we send an arrival window. Outer-county drives get a realistic window, not a fiction.',
+        title: 'Confirm Arrival ETA',
+        text: 'Morning-of text with a realistic window for your street.',
       },
       {
-        title: 'On-Site Inspection',
-        text: 'We inspect basement trunks under finished rooms, returns, and the dryer run, then agree the scope before equipment comes in.',
+        title: 'Agree the Package',
+        text: 'Flat-rate duct and dryer packages — the quoted number is what you pay.',
       },
       {
-        title: 'Professional Cleaning',
-        text: 'Rec-room floors are protected. We clean with truck-mounted or portable HEPA equipment.',
+        title: 'Run the Cleaning',
+        text: 'Truck-mounted or portable HEPA sized for Olney houses and townhomes.',
       },
       {
-        title: 'Final Walkthrough',
-        text: 'Before-and-after photos, questions answered, and we leave when you are satisfied.',
+        title: 'Final Questions',
+        text: 'Filter tips and dryer-vent interval before we pack up.',
       },
     ],
   },
-  faqIntro: 'Questions from Olney homeowners. Call the Bethesda office at (301) 809-4544.',
+  faqIntro: 'Olney questions — call (800) 606-3334 (dispatch: Bethesda).',
   faq: [
     {
-      q: 'Do you have an office in Olney?',
-      a: 'No. Olney is served from our Bethesda office at 7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814. Call (301) 809-4544 or use the form on this page.',
+      q: 'Where does the Olney crew stage from?',
+      a: 'Our Bethesda office (7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814). Office line (301) 809-4544; booking (800) 606-3334.',
     },
     {
-      q: 'Why does my Olney finished basement smell musty when the AC starts?',
-      a: 'The rec room is finished. The trunks under it are still cool and wet in Maryland humidity. Pollen sticks, then blows upstairs. [Olney ramblers, pollen, and air ducts](/blog/olney-rambler-pollen-air-ducts) covers what to do next.',
+      q: 'Can I stay home during the Olney appointment?',
+      a: 'Yes. Stay clear of active equipment; we protect floors in the work path.',
     },
     {
-      q: 'How often should Olney homes clean air ducts?',
-      a: 'Every 3 to 5 years for most houses. Pets, renovations, and damp finished basements often need the shorter interval. Dryer vents should be cleared about once a year.',
+      q: 'How often should Olney, MD homes clean ducts?',
+      a: 'Every 3–5 years for most homes. Pets, renovations, and humid basements often need the shorter end. Dryer vents about yearly.',
     },
     {
-      q: 'Do you also serve Rockville and Brookeville from Bethesda?',
-      a: 'Yes. [Rockville](/locations/rockville) has its own page. Brookeville and Aspen Hill are on the same Bethesda dispatch as Olney, without separate city pages.',
+      q: 'What should I prepare before the crew arrives in Olney?',
+      a: 'Clear access to returns, the air handler, and the dryer. Note HOA gate codes if needed.',
     },
     {
-      q: 'Do you offer flat rates in Olney?',
-      a: 'Yes. Residential air duct and dryer vent cleaning is flat-rate. The number we quote before the job is the price you pay.',
+      q: 'How long does air duct cleaning take in a typical Olney home?',
+      a: 'Most single-system houses take about 2–3 hours. Townhomes with long dryer runs can run longer after inspection.',
     },
     {
-      q: 'Are mold treatments safe for Olney families and pets?',
-      a: 'Yes. We use EPA-registered antimicrobial treatments that are safe for children, pets, and people with respiratory sensitivities once applied as directed.',
+      q: 'Are Olney residential prices flat-rate?',
+      a: 'Yes for air duct and dryer vent packages. The quote before we start is the price you pay.',
     },
   ],
 }

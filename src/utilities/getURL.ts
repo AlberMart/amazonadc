@@ -14,6 +14,19 @@ export const getServerSideURL = () => {
   )
 }
 
+/** True when canonical origin is a known staging / preview host (should be noindex). */
+export function isNonProductionHost(url = getServerSideURL()) {
+  try {
+    const host = new URL(url).hostname.toLowerCase()
+    if (host === 'localhost' || host === '127.0.0.1') return true
+    if (host.endsWith('.fly.dev')) return true
+    if (host.endsWith('.vercel.app')) return true
+    return false
+  } catch {
+    return true
+  }
+}
+
 export const getClientSideURL = () => {
   if (canUseDOM) {
     const protocol = window.location.protocol

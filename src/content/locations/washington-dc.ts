@@ -7,18 +7,20 @@ export const washingtonDc: LocationContentSeed = {
   description:
     'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Washington, DC. Flat rates, before-and-after photos, and crews dispatched from Burke and Bethesda. Call (800) 606-3334.',
   intro:
-    'Amazon Air Duct Cleaning serves Washington, DC from our two real metro offices — Burke, VA and Bethesda, MD. We clean ducts and dryer vents in Capitol Hill row houses, Northwest condos, and Navy Yard apartments without inventing a District storefront. Call (800) 606-3334 and we send the closer crew.',
+    'Amazon Air Duct Cleaning serves Washington, DC from our two real metro offices — Burke, VA and Bethesda, MD. We clean ducts and dryer vents in Capitol Hill row houses, Northwest condos, and Navy Yard apartments. Call (800) 606-3334 and we send the closer crew.',
   heroImage: '/img/locations/washington-dc.webp',
   heroAlt: 'Air duct cleaning in Washington, DC — Amazon Air Duct Cleaning',
   city: 'Washington',
   state: 'DC',
   servedBy: 'burke',
+  sectionLayout: 'servicesFirst',
+  dispatchLabel: 'our Burke and Bethesda offices',
   about: {
     heading: 'Why DC Homes Load Ducts Faster Than the Suburbs',
     paragraphs: [
       'Washington, DC is a river city with dense housing. The Potomac and Anacostia keep summer air wet. Row houses on Capitol Hill, Georgetown, and Shaw often run older metal ductwork that was added decades after the house was built. High-rises in Navy Yard, NoMa, and Foggy Bottom stack long dryer vents and shared corridors. Traffic dust, pollen from Rock Creek Park, and that humidity all settle in the same returns.',
       'When cold supply air hits humid indoor air, condensation forms inside the ducts. Dust sticks to it. That is how musty registers start in a Ward 2 condo and in a 1900s row house alike. Opening a window on a July afternoon does not dry the inside of the system — it often adds more moisture.',
-      'We do not list a fake DC storefront. Jobs in the District are scheduled from [Burke, VA](/locations/burke) and [Bethesda, MD](/locations/bethesda). Arlington and Alexandria sit on the Virginia side of the same river — see [air duct cleaning in Arlington](/locations/arlington) and [Alexandria](/locations/alexandria) if you are comparing nearby service. For the climate mechanics, read [how DC humidity and row-house ducts affect indoor air](/blog/dc-humidity-row-houses-indoor-air).',
+      'Jobs in the District are scheduled from [Burke, VA](/locations/burke) and [Bethesda, MD](/locations/bethesda). Arlington and Alexandria sit on the Virginia side of the same river — see [air duct cleaning in Arlington](/locations/arlington) and [Alexandria](/locations/alexandria) if you are comparing nearby service. For the climate mechanics, read [how DC humidity and row-house ducts affect indoor air](/blog/dc-humidity-row-houses-indoor-air).',
     ],
     highlights: [
       'Row houses, condos, and small offices across all four quadrants',
@@ -30,8 +32,7 @@ export const washingtonDc: LocationContentSeed = {
   offersTitle: 'Special Offers — Washington, DC',
   services: {
     heading: 'Our Services in Washington, DC',
-    intro:
-      'The same flat-rate packages we use in Northern Virginia and Montgomery County. The quote is the price.',
+    intro: 'Packages we actually sell for Washington homes — quoted before work starts.',
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -52,11 +53,11 @@ export const washingtonDc: LocationContentSeed = {
     ],
   },
   why: {
-    heading: 'Why DC Residents Book Us',
+    heading: 'Why Washington Homeowners Call Us',
     items: [
       {
-        title: 'Two Real Offices, No Fake Address',
-        text: 'Burke and Bethesda are staffed locations. We will not put a mailbox in the District and call it a shop. You get the same crew that already works Arlington, Alexandria, and Montgomery County.',
+        title: 'Two Metro Offices',
+        text: 'Burke and Bethesda are staffed locations. You get the same crew that already works Arlington, Alexandria, and Montgomery County.',
       },
       {
         title: 'Flat-Rate Pricing',
@@ -97,58 +98,52 @@ export const washingtonDc: LocationContentSeed = {
     ],
   },
   process: {
-    heading: 'What to Expect When You Book in DC',
-    intro:
-      'We confirm parking, loading, and condo access before the truck rolls — District streets are not a suburban driveway.',
+    heading: 'How a Washington Visit Usually Runs',
+    intro: 'A clear path from estimate to finished job for Washington homes.',
     steps: [
       {
-        title: 'Call or Request an Estimate',
-        text: 'Call (800) 606-3334 or use the form on this page. We confirm by the next business day and tell you whether Burke or Bethesda is coming.',
+        title: 'Request a Window',
+        text: 'Call (800) 606-3334 or use the form. We confirm by the next business day.',
       },
       {
-        title: 'Access and Parking',
-        text: 'The morning of the job we send an arrival window. Tell us about loading zones, garage height, and HOA rules so the equipment actually fits.',
+        title: 'Share Access Details',
+        text: 'Gates, condo loading, alley parking, and HOA rules for Washington help us stage correctly.',
       },
       {
-        title: 'Inspection Before We Start',
-        text: 'We look at the ducts, dryer run, and any musty registers, then agree the scope. No surprise add-ons after we are inside a row house.',
+        title: 'Inspect Before Cleaning',
+        text: 'We walk ducts and the dryer run with you and agree scope before equipment comes in.',
       },
       {
-        title: 'Cleaning',
-        text: 'Floors are protected. Ducts and dryer vents are cleaned. Ventilation mold treatment is done only when the inspection shows it is needed.',
+        title: 'Protect and Clean',
+        text: 'Floors are protected. HEPA negative pressure pulls debris into the vacuum, not living spaces.',
       },
       {
-        title: 'Walkthrough',
-        text: 'Before-and-after photos, questions answered, and we leave when you are satisfied.',
+        title: 'Review Results',
+        text: 'You keep before-and-after photos on duct jobs. We leave when you are satisfied.',
       },
     ],
   },
-  faqIntro:
-    'Questions from DC homeowners and property managers. Call (800) 606-3334 — we dispatch from Burke or Bethesda.',
+  faqIntro: 'Washington questions — call (800) 606-3334 (dispatch: Burke).',
   faq: [
     {
-      q: 'Do you have an office in Washington, DC?',
-      a: 'No. We serve the District from our Burke, VA office at 5641 Burke Centre Pkwy Ste 119 and our Bethesda, MD office at 7815 Old Georgetown Rd Ste 201. Call (800) 606-3334 and we send the closer crew. This page is the DC service page, not a fake storefront.',
+      q: 'Do you have a storefront in Washington?',
+      a: 'No. Washington jobs are scheduled from our Burke office at 5641 Burke Centre Pkwy Ste 119, Burke, VA 22015. Call (800) 606-3334.',
     },
     {
-      q: 'Why do DC air ducts get musty so fast?',
-      a: 'Potomac and Anacostia humidity meets cold supply ducts and condenses. Row houses and condos then add dust, pollen, and long dryer runs. The odor shows up when the AC or heat starts. See [how DC humidity loads row-house ducts](/blog/dc-humidity-row-houses-indoor-air).',
+      q: 'How long does air duct cleaning take in a typical Washington home?',
+      a: 'Most single-system houses take about 2–3 hours. Townhomes with long dryer runs can run longer after inspection.',
     },
     {
-      q: 'How often should I clean air ducts in a Capitol Hill row house or a Northwest condo?',
-      a: 'Every 3 to 5 years for most homes. Pets, renovations, and English basements that take on moisture often need the shorter end of that range. Dryer vents should be cleared about once a year, especially in high-rises.',
+      q: 'Are Washington residential prices flat-rate?',
+      a: 'Yes for air duct and dryer vent packages. The quote before we start is the price you pay.',
     },
     {
-      q: 'Can you work in condos and historic houses?',
-      a: 'Yes. We bring portable HEPA equipment when a truck cannot stage on a narrow street, and we protect floors and plaster. Tell us about HOA rules and loading when you book.',
+      q: 'Can ducts and dryer vents be done the same day in Washington?',
+      a: 'Usually yes if you book the combined package or both services when you schedule.',
     },
     {
-      q: 'Do you offer flat rates in DC?',
-      a: 'Yes. Residential air duct and dryer vent cleaning is flat-rate. The number we quote before the job is the price you pay.',
-    },
-    {
-      q: 'Which office covers Northwest vs Southeast?',
-      a: 'Friendship Heights, Palisades, and Tenleytown are often a Bethesda dispatch. Capitol Hill, Navy Yard, and Anacostia are often Burke, the same crew that covers [Arlington](/locations/arlington). Either office uses the same packages — we pick by drive time that day.',
+      q: 'Is sanitizing included for Washington duct jobs?',
+      a: 'Sanitizing is available when inspection supports it or when you request it — we confirm before applying anything.',
     },
   ],
 }

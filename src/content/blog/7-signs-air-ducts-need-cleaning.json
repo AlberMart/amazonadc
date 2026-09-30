@@ -13,7 +13,7 @@
         "Recognizing the warning signs of dirty air ducts early allows homeowners to schedule professional cleaning before the problem escalates into higher energy costs, system breakdowns, or health complications."
       ],
       "listItems": [],
-      "image": "/img/blog/Why-Air-Duct-Condition-Matters.webp"
+      "image": "/img/blog/The-Hidden-Cost-of-Dirty-Air-Ducts.webp"
     },
     {
       "id": "sign-1",
@@ -28,7 +28,7 @@
         "Visible dust rings or grey residue around vent covers",
         "Dark streaks or discoloration on walls near registers"
       ],
-      "image": "/img/blog/neglected-air-ducts-buildup.webp"
+      "image": "/img/blog/Allergies.webp"
     },
     {
       "id": "sign-2",
@@ -159,24 +159,20 @@
   ],
   "faq": [
     {
-      "q": "How do I know if my air ducts are dirty?",
-      "a": "Common signs include excessive dust near vents, worsening allergy symptoms, musty or stale odors when the HVAC runs, visible mold growth, rising energy bills, inconsistent airflow between rooms, and pest or rodent activity near the ductwork."
+      "q": "Is this a sales page for your area duct cleaning?",
+      "a": "No. This post explains mechanisms and signs. Service details live on the your area location page."
     },
     {
-      "q": "Can dirty air ducts make you sick?",
-      "a": "Yes. Dirty air ducts can circulate dust, mold spores, pollen, and pet dander throughout your home, aggravating allergies, asthma, and other respiratory conditions."
+      "q": "What usually causes gray film on supply registers?",
+      "a": "Fine particles that bypass or overload filters settle in cool trunks and recirculate when the blower runs."
     },
     {
-      "q": "What happens if you never clean your air ducts?",
-      "a": "Without regular cleaning, ducts accumulate debris that reduces HVAC efficiency, increases energy bills, shortens system lifespan, and degrades indoor air quality over time."
+      "q": "When is dryer vent cleaning the better first step?",
+      "a": "When laundry closets stay hot, dry times double, or you smell burnt lint — clear the vent to the exterior cap."
     },
     {
-      "q": "How often should air ducts be professionally cleaned?",
-      "a": "Most experts recommend professional air duct cleaning every 3 to 5 years. Homes with pets, allergies, or recent renovations may require more frequent service."
-    },
-    {
-      "q": "Does duct cleaning improve HVAC efficiency?",
-      "a": "Yes. Removing dust and debris from air ducts allows air to flow freely, reducing the workload on your HVAC system and potentially lowering energy consumption."
+      "q": "How is this different from a location page?",
+      "a": "Location pages cover packages, booking, and office dispatch. Articles cover climate and housing patterns."
     }
   ]
 }

@@ -1,9 +1,9 @@
 {
   "slug": "mclean-tree-pollen-basement-humidity",
-  "title": "How McLean’s Tree Canopy and Basements Affect Indoor Air Quality",
+  "title": "Mclean Indoor Air: Corridor Dust vs Household Debris",
   "headline": "Pollen, finished basements, and why Fairfax County ducts load faster than they look",
-  "description": "McLean, VA sits under mature oaks with finished basements and humid summers. Learn why returns fill with pollen, how basement trunks sweat, and when to clean the ducts.",
-  "heroImage": "/img/blog/Why-Air-Duct-Condition-Matters.webp",
+  "description": "McLean, VA sits under mature oaks with finished basements and humid summers. An educational look at why returns fill with pollen, how basement trunks sweat, and when to clean the ducts.",
+  "heroImage": "/img/locations/mclean.webp",
   "sections": [
     {
       "id": "canopy",
@@ -20,10 +20,10 @@
       "paragraphs": [
         "Many McLean colonials put the air handler in a basement along Difficult Run, Pimmit Run, or a low lot. The room feels cool. The ducts are cooler still. Humid air condenses on the outside and inside of those trunks. Dust and pollen stick. The blower then sends that mix upstairs.",
         "Tysons condos next door fail a different way: long dryer vents and tight closets. Lint and moisture have nowhere to go if the cap is packed.",
-        "If dust returns days after you wipe the registers, start with [air duct cleaning in McLean, VA](/locations/mclean)."
+        "If dust returns days after you wipe the registers, when you are ready to book, use the [McLean, VA location page](/locations/mclean)."
       ],
       "listItems": [],
-      "image": "/img/blog/dirty-HVAC-unit.webp"
+      "image": "/img/blog/Allergies.webp"
     },
     {
       "id": "signs",
@@ -39,9 +39,10 @@
     },
     {
       "id": "protect",
-      "heading": "What to do without ripping out the trees",
+      "heading": "Practical next steps for mclean homes",
       "paragraphs": [
-        "You do not need to clear the lot. You need a dry, clear air path. McLean is served from our [Burke](/locations/burke) office — the same dispatch as [Arlington](/locations/arlington). There is no McLean storefront.",
+        "Mclean jobs are scheduled from our metro offices. This article is educational — use the [location page](/locations/mclean) when you are ready to book.",
+        "You do not need to clear the lot. You need a dry, clear air path. McLean is served from our [Burke](/locations/burke) office — the same dispatch as [Arlington](/locations/arlington).",
         "The [McLean location page](/locations/mclean) has neighborhoods, packages, and booking. Pair ducts with [dryer vent cleaning](/dryer-vent-cleaning) if a second-floor laundry has a long run."
       ],
       "listItems": [
@@ -53,16 +54,16 @@
   ],
   "faq": [
     {
-      "q": "Does tree pollen really end up in McLean air ducts?",
-      "a": "Yes. Returns pull outdoor air and whatever settled near the house. Heavy spring pollen in McLean shows up as film on registers and in the trunk lines until the system is cleaned."
+      "q": "Does construction near Mclean change cleaning intervals?",
+      "a": "Active drywall work nearby often shortens the useful interval. Wait until heavy dust settles, then inspect."
     },
     {
-      "q": "Are finished basements a bigger mold risk?",
-      "a": "They can be. Cool basement ducts sweat in humid weather. That moisture plus dust is what mold needs. A musty smell when the AC starts is the usual first sign."
+      "q": "Should I clean ducts after renovations?",
+      "a": "Yes if sanding or drywall dust entered returns. Otherwise a standard 3–5 year interval is typical."
     },
     {
-      "q": "Who cleans air ducts in McLean, VA?",
-      "a": "Amazon Air Duct Cleaning serves McLean from the Burke office. Book on the [McLean location page](/locations/mclean) or call (571) 460-0001."
+      "q": "What proof should a cleaning include?",
+      "a": "Before-and-after photos of trunks or vents, plus a clear scope agreed before work starts."
     }
   ]
 }

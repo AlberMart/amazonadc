@@ -5,20 +5,21 @@ export const hyattsville: LocationContentSeed = {
   title: 'Air Duct Cleaning in Hyattsville, MD',
   headline: 'Air duct and dryer vent cleaning for the Route 1 arts district and older PG housing',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Hyattsville, MD. Flat rates from our Bethesda office for arts-district housing, Route 1 dust, and humid older ducts. Call (301) 809-4544.',
+    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Hyattsville, MD. Flat rates from our Bethesda office for arts-district housing, Route 1 dust, and humid older ducts. Call (800) 606-3334.',
   intro:
-    'Amazon Air Duct Cleaning serves Hyattsville from our Bethesda office — not a rented Route 1 arts-district suite. Older housing, Gateway, and houses toward College Park all take on Prince George’s humidity and corridor dust. Call (301) 809-4544.',
+    'Amazon Air Duct Cleaning serves Hyattsville from our Bethesda office — not a rented Route 1 arts-district suite. Older housing, Gateway, and houses toward College Park all take on Prince George’s humidity and corridor dust. Call (800) 606-3334.',
   heroImage: '/img/locations/hyattsville.webp',
   heroAlt: 'Air duct cleaning in Hyattsville, MD — Amazon Air Duct Cleaning',
   city: 'Hyattsville',
   state: 'MD',
   servedBy: 'bethesda',
+  sectionLayout: 'whyFirst',
   about: {
     heading: 'Why Hyattsville Route 1 Housing Loads Humidity and Corridor Dust',
     paragraphs: [
       'Hyattsville is a Prince George’s city on the Route 1 spine: the arts district and Gateway, West Hyattsville, then streets toward [College Park](/locations/college-park) and the District. Housing mixes early brick, later rentals, and new stacked units over older mechanical rooms. Route 1 construction and traffic add grit the returns do not sort from pollen.',
       'PG County summers are wet. Cool trunks in a basement or crawl sweat. Arts-district renovations kick drywall into shared chases. The first AC week after a humid spell is when registers gray out and the laundry smells like a packed dryer vent. [Takoma Park](/locations/takoma-park) and [Washington, DC](/locations/washington-dc) sit on the same metro ring.',
-      'We serve Hyattsville from [Bethesda](/locations/bethesda). There is no Hyattsville storefront. The drive is real and we will say so. Read [how Hyattsville Route 1 humidity loads air ducts](/blog/hyattsville-route-1-humidity-air-ducts).',
+      'We serve Hyattsville from [Bethesda](/locations/bethesda). The drive is real and we will say so. For background reading (not a booking page), see [hyattsville-route-1-humidity-air-ducts](/blog/hyattsville-route-1-humidity-air-ducts).',
     ],
     highlights: [
       'Arts district, Gateway, West Hyattsville, and Route 1 housing',
@@ -30,7 +31,8 @@ export const hyattsville: LocationContentSeed = {
   offersTitle: 'Special Offers — Hyattsville, MD',
   services: {
     heading: 'Our Services in Hyattsville, MD',
-    intro: 'The same honest packages we use in College Park and Bethesda. The quote is the price.',
+    intro:
+      'Choose duct cleaning, dryer vents, or mold treatment for ventilation when inspection calls for it.',
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -51,15 +53,15 @@ export const hyattsville: LocationContentSeed = {
     ],
   },
   why: {
-    heading: 'Why Hyattsville Homeowners Book Us',
+    heading: 'Hyattsville Service — Straight Answers',
     items: [
       {
         title: 'Honest Bethesda Dispatch into PG County',
-        text: 'We will not list a Route 1 arts-district office we do not staff. The truck leaves Old Georgetown Road.',
+        text: 'Hyattsville jobs are scheduled from our Bethesda office on Old Georgetown Road.',
       },
       {
         title: 'Flat-Rate Pricing',
-        text: 'No per-vent counting on an older brick rental or a Gateway condo. The quote is the price.',
+        text: 'No per-vent counting on an older brick rental or a Gateway condo. Pricing is quoted before work starts.',
       },
       {
         title: 'Route 1 Housing We Already Clean',
@@ -86,61 +88,62 @@ export const hyattsville: LocationContentSeed = {
       },
       {
         title: 'Toward College Park & Riverdale',
-        places: 'Streets toward College Park, Riverdale Park, University Park — ask if your block is not listed',
+        places:
+          'Streets toward College Park, Riverdale Park, University Park — ask if your block is not listed',
       },
     ],
   },
   process: {
-    heading: 'What to Expect When You Book',
-    intro: 'Simple scheduling from the Bethesda office that covers Hyattsville.',
+    heading: 'Hyattsville Scheduling Checklist',
+    intro: 'Practical timing notes for Hyattsville homeowners and property managers.',
     steps: [
       {
-        title: 'Schedule Online or by Phone',
-        text: 'Use the form on this page or call (301) 809-4544. We confirm the appointment by the next business day.',
+        title: 'Estimate Request',
+        text: 'Form or (800) 606-3334 — we reply with timing from the Bethesda office.',
       },
       {
-        title: 'Pre-Visit Confirmation',
-        text: 'The morning of the job we send an arrival window so Route 1 and arts-district parking is already planned.',
+        title: 'Route Planning',
+        text: 'Hyattsville is on an existing Bethesda dispatch day whenever possible.',
       },
       {
-        title: 'On-Site Inspection',
-        text: 'We inspect older trunks, shared chases, returns, and the dryer run, then agree the scope before equipment comes in.',
+        title: 'Walk-Through',
+        text: 'Supplies, returns, dryer termination — then we start.',
       },
       {
-        title: 'Professional Cleaning',
-        text: 'Floors are protected. We clean with truck-mounted or portable HEPA equipment.',
+        title: 'Service',
+        text: 'Full trunk cleaning; dryer vent cleared to the exterior cap when booked.',
       },
       {
-        title: 'Final Walkthrough',
-        text: 'Before-and-after photos, questions answered, and we leave when you are satisfied.',
+        title: 'Close-Out',
+        text: 'Satisfaction check before payment is finalized.',
       },
     ],
   },
-  faqIntro: 'Questions from Hyattsville homeowners. Call the Bethesda office at (301) 809-4544.',
+  faqIntro: 'Hyattsville questions — call (800) 606-3334 (dispatch: Bethesda).',
   faq: [
     {
-      q: 'Do you have an office in Hyattsville?',
-      a: 'No. Hyattsville is served from our Bethesda office at 7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814. Call (301) 809-4544 or use the form on this page.',
+      q: 'Where does the Hyattsville crew stage from?',
+      a: 'Our Bethesda office (7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814). Office line (301) 809-4544; booking (800) 606-3334.',
     },
     {
-      q: 'Why do Hyattsville registers get dusty so soon after I wipe them?',
-      a: 'Route 1 grit and renovation dust pack older trunks. Humidity makes that film stick. [Hyattsville Route 1 humidity and air ducts](/blog/hyattsville-route-1-humidity-air-ducts) covers the cycle.',
+      q: 'Are Hyattsville residential prices flat-rate?',
+      a: 'Yes for air duct and dryer vent packages. The quote before we start is the price you pay.',
     },
     {
-      q: 'How often should Hyattsville homes clean air ducts?',
-      a: 'Every 3 to 5 years for most houses. Rentals, renovations, and damp basements often need the shorter interval. Dryer vents should be cleared about once a year.',
+      q: 'Can ducts and dryer vents be done the same day in Hyattsville?',
+      a: 'Usually yes if you book the combined package or both services when you schedule.',
     },
     {
-      q: 'Do you also serve College Park and Takoma Park from Bethesda?',
-      a: 'Yes. [College Park](/locations/college-park), [Takoma Park](/locations/takoma-park), and [Washington, DC](/locations/washington-dc) are the same metro dispatch as Hyattsville.',
+      q: 'Is sanitizing included for Hyattsville duct jobs?',
+      a: 'Sanitizing is available when inspection supports it or when you request it — we confirm before applying anything.',
     },
     {
-      q: 'Do you offer flat rates in Hyattsville?',
-      a: 'Yes. Residential air duct and dryer vent cleaning is flat-rate. The number we quote before the job is the price you pay.',
+      q: 'Do you clean dryer vents in Hyattsville townhomes and condos?',
+      a: 'Yes — full length to the exterior cap. Stacked laundry is common on this route. See dryer vent cleaning for details.',
     },
     {
-      q: 'Are mold treatments safe for Hyattsville families and pets?',
-      a: 'Yes. We use EPA-registered antimicrobial treatments that are safe for children, pets, and people with respiratory sensitivities once applied as directed.',
+      q: 'Do you bring portable equipment for tight Hyattsville streets?',
+      a: 'Yes. When a truck cannot stage, we use portable HEPA systems sized for the home.',
     },
   ],
 }

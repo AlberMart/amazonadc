@@ -2,6 +2,7 @@ import type { CSSProperties } from 'react'
 
 import type { Header } from '@/payload-types'
 import { resolveCmsImage, resolveCmsImageAlt } from '@/utilities/cmsImage'
+import { toTelHref } from '@/utilities/tel'
 
 export type MobileCallDisplay = 'icon' | 'number' | 'both'
 export type MobileCallPlacement = 'header' | 'floating' | 'both'
@@ -38,19 +39,13 @@ const RADIUS: Record<MobileCallShape, string> = {
   square: '0px',
 }
 
-function asTel(value: string) {
-  const trimmed = value.trim()
-  if (!trimmed) return ''
-  return trimmed.startsWith('tel:') ? trimmed : `tel:${trimmed.replace(/[^\d+]/g, '')}`
-}
-
 export function resolveMobileCall(
   header: Header | null | undefined,
   fallback: { phoneDisplay: string; phoneHref: string },
 ): ResolvedMobileCall {
   const raw = header?.mobileCall
   const label = (raw?.phoneDisplay || header?.phoneDisplay || fallback.phoneDisplay).trim()
-  const href = asTel(raw?.phoneHref || header?.phoneHref || fallback.phoneHref)
+  const href = toTelHref(raw?.phoneHref || header?.phoneHref || fallback.phoneHref)
 
   const size = (raw?.size as MobileCallSize) || 'md'
   const shape = (raw?.shape as MobileCallShape) || 'circle'

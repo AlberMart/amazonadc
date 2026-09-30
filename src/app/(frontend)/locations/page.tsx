@@ -9,10 +9,8 @@ import {
   breadcrumb,
   getSiteSeo,
   jsonLd,
-  organizationNode,
   resolvePageMeta,
   webPageNode,
-  websiteNode,
 } from '@/utilities/seo'
 
 export const dynamic = 'force-dynamic'
@@ -30,8 +28,6 @@ export default async function LocationsIndexPage() {
   )
 
   const structuredData = jsonLd([
-    organizationNode(site),
-    websiteNode(site),
     webPageNode({
       path,
       name: 'Service locations — Virginia, Maryland & Washington DC',
@@ -122,7 +118,11 @@ export default async function LocationsIndexPage() {
                     {location.city}, {location.state}
                   </span>
                   <span className="mt-1 block text-sm site-body">
-                    Served by {location.office.city} office
+                    {location.slug === 'washington-dc'
+                      ? 'Served by Burke & Bethesda offices'
+                      : location.isOfficeHub
+                        ? 'Office hub'
+                        : `Served by ${location.office.city} office`}
                   </span>
                 </Link>
               ))}

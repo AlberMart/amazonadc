@@ -3,22 +3,24 @@ import type { LocationContentSeed } from '@/utilities/locations'
 export const herndon: LocationContentSeed = {
   slug: 'herndon',
   title: 'Air Duct Cleaning in Herndon, VA',
-  headline: 'Air duct and dryer vent cleaning for downtown Herndon, Worldgate, and the Dulles corridor',
+  headline:
+    'Air duct and dryer vent cleaning for downtown Herndon, Worldgate, and the Dulles corridor',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Herndon, VA. Flat rates from our Burke office for clock-tower cottages, Worldgate townhomes, and Dulles-area houses. Call (571) 460-0001.',
+    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Herndon, VA. Flat rates from our Burke office for clock-tower cottages, Worldgate townhomes, and Dulles-area houses. Call (800) 606-3334.',
   intro:
-    'Amazon Air Duct Cleaning serves Herndon from our Burke office — not a desk by the clock tower. Historic downtown cottages, Worldgate townhomes, and houses along the data-center corridor all take on construction dust and Dulles traffic film. Call (571) 460-0001.',
+    'Amazon Air Duct Cleaning serves Herndon from our Burke office. Historic downtown cottages, Worldgate townhomes, and houses along the data-center corridor all take on construction dust and Dulles traffic film. Call (800) 606-3334.',
   heroImage: '/img/locations/herndon.webp',
   heroAlt: 'Air duct cleaning in Herndon, VA — Amazon Air Duct Cleaning',
   city: 'Herndon',
   state: 'VA',
   servedBy: 'burke',
+  sectionLayout: 'whyFirst',
   about: {
     heading: 'Why Herndon Ducts Collect Construction Dust Faster Than Downtown Suggests',
     paragraphs: [
       'The Town of Herndon still has a walkable core: Elden Street, the municipal clock tower, and older cottages on small lots. A few blocks out, Worldgate and Herndon Parkway shift to townhomes and stacked laundry closets. West toward Dulles, data-center and office construction keeps a fine gypsum and soil film in the air. Returns pull that mix in along with oak pollen from the remaining canopy.',
       'Downtown brick houses often have original trunks plus later additions. Worldgate units have long dryer runs to a shared wall or roof cap. Neither layout likes a summer of humid air sitting on cool metal. A dryer that needs two cycles on a Worldgate stack is usually lint, not a dying machine.',
-      'We serve Herndon from [Burke](/locations/burke). There is no Herndon storefront. Nearby [Reston](/locations/reston), [Chantilly](/locations/chantilly), and [Loudoun](/locations/loudoun) use the same crew. Read [how Herndon construction dust loads air ducts](/blog/herndon-construction-dust-air-ducts).',
+      'We serve Herndon from [Burke](/locations/burke). Nearby [Reston](/locations/reston), [Chantilly](/locations/chantilly), and [Loudoun](/locations/loudoun) use the same crew. For background reading, see [construction dust near active corridors](/blog/herndon-construction-dust-air-ducts).',
     ],
     highlights: [
       'Downtown Herndon, Worldgate, Herndon Parkway, and Dulles-edge streets',
@@ -30,7 +32,8 @@ export const herndon: LocationContentSeed = {
   offersTitle: 'Special Offers — Herndon, VA',
   services: {
     heading: 'Our Services in Herndon, VA',
-    intro: 'Honest packages for Herndon houses and townhomes. The quote is the price.',
+    intro:
+      'Choose duct cleaning, dryer vents, or mold treatment for ventilation when inspection calls for it.',
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -51,7 +54,7 @@ export const herndon: LocationContentSeed = {
     ],
   },
   why: {
-    heading: 'Why Herndon Homeowners Choose Us',
+    heading: 'Herndon Service — Straight Answers',
     items: [
       {
         title: 'Clock Tower to Dulles, One Crew',
@@ -59,7 +62,7 @@ export const herndon: LocationContentSeed = {
       },
       {
         title: 'Construction-Dust Jobs We Already Do',
-        text: 'Data-center corridor drywall dust is a Herndon pattern, not a mystery surcharge. We inspect, then clean what is actually in the trunks.',
+        text: 'Homes near active construction often collect more fine dust in returns — we inspect before we clean. We inspect, then clean what is actually in the trunks.',
       },
       {
         title: 'Flat-Rate Pricing',
@@ -86,61 +89,58 @@ export const herndon: LocationContentSeed = {
       },
       {
         title: 'West toward Dulles',
-        places: 'Runnymede, Fox Mill edge, streets toward [Loudoun](/locations/loudoun) — ask if your HOA is not listed',
+        places:
+          'Runnymede, Fox Mill edge, streets toward [Loudoun](/locations/loudoun) — ask if your HOA is not listed',
       },
     ],
   },
   process: {
-    heading: 'What to Expect When You Book',
-    intro: 'Simple scheduling from the Burke office that covers Herndon.',
+    heading: 'Herndon Scheduling Checklist',
+    intro: 'What to expect when we schedule Herndon from 5641 Burke Centre Pkwy Ste 119.',
     steps: [
       {
-        title: 'Schedule Online or by Phone',
-        text: 'Use the form on this page or call (571) 460-0001. We confirm the appointment by the next business day.',
+        title: 'Online or Phone Intake',
+        text: 'Book at (800) 606-3334. Mention Herndon so we route from Burke.',
       },
       {
-        title: 'Pre-Visit Confirmation',
-        text: 'The morning of the job we send an arrival window. Worldgate gates and downtown alley access help us stage without blocking Elden.',
+        title: 'Pre-Job Notes',
+        text: 'We ask about basement returns, stacked laundry, and any musty registers.',
       },
       {
-        title: 'On-Site Inspection',
-        text: 'We inspect trunks, returns, and the dryer run, then agree the scope before hoses come in.',
+        title: 'On-Site Scope Lock',
+        text: 'No surprise add-ons after we are inside.',
       },
       {
-        title: 'Professional Cleaning',
-        text: 'Floors are protected. We clean with truck-mounted or portable HEPA equipment suited to cottages and townhomes.',
+        title: 'Source-Removal Cleaning',
+        text: 'NADCA-style agitation under negative pressure with HEPA capture.',
       },
       {
-        title: 'Final Walkthrough',
-        text: 'Before-and-after photos, questions answered, and we leave when you are satisfied.',
+        title: 'Photo Proof',
+        text: 'Duct jobs include before-and-after images you can keep.',
       },
     ],
   },
-  faqIntro: 'Questions from Herndon homeowners. Call the Burke office at (571) 460-0001.',
+  faqIntro: 'Herndon questions — call (800) 606-3334 (dispatch: Burke).',
   faq: [
     {
-      q: 'Do you have an office in Herndon?',
-      a: 'No. Herndon is served from our Burke office at 5641 Burke Centre Pkwy Ste 119, Burke, VA 22015. Call (571) 460-0001 or use the form on this page.',
+      q: 'Where does the Herndon crew stage from?',
+      a: 'Our Burke office (5641 Burke Centre Pkwy Ste 119, Burke, VA 22015). Office line (571) 460-0001; booking (800) 606-3334.',
     },
     {
-      q: 'Do you work downtown Herndon and Worldgate on the same route?',
-      a: 'Yes. Clock-tower cottages, Worldgate townhomes, and Dulles-edge houses are all Herndon stops from Burke.',
+      q: 'Do you serve commercial spaces in Herndon?',
+      a: 'Light commercial and small offices are available by quote. Call us with square footage and system count.',
     },
     {
-      q: 'Why is there so much dust in Herndon ducts near Dulles?',
-      a: 'Data-center and office construction plus airport-corridor traffic put fine particles in returns. [Herndon construction dust and air ducts](/blog/herndon-construction-dust-air-ducts) explains the cycle.',
+      q: 'Can I stay home during the Herndon appointment?',
+      a: 'Yes. Stay clear of active equipment; we protect floors in the work path.',
     },
     {
-      q: 'How often should Herndon homes clean air ducts?',
-      a: 'Every 3 to 5 years for most houses. Active renovation nearby, pets, and long dryer runs often need the shorter interval. Dryer vents about once a year.',
+      q: 'How often should Herndon, VA homes clean ducts?',
+      a: 'Every 3–5 years for most homes. Pets, renovations, and humid basements often need the shorter end. Dryer vents about yearly.',
     },
     {
-      q: 'Do you offer flat rates in Herndon?',
-      a: 'Yes. Residential air duct and dryer vent cleaning is flat-rate. The number we quote before the job is the price you pay.',
-    },
-    {
-      q: 'Do you also serve Reston, Chantilly, and Loudoun?',
-      a: 'Yes. [Reston](/locations/reston), [Chantilly](/locations/chantilly), and [Loudoun](/locations/loudoun) dispatch from the same Burke office. [Vienna](/locations/vienna) is on that list too.',
+      q: 'What should I prepare before the crew arrives in Herndon?',
+      a: 'Clear access to returns, the air handler, and the dryer. Note HOA gate codes if needed.',
     },
   ],
 }

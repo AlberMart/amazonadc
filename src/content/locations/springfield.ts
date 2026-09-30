@@ -5,20 +5,21 @@ export const springfield: LocationContentSeed = {
   title: 'Air Duct Cleaning in Springfield, VA',
   headline: 'Air duct and dryer vent cleaning for Springfield, Franconia, and West Springfield',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Springfield, VA. Flat rates from our Burke office for split-levels, townhomes, and I-95 corridor homes. Call (571) 460-0001.',
+    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Springfield, VA. Flat rates from our Burke office for split-levels, townhomes, and I-95 corridor homes. Call (800) 606-3334.',
   intro:
-    'Amazon Air Duct Cleaning serves Springfield from our Burke office — the next community over, not a mailbox on Old Keene Mill. Split-levels near the Mixing Bowl, Franconia townhomes, and West Springfield colonials all take on traffic dust and humid summers. Call (571) 460-0001.',
+    'Amazon Air Duct Cleaning serves Springfield from our Burke office — the next community over, the next community over from Burke. Split-levels near the Mixing Bowl, Franconia townhomes, and West Springfield colonials all take on traffic dust and humid summers. Call (800) 606-3334.',
   heroImage: '/img/locations/springfield.webp',
   heroAlt: 'Air duct cleaning in Springfield, VA — Amazon Air Duct Cleaning',
   city: 'Springfield',
   state: 'VA',
   servedBy: 'burke',
+  sectionLayout: 'communitiesFirst',
   about: {
     heading: 'Why Springfield Ducts Collect Traffic Dust and Moisture',
     paragraphs: [
       'Springfield sits where I-95, I-395, and the Beltway braid together. That is convenient. It is also a constant source of fine dust. Returns on Old Keene Mill, Franconia, and Backlick pull it in along with Fairfax County pollen. A lot of the housing is 1960s–80s split-levels and townhomes with basements. Those rooms stay cool. Summer air does not. Cold trunks sweat. Dust sticks.',
       'Springfield Town Center and the Franconia-Springfield Metro added denser condos and long dryer runs. A dryer that needs two cycles is often a packed vent, not a dying machine. The same humidity that fogs a windshield in July is sitting in the laundry closet.',
-      'We serve Springfield from [Burke](/locations/burke). Burke Centre is minutes away. Nearby [Fairfax](/locations/fairfax), [Alexandria](/locations/alexandria), and [Prince William](/locations/prince-william) use the same crew. Read [how Springfield’s Mixing Bowl dust loads air ducts](/blog/springfield-mixing-bowl-dust-air-ducts).',
+      'We serve Springfield from [Burke](/locations/burke). Burke Centre is minutes away. Nearby [Fairfax](/locations/fairfax), [Alexandria](/locations/alexandria), and [Prince William](/locations/prince-william) use the same crew. For background reading (not a booking page), see [springfield-mixing-bowl-dust-air-ducts](/blog/springfield-mixing-bowl-dust-air-ducts).',
     ],
     highlights: [
       'Springfield, Franconia, West Springfield, and Newington',
@@ -30,7 +31,8 @@ export const springfield: LocationContentSeed = {
   offersTitle: 'Special Offers — Springfield, VA',
   services: {
     heading: 'Our Services in Springfield, VA',
-    intro: 'Transparent flat-rate packages for Springfield residents and small offices. The quote is the price.',
+    intro:
+      'Choose duct cleaning, dryer vents, or mold treatment for ventilation when inspection calls for it.',
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -51,7 +53,7 @@ export const springfield: LocationContentSeed = {
     ],
   },
   why: {
-    heading: 'Why Springfield Homeowners Choose Us',
+    heading: 'Springfield Service — Straight Answers',
     items: [
       {
         title: 'The Next Town Over',
@@ -86,61 +88,62 @@ export const springfield: LocationContentSeed = {
       },
       {
         title: 'West Springfield & south',
-        places: 'West Springfield, Newington, Rolling Valley, streets toward Lorton — ask if you do not see your neighborhood',
+        places:
+          'West Springfield, Newington, Rolling Valley, streets toward Lorton — ask if you do not see your neighborhood',
       },
     ],
   },
   process: {
-    heading: 'What to Expect When You Book',
-    intro: 'Simple scheduling from the Burke office that covers Springfield.',
+    heading: 'Springfield Scheduling Checklist',
+    intro: 'Simple steps our Burke crew follows for Springfield appointments.',
     steps: [
       {
-        title: 'Schedule Online or by Phone',
-        text: 'Use the form on this page or call (571) 460-0001. We confirm the appointment by the next business day.',
+        title: 'Talk Through the Home',
+        text: 'Tell us about pets, renovations, and laundry layout common in Springfield.',
       },
       {
-        title: 'Pre-Visit Confirmation',
-        text: 'The morning of the job we send an arrival window so townhome parking and HOA rules are already sorted.',
+        title: 'Confirm Arrival ETA',
+        text: 'Morning-of text with a realistic window for your street.',
       },
       {
-        title: 'On-Site Inspection',
-        text: 'We inspect the ducts, basement returns, and dryer run, then agree the scope.',
+        title: 'Agree the Package',
+        text: 'Flat-rate duct and dryer packages — the quoted number is what you pay.',
       },
       {
-        title: 'Professional Cleaning',
-        text: 'Floors are protected. We clean with truck-mounted or portable HEPA equipment.',
+        title: 'Run the Cleaning',
+        text: 'Truck-mounted or portable HEPA sized for Springfield houses and townhomes.',
       },
       {
-        title: 'Final Walkthrough',
-        text: 'You see the photos, we answer questions, and we leave when you are satisfied.',
+        title: 'Final Questions',
+        text: 'Filter tips and dryer-vent interval before we pack up.',
       },
     ],
   },
-  faqIntro: 'Questions from Springfield homeowners. Call the Burke office at (571) 460-0001.',
+  faqIntro: 'Springfield questions — call (800) 606-3334 (dispatch: Burke).',
   faq: [
     {
-      q: 'Do you have an office in Springfield?',
-      a: 'No. Springfield is served from our Burke office at 5641 Burke Centre Pkwy Ste 119 — minutes away. Call (571) 460-0001.',
+      q: 'Which office covers Springfield?',
+      a: 'Burke — 5641 Burke Centre Pkwy Ste 119, Burke, VA 22015. Booking line (800) 606-3334.',
     },
     {
-      q: 'Does highway dust really end up in Springfield air ducts?',
-      a: 'Yes. The Mixing Bowl puts a constant particle load in outdoor air. Returns pull it in with pollen. [Springfield Mixing Bowl dust and air ducts](/blog/springfield-mixing-bowl-dust-air-ducts) explains what to do next.',
+      q: 'Are Springfield residential prices flat-rate?',
+      a: 'Yes for air duct and dryer vent packages. The quote before we start is the price you pay.',
     },
     {
-      q: 'How often should Springfield homes clean air ducts?',
-      a: 'Every 3 to 5 years for most houses. Pets, renovations, and homes backing I-95 often need the shorter interval. Dryer vents should be cleared about once a year.',
+      q: 'Can ducts and dryer vents be done the same day in Springfield?',
+      a: 'Usually yes if you book the combined package or both services when you schedule.',
     },
     {
-      q: 'Do you serve Franconia and Kingstowne from this page?',
-      a: 'Yes. Those communities are on the same Burke dispatch as Springfield. If you are closer to Old Town, see [Alexandria](/locations/alexandria).',
+      q: 'Is sanitizing included for Springfield duct jobs?',
+      a: 'Sanitizing is available when inspection supports it or when you request it — we confirm before applying anything.',
     },
     {
-      q: 'Do you offer flat rates in Springfield?',
-      a: 'Yes. Residential air duct and dryer vent cleaning is flat-rate.',
+      q: 'Do you clean dryer vents in Springfield townhomes and condos?',
+      a: 'Yes — full length to the exterior cap. Stacked laundry is common on this route. See dryer vent cleaning for details.',
     },
     {
-      q: 'Are mold treatments safe for families and pets?',
-      a: 'Yes. We use EPA-registered antimicrobial treatments that are safe for children and pets once applied as directed.',
+      q: 'Do you bring portable equipment for tight Springfield streets?',
+      a: 'Yes. When a truck cannot stage, we use portable HEPA systems sized for the home.',
     },
   ],
 }

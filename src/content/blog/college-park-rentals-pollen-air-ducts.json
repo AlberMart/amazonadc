@@ -1,9 +1,9 @@
 {
   "slug": "college-park-rentals-pollen-air-ducts",
-  "title": "How College Park Rentals and UMD Pollen Load Your Air Ducts",
+  "title": "College Park Indoor Air: Corridor Dust vs Household Debris",
   "headline": "High occupancy, campus trees, and why Route 1 houses stay dusty between tenants",
-  "description": "College Park, MD houses and apartments turn over fast around UMD. Learn why neglected filters, packed dryer vents, and pollen load the ducts, and when to clean them.",
-  "heroImage": "/img/blog/Why-Air-Duct-Condition-Matters.webp",
+  "description": "College Park, MD houses and apartments turn over fast around UMD. An educational look at why neglected filters, packed dryer vents, and pollen load the ducts, and when to clean them.",
+  "heroImage": "/img/locations/college-park.webp",
   "sections": [
     {
       "id": "turnover",
@@ -22,12 +22,14 @@
         "Owners and managers should start with [air duct cleaning in College Park, MD](/locations/college-park) at turnover, not after the next complaint."
       ],
       "listItems": [],
-      "image": "/img/blog/dirty-HVAC-unit.webp"
+      "image": "/img/blog/Allergies.webp"
     },
     {
       "id": "signs",
       "heading": "Typical signs in a College Park rental",
-      "paragraphs": ["Watch for:"],
+      "paragraphs": [
+        "Watch for:"
+      ],
       "listItems": [
         "Dust returning days after a make-ready clean.",
         "Musty air when the AC starts in August.",
@@ -36,10 +38,11 @@
     },
     {
       "id": "protect",
-      "heading": "Bethesda dispatch — no fake Route 1 shop",
+      "heading": "Background reading vs booking a visit",
       "paragraphs": [
+        "College Park jobs are scheduled from our metro offices. This article is educational — use the [location page](/locations/college-park) when you are ready to book.",
         "College Park is served from our [Bethesda](/locations/bethesda) office. [Silver Spring](/locations/silver-spring) and [Washington, DC](/locations/washington-dc) are nearby pages.",
-        "Book on the [College Park location page](/locations/college-park). Pair [dryer vent cleaning](/dryer-vent-cleaning) with ducts at each long-term move-out."
+        "Service details live on the [College Park location page](/locations/college-park). Pair [dryer vent cleaning](/dryer-vent-cleaning) with ducts at each long-term move-out."
       ],
       "listItems": [
         "Clean ducts at turnover on high-occupancy houses, not only every five years.",
@@ -50,16 +53,24 @@
   ],
   "faq": [
     {
-      "q": "Do you work for College Park landlords?",
-      "a": "Yes. Turnover cleanings and packed dryer vents are a normal job. We document with before-and-after photos."
+      "q": "Do humid summers alone require duct cleaning?",
+      "a": "Humidity helps dust stick and can support growth on cold coils, but cleaning decisions still depend on inspection and history."
     },
     {
-      "q": "Does campus pollen really reach indoor ducts?",
-      "a": "Yes. Returns pull outdoor air. UMD’s tree canopy is not decorative in May. The load sits in the trunks until they are cleaned."
+      "q": "Who serves College Park?",
+      "a": "Amazon Air Duct Cleaning schedules College Park from Burke or Bethesda. Book on the location page or call (800) 606-3334."
     },
     {
-      "q": "Who cleans air ducts in College Park, MD?",
-      "a": "Amazon Air Duct Cleaning serves College Park from the Bethesda office. Book on the [College Park location page](/locations/college-park) or call (301) 809-4544."
+      "q": "Can filters replace professional cleaning?",
+      "a": "Filters reduce new debris. They do not remove what already sits inside trunks and dryer runs."
+    },
+    {
+      "q": "What should I track for a few weeks first?",
+      "a": "Filter condition, dry times, musty smells at startup, and how fast wiped registers film over again."
+    },
+    {
+      "q": "Are energy-savings claims guaranteed?",
+      "a": "No. Cleaner airflow can help equipment run less hard, but results vary by home and system condition."
     }
   ]
 }

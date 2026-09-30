@@ -1,9 +1,9 @@
 {
   "slug": "montgomery-village-townhomes-air-ducts",
-  "title": "How Montgomery Village Townhomes Load Lake Dust Into Air Ducts",
+  "title": "What Loads Dust Into HVAC Returns Near Montgomery Village",
   "headline": "1970s Stedwick closets, Whetstone paths, and why Lakeforest-era vents were never resized",
-  "description": "Montgomery Village, MD is a 1970s planned community next to Gaithersburg. Learn why lake-side townhome ducts collect pollen and old-closet lint, and when to clean them from Bethesda.",
-  "heroImage": "/img/blog/Allergies.webp",
+  "description": "Montgomery Village, MD is a 1970s planned community next to Gaithersburg. An educational look at why lake-side townhome ducts collect pollen and old-closet lint.",
+  "heroImage": "/img/locations/montgomery-village.webp",
   "sections": [
     {
       "id": "planned",
@@ -19,7 +19,7 @@
       "heading": "A 1970s dryer run is a fire and humidity problem",
       "paragraphs": [
         "The original vent was sized for a smaller machine. Lint packs at elbows you cannot see without pulling the unit. Heat and moisture dump into a closet that already sits over sweating trunks. Registers look clean after you wipe them and gray again when the AC cycles.",
-        "If the lower level smells musty, start with [air duct cleaning in Montgomery Village, MD](/locations/montgomery-village)."
+        "If the lower level smells musty, when you are ready to book, use the [Montgomery Village, MD location page](/locations/montgomery-village)."
       ],
       "listItems": [],
       "image": "/img/blog/clogged-dryer-vent-lint.webp"
@@ -27,7 +27,9 @@
     {
       "id": "signs",
       "heading": "Typical signs in a Montgomery Village townhome",
-      "paragraphs": ["Watch for:"],
+      "paragraphs": [
+        "Watch for:"
+      ],
       "listItems": [
         "Musty air from a lake-side lower level in July.",
         "Leaf-season grit on supplies along Stedwick or Whetstone paths.",
@@ -36,10 +38,11 @@
     },
     {
       "id": "protect",
-      "heading": "Bethesda dispatch — not a Lakeforest mailbox",
+      "heading": "Background reading vs booking a visit",
       "paragraphs": [
-        "Montgomery Village is served from our [Bethesda](/locations/bethesda) office. Nearby [Gaithersburg](/locations/gaithersburg) and [Germantown](/locations/germantown) use the same crew. There is no village storefront.",
-        "Book on the [Montgomery Village location page](/locations/montgomery-village). Add [dryer vent cleaning](/dryer-vent-cleaning) for original closets."
+        "Montgomery Village jobs are scheduled from our metro offices. This article is educational — use the [location page](/locations/montgomery-village) when you are ready to book.",
+        "Montgomery Village is served from our [Bethesda](/locations/bethesda) office. Nearby [Gaithersburg](/locations/gaithersburg) and [Germantown](/locations/germantown) use the same crew.",
+        "Service details live on the [Montgomery Village location page](/locations/montgomery-village). Add [dryer vent cleaning](/dryer-vent-cleaning) for original closets."
       ],
       "listItems": [
         "Dehumidify lower levels in summer, especially on the lakes.",
@@ -50,16 +53,16 @@
   ],
   "faq": [
     {
-      "q": "Is Montgomery Village the same as Gaithersburg?",
-      "a": "No. It is a separate planned community with its own page. Gaithersburg is next door. Both dispatch from Bethesda."
+      "q": "Does construction near Montgomery Village change cleaning intervals?",
+      "a": "Active drywall work nearby often shortens the useful interval. Wait until heavy dust settles, then inspect."
     },
     {
-      "q": "Why do 1970s Village townhomes still have dusty ducts?",
-      "a": "Original closets, lake humidity, and a tree plan that dumps pollen. Returns pull all of it. Filters do not empty the trunks."
+      "q": "Should I clean ducts after renovations?",
+      "a": "Yes if sanding or drywall dust entered returns. Otherwise a standard 3–5 year interval is typical."
     },
     {
-      "q": "Who cleans air ducts in Montgomery Village, MD?",
-      "a": "Amazon Air Duct Cleaning serves Montgomery Village from the Bethesda office. Book on the [Montgomery Village location page](/locations/montgomery-village) or call (301) 809-4544."
+      "q": "What proof should a cleaning include?",
+      "a": "Before-and-after photos of trunks or vents, plus a clear scope agreed before work starts."
     }
   ]
 }

@@ -8,14 +8,11 @@ import type { OfficeContent } from '@/utilities/offices'
 import {
   absoluteUrl,
   breadcrumb,
-  businessNode,
   faqNode,
   jsonLd,
   officeBranchNode,
-  organizationNode,
   serviceOfferNode,
   webPageNode,
-  websiteNode,
   type SiteSeo,
 } from '@/utilities/seo'
 import type { ServiceCard } from '@/utilities/services'
@@ -45,11 +42,8 @@ export async function HomePageView({
   site: SiteSeo
 }) {
   const homeUrl = absoluteUrl('/')
-  const primaryOffice = offices.find((o) => o.slug === 'bethesda') || offices[0] || null
   const hero = sections.find((section) => section.type === 'hero')
   const structuredData = jsonLd([
-    organizationNode(site, primaryOffice),
-    websiteNode(site),
     webPageNode({
       path: '/',
       name: site.defaultMetaTitle,
@@ -59,11 +53,6 @@ export async function HomePageView({
       image: hero?.image || site.defaultOgImage,
     }),
     breadcrumb([{ name: 'Home', path: '/' }], '/'),
-    businessNode(
-      site,
-      offices,
-      services.map((s) => ({ title: s.title, slug: s.slug, price: s.price })),
-    ),
     ...offices.map((office) => officeBranchNode(office, site)),
     ...services.map((service) =>
       serviceOfferNode({

@@ -3,22 +3,24 @@ import type { LocationContentSeed } from '@/utilities/locations'
 export const princeWilliam: LocationContentSeed = {
   slug: 'prince-william',
   title: 'Air Duct Cleaning in Prince William County, VA',
-  headline: 'Air duct and dryer vent cleaning for Woodbridge, Manassas, Lake Ridge, and Gainesville',
+  headline:
+    'Air duct and dryer vent cleaning for Woodbridge, Manassas, Lake Ridge, and Gainesville',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Prince William County, VA. Flat rates from our Burke office for Woodbridge, Manassas, and Lake Ridge. Call (571) 460-0001.',
+    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Prince William County, VA. Flat rates from our Burke office for Woodbridge, Manassas, and Lake Ridge. Call (800) 606-3334.',
   intro:
-    'Amazon Air Duct Cleaning serves Prince William County from our Burke office. Woodbridge townhomes on I-95, Lake Ridge split-levels, and Manassas colonials all take on Occoquan humidity and corridor dust. No Manassas storefront — the crew is the same one that already works Springfield. Call (571) 460-0001.',
+    'Amazon Air Duct Cleaning serves Prince William County from our Burke office. Woodbridge townhomes on I-95, Lake Ridge split-levels, and Manassas colonials all take on Occoquan humidity and corridor dust. the crew is the same one that already works Springfield. Call (800) 606-3334.',
   heroImage: '/img/locations/prince-william.webp',
   heroAlt: 'Air duct cleaning in Prince William County, VA — Amazon Air Duct Cleaning',
   city: 'Prince William',
   state: 'VA',
   servedBy: 'burke',
+  sectionLayout: 'whyFirst',
   about: {
     heading: 'Why Prince William Ducts Hold Humidity and Dust',
     paragraphs: [
       'Prince William County sits between the Occoquan and the I-95 / I-66 corridors: Woodbridge, Lake Ridge, Dale City, Manassas, Gainesville, and Haymarket. A lot of the housing is 1970s–2000s townhomes and single-family houses with basements. Those basements stay cool. Summer air off the Occoquan does not. Cold supply trunks sweat. Pollen and highway dust stick to that moisture.',
       'Townhomes along Prince William Parkway pack long dryer vents. A laundry room that stays hot after a cycle is often a clogged run, not a bad dryer. Older Manassas houses add retrofitted trunks with joints that collect whatever the last decade of filters missed.',
-      'We serve the county from [Burke](/locations/burke). Nearby [Springfield](/locations/springfield) and [Alexandria](/locations/alexandria) are closer-in stops on the same dispatch. Read [how Occoquan humidity and I-95 dust load Prince William ducts](/blog/prince-william-occoquan-humidity-air-ducts).',
+      'We serve the county from [Burke](/locations/burke). Nearby [Springfield](/locations/springfield) and [Alexandria](/locations/alexandria) are closer-in stops on the same dispatch. For background reading (not a booking page), see [prince-william-occoquan-humidity-air-ducts](/blog/prince-william-occoquan-humidity-air-ducts).',
     ],
     highlights: [
       'Woodbridge, Lake Ridge, Manassas, Gainesville, Dale City',
@@ -30,7 +32,8 @@ export const princeWilliam: LocationContentSeed = {
   offersTitle: 'Special Offers — Prince William County, VA',
   services: {
     heading: 'Our Services in Prince William County',
-    intro: 'Honest packages for county residents and small offices. The quote is the price.',
+    intro:
+      'Choose duct cleaning, dryer vents, or mold treatment for ventilation when inspection calls for it.',
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -51,11 +54,11 @@ export const princeWilliam: LocationContentSeed = {
     ],
   },
   why: {
-    heading: 'Why Prince William Homeowners Book Us',
+    heading: 'Prince William Service — Straight Answers',
     items: [
       {
-        title: 'Real Burke Office, No Fake Manassas Shop',
-        text: 'We already drive I-95 and 234. We will not list a county mailbox and call it a branch.',
+        title: 'Real Burke Office, dispatched from our Burke office',
+        text: 'Prince William jobs are scheduled from Burke.',
       },
       {
         title: 'Flat-Rate Pricing',
@@ -86,62 +89,62 @@ export const princeWilliam: LocationContentSeed = {
       },
       {
         title: 'Gainesville & I-66',
-        places: 'Gainesville, Haymarket, Linton Hall, streets toward Bristow — ask if your neighborhood is not listed',
+        places:
+          'Gainesville, Haymarket, Linton Hall, streets toward Bristow — ask if your neighborhood is not listed',
       },
     ],
   },
   process: {
-    heading: 'What to Expect When You Book',
-    intro: 'Scheduling from the Burke office that covers Prince William.',
+    heading: 'Prince William Scheduling Checklist',
+    intro: 'Practical timing notes for Prince William homeowners and property managers.',
     steps: [
       {
-        title: 'Schedule Online or by Phone',
-        text: 'Use the form on this page or call (571) 460-0001. We confirm the appointment by the next business day.',
+        title: 'Estimate Request',
+        text: 'Form or (800) 606-3334 — we reply with timing from the Burke office.',
       },
       {
-        title: 'Pre-Visit Confirmation',
-        text: 'The morning of the job we send an arrival window. HOA parking rules in Lake Ridge help us stage the equipment.',
+        title: 'Route Planning',
+        text: 'Prince William is on an existing Burke dispatch day whenever possible.',
       },
       {
-        title: 'On-Site Inspection',
-        text: 'We inspect basement trunks, returns, and the dryer run, then agree the scope.',
+        title: 'Walk-Through',
+        text: 'Supplies, returns, dryer termination — then we start.',
       },
       {
-        title: 'Professional Cleaning',
-        text: 'Floors are protected. We clean with truck-mounted or portable HEPA equipment.',
+        title: 'Service',
+        text: 'Full trunk cleaning; dryer vent cleared to the exterior cap when booked.',
       },
       {
-        title: 'Final Walkthrough',
-        text: 'Before-and-after photos, questions answered, and we leave when you are satisfied.',
+        title: 'Close-Out',
+        text: 'Satisfaction check before payment is finalized.',
       },
     ],
   },
-  faqIntro:
-    'Questions from Prince William homeowners. Call the Burke office at (571) 460-0001.',
+  faqIntro: 'Prince William questions — call (800) 606-3334 (dispatch: Burke).',
   faq: [
     {
-      q: 'Do you have an office in Woodbridge or Manassas?',
-      a: 'No. Prince William is served from our Burke office at 5641 Burke Centre Pkwy Ste 119. Call (571) 460-0001.',
+      q: 'Where does the Prince William crew stage from?',
+      a: 'Our Burke office (5641 Burke Centre Pkwy Ste 119, Burke, VA 22015). Office line (571) 460-0001; booking (800) 606-3334.',
     },
     {
-      q: 'Why does my Woodbridge basement smell musty when the AC starts?',
-      a: 'Cool ducts in a humid basement sweat. Occoquan moisture and I-95 dust stick to that film. [Prince William humidity and air ducts](/blog/prince-william-occoquan-humidity-air-ducts) explains the cycle.',
+      q: 'Are Prince William residential prices flat-rate?',
+      a: 'Yes for air duct and dryer vent packages. The quote before we start is the price you pay.',
     },
     {
-      q: 'How often should Prince William homes clean air ducts?',
-      a: 'Every 3 to 5 years for most houses. Pets, renovations, and damp basements often need the shorter interval. Dryer vents should be cleared about once a year.',
+      q: 'Can ducts and dryer vents be done the same day in Prince William?',
+      a: 'Usually yes if you book the combined package or both services when you schedule.',
     },
     {
-      q: 'Do you serve Quantico or Stafford from this page?',
-      a: 'Ask when you book. Many addresses south of Dumfries are still on this dispatch. If we cannot cover your street, we will say so before a truck rolls.',
+      q: 'Is sanitizing included for Prince William duct jobs?',
+      a: 'Sanitizing is available when inspection supports it or when you request it — we confirm before applying anything.',
     },
     {
-      q: 'Do you offer flat rates in Prince William?',
-      a: 'Yes. Residential air duct and dryer vent cleaning is flat-rate.',
+      q: 'Do you clean dryer vents in Prince William townhomes and condos?',
+      a: 'Yes — full length to the exterior cap. Stacked laundry is common on this route. See dryer vent cleaning for details.',
     },
     {
-      q: 'Are mold treatments safe for families and pets?',
-      a: 'Yes. We use EPA-registered antimicrobial treatments that are safe for children and pets once applied as directed.',
+      q: 'Do you bring portable equipment for tight Prince William streets?',
+      a: 'Yes. When a truck cannot stage, we use portable HEPA systems sized for the home.',
     },
   ],
 }

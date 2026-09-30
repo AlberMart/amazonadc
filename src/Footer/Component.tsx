@@ -5,8 +5,8 @@ import { BrandMark } from '@/components/BrandMark'
 import { getCachedGlobalSafe } from '@/utilities/getGlobals'
 import { resolveBrandMark } from '@/utilities/brandMark'
 import { resolveCmsLink } from '@/utilities/cmsLink'
-import { getCityPageLinks } from '@/utilities/locations'
 import { getSiteSeo } from '@/utilities/seo'
+import { isPhoneLine, toTelHref } from '@/utilities/tel'
 
 const fallbackSocial = [
   { platform: 'Facebook', url: 'https://www.facebook.com/amazonductcleaning' },
@@ -14,6 +14,29 @@ const fallbackSocial = [
 ]
 
 type FooterLink = { href: string; label: string; detail?: string }
+
+function FooterDetail({ text }: { text: string }) {
+  const lines = text.split('\n')
+  return (
+    <p className="mt-1 whitespace-pre-line text-xs text-white/55">
+      {lines.map((line, index) => {
+        const href = isPhoneLine(line) ? toTelHref(line) : ''
+        return (
+          <span key={`${line}-${index}`}>
+            {index > 0 ? <br /> : null}
+            {href ? (
+              <a className="hover:text-[var(--site-accent)]" href={href}>
+                {line}
+              </a>
+            ) : (
+              line
+            )}
+          </span>
+        )
+      })}
+    </p>
+  )
+}
 
 function SocialIcon({ platform }: { platform: string }) {
   const name = platform.toLowerCase()
@@ -85,11 +108,10 @@ function withLocationLinks<T extends { title?: string | null; type?: string | nu
 }
 
 export async function Footer() {
-  const [footerData, settings, site, cityPages] = await Promise.all([
+  const [footerData, settings, site] = await Promise.all([
     getCachedGlobalSafe('footer', 2),
     getCachedGlobalSafe('site-settings', 0),
     getSiteSeo(),
-    getCityPageLinks(),
   ])
 
   const brand = resolveBrandMark(footerData?.brand, {
@@ -106,6 +128,7 @@ export async function Footer() {
   const copyright =
     footerData?.copyrightText?.trim() || `© ${year} ${site.siteName}. All rights reserved.`
 
+  // Curated Cities column from CMS/seed only — do not auto-append every city page.
   const columns = withLocationLinks(
     footerData?.columns?.length
       ? footerData.columns
@@ -120,7 +143,7 @@ export async function Footer() {
           },
           { title: 'Our Social Networks', type: 'social' as const, links: [] },
         ],
-    cityPages,
+    [],
   )
 
   return (
@@ -135,7 +158,7 @@ export async function Footer() {
           {tagline ? <p className="mt-3 max-w-sm text-sm text-[var(--site-on-dark-muted)]">{tagline}</p> : null}
           {showContactInBrand ? (
             <p className="mt-5 text-sm">
-              <a className="hover:text-[var(--site-accent)]" href={`tel:${site.phone}`}>
+              <a className="hover:text-[var(--site-accent)]" href={toTelHref(site.phone)}>
                 {site.phoneDisplay}
               </a>
               <br />
@@ -178,7 +201,7 @@ export async function Footer() {
                 <div key={key}>
                   <ColumnHeading>{column.title}</ColumnHeading>
                   <div className="mt-4 space-y-2 text-sm text-white/80">
-                    <a className="block hover:text-[var(--site-accent)]" href={`tel:${site.phone}`}>
+                    <a className="block hover:text-[var(--site-accent)]" href={toTelHref(site.phone)}>
                       {site.phoneDisplay}
                     </a>
                     <a className="block hover:text-[var(--site-accent)]" href={`mailto:${site.email}`}>
@@ -209,9 +232,7 @@ export async function Footer() {
                       <Link className="hover:text-[var(--site-accent)]" href={item.href}>
                         {item.label}
                       </Link>
-                      {item.detail ? (
-                        <p className="mt-1 whitespace-pre-line text-xs text-white/55">{item.detail}</p>
-                      ) : null}
+                      {item.detail ? <FooterDetail text={item.detail} /> : null}
                     </li>
                   ))}
                 </ul>

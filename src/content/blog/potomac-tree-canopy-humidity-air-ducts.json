@@ -1,9 +1,9 @@
 {
   "slug": "potomac-tree-canopy-humidity-air-ducts",
-  "title": "How Potomac’s Tree Canopy and River Humidity Load Your Air Ducts",
+  "title": "Potomac Indoor Air: Corridor Dust vs Household Debris",
   "headline": "Cabin John lots, Falls Road colonials, and why long trunks hide pollen you never see",
-  "description": "Potomac, MD sits on large wooded lots along the river corridor. Learn why canopy pollen and humidity load estate-scale ducts, and when to clean them from Bethesda.",
-  "heroImage": "/img/blog/dirty-HVAC-unit.webp",
+  "description": "Potomac, MD sits on large wooded lots along the river corridor. An educational look at why canopy pollen and humidity load estate-scale ducts.",
+  "heroImage": "/img/locations/potomac.webp",
   "sections": [
     {
       "id": "canopy",
@@ -19,15 +19,17 @@
       "heading": "Estate-scale runs collect what short ranches never hold",
       "paragraphs": [
         "A Bethesda rambler might have twenty feet of trunk. A Potomac house can have wings, a guest suite, and a dryer that travels the length of a lower level. Lint and pollen settle at every joint. You smell it before you see it.",
-        "If registers look dirty a few days after you wipe them, start with [air duct cleaning in Potomac, MD](/locations/potomac)."
+        "If registers look dirty a few days after you wipe them, when you are ready to book, use the [Potomac, MD location page](/locations/potomac)."
       ],
       "listItems": [],
-      "image": "/img/blog/dirty-HVAC-unit.webp"
+      "image": "/img/blog/Allergies.webp"
     },
     {
       "id": "signs",
       "heading": "Typical signs in a Potomac house",
-      "paragraphs": ["Watch for:"],
+      "paragraphs": [
+        "Watch for:"
+      ],
       "listItems": [
         "Musty air from a walk-out or crawl after a humid river week.",
         "Pollen film on supplies even with a new filter.",
@@ -36,10 +38,11 @@
     },
     {
       "id": "protect",
-      "heading": "A short run out River Road — not an estate-area suite",
+      "heading": "Practical next steps for potomac homes",
       "paragraphs": [
-        "Potomac is served from our [Bethesda](/locations/bethesda) office. Nearby [Rockville](/locations/rockville) uses the same Maryland crew. There is no Potomac storefront.",
-        "Book on the [Potomac location page](/locations/potomac). See [air duct cleaning](/air-duct-cleaning) for how we treat long trunk runs."
+        "Potomac jobs are scheduled from our metro offices. This article is educational — use the [location page](/locations/potomac) when you are ready to book.",
+        "Potomac is served from our [Bethesda](/locations/bethesda) office. Nearby [Rockville](/locations/rockville) uses the same Maryland crew.",
+        "Service details live on the [Potomac location page](/locations/potomac). See [air duct cleaning](/air-duct-cleaning) for how we treat long trunk runs."
       ],
       "listItems": [
         "Dehumidify basements and crawls in summer even under heavy shade.",
@@ -50,16 +53,20 @@
   ],
   "faq": [
     {
-      "q": "Does river humidity reach Potomac indoor ducts?",
-      "a": "Yes. The corridor stays wet. Cool trunks sweat. Canopy pollen sticks to that moisture until the ducts are cleaned."
+      "q": "Is this a sales page for Potomac duct cleaning?",
+      "a": "No. This post explains mechanisms and signs. Service details live on the Potomac location page."
     },
     {
-      "q": "Do you serve the Virginia side of the river from this page?",
-      "a": "No. Potomac, MD dispatches from Bethesda. Great Falls, VA dispatches from Burke. Tell us the address so the right office books it."
+      "q": "What usually causes gray film on supply registers?",
+      "a": "Fine particles that bypass or overload filters settle in cool trunks and recirculate when the blower runs."
     },
     {
-      "q": "Who cleans air ducts in Potomac, MD?",
-      "a": "Amazon Air Duct Cleaning serves Potomac from the Bethesda office. Book on the [Potomac location page](/locations/potomac) or call (301) 809-4544."
+      "q": "When is dryer vent cleaning the better first step?",
+      "a": "When laundry closets stay hot, dry times double, or you smell burnt lint — clear the vent to the exterior cap."
+    },
+    {
+      "q": "How is this different from a location page?",
+      "a": "Location pages cover packages, booking, and office dispatch. Articles cover climate and housing patterns."
     }
   ]
 }

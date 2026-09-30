@@ -1,4 +1,5 @@
 import { absoluteUrl } from '@/utilities/seo'
+import { isNonProductionHost } from '@/utilities/getURL'
 
 export const dynamic = 'force-dynamic'
 
@@ -7,6 +8,17 @@ export const dynamic = 'force-dynamic'
 function buildRobotsTxt() {
   const sitemap = absoluteUrl('/sitemap.xml')
   const host = absoluteUrl('/')
+
+  if (isNonProductionHost()) {
+    return [
+      'User-agent: *',
+      'Disallow: /',
+      '',
+      `# Staging host (${host}) — block indexing until production NEXT_PUBLIC_SERVER_URL is set.`,
+      '',
+    ].join('\n')
+  }
+
   return [
     'User-agent: *',
     'Allow: /',

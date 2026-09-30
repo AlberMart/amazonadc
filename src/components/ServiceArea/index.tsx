@@ -8,6 +8,7 @@ import { getSiteSeo } from '@/utilities/seo'
 import { getDefaultServiceAreaSection } from '@/utilities/partials'
 import { mapServiceAreaRegions, type HomeSection, type ServiceAreaRegion } from '@/utilities/homeSections'
 import { appearanceVars } from '@/utilities/theme'
+import { toTelHref } from '@/utilities/tel'
 
 type RegionRow = ServiceAreaRegion
 
@@ -79,6 +80,7 @@ export async function ServiceArea({
   tone,
   appearance,
   anchorId = 'service_area',
+  compact = false,
 }: {
   callHref?: string
   callLabel?: string
@@ -94,6 +96,8 @@ export async function ServiceArea({
   tone?: HomeSection['tone']
   appearance?: HomeSection['appearance']
   anchorId?: string
+  /** Skip full state lists, SEO city dump, and map — used on city pages. */
+  compact?: boolean
 }) {
   const [offices, cityPages, site, settings, defaultPartial] = await Promise.all([
     getAllOffices(),
@@ -136,8 +140,7 @@ export async function ServiceArea({
   const resolvedHeading = heading || defaultPartial?.heading || 'Service Area'
 
   const resolvedEmail = email || site.email
-  const resolvedCallHref =
-    callHref || (site.phone.startsWith('tel:') ? site.phone : `tel:${site.phone}`)
+  const resolvedCallHref = toTelHref(callHref || site.phone)
   const resolvedCallLabel = callLabel || `Call ${site.phoneDisplay}`
   const cityLinks = Object.fromEntries(
     cityPages.map((page) => [page.city, `/locations/${page.slug}`]),
@@ -149,6 +152,74 @@ export async function ServiceArea({
     defaultPartial?.intro ||
     `We serve homes and businesses across Virginia, Maryland, and Washington, DC — with local offices in Burke and Bethesda`
   const sectionStyle = appearanceVars(appearance, tone || 'white') as React.CSSProperties
+
+  if (compact) {
+    return (
+      <section id={anchorId} className="site-section scroll-mt-24 py-16 md:py-20" style={sectionStyle}>
+        <div className="container">
+          <div className="mx-auto max-w-3xl text-center">
+            <h2 className="font-display text-3xl font-semibold tracking-tight text-[var(--site-heading)] md:text-4xl">
+              {resolvedHeading}
+            </h2>
+            <p className="mt-4 site-body leading-relaxed">
+              {resolvedIntro}{' '}
+              <Link href="/locations" className="site-link">
+                See all cities we serve
+              </Link>
+              .
+            </p>
+          </div>
+
+          {offices.length > 0 ? (
+            <div id="offices" className="mt-12 scroll-mt-24">
+              <h3 className="text-center font-display text-2xl font-semibold tracking-tight text-[var(--site-heading)] md:text-3xl">
+                {officesHeading}
+              </h3>
+              <div className="mx-auto mt-8 grid max-w-4xl gap-5 md:grid-cols-2">
+                {offices.map((office) => (
+                  <Link
+                    key={office.slug}
+                    href={`/locations/${office.slug}`}
+                    className="site-card site-card-hover group p-6"
+                  >
+                    <p className="text-sm font-semibold tracking-[0.18em] text-[var(--site-link)] uppercase">
+                      {office.state}
+                    </p>
+                    <p className="mt-2 font-display text-xl font-semibold text-[var(--site-heading)]">
+                      {office.city}
+                    </p>
+                    <p className="mt-3 text-sm leading-relaxed site-body">
+                      {office.streetAddress}
+                      <br />
+                      {office.city}, {office.state} {office.postalCode}
+                    </p>
+                    <p className="mt-3 text-sm font-medium text-[var(--site-heading)]">
+                      {formatPhone(office.phone)}
+                    </p>
+                    <span className="mt-5 inline-block site-link text-sm group-hover:underline">
+                      View location page →
+                    </span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          ) : null}
+
+          <div className="mx-auto mt-12 flex max-w-4xl flex-wrap items-center justify-center gap-4">
+            <a href={resolvedCallHref} className="site-btn site-btn-primary">
+              {resolvedCallLabel}
+            </a>
+            <a href={`mailto:${resolvedEmail}`} className="site-btn site-btn-tertiary">
+              {resolvedEmail}
+            </a>
+            <Link href={estimateHref} className="site-btn site-btn-secondary">
+              {estimateLabel}
+            </Link>
+          </div>
+        </div>
+      </section>
+    )
+  }
 
   return (
     <section id={anchorId} className="site-section scroll-mt-24 py-16 md:py-20" style={sectionStyle}>

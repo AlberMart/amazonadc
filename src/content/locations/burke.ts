@@ -3,160 +3,153 @@ import type { LocationContentSeed } from '@/utilities/locations'
 export const burke: LocationContentSeed = {
   slug: 'burke',
   title: 'Air Duct Cleaning in Burke, VA',
-  headline: 'Serving Burke, Northern Virginia, and Washington DC',
+  headline: 'Our Northern Virginia office — air duct and dryer vent cleaning from Burke Centre',
   description:
-    'Professional air duct, dryer vent, and chimney cleaning in Burke, VA and surrounding areas including Fairfax, Alexandria, Arlington, Reston, and more. Call (571) 460-0001.',
+    'Amazon Air Duct Cleaning’s Burke, VA office at 5641 Burke Centre Pkwy Ste 119. Flat-rate air duct cleaning, dryer vent cleaning, and HVAC mold treatment for Fairfax County and nearby cities. Call (800) 606-3334.',
   intro:
-    'Trusted by homeowners and property managers across Burke, Springfield, Alexandria, Arlington, McLean, Reston, and Washington DC. Our licensed technicians deliver professional air duct, dryer vent, chimney, and HVAC cleaning — with honest pricing and lasting results.',
+    'This is our Northern Virginia office at Burke Centre. From here we schedule residential and light-commercial jobs across Fairfax County, Arlington, Alexandria, Reston, and into Washington, DC when we are the closer crew. Book at (800) 606-3334 — the office line is (571) 460-0001.',
   heroImage: '/img/locations/burke.webp',
-  heroAlt: 'Air Duct Cleaning Burke VA — Amazon Air Duct Cleaning',
+  heroAlt: 'Burke, VA office — Amazon Air Duct Cleaning',
   city: 'Burke',
   state: 'VA',
   servedBy: 'burke',
+  sectionLayout: 'hub',
   about: {
-    heading: 'Your Local Burke Branch',
+    heading: 'Why Burke Is Our Virginia Hub',
     paragraphs: [
-      'Our Burke location is the service hub for Northern Virginia and the greater Washington DC metro area. Based in Burke, our team serves residential and commercial properties throughout Fairfax County and the surrounding region — from the inner suburbs of Arlington, Alexandria, and Falls Church to the broader communities of Leesburg, Manassas, and Woodbridge.',
-      'Whether you need a routine duct cleaning, dryer vent inspection, chimney sweep, or full HVAC system service, our Burke technicians bring professional-grade equipment and years of regional expertise directly to your home.',
+      'Our shop sits at 5641 Burke Centre Pkwy, Suite 119, Burke, VA 22015. Technicians stage equipment here, confirm appointments from this address, and drive out to Springfield, Fairfax, McLean, Reston, Herndon, and the rest of the Virginia list on our [locations](/locations) page. When a [Washington, DC](/locations/washington-dc) job is closer to Virginia than Maryland, this office often takes the dispatch.',
+      'Burke and Springfield homes are mostly split-levels, colonials, and townhomes with humid summers and a heavy tree canopy. That mix loads returns with pollen and attic dust. We clean what we actually offer on the home page: air ducts, dryer vents, and mold treatment for ventilation or whole-home jobs — not chimney sweeping or full HVAC “unit rebuild” packages.',
+      'Prefer Montgomery County or Bethesda-side streets? See our [Bethesda office](/locations/bethesda). Same company, same flat-rate packages, different staging address.',
     ],
     highlights: [
-      'Same-day and next-day appointments available',
-      'Residential and commercial properties',
-      'Transparent, upfront pricing — no hidden fees',
-      'Satisfaction guaranteed on every job',
+      'Physical office: 5641 Burke Centre Pkwy Ste 119, Burke, VA 22015',
+      'Flat-rate air duct and dryer vent packages — quote before work starts',
+      'Before-and-after photos on every duct job',
+      'Same-day and next-day windows when the schedule allows',
     ],
   },
-  offersTitle: 'Special Offers — Burke Area',
+  offersTitle: 'Special Offers — Burke Office',
   services: {
-    heading: 'Services at Our Burke Location',
-    intro:
-      'From standard residential duct cleaning to commercial HVAC servicing — our Burke team handles it all.',
+    heading: 'Services from the Burke Office',
+    intro: 'Burke residents book the same published packages as the rest of our metro area.',
     items: [
       {
-        title: 'Air Duct Cleaning',
-        text: 'Complete removal of dust, allergens, pet dander, mold spores, and debris from your entire duct system using high-powered vacuums and rotating brush equipment. Includes supply and return ducts, vent cover cleaning, and a before-and-after inspection.',
+        title: 'Air Duct Cleaning & Sanitization',
+        text: 'HEPA negative pressure and rotary brushes through supplies, returns, and registers, plus sanitizing when inspection finds growth. Photos come with the job. See [air duct cleaning](/air-duct-cleaning).',
       },
       {
         title: 'Dryer Vent Cleaning',
-        text: 'Lint buildup in dryer vents is a leading cause of residential fires. Our technicians clear the full length of your vent line — from the dryer to the exterior exhaust — to restore airflow, reduce fire risk, and improve drying performance.',
+        text: 'Full-length brushing and vacuuming to the exterior cap — including long townhome and stacked-laundry runs common around Burke Centre and Springfield. Book [dryer vent cleaning](/dryer-vent-cleaning).',
       },
       {
-        title: 'Chimney Cleaning',
-        text: 'Our certified chimney sweeps remove creosote, soot, and debris buildup from fireplaces, wood-burning stoves, and gas fireplace flues, helping prevent chimney fires and carbon monoxide buildup inside the home.',
+        title: 'Ventilation & HVAC Mold Treatment',
+        text: 'When inspection shows growth on coils or in dead-end ducts, we treat the ventilation path with EPA-registered products used as directed. Learn more about [mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
       {
-        title: 'HVAC Unit Cleaning',
-        text: 'A dirty HVAC unit works harder, breaks down sooner, and costs more to run. Our technicians clean evaporator and condenser coils, blower assemblies, and internal components to restore efficiency and extend system lifespan.',
+        title: 'Whole-Home Mold Remediation',
+        text: 'When musty air has moved past the vents into a basement or finished room, we contain, remove, and dry. See [mold remediation for your home](/mold-remediation-house).',
       },
     ],
   },
   why: {
-    heading: 'Why Burke Homeowners Choose Us',
+    heading: 'Reasons Neighbors in Burke Book Repeat Visits',
     items: [
       {
-        title: 'Locally Based Team',
-        text: 'Our Burke office means faster response times and technicians who know the area, the climate, and the types of homes throughout Northern Virginia and Washington DC.',
+        title: 'Real Address, Real Staging',
+        text: 'Equipment and scheduling run from Burke Centre Parkway. You can verify the suite — we are not inventing a Virginia presence.',
       },
       {
-        title: 'Professional Equipment',
-        text: 'We use truck-mounted and portable high-powered vacuum systems with HEPA filtration — not consumer-grade tools that only clean surface-level debris.',
+        title: 'Fairfax County Routes We Drive Weekly',
+        text: 'Springfield Mixing Bowl traffic, Reston villages, and McLean tree lots are normal days for this team, not first-time surprises.',
       },
       {
-        title: 'Transparent Pricing',
-        text: 'Every job is quoted clearly before work begins. No surprise charges, no upselling pressure, no hidden fees.',
-      },
-      {
-        title: 'Full-Service Capability',
-        text: 'Handle air ducts, dryer vents, chimneys, and HVAC units in a single visit — saving you time and scheduling coordination.',
+        title: 'Flat-Rate Pricing',
+        text: 'Residential duct and dryer packages are quoted before hoses come off the truck. No per-vent games.',
       },
       {
         title: 'Satisfaction Guarantee',
-        text: "If you're not fully satisfied with the results, we return and make it right at no additional cost.",
+        text: 'If you are not happy with the result, we come back and make it right.',
       },
     ],
   },
   communities: {
-    heading: 'Communities We Serve from Burke',
+    heading: 'Communities Served from Burke',
     intro:
-      "Our Burke branch serves a wide region across Fairfax County, Loudoun County, Prince William County, and [Washington, DC](/locations/washington-dc). If you don't see your city listed, call us — we likely serve your area.",
+      'City pages below are the detailed service landings. This hub page is for the office itself and the wider Virginia dispatch.',
     groups: [
       {
-        title: 'Burke & Springfield',
+        title: 'Next door',
         places:
-          'Burke, [Springfield](/locations/springfield), [Fair Oaks](/locations/fair-oaks), [Oakton](/locations/oakton), [Lorton](/locations/lorton), [Mt Vernon](/locations/mount-vernon)',
+          '[Springfield](/locations/springfield), [Fair Oaks](/locations/fair-oaks), [Oakton](/locations/oakton), [Lorton](/locations/lorton), [Mt Vernon](/locations/mount-vernon), [Fairfax](/locations/fairfax)',
       },
       {
-        title: 'Alexandria & Arlington',
+        title: 'Inside the Beltway & close-in',
         places:
-          '[Alexandria](/locations/alexandria), [Arlington](/locations/arlington), [Falls Church](/locations/falls-church), [McLean](/locations/mclean), [Fairfax](/locations/fairfax)',
+          '[Alexandria](/locations/alexandria), [Arlington](/locations/arlington), [Falls Church](/locations/falls-church), [McLean](/locations/mclean)',
       },
       {
-        title: 'Reston & Herndon',
+        title: 'Dulles corridor',
         places:
-          '[Reston](/locations/reston), [Herndon](/locations/herndon), [Great Falls](/locations/great-falls), [Vienna](/locations/vienna), [Chantilly](/locations/chantilly)',
+          '[Reston](/locations/reston), [Herndon](/locations/herndon), [Vienna](/locations/vienna), [Great Falls](/locations/great-falls), [Chantilly](/locations/chantilly), [Loudoun](/locations/loudoun)',
       },
       {
-        title: 'Leesburg & Loudoun County',
-        places: 'See [Loudoun County](/locations/loudoun) — Leesburg, Ashburn, Sterling, Oatlands, Lenah',
-      },
-      {
-        title: 'Prince William County',
-        places: 'See [Prince William](/locations/prince-william) — Manassas, Woodbridge, Lake Ridge, Gainesville, Buckhall',
+        title: 'Farther south & the District',
+        places:
+          '[Prince William](/locations/prince-william), [Washington, DC](/locations/washington-dc)',
       },
     ],
   },
   process: {
-    heading: 'What to Expect When You Book',
-    intro: 'Simple, transparent service from the first call to the final walkthrough.',
+    heading: 'What Happens After You Request Burke Service',
+    intro: 'Simple steps our Burke crew follows for Burke appointments.',
     steps: [
       {
-        title: 'Schedule Online or by Phone',
-        text: 'Book using the contact form on this page or call (571) 460-0001. We confirm your appointment by the next business day.',
+        title: 'Talk Through the Home',
+        text: 'Tell us about pets, renovations, and laundry layout common in Burke.',
       },
       {
-        title: 'Pre-Visit Confirmation',
-        text: "We call or text the morning of your appointment with a technician arrival window so you're never left waiting or guessing.",
+        title: 'Confirm Arrival ETA',
+        text: 'Morning-of text with a realistic window for your street.',
       },
       {
-        title: 'On-Site Inspection',
-        text: 'Our technician inspects your duct system and reviews the full scope of work with you before starting — no surprises.',
+        title: 'Agree the Package',
+        text: 'Flat-rate duct and dryer packages — the quoted number is what you pay.',
       },
       {
-        title: 'Professional Cleaning',
-        text: 'We protect your floors and furniture, then perform a complete cleaning using high-powered professional-grade equipment.',
+        title: 'Run the Cleaning',
+        text: 'Truck-mounted or portable HEPA sized for Burke houses and townhomes.',
       },
       {
-        title: 'Final Walkthrough',
-        text: "We review the completed work with you, answer any questions, and ensure you're fully satisfied before leaving.",
-      },
-      {
-        title: 'Maintenance Recommendations',
-        text: 'We provide personalized guidance to keep your system clean between professional services and extend the life of your HVAC.',
+        title: 'Final Questions',
+        text: 'Filter tips and dryer-vent interval before we pack up.',
       },
     ],
   },
-  faqIntro:
-    'Have questions about our Burke area services? We have answers. Or call us directly at (571) 460-0001.',
+  faqIntro: 'Questions about the Burke office. Call (800) 606-3334 — office line (571) 460-0001.',
   faq: [
     {
-      q: 'Do you provide air duct cleaning in Burke, VA?',
-      a: 'Yes. Our Burke location serves Burke and dozens of surrounding communities throughout Northern Virginia and Washington DC.',
+      q: 'Where is the Burke office?',
+      a: '5641 Burke Centre Pkwy, Suite 119, Burke, VA 22015. Booking: (800) 606-3334. Office line: (571) 460-0001.',
     },
     {
-      q: 'What areas near Burke do you service?',
-      a: 'We serve [Springfield](/locations/springfield), [Fairfax](/locations/fairfax), [Alexandria](/locations/alexandria), [Arlington](/locations/arlington), [McLean](/locations/mclean), [Vienna](/locations/vienna), [Reston](/locations/reston), [Herndon](/locations/herndon), [Falls Church](/locations/falls-church), [Loudoun](/locations/loudoun), [Prince William](/locations/prince-william), and [Washington, DC](/locations/washington-dc).',
+      q: 'What services do you offer from Burke?',
+      a: 'Air duct cleaning, dryer vent cleaning, ventilation mold treatment, and whole-home mold remediation when needed. We do not offer chimney sweeping from this page.',
     },
     {
-      q: 'How do I schedule a service appointment at the Burke location?',
-      a: 'You can schedule online using the contact form on this page or call us directly at (571) 460-0001. We offer flexible scheduling including Saturday appointments.',
+      q: 'Do you serve Springfield, Reston, and Arlington from Burke?',
+      a: 'Yes. See the city pages for Springfield, Reston, Arlington, and the full Virginia list on /locations.',
     },
     {
-      q: 'How long does air duct cleaning take?',
-      a: 'A typical residential air duct cleaning takes 2–4 hours depending on the size of your home and system configuration. Our technician will give you a time estimate during the initial inspection.',
+      q: 'When would Bethesda take a job instead?',
+      a: 'Maryland addresses and some Northwest DC streets often dispatch from Bethesda. We pick by drive time when you book.',
     },
     {
-      q: 'Do you serve Washington DC from the Burke location?',
-      a: 'Yes. Our Burke team serves [Washington, DC](/locations/washington-dc) — Capitol Hill, Northwest, Northeast, and Southeast — for air duct, dryer vent, and HVAC cleaning, dispatched alongside the Bethesda office when that crew is closer.',
+      q: 'Are prices flat-rate?',
+      a: 'Yes for residential air duct and dryer vent packages. The number we quote before the job is the price you pay.',
+    },
+    {
+      q: 'Can I visit the suite before booking?',
+      a: 'The suite is a working office for scheduling and staging. Most customers book by phone or form; call if you need directions.',
     },
   ],
 }

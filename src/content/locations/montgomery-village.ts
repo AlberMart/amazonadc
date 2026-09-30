@@ -3,22 +3,24 @@ import type { LocationContentSeed } from '@/utilities/locations'
 export const montgomeryVillage: LocationContentSeed = {
   slug: 'montgomery-village',
   title: 'Air Duct Cleaning in Montgomery Village, MD',
-  headline: 'Air duct and dryer vent cleaning for 1970s planned streets, lakes, and Lakeforest townhomes',
+  headline:
+    'Air duct and dryer vent cleaning for 1970s planned streets, lakes, and Lakeforest townhomes',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Montgomery Village, MD. Flat rates from our Bethesda office for 1970s planned townhomes and lake-side humidity. Call (301) 809-4544.',
+    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Montgomery Village, MD. Flat rates from our Bethesda office for 1970s planned townhomes and lake-side humidity. Call (800) 606-3334.',
   intro:
-    'Amazon Air Duct Cleaning serves Montgomery Village from our Bethesda office — not a rented Lakeforest suite. 1970s planned townhomes and houses on the lakes take on pollen and damp-season film. Call (301) 809-4544.',
+    'Amazon Air Duct Cleaning serves Montgomery Village from our Bethesda office — not a rented Lakeforest suite. 1970s planned townhomes and houses on the lakes take on pollen and damp-season film. Call (800) 606-3334.',
   heroImage: '/img/locations/montgomery-village.webp',
   heroAlt: 'Air duct cleaning in Montgomery Village, MD — Amazon Air Duct Cleaning',
   city: 'Montgomery Village',
   state: 'MD',
   servedBy: 'bethesda',
+  sectionLayout: 'leanNoOffers',
   about: {
     heading: 'Why Montgomery Village Townhomes Load Lake Dust and Old Closets',
     paragraphs: [
       'Montgomery Village is a 1970s planned community next to [Gaithersburg](/locations/gaithersburg): Stedwick, Whetstone, East Village, the lakes, and the streets that used to orbit Lakeforest. The stock is townhomes and colonials from that build-out, plus later infill. Mechanical closets are tight. Dryer vents were run for machines that no longer exist. HOA paths keep lots leafy — and the returns keep pulling that leaf grit.',
       'Lake-side humidity is the other half. Cool lower-level trunks sweat in Maryland summers. Pollen from the original tree plan sticks. Registers look clean after you wipe them and gray again when the AC cycles. [Germantown](/locations/germantown) is the next corridor page north.',
-      'We serve Montgomery Village from [Bethesda](/locations/bethesda). There is no village storefront. Read [how Montgomery Village townhomes load air ducts](/blog/montgomery-village-townhomes-air-ducts).',
+      'We serve Montgomery Village from [Bethesda](/locations/bethesda). For background reading (not a booking page), see [montgomery-village-townhomes-air-ducts](/blog/montgomery-village-townhomes-air-ducts).',
     ],
     highlights: [
       'Stedwick, Whetstone, East Village, and lake-side townhomes',
@@ -30,7 +32,7 @@ export const montgomeryVillage: LocationContentSeed = {
   offersTitle: 'Special Offers — Montgomery Village, MD',
   services: {
     heading: 'Our Services in Montgomery Village, MD',
-    intro: 'The same honest packages we use in Gaithersburg and Bethesda. The quote is the price.',
+    intro: 'Flat-rate options for Montgomery Village houses, townhomes, and light commercial.',
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -51,15 +53,15 @@ export const montgomeryVillage: LocationContentSeed = {
     ],
   },
   why: {
-    heading: 'Why Montgomery Village Homeowners Book Us',
+    heading: 'What Sets This Montgomery Village Crew Apart',
     items: [
       {
         title: 'Same Bethesda Crew as Gaithersburg',
-        text: 'We will not list a Lakeforest office we do not occupy. The truck leaves Old Georgetown Road.',
+        text: 'Montgomery Village jobs are scheduled from our Bethesda office on Old Georgetown Road.',
       },
       {
         title: 'Flat-Rate Pricing',
-        text: 'No per-vent counting on a Stedwick townhome. The quote is the price.',
+        text: 'No per-vent counting on a Stedwick townhome. Pricing is quoted before work starts.',
       },
       {
         title: 'Planned-Community Housing We Already Clean',
@@ -86,62 +88,59 @@ export const montgomeryVillage: LocationContentSeed = {
       },
       {
         title: 'The lakes & north',
-        places: 'Lake Whetstone, Lake Marion, streets toward Germantown — ask if your court is not listed',
+        places:
+          'Lake Whetstone, Lake Marion, streets toward Germantown — ask if your court is not listed',
       },
     ],
   },
   process: {
-    heading: 'What to Expect When You Book',
-    intro: 'Simple scheduling from the Bethesda office that covers Montgomery Village.',
+    heading: 'Booking Montgomery Village Service from Bethesda',
+    intro:
+      'What to expect when we schedule Montgomery Village from 7815 Old Georgetown Rd Ste 201.',
     steps: [
       {
-        title: 'Schedule Online or by Phone',
-        text: 'Use the form on this page or call (301) 809-4544. We confirm the appointment by the next business day.',
+        title: 'Online or Phone Intake',
+        text: 'Book at (800) 606-3334. Mention Montgomery Village so we route from Bethesda.',
       },
       {
-        title: 'Pre-Visit Confirmation',
-        text: 'The morning of the job we send an arrival window so village parking courts and HOA rules are already sorted.',
+        title: 'Pre-Job Notes',
+        text: 'We ask about basement returns, stacked laundry, and any musty registers.',
       },
       {
-        title: 'On-Site Inspection',
-        text: 'We inspect original trunks, returns, and the dryer run, then agree the scope before equipment comes in.',
+        title: 'On-Site Scope Lock',
+        text: 'No surprise add-ons after we are inside.',
       },
       {
-        title: 'Professional Cleaning',
-        text: 'Floors are protected. We clean with truck-mounted or portable HEPA equipment on tight courts.',
+        title: 'Source-Removal Cleaning',
+        text: 'NADCA-style agitation under negative pressure with HEPA capture.',
       },
       {
-        title: 'Final Walkthrough',
-        text: 'Before-and-after photos, questions answered, and we leave when you are satisfied.',
+        title: 'Photo Proof',
+        text: 'Duct jobs include before-and-after images you can keep.',
       },
     ],
   },
-  faqIntro:
-    'Questions from Montgomery Village homeowners. Call the Bethesda office at (301) 809-4544.',
+  faqIntro: 'Montgomery Village questions — call (800) 606-3334 (dispatch: Bethesda).',
   faq: [
     {
-      q: 'Do you have an office in Montgomery Village?',
-      a: 'No. Montgomery Village is served from our Bethesda office at 7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814. Call (301) 809-4544 or use the form on this page.',
+      q: 'Do you have a storefront in Montgomery Village?',
+      a: 'No. Montgomery Village jobs are scheduled from our Bethesda office at 7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814. Call (800) 606-3334.',
     },
     {
-      q: 'Why do Montgomery Village townhome registers get dusty so fast?',
-      a: '1970s closets, lake humidity, and the original tree plan. Pollen sticks to cool lower-level trunks. [Montgomery Village townhomes and air ducts](/blog/montgomery-village-townhomes-air-ducts) covers the cycle.',
+      q: 'Can ducts and dryer vents be done the same day in Montgomery Village?',
+      a: 'Usually yes if you book the combined package or both services when you schedule.',
     },
     {
-      q: 'How often should Montgomery Village homes clean air ducts?',
-      a: 'Every 3 to 5 years for most houses. Pets, renovations, and damp lower levels often need the shorter interval. Dryer vents should be cleared about once a year.',
+      q: 'Is sanitizing included for Montgomery Village duct jobs?',
+      a: 'Sanitizing is available when inspection supports it or when you request it — we confirm before applying anything.',
     },
     {
-      q: 'Do you also serve Gaithersburg and Germantown from Bethesda?',
-      a: 'Yes. [Gaithersburg](/locations/gaithersburg) and [Germantown](/locations/germantown) are the same Bethesda dispatch as Montgomery Village.',
+      q: 'Do you clean dryer vents in Montgomery Village townhomes and condos?',
+      a: 'Yes — full length to the exterior cap. Stacked laundry is common on this route. See dryer vent cleaning for details.',
     },
     {
-      q: 'Do you offer flat rates in Montgomery Village?',
-      a: 'Yes. Residential air duct and dryer vent cleaning is flat-rate. The number we quote before the job is the price you pay.',
-    },
-    {
-      q: 'Are mold treatments safe for Montgomery Village families and pets?',
-      a: 'Yes. We use EPA-registered antimicrobial treatments that are safe for children, pets, and people with respiratory sensitivities once applied as directed.',
+      q: 'Do you bring portable equipment for tight Montgomery Village streets?',
+      a: 'Yes. When a truck cannot stage, we use portable HEPA systems sized for the home.',
     },
   ],
 }

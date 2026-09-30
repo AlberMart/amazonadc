@@ -1,6 +1,7 @@
 import type { HomeContent } from '@/content/home'
 import { homeContentSeed } from '@/content/home'
 import { resolveCmsImage, resolveCmsImageAlt } from '@/utilities/cmsImage'
+import { toTelHref } from '@/utilities/tel'
 import type { ColorToken, SectionAppearance } from '@/utilities/theme'
 
 export type HomeSectionType =
@@ -68,6 +69,8 @@ export type HomeSection = {
   mapEmbedUrl?: string
   mapTitle?: string
   regions?: ServiceAreaRegion[]
+  /** Location pages: offices + short intro only (no state lists / map / city dump). */
+  compact?: boolean
   badges?: SectionBadge[]
   photos?: Array<{ src: string; alt: string }>
   listColumns?: Array<{ heading: string; items: string[] }>
@@ -224,7 +227,7 @@ export function mapHomeSection(raw: Record<string, unknown>, nested = false): Ho
     ctaLabel: raw.ctaLabel ? String(raw.ctaLabel) : undefined,
     ctaHref: raw.ctaHref ? String(raw.ctaHref) : undefined,
     phoneDisplay: raw.phoneDisplay ? String(raw.phoneDisplay) : undefined,
-    phoneHref: raw.phoneHref ? String(raw.phoneHref) : undefined,
+    phoneHref: raw.phoneHref ? toTelHref(String(raw.phoneHref)) || undefined : undefined,
     formId: (() => {
       const form = raw.form
       if (typeof form === 'number') return form
@@ -239,6 +242,7 @@ export function mapHomeSection(raw: Record<string, unknown>, nested = false): Ho
     appearance: mapAppearance(raw.appearance),
     mapEmbedUrl: raw.mapEmbedUrl ? String(raw.mapEmbedUrl) : undefined,
     mapTitle: raw.mapTitle ? String(raw.mapTitle) : undefined,
+    compact: Boolean(raw.compact),
     regions: mapServiceAreaRegions(raw.regions),
     badges: mapBadges(raw.badges),
     photos: (
@@ -446,6 +450,7 @@ export function mapHomeSectionsToSeed(sections: HomeSection[]) {
     phoneSuffix: section.phoneSuffix || undefined,
     mapEmbedUrl: section.mapEmbedUrl || undefined,
     mapTitle: section.mapTitle || undefined,
+    compact: section.compact || undefined,
     regions: (section.regions || []).map((region) => ({
       name: region.name,
       cities: region.cities.map((name) => ({ name })),

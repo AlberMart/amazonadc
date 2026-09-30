@@ -45,6 +45,19 @@ import { locationContentToSections } from '@/utilities/sectionSeeds'
 
 export type LocationFaq = { q: string; a: string }
 
+/** Section order variants so city pages do not share one identical skeleton. */
+export type LocationSectionLayout =
+  | 'default'
+  | 'servicesFirst'
+  | 'faqEarly'
+  | 'communitiesFirst'
+  | 'processFirst'
+  | 'whyFirst'
+  | 'offersLate'
+  | 'leanNoOffers'
+  | 'faqMid'
+  | 'hub'
+
 export type LocationContent = {
   slug: string
   title: string
@@ -60,6 +73,13 @@ export type LocationContent = {
   /** True when this page is the hub page for its serving office (slug matches office slug). */
   isOfficeHub: boolean
   office: OfficeContent
+  /**
+   * Hero line under address, e.g. "our Burke and Bethesda offices".
+   * Defaults to "our {office.city} office".
+   */
+  dispatchLabel?: string
+  /** Optional section order override for scaled-content diversity. */
+  sectionLayout?: LocationSectionLayout
   about: {
     heading: string
     paragraphs: string[]
@@ -156,6 +176,8 @@ export function locationFromSeed(
     offersTitle: seed.offersTitle,
     isOfficeHub: seed.slug === office.slug,
     office,
+    dispatchLabel: seed.dispatchLabel,
+    sectionLayout: seed.sectionLayout,
     about: seed.about,
     services: seed.services,
     why: seed.why,
@@ -278,6 +300,8 @@ function mapLocation(doc: Record<string, unknown>): LocationContent | null {
     offersTitle: String(doc.offersTitle || ''),
     isOfficeHub: slug === office.slug,
     office,
+    dispatchLabel: doc.dispatchLabel ? String(doc.dispatchLabel) : undefined,
+    sectionLayout: (doc.sectionLayout as LocationContent['sectionLayout']) || undefined,
     about: {
       heading: String(about.heading || ''),
       paragraphs: texts(about.paragraphs),

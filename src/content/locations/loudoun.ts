@@ -3,34 +3,36 @@ import type { LocationContentSeed } from '@/utilities/locations'
 export const loudoun: LocationContentSeed = {
   slug: 'loudoun',
   title: 'Air Duct Cleaning in Loudoun County, VA',
-  headline: 'Air duct and dryer vent cleaning for Leesburg, Ashburn, Sterling, and Dulles-area homes',
+  headline:
+    'Air duct and dryer vent cleaning for Leesburg, Ashburn, Sterling, and Dulles-area homes',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Loudoun County, VA. Flat rates from our Burke office for Leesburg, Ashburn, Sterling, and South Riding. Call (571) 460-0001.',
+    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Loudoun County, VA. Flat rates from our Burke office for Leesburg, Ashburn, Sterling, and South Riding. Call (800) 606-3334.',
   intro:
-    'Amazon Air Duct Cleaning serves Loudoun County from our Burke office. Leesburg brick, Ashburn and Sterling new-builds, and Dulles-corridor townhomes all take on construction dust and a heavy pollen season. There is no Loudoun storefront — we will not invent one. Call (571) 460-0001.',
+    'Amazon Air Duct Cleaning serves Loudoun County from our Burke office. Leesburg brick, Ashburn and Sterling new-builds, and Dulles-corridor townhomes all take on construction dust and a heavy pollen season. Call (800) 606-3334.',
   heroImage: '/img/locations/loudoun.webp',
   heroAlt: 'Air duct cleaning in Loudoun County, VA — Amazon Air Duct Cleaning',
   city: 'Loudoun',
   state: 'VA',
   servedBy: 'burke',
+  sectionLayout: 'leanNoOffers',
   about: {
     heading: 'Why Loudoun HVAC Systems Work Harder Than Newer Houses Suggest',
     paragraphs: [
       'Loudoun is not one housing type. Historic Leesburg has older metal trunks and damp basements near Goose Creek and the Potomac. Ashburn, Broadlands, Brambleton, and South Riding are packed with 1990s–2010s townhomes and single-family houses that still swallow drywall dust from the next section under construction. Sterling and the Dulles Toll Road add traffic particles. Data-center growth did not make indoor air cleaner.',
       'New construction is not clean construction. Fine gypsum and insulation fibers sit in returns for years if the system was never commissioned with a proper duct cleaning. Older Leesburg houses have the opposite problem: humidity and pollen in trunks that were added after the house was built.',
-      'We serve Loudoun from [Burke](/locations/burke). The drive is real; the office is staffed. Nearby [McLean](/locations/mclean) and [Fairfax](/locations/fairfax) are closer-in stops on the same dispatch. Read [how Loudoun construction dust and pollen load air ducts](/blog/loudoun-construction-dust-pollen-air-ducts).',
+      'We serve Loudoun from [Burke](/locations/burke). The drive is real; the office is staffed. Nearby [McLean](/locations/mclean) and [Fairfax](/locations/fairfax) are closer-in stops on the same dispatch. For background reading (not a booking page), see [loudoun-construction-dust-pollen-air-ducts](/blog/loudoun-construction-dust-pollen-air-ducts).',
     ],
     highlights: [
       'Leesburg, Ashburn, Sterling, Brambleton, South Riding',
       'Flat-rate pricing — no vent counting',
       'Before-and-after photos on every duct job',
-      'Honest Burke dispatch — no fake Leesburg suite',
+      'Dispatched from our Burke office',
     ],
   },
   offersTitle: 'Special Offers — Loudoun County, VA',
   services: {
     heading: 'Our Services in Loudoun County',
-    intro: 'The same packages we use in Fairfax County. The quote is the price.',
+    intro: 'Flat-rate options for Loudoun houses, townhomes, and light commercial.',
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -51,11 +53,11 @@ export const loudoun: LocationContentSeed = {
     ],
   },
   why: {
-    heading: 'Why Loudoun Households Book Us',
+    heading: 'What Sets This Loudoun Crew Apart',
     items: [
       {
-        title: 'No Fake Loudoun Address',
-        text: 'Burke is a real office. We will not rent a mailbox in Leesburg and call it a shop.',
+        title: 'Served from Our Burke Office',
+        text: 'Loudoun jobs are scheduled from Burke.',
       },
       {
         title: 'Flat-Rate Pricing',
@@ -91,56 +93,52 @@ export const loudoun: LocationContentSeed = {
     ],
   },
   process: {
-    heading: 'What to Expect When You Book',
-    intro: 'Scheduling from the Burke office that covers Loudoun — we plan the drive, not a fake local shop.',
+    heading: 'Booking Loudoun Service from Burke',
+    intro: 'What to expect when we schedule Loudoun from 5641 Burke Centre Pkwy Ste 119.',
     steps: [
       {
-        title: 'Schedule Online or by Phone',
-        text: 'Use the form on this page or call (571) 460-0001. We confirm the appointment by the next business day.',
+        title: 'Online or Phone Intake',
+        text: 'Book at (800) 606-3334. Mention Loudoun so we route from Burke.',
       },
       {
-        title: 'Pre-Visit Confirmation',
-        text: 'The morning of the job we send an arrival window. Gate codes in Brambleton and South Riding help us stage on time.',
+        title: 'Pre-Job Notes',
+        text: 'We ask about basement returns, stacked laundry, and any musty registers.',
       },
       {
-        title: 'On-Site Inspection',
-        text: 'We inspect the ducts and dryer run, then agree the scope before equipment comes in.',
+        title: 'On-Site Scope Lock',
+        text: 'No surprise add-ons after we are inside.',
       },
       {
-        title: 'Professional Cleaning',
-        text: 'Floors are protected. We clean with truck-mounted or portable HEPA equipment.',
+        title: 'Source-Removal Cleaning',
+        text: 'NADCA-style agitation under negative pressure with HEPA capture.',
       },
       {
-        title: 'Final Walkthrough',
-        text: 'Before-and-after photos, questions answered, and we leave when you are satisfied.',
+        title: 'Photo Proof',
+        text: 'Duct jobs include before-and-after images you can keep.',
       },
     ],
   },
-  faqIntro: 'Questions from Loudoun homeowners. Call the Burke office at (571) 460-0001.',
+  faqIntro: 'Loudoun questions — call (800) 606-3334 (dispatch: Burke).',
   faq: [
     {
-      q: 'Do you have an office in Leesburg or Ashburn?',
-      a: 'No. Loudoun is served from our Burke office at 5641 Burke Centre Pkwy Ste 119. Call (571) 460-0001. We will not list a Loudoun suite we do not staff.',
+      q: 'Do you have a storefront in Loudoun?',
+      a: 'No. Loudoun jobs are scheduled from our Burke office at 5641 Burke Centre Pkwy Ste 119, Burke, VA 22015. Call (800) 606-3334.',
     },
     {
-      q: 'Why do new Ashburn houses still have dirty ducts?',
-      a: 'Construction dust is pulled into returns while the next block is still going up. Filters do not catch all of it. [Loudoun construction dust and pollen](/blog/loudoun-construction-dust-pollen-air-ducts) covers the pattern.',
+      q: 'Can ducts and dryer vents be done the same day in Loudoun?',
+      a: 'Usually yes if you book the combined package or both services when you schedule.',
     },
     {
-      q: 'How often should Loudoun homes clean air ducts?',
-      a: 'Every 3 to 5 years, sooner after you move into a new build or finish a basement. Dryer vents should be cleared about once a year.',
+      q: 'Is sanitizing included for Loudoun duct jobs?',
+      a: 'Sanitizing is available when inspection supports it or when you request it — we confirm before applying anything.',
     },
     {
-      q: 'Do you serve Reston and Herndon from this page?',
-      a: 'Those Fairfax County communities are on the same Burke dispatch. Tell us the address when you book. For inside-the-Beltway jobs see [McLean](/locations/mclean).',
+      q: 'Do you clean dryer vents in Loudoun townhomes and condos?',
+      a: 'Yes — full length to the exterior cap. Stacked laundry is common on this route. See dryer vent cleaning for details.',
     },
     {
-      q: 'Do you offer flat rates in Loudoun?',
-      a: 'Yes. Residential air duct and dryer vent cleaning is flat-rate.',
-    },
-    {
-      q: 'Are mold treatments safe for families and pets?',
-      a: 'Yes. We use EPA-registered antimicrobial treatments that are safe for children and pets once applied as directed.',
+      q: 'Do you bring portable equipment for tight Loudoun streets?',
+      a: 'Yes. When a truck cannot stage, we use portable HEPA systems sized for the home.',
     },
   ],
 }

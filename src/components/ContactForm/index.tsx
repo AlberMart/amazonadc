@@ -5,6 +5,7 @@ import { getCachedPublicContactForm } from '@/utilities/contactForm'
 import { issueFormToken } from '@/utilities/formGuard'
 import { getCachedGlobalSafe } from '@/utilities/getGlobals'
 import { getSiteSeo } from '@/utilities/seo'
+import { toTelHref } from '@/utilities/tel'
 
 type ContactFormProps = {
   sourcePage?: string
@@ -37,8 +38,7 @@ export async function ContactForm({
     getCachedGlobalSafe('site-settings', 1),
   ])
 
-  const resolvedHref = phoneHref || site.phone
-  const tel = resolvedHref.startsWith('tel:') ? resolvedHref : `tel:${resolvedHref}`
+  const tel = toTelHref(phoneHref || site.phone)
 
   return (
     <ContactFormClient

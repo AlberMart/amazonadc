@@ -3,22 +3,24 @@ import type { LocationContentSeed } from '@/utilities/locations'
 export const vienna: LocationContentSeed = {
   slug: 'vienna',
   title: 'Air Duct Cleaning in Vienna, VA',
-  headline: 'Air duct and dryer vent cleaning for Maple Avenue colonials, Wolf Trap, and the Vienna Metro',
+  headline:
+    'Air duct and dryer vent cleaning for Maple Avenue colonials, Wolf Trap, and the Vienna Metro',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Vienna, VA. Flat rates from our Burke office for 1950s–70s colonials, finished basements, and Tysons-edge homes. Call (571) 460-0001.',
+    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Vienna, VA. Flat rates from our Burke office for 1950s–70s colonials, finished basements, and Tysons-edge homes. Call (800) 606-3334.',
   intro:
-    'Amazon Air Duct Cleaning serves Vienna from our Burke office — a run up 123, not a rented Maple Avenue suite. 1950s–70s colonials, Glyndon Park streets, and houses toward Wolf Trap all take on heavy tree-canopy pollen and humid basement air. Call (571) 460-0001.',
+    'Amazon Air Duct Cleaning serves Vienna from our Burke office — a run up 123, not a rented Maple Avenue suite. 1950s–70s colonials, Glyndon Park streets, and houses toward Wolf Trap all take on heavy tree-canopy pollen and humid basement air. Call (800) 606-3334.',
   heroImage: '/img/locations/vienna.webp',
   heroAlt: 'Air duct cleaning in Vienna, VA — Amazon Air Duct Cleaning',
   city: 'Vienna',
   state: 'VA',
   servedBy: 'burke',
+  sectionLayout: 'faqMid',
   about: {
     heading: 'Why Vienna Colonials Trap Pollen in Finished Basements',
     paragraphs: [
       'The Town of Vienna grew along Maple Avenue and Chain Bridge Road: walkable blocks, Church Street shops, and a lot of 1950s–70s colonials with full basements. Those rooms stay cool. Northern Virginia summers do not. Cold supply trunks sweat. Oak, maple, and the Wolf Trap canopy dump pollen onto that film. Glyndon Park and the streets off Nutley sit under the same trees.',
       'Vienna/Fairfax-GMU Metro and the Tysons edge add denser townhomes and longer dryer runs. A colonial that gained a rec room in the 1990s often has original trunks plus a later branch. Dust collects at those joints. The same humidity that fogs a windshield on Maple Avenue in July is sitting on the air handler.',
-      'We serve Vienna from [Burke](/locations/burke). There is no Vienna storefront. Nearby [McLean](/locations/mclean), [Oakton](/locations/oakton), and [Fairfax](/locations/fairfax) use the same dispatch. Read [how Vienna tree pollen and basements load air ducts](/blog/vienna-tree-pollen-basement-air-ducts).',
+      'We serve Vienna from [Burke](/locations/burke). Nearby [McLean](/locations/mclean), [Oakton](/locations/oakton), and [Fairfax](/locations/fairfax) use the same dispatch. For background reading (not a booking page), see [vienna-tree-pollen-basement-air-ducts](/blog/vienna-tree-pollen-basement-air-ducts).',
     ],
     highlights: [
       'Maple Avenue, Glyndon Park, Wolf Trap, and Tysons-edge streets',
@@ -30,7 +32,7 @@ export const vienna: LocationContentSeed = {
   offersTitle: 'Special Offers — Vienna, VA',
   services: {
     heading: 'Our Services in Vienna, VA',
-    intro: 'Transparent packages for Vienna colonials and townhomes. The quote is the price.',
+    intro: 'Flat-rate options for Vienna houses, townhomes, and light commercial.',
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -51,7 +53,7 @@ export const vienna: LocationContentSeed = {
     ],
   },
   why: {
-    heading: 'Why Vienna Homeowners Book Us',
+    heading: 'What Sets This Vienna Crew Apart',
     items: [
       {
         title: 'Maple Avenue From Burke, Not Maryland',
@@ -82,65 +84,67 @@ export const vienna: LocationContentSeed = {
       },
       {
         title: 'Metro & Tysons edge',
-        places: 'Vienna Metro area, Nutley Street, Tysons-edge streets toward [McLean](/locations/mclean)',
+        places:
+          'Vienna Metro area, Nutley Street, Tysons-edge streets toward [McLean](/locations/mclean)',
       },
       {
         title: 'Wolf Trap & west',
-        places: 'Wolf Trap, streets toward [Oakton](/locations/oakton) and [Fairfax](/locations/fairfax) — ask if your block is not listed',
+        places:
+          'Wolf Trap, streets toward [Oakton](/locations/oakton) and [Fairfax](/locations/fairfax) — ask if your block is not listed',
       },
     ],
   },
   process: {
-    heading: 'What to Expect When You Book',
-    intro: 'Simple scheduling from the Burke office that covers Vienna.',
+    heading: 'Booking Vienna Service from Burke',
+    intro: 'Practical timing notes for Vienna homeowners and property managers.',
     steps: [
       {
-        title: 'Schedule Online or by Phone',
-        text: 'Use the form on this page or call (571) 460-0001. We confirm the appointment by the next business day.',
+        title: 'Estimate Request',
+        text: 'Form or (800) 606-3334 — we reply with timing from the Burke office.',
       },
       {
-        title: 'Pre-Visit Confirmation',
-        text: 'The morning of the job we send an arrival window. Narrow Maple Avenue parking and HOA gates help us plan the truck.',
+        title: 'Route Planning',
+        text: 'Vienna is on an existing Burke dispatch day whenever possible.',
       },
       {
-        title: 'On-Site Inspection',
-        text: 'We inspect basement trunks, returns, and the dryer run, then agree the scope before equipment comes in.',
+        title: 'Walk-Through',
+        text: 'Supplies, returns, dryer termination — then we start.',
       },
       {
-        title: 'Professional Cleaning',
-        text: 'Floors are protected. We clean with truck-mounted or portable HEPA equipment.',
+        title: 'Service',
+        text: 'Full trunk cleaning; dryer vent cleared to the exterior cap when booked.',
       },
       {
-        title: 'Final Walkthrough',
-        text: 'Before-and-after photos, questions answered, and we leave when you are satisfied.',
+        title: 'Close-Out',
+        text: 'Satisfaction check before payment is finalized.',
       },
     ],
   },
-  faqIntro: 'Questions from Vienna homeowners. Call the Burke office at (571) 460-0001.',
+  faqIntro: 'Vienna questions — call (800) 606-3334 (dispatch: Burke).',
   faq: [
     {
-      q: 'Do you have an office in Vienna?',
-      a: 'No. Vienna is served from our Burke office at 5641 Burke Centre Pkwy Ste 119, Burke, VA 22015. Call (571) 460-0001 or use the form on this page.',
+      q: 'Where does the Vienna crew stage from?',
+      a: 'Our Burke office (5641 Burke Centre Pkwy Ste 119, Burke, VA 22015). Office line (571) 460-0001; booking (800) 606-3334.',
     },
     {
-      q: 'Do you mean the Town of Vienna or streets toward Tysons?',
-      a: 'This page is for the Town of Vienna — Maple Avenue, Glyndon Park, Wolf Trap-area streets — plus the close Tysons edge. [McLean](/locations/mclean) and [Falls Church](/locations/falls-church) have their own pages. All dispatch from Burke.',
+      q: 'Can I stay home during the Vienna appointment?',
+      a: 'Yes. Stay clear of active equipment; we protect floors in the work path.',
     },
     {
-      q: 'Why do Vienna registers get dusty so soon after I wipe them?',
-      a: 'Heavy tree pollen and cool basement trunks. Dust sticks to condensation and blows back every cycle. [Vienna tree pollen, basements, and air ducts](/blog/vienna-tree-pollen-basement-air-ducts) covers it.',
+      q: 'How often should Vienna, VA homes clean ducts?',
+      a: 'Every 3–5 years for most homes. Pets, renovations, and humid basements often need the shorter end. Dryer vents about yearly.',
     },
     {
-      q: 'How often should Vienna homes clean air ducts?',
-      a: 'Every 3 to 5 years for most colonials. Pets, finished basements, and renovations often need the shorter interval. Dryer vents about once a year.',
+      q: 'What should I prepare before the crew arrives in Vienna?',
+      a: 'Clear access to returns, the air handler, and the dryer. Note HOA gate codes if needed.',
     },
     {
-      q: 'Do you offer flat rates in Vienna?',
-      a: 'Yes. Residential air duct and dryer vent cleaning is flat-rate. The number we quote before the job is the price you pay.',
+      q: 'How long does air duct cleaning take in a typical Vienna home?',
+      a: 'Most single-system houses take about 2–3 hours. Townhomes with long dryer runs can run longer after inspection.',
     },
     {
-      q: 'Can you serve Oakton and Fairfax on the same dispatch?',
-      a: 'Yes. [Oakton](/locations/oakton), [Fairfax](/locations/fairfax), and [Reston](/locations/reston) use the same Burke office as Vienna.',
+      q: 'Are Vienna residential prices flat-rate?',
+      a: 'Yes for air duct and dryer vent packages. The quote before we start is the price you pay.',
     },
   ],
 }

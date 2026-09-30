@@ -3,22 +3,24 @@ import type { LocationContentSeed } from '@/utilities/locations'
 export const columbia: LocationContentSeed = {
   slug: 'columbia',
   title: 'Air Duct Cleaning in Columbia, MD',
-  headline: 'Air duct and dryer vent cleaning for Rouse village centers, townhomes, and lake streets',
+  headline:
+    'Air duct and dryer vent cleaning for Rouse village centers, townhomes, and lake streets',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Columbia, MD. Flat rates from our Bethesda office for Howard County village townhomes and lake-side humidity. Call (301) 809-4544.',
+    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Columbia, MD. Flat rates from our Bethesda office for Howard County village townhomes and lake-side humidity. Call (800) 606-3334.',
   intro:
-    'Amazon Air Duct Cleaning serves Columbia from our Bethesda office — an honest Howard County drive, not a rented Town Center suite. Rouse village townhomes and houses near the lakes take on pollen and damp-season film. Call (301) 809-4544.',
+    'Amazon Air Duct Cleaning serves Columbia from our Bethesda office — an honest Howard County drive, not a rented Town Center suite. Rouse village townhomes and houses near the lakes take on pollen and damp-season film. Call (800) 606-3334.',
   heroImage: '/img/locations/columbia.webp',
   heroAlt: 'Air duct cleaning in Columbia, MD — Amazon Air Duct Cleaning',
   city: 'Columbia',
   state: 'MD',
   servedBy: 'bethesda',
+  sectionLayout: 'servicesFirst',
   about: {
     heading: 'Why Columbia Village Townhomes Load Lake Humidity and Pollen',
     paragraphs: [
       'Columbia is James Rouse’s planned Howard County city: Town Center, Wilde Lake, Hickory Ridge, Owen Brown, Oakland Mills, Kings Contrivance, and the paths that stitch village centers together. A lot of the stock is 1970s–90s townhomes and colonials with HOA rules and tight mechanical closets. Dryer vents turn corners. Returns sit low over finished lower levels.',
       'The lakes and open space keep lots greener — and damper — than a Beltway brick block. Oak pollen and mowed-path dust ride the same returns. Clarksville is a neighborhood and next-door community we already drive, not its own page. [Ellicott City](/locations/ellicott-city) is the next Howard County city page.',
-      'We serve Columbia from [Bethesda](/locations/bethesda). There is no Columbia storefront. The drive is farther than Rockville and we will not pretend otherwise. Read [how Columbia village townhomes load air ducts](/blog/columbia-village-townhomes-air-ducts).',
+      'We serve Columbia from [Bethesda](/locations/bethesda). The drive is farther than Rockville. For background reading (not a booking page), see [columbia-village-townhomes-air-ducts](/blog/columbia-village-townhomes-air-ducts).',
     ],
     highlights: [
       'Town Center, Wilde Lake, Hickory Ridge, and lake-side villages',
@@ -30,7 +32,7 @@ export const columbia: LocationContentSeed = {
   offersTitle: 'Special Offers — Columbia, MD',
   services: {
     heading: 'Our Services in Columbia, MD',
-    intro: 'The same honest packages we use in Bethesda. The quote is the price, including the Howard County drive.',
+    intro: 'Columbia residents book the same published packages as the rest of our metro area.',
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -51,11 +53,11 @@ export const columbia: LocationContentSeed = {
     ],
   },
   why: {
-    heading: 'Why Columbia Homeowners Book Us',
+    heading: 'Reasons Neighbors in Columbia Book Repeat Visits',
     items: [
       {
         title: 'Honest Distance, Real Bethesda Office',
-        text: 'Columbia is a farther Howard County run. We still dispatch from 7815 Old Georgetown Rd — not a fake Town Center desk.',
+        text: 'Columbia is a farther Howard County run. We still dispatch from 7815 Old Georgetown Rd — our Bethesda office on Old Georgetown Road.',
       },
       {
         title: 'Flat-Rate Pricing',
@@ -86,61 +88,58 @@ export const columbia: LocationContentSeed = {
       },
       {
         title: 'Kings Contrivance & toward Clarksville',
-        places: 'Kings Contrivance, River Hill edge, streets toward Clarksville — ask if your village is not listed',
+        places:
+          'Kings Contrivance, River Hill edge, streets toward Clarksville — ask if your village is not listed',
       },
     ],
   },
   process: {
-    heading: 'What to Expect When You Book',
-    intro: 'Simple scheduling from the Bethesda office that covers Columbia. The drive is planned, not guessed.',
+    heading: 'What Happens After You Request Columbia Service',
+    intro: 'What to expect when we schedule Columbia from 7815 Old Georgetown Rd Ste 201.',
     steps: [
       {
-        title: 'Schedule Online or by Phone',
-        text: 'Use the form on this page or call (301) 809-4544. We confirm the appointment by the next business day.',
+        title: 'Online or Phone Intake',
+        text: 'Book at (800) 606-3334. Mention Columbia so we route from Bethesda.',
       },
       {
-        title: 'Pre-Visit Confirmation',
-        text: 'The morning of the job we send an arrival window so village HOA gates and path-side parking are already sorted.',
+        title: 'Pre-Job Notes',
+        text: 'We ask about basement returns, stacked laundry, and any musty registers.',
       },
       {
-        title: 'On-Site Inspection',
-        text: 'We inspect townhome trunks, lower-level returns, and the dryer run, then agree the scope before equipment comes in.',
+        title: 'On-Site Scope Lock',
+        text: 'No surprise add-ons after we are inside.',
       },
       {
-        title: 'Professional Cleaning',
-        text: 'Floors are protected. We clean with truck-mounted or portable HEPA equipment.',
+        title: 'Source-Removal Cleaning',
+        text: 'NADCA-style agitation under negative pressure with HEPA capture.',
       },
       {
-        title: 'Final Walkthrough',
-        text: 'Before-and-after photos, questions answered, and we leave when you are satisfied.',
+        title: 'Photo Proof',
+        text: 'Duct jobs include before-and-after images you can keep.',
       },
     ],
   },
-  faqIntro: 'Questions from Columbia homeowners. Call the Bethesda office at (301) 809-4544.',
+  faqIntro: 'Columbia questions — call (800) 606-3334 (dispatch: Bethesda).',
   faq: [
     {
-      q: 'Do you have an office in Columbia?',
-      a: 'No. Columbia is served from our Bethesda office at 7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814. The Howard County drive is real. Call (301) 809-4544 or use the form on this page.',
+      q: 'Do you have a storefront in Columbia?',
+      a: 'No. Columbia jobs are scheduled from our Bethesda office at 7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814. Call (800) 606-3334.',
     },
     {
-      q: 'How far is the Bethesda dispatch to Columbia?',
-      a: 'Farther than our Montgomery County pages, still a scheduled Maryland run — not a rented Town Center mailbox. We give a realistic arrival window the morning of the job.',
+      q: 'Do you clean dryer vents in Columbia townhomes and condos?',
+      a: 'Yes — full length to the exterior cap. Stacked laundry is common on this route. See dryer vent cleaning for details.',
     },
     {
-      q: 'Why do Columbia townhome registers get dusty so fast?',
-      a: 'Village paths, lake humidity, and tight closets. Pollen sticks to cool lower-level trunks. [Columbia village townhomes and air ducts](/blog/columbia-village-townhomes-air-ducts) covers the cycle.',
+      q: 'Do you bring portable equipment for tight Columbia streets?',
+      a: 'Yes. When a truck cannot stage, we use portable HEPA systems sized for the home.',
     },
     {
-      q: 'How often should Columbia homes clean air ducts?',
-      a: 'Every 3 to 5 years for most houses. Pets, renovations, and damp lower levels often need the shorter interval. Dryer vents should be cleared about once a year.',
+      q: 'Do you serve commercial spaces in Columbia?',
+      a: 'Light commercial and small offices are available by quote. Call us with square footage and system count.',
     },
     {
-      q: 'Do you offer flat rates in Columbia?',
-      a: 'Yes. Residential air duct and dryer vent cleaning is flat-rate. The number we quote before the job is the price you pay.',
-    },
-    {
-      q: 'Are mold treatments safe for Columbia families and pets?',
-      a: 'Yes. We use EPA-registered antimicrobial treatments that are safe for children, pets, and people with respiratory sensitivities once applied as directed.',
+      q: 'Can I stay home during the Columbia appointment?',
+      a: 'Yes. Stay clear of active equipment; we protect floors in the work path.',
     },
   ],
 }

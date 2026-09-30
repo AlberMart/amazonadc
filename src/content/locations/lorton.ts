@@ -3,22 +3,24 @@ import type { LocationContentSeed } from '@/utilities/locations'
 export const lorton: LocationContentSeed = {
   slug: 'lorton',
   title: 'Air Duct Cleaning in Lorton, VA',
-  headline: 'Air duct and dryer vent cleaning for Lorton Station, Laurel Hill, and the I-95 corridor',
+  headline:
+    'Air duct and dryer vent cleaning for Lorton Station, Laurel Hill, and the I-95 corridor',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Lorton, VA. Flat rates from our Burke office for new HOAs, older homes, and Occoquan-humidity streets. Call (571) 460-0001.',
+    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Lorton, VA. Flat rates from our Burke office for new HOAs, older homes, and Occoquan-humidity streets. Call (800) 606-3334.',
   intro:
-    'Amazon Air Duct Cleaning serves Lorton from our Burke office — not a rented suite at Lorton Station. I-95 corridor houses, Laurel Hill HOAs, and older streets toward the Occoquan all take on traffic dust and river humidity. Call (571) 460-0001.',
+    'Amazon Air Duct Cleaning serves Lorton from our Burke office — scheduled from our serving office. I-95 corridor houses, Laurel Hill HOAs, and older streets toward the Occoquan all take on traffic dust and river humidity. Call (800) 606-3334.',
   heroImage: '/img/locations/lorton.webp',
   heroAlt: 'Air duct cleaning in Lorton, VA — Amazon Air Duct Cleaning',
   city: 'Lorton',
   state: 'VA',
   servedBy: 'burke',
+  sectionLayout: 'leanNoOffers',
   about: {
     heading: 'Why Lorton Ducts Collect I-95 Dust and Occoquan Moisture',
     paragraphs: [
       'Lorton sits on I-95 south of Springfield: Lorton Station and the VRE, Laurel Hill on the former prison grounds, Gunston-area streets, and older houses that predate the HOA wave. Traffic film from the interstate is constant. The Occoquan and nearby creeks add a humid air mass that Springfield’s Mixing Bowl does not quite match. New townhomes and 1970s split-levels share the same summer problem — cool trunks, wet air, dusty returns.',
       'Laurel Hill and Lorton Station HOAs have stacked laundry and long dryer chases. Older Lorton Road houses often have original trunks plus a later addition. Neither likes a July that sits over the river. A dryer that needs two cycles in a Station townhome is usually lint packed at a roof cap, not a dying appliance.',
-      'We serve Lorton from [Burke](/locations/burke). There is no Lorton storefront. Nearby [Springfield](/locations/springfield), [Mt Vernon](/locations/mount-vernon), and [Prince William](/locations/prince-william) use the same crew. Read [how Lorton I-95 and Occoquan air load ducts](/blog/lorton-i95-occoquan-air-ducts).',
+      'We serve Lorton from [Burke](/locations/burke). Nearby [Springfield](/locations/springfield), [Mt Vernon](/locations/mount-vernon), and [Prince William](/locations/prince-william) use the same crew. For background reading (not a booking page), see [lorton-i95-occoquan-air-ducts](/blog/lorton-i95-occoquan-air-ducts).',
     ],
     highlights: [
       'Lorton Station, Laurel Hill, Gunston, and I-95-corridor streets',
@@ -30,7 +32,7 @@ export const lorton: LocationContentSeed = {
   offersTitle: 'Special Offers — Lorton, VA',
   services: {
     heading: 'Our Services in Lorton, VA',
-    intro: 'Honest packages for Lorton HOAs and older houses. The quote is the price.',
+    intro: 'Packages we actually sell for Lorton homes — quoted before work starts.',
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -51,7 +53,7 @@ export const lorton: LocationContentSeed = {
     ],
   },
   why: {
-    heading: 'Why Lorton Homeowners Choose Us',
+    heading: 'Why Lorton Homeowners Call Us',
     items: [
       {
         title: 'Up I-95 From Burke, Not Across the River',
@@ -86,61 +88,58 @@ export const lorton: LocationContentSeed = {
       },
       {
         title: 'Occoquan & Gunston',
-        places: 'Gunston, Occoquan-edge streets, blocks toward [Mt Vernon](/locations/mount-vernon) and [Prince William](/locations/prince-william)',
+        places:
+          'Gunston, Occoquan-edge streets, blocks toward [Mt Vernon](/locations/mount-vernon) and [Prince William](/locations/prince-william)',
       },
     ],
   },
   process: {
-    heading: 'What to Expect When You Book',
-    intro: 'Simple scheduling from the Burke office that covers Lorton.',
+    heading: 'How a Lorton Visit Usually Runs',
+    intro: 'A clear path from estimate to finished job for Lorton homes.',
     steps: [
       {
-        title: 'Schedule Online or by Phone',
-        text: 'Use the form on this page or call (571) 460-0001. We confirm the appointment by the next business day.',
+        title: 'Request a Window',
+        text: 'Call (800) 606-3334 or use the form. We confirm by the next business day.',
       },
       {
-        title: 'Pre-Visit Confirmation',
-        text: 'The morning of the job we send an arrival window. Lorton Station and Laurel Hill gate codes help us stage the truck.',
+        title: 'Share Access Details',
+        text: 'Gates, condo loading, alley parking, and HOA rules for Lorton help us stage correctly.',
       },
       {
-        title: 'On-Site Inspection',
-        text: 'We inspect trunks, returns, and the dryer chase, then agree the scope before equipment comes in.',
+        title: 'Inspect Before Cleaning',
+        text: 'We walk ducts and the dryer run with you and agree scope before equipment comes in.',
       },
       {
-        title: 'Professional Cleaning',
-        text: 'Floors are protected. We clean with truck-mounted or portable HEPA equipment.',
+        title: 'Protect and Clean',
+        text: 'Floors are protected. HEPA negative pressure pulls debris into the vacuum, not living spaces.',
       },
       {
-        title: 'Final Walkthrough',
-        text: 'Before-and-after photos, questions answered, and we leave when you are satisfied.',
+        title: 'Review Results',
+        text: 'You keep before-and-after photos on duct jobs. We leave when you are satisfied.',
       },
     ],
   },
-  faqIntro: 'Questions from Lorton homeowners. Call the Burke office at (571) 460-0001.',
+  faqIntro: 'Lorton questions — call (800) 606-3334 (dispatch: Burke).',
   faq: [
     {
-      q: 'Do you have an office in Lorton?',
-      a: 'No. Lorton is served from our Burke office at 5641 Burke Centre Pkwy Ste 119, Burke, VA 22015. Call (571) 460-0001 or use the form on this page.',
+      q: 'Do you have a storefront in Lorton?',
+      a: 'No. Lorton jobs are scheduled from our Burke office at 5641 Burke Centre Pkwy Ste 119, Burke, VA 22015. Call (800) 606-3334.',
     },
     {
-      q: 'Do you clean both Lorton Station townhomes and older Lorton houses?',
-      a: 'Yes. Laurel Hill HOAs, Station stacked units, and older split-levels on Lorton Road are all on the same route from Burke.',
+      q: 'How long does air duct cleaning take in a typical Lorton home?',
+      a: 'Most single-system houses take about 2–3 hours. Townhomes with long dryer runs can run longer after inspection.',
     },
     {
-      q: 'Why do Lorton ducts get dusty and musty so fast?',
-      a: 'I-95 traffic film plus Occoquan humidity on cool trunks. [Lorton I-95, Occoquan, and air ducts](/blog/lorton-i95-occoquan-air-ducts) covers the pattern.',
+      q: 'Are Lorton residential prices flat-rate?',
+      a: 'Yes for air duct and dryer vent packages. The quote before we start is the price you pay.',
     },
     {
-      q: 'How often should Lorton homes clean air ducts?',
-      a: 'Every 3 to 5 years for most houses. Pets, new-construction dust, and damp basements often need the shorter interval. Dryer vents about once a year.',
+      q: 'Can ducts and dryer vents be done the same day in Lorton?',
+      a: 'Usually yes if you book the combined package or both services when you schedule.',
     },
     {
-      q: 'Do you offer flat rates in Lorton?',
-      a: 'Yes. Residential air duct and dryer vent cleaning is flat-rate. The number we quote before the job is the price you pay.',
-    },
-    {
-      q: 'Do you also serve Springfield, Mount Vernon, and Prince William?',
-      a: 'Yes. [Springfield](/locations/springfield), [Mt Vernon](/locations/mount-vernon), [Prince William](/locations/prince-william), and [Alexandria](/locations/alexandria) dispatch from the same Burke office as Lorton.',
+      q: 'Is sanitizing included for Lorton duct jobs?',
+      a: 'Sanitizing is available when inspection supports it or when you request it — we confirm before applying anything.',
     },
   ],
 }

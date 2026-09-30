@@ -15,10 +15,8 @@ import {
   getSiteSeo,
   jsonLd,
   keywordsFromSlug,
-  organizationNode,
   resolvePageMeta,
   webPageNode,
-  websiteNode,
 } from '@/utilities/seo'
 import PageClient from './page.client'
 
@@ -92,8 +90,6 @@ export default async function Post({ params: paramsPromise }: Args) {
   )
 
   const structuredData = jsonLd([
-    organizationNode(site),
-    websiteNode(site),
     webPageNode({
       path,
       name: post.title,

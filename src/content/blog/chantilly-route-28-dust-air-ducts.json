@@ -1,10 +1,32 @@
 {
   "slug": "chantilly-route-28-dust-air-ducts",
-  "title": "How Chantilly’s Route 28 Corridor Loads Your Air Ducts",
+  "title": "When Chantilly Homes Usually Need Duct Attention",
   "headline": "Sully Station HOAs, airport film, and why 1990s trunks still blow gypsum",
-  "description": "Chantilly, VA sits on Route 28 between Dulles and Centreville. Learn why HOA construction dust and airport-corridor traffic load ducts, and when to clean them from Burke.",
-  "heroImage": "/img/blog/Why-Air-Duct-Condition-Matters.webp",
+  "description": "Chantilly, VA sits on Route 28 between Dulles and Centreville. An educational look at why HOA construction dust and airport-corridor traffic load ducts.",
+  "heroImage": "/img/locations/chantilly.webp",
   "sections": [
+    {
+      "id": "hoa_dryer",
+      "heading": "HOA townhomes stack lint in a shared chase",
+      "paragraphs": [
+        "Chantilly townhomes send dryer exhaust up a chase that was sized for a smaller machine. Lint plus corridor humidity is a fire risk and a moisture dump into the laundry. A dryer that needs two cycles is often the vent, not the appliance.",
+        "If you still get dusty supplies years after closing, when you are ready to book, use the [Chantilly, VA location page](/locations/chantilly)."
+      ],
+      "listItems": [],
+      "image": "/img/blog/dirty-HVAC-unit.webp"
+    },
+    {
+      "id": "signs",
+      "heading": "Typical signs in a Chantilly house",
+      "paragraphs": [
+        "Watch for:"
+      ],
+      "listItems": [
+        "White-gray film on supplies in a 1990s–2010s HOA house.",
+        "Dust returning fast on streets that face Route 28.",
+        "Long dry times in a Sully Station or Westfields townhome."
+      ]
+    },
     {
       "id": "sully",
       "heading": "Chantilly housing looks new. The ducts often are not clean.",
@@ -15,31 +37,12 @@
       "listItems": []
     },
     {
-      "id": "hoa_dryer",
-      "heading": "HOA townhomes stack lint in a shared chase",
-      "paragraphs": [
-        "Chantilly townhomes send dryer exhaust up a chase that was sized for a smaller machine. Lint plus corridor humidity is a fire risk and a moisture dump into the laundry. A dryer that needs two cycles is often the vent, not the appliance.",
-        "If you still get dusty supplies years after closing, start with [air duct cleaning in Chantilly, VA](/locations/chantilly)."
-      ],
-      "listItems": [],
-      "image": "/img/blog/clogged-dryer-vent-lint.webp"
-    },
-    {
-      "id": "signs",
-      "heading": "Typical signs in a Chantilly house",
-      "paragraphs": ["Watch for:"],
-      "listItems": [
-        "White-gray film on supplies in a 1990s–2010s HOA house.",
-        "Dust returning fast on streets that face Route 28.",
-        "Long dry times in a Sully Station or Westfields townhome."
-      ]
-    },
-    {
       "id": "protect",
-      "heading": "Burke crew — not a rented Route 28 suite",
+      "heading": "Keeping trunks and dryer runs healthier between cleanings",
       "paragraphs": [
-        "Chantilly is served from our [Burke](/locations/burke) office. Nearby [Fair Oaks](/locations/fair-oaks) and [Loudoun](/locations/loudoun) use the same dispatch. There is no Chantilly storefront.",
-        "Book on the [Chantilly location page](/locations/chantilly). Add [dryer vent cleaning](/dryer-vent-cleaning) for stacked laundry."
+        "Chantilly jobs are scheduled from our metro offices. This article is educational — use the [location page](/locations/chantilly) when you are ready to book.",
+        "Chantilly is served from our [Burke](/locations/burke) office. Nearby [Fair Oaks](/locations/fair-oaks) and [Loudoun](/locations/loudoun) use the same dispatch.",
+        "Service details live on the [Chantilly location page](/locations/chantilly). Add [dryer vent cleaning](/dryer-vent-cleaning) for stacked laundry."
       ],
       "listItems": [
         "Ask for a duct cleaning if the house was never cleaned after the builder left.",
@@ -50,16 +53,24 @@
   ],
   "faq": [
     {
-      "q": "Why do newer Chantilly houses still have dusty ducts?",
-      "a": "Overlapping construction waves left gypsum in returns. Airport-corridor traffic keeps adding film. Filters do not remove what already sits in the trunks."
+      "q": "Do humid summers alone require duct cleaning?",
+      "a": "Humidity helps dust stick and can support growth on cold coils, but cleaning decisions still depend on inspection and history."
     },
     {
-      "q": "Do you have an office off Route 28?",
-      "a": "No. Chantilly is served from Burke. We will not list a mailbox near Westfields and call it a shop."
+      "q": "Who serves Chantilly?",
+      "a": "Amazon Air Duct Cleaning schedules Chantilly from Burke or Bethesda. Book on the location page or call (800) 606-3334."
     },
     {
-      "q": "Who cleans air ducts in Chantilly, VA?",
-      "a": "Amazon Air Duct Cleaning serves Chantilly from the Burke office. Book on the [Chantilly location page](/locations/chantilly) or call (571) 460-0001."
+      "q": "Can filters replace professional cleaning?",
+      "a": "Filters reduce new debris. They do not remove what already sits inside trunks and dryer runs."
+    },
+    {
+      "q": "What should I track for a few weeks first?",
+      "a": "Filter condition, dry times, musty smells at startup, and how fast wiped registers film over again."
+    },
+    {
+      "q": "Are energy-savings claims guaranteed?",
+      "a": "No. Cleaner airflow can help equipment run less hard, but results vary by home and system condition."
     }
   ]
 }

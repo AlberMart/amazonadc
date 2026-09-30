@@ -485,6 +485,7 @@ export async function RenderPageSections({
             tone={section.tone}
             appearance={section.appearance}
             anchorId={section.anchorId || 'service_area'}
+            compact={Boolean(section.compact)}
           />
         )
       }

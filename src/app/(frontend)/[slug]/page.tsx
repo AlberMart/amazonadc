@@ -22,12 +22,10 @@ import {
   faqNode,
   getSiteSeo,
   jsonLd,
-  organizationNode,
   pageTitle,
   resolvePageMeta,
   serviceOfferNode,
   webPageNode,
-  websiteNode,
 } from '@/utilities/seo'
 import PageClient from './page.client'
 import { LivePreviewListener } from '@/components/LivePreviewListener'
@@ -90,8 +88,6 @@ export default async function Page({ params: paramsPromise }: Args) {
       path,
     )
     const structuredData = jsonLd([
-      organizationNode(site),
-      websiteNode(site),
       webPageNode({
         path,
         name: pageTitle(serviceContent.title, site.titleSuffix),
@@ -101,25 +97,6 @@ export default async function Page({ params: paramsPromise }: Args) {
         breadcrumbId: `${pageUrl}#breadcrumb`,
         image: serviceContent.heroImage,
       }),
-      {
-        '@type': ['HVACBusiness', 'HomeAndConstructionBusiness'],
-        '@id': businessId,
-        name: site.siteName,
-        url: absoluteUrl('/'),
-        telephone: site.phone,
-        email: site.email,
-        logo: {
-          '@type': 'ImageObject',
-          url: absoluteUrl(site.logoPath),
-        },
-        image: absoluteUrl(serviceContent.heroImage),
-        priceRange: site.priceRange,
-        areaServed: [
-          { '@type': 'AdministrativeArea', name: 'Virginia' },
-          { '@type': 'AdministrativeArea', name: 'Maryland' },
-          { '@type': 'AdministrativeArea', name: 'Washington DC' },
-        ],
-      },
       crumbs,
       serviceOfferNode({
         title: serviceContent.title,
@@ -169,8 +146,6 @@ export default async function Page({ params: paramsPromise }: Args) {
       path,
     )
     const structuredData = jsonLd([
-      organizationNode(site),
-      websiteNode(site),
       webPageNode({
         path,
         name: legalContent.title,

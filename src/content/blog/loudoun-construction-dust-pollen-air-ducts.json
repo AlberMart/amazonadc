@@ -1,10 +1,32 @@
 {
   "slug": "loudoun-construction-dust-pollen-air-ducts",
-  "title": "How Loudoun Construction Dust and Pollen Load Your Air Ducts",
+  "title": "What Loads Dust Into HVAC Returns Near Loudoun",
   "headline": "New-build gypsum, Leesburg basements, and why Ashburn returns fill faster than they should",
-  "description": "Loudoun County mixes historic Leesburg with active HOA construction in Ashburn and Brambleton. Learn why ducts hold drywall dust and pollen, and when to clean them.",
-  "heroImage": "/img/blog/Why-Air-Duct-Condition-Matters.webp",
+  "description": "Loudoun County mixes historic Leesburg with active HOA construction in Ashburn and Brambleton. An educational look at why ducts hold drywall dust and pollen, and when to clean them.",
+  "heroImage": "/img/locations/loudoun.webp",
   "sections": [
+    {
+      "id": "new_build",
+      "heading": "New construction is not a clean HVAC system",
+      "paragraphs": [
+        "Builders run the air handler to dry mud and keep crews comfortable. That air is full of fines. They settle in the trunks. You move in, change a filter, and still get dusty registers. The dust was already downstream of the filter.",
+        "If you moved into a Loudoun house in the last few years and the air still feels like a job site, when you are ready to book, use the [Loudoun County location page](/locations/loudoun)."
+      ],
+      "listItems": [],
+      "image": "/img/blog/clogged-dryer-vent-lint.webp"
+    },
+    {
+      "id": "signs",
+      "heading": "Typical signs in Leesburg and Ashburn",
+      "paragraphs": [
+        "Watch for:"
+      ],
+      "listItems": [
+        "White or gray film on supplies in a house less than ten years old.",
+        "Musty Leesburg basement air when the AC starts.",
+        "Long dry times in a three-story townhome dryer closet."
+      ]
+    },
     {
       "id": "two_loudouns",
       "heading": "Loudoun is two indoor-air problems sharing one county",
@@ -15,31 +37,12 @@
       "listItems": []
     },
     {
-      "id": "new_build",
-      "heading": "New construction is not a clean HVAC system",
-      "paragraphs": [
-        "Builders run the air handler to dry mud and keep crews comfortable. That air is full of fines. They settle in the trunks. You move in, change a filter, and still get dusty registers. The dust was already downstream of the filter.",
-        "If you moved into a Loudoun house in the last few years and the air still feels like a job site, start with [air duct cleaning in Loudoun County](/locations/loudoun)."
-      ],
-      "listItems": [],
-      "image": "/img/blog/dirty-HVAC-unit.webp"
-    },
-    {
-      "id": "signs",
-      "heading": "Typical signs in Leesburg and Ashburn",
-      "paragraphs": ["Watch for:"],
-      "listItems": [
-        "White or gray film on supplies in a house less than ten years old.",
-        "Musty Leesburg basement air when the AC starts.",
-        "Long dry times in a three-story townhome dryer closet."
-      ]
-    },
-    {
       "id": "protect",
-      "heading": "Burke dispatch — no fake Leesburg suite",
+      "heading": "Keeping trunks and dryer runs healthier between cleanings",
       "paragraphs": [
+        "Loudoun jobs are scheduled from our metro offices. This article is educational — use the [location page](/locations/loudoun) when you are ready to book.",
         "Loudoun is served from our [Burke](/locations/burke) office. The drive is honest. [McLean](/locations/mclean) and [Fairfax](/locations/fairfax) are closer-in pages on the same crew.",
-        "Book on the [Loudoun location page](/locations/loudoun). Add [dryer vent cleaning](/dryer-vent-cleaning) for stacked townhomes."
+        "Service details live on the [Loudoun location page](/locations/loudoun). Add [dryer vent cleaning](/dryer-vent-cleaning) for stacked townhomes."
       ],
       "listItems": [
         "Ask for a duct cleaning after you close on a new build, not five years later.",
@@ -50,16 +53,20 @@
   ],
   "faq": [
     {
-      "q": "Why are new Ashburn houses dusty inside the ducts?",
-      "a": "Construction fines are pulled into returns while nearby lots are still being finished. Filters do not catch all of it. The trunks store the rest until they are cleaned."
+      "q": "Is this a sales page for Loudoun duct cleaning?",
+      "a": "No. This post explains mechanisms and signs. Service details live on the Loudoun location page."
     },
     {
-      "q": "Do you have an office in Leesburg?",
-      "a": "No. Loudoun is served from Burke. We will not list a mailbox in Leesburg and call it a shop."
+      "q": "What usually causes gray film on supply registers?",
+      "a": "Fine particles that bypass or overload filters settle in cool trunks and recirculate when the blower runs."
     },
     {
-      "q": "Who cleans air ducts in Loudoun County, VA?",
-      "a": "Amazon Air Duct Cleaning serves Loudoun from the Burke office. Book on the [Loudoun location page](/locations/loudoun) or call (571) 460-0001."
+      "q": "When is dryer vent cleaning the better first step?",
+      "a": "When laundry closets stay hot, dry times double, or you smell burnt lint — clear the vent to the exterior cap."
+    },
+    {
+      "q": "How is this different from a location page?",
+      "a": "Location pages cover packages, booking, and office dispatch. Articles cover climate and housing patterns."
     }
   ]
 }

@@ -7,12 +7,13 @@ export const alexandria: LocationContentSeed = {
   description:
     'Professional air duct cleaning, dryer vent maintenance, and mold remediation services in Alexandria, VA. Flat rates, certified techs, 100% satisfaction guarantee.',
   intro:
-    'Amazon Air Duct Cleaning is the local crew for HVAC cleaning, dryer vent maintenance, and indoor air quality in Alexandria, Virginia. Whether you live in a historic home in Old Town, a condo near the waterfront, or a house in Del Ray, our technicians keep the air fresh and the system running. Call (571) 460-0001.',
+    'Amazon Air Duct Cleaning is the local crew for HVAC cleaning, dryer vent maintenance, and indoor air quality in Alexandria, Virginia. Whether you live in a historic home in Old Town, a condo near the waterfront, or a house in Del Ray, our technicians keep the air fresh and the system running. Call (800) 606-3334.',
   heroImage: '/img/locations/alexandria.webp',
   heroAlt: 'Air duct cleaning in Alexandria, VA — Amazon Air Duct Cleaning',
   city: 'Alexandria',
   state: 'VA',
   servedBy: 'burke',
+  sectionLayout: 'servicesFirst',
   about: {
     heading: 'Why Alexandria Homes Require Special Indoor Air Care',
     paragraphs: [
@@ -20,7 +21,7 @@ export const alexandria: LocationContentSeed = {
       'Historic and older homes: Alexandria has one of the nation’s oldest historic districts. Brick buildings and older duct runs collect decades of dust, pollen, and debris. Without regular cleaning, that material keeps recirculating through the house.',
       'Potomac River humidity: Moisture near the river settles in uncleaned ductwork. That is the environment mold, mildew, and musty odors need. Seasonal pollen and winter dust then ride the same system all year.',
       'We now offer two services built for that climate: whole-home mold remediation and HVAC ventilation mold treatment. Mold does not only stain surfaces. Airborne spores trigger respiratory problems and allergies, especially in riverfront and older Old Town houses.',
-      'Alexandria is served from our Burke office — we do not list a storefront we do not have. Read [how Potomac humidity affects Alexandria homes](/blog/how-potomac-humidity-affects-alexandria-air-quality), or book [air duct cleaning](/air-duct-cleaning) and [dryer vent cleaning](/dryer-vent-cleaning). Nearby [Arlington](/locations/arlington), [McLean](/locations/mclean), and [Washington, DC](/locations/washington-dc) are covered by the same crew.',
+      'Alexandria is served from our Burke office — Read [how Potomac humidity affects Alexandria homes](/blog/how-potomac-humidity-affects-alexandria-air-quality), or book [air duct cleaning](/air-duct-cleaning) and [dryer vent cleaning](/dryer-vent-cleaning). Nearby [Arlington](/locations/arlington), [McLean](/locations/mclean), and [Washington, DC](/locations/washington-dc) are covered by the same crew.',
     ],
     highlights: [
       'Historic Old Town houses and newer Potomac Yard condos',
@@ -33,7 +34,7 @@ export const alexandria: LocationContentSeed = {
   services: {
     heading: 'Our Services in Alexandria, VA',
     intro:
-      'Transparent, flat-rate pricing with no hidden fees, so you know the cost before we start.',
+      'Choose duct cleaning, dryer vents, or mold treatment for ventilation when inspection calls for it.',
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -58,7 +59,7 @@ export const alexandria: LocationContentSeed = {
     ],
   },
   why: {
-    heading: 'Why Choose Amazon Air Duct Cleaning?',
+    heading: 'Alexandria Service — Straight Answers',
     items: [
       {
         title: 'Upfront Flat-Rate Pricing',
@@ -89,58 +90,56 @@ export const alexandria: LocationContentSeed = {
     ],
   },
   process: {
-    heading: 'Schedule Your Service Today',
-    intro:
-      'Do not let hidden dust and moisture raise energy bills or sit in the ducts. Book Alexandria from the Burke office that covers the city.',
+    heading: 'Alexandria Scheduling Checklist',
+    intro: 'Simple steps our Burke crew follows for Alexandria appointments.',
     steps: [
       {
-        title: 'Call or Request an Estimate',
-        text: 'Call (571) 460-0001 or use the form on this page. We confirm the appointment by the next business day.',
+        title: 'Talk Through the Home',
+        text: 'Tell us about pets, renovations, and laundry layout common in Alexandria.',
       },
       {
-        title: 'Arrival Window',
-        text: 'The morning of the job we send a window so parking and historic-house access are already planned.',
+        title: 'Confirm Arrival ETA',
+        text: 'Morning-of text with a realistic window for your street.',
       },
       {
-        title: 'Inspection Before We Start',
-        text: 'We look at the ducts and any musty registers, then agree the scope. No surprise add-ons after we are inside.',
+        title: 'Agree the Package',
+        text: 'Flat-rate duct and dryer packages — the quoted number is what you pay.',
       },
       {
-        title: 'Cleaning and Mold Treatment',
-        text: 'Floors are protected. Ducts and dryer vents are cleaned. Ventilation mold treatment is done only when the inspection shows it is needed.',
+        title: 'Run the Cleaning',
+        text: 'Truck-mounted or portable HEPA sized for Alexandria houses and townhomes.',
       },
       {
-        title: 'Walkthrough',
-        text: 'Before-and-after photos, questions answered, and we leave when you are satisfied.',
+        title: 'Final Questions',
+        text: 'Filter tips and dryer-vent interval before we pack up.',
       },
     ],
   },
-  faqIntro:
-    'Questions from Alexandria homeowners. Call the Burke office that covers the city at (571) 460-0001.',
+  faqIntro: 'Alexandria questions — call (800) 606-3334 (dispatch: Burke).',
   faq: [
     {
-      q: 'Why is mold such a common problem in Alexandria HVAC systems?',
-      a: 'Alexandria’s summers are hot and humid, and many homes sit near the Potomac River. Humid air meets cool air inside the ducts and condensation forms. Over time that moisture mixes with dust and gives mold and mildew a place to grow.',
+      q: 'Do you have a storefront in Alexandria?',
+      a: 'No. Alexandria jobs are scheduled from our Burke office at 5641 Burke Centre Pkwy Ste 119, Burke, VA 22015. Call (800) 606-3334.',
     },
     {
-      q: 'How do I know if I need mold remediation in my vents?',
-      a: 'The usual signs are a musty or earthy odor when the AC or heat turns on, dark spots around supply registers, or allergy symptoms that show up indoors. We inspect the ductwork and treat what we find.',
+      q: 'Are Alexandria residential prices flat-rate?',
+      a: 'Yes for air duct and dryer vent packages. The quote before we start is the price you pay.',
     },
     {
-      q: 'How often should I clean the air ducts in an older or historic Alexandria home?',
-      a: 'For historic properties, including Old Town, we recommend air duct cleaning every 3 to 5 years. Older houses have more gaps, so extra dust, pollen, and outdoor air settle in the HVAC system. Regular cleaning protects indoor air and the equipment.',
+      q: 'Can ducts and dryer vents be done the same day in Alexandria?',
+      a: 'Usually yes if you book the combined package or both services when you schedule.',
     },
     {
-      q: 'Are your mold treatments safe for families and pets?',
-      a: 'Yes. We use EPA-registered antimicrobial sanitizers that are non-toxic and safe for children, pets, and people with respiratory sensitivities once applied as directed.',
+      q: 'Is sanitizing included for Alexandria duct jobs?',
+      a: 'Sanitizing is available when inspection supports it or when you request it — we confirm before applying anything.',
     },
     {
-      q: 'Do you offer flat rates for Alexandria residents?',
-      a: 'Yes. Residential air duct and dryer vent cleaning is flat-rate, with no hidden fees. The price quoted before the job is the price you pay. Call (571) 460-0001.',
+      q: 'Do you clean dryer vents in Alexandria townhomes and condos?',
+      a: 'Yes — full length to the exterior cap. Stacked laundry is common on this route. See dryer vent cleaning for details.',
     },
     {
-      q: 'Do you have an office in Alexandria?',
-      a: 'No. Alexandria is served from our Burke office at 5641 Burke Centre Pkwy Ste 119, and the Bethesda office covers Maryland. Call (571) 460-0001, or read [how Potomac humidity affects Alexandria homes](/blog/how-potomac-humidity-affects-alexandria-air-quality).',
+      q: 'Do you bring portable equipment for tight Alexandria streets?',
+      a: 'Yes. When a truck cannot stage, we use portable HEPA systems sized for the home.',
     },
   ],
 }

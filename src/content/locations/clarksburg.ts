@@ -3,22 +3,24 @@ import type { LocationContentSeed } from '@/utilities/locations'
 export const clarksburg: LocationContentSeed = {
   slug: 'clarksburg',
   title: 'Air Duct Cleaning in Clarksburg, MD',
-  headline: 'Air duct and dryer vent cleaning for new-construction HOAs and I-270 north drywall dust',
+  headline:
+    'Air duct and dryer vent cleaning for new-construction HOAs and I-270 north drywall dust',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Clarksburg, MD. Flat rates from our Bethesda office for new-construction dust, HOA townhomes, and I-270 north. Call (301) 809-4544.',
+    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Clarksburg, MD. Flat rates from our Bethesda office for new-construction dust, HOA townhomes, and I-270 north. Call (800) 606-3334.',
   intro:
-    'Amazon Air Duct Cleaning serves Clarksburg from our Bethesda office — farther up I-270 than Germantown, not a rented Town Center suite. New pads, HOA townhomes, and first-owner houses all take on drywall dust. Call (301) 809-4544.',
+    'Amazon Air Duct Cleaning serves Clarksburg from our Bethesda office — farther up I-270 than Germantown, not a rented Town Center suite. New pads, HOA townhomes, and first-owner houses all take on drywall dust. Call (800) 606-3334.',
   heroImage: '/img/locations/clarksburg.webp',
   heroAlt: 'Air duct cleaning in Clarksburg, MD — Amazon Air Duct Cleaning',
   city: 'Clarksburg',
   state: 'MD',
   servedBy: 'bethesda',
+  sectionLayout: 'offersLate',
   about: {
     heading: 'Why Clarksburg New Construction Loads Drywall Dust into HVAC',
     paragraphs: [
       'Clarksburg is Montgomery County’s I-270 north boom: Clarksburg Village, Cabin Branch, Town Center, Skylark, then lanes toward Damascus. Damascus is a community we already drive, not its own page. [Frederick](/locations/frederick) is the next city farther up the corridor. A lot of the housing is first- or second-owner from the last two decades. Builders tape registers. Dust still gets in. Fine gypsum rides every return the first summers you live there.',
       'HOA townhomes add long dryer vents and tight closets on top of that construction load. I-270 traffic grit does not wait for the last pad to finish. Filters catch some of it. Supplies still blow a gray film onto new paint. Humid seasons then glue that powder to cool trunks.',
-      'We serve Clarksburg from [Bethesda](/locations/bethesda). There is no Clarksburg storefront. Nearby [Germantown](/locations/germantown) is the same dispatch. Read [how Clarksburg new-construction dust loads air ducts](/blog/clarksburg-new-construction-dust-air-ducts).',
+      'We serve Clarksburg from [Bethesda](/locations/bethesda). Nearby [Germantown](/locations/germantown) is the same dispatch. For background reading (not a booking page), see [clarksburg-new-construction-dust-air-ducts](/blog/clarksburg-new-construction-dust-air-ducts).',
     ],
     highlights: [
       'Clarksburg Village, Cabin Branch, Town Center, Damascus lanes',
@@ -30,7 +32,7 @@ export const clarksburg: LocationContentSeed = {
   offersTitle: 'Special Offers — Clarksburg, MD',
   services: {
     heading: 'Our Services in Clarksburg, MD',
-    intro: 'The same honest packages we use in Germantown and Bethesda. The quote is the price.',
+    intro: 'Flat-rate options for Clarksburg houses, townhomes, and light commercial.',
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -51,15 +53,15 @@ export const clarksburg: LocationContentSeed = {
     ],
   },
   why: {
-    heading: 'Why Clarksburg Homeowners Book Us',
+    heading: 'What Sets This Clarksburg Crew Apart',
     items: [
       {
         title: 'I-270 North from a Real Office',
-        text: 'We drive past Germantown from Bethesda. We will not list a Clarksburg Village mailbox we do not occupy.',
+        text: 'Clarksburg jobs are scheduled from Bethesda.',
       },
       {
         title: 'Flat-Rate Pricing',
-        text: 'No per-vent games on a first-owner townhome. The quote is the price.',
+        text: 'No per-vent games on a first-owner townhome. Pricing is quoted before work starts.',
       },
       {
         title: 'New-Construction Dust We Already Clean',
@@ -86,61 +88,58 @@ export const clarksburg: LocationContentSeed = {
       },
       {
         title: 'Skylark, Damascus & north',
-        places: 'Skylark, streets toward Damascus and Frederick County — ask if your HOA is not listed',
+        places:
+          'Skylark, streets toward Damascus and Frederick County — ask if your HOA is not listed',
       },
     ],
   },
   process: {
-    heading: 'What to Expect When You Book',
-    intro: 'Simple scheduling from the Bethesda office that covers Clarksburg.',
+    heading: 'Booking Clarksburg Service from Bethesda',
+    intro: 'What to expect when we schedule Clarksburg from 7815 Old Georgetown Rd Ste 201.',
     steps: [
       {
-        title: 'Schedule Online or by Phone',
-        text: 'Use the form on this page or call (301) 809-4544. We confirm the appointment by the next business day.',
+        title: 'Online or Phone Intake',
+        text: 'Book at (800) 606-3334. Mention Clarksburg so we route from Bethesda.',
       },
       {
-        title: 'Pre-Visit Confirmation',
-        text: 'The morning of the job we send an arrival window so new HOA gates and visitor-parking rules are already sorted.',
+        title: 'Pre-Job Notes',
+        text: 'We ask about basement returns, stacked laundry, and any musty registers.',
       },
       {
-        title: 'On-Site Inspection',
-        text: 'We inspect trunks for construction dust, returns, and the dryer run, then agree the scope before equipment comes in.',
+        title: 'On-Site Scope Lock',
+        text: 'No surprise add-ons after we are inside.',
       },
       {
-        title: 'Professional Cleaning',
-        text: 'New floors are protected. We clean with truck-mounted or portable HEPA equipment.',
+        title: 'Source-Removal Cleaning',
+        text: 'NADCA-style agitation under negative pressure with HEPA capture.',
       },
       {
-        title: 'Final Walkthrough',
-        text: 'Before-and-after photos, questions answered, and we leave when you are satisfied.',
+        title: 'Photo Proof',
+        text: 'Duct jobs include before-and-after images you can keep.',
       },
     ],
   },
-  faqIntro: 'Questions from Clarksburg homeowners. Call the Bethesda office at (301) 809-4544.',
+  faqIntro: 'Clarksburg questions — call (800) 606-3334 (dispatch: Bethesda).',
   faq: [
     {
-      q: 'Do you have an office in Clarksburg?',
-      a: 'No. Clarksburg is served from our Bethesda office at 7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814. Call (301) 809-4544 or use the form on this page.',
+      q: 'Which office covers Clarksburg?',
+      a: 'Bethesda — 7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814. Booking line (800) 606-3334.',
     },
     {
-      q: 'Should a new Clarksburg house get ducts cleaned after construction?',
-      a: 'Usually yes if you still see gypsum film on supplies the first year or two. Builders tape registers; dust still gets in. [Clarksburg new-construction dust and air ducts](/blog/clarksburg-new-construction-dust-air-ducts) covers what to look for.',
+      q: 'Can ducts and dryer vents be done the same day in Clarksburg?',
+      a: 'Usually yes if you book the combined package or both services when you schedule.',
     },
     {
-      q: 'How often should Clarksburg homes clean air ducts?',
-      a: 'Every 3 to 5 years after the first post-construction clean. Pets, more building next door, and damp basements often need the shorter interval. Dryer vents should be cleared about once a year.',
+      q: 'Is sanitizing included for Clarksburg duct jobs?',
+      a: 'Sanitizing is available when inspection supports it or when you request it — we confirm before applying anything.',
     },
     {
-      q: 'Do you also serve Germantown, Damascus, and Frederick from Bethesda?',
-      a: 'Yes. [Germantown](/locations/germantown) and [Frederick](/locations/frederick) have city pages. Damascus is a community on this Clarksburg dispatch.',
+      q: 'Do you clean dryer vents in Clarksburg townhomes and condos?',
+      a: 'Yes — full length to the exterior cap. Stacked laundry is common on this route. See dryer vent cleaning for details.',
     },
     {
-      q: 'Do you offer flat rates in Clarksburg?',
-      a: 'Yes. Residential air duct and dryer vent cleaning is flat-rate. The number we quote before the job is the price you pay.',
-    },
-    {
-      q: 'Are mold treatments safe for Clarksburg families and pets?',
-      a: 'Yes. We use EPA-registered antimicrobial treatments that are safe for children, pets, and people with respiratory sensitivities once applied as directed.',
+      q: 'Do you bring portable equipment for tight Clarksburg streets?',
+      a: 'Yes. When a truck cannot stage, we use portable HEPA systems sized for the home.',
     },
   ],
 }

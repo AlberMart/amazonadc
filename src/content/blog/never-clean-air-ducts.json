@@ -6,16 +6,6 @@
   "heroImage": "/img/blog/never-clean-air-ducts.webp",
   "sections": [
     {
-      "id": "intro",
-      "heading": "What really builds up inside neglected air ducts?",
-      "paragraphs": [
-        "Air ducts function as the respiratory system of your home — circulating heated or cooled air through every room. Over months and years of continuous use, these pathways collect layers of dust, pollen, pet dander, mold spores, insect debris, and other contaminants.",
-        "Unlike a dusty shelf that you can see and wipe clean, contamination inside ductwork is hidden from view but continuously redistributed throughout your living space every time the HVAC system runs. The longer ducts go without professional cleaning, the more significant the buildup becomes — and the more noticeable the effects on air quality, energy costs, and system performance."
-      ],
-      "listItems": [],
-      "image": "/img/blog/neglected-air-ducts-buildup.webp"
-    },
-    {
       "id": "dust_buildup",
       "heading": "1. Dust and Debris Accumulate and Recirculate Constantly",
       "paragraphs": [
@@ -29,7 +19,7 @@
         "It deposits on furniture, floors, and surfaces throughout the home.",
         "Some particles settle back into the ducts — and the cycle repeats."
       ],
-      "image": "/img/blog/Why-Air-Duct-Condition-Matters.webp"
+      "image": "/img/blog/dirty-HVAC-unit.webp"
     },
     {
       "id": "health_risks",
@@ -161,28 +151,38 @@
         "If your ducts have never been cleaned, or if it has been several years since the last service, scheduling a professional inspection is the best first step toward improving your home's air quality, protecting your system, and ensuring a healthier environment for your family."
       ],
       "listItems": []
+    },
+    {
+      "id": "intro",
+      "heading": "What really builds up inside neglected air ducts?",
+      "paragraphs": [
+        "Air ducts function as the respiratory system of your home — circulating heated or cooled air through every room. Over months and years of continuous use, these pathways collect layers of dust, pollen, pet dander, mold spores, insect debris, and other contaminants.",
+        "Unlike a dusty shelf that you can see and wipe clean, contamination inside ductwork is hidden from view but continuously redistributed throughout your living space every time the HVAC system runs. The longer ducts go without professional cleaning, the more significant the buildup becomes — and the more noticeable the effects on air quality, energy costs, and system performance."
+      ],
+      "listItems": [],
+      "image": "/img/blog/The-Hidden-Cost-of-Dirty-Air-Ducts.webp"
     }
   ],
   "faq": [
     {
-      "q": "What happens if you never clean your air ducts?",
-      "a": "Over time, neglected air ducts accumulate dust, mold, allergens, and debris that circulate through your home, reducing indoor air quality, lowering HVAC efficiency, and potentially causing health issues."
+      "q": "Do humid summers alone require duct cleaning?",
+      "a": "Humidity helps dust stick and can support growth on cold coils, but cleaning decisions still depend on inspection and history."
     },
     {
-      "q": "Can dirty air ducts make you sick?",
-      "a": "Yes. Mold spores, bacteria, dust mites, and allergens trapped in dirty ducts can circulate through your living space and trigger allergies, asthma, and other respiratory symptoms."
+      "q": "Who serves your area?",
+      "a": "Amazon Air Duct Cleaning schedules your area from Burke or Bethesda. Book on the location page or call (800) 606-3334."
     },
     {
-      "q": "How long can you go without cleaning air ducts?",
-      "a": "Most experts recommend cleaning every 3–5 years. Going significantly longer without cleaning can lead to reduced airflow, higher energy bills, and accelerated HVAC system wear."
+      "q": "Can filters replace professional cleaning?",
+      "a": "Filters reduce new debris. They do not remove what already sits inside trunks and dryer runs."
     },
     {
-      "q": "Do dirty air ducts increase energy bills?",
-      "a": "Yes. Dust and debris buildup restricts airflow and forces your HVAC system to work harder, consuming more energy and raising your monthly utility costs."
+      "q": "What should I track for a few weeks first?",
+      "a": "Filter condition, dry times, musty smells at startup, and how fast wiped registers film over again."
     },
     {
-      "q": "Can mold grow in air ducts if they are never cleaned?",
-      "a": "Yes. Moisture combined with dust and debris creates ideal conditions for mold growth inside ductwork. Once mold establishes itself, spores can spread throughout the entire home via the HVAC system."
+      "q": "Are energy-savings claims guaranteed?",
+      "a": "No. Cleaner airflow can help equipment run less hard, but results vary by home and system condition."
     }
   ]
 }

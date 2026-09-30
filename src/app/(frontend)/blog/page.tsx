@@ -10,9 +10,7 @@ import {
   breadcrumb,
   getSiteSeo,
   jsonLd,
-  organizationNode,
   resolvePageMeta,
-  websiteNode,
 } from '@/utilities/seo'
 import PageClient from './page.client'
 
@@ -24,8 +22,6 @@ export default async function Page() {
   const pageUrl = absoluteUrl(path)
 
   const structuredData = jsonLd([
-    organizationNode(site),
-    websiteNode(site),
     breadcrumb(
       [
         { name: 'Home', path: '/' },

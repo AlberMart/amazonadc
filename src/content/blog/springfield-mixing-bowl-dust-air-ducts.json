@@ -1,10 +1,32 @@
 {
   "slug": "springfield-mixing-bowl-dust-air-ducts",
-  "title": "How Springfield’s Mixing Bowl Dust Loads Your Air Ducts",
+  "title": "Springfield Indoor Air: Corridor Dust vs Household Debris",
   "headline": "I-95 particles, split-level basements, and why Franconia registers film over",
-  "description": "Springfield, VA sits on the I-95 / I-395 / Beltway Mixing Bowl. Learn why traffic dust and humid basements load ducts, and when to book a cleaning from Burke.",
-  "heroImage": "/img/blog/dirty-air-ducts-energy-bills.webp",
+  "description": "Springfield, VA sits on the I-95 / I-395 / Beltway Mixing Bowl. An educational look at why traffic dust and humid basements load ducts.",
+  "heroImage": "/img/locations/springfield.webp",
   "sections": [
+    {
+      "id": "townhome",
+      "heading": "Townhomes add a dryer-vent failure",
+      "paragraphs": [
+        "Franconia-Springfield Metro and Kingstowne-edge townhomes pack long dryer runs. Lint plus humidity is a fire risk and a moisture dump into the laundry. A dryer that needs two cycles is often the vent, not the machine.",
+        "If registers look dirty a few days after you wipe them, when you are ready to book, use the [Springfield, VA location page](/locations/springfield)."
+      ],
+      "listItems": [],
+      "image": "/img/blog/Allergies.webp"
+    },
+    {
+      "id": "signs",
+      "heading": "Typical signs in a Springfield house",
+      "paragraphs": [
+        "Watch for:"
+      ],
+      "listItems": [
+        "Gray film on supplies facing the highway side of the house.",
+        "Musty basement air when the AC starts after rain.",
+        "A hot laundry closet and long dry times."
+      ]
+    },
     {
       "id": "bowl",
       "heading": "Springfield’s location is the indoor-air problem",
@@ -15,31 +37,12 @@
       "listItems": []
     },
     {
-      "id": "townhome",
-      "heading": "Townhomes add a dryer-vent failure",
-      "paragraphs": [
-        "Franconia-Springfield Metro and Kingstowne-edge townhomes pack long dryer runs. Lint plus humidity is a fire risk and a moisture dump into the laundry. A dryer that needs two cycles is often the vent, not the machine.",
-        "If registers look dirty a few days after you wipe them, start with [air duct cleaning in Springfield, VA](/locations/springfield)."
-      ],
-      "listItems": [],
-      "image": "/img/blog/dirty-HVAC-unit.webp"
-    },
-    {
-      "id": "signs",
-      "heading": "Typical signs in a Springfield house",
-      "paragraphs": ["Watch for:"],
-      "listItems": [
-        "Gray film on supplies facing the highway side of the house.",
-        "Musty basement air when the AC starts after rain.",
-        "A hot laundry closet and long dry times."
-      ]
-    },
-    {
       "id": "protect",
-      "heading": "Burke is the next town — not a Springfield mailbox",
+      "heading": "Keeping trunks and dryer runs healthier between cleanings",
       "paragraphs": [
+        "Springfield jobs are scheduled from our metro offices. This article is educational — use the [location page](/locations/springfield) when you are ready to book.",
         "Springfield is served from our [Burke](/locations/burke) office minutes away. [Fairfax](/locations/fairfax) and [Alexandria](/locations/alexandria) are the same dispatch.",
-        "Book on the [Springfield location page](/locations/springfield). Pair ducts with [dryer vent cleaning](/dryer-vent-cleaning) if the laundry stays humid."
+        "Service details live on the [Springfield location page](/locations/springfield). Pair ducts with [dryer vent cleaning](/dryer-vent-cleaning) if the laundry stays humid."
       ],
       "listItems": [
         "Keep basement humidity under 50% in summer.",
@@ -50,16 +53,24 @@
   ],
   "faq": [
     {
-      "q": "Does highway dust really reach indoor ducts in Springfield?",
-      "a": "Yes. Fine traffic particles settle near the house. Returns pull them in with pollen. Cleaning the ducts removes what filters never caught."
+      "q": "Do humid summers alone require duct cleaning?",
+      "a": "Humidity helps dust stick and can support growth on cold coils, but cleaning decisions still depend on inspection and history."
     },
     {
-      "q": "Is Springfield served from Burke or from farther south?",
-      "a": "From Burke. Burke Centre is the next community over. There is no Springfield storefront."
+      "q": "Who serves Springfield?",
+      "a": "Amazon Air Duct Cleaning schedules Springfield from Burke or Bethesda. Book on the location page or call (800) 606-3334."
     },
     {
-      "q": "Who cleans air ducts in Springfield, VA?",
-      "a": "Amazon Air Duct Cleaning serves Springfield from the Burke office. Book on the [Springfield location page](/locations/springfield) or call (571) 460-0001."
+      "q": "Can filters replace professional cleaning?",
+      "a": "Filters reduce new debris. They do not remove what already sits inside trunks and dryer runs."
+    },
+    {
+      "q": "What should I track for a few weeks first?",
+      "a": "Filter condition, dry times, musty smells at startup, and how fast wiped registers film over again."
+    },
+    {
+      "q": "Are energy-savings claims guaranteed?",
+      "a": "No. Cleaner airflow can help equipment run less hard, but results vary by home and system condition."
     }
   ]
 }

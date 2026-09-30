@@ -9,6 +9,7 @@ import { ScrollOnNavigate } from '@/components/ScrollOnNavigate'
 import { SiteIntegrations } from '@/components/SiteIntegrations'
 import { Footer } from '@/Footer/Component'
 import { Header } from '@/Header/Component'
+import { SiteJsonLd } from '@/components/SiteJsonLd'
 import { Providers } from '@/providers'
 import { InitTheme } from '@/providers/Theme/InitTheme'
 import { mergeOpenGraph } from '@/utilities/mergeOpenGraph'
@@ -17,7 +18,8 @@ import { draftMode } from 'next/headers'
 import { resolveTheme } from '@/utilities/theme'
 
 import './globals.css'
-import { getServerSideURL } from '@/utilities/getURL'
+import { getServerSideURL, isNonProductionHost } from '@/utilities/getURL'
+import { SEO_DOCUMENT_TITLE, SEO_META_DESCRIPTION } from '@/utilities/seoCopy'
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const { isEnabled } = await draftMode()
@@ -37,6 +39,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <link href="/favicon.ico" rel="icon" sizes="48x48" />
         <link href="/favicon-32.png" rel="icon" type="image/png" sizes="32x32" />
         <link href="/apple-touch-icon.png" rel="apple-touch-icon" />
+        <SiteJsonLd />
       </head>
       <body className="font-[family-name:var(--font-sans)] antialiased">
         <a href="#main" className="skip-link">
@@ -64,19 +67,20 @@ export default async function RootLayout({ children }: { children: React.ReactNo
 export const metadata: Metadata = {
   metadataBase: new URL(getServerSideURL()),
   title: {
-    default: 'Amazon Air Duct Cleaning',
+    default: SEO_DOCUMENT_TITLE,
     template: '%s | Amazon Air Duct Cleaning',
   },
-  description:
-    'Professional air duct and dryer vent cleaning in Virginia, Maryland, and Washington DC. Flat-rate pricing and 100% satisfaction guarantee.',
+  description: SEO_META_DESCRIPTION,
   openGraph: mergeOpenGraph(),
   twitter: {
     card: 'summary_large_image',
   },
-  robots: {
-    index: true,
-    follow: true,
-  },
+  robots: isNonProductionHost()
+    ? { index: false, follow: false }
+    : {
+        index: true,
+        follow: true,
+      },
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: '48x48' },

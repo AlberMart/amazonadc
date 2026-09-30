@@ -1,10 +1,32 @@
 {
   "slug": "olney-rambler-pollen-air-ducts",
-  "title": "How Olney Ramblers Load Pollen Into Finished-Basement Ducts",
+  "title": "Humidity, Pollen, and Duct Film: A Olney Homeowner Guide",
   "headline": "Georgia Avenue ramblers, Norbeck split-levels, and why rec rooms hide sweating trunks",
-  "description": "Olney, MD ramblers sit farther up Montgomery County under a thick canopy. Learn why finished basements store pollen in cool trunks, and when to clean them from Bethesda.",
-  "heroImage": "/img/blog/dirty-HVAC-unit.webp",
+  "description": "Olney, MD ramblers sit farther up Montgomery County under a thick canopy. An educational look at why finished basements store pollen in cool trunks.",
+  "heroImage": "/img/locations/olney.webp",
   "sections": [
+    {
+      "id": "rec_room",
+      "heading": "A finished basement is not a finished HVAC system",
+      "paragraphs": [
+        "Drop ceilings and carpet hide original metal. Joints that leaked in 1978 still leak. A rambler that added a rec room rarely resized the returns. Dust settles where you cannot see it. Dryer runs from a first-floor laundry often drop into that same damp space.",
+        "If the rec room smells musty when the AC starts, when you are ready to book, use the [Olney, MD location page](/locations/olney)."
+      ],
+      "listItems": [],
+      "image": "/img/blog/neglected-air-ducts-buildup.webp"
+    },
+    {
+      "id": "signs",
+      "heading": "Typical signs in an Olney rambler",
+      "paragraphs": [
+        "Watch for:"
+      ],
+      "listItems": [
+        "Musty air walking upstairs from a finished basement after rain.",
+        "Pollen film on supplies even with a new filter.",
+        "A dryer that takes too long on a drop into the lower level."
+      ]
+    },
     {
       "id": "outer",
       "heading": "Olney is farther than Wheaton. The canopy is thicker.",
@@ -15,31 +37,12 @@
       "listItems": []
     },
     {
-      "id": "rec_room",
-      "heading": "A finished basement is not a finished HVAC system",
-      "paragraphs": [
-        "Drop ceilings and carpet hide original metal. Joints that leaked in 1978 still leak. A rambler that added a rec room rarely resized the returns. Dust settles where you cannot see it. Dryer runs from a first-floor laundry often drop into that same damp space.",
-        "If the rec room smells musty when the AC starts, start with [air duct cleaning in Olney, MD](/locations/olney)."
-      ],
-      "listItems": [],
-      "image": "/img/blog/dirty-HVAC-unit.webp"
-    },
-    {
-      "id": "signs",
-      "heading": "Typical signs in an Olney rambler",
-      "paragraphs": ["Watch for:"],
-      "listItems": [
-        "Musty air walking upstairs from a finished basement after rain.",
-        "Pollen film on supplies even with a new filter.",
-        "A dryer that takes too long on a drop into the lower level."
-      ]
-    },
-    {
       "id": "protect",
-      "heading": "Up Georgia Avenue from Bethesda — not an Olney Mill suite",
+      "heading": "How scheduling works from our metro offices",
       "paragraphs": [
-        "Olney is served from our [Bethesda](/locations/bethesda) office. Nearby [Rockville](/locations/rockville) uses the same Maryland crew. The drive is farther than Wheaton and we will say so. There is no Olney storefront.",
-        "Book on the [Olney location page](/locations/olney). Add [dryer vent cleaning](/dryer-vent-cleaning) if the laundry dumps into the basement."
+        "Olney jobs are scheduled from our metro offices. This article is educational — use the [location page](/locations/olney) when you are ready to book.",
+        "Olney is served from our [Bethesda](/locations/bethesda) office. Nearby [Rockville](/locations/rockville) uses the same Maryland crew. The drive is farther than Wheaton and we will say so.",
+        "Service details live on the [Olney location page](/locations/olney). Add [dryer vent cleaning](/dryer-vent-cleaning) if the laundry dumps into the basement."
       ],
       "listItems": [
         "Dehumidify finished basements in summer, not only the upstairs.",
@@ -50,16 +53,24 @@
   ],
   "faq": [
     {
-      "q": "Why do Olney finished basements make the vents smell?",
-      "a": "The air handler stayed in the coolest room. Trunks sweat. Pollen from the outer-county canopy sticks. The blower then pushes that odor upstairs."
+      "q": "Do humid summers alone require duct cleaning?",
+      "a": "Humidity helps dust stick and can support growth on cold coils, but cleaning decisions still depend on inspection and history."
     },
     {
-      "q": "Is Olney too far for the Bethesda office?",
-      "a": "No. It is a farther Montgomery run and we schedule it that way. We will not invent a local suite to hide the drive."
+      "q": "Who serves Olney?",
+      "a": "Amazon Air Duct Cleaning schedules Olney from Burke or Bethesda. Book on the location page or call (800) 606-3334."
     },
     {
-      "q": "Who cleans air ducts in Olney, MD?",
-      "a": "Amazon Air Duct Cleaning serves Olney from the Bethesda office. Book on the [Olney location page](/locations/olney) or call (301) 809-4544."
+      "q": "Can filters replace professional cleaning?",
+      "a": "Filters reduce new debris. They do not remove what already sits inside trunks and dryer runs."
+    },
+    {
+      "q": "What should I track for a few weeks first?",
+      "a": "Filter condition, dry times, musty smells at startup, and how fast wiped registers film over again."
+    },
+    {
+      "q": "Are energy-savings claims guaranteed?",
+      "a": "No. Cleaner airflow can help equipment run less hard, but results vary by home and system condition."
     }
   ]
 }

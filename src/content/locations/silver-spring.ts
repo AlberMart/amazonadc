@@ -5,20 +5,21 @@ export const silverSpring: LocationContentSeed = {
   title: 'Air Duct Cleaning in Silver Spring, MD',
   headline: 'Air duct and dryer vent cleaning for downtown Silver Spring, Woodside, and Takoma',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Silver Spring, MD. Flat rates from our Bethesda office for brick colonials, condos, and older rentals. Call (301) 809-4544.',
+    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Silver Spring, MD. Flat rates from our Bethesda office for brick colonials, condos, and older rentals. Call (800) 606-3334.',
   intro:
-    'Amazon Air Duct Cleaning serves Silver Spring from our Bethesda office — up Georgia Avenue and East-West Highway, not a rented downtown suite. Brick colonials, Woodside bungalows, and stacked condos all take on Montgomery County pollen and urban dust. Call (301) 809-4544.',
+    'Amazon Air Duct Cleaning serves Silver Spring from our Bethesda office — up Georgia Avenue and East-West Highway, not a rented downtown suite. Brick colonials, Woodside bungalows, and stacked condos all take on Montgomery County pollen and urban dust. Call (800) 606-3334.',
   heroImage: '/img/locations/silver-spring.webp',
   heroAlt: 'Air duct cleaning in Silver Spring, MD — Amazon Air Duct Cleaning',
   city: 'Silver Spring',
   state: 'MD',
   servedBy: 'bethesda',
+  sectionLayout: 'faqEarly',
   about: {
     heading: 'Why Silver Spring Ducts Load Dust and Moisture',
     paragraphs: [
       'Silver Spring is Montgomery County’s urban east side: downtown around the Metro, older streets in Woodside and Seven Oaks, Takoma Park next door, and apartments along Georgia Avenue. A lot of the housing is pre-war and 1940s–60s brick with later ductwork cut through plaster and joists. Those joints collect dust. Downtown construction and the Purple Line corridor add a second particle load. Returns do not sort brick dust from pollen.',
       'Basements stay cool. Maryland summers stay wet. Cold supply trunks sweat. Musty air on the first AC cycle after a storm is that film waking up. Condos and stacked units add long dryer vents that dump heat and lint back into the laundry if the cap is packed.',
-      'We serve Silver Spring from [Bethesda](/locations/bethesda). That office is a short drive, not a fiction. Nearby [Rockville](/locations/rockville), [College Park](/locations/college-park), and [Washington, DC](/locations/washington-dc) are the same metro crew. Read [how Silver Spring brick houses and urban dust load indoor air](/blog/silver-spring-brick-houses-urban-dust-air-ducts).',
+      'We serve Silver Spring from [Bethesda](/locations/bethesda). That office is a short drive, not a fiction. Nearby [Rockville](/locations/rockville), [College Park](/locations/college-park), and [Washington, DC](/locations/washington-dc) are the same metro crew. For background reading (not a booking page), see [silver-spring-brick-houses-urban-dust-air-ducts](/blog/silver-spring-brick-houses-urban-dust-air-ducts).',
     ],
     highlights: [
       'Downtown Silver Spring, Woodside, Takoma edge, Georgia Avenue',
@@ -30,7 +31,7 @@ export const silverSpring: LocationContentSeed = {
   offersTitle: 'Special Offers — Silver Spring, MD',
   services: {
     heading: 'Our Services in Silver Spring, MD',
-    intro: 'The same packages we use in Bethesda. The quote is the price.',
+    intro: 'Flat-rate options for Silver Spring houses, townhomes, and light commercial.',
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -51,11 +52,11 @@ export const silverSpring: LocationContentSeed = {
     ],
   },
   why: {
-    heading: 'Why Silver Spring Residents Book Us',
+    heading: 'What Sets This Silver Spring Crew Apart',
     items: [
       {
         title: 'Bethesda Is Actually Nearby',
-        text: 'Old Georgetown Road to Georgia Avenue is a real drive this crew makes every week. We will not invent a Silver Spring storefront.',
+        text: 'Old Georgetown Road to Georgia Avenue is a real drive this crew makes every week. ',
       },
       {
         title: 'Flat-Rate Pricing',
@@ -78,7 +79,8 @@ export const silverSpring: LocationContentSeed = {
     groups: [
       {
         title: 'Downtown & Metro',
-        places: 'Downtown Silver Spring, Veterans Plaza, Ellsworth, Fenton, Georgia Avenue corridor',
+        places:
+          'Downtown Silver Spring, Veterans Plaza, Ellsworth, Fenton, Georgia Avenue corridor',
       },
       {
         title: 'Woodside & north',
@@ -86,61 +88,62 @@ export const silverSpring: LocationContentSeed = {
       },
       {
         title: 'East and Takoma',
-        places: 'East Silver Spring, Takoma Park edge, Long Branch, streets toward Langley Park — ask if your block is not listed',
+        places:
+          'East Silver Spring, Takoma Park edge, Long Branch, streets toward Langley Park — ask if your block is not listed',
       },
     ],
   },
   process: {
-    heading: 'What to Expect When You Book',
-    intro: 'Simple scheduling from the Bethesda office that covers Silver Spring.',
+    heading: 'Booking Silver Spring Service from Bethesda',
+    intro: 'Simple steps our Bethesda crew follows for Silver Spring appointments.',
     steps: [
       {
-        title: 'Schedule Online or by Phone',
-        text: 'Use the form on this page or call (301) 809-4544. We confirm the appointment by the next business day.',
+        title: 'Talk Through the Home',
+        text: 'Tell us about pets, renovations, and laundry layout common in Silver Spring.',
       },
       {
-        title: 'Access and Parking',
-        text: 'Tell us about permit parking, loading zones, and condo rules so the equipment actually fits.',
+        title: 'Confirm Arrival ETA',
+        text: 'Morning-of text with a realistic window for your street.',
       },
       {
-        title: 'On-Site Inspection',
-        text: 'We inspect the ducts, dryer run, and any musty registers, then agree the scope.',
+        title: 'Agree the Package',
+        text: 'Flat-rate duct and dryer packages — the quoted number is what you pay.',
       },
       {
-        title: 'Professional Cleaning',
-        text: 'Floors are protected. We clean with truck-mounted or portable HEPA equipment.',
+        title: 'Run the Cleaning',
+        text: 'Truck-mounted or portable HEPA sized for Silver Spring houses and townhomes.',
       },
       {
-        title: 'Final Walkthrough',
-        text: 'Before-and-after photos, questions answered, and we leave when you are satisfied.',
+        title: 'Final Questions',
+        text: 'Filter tips and dryer-vent interval before we pack up.',
       },
     ],
   },
-  faqIntro: 'Questions from Silver Spring homeowners. Call the Bethesda office at (301) 809-4544.',
+  faqIntro: 'Silver Spring questions — call (800) 606-3334 (dispatch: Bethesda).',
   faq: [
     {
-      q: 'Do you have an office in Silver Spring?',
-      a: 'No. Silver Spring is served from our Bethesda office at 7815 Old Georgetown Rd Ste 201. Call (301) 809-4544.',
+      q: 'Where does the Silver Spring crew stage from?',
+      a: 'Our Bethesda office (7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814). Office line (301) 809-4544; booking (800) 606-3334.',
     },
     {
-      q: 'Why do older Silver Spring houses get musty so fast?',
-      a: 'Retrofitted ducts in cool basements sweat in Maryland humidity. Urban dust and pollen stick to that film. [Silver Spring brick houses and urban dust](/blog/silver-spring-brick-houses-urban-dust-air-ducts) covers what to do next.',
+      q: 'Can I stay home during the Silver Spring appointment?',
+      a: 'Yes. Stay clear of active equipment; we protect floors in the work path.',
     },
     {
-      q: 'How often should Silver Spring homes clean air ducts?',
-      a: 'Every 3 to 5 years for most houses. Pets, renovations, and downtown condos often need the shorter interval. Dryer vents should be cleared about once a year.',
+      q: 'How often should Silver Spring, MD homes clean ducts?',
+      a: 'Every 3–5 years for most homes. Pets, renovations, and humid basements often need the shorter end. Dryer vents about yearly.',
     },
     {
-      q: 'Do you serve Takoma Park and Wheaton from this page?',
-      a: 'Yes. Those communities are on the same Bethesda dispatch. If you are on the District side of Eastern Avenue, see [Washington, DC](/locations/washington-dc).',
+      q: 'What should I prepare before the crew arrives in Silver Spring?',
+      a: 'Clear access to returns, the air handler, and the dryer. Note HOA gate codes if needed.',
     },
     {
-      q: 'Do you offer flat rates in Silver Spring?',
-      a: 'Yes. Residential air duct and dryer vent cleaning is flat-rate.',
+      q: 'How long does air duct cleaning take in a typical Silver Spring home?',
+      a: 'Most single-system houses take about 2–3 hours. Townhomes with long dryer runs can run longer after inspection.',
     },
     {
-      q: 'Are mold treatments safe for families and pets?',
-      a: 'Yes. We use EPA-registered antimicrobial treatments that are safe for children and pets once applied as directed.',
+      q: 'Are Silver Spring residential prices flat-rate?',
+      a: 'Yes for air duct and dryer vent packages. The quote before we start is the price you pay.',
     },
   ],
 }

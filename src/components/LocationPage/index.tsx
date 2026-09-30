@@ -11,6 +11,8 @@ import { RenderPageSections } from '@/components/RenderPageSections'
 import type { LocationContent } from '@/utilities/locations'
 import { getAllOffices } from '@/utilities/offices'
 import { getAllServiceCards } from '@/utilities/services'
+import { getSiteSeo } from '@/utilities/seo'
+import { toTelHref } from '@/utilities/tel'
 
 function CheckList({ items }: { items: string[] }) {
   return (
@@ -26,7 +28,11 @@ function CheckList({ items }: { items: string[] }) {
 }
 
 export async function LocationPage({ location }: { location: LocationContent }) {
-  const [cards, offices] = await Promise.all([getAllServiceCards(), getAllOffices()])
+  const [cards, offices, site] = await Promise.all([
+    getAllServiceCards(),
+    getAllOffices(),
+    getSiteSeo(),
+  ])
   const offers = cards.map((service) => ({
     id: service.slug,
     title: service.title,
@@ -40,6 +46,15 @@ export async function LocationPage({ location }: { location: LocationContent }) 
   const office = location.office
   const hubSibling = offices.find((o) => o.slug !== office.slug)
   const useSections = Boolean(location.sections?.length)
+
+  // One booking number per page: match site chrome (800). Local office lines stay on NAP cards.
+  const ctaDisplay = site.phoneDisplay
+  const ctaHref = toTelHref(site.phone)
+  const dispatchLabel =
+    location.dispatchLabel ||
+    (location.slug === 'washington-dc'
+      ? 'our Burke and Bethesda offices'
+      : `our ${office.city} office`)
 
   return (
     <article>
@@ -60,10 +75,10 @@ export async function LocationPage({ location }: { location: LocationContent }) 
             <p className="mt-5 max-w-xl site-copy-on-dark leading-relaxed">{location.intro}</p>
             <div className="mt-8 flex flex-wrap gap-4">
               <a
-                href={`tel:${office.phone}`}
+                href={ctaHref}
                 className="site-btn site-btn-primary"
               >
-                Call {office.phoneDisplay}
+                Call {ctaDisplay}
               </a>
               <Link
                 href="#contact"
@@ -78,10 +93,12 @@ export async function LocationPage({ location }: { location: LocationContent }) 
                   {office.streetAddress}
                   <br />
                   {office.city}, {office.state} {office.postalCode}
+                  <br />
+                  Office line: {office.phoneDisplay}
                 </>
               ) : (
                 <>
-                  Served from our {office.city} office
+                  Served from {dispatchLabel}
                   <br />
                   {office.streetAddress}, {office.city}, {office.state} {office.postalCode}
                 </>
@@ -103,11 +120,13 @@ export async function LocationPage({ location }: { location: LocationContent }) 
 
       {useSections ? (
         <RenderPageSections
-          sections={location.sections || []}
+          sections={(location.sections || []).map((section) =>
+            section.type === 'serviceArea' ? { ...section, compact: true } : section,
+          )}
           services={cards}
           sourcePage={`/locations/${location.slug}`}
-          defaultPhoneDisplay={office.phoneDisplay}
-          defaultPhoneHref={`tel:${office.phone}`}
+          defaultPhoneDisplay={ctaDisplay}
+          defaultPhoneHref={ctaHref}
         />
       ) : (
         <>
@@ -202,8 +221,11 @@ export async function LocationPage({ location }: { location: LocationContent }) 
       </section>
 
       <ServiceArea
-        callHref={`tel:${office.phone}`}
-        callLabel={`Call ${office.phoneDisplay}`}
+        compact
+        heading={`Serving ${location.city} from ${dispatchLabel}`}
+        intro={`We cover ${location.city} and nearby communities from ${dispatchLabel}. For the full list of cities, see our locations index.`}
+        callHref={ctaHref}
+        callLabel={`Call ${ctaDisplay}`}
       />
 
       <section className="bg-white py-16 md:py-20">
@@ -250,8 +272,8 @@ export async function LocationPage({ location }: { location: LocationContent }) 
       <div id="contact" className="scroll-mt-32">
         <ContactForm
           sourcePage={`/locations/${location.slug}`}
-          phoneDisplay={office.phoneDisplay}
-          phoneHref={office.phone}
+          phoneDisplay={ctaDisplay}
+          phoneHref={site.phone}
         />
       </div>
         </>

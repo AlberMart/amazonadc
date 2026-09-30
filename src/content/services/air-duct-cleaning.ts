@@ -8,7 +8,6 @@ export const airDuctCleaning: ServiceContent = {
   summary:
     'Professional cleaning of one complete air duct system with complimentary sanitization upon request and before/after photo proof.',
   price: 299,
-  compareAtPrice: 550,
   orderUrl: 'https://buy.stripe.com/14A7sMbNd5vr1H15EA4AU00',
   heroImage: '/img/Amazon_AIR_DUCT_CLEANING.webp',
   heroAlt: 'Air Duct Cleaning & Sanitization Service in Virginia, Maryland & Washington DC',

@@ -5,20 +5,21 @@ export const oakton: LocationContentSeed = {
   title: 'Air Duct Cleaning in Oakton, VA',
   headline: 'Air duct and dryer vent cleaning for Route 123 Oakton colonials and large-lot streets',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Oakton, VA. Flat rates from our Burke office for large-lot colonials between Vienna and Fairfax. Call (571) 460-0001.',
+    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Oakton, VA. Flat rates from our Burke office for large-lot colonials between Vienna and Fairfax. Call (800) 606-3334.',
   intro:
-    'Amazon Air Duct Cleaning serves Oakton from our Burke office — a short run on 123, not a rented Waples Mill suite. Large-lot colonials, Vale Road houses, and streets between Vienna and Fairfax all take on canopy pollen and humid basement air. Call (571) 460-0001.',
+    'Amazon Air Duct Cleaning serves Oakton from our Burke office — a short run on 123, not a rented Waples Mill suite. Large-lot colonials, Vale Road houses, and streets between Vienna and Fairfax all take on canopy pollen and humid basement air. Call (800) 606-3334.',
   heroImage: '/img/locations/oakton.webp',
   heroAlt: 'Air duct cleaning in Oakton, VA — Amazon Air Duct Cleaning',
   city: 'Oakton',
   state: 'VA',
   servedBy: 'burke',
+  sectionLayout: 'servicesFirst',
   about: {
     heading: 'Why Oakton’s Route 123 Colonials Load Pollen Into Cool Trunks',
     paragraphs: [
       'Oakton sits on Chain Bridge Road (Route 123) between the Town of Vienna and the City of Fairfax: large lots, 1960s–80s colonials, and streets off Vale and Hunter Mill. The canopy is dense. Spring pollen coats decks the same week it coats returns. Finished basements stay cool while July air stays wet, so supply trunks sweat and hold that film.',
       'A typical Oakton house mixed original metal with a later addition over a garage or a rec-room branch. Dust collects at those joints. Dryer runs from a second-floor laundry often travel a long, quiet path to a rear gable. Waples Mill traffic adds a finer road dust that smaller subdivisions do not see as much of.',
-      'We serve Oakton from [Burke](/locations/burke). There is no Oakton storefront. Nearby [Vienna](/locations/vienna), [Fairfax](/locations/fairfax), and [Fair Oaks](/locations/fair-oaks) use the same dispatch. Read [how Oakton Route 123 pollen loads air ducts](/blog/oakton-123-pollen-air-ducts).',
+      'We serve Oakton from [Burke](/locations/burke). Nearby [Vienna](/locations/vienna), [Fairfax](/locations/fairfax), and [Fair Oaks](/locations/fair-oaks) use the same dispatch. For background reading (not a booking page), see [oakton-123-pollen-air-ducts](/blog/oakton-123-pollen-air-ducts).',
     ],
     highlights: [
       'Route 123, Vale, Hunter Mill, Waples Mill, and Oakton Village streets',
@@ -30,7 +31,7 @@ export const oakton: LocationContentSeed = {
   offersTitle: 'Special Offers — Oakton, VA',
   services: {
     heading: 'Our Services in Oakton, VA',
-    intro: 'Transparent packages for Oakton colonials. The quote is the price.',
+    intro: 'Oakton residents book the same published packages as the rest of our metro area.',
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -51,7 +52,7 @@ export const oakton: LocationContentSeed = {
     ],
   },
   why: {
-    heading: 'Why Oakton Homeowners Book Us',
+    heading: 'Reasons Neighbors in Oakton Book Repeat Visits',
     items: [
       {
         title: 'Between Vienna and Fairfax, From Burke',
@@ -86,61 +87,58 @@ export const oakton: LocationContentSeed = {
       },
       {
         title: 'Toward Fairfax & Fair Oaks',
-        places: 'Streets toward the City of [Fairfax](/locations/fairfax) and [Fair Oaks](/locations/fair-oaks) — ask if your block is not listed',
+        places:
+          'Streets toward the City of [Fairfax](/locations/fairfax) and [Fair Oaks](/locations/fair-oaks) — ask if your block is not listed',
       },
     ],
   },
   process: {
-    heading: 'What to Expect When You Book',
-    intro: 'Simple scheduling from the Burke office that covers Oakton.',
+    heading: 'What Happens After You Request Oakton Service',
+    intro: 'What to expect when we schedule Oakton from 5641 Burke Centre Pkwy Ste 119.',
     steps: [
       {
-        title: 'Schedule Online or by Phone',
-        text: 'Use the form on this page or call (571) 460-0001. We confirm the appointment by the next business day.',
+        title: 'Online or Phone Intake',
+        text: 'Book at (800) 606-3334. Mention Oakton so we route from Burke.',
       },
       {
-        title: 'Pre-Visit Confirmation',
-        text: 'The morning of the job we send an arrival window. Long Oakton drives and HOA gates help us plan hose length.',
+        title: 'Pre-Job Notes',
+        text: 'We ask about basement returns, stacked laundry, and any musty registers.',
       },
       {
-        title: 'On-Site Inspection',
-        text: 'We inspect basement trunks, returns, and the dryer run, then agree the scope before equipment comes in.',
+        title: 'On-Site Scope Lock',
+        text: 'No surprise add-ons after we are inside.',
       },
       {
-        title: 'Professional Cleaning',
-        text: 'Floors are protected. We clean with truck-mounted or portable HEPA equipment.',
+        title: 'Source-Removal Cleaning',
+        text: 'NADCA-style agitation under negative pressure with HEPA capture.',
       },
       {
-        title: 'Final Walkthrough',
-        text: 'Before-and-after photos, questions answered, and we leave when you are satisfied.',
+        title: 'Photo Proof',
+        text: 'Duct jobs include before-and-after images you can keep.',
       },
     ],
   },
-  faqIntro: 'Questions from Oakton homeowners. Call the Burke office at (571) 460-0001.',
+  faqIntro: 'Oakton questions — call (800) 606-3334 (dispatch: Burke).',
   faq: [
     {
-      q: 'Do you have an office in Oakton?',
-      a: 'No. Oakton is served from our Burke office at 5641 Burke Centre Pkwy Ste 119, Burke, VA 22015. Call (571) 460-0001 or use the form on this page.',
+      q: 'Do you have a storefront in Oakton?',
+      a: 'No. Oakton jobs are scheduled from our Burke office at 5641 Burke Centre Pkwy Ste 119, Burke, VA 22015. Call (800) 606-3334.',
     },
     {
-      q: 'Is Oakton the same as the City of Fairfax or Vienna?',
-      a: 'No. Oakton is its own Fairfax County community on Route 123. The City of [Fairfax](/locations/fairfax) and the Town of [Vienna](/locations/vienna) have their own pages. All three dispatch from Burke.',
+      q: 'Do you clean dryer vents in Oakton townhomes and condos?',
+      a: 'Yes — full length to the exterior cap. Stacked laundry is common on this route. See dryer vent cleaning for details.',
     },
     {
-      q: 'Why do Oakton registers get dusty so soon after I wipe them?',
-      a: 'Route 123 canopy pollen and cool basement trunks. Dust sticks to condensation and blows back every cycle. [Oakton 123 pollen and air ducts](/blog/oakton-123-pollen-air-ducts) covers it.',
+      q: 'Do you bring portable equipment for tight Oakton streets?',
+      a: 'Yes. When a truck cannot stage, we use portable HEPA systems sized for the home.',
     },
     {
-      q: 'How often should Oakton homes clean air ducts?',
-      a: 'Every 3 to 5 years for most colonials. Pets, finished basements, and renovations often need the shorter interval. Dryer vents about once a year.',
+      q: 'Do you serve commercial spaces in Oakton?',
+      a: 'Light commercial and small offices are available by quote. Call us with square footage and system count.',
     },
     {
-      q: 'Do you offer flat rates in Oakton?',
-      a: 'Yes. Residential air duct and dryer vent cleaning is flat-rate. The number we quote before the job is the price you pay.',
-    },
-    {
-      q: 'Can you serve Fair Oaks and McLean from the same office?',
-      a: 'Yes. [Fair Oaks](/locations/fair-oaks), [McLean](/locations/mclean), and [Reston](/locations/reston) use the same Burke dispatch as Oakton.',
+      q: 'Can I stay home during the Oakton appointment?',
+      a: 'Yes. Stay clear of active equipment; we protect floors in the work path.',
     },
   ],
 }

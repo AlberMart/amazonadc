@@ -4,6 +4,7 @@ import { revalidateTag } from 'next/cache'
 
 import { themeFields } from '@/fields/theme'
 import { scheduleRevalidate } from '@/utilities/scheduleRevalidate'
+import { SEO_META_DESCRIPTION, SEO_META_TITLE } from '@/utilities/seoCopy'
 
 export const SiteSettings: GlobalConfig = {
   slug: 'site-settings',
@@ -95,7 +96,7 @@ export const SiteSettings: GlobalConfig = {
             {
               name: 'defaultMetaTitle',
               type: 'text',
-              defaultValue: 'Air Duct Cleaning in Virginia, Maryland & Washington DC',
+              defaultValue: SEO_META_TITLE,
               admin: {
                 description:
                   'Used when a page has no meta.title. Per-page SEO tab always wins when set.',
@@ -104,8 +105,7 @@ export const SiteSettings: GlobalConfig = {
             {
               name: 'defaultMetaDescription',
               type: 'textarea',
-              defaultValue:
-                'Top-rated air duct cleaning in VA, MD & DC. Improve indoor air quality, remove dust and allergens, and clean dryer vents. Flat rates and a 100% satisfaction guarantee.',
+              defaultValue: SEO_META_DESCRIPTION,
             },
             {
               name: 'titleSuffix',

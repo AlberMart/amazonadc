@@ -8,7 +8,6 @@ export const airDuctAndDryerVentCleaning: ServiceContent = {
   summary:
     'Complete air duct system cleaning plus dryer vent cleaning and sanitization — our most popular package.',
   price: 399,
-  compareAtPrice: 650,
   orderUrl: 'https://buy.stripe.com/4gM00k18z6zvdpJeb64AU02',
   heroImage: '/img/Amazon_DRYER_VENT_CLEANING.webp',
   heroAlt:

@@ -1,9 +1,9 @@
 {
   "slug": "hyattsville-route-1-humidity-air-ducts",
-  "title": "How Hyattsville Route 1 Housing Loads Humidity and Corridor Dust",
+  "title": "When Hyattsville Homes Usually Need Duct Attention",
   "headline": "Arts-district renovations, Gateway stacks, and why PG summers sweat at older trunks",
-  "description": "Hyattsville, MD sits on the Route 1 spine in Prince George’s County. Learn why older ducts collect humidity and corridor grit, and when to clean them from Bethesda.",
-  "heroImage": "/img/blog/Allergies.webp",
+  "description": "Hyattsville, MD sits on the Route 1 spine in Prince George’s County. An educational look at why older ducts collect humidity and corridor grit.",
+  "heroImage": "/img/locations/hyattsville.webp",
   "sections": [
     {
       "id": "route1",
@@ -19,15 +19,17 @@
       "heading": "New stacked units still sit on old moisture",
       "paragraphs": [
         "A renovated Gateway building can have a new kitchen over a mechanical room that never got cleaned. Shared dryer chases pack lint. Humidity from Route 1 rain weeks sits on cool metal. Tenants wipe registers. The film comes back.",
-        "If dust returns days after a make-ready, start with [air duct cleaning in Hyattsville, MD](/locations/hyattsville)."
+        "If dust returns days after a make-ready, when you are ready to book, use the [Hyattsville, MD location page](/locations/hyattsville)."
       ],
       "listItems": [],
-      "image": "/img/blog/clogged-dryer-vent-lint.webp"
+      "image": "/img/blog/dirty-HVAC-unit.webp"
     },
     {
       "id": "signs",
       "heading": "Typical signs in a Hyattsville house or unit",
-      "paragraphs": ["Watch for:"],
+      "paragraphs": [
+        "Watch for:"
+      ],
       "listItems": [
         "Gray film on supplies after Route 1 construction weeks.",
         "Musty air from a basement or crawl when the AC starts after rain.",
@@ -36,10 +38,11 @@
     },
     {
       "id": "protect",
-      "heading": "Bethesda dispatch — not a Route 1 arts-district shop",
+      "heading": "Practical next steps for hyattsville homes",
       "paragraphs": [
-        "Hyattsville is served from our [Bethesda](/locations/bethesda) office. Nearby [College Park](/locations/college-park) and [Takoma Park](/locations/takoma-park) use the same crew. The drive is real and we will say so. There is no Hyattsville storefront.",
-        "Book on the [Hyattsville location page](/locations/hyattsville). Pair [dryer vent cleaning](/dryer-vent-cleaning) with ducts on stacked units."
+        "Hyattsville jobs are scheduled from our metro offices. This article is educational — use the [location page](/locations/hyattsville) when you are ready to book.",
+        "Hyattsville is served from our [Bethesda](/locations/bethesda) office. Nearby [College Park](/locations/college-park) and [Takoma Park](/locations/takoma-park) use the same crew. The drive is real and we will say so.",
+        "Service details live on the [Hyattsville location page](/locations/hyattsville). Pair [dryer vent cleaning](/dryer-vent-cleaning) with ducts on stacked units."
       ],
       "listItems": [
         "Clean ducts after a renovation, not five years later.",
@@ -50,16 +53,16 @@
   ],
   "faq": [
     {
-      "q": "Does Route 1 construction dust reach Hyattsville indoor ducts?",
-      "a": "Yes. Corridor grit and renovation drywall settle at returns. Older trunks store what filters miss."
+      "q": "Does construction near Hyattsville change cleaning intervals?",
+      "a": "Active drywall work nearby often shortens the useful interval. Wait until heavy dust settles, then inspect."
     },
     {
-      "q": "Do you work for Hyattsville landlords as well as owners?",
-      "a": "Yes. Turnover cleanings and packed dryer vents are a normal job. We document with before-and-after photos."
+      "q": "Should I clean ducts after renovations?",
+      "a": "Yes if sanding or drywall dust entered returns. Otherwise a standard 3–5 year interval is typical."
     },
     {
-      "q": "Who cleans air ducts in Hyattsville, MD?",
-      "a": "Amazon Air Duct Cleaning serves Hyattsville from the Bethesda office. Book on the [Hyattsville location page](/locations/hyattsville) or call (301) 809-4544."
+      "q": "What proof should a cleaning include?",
+      "a": "Before-and-after photos of trunks or vents, plus a clear scope agreed before work starts."
     }
   ]
 }

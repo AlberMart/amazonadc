@@ -1,10 +1,32 @@
 {
   "slug": "frederick-downtown-humidity-air-ducts",
-  "title": "How Downtown Frederick Humidity and New-Suburb Dust Load Air Ducts",
+  "title": "Reading the Signs: Dust and Moisture in Frederick Ductwork",
   "headline": "Carroll Creek cellars, Urbana pads, and why the I-270 north end is two indoor-air problems",
-  "description": "Frederick, MD mixes downtown brick humidity with Urbana construction dust. Learn why ducts load on both ends of the city, and when to clean them from Bethesda.",
-  "heroImage": "/img/blog/dirty-HVAC-unit.webp",
+  "description": "Frederick, MD mixes downtown brick humidity with Urbana construction dust. An educational look at why ducts load on both ends of the city.",
+  "heroImage": "/img/locations/frederick.webp",
   "sections": [
+    {
+      "id": "creek",
+      "heading": "Carroll Creek humidity is not the same job as an Urbana townhome",
+      "paragraphs": [
+        "A Market Street house may have metal cut through a 19th-century cellar. An Urbana HOA unit has a tight closet and a long dryer chase plus leftover gypsum. Both need cleaning. They fail for different reasons. We photograph both.",
+        "If registers look dirty a few days after you wipe them, when you are ready to book, use the [Frederick, MD location page](/locations/frederick)."
+      ],
+      "listItems": [],
+      "image": "/img/blog/The-Hidden-Cost-of-Dirty-Air-Ducts.webp"
+    },
+    {
+      "id": "signs",
+      "heading": "Typical signs in a Frederick house",
+      "paragraphs": [
+        "Watch for:"
+      ],
+      "listItems": [
+        "Musty air from a downtown cellar after a storm week.",
+        "White-gray film on supplies in an Urbana or Adamstown house less than ten years old.",
+        "Long dry times in a new townhome closet."
+      ]
+    },
     {
       "id": "two_fredericks",
       "heading": "Frederick is a wet cellar and a dusty pad sharing one city",
@@ -15,31 +37,12 @@
       "listItems": []
     },
     {
-      "id": "creek",
-      "heading": "Carroll Creek humidity is not the same job as an Urbana townhome",
-      "paragraphs": [
-        "A Market Street house may have metal cut through a 19th-century cellar. An Urbana HOA unit has a tight closet and a long dryer chase plus leftover gypsum. Both need cleaning. They fail for different reasons. We photograph both.",
-        "If registers look dirty a few days after you wipe them, start with [air duct cleaning in Frederick, MD](/locations/frederick)."
-      ],
-      "listItems": [],
-      "image": "/img/blog/dirty-HVAC-unit.webp"
-    },
-    {
-      "id": "signs",
-      "heading": "Typical signs in a Frederick house",
-      "paragraphs": ["Watch for:"],
-      "listItems": [
-        "Musty air from a downtown cellar after a storm week.",
-        "White-gray film on supplies in an Urbana or Adamstown house less than ten years old.",
-        "Long dry times in a new townhome closet."
-      ]
-    },
-    {
       "id": "protect",
-      "heading": "Farther up I-270 — not a rented downtown suite",
+      "heading": "How scheduling works from our metro offices",
       "paragraphs": [
-        "Frederick is served from our [Bethesda](/locations/bethesda) office. Nearby [Clarksburg](/locations/clarksburg) and [Gaithersburg](/locations/gaithersburg) are closer-in pages on the same crew. The drive is farther and we schedule it that way. There is no Frederick storefront.",
-        "Book on the [Frederick location page](/locations/frederick). See [air duct cleaning](/air-duct-cleaning) for what a cellar job versus a new-build job actually removes."
+        "Frederick jobs are scheduled from our metro offices. This article is educational — use the [location page](/locations/frederick) when you are ready to book.",
+        "Frederick is served from our [Bethesda](/locations/bethesda) office. Nearby [Clarksburg](/locations/clarksburg) and [Gaithersburg](/locations/gaithersburg) are closer-in pages on the same crew. The drive is farther and we schedule it that way.",
+        "Service details live on the [Frederick location page](/locations/frederick). See [air duct cleaning](/air-duct-cleaning) for what a cellar job versus a new-build job actually removes."
       ],
       "listItems": [
         "Dehumidify downtown cellars in summer.",
@@ -50,16 +53,20 @@
   ],
   "faq": [
     {
-      "q": "Do you only serve downtown Frederick?",
-      "a": "No. Downtown brick, Urbana, Adamstown, and Mt Airy as communities are on this page. All of them dispatch from Bethesda."
+      "q": "Is this a sales page for Frederick duct cleaning?",
+      "a": "No. This post explains mechanisms and signs. Service details live on the Frederick location page."
     },
     {
-      "q": "Is Frederick too far for a Bethesda crew?",
-      "a": "It is a farther I-270 run and we plan it. We will not invent a downtown suite to hide that."
+      "q": "What usually causes gray film on supply registers?",
+      "a": "Fine particles that bypass or overload filters settle in cool trunks and recirculate when the blower runs."
     },
     {
-      "q": "Who cleans air ducts in Frederick, MD?",
-      "a": "Amazon Air Duct Cleaning serves Frederick from the Bethesda office. Book on the [Frederick location page](/locations/frederick) or call (301) 809-4544."
+      "q": "When is dryer vent cleaning the better first step?",
+      "a": "When laundry closets stay hot, dry times double, or you smell burnt lint — clear the vent to the exterior cap."
+    },
+    {
+      "q": "How is this different from a location page?",
+      "a": "Location pages cover packages, booking, and office dispatch. Articles cover climate and housing patterns."
     }
   ]
 }

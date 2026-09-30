@@ -3,22 +3,24 @@ import type { LocationContentSeed } from '@/utilities/locations'
 export const mountVernon: LocationContentSeed = {
   slug: 'mount-vernon',
   title: 'Air Duct Cleaning in Mt Vernon, VA',
-  headline: 'Air duct and dryer vent cleaning for Fort Hunt, the GW Parkway, and Mt Vernon river streets',
+  headline:
+    'Air duct and dryer vent cleaning for Fort Hunt, the GW Parkway, and Mt Vernon river streets',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Mt Vernon, VA. Flat rates from our Burke office for Fort Hunt houses, Parkway humidity, and older river-side homes. Call (571) 460-0001.',
+    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Mt Vernon, VA. Flat rates from our Burke office for Fort Hunt houses, Parkway humidity, and older river-side homes. Call (800) 606-3334.',
   intro:
-    'Amazon Air Duct Cleaning serves Mt Vernon from our Burke office — not a rented suite on the GW Parkway. Fort Hunt colonials, Hollin Hills mid-century houses, and older streets toward the Potomac all take on river humidity and pollen. Call (571) 460-0001.',
+    'Amazon Air Duct Cleaning serves Mt Vernon from our Burke office — scheduled from our serving office. Fort Hunt colonials, Hollin Hills mid-century houses, and older streets toward the Potomac all take on river humidity and pollen. Call (800) 606-3334.',
   heroImage: '/img/locations/mount-vernon.webp',
   heroAlt: 'Air duct cleaning in Mt Vernon, VA — Amazon Air Duct Cleaning',
   city: 'Mt Vernon',
   state: 'VA',
   servedBy: 'burke',
+  sectionLayout: 'faqEarly',
   about: {
     heading: 'Why Mt Vernon Houses Hold Potomac Humidity in Older Trunks',
     paragraphs: [
       'Mt Vernon (the Fairfax County community, not the estate gift shop) sits along the George Washington Memorial Parkway: Fort Hunt, Waynewood, Stratford Landing, Hollin Hills, and Mount Vernon Woods. A lot of the housing is older than the typical west-county HOA — brick colonials, ramblers, and mid-century houses with original metal trunks. The Potomac is close. Summer air is wet. Basements and crawl spaces stay cool. Cold supplies sweat; river pollen and parkway dust stick to that film.',
       'Hollin Hills and similar streets were never designed around oversized modern returns. Later central-air add-ons snake through tight joists. Fort Hunt dryer runs often travel a long exterior wall toward a rear cap in a wooded lot. The same humidity that fogs a windshield on the Parkway in July is sitting on the coil.',
-      'We serve Mt Vernon from [Burke](/locations/burke). There is no Mt Vernon storefront. Nearby [Alexandria](/locations/alexandria), [Lorton](/locations/lorton), and [Springfield](/locations/springfield) use the same dispatch. Read [how Mt Vernon Potomac humidity loads air ducts](/blog/mount-vernon-potomac-humidity-air-ducts).',
+      'We serve Mt Vernon from [Burke](/locations/burke). Nearby [Alexandria](/locations/alexandria), [Lorton](/locations/lorton), and [Springfield](/locations/springfield) use the same dispatch. For background reading (not a booking page), see [mount-vernon-potomac-humidity-air-ducts](/blog/mount-vernon-potomac-humidity-air-ducts).',
     ],
     highlights: [
       'Fort Hunt, Waynewood, Hollin Hills, Stratford Landing, GW Parkway streets',
@@ -30,7 +32,7 @@ export const mountVernon: LocationContentSeed = {
   offersTitle: 'Special Offers — Mt Vernon, VA',
   services: {
     heading: 'Our Services in Mt Vernon, VA',
-    intro: 'Honest packages for Mt Vernon river-side houses. The quote is the price.',
+    intro: 'Clear scopes for Mt Vernon. No per-vent games.',
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -51,7 +53,7 @@ export const mountVernon: LocationContentSeed = {
     ],
   },
   why: {
-    heading: 'Why Mt Vernon Homeowners Book Us',
+    heading: 'Booking Confidence for Mt Vernon Homes',
     items: [
       {
         title: 'Parkway Humidity, Fairfax Dispatch',
@@ -59,7 +61,7 @@ export const mountVernon: LocationContentSeed = {
       },
       {
         title: 'Older Houses, Honest Scope',
-        text: 'Fort Hunt brick and Hollin Hills add-on trunks are inspected first. We do not invent a storefront or a surprise per-vent fee.',
+        text: 'Fort Hunt brick and Hollin Hills add-on trunks are inspected first. No surprise per-vent fees.',
       },
       {
         title: 'Flat-Rate Pricing',
@@ -86,61 +88,58 @@ export const mountVernon: LocationContentSeed = {
       },
       {
         title: 'Hollin Hills & west',
-        places: 'Hollin Hills, blocks toward [Alexandria](/locations/alexandria), [Lorton](/locations/lorton), and [Springfield](/locations/springfield)',
+        places:
+          'Hollin Hills, blocks toward [Alexandria](/locations/alexandria), [Lorton](/locations/lorton), and [Springfield](/locations/springfield)',
       },
     ],
   },
   process: {
-    heading: 'What to Expect When You Book',
-    intro: 'Simple scheduling from the Burke office that covers Mt Vernon.',
+    heading: 'From First Call to Walkthrough in Mt Vernon',
+    intro: 'What to expect when we schedule Mt Vernon from 5641 Burke Centre Pkwy Ste 119.',
     steps: [
       {
-        title: 'Schedule Online or by Phone',
-        text: 'Use the form on this page or call (571) 460-0001. We confirm the appointment by the next business day.',
+        title: 'Online or Phone Intake',
+        text: 'Book at (800) 606-3334. Mention Mt Vernon so we route from Burke.',
       },
       {
-        title: 'Pre-Visit Confirmation',
-        text: 'The morning of the job we send an arrival window. Narrow Fort Hunt courts and wooded drives help us plan parking.',
+        title: 'Pre-Job Notes',
+        text: 'We ask about basement returns, stacked laundry, and any musty registers.',
       },
       {
-        title: 'On-Site Inspection',
-        text: 'We inspect older trunks, returns, and the dryer run, then agree the scope before equipment comes in.',
+        title: 'On-Site Scope Lock',
+        text: 'No surprise add-ons after we are inside.',
       },
       {
-        title: 'Professional Cleaning',
-        text: 'Floors are protected. We use portable HEPA when a tight lot will not take a full truck setup.',
+        title: 'Source-Removal Cleaning',
+        text: 'NADCA-style agitation under negative pressure with HEPA capture.',
       },
       {
-        title: 'Final Walkthrough',
-        text: 'Before-and-after photos, questions answered, and we leave when you are satisfied.',
+        title: 'Photo Proof',
+        text: 'Duct jobs include before-and-after images you can keep.',
       },
     ],
   },
-  faqIntro: 'Questions from Mt Vernon homeowners. Call the Burke office at (571) 460-0001.',
+  faqIntro: 'Mt Vernon questions — call (800) 606-3334 (dispatch: Burke).',
   faq: [
     {
-      q: 'Do you have an office in Mt Vernon?',
-      a: 'No. Mt Vernon is served from our Burke office at 5641 Burke Centre Pkwy Ste 119, Burke, VA 22015. Call (571) 460-0001 or use the form on this page.',
+      q: 'Where does the Mt Vernon crew stage from?',
+      a: 'Our Burke office (5641 Burke Centre Pkwy Ste 119, Burke, VA 22015). Office line (571) 460-0001; booking (800) 606-3334.',
     },
     {
-      q: 'Do you mean the Mt Vernon community or Old Town Alexandria?',
-      a: 'This page is for the Fairfax County Mt Vernon / Fort Hunt area. [Alexandria](/locations/alexandria) has its own page. Both dispatch from Burke.',
+      q: 'How often should Mt Vernon, VA homes clean ducts?',
+      a: 'Every 3–5 years for most homes. Pets, renovations, and humid basements often need the shorter end. Dryer vents about yearly.',
     },
     {
-      q: 'Why do Mt Vernon ducts feel musty after a humid week?',
-      a: 'Potomac air plus cool trunks in older houses. Pollen and parkway dust stick to that moisture. [Mt Vernon Potomac humidity and air ducts](/blog/mount-vernon-potomac-humidity-air-ducts) covers it.',
+      q: 'What should I prepare before the crew arrives in Mt Vernon?',
+      a: 'Clear access to returns, the air handler, and the dryer. Note HOA gate codes if needed.',
     },
     {
-      q: 'How often should Mt Vernon homes clean air ducts?',
-      a: 'Every 3 to 5 years for most houses. Pets, damp basements, and river-side lots often need the shorter interval. Dryer vents about once a year.',
+      q: 'How long does air duct cleaning take in a typical Mt Vernon home?',
+      a: 'Most single-system houses take about 2–3 hours. Townhomes with long dryer runs can run longer after inspection.',
     },
     {
-      q: 'Do you offer flat rates in Mt Vernon?',
-      a: 'Yes. Residential air duct and dryer vent cleaning is flat-rate. The number we quote before the job is the price you pay.',
-    },
-    {
-      q: 'Do you also serve Lorton, Springfield, and Arlington?',
-      a: 'Yes. [Lorton](/locations/lorton), [Springfield](/locations/springfield), and [Arlington](/locations/arlington) use the same Burke office as Mt Vernon.',
+      q: 'Are Mt Vernon residential prices flat-rate?',
+      a: 'Yes for air duct and dryer vent packages. The quote before we start is the price you pay.',
     },
   ],
 }

@@ -1,9 +1,9 @@
 {
   "slug": "prince-william-occoquan-humidity-air-ducts",
-  "title": "How Occoquan Humidity and I-95 Dust Load Prince William Air Ducts",
+  "title": "When Prince William Homes Usually Need Duct Attention",
   "headline": "Woodbridge basements, Lake Ridge townhomes, and why Manassas registers go musty",
-  "description": "Prince William County sits between the Occoquan and I-95. Learn why cool basement trunks sweat, how corridor dust sticks, and when to clean the ducts from Burke.",
-  "heroImage": "/img/blog/Allergies.webp",
+  "description": "Prince William County sits between the Occoquan and I-95. An educational look at why cool basement trunks sweat, how corridor dust sticks, and when to clean the ducts from Burke.",
+  "heroImage": "/img/locations/prince-william.webp",
   "sections": [
     {
       "id": "county",
@@ -19,7 +19,7 @@
       "heading": "The finished basement is doing two jobs",
       "paragraphs": [
         "It is living space. It is also the dampest room. If the ducts were never sealed well — common on 1970s–90s systems — humid air leaks in at the joints. The blower then pushes a musty smell upstairs when the AC starts after a storm.",
-        "If wiping the registers only lasts a few days, start with [air duct cleaning in Prince William County](/locations/prince-william)."
+        "If wiping the registers only lasts a few days, when you are ready to book, use the [Prince William County location page](/locations/prince-william)."
       ],
       "listItems": [],
       "image": "/img/blog/dirty-HVAC-unit.webp"
@@ -27,7 +27,9 @@
     {
       "id": "signs",
       "heading": "Typical signs in Woodbridge and Manassas",
-      "paragraphs": ["Watch for:"],
+      "paragraphs": [
+        "Watch for:"
+      ],
       "listItems": [
         "Musty air from basement supplies in July and August.",
         "Gray film on upstairs registers during pollen season.",
@@ -36,10 +38,11 @@
     },
     {
       "id": "protect",
-      "heading": "Burke dispatch — no fake Manassas shop",
+      "heading": "Practical next steps for prince-william homes",
       "paragraphs": [
+        "Prince William jobs are scheduled from our metro offices. This article is educational — use the [location page](/locations/prince-william) when you are ready to book.",
         "Prince William is served from our [Burke](/locations/burke) office. [Springfield](/locations/springfield) is the next Fairfax County page north.",
-        "Book on the [Prince William location page](/locations/prince-william). Add [dryer vent cleaning](/dryer-vent-cleaning) if the laundry stays hot."
+        "Service details live on the [Prince William location page](/locations/prince-william). Add [dryer vent cleaning](/dryer-vent-cleaning) if the laundry stays hot."
       ],
       "listItems": [
         "Dehumidify finished basements in summer.",
@@ -50,16 +53,16 @@
   ],
   "faq": [
     {
-      "q": "Why do Woodbridge basements make ducts smell musty?",
-      "a": "Cool metal trunks in a humid basement sweat. Occoquan moisture and dust stick to that film. The blower pushes the odor upstairs when the system starts."
+      "q": "Does construction near Prince William change cleaning intervals?",
+      "a": "Active drywall work nearby often shortens the useful interval. Wait until heavy dust settles, then inspect."
     },
     {
-      "q": "Do you have an office in Manassas or Woodbridge?",
-      "a": "No. The county is served from Burke. We will not list a mailbox and call it a branch."
+      "q": "Should I clean ducts after renovations?",
+      "a": "Yes if sanding or drywall dust entered returns. Otherwise a standard 3–5 year interval is typical."
     },
     {
-      "q": "Who cleans air ducts in Prince William County, VA?",
-      "a": "Amazon Air Duct Cleaning serves the county from the Burke office. Book on the [Prince William location page](/locations/prince-william) or call (571) 460-0001."
+      "q": "What proof should a cleaning include?",
+      "a": "Before-and-after photos of trunks or vents, plus a clear scope agreed before work starts."
     }
   ]
 }

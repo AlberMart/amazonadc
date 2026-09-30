@@ -1,9 +1,9 @@
 {
   "slug": "how-potomac-humidity-affects-alexandria-air-quality",
-  "title": "How Potomac River Humidity Impacts Your Alexandria Home’s Indoor Air Quality",
+  "title": "Alexandria Indoor Air: Corridor Dust vs Household Debris",
   "headline": "The Hidden Cost of Living Near the Potomac: Humidity, HVAC Systems, and Your Health",
-  "description": "Discover how Alexandria's local humidity affects your HVAC system, why mold thrives in riverfront climates, and how to protect your home's air quality.",
-  "heroImage": "/img/blog/Why-Air-Duct-Condition-Matters.webp",
+  "description": "Discover how Alexandria's local humidity affects your HVAC system, why mold thrives in riverfront climates, and how to protect your home's air quality. For service details, use the matching city location page.",
+  "heroImage": "/img/locations/alexandria.webp",
   "sections": [
     {
       "id": "river_climate",
@@ -25,7 +25,7 @@
         "If the smell is already there, start with [air duct cleaning in Alexandria, VA](/locations/alexandria) instead of covering it with fresheners."
       ],
       "listItems": [],
-      "image": "/img/blog/dirty-HVAC-unit.webp"
+      "image": "/img/blog/Allergies.webp"
     },
     {
       "id": "historic_homes",
@@ -42,11 +42,11 @@
     },
     {
       "id": "protect",
-      "heading": "How to protect your home and family",
+      "heading": "Background reading vs booking a visit",
       "paragraphs": [
+        "Alexandria jobs are scheduled from our metro offices. This article is educational — use the [location page](/locations/alexandria) when you are ready to book.",
         "You cannot change the weather along the Potomac. You can control the environment inside the house. Three steps matter:",
-        "If you suspect mold or see heavy dust, do not wait for it to spread. We expanded local service for riverfront homeowners and now offer [mold remediation in Alexandria, VA](/locations/alexandria) alongside flat-rate [air duct cleaning in Alexandria, VA](/locations/alexandria).",
-        "The same crew also covers [Arlington](/locations/arlington). Keep the ventilation clean, dry, and clear all year."
+        "If you suspect mold or see heavy dust, do not wait for it to spread. We expanded local service for riverfront homeowners and now offer [mold remediation in Alexandria, VA](/locations/alexandria) alongside flat-rate [air duct cleaning in Alexandria, VA](/locations/alexandria)."
       ],
       "listItems": [
         "Keep humidity below 50%: Use a dehumidifier in basements and crawl spaces so mold does not have the moisture it needs.",
@@ -57,16 +57,16 @@
   ],
   "faq": [
     {
-      "q": "How does Potomac humidity affect Alexandria air ducts?",
-      "a": "Humid river air meets cold supply ducts and condenses. Dust sticks to that moisture, and mold can grow inside the system, then circulate when the HVAC runs."
+      "q": "Does construction near Alexandria change cleaning intervals?",
+      "a": "Active drywall work nearby often shortens the useful interval. Wait until heavy dust settles, then inspect."
     },
     {
-      "q": "Are Old Town homes at higher risk?",
-      "a": "Yes. Older brick houses often pull in more outdoor humidity and have ductwork that has collected dust for years. Cleaning every 3 to 5 years is the usual interval."
+      "q": "Should I clean ducts after renovations?",
+      "a": "Yes if sanding or drywall dust entered returns. Otherwise a standard 3–5 year interval is typical."
     },
     {
-      "q": "Who cleans air ducts in Alexandria?",
-      "a": "Amazon Air Duct Cleaning serves Alexandria from the Burke office. Book on the [Alexandria location page](/locations/alexandria) or call (571) 460-0001."
+      "q": "What proof should a cleaning include?",
+      "a": "Before-and-after photos of trunks or vents, plus a clear scope agreed before work starts."
     }
   ]
 }

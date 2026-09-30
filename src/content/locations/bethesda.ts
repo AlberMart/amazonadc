@@ -3,171 +3,154 @@ import type { LocationContentSeed } from '@/utilities/locations'
 export const bethesda: LocationContentSeed = {
   slug: 'bethesda',
   title: 'Air Duct Cleaning in Bethesda, MD',
-  headline: 'Serving Bethesda and All of Montgomery County',
+  headline: 'Our Maryland office — air duct and dryer vent cleaning from Old Georgetown Road',
   description:
-    'Professional air duct, dryer vent, and chimney cleaning in Bethesda, MD and surrounding areas including Rockville, Gaithersburg, Silver Spring, and more. Call (301) 809-4544.',
+    'Amazon Air Duct Cleaning’s Bethesda, MD office at 7815 Old Georgetown Rd Ste 201. Flat-rate air duct cleaning, dryer vent cleaning, and HVAC mold treatment for Montgomery County and nearby cities. Call (800) 606-3334.',
   intro:
-    'Trusted by homeowners and property managers across Bethesda, Rockville, Gaithersburg, Silver Spring, and dozens of surrounding communities. Our licensed technicians deliver professional air duct, dryer vent, chimney, and HVAC cleaning — with honest pricing and lasting results.',
+    'This is our Maryland office on Old Georgetown Road. From Suite 201 we schedule homes across Bethesda, Rockville, Silver Spring, Gaithersburg, and farther Maryland cities on our [locations](/locations) list. Book at (800) 606-3334 — the office line is (301) 809-4544.',
   heroImage: '/img/locations/bethesda.webp',
-  heroAlt: 'Air Duct Cleaning Bethesda MD — Amazon Air Duct Cleaning',
+  heroAlt: 'Bethesda, MD office — Amazon Air Duct Cleaning',
   city: 'Bethesda',
   state: 'MD',
   servedBy: 'bethesda',
+  sectionLayout: 'hub',
   about: {
-    heading: 'Your Local Bethesda Branch',
+    heading: 'Why Bethesda Is Our Maryland Hub',
     paragraphs: [
-      'Our Bethesda location is the service hub for Montgomery County and the greater Maryland region. Conveniently located at 7815 Old Georgetown Rd, Suite 201, our team serves residential and commercial properties throughout Bethesda and the surrounding communities — from [Rockville](/locations/rockville), Silver Spring, and Wheaton to the broader communities of Frederick, Hagerstown, and Columbia. [Washington, DC](/locations/washington-dc) is dispatched from the closer of our two metro offices.',
-      'Whether you need a routine duct cleaning, dryer vent inspection, chimney sweep, or full HVAC system service, our Bethesda technicians bring professional-grade equipment and years of regional expertise directly to your home.',
+      'Our shop sits at 7815 Old Georgetown Rd, Suite 201, Bethesda, MD 20814. Crews stage here for Montgomery County, parts of Prince George’s County, Howard County runs, and Frederick when scheduled. Friendship Heights and close-in Northwest [Washington, DC](/locations/washington-dc) often share this dispatch when it is the shorter drive.',
+      'Bethesda and nearby streets mix colonials, townhomes, and condo stacks. Tree pollen, humid summers, and renovation dust are the usual reasons returns look gray. We offer the same packages as the home page: air ducts, dryer vents, and mold treatment — not chimney sweeping or standalone “HVAC unit rebuild” marketing.',
+      'Need Northern Virginia instead? See our [Burke office](/locations/burke). Same flat-rate packages, Virginia staging address.',
     ],
     highlights: [
-      'Same-day and next-day appointments available',
-      'Residential and commercial properties',
-      'Transparent, upfront pricing — no hidden fees',
-      'Satisfaction guaranteed on every job',
+      'Physical office: 7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814',
+      'Flat-rate air duct and dryer vent packages — quote before work starts',
+      'Before-and-after photos on every duct job',
+      'Montgomery County routes we drive every week',
     ],
   },
-  offersTitle: 'Special Offers — Bethesda Area',
+  offersTitle: 'Special Offers — Bethesda Office',
   services: {
-    heading: 'Services at Our Bethesda Location',
+    heading: 'Services from the Bethesda Office',
     intro:
-      'From standard residential duct cleaning to commercial HVAC servicing — our Bethesda team handles it all.',
+      'Choose duct cleaning, dryer vents, or mold treatment for ventilation when inspection calls for it.',
     items: [
       {
-        title: 'Air Duct Cleaning',
-        text: 'Complete removal of dust, allergens, pet dander, mold spores, and debris from your entire duct system using high-powered vacuums and rotating brush equipment. Includes supply and return ducts, vent cover cleaning, and a before-and-after inspection.',
+        title: 'Air Duct Cleaning & Sanitization',
+        text: 'HEPA negative pressure and rotary brushes through supplies, returns, and registers, plus sanitizing when inspection finds growth. See [air duct cleaning](/air-duct-cleaning).',
       },
       {
         title: 'Dryer Vent Cleaning',
-        text: 'Lint buildup in dryer vents is a leading cause of residential fires. Our technicians clear the full length of your vent line — from the dryer to the exterior exhaust — to restore airflow, reduce fire risk, and improve drying performance.',
+        text: 'Full-length clearing to the exterior cap — including long condo and townhome runs common near Bethesda Metro and downtown. Book [dryer vent cleaning](/dryer-vent-cleaning).',
       },
       {
-        title: 'Chimney Cleaning',
-        text: 'Our certified chimney sweeps remove creosote, soot, and debris buildup from fireplaces, wood-burning stoves, and gas fireplace flues, helping prevent chimney fires and carbon monoxide buildup inside the home.',
+        title: 'Ventilation & HVAC Mold Treatment',
+        text: 'When coils or dead-end ducts show growth, we treat the ventilation path with EPA-registered products used as directed. Learn about [mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
       {
-        title: 'HVAC Unit Cleaning',
-        text: 'A dirty HVAC unit works harder, breaks down sooner, and costs more to run. Our technicians clean evaporator and condenser coils, blower assemblies, and internal components to restore efficiency and extend system lifespan.',
+        title: 'Whole-Home Mold Remediation',
+        text: 'When musty air has left the vents for a basement or finished room, we contain, remove, and dry. See [mold remediation for your home](/mold-remediation-house).',
       },
     ],
   },
   why: {
-    heading: 'Why Bethesda Homeowners Choose Us',
+    heading: 'Bethesda Service — Straight Answers',
     items: [
       {
-        title: 'Locally Based Team',
-        text: 'Our Bethesda office means faster response times and technicians who know the area, the climate, and the types of homes throughout Montgomery County.',
+        title: 'Staffed Maryland Office',
+        text: 'Old Georgetown Road is a real suite with real scheduling — verify the address on Google Maps.',
       },
       {
-        title: 'Professional Equipment',
-        text: 'We use truck-mounted and portable high-powered vacuum systems with HEPA filtration — not consumer-grade tools that only clean surface-level debris.',
+        title: 'Montgomery County Housing We Know',
+        text: 'Rockville townhomes, Silver Spring stacks, and Potomac lots are routine stops, not one-off surprises.',
       },
       {
-        title: 'Transparent Pricing',
-        text: 'Every job is quoted clearly before work begins. No surprise charges, no upselling pressure, no hidden fees.',
-      },
-      {
-        title: 'Full-Service Capability',
-        text: 'Handle air ducts, dryer vents, chimneys, and HVAC units in a single visit — saving you time and scheduling coordination.',
+        title: 'Flat-Rate Pricing',
+        text: 'Residential duct and dryer packages are quoted before work begins.',
       },
       {
         title: 'Satisfaction Guarantee',
-        text: "If you're not fully satisfied with the results, we return and make it right at no additional cost.",
+        text: 'If you are not happy with the result, we come back and make it right.',
       },
     ],
   },
   communities: {
-    heading: 'Communities We Serve from Bethesda',
+    heading: 'Communities Served from Bethesda',
     intro:
-      "Our Bethesda branch serves a wide region across Montgomery County, Frederick County, Carroll County, and Howard County, MD. If you don't see your city listed, call us — we likely serve your area.",
+      'Use the city pages for neighborhood detail. This hub is for the Bethesda office and Maryland dispatch.',
     groups: [
       {
-        title: 'Bethesda & Silver Spring',
+        title: 'Close-in Montgomery',
         places:
-          'Bethesda, [Silver Spring](/locations/silver-spring), [Kensington](/locations/kensington), [Wheaton](/locations/wheaton), [Takoma Park](/locations/takoma-park), Aspen Hill',
+          '[Silver Spring](/locations/silver-spring), [Kensington](/locations/kensington), [Wheaton](/locations/wheaton), [Takoma Park](/locations/takoma-park), [Chevy Chase area via Bethesda]',
       },
       {
-        title: 'Rockville & Gaithersburg',
+        title: 'I-270 corridor',
         places:
-          '[Rockville](/locations/rockville), [Gaithersburg](/locations/gaithersburg), [Germantown](/locations/germantown), [Montgomery Village](/locations/montgomery-village), Derwood, Darnestown, Travilah',
+          '[Rockville](/locations/rockville), [Gaithersburg](/locations/gaithersburg), [Germantown](/locations/germantown), [Montgomery Village](/locations/montgomery-village), [Clarksburg](/locations/clarksburg)',
       },
       {
-        title: 'Potomac & Surrounding Areas',
+        title: 'West & north',
         places:
-          '[Potomac](/locations/potomac), Boyds, Poolesville, [Clarksburg](/locations/clarksburg), Damascus, [Olney](/locations/olney)',
+          '[Potomac](/locations/potomac), [Olney](/locations/olney), [Frederick](/locations/frederick)',
       },
       {
-        title: 'College Park & Hyattsville',
+        title: 'Prince George’s & Howard',
         places:
-          '[College Park](/locations/college-park), [Hyattsville](/locations/hyattsville), and surrounding Prince George\'s County communities',
-      },
-      {
-        title: 'Howard County',
-        places:
-          '[Columbia](/locations/columbia), [Ellicott City](/locations/ellicott-city), Clarksville, and surrounding Howard County neighborhoods',
-      },
-      {
-        title: 'Frederick & Carroll County',
-        places:
-          '[Frederick](/locations/frederick), Urbana, Adamstown, Mt Airy, Westminster, Sykesville, Hagerstown',
-      },
-      {
-        title: 'Washington DC',
-        places: 'See the dedicated [Washington, DC](/locations/washington-dc) page — Capitol Hill, Northwest, Northeast, and Southeast',
+          '[College Park](/locations/college-park), [Hyattsville](/locations/hyattsville), [Columbia](/locations/columbia), [Ellicott City](/locations/ellicott-city)',
       },
     ],
   },
   process: {
-    heading: 'What to Expect When You Book',
-    intro: 'Simple, transparent service from the first call to the final walkthrough.',
+    heading: 'Bethesda Scheduling Checklist',
+    intro: 'What to expect when we schedule Bethesda from 7815 Old Georgetown Rd Ste 201.',
     steps: [
       {
-        title: 'Schedule Online or by Phone',
-        text: 'Book using the contact form on this page or call (301) 809-4544. We confirm your appointment by the next business day.',
+        title: 'Online or Phone Intake',
+        text: 'Book at (800) 606-3334. Mention Bethesda so we route from Bethesda.',
       },
       {
-        title: 'Pre-Visit Confirmation',
-        text: "We call or text the morning of your appointment with a technician arrival window so you're never left waiting or guessing.",
+        title: 'Pre-Job Notes',
+        text: 'We ask about basement returns, stacked laundry, and any musty registers.',
       },
       {
-        title: 'On-Site Inspection',
-        text: 'Our technician inspects your duct system and reviews the full scope of work with you before starting — no surprises.',
+        title: 'On-Site Scope Lock',
+        text: 'No surprise add-ons after we are inside.',
       },
       {
-        title: 'Professional Cleaning',
-        text: 'We protect your floors and furniture, then perform a complete cleaning using high-powered professional-grade equipment.',
+        title: 'Source-Removal Cleaning',
+        text: 'NADCA-style agitation under negative pressure with HEPA capture.',
       },
       {
-        title: 'Final Walkthrough',
-        text: "We review the completed work with you, answer any questions, and ensure you're fully satisfied before leaving.",
-      },
-      {
-        title: 'Maintenance Recommendations',
-        text: 'We provide personalized guidance to keep your system clean between professional services and extend the life of your HVAC.',
+        title: 'Photo Proof',
+        text: 'Duct jobs include before-and-after images you can keep.',
       },
     ],
   },
-  faqIntro:
-    'Have questions about our Bethesda area services? We have answers. Or call us directly at (301) 809-4544.',
+  faqIntro: 'Questions about the Bethesda office. Call (800) 606-3334 — office line (301) 809-4544.',
   faq: [
     {
-      q: 'Do you provide air duct cleaning in Bethesda, MD?',
-      a: 'Yes. Our Bethesda location at 7815 Old Georgetown Rd, Suite 201 serves Bethesda and dozens of surrounding communities throughout Montgomery County and beyond.',
+      q: 'Where is the Bethesda office?',
+      a: '7815 Old Georgetown Rd, Suite 201, Bethesda, MD 20814. Booking: (800) 606-3334. Office line: (301) 809-4544.',
     },
     {
-      q: 'What areas near Bethesda do you service?',
-      a: 'We serve [Rockville](/locations/rockville), [Gaithersburg](/locations/gaithersburg), [Germantown](/locations/germantown), [Silver Spring](/locations/silver-spring), [Potomac](/locations/potomac), [Wheaton](/locations/wheaton), [Kensington](/locations/kensington), [Olney](/locations/olney), [Columbia](/locations/columbia), [Ellicott City](/locations/ellicott-city), [Frederick](/locations/frederick), and many more communities throughout the region.',
+      q: 'What services do you offer from Bethesda?',
+      a: 'Air duct cleaning, dryer vent cleaning, ventilation mold treatment, and whole-home mold remediation when needed. We do not offer chimney sweeping from this page.',
     },
     {
-      q: 'How do I schedule a service appointment at the Bethesda location?',
-      a: 'You can schedule online using the contact form on this page or call us directly at (301) 809-4544. We offer flexible scheduling including Saturday appointments.',
+      q: 'Do you serve Rockville, Silver Spring, and Gaithersburg from Bethesda?',
+      a: 'Yes. See Rockville, Silver Spring, Gaithersburg, and the full list on /locations.',
     },
     {
-      q: 'How long does air duct cleaning take?',
-      a: 'A typical residential air duct cleaning takes 2–4 hours depending on the size of your home and system configuration. Our technician will give you a time estimate during the initial inspection.',
+      q: 'When would Burke take a job instead?',
+      a: 'Virginia addresses and many Southeast DC streets often dispatch from Burke. We pick by drive time when you book.',
     },
     {
-      q: 'Do you offer dryer vent cleaning in the Bethesda area?',
-      a: 'Yes. Our Bethesda technicians provide professional dryer vent cleaning throughout Montgomery County and the surrounding region to reduce fire risk and improve dryer performance.',
+      q: 'Are prices flat-rate?',
+      a: 'Yes for residential air duct and dryer vent packages. The quote before the job is the price you pay.',
+    },
+    {
+      q: 'How far do you drive from Bethesda?',
+      a: 'Montgomery County is core. Howard and Frederick County jobs are scheduled with honest drive times — we say so up front.',
     },
   ],
 }

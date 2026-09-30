@@ -8,7 +8,6 @@ export const dryerVentCleaning: ServiceContent = {
   summary:
     'Professional dryer vent cleaning with rotary brush and high-powered vacuum to reduce fire risk and improve dryer efficiency.',
   price: 199,
-  compareAtPrice: 249,
   orderUrl: 'https://buy.stripe.com/14AfZicRh8HD99t1ok4AU01',
   heroImage: '/img/101221_AmazonDC-227.webp',
   heroAlt: 'Dryer vent cleaning service in Virginia, Maryland & Washington DC',

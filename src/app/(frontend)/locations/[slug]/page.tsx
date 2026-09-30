@@ -13,10 +13,8 @@ import {
   getSiteSeo,
   jsonLd,
   officeBranchNode,
-  organizationNode,
   resolvePageMeta,
   webPageNode,
-  websiteNode,
 } from '@/utilities/seo'
 
 export const dynamic = 'force-dynamic'
@@ -47,7 +45,6 @@ export default async function Page({ params }: Args) {
   const pageUrl = absoluteUrl(path)
   const officeId = `${absoluteUrl(`/locations/${office.slug}`)}#office`
   const localId = location.isOfficeHub ? `${pageUrl}#office` : `${pageUrl}#local`
-  const primaryOffice = office
 
   const localBusiness = location.isOfficeHub
     ? officeBranchNode(office, site)
@@ -56,7 +53,7 @@ export default async function Page({ params }: Args) {
         '@id': localId,
         name: `${site.siteName} — ${location.city}`,
         url: pageUrl,
-        telephone: office.phone,
+        telephone: site.phone,
         email: office.email || site.email,
         image: absoluteUrl(location.heroImage),
         parentOrganization: { '@id': `${absoluteUrl('/')}#organization` },
@@ -104,8 +101,6 @@ export default async function Page({ params }: Args) {
   )
 
   const structuredData = jsonLd([
-    organizationNode(site, primaryOffice),
-    websiteNode(site),
     webPageNode({
       path,
       name: location.title,

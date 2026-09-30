@@ -38,6 +38,7 @@ import ellicottCityFlood from '@/content/blog/ellicott-city-flood-humidity-air-d
 import frederickDowntown from '@/content/blog/frederick-downtown-humidity-air-ducts.json'
 import montgomeryVillageTownhomes from '@/content/blog/montgomery-village-townhomes-air-ducts.json'
 import clarksburgConstruction from '@/content/blog/clarksburg-new-construction-dust-air-ducts.json'
+import { SEO_META_DESCRIPTION, SEO_META_TITLE } from '@/utilities/seoCopy'
 import {
   homeContentSeed,
   mapHomeContentToSeed,
@@ -159,8 +160,7 @@ export const homePageSeed = {
   homeSections: mapHomeSectionsToSeed(homeSectionsSeed),
   homeContent: mapHomeContentToSeed(homeContentSeed),
   meta: {
-    title: 'Air Duct Cleaning in Virginia, Maryland & Washington DC',
-    description:
-      'Top-rated Air Duct Cleaning in VA, MD & DC. Improve your indoor air quality, remove dust & allergens, dryer vent cleaning, commercial services. Call for free estimate!',
+    title: SEO_META_TITLE,
+    description: SEO_META_DESCRIPTION,
   },
 }

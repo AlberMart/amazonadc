@@ -1,3 +1,5 @@
+import { SEO_HOME_H1 } from '@/utilities/seoCopy'
+
 export type HomeContent = {
   heroEyebrow: string
   heroHeadline: string
@@ -64,7 +66,7 @@ export type HomeContent = {
 
 export const homeContentSeed: HomeContent = {
   heroEyebrow: '',
-  heroHeadline: 'Cleaner air for homes across Virginia, Maryland & DC',
+  heroHeadline: SEO_HOME_H1,
   heroSubheadline:
     'Flat-rate air duct and dryer vent cleaning with before/after proof and a 100% satisfaction guarantee.',
   heroCtaLabel: 'Get a Free Estimate',
@@ -191,7 +193,7 @@ export const homeContentSeed: HomeContent = {
   faqItems: [
     {
       q: 'Why is professional air duct cleaning important?',
-      a: 'Professional air duct cleaning removes dust, debris, pet dander, and allergens that accumulate inside HVAC systems. According to the U.S. Department of Energy, a clean HVAC system can reduce energy waste by 25 to 40 percent. Regular cleaning improves indoor air quality, increases HVAC efficiency, and can extend the lifespan of heating and cooling equipment.',
+      a: 'Professional air duct cleaning removes dust, debris, pet dander, and allergens that accumulate inside HVAC systems. A cleaner system can help airflow and may reduce how hard equipment works to heat or cool the home. Regular cleaning improves indoor air quality for many households and supports HVAC maintenance — results vary by home and system condition.',
     },
     {
       q: 'How often should air ducts and dryer vents be cleaned?',
@@ -215,7 +217,7 @@ export const homeContentSeed: HomeContent = {
     },
     {
       q: 'Will there be dust in the house after the service?',
-      a: 'No. Absolutely no dust will be left in the house after our technicians leave. Because of the powerful negative pressure generated during the service, the HEPA filter collects the dust rather than it being blown back into the house.',
+      a: 'We work under negative pressure with HEPA filtration so debris is pulled into the vacuum rather than blown into living spaces. Floors and furniture in the work path are protected. A light wipe of nearby surfaces after the visit is still good practice, as with any in-home service.',
     },
     {
       q: 'Do you have weekend and evening appointments available?',

@@ -1,10 +1,32 @@
 {
   "slug": "lorton-i95-occoquan-air-ducts",
-  "title": "How Lorton’s I-95 Dust and Occoquan Humidity Load Your Air Ducts",
+  "title": "Reading the Signs: Dust and Moisture in Lorton Ductwork",
   "headline": "Laurel Hill HOAs, Lorton Station stacks, and why river air plus interstate grit stick",
-  "description": "Lorton, VA sits on I-95 south of Springfield with the Occoquan nearby. Learn why traffic dust and river humidity load ducts, and when to book a cleaning from Burke.",
-  "heroImage": "/img/blog/dirty-HVAC-unit.webp",
+  "description": "Lorton, VA sits on I-95 south of Springfield with the Occoquan nearby. An educational look at why traffic dust and river humidity load ducts.",
+  "heroImage": "/img/locations/lorton.webp",
   "sections": [
+    {
+      "id": "station",
+      "heading": "Lorton Station dryers pack at the roof cap",
+      "paragraphs": [
+        "Laurel Hill and Station HOAs stack laundry and send lint up a long chase. A dryer that needs two cycles is usually packed at a roof cap, not a dying machine. That moisture sits in the same envelope as Occoquan-humid trunks.",
+        "If supplies look dirty a few days after you wipe them, when you are ready to book, use the [Lorton, VA location page](/locations/lorton)."
+      ],
+      "listItems": [],
+      "image": "/img/blog/The-Hidden-Cost-of-Dirty-Air-Ducts.webp"
+    },
+    {
+      "id": "signs",
+      "heading": "Typical signs in a Lorton house",
+      "paragraphs": [
+        "Watch for:"
+      ],
+      "listItems": [
+        "Gray film on supplies facing I-95 or Richmond Highway.",
+        "Musty air from a split-level basement after rain over the Occoquan.",
+        "Two-cycle dry times in a Lorton Station or Laurel Hill townhome."
+      ]
+    },
     {
       "id": "corridor",
       "heading": "Lorton is Springfield’s problem, one exit south — plus a river",
@@ -15,31 +37,12 @@
       "listItems": []
     },
     {
-      "id": "station",
-      "heading": "Lorton Station dryers pack at the roof cap",
-      "paragraphs": [
-        "Laurel Hill and Station HOAs stack laundry and send lint up a long chase. A dryer that needs two cycles is usually packed at a roof cap, not a dying machine. That moisture sits in the same envelope as Occoquan-humid trunks.",
-        "If supplies look dirty a few days after you wipe them, start with [air duct cleaning in Lorton, VA](/locations/lorton)."
-      ],
-      "listItems": [],
-      "image": "/img/blog/clogged-dryer-vent-lint.webp"
-    },
-    {
-      "id": "signs",
-      "heading": "Typical signs in a Lorton house",
-      "paragraphs": ["Watch for:"],
-      "listItems": [
-        "Gray film on supplies facing I-95 or Richmond Highway.",
-        "Musty air from a split-level basement after rain over the Occoquan.",
-        "Two-cycle dry times in a Lorton Station or Laurel Hill townhome."
-      ]
-    },
-    {
       "id": "protect",
-      "heading": "Burke is up the road — not a Station mailbox",
+      "heading": "Keeping trunks and dryer runs healthier between cleanings",
       "paragraphs": [
-        "Lorton is served from our [Burke](/locations/burke) office. Nearby [Springfield](/locations/springfield) and [Mount Vernon](/locations/mount-vernon) use the same crew. There is no Lorton storefront.",
-        "Book on the [Lorton location page](/locations/lorton). Pair stacked laundry with [dryer vent cleaning](/dryer-vent-cleaning)."
+        "Lorton jobs are scheduled from our metro offices. This article is educational — use the [location page](/locations/lorton) when you are ready to book.",
+        "Lorton is served from our [Burke](/locations/burke) office. Nearby [Springfield](/locations/springfield) and [Mount Vernon](/locations/mount-vernon) use the same crew.",
+        "Service details live on the [Lorton location page](/locations/lorton). Pair stacked laundry with [dryer vent cleaning](/dryer-vent-cleaning)."
       ],
       "listItems": [
         "Change filters more often if you back up to I-95.",
@@ -50,16 +53,20 @@
   ],
   "faq": [
     {
-      "q": "Does I-95 dust really reach Lorton indoor ducts?",
-      "a": "Yes. Fine traffic particles settle near the house. Returns pull them in with river humidity. Cleaning the ducts removes what filters never caught."
+      "q": "Is this a sales page for Lorton duct cleaning?",
+      "a": "No. This post explains mechanisms and signs. Service details live on the Lorton location page."
     },
     {
-      "q": "Is Lorton served from Springfield or from Burke?",
-      "a": "From Burke. Springfield is a nearby page on the same dispatch. There is no Lorton office."
+      "q": "What usually causes gray film on supply registers?",
+      "a": "Fine particles that bypass or overload filters settle in cool trunks and recirculate when the blower runs."
     },
     {
-      "q": "Who cleans air ducts in Lorton, VA?",
-      "a": "Amazon Air Duct Cleaning serves Lorton from the Burke office. Book on the [Lorton location page](/locations/lorton) or call (571) 460-0001."
+      "q": "When is dryer vent cleaning the better first step?",
+      "a": "When laundry closets stay hot, dry times double, or you smell burnt lint — clear the vent to the exterior cap."
+    },
+    {
+      "q": "How is this different from a location page?",
+      "a": "Location pages cover packages, booking, and office dispatch. Articles cover climate and housing patterns."
     }
   ]
 }

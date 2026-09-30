@@ -1,9 +1,9 @@
 {
   "slug": "vienna-tree-pollen-basement-air-ducts",
-  "title": "How Vienna’s Tree Canopy and Basements Load Your Air Ducts",
+  "title": "Humidity, Pollen, and Duct Film: A Vienna Homeowner Guide",
   "headline": "Maple Avenue colonials, Wolf Trap oaks, and why finished basements sweat at the trunks",
-  "description": "The Town of Vienna sits under a heavy Fairfax County canopy. Learn why 1950s–70s colonials store pollen in cool basement trunks, and when to clean the ducts from Burke.",
-  "heroImage": "/img/blog/dirty-air-ducts-energy-bills.webp",
+  "description": "The Town of Vienna sits under a heavy Fairfax County canopy. An educational look at why 1950s–70s colonials store pollen in cool basement trunks, and when to clean the ducts from Burke.",
+  "heroImage": "/img/locations/vienna.webp",
   "sections": [
     {
       "id": "canopy",
@@ -19,15 +19,17 @@
       "heading": "Rec-room additions hide the joints that collect dust",
       "paragraphs": [
         "A Vienna colonial that gained a rec room in the 1990s often has original trunks plus a later branch. Dust settles at those splices. Vienna/Fairfax-GMU Metro and the Tysons edge add denser townhomes with dryer runs that turn too many times before the cap. The same humidity that fogs a windshield on Maple Avenue in July is sitting on the air handler.",
-        "If wiping the registers only lasts a few days, start with [air duct cleaning in Vienna, VA](/locations/vienna)."
+        "If wiping the registers only lasts a few days, when you are ready to book, use the [Vienna, VA location page](/locations/vienna)."
       ],
       "listItems": [],
-      "image": "/img/blog/dirty-HVAC-unit.webp"
+      "image": "/img/blog/neglected-air-ducts-buildup.webp"
     },
     {
       "id": "signs",
       "heading": "Typical signs in a Vienna house",
-      "paragraphs": ["Watch for:"],
+      "paragraphs": [
+        "Watch for:"
+      ],
       "listItems": [
         "Yellow-gray film on upstairs supplies during peak pollen.",
         "Musty air from a finished basement when the AC starts after rain.",
@@ -36,9 +38,10 @@
     },
     {
       "id": "protect",
-      "heading": "A run up 123 — not a Maple Avenue suite",
+      "heading": "Background reading vs booking a visit",
       "paragraphs": [
-        "Vienna is served from our [Burke](/locations/burke) office. Nearby [Oakton](/locations/oakton) and [McLean](/locations/mclean) use the same dispatch. There is no Vienna storefront.",
+        "Vienna jobs are scheduled from our metro offices. This article is educational — use the [location page](/locations/vienna) when you are ready to book.",
+        "Vienna is served from our [Burke](/locations/burke) office. Nearby [Oakton](/locations/oakton) and [McLean](/locations/mclean) use the same dispatch.",
         "Packages live on the [Vienna location page](/locations/vienna). Add [dryer vent cleaning](/dryer-vent-cleaning) if the laundry closet stays hot."
       ],
       "listItems": [
@@ -50,16 +53,24 @@
   ],
   "faq": [
     {
-      "q": "Does Wolf Trap pollen really end up in Vienna air ducts?",
-      "a": "Yes. Returns pull outdoor air and whatever settled near the house. Heavy spring pollen shows up as film on registers until the system is cleaned."
+      "q": "Do humid summers alone require duct cleaning?",
+      "a": "Humidity helps dust stick and can support growth on cold coils, but cleaning decisions still depend on inspection and history."
     },
     {
-      "q": "Do you have a shop on Maple Avenue?",
-      "a": "No. Vienna is served from Burke. We will not rent a suite on Maple Avenue and call it an office."
+      "q": "Who serves Vienna?",
+      "a": "Amazon Air Duct Cleaning schedules Vienna from Burke or Bethesda. Book on the location page or call (800) 606-3334."
     },
     {
-      "q": "Who cleans air ducts in Vienna, VA?",
-      "a": "Amazon Air Duct Cleaning serves Vienna from the Burke office. Book on the [Vienna location page](/locations/vienna) or call (571) 460-0001."
+      "q": "Can filters replace professional cleaning?",
+      "a": "Filters reduce new debris. They do not remove what already sits inside trunks and dryer runs."
+    },
+    {
+      "q": "What should I track for a few weeks first?",
+      "a": "Filter condition, dry times, musty smells at startup, and how fast wiped registers film over again."
+    },
+    {
+      "q": "Are energy-savings claims guaranteed?",
+      "a": "No. Cleaner airflow can help equipment run less hard, but results vary by home and system condition."
     }
   ]
 }

@@ -7,18 +7,19 @@ export const arlington: LocationContentSeed = {
   description:
     'Professional air duct cleaning, dryer vent maintenance, and mold remediation in Arlington, VA. Flat rates, certified technicians, and a 100% satisfaction guarantee.',
   intro:
-    'Amazon Air Duct Cleaning serves condos, townhomes, and older brick houses across Arlington — from Rosslyn and Clarendon to Crystal City and Columbia Pike. Our Burke-based technicians bring professional HVAC cleaning, dryer vent service, and ventilation mold treatment to Arlington homes. Call (571) 460-0001.',
+    'Amazon Air Duct Cleaning serves condos, townhomes, and older brick houses across Arlington — from Rosslyn and Clarendon to Crystal City and Columbia Pike. Our Burke-based technicians bring professional HVAC cleaning, dryer vent service, and ventilation mold treatment to Arlington homes. Call (800) 606-3334.',
   heroImage: '/img/locations/arlington.webp',
   heroAlt: 'Air duct cleaning in Arlington, VA — Amazon Air Duct Cleaning',
   city: 'Arlington',
   state: 'VA',
   servedBy: 'burke',
+  sectionLayout: 'communitiesFirst',
   about: {
     heading: 'Why Arlington Homes Need Extra Indoor Air Care',
     paragraphs: [
       'Arlington sits on the Potomac River, with dense neighborhoods, high-rise condos, and older brick homes that take on river humidity all summer. That moisture meets cool air inside metal ductwork and turns into condensation — the start of musty odors, mold, and dust that recirculates every time the system runs.',
       'Crystal City, Rosslyn, and Pentagon City feel this first, but the same humidity reaches Clarendon, Ballston, Shirlington, and Columbia Pike. Construction dust from nearby development, pollen, and pet dander settle in returns and stay there until the ducts are professionally cleaned.',
-      'We serve Arlington from our Burke office, so you get the same flat-rate crew without a fake local storefront. Nearby [McLean](/locations/mclean) and [Washington, DC](/locations/washington-dc) use the same dispatch. Read how [Potomac humidity affects Arlington homes](/blog/how-potomac-humidity-affects-arlington-air-quality), or book [air duct cleaning](/air-duct-cleaning) and [dryer vent cleaning](/dryer-vent-cleaning) in a single visit.',
+      'We serve Arlington from our Burke office, so you get the same flat-rate crew with flat-rate packages from the Burke crew. Nearby [McLean](/locations/mclean) and [Washington, DC](/locations/washington-dc) use the same dispatch. Read how [Potomac humidity affects Arlington homes](/blog/how-potomac-humidity-affects-arlington-air-quality), or book [air duct cleaning](/air-duct-cleaning) and [dryer vent cleaning](/dryer-vent-cleaning) in a single visit.',
     ],
     highlights: [
       'Same-day and next-day appointments from our Burke team',
@@ -30,8 +31,7 @@ export const arlington: LocationContentSeed = {
   offersTitle: 'Special Offers — Arlington, VA',
   services: {
     heading: 'Our Services in Arlington, VA',
-    intro:
-      'Transparent flat-rate pricing for Arlington residents and small businesses. The quote is the price.',
+    intro: 'Clear scopes for Arlington. No per-vent games.',
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -52,7 +52,7 @@ export const arlington: LocationContentSeed = {
     ],
   },
   why: {
-    heading: 'Why Arlington Homeowners Choose Us',
+    heading: 'Booking Confidence for Arlington Homes',
     items: [
       {
         title: 'Upfront Flat-Rate Pricing',
@@ -91,62 +91,58 @@ export const arlington: LocationContentSeed = {
       },
       {
         title: 'North Arlington',
-        places: 'Cherrydale, Westover, East Falls Church, Yorktown, Williamsburg, Tara-Leeway Heights',
+        places:
+          'Cherrydale, Westover, East Falls Church, Yorktown, Williamsburg, Tara-Leeway Heights',
       },
     ],
   },
   process: {
-    heading: 'What to Expect When You Book',
-    intro: 'Simple scheduling from the Burke office that covers Arlington.',
+    heading: 'From First Call to Walkthrough in Arlington',
+    intro: 'A clear path from estimate to finished job for Arlington homes.',
     steps: [
       {
-        title: 'Schedule Online or by Phone',
-        text: 'Use the form on this page or call (571) 460-0001. We confirm the appointment by the next business day.',
+        title: 'Request a Window',
+        text: 'Call (800) 606-3334 or use the form. We confirm by the next business day.',
       },
       {
-        title: 'Pre-Visit Confirmation',
-        text: 'The morning of the job we send an arrival window so building access and parking are already sorted.',
+        title: 'Share Access Details',
+        text: 'Gates, condo loading, alley parking, and HOA rules for Arlington help us stage correctly.',
       },
       {
-        title: 'On-Site Inspection',
-        text: 'We inspect the duct system and review the scope before we start — including any musty odor or visible moisture near registers.',
+        title: 'Inspect Before Cleaning',
+        text: 'We walk ducts and the dryer run with you and agree scope before equipment comes in.',
       },
       {
-        title: 'Professional Cleaning',
-        text: 'Floors and furniture are protected. Then we clean with truck-mounted or portable HEPA equipment and treat ventilation mold when it is part of the job.',
+        title: 'Protect and Clean',
+        text: 'Floors are protected. HEPA negative pressure pulls debris into the vacuum, not living spaces.',
       },
       {
-        title: 'Final Walkthrough',
-        text: 'You see the before-and-after photos, we answer questions, and we leave only when you are satisfied.',
+        title: 'Review Results',
+        text: 'You keep before-and-after photos on duct jobs. We leave when you are satisfied.',
       },
     ],
   },
-  faqIntro:
-    'Questions from Arlington homeowners. Or call the Burke office that covers Arlington at (571) 460-0001.',
+  faqIntro: 'Arlington questions — call (800) 606-3334 (dispatch: Burke).',
   faq: [
     {
-      q: 'Why is mold so common in Arlington HVAC systems?',
-      a: 'Arlington summers are hot and humid, and much of the county sits along the Potomac. Cool air in metal ducts meets that humidity and forms condensation. Dust then sticks to the moisture and gives mold a place to grow. The odor shows up when the AC or heat turns on.',
+      q: 'Which office covers Arlington?',
+      a: 'Burke — 5641 Burke Centre Pkwy Ste 119, Burke, VA 22015. Booking line (800) 606-3334.',
     },
     {
-      q: 'How do I know if I need mold treatment in my vents?',
-      a: 'A musty or earthy smell when the system starts, dark spotting around supply registers, or allergy symptoms that ease when you leave the apartment are the usual signs. We inspect the ductwork and treat what we find — we do not sell a treatment you do not need.',
+      q: 'How often should Arlington, VA homes clean ducts?',
+      a: 'Every 3–5 years for most homes. Pets, renovations, and humid basements often need the shorter end. Dryer vents about yearly.',
     },
     {
-      q: 'How often should Arlington condos and older homes clean air ducts?',
-      a: 'Every 3 to 5 years for most homes. High-rises with shared corridors, homes with pets, and older brick houses that pull in more outdoor air often need the shorter end of that range. Dryer vents should be cleared about once a year.',
+      q: 'What should I prepare before the crew arrives in Arlington?',
+      a: 'Clear access to returns, the air handler, and the dryer. Note HOA gate codes if needed.',
     },
     {
-      q: 'Are the mold treatments safe for families and pets?',
-      a: 'Yes. We use EPA-registered antimicrobial treatments that are safe for children, pets, and people with respiratory sensitivities once the product has been applied as directed.',
+      q: 'How long does air duct cleaning take in a typical Arlington home?',
+      a: 'Most single-system houses take about 2–3 hours. Townhomes with long dryer runs can run longer after inspection.',
     },
     {
-      q: 'Do you offer flat rates for Arlington?',
-      a: 'Yes. Residential air duct and dryer vent cleaning is flat-rate. The number we quote before the job is the price you pay. See current packages on this page or ask when you call (571) 460-0001.',
-    },
-    {
-      q: 'Do you have an office in Arlington?',
-      a: 'No. Arlington is served from our Burke office at 5641 Burke Centre Pkwy Ste 119. Call (571) 460-0001 or use the form on this page. For the climate background, see [how Potomac humidity affects Arlington air quality](/blog/how-potomac-humidity-affects-arlington-air-quality).',
+      q: 'Are Arlington residential prices flat-rate?',
+      a: 'Yes for air duct and dryer vent packages. The quote before we start is the price you pay.',
     },
   ],
 }

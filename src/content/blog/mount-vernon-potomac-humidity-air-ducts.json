@@ -1,10 +1,32 @@
 {
   "slug": "mount-vernon-potomac-humidity-air-ducts",
-  "title": "How Mt Vernon Potomac Humidity Loads Older Air Ducts",
+  "title": "Mount Vernon Indoor Air: Corridor Dust vs Household Debris",
   "headline": "Fort Hunt colonials, Hollin Hills metal, and why Parkway summers sweat at the trunks",
-  "description": "Mt Vernon, VA sits along the GW Parkway on the Potomac. Learn why older river-side trunks collect humidity and pollen, and when to clean them from Burke.",
-  "heroImage": "/img/blog/Allergies.webp",
+  "description": "Mt Vernon, VA sits along the GW Parkway on the Potomac. An educational look at why older river-side trunks collect humidity and pollen.",
+  "heroImage": "/img/locations/mount-vernon.webp",
   "sections": [
+    {
+      "id": "wooded_lot",
+      "heading": "Wooded Fort Hunt lots hide long dryer runs",
+      "paragraphs": [
+        "Dryer vents often travel a long exterior wall toward a rear cap in the trees. Lint packs where you cannot see it from the kitchen. That moisture dump feeds whatever is already growing on cool trunks.",
+        "If the first AC week after rain smells musty, when you are ready to book, use the [Mt Vernon, VA location page](/locations/mount-vernon)."
+      ],
+      "listItems": [],
+      "image": "/img/blog/Allergies.webp"
+    },
+    {
+      "id": "signs",
+      "heading": "Typical signs in a Mt Vernon house",
+      "paragraphs": [
+        "Watch for:"
+      ],
+      "listItems": [
+        "Musty air from a rambler or colonial basement after a humid Parkway week.",
+        "Gray-green film on supplies in a Hollin Hills or Fort Hunt house.",
+        "A dryer that never quite finishes on a wooded-lot rear cap."
+      ]
+    },
     {
       "id": "parkway",
       "heading": "This is the Fairfax County community — not the estate gift shop",
@@ -15,31 +37,12 @@
       "listItems": []
     },
     {
-      "id": "wooded_lot",
-      "heading": "Wooded Fort Hunt lots hide long dryer runs",
-      "paragraphs": [
-        "Dryer vents often travel a long exterior wall toward a rear cap in the trees. Lint packs where you cannot see it from the kitchen. That moisture dump feeds whatever is already growing on cool trunks.",
-        "If the first AC week after rain smells musty, start with [air duct cleaning in Mt Vernon, VA](/locations/mount-vernon)."
-      ],
-      "listItems": [],
-      "image": "/img/blog/dirty-HVAC-unit.webp"
-    },
-    {
-      "id": "signs",
-      "heading": "Typical signs in a Mt Vernon house",
-      "paragraphs": ["Watch for:"],
-      "listItems": [
-        "Musty air from a rambler or colonial basement after a humid Parkway week.",
-        "Gray-green film on supplies in a Hollin Hills or Fort Hunt house.",
-        "A dryer that never quite finishes on a wooded-lot rear cap."
-      ]
-    },
-    {
       "id": "protect",
-      "heading": "Burke dispatch — not a Parkway suite",
+      "heading": "Keeping trunks and dryer runs healthier between cleanings",
       "paragraphs": [
-        "Mt Vernon is served from our [Burke](/locations/burke) office. Nearby [Alexandria](/locations/alexandria) and [Lorton](/locations/lorton) use the same crew. There is no Mt Vernon storefront.",
-        "Book on the [Mt Vernon location page](/locations/mount-vernon). See [air duct cleaning](/air-duct-cleaning) for how we treat older metal trunks."
+        "Mount Vernon jobs are scheduled from our metro offices. This article is educational — use the [location page](/locations/mount-vernon) when you are ready to book.",
+        "Mt Vernon is served from our [Burke](/locations/burke) office. Nearby [Alexandria](/locations/alexandria) and [Lorton](/locations/lorton) use the same crew.",
+        "Service details live on the [Mt Vernon location page](/locations/mount-vernon). See [air duct cleaning](/air-duct-cleaning) for how we treat older metal trunks."
       ],
       "listItems": [
         "Dehumidify basements and crawls in summer even if the river breeze feels cool.",
@@ -50,16 +53,20 @@
   ],
   "faq": [
     {
-      "q": "Is this Mount Vernon the estate or the Fairfax County neighborhood?",
-      "a": "The location page targets the Fairfax County community along the GW Parkway — Fort Hunt, Hollin Hills, and nearby streets — not the historic estate itself."
+      "q": "Is this a sales page for Mount Vernon duct cleaning?",
+      "a": "No. This post explains mechanisms and signs. Service details live on the Mount Vernon location page."
     },
     {
-      "q": "Does Potomac humidity really load indoor ducts here?",
-      "a": "Yes. River air is wet. Cool trunks sweat. Pollen and Parkway dust stick until the ducts are cleaned."
+      "q": "What usually causes gray film on supply registers?",
+      "a": "Fine particles that bypass or overload filters settle in cool trunks and recirculate when the blower runs."
     },
     {
-      "q": "Who cleans air ducts in Mt Vernon, VA?",
-      "a": "Amazon Air Duct Cleaning serves Mt Vernon from the Burke office. Book on the [Mt Vernon location page](/locations/mount-vernon) or call (571) 460-0001."
+      "q": "When is dryer vent cleaning the better first step?",
+      "a": "When laundry closets stay hot, dry times double, or you smell burnt lint — clear the vent to the exterior cap."
+    },
+    {
+      "q": "How is this different from a location page?",
+      "a": "Location pages cover packages, booking, and office dispatch. Articles cover climate and housing patterns."
     }
   ]
 }

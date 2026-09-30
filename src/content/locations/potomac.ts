@@ -5,20 +5,21 @@ export const potomac: LocationContentSeed = {
   title: 'Air Duct Cleaning in Potomac, MD',
   headline: 'Air duct and dryer vent cleaning for Cabin John, Falls Road, and river-canopy estates',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Potomac, MD. Flat rates from our Bethesda office for large-lot homes under a heavy tree canopy and river humidity. Call (301) 809-4544.',
+    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Potomac, MD. Flat rates from our Bethesda office for large-lot homes under a heavy tree canopy and river humidity. Call (800) 606-3334.',
   intro:
-    'Amazon Air Duct Cleaning serves Potomac from our Bethesda office — a short run out River Road, not a rented estate-area suite. Large lots, Cabin John, and houses under oak and maple take on river humidity and canopy pollen. Call (301) 809-4544.',
+    'Amazon Air Duct Cleaning serves Potomac from our Bethesda office — a short run out River Road, not a rented estate-area suite. Large lots, Cabin John, and houses under oak and maple take on river humidity and canopy pollen. Call (800) 606-3334.',
   heroImage: '/img/locations/potomac.webp',
   heroAlt: 'Air duct cleaning in Potomac, MD — Amazon Air Duct Cleaning',
   city: 'Potomac',
   state: 'MD',
   servedBy: 'bethesda',
+  sectionLayout: 'communitiesFirst',
   about: {
     heading: 'Why Potomac Estates Load Canopy Pollen and River Humidity',
     paragraphs: [
       'Potomac is Montgomery County’s large-lot west side: Cabin John and Glen Echo toward the river, Potomac Village and Falls Road, then Avenel and the streets that feel like McLean without crossing the water. The housing is colonials, contemporaries, and additions on wooded lots. Those lots are the story. The canopy is dense. Shade keeps crawl spaces and basements cool while the river corridor stays wet.',
       'Oak, maple, and pine dump pollen onto every patio each spring. Returns pull it in. Long supply runs in big houses hide dust you never see from the living room. When a humid week hits, cool trunks sweat and that pollen film turns musty on the first AC cycle. [Great Falls](/locations/great-falls), Virginia, sits across the river — we mention it because neighbors ask — but those jobs dispatch from our Burke office, not Bethesda. This page stays on the Maryland side.',
-      'We serve Potomac from [Bethesda](/locations/bethesda). There is no Potomac storefront. Nearby [Rockville](/locations/rockville) is the same Maryland crew. Read [how Potomac tree canopy and humidity load air ducts](/blog/potomac-tree-canopy-humidity-air-ducts).',
+      'We serve Potomac from [Bethesda](/locations/bethesda). Nearby [Rockville](/locations/rockville) is the same Maryland crew. For background reading (not a booking page), see [potomac-tree-canopy-humidity-air-ducts](/blog/potomac-tree-canopy-humidity-air-ducts).',
     ],
     highlights: [
       'Cabin John, Falls Road, Avenel, and river-canopy estates',
@@ -30,7 +31,7 @@ export const potomac: LocationContentSeed = {
   offersTitle: 'Special Offers — Potomac, MD',
   services: {
     heading: 'Our Services in Potomac, MD',
-    intro: 'The same honest packages we use in Bethesda. The quote is the price.',
+    intro: 'Potomac residents book the same published packages as the rest of our metro area.',
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -51,11 +52,11 @@ export const potomac: LocationContentSeed = {
     ],
   },
   why: {
-    heading: 'Why Potomac Homeowners Book Us',
+    heading: 'Reasons Neighbors in Potomac Book Repeat Visits',
     items: [
       {
         title: 'Close Bethesda Office, Not a River-Road Mailbox',
-        text: '7815 Old Georgetown Rd is a staffed office. We will not pretend we sit in Potomac Village.',
+        text: '7815 Old Georgetown Rd is a staffed office. Potomac jobs are scheduled from Bethesda with a short Montgomery County drive.',
       },
       {
         title: 'Flat-Rate Pricing',
@@ -86,61 +87,62 @@ export const potomac: LocationContentSeed = {
       },
       {
         title: 'Avenel & west lots',
-        places: 'Avenel, Travilah edge, large-lot streets toward Darnestown — ask if your lane is not listed',
+        places:
+          'Avenel, Travilah edge, large-lot streets toward Darnestown — ask if your lane is not listed',
       },
     ],
   },
   process: {
-    heading: 'What to Expect When You Book',
-    intro: 'Simple scheduling from the Bethesda office that covers Potomac.',
+    heading: 'What Happens After You Request Potomac Service',
+    intro: 'Simple steps our Bethesda crew follows for Potomac appointments.',
     steps: [
       {
-        title: 'Schedule Online or by Phone',
-        text: 'Use the form on this page or call (301) 809-4544. We confirm the appointment by the next business day.',
+        title: 'Talk Through the Home',
+        text: 'Tell us about pets, renovations, and laundry layout common in Potomac.',
       },
       {
-        title: 'Pre-Visit Confirmation',
-        text: 'The morning of the job we send an arrival window so long driveways and gated lanes are already on the map.',
+        title: 'Confirm Arrival ETA',
+        text: 'Morning-of text with a realistic window for your street.',
       },
       {
-        title: 'On-Site Inspection',
-        text: 'We inspect basement or crawl trunks, returns, and the dryer run, then agree the scope before equipment comes in.',
+        title: 'Agree the Package',
+        text: 'Flat-rate duct and dryer packages — the quoted number is what you pay.',
       },
       {
-        title: 'Professional Cleaning',
-        text: 'Floors and finished lower levels are protected. We clean with truck-mounted or portable HEPA equipment.',
+        title: 'Run the Cleaning',
+        text: 'Truck-mounted or portable HEPA sized for Potomac houses and townhomes.',
       },
       {
-        title: 'Final Walkthrough',
-        text: 'Before-and-after photos, questions answered, and we leave when you are satisfied.',
+        title: 'Final Questions',
+        text: 'Filter tips and dryer-vent interval before we pack up.',
       },
     ],
   },
-  faqIntro: 'Questions from Potomac homeowners. Call the Bethesda office at (301) 809-4544.',
+  faqIntro: 'Potomac questions — call (800) 606-3334 (dispatch: Bethesda).',
   faq: [
     {
-      q: 'Do you have an office in Potomac?',
-      a: 'No. Potomac is served from our Bethesda office at 7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814. Call (301) 809-4544 or use the form on this page.',
+      q: 'Which office covers Potomac?',
+      a: 'Bethesda — 7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814. Booking line (800) 606-3334.',
     },
     {
-      q: 'Do you serve Great Falls, Virginia from the Potomac page?',
-      a: '[Great Falls](/locations/great-falls) sits across the river and is dispatched from our Burke office, not Bethesda. This page is for Maryland Potomac, Cabin John, and the close Montgomery lots. Ask when you book if your address is on the Virginia bank.',
+      q: 'What should I prepare before the crew arrives in Potomac?',
+      a: 'Clear access to returns, the air handler, and the dryer. Note HOA gate codes if needed.',
     },
     {
-      q: 'Why does my Potomac house smell musty when the AC starts?',
-      a: 'River humidity plus a cool basement or crawl under a heavy canopy. Pollen sticks to that film and the blower sends it upstairs. [Potomac tree canopy, humidity, and air ducts](/blog/potomac-tree-canopy-humidity-air-ducts) covers what to do next.',
+      q: 'How long does air duct cleaning take in a typical Potomac home?',
+      a: 'Most single-system houses take about 2–3 hours. Townhomes with long dryer runs can run longer after inspection.',
     },
     {
-      q: 'How often should Potomac homes clean air ducts?',
-      a: 'Every 3 to 5 years for most houses. Pets, renovations, and heavily wooded lots often need the shorter interval. Dryer vents should be cleared about once a year.',
+      q: 'Are Potomac residential prices flat-rate?',
+      a: 'Yes for air duct and dryer vent packages. The quote before we start is the price you pay.',
     },
     {
-      q: 'Do you offer flat rates in Potomac?',
-      a: 'Yes. Residential air duct and dryer vent cleaning is flat-rate. The number we quote before the job is the price you pay.',
+      q: 'Can ducts and dryer vents be done the same day in Potomac?',
+      a: 'Usually yes if you book the combined package or both services when you schedule.',
     },
     {
-      q: 'Are mold treatments safe for Potomac families and pets?',
-      a: 'Yes. We use EPA-registered antimicrobial treatments that are safe for children, pets, and people with respiratory sensitivities once applied as directed.',
+      q: 'Is sanitizing included for Potomac duct jobs?',
+      a: 'Sanitizing is available when inspection supports it or when you request it — we confirm before applying anything.',
     },
   ],
 }

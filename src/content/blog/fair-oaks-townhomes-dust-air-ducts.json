@@ -1,9 +1,9 @@
 {
   "slug": "fair-oaks-townhomes-dust-air-ducts",
-  "title": "How Fair Oaks Townhomes Collect Route 50 and I-66 Dust",
+  "title": "Humidity, Pollen, and Duct Film: A Fair Oaks Homeowner Guide",
   "headline": "Mall-area stacks, Fair Lakes closets, and why this is not the City of Fairfax page",
-  "description": "Fair Oaks, VA sits at the I-66 / Route 50 interchange around the mall and Fair Lakes. Learn why townhome ducts load corridor dust, and when to clean them from Burke.",
-  "heroImage": "/img/blog/Why-Air-Duct-Condition-Matters.webp",
+  "description": "Fair Oaks, VA sits at the I-66 / Route 50 interchange around the mall and Fair Lakes. An educational look at why townhome ducts load corridor dust.",
+  "heroImage": "/img/locations/fair-oaks.webp",
   "sections": [
     {
       "id": "interchange",
@@ -19,15 +19,17 @@
       "heading": "Townhome dryer chases clog before the paint looks old",
       "paragraphs": [
         "Stacked laundry sends lint up a chase that turns too many times. The closet stays humid. Returns pull Beltway-adjacent dust and infill construction along Route 50. Together they are why registers gray out a week after you wipe them.",
-        "If the laundry stays hot and the supplies look dirty, start with [air duct cleaning in Fair Oaks, VA](/locations/fair-oaks)."
+        "If the laundry stays hot and the supplies look dirty, when you are ready to book, use the [Fair Oaks, VA location page](/locations/fair-oaks)."
       ],
       "listItems": [],
-      "image": "/img/blog/clogged-dryer-vent-lint.webp"
+      "image": "/img/blog/neglected-air-ducts-buildup.webp"
     },
     {
       "id": "signs",
       "heading": "Typical signs in a Fair Oaks townhome",
-      "paragraphs": ["Watch for:"],
+      "paragraphs": [
+        "Watch for:"
+      ],
       "listItems": [
         "Gray film on supplies even in a 1990s–2000s unit.",
         "Dust returning fast if you face 50, 66, or West Ox.",
@@ -36,10 +38,11 @@
     },
     {
       "id": "protect",
-      "heading": "Burke dispatch — not a kiosk at the mall",
+      "heading": "Background reading vs booking a visit",
       "paragraphs": [
-        "Fair Oaks is served from our [Burke](/locations/burke) office. Nearby [Fairfax](/locations/fairfax) and [Chantilly](/locations/chantilly) use the same crew. There is no Fair Oaks storefront.",
-        "Book on the [Fair Oaks location page](/locations/fair-oaks). Add [dryer vent cleaning](/dryer-vent-cleaning) for stacked laundry."
+        "Fair Oaks jobs are scheduled from our metro offices. This article is educational — use the [location page](/locations/fair-oaks) when you are ready to book.",
+        "Fair Oaks is served from our [Burke](/locations/burke) office. Nearby [Fairfax](/locations/fairfax) and [Chantilly](/locations/chantilly) use the same crew.",
+        "Service details live on the [Fair Oaks location page](/locations/fair-oaks). Add [dryer vent cleaning](/dryer-vent-cleaning) for stacked laundry."
       ],
       "listItems": [
         "Ask for a duct cleaning if the trunks were never cleaned after the builder left.",
@@ -50,16 +53,20 @@
   ],
   "faq": [
     {
-      "q": "Is Fair Oaks the same as the City of Fairfax?",
-      "a": "No. Fair Oaks is the county community around the mall, Fair Lakes, and the 50/66 interchange. The independent city has its own page. Both dispatch from Burke."
+      "q": "Is this a sales page for Fair Oaks duct cleaning?",
+      "a": "No. This post explains mechanisms and signs. Service details live on the Fair Oaks location page."
     },
     {
-      "q": "Why do Fair Oaks townhomes get dusty so fast?",
-      "a": "Corridor traffic, attic handlers, and leftover builder dust. Returns pull the mix. Filters do not empty the trunks."
+      "q": "What usually causes gray film on supply registers?",
+      "a": "Fine particles that bypass or overload filters settle in cool trunks and recirculate when the blower runs."
     },
     {
-      "q": "Who cleans air ducts in Fair Oaks, VA?",
-      "a": "Amazon Air Duct Cleaning serves Fair Oaks from the Burke office. Book on the [Fair Oaks location page](/locations/fair-oaks) or call (571) 460-0001."
+      "q": "When is dryer vent cleaning the better first step?",
+      "a": "When laundry closets stay hot, dry times double, or you smell burnt lint — clear the vent to the exterior cap."
+    },
+    {
+      "q": "How is this different from a location page?",
+      "a": "Location pages cover packages, booking, and office dispatch. Articles cover climate and housing patterns."
     }
   ]
 }

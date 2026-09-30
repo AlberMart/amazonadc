@@ -1,10 +1,32 @@
 {
   "slug": "takoma-park-bungalow-humidity-air-ducts",
-  "title": "How Takoma Park Bungalows Hold Humidity in Older Air Ducts",
+  "title": "Takoma Park Indoor Air: Corridor Dust vs Household Debris",
   "headline": "Carroll Avenue cottages, DC-line trees, and why added-later metal sweats in the crawl",
-  "description": "Takoma Park, MD bungalows sit on the DC line under a heavy canopy. Learn why later-added ducts collect humidity and leaf grit, and when to clean them from Bethesda.",
-  "heroImage": "/img/blog/Why-Air-Duct-Condition-Matters.webp",
+  "description": "Takoma Park, MD bungalows sit on the DC line under a heavy canopy. An educational look at why later-added ducts collect humidity and leaf grit.",
+  "heroImage": "/img/locations/takoma-park.webp",
   "sections": [
+    {
+      "id": "patched_vent",
+      "heading": "Porch-to-porch lots mean patched dryer vents",
+      "paragraphs": [
+        "Additions sent dryer exhaust through whatever wall was handy. Caps sit in leaf piles. Modern machines push more air than those runs were sized for. Lint packs. Heat and moisture dump back into a bungalow that already has sweating trunks.",
+        "If the first AC week smells like a crawl, when you are ready to book, use the [Takoma Park, MD location page](/locations/takoma-park)."
+      ],
+      "listItems": [],
+      "image": "/img/blog/Allergies.webp"
+    },
+    {
+      "id": "signs",
+      "heading": "Typical signs in a Takoma Park bungalow",
+      "paragraphs": [
+        "Watch for:"
+      ],
+      "listItems": [
+        "Musty air from a crawl or basement when the AC starts in June.",
+        "Leaf-season grit on supplies even after you wipe them.",
+        "A dryer that needs two cycles after an addition patched the vent."
+      ]
+    },
     {
       "id": "line",
       "heading": "Takoma Park walks into three jurisdictions. The humidity does not care.",
@@ -15,31 +37,12 @@
       "listItems": []
     },
     {
-      "id": "patched_vent",
-      "heading": "Porch-to-porch lots mean patched dryer vents",
-      "paragraphs": [
-        "Additions sent dryer exhaust through whatever wall was handy. Caps sit in leaf piles. Modern machines push more air than those runs were sized for. Lint packs. Heat and moisture dump back into a bungalow that already has sweating trunks.",
-        "If the first AC week smells like a crawl, start with [air duct cleaning in Takoma Park, MD](/locations/takoma-park)."
-      ],
-      "listItems": [],
-      "image": "/img/blog/clogged-dryer-vent-lint.webp"
-    },
-    {
-      "id": "signs",
-      "heading": "Typical signs in a Takoma Park bungalow",
-      "paragraphs": ["Watch for:"],
-      "listItems": [
-        "Musty air from a crawl or basement when the AC starts in June.",
-        "Leaf-season grit on supplies even after you wipe them.",
-        "A dryer that needs two cycles after an addition patched the vent."
-      ]
-    },
-    {
       "id": "protect",
-      "heading": "Bethesda dispatch — not a Carroll Avenue suite",
+      "heading": "Keeping trunks and dryer runs healthier between cleanings",
       "paragraphs": [
-        "Takoma Park is served from our [Bethesda](/locations/bethesda) office. Nearby [Silver Spring](/locations/silver-spring) and [Washington, DC](/locations/washington-dc) use the same Maryland crew. There is no Takoma Park storefront.",
-        "Book on the [Takoma Park location page](/locations/takoma-park). Add [dryer vent cleaning](/dryer-vent-cleaning) if the cap sits in the leaves."
+        "Takoma Park jobs are scheduled from our metro offices. This article is educational — use the [location page](/locations/takoma-park) when you are ready to book.",
+        "Takoma Park is served from our [Bethesda](/locations/bethesda) office. Nearby [Silver Spring](/locations/silver-spring) and [Washington, DC](/locations/washington-dc) use the same Maryland crew.",
+        "Service details live on the [Takoma Park location page](/locations/takoma-park). Add [dryer vent cleaning](/dryer-vent-cleaning) if the cap sits in the leaves."
       ],
       "listItems": [
         "Dehumidify crawls in summer even under heavy shade.",
@@ -50,16 +53,24 @@
   ],
   "faq": [
     {
-      "q": "Why do Takoma Park bungalows smell musty from the vents?",
-      "a": "Later-added metal in a cool crawl sweats. Leaf grit and pollen stick. The blower then pushes that odor into the house."
+      "q": "Do humid summers alone require duct cleaning?",
+      "a": "Humidity helps dust stick and can support growth on cold coils, but cleaning decisions still depend on inspection and history."
     },
     {
-      "q": "Do you serve the DC side of Takoma from this page?",
-      "a": "Maryland Takoma Park dispatches from Bethesda. District addresses use the [Washington, DC](/locations/washington-dc) page. Tell us the address so we book the right office."
+      "q": "Who serves Takoma Park?",
+      "a": "Amazon Air Duct Cleaning schedules Takoma Park from Burke or Bethesda. Book on the location page or call (800) 606-3334."
     },
     {
-      "q": "Who cleans air ducts in Takoma Park, MD?",
-      "a": "Amazon Air Duct Cleaning serves Takoma Park from the Bethesda office. Book on the [Takoma Park location page](/locations/takoma-park) or call (301) 809-4544."
+      "q": "Can filters replace professional cleaning?",
+      "a": "Filters reduce new debris. They do not remove what already sits inside trunks and dryer runs."
+    },
+    {
+      "q": "What should I track for a few weeks first?",
+      "a": "Filter condition, dry times, musty smells at startup, and how fast wiped registers film over again."
+    },
+    {
+      "q": "Are energy-savings claims guaranteed?",
+      "a": "No. Cleaner airflow can help equipment run less hard, but results vary by home and system condition."
     }
   ]
 }

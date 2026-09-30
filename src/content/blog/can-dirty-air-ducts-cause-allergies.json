@@ -6,16 +6,6 @@
   "heroImage": "/img/blog/can-dirty-air-ducts-cause-allergies.webp",
   "sections": [
     {
-      "id": "air_ducts_and_allergies",
-      "heading": "How are dirty air ducts connected to allergies?",
-      "paragraphs": [
-        "Air ducts serve as the circulatory system of your HVAC unit, delivering heated or cooled air to every room in the home. Over time, these same pathways accumulate dust, biological particles, and other contaminants — and every time the system runs, those particles are pushed directly into your living space.",
-        "For allergy sufferers, this continuous cycle of recirculating airborne allergens can make indoor environments just as — or more — problematic than the outdoors during peak pollen season. The home, which should offer refuge from environmental triggers, instead becomes a persistent source of exposure."
-      ],
-      "listItems": [],
-      "image": "/img/blog/Allergies.webp"
-    },
-    {
       "id": "allergens_in_ducts",
       "heading": "Common Allergens Found Inside Air Ducts",
       "paragraphs": [
@@ -106,28 +96,34 @@
         "If allergy symptoms in your household seem worse indoors — or if your ducts have not been professionally cleaned in the past few years — schedule a professional air duct cleaning today to improve your indoor air quality and reduce allergen exposure for everyone in your home."
       ],
       "listItems": []
+    },
+    {
+      "id": "air_ducts_and_allergies",
+      "heading": "How are dirty air ducts connected to allergies?",
+      "paragraphs": [
+        "Air ducts serve as the circulatory system of your HVAC unit, delivering heated or cooled air to every room in the home. Over time, these same pathways accumulate dust, biological particles, and other contaminants — and every time the system runs, those particles are pushed directly into your living space.",
+        "For allergy sufferers, this continuous cycle of recirculating airborne allergens can make indoor environments just as — or more — problematic than the outdoors during peak pollen season. The home, which should offer refuge from environmental triggers, instead becomes a persistent source of exposure."
+      ],
+      "listItems": [],
+      "image": "/img/blog/clogged-dryer-vent-lint.webp"
     }
   ],
   "faq": [
     {
-      "q": "Can dirty air ducts cause allergies?",
-      "a": "Yes. Dirty air ducts accumulate dust, mold spores, pollen, and pet dander. Each time your HVAC system runs, these allergens are distributed throughout your home, potentially triggering or worsening allergy and asthma symptoms."
+      "q": "Is this a sales page for your area duct cleaning?",
+      "a": "No. This post explains mechanisms and signs. Service details live on the your area location page."
     },
     {
-      "q": "What allergens can be found inside air ducts?",
-      "a": "Common allergens found inside air ducts include dust mite particles, pet dander, mold spores, pollen, cockroach debris, and volatile organic compounds from household products that settle in ductwork over time."
+      "q": "What usually causes gray film on supply registers?",
+      "a": "Fine particles that bypass or overload filters settle in cool trunks and recirculate when the blower runs."
     },
     {
-      "q": "How do I know if my allergies are caused by dirty air ducts?",
-      "a": "A key indicator is that allergy symptoms worsen when the HVAC system is running and improve when you leave the home. Other signs include rapid dust accumulation, musty odors from vents, and symptoms that persist year-round regardless of pollen season."
+      "q": "When is dryer vent cleaning the better first step?",
+      "a": "When laundry closets stay hot, dry times double, or you smell burnt lint — clear the vent to the exterior cap."
     },
     {
-      "q": "Can air duct cleaning help with asthma?",
-      "a": "Professional air duct cleaning removes allergens and irritants that circulate through your home's air supply. For households with asthma sufferers, reducing airborne triggers through clean ductwork can contribute to fewer and less severe episodes."
-    },
-    {
-      "q": "How often should I clean my air ducts if I have allergies?",
-      "a": "Homes with allergy or asthma sufferers are typically recommended to schedule professional air duct cleaning every 2–3 years rather than the standard 3–5 year interval, and to replace HVAC filters every 1–2 months."
+      "q": "How is this different from a location page?",
+      "a": "Location pages cover packages, booking, and office dispatch. Articles cover climate and housing patterns."
     }
   ]
 }

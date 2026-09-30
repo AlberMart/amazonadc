@@ -5,20 +5,21 @@ export const rockville: LocationContentSeed = {
   title: 'Air Duct Cleaning in Rockville, MD',
   headline: 'Air duct and dryer vent cleaning for Rockville, Twinbrook, and the I-270 corridor',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Rockville, MD. Flat rates from our Bethesda office for colonials, townhomes, and King Farm. Call (301) 809-4544.',
+    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Rockville, MD. Flat rates from our Bethesda office for colonials, townhomes, and King Farm. Call (800) 606-3334.',
   intro:
-    'Amazon Air Duct Cleaning serves Rockville from our Bethesda office — about fifteen minutes down Old Georgetown Road, not a rented Rockville mailbox. Colonials, King Farm townhomes, and Twinbrook ranches all take on Montgomery County pollen and basement humidity. Call (301) 809-4544.',
+    'Amazon Air Duct Cleaning serves Rockville from our Bethesda office — about fifteen minutes down Old Georgetown Road. Colonials, King Farm townhomes, and Twinbrook ranches all take on Montgomery County pollen and basement humidity. Call (800) 606-3334.',
   heroImage: '/img/locations/rockville.webp',
   heroAlt: 'Air duct cleaning in Rockville, MD — Amazon Air Duct Cleaning',
   city: 'Rockville',
   state: 'MD',
   servedBy: 'bethesda',
+  sectionLayout: 'faqMid',
   about: {
     heading: 'Why Rockville Ducts Collect Moisture and Pollen',
     paragraphs: [
       'Rockville is Montgomery County’s largest city and sits on the I-270 corridor: Town Center and the Metro, Twinbrook and Hungerford, King Farm and Fallsgrove, then Woodley Gardens and the West End. A lot of the housing is 1950s–90s colonials and split-levels with full basements. Those basements stay cool in summer. Maryland humidity does not. Cold supply trunks in a basement meet wet air and sweat. Dust and tree pollen stick to that film.',
       'Montgomery County’s tree canopy is not a slogan — oak, maple, and pine dump pollen onto every outdoor surface each spring. Returns pull it in. Townhomes along the Metro and newer mixed-use at Rockville Town Square add long dryer vents and tighter mechanical closets. The result is the same: registers that look clean on Monday and dusty by Friday, or a musty smell when the AC starts after a wet week.',
-      'We serve Rockville from [Bethesda](/locations/bethesda). That is a real office at 7815 Old Georgetown Rd, not a Rockville suite we do not staff. Nearby [Washington, DC](/locations/washington-dc) is covered by the same metro crew. Read [how Rockville basements and I-270 pollen load your HVAC](/blog/rockville-basement-humidity-air-ducts).',
+      'We serve Rockville from [Bethesda](/locations/bethesda). That is a real office at 7815 Old Georgetown Rd, not a Rockville suite we do not staff. Nearby [Washington, DC](/locations/washington-dc) is covered by the same metro crew. For background reading (not a booking page), see [rockville-basement-humidity-air-ducts](/blog/rockville-basement-humidity-air-ducts).',
     ],
     highlights: [
       'Colonials, townhomes, King Farm, and Twinbrook ranches',
@@ -30,8 +31,7 @@ export const rockville: LocationContentSeed = {
   offersTitle: 'Special Offers — Rockville, MD',
   services: {
     heading: 'Our Services in Rockville, MD',
-    intro:
-      'The same honest packages we use in Bethesda and Silver Spring. The quote is the price.',
+    intro: 'Flat-rate options for Rockville houses, townhomes, and light commercial.',
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -52,7 +52,7 @@ export const rockville: LocationContentSeed = {
     ],
   },
   why: {
-    heading: 'Why Rockville Homeowners Choose Us',
+    heading: 'What Sets This Rockville Crew Apart',
     items: [
       {
         title: 'Close Bethesda Dispatch',
@@ -87,62 +87,62 @@ export const rockville: LocationContentSeed = {
       },
       {
         title: 'Woodley Gardens & north',
-        places: 'Woodley Gardens, Montrose, Derwood edge, and streets toward Gaithersburg — ask if you do not see your neighborhood',
+        places:
+          'Woodley Gardens, Montrose, Derwood edge, and streets toward Gaithersburg — ask if you do not see your neighborhood',
       },
     ],
   },
   process: {
-    heading: 'What to Expect When You Book',
-    intro: 'Simple scheduling from the Bethesda office that covers Rockville.',
+    heading: 'Booking Rockville Service from Bethesda',
+    intro: 'Simple steps our Bethesda crew follows for Rockville appointments.',
     steps: [
       {
-        title: 'Schedule Online or by Phone',
-        text: 'Use the form on this page or call (301) 809-4544. We confirm the appointment by the next business day.',
+        title: 'Talk Through the Home',
+        text: 'Tell us about pets, renovations, and laundry layout common in Rockville.',
       },
       {
-        title: 'Pre-Visit Confirmation',
-        text: 'The morning of the job we send an arrival window so HOA gates and townhome parking are already sorted.',
+        title: 'Confirm Arrival ETA',
+        text: 'Morning-of text with a realistic window for your street.',
       },
       {
-        title: 'On-Site Inspection',
-        text: 'We inspect basement trunks, returns, and the dryer run, then agree the scope before equipment comes in.',
+        title: 'Agree the Package',
+        text: 'Flat-rate duct and dryer packages — the quoted number is what you pay.',
       },
       {
-        title: 'Professional Cleaning',
-        text: 'Floors are protected. We clean with truck-mounted or portable HEPA equipment and treat ventilation mold only when it is needed.',
+        title: 'Run the Cleaning',
+        text: 'Truck-mounted or portable HEPA sized for Rockville houses and townhomes.',
       },
       {
-        title: 'Final Walkthrough',
-        text: 'Before-and-after photos, questions answered, and we leave when you are satisfied.',
+        title: 'Final Questions',
+        text: 'Filter tips and dryer-vent interval before we pack up.',
       },
     ],
   },
-  faqIntro:
-    'Questions from Rockville homeowners. Call the Bethesda office that covers the city at (301) 809-4544.',
+  faqIntro: 'Rockville questions — call (800) 606-3334 (dispatch: Bethesda).',
   faq: [
     {
-      q: 'Do you have an office in Rockville?',
-      a: 'No. Rockville is served from our Bethesda office at 7815 Old Georgetown Rd Ste 201. Call (301) 809-4544 or use the form on this page.',
+      q: 'Where does the Rockville crew stage from?',
+      a: 'Our Bethesda office (7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814). Office line (301) 809-4544; booking (800) 606-3334.',
     },
     {
-      q: 'Why does my Rockville basement smell musty when the AC starts?',
-      a: 'Cool basement ducts sweat in Maryland humidity. Pollen and dust stick to that moisture, and the blower pushes the odor upstairs. [Rockville basement humidity and air ducts](/blog/rockville-basement-humidity-air-ducts) covers what to do next.',
+      q: 'Can I stay home during the Rockville appointment?',
+      a: 'Yes. Stay clear of active equipment; we protect floors in the work path.',
     },
     {
-      q: 'How often should Rockville homes clean air ducts?',
-      a: 'Every 3 to 5 years for most houses. Pets, renovations, and damp basements often need the shorter interval. Dryer vents should be cleared about once a year.',
+      q: 'How often should Rockville, MD homes clean ducts?',
+      a: 'Every 3–5 years for most homes. Pets, renovations, and humid basements often need the shorter end. Dryer vents about yearly.',
     },
     {
-      q: 'Do you offer flat rates in Rockville?',
-      a: 'Yes. Residential air duct and dryer vent cleaning is flat-rate. The number we quote before the job is the price you pay.',
+      q: 'What should I prepare before the crew arrives in Rockville?',
+      a: 'Clear access to returns, the air handler, and the dryer. Note HOA gate codes if needed.',
     },
     {
-      q: 'Are the mold treatments safe for families and pets?',
-      a: 'Yes. We use EPA-registered antimicrobial treatments that are safe for children, pets, and people with respiratory sensitivities once applied as directed.',
+      q: 'How long does air duct cleaning take in a typical Rockville home?',
+      a: 'Most single-system houses take about 2–3 hours. Townhomes with long dryer runs can run longer after inspection.',
     },
     {
-      q: 'Do you also serve Gaithersburg and Derwood from Bethesda?',
-      a: 'Yes. Those communities are on the same Bethesda dispatch as Rockville. If you are closer to DC, see [Washington, DC](/locations/washington-dc).',
+      q: 'Are Rockville residential prices flat-rate?',
+      a: 'Yes for air duct and dryer vent packages. The quote before we start is the price you pay.',
     },
   ],
 }

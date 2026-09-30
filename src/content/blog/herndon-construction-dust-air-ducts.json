@@ -1,9 +1,9 @@
 {
   "slug": "herndon-construction-dust-air-ducts",
-  "title": "How Herndon Data-Center Construction Dust Loads Your Air Ducts",
-  "headline": "Clock-tower cottages, Worldgate stacks, and why Dulles-edge returns stay white",
-  "description": "Herndon, VA mixes historic downtown cottages with data-center and office construction toward Dulles. Learn why gypsum dust and traffic film load ducts, and when to clean them from Burke.",
-  "heroImage": "/img/blog/Why-Air-Duct-Condition-Matters.webp",
+  "title": "Construction Dust Near Active Corridors: What Ends Up in HVAC Returns",
+  "headline": "Gypsum fines, traffic film, and why stacked laundry closets stay hot",
+  "description": "How nearby construction and corridor traffic can load returns with fine dust — practical signs to watch before you schedule a duct or dryer vent cleaning. For service details, use the matching city location page.",
+  "heroImage": "/img/locations/herndon.webp",
   "sections": [
     {
       "id": "corridor",
@@ -19,15 +19,17 @@
       "heading": "Worldgate dryer runs fail in a specific way",
       "paragraphs": [
         "Stacked Worldgate laundry closets send lint on a long path to a shared wall or roof cap. Construction dust in the ducts plus a packed dryer vent is how a closet stays humid all summer. The machine is usually fine. The vent is not.",
-        "If you moved in during a nearby build-out and the air still feels dusty, start with [air duct cleaning in Herndon, VA](/locations/herndon)."
+        "If you moved in during a nearby build-out and the air still feels dusty, when you are ready to book, use the [Herndon, VA location page](/locations/herndon)."
       ],
       "listItems": [],
-      "image": "/img/blog/dirty-HVAC-unit.webp"
+      "image": "/img/blog/neglected-air-ducts-buildup.webp"
     },
     {
       "id": "signs",
       "heading": "Typical signs in a Herndon house",
-      "paragraphs": ["Watch for:"],
+      "paragraphs": [
+        "Watch for:"
+      ],
       "listItems": [
         "White or gray film on supplies in a house that sits near new pads.",
         "Dust returning days after you wipe a downtown cottage register.",
@@ -36,10 +38,11 @@
     },
     {
       "id": "protect",
-      "heading": "Burke is the shop — not a clock-tower suite",
+      "heading": "Background reading vs booking a visit",
       "paragraphs": [
-        "Herndon is served from our [Burke](/locations/burke) office. Nearby [Reston](/locations/reston) and [Chantilly](/locations/chantilly) use the same dispatch. There is no Herndon storefront.",
-        "Book on the [Herndon location page](/locations/herndon). See [air duct cleaning](/air-duct-cleaning) for what a post-construction clean actually removes."
+        "Herndon jobs are scheduled from our metro offices. This article is educational — use the [location page](/locations/herndon) when you are ready to book.",
+        "Herndon is served from our [Burke](/locations/burke) office. Nearby [Reston](/locations/reston) and [Chantilly](/locations/chantilly) use the same dispatch.",
+        "Service details live on the [Herndon location page](/locations/herndon). See [air duct cleaning](/air-duct-cleaning) for what a post-construction clean actually removes."
       ],
       "listItems": [
         "Ask for a duct cleaning after nearby construction, not five years later.",
@@ -50,16 +53,20 @@
   ],
   "faq": [
     {
-      "q": "Why are Herndon houses dusty even after the builder left?",
-      "a": "Data-center and office work along the Dulles corridor keeps fines in the air. Occupied returns pull gypsum and soil. Filters miss what already sits downstream in the trunks."
+      "q": "Is this a sales page for Herndon duct cleaning?",
+      "a": "No. This post explains mechanisms and signs. Service details live on the Herndon location page."
     },
     {
-      "q": "Is downtown Herndon served from a local office?",
-      "a": "No. The town is served from Burke. We will not invent a desk by the clock tower."
+      "q": "What usually causes gray film on supply registers?",
+      "a": "Fine particles that bypass or overload filters settle in cool trunks and recirculate when the blower runs."
     },
     {
-      "q": "Who cleans air ducts in Herndon, VA?",
-      "a": "Amazon Air Duct Cleaning serves Herndon from the Burke office. Book on the [Herndon location page](/locations/herndon) or call (571) 460-0001."
+      "q": "When is dryer vent cleaning the better first step?",
+      "a": "When laundry closets stay hot, dry times double, or you smell burnt lint — clear the vent to the exterior cap."
+    },
+    {
+      "q": "How is this different from a location page?",
+      "a": "Location pages cover packages, booking, and office dispatch. Articles cover climate and housing patterns."
     }
   ]
 }

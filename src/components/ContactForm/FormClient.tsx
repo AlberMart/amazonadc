@@ -10,6 +10,7 @@ import {
   type PublicForm,
   type PublicFormField,
 } from '@/utilities/contactFormShared'
+import { toTelHref } from '@/utilities/tel'
 
 const inputClass =
   'w-full rounded-md border border-[var(--site-border)] bg-white px-3 py-2 text-base text-[var(--site-heading)]'
@@ -275,7 +276,7 @@ export function ContactFormClient({
     }
   }
 
-  const telHref = phoneHref ? (phoneHref.startsWith('tel:') ? phoneHref : `tel:${phoneHref}`) : undefined
+  const telHref = phoneHref ? toTelHref(phoneHref) : undefined
 
   return (
     <section className="container py-16">

@@ -5,20 +5,21 @@ export const fairfax: LocationContentSeed = {
   title: 'Air Duct Cleaning in Fairfax, VA',
   headline: 'Air duct and dryer vent cleaning for the City of Fairfax, Fairfax Corner, and Mosaic',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Fairfax, VA. Flat rates from our Burke office for ramblers, townhomes, and GMU-area rentals. Call (571) 460-0001.',
+    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Fairfax, VA. Flat rates from our Burke office for ramblers, townhomes, and GMU-area rentals. Call (800) 606-3334.',
   intro:
-    'Amazon Air Duct Cleaning serves the City of Fairfax from our Burke office — a short run up 123, not a rented Fairfax suite. Old Town brick, Fairfax Corner townhomes, and houses near George Mason all take on Fairfax County pollen and humid summers. Call (571) 460-0001.',
+    'Amazon Air Duct Cleaning serves the City of Fairfax from our Burke office — a short run up 123, a short run from Burke. Old Town brick, Fairfax Corner townhomes, and houses near George Mason all take on Fairfax County pollen and humid summers. Call (800) 606-3334.',
   heroImage: '/img/locations/fairfax.webp',
   heroAlt: 'Air duct cleaning in Fairfax, VA — Amazon Air Duct Cleaning',
   city: 'Fairfax',
   state: 'VA',
   servedBy: 'burke',
+  sectionLayout: 'whyFirst',
   about: {
     heading: 'Why Fairfax HVAC Systems Load Dust Faster Than You Expect',
     paragraphs: [
       'The City of Fairfax is a small independent city wrapped by Fairfax County: Old Town along Chain Bridge Road, the courthouse, Fairfax Corner, and streets that run toward Mosaic and Merrifield. A lot of the housing is 1950s–80s ramblers and split-levels with full basements. Those basements stay cool. Northern Virginia summers do not. Cold supply trunks sweat. Oak and maple pollen from the county canopy sticks to that film.',
       'GMU-area rentals and stacked townhomes add long dryer runs. Construction dust from infill near Route 50 and 29 settles in returns the same week you wipe the registers. The blower then sends it back upstairs.',
-      'We serve Fairfax from [Burke](/locations/burke). There is no Fairfax storefront. Nearby [Springfield](/locations/springfield), [McLean](/locations/mclean), and [Arlington](/locations/arlington) use the same dispatch. Read [how Fairfax ramblers and pollen load indoor air](/blog/fairfax-ramblers-pollen-air-ducts).',
+      'We serve Fairfax from [Burke](/locations/burke). Nearby [Springfield](/locations/springfield), [McLean](/locations/mclean), and [Arlington](/locations/arlington) use the same dispatch. For background reading (not a booking page), see [fairfax-ramblers-pollen-air-ducts](/blog/fairfax-ramblers-pollen-air-ducts).',
     ],
     highlights: [
       'City of Fairfax, Fairfax Corner, Mosaic, and GMU-area homes',
@@ -30,7 +31,7 @@ export const fairfax: LocationContentSeed = {
   offersTitle: 'Special Offers — Fairfax, VA',
   services: {
     heading: 'Our Services in Fairfax, VA',
-    intro: 'The same honest packages we use across Northern Virginia. The quote is the price.',
+    intro: 'Flat-rate options for Fairfax houses, townhomes, and light commercial.',
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -51,7 +52,7 @@ export const fairfax: LocationContentSeed = {
     ],
   },
   why: {
-    heading: 'Why Fairfax Homeowners Book Us',
+    heading: 'What Sets This Fairfax Crew Apart',
     items: [
       {
         title: 'Close Burke Dispatch',
@@ -86,61 +87,62 @@ export const fairfax: LocationContentSeed = {
       },
       {
         title: 'Toward GMU & the Beltway',
-        places: 'George Mason area, Pickett Road, streets toward Oakton and Fair Oaks — ask if your block is not listed',
+        places:
+          'George Mason area, Pickett Road, streets toward Oakton and Fair Oaks — ask if your block is not listed',
       },
     ],
   },
   process: {
-    heading: 'What to Expect When You Book',
-    intro: 'Simple scheduling from the Burke office that covers Fairfax.',
+    heading: 'Booking Fairfax Service from Burke',
+    intro: 'Simple steps our Burke crew follows for Fairfax appointments.',
     steps: [
       {
-        title: 'Schedule Online or by Phone',
-        text: 'Use the form on this page or call (571) 460-0001. We confirm the appointment by the next business day.',
+        title: 'Talk Through the Home',
+        text: 'Tell us about pets, renovations, and laundry layout common in Fairfax.',
       },
       {
-        title: 'Pre-Visit Confirmation',
-        text: 'The morning of the job we send an arrival window. HOA gates at Fairfax Corner help us stage the truck.',
+        title: 'Confirm Arrival ETA',
+        text: 'Morning-of text with a realistic window for your street.',
       },
       {
-        title: 'On-Site Inspection',
-        text: 'We inspect basement trunks, returns, and the dryer run, then agree the scope before equipment comes in.',
+        title: 'Agree the Package',
+        text: 'Flat-rate duct and dryer packages — the quoted number is what you pay.',
       },
       {
-        title: 'Professional Cleaning',
-        text: 'Floors are protected. We clean with truck-mounted or portable HEPA equipment.',
+        title: 'Run the Cleaning',
+        text: 'Truck-mounted or portable HEPA sized for Fairfax houses and townhomes.',
       },
       {
-        title: 'Final Walkthrough',
-        text: 'Before-and-after photos, questions answered, and we leave when you are satisfied.',
+        title: 'Final Questions',
+        text: 'Filter tips and dryer-vent interval before we pack up.',
       },
     ],
   },
-  faqIntro: 'Questions from Fairfax homeowners. Call the Burke office at (571) 460-0001.',
+  faqIntro: 'Fairfax questions — call (800) 606-3334 (dispatch: Burke).',
   faq: [
     {
-      q: 'Do you have an office in the City of Fairfax?',
-      a: 'No. Fairfax is served from our Burke office at 5641 Burke Centre Pkwy Ste 119. Call (571) 460-0001 or use the form on this page.',
+      q: 'Where does the Fairfax crew stage from?',
+      a: 'Our Burke office (5641 Burke Centre Pkwy Ste 119, Burke, VA 22015). Office line (571) 460-0001; booking (800) 606-3334.',
     },
     {
-      q: 'Do you mean the City of Fairfax or Fairfax County?',
-      a: 'This page is for the City of Fairfax and the streets that immediately surround it. Fairfax County jobs in [McLean](/locations/mclean), [Springfield](/locations/springfield), [Arlington](/locations/arlington), and [Alexandria](/locations/alexandria) have their own pages. All of them dispatch from Burke.',
+      q: 'Can I stay home during the Fairfax appointment?',
+      a: 'Yes. Stay clear of active equipment; we protect floors in the work path.',
     },
     {
-      q: 'Why do Fairfax registers get dusty so soon after I wipe them?',
-      a: 'County tree pollen and cool basement trunks. Dust sticks to condensation and blows back every time the system starts. [Fairfax ramblers, pollen, and air ducts](/blog/fairfax-ramblers-pollen-air-ducts) covers the cycle.',
+      q: 'How often should Fairfax, VA homes clean ducts?',
+      a: 'Every 3–5 years for most homes. Pets, renovations, and humid basements often need the shorter end. Dryer vents about yearly.',
     },
     {
-      q: 'How often should Fairfax homes clean air ducts?',
-      a: 'Every 3 to 5 years for most houses. Pets, renovations, and damp basements often need the shorter interval. Dryer vents should be cleared about once a year.',
+      q: 'What should I prepare before the crew arrives in Fairfax?',
+      a: 'Clear access to returns, the air handler, and the dryer. Note HOA gate codes if needed.',
     },
     {
-      q: 'Do you offer flat rates in Fairfax?',
-      a: 'Yes. Residential air duct and dryer vent cleaning is flat-rate. The number we quote before the job is the price you pay.',
+      q: 'How long does air duct cleaning take in a typical Fairfax home?',
+      a: 'Most single-system houses take about 2–3 hours. Townhomes with long dryer runs can run longer after inspection.',
     },
     {
-      q: 'Are mold treatments safe for families and pets?',
-      a: 'Yes. We use EPA-registered antimicrobial treatments that are safe for children, pets, and people with respiratory sensitivities once applied as directed.',
+      q: 'Are Fairfax residential prices flat-rate?',
+      a: 'Yes for air duct and dryer vent packages. The quote before we start is the price you pay.',
     },
   ],
 }

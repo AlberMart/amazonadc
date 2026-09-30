@@ -3,9 +3,11 @@ import { createHash } from 'node:crypto'
 
 import { officesSeedSource } from '@/content/offices'
 import type { OfficeContent } from './offices'
-import { getServerSideURL } from './getURL'
+import { getServerSideURL, isNonProductionHost } from './getURL'
 import { getCachedGlobal } from './getGlobals'
 import { resolveCmsImage } from './cmsImage'
+import { SEO_META_DESCRIPTION, SEO_META_TITLE } from './seoCopy'
+import { toE164 } from './tel'
 
 export type SiteSeo = {
   siteName: string
@@ -33,9 +35,8 @@ const FALLBACK_SITE: SiteSeo = {
   priceRange: '$$-$$$',
   logoPath: '/img/logo.png',
   defaultOgImage: '/img/Amazon.webp',
-  defaultMetaTitle: 'Air Duct Cleaning in Virginia, Maryland & Washington DC',
-  defaultMetaDescription:
-    'Top-rated air duct cleaning in VA, MD & DC. Improve indoor air quality, remove dust and allergens, and clean dryer vents. Flat rates and a 100% satisfaction guarantee.',
+  defaultMetaTitle: SEO_META_TITLE,
+  defaultMetaDescription: SEO_META_DESCRIPTION,
   titleSuffix: 'Amazon Air Duct Cleaning',
   priceValidUntil: '2027-12-31',
   socialSameAs: [
@@ -74,7 +75,9 @@ export function siteUrl() {
 
 export function absoluteUrl(path = '/') {
   if (path.startsWith('http://') || path.startsWith('https://')) return path
-  return `${siteUrl()}${path.startsWith('/') ? path : `/${path}`}`
+  const origin = siteUrl()
+  if (!path || path === '/') return origin
+  return `${origin}${path.startsWith('/') ? path : `/${path}`}`
 }
 
 function rollPriceValidUntil(value?: string | null): string {
@@ -95,7 +98,7 @@ export async function getSiteSeo(): Promise<SiteSeo> {
     return {
       siteName: settings.siteName || FALLBACK_SITE.siteName,
       phoneDisplay: settings.phone || FALLBACK_SITE.phoneDisplay,
-      phone: settings.phoneHref || FALLBACK_SITE.phone,
+      phone: toE164(settings.phoneHref || FALLBACK_SITE.phone) || FALLBACK_SITE.phone,
       email: settings.email || FALLBACK_SITE.email,
       organizationDescription:
         settings.organizationDescription || FALLBACK_SITE.organizationDescription,
@@ -171,7 +174,10 @@ export function resolvePageMeta(input: PageMetaInput, site: SiteSeo = FALLBACK_S
     title: { absolute: fullTitle },
     description,
     alternates: { canonical: url },
-    robots: input.meta?.noIndex ? { index: false, follow: false } : { index: true, follow: true },
+    robots:
+      input.meta?.noIndex || isNonProductionHost()
+        ? { index: false, follow: false }
+        : { index: true, follow: true },
     openGraph: {
       title: fullTitle,
       description,
@@ -523,7 +529,16 @@ export function organizationNode(site: SiteSeo, primaryOffice?: OfficeContent | 
       },
       availableLanguage: ['English', 'en'],
     },
-    sameAs: site.socialSameAs,
+    sameAs: [
+      ...new Set(
+        [
+          ...site.socialSameAs,
+          ...(primaryOffice && 'googleBusinessUrl' in primaryOffice
+            ? [primaryOffice.googleBusinessUrl, primaryOffice.hasMapUrl]
+            : []),
+        ].filter(Boolean),
+      ),
+    ],
   }
 }
 

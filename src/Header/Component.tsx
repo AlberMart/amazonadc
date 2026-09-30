@@ -5,6 +5,7 @@ import { resolveBrandMark } from '@/utilities/brandMark'
 import { resolveCmsLink, type ResolvedNavLink } from '@/utilities/cmsLink'
 import { resolveMobileCall } from '@/utilities/mobileCall'
 import { getSiteSeo } from '@/utilities/seo'
+import { toTelHref } from '@/utilities/tel'
 
 import { HeaderClient } from './Component.client'
 
@@ -18,12 +19,6 @@ const fallbackNav: ResolvedNavLink[] = [
   { href: '/blog', label: 'Blog' },
   { href: '/#contact', label: 'Contact Us' },
 ]
-
-function asTel(value: string) {
-  const trimmed = value.trim()
-  if (!trimmed) return ''
-  return trimmed.startsWith('tel:') ? trimmed : `tel:${trimmed}`
-}
 
 export async function Header() {
   const [headerData, site] = await Promise.all([
@@ -41,7 +36,7 @@ export async function Header() {
   })
 
   const phoneDisplay = headerData?.phoneDisplay?.trim() || site.phoneDisplay
-  const phoneHref = asTel(headerData?.phoneHref?.trim() || site.phone)
+  const phoneHref = toTelHref(headerData?.phoneHref?.trim() || site.phone)
 
   return (
     <HeaderClient

@@ -5,20 +5,21 @@ export const gaithersburg: LocationContentSeed = {
   title: 'Air Duct Cleaning in Gaithersburg, MD',
   headline: 'Air duct and dryer vent cleaning for Kentlands, Lakelands, and the I-270 corridor',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Gaithersburg, MD. Flat rates from our Bethesda office for Kentlands, Crown, and Montgomery Village. Call (301) 809-4544.',
+    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Gaithersburg, MD. Flat rates from our Bethesda office for Kentlands, Crown, and Montgomery Village. Call (800) 606-3334.',
   intro:
-    'Amazon Air Duct Cleaning serves Gaithersburg from our Bethesda office — up I-270, not a rented Kentlands mailbox. Colonials, Kentlands and Lakelands townhomes, and Crown condos all take on Montgomery County pollen and basement humidity. Call (301) 809-4544.',
+    'Amazon Air Duct Cleaning serves Gaithersburg from our Bethesda office — up I-270 from Bethesda. Colonials, Kentlands and Lakelands townhomes, and Crown condos all take on Montgomery County pollen and basement humidity. Call (800) 606-3334.',
   heroImage: '/img/locations/gaithersburg.webp',
   heroAlt: 'Air duct cleaning in Gaithersburg, MD — Amazon Air Duct Cleaning',
   city: 'Gaithersburg',
   state: 'MD',
   servedBy: 'bethesda',
+  sectionLayout: 'faqEarly',
   about: {
     heading: 'Why Gaithersburg Ducts Collect Pollen and Basement Moisture',
     paragraphs: [
       'Gaithersburg is Montgomery County’s big I-270 city north of [Rockville](/locations/rockville): Town Center, Kentlands and Lakelands, Crown, Washingtonian, then Montgomery Village and the streets toward Germantown. Housing mixes 1960s–80s split-levels with full basements and newer new-urbanist townhomes with tight mechanical closets. Both types load ducts. The older houses sweat in the basement. The newer ones pack dryer vents around three corners.',
       'The tree canopy is not a slogan. Oak and pine dump pollen onto every deck each spring. Returns pull it in. I-270 adds traffic dust. When the AC starts after a wet week, that mix is what you smell at the register.',
-      'We serve Gaithersburg from [Bethesda](/locations/bethesda). Rockville is the next city page south. Read [how Gaithersburg basements and Kentlands townhomes load HVAC](/blog/gaithersburg-kentlands-basement-humidity-air-ducts).',
+      'We serve Gaithersburg from [Bethesda](/locations/bethesda). Rockville is the next city page south. For background reading (not a booking page), see [gaithersburg-kentlands-basement-humidity-air-ducts](/blog/gaithersburg-kentlands-basement-humidity-air-ducts).',
     ],
     highlights: [
       'Kentlands, Lakelands, Crown, Montgomery Village, Town Center',
@@ -30,7 +31,7 @@ export const gaithersburg: LocationContentSeed = {
   offersTitle: 'Special Offers — Gaithersburg, MD',
   services: {
     heading: 'Our Services in Gaithersburg, MD',
-    intro: 'The same honest packages we use in Bethesda and Rockville. The quote is the price.',
+    intro: 'Flat-rate options for Gaithersburg houses, townhomes, and light commercial.',
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
@@ -51,11 +52,11 @@ export const gaithersburg: LocationContentSeed = {
     ],
   },
   why: {
-    heading: 'Why Gaithersburg Homeowners Choose Us',
+    heading: 'What Sets This Gaithersburg Crew Apart',
     items: [
       {
         title: 'I-270 Dispatch from a Real Office',
-        text: 'Bethesda is staffed. We will not list a Gaithersburg suite we do not occupy.',
+        text: 'Gaithersburg jobs are scheduled from our Bethesda office.',
       },
       {
         title: 'Flat-Rate Pricing',
@@ -86,61 +87,62 @@ export const gaithersburg: LocationContentSeed = {
       },
       {
         title: 'Montgomery Village & north',
-        places: 'Montgomery Village, Quince Orchard, streets toward Germantown and Clarksburg — ask if you do not see your neighborhood',
+        places:
+          'Montgomery Village, Quince Orchard, streets toward Germantown and Clarksburg — ask if you do not see your neighborhood',
       },
     ],
   },
   process: {
-    heading: 'What to Expect When You Book',
-    intro: 'Simple scheduling from the Bethesda office that covers Gaithersburg.',
+    heading: 'Booking Gaithersburg Service from Bethesda',
+    intro: 'Practical timing notes for Gaithersburg homeowners and property managers.',
     steps: [
       {
-        title: 'Schedule Online or by Phone',
-        text: 'Use the form on this page or call (301) 809-4544. We confirm the appointment by the next business day.',
+        title: 'Estimate Request',
+        text: 'Form or (800) 606-3334 — we reply with timing from the Bethesda office.',
       },
       {
-        title: 'Pre-Visit Confirmation',
-        text: 'The morning of the job we send an arrival window so HOA gates in Kentlands are already sorted.',
+        title: 'Route Planning',
+        text: 'Gaithersburg is on an existing Bethesda dispatch day whenever possible.',
       },
       {
-        title: 'On-Site Inspection',
-        text: 'We inspect basement trunks, returns, and the dryer run, then agree the scope.',
+        title: 'Walk-Through',
+        text: 'Supplies, returns, dryer termination — then we start.',
       },
       {
-        title: 'Professional Cleaning',
-        text: 'Floors are protected. We clean with truck-mounted or portable HEPA equipment.',
+        title: 'Service',
+        text: 'Full trunk cleaning; dryer vent cleared to the exterior cap when booked.',
       },
       {
-        title: 'Final Walkthrough',
-        text: 'Before-and-after photos, questions answered, and we leave when you are satisfied.',
+        title: 'Close-Out',
+        text: 'Satisfaction check before payment is finalized.',
       },
     ],
   },
-  faqIntro: 'Questions from Gaithersburg homeowners. Call the Bethesda office at (301) 809-4544.',
+  faqIntro: 'Gaithersburg questions — call (800) 606-3334 (dispatch: Bethesda).',
   faq: [
     {
-      q: 'Do you have an office in Gaithersburg?',
-      a: 'No. Gaithersburg is served from our Bethesda office at 7815 Old Georgetown Rd Ste 201. Call (301) 809-4544.',
+      q: 'Where does the Gaithersburg crew stage from?',
+      a: 'Our Bethesda office (7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814). Office line (301) 809-4544; booking (800) 606-3334.',
     },
     {
-      q: 'Why does my Gaithersburg basement smell musty when the AC starts?',
-      a: 'Cool basement ducts sweat in Maryland humidity. Pollen and dust stick to that moisture. [Gaithersburg basements and Kentlands HVAC](/blog/gaithersburg-kentlands-basement-humidity-air-ducts) covers what to do next.',
+      q: 'Can I stay home during the Gaithersburg appointment?',
+      a: 'Yes. Stay clear of active equipment; we protect floors in the work path.',
     },
     {
-      q: 'How often should Gaithersburg homes clean air ducts?',
-      a: 'Every 3 to 5 years for most houses. Pets, renovations, and damp basements often need the shorter interval. Dryer vents should be cleared about once a year.',
+      q: 'How often should Gaithersburg, MD homes clean ducts?',
+      a: 'Every 3–5 years for most homes. Pets, renovations, and humid basements often need the shorter end. Dryer vents about yearly.',
     },
     {
-      q: 'Do you also serve Germantown and Montgomery Village?',
-      a: 'Yes. Those communities are on the same Bethesda dispatch as Gaithersburg. If you are closer to Rockville Town Center, see [Rockville](/locations/rockville).',
+      q: 'What should I prepare before the crew arrives in Gaithersburg?',
+      a: 'Clear access to returns, the air handler, and the dryer. Note HOA gate codes if needed.',
     },
     {
-      q: 'Do you offer flat rates in Gaithersburg?',
-      a: 'Yes. Residential air duct and dryer vent cleaning is flat-rate.',
+      q: 'How long does air duct cleaning take in a typical Gaithersburg home?',
+      a: 'Most single-system houses take about 2–3 hours. Townhomes with long dryer runs can run longer after inspection.',
     },
     {
-      q: 'Are mold treatments safe for families and pets?',
-      a: 'Yes. We use EPA-registered antimicrobial treatments that are safe for children and pets once applied as directed.',
+      q: 'Are Gaithersburg residential prices flat-rate?',
+      a: 'Yes for air duct and dryer vent packages. The quote before we start is the price you pay.',
     },
   ],
 }
