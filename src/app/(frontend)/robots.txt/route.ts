@@ -5,23 +5,8 @@ export const dynamic = 'force-dynamic'
 
 /** Public robots.txt. Sitemap URL is generated from CMS content at /sitemap.xml — new published URLs are included automatically. */
 
-function buildRobotsTxt() {
-  const sitemap = absoluteUrl('/sitemap.xml')
-  const host = absoluteUrl('/')
-
-  if (isNonProductionHost()) {
-    return [
-      'User-agent: *',
-      'Disallow: /',
-      '',
-      `# Staging host (${host}) — block indexing until production NEXT_PUBLIC_SERVER_URL is set.`,
-      '',
-    ].join('\n')
-  }
-
+function sharedDisallows() {
   return [
-    'User-agent: *',
-    'Allow: /',
     'Disallow: /admin/',
     'Disallow: /api/',
     'Disallow: /login',
@@ -29,6 +14,41 @@ function buildRobotsTxt() {
     'Disallow: /cart',
     'Disallow: /search',
     'Disallow: /next/',
+  ]
+}
+
+function buildRobotsTxt() {
+  const sitemap = absoluteUrl('/sitemap.xml')
+  const host = absoluteUrl('/')
+
+  // Staging stays crawlable so review tools / AI auditors can fetch pages.
+  // Indexing is blocked via <meta robots noindex> + X-Robots-Tag (see layout / headers).
+  if (isNonProductionHost()) {
+    return [
+      'User-agent: *',
+      'Allow: /',
+      ...sharedDisallows(),
+      '',
+      'User-agent: GPTBot',
+      'Allow: /',
+      'Disallow: /admin/',
+      'Disallow: /api/',
+      '',
+      'User-agent: Google-Extended',
+      'Allow: /',
+      'Disallow: /admin/',
+      'Disallow: /api/',
+      '',
+      `# Staging host (${host}) — crawl allowed for review; pages send noindex so they stay out of Google.`,
+      `Sitemap: ${sitemap}`,
+      '',
+    ].join('\n')
+  }
+
+  return [
+    'User-agent: *',
+    'Allow: /',
+    ...sharedDisallows(),
     '',
     'User-agent: GPTBot',
     'Allow: /',
@@ -47,10 +67,12 @@ function buildRobotsTxt() {
 }
 
 export function GET() {
-  return new Response(buildRobotsTxt(), {
-    headers: {
-      'Content-Type': 'text/plain; charset=utf-8',
-      'Cache-Control': 'public, max-age=3600',
-    },
-  })
+  const headers: Record<string, string> = {
+    'Content-Type': 'text/plain; charset=utf-8',
+    'Cache-Control': 'public, max-age=300',
+  }
+  if (isNonProductionHost()) {
+    headers['X-Robots-Tag'] = 'noindex, nofollow'
+  }
+  return new Response(buildRobotsTxt(), { headers })
 }
