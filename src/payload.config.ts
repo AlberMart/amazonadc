@@ -110,6 +110,11 @@ export default buildConfig({
       connectionTimeoutMillis: 20_000,
       allowExitOnIdle: true,
     },
+    // Fly Managed Postgres has public system views (e.g. pg_stat_monitor) that break
+    // drizzle push in the public schema. Keep staging/local on public; prod MPG uses `payload`.
+    ...(process.env['PAYLOAD_PG_SCHEMA']
+      ? { schemaName: process.env['PAYLOAD_PG_SCHEMA'] }
+      : {}),
     // Dynamic lookup so Next does not inline this at Docker build time.
     push: process.env['PAYLOAD_DB_PUSH'] === 'true',
   }),

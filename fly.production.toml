@@ -1,0 +1,31 @@
+# Production — amazonadc.com (Next.js + Payload)
+# Deploy: fly deploy -c fly.production.toml --app <app-name>
+# Staging stays on fly.toml → amaz-local
+
+# Production cutover target: replaces Laravel on amazadc (old clone → amazadc-dev.fly.dev)
+app = 'amazadc'
+primary_region = 'iad'
+
+[build]
+  [build.args]
+    NEXT_PUBLIC_SERVER_URL = 'https://amazonadc.com'
+
+[env]
+  NODE_ENV = 'production'
+  PORT = '3000'
+  NEXT_PUBLIC_SERVER_URL = 'https://amazonadc.com'
+  PAYLOAD_DB_PUSH = 'true'
+  PAYLOAD_PG_SCHEMA = 'payload'
+
+[http_service]
+  internal_port = 3000
+  force_https = true
+  auto_stop_machines = 'off'
+  auto_start_machines = true
+  min_machines_running = 1
+  processes = ['app']
+
+[[vm]]
+  memory = '2gb'
+  cpu_kind = 'shared'
+  cpus = 2
