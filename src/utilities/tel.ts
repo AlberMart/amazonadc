@@ -3,7 +3,18 @@ export function toE164(value: string | null | undefined): string {
   const trimmed = (value || '').trim()
   if (!trimmed) return ''
   const withoutTel = trimmed.replace(/^tel:/i, '').trim()
-  return withoutTel.replace(/[^\d+]/g, '')
+  const hasPlus = withoutTel.trimStart().startsWith('+')
+  const digits = withoutTel.replace(/\D/g, '')
+  if (!digits) return ''
+
+  // US local 10-digit → +1XXXXXXXXXX
+  if (!hasPlus && digits.length === 10) return `+1${digits}`
+  // 11-digit starting with 1 → +1…
+  if (digits.length === 11 && digits.startsWith('1')) return `+${digits}`
+  // Already international / explicitly +prefixed
+  if (hasPlus) return `+${digits}`
+  // Fallback: keep digits with leading +
+  return `+${digits}`
 }
 
 /** Safe `tel:+1…` href. Never doubles `tel:` and never emits an empty protocol. */
@@ -20,4 +31,13 @@ export function isPhoneLine(value: string): boolean {
   if (!trimmed) return false
   if (/[a-zA-Z]/.test(trimmed) && !/\bext\.?\b/i.test(trimmed)) return false
   return PHONE_LINE.test(trimmed)
+}
+
+/** True for in-app paths Next.js <Link> can route; false for tel/mailto/http/etc. */
+export function isNextLinkHref(href: string): boolean {
+  const value = href.trim()
+  if (!value) return false
+  if (value.startsWith('#')) return true
+  if (value.startsWith('/') && !value.startsWith('//')) return true
+  return false
 }

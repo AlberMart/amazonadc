@@ -227,14 +227,23 @@ export async function Footer() {
               <div key={key}>
                 <ColumnHeading>{column.title}</ColumnHeading>
                 <ul className="mt-4 space-y-3 text-sm text-white/80">
-                  {links.map((item) => (
-                    <li key={`${item.label}-${item.href}`}>
-                      <Link className="hover:text-[var(--site-accent)]" href={item.href}>
-                        {item.label}
-                      </Link>
-                      {item.detail ? <FooterDetail text={item.detail} /> : null}
-                    </li>
-                  ))}
+                  {links.map((item) => {
+                    const external = /^(https?:|tel:|mailto:)/i.test(item.href)
+                    return (
+                      <li key={`${item.label}-${item.href}`}>
+                        {external ? (
+                          <a className="hover:text-[var(--site-accent)]" href={item.href}>
+                            {item.label}
+                          </a>
+                        ) : (
+                          <Link className="hover:text-[var(--site-accent)]" href={item.href}>
+                            {item.label}
+                          </Link>
+                        )}
+                        {item.detail ? <FooterDetail text={item.detail} /> : null}
+                      </li>
+                    )
+                  })}
                 </ul>
               </div>
             )

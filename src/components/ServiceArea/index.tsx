@@ -206,9 +206,11 @@ export async function ServiceArea({
           ) : null}
 
           <div className="mx-auto mt-12 flex max-w-4xl flex-wrap items-center justify-center gap-4">
-            <a href={resolvedCallHref} className="site-btn site-btn-primary">
-              {resolvedCallLabel}
-            </a>
+            {resolvedCallHref ? (
+              <a href={resolvedCallHref} className="site-btn site-btn-primary">
+                {resolvedCallLabel}
+              </a>
+            ) : null}
             <a href={`mailto:${resolvedEmail}`} className="site-btn site-btn-tertiary">
               {resolvedEmail}
             </a>
@@ -349,12 +351,11 @@ export async function ServiceArea({
         ) : null}
 
         <div className="mx-auto mt-12 flex max-w-4xl flex-wrap items-center justify-center gap-4">
-          <a
-            href={resolvedCallHref}
-            className="site-btn site-btn-primary"
-          >
-            {resolvedCallLabel}
-          </a>
+          {resolvedCallHref ? (
+            <a href={resolvedCallHref} className="site-btn site-btn-primary">
+              {resolvedCallLabel}
+            </a>
+          ) : null}
           <a
             href={`mailto:${resolvedEmail}`}
             className="site-btn site-btn-tertiary"

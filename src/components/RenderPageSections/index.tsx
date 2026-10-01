@@ -17,6 +17,11 @@ import { appearanceVars, sectionDividerClass, sectionPadClass } from '@/utilitie
 import { getCachedGlobalSafe } from '@/utilities/getGlobals'
 import { resolveCmsImage } from '@/utilities/cmsImage'
 import type { ServiceCard } from '@/utilities/services'
+import { toTelHref } from '@/utilities/tel'
+
+function phoneHrefOf(value?: string | null) {
+  return toTelHref(value || '')
+}
 
 function SectionShell({
   id,
@@ -164,8 +169,8 @@ export async function RenderPageSections({
                       {section.ctaLabel}
                     </SiteButton>
                   ) : null}
-                  {section.phoneDisplay && section.phoneHref ? (
-                    <a href={section.phoneHref} className="site-btn site-btn-ghost-on-dark">
+                  {section.phoneDisplay && phoneHrefOf(section.phoneHref) ? (
+                    <a href={phoneHrefOf(section.phoneHref)} className="site-btn site-btn-ghost-on-dark">
                       {section.phoneDisplay}
                     </a>
                   ) : null}
@@ -203,10 +208,10 @@ export async function RenderPageSections({
                 </p>
               ))}
               <CheckList items={section.highlights || []} />
-              {section.closingText && section.phoneDisplay && section.phoneHref ? (
+              {section.closingText && section.phoneDisplay && phoneHrefOf(section.phoneHref) ? (
                 <p className="mt-5 site-body leading-relaxed">
                   {section.closingText}{' '}
-                  <a className="site-link" href={section.phoneHref}>
+                  <a className="site-link" href={phoneHrefOf(section.phoneHref)}>
                     {section.phoneDisplay}
                   </a>
                   .
@@ -238,10 +243,10 @@ export async function RenderPageSections({
               {section.intro ? (
                 <p className="mt-3 max-w-2xl site-body">
                   <TextWithLinks text={section.intro} />
-                  {section.phoneDisplay && section.phoneHref ? (
+                  {section.phoneDisplay && phoneHrefOf(section.phoneHref) ? (
                     <>
                       {' '}
-                      <a className="site-link" href={section.phoneHref}>
+                      <a className="site-link" href={phoneHrefOf(section.phoneHref)}>
                         {section.phoneDisplay}
                       </a>
                     </>
@@ -338,10 +343,10 @@ export async function RenderPageSections({
               {section.intro ? (
                 <p className="mt-3 max-w-2xl site-body">
                   <TextWithLinks text={section.intro} />
-                  {section.phoneDisplay && section.phoneHref ? (
+                  {section.phoneDisplay && phoneHrefOf(section.phoneHref) ? (
                     <>
                       {' '}
-                      <a className="site-link" href={section.phoneHref}>
+                      <a className="site-link" href={phoneHrefOf(section.phoneHref)}>
                         {section.phoneDisplay}
                       </a>
                       .
@@ -472,7 +477,7 @@ export async function RenderPageSections({
             key={key}
             heading={section.heading}
             intro={section.intro}
-            callHref={section.phoneHref || defaultPhoneHref}
+            callHref={phoneHrefOf(section.phoneHref) || defaultPhoneHref}
             callLabel={
               section.phoneDisplay
                 ? `Call ${section.phoneDisplay}`
@@ -558,10 +563,10 @@ export async function RenderPageSections({
               {section.intro ? (
                 <p className="mt-3 site-body">
                   {section.intro}
-                  {section.phoneDisplay && section.phoneHref ? (
+                  {section.phoneDisplay && phoneHrefOf(section.phoneHref) ? (
                     <>
                       {' '}
-                      <a className="site-link" href={section.phoneHref}>
+                      <a className="site-link" href={phoneHrefOf(section.phoneHref)}>
                         {section.phoneDisplay}
                       </a>{' '}
                       {section.phoneSuffix || ''}
@@ -600,7 +605,7 @@ export async function RenderPageSections({
               heading={section.heading}
               intro={section.intro}
               phoneDisplay={section.phoneDisplay || defaultPhoneDisplay}
-              phoneHref={section.phoneHref || defaultPhoneHref}
+              phoneHref={phoneHrefOf(section.phoneHref) || defaultPhoneHref}
               formId={section.formId}
             />
           </div>

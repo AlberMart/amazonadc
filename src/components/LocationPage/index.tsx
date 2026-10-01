@@ -75,18 +75,27 @@ export async function LocationPage({ location }: { location: LocationContent }) 
             <p className="mt-4 text-lg text-sky-100/90 md:text-xl">{location.headline}</p>
             <p className="mt-5 max-w-xl site-copy-on-dark leading-relaxed">{location.intro}</p>
             <div className="mt-8 flex flex-wrap gap-4">
-              <a
-                href={ctaHref}
-                className="site-btn site-btn-primary"
-              >
-                Call {ctaDisplay}
-              </a>
+              {ctaHref ? (
+                <a href={ctaHref} className="site-btn site-btn-primary">
+                  Call {ctaDisplay}
+                </a>
+              ) : null}
               <Link
                 href="#contact"
                 className="rounded-md border border-white/30 px-5 py-3 text-sm font-semibold text-white transition hover:border-white/60"
               >
                 Get a Free Estimate
               </Link>
+              {location.isOfficeHub && office.hasMapUrl ? (
+                <a
+                  href={office.hasMapUrl}
+                  className="rounded-md border border-white/30 px-5 py-3 text-sm font-semibold text-white transition hover:border-white/60"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Office on Google Maps
+                </a>
+              ) : null}
             </div>
             <p className="mt-6 text-sm text-sky-100/80">
               {location.isOfficeHub ? (

@@ -1,4 +1,5 @@
 import { cn } from '@/utilities/ui'
+import { isNextLinkHref } from '@/utilities/tel'
 import Link from 'next/link'
 import React from 'react'
 
@@ -31,6 +32,14 @@ export function SiteButton(props: AsButton | AsLink) {
 
   if ('href' in props && props.href) {
     const { href, variant: _v, className: _c, children: _ch, ...rest } = props
+    // tel:/mailto:/https: must stay native <a> — Next <Link> can yield about:invalid#zCSafez
+    if (!isNextLinkHref(href)) {
+      return (
+        <a href={href} className={classes} {...rest}>
+          {children}
+        </a>
+      )
+    }
     return (
       <Link href={href} className={classes} {...rest}>
         {children}

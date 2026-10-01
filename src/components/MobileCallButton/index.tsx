@@ -32,6 +32,9 @@ export function MobileCallButton({
   const showNumber = call.display === 'number' || call.display === 'both'
   const variant = showNumber ? 'pill' : 'icon'
 
+  // Never render empty href — browsers surface about:invalid#zCSafez to crawlers.
+  if (!call.href) return null
+
   return (
     <a
       href={call.href}

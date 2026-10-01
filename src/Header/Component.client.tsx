@@ -186,9 +186,11 @@ export const HeaderClient: React.FC<{
             )
           })}
           {showPhoneCta ? (
-            <a href={activePhoneHref} className="site-btn site-btn-primary ml-2 px-3.5 py-2 xl:ml-3">
-              {activePhoneDisplay}
-            </a>
+            {activePhoneHref ? (
+              <a href={activePhoneHref} className="site-btn site-btn-primary ml-2 px-3.5 py-2 xl:ml-3">
+                {activePhoneDisplay}
+              </a>
+            ) : null}
           ) : null}
         </nav>
 

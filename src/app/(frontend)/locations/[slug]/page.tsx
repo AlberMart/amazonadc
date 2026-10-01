@@ -68,6 +68,38 @@ export default async function Page({ params }: Args) {
           postalCode: office.postalCode,
           addressCountry: 'US',
         },
+        ...(office.latitude && office.longitude
+          ? {
+              geo: {
+                '@type': 'GeoCoordinates',
+                latitude: office.latitude,
+                longitude: office.longitude,
+              },
+            }
+          : {}),
+        ...(office.hasMapUrl ? { hasMap: office.hasMapUrl } : {}),
+        ...(office.weekdayOpens
+          ? {
+              openingHoursSpecification: [
+                {
+                  '@type': 'OpeningHoursSpecification',
+                  dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+                  opens: office.weekdayOpens,
+                  closes: office.weekdayCloses,
+                },
+                ...(office.saturdayOpens
+                  ? [
+                      {
+                        '@type': 'OpeningHoursSpecification',
+                        dayOfWeek: 'Saturday',
+                        opens: office.saturdayOpens,
+                        closes: office.saturdayCloses,
+                      },
+                    ]
+                  : []),
+              ],
+            }
+          : {}),
         areaServed: [
           { '@type': 'City', name: location.state === 'DC' ? 'Washington, DC' : location.city },
           {
