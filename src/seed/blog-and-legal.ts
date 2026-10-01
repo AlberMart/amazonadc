@@ -22,7 +22,7 @@ import viennaPollen from '@/content/blog/vienna-tree-pollen-basement-air-ducts.j
 import greatFallsEstates from '@/content/blog/great-falls-estates-humidity-air-ducts.json'
 import fallsChurchDust from '@/content/blog/falls-church-close-in-dust-air-ducts.json'
 import chantillyRoute28 from '@/content/blog/chantilly-route-28-dust-air-ducts.json'
-import oakton123 from '@/content/blog/oakton-123-pollen-air-ducts.json'
+import oaktonCanopy from '@/content/blog/oakton-canopy-pollen-air-ducts.json'
 import lortonI95 from '@/content/blog/lorton-i95-occoquan-air-ducts.json'
 import mountVernonHumidity from '@/content/blog/mount-vernon-potomac-humidity-air-ducts.json'
 import fairOaksTownhomes from '@/content/blog/fair-oaks-townhomes-dust-air-ducts.json'
@@ -124,7 +124,7 @@ export const postsSeed = [
   mapPost(greatFallsEstates as BlogPost),
   mapPost(fallsChurchDust as BlogPost),
   mapPost(chantillyRoute28 as BlogPost),
-  mapPost(oakton123 as BlogPost),
+  mapPost(oaktonCanopy as BlogPost),
   mapPost(lortonI95 as BlogPost),
   mapPost(mountVernonHumidity as BlogPost),
   mapPost(fairOaksTownhomes as BlogPost),

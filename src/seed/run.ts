@@ -138,6 +138,20 @@ async function run() {
     }
   }
 
+  // Renamed blog post — drop old placeholder slug
+  {
+    const dead = await payload.find({
+      collection: 'posts',
+      where: { slug: { equals: 'oakton-123-pollen-air-ducts' } },
+      limit: 10,
+      overrideAccess: true,
+    })
+    for (const doc of dead.docs) {
+      await payload.delete({ collection: 'posts', id: doc.id, context })
+      console.log('deleted', 'posts', 'oakton-123-pollen-air-ducts')
+    }
+  }
+
   for (const service of servicesSeed) {
     await upsertBySlug(
       payload,

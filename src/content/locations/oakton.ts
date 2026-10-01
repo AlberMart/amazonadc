@@ -19,7 +19,7 @@ export const oakton: LocationContentSeed = {
     paragraphs: [
       'Oakton sits on Chain Bridge Road (Route 123) between the Town of Vienna and the City of Fairfax: large lots, 1960s–80s colonials, and streets off Vale and Hunter Mill. The canopy is dense. Spring pollen coats decks the same week it coats returns. Finished basements stay cool while July air stays wet, so supply trunks sweat and hold that film.',
       'A typical Oakton house mixed original metal with a later addition over a garage or a rec-room branch. Dust collects at those joints. Dryer runs from a second-floor laundry often travel a long, quiet path to a rear gable. Waples Mill traffic adds a finer road dust that smaller subdivisions do not see as much of.',
-      'We serve Oakton from [Burke](/locations/burke). Nearby [Vienna](/locations/vienna), [Fairfax](/locations/fairfax), and [Fair Oaks](/locations/fair-oaks) use the same dispatch. More on [Oakton 123 Pollen](/blog/oakton-123-pollen-air-ducts).',
+      'We serve Oakton from [Burke](/locations/burke). Nearby [Vienna](/locations/vienna), [Fairfax](/locations/fairfax), and [Fair Oaks](/locations/fair-oaks) use the same dispatch. More on [Oakton canopy pollen and basement ducts](/blog/oakton-canopy-pollen-air-ducts).',
     ],
     highlights: [
       'Route 123, Vale, Hunter Mill, Waples Mill, and Oakton Village streets',

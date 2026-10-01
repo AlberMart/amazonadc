@@ -63,6 +63,11 @@ export const redirects: NextConfig['redirects'] = async () => {
       permanent: true,
     },
     {
+      source: '/blog/oakton-123-pollen-air-ducts',
+      destination: '/blog/oakton-canopy-pollen-air-ducts',
+      permanent: true,
+    },
+    {
       destination: '/ie-incompatible.html',
       has: [
         {
