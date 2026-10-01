@@ -2,53 +2,57 @@
   "slug": "silver-spring-brick-houses-urban-dust-air-ducts",
   "title": "Retrofitted trunks, Georgia Avenue particles, and why older registers film over",
   "headline": "Retrofitted trunks, Georgia Avenue particles, and why older registers film over",
-  "description": "Silver Spring, MD mixes pre-war brick, downtown construction, and humid basements. why ducts collect urban dust and pollen.",
+  "description": "Silver Spring blends pre-war brick housing with active transit construction and urban density. Learn how retrofitted ductwork and corridor dust create a unique indoor air challenge.",
   "heroImage": "/img/blog/heroes/silver-spring-brick-houses-urban-dust-air-ducts.webp",
   "sections": [
     {
-      "id": "east_county",
-      "heading": "Silver Spring is urban Montgomery County",
+      "id": "retrofit_ducts",
+      "heading": "Central air added after the house was built changes everything",
       "paragraphs": [
-        "Downtown around the Metro, Woodside bungalows, and Georgia Avenue apartments do not look like a quiet suburb. Construction, bus traffic, and the Purple Line corridor put dust in the air. Older brick houses often got central air decades after they were built. Those cut-in trunks have joints that collect whatever the last renovation left behind.",
-        "Basements stay cool. Maryland summers stay wet. Cold supply ducts sweat. Urban dust and tree pollen stick to that moisture."
+        "Much of Silver Spring's housing stock — the Woodside bungalows, the North Woodside colonials, the brick capes along Sligo Creek — was built in the 1920s through 1950s, decades before residential central air conditioning became standard. When HVAC was retrofitted into these homes, installers worked around existing framing, plaster walls, and narrow joist bays. The resulting duct paths include sharp bends, abrupt diameter changes, and joints where sheet metal meets old timber.",
+        "These imperfect connections create two problems. First, the turbulence at each bend slows airflow and deposits particles on the duct wall the way sediment collects on the inside of a river bend. Second, the unsealed joints allow unconditioned basement air — carrying its own load of moisture, dust, and occasional insect debris — to enter the supply stream and mix with the filtered air the system is supposed to deliver."
       ],
       "listItems": []
     },
     {
-      "id": "condo",
-      "heading": "Downtown condos fail on the dryer vent",
+      "id": "urban_particulate",
+      "heading": "Urban dust is not suburban dust",
       "paragraphs": [
-        "Stacked units have long, bent dryer runs. Lint packs. Moisture blows back into the laundry closet. That humidity then feeds whatever is already living in the ducts.",
-        "If the smell is already there, when you are ready to book, use the [Silver Spring, MD location page](/locations/silver-spring)."
+        "The particulate mix in Silver Spring's air is distinct from what a home in a quieter suburb encounters. Georgia Avenue and Colesville Road carry heavy bus and commercial traffic. The Purple Line construction corridor has generated continuous earthmoving and concrete dust for years. Downtown development around the Metro station adds demolition debris and off-gassing from new materials.",
+        "These particles are finer and chemically different from tree pollen or grass clippings. Soot, brake metalwork, and concrete dust contain compounds that bond more aggressively to moist metal surfaces than organic material does. Inside a duct system that was already compromised by retrofit-era joint gaps, this urban particulate accumulates into a dense, dark film that is noticeably harder to remove than the dust found in a typical suburban system."
       ],
       "listItems": [],
       "image": "/img/blog/clogged-dryer-vent-lint.webp"
     },
     {
-      "id": "signs",
-      "heading": "Typical signs in a Silver Spring house",
+      "id": "condo_dryer",
+      "heading": "Downtown condos and the stacked-laundry problem",
       "paragraphs": [
-        "Watch for:"
+        "Silver Spring's downtown high-rises and mid-rises pack laundry closets into interior spaces with long exhaust paths. A dryer vent in a tenth-floor unit may run vertically through a shared chase before exiting at the roofline. Lint accumulates at every elbow. Moist exhaust that cannot exit quickly enough raises humidity in the laundry closet, and that humidity migrates into the surrounding ductwork through shared wall cavities.",
+        "The combination of lint restriction and moisture dump makes high-rise dryer vents a dual concern: a fire safety issue from the lint and an air quality issue from the humidity feeding microbial growth in adjacent duct runs. Cleaning the dryer vent alone does not address what has already entered the HVAC ductwork, and vice versa."
+      ],
+      "listItems": []
+    },
+    {
+      "id": "signs",
+      "heading": "Recognizing the Silver Spring pattern",
+      "paragraphs": [
+        "Urban duct contamination tends to produce visual and tactile cues that differ from moisture-only problems. Silver Spring homeowners and condo residents commonly report:"
       ],
       "listItems": [
-        "Musty air in the first minutes after heat or AC turns on.",
-        "Black or gray film around supplies a few days after you wipe them.",
-        "A dryer that needs two cycles in a downtown building."
+        "A dark, almost sooty film on supply register faces that leaves a gray residue on a white cloth, distinct from the greenish tint of pollen.",
+        "A stale or slightly chemical odor in the first minutes after the system starts, different from the earthy mustiness of a damp basement alone.",
+        "Dust accumulation on electronics and horizontal surfaces that seems disproportionate to the cleanliness of the rest of the home, especially in rooms near exterior walls facing a busy street."
       ]
     },
     {
-      "id": "protect",
-      "heading": "Background reading vs booking a visit",
+      "id": "next_steps",
+      "heading": "Addressing retrofitted systems in an urban environment",
       "paragraphs": [
-        "Silver Spring jobs are scheduled from our metro offices For service and scheduling, see the [local service page](/locations/silver-spring).",
-        "Silver Spring is served from our [Bethesda](/locations/bethesda) office. [College Park](/locations/college-park) and [Washington, DC](/locations/washington-dc) are nearby pages.",
-        "Service details live on the [Silver Spring location page](/locations/silver-spring). Pair [air duct cleaning](/air-duct-cleaning) with [dryer vent cleaning](/dryer-vent-cleaning) if laundry humidity has nowhere to exhaust."
+        "Because Silver Spring's duct contamination combines urban particulates with moisture in a retrofitted system, effective maintenance addresses both. A professional cleaning removes the bonded film from trunk walls and branch takeoffs. Sealing accessible joints during or after cleaning reduces the infiltration of unconditioned basement air. Upgrading to a MERV-13 filter captures more of the fine urban particles before they reach the trunk interior.",
+        "Scheduling and flat-rate options for Silver Spring homes and condos are on the [Silver Spring, MD service page](/locations/silver-spring). For downtown buildings, mention permit parking or loading-dock requirements when booking. If laundry humidity is part of the picture, pair your appointment with [dryer vent cleaning](/dryer-vent-cleaning)."
       ],
-      "listItems": [
-        "Keep indoor humidity under 50% in English basements and garden apartments.",
-        "Tell us about permit parking and loading when you book.",
-        "Clean ducts every 3 to 5 years; clear dryer vents about once a year."
-      ]
+      "listItems": []
     }
   ],
   "faq": [

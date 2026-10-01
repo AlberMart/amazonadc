@@ -9,62 +9,62 @@ export const fallsChurch: LocationContentSeed = {
   intro:
     'Amazon Air Duct Cleaning serves the City of Falls Church from our Burke office. Older close-in houses on small lots and streets toward Arlington all take on Beltway dust and humid summers. Call (571) 460-0001.',
   heroImage: '/img/locations/falls-church.webp',
-  heroAlt: 'Air duct cleaning in Falls Church, VA — Amazon Air Duct Cleaning',
+  heroAlt: 'Air duct cleaning in Falls Church, VA \u2014 Amazon Air Duct Cleaning',
   city: 'Falls Church',
   state: 'VA',
   servedBy: 'burke',
   sectionLayout: 'communitiesFirst',
   about: {
-    heading: 'Small Lots, Beltway Dust, and Older Close-In Trunks',
+    heading: 'Independent City, Compact Lots, and Beltway Particulates on Every Porch',
     paragraphs: [
-      'The City of Falls Church is a small independent city — Broad Street, Washington Street, Tinner Hill, and tight blocks of older houses on small lots. That is a different place from the huge “Falls Church” Census area that sprawls through Fairfax County. This page is for the independent city and the streets that immediately touch it. Older metal trunks, unfinished or finished basements, and short yards mean returns sit close to the Beltway film that coats porches along Route 7.',
-      'Small lots do not mean small dust loads. Traffic particles from I-66 and the Beltway mix with pollen from street trees. A 1920s–60s house that gained central air later often has trunks snaked through tight joist bays. Dust collects at those kinks. Laundry closets on a second floor send dryer lint on a long, bent path to a rear wall.',
-      'We serve Falls Church from [Burke](/locations/burke). Nearby [Arlington](/locations/arlington), [McLean](/locations/mclean), and [Vienna](/locations/vienna) use the same dispatch. More on [Falls Church Close In Dust](/blog/falls-church-close-in-dust-air-ducts).',
+      'The City of Falls Church is one of Virginia\u2019s smallest independent cities \u2014 Broad Street, Washington Street, Tinner Hill, and a tight grid of older houses on compact lots. This page covers the independent city and the blocks immediately touching it, not the sprawling Census-designated Falls Church area across Fairfax County. Homes here range from 1920s bungalows to 1960s ramblers, most of which received central air systems years after construction. That means metal trunks threaded through existing joist bays, with bends and joints where decades of particulates accumulate.',
+      'Route 7 and the I-66 / Beltway interchange sit close enough that traffic-generated particulates settle on porches and work their way into returns. Street trees along Broad and Washington add a seasonal pollen load on top of that road film. Second-floor laundry closets on small-lot homes route dryer exhaust through tight interior walls, creating long bent paths that pack with lint faster than a straight first-floor run would.',
+      'We serve Falls Church from [Burke](/locations/burke). Nearby [Arlington](/locations/arlington), [McLean](/locations/mclean), and [Vienna](/locations/vienna) use the same dispatch. Read about [close-in Falls Church dust and air ducts](/blog/falls-church-close-in-dust-air-ducts).',
     ],
     highlights: [
-      'City of Falls Church: Broad Street, Tinner Hill, West End, close streets',
-      'Flat-rate pricing — no vent counting',
-      'Before-and-after photos on every duct job',
-      'Same Burke team that already works Arlington and McLean',
+      'City of Falls Church: Broad Street, Tinner Hill, West End, and edge streets',
+      'Flat-rate pricing \u2014 no per-vent counting',
+      'Before-and-after photo documentation on every job',
+      'Same Burke crew servicing Arlington and McLean weekly',
     ],
   },
-  offersTitle: 'Falls Church Flat Rates — Compact Homes, Full Scopes',
+  offersTitle: 'Falls Church Duct & Dryer Vent Packages',
   services: {
-    heading: 'Falls Church Packages for Compact City Lots',
-    intro: 'Smaller footprints still get full trunk cleaning at published rates.',
+    heading: 'What We Clean in Falls Church Compact-Lot Homes',
+    intro: 'Smaller footprints with older trunks get the same full-scope cleaning at published rates.',
     items: [
       {
-        title: 'Air Duct Cleaning & Sanitization',
-        text: 'We clean supplies, returns, and registers with negative-pressure HEPA and rotary brushes, then sanitize when inspection shows growth. See [air duct cleaning](/air-duct-cleaning).',
+        title: 'Air Duct Cleaning for Falls Church Houses',
+        text: 'We seal HEPA-filtered negative-pressure equipment to the trunk and agitate every supply line, return, and register with rotary brushes sized for the tighter joist bays common in pre-war and mid-century Falls Church homes. Sanitizing is included when the walkthrough identifies biological growth. Schedule [air duct cleaning](/air-duct-cleaning).',
       },
       {
-        title: 'Dryer Vent Cleaning',
-        text: 'Tight lots and second-floor laundry mean bent dryer runs. We clear the full length to the cap. Book [dryer vent cleaning](/dryer-vent-cleaning).',
+        title: 'Dryer Vent Service',
+        text: 'Compact lots and second-floor laundry on small-lot houses mean bent interior dryer runs that pack with lint quickly. We rod-brush and vacuum the entire path to the exterior cap so airflow and exhaust are fully restored. Book [dryer vent cleaning](/dryer-vent-cleaning).',
       },
       {
-        title: 'Ventilation & HVAC Mold Treatment',
-        text: 'Older basements and humid summers let mold colonize coils and dead-end ducts. Learn more about [mold remediation for air ducts](/mold-remediation-air-ducts).',
+        title: 'Mold Treatment in Falls Church Ductwork',
+        text: 'Older basements in the city hold moisture close to the air handler, and summer humidity compounds the problem. When mold is found on coils or inside dead-end branches, we clean mechanically, then apply EPA-registered antimicrobial product along the ventilation path. Details at [mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
     ],
   },
   why: {
-    heading: 'Why Close-In Falls Church Homes Recycle Traffic Film',
+    heading: 'Why Close-In Falls Church Homes Recirculate Road Film',
     items: [
       {
-        title: 'Independent City, Honest Dispatch',
-        text: 'We say City of Falls Church when we mean it. The truck still comes from Burke — close enough for a Broad Street morning window.',
+        title: 'Independent City, Accurate Dispatch',
+        text: 'We distinguish the City of Falls Church from the broader Census area. The truck comes from Burke \u2014 close enough for a Broad Street morning window without the ambiguity of a generic \u201cFalls Church\u201d service zone.',
       },
       {
-        title: 'Older Close-In Trunks',
-        text: '1920s–60s houses with later central air are a normal job, not a reason to add mystery line items.',
+        title: 'Older Retrofit Trunks Are Routine',
+        text: '1920s\u20131960s houses with later-added central air have ductwork routed through existing structure. Those tight runs with multiple elbows are a standard job for this crew, not an excuse for add-on line items.',
       },
       {
-        title: 'Flat-Rate Pricing',
-        text: 'No per-vent games. Residential duct and dryer packages are quoted before we unroll a hose.',
+        title: 'Price Set Before Work Begins',
+        text: 'Residential duct and dryer packages are flat-rate. The number on your confirmation is the number on the invoice.',
       },
       {
-        title: '100% Satisfaction Guarantee',
-        text: 'If you are not happy, we come back. Payment is for work you can see in the photos.',
+        title: 'Satisfaction Guarantee',
+        text: 'If the cleaning does not meet your expectations, we come back and redo the work without additional charge.',
       },
     ],
   },
@@ -83,13 +83,13 @@ export const fallsChurch: LocationContentSeed = {
       {
         title: 'Close-in edges',
         places:
-          'Streets toward [Arlington](/locations/arlington), [McLean](/locations/mclean), and [Vienna](/locations/vienna) — ask if your block is city or county',
+          'Streets toward [Arlington](/locations/arlington), [McLean](/locations/mclean), and [Vienna](/locations/vienna) \u2014 ask if your block is city or county',
       },
     ],
   },
   process: {
     heading: 'Tight-Lot Staging From the Burke Office',
-    intro: 'Same flat-rate flow we use across VA — scoped for Falls Church housing.',
+    intro: 'Same flat-rate flow we use across VA \u2014 scoped for Falls Church housing.',
     steps: [
       {
         title: 'Scope the Falls Church System',
@@ -113,7 +113,7 @@ export const fallsChurch: LocationContentSeed = {
       },
     ],
   },
-  faqIntro: 'Falls Church questions — call (571) 460-0001 (dispatch: Burke).',
+  faqIntro: 'Falls Church questions \u2014 call (571) 460-0001 (dispatch: Burke).',
   faq: [
     {
       q: 'Who handles air duct cleaning appointments in Falls Church?',
@@ -129,15 +129,15 @@ export const fallsChurch: LocationContentSeed = {
     },
     {
       q: 'Are Falls Church air duct and dryer vent prices flat-rate?',
-      a: 'Yes. Falls Church residential packages are flat-rate from the Burke office — the number we confirm before work starts is what you pay. No per-vent counting.',
+      a: 'Yes. Falls Church residential packages are flat-rate from the Burke office \u2014 the number we confirm before work starts is what you pay. No per-vent counting.',
     },
     {
       q: 'Can duct and dryer vent cleaning be done the same day in Falls Church?',
-      a: 'In Falls Church, yes — when you book the combined package or both services up front. Call (571) 460-0001 and we stage the Burke crew for one visit to your street.',
+      a: 'In Falls Church, yes \u2014 when you book the combined package or both services up front. Call (571) 460-0001 and we stage the Burke crew for one visit to your street.',
     },
     {
       q: 'How far in advance should Falls Church homeowners book?',
-      a: 'Peak pollen and summer humidity fill the Falls Church calendar fast. Same-week openings are common — call (571) 460-0001 for the next Burke window serving Falls Church.',
+      a: 'Peak pollen and summer humidity fill the Falls Church calendar fast. Same-week openings are common \u2014 call (571) 460-0001 for the next Burke window serving Falls Church.',
     },
   ],
 }

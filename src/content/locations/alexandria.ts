@@ -15,62 +15,56 @@ export const alexandria: LocationContentSeed = {
   servedBy: 'burke',
   sectionLayout: 'servicesFirst',
   about: {
-    heading: 'Old Town Plaster, Del Ray Townhomes, and River Moisture',
+    heading: 'Waterfront Brick, Del Ray Row Houses, and Potomac Yard Stacks',
     paragraphs: [
-      'Alexandria is a historic independent city: colonial brick along Old Town, older houses in Rosemont and Del Ray, and newer buildings at Potomac Yard. It is also humid because it sits on the Potomac River. Those two facts create specific problems for local HVAC systems.',
-      'Historic and older homes: Alexandria has one of the nation’s oldest historic districts. Brick buildings and older duct runs collect decades of dust, pollen, and debris. Without regular cleaning, that material keeps recirculating through the house.',
-      'Potomac River humidity: Moisture near the river settles in uncleaned ductwork. That is the environment mold, mildew, and musty odors need. Seasonal pollen and winter dust then ride the same system all year.',
-      'We now offer ventilation mold treatment built for that climate. Mold does not only stain surfaces. Airborne spores trigger respiratory problems and allergies, especially in riverfront and older Old Town houses.',
-      'Alexandria is served from our Burke office — Read [how Potomac humidity affects Alexandria homes](/blog/how-potomac-humidity-affects-alexandria-air-quality), or book [air duct cleaning](/air-duct-cleaning) and [dryer vent cleaning](/dryer-vent-cleaning). Nearby [Arlington](/locations/arlington), [McLean](/locations/mclean), and [Washington, DC](/locations/washington-dc) are covered by the same crew.',
+      'Alexandria straddles the Potomac with housing that spans three centuries. Old Town colonial brick buildings and narrow row houses along King Street and Prince Street carry ductwork that was often retrofitted decades after the walls went up — metal trunks threaded through plaster walls and tight joist bays where dust accumulates at every bend. Rosemont and Del Ray add early-twentieth-century bungalows with finished attics and basement air handlers sitting on damp concrete.',
+      'Potomac Yard, Carlyle, and the West End tell a different story: newer condos with rooftop HVAC packs, stacked laundry closets, and dryer vents that climb several stories before reaching the cap. Humidity off the river does not care about building age — it condenses on cold coils and supply metal in a 2020 condo the same way it does in an 1820 row house. That moisture layer traps pollen from tree-lined streets, Eisenhower Avenue traffic particles, and pet dander until the system is cleaned.',
+      'Our Burke team runs Alexandria routes alongside [Arlington](/locations/arlington) and [Mount Vernon](/locations/mount-vernon), so waterfront parking logistics and Old Town alley access are already in the playbook. Read how [Potomac humidity affects Alexandria air quality](/blog/how-potomac-humidity-affects-alexandria-air-quality), or schedule [air duct cleaning](/air-duct-cleaning) and [dryer vent cleaning](/dryer-vent-cleaning) for the same visit.',
     ],
     highlights: [
-      'Historic Old Town houses and newer Potomac Yard condos',
-      'Flat-rate pricing — the quote is the price',
-      'Before-and-after photos on every duct job',
-      'Same Burke team that already works Alexandria and Arlington',
+      'Old Town, Del Ray, Rosemont, Potomac Yard, West End, and Carlyle',
+      'Flat-rate packages — the quoted number is the final price',
+      'Before-and-after photos on every residential job',
+      'Burke crew with weekly Alexandria route experience',
     ],
   },
-  offersTitle: 'Alexandria Rates Matching Our Burke Packages',
+  offersTitle: 'Alexandria Duct & Vent Cleaning Packages',
   services: {
-    heading: 'Alexandria Cleanings for Historic and Waterfront Homes',
-    intro: 'Historic boots and modern condo packs get the same published scopes.',
+    heading: 'What We Clean in Alexandria Historic and Modern Homes',
+    intro: 'Colonial brick and glass-tower condos get the same published scope and flat rate.',
     items: [
       {
-        title: 'Air Duct Cleaning & Sanitization',
-        text: 'We clean supply lines, returns, and registers with negative-pressure vacuums and specialized brushes, then apply an eco-friendly sanitizing treatment to knock down bacteria and mold spores.',
+        title: 'Full-System Air Duct Cleaning',
+        text: 'Negative-pressure HEPA equipment seals onto the trunk while rotary brushes agitate every supply line, return, and register. An antimicrobial sanitizing pass follows when our on-site inspection finds biological buildup. You receive the before-and-after photo set. Schedule [air duct cleaning](/air-duct-cleaning).',
       },
       {
         title: 'Dryer Vent Cleaning',
-        text: 'A clogged dryer vent is a major cause of house fires and makes the appliance run twice as hard. We brush and vacuum the full length so airflow and exhaust are restored.',
+        text: 'Old Town row houses often route dryer exhaust through interior walls, and Potomac Yard condos send it up multi-story chases. Both designs pack with lint and restrict airflow — raising fire risk and forcing the appliance to overwork. We rod-brush and vacuum the entire run to the exterior cap. Book [dryer vent cleaning](/dryer-vent-cleaning).',
       },
       {
-        title: 'Ventilation & HVAC Mold Treatment',
-        text: 'Mold likes the dark, damp interior of ducts and AC coils. When river humidity condenses inside the system, spores colonize the ductwork and blow into every room when the system starts. We eradicate that growth with EPA-approved antimicrobial treatment and sanitize the ventilation so the air is safe to breathe. Learn more about [mold remediation for air ducts](/mold-remediation-air-ducts).',
-      },
-      {
-        title: 'Commercial Duct Cleaning',
-        text: 'We clean HVAC systems for Alexandria shops, offices, and small businesses so staff and customers are not breathing the same recirculated dust.',
+        title: 'Mold Treatment Inside Air Ducts',
+        text: 'River-adjacent Alexandria homes are prime candidates for mold inside ductwork. When condensation forms on evaporator coils and supply metal, spores establish colonies that blow into living spaces each cooling cycle. We mechanically clean first, then apply EPA-registered antimicrobial treatment along the ventilation path. Learn more at [mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
     ],
   },
   why: {
-    heading: 'Why Alexandria Registers Film Over After Humid Weeks',
+    heading: 'Why Alexandria Ductwork Collects More Than Suburban Systems',
     items: [
       {
-        title: 'Upfront Flat-Rate Pricing',
-        text: 'No bait-and-switch. The price we quote is the price you pay.',
+        title: 'Flat-Rate Pricing — No Vent Math',
+        text: 'Your Alexandria job is quoted at a fixed price before any equipment leaves the truck. Old Town row houses and Potomac Yard high-rises use the same rate structure.',
       },
       {
-        title: 'Before & After Photos',
-        text: 'You see the inside of the ducts before we pack up. That is the proof, not a promise.',
+        title: 'Photo Proof of Every Trunk',
+        text: 'We document the interior of the ductwork before and after cleaning so you can see exactly what was removed — particularly useful in older homes where debris has been compacting for years.',
       },
       {
-        title: 'Careful with Historic and Newer Homes',
-        text: 'The same crew handles fragile older ductwork in Old Town and tighter systems in newer condos and townhouses at Potomac Yard. More than 40 years of combined field experience.',
+        title: 'Experience With Fragile and Modern Systems',
+        text: 'The same Burke crew handles delicate plaster-wall trunk access in Old Town and tight condo closets at Carlyle. They carry the right brush heads and fittings for both scenarios.',
       },
       {
-        title: '100% Satisfaction Guarantee',
-        text: 'If you are not happy with the result, we make it right.',
+        title: 'Satisfaction Guarantee',
+        text: 'If you are not satisfied after the cleaning, we return and redo the job at no extra cost.',
       },
     ],
   },
@@ -121,15 +115,15 @@ export const alexandria: LocationContentSeed = {
     },
     {
       q: 'How long does air duct cleaning take in Alexandria?',
-      a: 'Most Alexandria single-system houses finish in about 2–3 hours. High-rise dryer risers and long laundry closets can add time after inspection.',
+      a: 'Most Alexandria single-system houses finish in about 2\u20133 hours. High-rise dryer risers and long laundry closets can add time after inspection.',
     },
     {
       q: 'Are Alexandria air duct and dryer vent prices flat-rate?',
-      a: 'Yes. Alexandria residential packages are flat-rate from the Burke office — the number we confirm before work starts is what you pay. No per-vent counting.',
+      a: 'Yes. Alexandria residential packages are flat-rate from the Burke office \u2014 the number we confirm before work starts is what you pay. No per-vent counting.',
     },
     {
       q: 'Is sanitizing included with Alexandria duct cleaning?',
-      a: 'For Alexandria jobs, Envirocon antimicrobial sanitizing is complimentary when you request it or when inspection supports it — we confirm on site before applying anything.',
+      a: 'For Alexandria jobs, Envirocon antimicrobial sanitizing is complimentary when you request it or when inspection supports it \u2014 we confirm on site before applying anything.',
     },
   ],
 }

@@ -2,51 +2,57 @@
   "slug": "oakton-canopy-pollen-air-ducts",
   "title": "Vale Road lots, Waples Mill grit, and why finished basements store spring film",
   "headline": "Vale Road lots, Waples Mill grit, and why finished basements store spring film",
-  "description": "Oakton, VA sits on Chain Bridge Road (Route 123) between Vienna and Fairfax. Learn why large-lot colonials store canopy pollen in cool trunks — and when homeowners usually schedule a cleaning.",
+  "description": "Oakton's large-lot colonials along Route 123 sit under one of Fairfax County's densest canopies. Learn how seasonal pollen loading interacts with oversized trunk systems and finished basements — and why the timing of filter changes matters more here than in open-lot neighborhoods.",
   "heroImage": "/img/blog/heroes/oakton-123-pollen-air-ducts.webp",
   "sections": [
     {
-      "id": "garage_wing",
-      "heading": "Garage additions splice new branches onto old trunks",
+      "id": "canopy_density",
+      "heading": "What a dense canopy does to indoor-air math",
       "paragraphs": [
-        "A typical Oakton house mixed original metal with a later addition over a garage or a rec-room branch. Dust collects at those joints. Second-floor laundry often travels a long, quiet path to a rear gable. Lint packs where you cannot see it.",
-        "If wiping the registers only lasts a few days, when you are ready to book, use the [Oakton, VA location page](/locations/oakton)."
+        "Oakton streets off Vale Road, Hunter Mill, and the Chain Bridge Road corridor sit under mature oaks, maples, and tulip poplars that create an overhead canopy dense enough to shade most rooflines by mid-morning. That shade is appealing. The airborne consequence is not. Mature hardwoods produce pollen volumes proportional to crown size, and the crowns on Oakton's 60-year-old oaks are large. During peak weeks in April and May, outdoor pollen counts in tree-dense northern Virginia routinely exceed 1,500 grains per cubic meter — well above the threshold that triggers symptoms in sensitized individuals.",
+        "Those counts represent what is floating in outdoor air. A residential return grille at ground level, partially sheltered under the canopy where pollen settles fastest, intercepts an even higher concentration. The filter catches a percentage. The remainder enters the trunk and either stays airborne long enough to reach the supply register or settles onto the trunk wall within the first few feet of the run."
+      ],
+      "listItems": []
+    },
+    {
+      "id": "oversized_trunks",
+      "heading": "Oversized colonial trunk systems and why they accumulate more",
+      "paragraphs": [
+        "A 1960s–80s colonial on a half-acre Oakton lot typically has a trunk system designed for the original footprint. When a garage conversion, a bump-out, or an over-garage bonus room was added later, the contractor grafted a new branch onto the existing trunk. The original trunk diameter does not change, but the total served area increases. Airflow velocity in the original section drops because the same blower now pushes air through more outlets.",
+        "Lower velocity means particles that would have stayed airborne in a faster-moving stream settle to the trunk floor instead. Over years, that settled layer compacts into a firm coating that standard filter changes cannot affect. The added branch also introduced a splice joint — a gap between old metal and new flex duct that leaks unconditioned basement air into the supply stream with every blower cycle."
       ],
       "listItems": [],
       "image": "/img/blog/neglected-air-ducts-buildup.webp"
     },
     {
-      "id": "signs",
-      "heading": "Typical signs in an Oakton house",
+      "id": "basement_dew",
+      "heading": "Finished basements create a hidden dew point trap",
       "paragraphs": [
-        "Watch for:"
-      ],
-      "listItems": [
-        "Yellow film on upstairs supplies during peak pollen.",
-        "Musty basement air when the AC starts after a humid week.",
-        "A dryer that takes too long on a second-floor run to a rear gable."
-      ]
-    },
-    {
-      "id": "route_123",
-      "heading": "Oakton is the stretch of Route 123 everyone drives through — and under-cleans",
-      "paragraphs": [
-        "Chain Bridge Road (Route 123) between the Town of Vienna and the City of Fairfax is large lots, 1960s–80s colonials, and streets off Vale and Hunter Mill. The canopy is dense. Spring pollen coats decks the same week it coats returns. Finished basements stay cool while July air stays wet, so supply trunks sweat and hold that film.",
-        "Waples Mill traffic adds a finer road dust that smaller subdivisions do not see as much of. You are not next to I-95. You still get a corridor load every commute."
+        "Oakton colonials with finished lower levels present the classic dew-point conflict: the air handler and trunk plenum sit in the coolest part of the house, surrounded by air that is warmer and moister. In summer, when the temperature differential between a 55-degree supply trunk and a 70-degree basement ceiling is at its widest, condensation forms on the trunk surface continuously while the blower runs. That condensation is a bonding agent for any particle that contacts the surface.",
+        "Carpet, drywall, and drop ceilings in the finished basement conceal the trunk from view. Homeowners do not notice the moisture-dust composite forming on trunk walls until the smell migrates upstairs — typically on the first AC cycle after the system has been idle during a cool overnight or a rainy weekend."
       ],
       "listItems": []
     },
     {
-      "id": "protect",
-      "heading": "Keeping trunks and dryer runs healthier between cleanings",
+      "id": "waples_mill",
+      "heading": "Waples Mill Road traffic adds a finer particle that pollen masks",
       "paragraphs": [
-        "Oakton jobs are scheduled from our [Burke](/locations/burke) office. Nearby [Vienna](/locations/vienna) and [Fairfax](/locations/fairfax) use the same dispatch.",
-        "Service details live on the [Oakton location page](/locations/oakton). See [air duct cleaning](/air-duct-cleaning) for what we remove from those spliced trunks."
+        "Oakton is not on the Beltway, but Waples Mill Road and Route 123 carry enough commuter volume to generate a measurable road-dust component. This dust is finer than tree pollen (mostly sub-5-micron mineral and brake particles) and darker in color. Inside the trunk it forms a gray underlayer beneath the yellow-tan pollen topcoat. Homeowners who pull a register and see yellow dust may not realize there is a second, darker layer below it that came from the road.",
+        "The two-layer pattern is diagnostic: if you see yellow surface dust over a gray film bonded to the metal, both canopy pollen and traffic particulate are contributing. A filter upgrade alone addresses the pollen fraction somewhat, but the finer traffic particles require either a MERV-13 filter or periodic trunk cleaning to remove."
+      ],
+      "listItems": []
+    },
+    {
+      "id": "action",
+      "heading": "Timing filter changes and cleanings to the canopy calendar",
+      "paragraphs": [
+        "Standard 90-day filter schedules were designed for average particulate loads. Under the Oakton canopy, filter media reaches capacity in about 30 to 45 days during April and May. Running a saturated filter is worse than running a clean lower-MERV filter because the clogged media restricts airflow, the blower works harder, and particles bypass the filter frame entirely. For Oakton-specific scheduling and pricing, visit the [Oakton location page](/locations/oakton). If the second-floor laundry runs to a rear gable, [dryer vent cleaning](/dryer-vent-cleaning) is a natural add-on."
       ],
       "listItems": [
-        "Change filters when the canopy is dumping pollen, not only at the printed interval.",
-        "Keep basement humidity under 50% in summer.",
-        "Clean ducts every 3 to 5 years; clear long dryer runs about once a year."
+        "Switch to a 30-day replacement cycle from March through June; revert to 60 or 90 days for the rest of the year.",
+        "Keep basement RH at or below 48 percent from May through September — a standalone dehumidifier sized for the basement square footage is the most direct solution.",
+        "Inspect the splice joint between the original trunk and any addition branch annually; re-seal with mastic if the old tape has separated.",
+        "After a professional trunk cleaning, note the date and compare register accumulation rates — most Oakton homes show a clear difference within a few weeks."
       ]
     }
   ],

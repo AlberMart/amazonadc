@@ -2,54 +2,57 @@
   "slug": "dc-humidity-row-houses-indoor-air",
   "title": "Potomac moisture, old metal trunks, and why District registers go musty",
   "headline": "Potomac moisture, old metal trunks, and why District registers go musty",
-  "description": "Washington, DC row houses and condos sit in river humidity. Learn how condensation forms in older ducts, why dryer vents clog in high-rises, and when to book a cleaning. ",
+  "description": "DC row houses were built before air conditioning existed. Learn how retrofitted ductwork, English basements, and river-valley humidity combine to degrade indoor air quality.",
   "heroImage": "/img/blog/heroes/dc-humidity-row-houses-indoor-air.webp",
   "sections": [
     {
-      "id": "row_house_ducts",
-      "heading": "Why row-house ducts are a special case",
+      "id": "pre_ac_architecture",
+      "heading": "A city built for coal heat and open windows, now sealed and cooled",
       "paragraphs": [
-        "Many DC row houses did not start with central air. Metal ducts were cut in later — through joists, along English basements, into rooms that used to be coal heated. Those joints collect dust. Cold refrigerant air hitting humid basement air leaves a wet film. Pollen and street dust stick to it.",
-        "High-rises have a different failure: long dryer vents and shared corridors. Lint and moisture have nowhere to go if the cap is packed. Either way, the blower becomes a distribution system for whatever grew in the dark.",
-        "If the smell is already there, start with [air duct cleaning in Washington, DC](/locations/washington-dc) rather than candles and filters alone."
+        "Washington's residential core — Capitol Hill, Georgetown, Shaw, Petworth, Brookland — was constructed in an era when heating came from coal or oil and cooling came from high ceilings, transom windows, and shade trees. Central HVAC was added to these row houses decades after construction, often by threading sheet-metal ducts through joist bays, along English-basement ceilings, and up through interior walls that were never framed to accommodate them.",
+        "The result is a duct system that follows a winding path through the house rather than the direct, planned routing of a modern build. Every bend creates a low-velocity zone where particles settle. Every joint between old timber and new sheet metal is a potential gap where unconditioned air enters the supply stream. And every foot of duct that runs through or above the English basement is exposed to the moisture that the basement generates year-round."
+      ],
+      "listItems": []
+    },
+    {
+      "id": "shared_walls",
+      "heading": "Row-house shared walls and moisture migration",
+      "paragraphs": [
+        "A detached suburban home manages moisture through its own four walls. A DC row house shares two of its walls with adjacent buildings, and those party walls create a moisture pathway that does not exist in freestanding construction. If one unit has an unfinished basement while the neighbor's is sealed and dehumidified, moisture migrates through the shared masonry toward the drier space, passing through wall cavities where duct runs may be routed.",
+        "This means a homeowner who has done everything right — sealed the basement, installed a dehumidifier, replaced the windows — can still find moisture entering the duct system through the party wall. The source is not inside their home but embedded in the shared infrastructure of row-house construction. Understanding this pathway explains why some homes develop musty duct odors despite aggressive moisture control at the floor level."
       ],
       "listItems": [],
       "image": "/img/blog/dirty-HVAC-unit.webp"
     },
     {
-      "id": "signs",
-      "heading": "Signs the system — not the street — is the problem",
+      "id": "english_basements",
+      "heading": "English basements: rental income upstairs, moisture source below",
       "paragraphs": [
-        "Outdoor DC air is not always clean. Indoor air should still not smell like a cellar when the AC starts. Households usually notice:"
-      ],
-      "listItems": [
-        "A musty or earthy odor in the first minutes after heat or AC turns on.",
-        "Black or gray film around supply registers a few days after you wipe them.",
-        "Allergy symptoms that ease when you leave the house for a weekend."
-      ]
-    },
-    {
-      "id": "river_city",
-      "heading": "DC is a river city, even if your block does not face the water",
-      "paragraphs": [
-        "Capitol Hill, Georgetown, and Shaw were built as walkable row-house neighborhoods. Navy Yard and The Wharf added glass condos later. Both housing types sit in the same climate: Potomac and Anacostia humidity, hot summers, and pollen blowing off Rock Creek Park.",
-        "You feel that air on the sidewalk. It is also sitting in the one place that should stay dry — the inside of the supply trunks."
+        "Many DC row houses contain English basements — semi-below-grade units with their own entrance that are commonly rented as separate apartments. These spaces have exterior walls that sit partially underground, limited natural ventilation, and plumbing penetrations that allow ground moisture to enter. When the upper unit's HVAC system draws return air from the main floor, it also pulls air through floor gaps, stairwell connections, and duct leaks that communicate with the lower-level environment.",
+        "The English basement effectively becomes an uncontrolled humidity source feeding the upper unit's duct system. Cooking moisture, shower steam, and ground-level damp from the basement tenant's space mix with the air that the upstairs air handler processes. Over a full humid season, the interior of the supply trunks develops a coating that is part condensation residue, part organic particulate, and entirely out of reach of any filter."
       ],
       "listItems": []
     },
     {
-      "id": "protect",
-      "heading": "Keeping trunks and dryer runs healthier between cleanings",
+      "id": "signs",
+      "heading": "How District residents identify duct-related air quality issues",
       "paragraphs": [
-        "Washington, DC jobs are scheduled from our metro offices For service and scheduling, see the [local service page](/locations/washington-dc).",
-        "You cannot move the rivers. You can keep the inside of the system dry and clear. The same Burke and Bethesda crews that cover [Arlington](/locations/arlington) and [Bethesda](/locations/bethesda) dispatch into DC —",
-        "Book from the [Washington, DC location page](/locations/washington-dc), or pair [air duct cleaning](/air-duct-cleaning) with [dryer vent cleaning](/dryer-vent-cleaning) if laundry humidity has nowhere to exhaust."
+        "DC row-house symptoms tend to be persistent rather than seasonal because the moisture source — the basement, the shared walls, the urban humidity — operates year-round, not just during pollen season. Common observations include:"
       ],
       "listItems": [
-        "Keep indoor humidity under 50% in English basements and garden apartments.",
-        "Clear the full dryer run once a year in condos and stacked units.",
-        "Clean ducts every 3 to 5 years, sooner after renovations or if pets live inside."
+        "A cellar-like smell from supply registers that intensifies in the first minutes after the system starts and never fully disappears, even in winter.",
+        "Dark residue around register edges that reappears within days of wiping, particularly on first-floor and basement-level vents.",
+        "Allergy or respiratory symptoms that improve noticeably when spending a weekend away from the house, suggesting the indoor environment is contributing."
       ]
+    },
+    {
+      "id": "next_steps",
+      "heading": "Working with DC's architecture instead of against it",
+      "paragraphs": [
+        "Effective duct maintenance in a DC row house acknowledges the building's limitations rather than expecting it to perform like new construction. Professional cleaning removes the accumulated film and debris from trunk walls and branch connections. Sealing accessible duct joints reduces the infiltration of basement and party-wall moisture. Running a dehumidifier in the English basement — even if it is a separate rental unit — benefits the entire building's air quality.",
+        "Scheduling details and flat-rate packages for all DC neighborhoods are on the [Washington, DC service page](/locations/washington-dc). High-rise and condo residents along the waterfront should add [dryer vent cleaning](/dryer-vent-cleaning) — shared-chase vent runs in Navy Yard and Wharf buildings commonly exceed the length that homeowner maintenance can effectively reach."
+      ],
+      "listItems": []
     }
   ],
   "faq": [

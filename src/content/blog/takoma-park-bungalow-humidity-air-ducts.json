@@ -2,52 +2,61 @@
   "slug": "takoma-park-bungalow-humidity-air-ducts",
   "title": "Carroll Avenue cottages, DC-line trees, and why added-later metal sweats in the crawl",
   "headline": "Carroll Avenue cottages, DC-line trees, and why added-later metal sweats in the crawl",
-  "description": "Takoma Park, MD bungalows sit on the DC line under a heavy canopy. why later-added ducts collect humidity and leaf grit.",
+  "description": "Takoma Park's early-century bungalows received central air decades after they were built, with ductwork threaded through crawl spaces never designed for it. Learn how crawl-space humidity, canopy shade, and patched dryer vents interact in houses that straddle the Montgomery–PG–DC line.",
   "heroImage": "/img/blog/heroes/takoma-park-bungalow-humidity-air-ducts.webp",
   "sections": [
     {
-      "id": "patched_vent",
-      "heading": "Porch-to-porch lots mean patched dryer vents",
+      "id": "crawl_duct",
+      "heading": "Crawl-space ductwork lives in the wettest part of the house",
       "paragraphs": [
-        "Additions sent dryer exhaust through whatever wall was handy. Caps sit in leaf piles. Modern machines push more air than those runs were sized for. Lint packs. Heat and moisture dump back into a bungalow that already has sweating trunks.",
-        "If the first AC week smells like a crawl, when you are ready to book, use the [Takoma Park, MD location page](/locations/takoma-park)."
+        "Bungalows on Carroll Avenue, Takoma Junction, and the streets around Sligo Creek typically sit on shallow crawl spaces — two to three feet of clearance over bare earth or a thin concrete skim coat. When central air was added in the 1970s or 1980s, installers ran supply trunks through this crawl space because there was nowhere else to put them. The ceiling was too low for attic runs. The walls were plaster over lathe with no chase cavities.",
+        "A crawl space over earth is the highest-humidity zone in any house. Ground moisture migrates upward continuously. Without a sealed vapor barrier — and most Takoma Park bungalow crawls do not have one — relative humidity in the crawl routinely exceeds 70 percent during summer. Supply trunks carrying 55-degree air through a 70-percent-humidity crawl develop persistent surface condensation. That condensation is the foundation of every dust-adhesion problem in this housing type."
+      ],
+      "listItems": []
+    },
+    {
+      "id": "canopy_shade",
+      "heading": "Canopy shade keeps the crawl damp longer",
+      "paragraphs": [
+        "Takoma Park's tree canopy — maple, oak, and sycamore along the creek corridors — shades most bungalow lots heavily enough that the ground under and around the house receives direct sun for only a few hours at midday. Shade reduces surface evaporation from the soil around the foundation. Moisture stays in the ground longer. The crawl space stays wet longer. After a rain event, a shaded Takoma Park crawl can take three to five days to return to baseline humidity, versus one to two days for an unshaded crawl on an open lot.",
+        "This extended wet period means the trunk condensation cycle runs for extra days after every rain. Each extended cycle bonds another layer of whatever particulate the return side has delivered — leaf grit, pollen, street dust from the Carroll Avenue corridor. The canopy that makes the neighborhood beautiful also makes the ductwork problem harder to control."
+      ],
+      "listItems": []
+    },
+    {
+      "id": "patched_vents",
+      "heading": "Dryer vents that were routed around additions, not through them",
+      "paragraphs": [
+        "Takoma Park bungalows have been expanded and modified for a century. Rear porches became kitchens. Side porches became bedrooms. Attic dormers became full second-story rooms. When a laundry room was added or relocated during one of these renovations, the dryer vent was routed to whatever exterior wall was available — often around a bump-out, through a soffited section, or along a foundation wall to a cap hidden behind landscaping.",
+        "These patched routes are longer and have more direction changes than a purpose-built vent run. Lint accumulates faster. Caps that sit at ground level near foundation plantings get covered by mulch, leaf litter, or vine growth that reduces exhaust airflow to a trickle. A dryer running against a blocked cap pushes heat and moisture back into the house — directly into the crawl-space environment where the supply trunks are already sweating."
       ],
       "listItems": [],
       "image": "/img/blog/Allergies.webp"
     },
     {
-      "id": "signs",
-      "heading": "Typical signs in a Takoma Park bungalow",
+      "id": "markers",
+      "heading": "Signs specific to bungalow crawl-space duct systems",
       "paragraphs": [
-        "Watch for:"
+        "Bungalow ductwork problems present differently than basement or attic system problems. Look for:"
       ],
       "listItems": [
-        "Musty air from a crawl or basement when the AC starts in June.",
-        "Leaf-season grit on supplies even after you wipe them.",
-        "A dryer that needs two cycles after an addition patched the vent."
+        "A musty or earthy smell from floor registers when the AC starts — this is crawl-space air entering through unsealed trunk joints and being pushed upstairs by the blower.",
+        "Visible mold or dark staining on the underside of floor joists near the trunk run — this indicates chronic condensation dripping from the trunk onto surrounding framing.",
+        "Supply air that feels humid even when the AC has been running for 30 minutes — suggesting the trunk is picking up moisture from the crawl environment and delivering it to the living space.",
+        "A dryer vent cap that you cannot locate from the exterior without moving plants or mulch — if you cannot find it, neither can the exhaust."
       ]
     },
     {
-      "id": "line",
-      "heading": "Takoma Park walks into three jurisdictions. The humidity does not care.",
+      "id": "management",
+      "heading": "Protecting bungalow ductwork between cleanings",
       "paragraphs": [
-        "Old Takoma, Carroll Avenue, and Takoma Junction sit on the Montgomery–Prince George’s–District line. A lot of the housing is early-century bungalows and brick cottages. Ductwork was often added later through crawl spaces and plaster. Those joints were never tight. Maple and oak keep lots shaded and damp.",
-        "Older metal runs in a cool crawl sweat through Maryland summers. Pollen and leaf grit stick. The first cool-down in June is when the musty smell shows up at the register."
-      ],
-      "listItems": []
-    },
-    {
-      "id": "protect",
-      "heading": "Keeping trunks and dryer runs healthier between cleanings",
-      "paragraphs": [
-        "Takoma Park jobs are scheduled from our metro offices For service and scheduling, see the [local service page](/locations/takoma-park).",
-        "Takoma Park is served from our [Bethesda](/locations/bethesda) office. Nearby [Silver Spring](/locations/silver-spring) and [Washington, DC](/locations/washington-dc) use the same Maryland crew.",
-        "Service details live on the [Takoma Park location page](/locations/takoma-park). Add [dryer vent cleaning](/dryer-vent-cleaning) if the cap sits in the leaves."
+        "Crawl-space trunk systems in bungalows benefit from moisture control as much as from duct cleaning itself. For Takoma Park scheduling and flat-rate service options, visit the [Takoma Park location page](/locations/takoma-park). If the patched dryer vent run is part of the problem, [dryer vent cleaning](/dryer-vent-cleaning) is most effective when done alongside duct work because both systems contribute to the crawl-space moisture load."
       ],
       "listItems": [
-        "Dehumidify crawls in summer even under heavy shade.",
-        "Change filters when the canopy is dumping pollen and leaf grit.",
-        "Clean ducts every 3 to 5 years; clear patched dryer vents about once a year."
+        "Install a 6-mil polyethylene vapor barrier over the crawl-space floor if one does not exist — this is the most cost-effective single improvement for reducing trunk condensation.",
+        "Clear vegetation from the dryer vent cap and maintain a 12-inch clearance zone around it; trim or relocate plantings that encroach seasonally.",
+        "Seal trunk joints in the crawl with mastic — not cloth tape, which fails in high-humidity environments within a few years.",
+        "Consider a crawl-space dehumidifier set to 50 percent RH during summer months; the electricity cost is modest relative to the reduction in duct re-contamination rate."
       ]
     }
   ],

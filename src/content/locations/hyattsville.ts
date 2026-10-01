@@ -7,7 +7,7 @@ export const hyattsville: LocationContentSeed = {
   description:
     'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Hyattsville, MD. Flat rates from our Bethesda office for arts-district housing, Route 1 dust, and humid older ducts. Call (301) 809-4544.',
   intro:
-    'Amazon Air Duct Cleaning serves Hyattsville from our Bethesda office. Older housing, Gateway, and houses toward College Park all take on Prince George’s humidity and corridor dust. Call (301) 809-4544.',
+    'Amazon Air Duct Cleaning serves Hyattsville from our Bethesda office. Older housing, Gateway, and houses toward College Park all take on Prince George\'s humidity and corridor dust. Call (301) 809-4544.',
   heroImage: '/img/locations/hyattsville.webp',
   heroAlt: 'Air duct cleaning in Hyattsville, MD — Amazon Air Duct Cleaning',
   city: 'Hyattsville',
@@ -15,56 +15,56 @@ export const hyattsville: LocationContentSeed = {
   servedBy: 'bethesda',
   sectionLayout: 'whyFirst',
   about: {
-    heading: 'Route 1 Arts-District Density and Humid Older Trunks',
+    heading: 'Arts-District Renovations, Queens Chapel Humidity, and Route 1 Corridor Particulate',
     paragraphs: [
-      'Hyattsville is a Prince George’s city on the Route 1 spine: the arts district and Gateway, West Hyattsville, then streets toward [College Park](/locations/college-park) and the District. Housing mixes early brick, later rentals, and new stacked units over older mechanical rooms. Route 1 construction and traffic add grit the returns do not sort from pollen.',
-      'PG County summers are wet. Cool trunks in a basement or crawl sweat. Arts-district renovations kick drywall into shared chases. The first AC week after a humid spell is when registers gray out and the laundry smells like a packed dryer vent. [Takoma Park](/locations/takoma-park) and [Washington, DC](/locations/washington-dc) sit on the same metro ring.',
-      'We serve Hyattsville from [Bethesda](/locations/bethesda). The drive is real and we will say so. More on [Hyattsville Route 1 Humidity](/blog/hyattsville-route-1-humidity-air-ducts).',
+      'Hyattsville straddles the Route 1 / Baltimore Avenue corridor in Prince George\'s County — the arts district near Hamilton Street, Gateway\'s newer mixed-use, West Hyattsville around the Metro, and the residential grids that stretch toward [College Park](/locations/college-park) and Riverdale Park. The older housing stock dates from the 1920s through the 1950s: brick semi-detached homes, small colonials, and Cape Cods with basements where air handlers were installed well after original construction. Arts-district renovations frequently disturb plaster and lathe, sending gypsum and lead-paint particulate into return grilles during the remodel — and those particles stay in the trunk system long after the contractor leaves.',
+      'Queens Chapel Road and Ager Road homes sit in a low-lying area where Prince George\'s County summer humidity concentrates. Cool basement trunks in these older homes condensate heavily, and Route 1 traffic film mixes with organic pollen from the neighborhood\'s mature shade trees to create a layered deposit inside supply runs. Gateway\'s newer stacked units introduce vertical dryer vents through shared risers that lint compresses quickly under high-occupancy laundry use.',
+      'We dispatch Hyattsville from [Bethesda](/locations/bethesda) — a cross-county drive we plan with honest arrival windows. [Takoma Park](/locations/takoma-park) borders to the west, [College Park](/locations/college-park) to the north, and [Washington, DC](/locations/washington-dc) is minutes south. Our post on [Hyattsville Route 1 humidity and air ducts](/blog/hyattsville-route-1-humidity-air-ducts) covers the moisture pattern.',
     ],
     highlights: [
-      'Arts district, Gateway, West Hyattsville, and Route 1 housing',
-      'Flat-rate pricing from the Bethesda office',
-      'Before-and-after photos on every duct job',
-      'Older PG trunks and stacked-unit dryer runs we already clean',
+      'Arts district, Gateway, West Hyattsville, Queens Chapel, and Ager Road stops',
+      'Flat-rate packages covering 1920s brick through modern mixed-use systems',
+      'Before-and-after photos for every trunk and register',
+      'Renovation-dust cleanup scopes available for arts-district remodels',
     ],
   },
-  offersTitle: 'Hyattsville Flat Rates From the Maryland Office',
+  offersTitle: 'Hyattsville Flat Rates for Older Brick and Mixed-Use Homes',
   services: {
-    heading: 'Hyattsville Packages for Row and Semi-Detached Homes',
-    intro: 'Older trunks and compact footprints — flat rates after scope lock.',
+    heading: 'Hyattsville Services for Semi-Detached Brick, Gateway Condos, and Renovation Dust',
+    intro: 'A 1940s Queens Chapel semi-detached and a Gateway mid-rise condo need different access plans — both are scoped on site and priced before equipment moves.',
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
-        text: 'HEPA negative pressure and rotary brushes through older Route 1 trunks, returns, and registers. Photos come with the job. See [air duct cleaning](/air-duct-cleaning).',
+        text: 'HEPA negative pressure and rotary brush agitation through older basement trunks, return plenums, and register boots carrying Route 1 particulate and arts-district renovation residue. Semi-detached homes with shared walls require careful sealing at party-wall penetrations to maintain proper vacuum pressure during cleaning. Full details at [air duct cleaning](/air-duct-cleaning).',
       },
       {
         title: 'Dryer Vent Cleaning',
-        text: 'Stacked arts-district and Gateway units clog dryer runs fast. We clear the full length to the cap. Book [dryer vent cleaning](/dryer-vent-cleaning).',
+        text: 'Gateway stacked units and older brick homes along Baltimore Avenue both present dryer vent challenges — vertical risers in the former, neglected foundation-wall exits in the latter. We trace, brush, and vacuum the full path to the exterior cap and verify airflow before closing the job. Book at [dryer vent cleaning](/dryer-vent-cleaning).',
       },
       {
         title: 'Ventilation & HVAC Mold Treatment',
-        text: 'Humid PG summers plus cool mechanical rooms let growth start on coils. Learn more about [mold remediation for air ducts](/mold-remediation-air-ducts).',
+        text: 'PG County\'s low-lying summer humidity meets cool basement mechanical rooms in Hyattsville\'s older housing, creating conditions where coils and trunk interiors develop microbial growth between filter changes. EPA-registered antimicrobial treatment covers the entire affected ventilation path after visual documentation. Details at [mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
     ],
   },
   why: {
-    heading: 'Why Route 1 Housing Mixes Humidity With Traffic Film',
+    heading: 'Why Route 1 Housing Layers Traffic Film Over Humid Trunk Surfaces',
     items: [
       {
-        title: 'Honest Bethesda Dispatch into PG County',
-        text: 'Hyattsville jobs are scheduled from our Bethesda office on Old Georgetown Road.',
+        title: 'Cross-County Drive Scheduled Honestly',
+        text: 'Hyattsville is a PG County stop dispatched from Bethesda. We build the cross-Beltway drive into the arrival window so neither side is surprised.',
       },
       {
-        title: 'Flat-Rate Pricing',
-        text: 'No per-vent counting on an older brick rental or a Gateway condo. Pricing is quoted before work starts.',
+        title: 'Renovation Dust Handled Without a Special Upcharge',
+        text: 'Arts-district remodel residue in the trunks is priced the same as any other residential duct load — the flat-rate quote at (301) 809-4544 covers it.',
       },
       {
-        title: 'Route 1 Housing We Already Clean',
-        text: 'The same crew works [College Park](/locations/college-park) and the District edge. Corridor dust is weekly work.',
+        title: 'Party-Wall Sealing Checked During the Scope Walk',
+        text: 'Semi-detached Hyattsville homes share walls with neighbors. We verify that party-wall trunk penetrations are properly sealed before running negative pressure.',
       },
       {
-        title: '100% Satisfaction Guarantee',
-        text: 'If you are not happy, we come back. Payment is for work you can see in the photos.',
+        title: 'Satisfaction Guarantee — Proof in the Photos',
+        text: 'Before-and-after documentation of every trunk section is standard. If improvement is not visible, the crew returns at our cost.',
       },
     ],
   },
@@ -88,7 +88,7 @@ export const hyattsville: LocationContentSeed = {
     ],
   },
   process: {
-    heading: 'Prince George’s Timing From Bethesda',
+    heading: 'Prince George\'s Timing From Bethesda',
     intro: 'From booking at (301) 809-4544 to photos at the door.',
     steps: [
       {

@@ -7,64 +7,64 @@ export const fairfax: LocationContentSeed = {
   description:
     'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Fairfax, VA. Flat rates from our Burke office for ramblers, townhomes, and GMU-area rentals. Call (571) 460-0001.',
   intro:
-    'Amazon Air Duct Cleaning serves the City of Fairfax from our Burke office — a short run up 123, a short run from Burke. Old Town brick, Fairfax Corner townhomes, and houses near George Mason all take on Fairfax County pollen and humid summers. Call (571) 460-0001.',
+    'Amazon Air Duct Cleaning serves the City of Fairfax from our Burke office \u2014 a short run up 123, a short run from Burke. Old Town brick, Fairfax Corner townhomes, and houses near George Mason all take on Fairfax County pollen and humid summers. Call (571) 460-0001.',
   heroImage: '/img/locations/fairfax.webp',
-  heroAlt: 'Air duct cleaning in Fairfax, VA — Amazon Air Duct Cleaning',
+  heroAlt: 'Air duct cleaning in Fairfax, VA \u2014 Amazon Air Duct Cleaning',
   city: 'Fairfax',
   state: 'VA',
   servedBy: 'burke',
   sectionLayout: 'whyFirst',
   about: {
-    heading: 'City of Fairfax Ramblers Under a Heavy County Canopy',
+    heading: 'Independent City Ramblers, Fairfax Corner Stacks, and GMU-Area Rentals',
     paragraphs: [
-      'The City of Fairfax is a small independent city wrapped by Fairfax County: Old Town along Chain Bridge Road, the courthouse, Fairfax Corner, and streets that run toward Mosaic and Merrifield. A lot of the housing is 1950s–80s ramblers and split-levels with full basements. Those basements stay cool. Northern Virginia summers do not. Cold supply trunks sweat. Oak and maple pollen from the county canopy sticks to that film.',
-      'GMU-area rentals and stacked townhomes add long dryer runs. Construction dust from infill near Route 50 and 29 settles in returns the same week you wipe the registers. The blower then sends it back upstairs.',
-      'We serve Fairfax from [Burke](/locations/burke). Nearby [Springfield](/locations/springfield), [McLean](/locations/mclean), and [Arlington](/locations/arlington) use the same dispatch. More on [Fairfax Ramblers Pollen](/blog/fairfax-ramblers-pollen-air-ducts).',
+      'The City of Fairfax is a compact independent city wrapped by Fairfax County \u2014 Old Town along Chain Bridge Road, the historic courthouse, Fairfax Corner, and residential streets running toward the Mosaic District and Merrifield. Housing ranges from 1950s\u201380s ramblers and split-levels with full basements to newer Fairfax Corner townhomes and GMU-area rental properties. The ramblers have original metal trunks that often branched into additions over the decades, collecting debris at every junction point.',
+      'Fairfax County\u2019s oak and maple canopy delivers heavy spring pollen that settles into returns at the same time Route 50 and Route 29 infill construction contributes gypsum dust. Basement air handlers in older ramblers stay cool all summer, and when humid outdoor air enters the system, the temperature difference produces condensation that cements particulates to trunk interiors. GMU-area stacked townhomes add long dryer runs that pack with lint well before residents notice reduced drying performance.',
+      'Our Burke crew serves the City of Fairfax alongside [Springfield](/locations/springfield), [Oakton](/locations/oakton), and [Arlington](/locations/arlington). Read about [Fairfax ramblers, pollen, and air ducts](/blog/fairfax-ramblers-pollen-air-ducts).',
     ],
     highlights: [
-      'City of Fairfax, Fairfax Corner, Mosaic, and GMU-area homes',
-      'Flat-rate pricing — no vent counting',
-      'Before-and-after photos on every duct job',
-      'Same Burke team that already works Fairfax County',
+      'City of Fairfax, Fairfax Corner, Mosaic District edge, and GMU-area homes',
+      'Flat-rate pricing \u2014 confirmed before any work begins',
+      'Before-and-after photo documentation on every job',
+      'Same Burke crew covering Fairfax County routes weekly',
     ],
   },
-  offersTitle: 'City of Fairfax Flat-Rate Cleaning Packages',
+  offersTitle: 'City of Fairfax Duct & Dryer Vent Packages',
   services: {
-    heading: 'Fairfax City Packages Distinct From Fair Oaks',
-    intro: 'Ramblers and townhomes inside the city limits — not a duplicate of Fair Oaks.',
+    heading: 'What We Clean in City of Fairfax Ramblers and Townhomes',
+    intro: 'Ramblers with basement handlers and Fairfax Corner stacked closets receive the same published flat rate.',
     items: [
       {
-        title: 'Air Duct Cleaning & Sanitization',
-        text: 'HEPA negative pressure and rotary brushes through supplies, returns, and registers, plus sanitizing when the inspection finds growth. Photos come with the job. See [air duct cleaning](/air-duct-cleaning).',
+        title: 'Air Duct Cleaning for Fairfax Homes',
+        text: 'HEPA-filtered negative-pressure equipment seals to the trunk while rotary brushes agitate every supply line, return, and register \u2014 including branches where 1980s additions connect to 1950s original metal. Sanitizing follows when the walkthrough identifies biological growth. You receive the full photo set. Schedule [air duct cleaning](/air-duct-cleaning).',
       },
       {
-        title: 'Dryer Vent Cleaning',
-        text: 'Townhome and second-floor laundry runs clog fast. We brush and vacuum to the exterior cap. Book [dryer vent cleaning](/dryer-vent-cleaning).',
+        title: 'Dryer Vent Service',
+        text: 'Fairfax Corner townhomes and second-floor GMU-area laundry rooms push lint through long interior-wall paths. We rod-brush and vacuum the entire run to the exterior cap so the dryer vents efficiently and safely. Book [dryer vent cleaning](/dryer-vent-cleaning).',
       },
       {
-        title: 'Ventilation & HVAC Mold Treatment',
-        text: 'Basement air handlers plus humid summers let mold colonize coils and dead-end ducts. Learn more about [mold remediation for air ducts](/mold-remediation-air-ducts).',
+        title: 'Mold Treatment in Fairfax Ductwork',
+        text: 'Basement air handlers in older ramblers sit in cool, damp environments where mold colonies establish on coils and inside dead-end duct branches. We clean mechanically, then apply EPA-registered antimicrobial treatment along the full ventilation path. Details at [mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
     ],
   },
   why: {
-    heading: 'Why City of Fairfax Trunks Hold Spring Pollen',
+    heading: 'Why City of Fairfax Trunks Accumulate Spring Pollen Faster',
     items: [
       {
-        title: 'Close Burke Dispatch',
-        text: 'Burke is down 123 from the City of Fairfax. You are not waiting on a crew that started in another state.',
+        title: 'Down Route 123 From Burke',
+        text: 'Burke sits minutes from the City of Fairfax on the same road. Your Old Town or Fairfax Corner appointment is dispatched from a nearby staging point, not a distant office.',
       },
       {
-        title: 'Flat-Rate Pricing',
-        text: 'No per-vent games. Residential duct and dryer packages are quoted before we unroll a hose.',
+        title: 'Flat Rate Set Before Work Begins',
+        text: 'Residential duct and dryer packages are flat-rate. The number on your confirmation is the number on the invoice \u2014 no per-register add-ons after we open the first vent.',
       },
       {
-        title: 'Housing Stock We Already Know',
-        text: 'Ramblers, additions, and Fairfax Corner closets are normal for this team — not a surprise add-on.',
+        title: 'Rambler Additions and Corner Stacks Are Routine',
+        text: 'Split-level basement handlers, 1980s rec-room duct branches, and Fairfax Corner stacked laundry closets are everyday work for this crew \u2014 not uncommon layouts that require improvising on site.',
       },
       {
-        title: '100% Satisfaction Guarantee',
-        text: 'If you are not happy, we come back. Payment is for work you can see in the photos.',
+        title: 'Satisfaction Guarantee',
+        text: 'Not satisfied after the Fairfax walk-through? We return and redo the ducts at no additional charge.',
       },
     ],
   },
@@ -83,7 +83,7 @@ export const fairfax: LocationContentSeed = {
       {
         title: 'Toward GMU & the Beltway',
         places:
-          'George Mason area, Pickett Road, streets toward Oakton and Fair Oaks — ask if your block is not listed',
+          'George Mason area, Pickett Road, streets toward Oakton and Fair Oaks \u2014 ask if your block is not listed',
       },
     ],
   },
@@ -93,7 +93,7 @@ export const fairfax: LocationContentSeed = {
     steps: [
       {
         title: 'Book Fairfax From the Burke Line',
-        text: 'Call (571) 460-0001 or use the form — we confirm Fairfax availability the next business day.',
+        text: 'Call (571) 460-0001 or use the form \u2014 we confirm Fairfax availability the next business day.',
       },
       {
         title: 'Protect Floors in Your Fairfax Home',
@@ -101,7 +101,7 @@ export const fairfax: LocationContentSeed = {
       },
       {
         title: 'Source-Removal Cleaning for Fairfax',
-        text: 'NADCA-style agitation under HEPA negative pressure — dust leaves in the vacuum, not your Fairfax rooms.',
+        text: 'NADCA-style agitation under HEPA negative pressure \u2014 dust leaves in the vacuum, not your Fairfax rooms.',
       },
       {
         title: 'Optional Sanitizing in Fairfax',
@@ -113,7 +113,7 @@ export const fairfax: LocationContentSeed = {
       },
     ],
   },
-  faqIntro: 'Fairfax questions — call (571) 460-0001 (dispatch: Burke).',
+  faqIntro: 'Fairfax questions \u2014 call (571) 460-0001 (dispatch: Burke).',
   faq: [
     {
       q: 'Who handles air duct cleaning appointments in Fairfax?',
@@ -125,15 +125,15 @@ export const fairfax: LocationContentSeed = {
     },
     {
       q: 'How long does air duct cleaning take in Fairfax?',
-      a: 'Fairfax duct cleaning usually takes 2–3 hours for one system. Multi-system or heavily packed dryer vents are scoped before we start so the quote stays flat-rate.',
+      a: 'Fairfax duct cleaning usually takes 2\u20133 hours for one system. Multi-system or heavily packed dryer vents are scoped before we start so the quote stays flat-rate.',
     },
     {
       q: 'Are Fairfax air duct and dryer vent prices flat-rate?',
-      a: 'Yes. Fairfax residential packages are flat-rate from the Burke office — the number we confirm before work starts is what you pay. No per-vent counting.',
+      a: 'Yes. Fairfax residential packages are flat-rate from the Burke office \u2014 the number we confirm before work starts is what you pay. No per-vent counting.',
     },
     {
       q: 'Is sanitizing included with Fairfax duct cleaning?',
-      a: 'For Fairfax jobs, Envirocon antimicrobial sanitizing is complimentary when you request it or when inspection supports it — we confirm on site before applying anything.',
+      a: 'For Fairfax jobs, Envirocon antimicrobial sanitizing is complimentary when you request it or when inspection supports it \u2014 we confirm on site before applying anything.',
     },
   ],
 }

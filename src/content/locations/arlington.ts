@@ -15,57 +15,57 @@ export const arlington: LocationContentSeed = {
   servedBy: 'burke',
   sectionLayout: 'communitiesFirst',
   about: {
-    heading: 'Rosslyn to Columbia Pike: Condos, Brick, and Potomac Air',
+    heading: 'Condo Risers, Brick Basements, and the Potomac Pushing Moisture Inland',
     paragraphs: [
-      'Arlington sits on the Potomac River, with dense neighborhoods, high-rise condos, and older brick homes that take on river humidity all summer. That moisture meets cool air inside metal ductwork and turns into condensation — the start of musty odors, mold, and dust that recirculates every time the system runs.',
-      'Crystal City, Rosslyn, and Pentagon City feel this first, but the same humidity reaches Clarendon, Ballston, Shirlington, and Columbia Pike. Construction dust from nearby development, pollen, and pet dander settle in returns and stay there until the ducts are professionally cleaned.',
-      'We serve Arlington from our Burke office, so you get the Burke crew and the same flat-rate packages. Nearby [McLean](/locations/mclean) and [Washington, DC](/locations/washington-dc) use the same dispatch. Read how [Potomac humidity affects Arlington homes](/blog/how-potomac-humidity-affects-arlington-air-quality), or book [air duct cleaning](/air-duct-cleaning) and [dryer vent cleaning](/dryer-vent-cleaning) in a single visit.',
+      'Arlington County packs more housing types per square mile than almost anywhere else in Northern Virginia. Rosslyn and Crystal City stack condos with long vertical dryer risers. Clarendon and Lyon Village mix 1920s brick bungalows with newer infill townhomes. Columbia Pike and Shirlington have garden-style apartments whose shared air handlers serve multiple units at once. Each layout traps dust differently, but Potomac River humidity is the common thread — it condenses on cold supply metal and gives pollen, drywall particles, and pet dander a sticky surface to cling to.',
+      'Ballston and Virginia Square sit under an urban canopy that drops oak pollen directly into rooftop intake grilles every April. Pentagon City and National Landing are still surrounded by active construction, so fine gypsum dust rides the same air as river moisture. A condo that looks clean on the surface can have returns coated in years of layered film that only shows up when you pull a register cover.',
+      'Our Burke crew drives Arlington routes every week — Courthouse, Cherrydale, East Falls Church, Douglas Park — so scheduling is straightforward. Read how [Potomac humidity affects Arlington indoor air](/blog/how-potomac-humidity-affects-arlington-air-quality), then book [air duct cleaning](/air-duct-cleaning) and [dryer vent cleaning](/dryer-vent-cleaning) together or separately. Nearby [Falls Church](/locations/falls-church) and [McLean](/locations/mclean) share the same dispatch.',
     ],
     highlights: [
-      'Same-day and next-day appointments from our Burke team',
-      'Condos, townhomes, and older Arlington houses',
-      'Flat-rate pricing — no vent counting, no surprise fees',
-      'Before-and-after photos and a 100% satisfaction guarantee',
+      'Rosslyn, Clarendon, Ballston, Crystal City, Columbia Pike, and Shirlington',
+      'Flat-rate packages — the quote you receive is the price you pay',
+      'Before-and-after photos documenting every trunk and return',
+      'Same-day and next-day windows from our Burke office',
     ],
   },
-  offersTitle: 'Arlington Flat Rates — No Vent Counting',
+  offersTitle: 'Arlington Duct & Dryer Vent Packages',
   services: {
-    heading: 'Arlington Packages for Condos and Older Brick Houses',
+    heading: 'Three Services We Bring to Arlington Condos and Houses',
     intro:
-      'Condos with long dryer risers and brick houses with later-added trunks — same flat rates.',
+      'High-rise risers and pre-war brick basements each get the same published flat-rate scope.',
     items: [
       {
-        title: 'Air Duct Cleaning & Sanitization',
-        text: 'We clean supply lines, returns, and registers with negative-pressure HEPA vacuums and rotary brushes, then apply an eco-friendly sanitizing treatment. Before-and-after photos show what came out of the system.',
+        title: 'Residential Air Duct Cleaning',
+        text: 'We connect a HEPA-filtered negative-pressure machine to the trunk, then agitate every supply line, return, and register with rotary brushes. Sanitizing is included when the on-site inspection reveals biological growth. You keep the before-and-after photos. Schedule [air duct cleaning](/air-duct-cleaning) for your Arlington home.',
       },
       {
-        title: 'Dryer Vent Cleaning',
-        text: 'Lint-packed dryer vents are a leading cause of home fires and one of the easiest ways to push moisture back into an Arlington laundry closet. We brush and vacuum the full run, from the dryer to the exterior exhaust.',
+        title: 'Dryer Vent Clearing',
+        text: 'A clogged dryer vent is one of the top fire hazards in dense Arlington housing — especially in Rosslyn and Pentagon City condos where the lint path runs vertically through multiple floors. We rod-brush and vacuum the entire run from the dryer connection to the rooftop or wall cap. Book [dryer vent cleaning](/dryer-vent-cleaning).',
       },
       {
-        title: 'Ventilation & HVAC Mold Treatment',
-        text: 'River humidity lets mold colonize ducts and evaporator coils. We treat the ventilation system with EPA-registered antimicrobial products that are safe for children and pets, then check airflow so moisture does not sit in the same dead ends. Learn more about [mold remediation for air ducts](/mold-remediation-air-ducts).',
+        title: 'Mold Treatment Inside Ductwork',
+        text: 'When river humidity condenses inside the air-handling system, mold can colonize coils, plenums, and dead-end branches. We apply EPA-registered antimicrobial treatment after mechanical cleaning and then verify airflow so moisture does not pool in the same spots again. Details at [mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
     ],
   },
   why: {
-    heading: 'Why Close-In Arlington Homes Recycle Dust Faster',
+    heading: 'Why Arlington Indoor Air Loads Up Faster Than Suburbs',
     items: [
       {
-        title: 'Upfront Flat-Rate Pricing',
-        text: 'No bait-and-switch. Arlington jobs are quoted before we start, with the same packages used across Northern Virginia.',
+        title: 'Quoted Before the Truck Opens',
+        text: 'Every Arlington job gets a flat-rate number before equipment leaves the truck. Condos and large colonials use the same pricing structure — no per-vent surcharges after the fact.',
       },
       {
-        title: 'Before & After Photos',
-        text: 'You see the ducts before we pack up. That proof matters in condos and older homes where dust has been hiding for years.',
+        title: 'Photo Documentation You Can Verify',
+        text: 'We photograph trunk interiors, register cavities, and dryer vent caps so you see exactly what was removed. That documentation matters in older Clarendon brick where dust has been layering for decades.',
       },
       {
-        title: 'Technicians Who Know River Humidity',
-        text: 'Our team already works Arlington, Alexandria, and Falls Church from Burke. They know condo risers, older brick duct runs, and how Potomac summers load a system with moisture.',
+        title: 'A Crew That Already Knows Arlington Parking',
+        text: 'Rosslyn loading docks, Ballston garage elevators, and Columbia Pike street parking are part of our weekly rotation from Burke — not logistics we figure out for the first time at your building.',
       },
       {
-        title: '100% Satisfaction Guarantee',
-        text: 'If you are not happy with the result, we come back and make it right. Payment is for work you can see.',
+        title: 'Guaranteed Results',
+        text: 'If the cleaning does not meet your expectations, we return and redo the work at no additional charge.',
       },
     ],
   },

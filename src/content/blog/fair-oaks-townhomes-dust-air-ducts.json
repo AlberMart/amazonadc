@@ -2,52 +2,61 @@
   "slug": "fair-oaks-townhomes-dust-air-ducts",
   "title": "Mall-area stacks, Fair Lakes closets, and why this is not the City of Fairfax page",
   "headline": "Mall-area stacks, Fair Lakes closets, and why this is not the City of Fairfax page",
-  "description": "Fair Oaks, VA sits at the I-66 / Route 50 interchange around the mall and Fair Lakes. why townhome ducts load corridor dust.",
+  "description": "Fair Oaks townhomes near the I-66/Route 50 interchange put attic air handlers above the living space, pulling hot air down through corridor dust. Learn why the upstairs-down airflow pattern in these 1980s–2000s homes creates a specific dust and moisture profile that ground-level systems do not.",
   "heroImage": "/img/blog/heroes/fair-oaks-townhomes-dust-air-ducts.webp",
   "sections": [
     {
-      "id": "interchange",
-      "heading": "Fair Oaks is the mall grid — not Old Town Fairfax",
+      "id": "attic_handler",
+      "heading": "Attic air handlers run hot before they run cold",
       "paragraphs": [
-        "Housing around Fair Oaks Mall, West Ox, and the I-66 / Route 50 interchange is mostly 1980s–2000s townhomes and HOA singles. Visitor lots sit in traffic film. Attic air handlers run hot in July, then dump that dust downstairs every time the system starts. Fair Lakes is next door. Fairfax Corner is adjacent — city addresses belong on the [Fairfax](/locations/fairfax) page; the mall / Fair Lakes grid belongs here.",
-        "A unit that looks “too new to clean” often still has builder drywall dust in the trunks. Corridor grit from 50 and 66 never stopped adding to it."
+        "In a Fair Oaks or Fair Lakes townhome, the air handler typically sits in an unconditioned attic space. On a July afternoon the attic temperature can reach 130 degrees or higher. When the thermostat calls for cooling, the blower pushes 130-degree attic air through the ductwork for the first several minutes before the evaporator coil brings the supply temperature down. During that initial burst, thermal expansion in the metal duct joints opens microscopic gaps. Settled dust in the trunk re-suspends in the hot turbulent air and exits through supply registers as a visible puff.",
+        "This is why Fair Oaks homeowners sometimes see a burst of dust when the system starts, then nothing visible during steady operation. The startup thermal shock is dislodging accumulated particles. Each cycle removes a small amount from the trunks and deposits it on furniture and floors — but the bulk remains bonded to the trunk walls because it resettles as soon as the air cools and slows."
       ],
       "listItems": []
     },
     {
-      "id": "chase",
-      "heading": "Townhome dryer chases clog before the paint looks old",
+      "id": "interchange_air",
+      "heading": "The I-66/Route 50 interchange is always feeding the returns",
       "paragraphs": [
-        "Stacked laundry sends lint up a chase that turns too many times. The closet stays humid. Returns pull Beltway-adjacent dust and infill construction along Route 50. Together they are why registers gray out a week after you wipe them.",
-        "If the laundry stays hot and the supplies look dirty, when you are ready to book, use the [Fair Oaks, VA location page](/locations/fair-oaks)."
+        "Fair Oaks Mall, West Ox Road, and the Fairfax Corner area sit in a triangle formed by I-66 and Route 50. Traffic volume on these roads is high during both commute peaks and weekend shopping. The particulate profile includes standard brake and tire-wear dust, plus a heavier diesel-soot component from the commercial truck traffic serving the mall and retail centers.",
+        "Return grilles in Fair Oaks townhomes face courtyards and parking areas that sit below the elevation of the road embankments. Particulate from the interchange settles downhill into these low pockets. A unit on the interchange side of a townhome row gets a measurably higher dust load than a unit facing the interior of the community — same building, same system age, different exposure."
       ],
       "listItems": [],
       "image": "/img/blog/neglected-air-ducts-buildup.webp"
     },
     {
-      "id": "signs",
-      "heading": "Typical signs in a Fair Oaks townhome",
+      "id": "not_fairfax",
+      "heading": "Fair Oaks is a different housing stock from Old Town Fairfax",
       "paragraphs": [
-        "Watch for:"
+        "The City of Fairfax has 1950s–80s colonials and ramblers with basement air handlers. Fair Oaks — a census-designated place, not an incorporated city — is dominated by 1980s–2000s townhomes and attached singles with attic-mounted systems. The duct problems in each area are mechanically different. Old Town Fairfax deals with basement humidity and cold-trunk condensation. Fair Oaks deals with attic heat, thermal cycling, and interior dryer chases.",
+        "If you live inside the City of Fairfax boundaries (Old Town, Mosby Woods, Fairfax Circle), the patterns described here may not match your house. This post is about the mall-grid housing stock specifically."
+      ],
+      "listItems": []
+    },
+    {
+      "id": "evidence",
+      "heading": "Signs the attic system is delivering more than conditioned air",
+      "paragraphs": [
+        "Fair Oaks townhome ductwork occupies a unique thermal zone. These indicators are tied to the attic-handler layout:"
       ],
       "listItems": [
-        "Gray film on supplies even in a 1990s–2000s unit.",
-        "Dust returning fast if you face 50, 66, or West Ox.",
-        "A dryer that needs two cycles and a humid laundry closet."
+        "A visible dust puff from a supply register during the first two to three minutes of a cooling cycle, especially after the system has been off for several hours.",
+        "Dark streaks on the ceiling around supply registers — caused by particles carried in the hot startup air settling along the cooler ceiling surface.",
+        "Consistently warmer air from upstairs registers compared to downstairs, even after the system has run for 20 minutes — indicating the attic ductwork is absorbing and radiating heat into the supply stream.",
+        "A laundry closet on an upper floor that stays noticeably warm and humid between loads, with the dryer needing extended run times."
       ]
     },
     {
-      "id": "protect",
-      "heading": "Background reading vs booking a visit",
+      "id": "next",
+      "heading": "Managing dust in an attic-handler townhome",
       "paragraphs": [
-        "Fair Oaks jobs are scheduled from our metro offices For service and scheduling, see the [local service page](/locations/fair-oaks).",
-        "Fair Oaks is served from our [Burke](/locations/burke) office. Nearby [Fairfax](/locations/fairfax) and [Chantilly](/locations/chantilly) use the same crew.",
-        "Service details live on the [Fair Oaks location page](/locations/fair-oaks). Add [dryer vent cleaning](/dryer-vent-cleaning) for stacked laundry."
+        "The attic-handler layout cannot be changed without a major renovation, but the dust cycle it creates can be interrupted. For Fair Oaks service options and flat-rate scheduling, visit the [Fair Oaks location page](/locations/fair-oaks). Combine duct work with [dryer vent cleaning](/dryer-vent-cleaning) if the dryer chase runs to a shared roof cap — both access points are in the attic zone."
       ],
       "listItems": [
-        "Ask for a duct cleaning if the trunks were never cleaned after the builder left.",
-        "Change filters more often on 50/66 air.",
-        "Clear townhome dryer vents about once a year."
+        "If the attic air handler is on an accessible platform, verify that the return-side cabinet door seals completely — a gap here pulls unfiltered attic air directly into the system.",
+        "Consider adding R-8 duct insulation sleeves to exposed supply trunks in the attic; this reduces the temperature swing during startup and slows the thermal cycling that dislodges settled dust.",
+        "Replace filters every 30 days from May through September when attic temperatures are highest and the thermal stress on duct joints is greatest.",
+        "Schedule dryer-chase cleaning annually — the shared roof cap in many Fair Oaks townhome rows restricts exhaust from multiple units simultaneously."
       ]
     }
   ],

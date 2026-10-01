@@ -2,53 +2,57 @@
   "slug": "loudoun-construction-dust-pollen-air-ducts",
   "title": "New-build gypsum, Leesburg basements, and why Ashburn returns fill faster than they should",
   "headline": "New-build gypsum, Leesburg basements, and why Ashburn returns fill faster than they should",
-  "description": "Loudoun County mixes historic Leesburg with active HOA construction in Ashburn and Brambleton. why ducts hold drywall dust and pollen, and when to clean them.",
+  "description": "Loudoun County's mix of historic Leesburg homes and active Ashburn development creates two distinct duct challenges. Learn the difference — and how to address each.",
   "heroImage": "/img/blog/heroes/loudoun-construction-dust-pollen-air-ducts.webp",
   "sections": [
     {
-      "id": "new_build",
-      "heading": "New construction is not a clean HVAC system",
+      "id": "county_divide",
+      "heading": "Leesburg and Ashburn share a county, not a duct problem",
       "paragraphs": [
-        "Builders run the air handler to dry mud and keep crews comfortable. That air is full of fines. They settle in the trunks. You move in, change a filter, and still get dusty registers. The dust was already downstream of the filter.",
-        "If you moved into a Loudoun house in the last few years and the air still feels like a job site, when you are ready to book, use the [Loudoun County location page](/locations/loudoun)."
+        "Drive through Leesburg's historic district and the houses are brick colonials and frame farmhouses with basements that predate air conditioning. Drive ten miles southeast to Ashburn, Broadlands, or Brambleton and the homes are vinyl-and-composite construction less than fifteen years old, built on slabs or shallow crawlspaces with high-efficiency HVAC from day one.",
+        "Both housing types develop duct contamination, but the mechanism is different. Leesburg homes accumulate moisture-bonded organic debris over decades. Ashburn homes arrive with construction-phase mineral dust embedded in the trunk walls from the first week the system ran. A county-wide blog post that treats both the same way misses the point, so this article addresses each pattern separately."
+      ],
+      "listItems": []
+    },
+    {
+      "id": "leesburg_moisture",
+      "heading": "Leesburg basements and the slow accumulation pattern",
+      "paragraphs": [
+        "Older Leesburg homes have full basements where stone or block walls absorb and release ground moisture in a seasonal rhythm. The air handler and trunk lines run through that space, staying cool in summer and cold in winter. During the humid months, supply trunks regularly drop below the dew point. Condensation forms. Pollen from Loudoun's remaining farmland tree lines and residential street plantings sticks to the wet surface.",
+        "This is a slow-moving problem. One season of condensation is trivial. Ten or twenty seasons of it produce a layered deposit that restricts airflow and supports microbial growth in the absence of light and air movement. The house looks and feels fine until someone lifts a register and sees the inside of the trunk for the first time."
       ],
       "listItems": [],
       "image": "/img/blog/clogged-dryer-vent-lint.webp"
     },
     {
-      "id": "signs",
-      "heading": "Typical signs in Leesburg and Ashburn",
+      "id": "ashburn_construction",
+      "heading": "Ashburn and Brambleton: what the data-center corridor leaves behind",
       "paragraphs": [
-        "Watch for:"
-      ],
-      "listItems": [
-        "White or gray film on supplies in a house less than ten years old.",
-        "Musty Leesburg basement air when the AC starts.",
-        "Long dry times in a three-story townhome dryer closet."
-      ]
-    },
-    {
-      "id": "two_loudouns",
-      "heading": "Loudoun is two indoor-air problems sharing one county",
-      "paragraphs": [
-        "Leesburg has older houses, damp basements, and trunks that were added after the house was built. Ashburn, Broadlands, Brambleton, and South Riding still have sections going up. Construction dust does not stay on the next lot. Returns on an occupied street pull gypsum and insulation fibers for years if the system was never cleaned after the builder left.",
-        "Pollen is the third load. Loudoun’s remaining canopy and every HOA street tree dump it onto decks each spring. Filters catch some of it. Ducts store the rest."
+        "Loudoun County hosts the densest concentration of data centers in the world, and the construction required to build them — along with the residential subdivisions that house the workers — keeps heavy earthmoving equipment and drywall crews active year-round. Fine particulate from those sites drifts downwind across occupied neighborhoods.",
+        "On top of the ambient construction dust, each new home's own HVAC system was loaded during the build phase. Gypsum fines, joint compound dust, and insulation fibers deposited on trunk walls before the first owner changed the first filter. Unlike organic debris, these mineral particles do not break down. They form a hard film that airflow alone does not dislodge, and they persist until mechanically removed."
       ],
       "listItems": []
     },
     {
-      "id": "protect",
-      "heading": "Keeping trunks and dryer runs healthier between cleanings",
+      "id": "signs",
+      "heading": "Recognizing the Loudoun-specific pattern",
       "paragraphs": [
-        "Loudoun jobs are scheduled from our metro offices For service and scheduling, see the [local service page](/locations/loudoun).",
-        "Loudoun is served from our [Burke](/locations/burke) office. [McLean](/locations/mclean) and [Fairfax](/locations/fairfax) are closer-in pages on the same crew.",
-        "Service details live on the [Loudoun location page](/locations/loudoun). Add [dryer vent cleaning](/dryer-vent-cleaning) for stacked townhomes."
+        "The two Loudoun duct problems leave different calling cards. Moisture-based buildup in a Leesburg basement announces itself through smell. Construction-phase contamination in an Ashburn home announces itself through dust. Some homeowners have both — particularly those in Leesburg's newer infill subdivisions where renovation and proximity to active lots combine the two mechanisms:"
       ],
       "listItems": [
-        "Ask for a duct cleaning after you close on a new build, not five years later.",
-        "Keep indoor humidity under 50% in Leesburg basements.",
-        "Clear dryer vents about once a year in Ashburn and Brambleton."
+        "Leesburg pattern: a damp, cellar-like odor from lower-level registers each time the AC starts, fading once continuous operation dries the trunk surfaces.",
+        "Ashburn pattern: a persistent pale dust on dark surfaces near supply vents, returning days after cleaning even with windows closed and a fresh filter installed.",
+        "Combined pattern: both the smell and the dust, common in recently renovated older homes or new construction adjacent to an active Leesburg infill site."
       ]
+    },
+    {
+      "id": "next_steps",
+      "heading": "Addressing the county's dual duct challenges",
+      "paragraphs": [
+        "Leesburg moisture homes benefit from a dehumidifier and periodic duct cleaning timed to the end of the humid season. Ashburn construction homes benefit from a single thorough post-occupancy cleaning followed by standard maintenance intervals. Either scenario starts with a professional assessment that determines what the trunk walls are holding and how much airflow the buildup has compromised.",
+        "Flat-rate scheduling for all Loudoun communities is on the [Loudoun County service page](/locations/loudoun). Stacked townhomes in Ashburn and Brambleton should pair duct work with [dryer vent cleaning](/dryer-vent-cleaning) — long vent runs in three-story construction commonly trap lint at bends that are inaccessible from either end without professional equipment."
+      ],
+      "listItems": []
     }
   ],
   "faq": [

@@ -2,52 +2,61 @@
   "slug": "olney-rambler-pollen-air-ducts",
   "title": "Georgia Avenue ramblers, Norbeck split-levels, and why rec rooms hide sweating trunks",
   "headline": "Georgia Avenue ramblers, Norbeck split-levels, and why rec rooms hide sweating trunks",
-  "description": "Olney, MD ramblers sit farther up Montgomery County under a thick canopy. why finished basements store pollen in cool trunks.",
+  "description": "Olney's 1960s–80s ramblers and split-levels bury their ductwork behind drop ceilings and paneling in finished rec rooms. Discover how the outer-Montgomery canopy, finished-basement concealment, and original-era trunk joints create a dust problem that stays invisible until the smell reaches the living room.",
   "heroImage": "/img/blog/heroes/olney-rambler-pollen-air-ducts.webp",
   "sections": [
     {
-      "id": "rec_room",
-      "heading": "A finished basement is not a finished HVAC system",
+      "id": "drop_ceiling",
+      "heading": "Drop ceilings do not fix ductwork — they hide it",
       "paragraphs": [
-        "Drop ceilings and carpet hide original metal. Joints that leaked in 1978 still leak. A rambler that added a rec room rarely resized the returns. Dust settles where you cannot see it. Dryer runs from a first-floor laundry often drop into that same damp space.",
-        "If the rec room smells musty when the AC starts, when you are ready to book, use the [Olney, MD location page](/locations/olney)."
+        "When Olney families finished their basements in the 1980s and 1990s, drop ceilings were the standard solution for concealing floor joists, plumbing, and ductwork. The drop ceiling tiles sit in a suspended grid six to twelve inches below the joist line. The trunk runs above the grid are out of sight. They are also out of reach for casual inspection and out of the homeowner's mental model of what needs maintenance.",
+        "Above those tiles, the original galvanized trunk system continues to operate in the same damp basement environment it always has. Joints that leaked in 1975 still leak. Dust that has settled at elbows and branch connections since the Carter administration is still there. The drop ceiling did not improve the ductwork. It just made the ductwork invisible — and in doing so, extended the interval between discovery and action by years or decades."
+      ],
+      "listItems": []
+    },
+    {
+      "id": "outer_canopy",
+      "heading": "Past the Beltway, the Montgomery County canopy gets thicker",
+      "paragraphs": [
+        "Olney sits farther from the urban core than Wheaton or Silver Spring, and the difference shows in canopy density. Georgia Avenue through the village, Olney Mill, and the lanes toward Brookeville pass through mature mixed hardwood and pine stands that produce heavier pollen loads than the thinner street-tree canopy closer to the District. Oak, hickory, and Virginia pine each pollinate at slightly different times through spring, extending the total pollen season from late March through early June.",
+        "That extended season means the return-side pollen input runs for roughly ten weeks rather than the four-to-six-week peak that inner-suburban homes experience. More weeks of pollen input means more layers deposited on cold basement trunk surfaces. A Wheaton colonial with identical ductwork and identical humidity would accumulate less pollen per year simply because the pollen season at that latitude is shorter and the canopy is thinner."
+      ],
+      "listItems": []
+    },
+    {
+      "id": "split_level",
+      "heading": "Split-level air handlers sit at the worst possible elevation",
+      "paragraphs": [
+        "In a split-level house — common in the Norbeck and Olney Mill subdivisions — the air handler sits in a utility room half a flight below the main living level. This elevation puts the air handler above the water table but below the grade line on at least one side of the house. Ground moisture migrates through the below-grade wall and keeps the utility room more humid than either the upstairs or a fully below-grade basement with a concrete floor.",
+        "The supply trunks extend upward from this mid-elevation utility room into the ceiling of the upper level. Cold supply air moving through a warm, humid joist bay creates condensation at the trunk surface. Because the split-level layout places the trunk transition point at the ceiling of the most occupied room (the living room or family room), the condensation zone is directly above where the family spends the most time. Any odor from moisture-activated biological material in the trunk reaches the living space almost immediately."
       ],
       "listItems": [],
       "image": "/img/blog/neglected-air-ducts-buildup.webp"
     },
     {
-      "id": "signs",
-      "heading": "Typical signs in an Olney rambler",
+      "id": "rec_room_signs",
+      "heading": "Clues that the rec room is hiding a duct problem",
       "paragraphs": [
-        "Watch for:"
+        "Because the trunks are concealed above drop ceilings and behind paneling, direct inspection is limited without lifting tiles or removing access panels. Watch for indirect signs:"
       ],
       "listItems": [
-        "Musty air walking upstairs from a finished basement after rain.",
-        "Pollen film on supplies even with a new filter.",
-        "A dryer that takes too long on a drop into the lower level."
+        "A musty smell that is strongest at the top of the stairs from the lower level — this indicates trunk-borne particulate is being delivered to upper-floor registers through contaminated supply runs.",
+        "Drop-ceiling tiles that show water staining or sagging near the trunk line — this means trunk condensation is dripping onto the tile surface, confirming chronic moisture on the metal.",
+        "A rec room that feels stuffier than the upstairs even though the same system serves both — restricted airflow from a partially obstructed trunk can reduce delivery to the rooms farthest from the air handler.",
+        "Increased allergy symptoms during the first two weeks of AC season that gradually improve — this pattern suggests the initial cooling cycles dislodge a burst of accumulated pollen before the system reaches a lower steady-state re-suspension rate."
       ]
     },
     {
-      "id": "outer",
-      "heading": "Olney is farther than Wheaton. The canopy is thicker.",
+      "id": "scheduling",
+      "heading": "Accessing the trunks behind finished surfaces",
       "paragraphs": [
-        "Georgia Avenue through the village, Olney Mill, Norbeck, then lanes toward Brookeville: 1960s–80s ramblers and split-levels. Families finished the basements. The air handler stayed down there. That is a clean-looking rec room over a trunk that still sweats.",
-        "Once you leave the Beltway the county canopy is thick. Oak and pine dump pollen onto every deck. Returns pull it into those basement trunks. Finished rooms hide the dust until the AC starts after a wet week and the smell walks upstairs."
-      ],
-      "listItems": []
-    },
-    {
-      "id": "protect",
-      "heading": "How scheduling works from our metro offices",
-      "paragraphs": [
-        "Olney jobs are scheduled from our metro offices For service and scheduling, see the [local service page](/locations/olney).",
-        "Olney is served from our [Bethesda](/locations/bethesda) office. Nearby [Rockville](/locations/rockville) uses the same Maryland crew. The drive is farther than Wheaton and we will say so.",
-        "Service details live on the [Olney location page](/locations/olney). Add [dryer vent cleaning](/dryer-vent-cleaning) if the laundry dumps into the basement."
+        "Drop ceilings actually make duct cleaning access easier than drywall ceilings — individual tiles can be lifted without damage. Paneled walls require more care. For Olney scheduling and service details, visit the [Olney location page](/locations/olney). If the laundry dryer vent drops into the lower level, pair it with [dryer vent cleaning](/dryer-vent-cleaning) — the moisture contribution from a packed dryer vent directly feeds the trunk condensation problem."
       ],
       "listItems": [
-        "Dehumidify finished basements in summer, not only the upstairs.",
-        "Change filters when oak and pine are dumping pollen.",
-        "Clean ducts every 3 to 5 years; clear dryer vents about once a year."
+        "Lift a few drop-ceiling tiles along the trunk line before scheduling and photograph what you see — this helps the crew prepare the right equipment for the accumulation level.",
+        "Run a dehumidifier in the finished lower level from April through October, set to 48 percent RH — this is the most direct way to slow the condensation cycle between cleanings.",
+        "Replace filters at the start and midpoint of pollen season; the outer-county canopy produces heavier loads that exhaust filter media faster than the printed replacement interval anticipates.",
+        "After professional cleaning, reseat drop-ceiling tiles snugly — gaps between tiles allow basement air to bypass the return path and re-introduce unconditioned humid air into the supply stream."
       ]
     }
   ],

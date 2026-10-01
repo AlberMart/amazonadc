@@ -16,56 +16,56 @@ export const ellicottCity: LocationContentSeed = {
   servedBy: 'bethesda',
   sectionLayout: 'servicesFirst',
   about: {
-    heading: 'Mill-Town Humidity, Flood History, and Old Cellars',
+    heading: 'Patapsco Mill Town, Stone Cellars With Flood Memory, and Hillside Suburb Pollen',
     paragraphs: [
-      'Ellicott City is a historic mill town on the Patapsco: Main Street stone and wood, the Tiber valley, then later neighborhoods up the hills — Dorsey Hall, Turf Valley, and streets toward Catonsville. The old stock was never designed around modern HVAC. Ducts were cut through stone cellars and timber. Those cellars remember every wet year. Flood history is not a marketing line here; lower levels stay damp longer than a Beltway basement.',
-      'Newer hillsides still load pollen. The historic core loads moisture. Both send film into returns. Catonsville is a next-door community we mention because neighbors ask — it is. [Columbia](/locations/columbia) is the planned-city page west.',
-      'We serve Ellicott City from [Bethesda](/locations/bethesda). The drive is farther than Montgomery County and we schedule it that way. More on [Ellicott City Flood Humidity](/blog/ellicott-city-flood-humidity-air-ducts).',
+      'Ellicott City sits where the Patapsco River cut a granite valley — historic Main Street with its stone and timber structures rising from the floodplain, the Tiber Branch valley, then newer suburban neighborhoods like Dorsey Hall, Centennial, and Turf Valley climbing the surrounding hillsides. The historic core\'s buildings carry stone cellars and timber-framed lower levels that remember every flood event. HVAC systems installed in these older structures route ductwork through irregular stone passages and around timber obstacles, creating dead-end pockets where moisture and debris collect without any natural air movement.',
+      'Hillside neighborhoods above the valley present a different set of conditions: 1980s and 1990s colonials with finished lower levels on sloped lots where the rear wall sits partially below grade. The grade-contact section stays cool enough to condensate through Howard County\'s humid months, and the mature canopy on those slopes deposits pollen into return grilles from March through June. Catonsville borders to the east as a next-door community, and [Columbia](/locations/columbia) is the adjacent Howard County page.',
+      'We dispatch Ellicott City from [Bethesda](/locations/bethesda) with Howard County drive time built into the schedule. Our post on [Ellicott City flood humidity and air ducts](/blog/ellicott-city-flood-humidity-air-ducts) examines the persistent moisture issue.',
     ],
     highlights: [
-      'Historic Main Street, mill houses, Dorsey Hall, Turf Valley',
-      'Flat-rate pricing from the Bethesda office',
-      'Before-and-after photos on every duct job',
-      'Stone-cellar and flood-side trunks we treat as moisture jobs, not a gimmick',
+      'Historic Main Street, Tiber valley, Dorsey Hall, Centennial, and Turf Valley',
+      'Flat-rate pricing for stone-cellar historic and hillside suburban systems alike',
+      'Before-and-after photos of every duct section and register',
+      'Moisture-aware scoping — flood-zone trunks inspected for persistent dampness',
     ],
   },
-  offersTitle: 'Ellicott City Flat Rates — Drive Time Included Honestly',
+  offersTitle: 'Ellicott City Historic and Suburban Cleaning Rates',
   services: {
-    heading: 'Ellicott City Packages for Historic and Hillside Homes',
-    intro: 'Historic and newer hillside homes — flat-rate packages after inspection.',
+    heading: 'Ellicott City Services for Stone-Cellar Historic Homes and Hillside Colonials',
+    intro: 'A Main Street stone building and a Dorsey Hall colonial are fundamentally different duct environments — both receive an on-site scope walk and locked price before equipment starts.',
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
-        text: 'HEPA negative pressure and rotary brushes through old stone-and-wood trunks plus later suburban runs. Photos come with the job. See [air duct cleaning](/air-duct-cleaning).',
+        text: 'Rotary brush agitation under HEPA negative pressure through stone-cellar passages, timber-framed trunk bays, and suburban supply runs in Ellicott City\'s hillside neighborhoods. Historic structures require flexible tooling to navigate irregular passages and dead-end pockets that standard rigid equipment cannot reach. Complete scope at [air duct cleaning](/air-duct-cleaning).',
       },
       {
         title: 'Dryer Vent Cleaning',
-        text: 'Historic additions and hillside houses hide long, patched dryer runs. We clear the full length to the cap. Book [dryer vent cleaning](/dryer-vent-cleaning).',
+        text: 'Historic Main Street additions and hillside colonials both hide dryer vents behind finished walls, through crawl spaces, and around stone or block obstacles. We map the full path before brushing, vacuum the extracted lint, and test exterior-cap draw before signing off. Book at [dryer vent cleaning](/dryer-vent-cleaning).',
       },
       {
         title: 'Ventilation & HVAC Mold Treatment',
-        text: 'Flood-side humidity plus cool cellars let growth start on coils and old metal. Learn more about [mold remediation for air ducts](/mold-remediation-air-ducts).',
+        text: 'Ellicott City\'s flood-zone cellars retain dampness long after surface water recedes, and hillside lower levels with grade contact condensate through every humid season. When inspection reveals coil or trunk colonization, we treat the affected ventilation path with EPA-registered antimicrobials documented in before-and-after photos. More at [mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
     ],
   },
   why: {
-    heading: 'Why Flood-Season Moisture Lingers in Older Ducts',
+    heading: 'Why Patapsco Valley Moisture Persists in Ellicott City Duct Systems',
     items: [
       {
-        title: 'Served from Our Bethesda Office',
-        text: 'Ellicott City jobs are scheduled from Bethesda.',
+        title: 'Howard County Drive Planned With Honest Windows',
+        text: 'Ellicott City is a longer run from Bethesda. We schedule the drive into the arrival window so the crew arrives as expected.',
       },
       {
-        title: 'Flat-Rate Pricing',
-        text: 'No per-vent counting on a stone house or a Dorsey Hall colonial. Pricing is quoted before work starts.',
+        title: 'Historic and Suburban Systems Priced Under the Same Framework',
+        text: 'A stone-cellar Main Street building and a Turf Valley colonial both receive a flat-rate quote at (301) 809-4544. No heritage-building premium.',
       },
       {
-        title: 'Moisture-Heavy Housing We Already See',
-        text: 'Historic cores and later hillsides are different jobs. We inspect before we promise. [Columbia](/locations/columbia) is the same Maryland dispatch.',
+        title: 'Flood-Zone Moisture Inspected, Not Assumed Away',
+        text: 'Lower levels in the historic core get a moisture check as part of the scope walk. If trunk conditions suggest persistent dampness, we adjust the service approach before starting.',
       },
       {
-        title: '100% Satisfaction Guarantee',
-        text: 'If you are not happy, we come back. Payment is for work you can see in the photos.',
+        title: 'Guaranteed Results With Full Documentation',
+        text: 'Every duct section and register is photographed before and after. Unsatisfied? We return at no additional cost.',
       },
     ],
   },
@@ -75,7 +75,7 @@ export const ellicottCity: LocationContentSeed = {
     groups: [
       {
         title: 'Historic Main Street & mill district',
-        places: 'Historic Main Street, Tiber Alley, mill district, Ellicott’s Mills',
+        places: 'Historic Main Street, Tiber Alley, mill district, Ellicott\'s Mills',
       },
       {
         title: 'Dorsey Hall & Route 40',

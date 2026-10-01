@@ -7,64 +7,64 @@ export const mclean: LocationContentSeed = {
   description:
     'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in McLean, VA. Flat rates from our Burke office for large lots, finished basements, and Tysons condos. Call (571) 460-0001.',
   intro:
-    'Amazon Air Duct Cleaning serves McLean from our Burke office — the same Northern Virginia crew that already covers Arlington and Alexandria. Large-lot houses under a heavy tree canopy, finished basements, and Tysons high-rises all load ducts with pollen and humidity. Call (571) 460-0001.',
+    'Amazon Air Duct Cleaning serves McLean from our Burke office \u2014 the same Northern Virginia crew that already covers Arlington and Alexandria. Large-lot houses under a heavy tree canopy, finished basements, and Tysons high-rises all load ducts with pollen and humidity. Call (571) 460-0001.',
   heroImage: '/img/locations/mclean.webp',
-  heroAlt: 'Air duct cleaning in McLean, VA — Amazon Air Duct Cleaning',
+  heroAlt: 'Air duct cleaning in McLean, VA \u2014 Amazon Air Duct Cleaning',
   city: 'McLean',
   state: 'VA',
   servedBy: 'burke',
   sectionLayout: 'offersLate',
   about: {
-    heading: 'Tree Lots, Finished Basements, and Tysons-Edge Condos',
+    heading: 'Langley Estates, Difficult Run Basements, and Tysons Tower Dryer Stacks',
     paragraphs: [
-      'McLean is a Fairfax County community of large lots, mature oaks, and quiet streets — Langley, Chesterbrook, Kent Gardens, and the neighborhoods along Dolley Madison Boulevard. That tree canopy is why spring pollen coats outdoor furniture. It is also why returns fill faster than in a new treeless subdivision. Finished basements along Difficult Run and Pimmit Run sit close to damp soil. Summer humidity still moves up from the Potomac, even if you cannot see the river from the backyard.',
-      'Tysons is next door. Condos and offices there have long dryer runs and rooftop packs. A McLean colonial from the 1960s–80s often has a mix of original trunk lines and later additions. Dust collects at those joints. Cold supply air plus humid basement air is how musty registers start after a wet spring.',
-      'We serve McLean from [Burke](/locations/burke). Nearby [Arlington](/locations/arlington), [Alexandria](/locations/alexandria), and [Washington, DC](/locations/washington-dc) use the same dispatch. More on [tree pollen and basement humidity in McLean](/blog/mclean-tree-pollen-basement-humidity).',
+      'McLean is a Fairfax County community defined by mature oaks, large residential lots, and quiet streets along Dolley Madison Boulevard \u2014 Langley, Chesterbrook, Kent Gardens, McLean Hamlet, and Evans Farm. That canopy is the reason spring pollen coats outdoor furniture within a week and returns fill faster than in a treeless subdivision farther west. Finished basements along Difficult Run and Pimmit Run sit near creek-level soil moisture, and summer humidity from the Potomac moves inland even when the river is not visible from the property.',
+      'Tysons sits at McLean\u2019s eastern edge, adding stacked condos with rooftop HVAC packs and multi-story dryer risers. A McLean colonial from the 1960s\u201380s typically mixes original trunk lines with branches added during garage or guest-suite expansions \u2014 junction points that collect debris faster than a continuous run. Cold supply air meeting humid basement air is the mechanism behind the musty registers that appear after every wet spring in the Dolley Madison corridor.',
+      'Our Burke crew serves McLean alongside [Great Falls](/locations/great-falls), [Vienna](/locations/vienna), and [Arlington](/locations/arlington). Read about [tree pollen and basement humidity in McLean](/blog/mclean-tree-pollen-basement-humidity), or schedule [air duct cleaning](/air-duct-cleaning) and [dryer vent cleaning](/dryer-vent-cleaning) together.',
     ],
     highlights: [
-      'Large-lot homes, Langley estates, and Tysons condos',
-      'Flat-rate pricing — no vent counting',
-      'Before-and-after photos on every duct job',
-      'Same Burke team that already works Fairfax County',
+      'Langley, Chesterbrook, Kent Gardens, McLean Hamlet, and Tysons-edge addresses',
+      'Flat-rate pricing \u2014 no per-vent surcharges on large homes',
+      'Before-and-after photo documentation of every trunk cleaned',
+      'Same Burke team covering Fairfax County routes weekly',
     ],
   },
-  offersTitle: 'McLean Flat-Rate Duct and Dryer Packages',
+  offersTitle: 'McLean Duct & Dryer Vent Packages',
   services: {
-    heading: 'McLean Packages for Large Lots and High-Rises',
-    intro: 'Large single-family systems and Tysons stacks — quoted before we unroll hoses.',
+    heading: 'What We Clean in McLean Estates and Tysons Towers',
+    intro: 'Large single-family systems and Tysons stacked units receive the same published flat-rate scope.',
     items: [
       {
-        title: 'Air Duct Cleaning & Sanitization',
-        text: 'We clean supplies, returns, and registers with negative-pressure HEPA vacuums and rotary brushes, then sanitize when the inspection shows biological growth. Photos come with the job. See [air duct cleaning](/air-duct-cleaning).',
+        title: 'Air Duct Cleaning for McLean Homes',
+        text: 'We seal HEPA-filtered negative-pressure equipment to the trunk and agitate every supply line, return, and register with rotary brushes \u2014 including junction points where additions branch off original metal. Sanitizing follows when the walkthrough reveals biological growth. You keep the complete photo set. Schedule [air duct cleaning](/air-duct-cleaning).',
       },
       {
-        title: 'Dryer Vent Cleaning',
-        text: 'Long runs from a second-floor laundry or a Tysons stacked unit pack with lint. We brush and vacuum to the exterior cap so the dryer is not dumping heat and moisture back into the house. Book [dryer vent cleaning](/dryer-vent-cleaning).',
+        title: 'Dryer Vent Service',
+        text: 'Long runs from second-floor laundry rooms in McLean colonials and multi-story Tysons stacked units pack with lint behind interior walls. We rod-brush and vacuum the entire path to the exterior cap so the dryer exhausts efficiently and fire risk is eliminated. Book [dryer vent cleaning](/dryer-vent-cleaning).',
       },
       {
-        title: 'Ventilation & HVAC Mold Treatment',
-        text: 'Finished basements and humid summers let mold colonize coils and dead-end ducts. We treat the ventilation with EPA-registered antimicrobial products. Learn more about [mold remediation for air ducts](/mold-remediation-air-ducts).',
+        title: 'Mold Treatment in McLean Ductwork',
+        text: 'Finished basements near Difficult Run and Pimmit Run keep moisture close to the air handler, and summer humidity compounds the load on evaporator coils. We clean mechanically first, then apply EPA-registered antimicrobial treatment to halt mold regrowth along the ventilation path. Details at [mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
     ],
   },
   why: {
-    heading: 'Why McLean Canopy Pollen Settles in Cool Trunks',
+    heading: 'Why McLean Canopy Pollen Embeds in Cool Trunk Metal',
     items: [
       {
-        title: 'Upfront Flat-Rate Pricing',
-        text: 'McLean jobs are quoted before we start, with the same packages used across Northern Virginia. No bait-and-switch on a large house.',
+        title: 'Flat Rate Quoted Before the Truck Opens',
+        text: 'McLean jobs are walkthrough-scoped and quoted at a flat rate before equipment comes off the truck. Large homes and Tysons condos use the same pricing structure \u2014 no per-vent surcharges after we see the mechanical room.',
       },
       {
-        title: 'Before & After Photos',
-        text: 'You see the trunk lines and returns before we pack up. That matters in older additions where dust has been sitting at the joints.',
+        title: 'Photo Documentation You Can Review',
+        text: 'Trunk interiors, register cavities, and dryer vent caps are photographed before and after. That documentation matters in older additions where dust has been compacting at junction points for decades.',
       },
       {
-        title: 'Crews Who Know Fairfax Housing',
-        text: 'The Burke team already works McLean, [Great Falls](/locations/great-falls), [Vienna](/locations/vienna), and [Arlington](/locations/arlington). They know basement air handlers, long dryer runs, and pollen season.',
+        title: 'Crew That Knows Fairfax County Housing',
+        text: 'The Burke team already works McLean, [Great Falls](/locations/great-falls), [Vienna](/locations/vienna), and [Arlington](/locations/arlington). Basement air handlers, long dryer runs, and pollen season are part of the regular rotation.',
       },
       {
-        title: '100% Satisfaction Guarantee',
-        text: 'If you are not happy, we come back. Payment is for work you can see.',
+        title: 'Guaranteed Results',
+        text: 'If your McLean cleaning does not hold up to the walk-through, we return and redo the work at no additional charge.',
       },
     ],
   },
@@ -83,13 +83,13 @@ export const mclean: LocationContentSeed = {
       {
         title: 'North and west',
         places:
-          '[Great Falls](/locations/great-falls) edge, Wolf Trap, [Vienna](/locations/vienna), [Oakton](/locations/oakton) — ask when you book if your street is not listed',
+          '[Great Falls](/locations/great-falls) edge, Wolf Trap, [Vienna](/locations/vienna), [Oakton](/locations/oakton) \u2014 ask when you book if your street is not listed',
       },
     ],
   },
   process: {
     heading: 'Estate Driveways and Condo Loading From Burke',
-    intro: 'Same flat-rate flow we use across VA — scoped for McLean housing.',
+    intro: 'Same flat-rate flow we use across VA \u2014 scoped for McLean housing.',
     steps: [
       {
         title: 'Scope the McLean System',
@@ -113,7 +113,7 @@ export const mclean: LocationContentSeed = {
       },
     ],
   },
-  faqIntro: 'McLean questions — call (571) 460-0001 (dispatch: Burke).',
+  faqIntro: 'McLean questions \u2014 call (571) 460-0001 (dispatch: Burke).',
   faq: [
     {
       q: 'Who handles air duct cleaning appointments in McLean?',
@@ -129,15 +129,15 @@ export const mclean: LocationContentSeed = {
     },
     {
       q: 'Are McLean air duct and dryer vent prices flat-rate?',
-      a: 'Yes. McLean residential packages are flat-rate from the Burke office — the number we confirm before work starts is what you pay. No per-vent counting.',
+      a: 'Yes. McLean residential packages are flat-rate from the Burke office \u2014 the number we confirm before work starts is what you pay. No per-vent counting.',
     },
     {
       q: 'Can duct and dryer vent cleaning be done the same day in McLean?',
-      a: 'In McLean, yes — when you book the combined package or both services up front. Call (571) 460-0001 and we stage the Burke crew for one visit to your street.',
+      a: 'In McLean, yes \u2014 when you book the combined package or both services up front. Call (571) 460-0001 and we stage the Burke crew for one visit to your street.',
     },
     {
       q: 'How far in advance should McLean homeowners book?',
-      a: 'Peak pollen and summer humidity fill the McLean calendar fast. Same-week openings are common — call (571) 460-0001 for the next Burke window serving McLean.',
+      a: 'Peak pollen and summer humidity fill the McLean calendar fast. Same-week openings are common \u2014 call (571) 460-0001 for the next Burke window serving McLean.',
     },
   ],
 }

@@ -10,62 +10,62 @@ export const loudoun: LocationContentSeed = {
   intro:
     'Amazon Air Duct Cleaning serves Loudoun County from our Burke office. Leesburg brick, Ashburn and Sterling new-builds, and Dulles-corridor townhomes all take on construction dust and a heavy pollen season. Call (571) 460-0001.',
   heroImage: '/img/locations/loudoun.webp',
-  heroAlt: 'Air duct cleaning in Loudoun County, VA — Amazon Air Duct Cleaning',
+  heroAlt: 'Air duct cleaning in Loudoun County, VA \u2014 Amazon Air Duct Cleaning',
   city: 'Loudoun',
   state: 'VA',
   servedBy: 'burke',
   sectionLayout: 'leanNoOffers',
   about: {
-    heading: 'Leesburg Brick, Ashburn New-Builds, and Pollen Seasons',
+    heading: 'Historic Leesburg Basements, Ashburn New-Builds, and Data-Center Corridor Grit',
     paragraphs: [
-      'Loudoun is not one housing type. Historic Leesburg has older metal trunks and damp basements near Goose Creek and the Potomac. Ashburn, Broadlands, Brambleton, and South Riding are packed with 1990s–2010s townhomes and single-family houses that still swallow drywall dust from the next section under construction. Sterling and the Dulles Toll Road add traffic particles. Data-center growth did not make indoor air cleaner.',
-      'New construction is not clean construction. Fine gypsum and insulation fibers sit in returns for years if the system was never commissioned with a proper duct cleaning. Older Leesburg houses have the opposite problem: humidity and pollen in trunks that were added after the house was built.',
-      'We serve Loudoun from [Burke](/locations/burke). The drive is real; the office is staffed. Nearby [McLean](/locations/mclean) and [Fairfax](/locations/fairfax) are closer-in stops on the same dispatch. More on [Loudoun Construction Dust Pollen](/blog/loudoun-construction-dust-pollen-air-ducts).',
+      'Loudoun County is not one housing type. Historic Leesburg carries older metal trunks and damp basements near Goose Creek and the upper Potomac. Ashburn, Broadlands, Brambleton, and One Loudoun are packed with 1990s\u20132010s townhomes and single-family homes that were occupied while the next phase was still under construction \u2014 meaning fine gypsum dust and insulation fibers settled into supply trunks before anyone changed a filter. Sterling and the Dulles Toll Road corridor contribute traffic particles, and the data-center building boom has added another layer of construction-grade particulates that has not slowed down.',
+      'New construction does not equal clean ductwork. Builder drywall dust sits in returns for years if the system was never professionally cleaned after the certificate of occupancy. Older Leesburg houses have the opposite challenge: humidity and pollen in trunks that were retrofitted after the house was built, with elbows and junction points that trap debris. Both scenarios respond to the same source-removal cleaning approach.',
+      'We serve Loudoun from [Burke](/locations/burke) \u2014 the drive is real, and the arrival window reflects it. Nearby [Herndon](/locations/herndon) and [Chantilly](/locations/chantilly) cover closer Dulles-edge stops on the same dispatch. Read about [Loudoun construction dust, pollen, and air ducts](/blog/loudoun-construction-dust-pollen-air-ducts).',
     ],
     highlights: [
-      'Leesburg, Ashburn, Sterling, Brambleton, South Riding',
-      'Flat-rate pricing — no vent counting',
-      'Before-and-after photos on every duct job',
-      'Dispatched from our Burke office',
+      'Leesburg, Ashburn, Sterling, Brambleton, South Riding, and One Loudoun',
+      'Flat-rate pricing \u2014 no per-vent surcharges',
+      'Before-and-after photo documentation on every job',
+      'Dispatched from our Burke office with realistic drive windows',
     ],
   },
-  offersTitle: 'Loudoun Flat Rates With Realistic Drive Windows',
+  offersTitle: 'Loudoun Duct & Dryer Vent Packages',
   services: {
-    heading: 'Loudoun County Packages From the Burke Office',
-    intro: 'New-build townhomes and older Leesburg houses — same published packages.',
+    heading: 'What We Clean Across Loudoun County',
+    intro: 'New-build townhomes and older Leesburg houses receive the same published flat-rate scope.',
     items: [
       {
-        title: 'Air Duct Cleaning & Sanitization',
-        text: 'HEPA negative pressure and rotary brushes through supplies, returns, and registers. Photos are part of the job. See [air duct cleaning](/air-duct-cleaning).',
+        title: 'Air Duct Cleaning for Loudoun Homes',
+        text: 'HEPA-filtered negative-pressure equipment seals to the trunk while rotary brushes agitate every supply line, return, and register. Sanitizing follows when the walkthrough identifies biological growth \u2014 common in Leesburg basements near creek-level moisture. You keep the complete photo set. Schedule [air duct cleaning](/air-duct-cleaning).',
       },
       {
-        title: 'Dryer Vent Cleaning',
-        text: 'Two-story townhomes in Ashburn and Brambleton pack long dryer runs. We clear them to the cap. Book [dryer vent cleaning](/dryer-vent-cleaning).',
+        title: 'Dryer Vent Service',
+        text: 'Two-story Ashburn and Brambleton townhomes push dryer exhaust up vertical chases that clog with lint well before performance drops noticeably. We rod-brush and vacuum the entire path to the roof or wall cap. Book [dryer vent cleaning](/dryer-vent-cleaning).',
       },
       {
-        title: 'Ventilation & HVAC Mold Treatment',
-        text: 'Leesburg basements and humid summers let mold colonize coils. Learn more about [mold remediation for air ducts](/mold-remediation-air-ducts).',
+        title: 'Mold Treatment in Loudoun Ductwork',
+        text: 'Leesburg basements near Goose Creek and humid summer air across the county create conditions for mold on evaporator coils and inside dead-end duct branches. We clean mechanically first, then apply EPA-registered antimicrobial treatment along the ventilation path. Details at [mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
     ],
   },
   why: {
-    heading: 'Why Loudoun Construction Dust Meets Heavy Pollen',
+    heading: 'Why Loudoun New-Builds and Leesburg Brick Both Need Cleaning',
     items: [
       {
-        title: 'Served from Our Burke Office',
-        text: 'Loudoun jobs are scheduled from Burke.',
+        title: 'Served From Our Burke Office',
+        text: 'Loudoun jobs are scheduled from Burke with arrival windows that reflect the Dulles Toll Road drive. No surprises on timing.',
       },
       {
-        title: 'Flat-Rate Pricing',
-        text: 'Large Ashburn houses are quoted before we start. No bait-and-switch on a finished basement.',
+        title: 'Flat Rate Confirmed Before We Start',
+        text: 'Large Ashburn houses and finished basements are scoped during the walkthrough and quoted before equipment comes off the truck. No bait-and-switch on system size.',
       },
       {
-        title: 'New-Build Dust We Already See',
-        text: 'The same crew cleans houses still inside an active HOA construction window. Drywall dust in the returns is not a surprise.',
+        title: 'Builder Dust Is a Known Quantity',
+        text: 'The same crew cleans homes still inside active HOA construction windows. Drywall dust in the returns is a standard finding, not an excuse to change the quote.',
       },
       {
-        title: '100% Satisfaction Guarantee',
-        text: 'If you are not happy, we come back. Payment is for work you can see.',
+        title: 'Guaranteed Results',
+        text: 'If the cleaning does not meet your expectations, we return and redo the work at no extra charge.',
       },
     ],
   },
@@ -75,7 +75,7 @@ export const loudoun: LocationContentSeed = {
     groups: [
       {
         title: 'Leesburg & west',
-        places: 'Leesburg, Lansdowne, Belmont, Oatlands, Purcellville edge — ask when you book',
+        places: 'Leesburg, Lansdowne, Belmont, Oatlands, Purcellville edge \u2014 ask when you book',
       },
       {
         title: 'Ashburn & Broadlands',
@@ -88,8 +88,8 @@ export const loudoun: LocationContentSeed = {
     ],
   },
   process: {
-    heading: 'Longer Dulles-Corridor Drive — Planned Honestly',
-    intro: 'Same flat-rate flow we use across VA — scoped for Loudoun housing.',
+    heading: 'Longer Dulles-Corridor Drive \u2014 Planned Honestly',
+    intro: 'Same flat-rate flow we use across VA \u2014 scoped for Loudoun housing.',
     steps: [
       {
         title: 'Scope the Loudoun System',
@@ -113,7 +113,7 @@ export const loudoun: LocationContentSeed = {
       },
     ],
   },
-  faqIntro: 'Loudoun questions — call (571) 460-0001 (dispatch: Burke).',
+  faqIntro: 'Loudoun questions \u2014 call (571) 460-0001 (dispatch: Burke).',
   faq: [
     {
       q: 'Who handles air duct cleaning appointments in Loudoun?',
@@ -129,11 +129,11 @@ export const loudoun: LocationContentSeed = {
     },
     {
       q: 'Are Loudoun air duct and dryer vent prices flat-rate?',
-      a: 'Yes. Loudoun residential packages are flat-rate from the Burke office — the number we confirm before work starts is what you pay. No per-vent counting.',
+      a: 'Yes. Loudoun residential packages are flat-rate from the Burke office \u2014 the number we confirm before work starts is what you pay. No per-vent counting.',
     },
     {
       q: 'Can duct and dryer vent cleaning be done the same day in Loudoun?',
-      a: 'In Loudoun, yes — when you book the combined package or both services up front. Call (571) 460-0001 and we stage the Burke crew for one visit to your street.',
+      a: 'In Loudoun, yes \u2014 when you book the combined package or both services up front. Call (571) 460-0001 and we stage the Burke crew for one visit to your street.',
     },
     {
       q: 'How far in advance should Loudoun homeowners book?',

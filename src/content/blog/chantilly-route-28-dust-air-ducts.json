@@ -2,52 +2,60 @@
   "slug": "chantilly-route-28-dust-air-ducts",
   "title": "Sully Station HOAs, airport film, and why 1990s trunks still blow gypsum",
   "headline": "Sully Station HOAs, airport film, and why 1990s trunks still blow gypsum",
-  "description": "Chantilly, VA sits on Route 28 between Dulles and Centreville. why HOA construction dust and airport-corridor traffic load ducts.",
+  "description": "Chantilly HOA neighborhoods went up fast during the Route 28 boom, and most were never cleaned after builder run-in. Learn why houses that look 15 years old can still carry first-day drywall dust in the trunks — plus the airport-corridor film that keeps adding to it.",
   "heroImage": "/img/blog/heroes/chantilly-route-28-dust-air-ducts.webp",
   "sections": [
     {
-      "id": "hoa_dryer",
-      "heading": "HOA townhomes stack lint in a shared chase",
+      "id": "builder_dust",
+      "heading": "Builder-grade ductwork and the dust it was born with",
       "paragraphs": [
-        "Chantilly townhomes send dryer exhaust up a chase that was sized for a smaller machine. Lint plus corridor humidity is a fire risk and a moisture dump into the laundry. A dryer that needs two cycles is often the vent, not the appliance.",
-        "If you still get dusty supplies years after closing, when you are ready to book, use the [Chantilly, VA location page](/locations/chantilly)."
+        "Sully Station, Greenbriar, and Westfields developments went up during a sustained building cycle from the early 1990s through the 2010s. During construction, HVAC systems are installed and commissioned while drywall finishing, sanding, and painting are still underway. The air handler runs to dry joint compound. Gypsum dust — fine, white, and slightly calcium-rich — enters the return side and distributes through every supply trunk before the first homeowner moves in.",
+        "Builders are not required to clean ductwork after construction. Most do not. The first-owner filter catches some of the initial load, but particles that settled into trunk walls before the filter was installed remain. Twenty years later, that gypsum is still there, compressed under layers of subsequent household dust, and visible as a chalky white base layer when you remove a supply register and shine a light down the trunk."
+      ],
+      "listItems": []
+    },
+    {
+      "id": "airport_corridor",
+      "heading": "Dulles approach traffic adds a second, ongoing layer",
+      "paragraphs": [
+        "Route 28 between Dulles Airport and Centreville carries commercial and passenger traffic volumes that generate a continuous fine particulate load. Airport-adjacent corridors also carry jet-fuel combustion byproducts and de-icing chemical residue that become airborne during dry weather. This is a different dust profile from residential pollen or road sand — it is finer, slightly oily, and does not respond well to standard panel filters.",
+        "Chantilly houses west of Route 28 face this corridor directly. Returns on the side of the house closest to the road accumulate a noticeably darker film than returns on the interior or rear side. Over several years, the difference becomes visible on the register faces themselves — one side grays faster than the other."
       ],
       "listItems": [],
       "image": "/img/blog/dirty-HVAC-unit.webp"
     },
     {
-      "id": "signs",
-      "heading": "Typical signs in a Chantilly house",
+      "id": "hoa_dryer",
+      "heading": "HOA townhome dryer chases were sized for a different era",
       "paragraphs": [
-        "Watch for:"
-      ],
-      "listItems": [
-        "White-gray film on supplies in a 1990s–2010s HOA house.",
-        "Dust returning fast on streets that face Route 28.",
-        "Long dry times in a Sully Station or Westfields townhome."
-      ]
-    },
-    {
-      "id": "sully",
-      "heading": "Chantilly housing looks new. The ducts often are not clean.",
-      "paragraphs": [
-        "Sully Station, Greenbriar, Franklin Farm-edge, and Westfields townhomes went up in overlapping waves from the 1990s into the 2010s. Builders ran air handlers to dry mud. Fine gypsum stayed in the returns. Route 28 between Dulles and Centreville then added a second film — airport-corridor traffic that never really stops.",
-        "Vinyl and brick that still look sharp do not mean indoor air is clean. Stringfellow houses sit under enough trees that spring pollen coats the same registers the construction dust already found. Centreville is next door. The dust does not stop at the CDP line."
+        "When Sully Station and Greenbriar townhomes were built, residential dryers produced roughly half the airflow volume of today's high-capacity machines. The interior chases that carry dryer exhaust to the roof were sized for those older appliances. A modern dryer pushing air through a chase designed in 1994 creates back-pressure at every elbow. Lint that would have exited the cap now packs at the first and second turns.",
+        "The result is a chase that fills with compressed lint over three to five years, restricts exhaust, and forces the dryer to run extended cycles. The excess heat and moisture from those extended cycles migrate through the chase wall into the adjacent living space, raising humidity in rooms that already carry corridor dust in their supply trunks."
       ],
       "listItems": []
     },
     {
-      "id": "protect",
-      "heading": "Keeping trunks and dryer runs healthier between cleanings",
+      "id": "diagnosis",
+      "heading": "How to tell if your Chantilly system still carries builder dust",
       "paragraphs": [
-        "Chantilly jobs are scheduled from our metro offices For service and scheduling, see the [local service page](/locations/chantilly).",
-        "Chantilly is served from our [Burke](/locations/burke) office. Nearby [Fair Oaks](/locations/fair-oaks) and [Loudoun](/locations/loudoun) use the same dispatch.",
-        "Service details live on the [Chantilly location page](/locations/chantilly). Add [dryer vent cleaning](/dryer-vent-cleaning) for stacked laundry."
+        "Not every dusty register in a 1990s–2000s house means original construction residue. These indicators are more specific:"
       ],
       "listItems": [
-        "Ask for a duct cleaning if the house was never cleaned after the builder left.",
-        "Change filters more often if you sit on Route 28 air.",
-        "Clear HOA dryer vents about once a year."
+        "Pull a supply register on the second floor. If the trunk walls show a white chalky base under darker surface dust, the builder load was never removed.",
+        "Run a damp finger along the inside of the trunk. If the residue feels calcium-gritty rather than soft and fibrous, it is gypsum rather than household lint.",
+        "Check the air-handler cabinet for a manufacturer date — if it matches the house age and the evaporator coil has never been cleaned, the original dust layer extends into the coil housing.",
+        "Compare registers on opposite sides of the house: a noticeably darker film on the Route 28 side confirms corridor particulate is an active ongoing source."
+      ]
+    },
+    {
+      "id": "steps",
+      "heading": "Addressing a system that never got its first cleaning",
+      "paragraphs": [
+        "A house that still carries builder dust needs a full trunk-and-branch cleaning, not just a filter swap. For Chantilly scheduling and flat-rate packages that include every register, visit the [Chantilly location page](/locations/chantilly). If the townhome dryer chase is part of the issue, [dryer vent cleaning](/dryer-vent-cleaning) can be bundled in the same appointment."
+      ],
+      "listItems": [
+        "After cleaning, upgrade from a MERV-8 panel filter to a MERV-11 pleated filter — this catches more of the sub-10-micron corridor particles before they re-enter the trunks.",
+        "Schedule dryer-chase cleaning annually in a stacked townhome; the compressed-lint risk is real and the access is already planned into the service visit.",
+        "If the HOA manages exterior dryer caps, confirm the cap model allows full brush access — some cap designs require removal for a thorough clean."
       ]
     }
   ],

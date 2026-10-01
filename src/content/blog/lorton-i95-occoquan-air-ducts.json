@@ -2,52 +2,61 @@
   "slug": "lorton-i95-occoquan-air-ducts",
   "title": "Laurel Hill HOAs, Lorton Station stacks, and why river air plus interstate grit stick",
   "headline": "Laurel Hill HOAs, Lorton Station stacks, and why river air plus interstate grit stick",
-  "description": "Lorton, VA sits on I-95 south of Springfield with the Occoquan nearby. why traffic dust and river humidity load ducts.",
+  "description": "Lorton sits at the intersection of two particle sources: I-95 traffic dust and Occoquan River humidity. Discover how these combine inside both new-build townhome ducts and older Lorton Road split-levels — and why river-humid air makes interstate grit bond to cool trunk surfaces.",
   "heroImage": "/img/blog/heroes/lorton-i95-occoquan-air-ducts.webp",
   "sections": [
     {
-      "id": "station",
-      "heading": "Lorton Station dryers pack at the roof cap",
+      "id": "two_corridors",
+      "heading": "Where an interstate and a river corridor overlap",
       "paragraphs": [
-        "Laurel Hill and Station HOAs stack laundry and send lint up a long chase. A dryer that needs two cycles is usually packed at a roof cap, not a dying machine. That moisture sits in the same envelope as Occoquan-humid trunks.",
-        "If supplies look dirty a few days after you wipe them, when you are ready to book, use the [Lorton, VA location page](/locations/lorton)."
+        "Most communities deal with either traffic dust or river humidity. Lorton gets both. I-95 runs along the western edge, generating a continuous stream of brake particles, tire-wear rubber, and diesel soot. The Occoquan River and its tributaries run along the southern and eastern edges, adding a moisture mass that keeps local dew points 3–5 degrees higher than locations a few miles inland. Where those two influences overlap — and they overlap across virtually all of Lorton's residential zones — the combination is uniquely effective at loading ductwork.",
+        "Humidity alone does not damage ducts. Traffic dust alone creates a dry, loose film that partially shakes free with normal airflow. But humidity bonded to traffic particulate creates a sticky composite on cold metal surfaces that grows denser with each AC season and does not re-suspend. It accumulates. That is why Lorton trunk interiors tend to show a hard, dark coating rather than the loose dust common in drier suburban environments."
+      ],
+      "listItems": []
+    },
+    {
+      "id": "housing_mix",
+      "heading": "New and old housing, same duct problem, different geometry",
+      "paragraphs": [
+        "Lorton Station and Laurel Hill are 2000s–2010s construction: townhomes with stacked laundry, interior mechanical closets, and compact duct runs through conditioned space. Older Lorton Road and Gunston-area houses are 1970s split-levels with air handlers in daylight basements and long trunk runs through unconditioned crawl spaces. The Lorton Station systems accumulate corridor dust in their short, tight runs because the returns sit at street level in dense clusters. The older split-levels accumulate it in long, cold trunk runs where river humidity provides the bonding moisture.",
+        "Despite the different geometries, both housing types tend to show the same symptom: a register that grays out within a few days of wiping. In the townhome, the gray comes from short proximity to the dust source. In the split-level, it comes from deep accumulation in the trunk releasing incrementally with each blower cycle."
       ],
       "listItems": [],
       "image": "/img/blog/The-Hidden-Cost-of-Dirty-Air-Ducts.webp"
     },
     {
-      "id": "signs",
-      "heading": "Typical signs in a Lorton house",
+      "id": "vre_commute",
+      "heading": "The VRE corridor adds vibration that shakes dust loose",
       "paragraphs": [
-        "Watch for:"
-      ],
-      "listItems": [
-        "Gray film on supplies facing I-95 or Richmond Highway.",
-        "Musty air from a split-level basement after rain over the Occoquan.",
-        "Two-cycle dry times in a Lorton Station or Laurel Hill townhome."
-      ]
-    },
-    {
-      "id": "corridor",
-      "heading": "Lorton is Springfield’s problem, one exit south — plus a river",
-      "paragraphs": [
-        "Lorton Station and the VRE, Laurel Hill on the former prison grounds, Gunston-area streets, and older Lorton Road houses share I-95 air. Traffic film is constant. The Occoquan and nearby creeks add a humid mass that the Mixing Bowl does not quite match. New townhomes and 1970s split-levels fail the same way: cool trunks, wet air, dusty returns.",
-        "You can wipe a register after a weekend. Monday’s commute puts gray film back on the supply that faces the interstate."
+        "Lorton Station is named for its proximity to the VRE commuter rail. Homes within a few hundred feet of the rail line experience low-frequency vibration during morning and evening train passages. That vibration is below human perception in most rooms, but it is enough to dislodge settled particles inside ductwork. Homeowners near the tracks sometimes notice a small puff of dust from a supply register at roughly the same time each morning — that is settled trunk dust re-suspending from train vibration, then carried out by the next blower cycle.",
+        "The effect is subtle but cumulative. Homes on the rail side of Lorton Station streets tend to have slightly cleaner trunk interiors (because dust keeps getting ejected) but dustier living spaces (because that dust lands on furniture). A home a block farther from the tracks retains more dust inside the trunks and shows it less visibly in the rooms — until a cleaning removes it all at once."
       ],
       "listItems": []
     },
     {
-      "id": "protect",
-      "heading": "Keeping trunks and dryer runs healthier between cleanings",
+      "id": "indicators",
+      "heading": "Patterns that distinguish Lorton's dual-source problem",
       "paragraphs": [
-        "Lorton jobs are scheduled from our metro offices For service and scheduling, see the [local service page](/locations/lorton).",
-        "Lorton is served from our [Burke](/locations/burke) office. Nearby [Springfield](/locations/springfield) and [Mount Vernon](/locations/mount-vernon) use the same crew.",
-        "Service details live on the [Lorton location page](/locations/lorton). Pair stacked laundry with [dryer vent cleaning](/dryer-vent-cleaning)."
+        "Standard dust accumulation happens everywhere. These signs are characteristic of the interstate-plus-river combination:"
       ],
       "listItems": [
-        "Change filters more often if you back up to I-95.",
-        "Keep basement humidity under 50% in summer.",
-        "Clean ducts every 3 to 5 years; clear HOA dryer vents about once a year."
+        "A hard, dark film inside the trunk that does not wipe off easily with a dry cloth — it requires a damp wipe or scrubbing, unlike loose household dust.",
+        "Registers on the I-95 side of the house accumulate gray film two to three times faster than registers on the opposite side.",
+        "Musty smell specifically during the first AC cycle after a humid night or rainy stretch — this indicates moisture-bonded biological material inside the trunk, fed by Occoquan-corridor humidity.",
+        "A split-level lower level that smells stale even with the windows open, because the air handler is recirculating trunk-stored particulate from years of accumulation."
+      ]
+    },
+    {
+      "id": "scheduling",
+      "heading": "Working with the dual-source environment",
+      "paragraphs": [
+        "You cannot relocate the interstate or the river. You can manage how their combined particulate behaves inside your system. For Lorton service details and flat-rate options, visit the [Lorton location page](/locations/lorton). If the townhome dryer chase runs to a roof cap, [dryer vent cleaning](/dryer-vent-cleaning) is efficient to combine with duct work since the crew is already accessing the chase."
+      ],
+      "listItems": [
+        "Use a MERV-11 or higher filter if the air handler supports it — the finer capture rate matters more in a high-particulate zone than in a low-traffic suburb.",
+        "Dehumidify the lower level of split-levels to 45–50 percent RH from May through October to slow the moisture-bonding cycle.",
+        "After cleaning, photograph the inside of one trunk at the supply register. Compare it six months later. If the dark film is returning fast, shorten the cleaning interval from the typical 3–5 years.",
+        "Clear stacked dryer vents annually; the compressed-lint risk accelerates in a humid environment."
       ]
     }
   ],

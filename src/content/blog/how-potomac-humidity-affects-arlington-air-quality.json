@@ -2,55 +2,57 @@
   "slug": "how-potomac-humidity-affects-arlington-air-quality",
   "title": "Why Arlington Condos Near the Potomac Get Musty Ducts in Summer",
   "headline": "Why Arlington Condos Near the Potomac Get Musty Ducts in Summer",
-  "description": "River humidity, stacked laundry, and cool metal trunks: how Arlington HVAC systems collect moisture film — and when to schedule duct or dryer vent cleaning.",
+  "description": "Arlington's dense, transit-oriented housing sits in Potomac humidity year-round. Learn how vertical living, shared infrastructure, and cool trunk lines create the conditions for musty ductwork.",
   "heroImage": "/img/blog/heroes/how-potomac-humidity-affects-arlington-air-quality.webp",
   "sections": [
     {
-      "id": "moisture_trap",
-      "heading": "The moisture trap inside your air ducts",
+      "id": "density_meets_humidity",
+      "heading": "Urban density amplifies what the river starts",
       "paragraphs": [
-        "In a Virginia summer the air conditioner runs for hours. Cold air traveling through metal ductwork meets warm, humid air already in the building. The temperature drop leaves condensation on the inside of the vents.",
-        "That damp film catches dust, pet dander, and pollen. Together they are the conditions mold, mildew, and bacteria need. Every time the system starts, it can push that air into every room of a condo or townhouse.",
-        "If you already notice the smell, start with [air duct cleaning in Arlington, VA](/locations/arlington) rather than masking it with fresheners."
+        "Arlington County packs 230,000 residents into twenty-six square miles, much of it concentrated along the Rosslyn-Ballston corridor and the Crystal City-Pentagon City axis. This density means more HVAC systems per acre, more dryer vents per building, and more moisture generated indoors per square foot than any comparable area in the region. Layer the Potomac's persistent humidity on top of that internally generated moisture and the result is an environment where ductwork rarely gets a chance to fully dry.",
+        "Detached homes in North Arlington, Lyon Village, and Cherrydale face a version of the same problem at a smaller scale: older brick construction, retrofitted duct systems, and mature street trees that dump pollen into returns every spring. But the corridor high-rises face a uniquely urban variant where shared infrastructure — common chase walls, building-wide exhaust systems, and stacked laundry — creates moisture pathways that individual unit owners cannot control alone."
+      ],
+      "listItems": []
+    },
+    {
+      "id": "vertical_living",
+      "heading": "Vertical living and the moisture it concentrates",
+      "paragraphs": [
+        "In a detached house, moisture disperses through the roof, walls, and foundation. In a fifteen-story Arlington high-rise, moisture from every unit migrates toward the path of least resistance — typically the elevator shafts, stairwells, and mechanical chases that run floor to floor. These vertical channels act as humidity highways, moving moist air from lower floors (where ground-level dampness is highest) to upper floors (where the building's solar gain is strongest).",
+        "A condo owner on the eighth floor may wonder why the supply registers feel clammy in August when the unit is on a high floor far from the ground. The answer is that humidity travels upward through the building's infrastructure. The HVAC system in that unit then processes air that is more humid than the outdoor conditions on that floor would suggest, and the trunk lines respond with the same condensation cycle that affects a basement duct in a detached home — just for a different reason."
       ],
       "listItems": [],
       "image": "/img/blog/Allergies.webp"
     },
     {
-      "id": "higher_risk",
-      "heading": "Why condos and older Arlington homes are at higher risk",
+      "id": "older_brick",
+      "heading": "North Arlington brick homes and the retrofitted duct challenge",
       "paragraphs": [
-        "High-rises along the river stack units, shared corridors, and long dryer runs. Ground floors and older brick houses in Lyon Village, Cherrydale, and along Columbia Pike often lack the tight vapor barriers of a new build, so outdoor humidity reaches basements, crawl spaces, and wall cavities more easily.",
-        "Once mold is in those hidden spots or in older ductwork, the blower spreads spores whenever heat or AC turns on. Households usually notice:"
-      ],
-      "listItems": [
-        "A persistent musty or earthy odor that does not leave when you open a window.",
-        "Dust that returns to furniture and registers within days of cleaning.",
-        "Allergy flare-ups, coughing, or watery eyes that are worse indoors than outside."
-      ]
-    },
-    {
-      "id": "river_climate",
-      "heading": "Why Arlington’s river climate shows up inside the house",
-      "paragraphs": [
-        "Living in Arlington, VA means the Potomac is never far away — Rosslyn and Crystal City sit on it, and the same humid air reaches Clarendon, Ballston, and Columbia Pike. You feel it walking outside. It is also sitting in the one place that should stay comfortable: the air moving through your ducts.",
-        "Here is how that climate strains an Arlington HVAC system, and what to do before musty air becomes a recurring problem."
+        "Away from the corridors, Arlington's residential streets — Lyon Village, Ashton Heights, Bluemont, Dominion Hills — are lined with 1920s-through-1960s brick colonials, capes, and bungalows. These homes share the retrofitted-duct challenge common to all pre-AC housing: duct runs that were cut into existing framing, joints that were never sealed to modern standards, and basement mechanical spaces that sit in naturally humid environments.",
+        "What makes Arlington's brick stock slightly different from, say, a Rockville colonial is the county's proximity to the Potomac and the Anacostia. The river corridors on two sides of the county keep ambient humidity consistently higher during the warm season, which means the condensation window — the number of hours per day when trunk surfaces are wet — is wider. More condensation hours mean faster debris bonding and a shorter effective interval between cleanings."
       ],
       "listItems": []
     },
     {
-      "id": "protect",
-      "heading": "Keeping trunks and dryer runs healthier between cleanings",
+      "id": "signs",
+      "heading": "What Arlington residents notice across housing types",
       "paragraphs": [
-        "Arlington jobs are scheduled from our metro offices For service and scheduling, see the [local service page](/locations/arlington).",
-        "You cannot change the weather along the Potomac. You can keep the inside of the system dry and clear. Local technicians usually start with three steps:",
-        "If the odor is already in the vents, or dust keeps returning after you clean the registers, do not wait for it to spread through the building. We now include ventilation mold treatment with our Arlington work, alongside standard flat-rate cleaning."
+        "The symptoms share a common thread — moisture meeting cool metal — but the specifics vary by building type:"
       ],
       "listItems": [
-        "Keep indoor humidity below 50%: A dehumidifier in a basement, utility closet, or damp ground-floor room removes the water mold needs.",
-        "Keep dryer vents clear: A clogged line pushes moist air back into the laundry area. Full-length cleaning restores exhaust flow and cuts fire risk.",
-        "Inspect before the smell becomes normal: Professional cleaning plus photos shows whether the problem is dust, moisture, or both."
+        "Corridor condo: a stuffy or musty quality to the air that worsens in August and does not improve even with the thermostat set low, because over-cooling the unit only increases condensation inside the ducts.",
+        "Older brick home: a damp-cellar smell from basement supply registers that appears within minutes of the system starting and lingers through the first hour of operation.",
+        "Townhome with interior laundry: a warm, humid laundry closet after dryer cycles that does not cool down quickly, indicating the vent is partially restricted and moisture is backing into the mechanical area."
       ]
+    },
+    {
+      "id": "next_steps",
+      "heading": "Managing indoor air quality in a river-adjacent county",
+      "paragraphs": [
+        "Arlington's housing mix requires different approaches depending on building type, but the principle is the same: remove the debris that has already accumulated, then slow the rate at which new debris bonds to trunk surfaces. For condos and high-rises, this means duct cleaning at the unit level plus coordination with building management on shared-chase dryer vent cleaning. For detached homes, it means duct cleaning plus basement dehumidification and, where feasible, sealing accessible duct joints.",
+        "Scheduling and flat-rate packages for Arlington are on the [Arlington, VA service page](/locations/arlington). Pair any duct appointment with [dryer vent cleaning](/dryer-vent-cleaning) if the laundry setup involves a vent run longer than six feet or more than one bend — the conditions under which lint accumulation and moisture backup become meaningful."
+      ],
+      "listItems": []
     }
   ],
   "faq": [

@@ -2,52 +2,61 @@
   "slug": "vienna-tree-pollen-basement-air-ducts",
   "title": "Maple Avenue colonials, Wolf Trap oaks, and why finished basements sweat at the trunks",
   "headline": "Maple Avenue colonials, Wolf Trap oaks, and why finished basements sweat at the trunks",
-  "description": "The Town of Vienna sits under a heavy Fairfax County canopy. why 1950s–70s colonials store pollen in cool basement trunks, and when to clean the ducts from Burke.",
+  "description": "Vienna's 1950s–70s colonials store spring pollen inside the coolest metal in the house — the basement supply trunks. Discover how the Wolf Trap canopy, finished basements, and summer condensation create a self-reinforcing dust-moisture cycle.",
   "heroImage": "/img/blog/heroes/vienna-tree-pollen-basement-air-ducts.webp",
   "sections": [
     {
-      "id": "canopy",
-      "heading": "Vienna looks walkable. The pollen load is a forest.",
+      "id": "condensation_cycle",
+      "heading": "The condensation cycle that makes pollen stick permanently",
       "paragraphs": [
-        "Maple Avenue, Church Street, and Glyndon Park do not look like woods until April. Then every car on Chain Bridge Road is yellow. Oak and maple from the Wolf Trap canopy dump pollen onto decks, then onto returns. A 1950s–70s colonial with a full basement stores that load in the coolest metal in the house — the supply trunks.",
-        "Those trunks get cold when the AC runs. Indoor air in July is wet. Condensation forms. Dust sticks. That is the film you wipe off a Nutley Street register on Monday and see again by the weekend."
+        "A supply trunk carrying 55-degree air through a basement where ambient temperature is 68 degrees develops surface condensation whenever relative humidity exceeds about 60 percent. In Vienna, indoor summer RH routinely climbs past that threshold during any week without active dehumidification. The thin moisture layer on the trunk exterior is invisible — but pollen grains that contact it adhere on impact and stay.",
+        "Over successive pollen seasons, this creates a laminated coating. Each spring's oak and maple load bonds to last year's layer. The coating is not loose dust that vibrates free. It is a composite of biological material and mineral moisture residue that hardens slightly between seasons. By the time it is thick enough to smell, it has been building for years."
       ],
       "listItems": []
     },
     {
-      "id": "addition",
-      "heading": "Rec-room additions hide the joints that collect dust",
+      "id": "colonial_layout",
+      "heading": "How 1950s–70s colonial floor plans concentrate the problem",
       "paragraphs": [
-        "A Vienna colonial that gained a rec room in the 1990s often has original trunks plus a later branch. Dust settles at those splices. Vienna/Fairfax-GMU Metro and the Tysons edge add denser townhomes with dryer runs that turn too many times before the cap. The same humidity that fogs a windshield on Maple Avenue in July is sitting on the air handler.",
-        "If wiping the registers only lasts a few days, when you are ready to book, use the [Vienna, VA location page](/locations/vienna)."
+        "Vienna colonials of this era share a common HVAC layout: the air handler sits in the basement, supply trunks run through the floor joists above it, and branch ducts rise through interior walls to registers on the first and second floors. The longest runs serve the upstairs bedrooms. Those runs travel through the coolest part of the basement ceiling before entering heated wall cavities. That transition zone — cold trunk meeting warm wall — is where condensation is heaviest and dust accumulation fastest.",
+        "A later rec-room addition typically taps into the trunk with a branch splice. Splices from the 1980s and 1990s were often sealed with cloth tape that has since dried and separated. Each gap draws unconditioned basement air into the supply stream, adding moisture and whatever particles the basement air carries."
       ],
       "listItems": [],
       "image": "/img/blog/neglected-air-ducts-buildup.webp"
     },
     {
-      "id": "signs",
-      "heading": "Typical signs in a Vienna house",
+      "id": "canopy_load",
+      "heading": "Wolf Trap's canopy is beautiful — and measurably heavy",
       "paragraphs": [
-        "Watch for:"
+        "The mature oak and maple canopy stretching from Wolf Trap National Park through the residential streets along Courthouse Road and toward Glyndon Park produces one of the densest pollen loads in Fairfax County each April and May. A car parked on Nutley Street overnight collects a visible yellow film by morning. That same pollen reaches every return grille at ground level.",
+        "Unlike road dust, which is largely mineral and inert, tree pollen is organic. Once it contacts moisture inside a cool trunk, it can support microbial growth under the right conditions. This is the origin of the musty smell that Vienna homeowners report on the first AC startup after a spring rain — the trunk interior briefly warms, moisture re-activates biological material in the coating, and the blower pushes that air upstairs before the system reaches steady-state temperature."
+      ],
+      "listItems": []
+    },
+    {
+      "id": "warning_signs",
+      "heading": "Signals that go beyond normal seasonal dust",
+      "paragraphs": [
+        "Vienna homes under the canopy will always collect more pollen than homes on open lots. These patterns indicate the trunks themselves need attention, not just the filters:"
       ],
       "listItems": [
-        "Yellow-gray film on upstairs supplies during peak pollen.",
-        "Musty air from a finished basement when the AC starts after rain.",
-        "A dryer that needs two cycles in a Tysons-edge or Metro-area townhome."
+        "A yellow-gray tint visible when you pull a supply register and look into the trunk opening — the color comes from layered pollen on the metal walls.",
+        "Musty startup smell that appears only after the system has been off for 12 or more hours, then dissipates within 20 minutes of continuous operation.",
+        "Allergy symptoms that improve noticeably when you leave the house, even during high outdoor pollen days — suggesting indoor recirculated pollen concentration exceeds outdoor levels.",
+        "A second-floor bedroom register that produces visible dust puffs when the blower kicks on after a rain delay."
       ]
     },
     {
-      "id": "protect",
-      "heading": "Background reading vs booking a visit",
+      "id": "maintenance",
+      "heading": "Breaking the cycle without over-spending",
       "paragraphs": [
-        "Vienna jobs are scheduled from our metro offices For service and scheduling, see the [local service page](/locations/vienna).",
-        "Vienna is served from our [Burke](/locations/burke) office. Nearby [Oakton](/locations/oakton) and [McLean](/locations/mclean) use the same dispatch.",
-        "Packages live on the [Vienna location page](/locations/vienna). Add [dryer vent cleaning](/dryer-vent-cleaning) if the laundry closet stays hot."
+        "The condensation-pollen cycle cannot be eliminated entirely in a canopy-heavy area, but it can be slowed significantly between professional cleanings. For Vienna-specific scheduling and pricing, see the [Vienna location page](/locations/vienna). If the rec-room splice or a second-floor laundry run is part of the issue, bundling [dryer vent cleaning](/dryer-vent-cleaning) covers both in one visit."
       ],
       "listItems": [
-        "Change filters when pollen is heavy, not only at the printed interval.",
-        "Keep basement humidity under 50% in summer.",
-        "Clean ducts every 3 to 5 years; clear dryer vents about once a year."
+        "Set a basement dehumidifier to hold RH at or below 48 percent from May through September — this keeps trunk surfaces dry enough to prevent new pollen adhesion.",
+        "Replace filters at the start and midpoint of pollen season rather than on a fixed 90-day calendar.",
+        "Seal visible gaps at trunk-to-branch splices with mastic or foil tape — cloth tape from the 1990s has almost certainly failed.",
+        "Keep basement window wells clear of leaf litter so they do not channel moisture toward foundation walls near the air handler."
       ]
     }
   ],

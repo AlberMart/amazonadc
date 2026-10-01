@@ -2,52 +2,60 @@
   "slug": "falls-church-close-in-dust-air-ducts",
   "title": "Broad Street lots, I-66 grit, and why the independent city is not the huge Census name",
   "headline": "Broad Street lots, I-66 grit, and why the independent city is not the huge Census name",
-  "description": "The City of Falls Church sits on small lots next to the Beltway and Route 7. why older trunks collect traffic dust.",
+  "description": "The 2.2-square-mile City of Falls Church packs 1920s–60s houses onto small lots between the Beltway and Route 7. Learn how retrofitted ductwork in pre-war homes interacts with traffic particulate — and why the problems here are different from west-county HOAs.",
   "heroImage": "/img/blog/heroes/falls-church-close-in-dust-air-ducts.webp",
   "sections": [
     {
-      "id": "laundry",
-      "heading": "Second-floor laundry on a small lot is a long, bent vent",
+      "id": "retrofit",
+      "heading": "Central air added to a 1930s house is never the same as built-in",
       "paragraphs": [
-        "Many close-in houses put the dryer on the second floor and send lint on a crooked path to a rear wall. Elbows pack. The closet stays hot. Humidity from that vent sits in the same small envelope as the leaking older trunks.",
-        "If supplies look dirty a few days after you wipe them, when you are ready to book, use the [Falls Church, VA location page](/locations/falls-church)."
+        "Most houses inside the independent City of Falls Church predate residential air conditioning. When central air arrived — often in the 1970s or 1980s — contractors threaded metal trunks through joist bays, closets, and soffits that were never designed to hold them. The runs bend around plumbing stacks, dodge electrical panels, and sometimes change direction three times in ten feet. Each bend creates a low-velocity pocket where particles settle. Each unsealed joint draws unconditioned air from the wall cavity into the supply stream.",
+        "These retrofits were adequate when the neighborhood was quieter. Today those same tight-lot houses sit within a few hundred yards of I-66, the Beltway, and Route 7. The particulate load on the returns is categorically different from what the system was designed to filter in the Carter administration."
+      ],
+      "listItems": []
+    },
+    {
+      "id": "city_vs_census",
+      "heading": "The city boundary matters for your air — not just your address",
+      "paragraphs": [
+        "The independent City of Falls Church is 2.2 square miles. The Census-designated \"Falls Church\" label sprawls across dozens of square miles in Fairfax County and includes housing stock that looks and performs nothing like the actual city. Inside the city limits, lot sizes are small and setbacks are shallow. A house on Broad Street may sit 25 feet from the curb. The return grille in the hallway is 35 feet from four lanes of bus and commuter traffic.",
+        "That proximity means the particulate profile is urban, not suburban. Brake dust, diesel soot from WMATA buses, and tire-wear rubber join the usual pollen. A west-county HOA townhome five miles away gets corridor dust but not the fine urban fraction that characterizes life inside this city line."
       ],
       "listItems": [],
       "image": "/img/blog/Allergies.webp"
     },
     {
-      "id": "signs",
-      "heading": "Typical signs in a Falls Church house",
+      "id": "second_floor_dryer",
+      "heading": "When the dryer is upstairs and the vent goes everywhere",
       "paragraphs": [
-        "Watch for:"
-      ],
-      "listItems": [
-        "Gray film on supplies facing Broad Street or the Beltway side of the lot.",
-        "Dust returning quickly in a 1920s–60s house with later central air.",
-        "A hot upstairs laundry closet and long dry times."
-      ]
-    },
-    {
-      "id": "city",
-      "heading": "This page is the independent city — not the sprawling Census label",
-      "paragraphs": [
-        "The City of Falls Church is small: Broad Street, Washington Street, Tinner Hill, and tight blocks of 1920s–60s houses. That is a different place from the huge “Falls Church” name that sprawls through Fairfax County. Short yards put returns close to the film that coats porches along Route 7. I-66 and the Beltway add brake dust. Street trees add pollen. Returns pull all of it.",
-        "A house that gained central air later often has trunks snaked through tight joist bays. Dust collects at those kinks. You wipe a register. The next commute week puts the film back."
+        "Second-floor laundry installations on small-lot houses face a routing challenge. The dryer cannot vent straight out because the exterior wall faces a neighbor six feet away, or a porch roof blocks the path. So the vent drops through the floor, runs horizontally through a joist bay, turns again, and exits at a side or rear wall. The total path might be 20 feet with four elbows. Every elbow cuts effective airflow and traps lint.",
+        "On these short-setback lots the dryer cap often sits near a window or a return vent of the adjacent house. One home's dryer exhaust becomes another home's intake air. This is a geometry problem unique to close-in city lots where houses were built before anyone planned dryer ventilation."
       ],
       "listItems": []
     },
     {
-      "id": "protect",
-      "heading": "How scheduling works from our metro offices",
+      "id": "recognize",
+      "heading": "Distinguishing retrofit problems from normal wear",
       "paragraphs": [
-        "Falls Church jobs are scheduled from our metro offices For service and scheduling, see the [local service page](/locations/falls-church).",
-        "Falls Church is served from our [Burke](/locations/burke) office. Nearby [Arlington](/locations/arlington) and [Vienna](/locations/vienna) use the same crew.",
-        "Service details live on the [Falls Church location page](/locations/falls-church). Read [air duct cleaning](/air-duct-cleaning) if you want the process before you schedule."
+        "Older close-in houses will always accumulate dust faster than airtight new construction. These signs point specifically to retrofit ductwork issues common inside the Falls Church city limits:"
       ],
       "listItems": [
-        "Change filters more often if you sit on Route 7 or I-66 air.",
-        "Keep basement humidity under 50% in summer.",
-        "Clean ducts every 3 to 5 years; clear bent dryer vents about once a year."
+        "Uneven airflow between rooms — some registers blow strong while others produce barely perceptible movement — indicating kinked or undersized branch runs.",
+        "A visible gap between the register boot and the drywall or plaster, showing that the original rough-in did not match the wall material.",
+        "Dust streaks on the ceiling or wall around a supply register, caused by high-velocity air escaping a slightly misaligned grille and pulling dust along the surface.",
+        "A persistent slight whistle or hum at one register when the blower is on high, indicating a constriction in the branch run."
+      ]
+    },
+    {
+      "id": "scheduling",
+      "heading": "What to know before scheduling in the city",
+      "paragraphs": [
+        "Close-in lots mean tight driveway access and sometimes street-only parking for equipment trucks. For Falls Church service logistics and flat-rate packages, visit the [Falls Church location page](/locations/falls-church). If the second-floor dryer run is involved, add [dryer vent cleaning](/dryer-vent-cleaning) — the crew can address both while equipment is staged."
+      ],
+      "listItems": [
+        "Identify which side of the house faces the busiest road — that side's returns and supplies will carry the heaviest load.",
+        "If the house has a crawl space, confirm access clearance before the appointment so the crew can reach trunk connections below the floor.",
+        "Replace filters on a 30-day cycle if you live within two blocks of Route 7 or I-66 — the standard 90-day schedule is not designed for this particulate level."
       ]
     }
   ],

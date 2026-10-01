@@ -2,53 +2,57 @@
   "slug": "columbia-village-townhomes-air-ducts",
   "title": "Rouse paths, Wilde Lake closets, and why Howard County planned streets still sweat",
   "headline": "Rouse paths, Wilde Lake closets, and why Howard County planned streets still sweat",
-  "description": "Columbia, MD village townhomes sit around lakes and HOA paths. why pollen and damp-season film load ducts.",
+  "description": "Columbia's village townhomes sit along lake paths and HOA greenways that funnel pollen into HVAC returns. Learn why planned-community ductwork loads differently — and how to keep it clear.",
   "heroImage": "/img/blog/heroes/columbia-village-townhomes-air-ducts.webp",
   "sections": [
     {
-      "id": "hoa_closet",
-      "heading": "1970s closets were sized for a different dryer",
+      "id": "green_corridors",
+      "heading": "Green corridors are great for walking — and for filling returns",
       "paragraphs": [
-        "HOA rules keep the exterior neat. Inside, the vent still kinks behind a water heater. Lint packs. Lake humidity sits on cool lower-level trunks. Registers look clean after you wipe them and gray again when the AC cycles.",
-        "If the lower level smells musty in July, when you are ready to book, use the [Columbia, MD location page](/locations/columbia)."
+        "James Rouse designed Columbia around pathways, open space, and neighborhood lakes. That network of greenways means every townhome sits within a few hundred feet of mature trees, mowed turf, and standing water. All three generate airborne particulates: oak and maple pollen in spring, grass clippings through summer, and a persistent humidity blanket from lake evaporation that hangs in the air long after the sun sets.",
+        "Inside a Wilde Lake or Hickory Ridge townhome, the HVAC return grille is usually on a lower-level wall facing a sliding door or walkout. It pulls whatever drifts off the path. Pollen counts peak and then drop outdoors within days. Inside the ductwork, the same material sits on cool metal for months."
+      ],
+      "listItems": []
+    },
+    {
+      "id": "closet_era",
+      "heading": "Mechanical closets designed for 1970s appliances",
+      "paragraphs": [
+        "Most Columbia village stock went up between 1967 and the early 1990s. Furnaces were smaller, dryers vented shorter distances, and nobody expected a household to run a high-efficiency washer that spins water into a tight closet. Today the same alcove holds a taller air handler, a deeper dryer, and a vent run that kinks behind a water heater before exiting through an exterior wall.",
+        "Lint accumulates at every bend. Humid exhaust that cannot escape fast enough raises the moisture level in the closet, and that moisture migrates into the supply plenum inches away. Over time the interior surfaces of the trunk develop a tacky film that ordinary filter changes cannot reach."
       ],
       "listItems": [],
       "image": "/img/blog/Allergies.webp"
     },
     {
-      "id": "signs",
-      "heading": "Typical signs in a Columbia townhome",
+      "id": "lake_humidity",
+      "heading": "Why the lakes matter more than most residents expect",
       "paragraphs": [
-        "Watch for:"
-      ],
-      "listItems": [
-        "Musty air from a finished lower level after a humid lake week.",
-        "Pollen film on supplies along village paths.",
-        "A dryer that needs two cycles in a Wilde Lake or Hickory Ridge closet."
-      ]
-    },
-    {
-      "id": "rouse",
-      "heading": "Columbia’s villages share paths. They also share damp closets.",
-      "paragraphs": [
-        "Town Center, Wilde Lake, Hickory Ridge, Owen Brown, Oakland Mills, and Kings Contrivance were laid out as a planned Howard County city. A lot of the stock is 1970s–90s townhomes and colonials with tight mechanical closets. Dryer vents turn corners. Returns sit low over finished lower levels.",
-        "The lakes and open space keep lots greener — and damper — than a Beltway brick block. Oak pollen and mowed-path dust ride the same returns. Clarksville is a next-door community we already drive."
+        "Wilde Lake, Lake Kittamaqundi, and the smaller village ponds are shallow and warm through summer. They raise the relative humidity within a few blocks in a way that differs from general Mid-Atlantic mugginess. On a still July evening, dew points near lakeside townhomes can run several degrees higher than homes a mile inland along Route 108.",
+        "That extra moisture is what turns ordinary dust into a sticky coating on supply trunks. A dehumidifier in the lower level helps, but it cannot pull moisture out of sealed ductwork that already has a film inside. Cleaning removes the layer; controlling humidity afterward slows its return."
       ],
       "listItems": []
     },
     {
-      "id": "protect",
-      "heading": "Keeping trunks and dryer runs healthier between cleanings",
+      "id": "signs",
+      "heading": "What Columbia village homeowners usually notice first",
       "paragraphs": [
-        "Columbia jobs are scheduled from our metro offices For service and scheduling, see the [local service page](/locations/columbia).",
-        "Columbia is served from our [Bethesda](/locations/bethesda) office. Nearby [Ellicott City](/locations/ellicott-city) is the next Howard County page. The drive is farther than Rockville.",
-        "Service details live on the [Columbia location page](/locations/columbia). Add [dryer vent cleaning](/dryer-vent-cleaning) for HOA closets."
+        "Planned-community homes tend to look well maintained from the street, so indoor air problems sneak up on owners who assume newer-looking equals cleaner. The signals worth watching:"
       ],
       "listItems": [
-        "Dehumidify lower levels in summer, even in a planned village.",
-        "Change filters when path-side oaks are dumping pollen.",
-        "Clean ducts every 3 to 5 years; clear townhome dryer vents about once a year."
+        "A damp or earthy smell from the lower level each time the AC kicks on after a warm rain.",
+        "A thin yellow-green film on supply registers during April and May that reappears within a week of wiping.",
+        "Dryer loads that take noticeably longer once summer humidity sets in, even though the lint screen is clean."
       ]
+    },
+    {
+      "id": "next_steps",
+      "heading": "Keeping the air path clear between professional cleanings",
+      "paragraphs": [
+        "Columbia village townhomes benefit from a cleaning cycle tied to pollen season rather than a fixed calendar. After a heavy spring, the duct load is higher regardless of how recently the system was serviced. Running a lower-level dehumidifier from May through September and swapping filters every six weeks during peak pollen helps extend the interval.",
+        "When the film is already there, a professional cleaning is the reset. Scheduling details and flat-rate packages for Columbia are on the [Columbia, MD service page](/locations/columbia). Pair duct work with a [dryer vent cleaning](/dryer-vent-cleaning) if the laundry closet stays warm after a cycle finishes."
+      ],
+      "listItems": []
     }
   ],
   "faq": [

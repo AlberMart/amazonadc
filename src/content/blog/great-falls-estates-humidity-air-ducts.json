@@ -2,52 +2,60 @@
   "slug": "great-falls-estates-humidity-air-ducts",
   "title": "Georgetown Pike lots, long dryer runs, and why walk-out basements sweat at the trunks",
   "headline": "Georgetown Pike lots, long dryer runs, and why walk-out basements sweat at the trunks",
-  "description": "Great Falls, VA sits on large wooded lots near the Potomac. why estate-scale ducts hold river humidity and canopy pollen.",
+  "description": "Great Falls homes on large wooded lots run HVAC ductwork 40–60 feet through crawls and walk-out basements. Find out how estate-scale trunk systems, long dryer runs, and Potomac River humidity interact — and why bigger houses have harder-to-reach problems.",
   "heroImage": "/img/blog/heroes/great-falls-estates-humidity-air-ducts.webp",
   "sections": [
     {
-      "id": "long_run",
-      "heading": "Fifty feet of dryer duct is a different job",
+      "id": "scale",
+      "heading": "Why bigger houses hide bigger duct problems",
       "paragraphs": [
-        "A ranch in Springfield might vent eight feet. A Great Falls house often sends laundry exhaust fifty feet through a crawl or a finished lower level. Lint packs long before the cap. That moisture dump sits in the same humid envelope as the sweating trunks.",
-        "If registers look dirty a few days after you wipe them, when you are ready to book, use the [Great Falls, VA location page](/locations/great-falls)."
+        "A 4,000-square-foot house on Georgetown Pike or Walker Road may have 200 linear feet of ductwork when you add up every supply branch, return trunk, and connection. Many of these homes were built in stages — an original wing, a later addition over the garage, a guest suite, a screened porch converted to conditioned space. Each phase brought its own HVAC branch grafted onto the original system. The splices between eras are where dust collects most aggressively because fitting tolerances and sealant styles changed with each decade.",
+        "From the living room everything looks fine. The problem is twenty feet into a trunk run that travels through a walk-out basement soffit or along a crawl-space joist bay that nobody enters. Out of sight, dust and moisture have been layering quietly since the last addition went up."
+      ],
+      "listItems": []
+    },
+    {
+      "id": "river_moisture",
+      "heading": "The Potomac adds humidity you cannot feel on the patio",
+      "paragraphs": [
+        "Great Falls lots sit close enough to the Potomac that the river's evaporative mass influences local dew points even on days when the breeze feels pleasant. A walk-out basement with the door closed on a July afternoon can register 70 percent relative humidity while the thermometer reads only 72 degrees. At that combination the dew point on a 55-degree supply trunk is well above the surface temperature of the metal, so condensation forms continuously while the system runs.",
+        "Homes with well and septic systems — still common on larger Great Falls lots — add another moisture source: ground moisture migrating through the slab or crawl-space floor. This is low-grade, constant, and invisible until you see its effect on the trunk surfaces."
       ],
       "listItems": [],
       "image": "/img/blog/The-Hidden-Cost-of-Dirty-Air-Ducts.webp"
     },
     {
-      "id": "signs",
-      "heading": "Typical signs in a Great Falls house",
+      "id": "dryer_distance",
+      "heading": "Fifty-foot dryer runs change the maintenance math",
       "paragraphs": [
-        "Watch for:"
-      ],
-      "listItems": [
-        "Musty air from a walk-out basement after a river-humid week.",
-        "Pollen film on supplies even with a new filter.",
-        "A dryer that never quite finishes on a long, quiet run to a rear wall."
-      ]
-    },
-    {
-      "id": "estates",
-      "heading": "Great Falls is far from the Beltway. The humidity is not.",
-      "paragraphs": [
-        "Houses sit far back from Georgetown Pike and Walker Road. Mature oaks shade the lot. Many properties still use a well, a septic field, or both. The Potomac is close enough that summer air stays wet even when you cannot see the river. Walk-out basements put the air handler next to damp soil. Cold trunks sweat. Pollen from the canopy sticks.",
-        "Estate-scale systems mix original metal with later wings over a garage or guest suite. Dust collects at those joints. You never see it from the living room. You smell it when the AC starts after a humid week."
+        "In a compact house a dryer vent cleaning is a short job with good access. On a Great Falls property the laundry may sit in an interior room and the vent may travel 40 to 60 feet through a finished lower level, make two or three direction changes, and exit at a cap hidden behind landscaping. Every elbow adds lint accumulation and reduces exhaust velocity. When lint restricts the cap, moisture backs up through the entire run and raises humidity in the wall cavity adjacent to the nearest supply duct.",
+        "Long dryer runs also increase fire risk. The National Fire Protection Association identifies failure to clean as the leading factor in residential dryer fires. At 50 feet of run, the margin for neglect is thinner than in a ranch-style home where the vent is six feet long."
       ],
       "listItems": []
     },
     {
-      "id": "protect",
-      "heading": "Keeping trunks and dryer runs healthier between cleanings",
+      "id": "clues",
+      "heading": "What to look for on a large-lot property",
       "paragraphs": [
-        "Great Falls jobs are scheduled from our metro offices For service and scheduling, see the [local service page](/locations/great-falls).",
-        "Great Falls is served from our [Burke](/locations/burke) office. Nearby [McLean](/locations/mclean) and [Reston](/locations/reston) use the same crew.",
-        "Service details live on the [Great Falls location page](/locations/great-falls). Pair long dryer runs with [dryer vent cleaning](/dryer-vent-cleaning)."
+        "Estate homes present symptoms differently than townhomes or ramblers. Look for these patterns specific to large-lot, multi-wing Great Falls houses:"
       ],
       "listItems": [
-        "Dehumidify walk-out basements in summer, even on a large lot.",
-        "Change filters when the canopy is dumping pollen.",
-        "Clean ducts every 3 to 5 years; clear long dryer runs about once a year."
+        "Different dust levels between the original wing and the addition — this usually indicates a leaking splice where the two systems were joined.",
+        "A musty note in the walk-out level that disappears once you open the slider, then returns within an hour of closing it.",
+        "Towels that are slightly damp after a full dryer cycle, especially during humid months — a sign of restricted exhaust on a long run.",
+        "Supply registers in a guest wing or bonus room that blow noticeably less air than registers near the main air handler."
+      ]
+    },
+    {
+      "id": "approach",
+      "heading": "Access and logistics on large Great Falls properties",
+      "paragraphs": [
+        "Cleaning estate-scale ductwork takes more time and different equipment than a townhome job. Access points may be in finished soffits, behind cabinetry, or in crawl spaces that require specific clearance. For Great Falls service details and flat-rate packages that account for square footage, visit the [Great Falls location page](/locations/great-falls). Long dryer runs should be paired with [dryer vent cleaning](/dryer-vent-cleaning) — the crew is already on-site and the vent access overlaps."
+      ],
+      "listItems": [
+        "Walk the exterior and confirm the dryer cap location before scheduling — some caps are concealed by landscape growth and need trimming for access.",
+        "If the home has multiple HVAC zones, note which zone produces the musty smell so the crew can prioritize that trunk.",
+        "Dehumidify the walk-out level to 45–50 percent RH through the summer — this slows new condensation on trunks between cleanings."
       ]
     }
   ],

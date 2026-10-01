@@ -2,52 +2,61 @@
   "slug": "potomac-tree-canopy-humidity-air-ducts",
   "title": "Cabin John lots, Falls Road colonials, and why long trunks hide pollen you never see",
   "headline": "Cabin John lots, Falls Road colonials, and why long trunks hide pollen you never see",
-  "description": "Potomac, MD sits on large wooded lots along the river corridor. why canopy pollen and humidity load estate-scale ducts.",
+  "description": "Potomac's estate homes have trunk runs long enough to hide years of canopy pollen and river-corridor moisture. Learn why the ductwork in a 4,000-square-foot house collects problems that a walk-through inspection will never reveal — and how the Potomac River's humidity accelerates the process.",
   "heroImage": "/img/blog/heroes/potomac-tree-canopy-humidity-air-ducts.webp",
   "sections": [
     {
-      "id": "canopy",
-      "heading": "Potomac’s lots are the indoor-air problem",
+      "id": "invisible",
+      "heading": "The dust you will never see from the living room",
       "paragraphs": [
-        "Cabin John and Glen Echo toward the river, Potomac Village and Falls Road, then Avenel: colonials, contemporaries, and additions on wooded lots. Shade keeps crawls and basements cool while the river corridor stays wet. Oak, maple, and pine dump pollen onto every patio each spring. Returns pull it in. Long supply runs in big houses hide dust you never see from the living room.",
-        "When a humid week hits, cool trunks sweat and that pollen film turns musty on the first AC cycle. Neighbors sometimes ask about [Great Falls](/locations/great-falls) across the water — those Virginia jobs dispatch from Burke. This page stays on the Maryland side."
+        "In a compact rancher the entire trunk system spans 30 or 40 feet. You can inspect most of it from the basement. In a Potomac colonial or contemporary with a guest wing, a lower-level family room, and an addition over the garage, the trunk system can exceed 150 feet of combined run. Most of that length travels through finished soffits, behind drywall, or under subfloor cavities that are inaccessible without removing building materials.",
+        "Dust and pollen that enter the return settle along these hidden runs over years. The accumulation is invisible from any register. The only evidence is indirect: a musty smell on startup, a subtle reduction in airflow to the farthest rooms, or allergy symptoms that improve immediately when you leave the house. By the time those signs appear, the interior trunk surfaces have built up a dense, moisture-bonded layer that a new filter cannot address."
       ],
       "listItems": []
     },
     {
-      "id": "long_trunks",
-      "heading": "Estate-scale runs collect what short ranches never hold",
+      "id": "river_corridor",
+      "heading": "The Potomac corridor keeps dew points elevated all summer",
       "paragraphs": [
-        "A Bethesda rambler might have twenty feet of trunk. A Potomac house can have wings, a guest suite, and a dryer that travels the length of a lower level. Lint and pollen settle at every joint. You smell it before you see it.",
-        "If registers look dirty a few days after you wipe them, when you are ready to book, use the [Potomac, MD location page](/locations/potomac)."
+        "Potomac Village, Cabin John, Avenel, and the Falls Road corridor sit within the Potomac River's humidity influence zone. During summer, the river's evaporative mass keeps local dew points 3 to 6 degrees above what inland Montgomery County stations record. That difference sounds small but is significant for ductwork. A 55-degree supply trunk in a basement where the dew point is 62 degrees condenses moisture continuously. A trunk in a drier inland basement where the dew point is 57 degrees may condense only intermittently.",
+        "Continuous condensation creates a permanently damp surface inside the trunk. Pollen grains, household fibers, and pet dander that contact that surface bond immediately and do not re-suspend with normal airflow. The layer grows slowly but relentlessly through each humid season."
+      ],
+      "listItems": []
+    },
+    {
+      "id": "multi_era",
+      "heading": "Multi-era additions create mismatched duct networks",
+      "paragraphs": [
+        "Many Potomac homes were built in phases: an original 1960s or 1970s house, a family-room addition in the 1980s, a kitchen expansion and guest suite in the 2000s. Each phase typically added its own HVAC branch or sometimes an entire second air handler. The connections between eras — galvanized steel meeting later flex duct, round trunk meeting rectangular plenum — are where the most aggressive dust accumulation occurs.",
+        "Mismatched fittings create turbulence. Turbulence dislodges particles from the faster-moving stream and deposits them at the joint. The joint itself may not be sealed because the original contractor and the addition contractor used different standards. Unsealed joints draw in unconditioned basement or crawl-space air — adding moisture and ground-level particulate to every blower cycle."
       ],
       "listItems": [],
       "image": "/img/blog/Allergies.webp"
     },
     {
       "id": "signs",
-      "heading": "Typical signs in a Potomac house",
+      "heading": "Indicators specific to large Potomac homes",
       "paragraphs": [
-        "Watch for:"
+        "Because the trunk runs are long and mostly concealed, direct visual inspection from a register opening shows only the first foot or two of the system. Look instead for these indirect signs:"
       ],
       "listItems": [
-        "Musty air from a walk-out or crawl after a humid river week.",
-        "Pollen film on supplies even with a new filter.",
-        "A dryer that never quite finishes on a long lower-level run."
+        "A guest wing or addition bedroom that receives noticeably less airflow than rooms near the main air handler — this suggests a partially obstructed or improperly sized branch connection.",
+        "Musty or stale air in the lower level during the first five minutes of AC operation after an overnight shutdown, followed by normal air once the system reaches steady state.",
+        "Allergy symptoms that worsen at night in bedrooms served by the longest trunk runs — these runs have the most accumulated pollen and the lowest airflow velocity, so they deliver a higher concentration of re-suspended particles.",
+        "A dryer that runs extended cycles despite a clean lint trap — indicating the long lower-level vent run is obstructed somewhere beyond the laundry room wall."
       ]
     },
     {
-      "id": "protect",
-      "heading": "Practical next steps for potomac homes",
+      "id": "approach",
+      "heading": "Cleaning estate-scale systems effectively",
       "paragraphs": [
-        "Potomac jobs are scheduled from our metro offices For service and scheduling, see the [local service page](/locations/potomac).",
-        "Potomac is served from our [Bethesda](/locations/bethesda) office. Nearby [Rockville](/locations/rockville) uses the same Maryland crew.",
-        "Service details live on the [Potomac location page](/locations/potomac). See [air duct cleaning](/air-duct-cleaning) for how we treat long trunk runs."
+        "Long trunk runs in large homes require different equipment than a townhome job. Portable agitation tools that reach 25 feet may not cover a 50-foot run. For Potomac-specific service details that account for house size and multi-zone systems, visit the [Potomac location page](/locations/potomac). Long dryer vent runs through the lower level pair naturally with [dryer vent cleaning](/dryer-vent-cleaning) during the same appointment."
       ],
       "listItems": [
-        "Dehumidify basements and crawls in summer even under heavy shade.",
-        "Change filters when the canopy is dumping pollen.",
-        "Clean ducts every 3 to 5 years; clear long dryer runs about once a year."
+        "Before scheduling, note which zones or rooms show symptoms — this helps the crew prioritize the trunk runs that need the most attention.",
+        "If the home has two air handlers (common in 3,500+ square-foot Potomac houses), both systems should be assessed even if symptoms appear in only one zone.",
+        "Run a dehumidifier in the lower level and any walk-out basement to keep RH below 48 percent from May through September — this is the single most effective step for slowing condensation-driven accumulation between cleanings.",
+        "After cleaning, seal visible gaps at trunk-to-branch joints with mastic; the era mismatches in multi-addition homes mean many original tape seals have failed."
       ]
     }
   ],

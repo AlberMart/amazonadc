@@ -2,53 +2,57 @@
   "slug": "montgomery-village-townhomes-air-ducts",
   "title": "1970s Stedwick closets, Whetstone paths, and why Lakeforest-era vents were never resized",
   "headline": "1970s Stedwick closets, Whetstone paths, and why Lakeforest-era vents were never resized",
-  "description": "Montgomery Village, MD is a 1970s planned community next to Gaithersburg. why lake-side townhome ducts collect pollen and old-closet lint.",
+  "description": "Montgomery Village is a 1970s planned community where original dryer runs and undersized vents are still in service. Here's how aging infrastructure and lakeside humidity affect duct air quality.",
   "heroImage": "/img/blog/heroes/montgomery-village-townhomes-air-ducts.webp",
   "sections": [
     {
-      "id": "planned",
-      "heading": "Montgomery Village is not Gaithersburg. The closets are older.",
+      "id": "vintage_infra",
+      "heading": "Fifty-year-old vent paths still serving modern appliances",
       "paragraphs": [
-        "Stedwick, Whetstone, East Village, the lakes, and the streets that used to orbit Lakeforest went up as a 1970s planned community next to Gaithersburg. The stock is townhomes and colonials from that build-out, plus later infill. Mechanical closets are tight. Dryer vents were run for machines that no longer exist. HOA paths keep lots leafy — and the returns keep pulling that leaf grit.",
-        "Lake-side humidity is the other half. Cool lower-level trunks sweat in Maryland summers. Pollen from the original tree plan sticks."
+        "When Kettler Brothers built Montgomery Village starting in the late 1960s, the standard residential dryer was a compact top-loader that exhausted through a short, straight vent. The furnace was a standing-pilot unit half the size of a modern air handler. Duct runs were calculated for that era's airflow needs. Today those same pathways carry output from high-capacity dryers and variable-speed blowers — equipment that pushes more air, more lint, and more moisture through passages that were never widened.",
+        "The mismatch is invisible from the living room. Inside the walls, lint accumulates at bends that were tight for 1972 and are tighter for 2024. Moisture that should exit the building in seconds lingers in the run, raising the humidity inside the mechanical closet and, by extension, the trunk lines inches away."
       ],
       "listItems": []
     },
     {
-      "id": "1970s_vent",
-      "heading": "A 1970s dryer run is a fire and humidity problem",
+      "id": "lake_micro",
+      "heading": "Lakeside micro-climate and what it means for lower-level trunks",
       "paragraphs": [
-        "The original vent was sized for a smaller machine. Lint packs at elbows you cannot see without pulling the unit. Heat and moisture dump into a closet that already sits over sweating trunks. Registers look clean after you wipe them and gray again when the AC cycles.",
-        "If the lower level smells musty, when you are ready to book, use the [Montgomery Village, MD location page](/locations/montgomery-village)."
+        "Montgomery Village's lakes — South Valley Park, the Whetstone retention ponds, and the greenway channels through Stedwick — are shallow and warm from May through September. On calm evenings the water surface radiates moisture that collects in the lowest points of nearby neighborhoods. A townhome on Stedwick Road with a walkout lower level sits in that micro-climate pocket for hours each night.",
+        "The air handler in the lower level draws that humid air across a cold evaporator coil and pushes it into supply trunks that run through the ceiling above. Those trunks cool further as they extend toward upstairs registers. The temperature drop causes condensation, and any particulate matter already in the airstream — leaf fragments from the pathways, grass dust from the HOA's weekly mowing, general suburban pollen — adheres to the wet metal."
       ],
       "listItems": [],
       "image": "/img/blog/clogged-dryer-vent-lint.webp"
     },
     {
-      "id": "signs",
-      "heading": "Typical signs in a Montgomery Village townhome",
+      "id": "hoa_mowing",
+      "heading": "Weekly HOA maintenance creates a recurring pollen and debris cycle",
       "paragraphs": [
-        "Watch for:"
+        "The homeowner association maintains common areas on a strict schedule. Mowing crews cut paths and medians, blowing clippings and stirring pollen that settled overnight. Leaf-blowing in autumn sends a cloud of organic debris across parking areas and against townhome walls. All of this happens within feet of exterior return intakes and dryer exhaust caps.",
+        "A house with sealed windows and a clean filter handles this reasonably well for a season. Over several years, though, the cumulative load on return ductwork adds up. Fine particles that pass through a standard MERV-8 filter deposit on trunk walls where airflow is slowest — typically at bends and branch take-offs. Those deposits grow each season and eventually restrict airflow enough to change how the system performs."
+      ],
+      "listItems": []
+    },
+    {
+      "id": "signs",
+      "heading": "Common signals in a Montgomery Village townhome",
+      "paragraphs": [
+        "Because the housing stock is uniform, the warning signs tend to appear in a predictable order across the community:"
       ],
       "listItems": [
-        "Musty air from a lake-side lower level in July.",
-        "Leaf-season grit on supplies along Stedwick or Whetstone paths.",
-        "A dryer that needs two cycles in a 1970s closet."
+        "A musty or stale smell from lower-level registers that strengthens during humid weeks and eases in winter.",
+        "A visible film — often greenish during spring, gray in autumn — on supply grilles in upstairs bedrooms.",
+        "Dryer cycles that stretch past the expected time, especially in summer when the vent run is already warm."
       ]
     },
     {
-      "id": "protect",
-      "heading": "Background reading vs booking a visit",
+      "id": "next_steps",
+      "heading": "Resetting a system that has been accumulating for decades",
       "paragraphs": [
-        "Montgomery Village jobs are scheduled from our metro offices For service and scheduling, see the [local service page](/locations/montgomery-village).",
-        "Montgomery Village is served from our [Bethesda](/locations/bethesda) office. Nearby [Gaithersburg](/locations/gaithersburg) and [Germantown](/locations/germantown) use the same crew.",
-        "Service details live on the [Montgomery Village location page](/locations/montgomery-village). Add [dryer vent cleaning](/dryer-vent-cleaning) for original closets."
+        "A single cleaning appointment removes the accumulated film and debris that filters could not prevent. After that reset, the same filters work far more effectively because they are managing only new intake rather than recirculating embedded material. Running a dehumidifier in the lower level from late spring through early fall further slows the condensation cycle.",
+        "Flat-rate packages and scheduling for Montgomery Village are on the [Montgomery Village, MD service page](/locations/montgomery-village). If the dryer closet has a warm or humid feel after a load finishes, add [dryer vent cleaning](/dryer-vent-cleaning) — the original vent routing in most village townhomes has at least one sharp bend that traps lint out of sight."
       ],
-      "listItems": [
-        "Dehumidify lower levels in summer, especially on the lakes.",
-        "Change filters when HOA trees are dumping pollen.",
-        "Clean ducts every 3 to 5 years; clear 1970s dryer vents about once a year."
-      ]
+      "listItems": []
     }
   ],
   "faq": [

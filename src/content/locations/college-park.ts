@@ -15,56 +15,56 @@ export const collegePark: LocationContentSeed = {
   servedBy: 'bethesda',
   sectionLayout: 'processFirst',
   about: {
-    heading: 'Route 1 Rentals, Family Houses, and High-Turnover Dust',
+    heading: 'UMD-Area Rental Turnover, Route 1 Traffic Film, and Systems That Skip Filter Season',
     paragraphs: [
-      'College Park is a Prince George’s County city wrapped around the University of Maryland: Route 1, Old Town, Berwyn, Hollywood, and the streets toward Greenbelt and Hyattsville. A lot of the housing is older single-family rentals and small apartments with high occupant turnover. That means filters that do not get changed, dryers that run constantly, and ducts that have not been opened in a decade. Pollen from the campus canopy and Beltway dust ride the same returns.',
-      'Maryland humidity still wins in summer. Cool trunks in a basement or crawl space sweat. Dust from the last semester sticks. The first AC cycle in August is when the smell shows up. Stacked student units add dryer vents that were never designed for that much lint.',
-      'We serve College Park from [Bethesda](/locations/bethesda). Nearby [Silver Spring](/locations/silver-spring) and [Washington, DC](/locations/washington-dc) are the same metro crew. More on [College Park Rentals Pollen](/blog/college-park-rentals-pollen-air-ducts).',
+      'College Park wraps around the University of Maryland campus along Route 1 / Baltimore Avenue — Old Town College Park to the north, Berwyn and Hollywood to the east, Calvert Hills tucked between campus and the railroad, and the Route 1 apartment corridor stretching south toward [Hyattsville](/locations/hyattsville). The rental market near campus means many homes cycle tenants every August, and each new lease starts with whatever the last occupant left in the ductwork: pet dander, cooking residue, and filters that went unchanged for an entire academic year. Property managers booking between-tenant cleans find trunk conditions that reflect years of deferred maintenance compressed into a short occupancy cycle.',
+      'Owner-occupied homes in Berwyn, Hollywood, and College Park Woods face the same environmental load from a different angle — Route 1 traffic particulate, campus canopy pollen from the university\'s mature oaks and tulip poplars, and Prince George\'s County summer humidity that keeps below-grade trunks sweating from June through September. Stacked student apartment buildings add high-volume dryer use that overwhelms vent capacity, packing lint into risers that serve multiple units.',
+      'We dispatch College Park from [Bethesda](/locations/bethesda). [Hyattsville](/locations/hyattsville) borders to the south, [Silver Spring](/locations/silver-spring) to the west, and the [Washington, DC](/locations/washington-dc) line is a short drive. Read our guide to [College Park rentals, pollen, and air ducts](/blog/college-park-rentals-pollen-air-ducts).',
     ],
     highlights: [
-      'College Park, Old Town, Berwyn, Hollywood, Route 1 apartments',
-      'Flat-rate pricing from the Bethesda office',
-      'Before-and-after photos on every duct job',
-      'Landlords and property managers welcome',
+      'Old Town, Berwyn, Hollywood, Calvert Hills, College Park Woods, and Route 1 apartments',
+      'Flat-rate packages for landlord turnover cleans and owner-occupied homes',
+      'Before-and-after photos suitable for tenant documentation and property files',
+      'Multi-unit and property-manager scheduling available',
     ],
   },
-  offersTitle: 'College Park Rates for Landlords and Homeowners',
+  offersTitle: 'College Park Rates for Homeowners, Landlords, and Property Managers',
   services: {
-    heading: 'College Park Packages for Rentals and Owner-Occupied Homes',
-    intro: 'Turnover cleans and owner-occupied homes use the same published packages.',
+    heading: 'College Park Services for High-Turnover Rentals and Owner-Occupied Homes',
+    intro: 'Between-tenant duct cleans and routine homeowner maintenance use the same published scopes — the difference is scheduling flexibility for move-out windows.',
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
-        text: 'HEPA negative pressure and rotary brushes through supplies, returns, and registers. See [air duct cleaning](/air-duct-cleaning).',
+        text: 'HEPA negative pressure and rotary brush agitation through supply trunks, return plenums, and register boots carrying the accumulated load of tenant cycles, Route 1 traffic film, and campus canopy pollen. College Park rental systems that have gone multiple years without service often hold significantly more debris than owner-occupied homes in other Montgomery County cities. Scope details at [air duct cleaning](/air-duct-cleaning).',
       },
       {
         title: 'Dryer Vent Cleaning',
-        text: 'High-turnover rentals pack dryer vents. We clear the full length to the cap. Book [dryer vent cleaning](/dryer-vent-cleaning).',
+        text: 'Student apartment dryer risers serving multiple units accumulate lint from high-frequency laundry use faster than single-family vents. Rental-house dryers near campus run heavy loads during move-in and move-out weeks. We clear the entire run from appliance to exterior cap and test draw regardless of building type. Book at [dryer vent cleaning](/dryer-vent-cleaning).',
       },
       {
         title: 'Ventilation & HVAC Mold Treatment',
-        text: 'Humid summers and neglected filters let mold colonize coils. Learn more about [mold remediation for air ducts](/mold-remediation-air-ducts).',
+        text: 'Neglected filters in College Park rentals allow biological debris to reach coil surfaces and trunk interiors during PG County\'s humid months. When the scope walk reveals microbial colonization — common after a full academic year of deferred maintenance — we treat the affected ventilation path with EPA-registered antimicrobials. Details at [mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
     ],
   },
   why: {
-    heading: 'Why Student Turnover Leaves Debris in Returns',
+    heading: 'Why Campus-Area Rental Systems Accumulate Debris Faster Than Suburban Homes',
     items: [
       {
-        title: 'Owners and Managers, Not a Fake Campus Shop',
-        text: 'College Park jobs are scheduled from Bethesda.',
+        title: 'Landlord and Property Manager Scheduling',
+        text: 'We coordinate move-out window cleans, multi-property batches, and pre-lease inspections for College Park property managers. Call (301) 809-4544 for block scheduling.',
       },
       {
-        title: 'Flat-Rate Pricing',
-        text: 'Houses and small apartment buildings are quoted before we start. No vent counting.',
+        title: 'Tenant-Cycle Debris Priced the Same as Routine Maintenance',
+        text: 'A rental home with four years of deferred filter changes receives the same flat-rate quote as a well-maintained owner-occupied colonial. No neglect surcharge.',
       },
       {
-        title: 'Turnover We Already See',
-        text: 'The same crew cleans high-occupancy houses after move-out. Packed dryer vents are expected, not extra.',
+        title: 'Documentation Suitable for Property Records',
+        text: 'Before-and-after photos can be filed with lease turnover records or shared with incoming tenants to demonstrate system condition at move-in.',
       },
       {
-        title: '100% Satisfaction Guarantee',
-        text: 'If you are not happy, we come back. Payment is for work you can see.',
+        title: 'Guaranteed Cleaning — Return Visit if Needed',
+        text: 'If the before-and-after photos do not demonstrate clear improvement, we schedule a return at no cost to the homeowner or property manager.',
       },
     ],
   },
@@ -88,7 +88,7 @@ export const collegePark: LocationContentSeed = {
     ],
   },
   process: {
-    heading: 'Prince George’s Timing From the Bethesda Office',
+    heading: 'Prince George\'s Timing From the Bethesda Office',
     intro: 'Same flat-rate flow we use across MD — scoped for College Park housing.',
     steps: [
       {

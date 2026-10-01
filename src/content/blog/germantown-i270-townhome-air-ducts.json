@@ -2,52 +2,61 @@
   "slug": "germantown-i270-townhome-air-ducts",
   "title": "Milestone closets, Town Center grit, and why corridor construction…",
   "headline": "Milestone closets, Town Center grit, and why corridor construction never really leaves the returns",
-  "description": "Germantown, MD sits on I-270 north of Gaithersburg. why townhome ducts collect traffic dust and drywall grit.",
+  "description": "Germantown townhomes pack the air handler, dryer, and water heater into a single mechanical closet that was designed 30 years ago. Learn how that multi-function closet creates cross-contamination between lint, corridor dust, and HVAC airflow — and why the I-270 particulate load makes it worse.",
   "heroImage": "/img/blog/heroes/germantown-i270-townhome-air-ducts.webp",
   "sections": [
     {
-      "id": "spine",
-      "heading": "Germantown is an I-270 town. The ducts know it.",
+      "id": "closet_conflict",
+      "heading": "One closet, three systems, zero separation",
       "paragraphs": [
-        "Milestone, Town Center, Waters Landing, and Clopper Road are mostly 1980s–2000s townhomes and split-levels. Mechanical closets were never meant to hold a decade of corridor grit. I-270 brake dust, construction cranes, and the next pad’s drywall all ride the same returns.",
-        "Filters catch some of it. Registers still gray out a week after you wipe them. Humid Maryland summers add a sticky film on cool supply trunks so the next cycle blows the mix back upstairs."
+        "In a typical Milestone, Waters Landing, or Clopper Road townhome, the mechanical closet holds the furnace/air handler, the water heater, and the dryer — stacked vertically in a space roughly three feet wide. There is no physical barrier between the dryer exhaust connection and the air-handler return. Lint that escapes the dryer's transition duct — and some always does, even with a tight connection — enters the return air stream. The air handler distributes it throughout the house.",
+        "The water heater adds a third element: it generates low-grade combustion byproducts and, in humid conditions, surface condensation on its cold water inlet pipe. That condensation drips onto the closet floor, raising ambient humidity in the space where the air-handler return draws air. Three systems generating heat, moisture, and particulate in a shared three-foot-wide column with a single return pulling from the bottom — that is the geometry that produces Germantown's characteristic closet-smell problem."
       ],
       "listItems": []
     },
     {
-      "id": "closet",
-      "heading": "The townhome closet is doing three jobs badly",
+      "id": "i270_load",
+      "heading": "I-270 traffic dust enters through every ground-level return",
       "paragraphs": [
-        "It holds the air handler, a long dryer run, and a decade of lint. None of those were designed for today’s machines or today’s traffic. A dryer that needs two cycles on a Milestone stack is usually the vent. The dust on the supplies is the ducts.",
-        "If wiping the registers only lasts a few days, when you are ready to book, use the [Germantown, MD location page](/locations/germantown)."
+        "Germantown's residential zones sit along I-270 between Gaithersburg and Clarksburg. The highway carries six to eight lanes of traffic depending on the section, with a high proportion of truck and commercial vehicle volume serving the life-sciences corridor and data centers. This traffic generates a continuous fine particulate load that air-quality monitors classify as PM2.5 and PM10.",
+        "Return grilles in ground-level Germantown rooms — living rooms, family rooms, basements — sit at the elevation where these particles settle most heavily. A MERV-8 filter, which is the standard grade installed in most Germantown-era townhome systems, captures PM10 particles with moderate efficiency but allows most PM2.5 through. Those sub-2.5-micron particles are small enough to remain airborne in the duct system for hours, cycling through the house repeatedly before eventually settling on a trunk wall or exiting through a supply register."
+      ],
+      "listItems": []
+    },
+    {
+      "id": "infill_cycles",
+      "heading": "Construction that never stops adding to the baseline",
+      "paragraphs": [
+        "The Germantown area has been in a more-or-less continuous construction cycle since the 1980s. Milestone and Waters Landing went up first. Then Clopper Road fill-in. Then Town Center commercial. Now new multifamily and mixed-use projects along the I-270 corridor add drywall dust, concrete cutting particulate, and excavation soil to the ambient air. Each project lasts one to three years, but projects overlap so there is rarely a year without active construction somewhere nearby.",
+        "For a homeowner, this means the particulate baseline never resets. A duct cleaning performed five years ago removed the accumulation from the previous five years. But if three new projects have broken ground since then, the reload rate is faster than it was during the previous interval. Germantown homes closer to active construction sites may need cleaning on a three-year cycle rather than the five-year cycle common in stable neighborhoods."
       ],
       "listItems": [],
       "image": "/img/blog/Allergies.webp"
     },
     {
-      "id": "signs",
-      "heading": "Typical signs in a Germantown townhome",
+      "id": "symptoms",
+      "heading": "Distinguishing closet cross-contamination from normal dust",
       "paragraphs": [
-        "Watch for:"
+        "Germantown townhome owners should watch for these closet-specific and corridor-specific indicators:"
       ],
       "listItems": [
-        "Gray film on supplies facing I-270 or a construction pad.",
-        "Musty air from a split-level lower level in July.",
-        "A hot laundry closet and long dry times in Town Center or Waters Landing."
+        "Lint fibers visible on the inside face of supply registers — this means dryer lint is entering the return side of the air handler, not just the dryer vent.",
+        "A warm, slightly sour smell from the mechanical closet even when the dryer has not run that day — indicating moisture buildup from the water heater is affecting the shared space.",
+        "Supply registers closest to I-270 showing a darker, grittier film than registers on the interior side of the house.",
+        "The air handler running louder or longer than it used to — clogged evaporator coils from closet-sourced lint reduce cooling capacity and force the blower to compensate."
       ]
     },
     {
-      "id": "protect",
-      "heading": "Background reading vs booking a visit",
+      "id": "closet_fix",
+      "heading": "Reducing cross-contamination between the three closet systems",
       "paragraphs": [
-        "Germantown jobs are scheduled from our metro offices For service and scheduling, see the [local service page](/locations/germantown).",
-        "Germantown is served from our [Bethesda](/locations/bethesda) office. Nearby [Gaithersburg](/locations/gaithersburg) and [Clarksburg](/locations/clarksburg) use the same crew.",
-        "Service details live on the [Germantown location page](/locations/germantown). Add [dryer vent cleaning](/dryer-vent-cleaning) if the closet stays humid."
+        "The closet geometry cannot be redesigned without a full renovation, but the cross-contamination pathway can be reduced. For Germantown service options and scheduling, visit the [Germantown location page](/locations/germantown). If the dryer chase is part of the issue, [dryer vent cleaning](/dryer-vent-cleaning) should be combined with the duct service — both originate in the same closet."
       ],
       "listItems": [
-        "Change filters more often if you sit on I-270 air.",
-        "Keep lower-level humidity under 50% in summer.",
-        "Clean ducts every 3 to 5 years; clear townhome dryer vents about once a year."
+        "Seal the dryer transition duct connection with foil tape at both ends — this reduces the lint that escapes into the closet ambient air before the air handler pulls it.",
+        "Install a slim closet ventilation grille or fan if the closet does not already have one — trapped heat and moisture from three appliances intensify every dust-adhesion issue.",
+        "Upgrade to a MERV-11 filter to capture more of the corridor PM2.5 that MERV-8 allows through; verify the air handler spec plate supports the higher pressure drop first.",
+        "Schedule annual dryer vent cleaning; in a stacked chase, the lint packing rate is faster than in a through-wall vent, and the fire risk is proportionally higher."
       ]
     }
   ],

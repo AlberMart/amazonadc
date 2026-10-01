@@ -5,7 +5,7 @@ export const bethesda: LocationContentSeed = {
   title: 'Air Duct Cleaning in Bethesda, MD',
   headline: 'Our Maryland office — air duct and dryer vent cleaning from Old Georgetown Road',
   description:
-    'Amazon Air Duct Cleaning’s Bethesda, MD office at 7815 Old Georgetown Rd Ste 201. Flat-rate air duct cleaning, dryer vent cleaning, and HVAC mold treatment for Montgomery County and nearby cities. Call (301) 809-4544.',
+    'Amazon Air Duct Cleaning\u2019s Bethesda, MD office at 7815 Old Georgetown Rd Ste 201. Flat-rate air duct cleaning, dryer vent cleaning, and HVAC mold treatment for Montgomery County and nearby cities. Call (301) 809-4544.',
   intro:
     'This is our Maryland office on Old Georgetown Road. From Suite 201 we schedule homes across Bethesda, Rockville, Silver Spring, Gaithersburg, and farther Maryland cities on our [locations](/locations) list. Book at (301) 809-4544 — the office line is (301) 809-4544.',
   heroImage: '/img/locations/bethesda.webp',
@@ -15,56 +15,56 @@ export const bethesda: LocationContentSeed = {
   servedBy: 'bethesda',
   sectionLayout: 'hub',
   about: {
-    heading: 'Old Georgetown Road Staging for Montgomery County',
+    heading: 'Suite 201 on Old Georgetown Road — Where Every Maryland Route Starts',
     paragraphs: [
-      'Our shop sits at 7815 Old Georgetown Rd, Suite 201, Bethesda, MD 20814. Crews stage here for Montgomery County, parts of Prince George’s County, Howard County runs, and Frederick when scheduled. Friendship Heights and close-in Northwest [Washington, DC](/locations/washington-dc) often share this dispatch when it is the shorter drive.',
-      'Bethesda and nearby streets mix colonials, townhomes, and condo stacks. Tree pollen, humid summers, and renovation dust are the usual reasons returns look gray. We offer the same packages as the home page: air ducts, dryer vents, and mold treatment.',
-      'Need Northern Virginia instead? See our [Burke office](/locations/burke). Same flat-rate packages, Virginia staging address.',
+      'Our office sits at 7815 Old Georgetown Rd, Suite 201, Bethesda, MD 20814 — a staffed scheduling desk with parts inventory and crew staging for Montgomery County, Prince George\'s County, Howard County, and Frederick County appointments. Friendship Heights condos, Chevy Chase colonials, and Bradley Boulevard ramblers near the NIH campus are the closest stops on the weekly rotation, but the same truck continues to cities across our [locations](/locations) list.',
+      'Bethesda housing ranges from mid-century ramblers south of Democracy Boulevard to Woodmont Triangle high-rises with interior laundry stacked on upper floors. Older single-family homes along Burning Tree Road carry original sheet-metal trunk lines that have collected canopy pollen for decades. Downtown condos near Bethesda Row add a different challenge — long dryer risers through shared chases that accumulate lint well before the exterior cap.',
+      'Need Northern Virginia service? Our [Burke office](/locations/burke) stages those appointments. Both locations offer the same published packages — the only difference is which truck arrives.',
     ],
     highlights: [
       'Physical office: 7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814',
-      'Flat-rate air duct and dryer vent packages — quote before work starts',
-      'Before-and-after photos on every duct job',
-      'Montgomery County routes we drive every week',
+      'Residential and condo packages — scope confirmed before equipment leaves the truck',
+      'Before-and-after register photos texted after every cleaning',
+      'Weekly Montgomery County routes from Friendship Heights through Frederick',
     ],
   },
-  offersTitle: 'Published Rates From the Bethesda Office',
+  offersTitle: 'Bethesda Office Published Packages',
   services: {
-    heading: 'Maryland Packages From the Bethesda Suite',
-    intro: 'The same duct, dryer, and mold packages as Virginia — staged from Bethesda.',
+    heading: 'Duct, Dryer, and Mold Services Staged From Suite 201',
+    intro: 'Every Maryland package dispatches from this Bethesda office — same HEPA equipment, same trained crew, same published scope whether the job is in Chevy Chase or [Columbia](/locations/columbia).',
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
-        text: 'HEPA negative pressure and rotary brushes through supplies, returns, and registers, plus sanitizing when inspection finds growth. See [air duct cleaning](/air-duct-cleaning).',
+        text: 'Source-removal cleaning with HEPA-filtered negative pressure through every supply run, return plenum, and floor register in the system. Rotary brushes dislodge decades of settled pollen and basement condensation film so the vacuum extracts it — nothing re-enters your living space. Full scope on our [air duct cleaning](/air-duct-cleaning) page.',
       },
       {
         title: 'Dryer Vent Cleaning',
-        text: 'Full-length clearing to the exterior cap — including long condo and townhome runs common near Bethesda Metro and downtown. Book [dryer vent cleaning](/dryer-vent-cleaning).',
+        text: 'Complete lint and debris removal from the dryer connection through the entire vent run to the exterior termination cap. Downtown condos near the Bethesda Metro and Woodmont Triangle stacked units often route vents through multiple floors — we measure, brush, and verify airflow regardless of length. Schedule at [dryer vent cleaning](/dryer-vent-cleaning).',
       },
       {
         title: 'Ventilation & HVAC Mold Treatment',
-        text: 'When coils or dead-end ducts show growth, we treat the ventilation path with EPA-registered products used as directed. Learn about [mold remediation for air ducts](/mold-remediation-air-ducts).',
+        text: 'When visual inspection or a persistent musty odor points to biological growth on evaporator coils or inside trunk lines, we apply EPA-registered antimicrobial treatment along the entire ventilation path. Bethesda basement air handlers sitting below the spring water table are the most common trigger. Read about [mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
     ],
   },
   why: {
-    heading: 'Why Montgomery County Crews Stage on Old Georgetown Rd',
+    heading: 'Why Bethesda Is the Staging Point for Every Maryland Appointment',
     items: [
       {
-        title: 'Staffed Maryland Office',
-        text: 'Old Georgetown Road is a real suite with real scheduling — ',
+        title: 'Staffed Office With a Scheduling Desk',
+        text: 'Suite 201 handles bookings, parts inventory, and crew dispatch for every Maryland city on our list — not a mail drop.',
       },
       {
-        title: 'Montgomery County Housing We Know',
-        text: 'Rockville townhomes, Silver Spring stacks, and Potomac lots are routine stops, not one-off surprises.',
+        title: 'Bradley Boulevard to NIH — Streets We Drive Daily',
+        text: 'Ramblers south of Democracy Boulevard, condos near the Metro, and colonials along Burning Tree Road are part of the regular weekly rotation.',
       },
       {
-        title: 'Flat-Rate Pricing',
-        text: 'Residential duct and dryer packages are quoted before work begins.',
+        title: 'Scope-Locked Pricing Before Equipment Leaves the Truck',
+        text: 'Residential duct and dryer packages are confirmed during the phone call at (301) 809-4544. The number does not change once the crew arrives.',
       },
       {
-        title: 'Satisfaction Guarantee',
-        text: 'If you are not happy with the result, we come back and make it right.',
+        title: 'Guaranteed Results With Photo Documentation',
+        text: 'Every trunk and register is photographed before and after cleaning. If the result falls short, we return and re-clean at no additional charge.',
       },
     ],
   },
@@ -88,7 +88,7 @@ export const bethesda: LocationContentSeed = {
           '[Potomac](/locations/potomac), [Olney](/locations/olney), [Frederick](/locations/frederick)',
       },
       {
-        title: 'Prince George’s & Howard',
+        title: 'Prince George\'s & Howard',
         places:
           '[College Park](/locations/college-park), [Hyattsville](/locations/hyattsville), [Columbia](/locations/columbia), [Ellicott City](/locations/ellicott-city)',
       },

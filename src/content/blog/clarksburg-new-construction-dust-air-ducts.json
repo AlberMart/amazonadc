@@ -2,53 +2,57 @@
   "slug": "clarksburg-new-construction-dust-air-ducts",
   "title": "Cabin Branch pads, Village HOAs, and why first-owner supplies still blow gypsum",
   "headline": "Cabin Branch pads, Village HOAs, and why first-owner supplies still blow gypsum",
-  "description": "Clarksburg, MD is Montgomery County’s I-270 north boom. why new-construction ducts hold drywall dust.",
+  "description": "Clarksburg's rapid development means many homes were occupied while neighboring pads were still active. Learn why first-owner ducts carry construction residue — and when to clean it out.",
   "heroImage": "/img/blog/heroes/clarksburg-new-construction-dust-air-ducts.webp",
   "sections": [
     {
-      "id": "first_owner",
-      "heading": "A new house is not a clean HVAC system",
+      "id": "builder_hvac",
+      "heading": "Why the builder runs your HVAC before you move in",
       "paragraphs": [
-        "Builders run the air handler to dry mud and keep crews comfortable. That air is full of fines. They settle in the trunks. You move in, change a filter, and still get dusty registers. The dust was already downstream of the filter. HOA townhomes add long dryer vents and tight closets on top of that construction load.",
-        "If you moved in during a nearby build-out and the air still feels like a job site, when you are ready to book, use the [Clarksburg, MD location page](/locations/clarksburg)."
+        "Every new Clarksburg home — whether it is a Cabin Branch single-family or a Clarksburg Village row unit — goes through a construction phase where the HVAC system operates for weeks or months before the first owner receives the keys. Builders activate the system to control humidity while drywall compound cures, paint off-gasses, and flooring adhesive sets. During that period the air circulating through the trunks carries gypsum dust, sawdust, insulation fibers, and fine concrete particles.",
+        "Some of that material lands on the filter. Much of it deposits on the interior walls of supply and return trunks, especially at branches, bends, and the seams where duct sections connect. By the time you change the builder's filter and install your own, the debris is already downstream of where any filter can reach."
+      ],
+      "listItems": []
+    },
+    {
+      "id": "staggered_build",
+      "heading": "Staggered development keeps the dust coming after move-in",
+      "paragraphs": [
+        "Clarksburg's growth did not happen in a single phase. Cabin Branch, Town Center, Skylark, and the areas extending toward Damascus were platted and built over more than a decade, and construction continues on remaining parcels. That staggered schedule means an occupied home may sit a few hundred feet from an active pad where earthmoving, framing, and drywall finishing generate airborne fines daily.",
+        "Wind carries those particles across property lines. Returns on the downwind side of a house pull them inside. Over a single build season the duct system can accumulate a visible layer of pale dust — even in a home that was professionally cleaned at settlement. Owners who changed filters regularly are often surprised to find the interior of the trunk still coated when it is finally inspected."
       ],
       "listItems": [],
       "image": "/img/blog/Allergies.webp"
     },
     {
-      "id": "signs",
-      "heading": "Typical signs in a Clarksburg house",
+      "id": "gypsum_vs_organic",
+      "heading": "How construction dust behaves differently from pollen or pet hair",
       "paragraphs": [
-        "Watch for:"
-      ],
-      "listItems": [
-        "White or gray film on supplies in a house less than ten years old.",
-        "Dust returning onto new paint a week after you wipe the registers.",
-        "Long dry times in a Cabin Branch or Village townhome closet."
-      ]
-    },
-    {
-      "id": "boom",
-      "heading": "Clarksburg looks finished from the street. The ducts often are not.",
-      "paragraphs": [
-        "Clarksburg Village, Cabin Branch, Town Center, Skylark, then lanes toward Damascus: a lot of the housing is first- or second-owner from the last two decades. Builders tape registers. Dust still gets in. Fine gypsum rides every return the first summers you live there. Damascus is a community we already drive.",
-        "I-270 traffic grit does not wait for the last pad to finish. Filters catch some of it. Supplies still blow a gray film onto new paint. Humid seasons then glue that powder to cool trunks."
+        "Organic debris — pollen, skin cells, pet dander — is relatively soft and breaks down over time. Gypsum dust is calcium sulfate: a mineral that does not decompose. It bonds to metal surfaces when moisture is present, forming a hard film that standard vacuuming does not dislodge. In a new home where the duct system was loaded during the drywall phase, that film can persist for years.",
+        "The mineral layer also reduces the effective diameter of the duct slightly. In a townhome with already-tight trunk sizing, that reduction matters. Airflow decreases, the blower works harder, and energy consumption rises — often by an amount too small to trigger an immediate investigation but large enough to appear in a year-over-year utility comparison."
       ],
       "listItems": []
     },
     {
-      "id": "protect",
-      "heading": "Keeping trunks and dryer runs healthier between cleanings",
+      "id": "signs",
+      "heading": "What Clarksburg first owners typically notice",
       "paragraphs": [
-        "Clarksburg jobs are scheduled from our metro offices For service and scheduling, see the [local service page](/locations/clarksburg).",
-        "Clarksburg is served from our [Bethesda](/locations/bethesda) office. Nearby [Germantown](/locations/germantown) and [Frederick](/locations/frederick) use the same Maryland crew.",
-        "Service details live on the [Clarksburg location page](/locations/clarksburg). See [air duct cleaning](/air-duct-cleaning) for what a post-drywall first clean actually removes."
+        "Construction-phase duct contamination announces itself through visual cues more than odor, which distinguishes it from moisture-based problems in older communities:"
       ],
       "listItems": [
-        "Ask for a duct cleaning after you close, not five years later.",
-        "Change filters more often while neighboring pads are still going up.",
-        "Clear HOA dryer vents about once a year."
+        "A fine white or light-gray powder on dark furniture near supply registers, returning within days of cleaning.",
+        "A brand-new filter that discolors faster than the manufacturer's recommended replacement interval.",
+        "Faint grittiness on kitchen counters near a supply vent, even with windows closed."
       ]
+    },
+    {
+      "id": "next_steps",
+      "heading": "The first-owner cleaning that builders don't include",
+      "paragraphs": [
+        "A post-occupancy duct cleaning removes the construction residue that the builder's HVAC operation deposited. Once cleared, the system transitions to a normal maintenance cycle where filters manage routine suburban dust and pollen. Skipping this initial cleaning means the mineral film remains as a base layer that traps future debris more aggressively.",
+        "Scheduling details and flat-rate packages for Clarksburg are on the [Clarksburg, MD service page](/locations/clarksburg). If the home has a stacked dryer closet — standard in Cabin Branch and Village townhomes — add [dryer vent cleaning](/dryer-vent-cleaning) to the same visit. Construction debris often lands inside the dryer exhaust run as well."
+      ],
+      "listItems": []
     }
   ],
   "faq": [

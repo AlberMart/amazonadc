@@ -2,52 +2,61 @@
   "slug": "reston-town-center-dust-air-ducts",
   "title": "Why Toll Road Dust and Humid Summers Film Over Registers in Planned Communities",
   "headline": "How corridor traffic particles and stacked laundry risers interact with village-style HVAC layouts",
-  "description": "how Dulles-corridor dust and summer humidity interact with townhome and high-rise ductwork — and when homeowners usually book a cleaning.",
+  "description": "Reston's planned-community density puts dozens of HVAC systems in the same Dulles-corridor dust envelope. Learn why village layouts, stacked laundry risers, and shared parking garages create indoor-air patterns unique to this part of Fairfax County.",
   "heroImage": "/img/blog/heroes/reston-town-center-dust-air-ducts.webp",
   "sections": [
     {
-      "id": "villages",
-      "heading": "Reston is a planned city. The dust is not planned.",
+      "id": "shared_envelope",
+      "heading": "When fifty townhomes share the same wind pattern",
       "paragraphs": [
-        "Reston Town Center stacks condos over shops. Lake Anne still has the original plaza and lower-rise metal trunks. South Lakes and North Point mix townhomes under a heavy canopy. Every one of those buildings sits in Dulles Toll Road air. Patio furniture along Reston Parkway is the outdoor version of what your returns already hold.",
-        "The Silver Line stop at Wiehle-Reston East added rooftop packs and stacked laundry. Older Lake Anne trunks sit closer to denser modern traffic around the plaza. Cool supply air plus a humid Reston July is why a wiped register looks dirty again by Friday."
+        "Planned communities like Reston cluster buildings around courts and paths. The layout looks open. Aerodynamically it funnels Dulles-corridor air between buildings, concentrating brake-dust particulate at the ground level where most HVAC returns sit. A detached colonial on a half-acre lot pulls air from all sides; a Lake Anne courtyard unit pulls primarily from the gap between its building and the next one. That gap acts as a channel for the Toll Road film that coats every car on Reston Parkway.",
+        "South Lakes, North Point, and Hunters Woods villages each have a slightly different building orientation, but all of them position returns within a few feet of shared walkways and parking courts. During rush hour those courts carry a measurable spike in fine particulate. By the time you walk inside and forget about it, the return grille has already logged the commute."
       ],
       "listItems": []
     },
     {
-      "id": "highrise",
-      "heading": "High-rise laundry is a lint chimney",
+      "id": "stacked_lint",
+      "heading": "Stacked laundry risers work like a slow chimney",
       "paragraphs": [
-        "Town Center and Wiehle units send dryer exhaust up a long riser. Lint packs at elbows and roof caps. The closet stays hot; the machine needs two cycles. That moisture does not stay in the laundry — it sits next to the same air that already carries Toll Road film.",
-        "If supplies gray out a few days after you wipe them, when you are ready to book, use the [Reston, VA location page](/locations/reston)."
+        "In a single-family house a dryer vent runs six to twelve feet through a wall. In a Reston Town Center condo or a Wiehle-area stacked townhome the exhaust riser can climb three stories through an interior chase. Lint accumulates at every elbow and change of direction. The riser also traps warm, moist air. On a July evening when outdoor humidity is already above 70 percent, that moisture migrates through the chase wall into the same cavity that holds the nearest supply trunk.",
+        "The result is a two-part problem that neither a new filter nor a dehumidifier fully addresses: particulate from the corridor loads the supply side while lint-driven moisture feeds the conditions that make dust stick. Homeowners notice it as a film that returns within days of wiping registers — especially on the side of the unit closest to the parking court."
       ],
       "listItems": [],
       "image": "/img/blog/The-Hidden-Cost-of-Dirty-Air-Ducts.webp"
     },
     {
-      "id": "signs",
-      "heading": "Typical signs in a Reston home",
+      "id": "garage_intake",
+      "heading": "Below-grade parking garages and ground-floor returns",
       "paragraphs": [
-        "Watch for:"
+        "Town Center condos above retail typically draw return air from the lowest living level. That level often shares a slab or an air gap with a parking garage. Garage exhaust contains carbon monoxide, tire particulate, and whatever the garage ventilation system recirculates. Sealed floors reduce the transfer, but door seals degrade and concrete is porous. Over a few years the return side of the air handler accumulates a fine, oily residue that standard residential filters rate poorly against.",
+        "If you notice an oil-like sheen on the supply grille closest to the floor, the problem is usually below your unit, not above it. A standard surface wipe removes the visible film, but the inside of the trunk holds the same residue from every week you did not wipe."
+      ],
+      "listItems": []
+    },
+    {
+      "id": "when_to_act",
+      "heading": "Practical indicators that the ducts need attention",
+      "paragraphs": [
+        "Not every dusty register means you need professional cleaning. These patterns, specific to Reston's corridor-and-village layout, tend to separate normal dust from a duct-level issue:"
       ],
       "listItems": [
-        "Gray film on supplies facing Reston Parkway or the Toll Road.",
-        "Musty air from a Lake Anne or South Lakes unit when the AC starts after rain.",
-        "A stacked laundry closet that stays hot and a dryer that never quite finishes."
+        "Registers on the parking-court side gray out noticeably faster than registers on the path side of the same unit.",
+        "The laundry closet stays warm between loads and the dryer consistently needs a second cycle to finish towels.",
+        "A faint musty note appears on the first AC cycle after a rainy stretch, then fades — repeating weekly through July and August.",
+        "Filter replacement every 30 days still leaves visible film on supplies near the floor."
       ]
     },
     {
-      "id": "protect",
-      "heading": "Practical next steps for reston homes",
+      "id": "next_steps",
+      "heading": "Reducing the load between professional cleanings",
       "paragraphs": [
-        "Reston jobs are scheduled from our metro offices For service and scheduling, see the [local service page](/locations/reston).",
-        "Reston is served from our [Burke](/locations/burke) office. Nearby [Herndon](/locations/herndon) and [Vienna](/locations/vienna) use the same crew.",
-        "Service details live on the [Reston location page](/locations/reston). Pair ducts with [dryer vent cleaning](/dryer-vent-cleaning) if the riser is the problem, or read how [air duct cleaning](/air-duct-cleaning) works on stacked units."
+        "Village-density living means you cannot control the air outside. You can control how much of it stays inside the trunks. For Reston-specific service options and scheduling, visit the [Reston location page](/locations/reston). Pair duct work with [dryer vent cleaning](/dryer-vent-cleaning) if the riser serves stacked laundry — the two jobs share access points and are faster together."
       ],
       "listItems": [
-        "Change filters more often if you face the Toll Road.",
-        "Keep indoor humidity under 50% in summer, especially in lower-level units.",
-        "Clean ducts every 3 to 5 years; clear high-rise dryer vents about once a year."
+        "Run a standalone dehumidifier in lower-level units from June through September to keep indoor RH below 50 percent.",
+        "Swap to a MERV-11 or MERV-13 filter if your air handler supports it — check the spec plate before upgrading, because over-restricting airflow can cause coil icing.",
+        "Wipe return grilles monthly during pollen season; each wipe removes thousands of particles before they enter the trunk.",
+        "Schedule dryer-riser cleaning annually if the riser serves more than one story."
       ]
     }
   ],

@@ -10,62 +10,62 @@ export const herndon: LocationContentSeed = {
   intro:
     'Amazon Air Duct Cleaning serves Herndon from our Burke office. Historic downtown cottages, Worldgate townhomes, and houses along the data-center corridor all take on construction dust and Dulles traffic film. Call (571) 460-0001.',
   heroImage: '/img/locations/herndon.webp',
-  heroAlt: 'Air duct cleaning in Herndon, VA — Amazon Air Duct Cleaning',
+  heroAlt: 'Air duct cleaning in Herndon, VA \u2014 Amazon Air Duct Cleaning',
   city: 'Herndon',
   state: 'VA',
   servedBy: 'burke',
   sectionLayout: 'whyFirst',
   about: {
-    heading: 'Clock Tower Cottages Meet Dulles-Corridor Construction Dust',
+    heading: 'Elden Street Cottages, Worldgate Stacks, and Data-Center Corridor Grit',
     paragraphs: [
-      'The Town of Herndon still has a walkable core: Elden Street, the municipal clock tower, and older cottages on small lots. A few blocks out, Worldgate and Herndon Parkway shift to townhomes and stacked laundry closets. West toward Dulles, data-center and office construction keeps a fine gypsum and soil film in the air. Returns pull that mix in along with oak pollen from the remaining canopy.',
-      'Downtown brick houses often have original trunks plus later additions. Worldgate units have long dryer runs to a shared wall or roof cap. Neither layout likes a summer of humid air sitting on cool metal. A dryer that needs two cycles on a Worldgate stack is usually lint, not a dying machine.',
-      'We serve Herndon from [Burke](/locations/burke). Nearby [Reston](/locations/reston), [Chantilly](/locations/chantilly), and [Loudoun](/locations/loudoun) use the same crew. For background reading, see [construction dust near active corridors](/blog/herndon-construction-dust-air-ducts).',
+      'Herndon keeps a walkable downtown core \u2014 Elden Street, the municipal clock tower, and small-lot cottages that date to the early twentieth century. Many of those older homes gained forced-air systems after the walls were built, so trunks thread through tight joist bays and collect dust at every elbow. A few blocks west, Worldgate and Herndon Parkway shift to 1990s\u20132000s townhomes with stacked laundry closets and long dryer chases that terminate at a shared exterior wall or roof cap.',
+      'The Dulles corridor west of town adds a layer of fine construction grit from data-center and commercial development that has been ongoing for over a decade. That particulate mixes with oak pollen from the remaining canopy along Fox Mill and settles inside returns that also pull in humid summer air. A Worldgate dryer that takes two cycles to finish a load is almost always a lint-packed chase, not a failing appliance.',
+      'Our Burke crew serves Herndon alongside [Reston](/locations/reston), [Chantilly](/locations/chantilly), and [Loudoun](/locations/loudoun). Read about [construction dust near active Herndon corridors](/blog/herndon-construction-dust-air-ducts), or schedule service directly.',
     ],
     highlights: [
       'Downtown Herndon, Worldgate, Herndon Parkway, and Dulles-edge streets',
-      'Flat-rate pricing — no vent counting',
-      'Before-and-after photos on every duct job',
-      'Same Burke team that already works Reston and Loudoun',
+      'Flat-rate pricing \u2014 quote confirmed before the job starts',
+      'Before-and-after photo set included with every cleaning',
+      'Same Burke crew that runs Reston and Loudoun routes',
     ],
   },
-  offersTitle: 'Herndon Rates — Same Packages as Reston Dispatch',
+  offersTitle: 'Herndon Duct & Dryer Vent Packages',
   services: {
-    heading: 'Herndon Cleanings for Downtown and Worldgate',
-    intro: 'Cottages and stacked Worldgate units share published flat rates.',
+    heading: 'What We Clean in Herndon Cottages and Worldgate Units',
+    intro: 'Downtown trunks and stacked townhome chases get the same published flat-rate scope.',
     items: [
       {
-        title: 'Air Duct Cleaning & Sanitization',
-        text: 'We clean supplies, returns, and registers with negative-pressure HEPA and rotary brushes, then sanitize when inspection shows growth. Photos are part of the job. See [air duct cleaning](/air-duct-cleaning).',
+        title: 'Air Duct Cleaning for Herndon Homes',
+        text: 'Negative-pressure HEPA equipment seals to the trunk while rotary brushes work through every supply line, return, and register. Sanitizing is applied when the on-site inspection identifies biological growth. The photo set documenting the before and after condition is included. Schedule [air duct cleaning](/air-duct-cleaning).',
       },
       {
-        title: 'Dryer Vent Cleaning',
-        text: 'Worldgate stacked laundry and second-floor Herndon runs pack with lint. We clear the full length to the cap. Book [dryer vent cleaning](/dryer-vent-cleaning).',
+        title: 'Dryer Vent Service',
+        text: 'Worldgate stacked-laundry and second-floor Herndon Parkway runs pack with lint faster than single-story layouts. We rod-brush and vacuum the full length to the exterior cap so the dryer exhausts properly and fire risk is reduced. Book [dryer vent cleaning](/dryer-vent-cleaning).',
       },
       {
-        title: 'Ventilation & HVAC Mold Treatment',
-        text: 'Humid Dulles summers and cool basement handlers let mold colonize coils. Learn more about [mold remediation for air ducts](/mold-remediation-air-ducts).',
+        title: 'Mold Treatment in Herndon Ductwork',
+        text: 'Dulles-corridor humidity and cool basement air handlers create conditions for mold on evaporator coils and inside dead-end branches. After mechanical cleaning, we apply EPA-registered antimicrobial product and verify airflow through the treated sections. Details at [mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
     ],
   },
   why: {
-    heading: 'Why Herndon Returns Hold Gypsum and Traffic Film',
+    heading: 'Why Herndon Returns Collect Corridor Grit Year-Round',
     items: [
       {
-        title: 'Clock Tower to Dulles, One Crew',
-        text: 'Downtown cottages and Worldgate loading zones are on the same Herndon route. You are not waiting on a Maryland start time.',
+        title: 'Downtown to Dulles on a Single Route',
+        text: 'Clock-tower cottages and Worldgate loading zones are stops on the same Herndon run from Burke. You are not waiting on a crew driving in from another county.',
       },
       {
-        title: 'Construction-Dust Jobs We Already Do',
-        text: 'Homes near active construction often collect more fine dust in returns — we inspect before we clean. We inspect, then clean what is actually in the trunks.',
+        title: 'Construction-Zone Experience',
+        text: 'Homes near active data-center and commercial development collect a finer grade of dust in returns. We inspect before quoting and clean what the trunks actually hold \u2014 not a generic scope.',
       },
       {
-        title: 'Flat-Rate Pricing',
-        text: 'No per-vent games. Residential duct and dryer packages are quoted before equipment comes off the truck.',
+        title: 'Price Confirmed Before Equipment Comes Off the Truck',
+        text: 'Residential duct and dryer packages are flat-rate. The number on your confirmation is the number on the invoice.',
       },
       {
-        title: '100% Satisfaction Guarantee',
-        text: 'If you are not happy with the result, we come back and make it right.',
+        title: 'Satisfaction Guarantee',
+        text: 'If the cleaning does not meet your expectations, we come back and redo the job at no extra cost.',
       },
     ],
   },
@@ -84,7 +84,7 @@ export const herndon: LocationContentSeed = {
       {
         title: 'West toward Dulles',
         places:
-          'Runnymede, Fox Mill edge, streets toward [Loudoun](/locations/loudoun) — ask if your HOA is not listed',
+          'Runnymede, Fox Mill edge, streets toward [Loudoun](/locations/loudoun) \u2014 ask if your HOA is not listed',
       },
     ],
   },
@@ -94,7 +94,7 @@ export const herndon: LocationContentSeed = {
     steps: [
       {
         title: 'Book Herndon From the Burke Line',
-        text: 'Call (571) 460-0001 or use the form — we confirm Herndon availability the next business day.',
+        text: 'Call (571) 460-0001 or use the form \u2014 we confirm Herndon availability the next business day.',
       },
       {
         title: 'Protect Floors in Your Herndon Home',
@@ -102,7 +102,7 @@ export const herndon: LocationContentSeed = {
       },
       {
         title: 'Source-Removal Cleaning for Herndon',
-        text: 'NADCA-style agitation under HEPA negative pressure — dust leaves in the vacuum, not your Herndon rooms.',
+        text: 'NADCA-style agitation under HEPA negative pressure \u2014 dust leaves in the vacuum, not your Herndon rooms.',
       },
       {
         title: 'Optional Sanitizing in Herndon',
@@ -114,7 +114,7 @@ export const herndon: LocationContentSeed = {
       },
     ],
   },
-  faqIntro: 'Herndon questions — call (571) 460-0001 (dispatch: Burke).',
+  faqIntro: 'Herndon questions \u2014 call (571) 460-0001 (dispatch: Burke).',
   faq: [
     {
       q: 'Who handles air duct cleaning appointments in Herndon?',
@@ -126,15 +126,15 @@ export const herndon: LocationContentSeed = {
     },
     {
       q: 'How long does air duct cleaning take in Herndon?',
-      a: 'Herndon duct cleaning usually takes 2–3 hours for one system. Multi-system or heavily packed dryer vents are scoped before we start so the quote stays flat-rate.',
+      a: 'Herndon duct cleaning usually takes 2\u20133 hours for one system. Multi-system or heavily packed dryer vents are scoped before we start so the quote stays flat-rate.',
     },
     {
       q: 'Are Herndon air duct and dryer vent prices flat-rate?',
-      a: 'Yes. Herndon residential packages are flat-rate from the Burke office — the number we confirm before work starts is what you pay. No per-vent counting.',
+      a: 'Yes. Herndon residential packages are flat-rate from the Burke office \u2014 the number we confirm before work starts is what you pay. No per-vent counting.',
     },
     {
       q: 'Can duct and dryer vent cleaning be done the same day in Herndon?',
-      a: 'In Herndon, yes — when you book the combined package or both services up front. Call (571) 460-0001 and we stage the Burke crew for one visit to your street.',
+      a: 'In Herndon, yes \u2014 when you book the combined package or both services up front. Call (571) 460-0001 and we stage the Burke crew for one visit to your street.',
     },
   ],
 }

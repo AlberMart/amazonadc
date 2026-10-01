@@ -2,53 +2,57 @@
   "slug": "college-park-rentals-pollen-air-ducts",
   "title": "High occupancy, campus trees, and why Route 1 houses stay dusty between tenants",
   "headline": "High occupancy, campus trees, and why Route 1 houses stay dusty between tenants",
-  "description": "College Park, MD houses and apartments turn over fast around UMD. why neglected filters, packed dryer vents, and pollen load the ducts, and when to clean them.",
+  "description": "College Park rentals near UMD turn over fast with filters rarely changed. Learn how high occupancy and campus pollen load ductwork — and why turnover cleaning matters.",
   "heroImage": "/img/blog/heroes/college-park-rentals-pollen-air-ducts.webp",
   "sections": [
     {
-      "id": "turnover",
-      "heading": "College Park indoor air is a occupancy problem",
+      "id": "turnover_cycle",
+      "heading": "Why high-turnover rental ductwork deteriorates faster",
       "paragraphs": [
-        "Houses off Route 1 and apartments near campus often hold more people than a suburban colonial. Filters go months without a change. Dryers run every day. Ducts that were never cleaned between leases keep recirculating whatever the last group left behind — dust, pollen from the campus canopy, cooking residue, pet dander.",
-        "Maryland humidity still sits in cool trunks. The first hot week of the semester is when the smell shows up."
+        "A typical owner-occupied suburban home has one family, a predictable schedule, and a filter change reminder on the fridge. A College Park rental off Route 1 or Knox Road may have four to six occupants rotating annually, each assuming the previous tenant handled maintenance. Filters go unchanged for entire lease terms. Dryer lint screens get cleaned unevenly. The HVAC system runs more hours per day than a comparable home because more people are cooking, showering, and doing laundry.",
+        "That heavier use accelerates debris accumulation inside the ductwork. More airflow hours mean more opportunities for pollen, cooking grease vapor, pet dander, and fabric fibers to enter the return system and deposit on trunk walls. By the time a property manager does a make-ready clean between tenants, the surfaces look acceptable — but the inside of the ducts holds everything the last twelve months deposited."
       ],
       "listItems": []
     },
     {
-      "id": "dryer",
-      "heading": "The dryer vent is the fire and humidity problem",
+      "id": "campus_canopy",
+      "heading": "University of Maryland's canopy is a pollen factory next door",
       "paragraphs": [
-        "Student and rental units pack lint faster than owner-occupied houses. A clogged cap dumps heat and moisture back into the laundry. That moisture feeds whatever is already in the ducts.",
-        "Owners and managers should start with [air duct cleaning in College Park, MD](/locations/college-park) at turnover, not after the next complaint."
+        "The UMD campus contains thousands of mature trees — oaks, pines, sweetgums, and ornamental species planted over more than a century. During spring the pollen output drifts across Route 1 and into the residential neighborhoods of College Park, Berwyn Heights, and Adelphi. Homes within a few blocks of campus receive a measurably higher pollen load than homes farther east toward Greenbelt.",
+        "Rental properties are especially vulnerable because they tend to have older single-pane windows, poorly sealed door frames, and return grilles positioned near ground level where pollen concentrations are highest. The result is a yellow-green film inside supply trunks that builds each April and May, layer upon layer, year after year, until someone actually opens the duct and looks."
       ],
       "listItems": [],
       "image": "/img/blog/Allergies.webp"
     },
     {
-      "id": "signs",
-      "heading": "Typical signs in a College Park rental",
+      "id": "dryer_fire",
+      "heading": "Rental dryer vents and the fire risk nobody mentions at lease signing",
       "paragraphs": [
-        "Watch for:"
+        "College Park rental homes frequently have laundry in a basement or a first-floor closet with a vent that exits through a cinderblock foundation wall. Lint accumulates at every connection point and at the wall penetration. In a high-occupancy home where the dryer runs multiple loads daily, the vent can pack to the point of near-total blockage within a single lease cycle.",
+        "A blocked dryer vent does two things: it forces the dryer to run hotter and longer, creating a fire hazard, and it dumps moisture and lint back into the laundry area, where the HVAC return grille pulls both into the duct system. Property managers who include dryer vent cleaning in their turnover checklist address both the fire risk and the air quality chain in a single step."
+      ],
+      "listItems": []
+    },
+    {
+      "id": "signs",
+      "heading": "What tenants and property managers should watch for",
+      "paragraphs": [
+        "The signals differ slightly depending on whether you are a tenant noticing a problem during occupancy or a manager evaluating between leases:"
       ],
       "listItems": [
-        "Dust returning days after a make-ready clean.",
-        "Musty air when the AC starts in August.",
-        "A dryer that needs two cycles and a hot closet."
+        "Tenant signal: persistent dust on furniture and electronics that returns within a day of cleaning, regardless of how often the floors are swept or vacuumed.",
+        "Manager signal: a musty or stale smell when entering the property after it has been closed for a week between tenants, despite having cleaned all visible surfaces.",
+        "Shared signal: dryer loads taking forty-five minutes or more when they should finish in thirty, especially in summer when ambient humidity is already high."
       ]
     },
     {
-      "id": "protect",
-      "heading": "Background reading vs booking a visit",
+      "id": "next_steps",
+      "heading": "Building duct cleaning into the turnover schedule",
       "paragraphs": [
-        "College Park jobs are scheduled from our metro offices For service and scheduling, see the [local service page](/locations/college-park).",
-        "College Park is served from our [Bethesda](/locations/bethesda) office. [Silver Spring](/locations/silver-spring) and [Washington, DC](/locations/washington-dc) are nearby pages.",
-        "Service details live on the [College Park location page](/locations/college-park). Pair [dryer vent cleaning](/dryer-vent-cleaning) with ducts at each long-term move-out."
+        "The most cost-effective approach for College Park rental properties is to include duct and dryer vent cleaning as a standard turnover expense rather than waiting for a complaint. A single appointment between tenants resets the system, reduces the odor and dust that trigger early maintenance calls, and documents the condition of the ductwork with before-and-after photos useful for lease-end disputes.",
+        "Scheduling and flat-rate packages for College Park properties are on the [College Park, MD service page](/locations/college-park). Pair every duct appointment with [dryer vent cleaning](/dryer-vent-cleaning) — the fire-risk reduction alone justifies the addition, and the air quality benefit compounds it."
       ],
-      "listItems": [
-        "Clean ducts at turnover on high-occupancy houses, not only every five years.",
-        "Clear dryer vents about once a year or at move-out.",
-        "Change filters on a schedule the tenants will actually follow — or the manager will."
-      ]
+      "listItems": []
     }
   ],
   "faq": [

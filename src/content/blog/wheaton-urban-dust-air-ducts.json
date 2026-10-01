@@ -2,52 +2,57 @@
   "slug": "wheaton-urban-dust-air-ducts",
   "title": "Veirs Mill grit, Georgia Avenue pollen, and why older plaster joints leak",
   "headline": "Veirs Mill grit, Georgia Avenue pollen, and why older plaster joints leak",
-  "description": "Wheaton, MD mixes 1940s–60s brick with Metro-corridor dust. why older ducts collect urban grit and pollen.",
+  "description": "Wheaton's 1940s–60s brick houses carry ductwork cut through plaster and joist bays that were never designed for forced air. Learn how leaking joints, bus-corridor particulate, and Metro-era construction debris combine in close-in Montgomery County — and why the problem is urban, not suburban.",
   "heroImage": "/img/blog/heroes/wheaton-urban-dust-air-ducts.webp",
   "sections": [
     {
-      "id": "plaster",
-      "heading": "Plaster-era trunks were never a sealed system",
+      "id": "plaster_joints",
+      "heading": "Ductwork cut through plaster walls has never been airtight",
       "paragraphs": [
-        "A 1950s Wheaton brick house often gained central air later. The metal snakes through bays that were never designed for it. Dust collects at every kink. Garden-apartment dryers pack lint in shared chases. Portable gear matters on streets where a truck cannot stage next to the stoop.",
-        "If wiping the registers only lasts a few days, when you are ready to book, use the [Wheaton, MD location page](/locations/wheaton)."
+        "When a 1950s Wheaton brick colonial received central air — usually in the late 1960s or 1970s — contractors cut through plaster and lathe to route trunk lines through joist bays and interior walls. Plaster crumbles where it is cut. The rough opening around a trunk penetration was rarely sealed with anything more durable than caulk or stuffed fiberglass. Over 50 years, that caulk has dried, cracked, and separated. The fiberglass has compressed.",
+        "Each unsealed penetration is a pathway for unconditioned wall-cavity air to enter the supply or return stream. That cavity air carries plaster dust from the original cut, insulation fibers from degraded fill, and whatever the wall cavity has accumulated over decades — which in a close-in urban house includes soot, pest debris, and moisture vapor from the masonry exterior."
+      ],
+      "listItems": []
+    },
+    {
+      "id": "bus_corridor",
+      "heading": "Georgia Avenue and Veirs Mill are bus corridors, not just roads",
+      "paragraphs": [
+        "Wheaton's primary arteries — Georgia Avenue, Veirs Mill Road, and University Boulevard — carry WMATA bus routes with frequent diesel-powered service. Diesel exhaust particulate is finer and more chemically complex than gasoline vehicle dust. It includes carbon soot, sulfate compounds, and unburned hydrocarbons. These particles are predominantly in the PM2.5 range, small enough to bypass a standard MERV-8 filter and settle deep inside duct runs.",
+        "Houses within two blocks of a bus corridor receive this particulate daily. The delivery is not seasonal like pollen — it is constant, year-round, and heaviest during morning and evening bus-frequency peaks. Over years, bus-corridor soot forms a thin, dark, slightly greasy layer on trunk surfaces that is distinct from the yellow-tan pollen coating common in suburban-canopy areas."
+      ],
+      "listItems": []
+    },
+    {
+      "id": "metro_construction",
+      "heading": "Metro construction and downtown infill keep adding particulate",
+      "paragraphs": [
+        "The Wheaton Metro station area has been in a continuous redevelopment cycle. Each project — parking structure, mixed-use building, streetscape renovation — generates concrete dust, excavation soil, and demolition debris that becomes airborne on dry windy days. Unlike corridor construction in suburban Loudoun or Clarksburg, Wheaton construction happens within feet of occupied houses, not across an open field.",
+        "A homeowner on Amherst or Arcola might have an active construction site within 100 yards of their return grille. At that distance, the heavier construction particles (concrete fragments, rebar rust, drywall chunks) do not reach the house. But the fine fraction — airborne gypsum, silica dust, pulverized morite — travels easily and enters returns along with the regular bus-corridor load. The two sources are indistinguishable once they are inside the trunk."
       ],
       "listItems": [],
       "image": "/img/blog/Allergies.webp"
     },
     {
-      "id": "signs",
-      "heading": "Typical signs in a Wheaton house",
+      "id": "apartment_dryers",
+      "heading": "Garden-apartment dryer situations Wheaton homeowners should know",
       "paragraphs": [
-        "Watch for:"
-      ],
-      "listItems": [
-        "Gray film on supplies facing Georgia Avenue or Veirs Mill.",
-        "Musty basement air in a 1940s–60s brick rambler after rain.",
-        "A hot laundry closet in a garden apartment or split-level."
-      ]
-    },
-    {
-      "id": "close_in",
-      "heading": "Wheaton is close-in Montgomery. The dust is urban.",
-      "paragraphs": [
-        "Around Westfield, the Metro, Veirs Mill Road, and Georgia Avenue the housing is mixed on purpose: 1940s–60s brick colonials and ramblers, later split-levels, garden apartments, and newer infill. Older ductwork was cut through plaster and joists. Joints leak. Bus-corridor grit and downtown construction add a second load the returns never sort from tree pollen.",
-        "Aspen Hill, Kemp Mill, and Glenmont fill the same close-in ring. Basements stay cool. Maryland summers stay wet. Cold trunks sweat, and the first AC week after a pollen burst is when registers look dirty again."
+        "Wheaton's housing mix includes a significant number of garden apartments and small condo buildings from the 1960s and 1970s. In these buildings, dryer vents often run through shared chases that were never upgraded when modern high-capacity dryers replaced the original machines. A packed shared chase creates back-pressure for every unit on the chase. Lint backs up into individual laundry closets, raising ambient humidity and temperature in spaces that are often adjacent to HVAC returns.",
+        "Even if you live in a single-family house, understanding the garden-apartment dynamic matters. Street-level exhaust from packed garden-apartment dryer caps can blow lint-laden humid air toward an adjacent house's return grille. On still, humid evenings, the dryer exhaust from a nearby apartment building hangs at ground level — exactly where your return draws air."
       ],
       "listItems": []
     },
     {
-      "id": "protect",
-      "heading": "How scheduling works from our metro offices",
+      "id": "steps",
+      "heading": "Managing indoor air in a close-in urban zone",
       "paragraphs": [
-        "Wheaton jobs are scheduled from our metro offices For service and scheduling, see the [local service page](/locations/wheaton).",
-        "Wheaton is served from our [Bethesda](/locations/bethesda) office. Nearby [Silver Spring](/locations/silver-spring) and [Kensington](/locations/kensington) use the same crew.",
-        "Service details live on the [Wheaton location page](/locations/wheaton). Read [air duct cleaning](/air-duct-cleaning) if you want the process before you book."
+        "Wheaton's urban particulate profile requires more frequent filter changes and shorter cleaning intervals than a quiet suburban cul-de-sac. For Wheaton-specific service options and scheduling, visit the [Wheaton location page](/locations/wheaton). If you want to understand the cleaning process before scheduling, the [air duct cleaning](/air-duct-cleaning) overview explains what a professional service includes."
       ],
       "listItems": [
-        "Change filters more often on Georgia Avenue air.",
-        "Keep basement humidity under 50% in summer.",
-        "Clean ducts every 3 to 5 years; clear dryer vents about once a year."
+        "Replace filters every 30 days if you live within two blocks of Georgia Avenue, Veirs Mill, or an active construction site — standard 90-day intervals are designed for lower-particulate environments.",
+        "Seal visible gaps around trunk penetrations through plaster walls with fire-rated caulk or mastic — every sealed gap reduces the volume of cavity air entering the supply stream.",
+        "Keep basement humidity below 50 percent in summer; older masonry basements wick moisture through the walls, and that moisture activates the biological component of any pollen trapped in the trunks.",
+        "If you share a property line with a garden-apartment building, note the location of their ground-level dryer caps relative to your return grilles — repositioning or shielding a return grille may reduce cross-property contamination."
       ]
     }
   ],

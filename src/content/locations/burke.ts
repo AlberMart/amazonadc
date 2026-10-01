@@ -3,69 +3,69 @@ import type { LocationContentSeed } from '@/utilities/locations'
 export const burke: LocationContentSeed = {
   slug: 'burke',
   title: 'Air Duct Cleaning in Burke, VA',
-  headline: 'Our Northern Virginia office — air duct and dryer vent cleaning from Burke Centre',
+  headline: 'Our Northern Virginia office \u2014 air duct and dryer vent cleaning from Burke Centre',
   description:
-    'Amazon Air Duct Cleaning’s Burke, VA office at 5641 Burke Centre Pkwy Ste 119. Flat-rate air duct cleaning, dryer vent cleaning, and HVAC mold treatment for Fairfax County and nearby cities. Call (571) 460-0001.',
+    'Amazon Air Duct Cleaning\u2019s Burke, VA office at 5641 Burke Centre Pkwy Ste 119. Flat-rate air duct cleaning, dryer vent cleaning, and HVAC mold treatment for Fairfax County and nearby cities. Call (571) 460-0001.',
   intro:
-    'This is our Northern Virginia office at Burke Centre. From here we schedule residential and light-commercial jobs across Fairfax County, Arlington, Alexandria, Reston, and into Washington, DC when we are the closer crew. Book at (571) 460-0001 — the office line is (571) 460-0001.',
+    'This is our Northern Virginia office at Burke Centre. From here we schedule residential and light-commercial jobs across Fairfax County, Arlington, Alexandria, Reston, and into Washington, DC when we are the closer crew. Book at (571) 460-0001 \u2014 the office line is (571) 460-0001.',
   heroImage: '/img/locations/burke.webp',
-  heroAlt: 'Burke, VA office — Amazon Air Duct Cleaning',
+  heroAlt: 'Burke, VA office \u2014 Amazon Air Duct Cleaning',
   city: 'Burke',
   state: 'VA',
   servedBy: 'burke',
   sectionLayout: 'hub',
   about: {
-    heading: 'The Burke Centre Hub Behind Northern Virginia Dispatch',
+    heading: 'Suite 119 on Burke Centre Parkway \u2014 Where Northern Virginia Jobs Begin',
     paragraphs: [
-      'Our shop sits at 5641 Burke Centre Pkwy, Suite 119, Burke, VA 22015. Technicians stage equipment here, confirm appointments from this address, and drive out to Springfield, Fairfax, McLean, Reston, Herndon, and the rest of the Virginia list on our [locations](/locations) page. When a [Washington, DC](/locations/washington-dc) job is closer to Virginia than Maryland, this office often takes the dispatch.',
-      'Burke and Springfield homes are mostly split-levels, colonials, and townhomes with humid summers and a heavy tree canopy. That mix loads returns with pollen and attic dust. We clean what we actually offer on the home page: air ducts, dryer vents, and ventilation mold treatment — not chimney sweeping or full HVAC “unit rebuild” packages.',
-      'Prefer Montgomery County or Bethesda-side streets? See our [Bethesda office](/locations/bethesda). Same company, same flat-rate packages, different staging address.',
+      'This is the physical staging point for every Virginia-side job we run. Trucks load at 5641 Burke Centre Pkwy, Suite 119, Burke, VA 22015, then fan out across Fairfax County and beyond \u2014 [Springfield](/locations/springfield) down Old Keene Mill, [Fairfax](/locations/fairfax) and [Oakton](/locations/oakton) up Route 123, [Reston](/locations/reston) and [Herndon](/locations/herndon) on the Dulles corridor, [Arlington](/locations/arlington) and [Alexandria](/locations/alexandria) inside the Beltway. When a [Washington, DC](/locations/washington-dc) address is closer to Virginia than to our Maryland office, the Burke crew takes that call too.',
+      'Burke Centre itself is colonials, townhomes, and split-levels under a thick deciduous canopy. The combination of humid Fairfax County summers and mature trees means returns here collect oak pollen, traffic particulates from the Fairfax County Parkway, and moisture-film dust that builds up faster than most homeowners realize. The same climate conditions extend into [Springfield](/locations/springfield) and neighboring communities.',
+      'Need Maryland-side service instead? Our [Bethesda](/locations/bethesda) office covers Montgomery County, Prince George\u2019s County, and the Maryland suburbs with the same flat-rate packages and equipment standards.',
     ],
     highlights: [
-      'Physical office: 5641 Burke Centre Pkwy Ste 119, Burke, VA 22015',
-      'Flat-rate air duct and dryer vent packages — quote before work starts',
-      'Before-and-after photos on every duct job',
-      'Same-day and next-day windows when the schedule allows',
+      'Walk-in office: 5641 Burke Centre Pkwy Ste 119, Burke, VA 22015',
+      'Flat-rate duct and dryer vent packages \u2014 price confirmed before work begins',
+      'Before-and-after photo documentation on every job',
+      'Same-day and next-day scheduling when the calendar allows',
     ],
   },
-  offersTitle: 'Flat-Rate Packages From the Burke Shop',
+  offersTitle: 'Burke Centre Flat-Rate Service Packages',
   services: {
-    heading: 'What This Burke Office Actually Schedules',
+    heading: 'Services Dispatched From the Burke Office',
     intro:
-      'Only the packages we publish site-wide — ducts, dryer vents, and mold treatment when inspection supports it.',
+      'Three published scopes \u2014 residential duct cleaning, dryer vent clearing, and ventilation mold treatment. Nothing off-menu.',
     items: [
       {
-        title: 'Air Duct Cleaning & Sanitization',
-        text: 'HEPA negative pressure and rotary brushes through supplies, returns, and registers, plus sanitizing when inspection finds growth. Photos come with the job. See [air duct cleaning](/air-duct-cleaning).',
+        title: 'Whole-Home Air Duct Cleaning',
+        text: 'We seal a HEPA-filtered negative-pressure unit to the main trunk, then agitate every supply line, return, and register with rotary brushes. Sanitizing is applied when the on-site inspection confirms biological buildup. Every job includes a photo set showing the before and after condition. Schedule [air duct cleaning](/air-duct-cleaning).',
       },
       {
-        title: 'Dryer Vent Cleaning',
-        text: 'Full-length brushing and vacuuming to the exterior cap — including long townhome and stacked-laundry runs common around Burke Centre and Springfield. Book [dryer vent cleaning](/dryer-vent-cleaning).',
+        title: 'Dryer Vent Clearing',
+        text: 'Burke Centre townhomes and Springfield stacked-laundry layouts send lint through long, bent paths to a rear wall or roof cap. We rod-brush and vacuum the entire run so airflow is restored and fire risk drops. Book [dryer vent cleaning](/dryer-vent-cleaning).',
       },
       {
-        title: 'Ventilation & HVAC Mold Treatment',
-        text: 'When inspection shows growth on coils or in dead-end ducts, we treat the ventilation path with EPA-registered products used as directed. Learn more about [mold remediation for air ducts](/mold-remediation-air-ducts).',
+        title: 'Ventilation Mold Treatment',
+        text: 'When our inspection reveals mold on evaporator coils or inside dead-end duct branches, we mechanically clean the affected sections and apply EPA-registered antimicrobial product along the ventilation path. Details at [mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
     ],
   },
   why: {
-    heading: 'Why Fairfax County Jobs Start on Burke Centre Pkwy',
+    heading: 'Why the Burke Centre Address Matters for Your Job',
     items: [
       {
-        title: 'Real Address, Real Staging',
-        text: 'Equipment and scheduling run from Burke Centre Parkway. You can verify the suite — we are not inventing a Virginia presence.',
+        title: 'Verifiable Office, Not a P.O. Box',
+        text: 'Suite 119 is a real workspace where technicians prep equipment and confirm schedules. You can drive by Burke Centre Parkway and see the operation.',
       },
       {
-        title: 'Fairfax County Routes We Drive Weekly',
-        text: 'Springfield Mixing Bowl traffic, Reston villages, and McLean tree lots are normal days for this team, not first-time surprises.',
+        title: 'Fairfax County Routes Run Weekly',
+        text: 'Mixing Bowl traffic patterns, Reston HOA gates, and McLean estate driveways are part of the regular rotation \u2014 not routes we learn on your appointment day.',
       },
       {
-        title: 'Flat-Rate Pricing',
-        text: 'Residential duct and dryer packages are quoted before hoses come off the truck. No per-vent games.',
+        title: 'Price Locked Before the First Hose Unrolls',
+        text: 'Residential duct and dryer vent packages are flat-rate. The number on the quote is the number on the invoice \u2014 no per-register surcharges added on site.',
       },
       {
-        title: 'Satisfaction Guarantee',
-        text: 'If you are not happy with the result, we come back and make it right.',
+        title: 'We Come Back If You Are Not Satisfied',
+        text: 'If the result does not meet expectations after the walk-through, we reschedule and redo the work at no additional charge.',
       },
     ],
   },
@@ -96,7 +96,7 @@ export const burke: LocationContentSeed = {
     ],
   },
   process: {
-    heading: 'Office Intake at Burke Centre — Then On the Road',
+    heading: 'Office Intake at Burke Centre \u2014 Then On the Road',
     intro: 'Arrival windows reflect the drive from Burke.',
     steps: [
       {
@@ -109,7 +109,7 @@ export const burke: LocationContentSeed = {
       },
       {
         title: 'Agree the Burke Flat-Rate Package',
-        text: 'Duct, dryer, or both for this Burke VA address — the quoted number is what you pay.',
+        text: 'Duct, dryer, or both for this Burke VA address \u2014 the quoted number is what you pay.',
       },
       {
         title: 'Run HEPA Cleaning in Burke',
@@ -121,7 +121,7 @@ export const burke: LocationContentSeed = {
       },
     ],
   },
-  faqIntro: 'Burke questions — call (571) 460-0001 (dispatch: Burke).',
+  faqIntro: 'Burke questions \u2014 call (571) 460-0001 (dispatch: Burke).',
   faq: [
     {
       q: 'Who handles air duct cleaning appointments in Burke?',
@@ -129,19 +129,19 @@ export const burke: LocationContentSeed = {
     },
     {
       q: 'What should I prepare before the Burke crew arrives?',
-      a: 'In Burke, clear a path to the air handler and dryer before we arrive — basement trunks and dryer closets especially. Share gate or parking notes if your street needs them.',
+      a: 'In Burke, clear a path to the air handler and dryer before we arrive \u2014 basement trunks and dryer closets especially. Share gate or parking notes if your street needs them.',
     },
     {
       q: 'How long does air duct cleaning take in Burke?',
-      a: 'Most Burke single-system houses finish in about 2–3 hours. Older trunks with additions can add time after inspection.',
+      a: 'Most Burke single-system houses finish in about 2\u20133 hours. Older trunks with additions can add time after inspection.',
     },
     {
       q: 'Are Burke air duct and dryer vent prices flat-rate?',
-      a: 'Yes. Burke residential packages are flat-rate from the Burke office — the number we confirm before work starts is what you pay. No per-vent counting.',
+      a: 'Yes. Burke residential packages are flat-rate from the Burke office \u2014 the number we confirm before work starts is what you pay. No per-vent counting.',
     },
     {
       q: 'Is sanitizing included with Burke duct cleaning?',
-      a: 'For Burke jobs, Envirocon antimicrobial sanitizing is complimentary when you request it or when inspection supports it — we confirm on site before applying anything.',
+      a: 'For Burke jobs, Envirocon antimicrobial sanitizing is complimentary when you request it or when inspection supports it \u2014 we confirm on site before applying anything.',
     },
   ],
 }

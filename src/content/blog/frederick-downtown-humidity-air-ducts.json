@@ -2,53 +2,57 @@
   "slug": "frederick-downtown-humidity-air-ducts",
   "title": "Carroll Creek cellars, Urbana pads, and why the I-270 north end is two indoor-air problems",
   "headline": "Carroll Creek cellars, Urbana pads, and why the I-270 north end is two indoor-air problems",
-  "description": "Frederick, MD mixes downtown brick humidity with Urbana construction dust. why ducts load on both ends of the city.",
+  "description": "Frederick combines downtown brick cellars with Urbana-corridor new construction — two distinct duct problems under one city name. Here's what each one looks like inside the HVAC.",
   "heroImage": "/img/blog/heroes/frederick-downtown-humidity-air-ducts.webp",
   "sections": [
     {
-      "id": "creek",
-      "heading": "Carroll Creek humidity is not the same job as an Urbana townhome",
+      "id": "two_cities",
+      "heading": "One zip code, two completely different duct problems",
       "paragraphs": [
-        "A Market Street house may have metal cut through a 19th-century cellar. An Urbana HOA unit has a tight closet and a long dryer chase plus leftover gypsum. Both need cleaning. They fail for different reasons. We photograph both.",
-        "If registers look dirty a few days after you wipe them, when you are ready to book, use the [Frederick, MD location page](/locations/frederick)."
+        "A homeowner on Market Street and a homeowner in an Urbana townhome both live in Frederick. Their HVAC systems fail in opposite ways. The downtown house has a 19th-century cellar where stone walls wick groundwater and original trunks rust at the joints. The Urbana house is three years old, airtight, and still blowing fine white gypsum onto dark furniture because the builder ran the air handler during construction.",
+        "Understanding which problem your house has — moisture-driven buildup or construction-phase contamination — changes when you should clean, what the crew will find, and how to maintain the system afterward."
+      ],
+      "listItems": []
+    },
+    {
+      "id": "creek_cellars",
+      "heading": "Carroll Creek cellars and what brick does to indoor humidity",
+      "paragraphs": [
+        "Frederick's historic core sits along Carroll Creek, a waterway that once flooded regularly before the city rerouted it. The cellars beneath Market Street, East Patrick, and the surrounding blocks were built with local limestone and mortar that has absorbed and released moisture for over two centuries. Central air was added generations later, and the ductwork often threads between joists only inches above a cellar floor that never fully dries.",
+        "When the AC cycles on a July afternoon, the supply trunks drop well below the dew point of the cellar air. Moisture condenses on both the interior and exterior of the metal. Organic dust — pollen, fabric fibers, skin cells — bonds to that wet surface. Over several seasons the buildup becomes a visible dark film that no amount of filter changes will reach."
       ],
       "listItems": [],
       "image": "/img/blog/The-Hidden-Cost-of-Dirty-Air-Ducts.webp"
     },
     {
-      "id": "signs",
-      "heading": "Typical signs in a Frederick house",
+      "id": "urbana_gypsum",
+      "heading": "Urbana pads and the gypsum that outlasts the builder's warranty",
       "paragraphs": [
-        "Watch for:"
-      ],
-      "listItems": [
-        "Musty air from a downtown cellar after a storm week.",
-        "White-gray film on supplies in an Urbana or Adamstown house less than ten years old.",
-        "Long dry times in a new townhome closet."
-      ]
-    },
-    {
-      "id": "two_fredericks",
-      "heading": "Frederick is a wet cellar and a dusty pad sharing one city",
-      "paragraphs": [
-        "Downtown brick and Carroll Creek sit on cool, damp cellars. South and east, Urbana and Adamstown keep filling with new clusters. Mt Airy sits east on the same farther dispatch. Those last three are communities on this page, not separate city sites. Downtown cellars stay cool and wet. New pads kick drywall into returns the first year.",
-        "Humid Piedmont summers do the rest. When the AC starts after a storm week, older trunks smell musty and new houses still blow construction grit."
+        "South and east of downtown, Urbana, Adamstown, and Lake Linganore have added thousands of homes in the past fifteen years. During construction the HVAC system runs to control humidity while drywall tape cures and paint dries. That air is loaded with gypsum fines — particles light enough to travel through return ducts and settle on every interior surface downstream of the filter.",
+        "Builders often tape registers shut during this phase, but tape lifts at the edges and fines enter anyway. First owners discover the problem when they notice a chalky residue on shelving weeks after move-in, or when the brand-new filter turns gray in half the expected time. The gypsum is already embedded in trunk seams where airflow turbulence deposited it. Standard filter replacement only catches what passes the filter going forward."
       ],
       "listItems": []
     },
     {
-      "id": "protect",
-      "heading": "How scheduling works from our metro offices",
+      "id": "signs",
+      "heading": "How to tell which Frederick duct problem you have",
       "paragraphs": [
-        "Frederick jobs are scheduled from our metro offices For service and scheduling, see the [local service page](/locations/frederick).",
-        "Frederick is served from our [Bethesda](/locations/bethesda) office. Nearby [Clarksburg](/locations/clarksburg) and [Gaithersburg](/locations/gaithersburg) are closer-in pages on the same crew. The drive is farther and we schedule it that way.",
-        "Service details live on the [Frederick location page](/locations/frederick). See [air duct cleaning](/air-duct-cleaning) for what a cellar job versus a new-build job actually removes."
+        "The two problems leave different fingerprints. Moisture-driven buildup in a downtown cellar tends to announce itself through smell — a faint earthiness that strengthens when the system starts and fades once it runs continuously. Construction-phase gypsum announces itself through sight — a persistent white or light-gray dust on surfaces near supply registers. Some Frederick homes have both, especially renovated downtown properties where drywall was hung over old plaster."
       ],
       "listItems": [
-        "Dehumidify downtown cellars in summer.",
-        "Ask for a duct cleaning after you close on a new Urbana build.",
-        "Clear dryer vents about once a year in stacked HOA units."
+        "Downtown cellar clue: a damp, earthy smell that intensifies after a rainy week and lingers even with windows open.",
+        "New-construction clue: a fine powder on shelves and electronics near supply vents that reappears days after dusting.",
+        "Shared clue: dryer loads taking longer than expected, especially in a stacked townhome closet with limited exhaust routing."
       ]
+    },
+    {
+      "id": "next_steps",
+      "heading": "Matching the maintenance to the problem",
+      "paragraphs": [
+        "A cellar-humidity home needs a dehumidifier running through the warm months plus periodic duct cleaning to remove what the damp seasons deposited. A new-construction home needs an initial post-occupancy cleaning to clear gypsum and then benefits from standard maintenance intervals afterward. Either way, the cleaning resets the system to a state that filters can actually maintain.",
+        "Scheduling and flat-rate details for both scenarios are on the [Frederick, MD service page](/locations/frederick). If the dryer closet stays warm after a cycle finishes, pair your duct appointment with a [dryer vent cleaning](/dryer-vent-cleaning) — especially relevant in Urbana townhomes where vent runs are long and kinked."
+      ],
+      "listItems": []
     }
   ],
   "faq": [

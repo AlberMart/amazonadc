@@ -2,53 +2,57 @@
   "slug": "gaithersburg-kentlands-basement-humidity-air-ducts",
   "title": "I-270 humidity, cool trunks, and why Crown dryer vents pack with lint",
   "headline": "I-270 humidity, cool trunks, and why Crown dryer vents pack with lint",
-  "description": "Gaithersburg, MD mixes split-level basements with Kentlands townhomes on I-270. why ducts sweat, how pollen sticks.",
+  "description": "Gaithersburg's housing ranges from 1960s split-levels to Kentlands new urbanism. Each style has its own duct failure pattern — here's how they work and when cleaning helps.",
   "heroImage": "/img/blog/heroes/gaithersburg-kentlands-basement-humidity-air-ducts.webp",
   "sections": [
     {
-      "id": "sweat",
-      "heading": "The basement air handler is doing two jobs",
+      "id": "housing_mix",
+      "heading": "Three housing eras, three different duct problems",
       "paragraphs": [
-        "It cools the house. It also sits in the dampest room. Cold trunks sweat. Dust from the last pollen season is already inside. Together they are what mold needs.",
-        "If wiping the registers only lasts a few days, when you are ready to book, use the [Gaithersburg, MD location page](/locations/gaithersburg)."
+        "Gaithersburg's housing stock spans an unusually wide range. The original neighborhoods around City Hall include 1950s and 1960s split-levels and ramblers with basement air handlers. Kentlands and Lakelands brought new-urbanist townhomes and singles in the 1990s with compact mechanical closets. Crown and the Rio corridor added high-density condos and apartments in the 2000s with stacked laundry and shared-chase dryer vents.",
+        "Each housing era produces duct contamination through a different mechanism. Understanding which one applies to your home helps predict what a technician will find inside the system and how to prevent it from recurring."
+      ],
+      "listItems": []
+    },
+    {
+      "id": "split_level",
+      "heading": "1960s split-levels: the basement condensation trap",
+      "paragraphs": [
+        "A Gaithersburg split-level has the air handler in a utility room that sits partially below grade. The concrete block walls are cool and, during Maryland summers, damp. Supply trunks running along the basement ceiling chill when the compressor engages, and the temperature differential between the cold metal and the warm, humid basement air produces condensation on the exterior surface of the trunk.",
+        "Inside the trunk the same process occurs in reverse — humid return air loses moisture to the cold duct walls. The resulting film catches every particle the filter missed: pollen that slipped past during the spring peak, skin cells, fabric fibers, and fine particulates from the I-270 corridor that entered through window seals and door gaps. Over years, the buildup becomes a thick, dark layer that reduces the duct's effective cross-section and supports biological growth in the absence of light."
       ],
       "listItems": [],
       "image": "/img/blog/Allergies.webp"
     },
     {
-      "id": "signs",
-      "heading": "Typical signs in a Gaithersburg house",
+      "id": "kentlands_townhome",
+      "heading": "Kentlands and Lakelands: compact design, compact duct problems",
       "paragraphs": [
-        "Watch for:"
-      ],
-      "listItems": [
-        "Musty air from basement supplies in July and August.",
-        "Gray film on upstairs registers during peak pollen.",
-        "A dryer that needs two cycles in Kentlands or Crown."
-      ]
-    },
-    {
-      "id": "north_270",
-      "heading": "Gaithersburg is Rockville’s problem, one exit north",
-      "paragraphs": [
-        "Town Center, Kentlands, Lakelands, Crown, and Montgomery Village do not share one floor plan. Most of them share a cool mechanical space and Montgomery County summer humidity. Split-levels put the air handler in a basement. Townhomes put a long dryer vent in a tight closet. Both load the system.",
-        "I-270 adds traffic dust. The tree canopy adds pollen. Returns pull both."
+        "New-urbanist townhomes prioritize walkability and architectural variety over generous mechanical spaces. The furnace and air handler in a typical Kentlands row unit fit into a first-floor closet or alcove. Duct runs are short, which is an advantage for airflow efficiency, but the tight space means the dryer vent, gas line, and electrical panel all compete for room.",
+        "The dryer vent in these homes typically makes two or three bends before reaching the exterior cap. Each bend is a lint accumulation point. When the vent partially clogs, exhaust air and moisture back up into the laundry closet, raising the humidity in the mechanical area. That moisture enters the adjacent HVAC ductwork through shared framing cavities. A Kentlands owner who notices the laundry closet feels warm and damp after a dryer cycle is likely experiencing the early stage of this chain."
       ],
       "listItems": []
     },
     {
-      "id": "protect",
-      "heading": "Keeping trunks and dryer runs healthier between cleanings",
+      "id": "signs",
+      "heading": "Matching Gaithersburg symptoms to housing type",
       "paragraphs": [
-        "Gaithersburg jobs are scheduled from our metro offices For service and scheduling, see the [local service page](/locations/gaithersburg).",
-        "Gaithersburg is served from our [Bethesda](/locations/bethesda) office. [Rockville](/locations/rockville) is the next city south.",
-        "Service details live on the [Gaithersburg location page](/locations/gaithersburg). Add [dryer vent cleaning](/dryer-vent-cleaning) if the laundry room is humid."
+        "The most effective diagnostic shortcut is to consider what decade your home was built and what type of mechanical space it has:"
       ],
       "listItems": [
-        "Dehumidify the basement in summer.",
-        "Change filters when pollen is heavy.",
-        "Clean ducts every 3 to 5 years; clear dryer vents about once a year."
+        "Split-level or rambler (1950s–1970s): musty odor from basement registers during humid weeks, dark residue at register edges, and a dehumidifier that fills its reservoir faster than the manufacturer suggests.",
+        "Kentlands or Lakelands townhome (1990s–2000s): dryer cycles running long, a warm or humid laundry closet, and a faint lint smell near interior walls adjacent to the dryer.",
+        "Crown or Rio corridor condo (2000s–present): building-wide stuffiness during peak summer, a sense that the AC runs constantly without fully dehumidifying, and visible dust accumulation near ceiling-mounted supply diffusers."
       ]
+    },
+    {
+      "id": "next_steps",
+      "heading": "Choosing the right maintenance for your Gaithersburg home",
+      "paragraphs": [
+        "Split-level owners benefit most from duct cleaning combined with a dehumidifier installation or optimization in the basement. Townhome owners benefit from paired duct and dryer vent cleaning, since the two systems are physically adjacent and each contributes moisture to the other. Condo residents should coordinate with building management on shared-chase dryer vent cleaning while addressing their individual unit's duct system.",
+        "Flat-rate packages and scheduling for all Gaithersburg housing types are on the [Gaithersburg, MD service page](/locations/gaithersburg). Add [dryer vent cleaning](/dryer-vent-cleaning) to any duct appointment if the laundry area retains warmth or humidity after a cycle — the two services together address the shared-space moisture loop that drives most Gaithersburg duct contamination."
+      ],
+      "listItems": []
     }
   ],
   "faq": [

@@ -7,64 +7,64 @@ export const springfield: LocationContentSeed = {
   description:
     'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Springfield, VA. Flat rates from our Burke office for split-levels, townhomes, and I-95 corridor homes. Call (571) 460-0001.',
   intro:
-    'Amazon Air Duct Cleaning serves Springfield from our Burke office — the next community over, the next community over from Burke. Split-levels near the Mixing Bowl, Franconia townhomes, and West Springfield colonials all take on traffic dust and humid summers. Call (571) 460-0001.',
+    'Amazon Air Duct Cleaning serves Springfield from our Burke office \u2014 the next community over from Burke. Split-levels near the Mixing Bowl, Franconia townhomes, and West Springfield colonials all take on traffic dust and humid summers. Call (571) 460-0001.',
   heroImage: '/img/locations/springfield.webp',
-  heroAlt: 'Air duct cleaning in Springfield, VA — Amazon Air Duct Cleaning',
+  heroAlt: 'Air duct cleaning in Springfield, VA \u2014 Amazon Air Duct Cleaning',
   city: 'Springfield',
   state: 'VA',
   servedBy: 'burke',
   sectionLayout: 'communitiesFirst',
   about: {
-    heading: 'Mixing Bowl Dust, Split-Levels, and Franconia Townhomes',
+    heading: 'Mixing Bowl Interchange Dust, Split-Level Basements, and Franconia Metro Stacks',
     paragraphs: [
-      'Springfield sits where I-95, I-395, and the Beltway braid together. That is convenient. It is also a constant source of fine dust. Returns on Old Keene Mill, Franconia, and Backlick pull it in along with Fairfax County pollen. A lot of the housing is 1960s–80s split-levels and townhomes with basements. Those rooms stay cool. Summer air does not. Cold trunks sweat. Dust sticks.',
-      'Springfield Town Center and the Franconia-Springfield Metro added denser condos and long dryer runs. A dryer that needs two cycles is often a packed vent, not a dying machine. The same humidity that fogs a windshield in July is sitting in the laundry closet.',
-      'We serve Springfield from [Burke](/locations/burke). Burke Centre is minutes away. Nearby [Fairfax](/locations/fairfax), [Alexandria](/locations/alexandria), and [Prince William](/locations/prince-william) use the same crew. More on [Springfield Mixing Bowl Dust](/blog/springfield-mixing-bowl-dust-air-ducts).',
+      'Springfield sits at the center of Northern Virginia\u2019s busiest interchange \u2014 where I-95, I-395, and the Capital Beltway braid together into the Mixing Bowl. That convergence is convenient for commuters but generates a persistent cloud of fine road-surface particles that settle on porches along Old Keene Mill, Backlick, and Franconia Road and work their way into HVAC returns. The housing stock is mostly 1960s\u201380s split-levels, colonials, and townhomes with basement or crawl-space air handlers where cool metal sweats through every humid Northern Virginia summer.',
+      'Springfield Town Center and the Franconia-Springfield Metro station brought denser condos and longer dryer risers in the 2010s. West Springfield and Newington add tree-canopy pollen to the mix. A dryer in a Franconia townhome that takes two full cycles is almost always a lint-packed chase leading to a roof cap \u2014 not a machine problem. The blower in a 1970s split-level does not know the difference between pollen and drywall dust; it sends both back upstairs every time the system kicks on.',
+      'Our Burke crew serves Springfield as the next community over \u2014 Burke Centre is minutes away. Nearby [Fairfax](/locations/fairfax), [Alexandria](/locations/alexandria), and [Prince William](/locations/prince-william) share the same dispatch. Read about [Springfield Mixing Bowl dust and air ducts](/blog/springfield-mixing-bowl-dust-air-ducts).',
     ],
     highlights: [
-      'Springfield, Franconia, West Springfield, and Newington',
-      'Flat-rate pricing from the Burke office next door',
-      'Before-and-after photos on every duct job',
-      'Same-day and next-day windows when the schedule allows',
+      'Springfield, Franconia, West Springfield, Newington, and Rolling Valley',
+      'Flat-rate pricing from the Burke office minutes away',
+      'Before-and-after photo documentation on every job',
+      'Same-day and next-day scheduling when the calendar allows',
     ],
   },
-  offersTitle: 'Springfield Flat Rates From Minutes-Away Burke',
+  offersTitle: 'Springfield Duct & Dryer Vent Packages',
   services: {
-    heading: 'Springfield Packages for I-95 Corridor Homes',
-    intro: 'Split-levels and townhomes along the Mixing Bowl — flat rates before we start.',
+    heading: 'What We Clean in Springfield Split-Levels and Metro-Area Stacks',
+    intro: 'Split-level basements and Franconia Metro townhomes receive the same published flat-rate scope.',
     items: [
       {
-        title: 'Air Duct Cleaning & Sanitization',
-        text: 'We clean supplies, returns, and registers with negative-pressure HEPA vacuums and rotary brushes, then sanitize when the inspection shows growth. See [air duct cleaning](/air-duct-cleaning).',
+        title: 'Air Duct Cleaning for Springfield Homes',
+        text: 'We seal HEPA-filtered negative-pressure equipment to the trunk and agitate every supply line, return, and register with rotary brushes. Sanitizing follows when the on-site walkthrough identifies biological growth in the system. You keep the before-and-after photo set. Schedule [air duct cleaning](/air-duct-cleaning).',
       },
       {
-        title: 'Dryer Vent Cleaning',
-        text: 'Townhome dryer runs along Backlick and Franconia clog with lint. We clear the full length to the cap. Book [dryer vent cleaning](/dryer-vent-cleaning).',
+        title: 'Dryer Vent Service',
+        text: 'Franconia and Backlick Road townhome dryer runs climb through interior walls and pack with lint faster than ground-level suburban paths. We rod-brush and vacuum the full run to the exterior cap so the appliance exhausts safely. Book [dryer vent cleaning](/dryer-vent-cleaning).',
       },
       {
-        title: 'Ventilation & HVAC Mold Treatment',
-        text: 'Basement air handlers and humid summers are a mold setup. Learn more about [mold remediation for air ducts](/mold-remediation-air-ducts).',
+        title: 'Mold Treatment in Springfield Ductwork',
+        text: 'Basement and crawl-space air handlers that sit in cool, damp environments are prime locations for mold on coils and inside dead-end supply branches. We clean mechanically first, then apply EPA-registered antimicrobial treatment along the ventilation path. Details at [mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
     ],
   },
   why: {
-    heading: 'Why Springfield Registers Gray Out After Beltway Weeks',
+    heading: 'Why Springfield Registers Gray Out After Heavy Traffic Weeks',
     items: [
       {
-        title: 'The Next Town Over',
-        text: 'Burke and Springfield share a school pyramid and a commute. The truck is not coming from Maryland for a Backlick job.',
+        title: 'The Next Community Over From Burke',
+        text: 'Burke and Springfield share a school pyramid and a commute. The truck is not crossing a county line or a river \u2014 it is driving down Old Keene Mill.',
       },
       {
-        title: 'Flat-Rate Pricing',
-        text: 'No vent counting. The number we quote before we start is the price you pay.',
+        title: 'Flat Rate Confirmed Before We Start',
+        text: 'The number on your quote is the number on your invoice. No per-vent math after we see the basement handler.',
       },
       {
-        title: 'Split-Levels We Already Clean',
-        text: '1960s trunks, later additions, and tight townhome closets are a normal Tuesday for this crew.',
+        title: 'Split-Level Trunks Are Everyday Work',
+        text: '1960s original metal, later-era additions, and tight Franconia townhome closets are a standard Tuesday for this crew \u2014 not unusual layouts that require improvising.',
       },
       {
-        title: '100% Satisfaction Guarantee',
-        text: 'If you are not happy with the result, we come back and make it right.',
+        title: 'Satisfaction Guarantee',
+        text: 'If Springfield results miss the mark after you review the photos, we come back and correct the job free of charge.',
       },
     ],
   },
@@ -83,13 +83,13 @@ export const springfield: LocationContentSeed = {
       {
         title: 'West Springfield & south',
         places:
-          'West Springfield, Newington, Rolling Valley, streets toward Lorton — ask if you do not see your neighborhood',
+          'West Springfield, Newington, Rolling Valley, streets toward Lorton \u2014 ask if you do not see your neighborhood',
       },
     ],
   },
   process: {
     heading: 'Next-Community Dispatch From Burke Centre',
-    intro: 'Same flat-rate flow we use across VA — scoped for Springfield housing.',
+    intro: 'Same flat-rate flow we use across VA \u2014 scoped for Springfield housing.',
     steps: [
       {
         title: 'Scope the Springfield System',
@@ -113,7 +113,7 @@ export const springfield: LocationContentSeed = {
       },
     ],
   },
-  faqIntro: 'Springfield questions — call (571) 460-0001 (dispatch: Burke).',
+  faqIntro: 'Springfield questions \u2014 call (571) 460-0001 (dispatch: Burke).',
   faq: [
     {
       q: 'Who handles air duct cleaning appointments in Springfield?',
@@ -129,15 +129,15 @@ export const springfield: LocationContentSeed = {
     },
     {
       q: 'Are Springfield air duct and dryer vent prices flat-rate?',
-      a: 'Yes. Springfield residential packages are flat-rate from the Burke office — the number we confirm before work starts is what you pay. No per-vent counting.',
+      a: 'Yes. Springfield residential packages are flat-rate from the Burke office \u2014 the number we confirm before work starts is what you pay. No per-vent counting.',
     },
     {
       q: 'Is sanitizing included with Springfield duct cleaning?',
-      a: 'For Springfield jobs, Envirocon antimicrobial sanitizing is complimentary when you request it or when inspection supports it — we confirm on site before applying anything.',
+      a: 'For Springfield jobs, Envirocon antimicrobial sanitizing is complimentary when you request it or when inspection supports it \u2014 we confirm on site before applying anything.',
     },
     {
       q: 'How far in advance should Springfield homeowners book?',
-      a: 'Peak pollen and summer humidity fill the Springfield calendar fast. Same-week openings are common — call (571) 460-0001 for the next Burke window serving Springfield.',
+      a: 'Peak pollen and summer humidity fill the Springfield calendar fast. Same-week openings are common \u2014 call (571) 460-0001 for the next Burke window serving Springfield.',
     },
   ],
 }

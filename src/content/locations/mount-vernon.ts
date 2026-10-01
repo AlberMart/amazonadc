@@ -8,64 +8,64 @@ export const mountVernon: LocationContentSeed = {
   description:
     'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Mt Vernon, VA. Flat rates from our Burke office for Fort Hunt houses, Parkway humidity, and older river-side homes. Call (571) 460-0001.',
   intro:
-    'Amazon Air Duct Cleaning serves Mt Vernon from our Burke office — scheduled from our serving office. Fort Hunt colonials, Hollin Hills mid-century houses, and older streets toward the Potomac all take on river humidity and pollen. Call (571) 460-0001.',
+    'Amazon Air Duct Cleaning serves Mt Vernon from our Burke office \u2014 scheduled from our serving office. Fort Hunt colonials, Hollin Hills mid-century houses, and older streets toward the Potomac all take on river humidity and pollen. Call (571) 460-0001.',
   heroImage: '/img/locations/mount-vernon.webp',
-  heroAlt: 'Air duct cleaning in Mt Vernon, VA — Amazon Air Duct Cleaning',
+  heroAlt: 'Air duct cleaning in Mt Vernon, VA \u2014 Amazon Air Duct Cleaning',
   city: 'Mt Vernon',
   state: 'VA',
   servedBy: 'burke',
   sectionLayout: 'faqEarly',
   about: {
-    heading: 'GW Parkway Air, Older River Houses, and Humid Cellars',
+    heading: 'GW Parkway Humidity, Mid-Century Trunks, and Wooded Fort Hunt Lots',
     paragraphs: [
-      'Mt Vernon (the Fairfax County community, not the estate gift shop) sits along the George Washington Memorial Parkway: Fort Hunt, Waynewood, Stratford Landing, Hollin Hills, and Mount Vernon Woods. A lot of the housing is older than the typical west-county HOA — brick colonials, ramblers, and mid-century houses with original metal trunks. The Potomac is close. Summer air is wet. Basements and crawl spaces stay cool. Cold supplies sweat; river pollen and parkway dust stick to that film.',
-      'Hollin Hills and similar streets were never designed around oversized modern returns. Later central-air add-ons snake through tight joists. Fort Hunt dryer runs often travel a long exterior wall toward a rear cap in a wooded lot. The same humidity that fogs a windshield on the Parkway in July is sitting on the coil.',
-      'We serve Mt Vernon from [Burke](/locations/burke). Nearby [Alexandria](/locations/alexandria), [Lorton](/locations/lorton), and [Springfield](/locations/springfield) use the same dispatch. More on [Mount Vernon Potomac Humidity](/blog/mount-vernon-potomac-humidity-air-ducts).',
+      'The Mt Vernon community \u2014 the Fairfax County residential area, not the historic estate \u2014 stretches along the George Washington Memorial Parkway through Fort Hunt, Waynewood, Stratford Landing, Hollin Hills, and Mount Vernon Woods. Most of the housing stock predates the west-county HOA boom: 1950s\u201370s brick colonials, ramblers, and mid-century moderns with original metal ductwork routed through tight crawl spaces and joist bays that were not designed for forced-air systems.',
+      'The Potomac sits close enough to push river humidity inland year-round. Summer moisture condenses on cold supply metal and on evaporator coils, creating a damp film that traps Parkway dust, oak pollen, and fine soil particles from surrounding wooded lots. Hollin Hills houses and similar mid-century streets have returns that were never sized for modern living \u2014 later central-air additions snake through tight joists and accumulate debris at every elbow. Fort Hunt dryer runs often travel the full length of an exterior wall before reaching a cap hidden behind vegetation.',
+      'Our Burke crew serves Mt Vernon alongside [Alexandria](/locations/alexandria), [Lorton](/locations/lorton), and [Springfield](/locations/springfield). Read about [Mount Vernon Potomac humidity and air ducts](/blog/mount-vernon-potomac-humidity-air-ducts).',
     ],
     highlights: [
-      'Fort Hunt, Waynewood, Hollin Hills, Stratford Landing, GW Parkway streets',
-      'Flat-rate pricing — no vent counting',
-      'Before-and-after photos on every duct job',
-      'Same Burke team that already works Alexandria and Lorton',
+      'Fort Hunt, Waynewood, Hollin Hills, Stratford Landing, and GW Parkway streets',
+      'Flat-rate pricing \u2014 no per-vent surcharges',
+      'Before-and-after photo documentation on every job',
+      'Same Burke crew running Alexandria and Lorton routes weekly',
     ],
   },
-  offersTitle: 'Mt Vernon Flat Rates From the Burke Office',
+  offersTitle: 'Mt Vernon Duct & Dryer Vent Packages',
   services: {
-    heading: 'Mt Vernon Packages for Parkway and Fort Hunt Homes',
-    intro: 'Older metal trunks and long dryer runs — flat-rate residential scopes.',
+    heading: 'What We Clean in Mt Vernon Parkway and Fort Hunt Homes',
+    intro: 'Older metal trunks and long wooded-lot dryer runs receive flat-rate residential scopes.',
     items: [
       {
-        title: 'Air Duct Cleaning & Sanitization',
-        text: 'HEPA negative pressure and rotary brushes through older supplies, returns, and registers, plus sanitizing when inspection finds growth. See [air duct cleaning](/air-duct-cleaning).',
+        title: 'Air Duct Cleaning for Mt Vernon Homes',
+        text: 'HEPA-filtered negative-pressure equipment seals to the trunk while rotary brushes agitate every supply line, return, and register \u2014 including tight joist-bay runs in mid-century houses. Sanitizing follows when the walkthrough reveals biological growth. You keep the complete photo set. Schedule [air duct cleaning](/air-duct-cleaning).',
       },
       {
-        title: 'Dryer Vent Cleaning',
-        text: 'Wooded Fort Hunt lots and second-floor laundry mean long, bent dryer runs. We clear them to the cap. Book [dryer vent cleaning](/dryer-vent-cleaning).',
+        title: 'Dryer Vent Service',
+        text: 'Wooded Fort Hunt lots and second-floor laundry in older ramblers create long, bent dryer runs that pack with lint behind exterior siding. We rod-brush and vacuum the entire path to the cap so the appliance vents efficiently and fire risk is eliminated. Book [dryer vent cleaning](/dryer-vent-cleaning).',
       },
       {
-        title: 'Ventilation & HVAC Mold Treatment',
-        text: 'Parkway humidity and cool basements let mold colonize coils and dead-end ducts. Learn more about [mold remediation for air ducts](/mold-remediation-air-ducts).',
+        title: 'Mold Treatment in Mt Vernon Ductwork',
+        text: 'Parkway humidity and cool crawl spaces keep moisture close to the air handler, letting mold colonize coils and dead-end duct branches. We clean mechanically first, then apply EPA-registered antimicrobial treatment along the ventilation path. Details at [mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
     ],
   },
   why: {
-    heading: 'Why Potomac-Side Trunks Sweat in Summer',
+    heading: 'Why Potomac-Side Trunks Carry Heavier Moisture Loads',
     items: [
       {
-        title: 'Parkway Humidity, Fairfax Dispatch',
-        text: 'We already work the river side of the county from Burke. You are not waiting on a crew that treats Mt Vernon as a one-off.',
+        title: 'River-Side Routes From Fairfax Dispatch',
+        text: 'The Burke crew already works the Parkway side of the county weekly. Mt Vernon is a familiar stop, not a one-off detour into unfamiliar territory.',
       },
       {
-        title: 'Older Houses, Honest Scope',
-        text: 'Fort Hunt brick and Hollin Hills add-on trunks are inspected first. No surprise per-vent fees.',
+        title: 'Mid-Century Retrofit Trunks Inspected First',
+        text: 'Fort Hunt brick colonials and Hollin Hills add-on ductwork are walkthrough-scoped before any price is quoted. No surprise per-vent fees based on building age.',
       },
       {
-        title: 'Flat-Rate Pricing',
-        text: 'No vent counting. Residential duct and dryer packages are quoted before we unroll a hose.',
+        title: 'Flat Rate Locked Before We Start',
+        text: 'Residential duct and dryer packages are quoted at a flat rate. The number on your confirmation is the number on the invoice.',
       },
       {
-        title: '100% Satisfaction Guarantee',
-        text: 'If you are not happy, we come back. Payment is for work you can see in the photos.',
+        title: 'Guaranteed Results',
+        text: 'If the cleaning does not meet your expectations, we return and redo the job without additional charge.',
       },
     ],
   },
@@ -94,7 +94,7 @@ export const mountVernon: LocationContentSeed = {
     steps: [
       {
         title: 'Book Mt Vernon From the Burke Line',
-        text: 'Call (571) 460-0001 or use the form — we confirm Mt Vernon availability the next business day.',
+        text: 'Call (571) 460-0001 or use the form \u2014 we confirm Mt Vernon availability the next business day.',
       },
       {
         title: 'Protect Floors in Your Mt Vernon Home',
@@ -102,7 +102,7 @@ export const mountVernon: LocationContentSeed = {
       },
       {
         title: 'Source-Removal Cleaning for Mt Vernon',
-        text: 'NADCA-style agitation under HEPA negative pressure — dust leaves in the vacuum, not your Mt Vernon rooms.',
+        text: 'NADCA-style agitation under HEPA negative pressure \u2014 dust leaves in the vacuum, not your Mt Vernon rooms.',
       },
       {
         title: 'Optional Sanitizing in Mt Vernon',
@@ -114,7 +114,7 @@ export const mountVernon: LocationContentSeed = {
       },
     ],
   },
-  faqIntro: 'Mt Vernon questions — call (571) 460-0001 (dispatch: Burke).',
+  faqIntro: 'Mt Vernon questions \u2014 call (571) 460-0001 (dispatch: Burke).',
   faq: [
     {
       q: 'Who handles air duct cleaning appointments in Mt Vernon?',
@@ -126,15 +126,15 @@ export const mountVernon: LocationContentSeed = {
     },
     {
       q: 'How long does air duct cleaning take in Mt Vernon?',
-      a: 'Mt Vernon duct cleaning usually takes 2–3 hours for one system. Multi-system or heavily packed dryer vents are scoped before we start so the quote stays flat-rate.',
+      a: 'Mt Vernon duct cleaning usually takes 2\u20133 hours for one system. Multi-system or heavily packed dryer vents are scoped before we start so the quote stays flat-rate.',
     },
     {
       q: 'Are Mt Vernon air duct and dryer vent prices flat-rate?',
-      a: 'Yes. Mt Vernon residential packages are flat-rate from the Burke office — the number we confirm before work starts is what you pay. No per-vent counting.',
+      a: 'Yes. Mt Vernon residential packages are flat-rate from the Burke office \u2014 the number we confirm before work starts is what you pay. No per-vent counting.',
     },
     {
       q: 'Can duct and dryer vent cleaning be done the same day in Mt Vernon?',
-      a: 'In Mt Vernon, yes — when you book the combined package or both services up front. Call (571) 460-0001 and we stage the Burke crew for one visit to your street.',
+      a: 'In Mt Vernon, yes \u2014 when you book the combined package or both services up front. Call (571) 460-0001 and we stage the Burke crew for one visit to your street.',
     },
   ],
 }
