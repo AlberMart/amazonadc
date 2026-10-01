@@ -8,6 +8,16 @@ export const redirects: NextConfig['redirects'] = async () => {
       permanent: true,
     },
     {
+      source: '/privacy',
+      destination: '/privacy-policy',
+      permanent: true,
+    },
+    {
+      source: '/terms',
+      destination: '/terms-of-service',
+      permanent: true,
+    },
+    {
       source: '/posts',
       destination: '/blog',
       permanent: true,
