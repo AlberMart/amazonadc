@@ -74,6 +74,13 @@ export type LocationContent = {
   isOfficeHub: boolean
   office: OfficeContent
   /**
+   * Public phone for header / CTAs / schema on this page.
+   * office = serving office local line (default), site = Site Settings 800, custom = fields below.
+   */
+  phoneSource?: 'office' | 'site' | 'custom'
+  phoneDisplay?: string
+  phoneHref?: string
+  /**
    * Hero line under address, e.g. "our Burke and Bethesda offices".
    * Defaults to "our {office.city} office".
    */
@@ -176,6 +183,9 @@ export function locationFromSeed(
     offersTitle: seed.offersTitle,
     isOfficeHub: seed.slug === office.slug,
     office,
+    phoneSource: seed.phoneSource || 'office',
+    phoneDisplay: seed.phoneDisplay,
+    phoneHref: seed.phoneHref,
     dispatchLabel: seed.dispatchLabel,
     sectionLayout: seed.sectionLayout,
     about: seed.about,
@@ -300,6 +310,12 @@ function mapLocation(doc: Record<string, unknown>): LocationContent | null {
     offersTitle: String(doc.offersTitle || ''),
     isOfficeHub: slug === office.slug,
     office,
+    phoneSource:
+      doc.phoneSource === 'site' || doc.phoneSource === 'custom' || doc.phoneSource === 'office'
+        ? doc.phoneSource
+        : 'office',
+    phoneDisplay: doc.phoneDisplay ? String(doc.phoneDisplay) : undefined,
+    phoneHref: doc.phoneHref ? String(doc.phoneHref) : undefined,
     dispatchLabel: doc.dispatchLabel ? String(doc.dispatchLabel) : undefined,
     sectionLayout: (doc.sectionLayout as LocationContent['sectionLayout']) || undefined,
     about: {
@@ -547,4 +563,19 @@ export async function getCityPageLinks(): Promise<Array<{ slug: string; city: st
   } catch {
     return fromSeed.sort((a, b) => a.city.localeCompare(b.city))
   }
+}
+
+/** Slug → public phone for header chrome on /locations/[slug]. */
+export async function getLocationChromePhones(): Promise<
+  Record<string, { display: string; href: string }>
+> {
+  const { getSiteSeo } = await import('@/utilities/seo')
+  const { resolveLocationPublicPhone } = await import('@/utilities/locationPhone')
+  const [locations, site] = await Promise.all([getAllLocations(), getSiteSeo()])
+  const map: Record<string, { display: string; href: string }> = {}
+  for (const location of locations) {
+    const phone = resolveLocationPublicPhone(location, site)
+    map[location.slug] = { display: phone.display, href: phone.href }
+  }
+  return map
 }

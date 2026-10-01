@@ -14,7 +14,7 @@ export const SiteSettings: GlobalConfig = {
   },
   admin: {
     description:
-      'Site-wide brand + SEO defaults. Per-page SEO tabs override these. Office NAP/ratings live under Offices.',
+      'Site-wide brand + SEO defaults. Brand phone is the default header/CTA number on non-city pages (home, services, blog). City pages use Locations → Public phone (usually the serving office line). Office NAP/ratings live under Offices.',
   },
   fields: [
     {
@@ -34,14 +34,14 @@ export const SiteSettings: GlobalConfig = {
               type: 'text',
               required: true,
               defaultValue: '(800) 606-3334',
-              admin: { description: 'Display phone (toll-free)' },
+              admin: { description: 'Default display phone for header/CTAs outside city pages (toll-free booking).' },
             },
             {
               name: 'phoneHref',
               type: 'text',
               required: true,
               defaultValue: '+18006063334',
-              admin: { description: 'E.164 for tel: and schema' },
+              admin: { description: 'E.164 for tel: and schema. City pages can override via Locations → Public phone.' },
             },
             {
               name: 'email',

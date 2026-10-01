@@ -10,9 +10,9 @@ import { TextWithLinks } from '@/components/TextWithLinks'
 import { RenderPageSections } from '@/components/RenderPageSections'
 import type { LocationContent } from '@/utilities/locations'
 import { getAllOffices } from '@/utilities/offices'
+import { resolveLocationPublicPhone } from '@/utilities/locationPhone'
 import { getAllServiceCards } from '@/utilities/services'
 import { getSiteSeo } from '@/utilities/seo'
-import { toTelHref } from '@/utilities/tel'
 
 function CheckList({ items }: { items: string[] }) {
   return (
@@ -47,9 +47,10 @@ export async function LocationPage({ location }: { location: LocationContent }) 
   const hubSibling = offices.find((o) => o.slug !== office.slug)
   const useSections = Boolean(location.sections?.length)
 
-  // One booking number per page: match site chrome (800). Local office lines stay on NAP cards.
-  const ctaDisplay = site.phoneDisplay
-  const ctaHref = toTelHref(site.phone)
+  // Public phone: Locations → Phone source (default = serving office local line). Configurable in admin.
+  const publicPhone = resolveLocationPublicPhone(location, site)
+  const ctaDisplay = publicPhone.display
+  const ctaHref = publicPhone.href
   const dispatchLabel =
     location.dispatchLabel ||
     (location.slug === 'washington-dc'
@@ -273,7 +274,7 @@ export async function LocationPage({ location }: { location: LocationContent }) 
         <ContactForm
           sourcePage={`/locations/${location.slug}`}
           phoneDisplay={ctaDisplay}
-          phoneHref={site.phone}
+          phoneHref={publicPhone.e164}
         />
       </div>
         </>

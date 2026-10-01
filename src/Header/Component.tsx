@@ -3,6 +3,7 @@ import React from 'react'
 import { getCachedGlobalSafe } from '@/utilities/getGlobals'
 import { resolveBrandMark } from '@/utilities/brandMark'
 import { resolveCmsLink, type ResolvedNavLink } from '@/utilities/cmsLink'
+import { getLocationChromePhones } from '@/utilities/locations'
 import { resolveMobileCall } from '@/utilities/mobileCall'
 import { getSiteSeo } from '@/utilities/seo'
 import { toTelHref } from '@/utilities/tel'
@@ -21,9 +22,10 @@ const fallbackNav: ResolvedNavLink[] = [
 ]
 
 export async function Header() {
-  const [headerData, site] = await Promise.all([
+  const [headerData, site, locationPhones] = await Promise.all([
     getCachedGlobalSafe('header', 1),
     getSiteSeo(),
+    getLocationChromePhones(),
   ])
 
   const fromCms = (headerData?.navItems || [])
@@ -44,6 +46,7 @@ export async function Header() {
       showPhoneCta={headerData?.showPhoneCta !== false}
       phoneDisplay={phoneDisplay}
       phoneHref={phoneHref}
+      locationPhones={locationPhones}
       navItems={fromCms.length ? fromCms : fallbackNav}
       mobileCall={resolveMobileCall(headerData, {
         phoneDisplay,

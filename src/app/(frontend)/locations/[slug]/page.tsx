@@ -6,6 +6,7 @@ import { JsonLd } from '@/components/JsonLd'
 import { LocationPage } from '@/components/LocationPage'
 import { getAllLocationSlugs, getLocationContent } from '@/utilities/locations'
 import { faqItemsFromSections } from '@/utilities/homeSections'
+import { resolveLocationPublicPhone } from '@/utilities/locationPhone'
 import {
   absoluteUrl,
   breadcrumb,
@@ -45,6 +46,7 @@ export default async function Page({ params }: Args) {
   const pageUrl = absoluteUrl(path)
   const officeId = `${absoluteUrl(`/locations/${office.slug}`)}#office`
   const localId = location.isOfficeHub ? `${pageUrl}#office` : `${pageUrl}#local`
+  const publicPhone = resolveLocationPublicPhone(location, site)
 
   const localBusiness = location.isOfficeHub
     ? officeBranchNode(office, site)
@@ -53,7 +55,7 @@ export default async function Page({ params }: Args) {
         '@id': localId,
         name: `${site.siteName} — ${location.city}`,
         url: pageUrl,
-        telephone: site.phone,
+        telephone: publicPhone.e164,
         email: office.email || site.email,
         image: absoluteUrl(location.heroImage),
         parentOrganization: { '@id': `${absoluteUrl('/')}#organization` },

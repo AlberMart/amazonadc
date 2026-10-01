@@ -2021,7 +2021,7 @@ export interface Service {
   createdAt: string;
 }
 /**
- * City SEO pages. Public URL: /locations/[slug]. Link each page to the serving office via servedBy.
+ * City SEO pages. Public URL: /locations/[slug]. Link each page to the serving office via servedBy. Public phone (header + CTAs) is set under Phone source — default is the office local line.
  *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "locations".
@@ -2050,9 +2050,21 @@ export interface Location {
   city: string;
   state: string;
   /**
-   * Physical office that serves this city. Phone and address on the page come from this office.
+   * Physical office that serves this city. NAP address and default public phone come from this office.
    */
   servedBy: number | Office;
+  /**
+   * City pages normally use the Burke/Bethesda office line. Use Site Settings only if you want the 800 on this city.
+   */
+  phoneSource?: ('office' | 'site' | 'custom') | null;
+  /**
+   * e.g. (571) 460-0001
+   */
+  phoneDisplay?: string | null;
+  /**
+   * E.164, e.g. +15714600001
+   */
+  phoneHref?: string | null;
   /**
    * Page body. Unique copy lives here; reuse Partials via Include. Empty = legacy layout until you seed.
    */
@@ -3603,6 +3615,9 @@ export interface LocationsSelect<T extends boolean = true> {
   city?: T;
   state?: T;
   servedBy?: T;
+  phoneSource?: T;
+  phoneDisplay?: T;
+  phoneHref?: T;
   sections?:
     | T
     | {
@@ -4442,7 +4457,7 @@ export interface PayloadMigrationsSelect<T extends boolean = true> {
   createdAt?: T;
 }
 /**
- * Portable site header: brand mark + nav links + optional phone CTA. Phone/email defaults come from Site Settings. Add any location/service links as normal nav items (no domain-specific toggles).
+ * Portable site header: brand mark + nav links + optional phone CTA. Default phone comes from Site Settings. On /locations/[city] pages the header switches to that location’s Public phone (Locations → Phone source: office / site / custom).
  *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "header".
@@ -4473,7 +4488,7 @@ export interface Header {
    */
   bottomEdge?: ('none' | 'hairline' | 'scrolled') | null;
   /**
-   * Text button in the desktop nav. Uses Site Settings phone unless overridden below.
+   * Text button in the desktop nav (home/services/blog). On city pages the location Public phone overrides this.
    */
   showPhoneCta?: boolean | null;
   /**
@@ -4629,7 +4644,7 @@ export interface Footer {
   createdAt?: string | null;
 }
 /**
- * Site-wide brand + SEO defaults. Per-page SEO tabs override these. Office NAP/ratings live under Offices.
+ * Site-wide brand + SEO defaults. Brand phone is the default header/CTA number on non-city pages (home, services, blog). City pages use Locations → Public phone (usually the serving office line). Office NAP/ratings live under Offices.
  *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "site-settings".
@@ -4638,11 +4653,11 @@ export interface SiteSetting {
   id: number;
   siteName: string;
   /**
-   * Display phone (toll-free)
+   * Default display phone for header/CTAs outside city pages (toll-free booking).
    */
   phone: string;
   /**
-   * E.164 for tel: and schema
+   * E.164 for tel: and schema. City pages can override via Locations → Public phone.
    */
   phoneHref: string;
   email: string;

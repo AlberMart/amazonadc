@@ -17,7 +17,7 @@ export const Header: GlobalConfig = {
   },
   admin: {
     description:
-      'Portable site header: brand mark + nav links + optional phone CTA. Phone/email defaults come from Site Settings. Add any location/service links as normal nav items (no domain-specific toggles).',
+      'Portable site header: brand mark + nav links + optional phone CTA. Default phone comes from Site Settings. On /locations/[city] pages the header switches to that location’s Public phone (Locations → Phone source: office / site / custom).',
   },
   fields: [
     brandMarkFields(),
@@ -33,7 +33,7 @@ export const Header: GlobalConfig = {
       defaultValue: true,
       label: 'Show desktop phone button',
       admin: {
-        description: 'Text button in the desktop nav. Uses Site Settings phone unless overridden below.',
+        description: 'Text button in the desktop nav (home/services/blog). On city pages the location Public phone overrides this.',
       },
     },
     {

@@ -388,6 +388,9 @@ function mapLocation(location: LocationContentSeed) {
     state: location.state,
     /** resolved to office id in seed/run.ts */
     servedBySlug: location.servedBy,
+    phoneSource: location.phoneSource || 'office',
+    phoneDisplay: location.phoneDisplay || undefined,
+    phoneHref: location.phoneHref || undefined,
     offersTitle: location.offersTitle,
     about: {
       heading: location.about.heading,

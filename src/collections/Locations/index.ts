@@ -38,7 +38,7 @@ export const Locations: CollectionConfig = {
     group: 'Content',
     defaultColumns: ['title', 'slug', 'city', 'updatedAt'],
     useAsTitle: 'title',
-    description: 'City SEO pages. Public URL: /locations/[slug]. Link each page to the serving office via servedBy.',
+    description: 'City SEO pages. Public URL: /locations/[slug]. Link each page to the serving office via servedBy. Public phone (header + CTAs) is set under Phone source — default is the office local line.',
     preview: (doc) => {
       const slug = typeof doc?.slug === 'string' ? doc.slug : ''
       return slug ? `/locations/${slug}` : null
@@ -108,8 +108,61 @@ export const Locations: CollectionConfig = {
       relationTo: 'offices',
       required: true,
       admin: {
-        description: 'Physical office that serves this city. Phone and address on the page come from this office.',
+        description:
+          'Physical office that serves this city. NAP address and default public phone come from this office.',
       },
+    },
+    {
+      type: 'collapsible',
+      label: 'Public phone (header + CTAs)',
+      admin: {
+        initCollapsed: false,
+        description:
+          'Number shown in the site header, hero Call button, contact form, and LocalBusiness schema on this page.',
+      },
+      fields: [
+        {
+          name: 'phoneSource',
+          type: 'select',
+          defaultValue: 'office',
+          options: [
+            {
+              label: 'Serving office local line (recommended)',
+              value: 'office',
+            },
+            {
+              label: 'Site Settings booking number (toll-free)',
+              value: 'site',
+            },
+            {
+              label: 'Custom number for this page',
+              value: 'custom',
+            },
+          ],
+          admin: {
+            description:
+              'City pages normally use the Burke/Bethesda office line. Use Site Settings only if you want the 800 on this city.',
+          },
+        },
+        {
+          name: 'phoneDisplay',
+          type: 'text',
+          admin: {
+            condition: (_: unknown, sibling: { phoneSource?: string }) =>
+              sibling?.phoneSource === 'custom',
+            description: 'e.g. (571) 460-0001',
+          },
+        },
+        {
+          name: 'phoneHref',
+          type: 'text',
+          admin: {
+            condition: (_: unknown, sibling: { phoneSource?: string }) =>
+              sibling?.phoneSource === 'custom',
+            description: 'E.164, e.g. +15714600001',
+          },
+        },
+      ],
     },
     pageSectionsFields({
       name: 'sections',

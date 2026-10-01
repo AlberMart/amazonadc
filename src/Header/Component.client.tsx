@@ -45,16 +45,37 @@ export const HeaderClient: React.FC<{
   showPhoneCta: boolean
   phoneDisplay: string
   phoneHref: string
+  /** Per-city public phones from Locations CMS (phoneSource / office / custom). */
+  locationPhones?: Record<string, { display: string; href: string }>
   navItems: ResolvedNavLink[]
   mobileCall: ResolvedMobileCall | null
   bottomEdge?: HeaderBottomEdge | null
-}> = ({ brand, showPhoneCta, phoneDisplay, phoneHref, navItems, mobileCall, bottomEdge = 'none' }) => {
+}> = ({
+  brand,
+  showPhoneCta,
+  phoneDisplay,
+  phoneHref,
+  locationPhones = {},
+  navItems,
+  mobileCall,
+  bottomEdge = 'none',
+}) => {
   const { headerTheme, setHeaderTheme } = useHeaderTheme()
   const pathname = usePathname()
   const [theme, setTheme] = useState<string | null>(null)
   const [open, setOpen] = useState(false)
   const [hash, setHash] = useState('')
   const [scrolled, setScrolled] = useState(false)
+
+  const locationSlug = pathname.match(/^\/locations\/([^/]+)\/?$/)?.[1]
+  const locationPhone = locationSlug ? locationPhones[decodeURIComponent(locationSlug)] : null
+  const activePhoneDisplay = locationPhone?.display || phoneDisplay
+  const activePhoneHref = locationPhone?.href || phoneHref
+  const activeMobileCall = locationPhone
+    ? mobileCall
+      ? { ...mobileCall, phoneDisplay: locationPhone.display, phoneHref: locationPhone.href }
+      : mobileCall
+    : mobileCall
 
   useEffect(() => {
     setHeaderTheme(null)
@@ -125,8 +146,8 @@ export const HeaderClient: React.FC<{
     return () => window.removeEventListener('scroll', onScroll)
   }, [bottomEdge])
 
-  const headerCall = showInHeader(mobileCall) ? mobileCall : null
-  const floatingCall = showFloating(mobileCall) ? mobileCall : null
+  const headerCall = showInHeader(activeMobileCall) ? activeMobileCall : null
+  const floatingCall = showFloating(activeMobileCall) ? activeMobileCall : null
 
   const showBottomEdge = bottomEdge === 'hairline' || (bottomEdge === 'scrolled' && scrolled)
 
@@ -165,8 +186,8 @@ export const HeaderClient: React.FC<{
             )
           })}
           {showPhoneCta ? (
-            <a href={phoneHref} className="site-btn site-btn-primary ml-2 px-3.5 py-2 xl:ml-3">
-              {phoneDisplay}
+            <a href={activePhoneHref} className="site-btn site-btn-primary ml-2 px-3.5 py-2 xl:ml-3">
+              {activePhoneDisplay}
             </a>
           ) : null}
         </nav>
