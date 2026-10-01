@@ -6,9 +6,9 @@ export const reston: LocationContentSeed = {
   headline:
     'Air duct and dryer vent cleaning for Reston Town Center, Lake Anne, and the Silver Line',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Reston, VA. Flat rates from our Burke office for Town Center high-rises, Lake Anne condos, and South Lakes townhomes. Call (800) 606-3334.',
+    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Reston, VA. Flat rates from our Burke office for Town Center high-rises, Lake Anne condos, and South Lakes townhomes. Call (571) 460-0001.',
   intro:
-    'Amazon Air Duct Cleaning serves Reston from our Burke office — a Fairfax County run. Planned-community townhomes, Lake Anne originals, and Wiehle high-rises all take on Dulles Toll Road dust and humid summers. Call (800) 606-3334.',
+    'Amazon Air Duct Cleaning serves Reston from our Burke office — a Fairfax County run. Planned-community townhomes, Lake Anne originals, and Wiehle high-rises all take on Dulles Toll Road dust and humid summers. Call (571) 460-0001.',
   heroImage: '/img/locations/reston.webp',
   heroAlt: 'Air duct cleaning in Reston, VA — Amazon Air Duct Cleaning',
   city: 'Reston',
@@ -20,7 +20,7 @@ export const reston: LocationContentSeed = {
     paragraphs: [
       'Reston was laid out as a cluster of villages, not a single subdivision. Reston Town Center stacks condos over shops. Lake Anne still has the original mid-century plaza and lower-rise buildings. South Lakes and North Point mix townhomes with single-family streets under a heavy tree canopy. Returns in those buildings pull corridor dust common along Reston Parkway and the Dulles Toll Road. High-rise laundry closets add long dryer risers that pack with lint by the second summer.',
       'The Silver Line stop at Wiehle-Reston East brought more stacked units and rooftop packs. Older Lake Anne trunks often share air with denser modern traffic around the plaza. Cool supply air plus a humid Reston July is how registers look dirty a week after you wipe them. Construction along the Toll Road and infill near the Town Center keeps gypsum dust in the mix.',
-      'We serve Reston from [Burke](/locations/burke). Nearby [Herndon](/locations/herndon), [Great Falls](/locations/great-falls), [Vienna](/locations/vienna), and [Loudoun](/locations/loudoun) use the same dispatch. For the climate background (not a booking page), read [why corridor dust films over registers in planned communities](/blog/reston-town-center-dust-air-ducts).',
+      'We serve Reston from [Burke](/locations/burke). Nearby [Herndon](/locations/herndon), [Great Falls](/locations/great-falls), [Vienna](/locations/vienna), and [Loudoun](/locations/loudoun) use the same dispatch. More on [why corridor dust films over registers in planned communities](/blog/reston-town-center-dust-air-ducts).',
     ],
     highlights: [
       'Reston Town Center, Lake Anne, South Lakes, North Point, Wiehle-Reston East',
@@ -94,7 +94,7 @@ export const reston: LocationContentSeed = {
     steps: [
       {
         title: 'Estimate Request',
-        text: 'Form or (800) 606-3334 — we reply with timing from the Burke office.',
+        text: 'Form or (571) 460-0001 — we reply with timing from the Burke office.',
       },
       {
         title: 'Route Planning',
@@ -114,11 +114,11 @@ export const reston: LocationContentSeed = {
       },
     ],
   },
-  faqIntro: 'Reston questions — call (800) 606-3334 (dispatch: Burke).',
+  faqIntro: 'Reston questions — call (571) 460-0001 (dispatch: Burke).',
   faq: [
     {
       q: 'Do you have a storefront in Reston?',
-      a: 'No. Reston jobs are scheduled from our Burke office at 5641 Burke Centre Pkwy Ste 119, Burke, VA 22015. Call (800) 606-3334.',
+      a: 'No. Reston jobs are scheduled from our Burke office at 5641 Burke Centre Pkwy Ste 119, Burke, VA 22015. Call (571) 460-0001.',
     },
     {
       q: 'What should I prepare before the crew arrives in Reston?',

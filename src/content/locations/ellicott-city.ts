@@ -6,9 +6,9 @@ export const ellicottCity: LocationContentSeed = {
   headline:
     'Air duct and dryer vent cleaning for historic Main Street, mill houses, and flood-side humidity',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Ellicott City, MD. Flat rates from our Bethesda office for old stone and wood, Main Street humidity, and flood-prone lower levels. Call (800) 606-3334.',
+    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Ellicott City, MD. Flat rates from our Bethesda office for old stone and wood, Main Street humidity, and flood-prone lower levels. Call (301) 809-4544.',
   intro:
-    'Amazon Air Duct Cleaning serves Ellicott City from our Bethesda office — an honest Howard County drive, not a rented Main Street suite. Historic mill houses and later suburbs take on flood-side humidity and old-duct dust. Call (800) 606-3334.',
+    'Amazon Air Duct Cleaning serves Ellicott City from our Bethesda office — an Howard County drive. Historic mill houses and later suburbs take on flood-side humidity and old-duct dust. Call (301) 809-4544.',
   heroImage: '/img/locations/ellicott-city.webp',
   heroAlt: 'Air duct cleaning in Ellicott City, MD — Amazon Air Duct Cleaning',
   city: 'Ellicott City',
@@ -19,12 +19,12 @@ export const ellicottCity: LocationContentSeed = {
     heading: 'Mill-Town Humidity, Flood History, and Old Cellars',
     paragraphs: [
       'Ellicott City is a historic mill town on the Patapsco: Main Street stone and wood, the Tiber valley, then later neighborhoods up the hills — Dorsey Hall, Turf Valley, and streets toward Catonsville. The old stock was never designed around modern HVAC. Ducts were cut through stone cellars and timber. Those cellars remember every wet year. Flood history is not a marketing line here; lower levels stay damp longer than a Beltway basement.',
-      'Newer hillsides still load pollen. The historic core loads moisture. Both send film into returns. Catonsville is a next-door community we mention because neighbors ask — it is not its own page. [Columbia](/locations/columbia) is the planned-city page west.',
-      'We serve Ellicott City from [Bethesda](/locations/bethesda). The drive is farther than Montgomery County and we schedule it that way. For background reading (not a booking page), see [ellicott-city-flood-humidity-air-ducts](/blog/ellicott-city-flood-humidity-air-ducts).',
+      'Newer hillsides still load pollen. The historic core loads moisture. Both send film into returns. Catonsville is a next-door community we mention because neighbors ask — it is. [Columbia](/locations/columbia) is the planned-city page west.',
+      'We serve Ellicott City from [Bethesda](/locations/bethesda). The drive is farther than Montgomery County and we schedule it that way. More on [Ellicott City Flood Humidity](/blog/ellicott-city-flood-humidity-air-ducts).',
     ],
     highlights: [
       'Historic Main Street, mill houses, Dorsey Hall, Turf Valley',
-      'Flat-rate pricing from the Bethesda office — honest Howard County drive',
+      'Flat-rate pricing from the Bethesda office',
       'Before-and-after photos on every duct job',
       'Stone-cellar and flood-side trunks we treat as moisture jobs, not a gimmick',
     ],
@@ -94,7 +94,7 @@ export const ellicottCity: LocationContentSeed = {
     steps: [
       {
         title: 'Request a Window',
-        text: 'Call (800) 606-3334 or use the form. We confirm by the next business day.',
+        text: 'Call (301) 809-4544 or use the form. We confirm by the next business day.',
       },
       {
         title: 'Share Access Details',
@@ -114,11 +114,11 @@ export const ellicottCity: LocationContentSeed = {
       },
     ],
   },
-  faqIntro: 'Ellicott City questions — call (800) 606-3334 (dispatch: Bethesda).',
+  faqIntro: 'Ellicott City questions — call (301) 809-4544 (dispatch: Bethesda).',
   faq: [
     {
       q: 'Do you have a storefront in Ellicott City?',
-      a: 'No. Ellicott City jobs are scheduled from our Bethesda office at 7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814. Call (800) 606-3334.',
+      a: 'No. Ellicott City jobs are scheduled from our Bethesda office at 7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814. Call (301) 809-4544.',
     },
     {
       q: 'How long does air duct cleaning take in a typical Ellicott City home?',

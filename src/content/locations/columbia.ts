@@ -6,9 +6,9 @@ export const columbia: LocationContentSeed = {
   headline:
     'Air duct and dryer vent cleaning for Rouse village centers, townhomes, and lake streets',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Columbia, MD. Flat rates from our Bethesda office for Howard County village townhomes and lake-side humidity. Call (800) 606-3334.',
+    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Columbia, MD. Flat rates from our Bethesda office for Howard County village townhomes and lake-side humidity. Call (301) 809-4544.',
   intro:
-    'Amazon Air Duct Cleaning serves Columbia from our Bethesda office — an honest Howard County drive, not a rented Town Center suite. Rouse village townhomes and houses near the lakes take on pollen and damp-season film. Call (800) 606-3334.',
+    'Amazon Air Duct Cleaning serves Columbia from our Bethesda office — an Howard County drive. Rouse village townhomes and houses near the lakes take on pollen and damp-season film. Call (301) 809-4544.',
   heroImage: '/img/locations/columbia.webp',
   heroAlt: 'Air duct cleaning in Columbia, MD — Amazon Air Duct Cleaning',
   city: 'Columbia',
@@ -19,12 +19,12 @@ export const columbia: LocationContentSeed = {
     heading: 'Village Townhomes, Lake Paths, and HOA Dryer Chases',
     paragraphs: [
       'Columbia is James Rouse’s planned Howard County city: Town Center, Wilde Lake, Hickory Ridge, Owen Brown, Oakland Mills, Kings Contrivance, and the paths that stitch village centers together. A lot of the stock is 1970s–90s townhomes and colonials with HOA rules and tight mechanical closets. Dryer vents turn corners. Returns sit low over finished lower levels.',
-      'The lakes and open space keep lots greener — and damper — than a Beltway brick block. Oak pollen and mowed-path dust ride the same returns. Clarksville is a neighborhood and next-door community we already drive, not its own page. [Ellicott City](/locations/ellicott-city) is the next Howard County city page.',
-      'We serve Columbia from [Bethesda](/locations/bethesda). The drive is farther than Rockville. For background reading (not a booking page), see [columbia-village-townhomes-air-ducts](/blog/columbia-village-townhomes-air-ducts).',
+      'The lakes and open space keep lots greener — and damper — than a Beltway brick block. Oak pollen and mowed-path dust ride the same returns. Clarksville is a neighborhood and next-door community we already drive. [Ellicott City](/locations/ellicott-city) is the next Howard County city page.',
+      'We serve Columbia from [Bethesda](/locations/bethesda). The drive is farther than Rockville. More on [Columbia Village Townhomes](/blog/columbia-village-townhomes-air-ducts).',
     ],
     highlights: [
       'Town Center, Wilde Lake, Hickory Ridge, and lake-side villages',
-      'Flat-rate pricing from the Bethesda office — honest Howard County drive',
+      'Flat-rate pricing from the Bethesda office',
       'Before-and-after photos on every duct job',
       'HOA townhome closets we already clean across planned communities',
     ],
@@ -94,7 +94,7 @@ export const columbia: LocationContentSeed = {
     steps: [
       {
         title: 'Online or Phone Intake',
-        text: 'Book at (800) 606-3334. Mention Columbia so we route from Bethesda.',
+        text: 'Book at (301) 809-4544. Mention Columbia so we route from Bethesda.',
       },
       {
         title: 'Pre-Job Notes',
@@ -114,11 +114,11 @@ export const columbia: LocationContentSeed = {
       },
     ],
   },
-  faqIntro: 'Columbia questions — call (800) 606-3334 (dispatch: Bethesda).',
+  faqIntro: 'Columbia questions — call (301) 809-4544 (dispatch: Bethesda).',
   faq: [
     {
       q: 'Do you have a storefront in Columbia?',
-      a: 'No. Columbia jobs are scheduled from our Bethesda office at 7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814. Call (800) 606-3334.',
+      a: 'No. Columbia jobs are scheduled from our Bethesda office at 7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814. Call (301) 809-4544.',
     },
     {
       q: 'Do you clean dryer vents in Columbia townhomes and condos?',

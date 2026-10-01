@@ -6,9 +6,9 @@ export const montgomeryVillage: LocationContentSeed = {
   headline:
     'Air duct and dryer vent cleaning for 1970s planned streets, lakes, and Lakeforest townhomes',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Montgomery Village, MD. Flat rates from our Bethesda office for 1970s planned townhomes and lake-side humidity. Call (800) 606-3334.',
+    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Montgomery Village, MD. Flat rates from our Bethesda office for 1970s planned townhomes and lake-side humidity. Call (301) 809-4544.',
   intro:
-    'Amazon Air Duct Cleaning serves Montgomery Village from our Bethesda office — not a rented Lakeforest suite. 1970s planned townhomes and houses on the lakes take on pollen and damp-season film. Call (800) 606-3334.',
+    'Amazon Air Duct Cleaning serves Montgomery Village from our Bethesda office. 1970s planned townhomes and houses on the lakes take on pollen and damp-season film. Call (301) 809-4544.',
   heroImage: '/img/locations/montgomery-village.webp',
   heroAlt: 'Air duct cleaning in Montgomery Village, MD — Amazon Air Duct Cleaning',
   city: 'Montgomery Village',
@@ -20,7 +20,7 @@ export const montgomeryVillage: LocationContentSeed = {
     paragraphs: [
       'Montgomery Village is a 1970s planned community next to [Gaithersburg](/locations/gaithersburg): Stedwick, Whetstone, East Village, the lakes, and the streets that used to orbit Lakeforest. The stock is townhomes and colonials from that build-out, plus later infill. Mechanical closets are tight. Dryer vents were run for machines that no longer exist. HOA paths keep lots leafy — and the returns keep pulling that leaf grit.',
       'Lake-side humidity is the other half. Cool lower-level trunks sweat in Maryland summers. Pollen from the original tree plan sticks. Registers look clean after you wipe them and gray again when the AC cycles. [Germantown](/locations/germantown) is the next corridor page north.',
-      'We serve Montgomery Village from [Bethesda](/locations/bethesda). For background reading (not a booking page), see [montgomery-village-townhomes-air-ducts](/blog/montgomery-village-townhomes-air-ducts).',
+      'We serve Montgomery Village from [Bethesda](/locations/bethesda). More on [Montgomery Village Townhomes](/blog/montgomery-village-townhomes-air-ducts).',
     ],
     highlights: [
       'Stedwick, Whetstone, East Village, and lake-side townhomes',
@@ -94,7 +94,7 @@ export const montgomeryVillage: LocationContentSeed = {
     steps: [
       {
         title: 'Online or Phone Intake',
-        text: 'Book at (800) 606-3334. Mention Montgomery Village so we route from Bethesda.',
+        text: 'Book at (301) 809-4544. Mention Montgomery Village so we route from Bethesda.',
       },
       {
         title: 'Pre-Job Notes',
@@ -114,11 +114,11 @@ export const montgomeryVillage: LocationContentSeed = {
       },
     ],
   },
-  faqIntro: 'Montgomery Village questions — call (800) 606-3334 (dispatch: Bethesda).',
+  faqIntro: 'Montgomery Village questions — call (301) 809-4544 (dispatch: Bethesda).',
   faq: [
     {
       q: 'Do you have a storefront in Montgomery Village?',
-      a: 'No. Montgomery Village jobs are scheduled from our Bethesda office at 7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814. Call (800) 606-3334.',
+      a: 'No. Montgomery Village jobs are scheduled from our Bethesda office at 7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814. Call (301) 809-4544.',
     },
     {
       q: 'Can ducts and dryer vents be done the same day in Montgomery Village?',

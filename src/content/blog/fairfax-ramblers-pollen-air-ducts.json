@@ -1,8 +1,8 @@
 {
   "slug": "fairfax-ramblers-pollen-air-ducts",
-  "title": "What Loads Dust Into HVAC Returns Near Fairfax",
+  "title": "Cool basements, oak pollen, and why City of Fairfax registers get dusty again",
   "headline": "Cool basements, oak pollen, and why City of Fairfax registers get dusty again",
-  "description": "The City of Fairfax sits inside a heavy Fairfax County tree canopy. An educational look at why 1950s–80s ramblers sweat at the trunks, how pollen sticks, and when to clean the ducts.",
+  "description": "The City of Fairfax sits inside a heavy Fairfax County tree canopy. why 1950s–80s ramblers sweat at the trunks, how pollen sticks, and when to clean the ducts.",
   "heroImage": "/img/blog/heroes/fairfax-ramblers-pollen-air-ducts.webp",
   "sections": [
     {
@@ -40,7 +40,7 @@
       "id": "protect",
       "heading": "Background reading vs booking a visit",
       "paragraphs": [
-        "Fairfax jobs are scheduled from our metro offices. This article is educational — use the [location page](/locations/fairfax) when you are ready to book.",
+        "Fairfax jobs are scheduled from our metro offices For service and scheduling, see the [local service page](/locations/fairfax).",
         "Fairfax is served from our [Burke](/locations/burke) office. Nearby [Springfield](/locations/springfield) and [McLean](/locations/mclean) use the same dispatch.",
         "Packages live on the [Fairfax location page](/locations/fairfax). Add [dryer vent cleaning](/dryer-vent-cleaning) if the laundry room stays hot."
       ],
@@ -53,20 +53,12 @@
   ],
   "faq": [
     {
-      "q": "Is this a sales page for Fairfax duct cleaning?",
-      "a": "No. This post explains mechanisms and signs. Service details live on the Fairfax location page."
-    },
-    {
       "q": "What usually causes gray film on supply registers?",
       "a": "Fine particles that bypass or overload filters settle in cool trunks and recirculate when the blower runs."
     },
     {
       "q": "When is dryer vent cleaning the better first step?",
       "a": "When laundry closets stay hot, dry times double, or you smell burnt lint — clear the vent to the exterior cap."
-    },
-    {
-      "q": "How is this different from a location page?",
-      "a": "Location pages cover packages, booking, and office dispatch. Articles cover climate and housing patterns."
     }
   ]
 }

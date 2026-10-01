@@ -5,9 +5,9 @@ export const fallsChurch: LocationContentSeed = {
   title: 'Air Duct Cleaning in Falls Church, VA',
   headline: 'Air duct and dryer vent cleaning for the City of Falls Church and close-in streets',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Falls Church, VA. Flat rates from our Burke office for older close-in houses, small lots, and Beltway-dust homes. Call (800) 606-3334.',
+    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Falls Church, VA. Flat rates from our Burke office for older close-in houses, small lots, and Beltway-dust homes. Call (571) 460-0001.',
   intro:
-    'Amazon Air Duct Cleaning serves the City of Falls Church from our Burke office — not a rented Broad Street suite. Older close-in houses on small lots and streets toward Arlington all take on Beltway dust and humid summers. Call (800) 606-3334.',
+    'Amazon Air Duct Cleaning serves the City of Falls Church from our Burke office. Older close-in houses on small lots and streets toward Arlington all take on Beltway dust and humid summers. Call (571) 460-0001.',
   heroImage: '/img/locations/falls-church.webp',
   heroAlt: 'Air duct cleaning in Falls Church, VA — Amazon Air Duct Cleaning',
   city: 'Falls Church',
@@ -19,7 +19,7 @@ export const fallsChurch: LocationContentSeed = {
     paragraphs: [
       'The City of Falls Church is a small independent city — Broad Street, Washington Street, Tinner Hill, and tight blocks of older houses on small lots. That is a different place from the huge “Falls Church” Census area that sprawls through Fairfax County. This page is for the independent city and the streets that immediately touch it. Older metal trunks, unfinished or finished basements, and short yards mean returns sit close to the Beltway film that coats porches along Route 7.',
       'Small lots do not mean small dust loads. Traffic particles from I-66 and the Beltway mix with pollen from street trees. A 1920s–60s house that gained central air later often has trunks snaked through tight joist bays. Dust collects at those kinks. Laundry closets on a second floor send dryer lint on a long, bent path to a rear wall.',
-      'We serve Falls Church from [Burke](/locations/burke). Nearby [Arlington](/locations/arlington), [McLean](/locations/mclean), and [Vienna](/locations/vienna) use the same dispatch. For background reading (not a booking page), see [falls-church-close-in-dust-air-ducts](/blog/falls-church-close-in-dust-air-ducts).',
+      'We serve Falls Church from [Burke](/locations/burke). Nearby [Arlington](/locations/arlington), [McLean](/locations/mclean), and [Vienna](/locations/vienna) use the same dispatch. More on [Falls Church Close In Dust](/blog/falls-church-close-in-dust-air-ducts).',
     ],
     highlights: [
       'City of Falls Church: Broad Street, Tinner Hill, West End, close streets',
@@ -93,7 +93,7 @@ export const fallsChurch: LocationContentSeed = {
     steps: [
       {
         title: 'Request a Window',
-        text: 'Call (800) 606-3334 or use the form. We confirm by the next business day.',
+        text: 'Call (571) 460-0001 or use the form. We confirm by the next business day.',
       },
       {
         title: 'Share Access Details',
@@ -113,11 +113,11 @@ export const fallsChurch: LocationContentSeed = {
       },
     ],
   },
-  faqIntro: 'Falls Church questions — call (800) 606-3334 (dispatch: Burke).',
+  faqIntro: 'Falls Church questions — call (571) 460-0001 (dispatch: Burke).',
   faq: [
     {
       q: 'Which office covers Falls Church?',
-      a: 'Burke — 5641 Burke Centre Pkwy Ste 119, Burke, VA 22015. Booking line (800) 606-3334.',
+      a: 'Burke — 5641 Burke Centre Pkwy Ste 119, Burke, VA 22015. Booking line (571) 460-0001.',
     },
     {
       q: 'How long does air duct cleaning take in a typical Falls Church home?',

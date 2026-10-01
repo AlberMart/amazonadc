@@ -5,6 +5,13 @@ import { revalidatePath } from 'next/cache'
 import type { Post } from '../../../payload-types'
 import { scheduleRevalidate } from '@/utilities/scheduleRevalidate'
 
+function revalidatePostPaths(slug?: string | null) {
+  if (slug) revalidatePath(`/blog/${slug}`)
+  revalidatePath('/blog')
+  revalidatePath('/')
+  revalidatePath('/sitemap.xml')
+}
+
 export const revalidatePost: CollectionAfterChangeHook<Post> = ({
   doc,
   previousDoc,
@@ -13,27 +20,14 @@ export const revalidatePost: CollectionAfterChangeHook<Post> = ({
   if (!context.disableRevalidate) {
     if (doc._status === 'published') {
       const path = `/blog/${doc.slug}`
-
       payload.logger.info(`Revalidating post at path: ${path}`)
-
-      scheduleRevalidate(() => {
-        revalidatePath(path)
-        revalidatePath('/blog')
-        revalidatePath('/sitemap.xml')
-      })
+      scheduleRevalidate(() => revalidatePostPaths(doc.slug))
     }
 
-    // If the post was previously published, we need to revalidate the old path
     if (previousDoc._status === 'published' && doc._status !== 'published') {
       const oldPath = `/blog/${previousDoc.slug}`
-
       payload.logger.info(`Revalidating old post at path: ${oldPath}`)
-
-      scheduleRevalidate(() => {
-        revalidatePath(oldPath)
-        revalidatePath('/blog')
-        revalidatePath('/sitemap.xml')
-      })
+      scheduleRevalidate(() => revalidatePostPaths(previousDoc.slug))
     }
   }
   return doc
@@ -41,13 +35,7 @@ export const revalidatePost: CollectionAfterChangeHook<Post> = ({
 
 export const revalidateDelete: CollectionAfterDeleteHook<Post> = ({ doc, req: { context } }) => {
   if (!context.disableRevalidate) {
-    const path = `/blog/${doc?.slug}`
-
-    scheduleRevalidate(() => {
-      revalidatePath(path)
-      revalidatePath('/blog')
-      revalidatePath('/sitemap.xml')
-    })
+    scheduleRevalidate(() => revalidatePostPaths(doc?.slug))
   }
 
   return doc

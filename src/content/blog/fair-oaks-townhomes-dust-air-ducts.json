@@ -1,8 +1,8 @@
 {
   "slug": "fair-oaks-townhomes-dust-air-ducts",
-  "title": "Humidity, Pollen, and Duct Film: A Fair Oaks Homeowner Guide",
+  "title": "Mall-area stacks, Fair Lakes closets, and why this is not the City of Fairfax page",
   "headline": "Mall-area stacks, Fair Lakes closets, and why this is not the City of Fairfax page",
-  "description": "Fair Oaks, VA sits at the I-66 / Route 50 interchange around the mall and Fair Lakes. An educational look at why townhome ducts load corridor dust.",
+  "description": "Fair Oaks, VA sits at the I-66 / Route 50 interchange around the mall and Fair Lakes. why townhome ducts load corridor dust.",
   "heroImage": "/img/blog/heroes/fair-oaks-townhomes-dust-air-ducts.webp",
   "sections": [
     {
@@ -40,7 +40,7 @@
       "id": "protect",
       "heading": "Background reading vs booking a visit",
       "paragraphs": [
-        "Fair Oaks jobs are scheduled from our metro offices. This article is educational — use the [location page](/locations/fair-oaks) when you are ready to book.",
+        "Fair Oaks jobs are scheduled from our metro offices For service and scheduling, see the [local service page](/locations/fair-oaks).",
         "Fair Oaks is served from our [Burke](/locations/burke) office. Nearby [Fairfax](/locations/fairfax) and [Chantilly](/locations/chantilly) use the same crew.",
         "Service details live on the [Fair Oaks location page](/locations/fair-oaks). Add [dryer vent cleaning](/dryer-vent-cleaning) for stacked laundry."
       ],
@@ -53,20 +53,12 @@
   ],
   "faq": [
     {
-      "q": "Is this a sales page for Fair Oaks duct cleaning?",
-      "a": "No. This post explains mechanisms and signs. Service details live on the Fair Oaks location page."
-    },
-    {
       "q": "What usually causes gray film on supply registers?",
       "a": "Fine particles that bypass or overload filters settle in cool trunks and recirculate when the blower runs."
     },
     {
       "q": "When is dryer vent cleaning the better first step?",
       "a": "When laundry closets stay hot, dry times double, or you smell burnt lint — clear the vent to the exterior cap."
-    },
-    {
-      "q": "How is this different from a location page?",
-      "a": "Location pages cover packages, booking, and office dispatch. Articles cover climate and housing patterns."
     }
   ]
 }

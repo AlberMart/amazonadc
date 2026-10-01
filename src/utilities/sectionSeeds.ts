@@ -1,10 +1,11 @@
 import type { HomeSection } from '@/utilities/homeSections'
 import { overlayFromAltOrSrc } from '@/utilities/galleryOverlay'
 import { servicePrimaryCta, type ServiceContent } from '@/utilities/services'
-import type {
-  LocationContent,
-  LocationContentSeed,
-  LocationSectionLayout,
+import {
+  getNearbyLocationLinks,
+  type LocationContent,
+  type LocationContentSeed,
+  type LocationSectionLayout,
 } from '@/utilities/locations'
 
 export function serviceContentToSections(service: ServiceContent): HomeSection[] {
@@ -202,36 +203,40 @@ function locationSectionParts(
       const nearbyPacks = [
         {
           heading: `Serving ${location.city} from ${dispatch}`,
-          intro: `We cover ${location.city} and nearby communities from ${dispatch}. For the full list of cities, see our locations index.`,
+          intro: `We cover ${location.city} and nearby communities from ${dispatch}. Browse neighboring city pages or see [all locations](/locations).`,
         },
         {
-          heading: `${location.city} Routes Staged at ${dispatch}`,
-          intro: `${location.city} jobs leave from ${dispatch}. Nearby city pages share the same crew list.`,
+          heading: `${location.city} Routes From ${dispatch}`,
+          intro: `${location.city} jobs leave from ${dispatch}. These neighboring pages share the same dispatch.`,
         },
         {
           heading: `Where Else We Drive Near ${location.city}`,
-          intro: `Beyond ${location.city}, the same team covers neighboring streets from ${dispatch}.`,
+          intro: `Beyond ${location.city}, the same team covers these nearby cities from ${dispatch}.`,
         },
         {
-          heading: `${location.city} Coverage Map — Compact View`,
-          intro: `A short list of neighboring communities on the ${location.city} route from ${dispatch}.`,
+          heading: `Communities Near ${location.city}`,
+          intro: `A short list of neighboring service pages on the ${location.city} route from ${dispatch}.`,
         },
         {
           heading: `Next Stops After ${location.city}`,
-          intro: `Same office (${dispatch}). Different city pages below for neighborhood-level detail.`,
+          intro: `Same office (${dispatch}). Open a neighboring city page for local detail, or see [all locations](/locations).`,
         },
       ]
       const i =
         Math.abs([...location.slug].reduce((h, c) => (h * 31 + c.charCodeAt(0)) | 0, 0)) %
         nearbyPacks.length
       const pack = nearbyPacks[i]
+      const nearbyLinks = getNearbyLocationLinks(location.slug, 6)
       return {
-        type: 'serviceArea' as const,
+        type: 'cardGrid' as const,
         tone: 'white' as const,
         heading: pack.heading,
         intro: pack.intro,
-        compact: true,
-        anchorId: 'service_area',
+        items: nearbyLinks.map((row) => ({
+          title: `${row.city}, ${row.state}`,
+          text: `Air duct cleaning in [${row.city}](/locations/${row.slug}).`,
+        })),
+        gridCols: 3 as const,
       }
     })(),
     process: {

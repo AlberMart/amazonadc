@@ -1,8 +1,8 @@
 {
   "slug": "how-potomac-humidity-affects-arlington-air-quality",
-  "title": "Arlington Indoor Air: Corridor Dust vs Household Debris",
+  "title": "The Hidden Cost of Living Near the Potomac: Humidity, HVAC Systems, and Your Health",
   "headline": "The Hidden Cost of Living Near the Potomac: Humidity, HVAC Systems, and Your Health",
-  "description": "Discover how Arlington's river humidity affects your HVAC system, why mold thrives in riverfront condos and older homes, and how to protect indoor air quality. For service details, use the matching city location page.",
+  "description": "Discover how Arlington's river humidity affects your HVAC system, why mold thrives in riverfront condos and older homes, and how to protect indoor air quality. ",
   "heroImage": "/img/blog/heroes/how-potomac-humidity-affects-arlington-air-quality.webp",
   "sections": [
     {
@@ -42,7 +42,7 @@
       "id": "protect",
       "heading": "Keeping trunks and dryer runs healthier between cleanings",
       "paragraphs": [
-        "Arlington jobs are scheduled from our metro offices. This article is educational — use the [location page](/locations/arlington) when you are ready to book.",
+        "Arlington jobs are scheduled from our metro offices For service and scheduling, see the [local service page](/locations/arlington).",
         "You cannot change the weather along the Potomac. You can keep the inside of the system dry and clear. Local technicians usually start with three steps:",
         "If the odor is already in the vents, or dust keeps returning after you clean the registers, do not wait for it to spread through the building. We now include ventilation mold treatment with our Arlington work, alongside standard flat-rate cleaning."
       ],
@@ -55,24 +55,8 @@
   ],
   "faq": [
     {
-      "q": "Do humid summers alone require duct cleaning?",
-      "a": "Humidity helps dust stick and can support growth on cold coils, but cleaning decisions still depend on inspection and history."
-    },
-    {
       "q": "Who serves Arlington?",
       "a": "Amazon Air Duct Cleaning schedules Arlington from Burke or Bethesda. Book on the location page or call (800) 606-3334."
-    },
-    {
-      "q": "Can filters replace professional cleaning?",
-      "a": "Filters reduce new debris. They do not remove what already sits inside trunks and dryer runs."
-    },
-    {
-      "q": "What should I track for a few weeks first?",
-      "a": "Filter condition, dry times, musty smells at startup, and how fast wiped registers film over again."
-    },
-    {
-      "q": "Are energy-savings claims guaranteed?",
-      "a": "No. Cleaner airflow can help equipment run less hard, but results vary by home and system condition."
     }
   ]
 }

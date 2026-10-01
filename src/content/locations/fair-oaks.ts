@@ -6,9 +6,9 @@ export const fairOaks: LocationContentSeed = {
   headline:
     'Air duct and dryer vent cleaning for Fair Oaks Mall, Fair Lakes, and the 50/66 townhome grid',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Fair Oaks, VA. Flat rates from our Burke office for mall-area townhomes, Fair Lakes HOAs, and Route 50/I-66 dust. Call (800) 606-3334.',
+    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Fair Oaks, VA. Flat rates from our Burke office for mall-area townhomes, Fair Lakes HOAs, and Route 50/I-66 dust. Call (571) 460-0001.',
   intro:
-    'Amazon Air Duct Cleaning serves Fair Oaks from our Burke office. Townhomes along 50 and 66, Fair Lakes clusters, and streets next to Fairfax Corner all take on corridor dust. This is not a duplicate of the City of Fairfax page. Call (800) 606-3334.',
+    'Amazon Air Duct Cleaning serves Fair Oaks from our Burke office. Townhomes along 50 and 66, Fair Lakes clusters, and streets next to Fairfax Corner all take on corridor dust. This is not a duplicate of the City of Fairfax page. Call (571) 460-0001.',
   heroImage: '/img/locations/fair-oaks.webp',
   heroAlt: 'Air duct cleaning in Fair Oaks, VA — Amazon Air Duct Cleaning',
   city: 'Fair Oaks',
@@ -20,7 +20,7 @@ export const fairOaks: LocationContentSeed = {
     paragraphs: [
       'Fair Oaks is the Fairfax County community around Fair Oaks Mall, West Ox, and the I-66 / Route 50 interchange — not the independent City of Fairfax. Housing here is mostly 1980s–2000s townhomes and HOA singles: stacked laundry, attic air handlers, and visitor lots that sit in traffic film. Fair Lakes is next door. Fairfax Corner is adjacent; those jobs belong on the [Fairfax](/locations/fairfax) page when you are inside the city, and here when you are in the mall / Fair Lakes grid.',
       'Townhome dryer chases clog fast. Returns pull Beltway-adjacent dust and construction film from infill along 50. Attic handlers run hot in July, then dump that dust downstairs every time the system starts. A unit that looks “too new to clean” often still has builder drywall dust in the trunks.',
-      'We serve Fair Oaks from [Burke](/locations/burke). Nearby [Fairfax](/locations/fairfax), [Oakton](/locations/oakton), and [Chantilly](/locations/chantilly) use the same dispatch. For background reading (not a booking page), see [fair-oaks-townhomes-dust-air-ducts](/blog/fair-oaks-townhomes-dust-air-ducts).',
+      'We serve Fair Oaks from [Burke](/locations/burke). Nearby [Fairfax](/locations/fairfax), [Oakton](/locations/oakton), and [Chantilly](/locations/chantilly) use the same dispatch. More on [Fair Oaks Townhomes Dust](/blog/fair-oaks-townhomes-dust-air-ducts).',
     ],
     highlights: [
       'Fair Oaks Mall area, Fair Lakes, West Ox, Pender, 50/66 townhomes',
@@ -94,7 +94,7 @@ export const fairOaks: LocationContentSeed = {
     steps: [
       {
         title: 'Estimate Request',
-        text: 'Form or (800) 606-3334 — we reply with timing from the Burke office.',
+        text: 'Form or (571) 460-0001 — we reply with timing from the Burke office.',
       },
       {
         title: 'Route Planning',
@@ -114,11 +114,11 @@ export const fairOaks: LocationContentSeed = {
       },
     ],
   },
-  faqIntro: 'Fair Oaks questions — call (800) 606-3334 (dispatch: Burke).',
+  faqIntro: 'Fair Oaks questions — call (571) 460-0001 (dispatch: Burke).',
   faq: [
     {
       q: 'Where does the Fair Oaks crew stage from?',
-      a: 'Our Burke office (5641 Burke Centre Pkwy Ste 119, Burke, VA 22015). Office line (571) 460-0001; booking (800) 606-3334.',
+      a: 'Our Burke office (5641 Burke Centre Pkwy Ste 119, Burke, VA 22015). Office line (571) 460-0001; booking (571) 460-0001.',
     },
     {
       q: 'Do you bring portable equipment for tight Fair Oaks streets?',

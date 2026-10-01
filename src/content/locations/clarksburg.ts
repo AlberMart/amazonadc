@@ -6,9 +6,9 @@ export const clarksburg: LocationContentSeed = {
   headline:
     'Air duct and dryer vent cleaning for new-construction HOAs and I-270 north drywall dust',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Clarksburg, MD. Flat rates from our Bethesda office for new-construction dust, HOA townhomes, and I-270 north. Call (800) 606-3334.',
+    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Clarksburg, MD. Flat rates from our Bethesda office for new-construction dust, HOA townhomes, and I-270 north. Call (301) 809-4544.',
   intro:
-    'Amazon Air Duct Cleaning serves Clarksburg from our Bethesda office — farther up I-270 than Germantown, not a rented Town Center suite. New pads, HOA townhomes, and first-owner houses all take on drywall dust. Call (800) 606-3334.',
+    'Amazon Air Duct Cleaning serves Clarksburg from our Bethesda office — farther up I-270 than Germantown. New pads, HOA townhomes, and first-owner houses all take on drywall dust. Call (301) 809-4544.',
   heroImage: '/img/locations/clarksburg.webp',
   heroAlt: 'Air duct cleaning in Clarksburg, MD — Amazon Air Duct Cleaning',
   city: 'Clarksburg',
@@ -18,9 +18,9 @@ export const clarksburg: LocationContentSeed = {
   about: {
     heading: 'New-Construction Dust Still Sitting in Young Trunks',
     paragraphs: [
-      'Clarksburg is Montgomery County’s I-270 north boom: Clarksburg Village, Cabin Branch, Town Center, Skylark, then lanes toward Damascus. Damascus is a community we already drive, not its own page. [Frederick](/locations/frederick) is the next city farther up the corridor. A lot of the housing is first- or second-owner from the last two decades. Builders tape registers. Dust still gets in. Fine gypsum rides every return the first summers you live there.',
+      'Clarksburg is Montgomery County’s I-270 north boom: Clarksburg Village, Cabin Branch, Town Center, Skylark, then lanes toward Damascus. Damascus is covered on this route. [Frederick](/locations/frederick) is the next city farther up the corridor. A lot of the housing is first- or second-owner from the last two decades. Builders tape registers. Dust still gets in. Fine gypsum rides every return the first summers you live there.',
       'HOA townhomes add long dryer vents and tight closets on top of that construction load. I-270 traffic grit does not wait for the last pad to finish. Filters catch some of it. Supplies still blow a gray film onto new paint. Humid seasons then glue that powder to cool trunks.',
-      'We serve Clarksburg from [Bethesda](/locations/bethesda). Nearby [Germantown](/locations/germantown) is the same dispatch. For background reading (not a booking page), see [clarksburg-new-construction-dust-air-ducts](/blog/clarksburg-new-construction-dust-air-ducts).',
+      'We serve Clarksburg from [Bethesda](/locations/bethesda). Nearby [Germantown](/locations/germantown) is the same dispatch. More on [Clarksburg New Construction Dust](/blog/clarksburg-new-construction-dust-air-ducts).',
     ],
     highlights: [
       'Clarksburg Village, Cabin Branch, Town Center, Damascus lanes',
@@ -94,7 +94,7 @@ export const clarksburg: LocationContentSeed = {
     steps: [
       {
         title: 'Online or Phone Intake',
-        text: 'Book at (800) 606-3334. Mention Clarksburg so we route from Bethesda.',
+        text: 'Book at (301) 809-4544. Mention Clarksburg so we route from Bethesda.',
       },
       {
         title: 'Pre-Job Notes',
@@ -114,11 +114,11 @@ export const clarksburg: LocationContentSeed = {
       },
     ],
   },
-  faqIntro: 'Clarksburg questions — call (800) 606-3334 (dispatch: Bethesda).',
+  faqIntro: 'Clarksburg questions — call (301) 809-4544 (dispatch: Bethesda).',
   faq: [
     {
       q: 'Which office covers Clarksburg?',
-      a: 'Bethesda — 7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814. Booking line (800) 606-3334.',
+      a: 'Bethesda — 7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814. Booking line (301) 809-4544.',
     },
     {
       q: 'Can ducts and dryer vents be done the same day in Clarksburg?',

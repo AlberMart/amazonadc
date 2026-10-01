@@ -6,9 +6,9 @@ export const lorton: LocationContentSeed = {
   headline:
     'Air duct and dryer vent cleaning for Lorton Station, Laurel Hill, and the I-95 corridor',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Lorton, VA. Flat rates from our Burke office for new HOAs, older homes, and Occoquan-humidity streets. Call (800) 606-3334.',
+    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Lorton, VA. Flat rates from our Burke office for new HOAs, older homes, and Occoquan-humidity streets. Call (571) 460-0001.',
   intro:
-    'Amazon Air Duct Cleaning serves Lorton from our Burke office — scheduled from our serving office. I-95 corridor houses, Laurel Hill HOAs, and older streets toward the Occoquan all take on traffic dust and river humidity. Call (800) 606-3334.',
+    'Amazon Air Duct Cleaning serves Lorton from our Burke office — scheduled from our serving office. I-95 corridor houses, Laurel Hill HOAs, and older streets toward the Occoquan all take on traffic dust and river humidity. Call (571) 460-0001.',
   heroImage: '/img/locations/lorton.webp',
   heroAlt: 'Air duct cleaning in Lorton, VA — Amazon Air Duct Cleaning',
   city: 'Lorton',
@@ -20,7 +20,7 @@ export const lorton: LocationContentSeed = {
     paragraphs: [
       'Lorton sits on I-95 south of Springfield: Lorton Station and the VRE, Laurel Hill on the former prison grounds, Gunston-area streets, and older houses that predate the HOA wave. Traffic film from the interstate is constant. The Occoquan and nearby creeks add a humid air mass that Springfield’s Mixing Bowl does not quite match. New townhomes and 1970s split-levels share the same summer problem — cool trunks, wet air, dusty returns.',
       'Laurel Hill and Lorton Station HOAs have stacked laundry and long dryer chases. Older Lorton Road houses often have original trunks plus a later addition. Neither likes a July that sits over the river. A dryer that needs two cycles in a Station townhome is usually lint packed at a roof cap, not a dying appliance.',
-      'We serve Lorton from [Burke](/locations/burke). Nearby [Springfield](/locations/springfield), [Mt Vernon](/locations/mount-vernon), and [Prince William](/locations/prince-william) use the same crew. For background reading (not a booking page), see [lorton-i95-occoquan-air-ducts](/blog/lorton-i95-occoquan-air-ducts).',
+      'We serve Lorton from [Burke](/locations/burke). Nearby [Springfield](/locations/springfield), [Mt Vernon](/locations/mount-vernon), and [Prince William](/locations/prince-william) use the same crew. More on [Lorton I-95 Occoquan](/blog/lorton-i95-occoquan-air-ducts).',
     ],
     highlights: [
       'Lorton Station, Laurel Hill, Gunston, and I-95-corridor streets',
@@ -94,7 +94,7 @@ export const lorton: LocationContentSeed = {
     steps: [
       {
         title: 'Request a Window',
-        text: 'Call (800) 606-3334 or use the form. We confirm by the next business day.',
+        text: 'Call (571) 460-0001 or use the form. We confirm by the next business day.',
       },
       {
         title: 'Share Access Details',
@@ -114,11 +114,11 @@ export const lorton: LocationContentSeed = {
       },
     ],
   },
-  faqIntro: 'Lorton questions — call (800) 606-3334 (dispatch: Burke).',
+  faqIntro: 'Lorton questions — call (571) 460-0001 (dispatch: Burke).',
   faq: [
     {
       q: 'Do you have a storefront in Lorton?',
-      a: 'No. Lorton jobs are scheduled from our Burke office at 5641 Burke Centre Pkwy Ste 119, Burke, VA 22015. Call (800) 606-3334.',
+      a: 'No. Lorton jobs are scheduled from our Burke office at 5641 Burke Centre Pkwy Ste 119, Burke, VA 22015. Call (571) 460-0001.',
     },
     {
       q: 'How long does air duct cleaning take in a typical Lorton home?',

@@ -250,14 +250,34 @@ async function run() {
   }
 
   try {
+    // Stagger publishedAt so city posts do not all look mass-published the same minute.
+    // Evergreen posts keep older real-looking dates; city posts fan out weekly from 2024–2025.
+    const evergreenSlugs = new Set([
+      'how-often-clean-air-ducts',
+      '7-signs-air-ducts-need-cleaning',
+      'why-clean-dryer-vents',
+      'how-dirty-air-ducts-increase-energy-bills',
+      'can-dirty-air-ducts-cause-allergies',
+      'never-clean-air-ducts',
+    ])
+    const evergreenBase = Date.parse('2024-03-12T14:00:00.000Z')
+    const cityBase = Date.parse('2024-06-04T15:30:00.000Z')
+    let evergreenIndex = 0
+    let cityIndex = 0
     for (const post of postsSeed) {
+      const isEvergreen = evergreenSlugs.has(post.slug)
+      const index = isEvergreen ? evergreenIndex++ : cityIndex++
+      const dayMs = 24 * 60 * 60 * 1000
+      const publishedAt = new Date(
+        (isEvergreen ? evergreenBase : cityBase) + index * (isEvergreen ? 21 : 11) * dayMs,
+      ).toISOString()
       await upsertBySlug(
         payload,
         'posts',
         post.slug,
         {
           ...post,
-          publishedAt: new Date().toISOString(),
+          publishedAt,
         },
         context,
       )

@@ -518,6 +518,26 @@ export async function getAllLocations(): Promise<LocationContent[]> {
   }
 }
 
+/** Neighboring city pages that share the same serving office (for internal links). */
+export function getNearbyLocationLinks(
+  slug: string,
+  limit = 6,
+): Array<{ slug: string; city: string; state: string }> {
+  const seed = LOCATION_SEEDS.find((item) => item.slug === slug)
+  if (!seed) return []
+  const siblings = LOCATION_SEEDS.filter(
+    (item) => item.servedBy === seed.servedBy && item.slug !== slug,
+  )
+  const start =
+    Math.abs([...slug].reduce((h, c) => (h * 31 + c.charCodeAt(0)) | 0, 0)) % Math.max(siblings.length, 1)
+  const rotated = [...siblings.slice(start), ...siblings.slice(0, start)]
+  return rotated.slice(0, limit).map((item) => ({
+    slug: item.slug,
+    city: item.city,
+    state: item.state,
+  }))
+}
+
 export async function getCityPageLinks(): Promise<Array<{ slug: string; city: string; state: string }>> {
   const fromSeed = LOCATION_SEEDS.map((item) => ({
     slug: item.slug,

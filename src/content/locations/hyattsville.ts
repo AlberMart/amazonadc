@@ -5,9 +5,9 @@ export const hyattsville: LocationContentSeed = {
   title: 'Air Duct Cleaning in Hyattsville, MD',
   headline: 'Air duct and dryer vent cleaning for the Route 1 arts district and older PG housing',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Hyattsville, MD. Flat rates from our Bethesda office for arts-district housing, Route 1 dust, and humid older ducts. Call (800) 606-3334.',
+    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Hyattsville, MD. Flat rates from our Bethesda office for arts-district housing, Route 1 dust, and humid older ducts. Call (301) 809-4544.',
   intro:
-    'Amazon Air Duct Cleaning serves Hyattsville from our Bethesda office — not a rented Route 1 arts-district suite. Older housing, Gateway, and houses toward College Park all take on Prince George’s humidity and corridor dust. Call (800) 606-3334.',
+    'Amazon Air Duct Cleaning serves Hyattsville from our Bethesda office. Older housing, Gateway, and houses toward College Park all take on Prince George’s humidity and corridor dust. Call (301) 809-4544.',
   heroImage: '/img/locations/hyattsville.webp',
   heroAlt: 'Air duct cleaning in Hyattsville, MD — Amazon Air Duct Cleaning',
   city: 'Hyattsville',
@@ -19,7 +19,7 @@ export const hyattsville: LocationContentSeed = {
     paragraphs: [
       'Hyattsville is a Prince George’s city on the Route 1 spine: the arts district and Gateway, West Hyattsville, then streets toward [College Park](/locations/college-park) and the District. Housing mixes early brick, later rentals, and new stacked units over older mechanical rooms. Route 1 construction and traffic add grit the returns do not sort from pollen.',
       'PG County summers are wet. Cool trunks in a basement or crawl sweat. Arts-district renovations kick drywall into shared chases. The first AC week after a humid spell is when registers gray out and the laundry smells like a packed dryer vent. [Takoma Park](/locations/takoma-park) and [Washington, DC](/locations/washington-dc) sit on the same metro ring.',
-      'We serve Hyattsville from [Bethesda](/locations/bethesda). The drive is real and we will say so. For background reading (not a booking page), see [hyattsville-route-1-humidity-air-ducts](/blog/hyattsville-route-1-humidity-air-ducts).',
+      'We serve Hyattsville from [Bethesda](/locations/bethesda). The drive is real and we will say so. More on [Hyattsville Route 1 Humidity](/blog/hyattsville-route-1-humidity-air-ducts).',
     ],
     highlights: [
       'Arts district, Gateway, West Hyattsville, and Route 1 housing',
@@ -93,7 +93,7 @@ export const hyattsville: LocationContentSeed = {
     steps: [
       {
         title: 'Estimate Request',
-        text: 'Form or (800) 606-3334 — we reply with timing from the Bethesda office.',
+        text: 'Form or (301) 809-4544 — we reply with timing from the Bethesda office.',
       },
       {
         title: 'Route Planning',
@@ -113,11 +113,11 @@ export const hyattsville: LocationContentSeed = {
       },
     ],
   },
-  faqIntro: 'Hyattsville questions — call (800) 606-3334 (dispatch: Bethesda).',
+  faqIntro: 'Hyattsville questions — call (301) 809-4544 (dispatch: Bethesda).',
   faq: [
     {
       q: 'Where does the Hyattsville crew stage from?',
-      a: 'Our Bethesda office (7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814). Office line (301) 809-4544; booking (800) 606-3334.',
+      a: 'Our Bethesda office (7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814). Office line (301) 809-4544; booking (301) 809-4544.',
     },
     {
       q: 'Are Hyattsville residential prices flat-rate?',

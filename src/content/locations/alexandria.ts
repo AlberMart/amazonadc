@@ -7,7 +7,7 @@ export const alexandria: LocationContentSeed = {
   description:
     'Professional air duct cleaning, dryer vent maintenance, and mold remediation services in Alexandria, VA. Flat rates, certified techs, 100% satisfaction guarantee.',
   intro:
-    'Amazon Air Duct Cleaning is the local crew for HVAC cleaning, dryer vent maintenance, and indoor air quality in Alexandria, Virginia. Whether you live in a historic home in Old Town, a condo near the waterfront, or a house in Del Ray, our technicians keep the air fresh and the system running. Call (800) 606-3334.',
+    'Amazon Air Duct Cleaning is the local crew for HVAC cleaning, dryer vent maintenance, and indoor air quality in Alexandria, Virginia. Whether you live in a historic home in Old Town, a condo near the waterfront, or a house in Del Ray, our technicians keep the air fresh and the system running. Call (571) 460-0001.',
   heroImage: '/img/locations/alexandria.webp',
   heroAlt: 'Air duct cleaning in Alexandria, VA — Amazon Air Duct Cleaning',
   city: 'Alexandria',
@@ -109,11 +109,11 @@ export const alexandria: LocationContentSeed = {
       },
     ],
   },
-  faqIntro: 'Alexandria questions — call (800) 606-3334 (dispatch: Burke).',
+  faqIntro: 'Alexandria questions — call (571) 460-0001 (dispatch: Burke).',
   faq: [
     {
       q: 'Do you have a storefront in Alexandria?',
-      a: 'No. Alexandria jobs are scheduled from our Burke office at 5641 Burke Centre Pkwy Ste 119, Burke, VA 22015. Call (800) 606-3334.',
+      a: 'No. Alexandria jobs are scheduled from our Burke office at 5641 Burke Centre Pkwy Ste 119, Burke, VA 22015. Call (571) 460-0001.',
     },
     {
       q: 'Are Alexandria residential prices flat-rate?',

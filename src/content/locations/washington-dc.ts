@@ -5,9 +5,9 @@ export const washingtonDc: LocationContentSeed = {
   title: 'Air Duct Cleaning in Washington, DC',
   headline: 'Air duct, dryer vent, and mold treatment for DC row houses, condos, and offices',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Washington, DC. Flat rates, before-and-after photos, and crews dispatched from Burke and Bethesda. Call (800) 606-3334.',
+    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Washington, DC. Flat rates, before-and-after photos, and crews dispatched from Burke and Bethesda. Call (571) 460-0001.',
   intro:
-    'Amazon Air Duct Cleaning serves Washington, DC from our two real metro offices — Burke, VA and Bethesda, MD. We clean ducts and dryer vents in Capitol Hill row houses, Northwest condos, and Navy Yard apartments. Call (800) 606-3334 and we send the closer crew.',
+    'Amazon Air Duct Cleaning serves Washington, DC from our two real metro offices — Burke, VA and Bethesda, MD. We clean ducts and dryer vents in Capitol Hill row houses, Northwest condos, and Navy Yard apartments. Call (571) 460-0001 and we send the closer crew.',
   heroImage: '/img/locations/washington-dc.webp',
   heroAlt: 'Air duct cleaning in Washington, DC — Amazon Air Duct Cleaning',
   city: 'Washington',
@@ -98,7 +98,7 @@ export const washingtonDc: LocationContentSeed = {
     steps: [
       {
         title: 'Request a Window',
-        text: 'Call (800) 606-3334 or use the form. We confirm by the next business day.',
+        text: 'Call (571) 460-0001 or use the form. We confirm by the next business day.',
       },
       {
         title: 'Share Access Details',
@@ -118,11 +118,11 @@ export const washingtonDc: LocationContentSeed = {
       },
     ],
   },
-  faqIntro: 'Washington questions — call (800) 606-3334 (dispatch: Burke).',
+  faqIntro: 'Washington questions — call (571) 460-0001 (dispatch: Burke).',
   faq: [
     {
       q: 'Do you have a storefront in Washington?',
-      a: 'No. Washington jobs are scheduled from our Burke office at 5641 Burke Centre Pkwy Ste 119, Burke, VA 22015. Call (800) 606-3334.',
+      a: 'No. Washington jobs are scheduled from our Burke office at 5641 Burke Centre Pkwy Ste 119, Burke, VA 22015. Call (571) 460-0001.',
     },
     {
       q: 'How long does air duct cleaning take in a typical Washington home?',

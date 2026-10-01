@@ -5,9 +5,9 @@ export const collegePark: LocationContentSeed = {
   title: 'Air Duct Cleaning in College Park, MD',
   headline: 'Air duct and dryer vent cleaning for College Park, UMD-area rentals, and Route 1',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in College Park, MD. Flat rates from our Bethesda office for older rentals, family houses, and Route 1 apartments. Call (800) 606-3334.',
+    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in College Park, MD. Flat rates from our Bethesda office for older rentals, family houses, and Route 1 apartments. Call (301) 809-4544.',
   intro:
-    'Amazon Air Duct Cleaning serves College Park from our Bethesda office. University rentals, older family houses off Route 1, and apartments near the Metro all take on high occupancy, pollen, and humid summers. Call (800) 606-3334.',
+    'Amazon Air Duct Cleaning serves College Park from our Bethesda office. University rentals, older family houses off Route 1, and apartments near the Metro all take on high occupancy, pollen, and humid summers. Call (301) 809-4544.',
   heroImage: '/img/locations/college-park.webp',
   heroAlt: 'Air duct cleaning in College Park, MD — Amazon Air Duct Cleaning',
   city: 'College Park',
@@ -19,7 +19,7 @@ export const collegePark: LocationContentSeed = {
     paragraphs: [
       'College Park is a Prince George’s County city wrapped around the University of Maryland: Route 1, Old Town, Berwyn, Hollywood, and the streets toward Greenbelt and Hyattsville. A lot of the housing is older single-family rentals and small apartments with high occupant turnover. That means filters that do not get changed, dryers that run constantly, and ducts that have not been opened in a decade. Pollen from the campus canopy and Beltway dust ride the same returns.',
       'Maryland humidity still wins in summer. Cool trunks in a basement or crawl space sweat. Dust from the last semester sticks. The first AC cycle in August is when the smell shows up. Stacked student units add dryer vents that were never designed for that much lint.',
-      'We serve College Park from [Bethesda](/locations/bethesda). Nearby [Silver Spring](/locations/silver-spring) and [Washington, DC](/locations/washington-dc) are the same metro crew. For background reading (not a booking page), see [college-park-rentals-pollen-air-ducts](/blog/college-park-rentals-pollen-air-ducts).',
+      'We serve College Park from [Bethesda](/locations/bethesda). Nearby [Silver Spring](/locations/silver-spring) and [Washington, DC](/locations/washington-dc) are the same metro crew. More on [College Park Rentals Pollen](/blog/college-park-rentals-pollen-air-ducts).',
     ],
     highlights: [
       'College Park, Old Town, Berwyn, Hollywood, Route 1 apartments',
@@ -93,7 +93,7 @@ export const collegePark: LocationContentSeed = {
     steps: [
       {
         title: 'Request a Window',
-        text: 'Call (800) 606-3334 or use the form. We confirm by the next business day.',
+        text: 'Call (301) 809-4544 or use the form. We confirm by the next business day.',
       },
       {
         title: 'Share Access Details',
@@ -113,11 +113,11 @@ export const collegePark: LocationContentSeed = {
       },
     ],
   },
-  faqIntro: 'College Park questions — call (800) 606-3334 (dispatch: Bethesda).',
+  faqIntro: 'College Park questions — call (301) 809-4544 (dispatch: Bethesda).',
   faq: [
     {
       q: 'Do you have a storefront in College Park?',
-      a: 'No. College Park jobs are scheduled from our Bethesda office at 7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814. Call (800) 606-3334.',
+      a: 'No. College Park jobs are scheduled from our Bethesda office at 7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814. Call (301) 809-4544.',
     },
     {
       q: 'Do you serve commercial spaces in College Park?',

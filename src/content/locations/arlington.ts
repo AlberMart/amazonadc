@@ -7,7 +7,7 @@ export const arlington: LocationContentSeed = {
   description:
     'Professional air duct cleaning, dryer vent maintenance, and mold remediation in Arlington, VA. Flat rates, certified technicians, and a 100% satisfaction guarantee.',
   intro:
-    'Amazon Air Duct Cleaning serves condos, townhomes, and older brick houses across Arlington — from Rosslyn and Clarendon to Crystal City and Columbia Pike. Our Burke-based technicians bring professional HVAC cleaning, dryer vent service, and ventilation mold treatment to Arlington homes. Call (800) 606-3334.',
+    'Amazon Air Duct Cleaning serves condos, townhomes, and older brick houses across Arlington — from Rosslyn and Clarendon to Crystal City and Columbia Pike. Our Burke-based technicians bring professional HVAC cleaning, dryer vent service, and ventilation mold treatment to Arlington homes. Call (571) 460-0001.',
   heroImage: '/img/locations/arlington.webp',
   heroAlt: 'Air duct cleaning in Arlington, VA — Amazon Air Duct Cleaning',
   city: 'Arlington',
@@ -19,7 +19,7 @@ export const arlington: LocationContentSeed = {
     paragraphs: [
       'Arlington sits on the Potomac River, with dense neighborhoods, high-rise condos, and older brick homes that take on river humidity all summer. That moisture meets cool air inside metal ductwork and turns into condensation — the start of musty odors, mold, and dust that recirculates every time the system runs.',
       'Crystal City, Rosslyn, and Pentagon City feel this first, but the same humidity reaches Clarendon, Ballston, Shirlington, and Columbia Pike. Construction dust from nearby development, pollen, and pet dander settle in returns and stay there until the ducts are professionally cleaned.',
-      'We serve Arlington from our Burke office, so you get the same flat-rate crew with flat-rate packages from the Burke crew. Nearby [McLean](/locations/mclean) and [Washington, DC](/locations/washington-dc) use the same dispatch. Read how [Potomac humidity affects Arlington homes](/blog/how-potomac-humidity-affects-arlington-air-quality), or book [air duct cleaning](/air-duct-cleaning) and [dryer vent cleaning](/dryer-vent-cleaning) in a single visit.',
+      'We serve Arlington from our Burke office, so you get the Burke crew and the same flat-rate packages. Nearby [McLean](/locations/mclean) and [Washington, DC](/locations/washington-dc) use the same dispatch. Read how [Potomac humidity affects Arlington homes](/blog/how-potomac-humidity-affects-arlington-air-quality), or book [air duct cleaning](/air-duct-cleaning) and [dryer vent cleaning](/dryer-vent-cleaning) in a single visit.',
     ],
     highlights: [
       'Same-day and next-day appointments from our Burke team',
@@ -98,7 +98,7 @@ export const arlington: LocationContentSeed = {
     steps: [
       {
         title: 'Request a Window',
-        text: 'Call (800) 606-3334 or use the form. We confirm by the next business day.',
+        text: 'Call (571) 460-0001 or use the form. We confirm by the next business day.',
       },
       {
         title: 'Share Access Details',
@@ -118,11 +118,11 @@ export const arlington: LocationContentSeed = {
       },
     ],
   },
-  faqIntro: 'Arlington questions — call (800) 606-3334 (dispatch: Burke).',
+  faqIntro: 'Arlington questions — call (571) 460-0001 (dispatch: Burke).',
   faq: [
     {
       q: 'Which office covers Arlington?',
-      a: 'Burke — 5641 Burke Centre Pkwy Ste 119, Burke, VA 22015. Booking line (800) 606-3334.',
+      a: 'Burke — 5641 Burke Centre Pkwy Ste 119, Burke, VA 22015. Booking line (571) 460-0001.',
     },
     {
       q: 'How often should Arlington, VA homes clean ducts?',

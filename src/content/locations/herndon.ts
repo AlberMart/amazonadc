@@ -6,9 +6,9 @@ export const herndon: LocationContentSeed = {
   headline:
     'Air duct and dryer vent cleaning for downtown Herndon, Worldgate, and the Dulles corridor',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Herndon, VA. Flat rates from our Burke office for clock-tower cottages, Worldgate townhomes, and Dulles-area houses. Call (800) 606-3334.',
+    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Herndon, VA. Flat rates from our Burke office for clock-tower cottages, Worldgate townhomes, and Dulles-area houses. Call (571) 460-0001.',
   intro:
-    'Amazon Air Duct Cleaning serves Herndon from our Burke office. Historic downtown cottages, Worldgate townhomes, and houses along the data-center corridor all take on construction dust and Dulles traffic film. Call (800) 606-3334.',
+    'Amazon Air Duct Cleaning serves Herndon from our Burke office. Historic downtown cottages, Worldgate townhomes, and houses along the data-center corridor all take on construction dust and Dulles traffic film. Call (571) 460-0001.',
   heroImage: '/img/locations/herndon.webp',
   heroAlt: 'Air duct cleaning in Herndon, VA — Amazon Air Duct Cleaning',
   city: 'Herndon',
@@ -94,7 +94,7 @@ export const herndon: LocationContentSeed = {
     steps: [
       {
         title: 'Online or Phone Intake',
-        text: 'Book at (800) 606-3334. Mention Herndon so we route from Burke.',
+        text: 'Book at (571) 460-0001. Mention Herndon so we route from Burke.',
       },
       {
         title: 'Pre-Job Notes',
@@ -114,11 +114,11 @@ export const herndon: LocationContentSeed = {
       },
     ],
   },
-  faqIntro: 'Herndon questions — call (800) 606-3334 (dispatch: Burke).',
+  faqIntro: 'Herndon questions — call (571) 460-0001 (dispatch: Burke).',
   faq: [
     {
       q: 'Where does the Herndon crew stage from?',
-      a: 'Our Burke office (5641 Burke Centre Pkwy Ste 119, Burke, VA 22015). Office line (571) 460-0001; booking (800) 606-3334.',
+      a: 'Our Burke office (5641 Burke Centre Pkwy Ste 119, Burke, VA 22015). Office line (571) 460-0001; booking (571) 460-0001.',
     },
     {
       q: 'Do you serve commercial spaces in Herndon?',

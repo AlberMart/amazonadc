@@ -5,9 +5,9 @@ export const rockville: LocationContentSeed = {
   title: 'Air Duct Cleaning in Rockville, MD',
   headline: 'Air duct and dryer vent cleaning for Rockville, Twinbrook, and the I-270 corridor',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Rockville, MD. Flat rates from our Bethesda office for colonials, townhomes, and King Farm. Call (800) 606-3334.',
+    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Rockville, MD. Flat rates from our Bethesda office for colonials, townhomes, and King Farm. Call (301) 809-4544.',
   intro:
-    'Amazon Air Duct Cleaning serves Rockville from our Bethesda office — about fifteen minutes down Old Georgetown Road. Colonials, King Farm townhomes, and Twinbrook ranches all take on Montgomery County pollen and basement humidity. Call (800) 606-3334.',
+    'Amazon Air Duct Cleaning serves Rockville from our Bethesda office — about fifteen minutes down Old Georgetown Road. Colonials, King Farm townhomes, and Twinbrook ranches all take on Montgomery County pollen and basement humidity. Call (301) 809-4544.',
   heroImage: '/img/locations/rockville.webp',
   heroAlt: 'Air duct cleaning in Rockville, MD — Amazon Air Duct Cleaning',
   city: 'Rockville',
@@ -19,7 +19,7 @@ export const rockville: LocationContentSeed = {
     paragraphs: [
       'Rockville is Montgomery County’s largest city and sits on the I-270 corridor: Town Center and the Metro, Twinbrook and Hungerford, King Farm and Fallsgrove, then Woodley Gardens and the West End. A lot of the housing is 1950s–90s colonials and split-levels with full basements. Those basements stay cool in summer. Maryland humidity does not. Cold supply trunks in a basement meet wet air and sweat. Dust and tree pollen stick to that film.',
       'Montgomery County’s tree canopy is not a slogan — oak, maple, and pine dump pollen onto every outdoor surface each spring. Returns pull it in. Townhomes along the Metro and newer mixed-use at Rockville Town Square add long dryer vents and tighter mechanical closets. The result is the same: registers that look clean on Monday and dusty by Friday, or a musty smell when the AC starts after a wet week.',
-      'We serve Rockville from [Bethesda](/locations/bethesda). That is a real office at 7815 Old Georgetown Rd, not a Rockville suite we do not staff. Nearby [Washington, DC](/locations/washington-dc) is covered by the same metro crew. For background reading (not a booking page), see [rockville-basement-humidity-air-ducts](/blog/rockville-basement-humidity-air-ducts).',
+      'We serve Rockville from [Bethesda](/locations/bethesda). Dispatch is from our office at 7815 Old Georgetown Rd. Nearby [Washington, DC](/locations/washington-dc) is covered by the same metro crew. More on [Rockville Basement Humidity](/blog/rockville-basement-humidity-air-ducts).',
     ],
     highlights: [
       'Colonials, townhomes, King Farm, and Twinbrook ranches',
@@ -113,11 +113,11 @@ export const rockville: LocationContentSeed = {
       },
     ],
   },
-  faqIntro: 'Rockville questions — call (800) 606-3334 (dispatch: Bethesda).',
+  faqIntro: 'Rockville questions — call (301) 809-4544 (dispatch: Bethesda).',
   faq: [
     {
       q: 'Where does the Rockville crew stage from?',
-      a: 'Our Bethesda office (7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814). Office line (301) 809-4544; booking (800) 606-3334.',
+      a: 'Our Bethesda office (7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814). Office line (301) 809-4544; booking (301) 809-4544.',
     },
     {
       q: 'Can I stay home during the Rockville appointment?',

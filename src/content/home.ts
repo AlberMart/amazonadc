@@ -205,7 +205,7 @@ export const homeContentSeed: HomeContent = {
     },
     {
       q: 'Do you use chemicals during the cleaning process?',
-      a: 'We do not use chemicals unless the customer requests them. In that case, we offer an anti-microbial treatment as an add-on at an additional charge. This is a low-toxic, EPA-registered cleaner.',
+      a: 'We do not apply chemicals by default. On request — or when inspection supports it — we apply complimentary Envirocon antimicrobial sanitization to the duct system at no additional charge. It is a low-toxicity, EPA-registered product.',
     },
     {
       q: 'How long does the cleaning process take?',

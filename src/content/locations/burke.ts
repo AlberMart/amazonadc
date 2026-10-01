@@ -5,9 +5,9 @@ export const burke: LocationContentSeed = {
   title: 'Air Duct Cleaning in Burke, VA',
   headline: 'Our Northern Virginia office — air duct and dryer vent cleaning from Burke Centre',
   description:
-    'Amazon Air Duct Cleaning’s Burke, VA office at 5641 Burke Centre Pkwy Ste 119. Flat-rate air duct cleaning, dryer vent cleaning, and HVAC mold treatment for Fairfax County and nearby cities. Call (800) 606-3334.',
+    'Amazon Air Duct Cleaning’s Burke, VA office at 5641 Burke Centre Pkwy Ste 119. Flat-rate air duct cleaning, dryer vent cleaning, and HVAC mold treatment for Fairfax County and nearby cities. Call (571) 460-0001.',
   intro:
-    'This is our Northern Virginia office at Burke Centre. From here we schedule residential and light-commercial jobs across Fairfax County, Arlington, Alexandria, Reston, and into Washington, DC when we are the closer crew. Book at (800) 606-3334 — the office line is (571) 460-0001.',
+    'This is our Northern Virginia office at Burke Centre. From here we schedule residential and light-commercial jobs across Fairfax County, Arlington, Alexandria, Reston, and into Washington, DC when we are the closer crew. Book at (571) 460-0001 — the office line is (571) 460-0001.',
   heroImage: '/img/locations/burke.webp',
   heroAlt: 'Burke, VA office — Amazon Air Duct Cleaning',
   city: 'Burke',
@@ -121,11 +121,11 @@ export const burke: LocationContentSeed = {
       },
     ],
   },
-  faqIntro: 'Questions about the Burke office. Call (800) 606-3334 — office line (571) 460-0001.',
+  faqIntro: 'Questions about the Burke office. Call (571) 460-0001 — office line (571) 460-0001.',
   faq: [
     {
       q: 'Where is the Burke office?',
-      a: '5641 Burke Centre Pkwy, Suite 119, Burke, VA 22015. Booking: (800) 606-3334. Office line: (571) 460-0001.',
+      a: '5641 Burke Centre Pkwy, Suite 119, Burke, VA 22015. Booking: (571) 460-0001. Office line: (571) 460-0001.',
     },
     {
       q: 'What services do you offer from Burke?',

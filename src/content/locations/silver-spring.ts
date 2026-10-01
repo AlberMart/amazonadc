@@ -5,9 +5,9 @@ export const silverSpring: LocationContentSeed = {
   title: 'Air Duct Cleaning in Silver Spring, MD',
   headline: 'Air duct and dryer vent cleaning for downtown Silver Spring, Woodside, and Takoma',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Silver Spring, MD. Flat rates from our Bethesda office for brick colonials, condos, and older rentals. Call (800) 606-3334.',
+    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Silver Spring, MD. Flat rates from our Bethesda office for brick colonials, condos, and older rentals. Call (301) 809-4544.',
   intro:
-    'Amazon Air Duct Cleaning serves Silver Spring from our Bethesda office — up Georgia Avenue and East-West Highway, not a rented downtown suite. Brick colonials, Woodside bungalows, and stacked condos all take on Montgomery County pollen and urban dust. Call (800) 606-3334.',
+    'Amazon Air Duct Cleaning serves Silver Spring from our Bethesda office — up Georgia Avenue and East-West Highway. Brick colonials, Woodside bungalows, and stacked condos all take on Montgomery County pollen and urban dust. Call (301) 809-4544.',
   heroImage: '/img/locations/silver-spring.webp',
   heroAlt: 'Air duct cleaning in Silver Spring, MD — Amazon Air Duct Cleaning',
   city: 'Silver Spring',
@@ -19,7 +19,7 @@ export const silverSpring: LocationContentSeed = {
     paragraphs: [
       'Silver Spring is Montgomery County’s urban east side: downtown around the Metro, older streets in Woodside and Seven Oaks, Takoma Park next door, and apartments along Georgia Avenue. A lot of the housing is pre-war and 1940s–60s brick with later ductwork cut through plaster and joists. Those joints collect dust. Downtown construction and the Purple Line corridor add a second particle load. Returns do not sort brick dust from pollen.',
       'Basements stay cool. Maryland summers stay wet. Cold supply trunks sweat. Musty air on the first AC cycle after a storm is that film waking up. Condos and stacked units add long dryer vents that dump heat and lint back into the laundry if the cap is packed.',
-      'We serve Silver Spring from [Bethesda](/locations/bethesda). That office is a short drive, not a fiction. Nearby [Rockville](/locations/rockville), [College Park](/locations/college-park), and [Washington, DC](/locations/washington-dc) are the same metro crew. For background reading (not a booking page), see [silver-spring-brick-houses-urban-dust-air-ducts](/blog/silver-spring-brick-houses-urban-dust-air-ducts).',
+      'We serve Silver Spring from [Bethesda](/locations/bethesda). That office is a short drive away. Nearby [Rockville](/locations/rockville), [College Park](/locations/college-park), and [Washington, DC](/locations/washington-dc) are the same metro crew. More on [Silver Spring Brick Houses Urban Dust](/blog/silver-spring-brick-houses-urban-dust-air-ducts).',
     ],
     highlights: [
       'Downtown Silver Spring, Woodside, Takoma edge, Georgia Avenue',
@@ -114,11 +114,11 @@ export const silverSpring: LocationContentSeed = {
       },
     ],
   },
-  faqIntro: 'Silver Spring questions — call (800) 606-3334 (dispatch: Bethesda).',
+  faqIntro: 'Silver Spring questions — call (301) 809-4544 (dispatch: Bethesda).',
   faq: [
     {
       q: 'Where does the Silver Spring crew stage from?',
-      a: 'Our Bethesda office (7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814). Office line (301) 809-4544; booking (800) 606-3334.',
+      a: 'Our Bethesda office (7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814). Office line (301) 809-4544; booking (301) 809-4544.',
     },
     {
       q: 'Can I stay home during the Silver Spring appointment?',

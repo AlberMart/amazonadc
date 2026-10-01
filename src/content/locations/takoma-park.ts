@@ -5,9 +5,9 @@ export const takomaPark: LocationContentSeed = {
   title: 'Air Duct Cleaning in Takoma Park, MD',
   headline: 'Air duct and dryer vent cleaning for Old Takoma bungalows along the DC line',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Takoma Park, MD. Flat rates from our Bethesda office for bungalows, older ducts, and tree-lined humidity. Call (800) 606-3334.',
+    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Takoma Park, MD. Flat rates from our Bethesda office for bungalows, older ducts, and tree-lined humidity. Call (301) 809-4544.',
   intro:
-    'Amazon Air Duct Cleaning serves Takoma Park from our Bethesda office — not a rented Carroll Avenue suite. Bungalows on the DC line, older ductwork, and a heavy tree canopy all take on humidity and leaf-season dust. Call (800) 606-3334.',
+    'Amazon Air Duct Cleaning serves Takoma Park from our Bethesda office. Bungalows on the DC line, older ductwork, and a heavy tree canopy all take on humidity and leaf-season dust. Call (301) 809-4544.',
   heroImage: '/img/locations/takoma-park.webp',
   heroAlt: 'Air duct cleaning in Takoma Park, MD — Amazon Air Duct Cleaning',
   city: 'Takoma Park',
@@ -19,7 +19,7 @@ export const takomaPark: LocationContentSeed = {
     paragraphs: [
       'Takoma Park sits on the Montgomery–Prince George’s–District line: Old Takoma and Carroll Avenue, Takoma Junction, then streets that walk into [Washington, DC](/locations/washington-dc) or [Silver Spring](/locations/silver-spring) in a few blocks. A lot of the housing is early-century bungalows and brick cottages. Ductwork was often added later through crawl spaces and plaster. Those joints were never tight. Trees are the other half of the story — maple and oak keep lots shaded and damp.',
       'Older metal runs in a cool crawl sweat through Maryland summers. Pollen and leaf grit stick. The first cool-down in June is when the musty smell shows up at the register. Porch-to-porch lots also mean dryer vents that were patched through additions and never sized for modern machines.',
-      'We serve Takoma Park from [Bethesda](/locations/bethesda). Nearby [Hyattsville](/locations/hyattsville) is the same Maryland crew. For background reading (not a booking page), see [takoma-park-bungalow-humidity-air-ducts](/blog/takoma-park-bungalow-humidity-air-ducts).',
+      'We serve Takoma Park from [Bethesda](/locations/bethesda). Nearby [Hyattsville](/locations/hyattsville) is the same Maryland crew. More on [Takoma Park Bungalow Humidity](/blog/takoma-park-bungalow-humidity-air-ducts).',
     ],
     highlights: [
       'Old Takoma, Takoma Junction, and DC-line bungalows',
@@ -93,7 +93,7 @@ export const takomaPark: LocationContentSeed = {
     steps: [
       {
         title: 'Online or Phone Intake',
-        text: 'Book at (800) 606-3334. Mention Takoma Park so we route from Bethesda.',
+        text: 'Book at (301) 809-4544. Mention Takoma Park so we route from Bethesda.',
       },
       {
         title: 'Pre-Job Notes',
@@ -113,11 +113,11 @@ export const takomaPark: LocationContentSeed = {
       },
     ],
   },
-  faqIntro: 'Takoma Park questions — call (800) 606-3334 (dispatch: Bethesda).',
+  faqIntro: 'Takoma Park questions — call (301) 809-4544 (dispatch: Bethesda).',
   faq: [
     {
       q: 'Where does the Takoma Park crew stage from?',
-      a: 'Our Bethesda office (7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814). Office line (301) 809-4544; booking (800) 606-3334.',
+      a: 'Our Bethesda office (7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814). Office line (301) 809-4544; booking (301) 809-4544.',
     },
     {
       q: 'Can ducts and dryer vents be done the same day in Takoma Park?',

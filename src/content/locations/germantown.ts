@@ -5,9 +5,9 @@ export const germantown: LocationContentSeed = {
   title: 'Air Duct Cleaning in Germantown, MD',
   headline: 'Air duct and dryer vent cleaning for Milestone, Town Center, and the I-270 corridor',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Germantown, MD. Flat rates from our Bethesda office for townhomes, corridor construction dust, and I-270 traffic grit. Call (800) 606-3334.',
+    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Germantown, MD. Flat rates from our Bethesda office for townhomes, corridor construction dust, and I-270 traffic grit. Call (301) 809-4544.',
   intro:
-    'Amazon Air Duct Cleaning serves Germantown from our Bethesda office — up I-270 past Gaithersburg, not a rented Milestone suite. Townhomes, split-levels, and houses near new construction all take on corridor traffic dust and drywall grit. Call (800) 606-3334.',
+    'Amazon Air Duct Cleaning serves Germantown from our Bethesda office — up I-270 past Gaithersburg. Townhomes, split-levels, and houses near new construction all take on corridor traffic dust and drywall grit. Call (301) 809-4544.',
   heroImage: '/img/locations/germantown.webp',
   heroAlt: 'Air duct cleaning in Germantown, MD — Amazon Air Duct Cleaning',
   city: 'Germantown',
@@ -19,7 +19,7 @@ export const germantown: LocationContentSeed = {
     paragraphs: [
       'Germantown sits on Montgomery County’s I-270 spine north of Gaithersburg: Milestone and Town Center, Waters Landing, Clopper Road, then streets that keep filling with new HOA clusters. A lot of the stock is 1980s–2000s townhomes and split-levels with mechanical closets and long dryer runs. Those closets were never meant to hold a decade of corridor grit.',
       'I-270 and the construction cranes do the rest. Traffic dust, brake dust, and drywall from the next pad all ride the same returns. Filters catch some of it. Registers still gray out a week after you wipe them. Humid Maryland summers add a sticky film on cool supply trunks so the next cycle blows the mix back upstairs.',
-      'We serve Germantown from [Bethesda](/locations/bethesda). Nearby [Gaithersburg](/locations/gaithersburg), [Clarksburg](/locations/clarksburg), and [Montgomery Village](/locations/montgomery-village) use the same dispatch. For background reading (not a booking page), see [germantown-i270-townhome-air-ducts](/blog/germantown-i270-townhome-air-ducts).',
+      'We serve Germantown from [Bethesda](/locations/bethesda). Nearby [Gaithersburg](/locations/gaithersburg), [Clarksburg](/locations/clarksburg), and [Montgomery Village](/locations/montgomery-village) use the same dispatch. More on [Germantown I-270 Townhome](/blog/germantown-i270-townhome-air-ducts).',
     ],
     highlights: [
       'Milestone, Town Center, Waters Landing, and Clopper Road homes',
@@ -93,7 +93,7 @@ export const germantown: LocationContentSeed = {
     steps: [
       {
         title: 'Request a Window',
-        text: 'Call (800) 606-3334 or use the form. We confirm by the next business day.',
+        text: 'Call (301) 809-4544 or use the form. We confirm by the next business day.',
       },
       {
         title: 'Share Access Details',
@@ -113,11 +113,11 @@ export const germantown: LocationContentSeed = {
       },
     ],
   },
-  faqIntro: 'Germantown questions — call (800) 606-3334 (dispatch: Bethesda).',
+  faqIntro: 'Germantown questions — call (301) 809-4544 (dispatch: Bethesda).',
   faq: [
     {
       q: 'Do you have a storefront in Germantown?',
-      a: 'No. Germantown jobs are scheduled from our Bethesda office at 7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814. Call (800) 606-3334.',
+      a: 'No. Germantown jobs are scheduled from our Bethesda office at 7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814. Call (301) 809-4544.',
     },
     {
       q: 'Do you clean dryer vents in Germantown townhomes and condos?',

@@ -6,9 +6,9 @@ export const frederick: LocationContentSeed = {
   headline:
     'Air duct and dryer vent cleaning for downtown Frederick, Urbana, and the I-270 north end',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Frederick, MD. Flat rates from our Bethesda office for downtown brick, newer suburbs, and a farther I-270 drive we will not hide. Call (800) 606-3334.',
+    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Frederick, MD. Flat rates from our Bethesda office for downtown brick, newer suburbs. Call (301) 809-4544.',
   intro:
-    'Amazon Air Duct Cleaning serves Frederick from our Bethesda office — farther up I-270 than Germantown, not a rented downtown suite. Older city houses and newer Urbana streets all take on humidity and mixed dust. Call (800) 606-3334.',
+    'Amazon Air Duct Cleaning serves Frederick from our Bethesda office — farther up I-270 than Germantown. Older city houses and newer Urbana streets all take on humidity and mixed dust. Call (301) 809-4544.',
   heroImage: '/img/locations/frederick.webp',
   heroAlt: 'Air duct cleaning in Frederick, MD — Amazon Air Duct Cleaning',
   city: 'Frederick',
@@ -18,13 +18,13 @@ export const frederick: LocationContentSeed = {
   about: {
     heading: 'Downtown Brick Humidity Meets Newer Suburb Dust',
     paragraphs: [
-      'Frederick is the I-270 city’s north end: downtown brick and Carroll Creek, then newer suburbs that keep filling south and east. Housing is mixed on purpose — 19th-century and early-20th stock near Market Street, mid-century neighborhoods, and large new clusters in Urbana and Adamstown. Those last two are communities on this page, not separate city sites. Mt Airy sits east on the same farther dispatch.',
+      'Frederick is the I-270 city’s north end: downtown brick and Carroll Creek, then newer suburbs that keep filling south and east. Housing is mixed on purpose — 19th-century and early-20th stock near Market Street, mid-century neighborhoods, and large new clusters in Urbana and Adamstown. Those last two are communities on this page. Mt Airy sits east on the same farther dispatch.',
       'Downtown cellars stay cool and wet. New pads kick drywall into returns the first year. Both load ducts. Humid Piedmont summers do the rest. When the AC starts after a storm week, older trunks smell musty and new houses still blow construction grit.',
-      'We serve Frederick from [Bethesda](/locations/bethesda). The drive is farther than [Gaithersburg](/locations/gaithersburg) or [Clarksburg](/locations/clarksburg) and we schedule it that way. For background reading (not a booking page), see [frederick-downtown-humidity-air-ducts](/blog/frederick-downtown-humidity-air-ducts).',
+      'We serve Frederick from [Bethesda](/locations/bethesda). The drive is farther than [Gaithersburg](/locations/gaithersburg) or [Clarksburg](/locations/clarksburg) and we schedule it that way. More on [Frederick Downtown Humidity](/blog/frederick-downtown-humidity-air-ducts).',
     ],
     highlights: [
       'Downtown Frederick, Urbana, Adamstown, and Mt Airy as communities',
-      'Flat-rate pricing from the Bethesda office — honest farther I-270 drive',
+      'Flat-rate pricing from the Bethesda office',
       'Before-and-after photos on every duct job',
       'Old brick and new-construction dust on the same crew',
     ],
@@ -49,7 +49,7 @@ export const frederick: LocationContentSeed = {
     ],
   },
   why: {
-    heading: 'Why Frederick Jobs Need Honest I-270 Planning',
+    heading: 'Why Frederick Jobs Need Clear I-270 Planning',
     items: [
       {
         title: 'Farther Drive, Real Office',
@@ -89,7 +89,7 @@ export const frederick: LocationContentSeed = {
   },
   process: {
     heading: 'Longest Regular Maryland Run From Bethesda',
-    intro: 'We will not hide the drive — arrival windows reflect it.',
+    intro: 'Arrival windows account for the I-270 distance.',
     steps: [
       {
         title: 'Talk Through the Home',
@@ -113,23 +113,23 @@ export const frederick: LocationContentSeed = {
       },
     ],
   },
-  faqIntro: 'Frederick questions — call (800) 606-3334 (dispatch: Bethesda).',
+  faqIntro: 'Frederick questions — call (301) 809-4544 (dispatch: Bethesda).',
   faq: [
     {
       q: 'Do you have a storefront in Frederick?',
-      a: 'No. Frederick jobs are scheduled from our Bethesda office at 7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814. Call (800) 606-3334.',
+      a: 'No. Frederick jobs are scheduled from our Bethesda office at 7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814. Call (301) 809-4544.',
     },
     {
       q: 'What should I prepare before the crew arrives in Frederick?',
-      a: 'Clear access to returns, the air handler, and the dryer. Note HOA gate codes if needed.',
+      a: 'For downtown brick homes, clear a path to the cellar air handler and note tight alley parking. In Urbana or newer suburbs, share gate codes and dryer closet access.',
     },
     {
       q: 'How long does air duct cleaning take in a typical Frederick home?',
-      a: 'Most single-system houses take about 2–3 hours. Townhomes with long dryer runs can run longer after inspection.',
+      a: 'Older downtown houses with unfinished cellars often finish in about 2–3 hours. Newer Urbana townhomes with long dryer runs can take longer after we inspect the vent path.',
     },
     {
       q: 'Are Frederick residential prices flat-rate?',
-      a: 'Yes for air duct and dryer vent packages. The quote before we start is the price you pay.',
+      a: 'Yes. Frederick jobs use the same published Bethesda-office packages — the number we quote before work starts is what you pay, including the farther I-270 drive time.',
     },
     {
       q: 'Can ducts and dryer vents be done the same day in Frederick?',

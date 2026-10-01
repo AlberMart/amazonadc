@@ -5,9 +5,9 @@ export const potomac: LocationContentSeed = {
   title: 'Air Duct Cleaning in Potomac, MD',
   headline: 'Air duct and dryer vent cleaning for Cabin John, Falls Road, and river-canopy estates',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Potomac, MD. Flat rates from our Bethesda office for large-lot homes under a heavy tree canopy and river humidity. Call (800) 606-3334.',
+    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Potomac, MD. Flat rates from our Bethesda office for large-lot homes under a heavy tree canopy and river humidity. Call (301) 809-4544.',
   intro:
-    'Amazon Air Duct Cleaning serves Potomac from our Bethesda office — a short run out River Road, not a rented estate-area suite. Large lots, Cabin John, and houses under oak and maple take on river humidity and canopy pollen. Call (800) 606-3334.',
+    'Amazon Air Duct Cleaning serves Potomac from our Bethesda office — a short run out River Road. Large lots, Cabin John, and houses under oak and maple take on river humidity and canopy pollen. Call (301) 809-4544.',
   heroImage: '/img/locations/potomac.webp',
   heroAlt: 'Air duct cleaning in Potomac, MD — Amazon Air Duct Cleaning',
   city: 'Potomac',
@@ -19,7 +19,7 @@ export const potomac: LocationContentSeed = {
     paragraphs: [
       'Potomac is Montgomery County’s large-lot west side: Cabin John and Glen Echo toward the river, Potomac Village and Falls Road, then Avenel and the streets that feel like McLean without crossing the water. The housing is colonials, contemporaries, and additions on wooded lots. Those lots are the story. The canopy is dense. Shade keeps crawl spaces and basements cool while the river corridor stays wet.',
       'Oak, maple, and pine dump pollen onto every patio each spring. Returns pull it in. Long supply runs in big houses hide dust you never see from the living room. When a humid week hits, cool trunks sweat and that pollen film turns musty on the first AC cycle. [Great Falls](/locations/great-falls), Virginia, sits across the river — we mention it because neighbors ask — but those jobs dispatch from our Burke office, not Bethesda. This page stays on the Maryland side.',
-      'We serve Potomac from [Bethesda](/locations/bethesda). Nearby [Rockville](/locations/rockville) is the same Maryland crew. For background reading (not a booking page), see [potomac-tree-canopy-humidity-air-ducts](/blog/potomac-tree-canopy-humidity-air-ducts).',
+      'We serve Potomac from [Bethesda](/locations/bethesda). Nearby [Rockville](/locations/rockville) is the same Maryland crew. More on [Potomac Tree Canopy Humidity](/blog/potomac-tree-canopy-humidity-air-ducts).',
     ],
     highlights: [
       'Cabin John, Falls Road, Avenel, and river-canopy estates',
@@ -113,11 +113,11 @@ export const potomac: LocationContentSeed = {
       },
     ],
   },
-  faqIntro: 'Potomac questions — call (800) 606-3334 (dispatch: Bethesda).',
+  faqIntro: 'Potomac questions — call (301) 809-4544 (dispatch: Bethesda).',
   faq: [
     {
       q: 'Which office covers Potomac?',
-      a: 'Bethesda — 7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814. Booking line (800) 606-3334.',
+      a: 'Bethesda — 7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814. Booking line (301) 809-4544.',
     },
     {
       q: 'What should I prepare before the crew arrives in Potomac?',

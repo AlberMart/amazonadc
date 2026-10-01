@@ -5,9 +5,9 @@ export const springfield: LocationContentSeed = {
   title: 'Air Duct Cleaning in Springfield, VA',
   headline: 'Air duct and dryer vent cleaning for Springfield, Franconia, and West Springfield',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Springfield, VA. Flat rates from our Burke office for split-levels, townhomes, and I-95 corridor homes. Call (800) 606-3334.',
+    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Springfield, VA. Flat rates from our Burke office for split-levels, townhomes, and I-95 corridor homes. Call (571) 460-0001.',
   intro:
-    'Amazon Air Duct Cleaning serves Springfield from our Burke office — the next community over, the next community over from Burke. Split-levels near the Mixing Bowl, Franconia townhomes, and West Springfield colonials all take on traffic dust and humid summers. Call (800) 606-3334.',
+    'Amazon Air Duct Cleaning serves Springfield from our Burke office — the next community over, the next community over from Burke. Split-levels near the Mixing Bowl, Franconia townhomes, and West Springfield colonials all take on traffic dust and humid summers. Call (571) 460-0001.',
   heroImage: '/img/locations/springfield.webp',
   heroAlt: 'Air duct cleaning in Springfield, VA — Amazon Air Duct Cleaning',
   city: 'Springfield',
@@ -19,7 +19,7 @@ export const springfield: LocationContentSeed = {
     paragraphs: [
       'Springfield sits where I-95, I-395, and the Beltway braid together. That is convenient. It is also a constant source of fine dust. Returns on Old Keene Mill, Franconia, and Backlick pull it in along with Fairfax County pollen. A lot of the housing is 1960s–80s split-levels and townhomes with basements. Those rooms stay cool. Summer air does not. Cold trunks sweat. Dust sticks.',
       'Springfield Town Center and the Franconia-Springfield Metro added denser condos and long dryer runs. A dryer that needs two cycles is often a packed vent, not a dying machine. The same humidity that fogs a windshield in July is sitting in the laundry closet.',
-      'We serve Springfield from [Burke](/locations/burke). Burke Centre is minutes away. Nearby [Fairfax](/locations/fairfax), [Alexandria](/locations/alexandria), and [Prince William](/locations/prince-william) use the same crew. For background reading (not a booking page), see [springfield-mixing-bowl-dust-air-ducts](/blog/springfield-mixing-bowl-dust-air-ducts).',
+      'We serve Springfield from [Burke](/locations/burke). Burke Centre is minutes away. Nearby [Fairfax](/locations/fairfax), [Alexandria](/locations/alexandria), and [Prince William](/locations/prince-william) use the same crew. More on [Springfield Mixing Bowl Dust](/blog/springfield-mixing-bowl-dust-air-ducts).',
     ],
     highlights: [
       'Springfield, Franconia, West Springfield, and Newington',
@@ -113,11 +113,11 @@ export const springfield: LocationContentSeed = {
       },
     ],
   },
-  faqIntro: 'Springfield questions — call (800) 606-3334 (dispatch: Burke).',
+  faqIntro: 'Springfield questions — call (571) 460-0001 (dispatch: Burke).',
   faq: [
     {
       q: 'Which office covers Springfield?',
-      a: 'Burke — 5641 Burke Centre Pkwy Ste 119, Burke, VA 22015. Booking line (800) 606-3334.',
+      a: 'Burke — 5641 Burke Centre Pkwy Ste 119, Burke, VA 22015. Booking line (571) 460-0001.',
     },
     {
       q: 'Are Springfield residential prices flat-rate?',

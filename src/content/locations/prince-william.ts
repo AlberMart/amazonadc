@@ -6,9 +6,9 @@ export const princeWilliam: LocationContentSeed = {
   headline:
     'Air duct and dryer vent cleaning for Woodbridge, Manassas, Lake Ridge, and Gainesville',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Prince William County, VA. Flat rates from our Burke office for Woodbridge, Manassas, and Lake Ridge. Call (800) 606-3334.',
+    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Prince William County, VA. Flat rates from our Burke office for Woodbridge, Manassas, and Lake Ridge. Call (571) 460-0001.',
   intro:
-    'Amazon Air Duct Cleaning serves Prince William County from our Burke office. Woodbridge townhomes on I-95, Lake Ridge split-levels, and Manassas colonials all take on Occoquan humidity and corridor dust. the crew is the same one that already works Springfield. Call (800) 606-3334.',
+    'Amazon Air Duct Cleaning serves Prince William County from our Burke office. Woodbridge townhomes on I-95, Lake Ridge split-levels, and Manassas colonials all take on Occoquan humidity and corridor dust. the crew is the same one that already works Springfield. Call (571) 460-0001.',
   heroImage: '/img/locations/prince-william.webp',
   heroAlt: 'Air duct cleaning in Prince William County, VA — Amazon Air Duct Cleaning',
   city: 'Prince William',
@@ -20,7 +20,7 @@ export const princeWilliam: LocationContentSeed = {
     paragraphs: [
       'Prince William County sits between the Occoquan and the I-95 / I-66 corridors: Woodbridge, Lake Ridge, Dale City, Manassas, Gainesville, and Haymarket. A lot of the housing is 1970s–2000s townhomes and single-family houses with basements. Those basements stay cool. Summer air off the Occoquan does not. Cold supply trunks sweat. Pollen and highway dust stick to that moisture.',
       'Townhomes along Prince William Parkway pack long dryer vents. A laundry room that stays hot after a cycle is often a clogged run, not a bad dryer. Older Manassas houses add retrofitted trunks with joints that collect whatever the last decade of filters missed.',
-      'We serve the county from [Burke](/locations/burke). Nearby [Springfield](/locations/springfield) and [Alexandria](/locations/alexandria) are closer-in stops on the same dispatch. For background reading (not a booking page), see [prince-william-occoquan-humidity-air-ducts](/blog/prince-william-occoquan-humidity-air-ducts).',
+      'We serve the county from [Burke](/locations/burke). Nearby [Springfield](/locations/springfield) and [Alexandria](/locations/alexandria) are closer-in stops on the same dispatch. More on [Prince William Occoquan Humidity](/blog/prince-william-occoquan-humidity-air-ducts).',
     ],
     highlights: [
       'Woodbridge, Lake Ridge, Manassas, Gainesville, Dale City',
@@ -94,7 +94,7 @@ export const princeWilliam: LocationContentSeed = {
     steps: [
       {
         title: 'Estimate Request',
-        text: 'Form or (800) 606-3334 — we reply with timing from the Burke office.',
+        text: 'Form or (571) 460-0001 — we reply with timing from the Burke office.',
       },
       {
         title: 'Route Planning',
@@ -114,11 +114,11 @@ export const princeWilliam: LocationContentSeed = {
       },
     ],
   },
-  faqIntro: 'Prince William questions — call (800) 606-3334 (dispatch: Burke).',
+  faqIntro: 'Prince William questions — call (571) 460-0001 (dispatch: Burke).',
   faq: [
     {
       q: 'Where does the Prince William crew stage from?',
-      a: 'Our Burke office (5641 Burke Centre Pkwy Ste 119, Burke, VA 22015). Office line (571) 460-0001; booking (800) 606-3334.',
+      a: 'Our Burke office (5641 Burke Centre Pkwy Ste 119, Burke, VA 22015). Office line (571) 460-0001; booking (571) 460-0001.',
     },
     {
       q: 'Are Prince William residential prices flat-rate?',

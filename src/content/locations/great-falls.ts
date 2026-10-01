@@ -6,9 +6,9 @@ export const greatFalls: LocationContentSeed = {
   headline:
     'Air duct and dryer vent cleaning for Great Falls estates, river lots, and large-lot colonials',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Great Falls, VA. Flat rates from our Burke office for large lots, long dryer runs, and Potomac-humidity homes. Call (800) 606-3334.',
+    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Great Falls, VA. Flat rates from our Burke office for large lots, long dryer runs, and Potomac-humidity homes. Call (571) 460-0001.',
   intro:
-    'Amazon Air Duct Cleaning serves Great Falls from our Burke office — , and Large-lot estates, Georgetown Pike houses, and river-edge properties all take on Potomac humidity and a heavy tree canopy. Call (800) 606-3334.',
+    'Amazon Air Duct Cleaning serves Great Falls from our Burke office. Large-lot estates, Georgetown Pike houses, and river-edge properties all take on Potomac humidity and a heavy tree canopy. Call (571) 460-0001.',
   heroImage: '/img/locations/great-falls.webp',
   heroAlt: 'Air duct cleaning in Great Falls, VA — Amazon Air Duct Cleaning',
   city: 'Great Falls',
@@ -20,7 +20,7 @@ export const greatFalls: LocationContentSeed = {
     paragraphs: [
       'Great Falls is large lots, mature oaks, and houses set far back from Georgetown Pike and Walker Road. Many properties still use a well, a septic field, or both. That does not change how we clean ducts, but it does mean long dryer runs, multiple returns, and air handlers in walk-out basements that sit close to damp soil. The Potomac is close enough that summer humidity moves inland even when you cannot see the river.',
       'Estate-scale systems often mix original metal trunks with later additions over a garage or a guest wing. Dust collects at those joints. Tree pollen from the canopy coats outdoor furniture in April and the same film sits in returns. A dryer that sits fifty feet from the exterior wall will pack with lint long before a short ranch run would.',
-      'We serve Great Falls from [Burke](/locations/burke). There is no Great Falls office. Nearby [McLean](/locations/mclean), [Reston](/locations/reston), and [Loudoun](/locations/loudoun) use the same dispatch. For background reading (not a booking page), see [great-falls-estates-humidity-air-ducts](/blog/great-falls-estates-humidity-air-ducts).',
+      'We serve Great Falls from [Burke](/locations/burke). There is no Great Falls office. Nearby [McLean](/locations/mclean), [Reston](/locations/reston), and [Loudoun](/locations/loudoun) use the same dispatch. More on [Great Falls Estates Humidity](/blog/great-falls-estates-humidity-air-ducts).',
     ],
     highlights: [
       'Georgetown Pike, River Bend, Walker Road, and large-lot streets',
@@ -94,7 +94,7 @@ export const greatFalls: LocationContentSeed = {
     steps: [
       {
         title: 'Request a Window',
-        text: 'Call (800) 606-3334 or use the form. We confirm by the next business day.',
+        text: 'Call (571) 460-0001 or use the form. We confirm by the next business day.',
       },
       {
         title: 'Share Access Details',
@@ -114,11 +114,11 @@ export const greatFalls: LocationContentSeed = {
       },
     ],
   },
-  faqIntro: 'Great Falls questions — call (800) 606-3334 (dispatch: Burke).',
+  faqIntro: 'Great Falls questions — call (571) 460-0001 (dispatch: Burke).',
   faq: [
     {
       q: 'Where does the Great Falls crew stage from?',
-      a: 'Our Burke office (5641 Burke Centre Pkwy Ste 119, Burke, VA 22015). Office line (571) 460-0001; booking (800) 606-3334.',
+      a: 'Our Burke office (5641 Burke Centre Pkwy Ste 119, Burke, VA 22015). Office line (571) 460-0001; booking (571) 460-0001.',
     },
     {
       q: 'How often should Great Falls, VA homes clean ducts?',

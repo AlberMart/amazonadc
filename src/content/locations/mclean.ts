@@ -5,9 +5,9 @@ export const mclean: LocationContentSeed = {
   title: 'Air Duct Cleaning in McLean, VA',
   headline: 'Air duct and dryer vent cleaning for McLean, Langley, and Tysons-area homes',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in McLean, VA. Flat rates from our Burke office for large lots, finished basements, and Tysons condos. Call (800) 606-3334.',
+    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in McLean, VA. Flat rates from our Burke office for large lots, finished basements, and Tysons condos. Call (571) 460-0001.',
   intro:
-    'Amazon Air Duct Cleaning serves McLean from our Burke office — the same Northern Virginia crew that already covers Arlington and Alexandria. Large-lot houses under a heavy tree canopy, finished basements, and Tysons high-rises all load ducts with pollen and humidity. Call (800) 606-3334.',
+    'Amazon Air Duct Cleaning serves McLean from our Burke office — the same Northern Virginia crew that already covers Arlington and Alexandria. Large-lot houses under a heavy tree canopy, finished basements, and Tysons high-rises all load ducts with pollen and humidity. Call (571) 460-0001.',
   heroImage: '/img/locations/mclean.webp',
   heroAlt: 'Air duct cleaning in McLean, VA — Amazon Air Duct Cleaning',
   city: 'McLean',
@@ -19,7 +19,7 @@ export const mclean: LocationContentSeed = {
     paragraphs: [
       'McLean is a Fairfax County community of large lots, mature oaks, and quiet streets — Langley, Chesterbrook, Kent Gardens, and the neighborhoods along Dolley Madison Boulevard. That tree canopy is why spring pollen coats outdoor furniture. It is also why returns fill faster than in a new treeless subdivision. Finished basements along Difficult Run and Pimmit Run sit close to damp soil. Summer humidity still moves up from the Potomac, even if you cannot see the river from the backyard.',
       'Tysons is next door. Condos and offices there have long dryer runs and rooftop packs. A McLean colonial from the 1960s–80s often has a mix of original trunk lines and later additions. Dust collects at those joints. Cold supply air plus humid basement air is how musty registers start after a wet spring.',
-      'We serve McLean from [Burke](/locations/burke). ,. Nearby [Arlington](/locations/arlington), [Alexandria](/locations/alexandria), and [Washington, DC](/locations/washington-dc) use the same dispatch. For background reading (not a booking page), see [mclean-tree-pollen-basement-humidity](/blog/mclean-tree-pollen-basement-humidity).',
+      'We serve McLean from [Burke](/locations/burke). Nearby [Arlington](/locations/arlington), [Alexandria](/locations/alexandria), and [Washington, DC](/locations/washington-dc) use the same dispatch. More on [tree pollen and basement humidity in McLean](/blog/mclean-tree-pollen-basement-humidity).',
     ],
     highlights: [
       'Large-lot homes, Langley estates, and Tysons condos',
@@ -93,7 +93,7 @@ export const mclean: LocationContentSeed = {
     steps: [
       {
         title: 'Request a Window',
-        text: 'Call (800) 606-3334 or use the form. We confirm by the next business day.',
+        text: 'Call (571) 460-0001 or use the form. We confirm by the next business day.',
       },
       {
         title: 'Share Access Details',
@@ -113,11 +113,11 @@ export const mclean: LocationContentSeed = {
       },
     ],
   },
-  faqIntro: 'McLean questions — call (800) 606-3334 (dispatch: Burke).',
+  faqIntro: 'McLean questions — call (571) 460-0001 (dispatch: Burke).',
   faq: [
     {
       q: 'Which office covers McLean?',
-      a: 'Burke — 5641 Burke Centre Pkwy Ste 119, Burke, VA 22015. Booking line (800) 606-3334.',
+      a: 'Burke — 5641 Burke Centre Pkwy Ste 119, Burke, VA 22015. Booking line (571) 460-0001.',
     },
     {
       q: 'How often should McLean, VA homes clean ducts?',

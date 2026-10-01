@@ -6,9 +6,9 @@ export const wheaton: LocationContentSeed = {
   headline:
     'Air duct and dryer vent cleaning for Wheaton Westfield, Glenmont, and close-in Montgomery',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Wheaton, MD. Flat rates from our Bethesda office for older brick, mixed housing, and urban pollen. Call (800) 606-3334.',
+    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Wheaton, MD. Flat rates from our Bethesda office for older brick, mixed housing, and urban pollen. Call (301) 809-4544.',
   intro:
-    'Amazon Air Duct Cleaning serves Wheaton from our Bethesda office — up Veirs Mill and Georgia Avenue, not a rented Westfield suite. Older brick, split-levels, and stacked units all take on close-in Montgomery pollen and urban dust. Call (800) 606-3334.',
+    'Amazon Air Duct Cleaning serves Wheaton from our Bethesda office — up Veirs Mill and Georgia Avenue. Older brick, split-levels, and stacked units all take on close-in Montgomery pollen and urban dust. Call (301) 809-4544.',
   heroImage: '/img/locations/wheaton.webp',
   heroAlt: 'Air duct cleaning in Wheaton, MD — Amazon Air Duct Cleaning',
   city: 'Wheaton',
@@ -20,7 +20,7 @@ export const wheaton: LocationContentSeed = {
     paragraphs: [
       'Wheaton is close-in Montgomery County around the Westfield mall, the Metro, Veirs Mill Road, and Georgia Avenue. Housing is mixed on purpose: 1940s–60s brick colonials and ramblers, later split-levels, garden apartments, and newer infill. That mix shares one problem. Older ductwork was cut through plaster and joists. Joints leak. Downtown construction and bus-corridor grit add a second load the returns never sort from tree pollen.',
       'Aspen Hill sits just north as a neighborhood we already drive, not a separate city page. Kemp Mill and Glenmont fill in the same close-in ring. Basements stay cool. Maryland summers stay wet. Cold trunks sweat, and the first AC week after a pollen burst is when registers look dirty again.',
-      'We serve Wheaton from [Bethesda](/locations/bethesda). Nearby [Silver Spring](/locations/silver-spring) and [Kensington](/locations/kensington) use the same dispatch. For background reading (not a booking page), see [wheaton-urban-dust-air-ducts](/blog/wheaton-urban-dust-air-ducts).',
+      'We serve Wheaton from [Bethesda](/locations/bethesda). Nearby [Silver Spring](/locations/silver-spring) and [Kensington](/locations/kensington) use the same dispatch. More on [Wheaton Urban Dust](/blog/wheaton-urban-dust-air-ducts).',
     ],
     highlights: [
       'Wheaton Westfield, Glenmont, Kemp Mill, and Veirs Mill brick',
@@ -93,7 +93,7 @@ export const wheaton: LocationContentSeed = {
     steps: [
       {
         title: 'Online or Phone Intake',
-        text: 'Book at (800) 606-3334. Mention Wheaton so we route from Bethesda.',
+        text: 'Book at (301) 809-4544. Mention Wheaton so we route from Bethesda.',
       },
       {
         title: 'Pre-Job Notes',
@@ -113,11 +113,11 @@ export const wheaton: LocationContentSeed = {
       },
     ],
   },
-  faqIntro: 'Wheaton questions — call (800) 606-3334 (dispatch: Bethesda).',
+  faqIntro: 'Wheaton questions — call (301) 809-4544 (dispatch: Bethesda).',
   faq: [
     {
       q: 'Do you have a storefront in Wheaton?',
-      a: 'No. Wheaton jobs are scheduled from our Bethesda office at 7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814. Call (800) 606-3334.',
+      a: 'No. Wheaton jobs are scheduled from our Bethesda office at 7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814. Call (301) 809-4544.',
     },
     {
       q: 'Do you serve commercial spaces in Wheaton?',

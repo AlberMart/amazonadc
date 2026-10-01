@@ -6,9 +6,9 @@ export const vienna: LocationContentSeed = {
   headline:
     'Air duct and dryer vent cleaning for Maple Avenue colonials, Wolf Trap, and the Vienna Metro',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Vienna, VA. Flat rates from our Burke office for 1950s–70s colonials, finished basements, and Tysons-edge homes. Call (800) 606-3334.',
+    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Vienna, VA. Flat rates from our Burke office for 1950s–70s colonials, finished basements, and Tysons-edge homes. Call (571) 460-0001.',
   intro:
-    'Amazon Air Duct Cleaning serves Vienna from our Burke office — a run up 123, not a rented Maple Avenue suite. 1950s–70s colonials, Glyndon Park streets, and houses toward Wolf Trap all take on heavy tree-canopy pollen and humid basement air. Call (800) 606-3334.',
+    'Amazon Air Duct Cleaning serves Vienna from our Burke office — a run up 123. 1950s–70s colonials, Glyndon Park streets, and houses toward Wolf Trap all take on heavy tree-canopy pollen and humid basement air. Call (571) 460-0001.',
   heroImage: '/img/locations/vienna.webp',
   heroAlt: 'Air duct cleaning in Vienna, VA — Amazon Air Duct Cleaning',
   city: 'Vienna',
@@ -20,7 +20,7 @@ export const vienna: LocationContentSeed = {
     paragraphs: [
       'The Town of Vienna grew along Maple Avenue and Chain Bridge Road: walkable blocks, Church Street shops, and a lot of 1950s–70s colonials with full basements. Those rooms stay cool. Northern Virginia summers do not. Cold supply trunks sweat. Oak, maple, and the Wolf Trap canopy dump pollen onto that film. Glyndon Park and the streets off Nutley sit under the same trees.',
       'Vienna/Fairfax-GMU Metro and the Tysons edge add denser townhomes and longer dryer runs. A colonial that gained a rec room in the 1990s often has original trunks plus a later branch. Dust collects at those joints. The same humidity that fogs a windshield on Maple Avenue in July is sitting on the air handler.',
-      'We serve Vienna from [Burke](/locations/burke). Nearby [McLean](/locations/mclean), [Oakton](/locations/oakton), and [Fairfax](/locations/fairfax) use the same dispatch. For background reading (not a booking page), see [vienna-tree-pollen-basement-air-ducts](/blog/vienna-tree-pollen-basement-air-ducts).',
+      'We serve Vienna from [Burke](/locations/burke). Nearby [McLean](/locations/mclean), [Oakton](/locations/oakton), and [Fairfax](/locations/fairfax) use the same dispatch. More on [Vienna Tree Pollen Basement](/blog/vienna-tree-pollen-basement-air-ducts).',
     ],
     highlights: [
       'Maple Avenue, Glyndon Park, Wolf Trap, and Tysons-edge streets',
@@ -95,7 +95,7 @@ export const vienna: LocationContentSeed = {
     steps: [
       {
         title: 'Estimate Request',
-        text: 'Form or (800) 606-3334 — we reply with timing from the Burke office.',
+        text: 'Form or (571) 460-0001 — we reply with timing from the Burke office.',
       },
       {
         title: 'Route Planning',
@@ -115,11 +115,11 @@ export const vienna: LocationContentSeed = {
       },
     ],
   },
-  faqIntro: 'Vienna questions — call (800) 606-3334 (dispatch: Burke).',
+  faqIntro: 'Vienna questions — call (571) 460-0001 (dispatch: Burke).',
   faq: [
     {
       q: 'Where does the Vienna crew stage from?',
-      a: 'Our Burke office (5641 Burke Centre Pkwy Ste 119, Burke, VA 22015). Office line (571) 460-0001; booking (800) 606-3334.',
+      a: 'Our Burke office (5641 Burke Centre Pkwy Ste 119, Burke, VA 22015). Office line (571) 460-0001; booking (571) 460-0001.',
     },
     {
       q: 'Can I stay home during the Vienna appointment?',

@@ -1,8 +1,8 @@
 {
   "slug": "ellicott-city-flood-humidity-air-ducts",
-  "title": "Reading the Signs: Dust and Moisture in Ellicott City Ductwork",
+  "title": "Main Street mill houses, Tiber cellars, and why hillside suburbs still pull pollen",
   "headline": "Main Street mill houses, Tiber cellars, and why hillside suburbs still pull pollen",
-  "description": "Ellicott City, MD mill houses sit on the Patapsco with a real flood history. An educational look at why stone cellars and old ducts hold moisture.",
+  "description": "Ellicott City, MD mill houses sit on the Patapsco with a real flood history. why stone cellars and old ducts hold moisture.",
   "heroImage": "/img/blog/heroes/ellicott-city-flood-humidity-air-ducts.webp",
   "sections": [
     {
@@ -10,7 +10,7 @@
       "heading": "Flood history here is not a marketing line",
       "paragraphs": [
         "Main Street stone and wood, the Tiber valley, then later neighborhoods up the hills — Dorsey Hall, Turf Valley, streets toward Catonsville. The old stock was never designed around modern HVAC. Ducts were cut through stone cellars and timber. Those cellars remember every wet year. Lower levels stay damp longer than a Beltway basement.",
-        "Newer hillsides still load pollen. The historic core loads moisture. Both send film into returns. Catonsville is a next-door community we mention because neighbors ask — it is not its own page."
+        "Newer hillsides still load pollen. The historic core loads moisture. Both send film into returns. Catonsville is a next-door community we mention because neighbors ask — it is covered on this route."
       ],
       "listItems": []
     },
@@ -40,7 +40,7 @@
       "id": "protect",
       "heading": "Background reading vs booking a visit",
       "paragraphs": [
-        "Ellicott City jobs are scheduled from our metro offices. This article is educational — use the [location page](/locations/ellicott-city) when you are ready to book.",
+        "Ellicott City jobs are scheduled from our metro offices For service and scheduling, see the [local service page](/locations/ellicott-city).",
         "Ellicott City is served from our [Bethesda](/locations/bethesda) office. Nearby [Columbia](/locations/columbia) is the planned-city page west. The drive is farther than Montgomery County and we schedule it that way.",
         "Service details live on the [Ellicott City location page](/locations/ellicott-city). See [air duct cleaning](/air-duct-cleaning) for how we treat moisture-loaded trunks."
       ],
@@ -53,20 +53,12 @@
   ],
   "faq": [
     {
-      "q": "Is this a sales page for Ellicott City duct cleaning?",
-      "a": "No. This post explains mechanisms and signs. Service details live on the Ellicott City location page."
-    },
-    {
       "q": "What usually causes gray film on supply registers?",
       "a": "Fine particles that bypass or overload filters settle in cool trunks and recirculate when the blower runs."
     },
     {
       "q": "When is dryer vent cleaning the better first step?",
       "a": "When laundry closets stay hot, dry times double, or you smell burnt lint — clear the vent to the exterior cap."
-    },
-    {
-      "q": "How is this different from a location page?",
-      "a": "Location pages cover packages, booking, and office dispatch. Articles cover climate and housing patterns."
     }
   ]
 }

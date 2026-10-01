@@ -6,9 +6,9 @@ export const loudoun: LocationContentSeed = {
   headline:
     'Air duct and dryer vent cleaning for Leesburg, Ashburn, Sterling, and Dulles-area homes',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Loudoun County, VA. Flat rates from our Burke office for Leesburg, Ashburn, Sterling, and South Riding. Call (800) 606-3334.',
+    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Loudoun County, VA. Flat rates from our Burke office for Leesburg, Ashburn, Sterling, and South Riding. Call (571) 460-0001.',
   intro:
-    'Amazon Air Duct Cleaning serves Loudoun County from our Burke office. Leesburg brick, Ashburn and Sterling new-builds, and Dulles-corridor townhomes all take on construction dust and a heavy pollen season. Call (800) 606-3334.',
+    'Amazon Air Duct Cleaning serves Loudoun County from our Burke office. Leesburg brick, Ashburn and Sterling new-builds, and Dulles-corridor townhomes all take on construction dust and a heavy pollen season. Call (571) 460-0001.',
   heroImage: '/img/locations/loudoun.webp',
   heroAlt: 'Air duct cleaning in Loudoun County, VA — Amazon Air Duct Cleaning',
   city: 'Loudoun',
@@ -20,7 +20,7 @@ export const loudoun: LocationContentSeed = {
     paragraphs: [
       'Loudoun is not one housing type. Historic Leesburg has older metal trunks and damp basements near Goose Creek and the Potomac. Ashburn, Broadlands, Brambleton, and South Riding are packed with 1990s–2010s townhomes and single-family houses that still swallow drywall dust from the next section under construction. Sterling and the Dulles Toll Road add traffic particles. Data-center growth did not make indoor air cleaner.',
       'New construction is not clean construction. Fine gypsum and insulation fibers sit in returns for years if the system was never commissioned with a proper duct cleaning. Older Leesburg houses have the opposite problem: humidity and pollen in trunks that were added after the house was built.',
-      'We serve Loudoun from [Burke](/locations/burke). The drive is real; the office is staffed. Nearby [McLean](/locations/mclean) and [Fairfax](/locations/fairfax) are closer-in stops on the same dispatch. For background reading (not a booking page), see [loudoun-construction-dust-pollen-air-ducts](/blog/loudoun-construction-dust-pollen-air-ducts).',
+      'We serve Loudoun from [Burke](/locations/burke). The drive is real; the office is staffed. Nearby [McLean](/locations/mclean) and [Fairfax](/locations/fairfax) are closer-in stops on the same dispatch. More on [Loudoun Construction Dust Pollen](/blog/loudoun-construction-dust-pollen-air-ducts).',
     ],
     highlights: [
       'Leesburg, Ashburn, Sterling, Brambleton, South Riding',
@@ -89,11 +89,11 @@ export const loudoun: LocationContentSeed = {
   },
   process: {
     heading: 'Longer Dulles-Corridor Drive — Planned Honestly',
-    intro: 'We schedule Loudoun with honest travel time from Burke.',
+    intro: 'We schedule Loudoun with stated travel time from Burke.',
     steps: [
       {
         title: 'Online or Phone Intake',
-        text: 'Book at (800) 606-3334. Mention Loudoun so we route from Burke.',
+        text: 'Book at (571) 460-0001. Mention Loudoun so we route from Burke.',
       },
       {
         title: 'Pre-Job Notes',
@@ -113,11 +113,11 @@ export const loudoun: LocationContentSeed = {
       },
     ],
   },
-  faqIntro: 'Loudoun questions — call (800) 606-3334 (dispatch: Burke).',
+  faqIntro: 'Loudoun questions — call (571) 460-0001 (dispatch: Burke).',
   faq: [
     {
       q: 'Do you have a storefront in Loudoun?',
-      a: 'No. Loudoun jobs are scheduled from our Burke office at 5641 Burke Centre Pkwy Ste 119, Burke, VA 22015. Call (800) 606-3334.',
+      a: 'No. Loudoun jobs are scheduled from our Burke office at 5641 Burke Centre Pkwy Ste 119, Burke, VA 22015. Call (571) 460-0001.',
     },
     {
       q: 'Can ducts and dryer vents be done the same day in Loudoun?',

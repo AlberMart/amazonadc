@@ -1,231 +1,9 @@
 [
   {
-    "slug": "reston-town-center-dust-air-ducts",
-    "title": "Why Toll Road Dust and Humid Summers Film Over Registers in Planned Communities",
-    "description": "An educational look at how Dulles-corridor dust and summer humidity interact with townhome and high-rise ductwork — and when homeowners usually book a cleaning.",
-    "hero": "/img/blog/heroes/reston-town-center-dust-air-ducts.webp"
-  },
-  {
-    "slug": "herndon-construction-dust-air-ducts",
-    "title": "Construction Dust Near Active Corridors: What Ends Up in HVAC Returns",
-    "description": "How nearby construction and corridor traffic can load returns with fine dust — practical signs to watch before you schedule a duct or dryer vent cleaning. For service details, use the matching city location page.",
-    "hero": "/img/blog/heroes/herndon-construction-dust-air-ducts.webp"
-  },
-  {
-    "slug": "vienna-tree-pollen-basement-air-ducts",
-    "title": "Humidity, Pollen, and Duct Film: A Vienna Homeowner Guide",
-    "description": "The Town of Vienna sits under a heavy Fairfax County canopy. An educational look at why 1950s–70s colonials store pollen in cool basement trunks, and when to clean the ducts from Burke.",
-    "hero": "/img/blog/heroes/vienna-tree-pollen-basement-air-ducts.webp"
-  },
-  {
-    "slug": "great-falls-estates-humidity-air-ducts",
-    "title": "Reading the Signs: Dust and Moisture in Great Falls Ductwork",
-    "description": "Great Falls, VA sits on large wooded lots near the Potomac. An educational look at why estate-scale ducts hold river humidity and canopy pollen.",
-    "hero": "/img/blog/heroes/great-falls-estates-humidity-air-ducts.webp"
-  },
-  {
-    "slug": "falls-church-close-in-dust-air-ducts",
-    "title": "Falls Church Indoor Air: Corridor Dust vs Household Debris",
-    "description": "The City of Falls Church sits on small lots next to the Beltway and Route 7. An educational look at why older trunks collect traffic dust.",
-    "hero": "/img/blog/heroes/falls-church-close-in-dust-air-ducts.webp"
-  },
-  {
-    "slug": "chantilly-route-28-dust-air-ducts",
-    "title": "When Chantilly Homes Usually Need Duct Attention",
-    "description": "Chantilly, VA sits on Route 28 between Dulles and Centreville. An educational look at why HOA construction dust and airport-corridor traffic load ducts.",
-    "hero": "/img/blog/heroes/chantilly-route-28-dust-air-ducts.webp"
-  },
-  {
-    "slug": "oakton-123-pollen-air-ducts",
-    "title": "Humidity, Pollen, and Duct Film: A Oakton Homeowner Guide",
-    "description": "Oakton, VA sits on Chain Bridge Road between Vienna and Fairfax. An educational look at why large-lot colonials store canopy pollen in cool trunks.",
-    "hero": "/img/blog/heroes/oakton-123-pollen-air-ducts.webp"
-  },
-  {
-    "slug": "lorton-i95-occoquan-air-ducts",
-    "title": "Reading the Signs: Dust and Moisture in Lorton Ductwork",
-    "description": "Lorton, VA sits on I-95 south of Springfield with the Occoquan nearby. An educational look at why traffic dust and river humidity load ducts.",
-    "hero": "/img/blog/heroes/lorton-i95-occoquan-air-ducts.webp"
-  },
-  {
-    "slug": "mount-vernon-potomac-humidity-air-ducts",
-    "title": "Mount Vernon Indoor Air: Corridor Dust vs Household Debris",
-    "description": "Mt Vernon, VA sits along the GW Parkway on the Potomac. An educational look at why older river-side trunks collect humidity and pollen.",
-    "hero": "/img/blog/heroes/mount-vernon-potomac-humidity-air-ducts.webp"
-  },
-  {
-    "slug": "fair-oaks-townhomes-dust-air-ducts",
-    "title": "Humidity, Pollen, and Duct Film: A Fair Oaks Homeowner Guide",
-    "description": "Fair Oaks, VA sits at the I-66 / Route 50 interchange around the mall and Fair Lakes. An educational look at why townhome ducts load corridor dust.",
-    "hero": "/img/blog/heroes/fair-oaks-townhomes-dust-air-ducts.webp"
-  },
-  {
-    "slug": "germantown-i270-townhome-air-ducts",
-    "title": "Germantown Indoor Air: Corridor Dust vs Household Debris",
-    "description": "Germantown, MD sits on I-270 north of Gaithersburg. An educational look at why townhome ducts collect traffic dust and drywall grit.",
-    "hero": "/img/blog/heroes/germantown-i270-townhome-air-ducts.webp"
-  },
-  {
-    "slug": "potomac-tree-canopy-humidity-air-ducts",
-    "title": "Potomac Indoor Air: Corridor Dust vs Household Debris",
-    "description": "Potomac, MD sits on large wooded lots along the river corridor. An educational look at why canopy pollen and humidity load estate-scale ducts.",
-    "hero": "/img/blog/heroes/potomac-tree-canopy-humidity-air-ducts.webp"
-  },
-  {
-    "slug": "wheaton-urban-dust-air-ducts",
-    "title": "Wheaton Indoor Air: Corridor Dust vs Household Debris",
-    "description": "Wheaton, MD mixes 1940s–60s brick with Metro-corridor dust. An educational look at why older ducts collect urban grit and pollen.",
-    "hero": "/img/blog/heroes/wheaton-urban-dust-air-ducts.webp"
-  },
-  {
-    "slug": "takoma-park-bungalow-humidity-air-ducts",
-    "title": "Takoma Park Indoor Air: Corridor Dust vs Household Debris",
-    "description": "Takoma Park, MD bungalows sit on the DC line under a heavy canopy. An educational look at why later-added ducts collect humidity and leaf grit.",
-    "hero": "/img/blog/heroes/takoma-park-bungalow-humidity-air-ducts.webp"
-  },
-  {
-    "slug": "kensington-colonials-pollen-air-ducts",
-    "title": "What Loads Dust Into HVAC Returns Near Kensington",
-    "description": "Kensington, MD colonials sit on Connecticut Avenue under street trees. An educational look at why pollen and weekend grit load cool basement ducts.",
-    "hero": "/img/blog/heroes/kensington-colonials-pollen-air-ducts.webp"
-  },
-  {
-    "slug": "olney-rambler-pollen-air-ducts",
-    "title": "Humidity, Pollen, and Duct Film: A Olney Homeowner Guide",
-    "description": "Olney, MD ramblers sit farther up Montgomery County under a thick canopy. An educational look at why finished basements store pollen in cool trunks.",
-    "hero": "/img/blog/heroes/olney-rambler-pollen-air-ducts.webp"
-  },
-  {
-    "slug": "hyattsville-route-1-humidity-air-ducts",
-    "title": "When Hyattsville Homes Usually Need Duct Attention",
-    "description": "Hyattsville, MD sits on the Route 1 spine in Prince George’s County. An educational look at why older ducts collect humidity and corridor grit.",
-    "hero": "/img/blog/heroes/hyattsville-route-1-humidity-air-ducts.webp"
-  },
-  {
-    "slug": "columbia-village-townhomes-air-ducts",
-    "title": "Columbia Indoor Air: Corridor Dust vs Household Debris",
-    "description": "Columbia, MD village townhomes sit around lakes and HOA paths. An educational look at why pollen and damp-season film load ducts.",
-    "hero": "/img/blog/heroes/columbia-village-townhomes-air-ducts.webp"
-  },
-  {
-    "slug": "ellicott-city-flood-humidity-air-ducts",
-    "title": "Reading the Signs: Dust and Moisture in Ellicott City Ductwork",
-    "description": "Ellicott City, MD mill houses sit on the Patapsco with a real flood history. An educational look at why stone cellars and old ducts hold moisture.",
-    "hero": "/img/blog/heroes/ellicott-city-flood-humidity-air-ducts.webp"
-  },
-  {
-    "slug": "frederick-downtown-humidity-air-ducts",
-    "title": "Reading the Signs: Dust and Moisture in Frederick Ductwork",
-    "description": "Frederick, MD mixes downtown brick humidity with Urbana construction dust. An educational look at why ducts load on both ends of the city.",
-    "hero": "/img/blog/heroes/frederick-downtown-humidity-air-ducts.webp"
-  },
-  {
-    "slug": "montgomery-village-townhomes-air-ducts",
-    "title": "What Loads Dust Into HVAC Returns Near Montgomery Village",
-    "description": "Montgomery Village, MD is a 1970s planned community next to Gaithersburg. An educational look at why lake-side townhome ducts collect pollen and old-closet lint.",
-    "hero": "/img/blog/heroes/montgomery-village-townhomes-air-ducts.webp"
-  },
-  {
-    "slug": "clarksburg-new-construction-dust-air-ducts",
-    "title": "Clarksburg Indoor Air: Corridor Dust vs Household Debris",
-    "description": "Clarksburg, MD is Montgomery County’s I-270 north boom. An educational look at why new-construction ducts hold drywall dust.",
-    "hero": "/img/blog/heroes/clarksburg-new-construction-dust-air-ducts.webp"
-  },
-  {
-    "slug": "fairfax-ramblers-pollen-air-ducts",
-    "title": "What Loads Dust Into HVAC Returns Near Fairfax",
-    "description": "The City of Fairfax sits inside a heavy Fairfax County tree canopy. An educational look at why 1950s–80s ramblers sweat at the trunks, how pollen sticks, and when to clean the ducts.",
-    "hero": "/img/blog/heroes/fairfax-ramblers-pollen-air-ducts.webp"
-  },
-  {
-    "slug": "springfield-mixing-bowl-dust-air-ducts",
-    "title": "Springfield Indoor Air: Corridor Dust vs Household Debris",
-    "description": "Springfield, VA sits on the I-95 / I-395 / Beltway Mixing Bowl. An educational look at why traffic dust and humid basements load ducts.",
-    "hero": "/img/blog/heroes/springfield-mixing-bowl-dust-air-ducts.webp"
-  },
-  {
-    "slug": "loudoun-construction-dust-pollen-air-ducts",
-    "title": "What Loads Dust Into HVAC Returns Near Loudoun",
-    "description": "Loudoun County mixes historic Leesburg with active HOA construction in Ashburn and Brambleton. An educational look at why ducts hold drywall dust and pollen, and when to clean them.",
-    "hero": "/img/blog/heroes/loudoun-construction-dust-pollen-air-ducts.webp"
-  },
-  {
-    "slug": "prince-william-occoquan-humidity-air-ducts",
-    "title": "When Prince William Homes Usually Need Duct Attention",
-    "description": "Prince William County sits between the Occoquan and I-95. An educational look at why cool basement trunks sweat, how corridor dust sticks, and when to clean the ducts from Burke.",
-    "hero": "/img/blog/heroes/prince-william-occoquan-humidity-air-ducts.webp"
-  },
-  {
-    "slug": "silver-spring-brick-houses-urban-dust-air-ducts",
-    "title": "What Loads Dust Into HVAC Returns Near Silver Spring",
-    "description": "Silver Spring, MD mixes pre-war brick, downtown construction, and humid basements. An educational look at why ducts collect urban dust and pollen.",
-    "hero": "/img/blog/heroes/silver-spring-brick-houses-urban-dust-air-ducts.webp"
-  },
-  {
-    "slug": "gaithersburg-kentlands-basement-humidity-air-ducts",
-    "title": "Gaithersburg Indoor Air: Corridor Dust vs Household Debris",
-    "description": "Gaithersburg, MD mixes split-level basements with Kentlands townhomes on I-270. An educational look at why ducts sweat, how pollen sticks.",
-    "hero": "/img/blog/heroes/gaithersburg-kentlands-basement-humidity-air-ducts.webp"
-  },
-  {
-    "slug": "college-park-rentals-pollen-air-ducts",
-    "title": "College Park Indoor Air: Corridor Dust vs Household Debris",
-    "description": "College Park, MD houses and apartments turn over fast around UMD. An educational look at why neglected filters, packed dryer vents, and pollen load the ducts, and when to clean them.",
-    "hero": "/img/blog/heroes/college-park-rentals-pollen-air-ducts.webp"
-  },
-  {
-    "slug": "dc-humidity-row-houses-indoor-air",
-    "title": "When Washington Dc Homes Usually Need Duct Attention",
-    "description": "Washington, DC row houses and condos sit in river humidity. Learn how condensation forms in older ducts, why dryer vents clog in high-rises, and when to book a cleaning. For service details, use the matching city location page.",
-    "hero": "/img/blog/heroes/dc-humidity-row-houses-indoor-air.webp"
-  },
-  {
-    "slug": "mclean-tree-pollen-basement-humidity",
-    "title": "Mclean Indoor Air: Corridor Dust vs Household Debris",
-    "description": "McLean, VA sits under mature oaks with finished basements and humid summers. An educational look at why returns fill with pollen, how basement trunks sweat, and when to clean the ducts.",
-    "hero": "/img/blog/heroes/mclean-tree-pollen-basement-humidity.webp"
-  },
-  {
-    "slug": "rockville-basement-humidity-air-ducts",
-    "title": "When Rockville Homes Usually Need Duct Attention",
-    "description": "Rockville, MD colonials and townhomes sit on humid basement air and a heavy pollen season. An educational look at why ducts sweat, how I-270 corridor dust adds to the load, and when to clean.",
-    "hero": "/img/blog/heroes/rockville-basement-humidity-air-ducts.webp"
-  },
-  {
-    "slug": "how-potomac-humidity-affects-alexandria-air-quality",
-    "title": "Alexandria Indoor Air: Corridor Dust vs Household Debris",
-    "description": "Discover how Alexandria's local humidity affects your HVAC system, why mold thrives in riverfront climates, and how to protect your home's air quality. For service details, use the matching city location page.",
-    "hero": "/img/blog/heroes/how-potomac-humidity-affects-alexandria-air-quality.webp"
-  },
-  {
-    "slug": "how-potomac-humidity-affects-arlington-air-quality",
-    "title": "Arlington Indoor Air: Corridor Dust vs Household Debris",
-    "description": "Discover how Arlington's river humidity affects your HVAC system, why mold thrives in riverfront condos and older homes, and how to protect indoor air quality. For service details, use the matching city location page.",
-    "hero": "/img/blog/heroes/how-potomac-humidity-affects-arlington-air-quality.webp"
-  },
-  {
-    "slug": "how-often-clean-air-ducts",
-    "title": "How Often Should You Clean Your Air Ducts?",
-    "description": "Discover the recommended air duct cleaning frequency, warning signs of dirty ducts, and professional tips for maintaining indoor air quality and HVAC efficiency.",
-    "hero": "/img/blog/how-often-clean-air-ducts.webp"
-  },
-  {
     "slug": "7-signs-air-ducts-need-cleaning",
     "title": "7 Signs Your Air Ducts Need Professional Cleaning",
     "description": "Dust buildup, allergies, and rising energy bills may indicate dirty air ducts. Discover the most common warning signs that your HVAC system needs professional cleaning.",
     "hero": "/img/blog/7-signs-air-ducts-need-cleaning.webp"
-  },
-  {
-    "slug": "why-clean-dryer-vents",
-    "title": "Why Clean Dryer Vents? Prevent Fires & Protect Your Home",
-    "description": "Dirty dryer vents cause nearly 2,900 house fires per year. Learn why cleaning your dryer vent is essential for fire prevention, efficiency, and home safety.",
-    "hero": "/img/blog/why-clean-dryer-vents.webp"
-  },
-  {
-    "slug": "how-dirty-air-ducts-increase-energy-bills",
-    "title": "How Dirty Air Ducts Increase Your Energy Bills",
-    "description": "Dirty air ducts force your HVAC system to work harder, driving up energy costs. Learn how duct contamination affects efficiency and what you can do to lower your bills.",
-    "hero": "/img/blog/dirty-air-ducts-energy-bills.webp"
   },
   {
     "slug": "can-dirty-air-ducts-cause-allergies",
@@ -234,9 +12,231 @@
     "hero": "/img/blog/can-dirty-air-ducts-cause-allergies.webp"
   },
   {
+    "slug": "how-dirty-air-ducts-increase-energy-bills",
+    "title": "How Dirty Air Ducts Increase Your Energy Bills",
+    "description": "Dirty air ducts force your HVAC system to work harder, driving up energy costs. Learn how duct contamination affects efficiency and what you can do to lower your bills.",
+    "hero": "/img/blog/dirty-air-ducts-energy-bills.webp"
+  },
+  {
+    "slug": "how-often-clean-air-ducts",
+    "title": "How Often Should You Clean Your Air Ducts?",
+    "description": "Discover the recommended air duct cleaning frequency, warning signs of dirty ducts, and professional tips for maintaining indoor air quality and HVAC efficiency.",
+    "hero": "/img/blog/how-often-clean-air-ducts.webp"
+  },
+  {
     "slug": "never-clean-air-ducts",
     "title": "What Happens If You Never Clean Your Air Ducts?",
     "description": "Ignoring air duct maintenance can lead to dust circulation, poor airflow, and system strain. Discover the long-term consequences of neglected ductwork.",
     "hero": "/img/blog/never-clean-air-ducts.webp"
+  },
+  {
+    "slug": "why-clean-dryer-vents",
+    "title": "Why Clean Dryer Vents? Prevent Fires & Protect Your Home",
+    "description": "U.S. Fire Administration data shows about 2,900 clothes dryer fires each year, and failure to clean is a leading factor. Learn why dryer vent cleaning reduces fire risk and improves efficiency.",
+    "hero": "/img/blog/why-clean-dryer-vents.webp"
+  },
+  {
+    "slug": "chantilly-route-28-dust-air-ducts",
+    "title": "Sully Station HOAs, airport film, and why 1990s trunks still blow gypsum",
+    "description": "Chantilly, VA sits on Route 28 between Dulles and Centreville. why HOA construction dust and airport-corridor traffic load ducts.",
+    "hero": "/img/blog/heroes/chantilly-route-28-dust-air-ducts.webp"
+  },
+  {
+    "slug": "clarksburg-new-construction-dust-air-ducts",
+    "title": "Cabin Branch pads, Village HOAs, and why first-owner supplies still blow gypsum",
+    "description": "Clarksburg, MD is Montgomery County’s I-270 north boom. why new-construction ducts hold drywall dust.",
+    "hero": "/img/blog/heroes/clarksburg-new-construction-dust-air-ducts.webp"
+  },
+  {
+    "slug": "college-park-rentals-pollen-air-ducts",
+    "title": "High occupancy, campus trees, and why Route 1 houses stay dusty between tenants",
+    "description": "College Park, MD houses and apartments turn over fast around UMD. why neglected filters, packed dryer vents, and pollen load the ducts, and when to clean them.",
+    "hero": "/img/blog/heroes/college-park-rentals-pollen-air-ducts.webp"
+  },
+  {
+    "slug": "columbia-village-townhomes-air-ducts",
+    "title": "Rouse paths, Wilde Lake closets, and why Howard County planned streets still sweat",
+    "description": "Columbia, MD village townhomes sit around lakes and HOA paths. why pollen and damp-season film load ducts.",
+    "hero": "/img/blog/heroes/columbia-village-townhomes-air-ducts.webp"
+  },
+  {
+    "slug": "dc-humidity-row-houses-indoor-air",
+    "title": "Potomac moisture, old metal trunks, and why District registers go musty",
+    "description": "Washington, DC row houses and condos sit in river humidity. Learn how condensation forms in older ducts, why dryer vents clog in high-rises, and when to book a cleaning. ",
+    "hero": "/img/blog/heroes/dc-humidity-row-houses-indoor-air.webp"
+  },
+  {
+    "slug": "ellicott-city-flood-humidity-air-ducts",
+    "title": "Main Street mill houses, Tiber cellars, and why hillside suburbs still pull pollen",
+    "description": "Ellicott City, MD mill houses sit on the Patapsco with a real flood history. why stone cellars and old ducts hold moisture.",
+    "hero": "/img/blog/heroes/ellicott-city-flood-humidity-air-ducts.webp"
+  },
+  {
+    "slug": "fair-oaks-townhomes-dust-air-ducts",
+    "title": "Mall-area stacks, Fair Lakes closets, and why this is not the City of Fairfax page",
+    "description": "Fair Oaks, VA sits at the I-66 / Route 50 interchange around the mall and Fair Lakes. why townhome ducts load corridor dust.",
+    "hero": "/img/blog/heroes/fair-oaks-townhomes-dust-air-ducts.webp"
+  },
+  {
+    "slug": "fairfax-ramblers-pollen-air-ducts",
+    "title": "Cool basements, oak pollen, and why City of Fairfax registers get dusty again",
+    "description": "The City of Fairfax sits inside a heavy Fairfax County tree canopy. why 1950s–80s ramblers sweat at the trunks, how pollen sticks, and when to clean the ducts.",
+    "hero": "/img/blog/heroes/fairfax-ramblers-pollen-air-ducts.webp"
+  },
+  {
+    "slug": "falls-church-close-in-dust-air-ducts",
+    "title": "Broad Street lots, I-66 grit, and why the independent city is not the huge Census name",
+    "description": "The City of Falls Church sits on small lots next to the Beltway and Route 7. why older trunks collect traffic dust.",
+    "hero": "/img/blog/heroes/falls-church-close-in-dust-air-ducts.webp"
+  },
+  {
+    "slug": "frederick-downtown-humidity-air-ducts",
+    "title": "Carroll Creek cellars, Urbana pads, and why the I-270 north end is two indoor-air problems",
+    "description": "Frederick, MD mixes downtown brick humidity with Urbana construction dust. why ducts load on both ends of the city.",
+    "hero": "/img/blog/heroes/frederick-downtown-humidity-air-ducts.webp"
+  },
+  {
+    "slug": "gaithersburg-kentlands-basement-humidity-air-ducts",
+    "title": "I-270 humidity, cool trunks, and why Crown dryer vents pack with lint",
+    "description": "Gaithersburg, MD mixes split-level basements with Kentlands townhomes on I-270. why ducts sweat, how pollen sticks.",
+    "hero": "/img/blog/heroes/gaithersburg-kentlands-basement-humidity-air-ducts.webp"
+  },
+  {
+    "slug": "germantown-i270-townhome-air-ducts",
+    "title": "Milestone closets, Town Center grit, and why corridor construction…",
+    "description": "Germantown, MD sits on I-270 north of Gaithersburg. why townhome ducts collect traffic dust and drywall grit.",
+    "hero": "/img/blog/heroes/germantown-i270-townhome-air-ducts.webp"
+  },
+  {
+    "slug": "great-falls-estates-humidity-air-ducts",
+    "title": "Georgetown Pike lots, long dryer runs, and why walk-out basements sweat at the trunks",
+    "description": "Great Falls, VA sits on large wooded lots near the Potomac. why estate-scale ducts hold river humidity and canopy pollen.",
+    "hero": "/img/blog/heroes/great-falls-estates-humidity-air-ducts.webp"
+  },
+  {
+    "slug": "herndon-construction-dust-air-ducts",
+    "title": "Construction Dust Near Active Corridors: What Ends Up in HVAC Returns",
+    "description": "How nearby construction and corridor traffic can load returns with fine dust — practical signs to watch before you schedule a duct or dryer vent cleaning. ",
+    "hero": "/img/blog/heroes/herndon-construction-dust-air-ducts.webp"
+  },
+  {
+    "slug": "how-potomac-humidity-affects-alexandria-air-quality",
+    "title": "The Hidden Cost of Living Near the Potomac: Humidity, HVAC Systems, and Your Health",
+    "description": "Discover how Alexandria's local humidity affects your HVAC system, why mold thrives in riverfront climates, and how to protect your home's air quality. ",
+    "hero": "/img/blog/heroes/how-potomac-humidity-affects-alexandria-air-quality.webp"
+  },
+  {
+    "slug": "how-potomac-humidity-affects-arlington-air-quality",
+    "title": "The Hidden Cost of Living Near the Potomac: Humidity, HVAC Systems, and Your Health",
+    "description": "Discover how Arlington's river humidity affects your HVAC system, why mold thrives in riverfront condos and older homes, and how to protect indoor air quality. ",
+    "hero": "/img/blog/heroes/how-potomac-humidity-affects-arlington-air-quality.webp"
+  },
+  {
+    "slug": "hyattsville-route-1-humidity-air-ducts",
+    "title": "Arts-district renovations, Gateway stacks, and why PG summers sweat at older trunks",
+    "description": "Hyattsville, MD sits on the Route 1 spine in Prince George’s County. why older ducts collect humidity and corridor grit.",
+    "hero": "/img/blog/heroes/hyattsville-route-1-humidity-air-ducts.webp"
+  },
+  {
+    "slug": "kensington-colonials-pollen-air-ducts",
+    "title": "Antique Row weekends, Howard Avenue brick, and why basement trunks…",
+    "description": "Kensington, MD colonials sit on Connecticut Avenue under street trees. why pollen and weekend grit load cool basement ducts.",
+    "hero": "/img/blog/heroes/kensington-colonials-pollen-air-ducts.webp"
+  },
+  {
+    "slug": "lorton-i95-occoquan-air-ducts",
+    "title": "Laurel Hill HOAs, Lorton Station stacks, and why river air plus interstate grit stick",
+    "description": "Lorton, VA sits on I-95 south of Springfield with the Occoquan nearby. why traffic dust and river humidity load ducts.",
+    "hero": "/img/blog/heroes/lorton-i95-occoquan-air-ducts.webp"
+  },
+  {
+    "slug": "loudoun-construction-dust-pollen-air-ducts",
+    "title": "New-build gypsum, Leesburg basements, and why Ashburn returns fill faster than they should",
+    "description": "Loudoun County mixes historic Leesburg with active HOA construction in Ashburn and Brambleton. why ducts hold drywall dust and pollen, and when to clean them.",
+    "hero": "/img/blog/heroes/loudoun-construction-dust-pollen-air-ducts.webp"
+  },
+  {
+    "slug": "mclean-tree-pollen-basement-humidity",
+    "title": "Pollen, finished basements, and why Fairfax County ducts load faster than they look",
+    "description": "McLean, VA sits under mature oaks with finished basements and humid summers. why returns fill with pollen, how basement trunks sweat, and when to clean the ducts.",
+    "hero": "/img/blog/heroes/mclean-tree-pollen-basement-humidity.webp"
+  },
+  {
+    "slug": "montgomery-village-townhomes-air-ducts",
+    "title": "1970s Stedwick closets, Whetstone paths, and why Lakeforest-era vents were never resized",
+    "description": "Montgomery Village, MD is a 1970s planned community next to Gaithersburg. why lake-side townhome ducts collect pollen and old-closet lint.",
+    "hero": "/img/blog/heroes/montgomery-village-townhomes-air-ducts.webp"
+  },
+  {
+    "slug": "mount-vernon-potomac-humidity-air-ducts",
+    "title": "Fort Hunt colonials, Hollin Hills metal, and why Parkway summers sweat at the trunks",
+    "description": "Mt Vernon, VA sits along the GW Parkway on the Potomac. why older river-side trunks collect humidity and pollen.",
+    "hero": "/img/blog/heroes/mount-vernon-potomac-humidity-air-ducts.webp"
+  },
+  {
+    "slug": "oakton-123-pollen-air-ducts",
+    "title": "Vale Road lots, Waples Mill grit, and why finished basements store spring film",
+    "description": "Oakton, VA sits on Chain Bridge Road between Vienna and Fairfax. why large-lot colonials store canopy pollen in cool trunks.",
+    "hero": "/img/blog/heroes/oakton-123-pollen-air-ducts.webp"
+  },
+  {
+    "slug": "olney-rambler-pollen-air-ducts",
+    "title": "Georgia Avenue ramblers, Norbeck split-levels, and why rec rooms hide sweating trunks",
+    "description": "Olney, MD ramblers sit farther up Montgomery County under a thick canopy. why finished basements store pollen in cool trunks.",
+    "hero": "/img/blog/heroes/olney-rambler-pollen-air-ducts.webp"
+  },
+  {
+    "slug": "potomac-tree-canopy-humidity-air-ducts",
+    "title": "Cabin John lots, Falls Road colonials, and why long trunks hide pollen you never see",
+    "description": "Potomac, MD sits on large wooded lots along the river corridor. why canopy pollen and humidity load estate-scale ducts.",
+    "hero": "/img/blog/heroes/potomac-tree-canopy-humidity-air-ducts.webp"
+  },
+  {
+    "slug": "prince-william-occoquan-humidity-air-ducts",
+    "title": "Woodbridge basements, Lake Ridge townhomes, and why Manassas registers go musty",
+    "description": "Prince William County sits between the Occoquan and I-95. why cool basement trunks sweat, how corridor dust sticks, and when to clean the ducts from Burke.",
+    "hero": "/img/blog/heroes/prince-william-occoquan-humidity-air-ducts.webp"
+  },
+  {
+    "slug": "reston-town-center-dust-air-ducts",
+    "title": "Why Toll Road Dust and Humid Summers Film Over Registers in Planned Communities",
+    "description": "how Dulles-corridor dust and summer humidity interact with townhome and high-rise ductwork — and when homeowners usually book a cleaning.",
+    "hero": "/img/blog/heroes/reston-town-center-dust-air-ducts.webp"
+  },
+  {
+    "slug": "rockville-basement-humidity-air-ducts",
+    "title": "Montgomery County humidity, cool basement trunks, and why registers get dusty again",
+    "description": "Rockville, MD colonials and townhomes sit on humid basement air and a heavy pollen season. why ducts sweat, how I-270 corridor dust adds to the load, and when to clean.",
+    "hero": "/img/blog/heroes/rockville-basement-humidity-air-ducts.webp"
+  },
+  {
+    "slug": "silver-spring-brick-houses-urban-dust-air-ducts",
+    "title": "Retrofitted trunks, Georgia Avenue particles, and why older registers film over",
+    "description": "Silver Spring, MD mixes pre-war brick, downtown construction, and humid basements. why ducts collect urban dust and pollen.",
+    "hero": "/img/blog/heroes/silver-spring-brick-houses-urban-dust-air-ducts.webp"
+  },
+  {
+    "slug": "springfield-mixing-bowl-dust-air-ducts",
+    "title": "I-95 particles, split-level basements, and why Franconia registers film over",
+    "description": "Springfield, VA sits on the I-95 / I-395 / Beltway Mixing Bowl. why traffic dust and humid basements load ducts.",
+    "hero": "/img/blog/heroes/springfield-mixing-bowl-dust-air-ducts.webp"
+  },
+  {
+    "slug": "takoma-park-bungalow-humidity-air-ducts",
+    "title": "Carroll Avenue cottages, DC-line trees, and why added-later metal sweats in the crawl",
+    "description": "Takoma Park, MD bungalows sit on the DC line under a heavy canopy. why later-added ducts collect humidity and leaf grit.",
+    "hero": "/img/blog/heroes/takoma-park-bungalow-humidity-air-ducts.webp"
+  },
+  {
+    "slug": "vienna-tree-pollen-basement-air-ducts",
+    "title": "Maple Avenue colonials, Wolf Trap oaks, and why finished basements sweat at the trunks",
+    "description": "The Town of Vienna sits under a heavy Fairfax County canopy. why 1950s–70s colonials store pollen in cool basement trunks, and when to clean the ducts from Burke.",
+    "hero": "/img/blog/heroes/vienna-tree-pollen-basement-air-ducts.webp"
+  },
+  {
+    "slug": "wheaton-urban-dust-air-ducts",
+    "title": "Veirs Mill grit, Georgia Avenue pollen, and why older plaster joints leak",
+    "description": "Wheaton, MD mixes 1940s–60s brick with Metro-corridor dust. why older ducts collect urban grit and pollen.",
+    "hero": "/img/blog/heroes/wheaton-urban-dust-air-ducts.webp"
   }
 ]

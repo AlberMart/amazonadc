@@ -5,9 +5,9 @@ export const fairfax: LocationContentSeed = {
   title: 'Air Duct Cleaning in Fairfax, VA',
   headline: 'Air duct and dryer vent cleaning for the City of Fairfax, Fairfax Corner, and Mosaic',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Fairfax, VA. Flat rates from our Burke office for ramblers, townhomes, and GMU-area rentals. Call (800) 606-3334.',
+    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Fairfax, VA. Flat rates from our Burke office for ramblers, townhomes, and GMU-area rentals. Call (571) 460-0001.',
   intro:
-    'Amazon Air Duct Cleaning serves the City of Fairfax from our Burke office — a short run up 123, a short run from Burke. Old Town brick, Fairfax Corner townhomes, and houses near George Mason all take on Fairfax County pollen and humid summers. Call (800) 606-3334.',
+    'Amazon Air Duct Cleaning serves the City of Fairfax from our Burke office — a short run up 123, a short run from Burke. Old Town brick, Fairfax Corner townhomes, and houses near George Mason all take on Fairfax County pollen and humid summers. Call (571) 460-0001.',
   heroImage: '/img/locations/fairfax.webp',
   heroAlt: 'Air duct cleaning in Fairfax, VA — Amazon Air Duct Cleaning',
   city: 'Fairfax',
@@ -19,7 +19,7 @@ export const fairfax: LocationContentSeed = {
     paragraphs: [
       'The City of Fairfax is a small independent city wrapped by Fairfax County: Old Town along Chain Bridge Road, the courthouse, Fairfax Corner, and streets that run toward Mosaic and Merrifield. A lot of the housing is 1950s–80s ramblers and split-levels with full basements. Those basements stay cool. Northern Virginia summers do not. Cold supply trunks sweat. Oak and maple pollen from the county canopy sticks to that film.',
       'GMU-area rentals and stacked townhomes add long dryer runs. Construction dust from infill near Route 50 and 29 settles in returns the same week you wipe the registers. The blower then sends it back upstairs.',
-      'We serve Fairfax from [Burke](/locations/burke). Nearby [Springfield](/locations/springfield), [McLean](/locations/mclean), and [Arlington](/locations/arlington) use the same dispatch. For background reading (not a booking page), see [fairfax-ramblers-pollen-air-ducts](/blog/fairfax-ramblers-pollen-air-ducts).',
+      'We serve Fairfax from [Burke](/locations/burke). Nearby [Springfield](/locations/springfield), [McLean](/locations/mclean), and [Arlington](/locations/arlington) use the same dispatch. More on [Fairfax Ramblers Pollen](/blog/fairfax-ramblers-pollen-air-ducts).',
     ],
     highlights: [
       'City of Fairfax, Fairfax Corner, Mosaic, and GMU-area homes',
@@ -113,11 +113,11 @@ export const fairfax: LocationContentSeed = {
       },
     ],
   },
-  faqIntro: 'Fairfax questions — call (800) 606-3334 (dispatch: Burke).',
+  faqIntro: 'Fairfax questions — call (571) 460-0001 (dispatch: Burke).',
   faq: [
     {
       q: 'Where does the Fairfax crew stage from?',
-      a: 'Our Burke office (5641 Burke Centre Pkwy Ste 119, Burke, VA 22015). Office line (571) 460-0001; booking (800) 606-3334.',
+      a: 'Our Burke office (5641 Burke Centre Pkwy Ste 119, Burke, VA 22015). Office line (571) 460-0001; booking (571) 460-0001.',
     },
     {
       q: 'Can I stay home during the Fairfax appointment?',

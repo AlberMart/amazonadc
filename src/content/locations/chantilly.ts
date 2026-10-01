@@ -5,9 +5,9 @@ export const chantilly: LocationContentSeed = {
   title: 'Air Duct Cleaning in Chantilly, VA',
   headline: 'Air duct and dryer vent cleaning for Sully, Route 28, and Chantilly HOA homes',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Chantilly, VA. Flat rates from our Burke office for 1990s–2010s HOAs, Route 28 houses, and airport-corridor dust. Call (800) 606-3334.',
+    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Chantilly, VA. Flat rates from our Burke office for 1990s–2010s HOAs, Route 28 houses, and airport-corridor dust. Call (571) 460-0001.',
   intro:
-    'Amazon Air Duct Cleaning serves Chantilly from our Burke office. Sully Station townhomes, Greenbriar colonials, and Centreville-adjacent HOAs all take on airport and construction dust. Call (800) 606-3334.',
+    'Amazon Air Duct Cleaning serves Chantilly from our Burke office. Sully Station townhomes, Greenbriar colonials, and Centreville-adjacent HOAs all take on airport and construction dust. Call (571) 460-0001.',
   heroImage: '/img/locations/chantilly.webp',
   heroAlt: 'Air duct cleaning in Chantilly, VA — Amazon Air Duct Cleaning',
   city: 'Chantilly',
@@ -19,7 +19,7 @@ export const chantilly: LocationContentSeed = {
     paragraphs: [
       'Chantilly sits in Fairfax County’s Sully area, along Route 28 between Dulles and Centreville. A lot of the housing is 1990s–2010s HOA streets: Sully Station, Greenbriar, Franklin Farm-edge, and townhomes near Westfields. Those systems were built during overlapping construction waves. Fine gypsum and insulation fibers often stay in returns for years if the ducts were never commissioned clean. Airport-corridor traffic adds another film.',
       'New-looking vinyl and brick does not mean clean indoor air. HOA townhomes stack laundry closets and send dryer lint up a shared chase. Single-family houses along Stringfellow still sit under enough trees that spring pollen coats the same registers the construction dust already found. Centreville is next door; the dust does not stop at the CDP line.',
-      'We serve Chantilly from [Burke](/locations/burke). Nearby [Fairfax](/locations/fairfax), [Fair Oaks](/locations/fair-oaks), and [Loudoun](/locations/loudoun) use the same crew. For background reading (not a booking page), see [chantilly-route-28-dust-air-ducts](/blog/chantilly-route-28-dust-air-ducts).',
+      'We serve Chantilly from [Burke](/locations/burke). Nearby [Fairfax](/locations/fairfax), [Fair Oaks](/locations/fair-oaks), and [Loudoun](/locations/loudoun) use the same crew. More on [Chantilly Route 28 Dust](/blog/chantilly-route-28-dust-air-ducts).',
     ],
     highlights: [
       'Sully Station, Greenbriar, Route 28, Westfields, Centreville-adjacent streets',
@@ -93,7 +93,7 @@ export const chantilly: LocationContentSeed = {
     steps: [
       {
         title: 'Online or Phone Intake',
-        text: 'Book at (800) 606-3334. Mention Chantilly so we route from Burke.',
+        text: 'Book at (571) 460-0001. Mention Chantilly so we route from Burke.',
       },
       {
         title: 'Pre-Job Notes',
@@ -113,11 +113,11 @@ export const chantilly: LocationContentSeed = {
       },
     ],
   },
-  faqIntro: 'Chantilly questions — call (800) 606-3334 (dispatch: Burke).',
+  faqIntro: 'Chantilly questions — call (571) 460-0001 (dispatch: Burke).',
   faq: [
     {
       q: 'Where does the Chantilly crew stage from?',
-      a: 'Our Burke office (5641 Burke Centre Pkwy Ste 119, Burke, VA 22015). Office line (571) 460-0001; booking (800) 606-3334.',
+      a: 'Our Burke office (5641 Burke Centre Pkwy Ste 119, Burke, VA 22015). Office line (571) 460-0001; booking (571) 460-0001.',
     },
     {
       q: 'Do you clean dryer vents in Chantilly townhomes and condos?',

@@ -5,9 +5,9 @@ export const gaithersburg: LocationContentSeed = {
   title: 'Air Duct Cleaning in Gaithersburg, MD',
   headline: 'Air duct and dryer vent cleaning for Kentlands, Lakelands, and the I-270 corridor',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Gaithersburg, MD. Flat rates from our Bethesda office for Kentlands, Crown, and Montgomery Village. Call (800) 606-3334.',
+    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Gaithersburg, MD. Flat rates from our Bethesda office for Kentlands, Crown, and Montgomery Village. Call (301) 809-4544.',
   intro:
-    'Amazon Air Duct Cleaning serves Gaithersburg from our Bethesda office — up I-270 from Bethesda. Colonials, Kentlands and Lakelands townhomes, and Crown condos all take on Montgomery County pollen and basement humidity. Call (800) 606-3334.',
+    'Amazon Air Duct Cleaning serves Gaithersburg from our Bethesda office — up I-270 from Bethesda. Colonials, Kentlands and Lakelands townhomes, and Crown condos all take on Montgomery County pollen and basement humidity. Call (301) 809-4544.',
   heroImage: '/img/locations/gaithersburg.webp',
   heroAlt: 'Air duct cleaning in Gaithersburg, MD — Amazon Air Duct Cleaning',
   city: 'Gaithersburg',
@@ -19,7 +19,7 @@ export const gaithersburg: LocationContentSeed = {
     paragraphs: [
       'Gaithersburg is Montgomery County’s big I-270 city north of [Rockville](/locations/rockville): Town Center, Kentlands and Lakelands, Crown, Washingtonian, then Montgomery Village and the streets toward Germantown. Housing mixes 1960s–80s split-levels with full basements and newer new-urbanist townhomes with tight mechanical closets. Both types load ducts. The older houses sweat in the basement. The newer ones pack dryer vents around three corners.',
       'The tree canopy is not a slogan. Oak and pine dump pollen onto every deck each spring. Returns pull it in. I-270 adds traffic dust. When the AC starts after a wet week, that mix is what you smell at the register.',
-      'We serve Gaithersburg from [Bethesda](/locations/bethesda). Rockville is the next city page south. For background reading (not a booking page), see [gaithersburg-kentlands-basement-humidity-air-ducts](/blog/gaithersburg-kentlands-basement-humidity-air-ducts).',
+      'We serve Gaithersburg from [Bethesda](/locations/bethesda). Rockville is the next city page south. More on [Gaithersburg Kentlands Basement Humidity](/blog/gaithersburg-kentlands-basement-humidity-air-ducts).',
     ],
     highlights: [
       'Kentlands, Lakelands, Crown, Montgomery Village, Town Center',
@@ -93,7 +93,7 @@ export const gaithersburg: LocationContentSeed = {
     steps: [
       {
         title: 'Estimate Request',
-        text: 'Form or (800) 606-3334 — we reply with timing from the Bethesda office.',
+        text: 'Form or (301) 809-4544 — we reply with timing from the Bethesda office.',
       },
       {
         title: 'Route Planning',
@@ -113,11 +113,11 @@ export const gaithersburg: LocationContentSeed = {
       },
     ],
   },
-  faqIntro: 'Gaithersburg questions — call (800) 606-3334 (dispatch: Bethesda).',
+  faqIntro: 'Gaithersburg questions — call (301) 809-4544 (dispatch: Bethesda).',
   faq: [
     {
       q: 'Where does the Gaithersburg crew stage from?',
-      a: 'Our Bethesda office (7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814). Office line (301) 809-4544; booking (800) 606-3334.',
+      a: 'Our Bethesda office (7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814). Office line (301) 809-4544; booking (301) 809-4544.',
     },
     {
       q: 'Can I stay home during the Gaithersburg appointment?',

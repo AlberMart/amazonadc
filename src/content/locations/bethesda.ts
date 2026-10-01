@@ -5,9 +5,9 @@ export const bethesda: LocationContentSeed = {
   title: 'Air Duct Cleaning in Bethesda, MD',
   headline: 'Our Maryland office — air duct and dryer vent cleaning from Old Georgetown Road',
   description:
-    'Amazon Air Duct Cleaning’s Bethesda, MD office at 7815 Old Georgetown Rd Ste 201. Flat-rate air duct cleaning, dryer vent cleaning, and HVAC mold treatment for Montgomery County and nearby cities. Call (800) 606-3334.',
+    'Amazon Air Duct Cleaning’s Bethesda, MD office at 7815 Old Georgetown Rd Ste 201. Flat-rate air duct cleaning, dryer vent cleaning, and HVAC mold treatment for Montgomery County and nearby cities. Call (301) 809-4544.',
   intro:
-    'This is our Maryland office on Old Georgetown Road. From Suite 201 we schedule homes across Bethesda, Rockville, Silver Spring, Gaithersburg, and farther Maryland cities on our [locations](/locations) list. Book at (800) 606-3334 — the office line is (301) 809-4544.',
+    'This is our Maryland office on Old Georgetown Road. From Suite 201 we schedule homes across Bethesda, Rockville, Silver Spring, Gaithersburg, and farther Maryland cities on our [locations](/locations) list. Book at (301) 809-4544 — the office line is (301) 809-4544.',
   heroImage: '/img/locations/bethesda.webp',
   heroAlt: 'Bethesda, MD office — Amazon Air Duct Cleaning',
   city: 'Bethesda',
@@ -18,7 +18,7 @@ export const bethesda: LocationContentSeed = {
     heading: 'Old Georgetown Road Staging for Montgomery County',
     paragraphs: [
       'Our shop sits at 7815 Old Georgetown Rd, Suite 201, Bethesda, MD 20814. Crews stage here for Montgomery County, parts of Prince George’s County, Howard County runs, and Frederick when scheduled. Friendship Heights and close-in Northwest [Washington, DC](/locations/washington-dc) often share this dispatch when it is the shorter drive.',
-      'Bethesda and nearby streets mix colonials, townhomes, and condo stacks. Tree pollen, humid summers, and renovation dust are the usual reasons returns look gray. We offer the same packages as the home page: air ducts, dryer vents, and mold treatment — not chimney sweeping or standalone “HVAC unit rebuild” marketing.',
+      'Bethesda and nearby streets mix colonials, townhomes, and condo stacks. Tree pollen, humid summers, and renovation dust are the usual reasons returns look gray. We offer the same packages as the home page: air ducts, dryer vents, and mold treatment.',
       'Need Northern Virginia instead? See our [Burke office](/locations/burke). Same flat-rate packages, Virginia staging address.',
     ],
     highlights: [
@@ -52,7 +52,7 @@ export const bethesda: LocationContentSeed = {
     items: [
       {
         title: 'Staffed Maryland Office',
-        text: 'Old Georgetown Road is a real suite with real scheduling — verify the address on Google Maps.',
+        text: 'Old Georgetown Road is a real suite with real scheduling — ',
       },
       {
         title: 'Montgomery County Housing We Know',
@@ -75,7 +75,7 @@ export const bethesda: LocationContentSeed = {
       {
         title: 'Close-in Montgomery',
         places:
-          '[Silver Spring](/locations/silver-spring), [Kensington](/locations/kensington), [Wheaton](/locations/wheaton), [Takoma Park](/locations/takoma-park), [Chevy Chase area via Bethesda]',
+          '[Silver Spring](/locations/silver-spring), [Kensington](/locations/kensington), [Wheaton](/locations/wheaton), [Takoma Park](/locations/takoma-park), [Chevy Chase](/locations/bethesda)',
       },
       {
         title: 'I-270 corridor',
@@ -100,7 +100,7 @@ export const bethesda: LocationContentSeed = {
     steps: [
       {
         title: 'Online or Phone Intake',
-        text: 'Book at (800) 606-3334. Mention Bethesda so we route from Bethesda.',
+        text: 'Book at (301) 809-4544. Mention Bethesda so we route from Bethesda.',
       },
       {
         title: 'Pre-Job Notes',
@@ -121,11 +121,11 @@ export const bethesda: LocationContentSeed = {
     ],
   },
   faqIntro:
-    'Questions about the Bethesda office. Call (800) 606-3334 — office line (301) 809-4544.',
+    'Questions about the Bethesda office. Call (301) 809-4544 — office line (301) 809-4544.',
   faq: [
     {
       q: 'Where is the Bethesda office?',
-      a: '7815 Old Georgetown Rd, Suite 201, Bethesda, MD 20814. Booking: (800) 606-3334. Office line: (301) 809-4544.',
+      a: '7815 Old Georgetown Rd, Suite 201, Bethesda, MD 20814. Booking: (301) 809-4544. Office line: (301) 809-4544.',
     },
     {
       q: 'What services do you offer from Bethesda?',
@@ -145,7 +145,7 @@ export const bethesda: LocationContentSeed = {
     },
     {
       q: 'How far do you drive from Bethesda?',
-      a: 'Montgomery County is core. Howard and Frederick County jobs are scheduled with honest drive times — we say so up front.',
+      a: 'Montgomery County is core. Howard and Frederick County jobs are scheduled with realistic drive times — we say so up front.',
     },
   ],
 }

@@ -5,9 +5,9 @@ export const oakton: LocationContentSeed = {
   title: 'Air Duct Cleaning in Oakton, VA',
   headline: 'Air duct and dryer vent cleaning for Route 123 Oakton colonials and large-lot streets',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Oakton, VA. Flat rates from our Burke office for large-lot colonials between Vienna and Fairfax. Call (800) 606-3334.',
+    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Oakton, VA. Flat rates from our Burke office for large-lot colonials between Vienna and Fairfax. Call (571) 460-0001.',
   intro:
-    'Amazon Air Duct Cleaning serves Oakton from our Burke office — a short run on 123, not a rented Waples Mill suite. Large-lot colonials, Vale Road houses, and streets between Vienna and Fairfax all take on canopy pollen and humid basement air. Call (800) 606-3334.',
+    'Amazon Air Duct Cleaning serves Oakton from our Burke office — a short run on 123. Large-lot colonials, Vale Road houses, and streets between Vienna and Fairfax all take on canopy pollen and humid basement air. Call (571) 460-0001.',
   heroImage: '/img/locations/oakton.webp',
   heroAlt: 'Air duct cleaning in Oakton, VA — Amazon Air Duct Cleaning',
   city: 'Oakton',
@@ -19,7 +19,7 @@ export const oakton: LocationContentSeed = {
     paragraphs: [
       'Oakton sits on Chain Bridge Road (Route 123) between the Town of Vienna and the City of Fairfax: large lots, 1960s–80s colonials, and streets off Vale and Hunter Mill. The canopy is dense. Spring pollen coats decks the same week it coats returns. Finished basements stay cool while July air stays wet, so supply trunks sweat and hold that film.',
       'A typical Oakton house mixed original metal with a later addition over a garage or a rec-room branch. Dust collects at those joints. Dryer runs from a second-floor laundry often travel a long, quiet path to a rear gable. Waples Mill traffic adds a finer road dust that smaller subdivisions do not see as much of.',
-      'We serve Oakton from [Burke](/locations/burke). Nearby [Vienna](/locations/vienna), [Fairfax](/locations/fairfax), and [Fair Oaks](/locations/fair-oaks) use the same dispatch. For background reading (not a booking page), see [oakton-123-pollen-air-ducts](/blog/oakton-123-pollen-air-ducts).',
+      'We serve Oakton from [Burke](/locations/burke). Nearby [Vienna](/locations/vienna), [Fairfax](/locations/fairfax), and [Fair Oaks](/locations/fair-oaks) use the same dispatch. More on [Oakton 123 Pollen](/blog/oakton-123-pollen-air-ducts).',
     ],
     highlights: [
       'Route 123, Vale, Hunter Mill, Waples Mill, and Oakton Village streets',
@@ -93,7 +93,7 @@ export const oakton: LocationContentSeed = {
     steps: [
       {
         title: 'Online or Phone Intake',
-        text: 'Book at (800) 606-3334. Mention Oakton so we route from Burke.',
+        text: 'Book at (571) 460-0001. Mention Oakton so we route from Burke.',
       },
       {
         title: 'Pre-Job Notes',
@@ -113,11 +113,11 @@ export const oakton: LocationContentSeed = {
       },
     ],
   },
-  faqIntro: 'Oakton questions — call (800) 606-3334 (dispatch: Burke).',
+  faqIntro: 'Oakton questions — call (571) 460-0001 (dispatch: Burke).',
   faq: [
     {
       q: 'Do you have a storefront in Oakton?',
-      a: 'No. Oakton jobs are scheduled from our Burke office at 5641 Burke Centre Pkwy Ste 119, Burke, VA 22015. Call (800) 606-3334.',
+      a: 'No. Oakton jobs are scheduled from our Burke office at 5641 Burke Centre Pkwy Ste 119, Burke, VA 22015. Call (571) 460-0001.',
     },
     {
       q: 'Do you clean dryer vents in Oakton townhomes and condos?',

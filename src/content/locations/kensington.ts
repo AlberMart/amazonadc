@@ -6,9 +6,9 @@ export const kensington: LocationContentSeed = {
   headline:
     'Air duct and dryer vent cleaning for Antique Row, Connecticut Avenue, and close-in colonials',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Kensington, MD. Flat rates from our Bethesda office for close-in colonials, Antique Row, and Connecticut Avenue pollen. Call (800) 606-3334.',
+    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Kensington, MD. Flat rates from our Bethesda office for close-in colonials, Antique Row, and Connecticut Avenue pollen. Call (301) 809-4544.',
   intro:
-    'Amazon Air Duct Cleaning serves Kensington from our Bethesda office — up Connecticut Avenue, not a rented Antique Row suite. Close-in colonials and older brick take on Montgomery pollen and street dust. Call (800) 606-3334.',
+    'Amazon Air Duct Cleaning serves Kensington from our Bethesda office — up Connecticut Avenue. Close-in colonials and older brick take on Montgomery pollen and street dust. Call (301) 809-4544.',
   heroImage: '/img/locations/kensington.webp',
   heroAlt: 'Air duct cleaning in Kensington, MD — Amazon Air Duct Cleaning',
   city: 'Kensington',
@@ -20,7 +20,7 @@ export const kensington: LocationContentSeed = {
     paragraphs: [
       'Kensington is a close-in Montgomery town between [Bethesda](/locations/bethesda) and [Wheaton](/locations/wheaton): Antique Row on Howard Avenue, Connecticut Avenue through the middle, then Kensington Heights and the streets toward Silver Spring. A lot of the housing is early- and mid-century colonials with full basements. Those basements stay cool. The street trees do not take a season off.',
       'Connecticut Avenue is a pollen and grit corridor. Oak and maple dump debris onto every stoop. Returns pull it in. Weekend traffic from Antique Row does not help. When humid air hits cold supply trunks, that film turns the first AC cycle into a dust event you can see on the registers.',
-      'We serve Kensington from [Bethesda](/locations/bethesda). Nearby [Silver Spring](/locations/silver-spring) uses the same dispatch. For background reading (not a booking page), see [kensington-colonials-pollen-air-ducts](/blog/kensington-colonials-pollen-air-ducts).',
+      'We serve Kensington from [Bethesda](/locations/bethesda). Nearby [Silver Spring](/locations/silver-spring) uses the same dispatch. More on [Kensington Colonials Pollen](/blog/kensington-colonials-pollen-air-ducts).',
     ],
     highlights: [
       'Antique Row, Connecticut Avenue, and Kensington Heights colonials',
@@ -94,7 +94,7 @@ export const kensington: LocationContentSeed = {
     steps: [
       {
         title: 'Request a Window',
-        text: 'Call (800) 606-3334 or use the form. We confirm by the next business day.',
+        text: 'Call (301) 809-4544 or use the form. We confirm by the next business day.',
       },
       {
         title: 'Share Access Details',
@@ -114,11 +114,11 @@ export const kensington: LocationContentSeed = {
       },
     ],
   },
-  faqIntro: 'Kensington questions — call (800) 606-3334 (dispatch: Bethesda).',
+  faqIntro: 'Kensington questions — call (301) 809-4544 (dispatch: Bethesda).',
   faq: [
     {
       q: 'Which office covers Kensington?',
-      a: 'Bethesda — 7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814. Booking line (800) 606-3334.',
+      a: 'Bethesda — 7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814. Booking line (301) 809-4544.',
     },
     {
       q: 'Can ducts and dryer vents be done the same day in Kensington?',
