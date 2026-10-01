@@ -31,13 +31,16 @@ export const dryerVentCleaning: ServiceContent = {
       'Our dryer duct cleaning service is quite a bit different than our air duct cleaning service. Dryer vents contain lint, which is a sticky substance that requires greater agitation from dryer vent cleaning tools to remove than does dust from a duct.',
     ],
     steps: [
-      { title: '01', text: 'We insert a 6.6-hp vacuum into one end of the vent.' },
+      { title: 'Connect the vacuum', text: 'We insert a 6.6-hp vacuum into one end of the vent.' },
       {
-        title: '02',
+        title: 'Brush the full run',
         text: 'From the opposite end of the vent, we insert a drill-powered 4-inch-wide brush that agitates and loosens the lint. We have the capacity to go as far as 40 feet into the vent.',
       },
-      { title: '03', text: 'We provide before and after pictures of the vent.' },
-      { title: '04', text: 'We guarantee to remove all the lint, or the service is free.' },
+      { title: 'Document before and after', text: 'We provide before and after pictures of the vent.' },
+      {
+        title: 'Lint-removal guarantee',
+        text: 'We guarantee to remove all the lint, or the service is free.',
+      },
     ],
   },
   why: {

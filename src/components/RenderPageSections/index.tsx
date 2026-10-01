@@ -23,6 +23,15 @@ function phoneHrefOf(value?: string | null) {
   return toTelHref(value || '')
 }
 
+/** Hide titles that only repeat the step number (e.g. "01", "Step 2"). */
+function stepTitleLabel(title?: string | null, index = 0) {
+  const value = (title || '').trim()
+  if (!value) return null
+  if (/^(?:0*\d+|step\s*0*\d+)$/i.test(value)) return null
+  if (value === String(index + 1)) return null
+  return value
+}
+
 function SectionShell({
   id,
   tone,
@@ -451,19 +460,22 @@ export async function RenderPageSections({
                   </>
                 ) : null}
                 <ol className="mt-8 space-y-5">
-                  {(section.steps || []).map((step, i) => (
-                    <li key={`${step.title}-${i}`} className="flex gap-4">
-                      <span className="site-step-index">{i + 1}</span>
-                      <div>
-                        {step.title ? (
-                          <h3 className="font-semibold text-[var(--site-heading)]">{step.title}</h3>
-                        ) : null}
-                        <p className="mt-1 text-sm leading-relaxed site-body">
-                          <TextWithLinks text={step.text} />
-                        </p>
-                      </div>
-                    </li>
-                  ))}
+                  {(section.steps || []).map((step, i) => {
+                    const title = stepTitleLabel(step.title, i)
+                    return (
+                      <li key={`${step.title}-${i}`} className="flex gap-4">
+                        <span className="site-step-index">{i + 1}</span>
+                        <div>
+                          {title ? (
+                            <h3 className="font-semibold text-[var(--site-heading)]">{title}</h3>
+                          ) : null}
+                          <p className="mt-1 text-sm leading-relaxed site-body">
+                            <TextWithLinks text={step.text} />
+                          </p>
+                        </div>
+                      </li>
+                    )
+                  })}
                 </ol>
               </div>
             </div>
