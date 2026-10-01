@@ -91,55 +91,51 @@ export const vienna: LocationContentSeed = {
   },
   process: {
     heading: 'Fairfax Canopy Route From the Burke Office',
-    intro: 'Leaf season and basement returns are part of the intake questions.',
+    intro: 'From booking at (571) 460-0001 to photos at the door.',
     steps: [
       {
-        title: 'Estimate Request',
-        text: 'Form or (571) 460-0001 — we reply with timing from the Burke office.',
+        title: 'Book Vienna From the Burke Line',
+        text: 'Call (571) 460-0001 or use the form — we confirm Vienna availability the next business day.',
       },
       {
-        title: 'Route Planning',
-        text: 'Vienna is on an existing Burke dispatch day whenever possible.',
+        title: 'Protect Floors in Your Vienna Home',
+        text: 'We cover work paths and keep living spaces clear while equipment runs in Vienna.',
       },
       {
-        title: 'Walk-Through',
-        text: 'Supplies, returns, dryer termination — then we start.',
+        title: 'Source-Removal Cleaning for Vienna',
+        text: 'NADCA-style agitation under HEPA negative pressure — dust leaves in the vacuum, not your Vienna rooms.',
       },
       {
-        title: 'Service',
-        text: 'Full trunk cleaning; dryer vent cleared to the exterior cap when booked.',
+        title: 'Optional Sanitizing in Vienna',
+        text: 'Complimentary Envirocon when requested or when inspection supports it on this Vienna job.',
       },
       {
-        title: 'Close-Out',
-        text: 'Satisfaction check before payment is finalized.',
+        title: 'Close Out the Vienna Visit',
+        text: 'Photos on file, flat-rate invoice, and tips for Vienna pollen or humidity seasons.',
       },
     ],
   },
   faqIntro: 'Vienna questions — call (571) 460-0001 (dispatch: Burke).',
   faq: [
     {
-      q: 'Where does the Vienna crew stage from?',
-      a: 'Our Burke office (5641 Burke Centre Pkwy Ste 119, Burke, VA 22015). Office line (571) 460-0001; booking (571) 460-0001.',
+      q: 'Who handles air duct cleaning appointments in Vienna?',
+      a: 'Vienna jobs leave from our Burke, VA office at 5641 Burke Centre Pkwy Ste 119. Call (571) 460-0001 to book flat-rate air duct or dryer vent cleaning.',
     },
     {
-      q: 'Can I stay home during the Vienna appointment?',
-      a: 'Yes. Stay clear of active equipment; we protect floors in the work path.',
+      q: 'What should I prepare before the Vienna crew arrives?',
+      a: 'For Vienna VA homes, we need clear runs to the air handler. Note HOA codes on the confirmation text.',
     },
     {
-      q: 'How often should Vienna, VA homes clean ducts?',
-      a: 'Every 3–5 years for most homes. Pets, renovations, and humid basements often need the shorter end. Dryer vents about yearly.',
+      q: 'How long does air duct cleaning take in Vienna?',
+      a: 'Vienna duct cleaning usually takes 2–3 hours for one system. Multi-system or heavily packed dryer vents are scoped before we start so the quote stays flat-rate.',
     },
     {
-      q: 'What should I prepare before the crew arrives in Vienna?',
-      a: 'Clear access to returns, the air handler, and the dryer. Note HOA gate codes if needed.',
+      q: 'Are Vienna air duct and dryer vent prices flat-rate?',
+      a: 'Yes. Vienna residential packages are flat-rate from the Burke office — the number we confirm before work starts is what you pay. No per-vent counting.',
     },
     {
-      q: 'How long does air duct cleaning take in a typical Vienna home?',
-      a: 'Most single-system houses take about 2–3 hours. Townhomes with long dryer runs can run longer after inspection.',
-    },
-    {
-      q: 'Are Vienna residential prices flat-rate?',
-      a: 'Yes for air duct and dryer vent packages. The quote before we start is the price you pay.',
+      q: 'Is sanitizing included with Vienna duct cleaning?',
+      a: 'For Vienna jobs, Envirocon antimicrobial sanitizing is complimentary when you request it or when inspection supports it — we confirm on site before applying anything.',
     },
   ],
 }

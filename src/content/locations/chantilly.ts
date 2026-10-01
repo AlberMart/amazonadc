@@ -89,51 +89,51 @@ export const chantilly: LocationContentSeed = {
   },
   process: {
     heading: 'Western Fairfax Dispatch Notes From Burke',
-    intro: 'Gate codes and townhome dryer chases are on the intake checklist.',
+    intro: 'From booking at (571) 460-0001 to photos at the door.',
     steps: [
       {
-        title: 'Online or Phone Intake',
-        text: 'Book at (571) 460-0001. Mention Chantilly so we route from Burke.',
+        title: 'Book Chantilly From the Burke Line',
+        text: 'Call (571) 460-0001 or use the form — we confirm Chantilly availability the next business day.',
       },
       {
-        title: 'Pre-Job Notes',
-        text: 'We ask about basement returns, stacked laundry, and any musty registers.',
+        title: 'Protect Floors in Your Chantilly Home',
+        text: 'We cover work paths and keep living spaces clear while equipment runs in Chantilly.',
       },
       {
-        title: 'On-Site Scope Lock',
-        text: 'No surprise add-ons after we are inside.',
+        title: 'Source-Removal Cleaning for Chantilly',
+        text: 'NADCA-style agitation under HEPA negative pressure — dust leaves in the vacuum, not your Chantilly rooms.',
       },
       {
-        title: 'Source-Removal Cleaning',
-        text: 'NADCA-style agitation under negative pressure with HEPA capture.',
+        title: 'Optional Sanitizing in Chantilly',
+        text: 'Complimentary Envirocon when requested or when inspection supports it on this Chantilly job.',
       },
       {
-        title: 'Photo Proof',
-        text: 'Duct jobs include before-and-after images you can keep.',
+        title: 'Close Out the Chantilly Visit',
+        text: 'Photos on file, flat-rate invoice, and tips for Chantilly pollen or humidity seasons.',
       },
     ],
   },
   faqIntro: 'Chantilly questions — call (571) 460-0001 (dispatch: Burke).',
   faq: [
     {
-      q: 'Where does the Chantilly crew stage from?',
-      a: 'Our Burke office (5641 Burke Centre Pkwy Ste 119, Burke, VA 22015). Office line (571) 460-0001; booking (571) 460-0001.',
+      q: 'Who handles air duct cleaning appointments in Chantilly?',
+      a: 'Chantilly jobs leave from our Burke, VA office at 5641 Burke Centre Pkwy Ste 119. Call (571) 460-0001 to book flat-rate air duct or dryer vent cleaning.',
     },
     {
-      q: 'Do you clean dryer vents in Chantilly townhomes and condos?',
-      a: 'Yes — full length to the exterior cap. Stacked laundry is common on this route. See dryer vent cleaning for details.',
+      q: 'What should I prepare before the Chantilly crew arrives?',
+      a: 'For Chantilly VA homes, we need clear runs to the air handler and any unfinished spaces still shedding construction dust. Note HOA codes on the confirmation text.',
     },
     {
-      q: 'Do you bring portable equipment for tight Chantilly streets?',
-      a: 'Yes. When a truck cannot stage, we use portable HEPA systems sized for the home.',
+      q: 'How long does air duct cleaning take in Chantilly?',
+      a: 'Chantilly duct cleaning usually takes 2–3 hours for one system. Multi-system or heavily packed dryer vents are scoped before we start so the quote stays flat-rate.',
     },
     {
-      q: 'Do you serve commercial spaces in Chantilly?',
-      a: 'Light commercial and small offices are available by quote. Call us with square footage and system count.',
+      q: 'Are Chantilly air duct and dryer vent prices flat-rate?',
+      a: 'Yes. Chantilly residential packages are flat-rate from the Burke office — the number we confirm before work starts is what you pay. No per-vent counting.',
     },
     {
-      q: 'Can I stay home during the Chantilly appointment?',
-      a: 'Yes. Stay clear of active equipment; we protect floors in the work path.',
+      q: 'Can duct and dryer vent cleaning be done the same day in Chantilly?',
+      a: 'In Chantilly, yes — when you book the combined package or both services up front. Call (571) 460-0001 and we stage the Burke crew for one visit to your street.',
     },
   ],
 }

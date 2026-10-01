@@ -48,7 +48,7 @@ export const hyattsville: LocationContentSeed = {
     ],
   },
   why: {
-    heading: 'Why Route 1 Housing Mixes Humidity With Corridor Dust',
+    heading: 'Why Route 1 Housing Mixes Humidity With Traffic Film',
     items: [
       {
         title: 'Honest Bethesda Dispatch into PG County',
@@ -89,55 +89,51 @@ export const hyattsville: LocationContentSeed = {
   },
   process: {
     heading: 'Prince George’s Timing From Bethesda',
-    intro: 'Street parking and unit access notes help the morning ETA.',
+    intro: 'From booking at (301) 809-4544 to photos at the door.',
     steps: [
       {
-        title: 'Estimate Request',
-        text: 'Form or (301) 809-4544 — we reply with timing from the Bethesda office.',
+        title: 'Book Hyattsville From the Bethesda Line',
+        text: 'Call (301) 809-4544 or use the form — we confirm Hyattsville availability the next business day.',
       },
       {
-        title: 'Route Planning',
-        text: 'Hyattsville is on an existing Bethesda dispatch day whenever possible.',
+        title: 'Protect Floors in Your Hyattsville Home',
+        text: 'We cover work paths and keep living spaces clear while equipment runs in Hyattsville.',
       },
       {
-        title: 'Walk-Through',
-        text: 'Supplies, returns, dryer termination — then we start.',
+        title: 'Source-Removal Cleaning for Hyattsville',
+        text: 'NADCA-style agitation under HEPA negative pressure — dust leaves in the vacuum, not your Hyattsville rooms.',
       },
       {
-        title: 'Service',
-        text: 'Full trunk cleaning; dryer vent cleared to the exterior cap when booked.',
+        title: 'Optional Sanitizing in Hyattsville',
+        text: 'Complimentary Envirocon when requested or when inspection supports it on this Hyattsville job.',
       },
       {
-        title: 'Close-Out',
-        text: 'Satisfaction check before payment is finalized.',
+        title: 'Close Out the Hyattsville Visit',
+        text: 'Photos on file, flat-rate invoice, and tips for Hyattsville pollen or humidity seasons.',
       },
     ],
   },
   faqIntro: 'Hyattsville questions — call (301) 809-4544 (dispatch: Bethesda).',
   faq: [
     {
-      q: 'Where does the Hyattsville crew stage from?',
-      a: 'Our Bethesda office (7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814). Office line (301) 809-4544; booking (301) 809-4544.',
+      q: 'Who handles air duct cleaning appointments in Hyattsville?',
+      a: 'Hyattsville jobs leave from our Bethesda, MD office at 7815 Old Georgetown Rd Ste 201. Call (301) 809-4544 to book flat-rate air duct or dryer vent cleaning.',
     },
     {
-      q: 'Are Hyattsville residential prices flat-rate?',
-      a: 'Yes for air duct and dryer vent packages. The quote before we start is the price you pay.',
+      q: 'What should I prepare before the Hyattsville crew arrives?',
+      a: 'For Hyattsville MD homes, we need clear runs to the air handler. Note HOA codes on the confirmation text.',
     },
     {
-      q: 'Can ducts and dryer vents be done the same day in Hyattsville?',
-      a: 'Usually yes if you book the combined package or both services when you schedule.',
+      q: 'How long does air duct cleaning take in Hyattsville?',
+      a: 'Hyattsville duct cleaning usually takes 2–3 hours for one system. Multi-system or heavily packed dryer vents are scoped before we start so the quote stays flat-rate.',
     },
     {
-      q: 'Is sanitizing included for Hyattsville duct jobs?',
-      a: 'Sanitizing is available when inspection supports it or when you request it — we confirm before applying anything.',
+      q: 'Are Hyattsville air duct and dryer vent prices flat-rate?',
+      a: 'Yes. Hyattsville residential packages are flat-rate from the Bethesda office — the number we confirm before work starts is what you pay. No per-vent counting.',
     },
     {
-      q: 'Do you clean dryer vents in Hyattsville townhomes and condos?',
-      a: 'Yes — full length to the exterior cap. Stacked laundry is common on this route. See dryer vent cleaning for details.',
-    },
-    {
-      q: 'Do you bring portable equipment for tight Hyattsville streets?',
-      a: 'Yes. When a truck cannot stage, we use portable HEPA systems sized for the home.',
+      q: 'Is sanitizing included with Hyattsville duct cleaning?',
+      a: 'For Hyattsville jobs, Envirocon antimicrobial sanitizing is complimentary when you request it or when inspection supports it — we confirm on site before applying anything.',
     },
   ],
 }

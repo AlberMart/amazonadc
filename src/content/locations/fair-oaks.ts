@@ -90,55 +90,51 @@ export const fairOaks: LocationContentSeed = {
   },
   process: {
     heading: 'Western Fairfax Scheduling From Burke',
-    intro: 'HOA gates near the mall corridor are confirmed the morning of.',
+    intro: 'From booking at (571) 460-0001 to photos at the door.',
     steps: [
       {
-        title: 'Estimate Request',
-        text: 'Form or (571) 460-0001 — we reply with timing from the Burke office.',
+        title: 'Book Fair Oaks From the Burke Line',
+        text: 'Call (571) 460-0001 or use the form — we confirm Fair Oaks availability the next business day.',
       },
       {
-        title: 'Route Planning',
-        text: 'Fair Oaks is on an existing Burke dispatch day whenever possible.',
+        title: 'Protect Floors in Your Fair Oaks Home',
+        text: 'We cover work paths and keep living spaces clear while equipment runs in Fair Oaks.',
       },
       {
-        title: 'Walk-Through',
-        text: 'Supplies, returns, dryer termination — then we start.',
+        title: 'Source-Removal Cleaning for Fair Oaks',
+        text: 'NADCA-style agitation under HEPA negative pressure — dust leaves in the vacuum, not your Fair Oaks rooms.',
       },
       {
-        title: 'Service',
-        text: 'Full trunk cleaning; dryer vent cleared to the exterior cap when booked.',
+        title: 'Optional Sanitizing in Fair Oaks',
+        text: 'Complimentary Envirocon when requested or when inspection supports it on this Fair Oaks job.',
       },
       {
-        title: 'Close-Out',
-        text: 'Satisfaction check before payment is finalized.',
+        title: 'Close Out the Fair Oaks Visit',
+        text: 'Photos on file, flat-rate invoice, and tips for Fair Oaks pollen or humidity seasons.',
       },
     ],
   },
   faqIntro: 'Fair Oaks questions — call (571) 460-0001 (dispatch: Burke).',
   faq: [
     {
-      q: 'Where does the Fair Oaks crew stage from?',
-      a: 'Our Burke office (5641 Burke Centre Pkwy Ste 119, Burke, VA 22015). Office line (571) 460-0001; booking (571) 460-0001.',
+      q: 'Who handles air duct cleaning appointments in Fair Oaks?',
+      a: 'Fair Oaks jobs leave from our Burke, VA office at 5641 Burke Centre Pkwy Ste 119. Call (571) 460-0001 to book flat-rate air duct or dryer vent cleaning.',
     },
     {
-      q: 'Do you bring portable equipment for tight Fair Oaks streets?',
-      a: 'Yes. When a truck cannot stage, we use portable HEPA systems sized for the home.',
+      q: 'What should I prepare before the Fair Oaks crew arrives?',
+      a: 'For Fair Oaks VA homes, we need clear runs to the air handler and any unfinished spaces still shedding construction dust. Note HOA codes on the confirmation text.',
     },
     {
-      q: 'Do you serve commercial spaces in Fair Oaks?',
-      a: 'Light commercial and small offices are available by quote. Call us with square footage and system count.',
+      q: 'How long does air duct cleaning take in Fair Oaks?',
+      a: 'Fair Oaks duct cleaning usually takes 2–3 hours for one system. Multi-system or heavily packed dryer vents are scoped before we start so the quote stays flat-rate.',
     },
     {
-      q: 'Can I stay home during the Fair Oaks appointment?',
-      a: 'Yes. Stay clear of active equipment; we protect floors in the work path.',
+      q: 'Are Fair Oaks air duct and dryer vent prices flat-rate?',
+      a: 'Yes. Fair Oaks residential packages are flat-rate from the Burke office — the number we confirm before work starts is what you pay. No per-vent counting.',
     },
     {
-      q: 'How often should Fair Oaks, VA homes clean ducts?',
-      a: 'Every 3–5 years for most homes. Pets, renovations, and humid basements often need the shorter end. Dryer vents about yearly.',
-    },
-    {
-      q: 'What should I prepare before the crew arrives in Fair Oaks?',
-      a: 'Clear access to returns, the air handler, and the dryer. Note HOA gate codes if needed.',
+      q: 'Is sanitizing included with Fair Oaks duct cleaning?',
+      a: 'For Fair Oaks jobs, Envirocon antimicrobial sanitizing is complimentary when you request it or when inspection supports it — we confirm on site before applying anything.',
     },
   ],
 }

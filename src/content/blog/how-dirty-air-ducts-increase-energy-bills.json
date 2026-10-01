@@ -130,12 +130,20 @@
   ],
   "faq": [
     {
-      "q": "What usually causes gray film on supply registers?",
-      "a": "Fine particles that bypass or overload filters settle in cool trunks and recirculate when the blower runs."
+      "q": "Can dirty ducts raise energy bills?",
+      "a": "Restricted airflow can make equipment run longer to hit the thermostat. Results vary by home, filter habits, and system condition — cleaning is not a guaranteed bill cut."
     },
     {
-      "q": "When is dryer vent cleaning the better first step?",
-      "a": "When laundry closets stay hot, dry times double, or you smell burnt lint — clear the vent to the exterior cap."
+      "q": "Will a filter change fix high bills?",
+      "a": "Fresh filters help. They do not remove debris already coating trunks and coils downstream of the filter."
+    },
+    {
+      "q": "What should I check before calling a cleaner?",
+      "a": "Filter condition, closed supply vents, and thermostat settings. If airflow still feels weak, schedule an inspection."
+    },
+    {
+      "q": "How do I schedule service?",
+      "a": "Call (800) 606-3334 for flat-rate residential packages from Burke or Bethesda."
     }
   ]
 }

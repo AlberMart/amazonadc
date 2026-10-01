@@ -89,51 +89,55 @@ export const loudoun: LocationContentSeed = {
   },
   process: {
     heading: 'Longer Dulles-Corridor Drive — Planned Honestly',
-    intro: 'We schedule Loudoun with stated travel time from Burke.',
+    intro: 'Same flat-rate flow we use across VA — scoped for Loudoun housing.',
     steps: [
       {
-        title: 'Online or Phone Intake',
-        text: 'Book at (571) 460-0001. Mention Loudoun so we route from Burke.',
+        title: 'Scope the Loudoun System',
+        text: 'Walk the returns and dryer path typical of Loudoun housing so nothing is surprise-priced later.',
       },
       {
-        title: 'Pre-Job Notes',
-        text: 'We ask about basement returns, stacked laundry, and any musty registers.',
+        title: 'Stage Equipment for Loudoun',
+        text: 'If the Loudoun street is tight, we switch to portable HEPA sized for local lots and townhomes.',
       },
       {
-        title: 'On-Site Scope Lock',
-        text: 'No surprise add-ons after we are inside.',
+        title: 'Clean Loudoun Ducts End to End',
+        text: 'Rotary brushes plus negative-pressure vacuum through the trunks serving this Loudoun home.',
       },
       {
-        title: 'Source-Removal Cleaning',
-        text: 'NADCA-style agitation under negative pressure with HEPA capture.',
+        title: 'Clear the Loudoun Dryer Run',
+        text: 'Full-length brushing to the exterior cap when dryer service is on the Loudoun ticket.',
       },
       {
-        title: 'Photo Proof',
-        text: 'Duct jobs include before-and-after images you can keep.',
+        title: 'Loudoun Walk-Through',
+        text: 'Review photos, answer questions, and leave booking notes for (571) 460-0001 if you want a Loudoun follow-up.',
       },
     ],
   },
   faqIntro: 'Loudoun questions — call (571) 460-0001 (dispatch: Burke).',
   faq: [
     {
-      q: 'Do you have a storefront in Loudoun?',
-      a: 'No. Loudoun jobs are scheduled from our Burke office at 5641 Burke Centre Pkwy Ste 119, Burke, VA 22015. Call (571) 460-0001.',
+      q: 'Who handles air duct cleaning appointments in Loudoun?',
+      a: 'Loudoun jobs leave from our Burke, VA office at 5641 Burke Centre Pkwy Ste 119. Call (571) 460-0001 to book flat-rate air duct or dryer vent cleaning.',
     },
     {
-      q: 'Can ducts and dryer vents be done the same day in Loudoun?',
-      a: 'Usually yes if you book the combined package or both services when you schedule.',
+      q: 'What should I prepare before the Loudoun crew arrives?',
+      a: 'Loudoun prep is simple: open access to returns and the dryer, move fragile items near vents, and tell us about pets or recent renovations when you book at (571) 460-0001.',
     },
     {
-      q: 'Is sanitizing included for Loudoun duct jobs?',
-      a: 'Sanitizing is available when inspection supports it or when you request it — we confirm before applying anything.',
+      q: 'How long does air duct cleaning take in Loudoun?',
+      a: 'Plan on roughly half a morning for a typical Loudoun home. Arrival windows already reflect the drive from Burke.',
     },
     {
-      q: 'Do you clean dryer vents in Loudoun townhomes and condos?',
-      a: 'Yes — full length to the exterior cap. Stacked laundry is common on this route. See dryer vent cleaning for details.',
+      q: 'Are Loudoun air duct and dryer vent prices flat-rate?',
+      a: 'Yes. Loudoun residential packages are flat-rate from the Burke office — the number we confirm before work starts is what you pay. No per-vent counting.',
     },
     {
-      q: 'Do you bring portable equipment for tight Loudoun streets?',
-      a: 'Yes. When a truck cannot stage, we use portable HEPA systems sized for the home.',
+      q: 'Can duct and dryer vent cleaning be done the same day in Loudoun?',
+      a: 'In Loudoun, yes — when you book the combined package or both services up front. Call (571) 460-0001 and we stage the Burke crew for one visit to your street.',
+    },
+    {
+      q: 'How far in advance should Loudoun homeowners book?',
+      a: 'Loudoun is a longer run from Burke. Booking several days ahead keeps arrival windows realistic; call (571) 460-0001 for the next open Loudoun slot.',
     },
   ],
 }

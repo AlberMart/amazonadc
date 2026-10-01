@@ -90,51 +90,51 @@ export const mountVernon: LocationContentSeed = {
   },
   process: {
     heading: 'Southern Fairfax Route Notes From Burke',
-    intro: 'We ask about cellar returns and exterior dryer caps on intake.',
+    intro: 'From booking at (571) 460-0001 to photos at the door.',
     steps: [
       {
-        title: 'Online or Phone Intake',
-        text: 'Book at (571) 460-0001. Mention Mt Vernon so we route from Burke.',
+        title: 'Book Mt Vernon From the Burke Line',
+        text: 'Call (571) 460-0001 or use the form — we confirm Mt Vernon availability the next business day.',
       },
       {
-        title: 'Pre-Job Notes',
-        text: 'We ask about basement returns, stacked laundry, and any musty registers.',
+        title: 'Protect Floors in Your Mt Vernon Home',
+        text: 'We cover work paths and keep living spaces clear while equipment runs in Mt Vernon.',
       },
       {
-        title: 'On-Site Scope Lock',
-        text: 'No surprise add-ons after we are inside.',
+        title: 'Source-Removal Cleaning for Mt Vernon',
+        text: 'NADCA-style agitation under HEPA negative pressure — dust leaves in the vacuum, not your Mt Vernon rooms.',
       },
       {
-        title: 'Source-Removal Cleaning',
-        text: 'NADCA-style agitation under negative pressure with HEPA capture.',
+        title: 'Optional Sanitizing in Mt Vernon',
+        text: 'Complimentary Envirocon when requested or when inspection supports it on this Mt Vernon job.',
       },
       {
-        title: 'Photo Proof',
-        text: 'Duct jobs include before-and-after images you can keep.',
+        title: 'Close Out the Mt Vernon Visit',
+        text: 'Photos on file, flat-rate invoice, and tips for Mt Vernon pollen or humidity seasons.',
       },
     ],
   },
   faqIntro: 'Mt Vernon questions — call (571) 460-0001 (dispatch: Burke).',
   faq: [
     {
-      q: 'Where does the Mt Vernon crew stage from?',
-      a: 'Our Burke office (5641 Burke Centre Pkwy Ste 119, Burke, VA 22015). Office line (571) 460-0001; booking (571) 460-0001.',
+      q: 'Who handles air duct cleaning appointments in Mt Vernon?',
+      a: 'Mt Vernon jobs leave from our Burke, VA office at 5641 Burke Centre Pkwy Ste 119. Call (571) 460-0001 to book flat-rate air duct or dryer vent cleaning.',
     },
     {
-      q: 'How often should Mt Vernon, VA homes clean ducts?',
-      a: 'Every 3–5 years for most homes. Pets, renovations, and humid basements often need the shorter end. Dryer vents about yearly.',
+      q: 'What should I prepare before the Mt Vernon crew arrives?',
+      a: 'For Mt Vernon VA homes, we need clear runs to the air handler. Note HOA codes on the confirmation text.',
     },
     {
-      q: 'What should I prepare before the crew arrives in Mt Vernon?',
-      a: 'Clear access to returns, the air handler, and the dryer. Note HOA gate codes if needed.',
+      q: 'How long does air duct cleaning take in Mt Vernon?',
+      a: 'Mt Vernon duct cleaning usually takes 2–3 hours for one system. Multi-system or heavily packed dryer vents are scoped before we start so the quote stays flat-rate.',
     },
     {
-      q: 'How long does air duct cleaning take in a typical Mt Vernon home?',
-      a: 'Most single-system houses take about 2–3 hours. Townhomes with long dryer runs can run longer after inspection.',
+      q: 'Are Mt Vernon air duct and dryer vent prices flat-rate?',
+      a: 'Yes. Mt Vernon residential packages are flat-rate from the Burke office — the number we confirm before work starts is what you pay. No per-vent counting.',
     },
     {
-      q: 'Are Mt Vernon residential prices flat-rate?',
-      a: 'Yes for air duct and dryer vent packages. The quote before we start is the price you pay.',
+      q: 'Can duct and dryer vent cleaning be done the same day in Mt Vernon?',
+      a: 'In Mt Vernon, yes — when you book the combined package or both services up front. Call (571) 460-0001 and we stage the Burke crew for one visit to your street.',
     },
   ],
 }

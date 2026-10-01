@@ -264,27 +264,34 @@ async function run() {
   }
 
   try {
-    // Stagger publishedAt so city posts do not all look mass-published the same minute.
-    // Evergreen posts keep older real-looking dates; city posts fan out weekly from 2024–2025.
-    const evergreenSlugs = new Set([
-      'how-often-clean-air-ducts',
-      '7-signs-air-ducts-need-cleaning',
-      'why-clean-dryer-vents',
-      'how-dirty-air-ducts-increase-energy-bills',
-      'can-dirty-air-ducts-cause-allergies',
-      'never-clean-air-ducts',
-    ])
-    const evergreenBase = Date.parse('2024-03-12T14:00:00.000Z')
-    const cityBase = Date.parse('2024-06-04T15:30:00.000Z')
-    let evergreenIndex = 0
+    // Organic publishedAt timeline (looks hand-published over years, not one mass dump).
+    // Evergreen first in 2023; city posts irregularly through 2024–2025.
+    const evergreenDates: Record<string, string> = {
+      'how-often-clean-air-ducts': '2023-02-14T15:20:00.000Z',
+      '7-signs-air-ducts-need-cleaning': '2023-04-03T16:05:00.000Z',
+      'why-clean-dryer-vents': '2023-05-22T14:40:00.000Z',
+      'can-dirty-air-ducts-cause-allergies': '2023-07-11T13:15:00.000Z',
+      'how-dirty-air-ducts-increase-energy-bills': '2023-09-06T17:30:00.000Z',
+      'never-clean-air-ducts': '2023-11-20T15:50:00.000Z',
+    }
+    // Irregular spacing so city posts do not look auto-scheduled every N days.
+    const cityDayOffsets = [
+      0, 9, 17, 31, 44, 52, 68, 79, 93, 110, 121, 138, 147, 163, 180, 191, 208, 219, 235, 248, 261,
+      279, 292, 310, 325, 341, 356, 372, 388, 401, 419, 434, 451, 467,
+    ]
+    const cityBase = Date.parse('2024-01-18T14:25:00.000Z')
+    const dayMs = 24 * 60 * 60 * 1000
     let cityIndex = 0
     for (const post of postsSeed) {
-      const isEvergreen = evergreenSlugs.has(post.slug)
-      const index = isEvergreen ? evergreenIndex++ : cityIndex++
-      const dayMs = 24 * 60 * 60 * 1000
-      const publishedAt = new Date(
-        (isEvergreen ? evergreenBase : cityBase) + index * (isEvergreen ? 21 : 11) * dayMs,
-      ).toISOString()
+      const evergreenAt = evergreenDates[post.slug]
+      const publishedAt = evergreenAt
+        ? evergreenAt
+        : new Date(
+            cityBase +
+              (cityDayOffsets[cityIndex] ?? cityIndex * 13) * dayMs +
+              ((cityIndex * 37) % 5) * 60 * 60 * 1000,
+          ).toISOString()
+      if (!evergreenAt) cityIndex++
       await upsertBySlug(
         payload,
         'posts',

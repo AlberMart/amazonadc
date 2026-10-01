@@ -97,55 +97,51 @@ export const burke: LocationContentSeed = {
   },
   process: {
     heading: 'Office Intake at Burke Centre — Then On the Road',
-    intro: 'How a job leaves Suite 119 and arrives at a Northern Virginia address.',
+    intro: 'Arrival windows reflect the drive from Burke.',
     steps: [
       {
-        title: 'Talk Through the Home',
-        text: 'Tell us about pets, renovations, and laundry layout common in Burke.',
+        title: 'Talk Through Your Burke Home',
+        text: 'We ask about pets, renovations, and basement or attic air-handler access in Burke before quoting.',
       },
       {
-        title: 'Confirm Arrival ETA',
-        text: 'Morning-of text with a realistic window for your street.',
+        title: 'Confirm the Burke Arrival Window',
+        text: 'Morning-of text with a realistic ETA from Burke to your Burke street.',
       },
       {
-        title: 'Agree the Package',
-        text: 'Flat-rate duct and dryer packages — the quoted number is what you pay.',
+        title: 'Agree the Burke Flat-Rate Package',
+        text: 'Duct, dryer, or both for this Burke VA address — the quoted number is what you pay.',
       },
       {
-        title: 'Run the Cleaning',
-        text: 'Truck-mounted or portable HEPA sized for Burke houses and townhomes.',
+        title: 'Run HEPA Cleaning in Burke',
+        text: 'We agitate and vacuum supplies, returns, and registers under negative pressure in your Burke system.',
       },
       {
-        title: 'Final Questions',
-        text: 'Filter tips and dryer-vent interval before we pack up.',
+        title: 'Photos Before We Leave Burke',
+        text: 'Before/after photos, filter tips, and dryer-vent interval tailored to Burke seasons.',
       },
     ],
   },
-  faqIntro: 'Questions about the Burke office. Call (571) 460-0001 — office line (571) 460-0001.',
+  faqIntro: 'Burke questions — call (571) 460-0001 (dispatch: Burke).',
   faq: [
     {
-      q: 'Where is the Burke office?',
-      a: '5641 Burke Centre Pkwy, Suite 119, Burke, VA 22015. Booking: (571) 460-0001. Office line: (571) 460-0001.',
+      q: 'Who handles air duct cleaning appointments in Burke?',
+      a: 'Burke jobs leave from our Burke, VA office at 5641 Burke Centre Pkwy Ste 119. Call (571) 460-0001 to book flat-rate air duct or dryer vent cleaning.',
     },
     {
-      q: 'What services do you offer from Burke?',
-      a: 'Air duct cleaning, dryer vent cleaning, and ventilation mold treatment when needed. We do not offer chimney sweeping from this page.',
+      q: 'What should I prepare before the Burke crew arrives?',
+      a: 'In Burke, clear a path to the air handler and dryer before we arrive — basement trunks and dryer closets especially. Share gate or parking notes if your street needs them.',
     },
     {
-      q: 'Do you serve Springfield, Reston, and Arlington from Burke?',
-      a: 'Yes. See the city pages for Springfield, Reston, Arlington, and the full Virginia list on /locations.',
+      q: 'How long does air duct cleaning take in Burke?',
+      a: 'Most Burke single-system houses finish in about 2–3 hours. Older trunks with additions can add time after inspection.',
     },
     {
-      q: 'When would Bethesda take a job instead?',
-      a: 'Maryland addresses and some Northwest DC streets often dispatch from Bethesda. We pick by drive time when you book.',
+      q: 'Are Burke air duct and dryer vent prices flat-rate?',
+      a: 'Yes. Burke residential packages are flat-rate from the Burke office — the number we confirm before work starts is what you pay. No per-vent counting.',
     },
     {
-      q: 'Are prices flat-rate?',
-      a: 'Yes for residential air duct and dryer vent packages. The number we quote before the job is the price you pay.',
-    },
-    {
-      q: 'Can I visit the suite before booking?',
-      a: 'The suite is a working office for scheduling and staging. Most customers book by phone or form; call if you need directions.',
+      q: 'Is sanitizing included with Burke duct cleaning?',
+      a: 'For Burke jobs, Envirocon antimicrobial sanitizing is complimentary when you request it or when inspection supports it — we confirm on site before applying anything.',
     },
   ],
 }

@@ -89,51 +89,51 @@ export const takomaPark: LocationContentSeed = {
   },
   process: {
     heading: 'Border-City Scheduling From Bethesda',
-    intro: 'We ask about crawlspace returns and exterior dryer caps.',
+    intro: 'From booking at (301) 809-4544 to photos at the door.',
     steps: [
       {
-        title: 'Online or Phone Intake',
-        text: 'Book at (301) 809-4544. Mention Takoma Park so we route from Bethesda.',
+        title: 'Book Takoma Park From the Bethesda Line',
+        text: 'Call (301) 809-4544 or use the form — we confirm Takoma Park availability the next business day.',
       },
       {
-        title: 'Pre-Job Notes',
-        text: 'We ask about basement returns, stacked laundry, and any musty registers.',
+        title: 'Protect Floors in Your Takoma Park Home',
+        text: 'We cover work paths and keep living spaces clear while equipment runs in Takoma Park.',
       },
       {
-        title: 'On-Site Scope Lock',
-        text: 'No surprise add-ons after we are inside.',
+        title: 'Source-Removal Cleaning for Takoma Park',
+        text: 'NADCA-style agitation under HEPA negative pressure — dust leaves in the vacuum, not your Takoma Park rooms.',
       },
       {
-        title: 'Source-Removal Cleaning',
-        text: 'NADCA-style agitation under negative pressure with HEPA capture.',
+        title: 'Optional Sanitizing in Takoma Park',
+        text: 'Complimentary Envirocon when requested or when inspection supports it on this Takoma Park job.',
       },
       {
-        title: 'Photo Proof',
-        text: 'Duct jobs include before-and-after images you can keep.',
+        title: 'Close Out the Takoma Park Visit',
+        text: 'Photos on file, flat-rate invoice, and tips for Takoma Park pollen or humidity seasons.',
       },
     ],
   },
   faqIntro: 'Takoma Park questions — call (301) 809-4544 (dispatch: Bethesda).',
   faq: [
     {
-      q: 'Where does the Takoma Park crew stage from?',
-      a: 'Our Bethesda office (7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814). Office line (301) 809-4544; booking (301) 809-4544.',
+      q: 'Who handles air duct cleaning appointments in Takoma Park?',
+      a: 'Takoma Park jobs leave from our Bethesda, MD office at 7815 Old Georgetown Rd Ste 201. Call (301) 809-4544 to book flat-rate air duct or dryer vent cleaning.',
     },
     {
-      q: 'Can ducts and dryer vents be done the same day in Takoma Park?',
-      a: 'Usually yes if you book the combined package or both services when you schedule.',
+      q: 'What should I prepare before the Takoma Park crew arrives?',
+      a: 'For Takoma Park MD homes, we need clear runs to the air handler. Note HOA codes on the confirmation text.',
     },
     {
-      q: 'Is sanitizing included for Takoma Park duct jobs?',
-      a: 'Sanitizing is available when inspection supports it or when you request it — we confirm before applying anything.',
+      q: 'How long does air duct cleaning take in Takoma Park?',
+      a: 'Takoma Park duct cleaning usually takes 2–3 hours for one system. Multi-system or heavily packed dryer vents are scoped before we start so the quote stays flat-rate.',
     },
     {
-      q: 'Do you clean dryer vents in Takoma Park townhomes and condos?',
-      a: 'Yes — full length to the exterior cap. Stacked laundry is common on this route. See dryer vent cleaning for details.',
+      q: 'Are Takoma Park air duct and dryer vent prices flat-rate?',
+      a: 'Yes. Takoma Park residential packages are flat-rate from the Bethesda office — the number we confirm before work starts is what you pay. No per-vent counting.',
     },
     {
-      q: 'Do you bring portable equipment for tight Takoma Park streets?',
-      a: 'Yes. When a truck cannot stage, we use portable HEPA systems sized for the home.',
+      q: 'Can duct and dryer vent cleaning be done the same day in Takoma Park?',
+      a: 'In Takoma Park, yes — when you book the combined package or both services up front. Call (301) 809-4544 and we stage the Bethesda crew for one visit to your street.',
     },
   ],
 }

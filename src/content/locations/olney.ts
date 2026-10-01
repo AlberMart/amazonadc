@@ -89,55 +89,55 @@ export const olney: LocationContentSeed = {
   },
   process: {
     heading: 'Longer Montgomery Drive — Scheduled With Clear Windows',
-    intro: 'Arrival windows include the extra drive from Bethesda.',
+    intro: 'From booking at (301) 809-4544 to photos at the door.',
     steps: [
       {
-        title: 'Talk Through the Home',
-        text: 'Tell us about pets, renovations, and laundry layout common in Olney.',
+        title: 'Book Olney From the Bethesda Line',
+        text: 'Call (301) 809-4544 or use the form — we confirm Olney availability the next business day.',
       },
       {
-        title: 'Confirm Arrival ETA',
-        text: 'Morning-of text with a realistic window for your street.',
+        title: 'Protect Floors in Your Olney Home',
+        text: 'We cover work paths and keep living spaces clear while equipment runs in Olney.',
       },
       {
-        title: 'Agree the Package',
-        text: 'Flat-rate duct and dryer packages — the quoted number is what you pay.',
+        title: 'Source-Removal Cleaning for Olney',
+        text: 'NADCA-style agitation under HEPA negative pressure — dust leaves in the vacuum, not your Olney rooms.',
       },
       {
-        title: 'Run the Cleaning',
-        text: 'Truck-mounted or portable HEPA sized for Olney houses and townhomes.',
+        title: 'Optional Sanitizing in Olney',
+        text: 'Complimentary Envirocon when requested or when inspection supports it on this Olney job.',
       },
       {
-        title: 'Final Questions',
-        text: 'Filter tips and dryer-vent interval before we pack up.',
+        title: 'Close Out the Olney Visit',
+        text: 'Photos on file, flat-rate invoice, and tips for Olney pollen or humidity seasons.',
       },
     ],
   },
   faqIntro: 'Olney questions — call (301) 809-4544 (dispatch: Bethesda).',
   faq: [
     {
-      q: 'Where does the Olney crew stage from?',
-      a: 'Our Bethesda office at 7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814. Call (301) 809-4544.',
+      q: 'Who handles air duct cleaning appointments in Olney?',
+      a: 'Olney jobs leave from our Bethesda, MD office at 7815 Old Georgetown Rd Ste 201. Call (301) 809-4544 to book flat-rate air duct or dryer vent cleaning.',
     },
     {
-      q: 'Can I stay home during the Olney appointment?',
-      a: 'Yes. Stay clear of active equipment; we protect floors in the work path.',
+      q: 'What should I prepare before the Olney crew arrives?',
+      a: 'For Olney MD homes, we need clear runs to the air handler. Note HOA codes on the confirmation text.',
     },
     {
-      q: 'How often should Olney, MD homes clean ducts?',
-      a: 'Every 3–5 years for most homes. Pets, renovations, and humid basements often need the shorter end. Dryer vents about yearly.',
+      q: 'How long does air duct cleaning take in Olney?',
+      a: 'Olney duct cleaning usually takes 2–3 hours for one system. Multi-system or heavily packed dryer vents are scoped before we start so the quote stays flat-rate.',
     },
     {
-      q: 'What should I prepare before the crew arrives in Olney?',
-      a: 'Finished-basement ramblers: clear the rec-room path to the air handler and leave dryer-closet space. Share any HOA or driveway notes for Georgia Avenue / Olney Mill streets.',
+      q: 'Are Olney air duct and dryer vent prices flat-rate?',
+      a: 'Yes. Olney residential packages are flat-rate from the Bethesda office — the number we confirm before work starts is what you pay. No per-vent counting.',
     },
     {
-      q: 'How long does air duct cleaning take in a typical Olney home?',
-      a: 'Most Olney single-system ramblers take about 2–3 hours. Homes with finished basements and long dryer runs may run longer once we see the layout.',
+      q: 'Is sanitizing included with Olney duct cleaning?',
+      a: 'For Olney jobs, Envirocon antimicrobial sanitizing is complimentary when you request it or when inspection supports it — we confirm on site before applying anything.',
     },
     {
-      q: 'Are Olney residential prices flat-rate?',
-      a: 'Yes. Olney uses Bethesda-office flat-rate duct and dryer packages — quoted before we start, with travel from Old Georgetown Road built into the schedule, not as a surprise fee.',
+      q: 'How far in advance should Olney homeowners book?',
+      a: 'Olney is a longer run from Bethesda. Booking several days ahead keeps arrival windows realistic; call (301) 809-4544 for the next open Olney slot.',
     },
   ],
 }

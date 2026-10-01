@@ -89,51 +89,55 @@ export const collegePark: LocationContentSeed = {
   },
   process: {
     heading: 'Prince George’s Timing From the Bethesda Office',
-    intro: 'Landlords: send unit access instructions with the booking.',
+    intro: 'Same flat-rate flow we use across MD — scoped for College Park housing.',
     steps: [
       {
-        title: 'Request a Window',
-        text: 'Call (301) 809-4544 or use the form. We confirm by the next business day.',
+        title: 'Scope the College Park System',
+        text: 'Walk the returns and dryer path typical of College Park housing so nothing is surprise-priced later.',
       },
       {
-        title: 'Share Access Details',
-        text: 'Gates, condo loading, alley parking, and HOA rules for College Park help us stage correctly.',
+        title: 'Stage Equipment for College Park',
+        text: 'If the College Park street is tight, we switch to portable HEPA sized for local lots and townhomes.',
       },
       {
-        title: 'Inspect Before Cleaning',
-        text: 'We walk ducts and the dryer run with you and agree scope before equipment comes in.',
+        title: 'Clean College Park Ducts End to End',
+        text: 'Rotary brushes plus negative-pressure vacuum through the trunks serving this College Park home.',
       },
       {
-        title: 'Protect and Clean',
-        text: 'Floors are protected. HEPA negative pressure pulls debris into the vacuum, not living spaces.',
+        title: 'Clear the College Park Dryer Run',
+        text: 'Full-length brushing to the exterior cap when dryer service is on the College Park ticket.',
       },
       {
-        title: 'Review Results',
-        text: 'You keep before-and-after photos on duct jobs. We leave when you are satisfied.',
+        title: 'College Park Walk-Through',
+        text: 'Review photos, answer questions, and leave booking notes for (301) 809-4544 if you want a College Park follow-up.',
       },
     ],
   },
   faqIntro: 'College Park questions — call (301) 809-4544 (dispatch: Bethesda).',
   faq: [
     {
-      q: 'Do you have a storefront in College Park?',
-      a: 'No. College Park jobs are scheduled from our Bethesda office at 7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814. Call (301) 809-4544.',
+      q: 'Who handles air duct cleaning appointments in College Park?',
+      a: 'College Park jobs leave from our Bethesda, MD office at 7815 Old Georgetown Rd Ste 201. Call (301) 809-4544 to book flat-rate air duct or dryer vent cleaning.',
     },
     {
-      q: 'Do you serve commercial spaces in College Park?',
-      a: 'Light commercial and small offices are available by quote. Call us with square footage and system count.',
+      q: 'What should I prepare before the College Park crew arrives?',
+      a: 'College Park prep is simple: open access to returns and the dryer, move fragile items near vents, and tell us about pets or recent renovations when you book at (301) 809-4544.',
     },
     {
-      q: 'Can I stay home during the College Park appointment?',
-      a: 'Yes. Stay clear of active equipment; we protect floors in the work path.',
+      q: 'How long does air duct cleaning take in College Park?',
+      a: 'Plan on roughly half a morning for a typical College Park home. Same-day dryer vent add-ons are often possible if booked together.',
     },
     {
-      q: 'How often should College Park, MD homes clean ducts?',
-      a: 'Every 3–5 years for most homes. Pets, renovations, and humid basements often need the shorter end. Dryer vents about yearly.',
+      q: 'Are College Park air duct and dryer vent prices flat-rate?',
+      a: 'Yes. College Park residential packages are flat-rate from the Bethesda office — the number we confirm before work starts is what you pay. No per-vent counting.',
     },
     {
-      q: 'What should I prepare before the crew arrives in College Park?',
-      a: 'Clear access to returns, the air handler, and the dryer. Note HOA gate codes if needed.',
+      q: 'Can duct and dryer vent cleaning be done the same day in College Park?',
+      a: 'In College Park, yes — when you book the combined package or both services up front. Call (301) 809-4544 and we stage the Bethesda crew for one visit to your street.',
+    },
+    {
+      q: 'How far in advance should College Park homeowners book?',
+      a: 'Peak pollen and summer humidity fill the College Park calendar fast. Same-week openings are common — call (301) 809-4544 for the next Bethesda window serving College Park.',
     },
   ],
 }

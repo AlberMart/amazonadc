@@ -90,51 +90,55 @@ export const lorton: LocationContentSeed = {
   },
   process: {
     heading: 'South Fairfax Dispatch From Burke',
-    intro: 'I-95 timing is built into the morning arrival window.',
+    intro: 'Arrival windows reflect the drive from Burke.',
     steps: [
       {
-        title: 'Request a Window',
-        text: 'Call (571) 460-0001 or use the form. We confirm by the next business day.',
+        title: 'Talk Through Your Lorton Home',
+        text: 'We ask about pets, renovations, and basement or attic air-handler access in Lorton before quoting.',
       },
       {
-        title: 'Share Access Details',
-        text: 'Gates, condo loading, alley parking, and HOA rules for Lorton help us stage correctly.',
+        title: 'Confirm the Lorton Arrival Window',
+        text: 'Morning-of text with a realistic ETA from Burke to your Lorton street.',
       },
       {
-        title: 'Inspect Before Cleaning',
-        text: 'We walk ducts and the dryer run with you and agree scope before equipment comes in.',
+        title: 'Agree the Lorton Flat-Rate Package',
+        text: 'Duct, dryer, or both for this Lorton VA address — the quoted number is what you pay.',
       },
       {
-        title: 'Protect and Clean',
-        text: 'Floors are protected. HEPA negative pressure pulls debris into the vacuum, not living spaces.',
+        title: 'Run HEPA Cleaning in Lorton',
+        text: 'We agitate and vacuum supplies, returns, and registers under negative pressure in your Lorton system.',
       },
       {
-        title: 'Review Results',
-        text: 'You keep before-and-after photos on duct jobs. We leave when you are satisfied.',
+        title: 'Photos Before We Leave Lorton',
+        text: 'Before/after photos, filter tips, and dryer-vent interval tailored to Lorton seasons.',
       },
     ],
   },
   faqIntro: 'Lorton questions — call (571) 460-0001 (dispatch: Burke).',
   faq: [
     {
-      q: 'Do you have a storefront in Lorton?',
-      a: 'No. Lorton jobs are scheduled from our Burke office at 5641 Burke Centre Pkwy Ste 119, Burke, VA 22015. Call (571) 460-0001.',
+      q: 'Who handles air duct cleaning appointments in Lorton?',
+      a: 'Lorton jobs leave from our Burke, VA office at 5641 Burke Centre Pkwy Ste 119. Call (571) 460-0001 to book flat-rate air duct or dryer vent cleaning.',
     },
     {
-      q: 'How long does air duct cleaning take in a typical Lorton home?',
-      a: 'Most single-system houses take about 2–3 hours. Townhomes with long dryer runs can run longer after inspection.',
+      q: 'What should I prepare before the Lorton crew arrives?',
+      a: 'In Lorton, clear a path to the air handler and dryer before we arrive — basement trunks and dryer closets especially. Share gate or parking notes if your street needs them.',
     },
     {
-      q: 'Are Lorton residential prices flat-rate?',
-      a: 'Yes for air duct and dryer vent packages. The quote before we start is the price you pay.',
+      q: 'How long does air duct cleaning take in Lorton?',
+      a: 'Most Lorton single-system houses finish in about 2–3 hours. Older trunks with additions can add time after inspection.',
     },
     {
-      q: 'Can ducts and dryer vents be done the same day in Lorton?',
-      a: 'Usually yes if you book the combined package or both services when you schedule.',
+      q: 'Are Lorton air duct and dryer vent prices flat-rate?',
+      a: 'Yes. Lorton residential packages are flat-rate from the Burke office — the number we confirm before work starts is what you pay. No per-vent counting.',
     },
     {
-      q: 'Is sanitizing included for Lorton duct jobs?',
-      a: 'Sanitizing is available when inspection supports it or when you request it — we confirm before applying anything.',
+      q: 'Can duct and dryer vent cleaning be done the same day in Lorton?',
+      a: 'In Lorton, yes — when you book the combined package or both services up front. Call (571) 460-0001 and we stage the Burke crew for one visit to your street.',
+    },
+    {
+      q: 'How far in advance should Lorton homeowners book?',
+      a: 'Lorton is a longer run from Burke. Booking several days ahead keeps arrival windows realistic; call (571) 460-0001 for the next open Lorton slot.',
     },
   ],
 }

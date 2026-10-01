@@ -89,55 +89,55 @@ export const potomac: LocationContentSeed = {
   },
   process: {
     heading: 'Short Montgomery Run From Bethesda',
-    intro: 'Long driveways and multiple returns are noted at booking.',
+    intro: 'Same flat-rate flow we use across MD — scoped for Potomac housing.',
     steps: [
       {
-        title: 'Talk Through the Home',
-        text: 'Tell us about pets, renovations, and laundry layout common in Potomac.',
+        title: 'Scope the Potomac System',
+        text: 'Walk the returns and dryer path typical of Potomac housing so nothing is surprise-priced later.',
       },
       {
-        title: 'Confirm Arrival ETA',
-        text: 'Morning-of text with a realistic window for your street.',
+        title: 'Stage Equipment for Potomac',
+        text: 'If the Potomac street is tight, we switch to portable HEPA sized for local lots and townhomes.',
       },
       {
-        title: 'Agree the Package',
-        text: 'Flat-rate duct and dryer packages — the quoted number is what you pay.',
+        title: 'Clean Potomac Ducts End to End',
+        text: 'Rotary brushes plus negative-pressure vacuum through the trunks serving this Potomac home.',
       },
       {
-        title: 'Run the Cleaning',
-        text: 'Truck-mounted or portable HEPA sized for Potomac houses and townhomes.',
+        title: 'Clear the Potomac Dryer Run',
+        text: 'Full-length brushing to the exterior cap when dryer service is on the Potomac ticket.',
       },
       {
-        title: 'Final Questions',
-        text: 'Filter tips and dryer-vent interval before we pack up.',
+        title: 'Potomac Walk-Through',
+        text: 'Review photos, answer questions, and leave booking notes for (301) 809-4544 if you want a Potomac follow-up.',
       },
     ],
   },
   faqIntro: 'Potomac questions — call (301) 809-4544 (dispatch: Bethesda).',
   faq: [
     {
-      q: 'Which office covers Potomac?',
-      a: 'Bethesda — 7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814. Booking line (301) 809-4544.',
+      q: 'Who handles air duct cleaning appointments in Potomac?',
+      a: 'Potomac jobs leave from our Bethesda, MD office at 7815 Old Georgetown Rd Ste 201. Call (301) 809-4544 to book flat-rate air duct or dryer vent cleaning.',
     },
     {
-      q: 'What should I prepare before the crew arrives in Potomac?',
-      a: 'Clear access to returns, the air handler, and the dryer. Note HOA gate codes if needed.',
+      q: 'What should I prepare before the Potomac crew arrives?',
+      a: 'Potomac prep is simple: open access to returns and the dryer, move fragile items near vents, and tell us about pets or recent renovations when you book at (301) 809-4544.',
     },
     {
-      q: 'How long does air duct cleaning take in a typical Potomac home?',
-      a: 'Most single-system houses take about 2–3 hours. Townhomes with long dryer runs can run longer after inspection.',
+      q: 'How long does air duct cleaning take in Potomac?',
+      a: 'Plan on roughly half a morning for a typical Potomac home. Same-day dryer vent add-ons are often possible if booked together.',
     },
     {
-      q: 'Are Potomac residential prices flat-rate?',
-      a: 'Yes for air duct and dryer vent packages. The quote before we start is the price you pay.',
+      q: 'Are Potomac air duct and dryer vent prices flat-rate?',
+      a: 'Yes. Potomac residential packages are flat-rate from the Bethesda office — the number we confirm before work starts is what you pay. No per-vent counting.',
     },
     {
-      q: 'Can ducts and dryer vents be done the same day in Potomac?',
-      a: 'Usually yes if you book the combined package or both services when you schedule.',
+      q: 'Is sanitizing included with Potomac duct cleaning?',
+      a: 'For Potomac jobs, Envirocon antimicrobial sanitizing is complimentary when you request it or when inspection supports it — we confirm on site before applying anything.',
     },
     {
-      q: 'Is sanitizing included for Potomac duct jobs?',
-      a: 'Sanitizing is available when inspection supports it or when you request it — we confirm before applying anything.',
+      q: 'How far in advance should Potomac homeowners book?',
+      a: 'Peak pollen and summer humidity fill the Potomac calendar fast. Same-week openings are common — call (301) 809-4544 for the next Bethesda window serving Potomac.',
     },
   ],
 }

@@ -90,51 +90,55 @@ export const columbia: LocationContentSeed = {
   },
   process: {
     heading: 'Howard County Drive From Bethesda — Planned',
-    intro: 'We schedule Columbia with realistic Bethesda-to-Howard timing.',
+    intro: 'Arrival windows reflect the drive from Bethesda.',
     steps: [
       {
-        title: 'Online or Phone Intake',
-        text: 'Book at (301) 809-4544. Mention Columbia so we route from Bethesda.',
+        title: 'Talk Through Your Columbia Home',
+        text: 'We ask about pets, renovations, and basement or attic air-handler access in Columbia before quoting.',
       },
       {
-        title: 'Pre-Job Notes',
-        text: 'We ask about basement returns, stacked laundry, and any musty registers.',
+        title: 'Confirm the Columbia Arrival Window',
+        text: 'Morning-of text with a realistic ETA from Bethesda to your Columbia street.',
       },
       {
-        title: 'On-Site Scope Lock',
-        text: 'No surprise add-ons after we are inside.',
+        title: 'Agree the Columbia Flat-Rate Package',
+        text: 'Duct, dryer, or both for this Columbia MD address — the quoted number is what you pay.',
       },
       {
-        title: 'Source-Removal Cleaning',
-        text: 'NADCA-style agitation under negative pressure with HEPA capture.',
+        title: 'Run HEPA Cleaning in Columbia',
+        text: 'We agitate and vacuum supplies, returns, and registers under negative pressure in your Columbia system.',
       },
       {
-        title: 'Photo Proof',
-        text: 'Duct jobs include before-and-after images you can keep.',
+        title: 'Photos Before We Leave Columbia',
+        text: 'Before/after photos, filter tips, and dryer-vent interval tailored to Columbia seasons.',
       },
     ],
   },
   faqIntro: 'Columbia questions — call (301) 809-4544 (dispatch: Bethesda).',
   faq: [
     {
-      q: 'Do you have a storefront in Columbia?',
-      a: 'No. Columbia jobs are scheduled from our Bethesda office at 7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814. Call (301) 809-4544.',
+      q: 'Who handles air duct cleaning appointments in Columbia?',
+      a: 'Columbia jobs leave from our Bethesda, MD office at 7815 Old Georgetown Rd Ste 201. Call (301) 809-4544 to book flat-rate air duct or dryer vent cleaning.',
     },
     {
-      q: 'Do you clean dryer vents in Columbia townhomes and condos?',
-      a: 'Yes — full length to the exterior cap. Stacked laundry is common on this route. See dryer vent cleaning for details.',
+      q: 'What should I prepare before the Columbia crew arrives?',
+      a: 'In Columbia, clear a path to the air handler and dryer before we arrive — basement trunks and dryer closets especially. Share gate or parking notes if your street needs them.',
     },
     {
-      q: 'Do you bring portable equipment for tight Columbia streets?',
-      a: 'Yes. When a truck cannot stage, we use portable HEPA systems sized for the home.',
+      q: 'How long does air duct cleaning take in Columbia?',
+      a: 'Most Columbia single-system houses finish in about 2–3 hours. Older trunks with additions can add time after inspection.',
     },
     {
-      q: 'Do you serve commercial spaces in Columbia?',
-      a: 'Light commercial and small offices are available by quote. Call us with square footage and system count.',
+      q: 'Are Columbia air duct and dryer vent prices flat-rate?',
+      a: 'Yes. Columbia residential packages are flat-rate from the Bethesda office — the number we confirm before work starts is what you pay. No per-vent counting.',
     },
     {
-      q: 'Can I stay home during the Columbia appointment?',
-      a: 'Yes. Stay clear of active equipment; we protect floors in the work path.',
+      q: 'Can duct and dryer vent cleaning be done the same day in Columbia?',
+      a: 'In Columbia, yes — when you book the combined package or both services up front. Call (301) 809-4544 and we stage the Bethesda crew for one visit to your street.',
+    },
+    {
+      q: 'How far in advance should Columbia homeowners book?',
+      a: 'Columbia is a longer run from Bethesda. Booking several days ahead keeps arrival windows realistic; call (301) 809-4544 for the next open Columbia slot.',
     },
   ],
 }

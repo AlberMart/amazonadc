@@ -135,8 +135,20 @@
   ],
   "faq": [
     {
-      "q": "Who serves your area?",
-      "a": "Amazon Air Duct Cleaning schedules your area from Burke or Bethesda. Book on the location page or call (800) 606-3334."
+      "q": "How often should most homes clean air ducts?",
+      "a": "Every 3–5 years is typical. Pets, renovations, smokers, or allergy households often need the shorter end of that range."
+    },
+    {
+      "q": "How often should dryer vents be cleaned?",
+      "a": "About once a year for most homes. High laundry volume or long vent runs may need service every six months."
+    },
+    {
+      "q": "Does a dirty filter mean the ducts need cleaning?",
+      "a": "A clogged filter is a maintenance issue by itself. If registers refilm quickly after filter changes, the trunks may also need a professional clean."
+    },
+    {
+      "q": "Where do we book in Northern Virginia or Maryland?",
+      "a": "Use the matching city page under /locations or call (800) 606-3334. Flat-rate packages start from our Burke and Bethesda offices."
     }
   ]
 }

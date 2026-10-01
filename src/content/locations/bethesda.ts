@@ -96,56 +96,51 @@ export const bethesda: LocationContentSeed = {
   },
   process: {
     heading: 'Bethesda Intake, Then I-270 and Beltway Routes',
-    intro: 'From the Old Georgetown suite to a Montgomery or Howard County driveway.',
+    intro: 'Arrival windows reflect the drive from Bethesda.',
     steps: [
       {
-        title: 'Online or Phone Intake',
-        text: 'Book at (301) 809-4544. Mention Bethesda so we route from Bethesda.',
+        title: 'Talk Through Your Bethesda Home',
+        text: 'We ask about pets, renovations, and stacked laundry / riser layout common in Bethesda before quoting.',
       },
       {
-        title: 'Pre-Job Notes',
-        text: 'We ask about basement returns, stacked laundry, and any musty registers.',
+        title: 'Confirm the Bethesda Arrival Window',
+        text: 'Morning-of text with a realistic ETA from Bethesda to your Bethesda street.',
       },
       {
-        title: 'On-Site Scope Lock',
-        text: 'No surprise add-ons after we are inside.',
+        title: 'Agree the Bethesda Flat-Rate Package',
+        text: 'Duct, dryer, or both for this Bethesda MD address — the quoted number is what you pay.',
       },
       {
-        title: 'Source-Removal Cleaning',
-        text: 'NADCA-style agitation under negative pressure with HEPA capture.',
+        title: 'Run HEPA Cleaning in Bethesda',
+        text: 'We agitate and vacuum supplies, returns, and registers under negative pressure in your Bethesda system.',
       },
       {
-        title: 'Photo Proof',
-        text: 'Duct jobs include before-and-after images you can keep.',
+        title: 'Photos Before We Leave Bethesda',
+        text: 'Before/after photos, filter tips, and dryer-vent interval tailored to Bethesda seasons.',
       },
     ],
   },
-  faqIntro:
-    'Questions about the Bethesda office. Call (301) 809-4544 — office line (301) 809-4544.',
+  faqIntro: 'Bethesda questions — call (301) 809-4544 (dispatch: Bethesda).',
   faq: [
     {
-      q: 'Where is the Bethesda office?',
-      a: '7815 Old Georgetown Rd, Suite 201, Bethesda, MD 20814. Booking: (301) 809-4544. Office line: (301) 809-4544.',
+      q: 'Who handles air duct cleaning appointments in Bethesda?',
+      a: 'Bethesda jobs leave from our Bethesda, MD office at 7815 Old Georgetown Rd Ste 201. Call (301) 809-4544 to book flat-rate air duct or dryer vent cleaning.',
     },
     {
-      q: 'What services do you offer from Bethesda?',
-      a: 'Air duct cleaning, dryer vent cleaning, and ventilation mold treatment when needed. We do not offer chimney sweeping from this page.',
+      q: 'What should I prepare before the Bethesda crew arrives?',
+      a: 'In Bethesda, clear a path to the air handler and dryer before we arrive — condo/townhome closets and stacked laundry especially. Share gate or parking notes if your street needs them.',
     },
     {
-      q: 'Do you serve Rockville, Silver Spring, and Gaithersburg from Bethesda?',
-      a: 'Yes. See Rockville, Silver Spring, Gaithersburg, and the full list on /locations.',
+      q: 'How long does air duct cleaning take in Bethesda?',
+      a: 'Most Bethesda single-system houses finish in about 2–3 hours. High-rise dryer risers and long laundry closets can add time after inspection.',
     },
     {
-      q: 'When would Burke take a job instead?',
-      a: 'Virginia addresses and many Southeast DC streets often dispatch from Burke. We pick by drive time when you book.',
+      q: 'Are Bethesda air duct and dryer vent prices flat-rate?',
+      a: 'Yes. Bethesda residential packages are flat-rate from the Bethesda office — the number we confirm before work starts is what you pay. No per-vent counting.',
     },
     {
-      q: 'Are prices flat-rate?',
-      a: 'Yes for residential air duct and dryer vent packages. The quote before the job is the price you pay.',
-    },
-    {
-      q: 'How far do you drive from Bethesda?',
-      a: 'Montgomery County is core. Howard and Frederick County jobs are scheduled with realistic drive times — we say so up front.',
+      q: 'Can duct and dryer vent cleaning be done the same day in Bethesda?',
+      a: 'In Bethesda, yes — when you book the combined package or both services up front. Call (301) 809-4544 and we stage the Bethesda crew for one visit to your street.',
     },
   ],
 }

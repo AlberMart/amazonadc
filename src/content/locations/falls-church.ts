@@ -89,51 +89,55 @@ export const fallsChurch: LocationContentSeed = {
   },
   process: {
     heading: 'Tight-Lot Staging From the Burke Office',
-    intro: 'On-street parking plans come with the morning ETA.',
+    intro: 'Same flat-rate flow we use across VA — scoped for Falls Church housing.',
     steps: [
       {
-        title: 'Request a Window',
-        text: 'Call (571) 460-0001 or use the form. We confirm by the next business day.',
+        title: 'Scope the Falls Church System',
+        text: 'Walk the returns and dryer path typical of Falls Church housing so nothing is surprise-priced later.',
       },
       {
-        title: 'Share Access Details',
-        text: 'Gates, condo loading, alley parking, and HOA rules for Falls Church help us stage correctly.',
+        title: 'Stage Equipment for Falls Church',
+        text: 'If the Falls Church street is tight, we switch to portable HEPA sized for local lots and townhomes.',
       },
       {
-        title: 'Inspect Before Cleaning',
-        text: 'We walk ducts and the dryer run with you and agree scope before equipment comes in.',
+        title: 'Clean Falls Church Ducts End to End',
+        text: 'Rotary brushes plus negative-pressure vacuum through the trunks serving this Falls Church home.',
       },
       {
-        title: 'Protect and Clean',
-        text: 'Floors are protected. HEPA negative pressure pulls debris into the vacuum, not living spaces.',
+        title: 'Clear the Falls Church Dryer Run',
+        text: 'Full-length brushing to the exterior cap when dryer service is on the Falls Church ticket.',
       },
       {
-        title: 'Review Results',
-        text: 'You keep before-and-after photos on duct jobs. We leave when you are satisfied.',
+        title: 'Falls Church Walk-Through',
+        text: 'Review photos, answer questions, and leave booking notes for (571) 460-0001 if you want a Falls Church follow-up.',
       },
     ],
   },
   faqIntro: 'Falls Church questions — call (571) 460-0001 (dispatch: Burke).',
   faq: [
     {
-      q: 'Which office covers Falls Church?',
-      a: 'Burke — 5641 Burke Centre Pkwy Ste 119, Burke, VA 22015. Booking line (571) 460-0001.',
+      q: 'Who handles air duct cleaning appointments in Falls Church?',
+      a: 'Falls Church jobs leave from our Burke, VA office at 5641 Burke Centre Pkwy Ste 119. Call (571) 460-0001 to book flat-rate air duct or dryer vent cleaning.',
     },
     {
-      q: 'How long does air duct cleaning take in a typical Falls Church home?',
-      a: 'Most single-system houses take about 2–3 hours. Townhomes with long dryer runs can run longer after inspection.',
+      q: 'What should I prepare before the Falls Church crew arrives?',
+      a: 'Falls Church prep is simple: open access to returns and the dryer, move fragile items near vents, and tell us about pets or recent renovations when you book at (571) 460-0001.',
     },
     {
-      q: 'Are Falls Church residential prices flat-rate?',
-      a: 'Yes for air duct and dryer vent packages. The quote before we start is the price you pay.',
+      q: 'How long does air duct cleaning take in Falls Church?',
+      a: 'Plan on roughly half a morning for a typical Falls Church home. Same-day dryer vent add-ons are often possible if booked together.',
     },
     {
-      q: 'Can ducts and dryer vents be done the same day in Falls Church?',
-      a: 'Usually yes if you book the combined package or both services when you schedule.',
+      q: 'Are Falls Church air duct and dryer vent prices flat-rate?',
+      a: 'Yes. Falls Church residential packages are flat-rate from the Burke office — the number we confirm before work starts is what you pay. No per-vent counting.',
     },
     {
-      q: 'Is sanitizing included for Falls Church duct jobs?',
-      a: 'Sanitizing is available when inspection supports it or when you request it — we confirm before applying anything.',
+      q: 'Can duct and dryer vent cleaning be done the same day in Falls Church?',
+      a: 'In Falls Church, yes — when you book the combined package or both services up front. Call (571) 460-0001 and we stage the Burke crew for one visit to your street.',
+    },
+    {
+      q: 'How far in advance should Falls Church homeowners book?',
+      a: 'Peak pollen and summer humidity fill the Falls Church calendar fast. Same-week openings are common — call (571) 460-0001 for the next Burke window serving Falls Church.',
     },
   ],
 }

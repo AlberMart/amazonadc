@@ -90,51 +90,51 @@ export const greatFalls: LocationContentSeed = {
   },
   process: {
     heading: 'Longer Drive Planning From Burke — Said Up Front',
-    intro: 'We quote arrival windows that respect the drive from Burke Centre.',
+    intro: 'From booking at (571) 460-0001 to photos at the door.',
     steps: [
       {
-        title: 'Request a Window',
-        text: 'Call (571) 460-0001 or use the form. We confirm by the next business day.',
+        title: 'Book Great Falls From the Burke Line',
+        text: 'Call (571) 460-0001 or use the form — we confirm Great Falls availability the next business day.',
       },
       {
-        title: 'Share Access Details',
-        text: 'Gates, condo loading, alley parking, and HOA rules for Great Falls help us stage correctly.',
+        title: 'Protect Floors in Your Great Falls Home',
+        text: 'We cover work paths and keep living spaces clear while equipment runs in Great Falls.',
       },
       {
-        title: 'Inspect Before Cleaning',
-        text: 'We walk ducts and the dryer run with you and agree scope before equipment comes in.',
+        title: 'Source-Removal Cleaning for Great Falls',
+        text: 'NADCA-style agitation under HEPA negative pressure — dust leaves in the vacuum, not your Great Falls rooms.',
       },
       {
-        title: 'Protect and Clean',
-        text: 'Floors are protected. HEPA negative pressure pulls debris into the vacuum, not living spaces.',
+        title: 'Optional Sanitizing in Great Falls',
+        text: 'Complimentary Envirocon when requested or when inspection supports it on this Great Falls job.',
       },
       {
-        title: 'Review Results',
-        text: 'You keep before-and-after photos on duct jobs. We leave when you are satisfied.',
+        title: 'Close Out the Great Falls Visit',
+        text: 'Photos on file, flat-rate invoice, and tips for Great Falls pollen or humidity seasons.',
       },
     ],
   },
   faqIntro: 'Great Falls questions — call (571) 460-0001 (dispatch: Burke).',
   faq: [
     {
-      q: 'Where does the Great Falls crew stage from?',
-      a: 'Our Burke office (5641 Burke Centre Pkwy Ste 119, Burke, VA 22015). Office line (571) 460-0001; booking (571) 460-0001.',
+      q: 'Who handles air duct cleaning appointments in Great Falls?',
+      a: 'Great Falls jobs leave from our Burke, VA office at 5641 Burke Centre Pkwy Ste 119. Call (571) 460-0001 to book flat-rate air duct or dryer vent cleaning.',
     },
     {
-      q: 'How often should Great Falls, VA homes clean ducts?',
-      a: 'Every 3–5 years for most homes. Pets, renovations, and humid basements often need the shorter end. Dryer vents about yearly.',
+      q: 'What should I prepare before the Great Falls crew arrives?',
+      a: 'For Great Falls VA homes, we need clear runs to the air handler. Note HOA codes on the confirmation text.',
     },
     {
-      q: 'What should I prepare before the crew arrives in Great Falls?',
-      a: 'Clear access to returns, the air handler, and the dryer. Note HOA gate codes if needed.',
+      q: 'How long does air duct cleaning take in Great Falls?',
+      a: 'Great Falls duct cleaning usually takes 2–3 hours for one system. Multi-system or heavily packed dryer vents are scoped before we start so the quote stays flat-rate.',
     },
     {
-      q: 'How long does air duct cleaning take in a typical Great Falls home?',
-      a: 'Most single-system houses take about 2–3 hours. Townhomes with long dryer runs can run longer after inspection.',
+      q: 'Are Great Falls air duct and dryer vent prices flat-rate?',
+      a: 'Yes. Great Falls residential packages are flat-rate from the Burke office — the number we confirm before work starts is what you pay. No per-vent counting.',
     },
     {
-      q: 'Are Great Falls residential prices flat-rate?',
-      a: 'Yes for air duct and dryer vent packages. The quote before we start is the price you pay.',
+      q: 'Can duct and dryer vent cleaning be done the same day in Great Falls?',
+      a: 'In Great Falls, yes — when you book the combined package or both services up front. Call (571) 460-0001 and we stage the Burke crew for one visit to your street.',
     },
   ],
 }

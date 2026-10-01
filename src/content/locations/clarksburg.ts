@@ -90,51 +90,55 @@ export const clarksburg: LocationContentSeed = {
   },
   process: {
     heading: 'North I-270 Dispatch From Bethesda',
-    intro: 'If drywall work is still active next door, we may suggest waiting.',
+    intro: 'Same flat-rate flow we use across MD — scoped for Clarksburg housing.',
     steps: [
       {
-        title: 'Online or Phone Intake',
-        text: 'Book at (301) 809-4544. Mention Clarksburg so we route from Bethesda.',
+        title: 'Scope the Clarksburg System',
+        text: 'Walk the returns and dryer path typical of Clarksburg housing so nothing is surprise-priced later.',
       },
       {
-        title: 'Pre-Job Notes',
-        text: 'We ask about basement returns, stacked laundry, and any musty registers.',
+        title: 'Stage Equipment for Clarksburg',
+        text: 'If the Clarksburg street is tight, we switch to portable HEPA sized for local lots and townhomes.',
       },
       {
-        title: 'On-Site Scope Lock',
-        text: 'No surprise add-ons after we are inside.',
+        title: 'Clean Clarksburg Ducts End to End',
+        text: 'Rotary brushes plus negative-pressure vacuum through the trunks serving this Clarksburg home.',
       },
       {
-        title: 'Source-Removal Cleaning',
-        text: 'NADCA-style agitation under negative pressure with HEPA capture.',
+        title: 'Clear the Clarksburg Dryer Run',
+        text: 'Full-length brushing to the exterior cap when dryer service is on the Clarksburg ticket.',
       },
       {
-        title: 'Photo Proof',
-        text: 'Duct jobs include before-and-after images you can keep.',
+        title: 'Clarksburg Walk-Through',
+        text: 'Review photos, answer questions, and leave booking notes for (301) 809-4544 if you want a Clarksburg follow-up.',
       },
     ],
   },
   faqIntro: 'Clarksburg questions — call (301) 809-4544 (dispatch: Bethesda).',
   faq: [
     {
-      q: 'Which office covers Clarksburg?',
-      a: 'Bethesda — 7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814. Booking line (301) 809-4544.',
+      q: 'Who handles air duct cleaning appointments in Clarksburg?',
+      a: 'Clarksburg jobs leave from our Bethesda, MD office at 7815 Old Georgetown Rd Ste 201. Call (301) 809-4544 to book flat-rate air duct or dryer vent cleaning.',
     },
     {
-      q: 'Can ducts and dryer vents be done the same day in Clarksburg?',
-      a: 'Usually yes if you book the combined package or both services when you schedule.',
+      q: 'What should I prepare before the Clarksburg crew arrives?',
+      a: 'Clarksburg prep is simple: open access to returns and the dryer, move fragile items near vents, and tell us about pets or recent renovations when you book at (301) 809-4544.',
     },
     {
-      q: 'Is sanitizing included for Clarksburg duct jobs?',
-      a: 'Sanitizing is available when inspection supports it or when you request it — we confirm before applying anything.',
+      q: 'How long does air duct cleaning take in Clarksburg?',
+      a: 'Plan on roughly half a morning for a typical Clarksburg home. Same-day dryer vent add-ons are often possible if booked together.',
     },
     {
-      q: 'Do you clean dryer vents in Clarksburg townhomes and condos?',
-      a: 'Yes — full length to the exterior cap. Stacked laundry is common on this route. See dryer vent cleaning for details.',
+      q: 'Are Clarksburg air duct and dryer vent prices flat-rate?',
+      a: 'Yes. Clarksburg residential packages are flat-rate from the Bethesda office — the number we confirm before work starts is what you pay. No per-vent counting.',
     },
     {
-      q: 'Do you bring portable equipment for tight Clarksburg streets?',
-      a: 'Yes. When a truck cannot stage, we use portable HEPA systems sized for the home.',
+      q: 'Can duct and dryer vent cleaning be done the same day in Clarksburg?',
+      a: 'In Clarksburg, yes — when you book the combined package or both services up front. Call (301) 809-4544 and we stage the Bethesda crew for one visit to your street.',
+    },
+    {
+      q: 'How far in advance should Clarksburg homeowners book?',
+      a: 'Peak pollen and summer humidity fill the Clarksburg calendar fast. Same-week openings are common — call (301) 809-4544 for the next Bethesda window serving Clarksburg.',
     },
   ],
 }

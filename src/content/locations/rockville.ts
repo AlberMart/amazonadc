@@ -89,55 +89,51 @@ export const rockville: LocationContentSeed = {
   },
   process: {
     heading: 'Fifteen Minutes Down Old Georgetown — Then On Site',
-    intro: 'A short Bethesda run; we still confirm basement access and dryer terminations.',
+    intro: 'From booking at (301) 809-4544 to photos at the door.',
     steps: [
       {
-        title: 'Talk Through the Home',
-        text: 'Tell us about pets, renovations, and laundry layout common in Rockville.',
+        title: 'Book Rockville From the Bethesda Line',
+        text: 'Call (301) 809-4544 or use the form — we confirm Rockville availability the next business day.',
       },
       {
-        title: 'Confirm Arrival ETA',
-        text: 'Morning-of text with a realistic window for your street.',
+        title: 'Protect Floors in Your Rockville Home',
+        text: 'We cover work paths and keep living spaces clear while equipment runs in Rockville.',
       },
       {
-        title: 'Agree the Package',
-        text: 'Flat-rate duct and dryer packages — the quoted number is what you pay.',
+        title: 'Source-Removal Cleaning for Rockville',
+        text: 'NADCA-style agitation under HEPA negative pressure — dust leaves in the vacuum, not your Rockville rooms.',
       },
       {
-        title: 'Run the Cleaning',
-        text: 'Truck-mounted or portable HEPA sized for Rockville houses and townhomes.',
+        title: 'Optional Sanitizing in Rockville',
+        text: 'Complimentary Envirocon when requested or when inspection supports it on this Rockville job.',
       },
       {
-        title: 'Final Questions',
-        text: 'Filter tips and dryer-vent interval before we pack up.',
+        title: 'Close Out the Rockville Visit',
+        text: 'Photos on file, flat-rate invoice, and tips for Rockville pollen or humidity seasons.',
       },
     ],
   },
   faqIntro: 'Rockville questions — call (301) 809-4544 (dispatch: Bethesda).',
   faq: [
     {
-      q: 'Where does the Rockville crew stage from?',
-      a: 'Our Bethesda office (7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814). Office line (301) 809-4544; booking (301) 809-4544.',
+      q: 'Who handles air duct cleaning appointments in Rockville?',
+      a: 'Rockville jobs leave from our Bethesda, MD office at 7815 Old Georgetown Rd Ste 201. Call (301) 809-4544 to book flat-rate air duct or dryer vent cleaning.',
     },
     {
-      q: 'Can I stay home during the Rockville appointment?',
-      a: 'Yes. Stay clear of active equipment; we protect floors in the work path.',
+      q: 'What should I prepare before the Rockville crew arrives?',
+      a: 'For Rockville MD homes, we need clear runs to the air handler. Note HOA codes on the confirmation text.',
     },
     {
-      q: 'How often should Rockville, MD homes clean ducts?',
-      a: 'Every 3–5 years for most homes. Pets, renovations, and humid basements often need the shorter end. Dryer vents about yearly.',
+      q: 'How long does air duct cleaning take in Rockville?',
+      a: 'Rockville duct cleaning usually takes 2–3 hours for one system. Multi-system or heavily packed dryer vents are scoped before we start so the quote stays flat-rate.',
     },
     {
-      q: 'What should I prepare before the crew arrives in Rockville?',
-      a: 'Clear access to returns, the air handler, and the dryer. Note HOA gate codes if needed.',
+      q: 'Are Rockville air duct and dryer vent prices flat-rate?',
+      a: 'Yes. Rockville residential packages are flat-rate from the Bethesda office — the number we confirm before work starts is what you pay. No per-vent counting.',
     },
     {
-      q: 'How long does air duct cleaning take in a typical Rockville home?',
-      a: 'Most single-system houses take about 2–3 hours. Townhomes with long dryer runs can run longer after inspection.',
-    },
-    {
-      q: 'Are Rockville residential prices flat-rate?',
-      a: 'Yes for air duct and dryer vent packages. The quote before we start is the price you pay.',
+      q: 'Is sanitizing included with Rockville duct cleaning?',
+      a: 'For Rockville jobs, Envirocon antimicrobial sanitizing is complimentary when you request it or when inspection supports it — we confirm on site before applying anything.',
     },
   ],
 }

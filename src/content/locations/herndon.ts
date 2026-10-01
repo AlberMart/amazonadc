@@ -90,51 +90,51 @@ export const herndon: LocationContentSeed = {
   },
   process: {
     heading: 'Downtown Alleys and Worldgate Gates From Burke',
-    intro: 'We ask about alley parking downtown and gate codes at Worldgate.',
+    intro: 'From booking at (571) 460-0001 to photos at the door.',
     steps: [
       {
-        title: 'Online or Phone Intake',
-        text: 'Book at (571) 460-0001. Mention Herndon so we route from Burke.',
+        title: 'Book Herndon From the Burke Line',
+        text: 'Call (571) 460-0001 or use the form — we confirm Herndon availability the next business day.',
       },
       {
-        title: 'Pre-Job Notes',
-        text: 'We ask about basement returns, stacked laundry, and any musty registers.',
+        title: 'Protect Floors in Your Herndon Home',
+        text: 'We cover work paths and keep living spaces clear while equipment runs in Herndon.',
       },
       {
-        title: 'On-Site Scope Lock',
-        text: 'No surprise add-ons after we are inside.',
+        title: 'Source-Removal Cleaning for Herndon',
+        text: 'NADCA-style agitation under HEPA negative pressure — dust leaves in the vacuum, not your Herndon rooms.',
       },
       {
-        title: 'Source-Removal Cleaning',
-        text: 'NADCA-style agitation under negative pressure with HEPA capture.',
+        title: 'Optional Sanitizing in Herndon',
+        text: 'Complimentary Envirocon when requested or when inspection supports it on this Herndon job.',
       },
       {
-        title: 'Photo Proof',
-        text: 'Duct jobs include before-and-after images you can keep.',
+        title: 'Close Out the Herndon Visit',
+        text: 'Photos on file, flat-rate invoice, and tips for Herndon pollen or humidity seasons.',
       },
     ],
   },
   faqIntro: 'Herndon questions — call (571) 460-0001 (dispatch: Burke).',
   faq: [
     {
-      q: 'Where does the Herndon crew stage from?',
-      a: 'Our Burke office (5641 Burke Centre Pkwy Ste 119, Burke, VA 22015). Office line (571) 460-0001; booking (571) 460-0001.',
+      q: 'Who handles air duct cleaning appointments in Herndon?',
+      a: 'Herndon jobs leave from our Burke, VA office at 5641 Burke Centre Pkwy Ste 119. Call (571) 460-0001 to book flat-rate air duct or dryer vent cleaning.',
     },
     {
-      q: 'Do you serve commercial spaces in Herndon?',
-      a: 'Light commercial and small offices are available by quote. Call us with square footage and system count.',
+      q: 'What should I prepare before the Herndon crew arrives?',
+      a: 'For Herndon VA homes, we need clear runs to the air handler and any unfinished spaces still shedding construction dust. Note HOA codes on the confirmation text.',
     },
     {
-      q: 'Can I stay home during the Herndon appointment?',
-      a: 'Yes. Stay clear of active equipment; we protect floors in the work path.',
+      q: 'How long does air duct cleaning take in Herndon?',
+      a: 'Herndon duct cleaning usually takes 2–3 hours for one system. Multi-system or heavily packed dryer vents are scoped before we start so the quote stays flat-rate.',
     },
     {
-      q: 'How often should Herndon, VA homes clean ducts?',
-      a: 'Every 3–5 years for most homes. Pets, renovations, and humid basements often need the shorter end. Dryer vents about yearly.',
+      q: 'Are Herndon air duct and dryer vent prices flat-rate?',
+      a: 'Yes. Herndon residential packages are flat-rate from the Burke office — the number we confirm before work starts is what you pay. No per-vent counting.',
     },
     {
-      q: 'What should I prepare before the crew arrives in Herndon?',
-      a: 'Clear access to returns, the air handler, and the dryer. Note HOA gate codes if needed.',
+      q: 'Can duct and dryer vent cleaning be done the same day in Herndon?',
+      a: 'In Herndon, yes — when you book the combined package or both services up front. Call (571) 460-0001 and we stage the Burke crew for one visit to your street.',
     },
   ],
 }

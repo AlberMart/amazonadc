@@ -89,55 +89,55 @@ export const frederick: LocationContentSeed = {
   },
   process: {
     heading: 'Longest Regular Maryland Run From Bethesda',
-    intro: 'Arrival windows account for the I-270 distance.',
+    intro: 'Arrival windows reflect the drive from Bethesda.',
     steps: [
       {
-        title: 'Talk Through the Home',
-        text: 'Tell us about pets, renovations, and laundry layout common in Frederick.',
+        title: 'Talk Through Your Frederick Home',
+        text: 'We ask about pets, renovations, and basement or attic air-handler access in Frederick before quoting.',
       },
       {
-        title: 'Confirm Arrival ETA',
-        text: 'Morning-of text with a realistic window for your street.',
+        title: 'Confirm the Frederick Arrival Window',
+        text: 'Morning-of text with a realistic ETA from Bethesda to your Frederick street.',
       },
       {
-        title: 'Agree the Package',
-        text: 'Flat-rate duct and dryer packages — the quoted number is what you pay.',
+        title: 'Agree the Frederick Flat-Rate Package',
+        text: 'Duct, dryer, or both for this Frederick MD address — the quoted number is what you pay.',
       },
       {
-        title: 'Run the Cleaning',
-        text: 'Truck-mounted or portable HEPA sized for Frederick houses and townhomes.',
+        title: 'Run HEPA Cleaning in Frederick',
+        text: 'We agitate and vacuum supplies, returns, and registers under negative pressure in your Frederick system.',
       },
       {
-        title: 'Final Questions',
-        text: 'Filter tips and dryer-vent interval before we pack up.',
+        title: 'Photos Before We Leave Frederick',
+        text: 'Before/after photos, filter tips, and dryer-vent interval tailored to Frederick seasons.',
       },
     ],
   },
   faqIntro: 'Frederick questions — call (301) 809-4544 (dispatch: Bethesda).',
   faq: [
     {
-      q: 'Do you have a storefront in Frederick?',
-      a: 'No. Frederick jobs are scheduled from our Bethesda office at 7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814. Call (301) 809-4544.',
+      q: 'Who handles air duct cleaning appointments in Frederick?',
+      a: 'Frederick jobs leave from our Bethesda, MD office at 7815 Old Georgetown Rd Ste 201. Call (301) 809-4544 to book flat-rate air duct or dryer vent cleaning.',
     },
     {
-      q: 'What should I prepare before the crew arrives in Frederick?',
-      a: 'For downtown brick homes, clear a path to the cellar air handler and note tight alley parking. In Urbana or newer suburbs, share gate codes and dryer closet access.',
+      q: 'What should I prepare before the Frederick crew arrives?',
+      a: 'In Frederick, clear a path to the air handler and dryer before we arrive — basement trunks and dryer closets especially. Share gate or parking notes if your street needs them.',
     },
     {
-      q: 'How long does air duct cleaning take in a typical Frederick home?',
-      a: 'Older downtown houses with unfinished cellars often finish in about 2–3 hours. Newer Urbana townhomes with long dryer runs can take longer after we inspect the vent path.',
+      q: 'How long does air duct cleaning take in Frederick?',
+      a: 'Most Frederick single-system houses finish in about 2–3 hours. Older trunks with additions can add time after inspection.',
     },
     {
-      q: 'Are Frederick residential prices flat-rate?',
-      a: 'Yes. Frederick jobs use the same published Bethesda-office packages — the number we quote before work starts is what you pay, including the farther I-270 drive time.',
+      q: 'Are Frederick air duct and dryer vent prices flat-rate?',
+      a: 'Yes. Frederick residential packages are flat-rate from the Bethesda office — the number we confirm before work starts is what you pay. No per-vent counting.',
     },
     {
-      q: 'Can ducts and dryer vents be done the same day in Frederick?',
-      a: 'Usually yes if you book the combined package or both services when you schedule.',
+      q: 'Is sanitizing included with Frederick duct cleaning?',
+      a: 'For Frederick jobs, Envirocon antimicrobial sanitizing is complimentary when you request it or when inspection supports it — we confirm on site before applying anything.',
     },
     {
-      q: 'Is sanitizing included for Frederick duct jobs?',
-      a: 'Sanitizing is available when inspection supports it or when you request it — we confirm before applying anything.',
+      q: 'How far in advance should Frederick homeowners book?',
+      a: 'Frederick is a longer run from Bethesda. Booking several days ahead keeps arrival windows realistic; call (301) 809-4544 for the next open Frederick slot.',
     },
   ],
 }

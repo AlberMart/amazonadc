@@ -90,51 +90,55 @@ export const kensington: LocationContentSeed = {
   },
   process: {
     heading: 'Short Bethesda Run Into Kensington',
-    intro: 'Basement access and dryer terminations are on the intake list.',
+    intro: 'Same flat-rate flow we use across MD — scoped for Kensington housing.',
     steps: [
       {
-        title: 'Request a Window',
-        text: 'Call (301) 809-4544 or use the form. We confirm by the next business day.',
+        title: 'Scope the Kensington System',
+        text: 'Walk the returns and dryer path typical of Kensington housing so nothing is surprise-priced later.',
       },
       {
-        title: 'Share Access Details',
-        text: 'Gates, condo loading, alley parking, and HOA rules for Kensington help us stage correctly.',
+        title: 'Stage Equipment for Kensington',
+        text: 'If the Kensington street is tight, we switch to portable HEPA sized for local lots and townhomes.',
       },
       {
-        title: 'Inspect Before Cleaning',
-        text: 'We walk ducts and the dryer run with you and agree scope before equipment comes in.',
+        title: 'Clean Kensington Ducts End to End',
+        text: 'Rotary brushes plus negative-pressure vacuum through the trunks serving this Kensington home.',
       },
       {
-        title: 'Protect and Clean',
-        text: 'Floors are protected. HEPA negative pressure pulls debris into the vacuum, not living spaces.',
+        title: 'Clear the Kensington Dryer Run',
+        text: 'Full-length brushing to the exterior cap when dryer service is on the Kensington ticket.',
       },
       {
-        title: 'Review Results',
-        text: 'You keep before-and-after photos on duct jobs. We leave when you are satisfied.',
+        title: 'Kensington Walk-Through',
+        text: 'Review photos, answer questions, and leave booking notes for (301) 809-4544 if you want a Kensington follow-up.',
       },
     ],
   },
   faqIntro: 'Kensington questions — call (301) 809-4544 (dispatch: Bethesda).',
   faq: [
     {
-      q: 'Which office covers Kensington?',
-      a: 'Bethesda — 7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814. Booking line (301) 809-4544.',
+      q: 'Who handles air duct cleaning appointments in Kensington?',
+      a: 'Kensington jobs leave from our Bethesda, MD office at 7815 Old Georgetown Rd Ste 201. Call (301) 809-4544 to book flat-rate air duct or dryer vent cleaning.',
     },
     {
-      q: 'Can ducts and dryer vents be done the same day in Kensington?',
-      a: 'Usually yes if you book the combined package or both services when you schedule.',
+      q: 'What should I prepare before the Kensington crew arrives?',
+      a: 'Kensington prep is simple: open access to returns and the dryer, move fragile items near vents, and tell us about pets or recent renovations when you book at (301) 809-4544.',
     },
     {
-      q: 'Is sanitizing included for Kensington duct jobs?',
-      a: 'Sanitizing is available when inspection supports it or when you request it — we confirm before applying anything.',
+      q: 'How long does air duct cleaning take in Kensington?',
+      a: 'Plan on roughly half a morning for a typical Kensington home. Same-day dryer vent add-ons are often possible if booked together.',
     },
     {
-      q: 'Do you clean dryer vents in Kensington townhomes and condos?',
-      a: 'Yes — full length to the exterior cap. Stacked laundry is common on this route. See dryer vent cleaning for details.',
+      q: 'Are Kensington air duct and dryer vent prices flat-rate?',
+      a: 'Yes. Kensington residential packages are flat-rate from the Bethesda office — the number we confirm before work starts is what you pay. No per-vent counting.',
     },
     {
-      q: 'Do you bring portable equipment for tight Kensington streets?',
-      a: 'Yes. When a truck cannot stage, we use portable HEPA systems sized for the home.',
+      q: 'Can duct and dryer vent cleaning be done the same day in Kensington?',
+      a: 'In Kensington, yes — when you book the combined package or both services up front. Call (301) 809-4544 and we stage the Bethesda crew for one visit to your street.',
+    },
+    {
+      q: 'How far in advance should Kensington homeowners book?',
+      a: 'Peak pollen and summer humidity fill the Kensington calendar fast. Same-week openings are common — call (301) 809-4544 for the next Bethesda window serving Kensington.',
     },
   ],
 }

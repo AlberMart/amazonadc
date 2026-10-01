@@ -85,55 +85,51 @@ export const alexandria: LocationContentSeed = {
   },
   process: {
     heading: 'Narrow-Street Staging Notes for Alexandria Visits',
-    intro: 'We plan alley access and floor protection for plaster and narrow halls.',
+    intro: 'Arrival windows reflect the drive from Burke.',
     steps: [
       {
-        title: 'Talk Through the Home',
-        text: 'Tell us about pets, renovations, and laundry layout common in Alexandria.',
+        title: 'Talk Through Your Alexandria Home',
+        text: 'We ask about pets, renovations, and stacked laundry / riser layout common in Alexandria before quoting.',
       },
       {
-        title: 'Confirm Arrival ETA',
-        text: 'Morning-of text with a realistic window for your street.',
+        title: 'Confirm the Alexandria Arrival Window',
+        text: 'Morning-of text with a realistic ETA from Burke to your Alexandria street.',
       },
       {
-        title: 'Agree the Package',
-        text: 'Flat-rate duct and dryer packages — the quoted number is what you pay.',
+        title: 'Agree the Alexandria Flat-Rate Package',
+        text: 'Duct, dryer, or both for this Alexandria VA address — the quoted number is what you pay.',
       },
       {
-        title: 'Run the Cleaning',
-        text: 'Truck-mounted or portable HEPA sized for Alexandria houses and townhomes.',
+        title: 'Run HEPA Cleaning in Alexandria',
+        text: 'We agitate and vacuum supplies, returns, and registers under negative pressure in your Alexandria system.',
       },
       {
-        title: 'Final Questions',
-        text: 'Filter tips and dryer-vent interval before we pack up.',
+        title: 'Photos Before We Leave Alexandria',
+        text: 'Before/after photos, filter tips, and dryer-vent interval tailored to Alexandria seasons.',
       },
     ],
   },
   faqIntro: 'Alexandria questions — call (571) 460-0001 (dispatch: Burke).',
   faq: [
     {
-      q: 'Do you have a storefront in Alexandria?',
-      a: 'No. Alexandria jobs are scheduled from our Burke office at 5641 Burke Centre Pkwy Ste 119, Burke, VA 22015. Call (571) 460-0001.',
+      q: 'Who handles air duct cleaning appointments in Alexandria?',
+      a: 'Alexandria jobs leave from our Burke, VA office at 5641 Burke Centre Pkwy Ste 119. Call (571) 460-0001 to book flat-rate air duct or dryer vent cleaning.',
     },
     {
-      q: 'Are Alexandria residential prices flat-rate?',
-      a: 'Yes for air duct and dryer vent packages. The quote before we start is the price you pay.',
+      q: 'What should I prepare before the Alexandria crew arrives?',
+      a: 'In Alexandria, clear a path to the air handler and dryer before we arrive — condo/townhome closets and stacked laundry especially. Share gate or parking notes if your street needs them.',
     },
     {
-      q: 'Can ducts and dryer vents be done the same day in Alexandria?',
-      a: 'Usually yes if you book the combined package or both services when you schedule.',
+      q: 'How long does air duct cleaning take in Alexandria?',
+      a: 'Most Alexandria single-system houses finish in about 2–3 hours. High-rise dryer risers and long laundry closets can add time after inspection.',
     },
     {
-      q: 'Is sanitizing included for Alexandria duct jobs?',
-      a: 'Sanitizing is available when inspection supports it or when you request it — we confirm before applying anything.',
+      q: 'Are Alexandria air duct and dryer vent prices flat-rate?',
+      a: 'Yes. Alexandria residential packages are flat-rate from the Burke office — the number we confirm before work starts is what you pay. No per-vent counting.',
     },
     {
-      q: 'Do you clean dryer vents in Alexandria townhomes and condos?',
-      a: 'Yes — full length to the exterior cap. Stacked laundry is common on this route. See dryer vent cleaning for details.',
-    },
-    {
-      q: 'Do you bring portable equipment for tight Alexandria streets?',
-      a: 'Yes. When a truck cannot stage, we use portable HEPA systems sized for the home.',
+      q: 'Is sanitizing included with Alexandria duct cleaning?',
+      a: 'For Alexandria jobs, Envirocon antimicrobial sanitizing is complimentary when you request it or when inspection supports it — we confirm on site before applying anything.',
     },
   ],
 }

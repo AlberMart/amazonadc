@@ -94,51 +94,51 @@ export const arlington: LocationContentSeed = {
   },
   process: {
     heading: 'Metro-Adjacent Scheduling From the Burke Office',
-    intro: 'Garage height and loading rules matter more here than in suburban cul-de-sacs.',
+    intro: 'Arrival windows reflect the drive from Burke.',
     steps: [
       {
-        title: 'Request a Window',
-        text: 'Call (571) 460-0001 or use the form. We confirm by the next business day.',
+        title: 'Talk Through Your Arlington Home',
+        text: 'We ask about pets, renovations, and stacked laundry / riser layout common in Arlington before quoting.',
       },
       {
-        title: 'Share Access Details',
-        text: 'Gates, condo loading, alley parking, and HOA rules for Arlington help us stage correctly.',
+        title: 'Confirm the Arlington Arrival Window',
+        text: 'Morning-of text with a realistic ETA from Burke to your Arlington street.',
       },
       {
-        title: 'Inspect Before Cleaning',
-        text: 'We walk ducts and the dryer run with you and agree scope before equipment comes in.',
+        title: 'Agree the Arlington Flat-Rate Package',
+        text: 'Duct, dryer, or both for this Arlington VA address — the quoted number is what you pay.',
       },
       {
-        title: 'Protect and Clean',
-        text: 'Floors are protected. HEPA negative pressure pulls debris into the vacuum, not living spaces.',
+        title: 'Run HEPA Cleaning in Arlington',
+        text: 'We agitate and vacuum supplies, returns, and registers under negative pressure in your Arlington system.',
       },
       {
-        title: 'Review Results',
-        text: 'You keep before-and-after photos on duct jobs. We leave when you are satisfied.',
+        title: 'Photos Before We Leave Arlington',
+        text: 'Before/after photos, filter tips, and dryer-vent interval tailored to Arlington seasons.',
       },
     ],
   },
   faqIntro: 'Arlington questions — call (571) 460-0001 (dispatch: Burke).',
   faq: [
     {
-      q: 'Which office covers Arlington?',
-      a: 'Burke — 5641 Burke Centre Pkwy Ste 119, Burke, VA 22015. Booking line (571) 460-0001.',
+      q: 'Who handles air duct cleaning appointments in Arlington?',
+      a: 'Arlington jobs leave from our Burke, VA office at 5641 Burke Centre Pkwy Ste 119. Call (571) 460-0001 to book flat-rate air duct or dryer vent cleaning.',
     },
     {
-      q: 'How often should Arlington, VA homes clean ducts?',
-      a: 'Every 3–5 years for most homes. Pets, renovations, and humid basements often need the shorter end. Dryer vents about yearly.',
+      q: 'What should I prepare before the Arlington crew arrives?',
+      a: 'In Arlington, clear a path to the air handler and dryer before we arrive — condo/townhome closets and stacked laundry especially. Share gate or parking notes if your street needs them.',
     },
     {
-      q: 'What should I prepare before the crew arrives in Arlington?',
-      a: 'Clear access to returns, the air handler, and the dryer. Note HOA gate codes if needed.',
+      q: 'How long does air duct cleaning take in Arlington?',
+      a: 'Most Arlington single-system houses finish in about 2–3 hours. High-rise dryer risers and long laundry closets can add time after inspection.',
     },
     {
-      q: 'How long does air duct cleaning take in a typical Arlington home?',
-      a: 'Most single-system houses take about 2–3 hours. Townhomes with long dryer runs can run longer after inspection.',
+      q: 'Are Arlington air duct and dryer vent prices flat-rate?',
+      a: 'Yes. Arlington residential packages are flat-rate from the Burke office — the number we confirm before work starts is what you pay. No per-vent counting.',
     },
     {
-      q: 'Are Arlington residential prices flat-rate?',
-      a: 'Yes for air duct and dryer vent packages. The quote before we start is the price you pay.',
+      q: 'Can duct and dryer vent cleaning be done the same day in Arlington?',
+      a: 'In Arlington, yes — when you book the combined package or both services up front. Call (571) 460-0001 and we stage the Burke crew for one visit to your street.',
     },
   ],
 }

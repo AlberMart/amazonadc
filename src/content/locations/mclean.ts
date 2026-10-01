@@ -89,51 +89,55 @@ export const mclean: LocationContentSeed = {
   },
   process: {
     heading: 'Estate Driveways and Condo Loading From Burke',
-    intro: 'Gate codes and long driveways are normal; we confirm them the morning of.',
+    intro: 'Same flat-rate flow we use across VA — scoped for McLean housing.',
     steps: [
       {
-        title: 'Request a Window',
-        text: 'Call (571) 460-0001 or use the form. We confirm by the next business day.',
+        title: 'Scope the McLean System',
+        text: 'Walk the returns and dryer path typical of McLean housing so nothing is surprise-priced later.',
       },
       {
-        title: 'Share Access Details',
-        text: 'Gates, condo loading, alley parking, and HOA rules for McLean help us stage correctly.',
+        title: 'Stage Equipment for McLean',
+        text: 'If the McLean street is tight, we switch to portable HEPA sized for local lots and townhomes.',
       },
       {
-        title: 'Inspect Before Cleaning',
-        text: 'We walk ducts and the dryer run with you and agree scope before equipment comes in.',
+        title: 'Clean McLean Ducts End to End',
+        text: 'Rotary brushes plus negative-pressure vacuum through the trunks serving this McLean home.',
       },
       {
-        title: 'Protect and Clean',
-        text: 'Floors are protected. HEPA negative pressure pulls debris into the vacuum, not living spaces.',
+        title: 'Clear the McLean Dryer Run',
+        text: 'Full-length brushing to the exterior cap when dryer service is on the McLean ticket.',
       },
       {
-        title: 'Review Results',
-        text: 'You keep before-and-after photos on duct jobs. We leave when you are satisfied.',
+        title: 'McLean Walk-Through',
+        text: 'Review photos, answer questions, and leave booking notes for (571) 460-0001 if you want a McLean follow-up.',
       },
     ],
   },
   faqIntro: 'McLean questions — call (571) 460-0001 (dispatch: Burke).',
   faq: [
     {
-      q: 'Which office covers McLean?',
-      a: 'Burke — 5641 Burke Centre Pkwy Ste 119, Burke, VA 22015. Booking line (571) 460-0001.',
+      q: 'Who handles air duct cleaning appointments in McLean?',
+      a: 'McLean jobs leave from our Burke, VA office at 5641 Burke Centre Pkwy Ste 119. Call (571) 460-0001 to book flat-rate air duct or dryer vent cleaning.',
     },
     {
-      q: 'How often should McLean, VA homes clean ducts?',
-      a: 'Every 3–5 years for most homes. Pets, renovations, and humid basements often need the shorter end. Dryer vents about yearly.',
+      q: 'What should I prepare before the McLean crew arrives?',
+      a: 'McLean prep is simple: open access to returns and the dryer, move fragile items near vents, and tell us about pets or recent renovations when you book at (571) 460-0001.',
     },
     {
-      q: 'What should I prepare before the crew arrives in McLean?',
-      a: 'Clear access to returns, the air handler, and the dryer. Note HOA gate codes if needed.',
+      q: 'How long does air duct cleaning take in McLean?',
+      a: 'Plan on roughly half a morning for a typical McLean home. Same-day dryer vent add-ons are often possible if booked together.',
     },
     {
-      q: 'How long does air duct cleaning take in a typical McLean home?',
-      a: 'Most single-system houses take about 2–3 hours. Townhomes with long dryer runs can run longer after inspection.',
+      q: 'Are McLean air duct and dryer vent prices flat-rate?',
+      a: 'Yes. McLean residential packages are flat-rate from the Burke office — the number we confirm before work starts is what you pay. No per-vent counting.',
     },
     {
-      q: 'Are McLean residential prices flat-rate?',
-      a: 'Yes for air duct and dryer vent packages. The quote before we start is the price you pay.',
+      q: 'Can duct and dryer vent cleaning be done the same day in McLean?',
+      a: 'In McLean, yes — when you book the combined package or both services up front. Call (571) 460-0001 and we stage the Burke crew for one visit to your street.',
+    },
+    {
+      q: 'How far in advance should McLean homeowners book?',
+      a: 'Peak pollen and summer humidity fill the McLean calendar fast. Same-week openings are common — call (571) 460-0001 for the next Burke window serving McLean.',
     },
   ],
 }

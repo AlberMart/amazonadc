@@ -89,51 +89,51 @@ export const oakton: LocationContentSeed = {
   },
   process: {
     heading: 'Mid-Fairfax Timing From the Burke Office',
-    intro: 'We confirm driveway access and basement returns when you book.',
+    intro: 'Arrival windows reflect the drive from Burke.',
     steps: [
       {
-        title: 'Online or Phone Intake',
-        text: 'Book at (571) 460-0001. Mention Oakton so we route from Burke.',
+        title: 'Talk Through Your Oakton Home',
+        text: 'We ask about pets, renovations, and basement or attic air-handler access in Oakton before quoting.',
       },
       {
-        title: 'Pre-Job Notes',
-        text: 'We ask about basement returns, stacked laundry, and any musty registers.',
+        title: 'Confirm the Oakton Arrival Window',
+        text: 'Morning-of text with a realistic ETA from Burke to your Oakton street.',
       },
       {
-        title: 'On-Site Scope Lock',
-        text: 'No surprise add-ons after we are inside.',
+        title: 'Agree the Oakton Flat-Rate Package',
+        text: 'Duct, dryer, or both for this Oakton VA address — the quoted number is what you pay.',
       },
       {
-        title: 'Source-Removal Cleaning',
-        text: 'NADCA-style agitation under negative pressure with HEPA capture.',
+        title: 'Run HEPA Cleaning in Oakton',
+        text: 'We agitate and vacuum supplies, returns, and registers under negative pressure in your Oakton system.',
       },
       {
-        title: 'Photo Proof',
-        text: 'Duct jobs include before-and-after images you can keep.',
+        title: 'Photos Before We Leave Oakton',
+        text: 'Before/after photos, filter tips, and dryer-vent interval tailored to Oakton seasons.',
       },
     ],
   },
   faqIntro: 'Oakton questions — call (571) 460-0001 (dispatch: Burke).',
   faq: [
     {
-      q: 'Do you have a storefront in Oakton?',
-      a: 'No. Oakton jobs are scheduled from our Burke office at 5641 Burke Centre Pkwy Ste 119, Burke, VA 22015. Call (571) 460-0001.',
+      q: 'Who handles air duct cleaning appointments in Oakton?',
+      a: 'Oakton jobs leave from our Burke, VA office at 5641 Burke Centre Pkwy Ste 119. Call (571) 460-0001 to book flat-rate air duct or dryer vent cleaning.',
     },
     {
-      q: 'Do you clean dryer vents in Oakton townhomes and condos?',
-      a: 'Yes — full length to the exterior cap. Stacked laundry is common on this route. See dryer vent cleaning for details.',
+      q: 'What should I prepare before the Oakton crew arrives?',
+      a: 'In Oakton, clear a path to the air handler and dryer before we arrive — basement trunks and dryer closets especially. Share gate or parking notes if your street needs them.',
     },
     {
-      q: 'Do you bring portable equipment for tight Oakton streets?',
-      a: 'Yes. When a truck cannot stage, we use portable HEPA systems sized for the home.',
+      q: 'How long does air duct cleaning take in Oakton?',
+      a: 'Most Oakton single-system houses finish in about 2–3 hours. Older trunks with additions can add time after inspection.',
     },
     {
-      q: 'Do you serve commercial spaces in Oakton?',
-      a: 'Light commercial and small offices are available by quote. Call us with square footage and system count.',
+      q: 'Are Oakton air duct and dryer vent prices flat-rate?',
+      a: 'Yes. Oakton residential packages are flat-rate from the Burke office — the number we confirm before work starts is what you pay. No per-vent counting.',
     },
     {
-      q: 'Can I stay home during the Oakton appointment?',
-      a: 'Yes. Stay clear of active equipment; we protect floors in the work path.',
+      q: 'Can duct and dryer vent cleaning be done the same day in Oakton?',
+      a: 'In Oakton, yes — when you book the combined package or both services up front. Call (571) 460-0001 and we stage the Burke crew for one visit to your street.',
     },
   ],
 }

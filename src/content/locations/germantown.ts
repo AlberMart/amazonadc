@@ -15,7 +15,7 @@ export const germantown: LocationContentSeed = {
   servedBy: 'bethesda',
   sectionLayout: 'leanNoOffers',
   about: {
-    heading: 'I-270 Townhomes, Milestone Stacks, and North Corridor Dust',
+    heading: 'I-270 Townhomes, Milestone Stacks, and North Corridor Film',
     paragraphs: [
       'Germantown sits on Montgomery County’s I-270 spine north of Gaithersburg: Milestone and Town Center, Waters Landing, Clopper Road, then streets that keep filling with new HOA clusters. A lot of the stock is 1980s–2000s townhomes and split-levels with mechanical closets and long dryer runs. Those closets were never meant to hold a decade of corridor grit.',
       'I-270 and the construction cranes do the rest. Traffic dust, brake dust, and drywall from the next pad all ride the same returns. Filters catch some of it. Registers still gray out a week after you wipe them. Humid Maryland summers add a sticky film on cool supply trunks so the next cycle blows the mix back upstairs.',
@@ -89,51 +89,55 @@ export const germantown: LocationContentSeed = {
   },
   process: {
     heading: 'Further Up I-270 — Still Bethesda Dispatch',
-    intro: 'HOA access notes help us stage without circling the community.',
+    intro: 'Same flat-rate flow we use across MD — scoped for Germantown housing.',
     steps: [
       {
-        title: 'Request a Window',
-        text: 'Call (301) 809-4544 or use the form. We confirm by the next business day.',
+        title: 'Scope the Germantown System',
+        text: 'Walk the returns and dryer path typical of Germantown housing so nothing is surprise-priced later.',
       },
       {
-        title: 'Share Access Details',
-        text: 'Gates, condo loading, alley parking, and HOA rules for Germantown help us stage correctly.',
+        title: 'Stage Equipment for Germantown',
+        text: 'If the Germantown street is tight, we switch to portable HEPA sized for local lots and townhomes.',
       },
       {
-        title: 'Inspect Before Cleaning',
-        text: 'We walk ducts and the dryer run with you and agree scope before equipment comes in.',
+        title: 'Clean Germantown Ducts End to End',
+        text: 'Rotary brushes plus negative-pressure vacuum through the trunks serving this Germantown home.',
       },
       {
-        title: 'Protect and Clean',
-        text: 'Floors are protected. HEPA negative pressure pulls debris into the vacuum, not living spaces.',
+        title: 'Clear the Germantown Dryer Run',
+        text: 'Full-length brushing to the exterior cap when dryer service is on the Germantown ticket.',
       },
       {
-        title: 'Review Results',
-        text: 'You keep before-and-after photos on duct jobs. We leave when you are satisfied.',
+        title: 'Germantown Walk-Through',
+        text: 'Review photos, answer questions, and leave booking notes for (301) 809-4544 if you want a Germantown follow-up.',
       },
     ],
   },
   faqIntro: 'Germantown questions — call (301) 809-4544 (dispatch: Bethesda).',
   faq: [
     {
-      q: 'Do you have a storefront in Germantown?',
-      a: 'No. Germantown jobs are scheduled from our Bethesda office at 7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814. Call (301) 809-4544.',
+      q: 'Who handles air duct cleaning appointments in Germantown?',
+      a: 'Germantown jobs leave from our Bethesda, MD office at 7815 Old Georgetown Rd Ste 201. Call (301) 809-4544 to book flat-rate air duct or dryer vent cleaning.',
     },
     {
-      q: 'Do you clean dryer vents in Germantown townhomes and condos?',
-      a: 'Yes — full length to the exterior cap. Stacked laundry is common on this route. See dryer vent cleaning for details.',
+      q: 'What should I prepare before the Germantown crew arrives?',
+      a: 'Germantown prep is simple: open access to returns and the dryer, move fragile items near vents, and tell us about pets or recent renovations when you book at (301) 809-4544.',
     },
     {
-      q: 'Do you bring portable equipment for tight Germantown streets?',
-      a: 'Yes. When a truck cannot stage, we use portable HEPA systems sized for the home.',
+      q: 'How long does air duct cleaning take in Germantown?',
+      a: 'Plan on roughly half a morning for a typical Germantown home. Same-day dryer vent add-ons are often possible if booked together.',
     },
     {
-      q: 'Do you serve commercial spaces in Germantown?',
-      a: 'Light commercial and small offices are available by quote. Call us with square footage and system count.',
+      q: 'Are Germantown air duct and dryer vent prices flat-rate?',
+      a: 'Yes. Germantown residential packages are flat-rate from the Bethesda office — the number we confirm before work starts is what you pay. No per-vent counting.',
     },
     {
-      q: 'Can I stay home during the Germantown appointment?',
-      a: 'Yes. Stay clear of active equipment; we protect floors in the work path.',
+      q: 'Can duct and dryer vent cleaning be done the same day in Germantown?',
+      a: 'In Germantown, yes — when you book the combined package or both services up front. Call (301) 809-4544 and we stage the Bethesda crew for one visit to your street.',
+    },
+    {
+      q: 'How far in advance should Germantown homeowners book?',
+      a: 'Peak pollen and summer humidity fill the Germantown calendar fast. Same-week openings are common — call (301) 809-4544 for the next Bethesda window serving Germantown.',
     },
   ],
 }

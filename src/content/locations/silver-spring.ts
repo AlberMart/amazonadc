@@ -90,55 +90,51 @@ export const silverSpring: LocationContentSeed = {
   },
   process: {
     heading: 'Beltway-Adjacent Timing From Bethesda',
-    intro: 'Street parking and mid-rise loading are planned before arrival.',
+    intro: 'From booking at (301) 809-4544 to photos at the door.',
     steps: [
       {
-        title: 'Talk Through the Home',
-        text: 'Tell us about pets, renovations, and laundry layout common in Silver Spring.',
+        title: 'Book Silver Spring From the Bethesda Line',
+        text: 'Call (301) 809-4544 or use the form — we confirm Silver Spring availability the next business day.',
       },
       {
-        title: 'Confirm Arrival ETA',
-        text: 'Morning-of text with a realistic window for your street.',
+        title: 'Protect Floors in Your Silver Spring Home',
+        text: 'We cover work paths and keep living spaces clear while equipment runs in Silver Spring.',
       },
       {
-        title: 'Agree the Package',
-        text: 'Flat-rate duct and dryer packages — the quoted number is what you pay.',
+        title: 'Source-Removal Cleaning for Silver Spring',
+        text: 'NADCA-style agitation under HEPA negative pressure — dust leaves in the vacuum, not your Silver Spring rooms.',
       },
       {
-        title: 'Run the Cleaning',
-        text: 'Truck-mounted or portable HEPA sized for Silver Spring houses and townhomes.',
+        title: 'Optional Sanitizing in Silver Spring',
+        text: 'Complimentary Envirocon when requested or when inspection supports it on this Silver Spring job.',
       },
       {
-        title: 'Final Questions',
-        text: 'Filter tips and dryer-vent interval before we pack up.',
+        title: 'Close Out the Silver Spring Visit',
+        text: 'Photos on file, flat-rate invoice, and tips for Silver Spring pollen or humidity seasons.',
       },
     ],
   },
   faqIntro: 'Silver Spring questions — call (301) 809-4544 (dispatch: Bethesda).',
   faq: [
     {
-      q: 'Where does the Silver Spring crew stage from?',
-      a: 'Our Bethesda office (7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814). Office line (301) 809-4544; booking (301) 809-4544.',
+      q: 'Who handles air duct cleaning appointments in Silver Spring?',
+      a: 'Silver Spring jobs leave from our Bethesda, MD office at 7815 Old Georgetown Rd Ste 201. Call (301) 809-4544 to book flat-rate air duct or dryer vent cleaning.',
     },
     {
-      q: 'Can I stay home during the Silver Spring appointment?',
-      a: 'Yes. Stay clear of active equipment; we protect floors in the work path.',
+      q: 'What should I prepare before the Silver Spring crew arrives?',
+      a: 'For Silver Spring MD homes, we need clear runs to the air handler. Note HOA codes on the confirmation text.',
     },
     {
-      q: 'How often should Silver Spring, MD homes clean ducts?',
-      a: 'Every 3–5 years for most homes. Pets, renovations, and humid basements often need the shorter end. Dryer vents about yearly.',
+      q: 'How long does air duct cleaning take in Silver Spring?',
+      a: 'Silver Spring duct cleaning usually takes 2–3 hours for one system. Multi-system or heavily packed dryer vents are scoped before we start so the quote stays flat-rate.',
     },
     {
-      q: 'What should I prepare before the crew arrives in Silver Spring?',
-      a: 'Clear access to returns, the air handler, and the dryer. Note HOA gate codes if needed.',
+      q: 'Are Silver Spring air duct and dryer vent prices flat-rate?',
+      a: 'Yes. Silver Spring residential packages are flat-rate from the Bethesda office — the number we confirm before work starts is what you pay. No per-vent counting.',
     },
     {
-      q: 'How long does air duct cleaning take in a typical Silver Spring home?',
-      a: 'Most single-system houses take about 2–3 hours. Townhomes with long dryer runs can run longer after inspection.',
-    },
-    {
-      q: 'Are Silver Spring residential prices flat-rate?',
-      a: 'Yes for air duct and dryer vent packages. The quote before we start is the price you pay.',
+      q: 'Is sanitizing included with Silver Spring duct cleaning?',
+      a: 'For Silver Spring jobs, Envirocon antimicrobial sanitizing is complimentary when you request it or when inspection supports it — we confirm on site before applying anything.',
     },
   ],
 }

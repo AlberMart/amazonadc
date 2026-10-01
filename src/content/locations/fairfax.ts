@@ -89,55 +89,51 @@ export const fairfax: LocationContentSeed = {
   },
   process: {
     heading: 'Short Run Up 123 From the Burke Office',
-    intro: 'A short Burke dispatch; we still confirm HOA rules when they apply.',
+    intro: 'From booking at (571) 460-0001 to photos at the door.',
     steps: [
       {
-        title: 'Talk Through the Home',
-        text: 'Tell us about pets, renovations, and laundry layout common in Fairfax.',
+        title: 'Book Fairfax From the Burke Line',
+        text: 'Call (571) 460-0001 or use the form — we confirm Fairfax availability the next business day.',
       },
       {
-        title: 'Confirm Arrival ETA',
-        text: 'Morning-of text with a realistic window for your street.',
+        title: 'Protect Floors in Your Fairfax Home',
+        text: 'We cover work paths and keep living spaces clear while equipment runs in Fairfax.',
       },
       {
-        title: 'Agree the Package',
-        text: 'Flat-rate duct and dryer packages — the quoted number is what you pay.',
+        title: 'Source-Removal Cleaning for Fairfax',
+        text: 'NADCA-style agitation under HEPA negative pressure — dust leaves in the vacuum, not your Fairfax rooms.',
       },
       {
-        title: 'Run the Cleaning',
-        text: 'Truck-mounted or portable HEPA sized for Fairfax houses and townhomes.',
+        title: 'Optional Sanitizing in Fairfax',
+        text: 'Complimentary Envirocon when requested or when inspection supports it on this Fairfax job.',
       },
       {
-        title: 'Final Questions',
-        text: 'Filter tips and dryer-vent interval before we pack up.',
+        title: 'Close Out the Fairfax Visit',
+        text: 'Photos on file, flat-rate invoice, and tips for Fairfax pollen or humidity seasons.',
       },
     ],
   },
   faqIntro: 'Fairfax questions — call (571) 460-0001 (dispatch: Burke).',
   faq: [
     {
-      q: 'Where does the Fairfax crew stage from?',
-      a: 'Our Burke office (5641 Burke Centre Pkwy Ste 119, Burke, VA 22015). Office line (571) 460-0001; booking (571) 460-0001.',
+      q: 'Who handles air duct cleaning appointments in Fairfax?',
+      a: 'Fairfax jobs leave from our Burke, VA office at 5641 Burke Centre Pkwy Ste 119. Call (571) 460-0001 to book flat-rate air duct or dryer vent cleaning.',
     },
     {
-      q: 'Can I stay home during the Fairfax appointment?',
-      a: 'Yes. Stay clear of active equipment; we protect floors in the work path.',
+      q: 'What should I prepare before the Fairfax crew arrives?',
+      a: 'For Fairfax VA homes, we need clear runs to the air handler. Note HOA codes on the confirmation text.',
     },
     {
-      q: 'How often should Fairfax, VA homes clean ducts?',
-      a: 'Every 3–5 years for most homes. Pets, renovations, and humid basements often need the shorter end. Dryer vents about yearly.',
+      q: 'How long does air duct cleaning take in Fairfax?',
+      a: 'Fairfax duct cleaning usually takes 2–3 hours for one system. Multi-system or heavily packed dryer vents are scoped before we start so the quote stays flat-rate.',
     },
     {
-      q: 'What should I prepare before the crew arrives in Fairfax?',
-      a: 'Clear access to returns, the air handler, and the dryer. Note HOA gate codes if needed.',
+      q: 'Are Fairfax air duct and dryer vent prices flat-rate?',
+      a: 'Yes. Fairfax residential packages are flat-rate from the Burke office — the number we confirm before work starts is what you pay. No per-vent counting.',
     },
     {
-      q: 'How long does air duct cleaning take in a typical Fairfax home?',
-      a: 'Most single-system houses take about 2–3 hours. Townhomes with long dryer runs can run longer after inspection.',
-    },
-    {
-      q: 'Are Fairfax residential prices flat-rate?',
-      a: 'Yes for air duct and dryer vent packages. The quote before we start is the price you pay.',
+      q: 'Is sanitizing included with Fairfax duct cleaning?',
+      a: 'For Fairfax jobs, Envirocon antimicrobial sanitizing is complimentary when you request it or when inspection supports it — we confirm on site before applying anything.',
     },
   ],
 }

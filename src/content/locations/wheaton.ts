@@ -89,51 +89,55 @@ export const wheaton: LocationContentSeed = {
   },
   process: {
     heading: 'Inside-Beltway Timing From Bethesda',
-    intro: 'Tight lots mean we confirm street parking with the morning ETA.',
+    intro: 'Same flat-rate flow we use across MD — scoped for Wheaton housing.',
     steps: [
       {
-        title: 'Online or Phone Intake',
-        text: 'Book at (301) 809-4544. Mention Wheaton so we route from Bethesda.',
+        title: 'Scope the Wheaton System',
+        text: 'Walk the returns and dryer path typical of Wheaton housing so nothing is surprise-priced later.',
       },
       {
-        title: 'Pre-Job Notes',
-        text: 'We ask about basement returns, stacked laundry, and any musty registers.',
+        title: 'Stage Equipment for Wheaton',
+        text: 'If the Wheaton street is tight, we switch to portable HEPA sized for local lots and townhomes.',
       },
       {
-        title: 'On-Site Scope Lock',
-        text: 'No surprise add-ons after we are inside.',
+        title: 'Clean Wheaton Ducts End to End',
+        text: 'Rotary brushes plus negative-pressure vacuum through the trunks serving this Wheaton home.',
       },
       {
-        title: 'Source-Removal Cleaning',
-        text: 'NADCA-style agitation under negative pressure with HEPA capture.',
+        title: 'Clear the Wheaton Dryer Run',
+        text: 'Full-length brushing to the exterior cap when dryer service is on the Wheaton ticket.',
       },
       {
-        title: 'Photo Proof',
-        text: 'Duct jobs include before-and-after images you can keep.',
+        title: 'Wheaton Walk-Through',
+        text: 'Review photos, answer questions, and leave booking notes for (301) 809-4544 if you want a Wheaton follow-up.',
       },
     ],
   },
   faqIntro: 'Wheaton questions — call (301) 809-4544 (dispatch: Bethesda).',
   faq: [
     {
-      q: 'Do you have a storefront in Wheaton?',
-      a: 'No. Wheaton jobs are scheduled from our Bethesda office at 7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814. Call (301) 809-4544.',
+      q: 'Who handles air duct cleaning appointments in Wheaton?',
+      a: 'Wheaton jobs leave from our Bethesda, MD office at 7815 Old Georgetown Rd Ste 201. Call (301) 809-4544 to book flat-rate air duct or dryer vent cleaning.',
     },
     {
-      q: 'Do you serve commercial spaces in Wheaton?',
-      a: 'Light commercial and small offices are available by quote. Call us with square footage and system count.',
+      q: 'What should I prepare before the Wheaton crew arrives?',
+      a: 'Wheaton prep is simple: open access to returns and the dryer, move fragile items near vents, and tell us about pets or recent renovations when you book at (301) 809-4544.',
     },
     {
-      q: 'Can I stay home during the Wheaton appointment?',
-      a: 'Yes. Stay clear of active equipment; we protect floors in the work path.',
+      q: 'How long does air duct cleaning take in Wheaton?',
+      a: 'Plan on roughly half a morning for a typical Wheaton home. Same-day dryer vent add-ons are often possible if booked together.',
     },
     {
-      q: 'How often should Wheaton, MD homes clean ducts?',
-      a: 'Every 3–5 years for most homes. Pets, renovations, and humid basements often need the shorter end. Dryer vents about yearly.',
+      q: 'Are Wheaton air duct and dryer vent prices flat-rate?',
+      a: 'Yes. Wheaton residential packages are flat-rate from the Bethesda office — the number we confirm before work starts is what you pay. No per-vent counting.',
     },
     {
-      q: 'What should I prepare before the crew arrives in Wheaton?',
-      a: 'Clear access to returns, the air handler, and the dryer. Note HOA gate codes if needed.',
+      q: 'Can duct and dryer vent cleaning be done the same day in Wheaton?',
+      a: 'In Wheaton, yes — when you book the combined package or both services up front. Call (301) 809-4544 and we stage the Bethesda crew for one visit to your street.',
+    },
+    {
+      q: 'How far in advance should Wheaton homeowners book?',
+      a: 'Peak pollen and summer humidity fill the Wheaton calendar fast. Same-week openings are common — call (301) 809-4544 for the next Bethesda window serving Wheaton.',
     },
   ],
 }
