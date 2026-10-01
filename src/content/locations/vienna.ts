@@ -36,7 +36,7 @@ export const vienna: LocationContentSeed = {
     items: [
       {
         title: 'Air Duct Cleaning for Vienna Colonials',
-        text: 'HEPA-filtered negative-pressure equipment seals to the basement trunk while rotary brushes agitate every supply line, return, and register. Sanitizing is applied when the walkthrough confirms biological buildup. You receive the complete photo set. Schedule [air duct cleaning](/air-duct-cleaning).',
+        text: 'HEPA-filtered negative-pressure equipment seals to the basement trunk while specialized tools agitate every supply line, return, and register. Sanitizing is applied when the walkthrough confirms biological buildup. You receive the complete photo set. Schedule [air duct cleaning](/air-duct-cleaning).',
       },
       {
         title: 'Dryer Vent Clearing',
@@ -103,7 +103,7 @@ export const vienna: LocationContentSeed = {
       },
       {
         title: 'Source-removal cleaning',
-        text: 'NADCA-style agitation under HEPA negative pressure for this Vienna system — dust leaves in the vacuum, not your rooms.',
+        text: 'Source-removal agitation under HEPA negative pressure for this Vienna system — dust leaves in the vacuum, not your rooms.',
       },
       {
         title: 'Optional sanitizing',

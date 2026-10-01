@@ -36,7 +36,7 @@ export const princeWilliam: LocationContentSeed = {
     items: [
       {
         title: 'Air Duct Cleaning for Prince William Homes',
-        text: 'HEPA-filtered negative-pressure equipment seals to the trunk while rotary brushes agitate every supply line, return, and register. Sanitizing follows when the on-site walkthrough identifies biological growth \u2014 common in Occoquan-adjacent basements. You receive the complete before-and-after photo set. Schedule [air duct cleaning](/air-duct-cleaning).',
+        text: 'HEPA-filtered negative-pressure equipment seals to the trunk while specialized tools agitate every supply line, return, and register. Sanitizing follows when the on-site walkthrough identifies biological growth \u2014 common in Occoquan-adjacent basements. You receive the complete before-and-after photo set. Schedule [air duct cleaning](/air-duct-cleaning).',
       },
       {
         title: 'Dryer Vent Service',
@@ -102,7 +102,7 @@ export const princeWilliam: LocationContentSeed = {
       },
       {
         title: 'Source-removal cleaning',
-        text: 'NADCA-style agitation under HEPA negative pressure for this Prince William system — dust leaves in the vacuum, not your rooms.',
+        text: 'Source-removal agitation under HEPA negative pressure for this Prince William system — dust leaves in the vacuum, not your rooms.',
       },
       {
         title: 'Optional sanitizing',

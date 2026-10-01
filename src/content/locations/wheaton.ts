@@ -36,7 +36,7 @@ export const wheaton: LocationContentSeed = {
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
-        text: 'Rotary brush agitation under HEPA negative pressure through supply trunks cut into plaster and joist bays, return plenums, and individual register boots. Wheaton\'s mid-century brick stock carries a layered mix of bus-corridor soot, tree pollen, and pet dander that standard filter changes do not address. Complete scope at [air duct cleaning](/air-duct-cleaning).',
+        text: 'mechanical agitation under HEPA negative pressure through supply trunks cut into plaster and joist bays, return plenums, and individual register boots. Wheaton\'s mid-century brick stock carries a layered mix of bus-corridor soot, tree pollen, and pet dander that standard filter changes do not address. Complete scope at [air duct cleaning](/air-duct-cleaning).',
       },
       {
         title: 'Dryer Vent Cleaning',
@@ -101,7 +101,7 @@ export const wheaton: LocationContentSeed = {
       },
       {
         title: 'Clean ducts end to end',
-        text: 'Rotary brushes plus negative-pressure vacuum through the trunks serving this Wheaton, MD home.',
+        text: 'Specialized tools plus negative-pressure vacuum through the trunks serving this Wheaton, MD home.',
       },
       {
         title: 'Clear the dryer run',

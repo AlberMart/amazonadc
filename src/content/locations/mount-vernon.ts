@@ -36,7 +36,7 @@ export const mountVernon: LocationContentSeed = {
     items: [
       {
         title: 'Air Duct Cleaning for Mt Vernon Homes',
-        text: 'HEPA-filtered negative-pressure equipment seals to the trunk while rotary brushes agitate every supply line, return, and register \u2014 including tight joist-bay runs in mid-century houses. Sanitizing follows when the walkthrough reveals biological growth. You keep the complete photo set. Schedule [air duct cleaning](/air-duct-cleaning).',
+        text: 'HEPA-filtered negative-pressure equipment seals to the trunk while specialized tools agitate every supply line, return, and register \u2014 including tight joist-bay runs in mid-century houses. Sanitizing follows when the walkthrough reveals biological growth. You keep the complete photo set. Schedule [air duct cleaning](/air-duct-cleaning).',
       },
       {
         title: 'Dryer Vent Service',
@@ -102,7 +102,7 @@ export const mountVernon: LocationContentSeed = {
       },
       {
         title: 'Source-removal cleaning',
-        text: 'NADCA-style agitation under HEPA negative pressure for this Mt Vernon system — dust leaves in the vacuum, not your rooms.',
+        text: 'Source-removal agitation under HEPA negative pressure for this Mt Vernon system — dust leaves in the vacuum, not your rooms.',
       },
       {
         title: 'Optional sanitizing',

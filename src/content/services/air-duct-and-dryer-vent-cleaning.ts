@@ -20,7 +20,7 @@ export const airDuctAndDryerVentCleaning: ServiceContent = {
     'Unlimited Supply Vents',
     'Unlimited Intake Vents',
     'Unlimited Main Duct Lines',
-    'Agitating and vacuuming of entire duct system',
+    'Agitating and Vacuuming of Entire Duct System',
     'Complimentary Sanitization of Air Ducts with Envirocon (Upon Request)',
     'Brushing and vacuuming the entire length of the dryer duct',
     'Proof of Cleaning with Before/After photos',
@@ -51,7 +51,7 @@ export const airDuctAndDryerVentCleaning: ServiceContent = {
         'Musty or stale odor when the HVAC system runs',
         'Clothes taking more than one cycle to fully dry',
         'The dryer or laundry room feels unusually hot during operation',
-        'More than 3–5 years since the last professional duct cleaning',
+        'More than 1–3 years since the last professional duct cleaning',
       ],
     },
     {
@@ -72,15 +72,15 @@ export const airDuctAndDryerVentCleaning: ServiceContent = {
     steps: [
       {
         title: 'Inspection',
-        text: 'Technicians assess both the HVAC duct system and the dryer vent before work begins.',
+        text: 'Our technicians assess both the HVAC duct system and the dryer vent before work begins.',
       },
       {
         title: 'Preparation',
         text: 'Floors and furniture near vents are protected. The dryer is disconnected safely.',
       },
       {
-        title: 'Air Duct Cleaning',
-        text: 'High-powered vacuums create negative pressure while rotating brushes dislodge dust and debris from the entire duct system.',
+        title: 'Negative Pressure & Push-and-Pull Cleaning',
+        text: 'High-powered HEPA-filtered vacuums create negative pressure throughout the duct system while our technicians manually utilize specialized tools to dislodge stuck debris from the air ducts.',
       },
       {
         title: 'Dryer Vent Cleaning',
@@ -101,7 +101,7 @@ export const airDuctAndDryerVentCleaning: ServiceContent = {
   faq: [
     {
       q: 'What is included in the $399 bundle service?',
-      a: 'The $399 bundle covers one complete air duct system and one dryer vent: unlimited supply vents, unlimited intake vents, unlimited main duct lines, agitation and vacuuming of the entire duct system, brushing and vacuuming the full length of the dryer duct, complimentary Envirocon sanitization upon request, before/after photos, and a satisfaction guarantee. No extra fees, no hidden charges.',
+      a: 'The $399 bundle covers one complete air duct system and one dryer vent: unlimited supply vents, unlimited intake vents, unlimited main duct lines, agitating and vacuuming of the entire duct system, brushing and vacuuming the full length of the dryer duct, complimentary Envirocon sanitization upon request, before/after photos, and a satisfaction guarantee. No extra fees, no hidden charges.',
     },
     {
       q: 'Why should I clean both my air ducts and dryer vent at the same time?',

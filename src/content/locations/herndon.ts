@@ -36,7 +36,7 @@ export const herndon: LocationContentSeed = {
     items: [
       {
         title: 'Air Duct Cleaning for Herndon Homes',
-        text: 'Negative-pressure HEPA equipment seals to the trunk while rotary brushes work through every supply line, return, and register. Sanitizing is applied when the on-site inspection identifies biological growth. The photo set documenting the before and after condition is included. Schedule [air duct cleaning](/air-duct-cleaning).',
+        text: 'Negative-pressure HEPA equipment seals to the trunk while specialized agitation tools work through every supply line, return, and register. Sanitizing is applied when the on-site inspection identifies biological growth. The photo set documenting the before and after condition is included. Schedule [air duct cleaning](/air-duct-cleaning).',
       },
       {
         title: 'Dryer Vent Service',
@@ -102,7 +102,7 @@ export const herndon: LocationContentSeed = {
       },
       {
         title: 'Source-removal cleaning',
-        text: 'NADCA-style agitation under HEPA negative pressure for this Herndon system — dust leaves in the vacuum, not your rooms.',
+        text: 'Source-removal agitation under HEPA negative pressure for this Herndon system — dust leaves in the vacuum, not your rooms.',
       },
       {
         title: 'Optional sanitizing',

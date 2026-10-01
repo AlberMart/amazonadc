@@ -35,7 +35,7 @@ export const potomac: LocationContentSeed = {
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
-        text: 'HEPA negative pressure and rotary brush agitation through every zone\'s supply trunks, return plenums, and register boots. Potomac estate systems often run fifty or more linear feet of trunk per zone through crawl spaces and between-floor chases — our crew traces each line and documents the extraction. Full scope at [air duct cleaning](/air-duct-cleaning).',
+        text: 'HEPA negative pressure and mechanical agitation through every zone\'s supply trunks, return plenums, and register boots. Potomac estate systems often run fifty or more linear feet of trunk per zone through crawl spaces and between-floor chases — our crew traces each line and documents the extraction. Full scope at [air duct cleaning](/air-duct-cleaning).',
       },
       {
         title: 'Dryer Vent Cleaning',
@@ -101,7 +101,7 @@ export const potomac: LocationContentSeed = {
       },
       {
         title: 'Clean ducts end to end',
-        text: 'Rotary brushes plus negative-pressure vacuum through the trunks serving this Potomac, MD home.',
+        text: 'Specialized tools plus negative-pressure vacuum through the trunks serving this Potomac, MD home.',
       },
       {
         title: 'Clear the dryer run',

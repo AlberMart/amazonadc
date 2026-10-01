@@ -35,7 +35,7 @@ export const gaithersburg: LocationContentSeed = {
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
-        text: 'Rotary brush agitation under HEPA negative pressure through supply trunks, return plenums, and individual register boots. Split-level lower levels around Quince Orchard accumulate Montgomery County canopy pollen on cold trunk surfaces, while Kentlands homes often retain builder-era gypsum dust in their first-floor runs. Scope details at [air duct cleaning](/air-duct-cleaning).',
+        text: 'mechanical agitation under HEPA negative pressure through supply trunks, return plenums, and individual register boots. Split-level lower levels around Quince Orchard accumulate Montgomery County canopy pollen on cold trunk surfaces, while Kentlands homes often retain builder-era gypsum dust in their first-floor runs. Scope details at [air duct cleaning](/air-duct-cleaning).',
       },
       {
         title: 'Dryer Vent Cleaning',
@@ -101,7 +101,7 @@ export const gaithersburg: LocationContentSeed = {
       },
       {
         title: 'Source-removal cleaning',
-        text: 'NADCA-style agitation under HEPA negative pressure for this Gaithersburg system — dust leaves in the vacuum, not your rooms.',
+        text: 'Source-removal agitation under HEPA negative pressure for this Gaithersburg system — dust leaves in the vacuum, not your rooms.',
       },
       {
         title: 'Optional sanitizing',

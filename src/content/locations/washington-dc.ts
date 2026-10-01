@@ -36,7 +36,7 @@ export const washingtonDc: LocationContentSeed = {
     items: [
       {
         title: 'Air Duct Cleaning for DC Homes',
-        text: 'Negative-pressure HEPA equipment seals to the trunk while rotary brushes agitate every supply line, return, and register \u2014 including the tight joist-bay runs common in Capitol Hill and Georgetown row houses. Sanitizing follows when the walkthrough reveals biological growth. You keep the before-and-after photo set. Schedule [air duct cleaning](/air-duct-cleaning) on its own or combined with dryer vent service.',
+        text: 'Negative-pressure HEPA equipment seals to the trunk while specialized tools agitate every supply line, return, and register \u2014 including the tight joist-bay runs common in Capitol Hill and Georgetown row houses. Sanitizing follows when the walkthrough reveals biological growth. You keep the before-and-after photo set. Schedule [air duct cleaning](/air-duct-cleaning) on its own or combined with dryer vent service.',
       },
       {
         title: 'Dryer Vent Cleaning',
@@ -106,7 +106,7 @@ export const washingtonDc: LocationContentSeed = {
       },
       {
         title: 'Clean ducts end to end',
-        text: 'Rotary brushes plus negative-pressure vacuum through the trunks serving this Washington, DC home.',
+        text: 'Specialized tools plus negative-pressure vacuum through the trunks serving this Washington, DC home.',
       },
       {
         title: 'Clear the dryer run',

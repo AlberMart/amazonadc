@@ -35,7 +35,7 @@ export const takomaPark: LocationContentSeed = {
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
-        text: 'HEPA negative pressure and rotary brush agitation through crawl-space trunks, plaster-wall supply lines, and floor registers that were cut into original hardwood decades after the house was built. Takoma Park\'s organic canopy debris and crawl-space moisture create a combination that standard filter replacement alone cannot manage. Scope details at [air duct cleaning](/air-duct-cleaning).',
+        text: 'HEPA negative pressure and mechanical agitation through crawl-space trunks, plaster-wall supply lines, and floor registers that were cut into original hardwood decades after the house was built. Takoma Park\'s organic canopy debris and crawl-space moisture create a combination that standard filter replacement alone cannot manage. Scope details at [air duct cleaning](/air-duct-cleaning).',
       },
       {
         title: 'Dryer Vent Cleaning',
@@ -101,7 +101,7 @@ export const takomaPark: LocationContentSeed = {
       },
       {
         title: 'Source-removal cleaning',
-        text: 'NADCA-style agitation under HEPA negative pressure for this Takoma Park system — dust leaves in the vacuum, not your rooms.',
+        text: 'Source-removal agitation under HEPA negative pressure for this Takoma Park system — dust leaves in the vacuum, not your rooms.',
       },
       {
         title: 'Optional sanitizing',

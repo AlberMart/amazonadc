@@ -36,7 +36,7 @@ export const montgomeryVillage: LocationContentSeed = {
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
-        text: 'HEPA negative pressure and rotary brush agitation through original 1970s trunk lines, return plenums, and register boots in Montgomery Village\'s planned-community townhomes. Five decades of accumulated pollen, household fibers, and lake-proximity moisture film require thorough source-removal extraction, not just surface vacuuming. Full scope at [air duct cleaning](/air-duct-cleaning).',
+        text: 'HEPA negative pressure and mechanical agitation through original 1970s trunk lines, return plenums, and register boots in Montgomery Village\'s planned-community townhomes. Five decades of accumulated pollen, household fibers, and lake-proximity moisture film require thorough source-removal extraction, not just surface vacuuming. Full scope at [air duct cleaning](/air-duct-cleaning).',
       },
       {
         title: 'Dryer Vent Cleaning',

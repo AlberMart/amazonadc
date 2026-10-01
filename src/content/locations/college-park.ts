@@ -35,7 +35,7 @@ export const collegePark: LocationContentSeed = {
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
-        text: 'HEPA negative pressure and rotary brush agitation through supply trunks, return plenums, and register boots carrying the accumulated load of tenant cycles, Route 1 traffic film, and campus canopy pollen. College Park rental systems that have gone multiple years without service often hold significantly more debris than owner-occupied homes in other Montgomery County cities. Scope details at [air duct cleaning](/air-duct-cleaning).',
+        text: 'HEPA negative pressure and mechanical agitation through supply trunks, return plenums, and register boots carrying the accumulated load of tenant cycles, Route 1 traffic film, and campus canopy pollen. College Park rental systems that have gone multiple years without service often hold significantly more debris than owner-occupied homes in other Montgomery County cities. Scope details at [air duct cleaning](/air-duct-cleaning).',
       },
       {
         title: 'Dryer Vent Cleaning',
@@ -101,7 +101,7 @@ export const collegePark: LocationContentSeed = {
       },
       {
         title: 'Clean ducts end to end',
-        text: 'Rotary brushes plus negative-pressure vacuum through the trunks serving this College Park, MD home.',
+        text: 'Specialized tools plus negative-pressure vacuum through the trunks serving this College Park, MD home.',
       },
       {
         title: 'Clear the dryer run',

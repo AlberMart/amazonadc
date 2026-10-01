@@ -2,15 +2,15 @@
   "slug": "how-often-clean-air-ducts",
   "title": "How Often Should You Clean Your Air Ducts?",
   "headline": "How Often Should You Clean Your Air Ducts? Expert Recommendations for Homeowners",
-  "description": "Every 3–5 years is the baseline — but pets, renovations, and allergies shorten that window. Find your home's ideal air duct cleaning schedule.",
+  "description": "Every 1–3 years is the baseline — but pets, renovations, and allergies shorten that window. Find your home's ideal air duct cleaning schedule.",
   "heroImage": "/img/blog/how-often-clean-air-ducts.webp",
   "sections": [
     {
       "id": "how_often",
-      "heading": "The short answer: every 3–5 years, with exceptions",
+      "heading": "The short answer: every 1–3 years, with exceptions",
       "paragraphs": [
         "Your HVAC system pushes heated or cooled air through every duct in the house hundreds of times a day. Each cycle picks up whatever has settled inside — dust, pollen, pet hair, construction debris — and delivers it straight to your living spaces.",
-        "For an average household with no pets, no renovations, and no allergy concerns, a professional cleaning every 3 to 5 years keeps that buildup from affecting comfort or efficiency. But \"average\" doesn't describe every home, and the real question is which end of that range fits yours."
+        "For an average household with no pets, no renovations, and no allergy concerns, a professional cleaning every 1 to 3 years keeps that buildup from affecting comfort or efficiency. But \"average\" doesn't describe every home, and the real question is which end of that range fits yours."
       ],
       "listItems": [],
       "image": "/img/blog/clogged-dryer-vent-lint.webp"
@@ -19,7 +19,7 @@
       "id": "recommended_frequency",
       "heading": "What moves you to the 2–3 year end of the range",
       "paragraphs": [
-        "The 3–5 year recommendation is a starting point. Several factors can cut that interval nearly in half:",
+        "The 1–3 year recommendation is a starting point. Several factors can cut that interval nearly in half:",
         "Homes that check two or more of these boxes often see visible dust return to registers within 2–3 years of cleaning. If that describes your household, the shorter interval pays for itself in comfort and filter savings."
       ],
       "listItems": [
@@ -74,7 +74,7 @@
         "Walk-through inspection — Technicians check every register, the air handler, and the trunk lines to map the system and flag problem areas.",
         "Furniture and floor protection — Drop cloths go down before any equipment comes out.",
         "Negative-pressure hookup — A truck-mounted or portable vacuum connects to the main trunk, pulling air through the entire duct network so loosened debris has nowhere to go but into the collection unit.",
-        "Mechanical agitation — Rotating brushes and compressed-air whips travel through each run, breaking loose compacted dust, pet hair, and construction grit.",
+        "Mechanical agitation — Specialized push-and-pull tools and compressed-air whips travel through each run, breaking loose compacted dust, pet hair, and construction grit.",
         "Register and grille cleaning — Every vent cover comes off, gets cleaned, and goes back on.",
         "Final airflow check — Technicians confirm that every register delivers strong, even airflow before packing up."
       ]
@@ -83,7 +83,7 @@
       "id": "cleaning_vs_diy",
       "heading": "Why a shop vac and a brush kit fall short",
       "paragraphs": [
-        "A hardware-store brush can reach a few feet past the register opening. The trunk line that feeds your entire second floor may run 30 feet through the attic with two elbows along the way. Without commercial negative pressure and full-length rotary brushes, you're cleaning the doorway and leaving the hallway untouched.",
+        "A hardware-store brush can reach a few feet past the register opening. The trunk line that feeds your entire second floor may run 30 feet through the attic with two elbows along the way. Without commercial negative pressure and full-length agitation tools, you're cleaning the doorway and leaving the hallway untouched.",
         "DIY also risks pushing debris deeper into the system or disconnecting flex duct joints in an attic — creating a leak that wastes energy and goes unnoticed for months."
       ],
       "listItems": []
@@ -114,7 +114,7 @@
   "faq": [
     {
       "q": "How often should most homes clean air ducts?",
-      "a": "Every 3–5 years is typical. Pets, renovations, smokers, or allergy households often need the shorter end of that range."
+      "a": "Every 1–3 years is typical. Pets, renovations, smokers, or allergy households often need the shorter end of that range."
     },
     {
       "q": "How often should dryer vents be cleaned?",

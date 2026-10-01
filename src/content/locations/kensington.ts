@@ -36,7 +36,7 @@ export const kensington: LocationContentSeed = {
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
-        text: 'HEPA negative pressure and rotary brush agitation through basement supply trunks, return plenums, and floor registers in Kensington\'s close-in colonials. Shorter trunk lengths concentrate pollen and particulate near the air handler, which means the first few feet of supply carry the heaviest load. Full scope at [air duct cleaning](/air-duct-cleaning).',
+        text: 'HEPA negative pressure and mechanical agitation through basement supply trunks, return plenums, and floor registers in Kensington\'s close-in colonials. Shorter trunk lengths concentrate pollen and particulate near the air handler, which means the first few feet of supply carry the heaviest load. Full scope at [air duct cleaning](/air-duct-cleaning).',
       },
       {
         title: 'Dryer Vent Cleaning',
@@ -102,7 +102,7 @@ export const kensington: LocationContentSeed = {
       },
       {
         title: 'Clean ducts end to end',
-        text: 'Rotary brushes plus negative-pressure vacuum through the trunks serving this Kensington, MD home.',
+        text: 'Specialized tools plus negative-pressure vacuum through the trunks serving this Kensington, MD home.',
       },
       {
         title: 'Clear the dryer run',

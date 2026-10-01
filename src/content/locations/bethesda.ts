@@ -35,7 +35,7 @@ export const bethesda: LocationContentSeed = {
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
-        text: 'Source-removal cleaning with HEPA-filtered negative pressure through every supply run, return plenum, and floor register in the system. Rotary brushes dislodge decades of settled pollen and basement condensation film so the vacuum extracts it — nothing re-enters your living space. Full scope on our [air duct cleaning](/air-duct-cleaning) page.',
+        text: 'Source-removal cleaning with HEPA-filtered negative pressure through every supply run, return plenum, and floor register in the system. Specialized tools dislodge decades of settled pollen and basement condensation film so the vacuum extracts it — nothing re-enters your living space. Full scope on our [air duct cleaning](/air-duct-cleaning) page.',
       },
       {
         title: 'Dryer Vent Cleaning',

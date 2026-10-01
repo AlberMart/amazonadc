@@ -36,7 +36,7 @@ export const fairOaks: LocationContentSeed = {
     items: [
       {
         title: 'Air Duct Cleaning for Fair Oaks Homes',
-        text: 'HEPA-filtered negative-pressure equipment seals to the attic or basement trunk while rotary brushes agitate every supply line, return, and register. Sanitizing follows when the walkthrough confirms biological buildup. You keep the complete before-and-after photo set. Schedule [air duct cleaning](/air-duct-cleaning).',
+        text: 'HEPA-filtered negative-pressure equipment seals to the attic or basement trunk while specialized tools agitate every supply line, return, and register. Sanitizing follows when the walkthrough confirms biological buildup. You keep the complete before-and-after photo set. Schedule [air duct cleaning](/air-duct-cleaning).',
       },
       {
         title: 'Dryer Vent Service',
@@ -102,7 +102,7 @@ export const fairOaks: LocationContentSeed = {
       },
       {
         title: 'Source-removal cleaning',
-        text: 'NADCA-style agitation under HEPA negative pressure for this Fair Oaks system — dust leaves in the vacuum, not your rooms.',
+        text: 'Source-removal agitation under HEPA negative pressure for this Fair Oaks system — dust leaves in the vacuum, not your rooms.',
       },
       {
         title: 'Optional sanitizing',

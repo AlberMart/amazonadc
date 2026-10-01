@@ -36,7 +36,7 @@ export const clarksburg: LocationContentSeed = {
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
-        text: 'Rotary brush agitation under HEPA negative pressure strips builder-era gypsum, joint compound dust, and paint overspray from supply trunks, return plenums, and register boots throughout Clarksburg\'s newer housing stock. Post-construction trunks often hold more debris than decade-old systems because the dust was sealed in from day one. Full details at [air duct cleaning](/air-duct-cleaning).',
+        text: 'mechanical agitation under HEPA negative pressure strips builder-era gypsum, joint compound dust, and paint overspray from supply trunks, return plenums, and register boots throughout Clarksburg\'s newer housing stock. Post-construction trunks often hold more debris than decade-old systems because the dust was sealed in from day one. Full details at [air duct cleaning](/air-duct-cleaning).',
       },
       {
         title: 'Dryer Vent Cleaning',
@@ -102,7 +102,7 @@ export const clarksburg: LocationContentSeed = {
       },
       {
         title: 'Clean ducts end to end',
-        text: 'Rotary brushes plus negative-pressure vacuum through the trunks serving this Clarksburg, MD home.',
+        text: 'Specialized tools plus negative-pressure vacuum through the trunks serving this Clarksburg, MD home.',
       },
       {
         title: 'Clear the dryer run',

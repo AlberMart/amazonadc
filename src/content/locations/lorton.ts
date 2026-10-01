@@ -36,7 +36,7 @@ export const lorton: LocationContentSeed = {
     items: [
       {
         title: 'Air Duct Cleaning for Lorton Homes',
-        text: 'We seal HEPA-filtered negative-pressure equipment to the trunk and agitate every supply line, return, and register with rotary brushes. Sanitizing is included when the on-site walkthrough identifies biological growth \u2014 common where Occoquan humidity meets cool basement metal. You receive the before-and-after photos. Schedule [air duct cleaning](/air-duct-cleaning).',
+        text: 'We seal HEPA-filtered negative-pressure equipment to the trunk and agitate every supply line, return, and register with specialized agitation tools. Sanitizing is included when the on-site walkthrough identifies biological growth \u2014 common where Occoquan humidity meets cool basement metal. You receive the before-and-after photos. Schedule [air duct cleaning](/air-duct-cleaning).',
       },
       {
         title: 'Dryer Vent Service',

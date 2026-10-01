@@ -36,7 +36,7 @@ export const reston: LocationContentSeed = {
     items: [
       {
         title: 'Air Duct Cleaning for Reston Homes',
-        text: 'We connect HEPA-filtered negative-pressure equipment to the trunk and agitate every supply run, return, and register with rotary brushes. Sanitizing follows when the on-site walkthrough reveals biological buildup. The before-and-after photo set is yours to keep. Schedule [air duct cleaning](/air-duct-cleaning).',
+        text: 'We connect HEPA-filtered negative-pressure equipment to the trunk and agitate every supply run, return, and register with specialized agitation tools. Sanitizing follows when the on-site walkthrough reveals biological buildup. The before-and-after photo set is yours to keep. Schedule [air duct cleaning](/air-duct-cleaning).',
       },
       {
         title: 'Dryer Vent Service',

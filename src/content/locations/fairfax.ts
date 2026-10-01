@@ -35,7 +35,7 @@ export const fairfax: LocationContentSeed = {
     items: [
       {
         title: 'Air Duct Cleaning for Fairfax Homes',
-        text: 'HEPA-filtered negative-pressure equipment seals to the trunk while rotary brushes agitate every supply line, return, and register \u2014 including branches where 1980s additions connect to 1950s original metal. Sanitizing follows when the walkthrough identifies biological growth. You receive the full photo set. Schedule [air duct cleaning](/air-duct-cleaning).',
+        text: 'HEPA-filtered negative-pressure equipment seals to the trunk while specialized tools agitate every supply line, return, and register \u2014 including branches where 1980s additions connect to 1950s original metal. Sanitizing follows when the walkthrough identifies biological growth. You receive the full photo set. Schedule [air duct cleaning](/air-duct-cleaning).',
       },
       {
         title: 'Dryer Vent Service',
@@ -101,7 +101,7 @@ export const fairfax: LocationContentSeed = {
       },
       {
         title: 'Source-removal cleaning',
-        text: 'NADCA-style agitation under HEPA negative pressure for this Fairfax system — dust leaves in the vacuum, not your rooms.',
+        text: 'Source-removal agitation under HEPA negative pressure for this Fairfax system — dust leaves in the vacuum, not your rooms.',
       },
       {
         title: 'Optional sanitizing',

@@ -36,7 +36,7 @@ export const frederick: LocationContentSeed = {
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
-        text: 'Rotary brush agitation under HEPA negative pressure through cellar-routed trunks in downtown Frederick and standard suburban runs in Urbana and Adamstown. Historic trunk paths with dead-end pockets receive flexible tooling to reach areas rigid equipment cannot access. Agricultural particulate and Piedmont pollen are extracted from supply surfaces, returns, and register boots. Full scope at [air duct cleaning](/air-duct-cleaning).',
+        text: 'mechanical agitation under HEPA negative pressure through cellar-routed trunks in downtown Frederick and standard suburban runs in Urbana and Adamstown. Historic trunk paths with dead-end pockets receive flexible tooling to reach areas rigid equipment cannot access. Agricultural particulate and Piedmont pollen are extracted from supply surfaces, returns, and register boots. Full scope at [air duct cleaning](/air-duct-cleaning).',
       },
       {
         title: 'Dryer Vent Cleaning',

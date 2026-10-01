@@ -36,7 +36,7 @@ export const ellicottCity: LocationContentSeed = {
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
-        text: 'Rotary brush agitation under HEPA negative pressure through stone-cellar passages, timber-framed trunk bays, and suburban supply runs in Ellicott City\'s hillside neighborhoods. Historic structures require flexible tooling to navigate irregular passages and dead-end pockets that standard rigid equipment cannot reach. Complete scope at [air duct cleaning](/air-duct-cleaning).',
+        text: 'mechanical agitation under HEPA negative pressure through stone-cellar passages, timber-framed trunk bays, and suburban supply runs in Ellicott City\'s hillside neighborhoods. Historic structures require flexible tooling to navigate irregular passages and dead-end pockets that standard rigid equipment cannot reach. Complete scope at [air duct cleaning](/air-duct-cleaning).',
       },
       {
         title: 'Dryer Vent Cleaning',
@@ -102,7 +102,7 @@ export const ellicottCity: LocationContentSeed = {
       },
       {
         title: 'Clean ducts end to end',
-        text: 'Rotary brushes plus negative-pressure vacuum through the trunks serving this Ellicott City, MD home.',
+        text: 'Specialized tools plus negative-pressure vacuum through the trunks serving this Ellicott City, MD home.',
       },
       {
         title: 'Clear the dryer run',

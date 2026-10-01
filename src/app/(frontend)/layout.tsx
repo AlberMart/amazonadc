@@ -83,7 +83,7 @@ export const metadata: Metadata = {
       },
   other: {
     // Bump when shipping content/SEO fixes so AI crawlers can tell cache from fresh HTML.
-    'content-rev': '2026-10-01-r6',
+    'content-rev': '2026-10-01-r7',
   },
   icons: {
     icon: [

@@ -35,7 +35,7 @@ export const germantown: LocationContentSeed = {
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
-        text: 'HEPA negative pressure and rotary brush agitation through every supply trunk, return plenum, and register boot. Milestone townhome closets packed with a decade of corridor grit and Clopper Road colonials carrying canopy pollen both receive documented source-removal cleaning. Full scope at [air duct cleaning](/air-duct-cleaning).',
+        text: 'HEPA negative pressure and mechanical agitation through every supply trunk, return plenum, and register boot. Milestone townhome closets packed with a decade of corridor grit and Clopper Road colonials carrying canopy pollen both receive documented source-removal cleaning. Full scope at [air duct cleaning](/air-duct-cleaning).',
       },
       {
         title: 'Dryer Vent Cleaning',
@@ -101,7 +101,7 @@ export const germantown: LocationContentSeed = {
       },
       {
         title: 'Clean ducts end to end',
-        text: 'Rotary brushes plus negative-pressure vacuum through the trunks serving this Germantown, MD home.',
+        text: 'Specialized tools plus negative-pressure vacuum through the trunks serving this Germantown, MD home.',
       },
       {
         title: 'Clear the dryer run',

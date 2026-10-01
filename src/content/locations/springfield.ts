@@ -35,7 +35,7 @@ export const springfield: LocationContentSeed = {
     items: [
       {
         title: 'Air Duct Cleaning for Springfield Homes',
-        text: 'We seal HEPA-filtered negative-pressure equipment to the trunk and agitate every supply line, return, and register with rotary brushes. Sanitizing follows when the on-site walkthrough identifies biological growth in the system. You keep the before-and-after photo set. Schedule [air duct cleaning](/air-duct-cleaning).',
+        text: 'We seal HEPA-filtered negative-pressure equipment to the trunk and agitate every supply line, return, and register with specialized agitation tools. Sanitizing follows when the on-site walkthrough identifies biological growth in the system. You keep the before-and-after photo set. Schedule [air duct cleaning](/air-duct-cleaning).',
       },
       {
         title: 'Dryer Vent Service',
@@ -101,7 +101,7 @@ export const springfield: LocationContentSeed = {
       },
       {
         title: 'Clean ducts end to end',
-        text: 'Rotary brushes plus negative-pressure vacuum through the trunks serving this Springfield, VA home.',
+        text: 'Specialized tools plus negative-pressure vacuum through the trunks serving this Springfield, VA home.',
       },
       {
         title: 'Clear the dryer run',

@@ -35,7 +35,7 @@ export const alexandria: LocationContentSeed = {
     items: [
       {
         title: 'Full-System Air Duct Cleaning',
-        text: 'Negative-pressure HEPA equipment seals onto the trunk while rotary brushes agitate every supply line, return, and register. An antimicrobial sanitizing pass follows when our on-site inspection finds biological buildup. You receive the before-and-after photo set. Schedule [air duct cleaning](/air-duct-cleaning).',
+        text: 'Negative-pressure HEPA equipment seals onto the trunk while specialized tools agitate every supply line, return, and register. An antimicrobial sanitizing pass follows when our on-site inspection finds biological buildup. You receive the before-and-after photo set. Schedule [air duct cleaning](/air-duct-cleaning).',
       },
       {
         title: 'Dryer Vent Cleaning',

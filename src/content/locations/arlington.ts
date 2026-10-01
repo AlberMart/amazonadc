@@ -36,7 +36,7 @@ export const arlington: LocationContentSeed = {
     items: [
       {
         title: 'Residential Air Duct Cleaning',
-        text: 'We connect a HEPA-filtered negative-pressure machine to the trunk, then agitate every supply line, return, and register with rotary brushes. Sanitizing is included when the on-site inspection reveals biological growth. You keep the before-and-after photos. Schedule [air duct cleaning](/air-duct-cleaning) for your Arlington home.',
+        text: 'We connect a HEPA-filtered negative-pressure machine to the trunk, then agitate every supply line, return, and register with specialized agitation tools. Sanitizing is included when the on-site inspection reveals biological growth. You keep the before-and-after photos. Schedule [air duct cleaning](/air-duct-cleaning) for your Arlington home.',
       },
       {
         title: 'Dryer Vent Clearing',

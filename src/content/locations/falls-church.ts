@@ -35,7 +35,7 @@ export const fallsChurch: LocationContentSeed = {
     items: [
       {
         title: 'Air Duct Cleaning for Falls Church Houses',
-        text: 'We seal HEPA-filtered negative-pressure equipment to the trunk and agitate every supply line, return, and register with rotary brushes sized for the tighter joist bays common in pre-war and mid-century Falls Church homes. Sanitizing is included when the walkthrough identifies biological growth. Schedule [air duct cleaning](/air-duct-cleaning).',
+        text: 'We seal HEPA-filtered negative-pressure equipment to the trunk and agitate every supply line, return, and register with specialized agitation tools sized for the tighter joist bays common in pre-war and mid-century Falls Church homes. Sanitizing is included when the walkthrough identifies biological growth. Schedule [air duct cleaning](/air-duct-cleaning).',
       },
       {
         title: 'Dryer Vent Service',
@@ -101,7 +101,7 @@ export const fallsChurch: LocationContentSeed = {
       },
       {
         title: 'Clean ducts end to end',
-        text: 'Rotary brushes plus negative-pressure vacuum through the trunks serving this Falls Church, VA home.',
+        text: 'Specialized tools plus negative-pressure vacuum through the trunks serving this Falls Church, VA home.',
       },
       {
         title: 'Clear the dryer run',

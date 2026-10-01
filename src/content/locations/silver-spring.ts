@@ -35,7 +35,7 @@ export const silverSpring: LocationContentSeed = {
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
-        text: 'HEPA negative pressure draws debris toward the collection unit while rotary brushes agitate trunk walls, supply lines, and return plenums. Silver Spring\'s mix of retrofitted plaster joints and original brick-home ductwork means we inspect every connection point for leaks before sealing the system under vacuum. Details at [air duct cleaning](/air-duct-cleaning).',
+        text: 'HEPA negative pressure draws debris toward the collection unit while specialized tools agitate trunk walls, supply lines, and return plenums. Silver Spring\'s mix of retrofitted plaster joints and original brick-home ductwork means we inspect every connection point for leaks before sealing the system under vacuum. Details at [air duct cleaning](/air-duct-cleaning).',
       },
       {
         title: 'Dryer Vent Cleaning',
@@ -102,7 +102,7 @@ export const silverSpring: LocationContentSeed = {
       },
       {
         title: 'Source-removal cleaning',
-        text: 'NADCA-style agitation under HEPA negative pressure for this Silver Spring system — dust leaves in the vacuum, not your rooms.',
+        text: 'Source-removal agitation under HEPA negative pressure for this Silver Spring system — dust leaves in the vacuum, not your rooms.',
       },
       {
         title: 'Optional sanitizing',

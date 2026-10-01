@@ -35,7 +35,7 @@ export const hyattsville: LocationContentSeed = {
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
-        text: 'HEPA negative pressure and rotary brush agitation through older basement trunks, return plenums, and register boots carrying Route 1 particulate and arts-district renovation residue. Semi-detached homes with shared walls require careful sealing at party-wall penetrations to maintain proper vacuum pressure during cleaning. Full details at [air duct cleaning](/air-duct-cleaning).',
+        text: 'HEPA negative pressure and mechanical agitation through older basement trunks, return plenums, and register boots carrying Route 1 particulate and arts-district renovation residue. Semi-detached homes with shared walls require careful sealing at party-wall penetrations to maintain proper vacuum pressure during cleaning. Full details at [air duct cleaning](/air-duct-cleaning).',
       },
       {
         title: 'Dryer Vent Cleaning',
@@ -101,7 +101,7 @@ export const hyattsville: LocationContentSeed = {
       },
       {
         title: 'Source-removal cleaning',
-        text: 'NADCA-style agitation under HEPA negative pressure for this Hyattsville system — dust leaves in the vacuum, not your rooms.',
+        text: 'Source-removal agitation under HEPA negative pressure for this Hyattsville system — dust leaves in the vacuum, not your rooms.',
       },
       {
         title: 'Optional sanitizing',

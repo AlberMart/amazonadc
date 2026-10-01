@@ -35,7 +35,7 @@ export const mclean: LocationContentSeed = {
     items: [
       {
         title: 'Air Duct Cleaning for McLean Homes',
-        text: 'We seal HEPA-filtered negative-pressure equipment to the trunk and agitate every supply line, return, and register with rotary brushes \u2014 including junction points where additions branch off original metal. Sanitizing follows when the walkthrough reveals biological growth. You keep the complete photo set. Schedule [air duct cleaning](/air-duct-cleaning).',
+        text: 'We seal HEPA-filtered negative-pressure equipment to the trunk and agitate every supply line, return, and register with specialized agitation tools \u2014 including junction points where additions branch off original metal. Sanitizing follows when the walkthrough reveals biological growth. You keep the complete photo set. Schedule [air duct cleaning](/air-duct-cleaning).',
       },
       {
         title: 'Dryer Vent Service',
@@ -101,7 +101,7 @@ export const mclean: LocationContentSeed = {
       },
       {
         title: 'Clean ducts end to end',
-        text: 'Rotary brushes plus negative-pressure vacuum through the trunks serving this McLean, VA home.',
+        text: 'Specialized tools plus negative-pressure vacuum through the trunks serving this McLean, VA home.',
       },
       {
         title: 'Clear the dryer run',

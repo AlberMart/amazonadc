@@ -35,7 +35,7 @@ export const olney: LocationContentSeed = {
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
-        text: 'Rotary brush agitation under HEPA negative pressure through supply trunks concealed behind finished basement ceilings, return plenums, and floor registers throughout the rambler or split-level. Olney\'s outer-county canopy delivers heavier pollen volumes than close-in neighborhoods, and finished lower levels trap that load out of sight for years. Full scope at [air duct cleaning](/air-duct-cleaning).',
+        text: 'mechanical agitation under HEPA negative pressure through supply trunks concealed behind finished basement ceilings, return plenums, and floor registers throughout the rambler or split-level. Olney\'s outer-county canopy delivers heavier pollen volumes than close-in neighborhoods, and finished lower levels trap that load out of sight for years. Full scope at [air duct cleaning](/air-duct-cleaning).',
       },
       {
         title: 'Dryer Vent Cleaning',
@@ -101,7 +101,7 @@ export const olney: LocationContentSeed = {
       },
       {
         title: 'Source-removal cleaning',
-        text: 'NADCA-style agitation under HEPA negative pressure for this Olney system — dust leaves in the vacuum, not your rooms.',
+        text: 'Source-removal agitation under HEPA negative pressure for this Olney system — dust leaves in the vacuum, not your rooms.',
       },
       {
         title: 'Optional sanitizing',

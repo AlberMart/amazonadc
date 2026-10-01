@@ -170,7 +170,7 @@ function buildProcess(city, state, office, phone, slug, h) {
       },
       {
         title: 'Source-removal cleaning',
-        text: `NADCA-style agitation under HEPA negative pressure for this ${city} system — dust leaves in the vacuum, not your rooms.`,
+        text: `Source-removal agitation under HEPA negative pressure for this ${city} system — dust leaves in the vacuum, not your rooms.`,
       },
       {
         title: 'Optional sanitizing',

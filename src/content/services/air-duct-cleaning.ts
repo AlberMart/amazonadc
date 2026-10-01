@@ -18,7 +18,7 @@ export const airDuctCleaning: ServiceContent = {
     'Unlimited Supply Vents',
     'Unlimited Intake Vents',
     'Unlimited Main Duct Lines',
-    'Agitating and vacuuming of entire duct system',
+    'Agitating and Vacuuming of Entire Duct System',
     'Complimentary Sanitization of Air Ducts with Envirocon (Upon Request)',
     'Proof of Cleaning with Before/After photos',
     'Satisfaction Guaranteed or Your Money Back',
@@ -48,7 +48,7 @@ export const airDuctCleaning: ServiceContent = {
         'Musty or stale odor when the HVAC system runs',
         'Uneven airflow or reduced pressure from vents',
         'Recent renovation or construction in the home',
-        'More than 3–5 years since the last professional cleaning',
+        'More than 1–3 years since the last professional cleaning',
       ],
     },
     {
@@ -70,7 +70,7 @@ export const airDuctCleaning: ServiceContent = {
     steps: [
       {
         title: 'Inspection',
-        text: 'Technicians assess your HVAC system and ductwork to determine the scope of cleaning needed.',
+        text: 'Our technicians assess your HVAC system and ductwork to determine the scope of cleaning needed.',
       },
       {
         title: 'Preparation',
@@ -78,11 +78,11 @@ export const airDuctCleaning: ServiceContent = {
       },
       {
         title: 'Negative Pressure Setup',
-        text: 'High-powered vacuums are connected to create negative pressure throughout the duct system.',
+        text: 'High-powered HEPA-filtered vacuums are connected to create negative pressure throughout the duct system.',
       },
       {
-        title: 'Agitation',
-        text: 'Rotating brushes and compressed air dislodge dust and debris from all duct surfaces.',
+        title: 'Push-and-Pull Cleaning',
+        text: 'Our technicians manually utilize specialized tools to dislodge any stuck debris inside the air ducts.',
       },
       {
         title: 'Full Extraction',
@@ -99,11 +99,11 @@ export const airDuctCleaning: ServiceContent = {
   faq: [
     {
       q: 'What is included in the $299 air duct cleaning service?',
-      a: 'The $299 service covers one complete air duct system: unlimited supply vents, unlimited intake vents, unlimited main duct lines, agitation and vacuuming of the entire system, complimentary Envirocon sanitization upon request, and before/after photo documentation. No extra fees, no surprise charges.',
+      a: 'The $299 service covers one complete air duct system: unlimited supply vents, unlimited intake vents, unlimited main duct lines, agitating and vacuuming of the entire duct system, complimentary Envirocon sanitization upon request, and before/after photo documentation. No extra fees, no surprise charges.',
     },
     {
       q: 'How often should air ducts be professionally cleaned?',
-      a: 'Most homes benefit from professional air duct cleaning every 3 to 5 years. Homes with pets, allergy sufferers, recent renovations, or higher occupancy may need cleaning every 2 to 3 years.',
+      a: 'Most homes benefit from professional air duct cleaning every 1 to 3 years. Homes with pets, allergy sufferers, recent renovations, or higher occupancy may need cleaning annually or every other year.',
     },
     {
       q: 'Is sanitization included in the service?',

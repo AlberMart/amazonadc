@@ -35,7 +35,7 @@ export const rockville: LocationContentSeed = {
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
-        text: 'Negative-pressure HEPA extraction paired with rotary brush agitation through every supply run, return plenum, and floor register. Twinbrook basements with decades of settled pollen and Research Boulevard townhomes with construction-era residue both receive the same thorough process. Full scope at [air duct cleaning](/air-duct-cleaning).',
+        text: 'Negative-pressure HEPA extraction paired with mechanical agitation through every supply run, return plenum, and floor register. Twinbrook basements with decades of settled pollen and Research Boulevard townhomes with construction-era residue both receive the same thorough process. Full scope at [air duct cleaning](/air-duct-cleaning).',
       },
       {
         title: 'Dryer Vent Cleaning',
@@ -101,7 +101,7 @@ export const rockville: LocationContentSeed = {
       },
       {
         title: 'Source-removal cleaning',
-        text: 'NADCA-style agitation under HEPA negative pressure for this Rockville system — dust leaves in the vacuum, not your rooms.',
+        text: 'Source-removal agitation under HEPA negative pressure for this Rockville system — dust leaves in the vacuum, not your rooms.',
       },
       {
         title: 'Optional sanitizing',

@@ -26,7 +26,7 @@ export const moldRemediationAirDucts: ServiceContent = {
     heading: 'Why does mold grow inside air ducts?',
     paragraphs: [
       'Air ducts are dark, often humid, and collect dust — the exact conditions mold needs to grow. Once mold takes hold inside your ductwork, every time your HVAC system runs, it can push mold spores through the air in every room of your home. This is not just a dust problem — airborne mold spores can affect indoor air quality and trigger respiratory irritation, especially in children, older adults, and anyone with allergies or asthma.',
-      'Standard duct cleaning removes dust and debris, but active mold growth requires a different approach: targeted antimicrobial treatment that kills mold at the surface and helps prevent regrowth. Amazon Air Duct Cleaning uses EPA-registered products and professional-grade equipment to remediate mold throughout the entire duct system — not just the vents you can see.',
+      'Our technicians contain the mold spores to prevent future growth on unaffected areas using negative air pressure and sealing off HVAC vents, treating, removing, and cleaning the mold growth to prevent toxic air in your home and restore a healthy environment.',
     ],
     image: '/img/blog/dirty-HVAC-unit.webp',
     imageAlt: 'HVAC duct interior with mold and moisture buildup',
@@ -62,19 +62,19 @@ export const moldRemediationAirDucts: ServiceContent = {
     steps: [
       {
         title: 'Inspection & Assessment',
-        text: 'Technicians inspect the duct system to identify the extent of mold growth and its likely source (moisture, humidity, or a system issue).',
+        text: 'Our technicians inspect the duct system to identify the extent of mold growth and its likely source (moisture, humidity, or a system issue).',
       },
       {
         title: 'Containment & Preparation',
-        text: 'Work areas are protected, and steps are taken to prevent spores from spreading into the home during service.',
+        text: 'Work areas are protected. HVAC vents are sealed and negative air pressure is used so spores do not spread into unaffected areas of the home.',
       },
       {
         title: 'Negative Pressure Extraction',
-        text: 'High-powered, HEPA-filtered vacuums are connected to the duct system to safely capture loosened debris and spores.',
+        text: 'High-powered HEPA-filtered vacuums are connected to the duct system to safely capture loosened debris and spores.',
       },
       {
-        title: 'Agitation',
-        text: 'Rotating brushes and compressed air dislodge mold and buildup from every duct surface.',
+        title: 'Push-and-Pull Cleaning',
+        text: 'Our technicians manually utilize specialized tools to dislodge mold and stuck debris from interior duct surfaces.',
       },
       {
         title: 'Antimicrobial Treatment',

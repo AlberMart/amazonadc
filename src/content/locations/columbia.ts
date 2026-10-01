@@ -36,7 +36,7 @@ export const columbia: LocationContentSeed = {
     items: [
       {
         title: 'Air Duct Cleaning & Sanitization',
-        text: 'HEPA negative pressure and rotary brush agitation through townhome trunk lines concealed behind finished walls and colonial supply runs radiating from lower-level air handlers. Columbia\'s lake-path humidity binds oak pollen and household fibers into a film that filter changes alone cannot clear from the trunk walls. Scope details at [air duct cleaning](/air-duct-cleaning).',
+        text: 'HEPA negative pressure and mechanical agitation through townhome trunk lines concealed behind finished walls and colonial supply runs radiating from lower-level air handlers. Columbia\'s lake-path humidity binds oak pollen and household fibers into a film that filter changes alone cannot clear from the trunk walls. Scope details at [air duct cleaning](/air-duct-cleaning).',
       },
       {
         title: 'Dryer Vent Cleaning',

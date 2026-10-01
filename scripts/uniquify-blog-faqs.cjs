@@ -56,7 +56,7 @@ const EVERGREEN_FAQ = {
   'how-often-clean-air-ducts': [
     {
       q: 'How often should most homes clean air ducts?',
-      a: 'Every 3–5 years is typical. Pets, renovations, smokers, or allergy households often need the shorter end of that range.',
+      a: 'Every 1–3 years is typical. Pets, renovations, smokers, or allergy households often need the shorter end of that range.',
     },
     {
       q: 'How often should dryer vents be cleaned?',

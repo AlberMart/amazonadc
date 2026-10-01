@@ -36,7 +36,7 @@ export const burke: LocationContentSeed = {
     items: [
       {
         title: 'Whole-Home Air Duct Cleaning',
-        text: 'We seal a HEPA-filtered negative-pressure unit to the main trunk, then agitate every supply line, return, and register with rotary brushes. Sanitizing is applied when the on-site inspection confirms biological buildup. Every job includes a photo set showing the before and after condition. Schedule [air duct cleaning](/air-duct-cleaning).',
+        text: 'We seal a HEPA-filtered negative-pressure unit to the main trunk, then agitate every supply line, return, and register with specialized agitation tools. Sanitizing is applied when the on-site inspection confirms biological buildup. Every job includes a photo set showing the before and after condition. Schedule [air duct cleaning](/air-duct-cleaning).',
       },
       {
         title: 'Dryer Vent Clearing',

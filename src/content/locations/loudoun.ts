@@ -36,7 +36,7 @@ export const loudoun: LocationContentSeed = {
     items: [
       {
         title: 'Air Duct Cleaning for Loudoun Homes',
-        text: 'HEPA-filtered negative-pressure equipment seals to the trunk while rotary brushes agitate every supply line, return, and register. Sanitizing follows when the walkthrough identifies biological growth \u2014 common in Leesburg basements near creek-level moisture. You keep the complete photo set. Schedule [air duct cleaning](/air-duct-cleaning).',
+        text: 'HEPA-filtered negative-pressure equipment seals to the trunk while specialized tools agitate every supply line, return, and register. Sanitizing follows when the walkthrough identifies biological growth \u2014 common in Leesburg basements near creek-level moisture. You keep the complete photo set. Schedule [air duct cleaning](/air-duct-cleaning).',
       },
       {
         title: 'Dryer Vent Service',
@@ -101,7 +101,7 @@ export const loudoun: LocationContentSeed = {
       },
       {
         title: 'Clean ducts end to end',
-        text: 'Rotary brushes plus negative-pressure vacuum through the trunks serving this Loudoun, VA home.',
+        text: 'Specialized tools plus negative-pressure vacuum through the trunks serving this Loudoun, VA home.',
       },
       {
         title: 'Clear the dryer run',

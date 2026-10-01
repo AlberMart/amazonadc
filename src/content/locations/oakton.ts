@@ -35,7 +35,7 @@ export const oakton: LocationContentSeed = {
     items: [
       {
         title: 'Air Duct Cleaning for Oakton Homes',
-        text: 'HEPA-filtered negative-pressure equipment seals to the basement trunk while rotary brushes agitate every supply line, return, and register \u2014 including junction points where additions branch off the original metal. Sanitizing follows when the walkthrough identifies biological buildup. You keep the full photo set. Schedule [air duct cleaning](/air-duct-cleaning).',
+        text: 'HEPA-filtered negative-pressure equipment seals to the basement trunk while specialized tools agitate every supply line, return, and register \u2014 including junction points where additions branch off the original metal. Sanitizing follows when the walkthrough identifies biological buildup. You keep the full photo set. Schedule [air duct cleaning](/air-duct-cleaning).',
       },
       {
         title: 'Dryer Vent Clearing',
