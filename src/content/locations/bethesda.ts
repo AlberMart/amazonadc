@@ -64,7 +64,7 @@ export const bethesda: LocationContentSeed = {
       },
       {
         title: 'Guaranteed Results With Photo Documentation',
-        text: 'Every trunk and register is photographed before and after cleaning. If the result falls short, we return and re-clean at no additional charge.',
+        text: 'Every trunk and register is photographed before and after. If the Bethesda result falls short, contact us within 7 days — we re-perform or refund per our refund policy.',
       },
     ],
   },
@@ -75,7 +75,7 @@ export const bethesda: LocationContentSeed = {
       {
         title: 'Close-in Montgomery',
         places:
-          '[Silver Spring](/locations/silver-spring), [Kensington](/locations/kensington), [Wheaton](/locations/wheaton), [Takoma Park](/locations/takoma-park), [Chevy Chase](/locations/bethesda)',
+          '[Silver Spring](/locations/silver-spring), [Kensington](/locations/kensington), [Wheaton](/locations/wheaton), [Takoma Park](/locations/takoma-park), Chevy Chase area',
       },
       {
         title: 'I-270 corridor',
@@ -96,51 +96,51 @@ export const bethesda: LocationContentSeed = {
   },
   process: {
     heading: 'Bethesda Intake, Then I-270 and Beltway Routes',
-    intro: 'Arrival windows reflect the drive from Bethesda.',
+    intro: 'Arrival windows reflect the drive from Bethesda to Bethesda.',
     steps: [
       {
-        title: 'Talk Through Your Bethesda Home',
-        text: 'We ask about pets, renovations, and stacked laundry / riser layout common in Bethesda before quoting.',
+        title: 'Walkthrough and quote',
+        text: 'In Bethesda we ask about pets, renovations, and condo / stacked-laundry layouts common around Bethesda before locking a flat-rate number for this MD address.',
       },
       {
-        title: 'Confirm the Bethesda Arrival Window',
-        text: 'Morning-of text with a realistic ETA from Bethesda to your Bethesda street.',
+        title: 'Arrival window',
+        text: 'Morning-of text with a realistic ETA from the Bethesda office to your Bethesda street — not a vague all-day window.',
       },
       {
-        title: 'Agree the Bethesda Flat-Rate Package',
-        text: 'Duct, dryer, or both for this Bethesda MD address — the quoted number is what you pay.',
+        title: 'Agree the package',
+        text: 'For this Bethesda home: ducts, dryer vent, or both — scoped on site, quoted before equipment starts, paid after you are satisfied.',
       },
       {
-        title: 'Run HEPA Cleaning in Bethesda',
-        text: 'We agitate and vacuum supplies, returns, and registers under negative pressure in your Bethesda system.',
+        title: 'HEPA source-removal cleaning',
+        text: 'We agitate and vacuum supplies, returns, and registers in this Bethesda system under negative pressure so debris leaves in the vacuum.',
       },
       {
-        title: 'Photos Before We Leave Bethesda',
-        text: 'Before/after photos, filter tips, and dryer-vent interval tailored to Bethesda seasons.',
+        title: 'Photos and handoff',
+        text: 'Before/after photos, filter tips, and a dryer-vent interval for Bethesda seasons. Questions go to (301) 809-4544.',
       },
     ],
   },
   faqIntro: 'Bethesda questions — call (301) 809-4544 (dispatch: Bethesda).',
   faq: [
     {
-      q: 'Who handles air duct cleaning appointments in Bethesda?',
-      a: 'Bethesda jobs leave from our Bethesda, MD office at 7815 Old Georgetown Rd Ste 201. Call (301) 809-4544 to book flat-rate air duct or dryer vent cleaning.',
+      q: 'Which office books jobs for Bethesda?',
+      a: 'Bethesda appointments leave from Bethesda, MD (7815 Old Georgetown Rd Ste 201). Call (301) 809-4544 for air duct or dryer vent cleaning on your street.',
     },
     {
-      q: 'What should I prepare before the Bethesda crew arrives?',
-      a: 'In Bethesda, clear a path to the air handler and dryer before we arrive — condo/townhome closets and stacked laundry especially. Share gate or parking notes if your street needs them.',
+      q: 'What access do you need before arrival?',
+      a: 'In Bethesda, clear a path to the air handler and dryer — condo closets and stacked laundry especially. Share gate or parking notes for your block.',
     },
     {
-      q: 'How long does air duct cleaning take in Bethesda?',
-      a: 'Most Bethesda single-system houses finish in about 2–3 hours. High-rise dryer risers and long laundry closets can add time after inspection.',
+      q: 'How long is a typical visit?',
+      a: 'Most Bethesda single-system houses finish in about 2–3 hours. High-rise dryer risers can add time after inspection.',
     },
     {
-      q: 'Are Bethesda air duct and dryer vent prices flat-rate?',
-      a: 'Yes. Bethesda residential packages are flat-rate from the Bethesda office — the number we confirm before work starts is what you pay. No per-vent counting.',
+      q: 'Is pricing flat-rate or by the vent?',
+      a: 'Bethesda residential packages are flat-rate from Bethesda. We scope during the walkthrough, confirm before equipment starts, and that is what you pay — no per-vent counting.',
     },
     {
-      q: 'Can duct and dryer vent cleaning be done the same day in Bethesda?',
-      a: 'In Bethesda, yes — when you book the combined package or both services up front. Call (301) 809-4544 and we stage the Bethesda crew for one visit to your street.',
+      q: 'Can ducts and the dryer vent be done in one visit?',
+      a: 'Yes for Bethesda — book the combined package up front. Call (301) 809-4544; the Bethesda crew brings both tool sets for one stop.',
     },
   ],
 }

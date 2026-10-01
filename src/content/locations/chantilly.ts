@@ -64,7 +64,7 @@ export const chantilly: LocationContentSeed = {
       },
       {
         title: 'Guaranteed Results',
-        text: 'If the cleaning does not meet your expectations, we return and redo the work at no additional cost.',
+        text: 'If the Chantilly result falls short, contact us within 7 days — we re-perform the work or refund per our refund policy.',
       },
     ],
   },
@@ -89,51 +89,51 @@ export const chantilly: LocationContentSeed = {
   },
   process: {
     heading: 'Western Fairfax Dispatch Notes From Burke',
-    intro: 'From booking at (571) 460-0001 to photos at the door.',
+    intro: 'From booking at (571) 460-0001 to photos at the Chantilly door.',
     steps: [
       {
-        title: 'Book Chantilly From the Burke Line',
-        text: 'Call (571) 460-0001 or use the form \u2014 we confirm Chantilly availability the next business day.',
+        title: 'Book from the office line',
+        text: 'Call (571) 460-0001 or use the form — we confirm Chantilly availability the next business day from Burke.',
       },
       {
-        title: 'Protect Floors in Your Chantilly Home',
-        text: 'We cover work paths and keep living spaces clear while equipment runs in Chantilly.',
+        title: 'Protect floors and living spaces',
+        text: 'In Chantilly we cover work paths and keep living spaces clear while equipment runs.',
       },
       {
-        title: 'Source-Removal Cleaning for Chantilly',
-        text: 'NADCA-style agitation under HEPA negative pressure \u2014 dust leaves in the vacuum, not your Chantilly rooms.',
+        title: 'Source-removal cleaning',
+        text: 'NADCA-style agitation under HEPA negative pressure for this Chantilly system — dust leaves in the vacuum, not your rooms.',
       },
       {
-        title: 'Optional Sanitizing in Chantilly',
-        text: 'Complimentary Envirocon when requested or when inspection supports it on this Chantilly job.',
+        title: 'Optional sanitizing',
+        text: 'Complimentary Envirocon when you request it or when the Chantilly inspection supports it.',
       },
       {
-        title: 'Close Out the Chantilly Visit',
-        text: 'Photos on file, flat-rate invoice, and tips for Chantilly pollen or humidity seasons.',
+        title: 'Close out the visit',
+        text: 'Photos on file, flat-rate invoice for Chantilly, and seasonal tips. Call (571) 460-0001 anytime.',
       },
     ],
   },
-  faqIntro: 'Chantilly questions \u2014 call (571) 460-0001 (dispatch: Burke).',
+  faqIntro: 'Chantilly questions — call (571) 460-0001 (dispatch: Burke).',
   faq: [
     {
-      q: 'Who handles air duct cleaning appointments in Chantilly?',
-      a: 'Chantilly jobs leave from our Burke, VA office at 5641 Burke Centre Pkwy Ste 119. Call (571) 460-0001 to book flat-rate air duct or dryer vent cleaning.',
+      q: 'Where does the Chantilly appointment leave from?',
+      a: 'Chantilly appointments leave from Burke, VA (5641 Burke Centre Pkwy Ste 119). Call (571) 460-0001 for air duct or dryer vent cleaning on your street.',
     },
     {
-      q: 'What should I prepare before the Chantilly crew arrives?',
-      a: 'For Chantilly VA homes, we need clear runs to the air handler and any unfinished spaces still shedding construction dust. Note HOA codes on the confirmation text.',
+      q: 'Anything to clear before the crew shows up?',
+      a: 'For this Chantilly, VA home we need clear runs to the air handler and unfinished spaces still shedding construction dust. Put HOA codes on the confirmation text.',
     },
     {
-      q: 'How long does air duct cleaning take in Chantilly?',
-      a: 'Chantilly duct cleaning usually takes 2\u20133 hours for one system. Multi-system or heavily packed dryer vents are scoped before we start so the quote stays flat-rate.',
+      q: 'What is a realistic job length for one system?',
+      a: 'One Chantilly system usually takes 2–3 hours. Multi-system or packed dryer vents are scoped before we start so the quote stays locked.',
     },
     {
-      q: 'Are Chantilly air duct and dryer vent prices flat-rate?',
-      a: 'Yes. Chantilly residential packages are flat-rate from the Burke office \u2014 the number we confirm before work starts is what you pay. No per-vent counting.',
+      q: 'Will the price change once equipment is out?',
+      a: 'The Burke crew prices Chantilly jobs as published flat-rate packages. Scoped on site, confirmed before unload, paid after you are satisfied.',
     },
     {
-      q: 'Can duct and dryer vent cleaning be done the same day in Chantilly?',
-      a: 'In Chantilly, yes \u2014 when you book the combined package or both services up front. Call (571) 460-0001 and we stage the Burke crew for one visit to your street.',
+      q: 'Can ducts and the dryer vent be done in one visit?',
+      a: 'Yes for Chantilly — book the combined package up front. Call (571) 460-0001; the Burke crew brings both tool sets for one stop.',
     },
   ],
 }

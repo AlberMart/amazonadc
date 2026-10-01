@@ -64,7 +64,7 @@ export const fairfax: LocationContentSeed = {
       },
       {
         title: 'Satisfaction Guarantee',
-        text: 'Not satisfied after the Fairfax walk-through? We return and redo the ducts at no additional charge.',
+        text: 'Not satisfied after the Fairfax walk-through? Contact us within 7 days — we re-perform or refund per our refund policy.',
       },
     ],
   },
@@ -89,51 +89,51 @@ export const fairfax: LocationContentSeed = {
   },
   process: {
     heading: 'Short Run Up 123 From the Burke Office',
-    intro: 'From booking at (571) 460-0001 to photos at the door.',
+    intro: 'From booking at (571) 460-0001 to photos at the Fairfax door.',
     steps: [
       {
-        title: 'Book Fairfax From the Burke Line',
-        text: 'Call (571) 460-0001 or use the form \u2014 we confirm Fairfax availability the next business day.',
+        title: 'Book from the office line',
+        text: 'Call (571) 460-0001 or use the form — we confirm Fairfax availability the next business day from Burke.',
       },
       {
-        title: 'Protect Floors in Your Fairfax Home',
-        text: 'We cover work paths and keep living spaces clear while equipment runs in Fairfax.',
+        title: 'Protect floors and living spaces',
+        text: 'In Fairfax we cover work paths and keep living spaces clear while equipment runs.',
       },
       {
-        title: 'Source-Removal Cleaning for Fairfax',
-        text: 'NADCA-style agitation under HEPA negative pressure \u2014 dust leaves in the vacuum, not your Fairfax rooms.',
+        title: 'Source-removal cleaning',
+        text: 'NADCA-style agitation under HEPA negative pressure for this Fairfax system — dust leaves in the vacuum, not your rooms.',
       },
       {
-        title: 'Optional Sanitizing in Fairfax',
-        text: 'Complimentary Envirocon when requested or when inspection supports it on this Fairfax job.',
+        title: 'Optional sanitizing',
+        text: 'Complimentary Envirocon when you request it or when the Fairfax inspection supports it.',
       },
       {
-        title: 'Close Out the Fairfax Visit',
-        text: 'Photos on file, flat-rate invoice, and tips for Fairfax pollen or humidity seasons.',
+        title: 'Close out the visit',
+        text: 'Photos on file, flat-rate invoice for Fairfax, and seasonal tips. Call (571) 460-0001 anytime.',
       },
     ],
   },
-  faqIntro: 'Fairfax questions \u2014 call (571) 460-0001 (dispatch: Burke).',
+  faqIntro: 'Fairfax questions — call (571) 460-0001 (dispatch: Burke).',
   faq: [
     {
-      q: 'Who handles air duct cleaning appointments in Fairfax?',
-      a: 'Fairfax jobs leave from our Burke, VA office at 5641 Burke Centre Pkwy Ste 119. Call (571) 460-0001 to book flat-rate air duct or dryer vent cleaning.',
+      q: 'Where does the Fairfax appointment leave from?',
+      a: 'Fairfax appointments leave from Burke, VA (5641 Burke Centre Pkwy Ste 119). Call (571) 460-0001 for air duct or dryer vent cleaning on your street.',
     },
     {
-      q: 'What should I prepare before the Fairfax crew arrives?',
-      a: 'For Fairfax VA homes, we need clear runs to the air handler. Note HOA codes on the confirmation text.',
+      q: 'Anything to clear before the crew shows up?',
+      a: 'For this Fairfax, VA home we need clear runs to the air handler. Put HOA codes on the confirmation text.',
     },
     {
-      q: 'How long does air duct cleaning take in Fairfax?',
-      a: 'Fairfax duct cleaning usually takes 2\u20133 hours for one system. Multi-system or heavily packed dryer vents are scoped before we start so the quote stays flat-rate.',
+      q: 'What is a realistic job length for one system?',
+      a: 'One Fairfax system usually takes 2–3 hours. Multi-system or packed dryer vents are scoped before we start so the quote stays locked.',
     },
     {
-      q: 'Are Fairfax air duct and dryer vent prices flat-rate?',
-      a: 'Yes. Fairfax residential packages are flat-rate from the Burke office \u2014 the number we confirm before work starts is what you pay. No per-vent counting.',
+      q: 'Will the price change once equipment is out?',
+      a: 'The Burke crew prices Fairfax jobs as published flat-rate packages. Scoped on site, confirmed before unload, paid after you are satisfied.',
     },
     {
-      q: 'Is sanitizing included with Fairfax duct cleaning?',
-      a: 'For Fairfax jobs, Envirocon antimicrobial sanitizing is complimentary when you request it or when inspection supports it \u2014 we confirm on site before applying anything.',
+      q: 'Do you charge extra for Envirocon sanitizing?',
+      a: 'No upcharge for Envirocon on Fairfax work when requested or when inspection supports it. We never spray without your OK.',
     },
   ],
 }

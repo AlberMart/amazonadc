@@ -65,7 +65,7 @@ export const montgomeryVillage: LocationContentSeed = {
       },
       {
         title: 'Photo-Backed Satisfaction Guarantee',
-        text: 'Before-and-after documentation of every trunk and register is included. If the result does not satisfy, the crew returns at our expense.',
+        text: 'Before-and-after documentation is included. If the Montgomery Village result does not satisfy, contact us within 7 days — we re-perform or refund per our refund policy.',
       },
     ],
   },
@@ -90,51 +90,51 @@ export const montgomeryVillage: LocationContentSeed = {
   },
   process: {
     heading: 'Between Gaithersburg and Germantown From Bethesda',
-    intro: 'Arrival windows reflect the drive from Bethesda.',
+    intro: 'Arrival windows reflect the drive from Bethesda to Montgomery Village.',
     steps: [
       {
-        title: 'Talk Through Your Montgomery Village Home',
-        text: 'We ask about pets, renovations, and basement or attic air-handler access in Montgomery Village before quoting.',
+        title: 'Walkthrough and quote',
+        text: 'In Montgomery Village we ask about pets, renovations, and basement or attic air-handler access typical in Montgomery Village before locking a flat-rate number for this MD address.',
       },
       {
-        title: 'Confirm the Montgomery Village Arrival Window',
-        text: 'Morning-of text with a realistic ETA from Bethesda to your Montgomery Village street.',
+        title: 'Arrival window',
+        text: 'Morning-of text with a realistic ETA from the Bethesda office to your Montgomery Village street — not a vague all-day window.',
       },
       {
-        title: 'Agree the Montgomery Village Flat-Rate Package',
-        text: 'Duct, dryer, or both for this Montgomery Village MD address — the quoted number is what you pay.',
+        title: 'Agree the package',
+        text: 'For this Montgomery Village home: ducts, dryer vent, or both — scoped on site, quoted before equipment starts, paid after you are satisfied.',
       },
       {
-        title: 'Run HEPA Cleaning in Montgomery Village',
-        text: 'We agitate and vacuum supplies, returns, and registers under negative pressure in your Montgomery Village system.',
+        title: 'HEPA source-removal cleaning',
+        text: 'We agitate and vacuum supplies, returns, and registers in this Montgomery Village system under negative pressure so debris leaves in the vacuum.',
       },
       {
-        title: 'Photos Before We Leave Montgomery Village',
-        text: 'Before/after photos, filter tips, and dryer-vent interval tailored to Montgomery Village seasons.',
+        title: 'Photos and handoff',
+        text: 'Before/after photos, filter tips, and a dryer-vent interval for Montgomery Village seasons. Questions go to (301) 809-4544.',
       },
     ],
   },
   faqIntro: 'Montgomery Village questions — call (301) 809-4544 (dispatch: Bethesda).',
   faq: [
     {
-      q: 'Who handles air duct cleaning appointments in Montgomery Village?',
-      a: 'Montgomery Village jobs leave from our Bethesda, MD office at 7815 Old Georgetown Rd Ste 201. Call (301) 809-4544 to book flat-rate air duct or dryer vent cleaning.',
+      q: 'Which office books jobs for Montgomery Village?',
+      a: 'Montgomery Village appointments leave from Bethesda, MD (7815 Old Georgetown Rd Ste 201). Call (301) 809-4544 for air duct or dryer vent cleaning on your street.',
     },
     {
-      q: 'What should I prepare before the Montgomery Village crew arrives?',
-      a: 'In Montgomery Village, clear a path to the air handler and dryer before we arrive — basement trunks and dryer closets especially. Share gate or parking notes if your street needs them.',
+      q: 'What access do you need before arrival?',
+      a: 'In Montgomery Village, clear a path to the air handler and dryer — basement trunks and dryer closets especially. Share gate or parking notes for your block.',
     },
     {
-      q: 'How long does air duct cleaning take in Montgomery Village?',
+      q: 'How long is a typical visit?',
       a: 'Most Montgomery Village single-system houses finish in about 2–3 hours. Older trunks with additions can add time after inspection.',
     },
     {
-      q: 'Are Montgomery Village air duct and dryer vent prices flat-rate?',
-      a: 'Yes. Montgomery Village residential packages are flat-rate from the Bethesda office — the number we confirm before work starts is what you pay. No per-vent counting.',
+      q: 'Is pricing flat-rate or by the vent?',
+      a: 'Montgomery Village residential packages are flat-rate from Bethesda. We scope during the walkthrough, confirm before equipment starts, and that is what you pay — no per-vent counting.',
     },
     {
-      q: 'Can duct and dryer vent cleaning be done the same day in Montgomery Village?',
-      a: 'In Montgomery Village, yes — when you book the combined package or both services up front. Call (301) 809-4544 and we stage the Bethesda crew for one visit to your street.',
+      q: 'Can ducts and the dryer vent be done in one visit?',
+      a: 'Yes for Montgomery Village — book the combined package up front. Call (301) 809-4544; the Bethesda crew brings both tool sets for one stop.',
     },
   ],
 }

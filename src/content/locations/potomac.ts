@@ -89,55 +89,55 @@ export const potomac: LocationContentSeed = {
   },
   process: {
     heading: 'Short Montgomery Run From Bethesda',
-    intro: 'Same flat-rate flow we use across MD — scoped for Potomac housing.',
+    intro: 'Same flat-rate flow from Bethesda — scoped for Potomac housing.',
     steps: [
       {
-        title: 'Scope the Potomac System',
-        text: 'Walk the returns and dryer path typical of Potomac housing so nothing is surprise-priced later.',
+        title: 'Inspect access and dryer path',
+        text: 'We walk returns and the dryer run typical of Potomac housing (long dryer runs on larger Potomac lots) so nothing is surprise-priced later.',
       },
       {
-        title: 'Stage Equipment for Potomac',
-        text: 'If the Potomac street is tight, we switch to portable HEPA sized for local lots and townhomes.',
+        title: 'Stage the right equipment',
+        text: 'Tight Potomac streets get portable HEPA from Bethesda; larger lots may use truck-mounted vacuum when access allows.',
       },
       {
-        title: 'Clean Potomac Ducts End to End',
-        text: 'Rotary brushes plus negative-pressure vacuum through the trunks serving this Potomac home.',
+        title: 'Clean ducts end to end',
+        text: 'Rotary brushes plus negative-pressure vacuum through the trunks serving this Potomac, MD home.',
       },
       {
-        title: 'Clear the Potomac Dryer Run',
+        title: 'Clear the dryer run',
         text: 'Full-length brushing to the exterior cap when dryer service is on the Potomac ticket.',
       },
       {
-        title: 'Potomac Walk-Through',
-        text: 'Review photos, answer questions, and leave booking notes for (301) 809-4544 if you want a Potomac follow-up.',
+        title: 'Final walk-through',
+        text: 'Review Potomac photos together and leave booking notes for (301) 809-4544 if you want a follow-up.',
       },
     ],
   },
   faqIntro: 'Potomac questions — call (301) 809-4544 (dispatch: Bethesda).',
   faq: [
     {
-      q: 'Who handles air duct cleaning appointments in Potomac?',
-      a: 'Potomac jobs leave from our Bethesda, MD office at 7815 Old Georgetown Rd Ste 201. Call (301) 809-4544 to book flat-rate air duct or dryer vent cleaning.',
+      q: 'Who dispatches the crew to Potomac, MD?',
+      a: 'Potomac appointments leave from Bethesda, MD (7815 Old Georgetown Rd Ste 201). Call (301) 809-4544 for air duct or dryer vent cleaning on your street.',
     },
     {
-      q: 'What should I prepare before the Potomac crew arrives?',
-      a: 'Potomac prep is simple: open access to returns and the dryer, move fragile items near vents, and tell us about pets or recent renovations when you book at (301) 809-4544.',
+      q: 'How should I prep the house for the visit?',
+      a: 'Potomac prep: open returns and the dryer, move fragile items near vents, mention pets or renovations when you book at (301) 809-4544.',
     },
     {
-      q: 'How long does air duct cleaning take in Potomac?',
-      a: 'Plan on roughly half a morning for a typical Potomac home. Same-day dryer vent add-ons are often possible if booked together.',
+      q: 'How much time should I block on the calendar?',
+      a: 'Block roughly half a morning for a typical Potomac home. Dryer-vent add-ons are often possible the same day if booked together.',
     },
     {
-      q: 'Are Potomac air duct and dryer vent prices flat-rate?',
-      a: 'Yes. Potomac residential packages are flat-rate from the Bethesda office — the number we confirm before work starts is what you pay. No per-vent counting.',
+      q: 'How does the quote work for this address?',
+      a: 'For this Potomac, MD address we quote a flat package from Bethesda. Walkthrough first, locked number second — not priced by counting vents.',
     },
     {
-      q: 'Is sanitizing included with Potomac duct cleaning?',
-      a: 'For Potomac jobs, Envirocon antimicrobial sanitizing is complimentary when you request it or when inspection supports it — we confirm on site before applying anything.',
+      q: 'Do you charge extra for Envirocon sanitizing?',
+      a: 'No upcharge for Envirocon on Potomac work when requested or when inspection supports it. We never spray without your OK.',
     },
     {
-      q: 'How far in advance should Potomac homeowners book?',
-      a: 'Peak pollen and summer humidity fill the Potomac calendar fast. Same-week openings are common — call (301) 809-4544 for the next Bethesda window serving Potomac.',
+      q: 'When should I call for the next opening?',
+      a: 'Potomac fills fast in pollen and humid months. Same-week openings are common — call (301) 809-4544 for the next Bethesda window.',
     },
   ],
 }

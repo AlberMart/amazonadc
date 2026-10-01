@@ -89,51 +89,51 @@ export const takomaPark: LocationContentSeed = {
   },
   process: {
     heading: 'Border-City Scheduling From Bethesda',
-    intro: 'From booking at (301) 809-4544 to photos at the door.',
+    intro: 'From booking at (301) 809-4544 to photos at the Takoma Park door.',
     steps: [
       {
-        title: 'Book Takoma Park From the Bethesda Line',
-        text: 'Call (301) 809-4544 or use the form — we confirm Takoma Park availability the next business day.',
+        title: 'Book from the office line',
+        text: 'Call (301) 809-4544 or use the form — we confirm Takoma Park availability the next business day from Bethesda.',
       },
       {
-        title: 'Protect Floors in Your Takoma Park Home',
-        text: 'We cover work paths and keep living spaces clear while equipment runs in Takoma Park.',
+        title: 'Protect floors and living spaces',
+        text: 'In Takoma Park we cover work paths and keep living spaces clear while equipment runs.',
       },
       {
-        title: 'Source-Removal Cleaning for Takoma Park',
-        text: 'NADCA-style agitation under HEPA negative pressure — dust leaves in the vacuum, not your Takoma Park rooms.',
+        title: 'Source-removal cleaning',
+        text: 'NADCA-style agitation under HEPA negative pressure for this Takoma Park system — dust leaves in the vacuum, not your rooms.',
       },
       {
-        title: 'Optional Sanitizing in Takoma Park',
-        text: 'Complimentary Envirocon when requested or when inspection supports it on this Takoma Park job.',
+        title: 'Optional sanitizing',
+        text: 'Complimentary Envirocon when you request it or when the Takoma Park inspection supports it.',
       },
       {
-        title: 'Close Out the Takoma Park Visit',
-        text: 'Photos on file, flat-rate invoice, and tips for Takoma Park pollen or humidity seasons.',
+        title: 'Close out the visit',
+        text: 'Photos on file, flat-rate invoice for Takoma Park, and seasonal tips. Call (301) 809-4544 anytime.',
       },
     ],
   },
   faqIntro: 'Takoma Park questions — call (301) 809-4544 (dispatch: Bethesda).',
   faq: [
     {
-      q: 'Who handles air duct cleaning appointments in Takoma Park?',
-      a: 'Takoma Park jobs leave from our Bethesda, MD office at 7815 Old Georgetown Rd Ste 201. Call (301) 809-4544 to book flat-rate air duct or dryer vent cleaning.',
+      q: 'Where does the Takoma Park appointment leave from?',
+      a: 'Takoma Park appointments leave from Bethesda, MD (7815 Old Georgetown Rd Ste 201). Call (301) 809-4544 for air duct or dryer vent cleaning on your street.',
     },
     {
-      q: 'What should I prepare before the Takoma Park crew arrives?',
-      a: 'For Takoma Park MD homes, we need clear runs to the air handler. Note HOA codes on the confirmation text.',
+      q: 'Anything to clear before the crew shows up?',
+      a: 'For this Takoma Park, MD home we need clear runs to the air handler. Put HOA codes on the confirmation text.',
     },
     {
-      q: 'How long does air duct cleaning take in Takoma Park?',
-      a: 'Takoma Park duct cleaning usually takes 2–3 hours for one system. Multi-system or heavily packed dryer vents are scoped before we start so the quote stays flat-rate.',
+      q: 'What is a realistic job length for one system?',
+      a: 'One Takoma Park system usually takes 2–3 hours. Multi-system or packed dryer vents are scoped before we start so the quote stays locked.',
     },
     {
-      q: 'Are Takoma Park air duct and dryer vent prices flat-rate?',
-      a: 'Yes. Takoma Park residential packages are flat-rate from the Bethesda office — the number we confirm before work starts is what you pay. No per-vent counting.',
+      q: 'Will the price change once equipment is out?',
+      a: 'The Bethesda crew prices Takoma Park jobs as published flat-rate packages. Scoped on site, confirmed before unload, paid after you are satisfied.',
     },
     {
-      q: 'Can duct and dryer vent cleaning be done the same day in Takoma Park?',
-      a: 'In Takoma Park, yes — when you book the combined package or both services up front. Call (301) 809-4544 and we stage the Bethesda crew for one visit to your street.',
+      q: 'Can ducts and the dryer vent be done in one visit?',
+      a: 'Yes for Takoma Park — book the combined package up front. Call (301) 809-4544; the Bethesda crew brings both tool sets for one stop.',
     },
   ],
 }

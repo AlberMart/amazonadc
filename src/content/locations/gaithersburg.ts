@@ -89,51 +89,51 @@ export const gaithersburg: LocationContentSeed = {
   },
   process: {
     heading: 'I-270 North Dispatch From Bethesda',
-    intro: 'From booking at (301) 809-4544 to photos at the door.',
+    intro: 'From booking at (301) 809-4544 to photos at the Gaithersburg door.',
     steps: [
       {
-        title: 'Book Gaithersburg From the Bethesda Line',
-        text: 'Call (301) 809-4544 or use the form — we confirm Gaithersburg availability the next business day.',
+        title: 'Book from the office line',
+        text: 'Call (301) 809-4544 or use the form — we confirm Gaithersburg availability the next business day from Bethesda.',
       },
       {
-        title: 'Protect Floors in Your Gaithersburg Home',
-        text: 'We cover work paths and keep living spaces clear while equipment runs in Gaithersburg.',
+        title: 'Protect floors and living spaces',
+        text: 'In Gaithersburg we cover work paths and keep living spaces clear while equipment runs.',
       },
       {
-        title: 'Source-Removal Cleaning for Gaithersburg',
-        text: 'NADCA-style agitation under HEPA negative pressure — dust leaves in the vacuum, not your Gaithersburg rooms.',
+        title: 'Source-removal cleaning',
+        text: 'NADCA-style agitation under HEPA negative pressure for this Gaithersburg system — dust leaves in the vacuum, not your rooms.',
       },
       {
-        title: 'Optional Sanitizing in Gaithersburg',
-        text: 'Complimentary Envirocon when requested or when inspection supports it on this Gaithersburg job.',
+        title: 'Optional sanitizing',
+        text: 'Complimentary Envirocon when you request it or when the Gaithersburg inspection supports it.',
       },
       {
-        title: 'Close Out the Gaithersburg Visit',
-        text: 'Photos on file, flat-rate invoice, and tips for Gaithersburg pollen or humidity seasons.',
+        title: 'Close out the visit',
+        text: 'Photos on file, flat-rate invoice for Gaithersburg, and seasonal tips. Call (301) 809-4544 anytime.',
       },
     ],
   },
   faqIntro: 'Gaithersburg questions — call (301) 809-4544 (dispatch: Bethesda).',
   faq: [
     {
-      q: 'Who handles air duct cleaning appointments in Gaithersburg?',
-      a: 'Gaithersburg jobs leave from our Bethesda, MD office at 7815 Old Georgetown Rd Ste 201. Call (301) 809-4544 to book flat-rate air duct or dryer vent cleaning.',
+      q: 'Where does the Gaithersburg appointment leave from?',
+      a: 'Gaithersburg appointments leave from Bethesda, MD (7815 Old Georgetown Rd Ste 201). Call (301) 809-4544 for air duct or dryer vent cleaning on your street.',
     },
     {
-      q: 'What should I prepare before the Gaithersburg crew arrives?',
-      a: 'For Gaithersburg MD homes, we need clear runs to the air handler. Note HOA codes on the confirmation text.',
+      q: 'Anything to clear before the crew shows up?',
+      a: 'For this Gaithersburg, MD home we need clear runs to the air handler. Put HOA codes on the confirmation text.',
     },
     {
-      q: 'How long does air duct cleaning take in Gaithersburg?',
-      a: 'Gaithersburg duct cleaning usually takes 2–3 hours for one system. Multi-system or heavily packed dryer vents are scoped before we start so the quote stays flat-rate.',
+      q: 'What is a realistic job length for one system?',
+      a: 'One Gaithersburg system usually takes 2–3 hours. Multi-system or packed dryer vents are scoped before we start so the quote stays locked.',
     },
     {
-      q: 'Are Gaithersburg air duct and dryer vent prices flat-rate?',
-      a: 'Yes. Gaithersburg residential packages are flat-rate from the Bethesda office — the number we confirm before work starts is what you pay. No per-vent counting.',
+      q: 'Will the price change once equipment is out?',
+      a: 'The Bethesda crew prices Gaithersburg jobs as published flat-rate packages. Scoped on site, confirmed before unload, paid after you are satisfied.',
     },
     {
-      q: 'Is sanitizing included with Gaithersburg duct cleaning?',
-      a: 'For Gaithersburg jobs, Envirocon antimicrobial sanitizing is complimentary when you request it or when inspection supports it — we confirm on site before applying anything.',
+      q: 'Is antimicrobial sanitizing included?',
+      a: 'On Gaithersburg jobs Envirocon is complimentary when you request it or when inspection supports it — confirmed on site before anything is applied.',
     },
   ],
 }

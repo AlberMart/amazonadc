@@ -26,50 +26,89 @@ function buildFaq(city, state, office, phone, slug, h) {
   const far = /frederick|olney|ellicott-city|columbia|loudoun|prince-william|lorton/.test(slug)
   const items = []
 
+  const whoQs = [
+    `Which office books jobs for ${city}?`,
+    `Who dispatches the crew to ${city}, ${state}?`,
+    `Where does the ${city} appointment leave from?`,
+  ]
   items.push({
-    q: `Who handles air duct cleaning appointments in ${city}?`,
+    q: whoQs[h % 3],
     a: office === 'Burke'
-      ? `${city} jobs leave from our Burke, VA office at 5641 Burke Centre Pkwy Ste 119. Call ${phone} to book flat-rate air duct or dryer vent cleaning.`
-      : `${city} jobs leave from our Bethesda, MD office at 7815 Old Georgetown Rd Ste 201. Call ${phone} to book flat-rate air duct or dryer vent cleaning.`,
+      ? `${city} appointments leave from our Burke, VA office at 5641 Burke Centre Pkwy Ste 119. Call ${phone} for air duct or dryer vent cleaning.`
+      : `${city} appointments leave from our Bethesda, MD office at 7815 Old Georgetown Rd Ste 201. Call ${phone} for air duct or dryer vent cleaning.`,
   })
 
+  const prepQs = [
+    `What access do you need before arrival?`,
+    `How should I prep the house for the visit?`,
+    `Anything to clear before the crew shows up?`,
+  ]
   const prep = [
-    `In ${city}, clear a path to the air handler and dryer before we arrive — ${condoish ? 'condo/townhome closets and stacked laundry especially' : 'basement trunks and dryer closets especially'}. Share gate or parking notes if your street needs them.`,
-    `${city} prep is simple: open access to returns and the dryer, move fragile items near vents, and tell us about pets or recent renovations when you book at ${phone}.`,
-    `For ${city} ${state} homes, we need clear runs to the air handler${newBuild ? ' and any unfinished spaces still shedding construction dust' : ''}. Note HOA codes on the confirmation text.`,
+    `Clear a path to the air handler and dryer — ${condoish ? 'condo/townhome closets and stacked laundry especially' : 'basement trunks and dryer closets especially'}. Share gate or parking notes if your ${city} street needs them.`,
+    `Open access to returns and the dryer, move fragile items near vents, and mention pets or recent renovations when you book at ${phone}.`,
+    `We need clear runs to the air handler${newBuild ? ' and any unfinished spaces still shedding construction dust' : ''} in this ${state} home. Note HOA codes on the confirmation text.`,
   ][h % 3]
-  items.push({ q: `What should I prepare before the ${city} crew arrives?`, a: prep })
+  items.push({ q: prepQs[h % 3], a: prep })
 
+  const durQs = [
+    `How long is a typical visit?`,
+    `How much time should I block on the calendar?`,
+    `What is a realistic job length for one system?`,
+  ]
   const dur = [
-    `Most ${city} single-system houses finish in about 2–3 hours. ${condoish ? 'High-rise dryer risers and long laundry closets can add time after inspection.' : newBuild ? 'Newer builds with long dryer runs sometimes run longer once we see the layout.' : 'Older trunks with additions can add time after inspection.'}`,
-    `Plan on roughly half a morning for a typical ${city} home. ${far ? 'Arrival windows already reflect the drive from ' + office + '.' : 'Same-day dryer vent add-ons are often possible if booked together.'}`,
-    `${city} duct cleaning usually takes 2–3 hours for one system. Multi-system or heavily packed dryer vents are scoped before we start so the quote stays flat-rate.`,
+    `Most single-system houses in ${city} finish in about 2–3 hours. ${condoish ? 'High-rise dryer risers and long laundry closets can add time after inspection.' : newBuild ? 'Newer builds with long dryer runs sometimes run longer once we see the layout.' : 'Older trunks with additions can add time after inspection.'}`,
+    `Plan on roughly half a morning. ${far ? 'Arrival windows already reflect the drive from ' + office + '.' : 'Same-day dryer vent add-ons are often possible if booked together.'}`,
+    `One system usually takes 2–3 hours. Multi-system or heavily packed dryer vents are scoped before we start so the quote stays locked.`,
   ][h % 3]
-  items.push({ q: `How long does air duct cleaning take in ${city}?`, a: dur })
+  items.push({ q: durQs[h % 3], a: dur })
 
+  const priceQs = [
+    `Is pricing flat-rate or by the vent?`,
+    `How does the quote work for this address?`,
+    `Will the price change once equipment is out?`,
+  ]
   items.push({
-    q: `Are ${city} air duct and dryer vent prices flat-rate?`,
-    a: `Yes. ${city} residential packages are flat-rate from the ${office} office — the number we confirm before work starts is what you pay. No per-vent counting.`,
+    q: priceQs[h % 3],
+    a: [
+      `Residential packages for ${city} are flat-rate from the ${office} office. We scope the system during the walkthrough, confirm the number before equipment starts, and that is what you pay — no per-vent counting.`,
+      `For this ${city}, ${state} address we quote a flat residential package from ${office}. Scoped on the walkthrough, locked before we unload — not priced by counting vents.`,
+      `The ${office} crew prices ${city} jobs as published flat-rate packages. Walkthrough first, confirmed number second, then equipment — no vent-counting surprises.`,
+    ][h % 3],
   })
 
   if (h % 2 === 0) {
     items.push({
-      q: `Can duct and dryer vent cleaning be done the same day in ${city}?`,
-      a: `In ${city}, yes — when you book the combined package or both services up front. Call ${phone} and we stage the ${office} crew for one visit to your street.`,
+      q: [
+        `Can ducts and the dryer vent be done in one visit?`,
+        `Do you combine duct and dryer cleaning on the same day?`,
+      ][h % 2],
+      a: [
+        `Yes — book the combined package or both services up front. Call ${phone} and we stage the ${office} crew for one stop on your ${city} street.`,
+        `Same-day combined visits are normal when both services are on the ticket. Call ${phone}; the ${office} team brings duct and dryer tools together.`,
+      ][h % 2],
     })
   } else {
     items.push({
-      q: `Is sanitizing included with ${city} duct cleaning?`,
-      a: `For ${city} jobs, Envirocon antimicrobial sanitizing is complimentary when you request it or when inspection supports it — we confirm on site before applying anything.`,
+      q: [
+        `Is antimicrobial sanitizing included?`,
+        `Do you charge extra for Envirocon sanitizing?`,
+      ][(h >> 1) % 2],
+      a: [
+        `On ${city} jobs, Envirocon antimicrobial sanitizing is complimentary when you request it or when inspection supports it — we confirm on site before applying anything.`,
+        `No upcharge for Envirocon when requested or when the ${city} inspection supports it. We never spray without confirming with you first.`,
+      ][(h >> 1) % 2],
     })
   }
 
   if (far || h % 3 === 1) {
     items.push({
-      q: `How far in advance should ${city} homeowners book?`,
+      q: [
+        `How far ahead should I book?`,
+        `When should I call for the next opening?`,
+      ][h % 2],
       a: far
-        ? `${city} is a longer run from ${office}. Booking several days ahead keeps arrival windows realistic; call ${phone} for the next open ${city} slot.`
-        : `Peak pollen and summer humidity fill the ${city} calendar fast. Same-week openings are common — call ${phone} for the next ${office} window serving ${city}.`,
+        ? `${city} is a longer run from ${office}. Booking several days ahead keeps arrival windows realistic; call ${phone} for the next open slot.`
+        : `Peak pollen and summer humidity fill the calendar fast. Same-week openings are common — call ${phone} for the next ${office} window.`,
     })
   }
 
@@ -80,71 +119,76 @@ function buildProcess(city, state, office, phone, slug, h) {
   const condoish = /arlington|reston|alexandria|silver-spring|bethesda|washington-dc|college-park/.test(slug)
   const newBuild = /clarksburg|germantown|loudoun|chantilly|fair-oaks|herndon/.test(slug)
   const estate = /great-falls|potomac|mclean|mount-vernon/.test(slug)
+  const housing = condoish
+    ? `condo / stacked-laundry layouts common around ${city}`
+    : estate
+      ? `long dryer runs on larger ${city} lots`
+      : `basement or attic air-handler access typical in ${city}`
   const variants = [
     [
       {
-        title: `Talk Through Your ${city} Home`,
-        text: `We ask about pets, renovations, and ${condoish ? 'stacked laundry / riser layout common in ' + city : estate ? 'long dryer runs typical of ' + city + ' lots' : 'basement or attic air-handler access in ' + city} before quoting.`,
+        title: 'Walkthrough and quote',
+        text: `We ask about pets, renovations, and ${housing} before locking a flat-rate number for this ${state} address.`,
       },
       {
-        title: `Confirm the ${city} Arrival Window`,
-        text: `Morning-of text with a realistic ETA from ${office} to your ${city} street.`,
+        title: 'Arrival window',
+        text: `Morning-of text with a realistic ETA from the ${office} office to your street.`,
       },
       {
-        title: `Agree the ${city} Flat-Rate Package`,
-        text: `Duct, dryer, or both for this ${city} ${state} address — the quoted number is what you pay.`,
+        title: 'Agree the package',
+        text: `Ducts, dryer vent, or both — scoped on site, quoted before equipment starts, paid after you are satisfied.`,
       },
       {
-        title: `Run HEPA Cleaning in ${city}`,
-        text: `${newBuild ? 'We agitate construction fines plus household dust' : 'We agitate and vacuum supplies, returns, and registers'} under negative pressure in your ${city} system.`,
+        title: 'HEPA source-removal cleaning',
+        text: `${newBuild ? 'We agitate construction fines plus household dust' : 'We agitate and vacuum supplies, returns, and registers'} under negative pressure so debris leaves in the vacuum.`,
       },
       {
-        title: `Photos Before We Leave ${city}`,
-        text: `Before/after photos, filter tips, and dryer-vent interval tailored to ${city} seasons.`,
-      },
-    ],
-    [
-      {
-        title: `Scope the ${city} System`,
-        text: `Walk the returns and dryer path typical of ${city} housing so nothing is surprise-priced later.`,
-      },
-      {
-        title: `Stage Equipment for ${city}`,
-        text: `If the ${city} street is tight, we switch to portable HEPA sized for local lots and townhomes.`,
-      },
-      {
-        title: `Clean ${city} Ducts End to End`,
-        text: `Rotary brushes plus negative-pressure vacuum through the trunks serving this ${city} home.`,
-      },
-      {
-        title: `Clear the ${city} Dryer Run`,
-        text: `Full-length brushing to the exterior cap when dryer service is on the ${city} ticket.`,
-      },
-      {
-        title: `${city} Walk-Through`,
-        text: `Review photos, answer questions, and leave booking notes for ${phone} if you want a ${city} follow-up.`,
+        title: 'Photos and handoff',
+        text: `Before/after photos, filter tips, and a dryer-vent interval that fits ${city} pollen and humidity seasons. Questions go to ${phone}.`,
       },
     ],
     [
       {
-        title: `Book ${city} From the ${office} Line`,
-        text: `Call ${phone} or use the form — we confirm ${city} availability the next business day.`,
+        title: 'Inspect access and dryer path',
+        text: `We walk returns and the dryer run typical of ${city} housing so nothing is surprise-priced later.`,
       },
       {
-        title: `Protect Floors in Your ${city} Home`,
-        text: `We cover work paths and keep living spaces clear while equipment runs in ${city}.`,
+        title: 'Stage the right equipment',
+        text: `Tight ${city} streets get portable HEPA; larger lots may use truck-mounted vacuum when access allows.`,
       },
       {
-        title: `Source-Removal Cleaning for ${city}`,
-        text: `NADCA-style agitation under HEPA negative pressure — dust leaves in the vacuum, not your ${city} rooms.`,
+        title: 'Clean ducts end to end',
+        text: `Rotary brushes plus negative-pressure vacuum through the trunks serving this home.`,
       },
       {
-        title: `Optional Sanitizing in ${city}`,
-        text: `Complimentary Envirocon when requested or when inspection supports it on this ${city} job.`,
+        title: 'Clear the dryer run',
+        text: `Full-length brushing to the exterior cap when dryer service is on the ticket.`,
       },
       {
-        title: `Close Out the ${city} Visit`,
-        text: `Photos on file, flat-rate invoice, and tips for ${city} pollen or humidity seasons.`,
+        title: 'Final walk-through',
+        text: `Review photos together and leave booking notes for ${phone} if you want a follow-up.`,
+      },
+    ],
+    [
+      {
+        title: 'Book from the office line',
+        text: `Call ${phone} or use the form — we confirm availability for ${city} the next business day from ${office}.`,
+      },
+      {
+        title: 'Protect floors and living spaces',
+        text: `We cover work paths and keep rooms clear while equipment runs.`,
+      },
+      {
+        title: 'Source-removal cleaning',
+        text: `NADCA-style agitation under HEPA negative pressure — dust leaves in the vacuum, not your rooms.`,
+      },
+      {
+        title: 'Optional sanitizing',
+        text: `Complimentary Envirocon spray when you request it or when inspection supports it on this job.`,
+      },
+      {
+        title: 'Close out the visit',
+        text: `Photos on file, flat-rate invoice, and seasonal tips for ${city}.`,
       },
     ],
   ]

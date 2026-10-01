@@ -92,7 +92,7 @@ export const homeContentSeed: HomeContent = {
   ],
   pricingParagraphs: [
     'At Amazon Air Duct Cleaning, we believe in clear and transparent pricing for every service. Unlike companies that rely on hidden fees or aggressive upselling, we provide straightforward flat-rate pricing so you know exactly what to expect before we begin. No counting vents, no extra charges based on square footage, and no unexpected add-ons — the price you\'re quoted is the price you pay.',
-    'We stand behind the quality of our work and prioritize customer satisfaction. Payment is only required after the job is completed to your satisfaction. If you\'re not completely happy with the results, we offer a full money-back guarantee.',
+    'We stand behind the quality of our work and prioritize customer satisfaction. Payment is only required after the job is completed to your satisfaction. If something falls short, contact us within 7 days — we will re-perform the work or issue a refund per our refund policy.',
   ],
   airDuctHeading: 'Air Duct Cleaning',
   airDuctParagraphs: [
@@ -129,7 +129,7 @@ export const homeContentSeed: HomeContent = {
     },
     {
       title: '100% Satisfaction Guarantee',
-      text: "Your satisfaction is our priority. If you're not completely satisfied with our service, we'll make it right or offer a full money-back guarantee.",
+      text: "Your satisfaction is our priority. If you're not completely satisfied, we'll make it right — re-perform the work or refund per our refund policy.",
     },
     {
       title: 'Top-Rated Local Service in the DMV',
@@ -138,7 +138,7 @@ export const homeContentSeed: HomeContent = {
   ],
   processHeading: 'Professional Air Duct Cleaning Process',
   processIntro:
-    'Our process follows the proven Source Removal method — the most effective way to eliminate dust, debris, and contaminants from your HVAC system.',
+    'Our process follows the proven Source Removal method — an effective way to remove dust, debris, and contaminants from your HVAC system.',
   processImage: '/img/AmazonDC-57.webp',
   processImageAlt: 'Professional air duct cleaning process using source removal method',
   processSteps: [

@@ -5,7 +5,7 @@ export const arlington: LocationContentSeed = {
   title: 'Air Duct Cleaning & Mold Remediation in Arlington, VA',
   headline: 'Professional air duct, dryer vent, and mold treatment across Arlington County',
   description:
-    'Professional air duct cleaning, dryer vent maintenance, and mold remediation in Arlington, VA. Flat rates, certified technicians, and a 100% satisfaction guarantee.',
+    'Professional air duct cleaning, dryer vent maintenance, and mold remediation in Arlington, VA. Flat rates, certified technicians, and a photo-backed satisfaction policy.',
   intro:
     'Amazon Air Duct Cleaning serves condos, townhomes, and older brick houses across Arlington — from Rosslyn and Clarendon to Crystal City and Columbia Pike. Our Burke-based technicians bring professional HVAC cleaning, dryer vent service, and ventilation mold treatment to Arlington homes. Call (571) 460-0001.',
   heroImage: '/img/locations/arlington.webp',
@@ -65,7 +65,7 @@ export const arlington: LocationContentSeed = {
       },
       {
         title: 'Guaranteed Results',
-        text: 'If the cleaning does not meet your expectations, we return and redo the work at no additional charge.',
+        text: 'If the Arlington result falls short, contact us within 7 days — we re-perform the work or refund per our refund policy.',
       },
     ],
   },
@@ -94,51 +94,51 @@ export const arlington: LocationContentSeed = {
   },
   process: {
     heading: 'Metro-Adjacent Scheduling From the Burke Office',
-    intro: 'Arrival windows reflect the drive from Burke.',
+    intro: 'Arrival windows reflect the drive from Burke to Arlington.',
     steps: [
       {
-        title: 'Talk Through Your Arlington Home',
-        text: 'We ask about pets, renovations, and stacked laundry / riser layout common in Arlington before quoting.',
+        title: 'Walkthrough and quote',
+        text: 'In Arlington we ask about pets, renovations, and condo / stacked-laundry layouts common around Arlington before locking a flat-rate number for this VA address.',
       },
       {
-        title: 'Confirm the Arlington Arrival Window',
-        text: 'Morning-of text with a realistic ETA from Burke to your Arlington street.',
+        title: 'Arrival window',
+        text: 'Morning-of text with a realistic ETA from the Burke office to your Arlington street — not a vague all-day window.',
       },
       {
-        title: 'Agree the Arlington Flat-Rate Package',
-        text: 'Duct, dryer, or both for this Arlington VA address — the quoted number is what you pay.',
+        title: 'Agree the package',
+        text: 'For this Arlington home: ducts, dryer vent, or both — scoped on site, quoted before equipment starts, paid after you are satisfied.',
       },
       {
-        title: 'Run HEPA Cleaning in Arlington',
-        text: 'We agitate and vacuum supplies, returns, and registers under negative pressure in your Arlington system.',
+        title: 'HEPA source-removal cleaning',
+        text: 'We agitate and vacuum supplies, returns, and registers in this Arlington system under negative pressure so debris leaves in the vacuum.',
       },
       {
-        title: 'Photos Before We Leave Arlington',
-        text: 'Before/after photos, filter tips, and dryer-vent interval tailored to Arlington seasons.',
+        title: 'Photos and handoff',
+        text: 'Before/after photos, filter tips, and a dryer-vent interval for Arlington seasons. Questions go to (571) 460-0001.',
       },
     ],
   },
   faqIntro: 'Arlington questions — call (571) 460-0001 (dispatch: Burke).',
   faq: [
     {
-      q: 'Who handles air duct cleaning appointments in Arlington?',
-      a: 'Arlington jobs leave from our Burke, VA office at 5641 Burke Centre Pkwy Ste 119. Call (571) 460-0001 to book flat-rate air duct or dryer vent cleaning.',
+      q: 'Which office books jobs for Arlington?',
+      a: 'Arlington appointments leave from Burke, VA (5641 Burke Centre Pkwy Ste 119). Call (571) 460-0001 for air duct or dryer vent cleaning on your street.',
     },
     {
-      q: 'What should I prepare before the Arlington crew arrives?',
-      a: 'In Arlington, clear a path to the air handler and dryer before we arrive — condo/townhome closets and stacked laundry especially. Share gate or parking notes if your street needs them.',
+      q: 'What access do you need before arrival?',
+      a: 'In Arlington, clear a path to the air handler and dryer — condo closets and stacked laundry especially. Share gate or parking notes for your block.',
     },
     {
-      q: 'How long does air duct cleaning take in Arlington?',
-      a: 'Most Arlington single-system houses finish in about 2–3 hours. High-rise dryer risers and long laundry closets can add time after inspection.',
+      q: 'How long is a typical visit?',
+      a: 'Most Arlington single-system houses finish in about 2–3 hours. High-rise dryer risers can add time after inspection.',
     },
     {
-      q: 'Are Arlington air duct and dryer vent prices flat-rate?',
-      a: 'Yes. Arlington residential packages are flat-rate from the Burke office — the number we confirm before work starts is what you pay. No per-vent counting.',
+      q: 'Is pricing flat-rate or by the vent?',
+      a: 'Arlington residential packages are flat-rate from Burke. We scope during the walkthrough, confirm before equipment starts, and that is what you pay — no per-vent counting.',
     },
     {
-      q: 'Can duct and dryer vent cleaning be done the same day in Arlington?',
-      a: 'In Arlington, yes — when you book the combined package or both services up front. Call (571) 460-0001 and we stage the Burke crew for one visit to your street.',
+      q: 'Can ducts and the dryer vent be done in one visit?',
+      a: 'Yes for Arlington — book the combined package up front. Call (571) 460-0001; the Burke crew brings both tool sets for one stop.',
     },
   ],
 }

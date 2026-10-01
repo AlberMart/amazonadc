@@ -90,55 +90,55 @@ export const columbia: LocationContentSeed = {
   },
   process: {
     heading: 'Howard County Drive From Bethesda — Planned',
-    intro: 'Arrival windows reflect the drive from Bethesda.',
+    intro: 'Arrival windows reflect the drive from Bethesda to Columbia.',
     steps: [
       {
-        title: 'Talk Through Your Columbia Home',
-        text: 'We ask about pets, renovations, and basement or attic air-handler access in Columbia before quoting.',
+        title: 'Walkthrough and quote',
+        text: 'In Columbia we ask about pets, renovations, and longer drive-time homes where arrival windows matter in Columbia before locking a flat-rate number for this MD address.',
       },
       {
-        title: 'Confirm the Columbia Arrival Window',
-        text: 'Morning-of text with a realistic ETA from Bethesda to your Columbia street.',
+        title: 'Arrival window',
+        text: 'Morning-of text with a realistic ETA from the Bethesda office to your Columbia street — not a vague all-day window.',
       },
       {
-        title: 'Agree the Columbia Flat-Rate Package',
-        text: 'Duct, dryer, or both for this Columbia MD address — the quoted number is what you pay.',
+        title: 'Agree the package',
+        text: 'For this Columbia home: ducts, dryer vent, or both — scoped on site, quoted before equipment starts, paid after you are satisfied.',
       },
       {
-        title: 'Run HEPA Cleaning in Columbia',
-        text: 'We agitate and vacuum supplies, returns, and registers under negative pressure in your Columbia system.',
+        title: 'HEPA source-removal cleaning',
+        text: 'We agitate and vacuum supplies, returns, and registers in this Columbia system under negative pressure so debris leaves in the vacuum.',
       },
       {
-        title: 'Photos Before We Leave Columbia',
-        text: 'Before/after photos, filter tips, and dryer-vent interval tailored to Columbia seasons.',
+        title: 'Photos and handoff',
+        text: 'Before/after photos, filter tips, and a dryer-vent interval for Columbia seasons. Questions go to (301) 809-4544.',
       },
     ],
   },
   faqIntro: 'Columbia questions — call (301) 809-4544 (dispatch: Bethesda).',
   faq: [
     {
-      q: 'Who handles air duct cleaning appointments in Columbia?',
-      a: 'Columbia jobs leave from our Bethesda, MD office at 7815 Old Georgetown Rd Ste 201. Call (301) 809-4544 to book flat-rate air duct or dryer vent cleaning.',
+      q: 'Which office books jobs for Columbia?',
+      a: 'Columbia appointments leave from Bethesda, MD (7815 Old Georgetown Rd Ste 201). Call (301) 809-4544 for air duct or dryer vent cleaning on your street.',
     },
     {
-      q: 'What should I prepare before the Columbia crew arrives?',
-      a: 'In Columbia, clear a path to the air handler and dryer before we arrive — basement trunks and dryer closets especially. Share gate or parking notes if your street needs them.',
+      q: 'What access do you need before arrival?',
+      a: 'In Columbia, clear a path to the air handler and dryer — basement trunks and dryer closets especially. Share gate or parking notes for your block.',
     },
     {
-      q: 'How long does air duct cleaning take in Columbia?',
+      q: 'How long is a typical visit?',
       a: 'Most Columbia single-system houses finish in about 2–3 hours. Older trunks with additions can add time after inspection.',
     },
     {
-      q: 'Are Columbia air duct and dryer vent prices flat-rate?',
-      a: 'Yes. Columbia residential packages are flat-rate from the Bethesda office — the number we confirm before work starts is what you pay. No per-vent counting.',
+      q: 'Is pricing flat-rate or by the vent?',
+      a: 'Columbia residential packages are flat-rate from Bethesda. We scope during the walkthrough, confirm before equipment starts, and that is what you pay — no per-vent counting.',
     },
     {
-      q: 'Can duct and dryer vent cleaning be done the same day in Columbia?',
-      a: 'In Columbia, yes — when you book the combined package or both services up front. Call (301) 809-4544 and we stage the Bethesda crew for one visit to your street.',
+      q: 'Can ducts and the dryer vent be done in one visit?',
+      a: 'Yes for Columbia — book the combined package up front. Call (301) 809-4544; the Bethesda crew brings both tool sets for one stop.',
     },
     {
-      q: 'How far in advance should Columbia homeowners book?',
-      a: 'Columbia is a longer run from Bethesda. Booking several days ahead keeps arrival windows realistic; call (301) 809-4544 for the next open Columbia slot.',
+      q: 'How far ahead should I book?',
+      a: 'Columbia is a longer run from Bethesda. Book several days ahead for realistic windows; call (301) 809-4544 for the next open Columbia slot.',
     },
   ],
 }

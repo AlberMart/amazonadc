@@ -65,7 +65,7 @@ export const princeWilliam: LocationContentSeed = {
       },
       {
         title: 'Satisfaction Guarantee',
-        text: 'If the cleaning does not meet your expectations, we come back and redo the work at no extra cost.',
+        text: 'If the Prince William result falls short, contact us within 7 days — we re-perform the work or refund per our refund policy.',
       },
     ],
   },
@@ -90,55 +90,55 @@ export const princeWilliam: LocationContentSeed = {
   },
   process: {
     heading: 'Southern Corridor Timing From Burke',
-    intro: 'From booking at (571) 460-0001 to photos at the door.',
+    intro: 'From booking at (571) 460-0001 to photos at the Prince William door.',
     steps: [
       {
-        title: 'Book Prince William From the Burke Line',
-        text: 'Call (571) 460-0001 or use the form \u2014 we confirm Prince William availability the next business day.',
+        title: 'Book from the office line',
+        text: 'Call (571) 460-0001 or use the form — we confirm Prince William availability the next business day from Burke.',
       },
       {
-        title: 'Protect Floors in Your Prince William Home',
-        text: 'We cover work paths and keep living spaces clear while equipment runs in Prince William.',
+        title: 'Protect floors and living spaces',
+        text: 'In Prince William we cover work paths and keep living spaces clear while equipment runs.',
       },
       {
-        title: 'Source-Removal Cleaning for Prince William',
-        text: 'NADCA-style agitation under HEPA negative pressure \u2014 dust leaves in the vacuum, not your Prince William rooms.',
+        title: 'Source-removal cleaning',
+        text: 'NADCA-style agitation under HEPA negative pressure for this Prince William system — dust leaves in the vacuum, not your rooms.',
       },
       {
-        title: 'Optional Sanitizing in Prince William',
-        text: 'Complimentary Envirocon when requested or when inspection supports it on this Prince William job.',
+        title: 'Optional sanitizing',
+        text: 'Complimentary Envirocon when you request it or when the Prince William inspection supports it.',
       },
       {
-        title: 'Close Out the Prince William Visit',
-        text: 'Photos on file, flat-rate invoice, and tips for Prince William pollen or humidity seasons.',
+        title: 'Close out the visit',
+        text: 'Photos on file, flat-rate invoice for Prince William, and seasonal tips. Call (571) 460-0001 anytime.',
       },
     ],
   },
-  faqIntro: 'Prince William questions \u2014 call (571) 460-0001 (dispatch: Burke).',
+  faqIntro: 'Prince William questions — call (571) 460-0001 (dispatch: Burke).',
   faq: [
     {
-      q: 'Who handles air duct cleaning appointments in Prince William?',
-      a: 'Prince William jobs leave from our Burke, VA office at 5641 Burke Centre Pkwy Ste 119. Call (571) 460-0001 to book flat-rate air duct or dryer vent cleaning.',
+      q: 'Where does the Prince William appointment leave from?',
+      a: 'Prince William appointments leave from Burke, VA (5641 Burke Centre Pkwy Ste 119). Call (571) 460-0001 for air duct or dryer vent cleaning on your street.',
     },
     {
-      q: 'What should I prepare before the Prince William crew arrives?',
-      a: 'For Prince William VA homes, we need clear runs to the air handler. Note HOA codes on the confirmation text.',
+      q: 'Anything to clear before the crew shows up?',
+      a: 'For this Prince William, VA home we need clear runs to the air handler. Put HOA codes on the confirmation text.',
     },
     {
-      q: 'How long does air duct cleaning take in Prince William?',
-      a: 'Prince William duct cleaning usually takes 2\u20133 hours for one system. Multi-system or heavily packed dryer vents are scoped before we start so the quote stays flat-rate.',
+      q: 'What is a realistic job length for one system?',
+      a: 'One Prince William system usually takes 2–3 hours. Multi-system or packed dryer vents are scoped before we start so the quote stays locked.',
     },
     {
-      q: 'Are Prince William air duct and dryer vent prices flat-rate?',
-      a: 'Yes. Prince William residential packages are flat-rate from the Burke office \u2014 the number we confirm before work starts is what you pay. No per-vent counting.',
+      q: 'Will the price change once equipment is out?',
+      a: 'The Burke crew prices Prince William jobs as published flat-rate packages. Scoped on site, confirmed before unload, paid after you are satisfied.',
     },
     {
-      q: 'Is sanitizing included with Prince William duct cleaning?',
-      a: 'For Prince William jobs, Envirocon antimicrobial sanitizing is complimentary when you request it or when inspection supports it \u2014 we confirm on site before applying anything.',
+      q: 'Is antimicrobial sanitizing included?',
+      a: 'On Prince William jobs Envirocon is complimentary when you request it or when inspection supports it — confirmed on site before anything is applied.',
     },
     {
-      q: 'How far in advance should Prince William homeowners book?',
-      a: 'Prince William is a longer run from Burke. Booking several days ahead keeps arrival windows realistic; call (571) 460-0001 for the next open Prince William slot.',
+      q: 'When should I call for the next opening?',
+      a: 'Prince William is a longer run from Burke. Book several days ahead for realistic windows; call (571) 460-0001 for the next open Prince William slot.',
     },
   ],
 }

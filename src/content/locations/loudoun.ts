@@ -65,7 +65,7 @@ export const loudoun: LocationContentSeed = {
       },
       {
         title: 'Guaranteed Results',
-        text: 'If the cleaning does not meet your expectations, we return and redo the work at no extra charge.',
+        text: 'If the Loudoun result falls short, contact us within 7 days — we re-perform the work or refund per our refund policy.',
       },
     ],
   },
@@ -89,55 +89,55 @@ export const loudoun: LocationContentSeed = {
   },
   process: {
     heading: 'Longer Dulles-Corridor Drive \u2014 Planned Honestly',
-    intro: 'Same flat-rate flow we use across VA \u2014 scoped for Loudoun housing.',
+    intro: 'Same flat-rate flow from Burke — scoped for Loudoun housing.',
     steps: [
       {
-        title: 'Scope the Loudoun System',
-        text: 'Walk the returns and dryer path typical of Loudoun housing so nothing is surprise-priced later.',
+        title: 'Inspect access and dryer path',
+        text: 'We walk returns and the dryer run typical of Loudoun housing (newer-build drywall fines still sitting in Loudoun returns) so nothing is surprise-priced later.',
       },
       {
-        title: 'Stage Equipment for Loudoun',
-        text: 'If the Loudoun street is tight, we switch to portable HEPA sized for local lots and townhomes.',
+        title: 'Stage the right equipment',
+        text: 'Tight Loudoun streets get portable HEPA from Burke; larger lots may use truck-mounted vacuum when access allows.',
       },
       {
-        title: 'Clean Loudoun Ducts End to End',
-        text: 'Rotary brushes plus negative-pressure vacuum through the trunks serving this Loudoun home.',
+        title: 'Clean ducts end to end',
+        text: 'Rotary brushes plus negative-pressure vacuum through the trunks serving this Loudoun, VA home.',
       },
       {
-        title: 'Clear the Loudoun Dryer Run',
+        title: 'Clear the dryer run',
         text: 'Full-length brushing to the exterior cap when dryer service is on the Loudoun ticket.',
       },
       {
-        title: 'Loudoun Walk-Through',
-        text: 'Review photos, answer questions, and leave booking notes for (571) 460-0001 if you want a Loudoun follow-up.',
+        title: 'Final walk-through',
+        text: 'Review Loudoun photos together and leave booking notes for (571) 460-0001 if you want a follow-up.',
       },
     ],
   },
-  faqIntro: 'Loudoun questions \u2014 call (571) 460-0001 (dispatch: Burke).',
+  faqIntro: 'Loudoun questions — call (571) 460-0001 (dispatch: Burke).',
   faq: [
     {
-      q: 'Who handles air duct cleaning appointments in Loudoun?',
-      a: 'Loudoun jobs leave from our Burke, VA office at 5641 Burke Centre Pkwy Ste 119. Call (571) 460-0001 to book flat-rate air duct or dryer vent cleaning.',
+      q: 'Who dispatches the crew to Loudoun, VA?',
+      a: 'Loudoun appointments leave from Burke, VA (5641 Burke Centre Pkwy Ste 119). Call (571) 460-0001 for air duct or dryer vent cleaning on your street.',
     },
     {
-      q: 'What should I prepare before the Loudoun crew arrives?',
-      a: 'Loudoun prep is simple: open access to returns and the dryer, move fragile items near vents, and tell us about pets or recent renovations when you book at (571) 460-0001.',
+      q: 'How should I prep the house for the visit?',
+      a: 'Loudoun prep: open returns and the dryer, move fragile items near vents, mention pets or renovations when you book at (571) 460-0001.',
     },
     {
-      q: 'How long does air duct cleaning take in Loudoun?',
-      a: 'Plan on roughly half a morning for a typical Loudoun home. Arrival windows already reflect the drive from Burke.',
+      q: 'How much time should I block on the calendar?',
+      a: 'Block roughly half a morning for a typical Loudoun home. Arrival windows already reflect the drive from Burke.',
     },
     {
-      q: 'Are Loudoun air duct and dryer vent prices flat-rate?',
-      a: 'Yes. Loudoun residential packages are flat-rate from the Burke office \u2014 the number we confirm before work starts is what you pay. No per-vent counting.',
+      q: 'How does the quote work for this address?',
+      a: 'For this Loudoun, VA address we quote a flat package from Burke. Walkthrough first, locked number second — not priced by counting vents.',
     },
     {
-      q: 'Can duct and dryer vent cleaning be done the same day in Loudoun?',
-      a: 'In Loudoun, yes \u2014 when you book the combined package or both services up front. Call (571) 460-0001 and we stage the Burke crew for one visit to your street.',
+      q: 'Can ducts and the dryer vent be done in one visit?',
+      a: 'Yes for Loudoun — book the combined package up front. Call (571) 460-0001; the Burke crew brings both tool sets for one stop.',
     },
     {
-      q: 'How far in advance should Loudoun homeowners book?',
-      a: 'Loudoun is a longer run from Burke. Booking several days ahead keeps arrival windows realistic; call (571) 460-0001 for the next open Loudoun slot.',
+      q: 'How far ahead should I book?',
+      a: 'Loudoun is a longer run from Burke. Book several days ahead for realistic windows; call (571) 460-0001 for the next open Loudoun slot.',
     },
   ],
 }

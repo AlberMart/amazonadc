@@ -97,51 +97,51 @@ export const burke: LocationContentSeed = {
   },
   process: {
     heading: 'Office Intake at Burke Centre \u2014 Then On the Road',
-    intro: 'Arrival windows reflect the drive from Burke.',
+    intro: 'Arrival windows reflect the drive from Burke to Burke.',
     steps: [
       {
-        title: 'Talk Through Your Burke Home',
-        text: 'We ask about pets, renovations, and basement or attic air-handler access in Burke before quoting.',
+        title: 'Walkthrough and quote',
+        text: 'In Burke we ask about pets, renovations, and basement or attic air-handler access typical in Burke before locking a flat-rate number for this VA address.',
       },
       {
-        title: 'Confirm the Burke Arrival Window',
-        text: 'Morning-of text with a realistic ETA from Burke to your Burke street.',
+        title: 'Arrival window',
+        text: 'Morning-of text with a realistic ETA from the Burke office to your Burke street — not a vague all-day window.',
       },
       {
-        title: 'Agree the Burke Flat-Rate Package',
-        text: 'Duct, dryer, or both for this Burke VA address \u2014 the quoted number is what you pay.',
+        title: 'Agree the package',
+        text: 'For this Burke home: ducts, dryer vent, or both — scoped on site, quoted before equipment starts, paid after you are satisfied.',
       },
       {
-        title: 'Run HEPA Cleaning in Burke',
-        text: 'We agitate and vacuum supplies, returns, and registers under negative pressure in your Burke system.',
+        title: 'HEPA source-removal cleaning',
+        text: 'We agitate and vacuum supplies, returns, and registers in this Burke system under negative pressure so debris leaves in the vacuum.',
       },
       {
-        title: 'Photos Before We Leave Burke',
-        text: 'Before/after photos, filter tips, and dryer-vent interval tailored to Burke seasons.',
+        title: 'Photos and handoff',
+        text: 'Before/after photos, filter tips, and a dryer-vent interval for Burke seasons. Questions go to (571) 460-0001.',
       },
     ],
   },
-  faqIntro: 'Burke questions \u2014 call (571) 460-0001 (dispatch: Burke).',
+  faqIntro: 'Burke questions — call (571) 460-0001 (dispatch: Burke).',
   faq: [
     {
-      q: 'Who handles air duct cleaning appointments in Burke?',
-      a: 'Burke jobs leave from our Burke, VA office at 5641 Burke Centre Pkwy Ste 119. Call (571) 460-0001 to book flat-rate air duct or dryer vent cleaning.',
+      q: 'Which office books jobs for Burke?',
+      a: 'Burke appointments leave from Burke, VA (5641 Burke Centre Pkwy Ste 119). Call (571) 460-0001 for air duct or dryer vent cleaning on your street.',
     },
     {
-      q: 'What should I prepare before the Burke crew arrives?',
-      a: 'In Burke, clear a path to the air handler and dryer before we arrive \u2014 basement trunks and dryer closets especially. Share gate or parking notes if your street needs them.',
+      q: 'What access do you need before arrival?',
+      a: 'In Burke, clear a path to the air handler and dryer — basement trunks and dryer closets especially. Share gate or parking notes for your block.',
     },
     {
-      q: 'How long does air duct cleaning take in Burke?',
-      a: 'Most Burke single-system houses finish in about 2\u20133 hours. Older trunks with additions can add time after inspection.',
+      q: 'How long is a typical visit?',
+      a: 'Most Burke single-system houses finish in about 2–3 hours. Older trunks with additions can add time after inspection.',
     },
     {
-      q: 'Are Burke air duct and dryer vent prices flat-rate?',
-      a: 'Yes. Burke residential packages are flat-rate from the Burke office \u2014 the number we confirm before work starts is what you pay. No per-vent counting.',
+      q: 'Is pricing flat-rate or by the vent?',
+      a: 'Burke residential packages are flat-rate from Burke. We scope during the walkthrough, confirm before equipment starts, and that is what you pay — no per-vent counting.',
     },
     {
-      q: 'Is sanitizing included with Burke duct cleaning?',
-      a: 'For Burke jobs, Envirocon antimicrobial sanitizing is complimentary when you request it or when inspection supports it \u2014 we confirm on site before applying anything.',
+      q: 'Is antimicrobial sanitizing included?',
+      a: 'On Burke jobs Envirocon is complimentary when you request it or when inspection supports it — confirmed on site before anything is applied.',
     },
   ],
 }

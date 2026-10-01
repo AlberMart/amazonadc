@@ -518,20 +518,71 @@ export async function getAllLocations(): Promise<LocationContent[]> {
   }
 }
 
-/** Neighboring city pages that share the same serving office (for internal links). */
+/** Geographic neighbors for internal linking (not a random office-sibling rotation). */
+const GEO_NEIGHBORS: Record<string, string[]> = {
+  arlington: ['falls-church', 'mclean', 'alexandria', 'washington-dc', 'fairfax'],
+  alexandria: ['arlington', 'mount-vernon', 'springfield', 'washington-dc', 'falls-church'],
+  burke: ['springfield', 'fairfax', 'fair-oaks', 'lorton', 'vienna'],
+  reston: ['herndon', 'vienna', 'great-falls', 'oakton', 'loudoun'],
+  herndon: ['reston', 'vienna', 'loudoun', 'great-falls', 'oakton'],
+  vienna: ['oakton', 'fairfax', 'reston', 'mclean', 'falls-church'],
+  'great-falls': ['mclean', 'reston', 'herndon', 'loudoun', 'potomac'],
+  'falls-church': ['arlington', 'mclean', 'fairfax', 'vienna', 'washington-dc'],
+  chantilly: ['fair-oaks', 'oakton', 'loudoun', 'fairfax', 'herndon'],
+  oakton: ['vienna', 'fairfax', 'fair-oaks', 'reston', 'mclean'],
+  lorton: ['springfield', 'mount-vernon', 'prince-william', 'burke', 'alexandria'],
+  'mount-vernon': ['alexandria', 'lorton', 'springfield', 'prince-william'],
+  'fair-oaks': ['fairfax', 'oakton', 'chantilly', 'burke', 'vienna'],
+  fairfax: ['oakton', 'vienna', 'burke', 'springfield', 'falls-church'],
+  springfield: ['burke', 'fairfax', 'alexandria', 'lorton', 'prince-william'],
+  loudoun: ['herndon', 'reston', 'great-falls', 'chantilly', 'mclean'],
+  'prince-william': ['lorton', 'springfield', 'mount-vernon', 'burke'],
+  mclean: ['arlington', 'falls-church', 'great-falls', 'vienna', 'washington-dc'],
+  'washington-dc': ['arlington', 'alexandria', 'silver-spring', 'takoma-park', 'bethesda'],
+  bethesda: ['silver-spring', 'rockville', 'kensington', 'washington-dc', 'potomac'],
+  rockville: ['bethesda', 'gaithersburg', 'potomac', 'kensington', 'wheaton'],
+  'silver-spring': ['takoma-park', 'wheaton', 'kensington', 'washington-dc', 'bethesda'],
+  gaithersburg: ['germantown', 'rockville', 'montgomery-village', 'clarksburg', 'potomac'],
+  germantown: ['gaithersburg', 'clarksburg', 'montgomery-village', 'frederick'],
+  clarksburg: ['germantown', 'gaithersburg', 'frederick', 'montgomery-village'],
+  potomac: ['rockville', 'bethesda', 'gaithersburg', 'great-falls'],
+  wheaton: ['silver-spring', 'kensington', 'olney', 'rockville', 'takoma-park'],
+  'takoma-park': ['silver-spring', 'washington-dc', 'hyattsville', 'college-park'],
+  kensington: ['wheaton', 'bethesda', 'silver-spring', 'rockville'],
+  olney: ['wheaton', 'rockville', 'gaithersburg', 'montgomery-village'],
+  hyattsville: ['college-park', 'takoma-park', 'silver-spring', 'washington-dc'],
+  columbia: ['ellicott-city', 'silver-spring', 'olney', 'bethesda'],
+  'ellicott-city': ['columbia', 'frederick', 'olney'],
+  frederick: ['clarksburg', 'germantown', 'gaithersburg', 'ellicott-city'],
+  'montgomery-village': ['gaithersburg', 'germantown', 'rockville', 'clarksburg'],
+  'college-park': ['hyattsville', 'takoma-park', 'silver-spring', 'washington-dc'],
+}
+
+/** Neighboring city pages preferred by geography, falling back to same-office siblings. */
 export function getNearbyLocationLinks(
   slug: string,
   limit = 6,
 ): Array<{ slug: string; city: string; state: string }> {
   const seed = LOCATION_SEEDS.find((item) => item.slug === slug)
   if (!seed) return []
+  const bySlug = new Map(LOCATION_SEEDS.map((item) => [item.slug, item]))
+
+  const preferred = (GEO_NEIGHBORS[slug] || [])
+    .map((s) => bySlug.get(s))
+    .filter((item): item is LocationContentSeed => Boolean(item))
+
   const siblings = LOCATION_SEEDS.filter(
     (item) => item.servedBy === seed.servedBy && item.slug !== slug,
   )
-  const start =
-    Math.abs([...slug].reduce((h, c) => (h * 31 + c.charCodeAt(0)) | 0, 0)) % Math.max(siblings.length, 1)
-  const rotated = [...siblings.slice(start), ...siblings.slice(0, start)]
-  return rotated.slice(0, limit).map((item) => ({
+  const seen = new Set<string>()
+  const merged: LocationContentSeed[] = []
+  for (const item of [...preferred, ...siblings]) {
+    if (seen.has(item.slug)) continue
+    seen.add(item.slug)
+    merged.push(item)
+    if (merged.length >= limit) break
+  }
+  return merged.map((item) => ({
     slug: item.slug,
     city: item.city,
     state: item.state,

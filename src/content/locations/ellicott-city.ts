@@ -90,55 +90,55 @@ export const ellicottCity: LocationContentSeed = {
   },
   process: {
     heading: 'Howard County Scheduling From Bethesda',
-    intro: 'Same flat-rate flow we use across MD — scoped for Ellicott City housing.',
+    intro: 'Same flat-rate flow from Bethesda — scoped for Ellicott City housing.',
     steps: [
       {
-        title: 'Scope the Ellicott City System',
-        text: 'Walk the returns and dryer path typical of Ellicott City housing so nothing is surprise-priced later.',
+        title: 'Inspect access and dryer path',
+        text: 'We walk returns and the dryer run typical of Ellicott City housing (longer drive-time homes where arrival windows matter in Ellicott City) so nothing is surprise-priced later.',
       },
       {
-        title: 'Stage Equipment for Ellicott City',
-        text: 'If the Ellicott City street is tight, we switch to portable HEPA sized for local lots and townhomes.',
+        title: 'Stage the right equipment',
+        text: 'Tight Ellicott City streets get portable HEPA from Bethesda; larger lots may use truck-mounted vacuum when access allows.',
       },
       {
-        title: 'Clean Ellicott City Ducts End to End',
-        text: 'Rotary brushes plus negative-pressure vacuum through the trunks serving this Ellicott City home.',
+        title: 'Clean ducts end to end',
+        text: 'Rotary brushes plus negative-pressure vacuum through the trunks serving this Ellicott City, MD home.',
       },
       {
-        title: 'Clear the Ellicott City Dryer Run',
+        title: 'Clear the dryer run',
         text: 'Full-length brushing to the exterior cap when dryer service is on the Ellicott City ticket.',
       },
       {
-        title: 'Ellicott City Walk-Through',
-        text: 'Review photos, answer questions, and leave booking notes for (301) 809-4544 if you want a Ellicott City follow-up.',
+        title: 'Final walk-through',
+        text: 'Review Ellicott City photos together and leave booking notes for (301) 809-4544 if you want a follow-up.',
       },
     ],
   },
   faqIntro: 'Ellicott City questions — call (301) 809-4544 (dispatch: Bethesda).',
   faq: [
     {
-      q: 'Who handles air duct cleaning appointments in Ellicott City?',
-      a: 'Ellicott City jobs leave from our Bethesda, MD office at 7815 Old Georgetown Rd Ste 201. Call (301) 809-4544 to book flat-rate air duct or dryer vent cleaning.',
+      q: 'Who dispatches the crew to Ellicott City, MD?',
+      a: 'Ellicott City appointments leave from Bethesda, MD (7815 Old Georgetown Rd Ste 201). Call (301) 809-4544 for air duct or dryer vent cleaning on your street.',
     },
     {
-      q: 'What should I prepare before the Ellicott City crew arrives?',
-      a: 'Ellicott City prep is simple: open access to returns and the dryer, move fragile items near vents, and tell us about pets or recent renovations when you book at (301) 809-4544.',
+      q: 'How should I prep the house for the visit?',
+      a: 'Ellicott City prep: open returns and the dryer, move fragile items near vents, mention pets or renovations when you book at (301) 809-4544.',
     },
     {
-      q: 'How long does air duct cleaning take in Ellicott City?',
-      a: 'Plan on roughly half a morning for a typical Ellicott City home. Arrival windows already reflect the drive from Bethesda.',
+      q: 'How much time should I block on the calendar?',
+      a: 'Block roughly half a morning for a typical Ellicott City home. Arrival windows already reflect the drive from Bethesda.',
     },
     {
-      q: 'Are Ellicott City air duct and dryer vent prices flat-rate?',
-      a: 'Yes. Ellicott City residential packages are flat-rate from the Bethesda office — the number we confirm before work starts is what you pay. No per-vent counting.',
+      q: 'How does the quote work for this address?',
+      a: 'For this Ellicott City, MD address we quote a flat package from Bethesda. Walkthrough first, locked number second — not priced by counting vents.',
     },
     {
-      q: 'Can duct and dryer vent cleaning be done the same day in Ellicott City?',
-      a: 'In Ellicott City, yes — when you book the combined package or both services up front. Call (301) 809-4544 and we stage the Bethesda crew for one visit to your street.',
+      q: 'Can ducts and the dryer vent be done in one visit?',
+      a: 'Yes for Ellicott City — book the combined package up front. Call (301) 809-4544; the Bethesda crew brings both tool sets for one stop.',
     },
     {
-      q: 'How far in advance should Ellicott City homeowners book?',
-      a: 'Ellicott City is a longer run from Bethesda. Booking several days ahead keeps arrival windows realistic; call (301) 809-4544 for the next open Ellicott City slot.',
+      q: 'How far ahead should I book?',
+      a: 'Ellicott City is a longer run from Bethesda. Book several days ahead for realistic windows; call (301) 809-4544 for the next open Ellicott City slot.',
     },
   ],
 }

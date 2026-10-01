@@ -40,7 +40,7 @@ export const mountVernon: LocationContentSeed = {
       },
       {
         title: 'Dryer Vent Service',
-        text: 'Wooded Fort Hunt lots and second-floor laundry in older ramblers create long, bent dryer runs that pack with lint behind exterior siding. We rod-brush and vacuum the entire path to the cap so the appliance vents efficiently and fire risk is eliminated. Book [dryer vent cleaning](/dryer-vent-cleaning).',
+        text: 'Wooded Fort Hunt lots and second-floor laundry in older ramblers create long, bent dryer runs that pack with lint behind exterior siding. We rod-brush and vacuum the entire path to the cap so the appliance vents efficiently and fire risk is reduced. Book [dryer vent cleaning](/dryer-vent-cleaning).',
       },
       {
         title: 'Mold Treatment in Mt Vernon Ductwork',
@@ -65,7 +65,7 @@ export const mountVernon: LocationContentSeed = {
       },
       {
         title: 'Guaranteed Results',
-        text: 'If the cleaning does not meet your expectations, we return and redo the job without additional charge.',
+        text: 'If the Mt Vernon cleaning falls short, contact us within 7 days — we re-perform or refund per our refund policy.',
       },
     ],
   },
@@ -90,51 +90,51 @@ export const mountVernon: LocationContentSeed = {
   },
   process: {
     heading: 'Southern Fairfax Route Notes From Burke',
-    intro: 'From booking at (571) 460-0001 to photos at the door.',
+    intro: 'From booking at (571) 460-0001 to photos at the Mt Vernon door.',
     steps: [
       {
-        title: 'Book Mt Vernon From the Burke Line',
-        text: 'Call (571) 460-0001 or use the form \u2014 we confirm Mt Vernon availability the next business day.',
+        title: 'Book from the office line',
+        text: 'Call (571) 460-0001 or use the form — we confirm Mt Vernon availability the next business day from Burke.',
       },
       {
-        title: 'Protect Floors in Your Mt Vernon Home',
-        text: 'We cover work paths and keep living spaces clear while equipment runs in Mt Vernon.',
+        title: 'Protect floors and living spaces',
+        text: 'In Mt Vernon we cover work paths and keep living spaces clear while equipment runs.',
       },
       {
-        title: 'Source-Removal Cleaning for Mt Vernon',
-        text: 'NADCA-style agitation under HEPA negative pressure \u2014 dust leaves in the vacuum, not your Mt Vernon rooms.',
+        title: 'Source-removal cleaning',
+        text: 'NADCA-style agitation under HEPA negative pressure for this Mt Vernon system — dust leaves in the vacuum, not your rooms.',
       },
       {
-        title: 'Optional Sanitizing in Mt Vernon',
-        text: 'Complimentary Envirocon when requested or when inspection supports it on this Mt Vernon job.',
+        title: 'Optional sanitizing',
+        text: 'Complimentary Envirocon when you request it or when the Mt Vernon inspection supports it.',
       },
       {
-        title: 'Close Out the Mt Vernon Visit',
-        text: 'Photos on file, flat-rate invoice, and tips for Mt Vernon pollen or humidity seasons.',
+        title: 'Close out the visit',
+        text: 'Photos on file, flat-rate invoice for Mt Vernon, and seasonal tips. Call (571) 460-0001 anytime.',
       },
     ],
   },
-  faqIntro: 'Mt Vernon questions \u2014 call (571) 460-0001 (dispatch: Burke).',
+  faqIntro: 'Mt Vernon questions — call (571) 460-0001 (dispatch: Burke).',
   faq: [
     {
-      q: 'Who handles air duct cleaning appointments in Mt Vernon?',
-      a: 'Mt Vernon jobs leave from our Burke, VA office at 5641 Burke Centre Pkwy Ste 119. Call (571) 460-0001 to book flat-rate air duct or dryer vent cleaning.',
+      q: 'Where does the Mt Vernon appointment leave from?',
+      a: 'Mt Vernon appointments leave from Burke, VA (5641 Burke Centre Pkwy Ste 119). Call (571) 460-0001 for air duct or dryer vent cleaning on your street.',
     },
     {
-      q: 'What should I prepare before the Mt Vernon crew arrives?',
-      a: 'For Mt Vernon VA homes, we need clear runs to the air handler. Note HOA codes on the confirmation text.',
+      q: 'Anything to clear before the crew shows up?',
+      a: 'For this Mt Vernon, VA home we need clear runs to the air handler. Put HOA codes on the confirmation text.',
     },
     {
-      q: 'How long does air duct cleaning take in Mt Vernon?',
-      a: 'Mt Vernon duct cleaning usually takes 2\u20133 hours for one system. Multi-system or heavily packed dryer vents are scoped before we start so the quote stays flat-rate.',
+      q: 'What is a realistic job length for one system?',
+      a: 'One Mt Vernon system usually takes 2–3 hours. Multi-system or packed dryer vents are scoped before we start so the quote stays locked.',
     },
     {
-      q: 'Are Mt Vernon air duct and dryer vent prices flat-rate?',
-      a: 'Yes. Mt Vernon residential packages are flat-rate from the Burke office \u2014 the number we confirm before work starts is what you pay. No per-vent counting.',
+      q: 'Will the price change once equipment is out?',
+      a: 'The Burke crew prices Mt Vernon jobs as published flat-rate packages. Scoped on site, confirmed before unload, paid after you are satisfied.',
     },
     {
-      q: 'Can duct and dryer vent cleaning be done the same day in Mt Vernon?',
-      a: 'In Mt Vernon, yes \u2014 when you book the combined package or both services up front. Call (571) 460-0001 and we stage the Burke crew for one visit to your street.',
+      q: 'Can ducts and the dryer vent be done in one visit?',
+      a: 'Yes for Mt Vernon — book the combined package up front. Call (571) 460-0001; the Burke crew brings both tool sets for one stop.',
     },
   ],
 }

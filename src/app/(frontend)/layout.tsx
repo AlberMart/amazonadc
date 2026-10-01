@@ -81,6 +81,10 @@ export const metadata: Metadata = {
         index: true,
         follow: true,
       },
+  other: {
+    // Bump when shipping content/SEO fixes so AI crawlers can tell cache from fresh HTML.
+    'content-rev': '2026-10-01-r4',
+  },
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: '48x48' },

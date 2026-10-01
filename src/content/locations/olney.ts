@@ -64,7 +64,7 @@ export const olney: LocationContentSeed = {
       },
       {
         title: 'Satisfaction Guarantee With Photographic Evidence',
-        text: 'Every trunk section and register is documented before and after. If improvement is not clearly visible, we return at our expense.',
+        text: 'Every trunk section and register is documented. If improvement is not clear for Olney, contact us within 7 days — we re-perform or refund per our refund policy.',
       },
     ],
   },
@@ -89,55 +89,55 @@ export const olney: LocationContentSeed = {
   },
   process: {
     heading: 'Longer Montgomery Drive — Scheduled With Clear Windows',
-    intro: 'From booking at (301) 809-4544 to photos at the door.',
+    intro: 'From booking at (301) 809-4544 to photos at the Olney door.',
     steps: [
       {
-        title: 'Book Olney From the Bethesda Line',
-        text: 'Call (301) 809-4544 or use the form — we confirm Olney availability the next business day.',
+        title: 'Book from the office line',
+        text: 'Call (301) 809-4544 or use the form — we confirm Olney availability the next business day from Bethesda.',
       },
       {
-        title: 'Protect Floors in Your Olney Home',
-        text: 'We cover work paths and keep living spaces clear while equipment runs in Olney.',
+        title: 'Protect floors and living spaces',
+        text: 'In Olney we cover work paths and keep living spaces clear while equipment runs.',
       },
       {
-        title: 'Source-Removal Cleaning for Olney',
-        text: 'NADCA-style agitation under HEPA negative pressure — dust leaves in the vacuum, not your Olney rooms.',
+        title: 'Source-removal cleaning',
+        text: 'NADCA-style agitation under HEPA negative pressure for this Olney system — dust leaves in the vacuum, not your rooms.',
       },
       {
-        title: 'Optional Sanitizing in Olney',
-        text: 'Complimentary Envirocon when requested or when inspection supports it on this Olney job.',
+        title: 'Optional sanitizing',
+        text: 'Complimentary Envirocon when you request it or when the Olney inspection supports it.',
       },
       {
-        title: 'Close Out the Olney Visit',
-        text: 'Photos on file, flat-rate invoice, and tips for Olney pollen or humidity seasons.',
+        title: 'Close out the visit',
+        text: 'Photos on file, flat-rate invoice for Olney, and seasonal tips. Call (301) 809-4544 anytime.',
       },
     ],
   },
   faqIntro: 'Olney questions — call (301) 809-4544 (dispatch: Bethesda).',
   faq: [
     {
-      q: 'Who handles air duct cleaning appointments in Olney?',
-      a: 'Olney jobs leave from our Bethesda, MD office at 7815 Old Georgetown Rd Ste 201. Call (301) 809-4544 to book flat-rate air duct or dryer vent cleaning.',
+      q: 'Where does the Olney appointment leave from?',
+      a: 'Olney appointments leave from Bethesda, MD (7815 Old Georgetown Rd Ste 201). Call (301) 809-4544 for air duct or dryer vent cleaning on your street.',
     },
     {
-      q: 'What should I prepare before the Olney crew arrives?',
-      a: 'For Olney MD homes, we need clear runs to the air handler. Note HOA codes on the confirmation text.',
+      q: 'Anything to clear before the crew shows up?',
+      a: 'For this Olney, MD home we need clear runs to the air handler. Put HOA codes on the confirmation text.',
     },
     {
-      q: 'How long does air duct cleaning take in Olney?',
-      a: 'Olney duct cleaning usually takes 2–3 hours for one system. Multi-system or heavily packed dryer vents are scoped before we start so the quote stays flat-rate.',
+      q: 'What is a realistic job length for one system?',
+      a: 'One Olney system usually takes 2–3 hours. Multi-system or packed dryer vents are scoped before we start so the quote stays locked.',
     },
     {
-      q: 'Are Olney air duct and dryer vent prices flat-rate?',
-      a: 'Yes. Olney residential packages are flat-rate from the Bethesda office — the number we confirm before work starts is what you pay. No per-vent counting.',
+      q: 'Will the price change once equipment is out?',
+      a: 'The Bethesda crew prices Olney jobs as published flat-rate packages. Scoped on site, confirmed before unload, paid after you are satisfied.',
     },
     {
-      q: 'Is sanitizing included with Olney duct cleaning?',
-      a: 'For Olney jobs, Envirocon antimicrobial sanitizing is complimentary when you request it or when inspection supports it — we confirm on site before applying anything.',
+      q: 'Is antimicrobial sanitizing included?',
+      a: 'On Olney jobs Envirocon is complimentary when you request it or when inspection supports it — confirmed on site before anything is applied.',
     },
     {
-      q: 'How far in advance should Olney homeowners book?',
-      a: 'Olney is a longer run from Bethesda. Booking several days ahead keeps arrival windows realistic; call (301) 809-4544 for the next open Olney slot.',
+      q: 'When should I call for the next opening?',
+      a: 'Olney is a longer run from Bethesda. Book several days ahead for realistic windows; call (301) 809-4544 for the next open Olney slot.',
     },
   ],
 }

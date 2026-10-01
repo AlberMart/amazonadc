@@ -65,7 +65,7 @@ export const greatFalls: LocationContentSeed = {
       },
       {
         title: 'Guaranteed to Your Standards',
-        text: 'If the Great Falls job does not match the photos we promised, we return and redo the work at no extra charge.',
+        text: 'If the Great Falls job does not match the photos we promised, contact us within 7 days — we re-perform or refund per our refund policy.',
       },
     ],
   },
@@ -90,51 +90,51 @@ export const greatFalls: LocationContentSeed = {
   },
   process: {
     heading: 'Longer Drive Planning From Burke \u2014 Said Up Front',
-    intro: 'From booking at (571) 460-0001 to photos at the door.',
+    intro: 'From booking at (571) 460-0001 to photos at the Great Falls door.',
     steps: [
       {
-        title: 'Book Great Falls From the Burke Line',
-        text: 'Call (571) 460-0001 or use the form \u2014 we confirm Great Falls availability the next business day.',
+        title: 'Book from the office line',
+        text: 'Call (571) 460-0001 or use the form — we confirm Great Falls availability the next business day from Burke.',
       },
       {
-        title: 'Protect Floors in Your Great Falls Home',
-        text: 'We cover work paths and keep living spaces clear while equipment runs in Great Falls.',
+        title: 'Protect floors and living spaces',
+        text: 'In Great Falls we cover work paths and keep living spaces clear while equipment runs.',
       },
       {
-        title: 'Source-Removal Cleaning for Great Falls',
-        text: 'NADCA-style agitation under HEPA negative pressure \u2014 dust leaves in the vacuum, not your Great Falls rooms.',
+        title: 'Source-removal cleaning',
+        text: 'NADCA-style agitation under HEPA negative pressure for this Great Falls system — dust leaves in the vacuum, not your rooms.',
       },
       {
-        title: 'Optional Sanitizing in Great Falls',
-        text: 'Complimentary Envirocon when requested or when inspection supports it on this Great Falls job.',
+        title: 'Optional sanitizing',
+        text: 'Complimentary Envirocon when you request it or when the Great Falls inspection supports it.',
       },
       {
-        title: 'Close Out the Great Falls Visit',
-        text: 'Photos on file, flat-rate invoice, and tips for Great Falls pollen or humidity seasons.',
+        title: 'Close out the visit',
+        text: 'Photos on file, flat-rate invoice for Great Falls, and seasonal tips. Call (571) 460-0001 anytime.',
       },
     ],
   },
-  faqIntro: 'Great Falls questions \u2014 call (571) 460-0001 (dispatch: Burke).',
+  faqIntro: 'Great Falls questions — call (571) 460-0001 (dispatch: Burke).',
   faq: [
     {
-      q: 'Who handles air duct cleaning appointments in Great Falls?',
-      a: 'Great Falls jobs leave from our Burke, VA office at 5641 Burke Centre Pkwy Ste 119. Call (571) 460-0001 to book flat-rate air duct or dryer vent cleaning.',
+      q: 'Where does the Great Falls appointment leave from?',
+      a: 'Great Falls appointments leave from Burke, VA (5641 Burke Centre Pkwy Ste 119). Call (571) 460-0001 for air duct or dryer vent cleaning on your street.',
     },
     {
-      q: 'What should I prepare before the Great Falls crew arrives?',
-      a: 'For Great Falls VA homes, we need clear runs to the air handler. Note HOA codes on the confirmation text.',
+      q: 'Anything to clear before the crew shows up?',
+      a: 'For this Great Falls, VA home we need clear runs to the air handler. Put HOA codes on the confirmation text.',
     },
     {
-      q: 'How long does air duct cleaning take in Great Falls?',
-      a: 'Great Falls duct cleaning usually takes 2\u20133 hours for one system. Multi-system or heavily packed dryer vents are scoped before we start so the quote stays flat-rate.',
+      q: 'What is a realistic job length for one system?',
+      a: 'One Great Falls system usually takes 2–3 hours. Multi-system or packed dryer vents are scoped before we start so the quote stays locked.',
     },
     {
-      q: 'Are Great Falls air duct and dryer vent prices flat-rate?',
-      a: 'Yes. Great Falls residential packages are flat-rate from the Burke office \u2014 the number we confirm before work starts is what you pay. No per-vent counting.',
+      q: 'Will the price change once equipment is out?',
+      a: 'The Burke crew prices Great Falls jobs as published flat-rate packages. Scoped on site, confirmed before unload, paid after you are satisfied.',
     },
     {
-      q: 'Can duct and dryer vent cleaning be done the same day in Great Falls?',
-      a: 'In Great Falls, yes \u2014 when you book the combined package or both services up front. Call (571) 460-0001 and we stage the Burke crew for one visit to your street.',
+      q: 'Can ducts and the dryer vent be done in one visit?',
+      a: 'Yes for Great Falls — book the combined package up front. Call (571) 460-0001; the Burke crew brings both tool sets for one stop.',
     },
   ],
 }

@@ -90,51 +90,51 @@ export const reston: LocationContentSeed = {
   },
   process: {
     heading: 'HOA Gates and Elevator Pads on the Reston Route',
-    intro: 'Arrival windows reflect the drive from Burke.',
+    intro: 'Arrival windows reflect the drive from Burke to Reston.',
     steps: [
       {
-        title: 'Talk Through Your Reston Home',
-        text: 'We ask about pets, renovations, and stacked laundry / riser layout common in Reston before quoting.',
+        title: 'Walkthrough and quote',
+        text: 'In Reston we ask about pets, renovations, and condo / stacked-laundry layouts common around Reston before locking a flat-rate number for this VA address.',
       },
       {
-        title: 'Confirm the Reston Arrival Window',
-        text: 'Morning-of text with a realistic ETA from Burke to your Reston street.',
+        title: 'Arrival window',
+        text: 'Morning-of text with a realistic ETA from the Burke office to your Reston street — not a vague all-day window.',
       },
       {
-        title: 'Agree the Reston Flat-Rate Package',
-        text: 'Duct, dryer, or both for this Reston VA address \u2014 the quoted number is what you pay.',
+        title: 'Agree the package',
+        text: 'For this Reston home: ducts, dryer vent, or both — scoped on site, quoted before equipment starts, paid after you are satisfied.',
       },
       {
-        title: 'Run HEPA Cleaning in Reston',
-        text: 'We agitate and vacuum supplies, returns, and registers under negative pressure in your Reston system.',
+        title: 'HEPA source-removal cleaning',
+        text: 'We agitate and vacuum supplies, returns, and registers in this Reston system under negative pressure so debris leaves in the vacuum.',
       },
       {
-        title: 'Photos Before We Leave Reston',
-        text: 'Before/after photos, filter tips, and dryer-vent interval tailored to Reston seasons.',
+        title: 'Photos and handoff',
+        text: 'Before/after photos, filter tips, and a dryer-vent interval for Reston seasons. Questions go to (571) 460-0001.',
       },
     ],
   },
-  faqIntro: 'Reston questions \u2014 call (571) 460-0001 (dispatch: Burke).',
+  faqIntro: 'Reston questions — call (571) 460-0001 (dispatch: Burke).',
   faq: [
     {
-      q: 'Who handles air duct cleaning appointments in Reston?',
-      a: 'Reston jobs leave from our Burke, VA office at 5641 Burke Centre Pkwy Ste 119. Call (571) 460-0001 to book flat-rate air duct or dryer vent cleaning.',
+      q: 'Which office books jobs for Reston?',
+      a: 'Reston appointments leave from Burke, VA (5641 Burke Centre Pkwy Ste 119). Call (571) 460-0001 for air duct or dryer vent cleaning on your street.',
     },
     {
-      q: 'What should I prepare before the Reston crew arrives?',
-      a: 'In Reston, clear a path to the air handler and dryer before we arrive \u2014 condo/townhome closets and stacked laundry especially. Share gate or parking notes if your street needs them.',
+      q: 'What access do you need before arrival?',
+      a: 'In Reston, clear a path to the air handler and dryer — condo closets and stacked laundry especially. Share gate or parking notes for your block.',
     },
     {
-      q: 'How long does air duct cleaning take in Reston?',
-      a: 'Most Reston single-system houses finish in about 2\u20133 hours. High-rise dryer risers and long laundry closets can add time after inspection.',
+      q: 'How long is a typical visit?',
+      a: 'Most Reston single-system houses finish in about 2–3 hours. High-rise dryer risers can add time after inspection.',
     },
     {
-      q: 'Are Reston air duct and dryer vent prices flat-rate?',
-      a: 'Yes. Reston residential packages are flat-rate from the Burke office \u2014 the number we confirm before work starts is what you pay. No per-vent counting.',
+      q: 'Is pricing flat-rate or by the vent?',
+      a: 'Reston residential packages are flat-rate from Burke. We scope during the walkthrough, confirm before equipment starts, and that is what you pay — no per-vent counting.',
     },
     {
-      q: 'Is sanitizing included with Reston duct cleaning?',
-      a: 'For Reston jobs, Envirocon antimicrobial sanitizing is complimentary when you request it or when inspection supports it \u2014 we confirm on site before applying anything.',
+      q: 'Is antimicrobial sanitizing included?',
+      a: 'On Reston jobs Envirocon is complimentary when you request it or when inspection supports it — confirmed on site before anything is applied.',
     },
   ],
 }

@@ -220,7 +220,11 @@ export async function BlogArticle({
         </div>
       </ArticleColumn>
 
-      <ServiceArea />
+      <ServiceArea
+        compact
+        heading="Where we schedule from"
+        intro="For booking, use your city page or call our Burke and Bethesda offices."
+      />
       <ContactForm sourcePage={`/blog/${post.slug}`} />
     </article>
   )

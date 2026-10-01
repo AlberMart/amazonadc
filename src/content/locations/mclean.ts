@@ -39,7 +39,7 @@ export const mclean: LocationContentSeed = {
       },
       {
         title: 'Dryer Vent Service',
-        text: 'Long runs from second-floor laundry rooms in McLean colonials and multi-story Tysons stacked units pack with lint behind interior walls. We rod-brush and vacuum the entire path to the exterior cap so the dryer exhausts efficiently and fire risk is eliminated. Book [dryer vent cleaning](/dryer-vent-cleaning).',
+        text: 'Long runs from second-floor laundry rooms in McLean colonials and multi-story Tysons stacked units pack with lint behind interior walls. We rod-brush and vacuum the entire path to the exterior cap so the dryer exhausts efficiently and fire risk is reduced. Book [dryer vent cleaning](/dryer-vent-cleaning).',
       },
       {
         title: 'Mold Treatment in McLean Ductwork',
@@ -64,7 +64,7 @@ export const mclean: LocationContentSeed = {
       },
       {
         title: 'Guaranteed Results',
-        text: 'If your McLean cleaning does not hold up to the walk-through, we return and redo the work at no additional charge.',
+        text: 'If the McLean walk-through falls short, contact us within 7 days — we re-perform or refund per our refund policy.',
       },
     ],
   },
@@ -89,55 +89,55 @@ export const mclean: LocationContentSeed = {
   },
   process: {
     heading: 'Estate Driveways and Condo Loading From Burke',
-    intro: 'Same flat-rate flow we use across VA \u2014 scoped for McLean housing.',
+    intro: 'Same flat-rate flow from Burke — scoped for McLean housing.',
     steps: [
       {
-        title: 'Scope the McLean System',
-        text: 'Walk the returns and dryer path typical of McLean housing so nothing is surprise-priced later.',
+        title: 'Inspect access and dryer path',
+        text: 'We walk returns and the dryer run typical of McLean housing (long dryer runs on larger McLean lots) so nothing is surprise-priced later.',
       },
       {
-        title: 'Stage Equipment for McLean',
-        text: 'If the McLean street is tight, we switch to portable HEPA sized for local lots and townhomes.',
+        title: 'Stage the right equipment',
+        text: 'Tight McLean streets get portable HEPA from Burke; larger lots may use truck-mounted vacuum when access allows.',
       },
       {
-        title: 'Clean McLean Ducts End to End',
-        text: 'Rotary brushes plus negative-pressure vacuum through the trunks serving this McLean home.',
+        title: 'Clean ducts end to end',
+        text: 'Rotary brushes plus negative-pressure vacuum through the trunks serving this McLean, VA home.',
       },
       {
-        title: 'Clear the McLean Dryer Run',
+        title: 'Clear the dryer run',
         text: 'Full-length brushing to the exterior cap when dryer service is on the McLean ticket.',
       },
       {
-        title: 'McLean Walk-Through',
-        text: 'Review photos, answer questions, and leave booking notes for (571) 460-0001 if you want a McLean follow-up.',
+        title: 'Final walk-through',
+        text: 'Review McLean photos together and leave booking notes for (571) 460-0001 if you want a follow-up.',
       },
     ],
   },
-  faqIntro: 'McLean questions \u2014 call (571) 460-0001 (dispatch: Burke).',
+  faqIntro: 'McLean questions — call (571) 460-0001 (dispatch: Burke).',
   faq: [
     {
-      q: 'Who handles air duct cleaning appointments in McLean?',
-      a: 'McLean jobs leave from our Burke, VA office at 5641 Burke Centre Pkwy Ste 119. Call (571) 460-0001 to book flat-rate air duct or dryer vent cleaning.',
+      q: 'Who dispatches the crew to McLean, VA?',
+      a: 'McLean appointments leave from Burke, VA (5641 Burke Centre Pkwy Ste 119). Call (571) 460-0001 for air duct or dryer vent cleaning on your street.',
     },
     {
-      q: 'What should I prepare before the McLean crew arrives?',
-      a: 'McLean prep is simple: open access to returns and the dryer, move fragile items near vents, and tell us about pets or recent renovations when you book at (571) 460-0001.',
+      q: 'How should I prep the house for the visit?',
+      a: 'McLean prep: open returns and the dryer, move fragile items near vents, mention pets or renovations when you book at (571) 460-0001.',
     },
     {
-      q: 'How long does air duct cleaning take in McLean?',
-      a: 'Plan on roughly half a morning for a typical McLean home. Same-day dryer vent add-ons are often possible if booked together.',
+      q: 'How much time should I block on the calendar?',
+      a: 'Block roughly half a morning for a typical McLean home. Dryer-vent add-ons are often possible the same day if booked together.',
     },
     {
-      q: 'Are McLean air duct and dryer vent prices flat-rate?',
-      a: 'Yes. McLean residential packages are flat-rate from the Burke office \u2014 the number we confirm before work starts is what you pay. No per-vent counting.',
+      q: 'How does the quote work for this address?',
+      a: 'For this McLean, VA address we quote a flat package from Burke. Walkthrough first, locked number second — not priced by counting vents.',
     },
     {
-      q: 'Can duct and dryer vent cleaning be done the same day in McLean?',
-      a: 'In McLean, yes \u2014 when you book the combined package or both services up front. Call (571) 460-0001 and we stage the Burke crew for one visit to your street.',
+      q: 'Can ducts and the dryer vent be done in one visit?',
+      a: 'Yes for McLean — book the combined package up front. Call (571) 460-0001; the Burke crew brings both tool sets for one stop.',
     },
     {
-      q: 'How far in advance should McLean homeowners book?',
-      a: 'Peak pollen and summer humidity fill the McLean calendar fast. Same-week openings are common \u2014 call (571) 460-0001 for the next Burke window serving McLean.',
+      q: 'How far ahead should I book?',
+      a: 'McLean fills fast in pollen and humid months. Same-week openings are common — call (571) 460-0001 for the next Burke window.',
     },
   ],
 }

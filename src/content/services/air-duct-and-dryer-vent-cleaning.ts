@@ -58,8 +58,8 @@ export const airDuctAndDryerVentCleaning: ServiceContent = {
       heading: 'Benefits of the complete bundle',
       items: [
         'Improved indoor air quality — fewer allergens and irritants circulating at home',
-        'Dryer fire risk eliminated — lint buildup removed from the full duct length',
-        'Lower energy bills — both systems run more efficiently after cleaning',
+        'Dryer fire risk reduced — lint buildup removed from the full duct length',
+        'Systems may run more efficiently after cleaning when airflow was restricted',
         'Extended lifespan of your HVAC system and dryer appliance',
         'One visit, two systems — saves time compared to booking separately',
         'Peace of mind backed by before/after photo documentation for both systems',

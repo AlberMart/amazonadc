@@ -5,7 +5,7 @@ export const alexandria: LocationContentSeed = {
   title: 'Air Duct Cleaning & Mold Remediation in Alexandria, VA',
   headline: 'Air duct cleaning, ventilation maintenance, and mold treatment in Alexandria, VA',
   description:
-    'Professional air duct cleaning, dryer vent maintenance, and mold remediation services in Alexandria, VA. Flat rates, certified techs, 100% satisfaction guarantee.',
+    'Professional air duct cleaning, dryer vent maintenance, and mold remediation services in Alexandria, VA. Flat rates, certified techs, photo-backed satisfaction policy.',
   intro:
     'Amazon Air Duct Cleaning is the local crew for HVAC cleaning, dryer vent maintenance, and indoor air quality in Alexandria, Virginia. Whether you live in a historic home in Old Town, a condo near the waterfront, or a house in Del Ray, our technicians keep the air fresh and the system running. Call (571) 460-0001.',
   heroImage: '/img/locations/alexandria.webp',
@@ -64,7 +64,7 @@ export const alexandria: LocationContentSeed = {
       },
       {
         title: 'Satisfaction Guarantee',
-        text: 'If you are not satisfied after the cleaning, we return and redo the job at no extra cost.',
+        text: 'If you are not satisfied after the Alexandria cleaning, contact us within 7 days — we re-perform or refund per our refund policy.',
       },
     ],
   },
@@ -79,51 +79,51 @@ export const alexandria: LocationContentSeed = {
   },
   process: {
     heading: 'Narrow-Street Staging Notes for Alexandria Visits',
-    intro: 'Arrival windows reflect the drive from Burke.',
+    intro: 'Arrival windows reflect the drive from Burke to Alexandria.',
     steps: [
       {
-        title: 'Talk Through Your Alexandria Home',
-        text: 'We ask about pets, renovations, and stacked laundry / riser layout common in Alexandria before quoting.',
+        title: 'Walkthrough and quote',
+        text: 'In Alexandria we ask about pets, renovations, and condo / stacked-laundry layouts common around Alexandria before locking a flat-rate number for this VA address.',
       },
       {
-        title: 'Confirm the Alexandria Arrival Window',
-        text: 'Morning-of text with a realistic ETA from Burke to your Alexandria street.',
+        title: 'Arrival window',
+        text: 'Morning-of text with a realistic ETA from the Burke office to your Alexandria street — not a vague all-day window.',
       },
       {
-        title: 'Agree the Alexandria Flat-Rate Package',
-        text: 'Duct, dryer, or both for this Alexandria VA address — the quoted number is what you pay.',
+        title: 'Agree the package',
+        text: 'For this Alexandria home: ducts, dryer vent, or both — scoped on site, quoted before equipment starts, paid after you are satisfied.',
       },
       {
-        title: 'Run HEPA Cleaning in Alexandria',
-        text: 'We agitate and vacuum supplies, returns, and registers under negative pressure in your Alexandria system.',
+        title: 'HEPA source-removal cleaning',
+        text: 'We agitate and vacuum supplies, returns, and registers in this Alexandria system under negative pressure so debris leaves in the vacuum.',
       },
       {
-        title: 'Photos Before We Leave Alexandria',
-        text: 'Before/after photos, filter tips, and dryer-vent interval tailored to Alexandria seasons.',
+        title: 'Photos and handoff',
+        text: 'Before/after photos, filter tips, and a dryer-vent interval for Alexandria seasons. Questions go to (571) 460-0001.',
       },
     ],
   },
   faqIntro: 'Alexandria questions — call (571) 460-0001 (dispatch: Burke).',
   faq: [
     {
-      q: 'Who handles air duct cleaning appointments in Alexandria?',
-      a: 'Alexandria jobs leave from our Burke, VA office at 5641 Burke Centre Pkwy Ste 119. Call (571) 460-0001 to book flat-rate air duct or dryer vent cleaning.',
+      q: 'Which office books jobs for Alexandria?',
+      a: 'Alexandria appointments leave from Burke, VA (5641 Burke Centre Pkwy Ste 119). Call (571) 460-0001 for air duct or dryer vent cleaning on your street.',
     },
     {
-      q: 'What should I prepare before the Alexandria crew arrives?',
-      a: 'In Alexandria, clear a path to the air handler and dryer before we arrive — condo/townhome closets and stacked laundry especially. Share gate or parking notes if your street needs them.',
+      q: 'What access do you need before arrival?',
+      a: 'In Alexandria, clear a path to the air handler and dryer — condo closets and stacked laundry especially. Share gate or parking notes for your block.',
     },
     {
-      q: 'How long does air duct cleaning take in Alexandria?',
-      a: 'Most Alexandria single-system houses finish in about 2\u20133 hours. High-rise dryer risers and long laundry closets can add time after inspection.',
+      q: 'How long is a typical visit?',
+      a: 'Most Alexandria single-system houses finish in about 2–3 hours. High-rise dryer risers can add time after inspection.',
     },
     {
-      q: 'Are Alexandria air duct and dryer vent prices flat-rate?',
-      a: 'Yes. Alexandria residential packages are flat-rate from the Burke office \u2014 the number we confirm before work starts is what you pay. No per-vent counting.',
+      q: 'Is pricing flat-rate or by the vent?',
+      a: 'Alexandria residential packages are flat-rate from Burke. We scope during the walkthrough, confirm before equipment starts, and that is what you pay — no per-vent counting.',
     },
     {
-      q: 'Is sanitizing included with Alexandria duct cleaning?',
-      a: 'For Alexandria jobs, Envirocon antimicrobial sanitizing is complimentary when you request it or when inspection supports it \u2014 we confirm on site before applying anything.',
+      q: 'Do you charge extra for Envirocon sanitizing?',
+      a: 'No upcharge for Envirocon on Alexandria work when requested or when inspection supports it. We never spray without your OK.',
     },
   ],
 }

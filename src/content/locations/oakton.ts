@@ -39,7 +39,7 @@ export const oakton: LocationContentSeed = {
       },
       {
         title: 'Dryer Vent Clearing',
-        text: 'Long second-floor dryer runs in Oakton colonials travel through interior walls before reaching a gable or side-wall cap. We rod-brush and vacuum the entire path so the appliance vents efficiently and lint-related fire risk is eliminated. Book [dryer vent cleaning](/dryer-vent-cleaning).',
+        text: 'Long second-floor dryer runs in Oakton colonials travel through interior walls before reaching a gable or side-wall cap. We rod-brush and vacuum the entire path so the appliance vents efficiently and lint-related fire risk is reduced. Book [dryer vent cleaning](/dryer-vent-cleaning).',
       },
       {
         title: 'Mold Treatment in Oakton Ductwork',
@@ -89,51 +89,51 @@ export const oakton: LocationContentSeed = {
   },
   process: {
     heading: 'Mid-Fairfax Timing From the Burke Office',
-    intro: 'Arrival windows reflect the drive from Burke.',
+    intro: 'Arrival windows reflect the drive from Burke to Oakton.',
     steps: [
       {
-        title: 'Talk Through Your Oakton Home',
-        text: 'We ask about pets, renovations, and basement or attic air-handler access in Oakton before quoting.',
+        title: 'Walkthrough and quote',
+        text: 'In Oakton we ask about pets, renovations, and basement or attic air-handler access typical in Oakton before locking a flat-rate number for this VA address.',
       },
       {
-        title: 'Confirm the Oakton Arrival Window',
-        text: 'Morning-of text with a realistic ETA from Burke to your Oakton street.',
+        title: 'Arrival window',
+        text: 'Morning-of text with a realistic ETA from the Burke office to your Oakton street — not a vague all-day window.',
       },
       {
-        title: 'Agree the Oakton Flat-Rate Package',
-        text: 'Duct, dryer, or both for this Oakton VA address \u2014 the quoted number is what you pay.',
+        title: 'Agree the package',
+        text: 'For this Oakton home: ducts, dryer vent, or both — scoped on site, quoted before equipment starts, paid after you are satisfied.',
       },
       {
-        title: 'Run HEPA Cleaning in Oakton',
-        text: 'We agitate and vacuum supplies, returns, and registers under negative pressure in your Oakton system.',
+        title: 'HEPA source-removal cleaning',
+        text: 'We agitate and vacuum supplies, returns, and registers in this Oakton system under negative pressure so debris leaves in the vacuum.',
       },
       {
-        title: 'Photos Before We Leave Oakton',
-        text: 'Before/after photos, filter tips, and dryer-vent interval tailored to Oakton seasons.',
+        title: 'Photos and handoff',
+        text: 'Before/after photos, filter tips, and a dryer-vent interval for Oakton seasons. Questions go to (571) 460-0001.',
       },
     ],
   },
-  faqIntro: 'Oakton questions \u2014 call (571) 460-0001 (dispatch: Burke).',
+  faqIntro: 'Oakton questions — call (571) 460-0001 (dispatch: Burke).',
   faq: [
     {
-      q: 'Who handles air duct cleaning appointments in Oakton?',
-      a: 'Oakton jobs leave from our Burke, VA office at 5641 Burke Centre Pkwy Ste 119. Call (571) 460-0001 to book flat-rate air duct or dryer vent cleaning.',
+      q: 'Which office books jobs for Oakton?',
+      a: 'Oakton appointments leave from Burke, VA (5641 Burke Centre Pkwy Ste 119). Call (571) 460-0001 for air duct or dryer vent cleaning on your street.',
     },
     {
-      q: 'What should I prepare before the Oakton crew arrives?',
-      a: 'In Oakton, clear a path to the air handler and dryer before we arrive \u2014 basement trunks and dryer closets especially. Share gate or parking notes if your street needs them.',
+      q: 'What access do you need before arrival?',
+      a: 'In Oakton, clear a path to the air handler and dryer — basement trunks and dryer closets especially. Share gate or parking notes for your block.',
     },
     {
-      q: 'How long does air duct cleaning take in Oakton?',
-      a: 'Most Oakton single-system houses finish in about 2\u20133 hours. Older trunks with additions can add time after inspection.',
+      q: 'How long is a typical visit?',
+      a: 'Most Oakton single-system houses finish in about 2–3 hours. Older trunks with additions can add time after inspection.',
     },
     {
-      q: 'Are Oakton air duct and dryer vent prices flat-rate?',
-      a: 'Yes. Oakton residential packages are flat-rate from the Burke office \u2014 the number we confirm before work starts is what you pay. No per-vent counting.',
+      q: 'Is pricing flat-rate or by the vent?',
+      a: 'Oakton residential packages are flat-rate from Burke. We scope during the walkthrough, confirm before equipment starts, and that is what you pay — no per-vent counting.',
     },
     {
-      q: 'Can duct and dryer vent cleaning be done the same day in Oakton?',
-      a: 'In Oakton, yes \u2014 when you book the combined package or both services up front. Call (571) 460-0001 and we stage the Burke crew for one visit to your street.',
+      q: 'Can ducts and the dryer vent be done in one visit?',
+      a: 'Yes for Oakton — book the combined package up front. Call (571) 460-0001; the Burke crew brings both tool sets for one stop.',
     },
   ],
 }

@@ -65,7 +65,7 @@ export const lorton: LocationContentSeed = {
       },
       {
         title: 'Satisfaction Guarantee',
-        text: 'If the cleaning does not meet your expectations, we come back and redo the work at no extra cost.',
+        text: 'If the Lorton result falls short, contact us within 7 days — we re-perform the work or refund per our refund policy.',
       },
     ],
   },
@@ -90,55 +90,55 @@ export const lorton: LocationContentSeed = {
   },
   process: {
     heading: 'South Fairfax Dispatch From Burke',
-    intro: 'Arrival windows reflect the drive from Burke.',
+    intro: 'Arrival windows reflect the drive from Burke to Lorton.',
     steps: [
       {
-        title: 'Talk Through Your Lorton Home',
-        text: 'We ask about pets, renovations, and basement or attic air-handler access in Lorton before quoting.',
+        title: 'Walkthrough and quote',
+        text: 'In Lorton we ask about pets, renovations, and longer drive-time homes where arrival windows matter in Lorton before locking a flat-rate number for this VA address.',
       },
       {
-        title: 'Confirm the Lorton Arrival Window',
-        text: 'Morning-of text with a realistic ETA from Burke to your Lorton street.',
+        title: 'Arrival window',
+        text: 'Morning-of text with a realistic ETA from the Burke office to your Lorton street — not a vague all-day window.',
       },
       {
-        title: 'Agree the Lorton Flat-Rate Package',
-        text: 'Duct, dryer, or both for this Lorton VA address \u2014 the quoted number is what you pay.',
+        title: 'Agree the package',
+        text: 'For this Lorton home: ducts, dryer vent, or both — scoped on site, quoted before equipment starts, paid after you are satisfied.',
       },
       {
-        title: 'Run HEPA Cleaning in Lorton',
-        text: 'We agitate and vacuum supplies, returns, and registers under negative pressure in your Lorton system.',
+        title: 'HEPA source-removal cleaning',
+        text: 'We agitate and vacuum supplies, returns, and registers in this Lorton system under negative pressure so debris leaves in the vacuum.',
       },
       {
-        title: 'Photos Before We Leave Lorton',
-        text: 'Before/after photos, filter tips, and dryer-vent interval tailored to Lorton seasons.',
+        title: 'Photos and handoff',
+        text: 'Before/after photos, filter tips, and a dryer-vent interval for Lorton seasons. Questions go to (571) 460-0001.',
       },
     ],
   },
-  faqIntro: 'Lorton questions \u2014 call (571) 460-0001 (dispatch: Burke).',
+  faqIntro: 'Lorton questions — call (571) 460-0001 (dispatch: Burke).',
   faq: [
     {
-      q: 'Who handles air duct cleaning appointments in Lorton?',
-      a: 'Lorton jobs leave from our Burke, VA office at 5641 Burke Centre Pkwy Ste 119. Call (571) 460-0001 to book flat-rate air duct or dryer vent cleaning.',
+      q: 'Which office books jobs for Lorton?',
+      a: 'Lorton appointments leave from Burke, VA (5641 Burke Centre Pkwy Ste 119). Call (571) 460-0001 for air duct or dryer vent cleaning on your street.',
     },
     {
-      q: 'What should I prepare before the Lorton crew arrives?',
-      a: 'In Lorton, clear a path to the air handler and dryer before we arrive \u2014 basement trunks and dryer closets especially. Share gate or parking notes if your street needs them.',
+      q: 'What access do you need before arrival?',
+      a: 'In Lorton, clear a path to the air handler and dryer — basement trunks and dryer closets especially. Share gate or parking notes for your block.',
     },
     {
-      q: 'How long does air duct cleaning take in Lorton?',
-      a: 'Most Lorton single-system houses finish in about 2\u20133 hours. Older trunks with additions can add time after inspection.',
+      q: 'How long is a typical visit?',
+      a: 'Most Lorton single-system houses finish in about 2–3 hours. Older trunks with additions can add time after inspection.',
     },
     {
-      q: 'Are Lorton air duct and dryer vent prices flat-rate?',
-      a: 'Yes. Lorton residential packages are flat-rate from the Burke office \u2014 the number we confirm before work starts is what you pay. No per-vent counting.',
+      q: 'Is pricing flat-rate or by the vent?',
+      a: 'Lorton residential packages are flat-rate from Burke. We scope during the walkthrough, confirm before equipment starts, and that is what you pay — no per-vent counting.',
     },
     {
-      q: 'Can duct and dryer vent cleaning be done the same day in Lorton?',
-      a: 'In Lorton, yes \u2014 when you book the combined package or both services up front. Call (571) 460-0001 and we stage the Burke crew for one visit to your street.',
+      q: 'Can ducts and the dryer vent be done in one visit?',
+      a: 'Yes for Lorton — book the combined package up front. Call (571) 460-0001; the Burke crew brings both tool sets for one stop.',
     },
     {
-      q: 'How far in advance should Lorton homeowners book?',
-      a: 'Lorton is a longer run from Burke. Booking several days ahead keeps arrival windows realistic; call (571) 460-0001 for the next open Lorton slot.',
+      q: 'How far ahead should I book?',
+      a: 'Lorton is a longer run from Burke. Book several days ahead for realistic windows; call (571) 460-0001 for the next open Lorton slot.',
     },
   ],
 }

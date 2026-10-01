@@ -89,55 +89,55 @@ export const springfield: LocationContentSeed = {
   },
   process: {
     heading: 'Next-Community Dispatch From Burke Centre',
-    intro: 'Same flat-rate flow we use across VA \u2014 scoped for Springfield housing.',
+    intro: 'Same flat-rate flow from Burke — scoped for Springfield housing.',
     steps: [
       {
-        title: 'Scope the Springfield System',
-        text: 'Walk the returns and dryer path typical of Springfield housing so nothing is surprise-priced later.',
+        title: 'Inspect access and dryer path',
+        text: 'We walk returns and the dryer run typical of Springfield housing (basement or attic air-handler access typical in Springfield) so nothing is surprise-priced later.',
       },
       {
-        title: 'Stage Equipment for Springfield',
-        text: 'If the Springfield street is tight, we switch to portable HEPA sized for local lots and townhomes.',
+        title: 'Stage the right equipment',
+        text: 'Tight Springfield streets get portable HEPA from Burke; larger lots may use truck-mounted vacuum when access allows.',
       },
       {
-        title: 'Clean Springfield Ducts End to End',
-        text: 'Rotary brushes plus negative-pressure vacuum through the trunks serving this Springfield home.',
+        title: 'Clean ducts end to end',
+        text: 'Rotary brushes plus negative-pressure vacuum through the trunks serving this Springfield, VA home.',
       },
       {
-        title: 'Clear the Springfield Dryer Run',
+        title: 'Clear the dryer run',
         text: 'Full-length brushing to the exterior cap when dryer service is on the Springfield ticket.',
       },
       {
-        title: 'Springfield Walk-Through',
-        text: 'Review photos, answer questions, and leave booking notes for (571) 460-0001 if you want a Springfield follow-up.',
+        title: 'Final walk-through',
+        text: 'Review Springfield photos together and leave booking notes for (571) 460-0001 if you want a follow-up.',
       },
     ],
   },
-  faqIntro: 'Springfield questions \u2014 call (571) 460-0001 (dispatch: Burke).',
+  faqIntro: 'Springfield questions — call (571) 460-0001 (dispatch: Burke).',
   faq: [
     {
-      q: 'Who handles air duct cleaning appointments in Springfield?',
-      a: 'Springfield jobs leave from our Burke, VA office at 5641 Burke Centre Pkwy Ste 119. Call (571) 460-0001 to book flat-rate air duct or dryer vent cleaning.',
+      q: 'Who dispatches the crew to Springfield, VA?',
+      a: 'Springfield appointments leave from Burke, VA (5641 Burke Centre Pkwy Ste 119). Call (571) 460-0001 for air duct or dryer vent cleaning on your street.',
     },
     {
-      q: 'What should I prepare before the Springfield crew arrives?',
-      a: 'Springfield prep is simple: open access to returns and the dryer, move fragile items near vents, and tell us about pets or recent renovations when you book at (571) 460-0001.',
+      q: 'How should I prep the house for the visit?',
+      a: 'Springfield prep: open returns and the dryer, move fragile items near vents, mention pets or renovations when you book at (571) 460-0001.',
     },
     {
-      q: 'How long does air duct cleaning take in Springfield?',
-      a: 'Plan on roughly half a morning for a typical Springfield home. Same-day dryer vent add-ons are often possible if booked together.',
+      q: 'How much time should I block on the calendar?',
+      a: 'Block roughly half a morning for a typical Springfield home. Dryer-vent add-ons are often possible the same day if booked together.',
     },
     {
-      q: 'Are Springfield air duct and dryer vent prices flat-rate?',
-      a: 'Yes. Springfield residential packages are flat-rate from the Burke office \u2014 the number we confirm before work starts is what you pay. No per-vent counting.',
+      q: 'How does the quote work for this address?',
+      a: 'For this Springfield, VA address we quote a flat package from Burke. Walkthrough first, locked number second — not priced by counting vents.',
     },
     {
-      q: 'Is sanitizing included with Springfield duct cleaning?',
-      a: 'For Springfield jobs, Envirocon antimicrobial sanitizing is complimentary when you request it or when inspection supports it \u2014 we confirm on site before applying anything.',
+      q: 'Do you charge extra for Envirocon sanitizing?',
+      a: 'No upcharge for Envirocon on Springfield work when requested or when inspection supports it. We never spray without your OK.',
     },
     {
-      q: 'How far in advance should Springfield homeowners book?',
-      a: 'Peak pollen and summer humidity fill the Springfield calendar fast. Same-week openings are common \u2014 call (571) 460-0001 for the next Burke window serving Springfield.',
+      q: 'When should I call for the next opening?',
+      a: 'Springfield fills fast in pollen and humid months. Same-week openings are common — call (571) 460-0001 for the next Burke window.',
     },
   ],
 }

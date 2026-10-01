@@ -65,7 +65,7 @@ export const fairOaks: LocationContentSeed = {
       },
       {
         title: 'Guaranteed Results',
-        text: 'If Fair Oaks results fall short of the agreed scope, we return and redo the work at no additional cost.',
+        text: 'If Fair Oaks results fall short of the agreed scope, contact us within 7 days — we re-perform or refund per our refund policy.',
       },
     ],
   },
@@ -90,51 +90,51 @@ export const fairOaks: LocationContentSeed = {
   },
   process: {
     heading: 'Western Fairfax Scheduling From Burke',
-    intro: 'From booking at (571) 460-0001 to photos at the door.',
+    intro: 'From booking at (571) 460-0001 to photos at the Fair Oaks door.',
     steps: [
       {
-        title: 'Book Fair Oaks From the Burke Line',
-        text: 'Call (571) 460-0001 or use the form \u2014 we confirm Fair Oaks availability the next business day.',
+        title: 'Book from the office line',
+        text: 'Call (571) 460-0001 or use the form — we confirm Fair Oaks availability the next business day from Burke.',
       },
       {
-        title: 'Protect Floors in Your Fair Oaks Home',
-        text: 'We cover work paths and keep living spaces clear while equipment runs in Fair Oaks.',
+        title: 'Protect floors and living spaces',
+        text: 'In Fair Oaks we cover work paths and keep living spaces clear while equipment runs.',
       },
       {
-        title: 'Source-Removal Cleaning for Fair Oaks',
-        text: 'NADCA-style agitation under HEPA negative pressure \u2014 dust leaves in the vacuum, not your Fair Oaks rooms.',
+        title: 'Source-removal cleaning',
+        text: 'NADCA-style agitation under HEPA negative pressure for this Fair Oaks system — dust leaves in the vacuum, not your rooms.',
       },
       {
-        title: 'Optional Sanitizing in Fair Oaks',
-        text: 'Complimentary Envirocon when requested or when inspection supports it on this Fair Oaks job.',
+        title: 'Optional sanitizing',
+        text: 'Complimentary Envirocon when you request it or when the Fair Oaks inspection supports it.',
       },
       {
-        title: 'Close Out the Fair Oaks Visit',
-        text: 'Photos on file, flat-rate invoice, and tips for Fair Oaks pollen or humidity seasons.',
+        title: 'Close out the visit',
+        text: 'Photos on file, flat-rate invoice for Fair Oaks, and seasonal tips. Call (571) 460-0001 anytime.',
       },
     ],
   },
-  faqIntro: 'Fair Oaks questions \u2014 call (571) 460-0001 (dispatch: Burke).',
+  faqIntro: 'Fair Oaks questions — call (571) 460-0001 (dispatch: Burke).',
   faq: [
     {
-      q: 'Who handles air duct cleaning appointments in Fair Oaks?',
-      a: 'Fair Oaks jobs leave from our Burke, VA office at 5641 Burke Centre Pkwy Ste 119. Call (571) 460-0001 to book flat-rate air duct or dryer vent cleaning.',
+      q: 'Where does the Fair Oaks appointment leave from?',
+      a: 'Fair Oaks appointments leave from Burke, VA (5641 Burke Centre Pkwy Ste 119). Call (571) 460-0001 for air duct or dryer vent cleaning on your street.',
     },
     {
-      q: 'What should I prepare before the Fair Oaks crew arrives?',
-      a: 'For Fair Oaks VA homes, we need clear runs to the air handler and any unfinished spaces still shedding construction dust. Note HOA codes on the confirmation text.',
+      q: 'Anything to clear before the crew shows up?',
+      a: 'For this Fair Oaks, VA home we need clear runs to the air handler and unfinished spaces still shedding construction dust. Put HOA codes on the confirmation text.',
     },
     {
-      q: 'How long does air duct cleaning take in Fair Oaks?',
-      a: 'Fair Oaks duct cleaning usually takes 2\u20133 hours for one system. Multi-system or heavily packed dryer vents are scoped before we start so the quote stays flat-rate.',
+      q: 'What is a realistic job length for one system?',
+      a: 'One Fair Oaks system usually takes 2–3 hours. Multi-system or packed dryer vents are scoped before we start so the quote stays locked.',
     },
     {
-      q: 'Are Fair Oaks air duct and dryer vent prices flat-rate?',
-      a: 'Yes. Fair Oaks residential packages are flat-rate from the Burke office \u2014 the number we confirm before work starts is what you pay. No per-vent counting.',
+      q: 'Will the price change once equipment is out?',
+      a: 'The Burke crew prices Fair Oaks jobs as published flat-rate packages. Scoped on site, confirmed before unload, paid after you are satisfied.',
     },
     {
-      q: 'Is sanitizing included with Fair Oaks duct cleaning?',
-      a: 'For Fair Oaks jobs, Envirocon antimicrobial sanitizing is complimentary when you request it or when inspection supports it \u2014 we confirm on site before applying anything.',
+      q: 'Is antimicrobial sanitizing included?',
+      a: 'On Fair Oaks jobs Envirocon is complimentary when you request it or when inspection supports it — confirmed on site before anything is applied.',
     },
   ],
 }

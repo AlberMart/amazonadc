@@ -45,7 +45,7 @@ export const dryerVentCleaning: ServiceContent = {
     paragraphs: [
       'Most homeowners clean the lint trap after every load — but the trap captures only a fraction of the lint produced during drying. The rest travels deep into the vent duct, where it accumulates over time, restricts airflow, and creates a serious fire hazard.',
       'According to USFA/FEMA, there are approximately 2,900 clothes dryer fires in the U.S. every year, resulting in 5 deaths, 100 injuries, and $35 million in property damage. Failure to clean the dryer is the leading cause, responsible for 31% of all dryer fires.',
-      'Beyond fire risk, clogged dryer vents force your appliance to work harder, increasing energy consumption and shortening its lifespan. For gas dryers, a blocked vent can also allow dangerous carbon monoxide to back up into the living space. Regular professional cleaning eliminates these risks and keeps your dryer running safely and efficiently.',
+      'Beyond fire risk, clogged dryer vents force your appliance to work harder, increasing energy consumption and shortening its lifespan. For gas dryers, a blocked vent can also allow dangerous carbon monoxide to back up into the living space. Regular professional cleaning substantially reduces these risks and helps your dryer run more safely and efficiently.',
     ],
   },
   columns: [
@@ -75,7 +75,7 @@ export const dryerVentCleaning: ServiceContent = {
   scheduleCta: {
     heading: 'Schedule Your Dryer Vent Cleaning Service Today',
     paragraphs: [
-      'At Amazon Air Duct Cleaning, we believe our honest, upfront service that includes a 100% money-back guarantee is our greatest strength. Rest assured our conscientious techs always respect your property and clean up after themselves. Order dryer vent cleaning online or call (800) 606-3334. We have several locations and serve multiple states across the U.S.',
+      'At Amazon Air Duct Cleaning, we believe clear pricing and careful work are our greatest strengths. Techs respect your property and clean up after themselves. If you are not satisfied, contact us within 7 days — we will re-perform the work or issue a refund per our [refund policy](/refund-policy). Order dryer vent cleaning online or call (800) 606-3334. We serve Virginia, Maryland, and Washington, DC from our Burke and Bethesda offices.',
     ],
   },
   faqIntro:

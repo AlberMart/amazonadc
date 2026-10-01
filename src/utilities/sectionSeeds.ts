@@ -234,7 +234,7 @@ function locationSectionParts(
         intro: pack.intro,
         items: nearbyLinks.map((row) => ({
           title: `${row.city}, ${row.state}`,
-          text: `Air duct cleaning in [${row.city}](/locations/${row.slug}).`,
+          text: `Service notes and flat-rate packages for [${row.city}](/locations/${row.slug}).`,
         })),
         gridCols: 3 as const,
       }

@@ -65,7 +65,7 @@ export const wheaton: LocationContentSeed = {
       },
       {
         title: 'Cleaning Guarantee Backed by Photos',
-        text: 'Every register and trunk section is documented before and after. If the result does not satisfy, we schedule a return visit at no cost.',
+        text: 'Every register and trunk is documented. If the Wheaton result does not satisfy, contact us within 7 days — we re-perform or refund per our refund policy.',
       },
     ],
   },
@@ -89,55 +89,55 @@ export const wheaton: LocationContentSeed = {
   },
   process: {
     heading: 'Inside-Beltway Timing From Bethesda',
-    intro: 'Same flat-rate flow we use across MD — scoped for Wheaton housing.',
+    intro: 'Same flat-rate flow from Bethesda — scoped for Wheaton housing.',
     steps: [
       {
-        title: 'Scope the Wheaton System',
-        text: 'Walk the returns and dryer path typical of Wheaton housing so nothing is surprise-priced later.',
+        title: 'Inspect access and dryer path',
+        text: 'We walk returns and the dryer run typical of Wheaton housing (basement or attic air-handler access typical in Wheaton) so nothing is surprise-priced later.',
       },
       {
-        title: 'Stage Equipment for Wheaton',
-        text: 'If the Wheaton street is tight, we switch to portable HEPA sized for local lots and townhomes.',
+        title: 'Stage the right equipment',
+        text: 'Tight Wheaton streets get portable HEPA from Bethesda; larger lots may use truck-mounted vacuum when access allows.',
       },
       {
-        title: 'Clean Wheaton Ducts End to End',
-        text: 'Rotary brushes plus negative-pressure vacuum through the trunks serving this Wheaton home.',
+        title: 'Clean ducts end to end',
+        text: 'Rotary brushes plus negative-pressure vacuum through the trunks serving this Wheaton, MD home.',
       },
       {
-        title: 'Clear the Wheaton Dryer Run',
+        title: 'Clear the dryer run',
         text: 'Full-length brushing to the exterior cap when dryer service is on the Wheaton ticket.',
       },
       {
-        title: 'Wheaton Walk-Through',
-        text: 'Review photos, answer questions, and leave booking notes for (301) 809-4544 if you want a Wheaton follow-up.',
+        title: 'Final walk-through',
+        text: 'Review Wheaton photos together and leave booking notes for (301) 809-4544 if you want a follow-up.',
       },
     ],
   },
   faqIntro: 'Wheaton questions — call (301) 809-4544 (dispatch: Bethesda).',
   faq: [
     {
-      q: 'Who handles air duct cleaning appointments in Wheaton?',
-      a: 'Wheaton jobs leave from our Bethesda, MD office at 7815 Old Georgetown Rd Ste 201. Call (301) 809-4544 to book flat-rate air duct or dryer vent cleaning.',
+      q: 'Who dispatches the crew to Wheaton, MD?',
+      a: 'Wheaton appointments leave from Bethesda, MD (7815 Old Georgetown Rd Ste 201). Call (301) 809-4544 for air duct or dryer vent cleaning on your street.',
     },
     {
-      q: 'What should I prepare before the Wheaton crew arrives?',
-      a: 'Wheaton prep is simple: open access to returns and the dryer, move fragile items near vents, and tell us about pets or recent renovations when you book at (301) 809-4544.',
+      q: 'How should I prep the house for the visit?',
+      a: 'Wheaton prep: open returns and the dryer, move fragile items near vents, mention pets or renovations when you book at (301) 809-4544.',
     },
     {
-      q: 'How long does air duct cleaning take in Wheaton?',
-      a: 'Plan on roughly half a morning for a typical Wheaton home. Same-day dryer vent add-ons are often possible if booked together.',
+      q: 'How much time should I block on the calendar?',
+      a: 'Block roughly half a morning for a typical Wheaton home. Dryer-vent add-ons are often possible the same day if booked together.',
     },
     {
-      q: 'Are Wheaton air duct and dryer vent prices flat-rate?',
-      a: 'Yes. Wheaton residential packages are flat-rate from the Bethesda office — the number we confirm before work starts is what you pay. No per-vent counting.',
+      q: 'How does the quote work for this address?',
+      a: 'For this Wheaton, MD address we quote a flat package from Bethesda. Walkthrough first, locked number second — not priced by counting vents.',
     },
     {
-      q: 'Can duct and dryer vent cleaning be done the same day in Wheaton?',
-      a: 'In Wheaton, yes — when you book the combined package or both services up front. Call (301) 809-4544 and we stage the Bethesda crew for one visit to your street.',
+      q: 'Can ducts and the dryer vent be done in one visit?',
+      a: 'Yes for Wheaton — book the combined package up front. Call (301) 809-4544; the Bethesda crew brings both tool sets for one stop.',
     },
     {
-      q: 'How far in advance should Wheaton homeowners book?',
-      a: 'Peak pollen and summer humidity fill the Wheaton calendar fast. Same-week openings are common — call (301) 809-4544 for the next Bethesda window serving Wheaton.',
+      q: 'How far ahead should I book?',
+      a: 'Wheaton fills fast in pollen and humid months. Same-week openings are common — call (301) 809-4544 for the next Bethesda window.',
     },
   ],
 }

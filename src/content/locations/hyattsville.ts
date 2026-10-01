@@ -19,7 +19,7 @@ export const hyattsville: LocationContentSeed = {
     paragraphs: [
       'Hyattsville straddles the Route 1 / Baltimore Avenue corridor in Prince George\'s County — the arts district near Hamilton Street, Gateway\'s newer mixed-use, West Hyattsville around the Metro, and the residential grids that stretch toward [College Park](/locations/college-park) and Riverdale Park. The older housing stock dates from the 1920s through the 1950s: brick semi-detached homes, small colonials, and Cape Cods with basements where air handlers were installed well after original construction. Arts-district renovations frequently disturb plaster and lathe, sending gypsum and lead-paint particulate into return grilles during the remodel — and those particles stay in the trunk system long after the contractor leaves.',
       'Queens Chapel Road and Ager Road homes sit in a low-lying area where Prince George\'s County summer humidity concentrates. Cool basement trunks in these older homes condensate heavily, and Route 1 traffic film mixes with organic pollen from the neighborhood\'s mature shade trees to create a layered deposit inside supply runs. Gateway\'s newer stacked units introduce vertical dryer vents through shared risers that lint compresses quickly under high-occupancy laundry use.',
-      'We dispatch Hyattsville from [Bethesda](/locations/bethesda) — a cross-county drive we plan with honest arrival windows. [Takoma Park](/locations/takoma-park) borders to the west, [College Park](/locations/college-park) to the north, and [Washington, DC](/locations/washington-dc) is minutes south. Our post on [Hyattsville Route 1 humidity and air ducts](/blog/hyattsville-route-1-humidity-air-ducts) covers the moisture pattern.',
+      'We dispatch Hyattsville from [Bethesda](/locations/bethesda) — a cross-county drive we plan with realistic arrival windows. [Takoma Park](/locations/takoma-park) borders to the west, [College Park](/locations/college-park) to the north, and [Washington, DC](/locations/washington-dc) is minutes south. Our post on [Hyattsville Route 1 humidity and air ducts](/blog/hyattsville-route-1-humidity-air-ducts) covers the moisture pattern.',
     ],
     highlights: [
       'Arts district, Gateway, West Hyattsville, Queens Chapel, and Ager Road stops',
@@ -89,51 +89,51 @@ export const hyattsville: LocationContentSeed = {
   },
   process: {
     heading: 'Prince George\'s Timing From Bethesda',
-    intro: 'From booking at (301) 809-4544 to photos at the door.',
+    intro: 'From booking at (301) 809-4544 to photos at the Hyattsville door.',
     steps: [
       {
-        title: 'Book Hyattsville From the Bethesda Line',
-        text: 'Call (301) 809-4544 or use the form — we confirm Hyattsville availability the next business day.',
+        title: 'Book from the office line',
+        text: 'Call (301) 809-4544 or use the form — we confirm Hyattsville availability the next business day from Bethesda.',
       },
       {
-        title: 'Protect Floors in Your Hyattsville Home',
-        text: 'We cover work paths and keep living spaces clear while equipment runs in Hyattsville.',
+        title: 'Protect floors and living spaces',
+        text: 'In Hyattsville we cover work paths and keep living spaces clear while equipment runs.',
       },
       {
-        title: 'Source-Removal Cleaning for Hyattsville',
-        text: 'NADCA-style agitation under HEPA negative pressure — dust leaves in the vacuum, not your Hyattsville rooms.',
+        title: 'Source-removal cleaning',
+        text: 'NADCA-style agitation under HEPA negative pressure for this Hyattsville system — dust leaves in the vacuum, not your rooms.',
       },
       {
-        title: 'Optional Sanitizing in Hyattsville',
-        text: 'Complimentary Envirocon when requested or when inspection supports it on this Hyattsville job.',
+        title: 'Optional sanitizing',
+        text: 'Complimentary Envirocon when you request it or when the Hyattsville inspection supports it.',
       },
       {
-        title: 'Close Out the Hyattsville Visit',
-        text: 'Photos on file, flat-rate invoice, and tips for Hyattsville pollen or humidity seasons.',
+        title: 'Close out the visit',
+        text: 'Photos on file, flat-rate invoice for Hyattsville, and seasonal tips. Call (301) 809-4544 anytime.',
       },
     ],
   },
   faqIntro: 'Hyattsville questions — call (301) 809-4544 (dispatch: Bethesda).',
   faq: [
     {
-      q: 'Who handles air duct cleaning appointments in Hyattsville?',
-      a: 'Hyattsville jobs leave from our Bethesda, MD office at 7815 Old Georgetown Rd Ste 201. Call (301) 809-4544 to book flat-rate air duct or dryer vent cleaning.',
+      q: 'Where does the Hyattsville appointment leave from?',
+      a: 'Hyattsville appointments leave from Bethesda, MD (7815 Old Georgetown Rd Ste 201). Call (301) 809-4544 for air duct or dryer vent cleaning on your street.',
     },
     {
-      q: 'What should I prepare before the Hyattsville crew arrives?',
-      a: 'For Hyattsville MD homes, we need clear runs to the air handler. Note HOA codes on the confirmation text.',
+      q: 'Anything to clear before the crew shows up?',
+      a: 'For this Hyattsville, MD home we need clear runs to the air handler. Put HOA codes on the confirmation text.',
     },
     {
-      q: 'How long does air duct cleaning take in Hyattsville?',
-      a: 'Hyattsville duct cleaning usually takes 2–3 hours for one system. Multi-system or heavily packed dryer vents are scoped before we start so the quote stays flat-rate.',
+      q: 'What is a realistic job length for one system?',
+      a: 'One Hyattsville system usually takes 2–3 hours. Multi-system or packed dryer vents are scoped before we start so the quote stays locked.',
     },
     {
-      q: 'Are Hyattsville air duct and dryer vent prices flat-rate?',
-      a: 'Yes. Hyattsville residential packages are flat-rate from the Bethesda office — the number we confirm before work starts is what you pay. No per-vent counting.',
+      q: 'Will the price change once equipment is out?',
+      a: 'The Bethesda crew prices Hyattsville jobs as published flat-rate packages. Scoped on site, confirmed before unload, paid after you are satisfied.',
     },
     {
-      q: 'Is sanitizing included with Hyattsville duct cleaning?',
-      a: 'For Hyattsville jobs, Envirocon antimicrobial sanitizing is complimentary when you request it or when inspection supports it — we confirm on site before applying anything.',
+      q: 'Is antimicrobial sanitizing included?',
+      a: 'On Hyattsville jobs Envirocon is complimentary when you request it or when inspection supports it — confirmed on site before anything is applied.',
     },
   ],
 }

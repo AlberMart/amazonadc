@@ -94,55 +94,55 @@ export const washingtonDc: LocationContentSeed = {
   },
   process: {
     heading: 'District Access: Loading, Alleys, and Condo Rules First',
-    intro: 'Same flat-rate flow we use across DC \u2014 scoped for Washington housing.',
+    intro: 'Same flat-rate flow from Burke — scoped for Washington housing.',
     steps: [
       {
-        title: 'Scope the Washington System',
-        text: 'Walk the returns and dryer path typical of Washington housing so nothing is surprise-priced later.',
+        title: 'Inspect access and dryer path',
+        text: 'We walk returns and the dryer run typical of Washington housing (condo / stacked-laundry layouts common around Washington) so nothing is surprise-priced later.',
       },
       {
-        title: 'Stage Equipment for Washington',
-        text: 'If the Washington street is tight, we switch to portable HEPA sized for local lots and townhomes.',
+        title: 'Stage the right equipment',
+        text: 'Tight Washington streets get portable HEPA from Burke; larger lots may use truck-mounted vacuum when access allows.',
       },
       {
-        title: 'Clean Washington Ducts End to End',
-        text: 'Rotary brushes plus negative-pressure vacuum through the trunks serving this Washington home.',
+        title: 'Clean ducts end to end',
+        text: 'Rotary brushes plus negative-pressure vacuum through the trunks serving this Washington, DC home.',
       },
       {
-        title: 'Clear the Washington Dryer Run',
+        title: 'Clear the dryer run',
         text: 'Full-length brushing to the exterior cap when dryer service is on the Washington ticket.',
       },
       {
-        title: 'Washington Walk-Through',
-        text: 'Review photos, answer questions, and leave booking notes for (571) 460-0001 if you want a Washington follow-up.',
+        title: 'Final walk-through',
+        text: 'Review Washington photos together and leave booking notes for (571) 460-0001 if you want a follow-up.',
       },
     ],
   },
-  faqIntro: 'Washington questions \u2014 call (571) 460-0001 (dispatch: Burke).',
+  faqIntro: 'Washington questions — call (571) 460-0001 (dispatch: Burke).',
   faq: [
     {
-      q: 'Who handles air duct cleaning appointments in Washington?',
-      a: 'Washington jobs leave from our Burke, VA office at 5641 Burke Centre Pkwy Ste 119. Call (571) 460-0001 to book flat-rate air duct or dryer vent cleaning.',
+      q: 'Who dispatches the crew to Washington, DC?',
+      a: 'Washington appointments leave from Burke, VA (5641 Burke Centre Pkwy Ste 119). Call (571) 460-0001 for air duct or dryer vent cleaning on your street.',
     },
     {
-      q: 'What should I prepare before the Washington crew arrives?',
-      a: 'Washington prep is simple: open access to returns and the dryer, move fragile items near vents, and tell us about pets or recent renovations when you book at (571) 460-0001.',
+      q: 'How should I prep the house for the visit?',
+      a: 'Washington prep: open returns and the dryer, move fragile items near vents, mention pets or renovations when you book at (571) 460-0001.',
     },
     {
-      q: 'How long does air duct cleaning take in Washington?',
-      a: 'Plan on roughly half a morning for a typical Washington home. Same-day dryer vent add-ons are often possible if booked together.',
+      q: 'How much time should I block on the calendar?',
+      a: 'Block roughly half a morning for a typical Washington home. Dryer-vent add-ons are often possible the same day if booked together.',
     },
     {
-      q: 'Are Washington air duct and dryer vent prices flat-rate?',
-      a: 'Yes. Washington residential packages are flat-rate from the Burke office \u2014 the number we confirm before work starts is what you pay. No per-vent counting.',
+      q: 'How does the quote work for this address?',
+      a: 'For this Washington, DC address we quote a flat package from Burke. Walkthrough first, locked number second — not priced by counting vents.',
     },
     {
-      q: 'Can duct and dryer vent cleaning be done the same day in Washington?',
-      a: 'In Washington, yes \u2014 when you book the combined package or both services up front. Call (571) 460-0001 and we stage the Burke crew for one visit to your street.',
+      q: 'Can ducts and the dryer vent be done in one visit?',
+      a: 'Yes for Washington — book the combined package up front. Call (571) 460-0001; the Burke crew brings both tool sets for one stop.',
     },
     {
-      q: 'How far in advance should Washington homeowners book?',
-      a: 'Peak pollen and summer humidity fill the Washington calendar fast. Same-week openings are common \u2014 call (571) 460-0001 for the next Burke window serving Washington.',
+      q: 'How far ahead should I book?',
+      a: 'Washington fills fast in pollen and humid months. Same-week openings are common — call (571) 460-0001 for the next Burke window.',
     },
   ],
 }

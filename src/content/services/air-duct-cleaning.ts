@@ -56,7 +56,7 @@ export const airDuctCleaning: ServiceContent = {
       items: [
         'Improved indoor air quality for your family',
         'Reduced dust settling on surfaces throughout the home',
-        'Lower energy bills — clean systems run more efficiently',
+        'May help systems run more efficiently when airflow was restricted',
         'Extended lifespan of your HVAC equipment',
         'Fewer allergens and irritants circulating in the air',
         'Peace of mind backed by before/after photo documentation',
@@ -111,7 +111,7 @@ export const airDuctCleaning: ServiceContent = {
     },
     {
       q: 'Do you provide proof that the ducts were cleaned?',
-      a: 'Absolutely. Every service includes before/after photographs of your duct system so you can see exactly what was removed. Satisfaction is guaranteed or your money back.',
+      a: 'Absolutely. Every service includes before/after photographs of your duct system so you can see exactly what was removed. If you are not satisfied, contact us within 7 days — we will re-perform the work or issue a refund per our [refund policy](/refund-policy).',
     },
     {
       q: 'Which areas do you serve?',
