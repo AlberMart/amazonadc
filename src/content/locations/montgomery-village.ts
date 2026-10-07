@@ -1,140 +1,154 @@
 import type { LocationContentSeed } from '@/utilities/locations'
 
+/**
+ * Montgomery Village — 1970s planned community (Stedwick / Whetstone / lakes), not Kentlands-style new urbanism.
+ * Links used:
+ * - https://www.montgomerycountymd.gov/propertycare/air-quality-law/indoor-air-quality
+ * - https://www.montgomerycountymd.gov/propertycare/air-quality-law/indoor-air-quality/mold
+ * - https://www.montgomerycountymd.gov/department-housing-community-affairs/dhca-code-enforcement
+ * - https://www.montgomerycountymd.gov/DHCA/housing/landlordtenant/
+ */
 export const montgomeryVillage: LocationContentSeed = {
   slug: 'montgomery-village',
-  title: 'Air Duct Cleaning in Montgomery Village, MD',
-  headline:
-    'Air duct and dryer vent cleaning for 1970s planned streets, lakes, and Lakeforest townhomes',
+  title: 'Montgomery Village Air Duct Cleaning',
+  headline: '1970s planned courts and lake-edge townhomes — Bethesda dispatch',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Montgomery Village, MD. Flat rates from our Bethesda office for 1970s planned townhomes and lake-side humidity. Call (301) 809-4544.',
+    'Air duct & dryer vent cleaning in Montgomery Village, MD. Flat rates for townhomes & lakeside homes. Call (301) 809-4544.',
   intro:
-    'Amazon Air Duct Cleaning serves Montgomery Village from our Bethesda office. 1970s planned townhomes and houses on the lakes take on pollen and damp-season film. Call (301) 809-4544.',
+    'Montgomery Village is a master-planned 1970s community — Stedwick, Whetstone, East Village, Lakeforest — with original townhome mechanical closets and party-wall dryer runs that modern dryers outgrow. Lake Whetstone and Lake Marion keep lower trunks damper than upland Gaithersburg pads. County DEP publishes humidity and mold-prevention science; DHCA handles many rental housing complaints in unincorporated Montgomery. We clean ducts and dryer vents from Bethesda with photos, not municipal enforcement. (301) 809-4544.',
   heroImage: '/img/locations/montgomery-village.webp',
   heroAlt: 'Air duct cleaning in Montgomery Village, MD — Amazon Air Duct Cleaning',
   city: 'Montgomery Village',
   state: 'MD',
   servedBy: 'bethesda',
-  sectionLayout: 'leanNoOffers',
+  sectionLayout: 'communitiesFirst',
   about: {
-    heading: 'Stedwick Courts, Lake Whetstone Moisture, and Original 1970s Dryer Chases',
+    heading: 'Planned-village housing stock — and County IAQ pages that actually apply here',
     paragraphs: [
-      'Montgomery Village was master-planned in the late 1960s and built out through the 1970s and early 1980s — Stedwick, Whetstone, East Village, the Lakeforest area, and the courts radiating from Montgomery Village Avenue. The townhomes that define most of the community were designed with mechanical closets scaled for the furnaces and dryers of their era. Fifty years of filter changes, pet ownership, and Montgomery County pollen seasons have layered a dense deposit inside trunk lines that the original HVAC sizing never anticipated clearing. Dryer vents from that build period route through party walls with angular bends that modern high-capacity machines push lint through harder and faster than the original design accounted for.',
-      'Lake Whetstone and Lake Marion keep the immediate microclimate damper than surrounding Gaithersburg. Lower-level trunks in lakeside townhomes condensate readily during humid months, and that moisture binds whatever the returns deliver — pollen, household fibers, and the fine particulate from Lost Knife Road traffic — into a persistent film on supply-duct walls. The mature tree plan along pedestrian paths adds seasonal debris that enters return grilles each spring before settling on registers.',
-      'We dispatch Montgomery Village from [Bethesda](/locations/bethesda). [Gaithersburg](/locations/gaithersburg) is the adjacent city page, [Germantown](/locations/germantown) continues north. Our guide on [Montgomery Village townhomes and air ducts](/blog/montgomery-village-townhomes-air-ducts) covers the 1970s duct challenges specific to planned communities.',
+      'Montgomery Village was laid out as a **planned village** in the late 1960s–1980s: courts off Montgomery Village Avenue, townhome blocks in Stedwick and Whetstone, and later infill toward Lakeforest. Original HVAC was sized for smaller furnaces and shorter dryer paths. Fifty years of Montgomery pollen, pets, and lake-proximity humidity left film inside trunks that filters never pull back out.',
+      'Montgomery DEP’s [Indoor Air Quality](https://www.montgomerycountymd.gov/propertycare/air-quality-law/indoor-air-quality) and [mold](https://www.montgomerycountymd.gov/propertycare/air-quality-law/indoor-air-quality/mold) guidance pushes roughly 30–50% humidity, venting dryers outdoors, and filter maintenance — habits that matter when Lake Whetstone keeps basement-level metal cool through humid months. Renters in village townhomes may use [DHCA Housing Code Enforcement](https://www.montgomerycountymd.gov/department-housing-community-affairs/dhca-code-enforcement) and [Landlord & Tenant](https://www.montgomerycountymd.gov/DHCA/housing/landlordtenant/) resources when moisture or maintenance is disputed; we are not DHCA inspectors.',
+      'We dispatch from [Bethesda](/locations/bethesda) with [Germantown](/locations/germantown) north and Gaithersburg south on the same I-270 rotation. Building-specific detail: [Montgomery Village townhomes and air ducts](/blog/montgomery-village-townhomes-air-ducts).',
     ],
     highlights: [
-      'Stedwick, Whetstone, East Village, Lakeforest, and lake-adjacent courts',
-      'Flat-rate pricing for 1970s townhomes through later colonial infill',
-      'Before-and-after photos for every trunk section and register',
-      'Original dryer chases inspected for lint compaction and proper draw',
+      '1970s planned courts and party-wall chases',
+      'DEP IAQ + DHCA cited with clear scope limits',
+      'Lake Whetstone / Marion moisture angle',
+      'Bethesda: (301) 809-4544',
     ],
   },
-  offersTitle: 'Montgomery Village 1970s Townhome and Infill Rates',
+  offersTitle: 'Montgomery Village flat-rate packages',
   services: {
-    heading: 'Montgomery Village Services for Planned-Community Townhomes and Lake-Side Systems',
-    intro: 'A Stedwick end-unit and a Whetstone interior townhome share the same 1970s duct layout — the scope walk confirms what fifty years of use deposited inside.',
+    heading: 'Scopes for original townhome trunks and lake-side lower levels',
+    intro:
+      'Stedwick end-units and Whetstone interior townhomes share the same era of duct layout — the walkthrough confirms party-wall dryer bends before we lock price.',
     items: [
       {
-        title: 'Air Duct Cleaning & Sanitization',
-        text: 'HEPA negative pressure and mechanical agitation through original 1970s trunk lines, return plenums, and register boots in Montgomery Village\'s planned-community townhomes. Five decades of accumulated pollen, household fibers, and lake-proximity moisture film require thorough source-removal extraction, not just surface vacuuming. Full scope at [air duct cleaning](/air-duct-cleaning).',
+        title: 'Air duct cleaning (source removal)',
+        text: 'HEPA negative pressure on the trunk, agitation through supplies and returns, registers included. [EPA duct guidance](https://www.epa.gov/indoor-air-quality-iaq/should-you-have-air-ducts-your-home-cleaned) cautions against health overclaims — we remove debris and show photos. [Air duct cleaning](/air-duct-cleaning).',
       },
       {
-        title: 'Dryer Vent Cleaning',
-        text: 'Original party-wall dryer chases in Montgomery Village townhomes route through angular bends designed for 1970s dryer airflow rates. Modern machines push lint harder into those bends, creating compacted plugs that reduce dryer efficiency and raise exhaust temperature. We brush every section, vacuum extracted lint, and test draw at the cap. Schedule at [dryer vent cleaning](/dryer-vent-cleaning).',
+        title: 'Dryer vent cleaning',
+        text: 'Original party-wall chases with tight elbows pack lint faster than modern high-BTU dryers expect. DEP mold tips include venting dryers outdoors; fire risk is the other honest driver — [NFPA dryer-fire research](https://www.nfpa.org/education-and-research/research/nfpa-research/fire-statistical-reports/home-fires-involving-clothes-dryers-and-washing-machines). Full brush-out to the cap. [Dryer vent cleaning](/dryer-vent-cleaning).',
       },
       {
-        title: 'Ventilation & HVAC Mold Treatment',
-        text: 'Lake Whetstone and Lake Marion proximity keeps lower-level coils and trunk surfaces damp through summer, and original mechanical closets in these townhomes often lack the ventilation improvements newer homes include. When the scope walk reveals microbial growth, EPA-registered treatment covers the affected ventilation path. More at [mold remediation for air ducts](/mold-remediation-air-ducts).',
+        title: 'Optional antimicrobial on hard duct surfaces',
+        text: 'After mechanical cleaning, EPA-registered product on hard metal when inspection shows biological film — not whole-home mold remediation and not a substitute for fixing water intrusion DEP describes. [Mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
     ],
   },
   why: {
-    heading: 'Why Montgomery Village\'s Original Ductwork Holds Half a Century of Accumulation',
+    heading: 'Why village townhomes are their own duct story',
     items: [
       {
-        title: 'Same Dispatch as Gaithersburg — Familiar Corridor Crew',
-        text: 'Montgomery Village sits between [Gaithersburg](/locations/gaithersburg) and [Germantown](/locations/germantown) on our regular I-270 rotation. The crew already navigates Montgomery Village Avenue and Stedwick courts.',
+        title: 'Village courts and HOA maps',
+        text: 'Montgomery Village is unincorporated county with village association maps — we quote planned-community access notes (courts, shared parking) on the work order.',
       },
       {
-        title: '1970s Duct Layouts Treated as Standard, Not Special',
-        text: 'Original planned-community trunk configurations are the majority of what this crew sees in Montgomery Village. No era-specific surcharge at (301) 809-4544.',
+        title: 'Lake microclimate loads lower trunks',
+        text: 'Lakeside blocks condensate on cool supply metal while upland townhomes on the same zip may feel drier. Cleaning removes accumulated film; DEP humidity habits slow how fast it returns.',
       },
       {
-        title: 'Dryer Chase Integrity Verified Before Closing',
-        text: 'Party-wall dryer runs from the original build period are tested for draw and inspected for compaction at every bend — not just brushed at the visible ends.',
+        title: 'DHCA for rentals — DEP for science',
+        text: 'Rental mold/maintenance complaints often route through [DHCA](https://www.montgomerycountymd.gov/department-housing-community-affairs/dhca-code-enforcement); DEP [IAQ/mold](https://www.montgomerycountymd.gov/propertycare/air-quality-law/indoor-air-quality/mold) teaches prevention. Duct cleaning does not pause landlord timelines.',
       },
       {
-        title: 'Photo-Backed Satisfaction Guarantee',
-        text: 'Before-and-after documentation is included. If the Montgomery Village result does not satisfy, contact us within 7 days — we re-perform or refund per our refund policy.',
+        title: 'Flat rate + photos from Bethesda',
+        text: 'Price locked before agitation; before/after images at close-out. Mention Lost Knife / Centerway parking limits when you book so we plan around them.',
       },
     ],
   },
   communities: {
-    heading: 'Village Centers and Lake-Adjacent Clusters',
-    intro: 'Gaithersburg and Germantown pages sit on either side of this corridor.',
+    heading: 'Village centers we stage from Bethesda',
+    intro:
+      'Same published packages; different court access — Stedwick loops vs Lakeforest cul-de-sacs vs East Village townhome rows.',
     groups: [
       {
-        title: 'Stedwick & Whetstone',
-        places: 'Stedwick, Whetstone, Montgomery Village Avenue, original village cores',
+        title: 'Stedwick & Whetstone cores',
+        places: 'Stedwick, Whetstone, Montgomery Village Avenue courts, original village centers',
       },
       {
         title: 'East Village & Lakeforest',
-        places: 'East Village, Lakeforest area, Lost Knife Road, Centerway',
+        places: 'East Village, Lakeforest, Lost Knife Road, Centerway, village retail edge',
       },
       {
-        title: 'The lakes & north',
+        title: 'The lakes & north corridor',
         places:
-          'Lake Whetstone, Lake Marion, streets toward Germantown — ask if your court is not listed',
+          'Lake Whetstone, Lake Marion, streets toward [Germantown](/locations/germantown) — ask if your court is not listed',
       },
     ],
   },
   process: {
-    heading: 'Between Gaithersburg and Germantown From Bethesda',
-    intro: 'Arrival windows reflect the drive from Bethesda to Montgomery Village.',
+    heading: 'Bethesda → Montgomery Village visit flow',
+    intro: 'We ask about townhome party-wall dryer access and basement handler location before tools run.',
     steps: [
       {
-        title: 'Walkthrough and quote',
-        text: 'In Montgomery Village we ask about pets, renovations, and basement or attic air-handler access typical in Montgomery Village before locking a flat-rate number for this MD address.',
+        title: 'Building era and laundry path',
+        text: '1970s mechanical closet vs later colonial infill? Party-wall dryer chase or exterior wall cap? That sets hose runs — not the flat-rate menu.',
       },
       {
-        title: 'Arrival window',
-        text: 'Morning-of text with a realistic ETA from the Bethesda office to your Montgomery Village street — not a vague all-day window.',
+        title: 'Separate housing disputes from duct scope',
+        text: 'Active leak or DHCA complaint stays on the County/landlord path. We scope ducts and dryer vents you want cleaned today.',
       },
       {
-        title: 'Agree the package',
-        text: 'For this Montgomery Village home: ducts, dryer vent, or both — scoped on site, quoted before equipment starts, paid after you are satisfied.',
+        title: 'Confirm price before agitation',
+        text: 'Ducts, dryer vent, or both — number locked before equipment starts; antimicrobial only with your OK.',
       },
       {
-        title: 'HEPA source-removal cleaning',
-        text: 'We agitate and vacuum supplies, returns, and registers in this Montgomery Village system under negative pressure so debris leaves in the vacuum.',
+        title: 'Source-removal + photos',
+        text: 'Negative-pressure HEPA cleaning, full dryer brush-out when booked, before/after images before we leave.',
       },
       {
-        title: 'Photos and handoff',
-        text: 'Before/after photos, filter tips, and a dryer-vent interval for Montgomery Village seasons. Questions go to (301) 809-4544.',
+        title: 'Handoff aligned with DEP habits',
+        text: 'Filter interval, humidity reminder (~30–50% per County IAQ), dryer-vent cadence — plus (301) 809-4544 for follow-up.',
       },
     ],
   },
-  faqIntro: 'Montgomery Village questions — call (301) 809-4544 (dispatch: Bethesda).',
+  faqIntro:
+    'Montgomery Village — planned community, County DEP/DHCA links where they help. Book: (301) 809-4544 (Bethesda).',
   faq: [
     {
-      q: 'Which office books jobs for Montgomery Village?',
-      a: 'Montgomery Village appointments leave from Bethesda, MD (7815 Old Georgetown Rd Ste 201). Call (301) 809-4544 for air duct or dryer vent cleaning on your street.',
+      q: 'Is Montgomery Village the same as Gaithersburg Kentlands for duct layouts?',
+      a: 'Kentlands in Gaithersburg is a different build era and street grid. Montgomery Village is 1970s planned courts with original townhome trunks and party-wall dryer chases — lake humidity and court parking notes apply here.',
     },
     {
-      q: 'What access do you need before arrival?',
-      a: 'In Montgomery Village, clear a path to the air handler and dryer — basement trunks and dryer closets especially. Share gate or parking notes for your block.',
+      q: 'Does Montgomery County DEP inspect my ducts or order cleaning?',
+      a: 'DEP [IAQ](https://www.montgomerycountymd.gov/propertycare/air-quality-law/indoor-air-quality) and [mold](https://www.montgomerycountymd.gov/propertycare/air-quality-law/indoor-air-quality/mold) pages teach humidity control, venting dryers outdoors, and maintenance — they do not endorse vendors or perform duct cleaning. We are a private flat-rate service with photos.',
     },
     {
-      q: 'How long is a typical visit?',
-      a: 'Most Montgomery Village single-system houses finish in about 2–3 hours. Older trunks with additions can add time after inspection.',
+      q: 'I rent a Stedwick townhome — who handles mold as a housing issue?',
+      a: 'Many rental complaints in unincorporated Montgomery go through [DHCA Housing Code Enforcement](https://www.montgomerycountymd.gov/department-housing-community-affairs/dhca-code-enforcement) after landlord notice. Duct cleaning can help when trunks hold debris, but it does not fix water intrusion or replace landlord remediation duties.',
     },
     {
-      q: 'Is pricing flat-rate or by the vent?',
-      a: 'Montgomery Village residential packages are flat-rate from Bethesda. We scope during the walkthrough, confirm before equipment starts, and that is what you pay — no per-vent counting.',
+      q: 'Why do lake-adjacent blocks feel “muggier” in the ducts?',
+      a: 'Lake Whetstone and Lake Marion keep nearby lower levels cooler and damper through summer — condensation on supply metal binds pollen and household dust into film. DEP humidity guidance applies; mechanical cleaning removes what is already inside.',
     },
     {
-      q: 'Can ducts and the dryer vent be done in one visit?',
-      a: 'Yes for Montgomery Village — book the combined package up front. Call (301) 809-4544; the Bethesda crew brings both tool sets for one stop.',
+      q: 'Which office serves Montgomery Village?',
+      a: 'Bethesda, MD (7815A Old Georgetown Rd Ste 201). Call (301) 809-4544. Combined duct + dryer packages are available when both are booked up front.',
+    },
+    {
+      q: 'Where can I read more about village-era dryer chases?',
+      a: 'Our article on [Montgomery Village townhomes and air ducts](/blog/montgomery-village-townhomes-air-ducts). Official context: [Montgomery DEP Indoor Air Quality](https://www.montgomerycountymd.gov/propertycare/air-quality-law/indoor-air-quality).',
     },
   ],
 }

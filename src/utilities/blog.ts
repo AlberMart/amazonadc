@@ -44,6 +44,7 @@ import ellicottCityFlood from '@/content/blog/ellicott-city-flood-humidity-air-d
 import frederickDowntown from '@/content/blog/frederick-downtown-humidity-air-ducts.json'
 import montgomeryVillageTownhomes from '@/content/blog/montgomery-village-townhomes-air-ducts.json'
 import clarksburgConstruction from '@/content/blog/clarksburg-new-construction-dust-air-ducts.json'
+import { blogPublishDate } from '@/content/blog/publishDates'
 
 export type BlogIndexItem = {
   slug: string
@@ -166,57 +167,70 @@ function mapPost(doc: Record<string, unknown>): BlogPost {
   }
 }
 
-const FILE_POSTS = [
-  howOften,
-  sevenSigns,
-  whyDryer,
-  energyBills,
-  allergies,
-  neverClean,
-  arlingtonHumidity,
-  alexandriaHumidity,
-  dcHumidity,
-  mcleanPollen,
-  rockvilleBasement,
-  fairfaxRamblers,
-  springfieldDust,
-  loudounDust,
-  princeWilliamHumidity,
-  silverSpringDust,
-  gaithersburgBasement,
-  collegeParkRentals,
-  restonTownCenter,
-  herndonConstruction,
-  viennaPollen,
-  greatFallsEstates,
-  fallsChurchDust,
-  chantillyRoute28,
-  oaktonCanopy,
-  lortonI95,
-  mountVernonHumidity,
-  fairOaksTownhomes,
-  germantownI270,
-  potomacCanopy,
-  wheatonUrban,
-  takomaParkBungalow,
-  kensingtonColonials,
-  olneyRambler,
-  hyattsvilleRoute1,
-  columbiaVillage,
-  ellicottCityFlood,
-  frederickDowntown,
-  montgomeryVillageTownhomes,
-  clarksburgConstruction,
-] as BlogPost[]
+function withFilePublishDates(post: BlogPost): BlogPost {
+  const publishedAt = post.publishedAt || blogPublishDate(post.slug)
+  // Keep dateModified === datePublished until a real substantial rewrite lands in the seed.
+  const updatedAt = post.updatedAt || publishedAt
+  return { ...post, publishedAt, updatedAt }
+}
+
+const FILE_POSTS = (
+  [
+    howOften,
+    sevenSigns,
+    whyDryer,
+    energyBills,
+    allergies,
+    neverClean,
+    arlingtonHumidity,
+    alexandriaHumidity,
+    dcHumidity,
+    mcleanPollen,
+    rockvilleBasement,
+    fairfaxRamblers,
+    springfieldDust,
+    loudounDust,
+    princeWilliamHumidity,
+    silverSpringDust,
+    gaithersburgBasement,
+    collegeParkRentals,
+    restonTownCenter,
+    herndonConstruction,
+    viennaPollen,
+    greatFallsEstates,
+    fallsChurchDust,
+    chantillyRoute28,
+    oaktonCanopy,
+    lortonI95,
+    mountVernonHumidity,
+    fairOaksTownhomes,
+    germantownI270,
+    potomacCanopy,
+    wheatonUrban,
+    takomaParkBungalow,
+    kensingtonColonials,
+    olneyRambler,
+    hyattsvilleRoute1,
+    columbiaVillage,
+    ellicottCityFlood,
+    frederickDowntown,
+    montgomeryVillageTownhomes,
+    clarksburgConstruction,
+  ] as BlogPost[]
+).map(withFilePublishDates)
 
 function fileBlogIndex(): BlogIndexItem[] {
   return blogIndexSeed as BlogIndexItem[]
 }
 
 function mergeBlogIndex(cms: BlogIndexItem[]): BlogIndexItem[] {
-  const have = new Set(cms.map((item) => item.slug))
-  const extras = fileBlogIndex().filter((item) => !have.has(item.slug))
-  return [...extras, ...cms]
+  // File seeds are marketing SoT for seeded cards; CMS only adds posts not in seed.
+  const file = fileBlogIndex()
+  const fileSlugs = new Set(file.map((item) => item.slug))
+  // Hide CMS rows superseded by renamed seed slugs (redirect covers old URLs).
+  const superseded = new Set(['how-dirty-air-ducts-increase-energy-bills'])
+  const cmsOnly = cms.filter((item) => !fileSlugs.has(item.slug) && !superseded.has(item.slug))
+  return [...file, ...cmsOnly]
 }
 
 export async function getBlogIndex(): Promise<BlogIndexItem[]> {
@@ -253,6 +267,10 @@ export async function getBlogIndex(): Promise<BlogIndexItem[]> {
 }
 
 export async function getBlogPost(slug: string): Promise<BlogPost | null> {
+  // File seeds are the marketing source of truth (deploy-time). CMS fills gaps only.
+  const fromFile = FILE_POSTS.find((post) => post.slug === slug)
+  if (fromFile) return fromFile
+
   try {
     const payload = await getPayload({ config: configPromise })
     const result = await payload.find({
@@ -268,9 +286,9 @@ export async function getBlogPost(slug: string): Promise<BlogPost | null> {
     const doc = result.docs[0]
     if (doc) return mapPost(doc as unknown as Record<string, unknown>)
   } catch {
-    // Fall through to content files when CMS is missing the post.
+    // Fall through when CMS is unavailable.
   }
-  return FILE_POSTS.find((post) => post.slug === slug) || null
+  return null
 }
 
 export async function getAllBlogSlugs(): Promise<string[]> {

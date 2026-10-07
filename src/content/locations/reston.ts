@@ -1,140 +1,113 @@
 import type { LocationContentSeed } from '@/utilities/locations'
 
+/**
+ * Reston — Fairfax County mold + planned-community / high-rise laundry angle.
+ */
 export const reston: LocationContentSeed = {
   slug: 'reston',
-  title: 'Air Duct Cleaning in Reston, VA',
-  headline:
-    'Air duct and dryer vent cleaning for Reston Town Center, Lake Anne, and the Silver Line',
+  title: 'Reston Air Duct Cleaning',
+  headline: 'High-rise laundry chases and village townhomes — planned-community jobs from Burke',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Reston, VA. Flat rates from our Burke office for Town Center high-rises, Lake Anne condos, and South Lakes townhomes. Call (571) 460-0001.',
+    'Air duct & dryer vent cleaning in Reston, VA. Flat rates for village homes & high-rise dryer chases. Call (571) 460-0001.',
   intro:
-    'Amazon Air Duct Cleaning serves Reston from our Burke office \u2014 a Fairfax County run. Planned-community townhomes, Lake Anne originals, and Wiehle high-rises all take on Dulles Toll Road dust and humid summers. Call (571) 460-0001.',
+    'Reston is a planned community of stacked laundry closets, village townhomes, and lake-adjacent condos. Fairfax County Health still will not test or remediate mold for you. We clean ducts and dryer vents with flat rates and photos from Burke. Call (571) 460-0001.',
   heroImage: '/img/locations/reston.webp',
-  heroAlt: 'Air duct cleaning in Reston, VA \u2014 Amazon Air Duct Cleaning',
+  heroAlt: 'Air duct cleaning in Reston, VA — Amazon Air Duct Cleaning',
   city: 'Reston',
   state: 'VA',
   servedBy: 'burke',
-  sectionLayout: 'servicesFirst',
+  sectionLayout: 'whyFirst',
   about: {
-    heading: 'Planned Villages, Silver Line Towers, and Toll Road Particulates',
+    heading: 'Planned-community air paths meet County honesty',
     paragraphs: [
-      'Reston was built as a cluster of interconnected villages \u2014 each with its own character and housing stock. Lake Anne still anchors mid-century low-rises around the original plaza, where metal ductwork dates to the 1960s and basements sit close to lake-level moisture. South Lakes and North Point wrap single-family streets and townhomes under a mature hardwood canopy that dumps pollen directly into rooftop intakes every spring.',
-      'Town Center and the Wiehle-Reston East Metro corridor introduced stacked condos, rooftop HVAC packs, and multi-story dryer risers that did not exist in Robert Simon\u2019s original plan. Construction along Reston Parkway and Dulles Toll Road infill keeps fine gypsum particles in the outdoor air, and those particles follow cooled air into returns. A register that films over days after you wipe it is pulling that corridor dust through the same trunk that is sweating from July humidity.',
-      'We serve Reston from [Burke](/locations/burke). Nearby [Herndon](/locations/herndon), [Great Falls](/locations/great-falls), [Vienna](/locations/vienna), and [Loudoun](/locations/loudoun) use the same dispatch. Read more about [why corridor dust films over registers in Reston](/blog/reston-town-center-dust-air-ducts).',
+      'Wiehle and Reston Town Center high-rises push dryer exhaust up shared chases; Lake Anne and Hunters Woods stock mixes original condo mechanical rooms with later townhome closets. Toll Road dust and humid summers load both — the access notes we collect before arrival center on risers, garage docks, and HOA rules.',
+      'County baseline stays the same: the [Fairfax County mold page](https://www.fairfaxcounty.gov/health/environment/mold) says Health does not perform indoor air testing or mold remediation, and points to EPA/CDC/VDH. Keep moisture down; hire cleanup when growth appears. Our scope is trunks and dryer runs, documented.',
+      '[Healthy Homes Fairfax](https://www.fairfaxcounty.gov/health/environment/healthy-homes-fairfax) repeats dry-space prevention. In Reston, clear dryer vents on a schedule in buildings where the run is longer than the laundry closet looks. Dispatch from Burke with [Herndon](/locations/herndon) and [Fairfax](/locations/fairfax) on neighboring days.',
     ],
     highlights: [
-      'Town Center, Lake Anne, South Lakes, North Point, Wiehle-Reston East',
-      'Flat-rate pricing \u2014 no per-vent surcharges',
-      'Before-and-after photo documentation on every job',
-      'Dispatched weekly from our Burke office',
+      'High-rise dryer chases planned before arrival',
+      'Fairfax County Health mold links, no fake “county approved” badge',
+      'Flat-rate photos on every job',
+      'Burke: (571) 460-0001',
     ],
   },
-  offersTitle: 'Reston Duct & Dryer Vent Packages',
+  offersTitle: 'Reston packages',
   services: {
-    heading: 'What We Clean in Reston High-Rises and Village Homes',
-    intro: 'Mid-century Lake Anne trunks and Silver Line stacked units get the same published flat rate.',
+    heading: 'Scopes that match Reston buildings',
+    intro: 'Town Center risers and village townhomes use the same rate card; access notes differ.',
     items: [
       {
-        title: 'Air Duct Cleaning for Reston Homes',
-        text: 'We connect HEPA-filtered negative-pressure equipment to the trunk and agitate every supply run, return, and register with specialized agitation tools. Sanitizing follows when the on-site walkthrough reveals biological buildup. The before-and-after photo set is yours to keep. Schedule [air duct cleaning](/air-duct-cleaning).',
+        title: 'Air duct cleaning',
+        text: 'Source-removal cleaning for condo and townhome systems. Expectations framed by [EPA](https://www.epa.gov/indoor-air-quality-iaq/should-you-have-air-ducts-your-home-cleaned). [Air duct cleaning](/air-duct-cleaning).',
       },
       {
-        title: 'Dryer Vent Service',
-        text: 'Wiehle-area stacked units and South Lakes townhomes push dryer exhaust through long vertical chases that pack with lint by the second summer. We rod-brush and vacuum the entire path to the roof or wall cap so the appliance runs efficiently and safely. Book [dryer vent cleaning](/dryer-vent-cleaning).',
+        title: 'Dryer vent cleaning (risers included)',
+        text: 'Long vertical runs are why Reston condo laundry smells hot mid-cycle. [NFPA](https://www.nfpa.org/education-and-research/research/nfpa-research/fire-statistical-reports/home-fires-involving-clothes-dryers-and-washing-machines) on failure-to-clean. [Dryer vent cleaning](/dryer-vent-cleaning).',
       },
       {
-        title: 'Mold Remediation Inside Ductwork',
-        text: 'When Reston\u2019s summer humidity condenses on cold coils and supply metal, mold colonies establish inside the ventilation path. We mechanically clean the affected sections, then apply EPA-registered antimicrobial treatment to prevent regrowth. Details at [mold remediation for air ducts](/mold-remediation-air-ducts).',
+        title: 'Optional duct antimicrobial',
+        text: 'After mechanical cleaning when film is visible on hard metal — moisture source still has to be controlled per County guidance. [Mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
     ],
   },
   why: {
-    heading: 'Why Planned-Community Ducts Load Up Differently',
+    heading: 'Why Reston homeowners book us',
     items: [
       {
-        title: 'Village Layouts We Navigate Weekly',
-        text: 'Town Center loading docks, Lake Anne narrow streets, and South Lakes HOA gate codes are already in our route notes. Your appointment is not our first visit to the cluster.',
+        title: 'Shared chases hide lint',
+        text: 'What looks like a short closet vent may travel floors. We rod and vacuum the full length we can access to the cap.',
       },
       {
-        title: 'Equipped for High-Rise and Townhome Dryer Paths',
-        text: 'Multi-story lint runs in Wiehle stacks and Reston Parkway townhomes require full-length rodding \u2014 not just a quick brush at the dryer connection. We clear to the termination cap every time.',
+        title: 'County will not certify your HVAC',
+        text: 'Health Department pages redirect to EPA/CDC/VDH — they will not stamp your ducts clean. Photos are our proof.',
       },
       {
-        title: 'Flat Rate Confirmed Before We Start',
-        text: 'The price you receive on the phone is the price on the invoice. No per-vent add-ons once we see the mechanical closet.',
+        title: 'HOA / condo desk logistics',
+        text: 'Certificates of insurance and loading-dock windows handled before arrival when you send rules ahead.',
       },
       {
-        title: 'Results-Based Guarantee',
-        text: 'If the cleaning does not meet your standards after the walk-through, we return and redo the work at no extra charge.',
+        title: 'Flat rate from Burke',
+        text: 'No per-vent math; number confirmed before equipment starts.',
       },
     ],
   },
   communities: {
-    heading: 'Town Center, Lake Anne, South Lakes, Wiehle',
-    intro: 'Planned villages and Silver Line stacks; ask about loading docks early.',
+    heading: 'Reston villages and centers we stage',
+    intro: 'Same packages across the planned community grid.',
     groups: [
-      {
-        title: 'Reston Town Center & the Silver Line',
-        places: 'Reston Town Center, Spectrum, Wiehle-Reston East, Reston Parkway high-rises',
-      },
-      {
-        title: 'Lake Anne & original villages',
-        places: 'Lake Anne, Hunters Woods, Tall Oaks, Village Center streets',
-      },
-      {
-        title: 'South Lakes & North Point',
-        places:
-          'South Lakes, North Point, Reston Association paths toward the Toll Road \u2014 ask if your cluster is not listed',
-      },
+      { title: 'Town Center & transit', places: 'Reston Town Center, Wiehle-Reston East area, Spectrum' },
+      { title: 'Lakes & originals', places: 'Lake Anne, Hunters Woods, South Lakes' },
+      { title: 'North & west clusters', places: 'North Point, Upper Lake, Twin Branches-adjacent streets' },
     ],
   },
   process: {
-    heading: 'HOA Gates and Elevator Pads on the Reston Route',
-    intro: 'Arrival windows reflect the drive from Burke to Reston.',
+    heading: 'Burke → Reston',
+    intro: 'High-rise days need earlier access coordination.',
     steps: [
-      {
-        title: 'Walkthrough and quote',
-        text: 'In Reston we ask about pets, renovations, and condo / stacked-laundry layouts common around Reston before locking a flat-rate number for this VA address.',
-      },
-      {
-        title: 'Arrival window',
-        text: 'Morning-of text with a realistic ETA from the Burke office to your Reston street — not a vague all-day window.',
-      },
-      {
-        title: 'Agree the package',
-        text: 'For this Reston home: ducts, dryer vent, or both — scoped on site, quoted before equipment starts, paid after you are satisfied.',
-      },
-      {
-        title: 'HEPA source-removal cleaning',
-        text: 'We agitate and vacuum supplies, returns, and registers in this Reston system under negative pressure so debris leaves in the vacuum.',
-      },
-      {
-        title: 'Photos and handoff',
-        text: 'Before/after photos, filter tips, and a dryer-vent interval for Reston seasons. Questions go to (571) 460-0001.',
-      },
+      { title: 'Send building rules', text: 'Dock hours, COI, unit HVAC closet location.' },
+      { title: 'Quote on site', text: 'Ducts, dryer riser, or both — flat rate locked first.' },
+      { title: 'Clean', text: 'Negative-pressure ducts; full dryer brush-out when booked.' },
+      { title: 'Photos', text: 'Before/after set before we leave the unit.' },
+      { title: 'Handoff', text: 'Filter + dryer interval tips; (571) 460-0001.' },
     ],
   },
-  faqIntro: 'Reston questions — call (571) 460-0001 (dispatch: Burke).',
+  faqIntro: 'Reston + Fairfax County context. Book: (571) 460-0001.',
   faq: [
     {
-      q: 'Which office books jobs for Reston?',
-      a: 'Reston appointments leave from Burke, VA (5641 Burke Centre Pkwy Ste 119). Call (571) 460-0001 for air duct or dryer vent cleaning on your street.',
+      q: 'Does Fairfax County clean dryer vents in Reston high-rises?',
+      a: 'No. County [mold/Health pages](https://www.fairfaxcounty.gov/health/environment/mold) do not provide residential duct or dryer cleaning. That is private flat-rate work — what we schedule from Burke.',
     },
     {
-      q: 'What access do you need before arrival?',
-      a: 'In Reston, clear a path to the air handler and dryer — condo closets and stacked laundry especially. Share gate or parking notes for your block.',
+      q: 'Can you service a multi-story dryer chase?',
+      a: 'Yes within accessible run length to the exterior/roof cap. Tall risers are common in Town Center and Wiehle buildings — tell us floors and access when booking.',
     },
     {
-      q: 'How long is a typical visit?',
-      a: 'Most Reston single-system houses finish in about 2–3 hours. High-rise dryer risers can add time after inspection.',
+      q: 'Is mold testing included?',
+      a: 'No. County Health does not test either; we photograph duct/vent interiors after cleaning.',
     },
     {
-      q: 'Is pricing flat-rate or by the vent?',
-      a: 'Reston residential packages are flat-rate from Burke. We scope during the walkthrough, confirm before equipment starts, and that is what you pay — no per-vent counting.',
-    },
-    {
-      q: 'Is antimicrobial sanitizing included?',
-      a: 'On Reston jobs Envirocon is complimentary when you request it or when inspection supports it — confirmed on site before anything is applied.',
+      q: 'Which office serves Reston?',
+      a: 'Burke, VA. Call (571) 460-0001.',
     },
   ],
 }

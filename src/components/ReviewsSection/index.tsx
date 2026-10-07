@@ -3,6 +3,8 @@
 import Image from 'next/image'
 import React, { useState } from 'react'
 
+import { TextWithLinks } from '@/components/TextWithLinks'
+
 export type ReviewItem = {
   initials: string
   author: string
@@ -17,9 +19,9 @@ const INITIAL_COUNT = 4
 function Stars({ rating }: { rating: number }) {
   const safe = Math.max(1, Math.min(5, Math.round(rating)))
   return (
-    <p className="text-[var(--site-accent)]" aria-label={`${safe} star review`}>
+    <p className="text-[#b45309]" aria-label={`${safe} star review`}>
       {'★'.repeat(safe)}
-      <span className="text-[var(--site-border)]">{'★'.repeat(5 - safe)}</span>
+      <span className="text-[var(--site-muted-text)]">{'★'.repeat(5 - safe)}</span>
     </p>
   )
 }
@@ -42,7 +44,9 @@ export function ReviewsSection({
   return (
     <div className="container">
       <h2 className="site-heading text-3xl font-semibold tracking-tight md:text-4xl">{heading}</h2>
-      <p className="site-body mt-3 max-w-2xl">{intro}</p>
+      <p className="site-body mt-3 max-w-2xl">
+        <TextWithLinks text={intro} />
+      </p>
 
       <div className="mt-10 grid gap-5 md:grid-cols-2">
         {visible.map((review) => (
@@ -58,7 +62,7 @@ export function ReviewsSection({
                   {review.initials}
                 </span>
                 <div>
-                  <span className="font-semibold text-[var(--site-heading)]">{review.author}</span>
+                  <span className="font-semibold text-[#0b1c2c]">{review.author}</span>
                   {review.officeLabel ? (
                     <p className="site-muted text-xs">{review.officeLabel}</p>
                   ) : null}

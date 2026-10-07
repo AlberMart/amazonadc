@@ -1,35 +1,36 @@
 {
   "slug": "clarksburg-new-construction-dust-air-ducts",
-  "title": "Cabin Branch pads, Village HOAs, and why first-owner supplies still blow gypsum",
-  "headline": "Cabin Branch pads, Village HOAs, and why first-owner supplies still blow gypsum",
-  "description": "Clarksburg's rapid development means many homes were occupied while neighboring pads were still active. Learn why first-owner ducts carry construction residue — and when to clean it out.",
+  "title": "Clarksburg New Homes & First Duct Cleaning",
+  "headline": "Why New Clarksburg Homes Often Need a First Duct Cleaning",
+  "description": "Why new Clarksburg homes often need a first duct cleaning after builder dust and neighboring construction pads.",
   "heroImage": "/img/blog/heroes/clarksburg-new-construction-dust-air-ducts.webp",
   "sections": [
     {
       "id": "builder_hvac",
-      "heading": "Why the builder runs your HVAC before you move in",
+      "heading": "Why construction dust often reaches the ducts before move-in",
       "paragraphs": [
-        "Every new Clarksburg home — whether it is a Cabin Branch single-family or a Clarksburg Village row unit — goes through a construction phase where the HVAC system operates for weeks or months before the first owner receives the keys. Builders activate the system to control humidity while drywall compound cures, paint off-gasses, and flooring adhesive sets. During that period the air circulating through the trunks carries gypsum dust, sawdust, insulation fibers, and fine concrete particles.",
-        "Some of that material lands on the filter. Much of it deposits on the interior walls of supply and return trunks, especially at branches, bends, and the seams where duct sections connect. By the time you change the builder's filter and install your own, the debris is already downstream of where any filter can reach."
+        "Many new Clarksburg homes — Cabin Branch singles and Village row units included — see dusty finishing work (drywall, sanding, paint, flooring) while the HVAC system is already installed. Builders sometimes run the air handler for humidity control during cure; even when it sits off, unprotected openings can still collect debris. [EPA’s Indoor airPLUS bulletin on duct protection during construction](https://www.epa.gov/sites/default/files/2020-06/documents/2019.07_tech_bulletin_duct_protection_during_construction.pdf) notes that sawing, sanding, and drywall generate large amounts of dust that can enter ducts and equipment — and that leftover particulates can later be blown through the home or affect airflow through the system.",
+        "Some of that material lands on the filter. More can settle on supply and return interiors — especially at branches, bends, and joints — where a later filter change cannot pull it back. [DOE’s Building America guide](https://basc.pnnl.gov/resource-guides/removing-construction-debris-ducts) likewise treats construction debris in ducts as something to remove before occupancy when openings were not protected through finish work."
       ],
       "listItems": []
     },
     {
       "id": "staggered_build",
-      "heading": "Staggered development keeps the dust coming after move-in",
+      "heading": "Staggered development keeps nearby dust in the picture after move-in",
       "paragraphs": [
-        "Clarksburg's growth did not happen in a single phase. Cabin Branch, Town Center, Skylark, and the areas extending toward Damascus were platted and built over more than a decade, and construction continues on remaining parcels. That staggered schedule means an occupied home may sit a few hundred feet from an active pad where earthmoving, framing, and drywall finishing generate airborne fines daily.",
-        "Wind carries those particles across property lines. Returns on the downwind side of a house pull them inside. Over a single build season the duct system can accumulate a visible layer of pale dust — even in a home that was professionally cleaned at settlement. Owners who changed filters regularly are often surprised to find the interior of the trunk still coated when it is finally inspected."
+        "Clarksburg’s growth did not happen in a single phase. Cabin Branch, Town Center, Skylark, and parcels toward Damascus were built over more than a decade, and remaining pads still open. An occupied home may sit a few hundred feet from active earthmoving, framing, or drywall finishing.",
+        "Wind can carry fine dust across property lines; returns on the downwind side pull some of it indoors. On our Bethesda north-270 routes, first owners who kept filters current are still often surprised how chalky a trunk looks when a register comes off — especially after a busy build season next door. That is field observation, not a lab measurement of every Clarksburg lot.",
+        "Dryer vents are a separate line from supply ducts — [NFPA research](https://www.nfpa.org/education-and-research/research/nfpa-research/fire-statistical-reports/home-fires-involving-clothes-dryers-and-washing-machines) ties many home dryer fires to failure to clean lint from the full run."
       ],
       "listItems": [],
       "image": "/img/blog/Allergies.webp"
     },
     {
       "id": "gypsum_vs_organic",
-      "heading": "How construction dust behaves differently from pollen or pet hair",
+      "heading": "How construction dust differs from everyday household debris",
       "paragraphs": [
-        "Organic debris — pollen, skin cells, pet dander — is relatively soft and breaks down over time. Gypsum dust is calcium sulfate: a mineral that does not decompose. It bonds to metal surfaces when moisture is present, forming a hard film that standard vacuuming does not dislodge. In a new home where the duct system was loaded during the drywall phase, that film can persist for years.",
-        "The mineral layer also reduces the effective diameter of the duct slightly. In a townhome with already-tight trunk sizing, that reduction matters. Airflow decreases, the blower works harder, and energy consumption rises — often by an amount too small to trigger an immediate investigation but large enough to appear in a year-over-year utility comparison."
+        "Household debris (pollen, skin cells, pet dander) is mostly soft and organic. Drywall and joint-compound work adds mineral fines — often described as gypsum dust. On Clarksburg jobs those deposits frequently feel chalkier and cling more stubbornly than soft lint, especially where cool supply metal has seen condensation. EPA and DOE guidance emphasize **physical removal** (vacuum/brush methods) for construction debris — not waiting for filters to reverse what already settled on trunk walls.",
+        "EPA’s construction bulletin notes debris can block airflow and affect equipment; [EPA’s consumer duct-cleaning page](https://www.epa.gov/indoor-air-quality-iaq/should-you-have-air-ducts-your-home-cleaned) separately says there is **little evidence** that cleaning **only the ducts** improves energy efficiency. So we do **not** claim a fixed drop in duct diameter, a guaranteed longer blower cycle, or a bill spike from gypsum alone. What first owners usually notice first is pale dust refilming near supplies, or a filter that looks dirty sooner than expected."
       ],
       "listItems": []
     },
@@ -37,20 +38,21 @@
       "id": "signs",
       "heading": "What Clarksburg first owners typically notice",
       "paragraphs": [
-        "Construction-phase duct contamination announces itself through visual cues more than odor, which distinguishes it from moisture-based problems in older communities:"
+        "Construction-phase duct contamination often shows up as visual cues more than odor — which distinguishes it from many moisture-driven problems in older neighborhoods:"
       ],
       "listItems": [
-        "A fine white or light-gray powder on dark furniture near supply registers, returning within days of cleaning.",
-        "A brand-new filter that discolors faster than the manufacturer's recommended replacement interval.",
+        "A fine white or light-gray powder on dark furniture near supply registers, returning within days of wiping.",
+        "A brand-new filter that discolors faster than the manufacturer’s recommended replacement interval.",
         "Faint grittiness on kitchen counters near a supply vent, even with windows closed."
       ]
     },
     {
       "id": "next_steps",
-      "heading": "The first-owner cleaning that builders don't include",
+      "heading": "The first-owner cleaning that many build checklists skip",
       "paragraphs": [
-        "A post-occupancy duct cleaning removes the construction residue that the builder's HVAC operation deposited. Once cleared, the system transitions to a normal maintenance cycle where filters manage routine suburban dust and pollen. Skipping this initial cleaning means the mineral film remains as a base layer that traps future debris more aggressively.",
-        "Scheduling details and flat-rate packages for Clarksburg are on the [Clarksburg, MD service page](/locations/clarksburg). If the home has a stacked dryer closet — standard in Cabin Branch and Village townhomes — add [dryer vent cleaning](/dryer-vent-cleaning) to the same visit. Construction debris often lands inside the dryer exhaust run as well."
+        "When inspection shows substantial construction debris — or supply registers keep discharging pale dust — a post-occupancy source-removal clean removes what filters never reached. [EPA](https://www.epa.gov/indoor-air-quality-iaq/should-you-have-air-ducts-your-home-cleaned) also advises sealing registers and not running HVAC during dusty renovation until cleanup is done; the same caution applies while neighboring pads stay active. In our experience, leaving a chalky construction layer in place often means later household dust sticks to it more readily — that is a practical observation from photos, not a chemistry guarantee.",
+        "Scheduling details and flat-rate packages for Clarksburg are on the [Clarksburg, MD service page](/locations/clarksburg). If the home has a stacked dryer closet — common in Cabin Branch and Village townhomes — add [dryer vent cleaning](/dryer-vent-cleaning) to the same visit. Construction debris can land in dryer exhaust runs as well.",
+        "Call [(800) 606-3334](tel:8006063334) for Clarksburg scheduling, or see [air duct cleaning](/air-duct-cleaning) and [Clarksburg](/locations/clarksburg)."
       ],
       "listItems": []
     }
@@ -58,7 +60,7 @@
   "faq": [
     {
       "q": "When should Clarksburg homeowners consider duct cleaning?",
-      "a": "After nearby build-out or renovations that put fines in returns — or when Clarksburg registers refilm within days of wiping."
+      "a": "After nearby build-out or renovations that put fines in returns — or when Clarksburg registers refilm with pale dust within days of wiping. EPA treats substantial debris discharging into living spaces as a reason to consider cleaning."
     },
     {
       "q": "Where do I book air duct cleaning for Clarksburg?",
@@ -70,7 +72,7 @@
     },
     {
       "q": "Should I wait until construction near Clarksburg finishes?",
-      "a": "Heavy drywall dust near Clarksburg often shortens the useful interval. Wait until the worst dust settles, then inspect returns before booking."
+      "a": "If an adjacent pad is still generating heavy drywall dust, waiting until the worst of it settles can reduce how fast trunks reload. Then inspect returns before booking."
     }
   ]
 }

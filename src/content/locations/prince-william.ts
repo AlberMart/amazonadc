@@ -1,77 +1,85 @@
 import type { LocationContentSeed } from '@/utilities/locations'
 
+/**
+ * Prince William County — PCE maintenance vs mold lab + VDH + VA DEQ indoor air.
+ * Links used:
+ * - https://www.pwcva.gov/department/neighborhood-services/pce-overview
+ * - https://www.vdh.virginia.gov/environmental-health/public-health-toxicology/mold/
+ * - https://www.deq.virginia.gov/news-info/the-environment-you/your-air/indoor-air-quality
+ * - https://www.epa.gov/indoor-air-quality-iaq/should-you-have-air-ducts-your-home-cleaned
+ * - https://www.nfpa.org/education-and-research/research/nfpa-research/fire-statistical-reports/home-fires-involving-clothes-dryers-and-washing-machines
+ */
 export const princeWilliam: LocationContentSeed = {
   slug: 'prince-william',
-  title: 'Air Duct Cleaning in Prince William County, VA',
-  headline:
-    'Air duct and dryer vent cleaning for Woodbridge, Manassas, Lake Ridge, and Gainesville',
+  title: 'Air Duct & Dryer Vent Cleaning in Prince William County, VA',
+  headline: 'Woodbridge, Manassas, and Gainesville — I-95 humidity and inland dust from Burke',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Prince William County, VA. Flat rates from our Burke office for Woodbridge, Manassas, and Lake Ridge. Call (571) 460-0001.',
+    'Air duct & dryer vent cleaning in Prince William County, VA. Flat rates for Woodbridge & Manassas. Call (571) 460-0001.',
   intro:
-    'Amazon Air Duct Cleaning serves Prince William County from our Burke office. Woodbridge townhomes on I-95, Lake Ridge split-levels, and Manassas colonials all take on Occoquan humidity and corridor dust. The crew is the same one that already works Springfield. Call (571) 460-0001.',
+    'Prince William Property Code Enforcement handles property maintenance and quality-of-life code issues — not mold testing or HVAC certification. VDH and VA DEQ indoor air pages point residents to moisture control and trusted federal guidance. We clean ducts and dryer vents in I-95 corridor townhomes and inland Manassas colonials with flat rates and photos from Burke — same crew that already runs Springfield. (571) 460-0001.',
   heroImage: '/img/locations/prince-william.webp',
-  heroAlt: 'Air duct cleaning in Prince William County, VA \u2014 Amazon Air Duct Cleaning',
+  heroAlt: 'Air duct cleaning in Prince William County, VA — Amazon Air Duct Cleaning',
   city: 'Prince William',
   state: 'VA',
   servedBy: 'burke',
-  sectionLayout: 'whyFirst',
+  sectionLayout: 'communitiesFirst',
   about: {
-    heading: 'Occoquan River Moisture, I-95 Corridor Townhomes, and Inland Manassas Colonials',
+    heading: 'River-corridor humidity, inland splits, and civic boundaries',
     paragraphs: [
-      'Prince William County stretches from the Occoquan River and I-95 corridor out to Manassas, Gainesville, and Haymarket along I-66. Woodbridge, Lake Ridge, and Dale City sit closest to the river, where humid air keeps basement and crawl-space supply metal damp all summer. The housing stock in those communities is primarily 1970s\u20132000s townhomes and single-family homes with basements \u2014 trunks that sweat and collect highway dust, pollen, and pet dander into a compacted layer that recirculates every time the blower kicks on.',
-      'Inland communities like Manassas, Gainesville, and Haymarket carry a different mix: older Manassas colonials with retrofitted trunks that branch at awkward joints, and newer Gainesville and Linton Hall HOA homes where builder drywall dust was never cleaned from the supply runs. Townhomes along Prince William Parkway pack dryer exhaust through vertical chases that clog with lint well before drying performance noticeably drops. A laundry room that stays hot after a full cycle is almost always a blocked vent path, not a failing dryer.',
-      'Our Burke crew serves Prince William alongside [Springfield](/locations/springfield) and [Lorton](/locations/lorton). Read about [Prince William, Occoquan humidity, and air ducts](/blog/prince-william-occoquan-humidity-air-ducts).',
+      'Prince William stretches from Occoquan-adjacent Woodbridge and Dale City — 1970s–2000s townhomes and split-levels with basement handlers that sweat all summer — out to Manassas colonials and Gainesville HOA new-build where drywall dust never left the supplies. I-95 corridor homes load highway particulate alongside river humidity; inland blocks swap some of that for pollen and older retrofit trunks with awkward junctions.',
+      '[Property Code Enforcement (PCE)](https://www.pwcva.gov/department/neighborhood-services/pce-overview) investigates property maintenance and related code concerns in the county — useful when building conditions violate maintenance standards, but **not** a mold laboratory or air-duct inspection service. For mold framing, [VDH mold guidance](https://www.vdh.virginia.gov/environmental-health/public-health-toxicology/mold/) applies statewide. [VA DEQ indoor air quality](https://www.deq.virginia.gov/news-info/the-environment-you/your-air/indoor-air-quality) steers readers toward EPA and VDH resources rather than endorsing vendors.',
+      'We dispatch from Burke with I-95 drive time in the window — alongside [Springfield](/locations/springfield) and [Lorton](/locations/lorton). We remove debris from ducts and lint from dryer vents; we do not file PCE complaints or replace county enforcement.',
     ],
     highlights: [
-      'Woodbridge, Lake Ridge, Manassas, Gainesville, Dale City, and Haymarket',
-      'Flat-rate pricing from the Burke office',
-      'Before-and-after photo set included with every job',
-      'Same crew running Springfield and Lorton routes',
+      'PCE = maintenance enforcement, not mold testing',
+      'VDH + DEQ indoor air cited honestly',
+      'Woodbridge / Manassas / Dale City housing mix',
+      'Burke: (571) 460-0001',
     ],
   },
-  offersTitle: 'Prince William Duct & Dryer Vent Packages',
+  offersTitle: 'Prince William flat-rate packages',
   services: {
-    heading: 'What We Clean Across Prince William County',
-    intro: 'I-95 corridor townhomes and inland Manassas colonials receive the same published flat-rate scope.',
+    heading: 'What we clean across Prince William County',
+    intro: 'Vertical dryer chases in Woodbridge and Gainesville basement handlers — same flat-rate card.',
     items: [
       {
-        title: 'Air Duct Cleaning for Prince William Homes',
-        text: 'HEPA-filtered negative-pressure equipment seals to the trunk while specialized tools agitate every supply line, return, and register. Sanitizing follows when the on-site walkthrough identifies biological growth \u2014 common in Occoquan-adjacent basements. You receive the complete before-and-after photo set. Schedule [air duct cleaning](/air-duct-cleaning).',
+        title: 'Air duct cleaning',
+        text: 'HEPA negative pressure and full-system agitation. [EPA duct guidance](https://www.epa.gov/indoor-air-quality-iaq/should-you-have-air-ducts-your-home-cleaned) cautions against overselling health outcomes — we document debris removed. [Air duct cleaning](/air-duct-cleaning).',
       },
       {
-        title: 'Dryer Vent Service',
-        text: 'Woodbridge and Lake Ridge townhome dryer chases climb through interior walls and clog with lint faster than single-story runs. We rod-brush and vacuum the full path to the exterior cap so the appliance exhausts safely. Book [dryer vent cleaning](/dryer-vent-cleaning).',
+        title: 'Dryer vent cleaning',
+        text: 'Lake Ridge and Dale City townhomes pack lint in interior wall chases. [NFPA dryer-fire research](https://www.nfpa.org/education-and-research/research/nfpa-research/fire-statistical-reports/home-fires-involving-clothes-dryers-and-washing-machines). [Dryer vent cleaning](/dryer-vent-cleaning).',
       },
       {
-        title: 'Mold Treatment in Prince William Ductwork',
-        text: 'Humid basements near the Occoquan and crawl-space air handlers sitting on damp soil let mold colonize coils and dead-end supply branches. We clean mechanically first, then apply EPA-registered antimicrobial treatment along the ventilation path. Details at [mold remediation for air ducts](/mold-remediation-air-ducts).',
+        title: 'Optional duct antimicrobial',
+        text: 'After mechanical cleaning on hard metal when inspection supports it — not VDH remediation and not PCE clearance. [Mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
     ],
   },
   why: {
-    heading: 'Why County Homes Near the Occoquan Load Up Differently',
+    heading: 'Why PCE and duct cleaning solve different problems',
     items: [
       {
-        title: 'Burke Office, Scheduled With Drive Time Built In',
-        text: 'Prince William jobs are dispatched from our Burke office with arrival windows that account for the I-95 drive. No timing surprises.',
+        title: 'Maintenance code vs mechanical cleaning',
+        text: '[PCE overview](https://www.pwcva.gov/department/neighborhood-services/pce-overview) describes enforcement on property conditions — not scheduling your HVAC hygiene visit.',
       },
       {
-        title: 'Flat Rate Confirmed Before Equipment Unloads',
-        text: 'Townhomes and larger Gainesville houses are walkthrough-scoped and quoted before the first hose comes off the truck. No per-vent add-ons.',
+        title: 'DEQ points to EPA/VDH — not to us',
+        text: '[DEQ indoor air](https://www.deq.virginia.gov/news-info/the-environment-you/your-air/indoor-air-quality) aggregates guidance; we compete on flat rate and photos, not “state approved.”',
       },
       {
-        title: 'Corridor and Inland Housing Are Both Routine',
-        text: 'Split-levels along the river, HOA townhomes in Dale City, and finished basements in Gainesville are all standard jobs for this crew \u2014 not unusual layouts.',
+        title: 'Occoquan humidity loads basements',
+        text: 'River-adjacent communities keep supply metal damp — dehumidify and fix leaks per [VDH mold](https://www.vdh.virginia.gov/environmental-health/public-health-toxicology/mold/); clean ducts when debris warrants it.',
       },
       {
-        title: 'Satisfaction Guarantee',
-        text: 'If the Prince William result falls short, contact us within 7 days — we re-perform the work or refund per our refund policy.',
+        title: 'Burke southern corridor routing',
+        text: 'We book around I-95 traffic and stay reachable if the corridor stretches the day; ducts + dryer together when you schedule both.',
       },
     ],
   },
   communities: {
-    heading: 'Woodbridge, Lake Ridge, Manassas, and Dale City Overview',
-    intro: 'County-level page; Lorton and Springfield cover closer Fairfax edges.',
+    heading: 'Prince William communities we stage for',
+    intro: 'County-wide page — name your neighborhood for HOA and access notes.',
     groups: [
       {
         title: 'Woodbridge & the river',
@@ -79,66 +87,65 @@ export const princeWilliam: LocationContentSeed = {
       },
       {
         title: 'Manassas & west',
-        places: 'Manassas, Manassas Park, Buckhall, Yorkshire, West Gate',
+        places: 'Manassas, Manassas Park, Buckhall, Yorkshire, Independent Hill area',
       },
       {
         title: 'Gainesville & I-66',
-        places:
-          'Gainesville, Haymarket, Linton Hall, streets toward Bristow \u2014 ask if your neighborhood is not listed',
+        places: 'Gainesville, Haymarket, Linton Hall, Bristow edge',
       },
     ],
   },
   process: {
-    heading: 'Southern Corridor Timing From Burke',
-    intro: 'From booking at (571) 460-0001 to photos at the Prince William door.',
+    heading: 'Burke → Prince William visit flow',
+    intro: 'Separate landlord/PCE pathways from the duct scope you hire today.',
     steps: [
       {
-        title: 'Book from the office line',
-        text: 'Call (571) 460-0001 or use the form — we confirm Prince William availability the next business day from Burke.',
+        title: 'Housing type',
+        text: 'River-corridor townhome riser, Dale City split-level, or Gainesville new-build — sets time, not rate.',
       },
       {
-        title: 'Protect floors and living spaces',
-        text: 'In Prince William we cover work paths and keep living spaces clear while equipment runs.',
+        title: 'Scope boundaries',
+        text: 'Active maintenance dispute or mold as housing condition — county/landlord path first. We quote ducts/dryer for this visit.',
       },
       {
-        title: 'Source-removal cleaning',
-        text: 'Source-removal agitation under HEPA negative pressure for this Prince William system — dust leaves in the vacuum, not your rooms.',
+        title: 'Lock flat rate',
+        text: 'Confirmed before agitation; antimicrobial only with your OK.',
       },
       {
-        title: 'Optional sanitizing',
-        text: 'Complimentary Envirocon when you request it or when the Prince William inspection supports it.',
+        title: 'Clean + photograph',
+        text: 'Source-removal and full dryer brush-out when booked.',
       },
       {
-        title: 'Close out the visit',
-        text: 'Photos on file, flat-rate invoice for Prince William, and seasonal tips. Call (571) 460-0001 anytime.',
+        title: 'Handoff',
+        text: 'When to use PCE vs VDH vs follow-up duct work — (571) 460-0001.',
       },
     ],
   },
-  faqIntro: 'Prince William questions — call (571) 460-0001 (dispatch: Burke).',
+  faqIntro: 'Prince William — PCE, VDH, DEQ, and our scope. Book: (571) 460-0001 (Burke).',
   faq: [
     {
-      q: 'Where does the Prince William appointment leave from?',
-      a: 'Prince William appointments leave from Burke, VA (5641 Burke Centre Pkwy Ste 119). Call (571) 460-0001 for air duct or dryer vent cleaning on your street.',
+      q: 'Will Prince William Property Code Enforcement test mold in my ducts?',
+      a: 'No. [PCE](https://www.pwcva.gov/department/neighborhood-services/pce-overview) handles property maintenance and code enforcement — not mold lab work or HVAC cleanliness certification. See [VDH mold guidance](https://www.vdh.virginia.gov/environmental-health/public-health-toxicology/mold/) for mold questions.',
     },
     {
-      q: 'Anything to clear before the crew shows up?',
-      a: 'For this Prince William, VA home we need clear runs to the air handler. Put HOA codes on the confirmation text.',
+      q: 'What does VA DEQ say about indoor air?',
+      a: '[DEQ indoor air quality](https://www.deq.virginia.gov/news-info/the-environment-you/your-air/indoor-air-quality) points to EPA and VDH resources. It does not recommend specific duct cleaners — we cite it so expectations stay honest.',
     },
     {
-      q: 'What is a realistic job length for one system?',
-      a: 'One Prince William system usually takes 2–3 hours. Multi-system or packed dryer vents are scoped before we start so the quote stays locked.',
+      q: 'Woodbridge humidity — ducts or dehumidifier first?',
+      a: 'Moisture control first per VDH and [EPA moisture guidance](https://www.epa.gov/mold). Duct cleaning removes accumulated debris when inspection supports it; it does not dry a wet basement.',
     },
     {
-      q: 'Will the price change once equipment is out?',
-      a: 'The Burke crew prices Prince William jobs as published flat-rate packages. Scoped on site, confirmed before unload, paid after you are satisfied.',
+      q: 'Why NFPA on a county page?',
+      a: 'Packed vertical dryer chases in corridor townhomes are a fire-safety issue — [NFPA dryer-fire research](https://www.nfpa.org/education-and-research/research/nfpa-research/fire-statistical-reports/home-fires-involving-clothes-dryers-and-washing-machines) documents the pattern.',
     },
     {
-      q: 'Is antimicrobial sanitizing included?',
-      a: 'On Prince William jobs Envirocon is complimentary when you request it or when inspection supports it — confirmed on site before anything is applied.',
+      q: 'Can I combine ducts and dryer vent in one trip?',
+      a: 'Yes — book both up front. Call (571) 460-0001 from Burke.',
     },
     {
-      q: 'When should I call for the next opening?',
-      a: 'Prince William is a longer run from Burke. Book several days ahead for realistic windows; call (571) 460-0001 for the next open Prince William slot.',
+      q: 'How far ahead should I book Prince William?',
+      a: 'Allow several days for I-95 drive windows from Burke. Same crew often runs [Springfield](/locations/springfield) the same week.',
     },
   ],
 }

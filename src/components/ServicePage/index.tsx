@@ -193,7 +193,7 @@ export async function ServicePage({ service }: { service: ServiceContent }) {
                 </h2>
                 {service.why.paragraphs.map((p) => (
                   <p key={p} className="mt-4 site-body leading-relaxed">
-                    {p}
+                    <TextWithLinks text={p} />
                   </p>
                 ))}
               </div>

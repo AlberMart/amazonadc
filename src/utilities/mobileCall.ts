@@ -69,6 +69,21 @@ export function resolveMobileCall(
   }
 }
 
+/** Override dial target + visible label (e.g. city office phone on /locations/[slug]). */
+export function withMobileCallPhone(
+  call: ResolvedMobileCall,
+  phone: { display: string; href: string },
+): ResolvedMobileCall {
+  const href = toTelHref(phone.href) || phone.href
+  const label = phone.display.trim() || call.label
+  return {
+    ...call,
+    href,
+    label,
+    ariaLabel: `Call ${label}`,
+  }
+}
+
 export function mobileCallButtonStyle(call: ResolvedMobileCall, variant: 'icon' | 'pill') {
   const size = SIZE_PX[call.size]
   return {

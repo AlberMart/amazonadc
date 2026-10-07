@@ -192,6 +192,8 @@ export async function RenderPageSections({
                     alt={section.imageAlt || section.heading || ''}
                     fill
                     priority
+                    fetchPriority="high"
+                    quality={60}
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 520px"
                   />
@@ -304,6 +306,8 @@ export async function RenderPageSections({
                       src={section.image}
                       alt={section.imageAlt || section.heading || ''}
                       fill
+                      loading="lazy"
+                      quality={75}
                       className="object-cover"
                       sizes="(max-width: 1024px) 100vw, 50vw"
                     />
@@ -504,6 +508,7 @@ export async function RenderPageSections({
             appearance={section.appearance}
             anchorId={section.anchorId || 'service_area'}
             compact={Boolean(section.compact)}
+            seoCityScope={section.seoCityScope || 'all'}
           />
         )
       }
@@ -611,7 +616,13 @@ export async function RenderPageSections({
 
       if (section.type === 'contact') {
         return (
-          <div key={key} id={section.anchorId || 'contact'} className="site-section scroll-mt-32">
+          <SectionShell
+            key={key}
+            tone={section.tone || 'white'}
+            appearance={section.appearance}
+            defaultPadding="none"
+            className="scroll-mt-32"
+          >
             <ContactForm
               sourcePage={sourcePage}
               heading={section.heading}
@@ -619,8 +630,9 @@ export async function RenderPageSections({
               phoneDisplay={section.phoneDisplay || defaultPhoneDisplay}
               phoneHref={phoneHrefOf(section.phoneHref) || defaultPhoneHref}
               formId={section.formId}
+              anchorId={section.anchorId || 'contact'}
             />
-          </div>
+          </SectionShell>
         )
       }
 

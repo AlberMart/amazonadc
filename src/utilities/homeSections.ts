@@ -71,6 +71,11 @@ export type HomeSection = {
   regions?: ServiceAreaRegion[]
   /** Location pages: offices + short intro only (no state lists / map / city dump). */
   compact?: boolean
+  /**
+   * Hub service-area blocks: limit the “including …” SEO city dump to one state
+   * so Bethesda does not list Virginia cities (and vice versa).
+   */
+  seoCityScope?: 'all' | 'MD' | 'VA' | 'none'
   badges?: SectionBadge[]
   photos?: Array<{
     src: string
@@ -248,6 +253,9 @@ export function mapHomeSection(raw: Record<string, unknown>, nested = false): Ho
     mapEmbedUrl: raw.mapEmbedUrl ? String(raw.mapEmbedUrl) : undefined,
     mapTitle: raw.mapTitle ? String(raw.mapTitle) : undefined,
     compact: Boolean(raw.compact),
+    seoCityScope: (['all', 'MD', 'VA', 'none'].includes(String(raw.seoCityScope || ''))
+      ? String(raw.seoCityScope)
+      : undefined) as HomeSection['seoCityScope'],
     regions: mapServiceAreaRegions(raw.regions),
     badges: mapBadges(raw.badges),
     photos: (
@@ -308,6 +316,21 @@ export function faqItemsFromSections(sections: HomeSection[]): Array<{ q: string
   return flattenPageSections(sections)
     .filter((section) => section.type === 'faq')
     .flatMap((section) => (section.faqItems || []).filter((item) => item.q && item.a))
+}
+
+export function processStepsFromSections(
+  sections: HomeSection[],
+): Array<{ title: string; text: string }> {
+  return flattenPageSections(sections)
+    .filter((section) => section.type === 'steps')
+    .flatMap((section) =>
+      (section.steps || [])
+        .map((step) => ({
+          title: String(step.title || '').trim(),
+          text: String(step.text || '').trim(),
+        }))
+        .filter((step) => step.title && step.text),
+    )
 }
 
 /** Convert legacy flat homeContent into portable sections (seed + fallback). */
@@ -465,6 +488,7 @@ export function mapHomeSectionsToSeed(sections: HomeSection[]) {
     mapEmbedUrl: section.mapEmbedUrl || undefined,
     mapTitle: section.mapTitle || undefined,
     compact: section.compact || undefined,
+    seoCityScope: section.seoCityScope || undefined,
     regions: (section.regions || []).map((region) => ({
       name: region.name,
       cities: region.cities.map((name) => ({ name })),

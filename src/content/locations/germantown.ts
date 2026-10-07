@@ -1,76 +1,84 @@
 import type { LocationContentSeed } from '@/utilities/locations'
 
+/**
+ * Germantown — Town Center / Milestone / pre-2000 townhomes along I-270.
+ * Links used:
+ * - https://www.montgomerycountymd.gov/propertycare/air-quality-law/indoor-air-quality
+ * - https://www.montgomerycountymd.gov/propertycare/air-quality-law/indoor-air-quality/mold
+ * - https://www.montgomerycountymd.gov/department-housing-community-affairs/dhca-code-enforcement
+ * - https://www.montgomerycountymd.gov/DHCA/housing/landlordtenant/
+ */
 export const germantown: LocationContentSeed = {
   slug: 'germantown',
-  title: 'Air Duct Cleaning in Germantown, MD',
-  headline: 'Air duct and dryer vent cleaning for Milestone, Town Center, and the I-270 corridor',
+  title: 'Germantown Air Duct & Dryer Vent Cleaning',
+  headline: 'Milestone and Town Center townhomes — party-wall dryers and corridor dust from Bethesda',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Germantown, MD. Flat rates from our Bethesda office for townhomes, corridor construction dust, and I-270 traffic grit. Call (301) 809-4544.',
+    'Air duct & dryer vent cleaning in Germantown, MD. Flat rates for townhomes & corridor homes. Photos. Call (301) 809-4544.',
   intro:
-    'Amazon Air Duct Cleaning serves Germantown from our Bethesda office — up I-270 past Gaithersburg. Townhomes, split-levels, and houses near new construction all take on corridor traffic dust and drywall grit. Call (301) 809-4544.',
+    'Germantown grew along I-270 — Milestone, Germantown Town Center, Waters Landing, Clopper Road clusters — with **1980s–2000s townhomes** whose mechanical closets sit under stairs and whose dryer vents punch through party walls. Ongoing pad construction and freeway particulate gray registers fast; Waters Landing lake air adds lower-level condensation. DEP teaches humidity and mold prevention; DHCA handles many rental housing complaints. We dispatch from Bethesda. (301) 809-4544.',
   heroImage: '/img/locations/germantown.webp',
   heroAlt: 'Air duct cleaning in Germantown, MD — Amazon Air Duct Cleaning',
   city: 'Germantown',
   state: 'MD',
   servedBy: 'bethesda',
-  sectionLayout: 'leanNoOffers',
+  sectionLayout: 'processFirst',
   about: {
-    heading: 'Milestone Townhomes, Waters Landing Lake Air, and Constant Corridor Construction',
+    heading: 'I-270 corridor townhomes and County IAQ guidance',
     paragraphs: [
-      'Germantown grew along the I-270 spine through the 1980s, 1990s, and 2000s — Milestone, Town Center, Waters Landing, Clopper Road clusters, and the HOA pads that keep filling open parcels west toward Black Hill Regional Park. Most of the residential stock is two- and three-story townhomes with mechanical closets tucked under staircases and dryer vents routed through party walls. Registers in these homes gray out within a week of wiping because I-270 brake dust and ongoing pad-site construction generate a fine particulate load that standard one-inch filters do not fully catch.',
-      'Waters Landing\'s proximity to the lake adds a separate moisture variable — cool lower-level trunks condensate through July and August, and that wet surface traps whatever the returns deliver. Clopper Road homes near the park sit under mature canopy that dumps oak and pine pollen across every flat surface from April through June.',
-      'We dispatch Germantown from [Bethesda](/locations/bethesda). Neighboring [Gaithersburg](/locations/gaithersburg) is one exit south, [Clarksburg](/locations/clarksburg) continues north, and [Montgomery Village](/locations/montgomery-village) sits just off the corridor. Read our guide on [Germantown I-270 townhome air ducts](/blog/germantown-i270-townhome-air-ducts).',
+      '**Germantown** is unincorporated north on 270: Milestone HOAs, Observation Drive townhome rows, and older **three-story townhomes** with tight stairwell mechanical rooms. I-270 brake dust and nearby grading projects deliver fine particulate returns catch faster than filters alone manage. If your address is inside [Gaithersburg](/locations/gaithersburg) city limits, City rental channels apply instead of DHCA for some housing complaints.',
+      'Montgomery DEP [Indoor Air Quality](https://www.montgomerycountymd.gov/propertycare/air-quality-law/indoor-air-quality) and [mold](https://www.montgomerycountymd.gov/propertycare/air-quality-law/indoor-air-quality/mold) guidance applies countywide: vent dryers outdoors, target ~30–50% humidity, change filters. Renters use [DHCA Housing Code Enforcement](https://www.montgomerycountymd.gov/department-housing-community-affairs/dhca-code-enforcement) and [Landlord & Tenant](https://www.montgomerycountymd.gov/DHCA/housing/landlordtenant/) for maintenance disputes — we clean ducts and vents; we do not file 311 for you.',
+      'Bethesda crews run Germantown with [Montgomery Village](/locations/montgomery-village) and [Clarksburg](/locations/clarksburg) on the same corridor. Building detail: [Germantown I-270 townhome air ducts](/blog/germantown-i270-townhome-air-ducts).',
     ],
     highlights: [
-      'Milestone, Town Center, Waters Landing, Clopper Road, and Black Hill edge',
-      'Flat-rate pricing locked before the crew leaves Bethesda',
-      'Before-and-after photos included with every duct and dryer service',
-      'HOA-compatible scheduling for noise-restricted communities',
+      'Town Center / Milestone townhome stock',
+      'I-270 + construction particulate angle',
+      'DEP + DHCA with clear boundaries',
+      'Bethesda: (301) 809-4544',
     ],
   },
-  offersTitle: 'Germantown Corridor Rates — Bethesda Office',
+  offersTitle: 'Germantown flat-rate packages',
   services: {
-    heading: 'Germantown Services for I-270 Townhomes and Clopper Road Colonials',
-    intro: 'Tight mechanical closets and lake-adjacent lower levels each get a scope walk before pricing — no assumptions about what the system holds.',
+    heading: 'Townhome closets, party-wall dryers, Clopper colonials',
+    intro: 'Stairwell handlers and lake-adjacent lower trunks scoped on walkthrough before price locks.',
     items: [
       {
-        title: 'Air Duct Cleaning & Sanitization',
-        text: 'HEPA negative pressure and mechanical agitation through every supply trunk, return plenum, and register boot. Milestone townhome closets packed with a decade of corridor grit and Clopper Road colonials carrying canopy pollen both receive documented source-removal cleaning. Full scope at [air duct cleaning](/air-duct-cleaning).',
+        title: 'Air duct cleaning (source removal)',
+        text: 'HEPA negative pressure through supplies, returns, and boots — including corridor dust load in returns after construction phases. [EPA duct guidance](https://www.epa.gov/indoor-air-quality-iaq/should-you-have-air-ducts-your-home-cleaned). [Air duct cleaning](/air-duct-cleaning).',
       },
       {
-        title: 'Dryer Vent Cleaning',
-        text: 'Party-wall dryer chases in Germantown townhomes route through tight bends that compress lint into solid plugs over a few seasons. We brush and vacuum the entire run to the exterior cap and verify draw before leaving. Schedule at [dryer vent cleaning](/dryer-vent-cleaning).',
+        title: 'Dryer vent cleaning',
+        text: 'Party-wall chases with tight bends compact lint into plugs over a few seasons. [NFPA dryer-fire research](https://www.nfpa.org/education-and-research/research/nfpa-research/fire-statistical-reports/home-fires-involving-clothes-dryers-and-washing-machines). Full brush-out to exterior cap. [Dryer vent cleaning](/dryer-vent-cleaning).',
       },
       {
-        title: 'Ventilation & HVAC Mold Treatment',
-        text: 'Cool lower-level trunks near Waters Landing lake condensate through humid months, and that persistent moisture film gives microbial growth a surface to colonize. EPA-registered antimicrobial treatment covers coils, plenum walls, and affected trunk sections. More at [mold remediation for air ducts](/mold-remediation-air-ducts).',
+        title: 'Optional antimicrobial on hard duct surfaces',
+        text: 'After mechanical cleaning when inspection shows film on hard metal near cool lower trunks — not whole-unit mold remediation. [Mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
     ],
   },
   why: {
-    heading: 'Why Germantown Systems Recirculate Corridor Construction Film',
+    heading: 'Moisture, freeway dust, and party-wall dryers here',
     items: [
       {
-        title: 'Consistent I-270 Routing From Bethesda',
-        text: 'Our crew runs the Gaithersburg-to-Germantown corridor segment regularly — Milestone and Town Center addresses fit into the existing dispatch pattern without a special trip.',
+        title: 'Freeway + pad-site film',
+        text: '270 corridor particulate and ongoing development mean heavier return loading than quiet interior county streets — scoped as normal, not a surprise surcharge.',
       },
       {
-        title: 'Locked Pricing for Townhomes and Colonials Alike',
-        text: 'A Waters Landing end-unit and a Clopper Road single-family both receive a confirmed quote before equipment comes off the truck. Call (301) 809-4544.',
+        title: 'Older townhome chases',
+        text: 'Pre-2010 party-wall dryer paths were not sized for today’s dryer airflow — we verify draw at the cap, not just brush the closet end.',
       },
       {
-        title: 'Construction Dust Treated as Standard, Not Premium',
-        text: 'Ongoing I-270 development means most Germantown systems carry heavier-than-average particulate. Our scoping process accounts for that load without surcharging it.',
+        title: 'DHCA for rentals, DEP for habits',
+        text: 'Housing complaints and [DHCA](https://www.montgomerycountymd.gov/department-housing-community-affairs/dhca-code-enforcement); prevention science on DEP [mold/IAQ](https://www.montgomerycountymd.gov/propertycare/air-quality-law/indoor-air-quality/mold) pages.',
       },
       {
-        title: 'Results-First Guarantee',
-        text: 'Before-and-after documentation is standard. If the photos do not show clear improvement, the crew returns at our expense.',
+        title: 'Flat rate + photos',
+        text: 'Quote before agitation; before/after images; pass HOA gate codes when you schedule so access is not a surprise.',
       },
     ],
   },
   communities: {
-    heading: 'Milestone, Gunners Lake Edge, and North End Streets',
-    intro: 'Gaithersburg and Clarksburg are neighboring pages on the corridor.',
+    heading: 'Germantown clusters on the 270 corridor',
+    intro: 'Gaithersburg south, Clarksburg north — neighboring pages, different center names.',
     groups: [
       {
         title: 'Milestone & Town Center',
@@ -82,62 +90,61 @@ export const germantown: LocationContentSeed = {
       },
       {
         title: 'North toward Clarksburg',
-        places:
-          'North Germantown, streets toward Ridge Road and Clarksburg — ask if your HOA is not listed',
+        places: 'North Germantown, Ridge Road edge, [Clarksburg](/locations/clarksburg) fringe HOAs',
       },
     ],
   },
   process: {
-    heading: 'Further Up I-270 — Still Bethesda Dispatch',
-    intro: 'Same flat-rate flow from Bethesda — scoped for Germantown housing.',
+    heading: 'How a Bethesda → Germantown visit runs',
+    intro: 'Process-first for corridor townhomes — access and dryer path before agitation.',
     steps: [
       {
-        title: 'Inspect access and dryer path',
-        text: 'We walk returns and the dryer run typical of Germantown housing (newer-build drywall fines still sitting in Germantown returns) so nothing is surprise-priced later.',
+        title: 'HOA gate and stair-closet access',
+        text: 'Milestone and Town Center visitor rules, mechanical closet under stairs — noted before unload.',
       },
       {
-        title: 'Stage the right equipment',
-        text: 'Tight Germantown streets get portable HEPA from Bethesda; larger lots may use truck-mounted vacuum when access allows.',
+        title: 'Inspect returns and party-wall dryer',
+        text: 'Construction fines in returns and lint at chase elbows identified before flat rate locks.',
       },
       {
-        title: 'Clean ducts end to end',
-        text: 'Specialized tools plus negative-pressure vacuum through the trunks serving this Germantown, MD home.',
+        title: 'Stage portable HEPA when needed',
+        text: 'Tight parking courts get truck-adjacent portable vacuum; larger Clopper lots may use truck mount when access allows.',
       },
       {
-        title: 'Clear the dryer run',
-        text: 'Full-length brushing to the exterior cap when dryer service is on the Germantown ticket.',
+        title: 'Source-removal ducts + optional dryer',
+        text: 'Agitation under negative pressure; full-length dryer brush when on the ticket.',
       },
       {
-        title: 'Final walk-through',
-        text: 'Review Germantown photos together and leave booking notes for (301) 809-4544 if you want a follow-up.',
+        title: 'Photo walk-through and handoff',
+        text: 'Review images together, DEP humidity reminder, book follow-up at (301) 809-4544 if needed.',
       },
     ],
   },
-  faqIntro: 'Germantown questions — call (301) 809-4544 (dispatch: Bethesda).',
+  faqIntro: 'Germantown corridor — DEP/DHCA links. Book: (301) 809-4544 (Bethesda).',
   faq: [
     {
-      q: 'Who dispatches the crew to Germantown, MD?',
-      a: 'Germantown appointments leave from Bethesda, MD (7815 Old Georgetown Rd Ste 201). Call (301) 809-4544 for air duct or dryer vent cleaning on your street.',
+      q: 'Is Germantown the same as Gaithersburg for civic housing complaints?',
+      a: 'No. Inside **Gaithersburg city limits**, DHCA often lacks interior jurisdiction — see [Gaithersburg](/locations/gaithersburg). Germantown is unincorporated county; many rental mold/maintenance complaints route through [DHCA Housing Code Enforcement](https://www.montgomerycountymd.gov/department-housing-community-affairs/dhca-code-enforcement).',
     },
     {
-      q: 'How should I prep the house for the visit?',
-      a: 'Germantown prep: open returns and the dryer, move fragile items near vents, mention pets or renovations when you book at (301) 809-4544.',
+      q: 'Does DEP require duct cleaning after construction nearby?',
+      a: 'DEP [IAQ](https://www.montgomerycountymd.gov/propertycare/air-quality-law/indoor-air-quality) focuses on humidity, filters, and venting dryers outside — not mandating vendors. We remove debris when you hire us and document with photos.',
     },
     {
-      q: 'How much time should I block on the calendar?',
-      a: 'Block roughly half a morning for a typical Germantown home. Dryer-vent add-ons are often possible the same day if booked together.',
+      q: 'Why do Milestone townhome dryers clog faster?',
+      a: 'Party-wall chases with tight elbows and modern high-heat dryers pack lint into solid plugs — full brush-out to the cap, with [NFPA](https://www.nfpa.org/education-and-research/research/nfpa-research/fire-statistical-reports/home-fires-involving-clothes-dryers-and-washing-machines) fire risk as the honest second reason.',
     },
     {
-      q: 'How does the quote work for this address?',
-      a: 'For this Germantown, MD address we quote a flat package from Bethesda. Walkthrough first, locked number second — not priced by counting vents.',
+      q: 'Waters Landing lake proximity — different scope?',
+      a: 'Same flat-rate packages; lake-adjacent lower trunks may show more condensation film — walkthrough confirms, price locks before tools run.',
     },
     {
-      q: 'Can ducts and the dryer vent be done in one visit?',
-      a: 'Yes for Germantown — book the combined package up front. Call (301) 809-4544; the Bethesda crew brings both tool sets for one stop.',
+      q: 'Which office serves Germantown?',
+      a: 'Bethesda, MD (7815A Old Georgetown Rd Ste 201). Call (301) 809-4544.',
     },
     {
-      q: 'How far ahead should I book?',
-      a: 'Germantown fills fast in pollen and humid months. Same-week openings are common — call (301) 809-4544 for the next Bethesda window.',
+      q: 'More on I-270 townhome ducts?',
+      a: '[Germantown I-270 townhome air ducts](/blog/germantown-i270-townhome-air-ducts). Official: [Montgomery DEP mold](https://www.montgomerycountymd.gov/propertycare/air-quality-law/indoor-air-quality/mold).',
     },
   ],
 }

@@ -16,7 +16,17 @@ export function ThemeVars({ theme }: { theme?: Parameters<typeof resolveTheme>[0
     <>
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-      <link href={href} rel="stylesheet" />
+      {/* Preload + non-blocking stylesheet — avoids render-blocking Google Fonts CSS. */}
+      <link rel="preload" as="style" href={href} />
+      <link rel="stylesheet" href={href} media="print" data-gf="" />
+      <noscript>
+        <link rel="stylesheet" href={href} />
+      </noscript>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `(function(){var l=document.querySelector('link[data-gf]');if(!l)return;var a=function(){l.media='all'};if(l.addEventListener)l.addEventListener('load',a);if(l.sheet)a();})();`,
+        }}
+      />
       <style dangerouslySetInnerHTML={{ __html: `:root {\n${css}\n}` }} />
     </>
   )

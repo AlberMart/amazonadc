@@ -1,13 +1,21 @@
 import type { LocationContentSeed } from '@/utilities/locations'
 
+/**
+ * Hyattsville — City Code Compliance + Arts District / Route 1.
+ * Links used:
+ * - https://www.hyattsville.org/rentals
+ * - https://www.hyattsville.org/FAQ/Topic?topic=18
+ * - https://www.princegeorgescountymd.gov/news-events/news/damaged-property-inspection-and-report
+ * - https://www.princegeorgescountymd.gov/departments-offices/permitting-inspections-and-enforcement/code-enforcement
+ */
 export const hyattsville: LocationContentSeed = {
   slug: 'hyattsville',
-  title: 'Air Duct Cleaning in Hyattsville, MD',
-  headline: 'Air duct and dryer vent cleaning for the Route 1 arts district and older PG housing',
+  title: 'Hyattsville Air Duct Cleaning',
+  headline: 'Arts-district renovations and Route 1 housing — booked from Bethesda',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Hyattsville, MD. Flat rates from our Bethesda office for arts-district housing, Route 1 dust, and humid older ducts. Call (301) 809-4544.',
+    'Air duct & dryer vent cleaning in Hyattsville, MD. Flat rates for Arts District & Route 1 homes. Call (301) 809-4544.',
   intro:
-    'Amazon Air Duct Cleaning serves Hyattsville from our Bethesda office. Older housing, Gateway, and houses toward College Park all take on Prince George\'s humidity and corridor dust. Call (301) 809-4544.',
+    'Hyattsville is the **City of Hyattsville** — Route 1 arts corridor, Gateway mixed-use, Queens Chapel low spots. City Code Compliance licenses and inspects rentals; County DPIE rental licensing does not cover incorporated Hyattsville. If your address is in incorporated College Park, see [College Park](/locations/college-park) for City rental inspection paths. We clean ducts and dryer vents with flat rates and photos from Bethesda. (301) 809-4544.',
   heroImage: '/img/locations/hyattsville.webp',
   heroAlt: 'Air duct cleaning in Hyattsville, MD — Amazon Air Duct Cleaning',
   city: 'Hyattsville',
@@ -15,62 +23,62 @@ export const hyattsville: LocationContentSeed = {
   servedBy: 'bethesda',
   sectionLayout: 'whyFirst',
   about: {
-    heading: 'Arts-District Renovations, Queens Chapel Humidity, and Route 1 Corridor Particulate',
+    heading: 'Arts-district dust in closed walls — and City inspectors on rental complaints',
     paragraphs: [
-      'Hyattsville straddles the Route 1 / Baltimore Avenue corridor in Prince George\'s County — the arts district near Hamilton Street, Gateway\'s newer mixed-use, West Hyattsville around the Metro, and the residential grids that stretch toward [College Park](/locations/college-park) and Riverdale Park. The older housing stock dates from the 1920s through the 1950s: brick semi-detached homes, small colonials, and Cape Cods with basements where air handlers were installed well after original construction. Arts-district renovations frequently disturb plaster and lathe, sending gypsum and lead-paint particulate into return grilles during the remodel — and those particles stay in the trunk system long after the contractor leaves.',
-      'Queens Chapel Road and Ager Road homes sit in a low-lying area where Prince George\'s County summer humidity concentrates. Cool basement trunks in these older homes condensate heavily, and Route 1 traffic film mixes with organic pollen from the neighborhood\'s mature shade trees to create a layered deposit inside supply runs. Gateway\'s newer stacked units introduce vertical dryer vents through shared risers that lint compresses quickly under high-occupancy laundry use.',
-      'We dispatch Hyattsville from [Bethesda](/locations/bethesda) — a cross-county drive we plan with realistic arrival windows. [Takoma Park](/locations/takoma-park) borders to the west, [College Park](/locations/college-park) to the north, and [Washington, DC](/locations/washington-dc) is minutes south. Our post on [Hyattsville Route 1 humidity and air ducts](/blog/hyattsville-route-1-humidity-air-ducts) covers the moisture pattern.',
+      'The City [residential rentals program](https://www.hyattsville.org/rentals) requires annual single-family licenses and inspects apartments on a schedule — rental complaints go to **Code Compliance** (301-985-5014). [Rental FAQs](https://www.hyattsville.org/FAQ/Topic?topic=18): lease/rent disputes belong in **Prince George’s County Landlord-Tenant Court**, not City Hall. Housing-code issues start with Code Compliance; we do not file those for you.',
+      'Arts District and Baltimore Avenue renovations push plaster fines into returns long after painters leave. West Hyattsville and Queens Chapel sit lower — PG humidity beads on cool basement trunks while Route 1 film mixes with shade-tree pollen. Gateway mid-rises add vertical dryer chases. Seasonal read: [Hyattsville Route 1 humidity and air ducts](/blog/hyattsville-route-1-humidity-air-ducts).',
+      'County [Code Enforcement](https://www.princegeorgescountymd.gov/departments-offices/permitting-inspections-and-enforcement/code-enforcement) lists **Hyattsville** where DPIE does **not** issue rental licenses. [Damaged-property guidance](https://www.princegeorgescountymd.gov/news-events/news/damaged-property-inspection-and-report): the County does **not** provide mold or indoor air-quality testing. Bethesda runs Hyattsville with [Takoma Park](/locations/takoma-park) and [College Park](/locations/college-park).',
     ],
     highlights: [
-      'Arts district, Gateway, West Hyattsville, Queens Chapel, and Ager Road stops',
-      'Flat-rate packages covering 1920s brick through modern mixed-use systems',
-      'Before-and-after photos for every trunk and register',
-      'Renovation-dust cleanup scopes available for arts-district remodels',
+      'City Code Compliance — not County DPIE licensing',
+      'Arts District renovation + Route 1 particulate',
+      'Distinct from College Park campus rentals',
+      'Bethesda: (301) 809-4544',
     ],
   },
-  offersTitle: 'Hyattsville Flat Rates for Older Brick and Mixed-Use Homes',
+  offersTitle: 'Hyattsville flat-rate packages',
   services: {
-    heading: 'Hyattsville Services for Semi-Detached Brick, Gateway Condos, and Renovation Dust',
-    intro: 'A 1940s Queens Chapel semi-detached and a Gateway mid-rise condo need different access plans — both are scoped on site and priced before equipment moves.',
+    heading: 'Semi-detached brick, Gateway stacks, renovation residue',
+    intro: '1940s Queens Chapel duplex and Gateway condo need different access plans — both scoped on site before price locks.',
     items: [
       {
-        title: 'Air Duct Cleaning & Sanitization',
-        text: 'HEPA negative pressure and mechanical agitation through older basement trunks, return plenums, and register boots carrying Route 1 particulate and arts-district renovation residue. Semi-detached homes with shared walls require careful sealing at party-wall penetrations to maintain proper vacuum pressure during cleaning. Full details at [air duct cleaning](/air-duct-cleaning).',
+        title: 'Air duct cleaning (source removal)',
+        text: 'HEPA negative pressure through basement trunks, returns, and boots — including post-renovation gypsum load and corridor dust. Party-wall penetrations get checked before vacuum pressure runs. [EPA duct guidance](https://www.epa.gov/indoor-air-quality-iaq/should-you-have-air-ducts-your-home-cleaned). [Air duct cleaning](/air-duct-cleaning).',
       },
       {
-        title: 'Dryer Vent Cleaning',
-        text: 'Gateway stacked units and older brick homes along Baltimore Avenue both present dryer vent challenges — vertical risers in the former, neglected foundation-wall exits in the latter. We trace, brush, and vacuum the full path to the exterior cap and verify airflow before closing the job. Book at [dryer vent cleaning](/dryer-vent-cleaning).',
+        title: 'Dryer vent cleaning',
+        text: 'Gateway risers and Baltimore Avenue foundation-wall exits both pack lint at elbows. Full brush-out to the exterior cap; fire context from [NFPA dryer-fire research](https://www.nfpa.org/education-and-research/research/nfpa-research/fire-statistical-reports/home-fires-involving-clothes-dryers-and-washing-machines). [Dryer vent cleaning](/dryer-vent-cleaning).',
       },
       {
-        title: 'Ventilation & HVAC Mold Treatment',
-        text: 'PG County\'s low-lying summer humidity meets cool basement mechanical rooms in Hyattsville\'s older housing, creating conditions where coils and trunk interiors develop microbial growth between filter changes. EPA-registered antimicrobial treatment covers the entire affected ventilation path after visual documentation. Details at [mold remediation for air ducts](/mold-remediation-air-ducts).',
+        title: 'Optional antimicrobial on hard duct surfaces',
+        text: 'After mechanical cleaning on hard metal when inspection shows biological film — not whole-home remediation and not a substitute for fixing water intrusion. [Mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
     ],
   },
   why: {
-    heading: 'Why Route 1 Housing Layers Traffic Film Over Humid Trunk Surfaces',
+    heading: 'Why homeowners in Hyattsville book us',
     items: [
       {
-        title: 'Cross-County Drive Scheduled Honestly',
-        text: 'Hyattsville is a PG County stop dispatched from Bethesda. We build the cross-Beltway drive into the arrival window so neither side is surprised.',
+        title: 'City rental inspections on Gallatin Street',
+        text: 'Licensed rentals and housing complaints route through Hyattsville [Code Compliance](https://www.hyattsville.org/rentals). If your address is in incorporated College Park, City Code Enforcement there handles licensed rentals — different door, same flat-rate duct and dryer work from Bethesda.',
       },
       {
-        title: 'Renovation Dust Handled Without a Special Upcharge',
-        text: 'Arts-district remodel residue in the trunks is priced the same as any other residential duct load — the flat-rate quote at (301) 809-4544 covers it.',
+        title: 'Renovation dust, same flat rate',
+        text: 'Arts-district remodel residue in trunks is scoped like any other residential load — quoted before equipment starts at (301) 809-4544.',
       },
       {
-        title: 'Party-Wall Sealing Checked During the Scope Walk',
-        text: 'Semi-detached Hyattsville homes share walls with neighbors. We verify that party-wall trunk penetrations are properly sealed before running negative pressure.',
+        title: 'Low-lying humidity + Route 1 film',
+        text: 'Queens Chapel and Ager Road basements sweat through humid months; cleaning removes trunk debris — dehumidification and leak repair slow return.',
       },
       {
-        title: 'Satisfaction Guarantee — Proof in the Photos',
-        text: 'Before-and-after documentation of every trunk section is standard. If improvement is not visible, the crew returns at our cost.',
+        title: 'Cross-county dispatch with honest ETAs',
+        text: 'Bethesda to Hyattsville crosses the Beltway — we schedule a workable window for that hop and keep you posted if the day shifts.',
       },
     ],
   },
   communities: {
-    heading: 'Route 1, Arts District Edge, and Neighborhood Grids',
-    intro: 'College Park and Takoma Park are neighboring pages.',
+    heading: 'Route 1, Arts District, and neighborhood grids',
+    intro: 'College Park and Takoma Park are separate location pages.',
     groups: [
       {
         title: 'Arts district & Route 1',
@@ -82,58 +90,57 @@ export const hyattsville: LocationContentSeed = {
       },
       {
         title: 'Toward College Park & Riverdale',
-        places:
-          'Streets toward College Park, Riverdale Park, University Park — ask if your block is not listed',
+        places: 'Streets toward College Park, Riverdale Park, University Park — confirm city limits when you book',
       },
     ],
   },
   process: {
-    heading: 'Prince George\'s Timing From Bethesda',
-    intro: 'From booking at (301) 809-4544 to photos at the Hyattsville door.',
+    heading: 'Bethesda → Hyattsville visit flow',
+    intro: 'We separate City/landlord pathways from duct and dryer scope on the walkthrough.',
     steps: [
       {
-        title: 'Book from the office line',
-        text: 'Call (301) 809-4544 or use the form — we confirm Hyattsville availability the next business day from Bethesda.',
+        title: 'Confirm city address',
+        text: 'Hyattsville city limits vs county-edge blocks changes which civic links we mention — not the flat-rate menu.',
       },
       {
-        title: 'Protect floors and living spaces',
-        text: 'In Hyattsville we cover work paths and keep living spaces clear while equipment runs.',
+        title: 'Building era and renovation history',
+        text: 'Semi-detached plaster chases, Gateway stack, or recent Arts District gut? That steers hose runs and party-wall checks.',
       },
       {
-        title: 'Source-removal cleaning',
-        text: 'Source-removal agitation under HEPA negative pressure for this Hyattsville system — dust leaves in the vacuum, not your rooms.',
+        title: 'Lock scope and price',
+        text: 'Ducts, dryer vent, or both — number confirmed before tools run; antimicrobial only with your OK.',
       },
       {
-        title: 'Optional sanitizing',
-        text: 'Complimentary Envirocon when you request it or when the Hyattsville inspection supports it.',
+        title: 'Source-removal + photos',
+        text: 'Negative-pressure HEPA cleaning and full dryer brush-out when booked; images before we leave.',
       },
       {
-        title: 'Close out the visit',
-        text: 'Photos on file, flat-rate invoice for Hyattsville, and seasonal tips. Call (301) 809-4544 anytime.',
+        title: 'Handoff',
+        text: 'Filter cadence, humidity reminder, dryer interval — (301) 809-4544 for follow-up.',
       },
     ],
   },
-  faqIntro: 'Hyattsville questions — call (301) 809-4544 (dispatch: Bethesda).',
+  faqIntro: 'Hyattsville booking questions — City resources linked where they help. Call (301) 809-4544 (Bethesda).',
   faq: [
     {
-      q: 'Where does the Hyattsville appointment leave from?',
-      a: 'Hyattsville appointments leave from Bethesda, MD (7815 Old Georgetown Rd Ste 201). Call (301) 809-4544 for air duct or dryer vent cleaning on your street.',
+      q: 'Who inspects rental housing complaints in Hyattsville?',
+      a: 'City [Code Compliance](https://www.hyattsville.org/rentals) (301-985-5014) investigates complaints about licensed rental homes and apartment complexes. Rent **disputes** follow County Landlord-Tenant Court per City [FAQs](https://www.hyattsville.org/FAQ/Topic?topic=18) — we do not represent you in court.',
     },
     {
-      q: 'Anything to clear before the crew shows up?',
-      a: 'For this Hyattsville, MD home we need clear runs to the air handler. Put HOA codes on the confirmation text.',
+      q: 'Does Prince George’s County test mold in my Hyattsville home?',
+      a: 'County [damaged-property guidance](https://www.princegeorgescountymd.gov/news-events/news/damaged-property-inspection-and-report) directs residents to **private contractors** for mold and air-quality testing. We perform mechanical duct and dryer vent cleaning with photos when hired.',
     },
     {
-      q: 'What is a realistic job length for one system?',
-      a: 'One Hyattsville system usually takes 2–3 hours. Multi-system or packed dryer vents are scoped before we start so the quote stays locked.',
+      q: 'We just finished an Arts District renovation — when should ducts be cleaned?',
+      a: 'Ideal timing is after final finishes and before furniture — but post-occupancy cleaning still removes plaster and lathe dust trapped in returns. See our [Route 1 humidity article](/blog/hyattsville-route-1-humidity-air-ducts) for moisture context.',
     },
     {
-      q: 'Will the price change once equipment is out?',
-      a: 'The Bethesda crew prices Hyattsville jobs as published flat-rate packages. Scoped on site, confirmed before unload, paid after you are satisfied.',
+      q: 'How is this different from the College Park page?',
+      a: '[College Park](/locations/college-park) centers UMD turnover, campus pollen, and City inspections on fraternity and Route 1 student housing. Hyattsville is arts-corridor brick, Gateway stacks, and Gallatin Street Code Compliance.',
     },
     {
-      q: 'Is antimicrobial sanitizing included?',
-      a: 'On Hyattsville jobs Envirocon is complimentary when you request it or when inspection supports it — confirmed on site before anything is applied.',
+      q: 'Which office serves Hyattsville?',
+      a: 'Bethesda, MD (7815A Old Georgetown Rd Ste 201). Call (301) 809-4544.',
     },
   ],
 }

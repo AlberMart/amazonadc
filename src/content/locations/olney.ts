@@ -1,76 +1,84 @@
 import type { LocationContentSeed } from '@/utilities/locations'
 
+/**
+ * Olney — outer Montgomery ramblers / Norbeck pollen.
+ * Links used:
+ * - https://www.montgomerycountymd.gov/propertycare/air-quality-law/indoor-air-quality
+ * - https://www.montgomerycountymd.gov/propertycare/air-quality-law/indoor-air-quality/mold
+ * - https://www.montgomerycountymd.gov/department-housing-community-affairs/dhca-code-enforcement
+ */
 export const olney: LocationContentSeed = {
   slug: 'olney',
-  title: 'Air Duct Cleaning in Olney, MD',
-  headline: 'Air duct and dryer vent cleaning for Olney ramblers, Norbeck, and finished basements',
+  title: 'Air Duct & Dryer Vent Cleaning in Olney, MD',
+  headline: 'Georgia Avenue ramblers and Norbeck split-levels — from Bethesda',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Olney, MD. Flat rates from our Bethesda office for farther Montgomery ramblers, pollen, and finished basements. Call (301) 809-4544.',
+    'Air duct & dryer vent cleaning in Olney, MD. Flat rates for ramblers & split-levels. Before/after photos. Call (301) 809-4544.',
   intro:
-    'Amazon Air Duct Cleaning serves Olney from our Bethesda office — up Georgia Avenue. Ramblers, split-levels, and finished basements take on county pollen and cool-trunk humidity. Call (301) 809-4544.',
+    'Olney is **outer Montgomery County** along Georgia Avenue — Olney Mill, Norbeck, lanes toward Brookeville. If your address is inside Rockville city limits, use City code channels for rental maintenance; Olney sits in unincorporated county where DHCA and DEP guidance usually apply. 1960s–80s ramblers and split-levels with finished basement rec rooms hide supply trunks behind drop ceilings while dense canopy loads returns every spring. We clean from Bethesda with generous drive-time windows. (301) 809-4544.',
   heroImage: '/img/locations/olney.webp',
   heroAlt: 'Air duct cleaning in Olney, MD — Amazon Air Duct Cleaning',
   city: 'Olney',
   state: 'MD',
   servedBy: 'bethesda',
-  sectionLayout: 'faqEarly',
+  sectionLayout: 'faqMid',
   about: {
-    heading: 'Georgia Avenue Ramblers, Norbeck Split-Levels, and Rec-Room Ceiling Dust You Cannot See',
+    heading: 'Norbeck ramblers, canopy pollen, and County DEP guidance',
     paragraphs: [
-      'Olney occupies outer Montgomery County along Georgia Avenue north of Aspen Hill — the village center, Olney Mill, Norbeck, and the quiet lanes extending toward Brookeville and Sandy Spring. Housing here is predominantly 1960s through 1980s ramblers and split-levels on wooded half-acre lots with finished basements that were carpeted and paneled over trunk lines the owners stopped thinking about once the drop ceiling went up. The air handler sits in a utility closet or furnace room below the rec room, and the supply trunks that radiate outward collect Montgomery County\'s heavy oak-and-pine pollen load in a space nobody inspects unless the smell forces the question.',
-      'Norbeck Road homes and the streets branching toward Brookeville sit under an especially dense canopy that holds morning dew well into the afternoon. That persistent moisture keeps crawl-space and basement surfaces cooler than the summer air, creating condensation conditions on supply ducts that last from late May through September. Dryer vents in ramblers typically exit through the rear foundation wall — a short run that still compacts lint at the cap because the gentle slope allows debris to settle backward during idle hours.',
-      'We dispatch Olney from [Bethesda](/locations/bethesda) — a longer Montgomery County drive that we schedule with generous arrival windows. [Wheaton](/locations/wheaton) and [Rockville](/locations/rockville) are closer stops on the same crew\'s rotation. Our guide to [Olney rambler pollen and air ducts](/blog/olney-rambler-pollen-air-ducts) details the seasonal pattern.',
+      'Inside **Rockville city limits**, rental maintenance complaints use City code channels — Montgomery County DHCA does not take those interiors ([Rockville page](/locations/rockville) explains the split). **Olney** sits in unincorporated county: Norbeck Road split-levels, Olney village center, and wooded half-acre lots toward Sandy Spring share **County DEP** [Indoor Air Quality](https://www.montgomerycountymd.gov/propertycare/air-quality-law/indoor-air-quality) and [mold](https://www.montgomerycountymd.gov/propertycare/air-quality-law/indoor-air-quality/mold) science — roughly 30–50% humidity, vent dryers outdoors, maintain filters.',
+      'Finished rec rooms panel over trunks the owners stopped inspecting once the ceiling went up. Norbeck’s canopy holds morning dew; cool basement metal condensates from late May through September while pollen loads returns. Rambler dryer vents often exit foundation walls — short runs that still compact lint at the cap when slope lets debris settle backward.',
+      'Bethesda dispatch schedules Olney with realistic Georgia Avenue travel — farther than [Wheaton](/locations/wheaton) or Rockville, same flat-rate menu. Seasonal pattern: [Olney rambler pollen and air ducts](/blog/olney-rambler-pollen-air-ducts). Rental disputes may route through [DHCA Housing Code Enforcement](https://www.montgomerycountymd.gov/department-housing-community-affairs/dhca-code-enforcement).',
     ],
     highlights: [
-      'Olney Mill, Norbeck, Georgia Avenue village, Brookeville, and Sandy Spring lanes',
-      'Flat-rate packages covering finished-basement trunks and rambler crawls',
-      'Before-and-after photos of every trunk line and register',
-      'Arrival windows adjusted for the longer drive from Bethesda',
+      'Unincorporated Montgomery County — City of Rockville is a separate jurisdiction',
+      'Norbeck canopy + finished-basement trunks',
+      'DEP IAQ/mold cited honestly',
+      'Bethesda: (301) 809-4544',
     ],
   },
-  offersTitle: 'Olney Rambler and Split-Level Rates — Bethesda Dispatch',
+  offersTitle: 'Olney flat-rate packages',
   services: {
-    heading: 'Olney Services for Finished Basements, Rambler Crawls, and Long Pollen Seasons',
-    intro: 'Finished rec rooms hide trunk conditions that open basements reveal at a glance — the Olney scope walk goes below the drop ceiling before pricing.',
+    heading: 'Scopes for ramblers, split-levels, and hidden rec-room trunks',
+    intro:
+      'Drop-ceiling access mapped before pricing — pollen-heavy returns and foundation-wall dryer caps included in flat-rate walkthrough.',
     items: [
       {
-        title: 'Air Duct Cleaning & Sanitization',
-        text: 'mechanical agitation under HEPA negative pressure through supply trunks concealed behind finished basement ceilings, return plenums, and floor registers throughout the rambler or split-level. Olney\'s outer-county canopy delivers heavier pollen volumes than close-in neighborhoods, and finished lower levels trap that load out of sight for years. Full scope at [air duct cleaning](/air-duct-cleaning).',
+        title: 'Air duct cleaning (source removal)',
+        text: 'HEPA negative pressure and agitation through supplies, returns, and registers — including trunks behind finished ceilings when access panels allow. [EPA duct guidance](https://www.epa.gov/indoor-air-quality-iaq/should-you-have-air-ducts-your-home-cleaned). [Air duct cleaning](/air-duct-cleaning).',
       },
       {
-        title: 'Dryer Vent Cleaning',
-        text: 'Rambler dryer vents in Olney typically exit through a foundation wall or short sidewall run. The gentle slope allows lint to settle backward when the dryer is idle, compacting near the cap over time. We brush the full length, vacuum extracted debris, and verify draw at the termination. Schedule at [dryer vent cleaning](/dryer-vent-cleaning).',
+        title: 'Dryer vent cleaning',
+        text: 'Foundation-wall and short sidewall terminations brushed full length; draw tested at the cap. DEP mold tips include venting dryers outdoors; [NFPA dryer-fire research](https://www.nfpa.org/education-and-research/research/nfpa-research/fire-statistical-reports/home-fires-involving-clothes-dryers-and-washing-machines). [Dryer vent cleaning](/dryer-vent-cleaning).',
       },
       {
-        title: 'Ventilation & HVAC Mold Treatment',
-        text: 'Finished rec-room ceilings over cool trunks create a hidden environment where microbial growth can establish without visible warning. When the Olney scope walk or persistent musty odor indicates coil or trunk colonization, we treat the affected path with EPA-registered antimicrobials. More at [mold remediation for air ducts](/mold-remediation-air-ducts).',
+        title: 'Optional antimicrobial on hard duct surfaces',
+        text: 'After mechanical cleaning when coil or trunk film warrants — not whole-home mold remediation and not a substitute for fixing moisture DEP describes. [Mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
     ],
   },
   why: {
-    heading: 'Why Olney Drop Ceilings Hide the Worst Trunk Conditions in Outer Montgomery',
+    heading: 'How we work jobs in Olney',
     items: [
       {
-        title: 'Scheduled Drive Time — No Surprise Delays',
-        text: 'Olney is a longer run from Bethesda and we say so. Arrival windows are built around realistic Georgia Avenue travel so the crew does not rush or arrive late.',
+        title: 'Use the right civic door for housing complaints',
+        text: 'If your address is inside Rockville city limits, rental maintenance reporting goes through City channels; Olney sits in unincorporated county and often uses DHCA/DEP resources. We ask when jurisdiction matters for your other to-dos — duct scope stays the same.',
       },
       {
-        title: 'Finished-Basement Trunks Accessed Without Damage',
-        text: 'Drop-ceiling tiles and access panels in Olney rec rooms are removed and replaced carefully — the scope walk identifies every entry point before equipment starts.',
+        title: 'Heavier canopy pollen load',
+        text: 'Outer-county tree cover delivers more seasonal debris to returns than Twinbrook or Town Center grids — cleaning removes trunk accumulation filters miss.',
       },
       {
-        title: 'Flat-Rate Quote Regardless of Drive Distance',
-        text: 'The package price quoted at (301) 809-4544 includes the Bethesda-to-Olney drive. No mileage or travel surcharges appear on the invoice.',
+        title: 'Rec-room ceilings need careful access',
+        text: 'Tiles and panels removed and replaced without damage — every entry point identified before agitation starts.',
       },
       {
-        title: 'Satisfaction Guarantee With Photographic Evidence',
-        text: 'Every trunk section and register is documented. If improvement is not clear for Olney, contact us within 7 days — we re-perform or refund per our refund policy.',
+        title: 'Drive time built into scheduling',
+        text: 'Olney is a longer Bethesda run — we plan around Georgia Avenue traffic when we set your window; package price has no mileage surcharge.',
       },
     ],
   },
   communities: {
-    heading: 'Olney Mill, Norbeck Edge, and Local Courts',
-    intro: 'Further than Rockville; we say so and plan the day accordingly.',
+    heading: 'Olney areas we stage from Bethesda',
+    intro: 'Book a few days ahead for realistic outer-county windows.',
     groups: [
       {
         title: 'Olney village & Olney Mill',
@@ -78,66 +86,65 @@ export const olney: LocationContentSeed = {
       },
       {
         title: 'Norbeck & south',
-        places: 'Norbeck, Norbeck Road, streets toward Aspen Hill and Rockville',
+        places: 'Norbeck, Norbeck Road, streets toward Aspen Hill and [Rockville](/locations/rockville) fringe',
       },
       {
         title: 'Toward Brookeville',
-        places:
-          'Brookeville lanes, Sunshine, streets toward Laytonsville — ask if your road is not listed',
+        places: 'Brookeville lanes, Sunshine, Sandy Spring–adjacent roads — ask if unlisted',
       },
     ],
   },
   process: {
-    heading: 'Longer Montgomery Drive — Scheduled With Clear Windows',
-    intro: 'From booking at (301) 809-4544 to photos at the Olney door.',
+    heading: 'Bethesda → Olney — longer drive, same flat-rate flow',
+    intro: 'Finished basements and foundation dryer caps noted on the work order.',
     steps: [
       {
-        title: 'Book from the office line',
-        text: 'Call (301) 809-4544 or use the form — we confirm Olney availability the next business day from Bethesda.',
+        title: 'Rec-room access plan',
+        text: 'Drop ceilings, utility closets, and crawl entries mapped before quote locks.',
       },
       {
-        title: 'Protect floors and living spaces',
-        text: 'In Olney we cover work paths and keep living spaces clear while equipment runs.',
+        title: 'Separate DHCA disputes from duct scope',
+        text: 'Landlord mold timelines stay on County paths; we clean booked HVAC pathways today.',
       },
       {
-        title: 'Source-removal cleaning',
-        text: 'Source-removal agitation under HEPA negative pressure for this Olney system — dust leaves in the vacuum, not your rooms.',
+        title: 'Confirm price before tools run',
+        text: 'Ducts, dryer, or both — antimicrobial only with your OK.',
       },
       {
-        title: 'Optional sanitizing',
-        text: 'Complimentary Envirocon when you request it or when the Olney inspection supports it.',
+        title: 'Source-removal + photos',
+        text: 'HEPA vacuum collection; before/after images at close-out.',
       },
       {
-        title: 'Close out the visit',
-        text: 'Photos on file, flat-rate invoice for Olney, and seasonal tips. Call (301) 809-4544 anytime.',
+        title: 'Handoff',
+        text: 'DEP humidity reminder (~30–50%), filter tips, (301) 809-4544.',
       },
     ],
   },
-  faqIntro: 'Olney questions — call (301) 809-4544 (dispatch: Bethesda).',
+  faqIntro: 'Olney outer county — DEP/DHCA where relevant. Book: (301) 809-4544 (Bethesda).',
   faq: [
     {
-      q: 'Where does the Olney appointment leave from?',
-      a: 'Olney appointments leave from Bethesda, MD (7815 Old Georgetown Rd Ste 201). Call (301) 809-4544 for air duct or dryer vent cleaning on your street.',
+      q: 'Should I use the Rockville city code page for my Norbeck split-level?',
+      a: 'If you are in **unincorporated Olney**, not Rockville city limits, Rockville’s municipal reporting door is wrong. Use [DHCA](https://www.montgomerycountymd.gov/department-housing-community-affairs/dhca-code-enforcement) for many rental complaints and DEP [IAQ/mold](https://www.montgomerycountymd.gov/propertycare/air-quality-law/indoor-air-quality/mold) for prevention science — see our [Rockville](/locations/rockville) page only if your parcel is inside the City.',
     },
     {
-      q: 'Anything to clear before the crew shows up?',
-      a: 'For this Olney, MD home we need clear runs to the air handler. Put HOA codes on the confirmation text.',
+      q: 'Does DEP inspect finished basement ducts behind drop ceilings?',
+      a: 'No. DEP publishes guidance; we access supply paths where panels allow and document with photos — we are not County inspectors.',
     },
     {
-      q: 'What is a realistic job length for one system?',
-      a: 'One Olney system usually takes 2–3 hours. Multi-system or packed dryer vents are scoped before we start so the quote stays locked.',
+      q: 'Why book Olney farther ahead than Wheaton?',
+      a: 'Georgia Avenue travel from Bethesda is longer — we schedule generous windows so the crew is not rushed between outer-county jobs.',
     },
     {
-      q: 'Will the price change once equipment is out?',
-      a: 'The Bethesda crew prices Olney jobs as published flat-rate packages. Scoped on site, confirmed before unload, paid after you are satisfied.',
+      q: 'Is antimicrobial included automatically?',
+      a: 'Optional EPA-registered product on hard metal **after** mechanical cleaning and **only** with your OK when inspection supports it — not a default upsell.',
     },
     {
-      q: 'Is antimicrobial sanitizing included?',
-      a: 'On Olney jobs Envirocon is complimentary when you request it or when inspection supports it — confirmed on site before anything is applied.',
+      q: 'Which office serves Olney?',
+      a: 'Bethesda, MD (7815A Old Georgetown Rd Ste 201). Call (301) 809-4544.',
     },
     {
-      q: 'When should I call for the next opening?',
-      a: 'Olney is a longer run from Bethesda. Book several days ahead for realistic windows; call (301) 809-4544 for the next open Olney slot.',
+      q: 'More on rambler pollen locally?',
+      a: '[Olney rambler pollen and air ducts](/blog/olney-rambler-pollen-air-ducts). Official: [Montgomery DEP Indoor Air Quality](https://www.montgomerycountymd.gov/propertycare/air-quality-law/indoor-air-quality).',
     },
   ],
 }

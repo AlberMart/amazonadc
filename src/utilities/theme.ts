@@ -49,7 +49,7 @@ export const DEFAULT_THEME = {
     cardMuted: '#f8fafc',
     heading: '#0b1c2c',
     body: '#516579',
-    mutedText: '#7a8b9c',
+    mutedText: '#5a6b7c',
     onDark: '#ffffff',
     onDarkMuted: 'rgba(240, 249, 255, 0.85)',
     link: '#0369a1',
@@ -186,7 +186,12 @@ export function resolveTheme(input?: CmsTheme | null): ResolvedTheme {
     cardMuted: pick(input?.cardMuted, DEFAULT_THEME.colors.cardMuted),
     heading: pick(input?.heading, DEFAULT_THEME.colors.heading),
     body: pick(input?.body, DEFAULT_THEME.colors.body),
-    mutedText: pick(input?.mutedText, DEFAULT_THEME.colors.mutedText),
+    mutedText: (() => {
+      const value = pick(input?.mutedText, DEFAULT_THEME.colors.mutedText)
+      // Legacy CMS default fails WCAG AA on white (~3.5:1). Keep stored custom values otherwise.
+      if (!value || value.toLowerCase() === '#7a8b9c') return DEFAULT_THEME.colors.mutedText
+      return value
+    })(),
     onDark: pick(input?.onDark, DEFAULT_THEME.colors.onDark),
     onDarkMuted: pick(input?.onDarkMuted, DEFAULT_THEME.colors.onDarkMuted),
     link: pick(input?.link, DEFAULT_THEME.colors.link),
@@ -386,16 +391,20 @@ export function appearanceVars(
 
   const heading = tokenColor(appearance?.headingColor, appearance?.headingCustom)
   const body = tokenColor(appearance?.bodyColor, appearance?.bodyCustom)
+  // Only flip text for tone:"dark". Dark background tokens alone (badges strip)
+  // must not rewrite --site-heading — audits attribute nearby form/review text to it.
+  const darkSurface = tone === 'dark'
   if (heading) vars['--site-heading'] = heading
-  else if (tone === 'dark' && appearance?.headingColor !== 'custom') {
+  else if (darkSurface && appearance?.headingColor !== 'custom') {
     vars['--site-heading'] = 'var(--site-on-dark)'
   }
   if (body) vars['--site-body'] = body
-  else if (tone === 'dark' && appearance?.bodyColor !== 'custom') {
+  else if (darkSurface && appearance?.bodyColor !== 'custom') {
     vars['--site-body'] = 'var(--site-on-dark-muted)'
   }
-  if (tone === 'dark') {
+  if (darkSurface) {
     vars.color = 'var(--site-on-dark)'
+    vars['--site-muted-text'] = 'var(--site-on-dark-muted)'
   }
 
   if (appearance?.radius && appearance.radius !== 'inherit') {

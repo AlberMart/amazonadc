@@ -1,16 +1,16 @@
 {
   "slug": "herndon-construction-dust-air-ducts",
-  "title": "Construction Dust Near Active Corridors: What Ends Up in HVAC Returns",
+  "title": "Herndon Construction Dust in HVAC Returns",
   "headline": "Gypsum fines, traffic film, and why stacked laundry closets stay hot",
-  "description": "Data-center pads and office builds west of Herndon release gypsum and silica fines that residential filters aren't designed to catch. Learn how construction-phase dust behaves inside ductwork long after the last crane leaves.",
+  "description": "Construction dust near Herndon corridors: what ends up in HVAC returns and when a first cleaning makes sense.",
   "heroImage": "/img/blog/heroes/herndon-construction-dust-air-ducts.webp",
   "sections": [
     {
       "id": "dust_timeline",
       "heading": "Construction dust does not leave when the builders do",
       "paragraphs": [
-        "Gypsum fines from drywall finishing are between 1 and 10 microns. A standard MERV-8 furnace filter captures particles above roughly 3 microns with moderate efficiency, so a meaningful fraction of construction dust passes through and settles inside the ductwork. Once settled, those particles bond to the thin moisture film that forms on cool metal during every AC cycle. They do not re-suspend easily on their own — but a burst of high-velocity air at system startup can push a puff of fine white dust out of a supply register and across a dark shelf.",
-        "West of Elden Street, new data-center concrete pads and the ongoing commercial build-out along the Dulles corridor generate this kind of dust for years at a stretch. A Herndon homeowner who moved in during an active nearby project may still have first-year construction fines sitting in trunks five summers later."
+        "[EPA](https://www.epa.gov/sites/default/files/2020-06/documents/2019.07_tech_bulletin_duct_protection_during_construction.pdf) notes that sawing, sanding, and drywall generate large amounts of dust that can enter ducts and equipment — even when the HVAC is off if openings are unprotected. Drywall finishing produces fine mineral (gypsum) dust; a typical residential filter catches some of it, but not everything. Once fines settle on cool trunk metal, later filter changes do not pull that layer back out.",
+        "West of Elden Street, data-center pads and commercial build-out along the Dulles corridor have kept dust-producing work active for long stretches. On Herndon jobs we sometimes still see chalky first-year construction residue in trunks years after nearby pads quieted down — a field pattern, not a guarantee for every street."
       ],
       "listItems": []
     },
@@ -18,8 +18,9 @@
       "id": "two_sources",
       "heading": "Two dust sources hitting the same returns",
       "paragraphs": [
-        "Downtown Herndon's brick cottages and Elden Street bungalows face a different particle profile than the newer Worldgate and Parkway townhomes, but both housing types share the same regional air. Construction fines are white to off-white and chalky. Traffic film from the Dulles corridor is darker and slightly oily. Inside a return trunk the two layers alternate like sediment in a creek bed — a visual record of which season produced each layer.",
-        "That layering matters because it tells you how long the buildup has been accumulating. A thin single-color film may respond to a filter upgrade. Alternating chalky and dark bands extending a foot or more into the trunk are beyond what any filter can reverse after the fact."
+        "Downtown Herndon’s brick cottages and Elden Street bungalows face a different particle mix than newer Worldgate and Parkway townhomes, but both share regional air. Construction fines often look pale and chalky; corridor traffic film tends to look darker. Inside a return trunk the layers can stack — a practical clue that buildup has been accumulating across seasons, not a forensic sediment record.",
+        "A thin film may improve with tighter filter habits. When chalky or dark deposits extend well into the trunk and supplies keep refilming, [EPA](https://www.epa.gov/indoor-air-quality-iaq/should-you-have-air-ducts-your-home-cleaned) treats debris actually entering living spaces as a reason to consider professional cleaning — filters alone will not reverse what already sits on the metal.",
+        "Dryer vents are a separate line from supply ducts — [NFPA research](https://www.nfpa.org/education-and-research/research/nfpa-research/fire-statistical-reports/home-fires-involving-clothes-dryers-and-washing-machines) ties many home dryer fires to failure to clean lint from the full run."
       ],
       "listItems": [],
       "image": "/img/blog/neglected-air-ducts-buildup.webp"
@@ -28,8 +29,8 @@
       "id": "worldgate_laundry",
       "heading": "Why Worldgate laundry closets amplify the problem",
       "paragraphs": [
-        "Stacked laundry in a Worldgate or Herndon Parkway townhome puts the dryer exhaust in an interior chase that often shares a wall cavity with the nearest supply branch. When the dryer vent packs with lint — and lint packs faster with construction dust mixed in — exhaust heat and moisture migrate through the shared wall. The supply trunk on the other side is carrying cold air. Cold surface, warm moist air, and fine dust produce a sticky residue that no amount of register wiping will address from the living side.",
-        "Homeowners often suspect the dryer is failing. The appliance is usually fine. The vent geometry is the bottleneck, and the construction-dust environment accelerated the clog."
+        "Stacked laundry in a Worldgate or Herndon Parkway townhome puts the dryer exhaust in an interior chase that often shares a wall cavity with a nearby supply branch. When the dryer vent packs with lint — and construction-area dust can add to what collects in the chase — heat and moisture in that cavity can make nearby metal stickier for household dust. Homeowners often suspect the dryer itself; more often the vent run needs a full brush-out ([NFPA dryer-fire research](https://www.nfpa.org/education-and-research/research/nfpa-research/fire-statistical-reports/home-fires-involving-clothes-dryers-and-washing-machines)).",
+        "The appliance is usually fine. Geometry and lint load are the bottleneck — nearby construction dust may speed how fast the vent feels restricted, but lint is still the fire-safety issue."
       ],
       "listItems": []
     },
@@ -50,7 +51,8 @@
       "id": "action",
       "heading": "Timing a cleaning around active construction",
       "paragraphs": [
-        "Cleaning while the adjacent lot is still pouring concrete means fines will re-enter within weeks. The practical window is after the exterior shell closes and grading finishes but before you forget the problem exists. Most Herndon homeowners find that sweet spot about three to six months after the heaviest nearby work stops. For scheduling and flat-rate options, visit the [Herndon location page](/locations/herndon). If the dryer closet is involved, adding [dryer vent cleaning](/dryer-vent-cleaning) in the same visit avoids a second appointment."
+        "Cleaning while the adjacent lot is still pouring concrete means fines will re-enter within weeks. The practical window is after the exterior shell closes and grading finishes but before you forget the problem exists. Most Herndon homeowners find that sweet spot about three to six months after the heaviest nearby work stops. For scheduling and flat-rate options, visit the [Herndon location page](/locations/herndon). If the dryer closet is involved, adding [dryer vent cleaning](/dryer-vent-cleaning) in the same visit avoids a second appointment.",
+        "Call [(800) 606-3334](tel:8006063334) for Herndon scheduling, or see [air duct cleaning](/air-duct-cleaning) and [Herndon](/locations/herndon)."
       ],
       "listItems": [
         "Time a cleaning for late fall or winter when ambient dust levels drop and windows stay closed.",

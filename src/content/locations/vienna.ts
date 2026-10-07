@@ -1,141 +1,145 @@
 import type { LocationContentSeed } from '@/utilities/locations'
 
+/**
+ * Town of Vienna — maple canopy pollen + Metro village + Fairfax County IAQ.
+ * Links used:
+ * - https://www.fairfaxcounty.gov/health/environment/mold
+ * - https://www.fairfaxcounty.gov/health/environment/healthy-homes-fairfax
+ * - https://www.vdh.virginia.gov/environmental-health/2018/07/17/who-do-i-contact-for-help-with-mold-removal/
+ */
 export const vienna: LocationContentSeed = {
   slug: 'vienna',
-  title: 'Air Duct Cleaning in Vienna, VA',
-  headline:
-    'Air duct and dryer vent cleaning for Maple Avenue colonials, Wolf Trap, and the Vienna Metro',
+  title: 'Vienna Air Duct Cleaning',
+  headline: 'Maple Avenue colonials and Wolf Trap canopy — pollen and basements from Burke',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Vienna, VA. Flat rates from our Burke office for 1950s\u201370s colonials, finished basements, and Tysons-edge homes. Call (571) 460-0001.',
+    'Air duct & dryer vent cleaning in Vienna, VA. Flat rates for colonials & finished basements. Photos. Call (571) 460-0001.',
   intro:
-    'Amazon Air Duct Cleaning serves Vienna from our Burke office \u2014 a run up 123. 1950s\u201370s colonials, Glyndon Park streets, and houses toward Wolf Trap all take on heavy tree-canopy pollen and humid basement air. Call (571) 460-0001.',
+    'Vienna is a walkable town wrapped in mature maple and oak canopy — heavy spring pollen on rooftop intakes is normal, not a surprise “allergy season” footnote. Finished basements along Glyndon Park hold cool handlers while humid air upstairs loads metal trunks. Fairfax County Health does not test indoor air or remediate mold; Healthy Homes pushes moisture control. We clean ducts and dryer vents from Burke with flat rates and photos. (571) 460-0001.',
   heroImage: '/img/locations/vienna.webp',
-  heroAlt: 'Air duct cleaning in Vienna, VA \u2014 Amazon Air Duct Cleaning',
+  heroAlt: 'Air duct cleaning in Vienna, VA — Amazon Air Duct Cleaning',
   city: 'Vienna',
   state: 'VA',
   servedBy: 'burke',
   sectionLayout: 'faqMid',
   about: {
-    heading: 'Maple Avenue Colonials, Basement Air Handlers, and Wolf Trap Canopy',
+    heading: 'Canopy pollen, basement handlers, County IAQ context',
     paragraphs: [
-      'The Town of Vienna wraps around Maple Avenue and Church Street \u2014 a walkable downtown core surrounded by 1950s\u201370s colonials on generous lots shaded by oaks and maples. Those mature trees define Vienna\u2019s character, but they also coat rooftop intakes and outdoor returns with heavy pollen every spring. Finished basements along Glyndon Park and the streets off Nutley stay cool year-round, and when July humidity pushes through the front door, the temperature difference between upstairs air and basement supply metal creates condensation inside the trunks.',
-      'Toward the Tysons edge, newer townhomes and Vienna/Fairfax-GMU Metro-area condos add longer dryer runs and tighter mechanical closets. A colonial that gained a rec room or in-law suite in the 1990s often has original trunk lines branching into later additions \u2014 joints where debris accumulates faster than in a straight run. Chain Bridge Road and Maple Avenue traffic contributes road-surface particles that mix with the pollen layer already inside returns.',
-      'We serve Vienna from [Burke](/locations/burke) on a familiar Route 123 drive. Nearby [McLean](/locations/mclean), [Oakton](/locations/oakton), and [Fairfax](/locations/fairfax) share the dispatch. Read about [Vienna tree pollen and basement air ducts](/blog/vienna-tree-pollen-basement-air-ducts) for the full climate picture.',
+      'The Town of Vienna centers on Maple Avenue and Church Street — 1950s–70s colonials on generous lots, weekend farmers market energy, and Orange Line access without Reston’s tower density. Mature street trees define the look and the HVAC load: pollen cakes outdoor coils and grilles every April, then mixes with Chain Bridge Road traffic film inside returns.',
+      'Finished basements in Glyndon Park and Nutley-side streets stay cool year-round; when July humidity enters upstairs, condensation forms on basement supply metal — the same moisture story [Healthy Homes Fairfax](https://www.fairfaxcounty.gov/health/environment/healthy-homes-fairfax) tells countywide. Colonials with 1990s rec-room additions often have original trunks branching into new wings — joints where debris stacks faster than in a single-era layout.',
+      'Fairfax County’s [mold page](https://www.fairfaxcounty.gov/health/environment/mold) states the Health Department does not perform indoor air testing or mold remediation. We are private mechanical cleaners from [Burke](/locations/burke), staged with [Oakton](/locations/oakton), [McLean](/locations/mclean), and [Falls Church](/locations/falls-church) on Route 123 runs.',
     ],
     highlights: [
-      'Maple Avenue, Glyndon Park, Wolf Trap, Church Street, and Tysons-edge streets',
-      'Flat-rate pricing \u2014 confirmed before any work begins',
-      'Before-and-after photos documenting trunk interiors',
-      'Burke crew familiar with McLean, Oakton, and Fairfax routes',
+      'Maple/oak pollen + basement condensation angle',
+      'Town-scale colonials and basement handlers',
+      'Healthy Homes + County mold cited honestly',
+      'Burke: (571) 460-0001',
     ],
   },
-  offersTitle: 'Vienna Duct & Dryer Vent Packages',
+  offersTitle: 'Vienna flat-rate packages',
   services: {
-    heading: 'What We Clean in Vienna Basements and Dryer Closets',
-    intro: 'Colonials with finished basements and Tysons-edge townhomes share the same published flat rate.',
+    heading: 'What we clean in Vienna colonials and Metro-edge townhomes',
+    intro: 'Basement trunks, second-floor laundry closets, and Tysons-edge mechanical rooms — one rate card.',
     items: [
       {
-        title: 'Air Duct Cleaning for Vienna Colonials',
-        text: 'HEPA-filtered negative-pressure equipment seals to the basement trunk while specialized tools agitate every supply line, return, and register. Sanitizing is applied when the walkthrough confirms biological buildup. You receive the complete photo set. Schedule [air duct cleaning](/air-duct-cleaning).',
+        title: 'Air duct cleaning',
+        text: 'HEPA negative pressure and agitation through the full system. Pollen and road film in returns respond to source removal; [EPA](https://www.epa.gov/indoor-air-quality-iaq/should-you-have-air-ducts-your-home-cleaned) still cautions against health overclaims. [Air duct cleaning](/air-duct-cleaning).',
       },
       {
-        title: 'Dryer Vent Clearing',
-        text: 'Second-floor laundry rooms in Vienna colonials and Metro-area townhomes push lint through long interior wall paths to a rear gable cap. We rod-brush and vacuum the entire run so the dryer exhausts efficiently and safely. Book [dryer vent cleaning](/dryer-vent-cleaning).',
+        title: 'Dryer vent cleaning',
+        text: 'Second-floor laundry in colonials and Vienna Metro-area townhomes push lint through long wall paths to gable caps. [NFPA dryer-fire research](https://www.nfpa.org/education-and-research/research/nfpa-research/fire-statistical-reports/home-fires-involving-clothes-dryers-and-washing-machines). [Dryer vent cleaning](/dryer-vent-cleaning).',
       },
       {
-        title: 'Mold Treatment in Vienna Ductwork',
-        text: 'Finished basements that stay cool while summer air pushes humidity through the house create ideal conditions for mold on coils and inside dead-end duct branches. We clean mechanically first, then apply EPA-registered antimicrobial product along the ventilation path. Details at [mold remediation for air ducts](/mold-remediation-air-ducts).',
+        title: 'Optional duct antimicrobial',
+        text: 'After mechanical cleaning on hard metal when inspection supports it — not County remediation. Scope: [mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
     ],
   },
   why: {
-    heading: 'Why Vienna Basements Create a Different Dust Problem',
+    heading: 'What usually brings us to Vienna homes',
     items: [
       {
-        title: 'Route 123 From Burke, Not Another State',
-        text: 'The drive from Burke to Maple Avenue is a familiar Fairfax County corridor. Your Glyndon Park or Wolf Trap appointment is not scheduled from a distant staging point.',
+        title: 'Spring tree pollen',
+        text: 'Maple and oak canopy loads outdoor grilles and returns every April — source removal clears years of seasonal debris from trunks and registers.',
       },
       {
-        title: 'Colonial Additions Are a Normal Job',
-        text: '1950s\u201370s trunks branching into 1990s rec rooms, tight second-floor laundry closets, and basement air handlers sitting on damp concrete are everyday Vienna work for this crew.',
+        title: 'Humidity around basement air handlers',
+        text: 'Cool concrete and finished rec rooms create condensation zones County guidance tells you to dehumidify — cleaning removes existing debris; moisture control slows return.',
       },
       {
-        title: 'Flat Rate Locked Before We Start',
-        text: 'The number on your quote is the number on your invoice. No per-register counting after we open the first vent.',
+        title: 'County boundaries',
+        text: '[Mold guidance](https://www.fairfaxcounty.gov/health/environment/mold) does not certify contractors. [VDH](https://www.vdh.virginia.gov/environmental-health/2018/07/17/who-do-i-contact-for-help-with-mold-removal/) does not pick vendors — flat rate + photos do.',
       },
       {
-        title: 'Guaranteed Results',
-        text: 'If the Vienna walk-through falls short, contact us within 7 days — we re-perform or refund per our refund policy.',
+        title: 'Route 123 from Burke',
+        text: 'Familiar Fairfax County drive — Maple Avenue appointments are not staged from a distant warehouse.',
       },
     ],
   },
   communities: {
-    heading: 'Maple Avenue Corridor and Neighborhood Cul-de-Sacs',
-    intro: 'Oakton and McLean are nearby pages; Vienna stays on its own route notes.',
+    heading: 'Vienna neighborhoods we route',
+    intro: 'Town limits vs Tysons-edge streets — mention HOA when you book.',
     groups: [
       {
         title: 'Maple Avenue & downtown',
         places: 'Maple Avenue, Church Street, Glyndon Park, Chain Bridge Road in town',
       },
       {
-        title: 'Metro & Tysons edge',
-        places:
-          'Vienna Metro area, Nutley Street, Tysons-edge streets toward [McLean](/locations/mclean)',
+        title: 'Metro & Nutley',
+        places: 'Vienna Metro area, Nutley Street, Courthouse Road corridor',
       },
       {
         title: 'Wolf Trap & west',
-        places:
-          'Wolf Trap, streets toward [Oakton](/locations/oakton) and [Fairfax](/locations/fairfax) \u2014 ask if your block is not listed',
+        places: 'Wolf Trap, Tapawingo, streets toward [Oakton](/locations/oakton) and [Fairfax](/locations/fairfax)',
       },
     ],
   },
   process: {
-    heading: 'Fairfax Canopy Route From the Burke Office',
-    intro: 'From booking at (571) 460-0001 to photos at the Vienna door.',
+    heading: 'Burke → Vienna visit flow',
+    intro: 'Protect floors in finished basements; note pollen season when scheduling follow-ups.',
     steps: [
       {
-        title: 'Book from the office line',
-        text: 'Call (571) 460-0001 or use the form — we confirm Vienna availability the next business day from Burke.',
+        title: 'Building layout',
+        text: 'Basement handler, attic trunk, or addition branch? Colonial additions are everyday scope.',
       },
       {
-        title: 'Protect floors and living spaces',
-        text: 'In Vienna we cover work paths and keep living spaces clear while equipment runs.',
+        title: 'Moisture vs mechanical scope',
+        text: 'Active leak or visible mold as housing condition — County moisture-first path. We quote ducts/dryer for today.',
       },
       {
-        title: 'Source-removal cleaning',
-        text: 'Source-removal agitation under HEPA negative pressure for this Vienna system — dust leaves in the vacuum, not your rooms.',
+        title: 'Lock flat rate',
+        text: 'Confirmed before agitation; Envirocon only with your OK.',
       },
       {
-        title: 'Optional sanitizing',
-        text: 'Complimentary Envirocon when you request it or when the Vienna inspection supports it.',
+        title: 'Clean and photograph',
+        text: 'Source-removal ducts; full dryer brush-out when booked.',
       },
       {
-        title: 'Close out the visit',
-        text: 'Photos on file, flat-rate invoice for Vienna, and seasonal tips. Call (571) 460-0001 anytime.',
+        title: 'Handoff',
+        text: 'Filter interval, dehumidifier reminder per [Healthy Homes Fairfax](https://www.fairfaxcounty.gov/health/environment/healthy-homes-fairfax), (571) 460-0001.',
       },
     ],
   },
-  faqIntro: 'Vienna questions — call (571) 460-0001 (dispatch: Burke).',
+  faqIntro: 'Common Vienna booking questions — call (571) 460-0001 (Burke).',
   faq: [
     {
-      q: 'Where does the Vienna appointment leave from?',
-      a: 'Vienna appointments leave from Burke, VA (5641 Burke Centre Pkwy Ste 119). Call (571) 460-0001 for air duct or dryer vent cleaning on your street.',
+      q: 'Is Vienna the same service story as Reston?',
+      a: 'No. Reston emphasizes corridor towers and long condo dryer risers. Vienna is town-scale colonials, Wolf Trap canopy pollen, and basement handlers — see [Reston](/locations/reston) for high-rise notes.',
     },
     {
-      q: 'Anything to clear before the crew shows up?',
-      a: 'For this Vienna, VA home we need clear runs to the air handler. Put HOA codes on the confirmation text.',
+      q: 'Does Fairfax County inspect air ducts in Vienna?',
+      a: 'County [mold guidance](https://www.fairfaxcounty.gov/health/environment/mold) covers moisture and mold education — not routine HVAC cleanliness inspections. We document our cleaning with photos; we are not County inspectors.',
     },
     {
-      q: 'What is a realistic job length for one system?',
-      a: 'One Vienna system usually takes 2–3 hours. Multi-system or packed dryer vents are scoped before we start so the quote stays locked.',
+      q: 'Pollen season — should I clean ducts every spring?',
+      a: 'Heavy canopy loads outdoor grilles and can contribute to return debris over years. [EPA](https://www.epa.gov/indoor-air-quality-iaq/should-you-have-air-ducts-your-home-cleaned) notes ducts should be cleaned when needed — we inspect on site and quote flat rate before work.',
     },
     {
-      q: 'Will the price change once equipment is out?',
-      a: 'The Burke crew prices Vienna jobs as published flat-rate packages. Scoped on site, confirmed before unload, paid after you are satisfied.',
+      q: 'Finished basement smells musty — is that duct mold?',
+      a: 'Musty basements often trace to moisture, not ducts alone. [Healthy Homes Fairfax](https://www.fairfaxcounty.gov/health/environment/healthy-homes-fairfax) prioritizes dehumidification and leak repair. We clean HVAC pathways when booked; we do not replace whole-home mold remediation.',
     },
     {
-      q: 'Is antimicrobial sanitizing included?',
-      a: 'On Vienna jobs Envirocon is complimentary when you request it or when inspection supports it — confirmed on site before anything is applied.',
+      q: 'Who dispatches Vienna jobs?',
+      a: 'Burke, VA (5641 Burke Centre Pkwy Ste 119). Call (571) 460-0001.',
     },
   ],
 }

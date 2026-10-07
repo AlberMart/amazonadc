@@ -1,8 +1,8 @@
 {
   "slug": "lorton-i95-occoquan-air-ducts",
-  "title": "Laurel Hill HOAs, Lorton Station stacks, and why river air plus interstate grit stick",
-  "headline": "Laurel Hill HOAs, Lorton Station stacks, and why river air plus interstate grit stick",
-  "description": "Lorton sits at the intersection of two particle sources: I-95 traffic dust and Occoquan River humidity. Discover how these combine inside both new-build townhome ducts and older Lorton Road split-levels — and why river-humid air makes interstate grit bond to cool trunk surfaces.",
+  "title": "How I-95 Dust and Occoquan Humidity Affect Lorton Ducts",
+  "headline": "How I-95 Dust and Occoquan Humidity Affect Lorton Ducts",
+  "description": "How I-95 dust and Occoquan humidity affect Lorton ducts in new townhomes and older Laurel Hill homes.",
   "heroImage": "/img/blog/heroes/lorton-i95-occoquan-air-ducts.webp",
   "sections": [
     {
@@ -19,7 +19,8 @@
       "heading": "New and old housing, same duct problem, different geometry",
       "paragraphs": [
         "Lorton Station and Laurel Hill are 2000s–2010s construction: townhomes with stacked laundry, interior mechanical closets, and compact duct runs through conditioned space. Older Lorton Road and Gunston-area houses are 1970s split-levels with air handlers in daylight basements and long trunk runs through unconditioned crawl spaces. The Lorton Station systems accumulate corridor dust in their short, tight runs because the returns sit at street level in dense clusters. The older split-levels accumulate it in long, cold trunk runs where river humidity provides the bonding moisture.",
-        "Despite the different geometries, both housing types tend to show the same symptom: a register that grays out within a few days of wiping. In the townhome, the gray comes from short proximity to the dust source. In the split-level, it comes from deep accumulation in the trunk releasing incrementally with each blower cycle."
+        "Despite the different geometries, both housing types tend to show the same symptom: a register that grays out within a few days of wiping. In the townhome, the gray comes from short proximity to the dust source. In the split-level, it comes from deep accumulation in the trunk releasing incrementally with each blower cycle.",
+        "Dryer vents are a separate line from supply ducts — [NFPA research](https://www.nfpa.org/education-and-research/research/nfpa-research/fire-statistical-reports/home-fires-involving-clothes-dryers-and-washing-machines) ties many home dryer fires to failure to clean lint from the full run."
       ],
       "listItems": [],
       "image": "/img/blog/The-Hidden-Cost-of-Dirty-Air-Ducts.webp"
@@ -50,12 +51,13 @@
       "id": "scheduling",
       "heading": "Working with the dual-source environment",
       "paragraphs": [
-        "You cannot relocate the interstate or the river. You can manage how their combined particulate behaves inside your system. For Lorton service details and flat-rate options, visit the [Lorton location page](/locations/lorton). If the townhome dryer chase runs to a roof cap, [dryer vent cleaning](/dryer-vent-cleaning) is efficient to combine with duct work since the crew is already accessing the chase."
+        "You cannot relocate the interstate or the river. You can manage how their combined particulate behaves inside your system. For Lorton service details and flat-rate options, visit the [Lorton location page](/locations/lorton). If the townhome dryer chase runs to a roof cap, [dryer vent cleaning](/dryer-vent-cleaning) is efficient to combine with duct work since the crew is already accessing the chase.",
+        "Call [(800) 606-3334](tel:8006063334) for Lorton scheduling, or see [air duct cleaning](/air-duct-cleaning) and [Lorton](/locations/lorton)."
       ],
       "listItems": [
         "Use a MERV-11 or higher filter if the air handler supports it — the finer capture rate matters more in a high-particulate zone than in a low-traffic suburb.",
         "Dehumidify the lower level of split-levels to 45–50 percent RH from May through October to slow the moisture-bonding cycle.",
-        "After cleaning, photograph the inside of one trunk at the supply register. Compare it six months later. If the dark film is returning fast, shorten the cleaning interval from the typical 1–3 years.",
+        "After cleaning, photograph the inside of one trunk at the supply register. Compare it six months later. If the dark film is returning fast, book the next inspection sooner — [EPA](https://www.epa.gov/indoor-air-quality-iaq/should-you-have-air-ducts-your-home-cleaned) does not set a fixed years-between-cleanings rule; corridor dust + humidity simply reload some Lorton systems faster.",
         "Clear stacked dryer vents annually; the compressed-lint risk accelerates in a humid environment."
       ]
     }

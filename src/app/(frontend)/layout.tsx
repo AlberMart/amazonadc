@@ -19,7 +19,7 @@ import { resolveTheme } from '@/utilities/theme'
 
 import './globals.css'
 import { getServerSideURL, isNonProductionHost } from '@/utilities/getURL'
-import { SEO_DOCUMENT_TITLE, SEO_META_DESCRIPTION } from '@/utilities/seoCopy'
+import { SEO_DOCUMENT_TITLE, SEO_META_DESCRIPTION, SEO_META_TITLE } from '@/utilities/seoCopy'
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const { isEnabled } = await draftMode()
@@ -68,12 +68,20 @@ export const metadata: Metadata = {
   metadataBase: new URL(getServerSideURL()),
   title: {
     default: SEO_DOCUMENT_TITLE,
-    template: '%s | Amazon Air Duct Cleaning',
+    // Short pages only — resolvePageMeta uses absolute titles and skips this template.
+    template: '%s | Amazon ADC',
   },
   description: SEO_META_DESCRIPTION,
-  openGraph: mergeOpenGraph(),
+  openGraph: mergeOpenGraph({
+    title: SEO_META_TITLE,
+    description: SEO_META_DESCRIPTION,
+    url: getServerSideURL(),
+  }),
   twitter: {
     card: 'summary_large_image',
+    title: SEO_META_TITLE,
+    description: SEO_META_DESCRIPTION,
+    images: [`${getServerSideURL()}/img/og-default.jpg`],
   },
   robots: isNonProductionHost()
     ? { index: false, follow: false }
@@ -83,7 +91,7 @@ export const metadata: Metadata = {
       },
   other: {
     // Bump when shipping content/SEO fixes so AI crawlers can tell cache from fresh HTML.
-    'content-rev': '2026-10-01-r8',
+    'content-rev': '2026-10-03-meta-og',
   },
   icons: {
     icon: [

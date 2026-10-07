@@ -1,16 +1,16 @@
 {
   "slug": "hyattsville-route-1-humidity-air-ducts",
-  "title": "Arts-district renovations, Gateway stacks, and why PG summers sweat at older trunks",
-  "headline": "Arts-district renovations, Gateway stacks, and why PG summers sweat at older trunks",
-  "description": "Hyattsville's arts-district renovations layer new living spaces over old mechanical systems that were never cleaned between eras. Learn how renovation dust, Prince George's County humidity, and mixed-era ductwork create indoor-air problems specific to Route 1 corridor housing.",
+  "title": "Hyattsville Renovation Dust & Humidity",
+  "headline": "Renovation Dust and Humidity in Hyattsville Air Ducts",
+  "description": "Renovation dust and humidity in Hyattsville air ducts along Route 1 and the Arts District housing corridor.",
   "heroImage": "/img/blog/heroes/hyattsville-route-1-humidity-air-ducts.webp",
   "sections": [
     {
       "id": "renovation_dust",
       "heading": "Renovation dust enters the old system before the new walls close",
       "paragraphs": [
-        "Hyattsville's arts district and Gateway area have undergone a wave of renovations transforming early-century brick houses and mid-century apartments into updated living spaces. During a renovation, existing walls are opened, old plaster is demolished, and new drywall is cut and finished — all while the existing HVAC system remains in place. Many contractors run the air handler during renovation to manage dust and temperature. The system dutifully distributes renovation particulate — plaster chunks, drywall gypsum, paint overspray, and demolition debris — through every trunk and branch.",
-        "When the renovation finishes, the walls look new. The ductwork behind them holds a record of the construction process. Homeowners who move into a freshly renovated Hyattsville arts-district house and notice chalky white dust on supplies within the first month are seeing renovation residue that was never cleaned from the system before occupancy."
+        "Hyattsville's arts district and Gateway area have seen many renovations that open walls, demolish plaster, and hang new drywall while the existing HVAC stays in place. Contractors sometimes run the air handler during the work. [EPA](https://www.epa.gov/indoor-air-quality-iaq/should-you-have-air-ducts-your-home-cleaned) advises sealing registers and not running the system during dusty renovation until cleanup is done — when that advice is skipped, plaster, drywall fines, and demolition dust can travel through trunks and branches.",
+        "When the renovation finishes, the walls look new. The ductwork may still hold that debris. Homeowners who notice chalky dust on supplies in the first month after a gut rehab are often seeing renovation residue that was never cleaned from the system — a pattern [DOE Building America](https://basc.pnnl.gov/resource-guides/removing-construction-debris-ducts) warns about after dusty work."
       ],
       "listItems": []
     },
@@ -19,7 +19,8 @@
       "heading": "New kitchens above old mechanical rooms",
       "paragraphs": [
         "Gateway-area buildings and converted row houses often place renovated living spaces directly above original mechanical rooms that were not part of the renovation scope. The air handler may be 40 years old serving a kitchen that was installed last year. The original ductwork — undersized for the new layout, leaking at joints that were never re-sealed, and carrying decades of accumulated dust — now serves rooms with higher expectations for air quality and comfort.",
-        "The mismatch shows up as uneven temperatures (some rooms comfortable, others stuffy), persistent fine dust on new countertops and shelving, and a faint musty undertone that new finishes and fresh paint cannot mask. The smell is not the new materials off-gassing. It is old trunk residue being delivered through a system that predates the renovation by decades."
+        "The mismatch shows up as uneven temperatures (some rooms comfortable, others stuffy), persistent fine dust on new countertops and shelving, and a faint musty undertone that new finishes and fresh paint cannot mask. The smell is not the new materials off-gassing. It is old trunk residue being delivered through a system that predates the renovation by decades.",
+        "Dryer vents are a separate line from supply ducts — [NFPA research](https://www.nfpa.org/education-and-research/research/nfpa-research/fire-statistical-reports/home-fires-involving-clothes-dryers-and-washing-machines) ties many home dryer fires to failure to clean lint from the full run."
       ],
       "listItems": [],
       "image": "/img/blog/dirty-HVAC-unit.webp"
@@ -28,8 +29,8 @@
       "id": "pg_humidity",
       "heading": "Prince George's County summers push dew points that stick",
       "paragraphs": [
-        "Hyattsville sits in the Route 1 corridor of Prince George's County, where the combination of the Anacostia watershed, the Northeast Branch, and limited elevation produces summer dew points that regularly reach the mid-to-upper 60s Fahrenheit. At those dew points, a 55-degree supply trunk condenses moisture continuously during every cooling cycle. The condensation rate is higher and more persistent than in communities at higher elevations or farther from the watershed.",
-        "For ductwork, this means that every particle that enters the system has a wet surface to land on. Household dust, pet dander, renovation residue, and Route 1 traffic particulate all bond to the condensation layer and stay. The result is a trunk coating that grows through each humid season and does not shed during winter because the coating has partially hardened by the time heating season arrives."
+        "Hyattsville sits in the Route 1 corridor of Prince George's County, near the Anacostia watershed and Northeast Branch, where summer humidity is often stubborn. Cool supply trunks can sweat during long cooling cycles — the same moisture logic County and [EPA mold](https://www.epa.gov/mold/mold-and-health) pages emphasize when they talk humidity control.",
+        "When trunks stay damp, household dust, pet dander, renovation fines, and corridor film can stick more readily than on dry metal. On Hyattsville jobs we often see that combination produce a denser coating through humid seasons — a field pattern, not a claim that every winter “hardens” the layer into a permanent mineral shell."
       ],
       "listItems": []
     },
@@ -40,7 +41,7 @@
         "Renovated properties in Hyattsville present a specific set of symptoms tied to the combination of construction residue, old mechanical systems, and PG-county humidity:"
       ],
       "listItems": [
-        "White or chalky dust on supply registers in a unit that was recently renovated — this is gypsum residue from the renovation, not normal household dust.",
+        "White or chalky dust on supply registers after a recent renovation — often construction/renovation fines, not ordinary household fluff.",
         "A musty smell that persists despite new finishes, fresh paint, and clean surfaces — the source is inside the trunks, not in the living space materials.",
         "Registers in different rooms producing noticeably different air temperatures — indicating the old duct system was not rebalanced for the new layout.",
         "A shared dryer chase that heats up noticeably when any unit in the building runs a dryer — back-pressure from lint buildup in the shared chase affects all connected units."
@@ -50,7 +51,8 @@
       "id": "post_renovation",
       "heading": "Post-renovation duct cleaning and ongoing care",
       "paragraphs": [
-        "The ideal time to clean ductwork in a renovated property is after the last finishes are applied but before the new occupant moves in furniture. If that window was missed, the system still benefits from cleaning — it just takes slightly longer because household dust has begun layering over the renovation residue. For Hyattsville scheduling and service options, visit the [Hyattsville location page](/locations/hyattsville). If the building has stacked dryer chases, combine [dryer vent cleaning](/dryer-vent-cleaning) with the duct service to address both humidity contributors in one visit."
+        "The ideal time to clean ductwork in a renovated property is after the last finishes are applied but before the new occupant moves in furniture. If that window was missed, the system still benefits from cleaning — it just takes slightly longer because household dust has begun layering over the renovation residue. For Hyattsville scheduling and service options, visit the [Hyattsville location page](/locations/hyattsville). If the building has stacked dryer chases, combine [dryer vent cleaning](/dryer-vent-cleaning) with the duct service to address both humidity contributors in one visit.",
+        "Call [(800) 606-3334](tel:8006063334) for Hyattsville scheduling, or see [air duct cleaning](/air-duct-cleaning) and [Hyattsville](/locations/hyattsville)."
       ],
       "listItems": [
         "If you bought or rented a recently renovated unit, ask the previous owner or landlord whether duct cleaning was included in the renovation scope — in most cases it was not.",

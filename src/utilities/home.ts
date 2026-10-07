@@ -11,6 +11,7 @@ import {
   homeSectionsSeed,
   type HomeSection,
 } from '@/utilities/homeSections'
+import { SEO_META_DESCRIPTION, SEO_META_TITLE } from '@/utilities/seoCopy'
 
 function texts(rows?: Array<{ text?: string | null } | null> | null): string[] {
   return (rows || []).map((row) => row?.text || '').filter(Boolean)
@@ -154,15 +155,17 @@ export async function getHomeContent(): Promise<HomePageData> {
   })
 
   const doc = result.docs[0] as Record<string, unknown> | undefined
-  const meta =
-    (doc?.meta as { title?: string | null; description?: string | null } | undefined) || {}
 
-  const fromCms = await loadPageSections(doc?.homeSections)
+  const _fromCms = await loadPageSections(doc?.homeSections)
 
+  // Prefer seed marketing copy (home.ts) so health/claims edits ship with deploy.
+  // Fall back to CMS/legacy only if seed is empty (should not happen).
   const baseSections =
-    fromCms.length > 0
-      ? fromCms
-      : homeContentToSections(mapLegacyHomeContent(doc?.homeContent as Record<string, unknown>))
+    homeSectionsSeed.length > 0
+      ? homeSectionsSeed
+      : _fromCms.length > 0
+        ? _fromCms
+        : homeContentToSections(mapLegacyHomeContent(doc?.homeContent as Record<string, unknown>))
 
   const sections = baseSections.some((section) => section.type === 'trustBadges')
     ? baseSections
@@ -185,8 +188,9 @@ export async function getHomeContent(): Promise<HomePageData> {
     sections,
     faqItems,
     meta: {
-      title: meta.title,
-      description: meta.description,
+      // Prefer seed SEO so description length/claims ship with deploy (same as locations).
+      title: SEO_META_TITLE,
+      description: SEO_META_DESCRIPTION,
     },
   }
 }

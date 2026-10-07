@@ -1,76 +1,80 @@
 import type { LocationContentSeed } from '@/utilities/locations'
 
+/**
+ * Bethesda hub + city — NIH/medical corridor, dense condos/townhomes, MoCo DEP IAQ + DHCA rental resources.
+ */
 export const bethesda: LocationContentSeed = {
   slug: 'bethesda',
-  title: 'Air Duct Cleaning in Bethesda, MD',
-  headline: 'Our Maryland office — air duct and dryer vent cleaning from Old Georgetown Road',
+  title: 'Bethesda Air Duct Cleaning — Local MD Office',
+  headline: 'Woodmont condos, townhomes, and NIH-area homes — duct and dryer cleaning from a staffed Bethesda office',
   description:
-    'Amazon Air Duct Cleaning\u2019s Bethesda, MD office at 7815 Old Georgetown Rd Ste 201. Flat-rate air duct cleaning, dryer vent cleaning, and HVAC mold treatment for Montgomery County and nearby cities. Call (301) 809-4544.',
+    'Air duct & dryer vent cleaning from our Bethesda office on Old Georgetown Road. Flat rates, photos. Call (301) 809-4544.',
   intro:
-    'This is our Maryland office on Old Georgetown Road. From Suite 201 we schedule homes across Bethesda, Rockville, Silver Spring, Gaithersburg, and farther Maryland cities on our [locations](/locations) list. Book at (301) 809-4544 — the office line is (301) 809-4544.',
+    'Suite 201 at 7815A Old Georgetown Rd is where Maryland jobs are booked — not a call center. Bethesda mixes Wisconsin Avenue condos, Bradley Boulevard townhomes, and busy medical-corridor traffic that can put more dust into returns than quiet suburban streets. County DEP publishes indoor-air and mold guidance; DHCA handles many rental complaints. We clean ducts and dryer vents with photos and flat rates. (301) 809-4544.',
   heroImage: '/img/locations/bethesda.webp',
-  heroAlt: 'Bethesda, MD office — Amazon Air Duct Cleaning',
+  heroAlt: 'Bethesda, MD office — Amazon Air Duct Cleaning on Old Georgetown Road',
   city: 'Bethesda',
   state: 'MD',
   servedBy: 'bethesda',
-  sectionLayout: 'hub',
+  sectionLayout: 'hubBethesda',
   about: {
-    heading: 'Suite 201 on Old Georgetown Road — Where Every Maryland Route Starts',
+    heading: 'Medical-corridor dust, stacked laundry, and County resources that actually help',
     paragraphs: [
-      'Our office sits at 7815 Old Georgetown Rd, Suite 201, Bethesda, MD 20814 — a staffed scheduling desk with parts inventory and crew staging for Montgomery County, Prince George\'s County, Howard County, and Frederick County appointments. Friendship Heights condos, Chevy Chase colonials, and Bradley Boulevard ramblers near the NIH campus are the closest stops on the weekly rotation, but the same truck continues to cities across our [locations](/locations) list.',
-      'Bethesda housing ranges from mid-century ramblers south of Democracy Boulevard to Woodmont Triangle high-rises with interior laundry stacked on upper floors. Older single-family homes along Burning Tree Road carry original sheet-metal trunk lines that have collected canopy pollen for decades. Downtown condos near Bethesda Row add a different challenge — long dryer risers through shared chases that accumulate lint well before the exterior cap.',
-      'Need Northern Virginia service? Our [Burke office](/locations/burke) stages those appointments. Both locations offer the same published packages — the only difference is which truck arrives.',
+      'Wisconsin Avenue and the NIH corridor add construction dust, shuttle film, and dense condo HVAC stacks. Woodmont Triangle, Edgemoor, and Friendship Heights often need multi-floor dryer risers and elevator reservations — access planning is part of the job, not an upsell.',
+      'Montgomery DEP [Indoor Air Quality](https://www.montgomerycountymd.gov/DEP/air/indoor-air.html) and [mold guidance](https://www.montgomerycountymd.gov/propertycare/air-quality-law/indoor-air-quality/mold) push roughly 30–50% humidity, outdoor dryer venting, and filter changes — the same moisture logic that makes basement handlers sweat under Bradley Boulevard canopy. Renters: [Landlord & Tenant](https://www.montgomerycountymd.gov/DHCA/housing/landlordtenant/) and [DHCA Code Enforcement](https://www.montgomerycountymd.gov/department-housing-community-affairs/dhca-code-enforcement) for housing-condition reports — not our role.',
+      'Jobs mix NIH-corridor condos, Woodmont high-rises, and Bradley Boulevard colonials. Virginia is from our [Burke office](/locations/burke) at (571) 460-0001 — same packages, separate Google listing. Inside Rockville city limits, City rental rules may apply instead of County DHCA ([Rockville](/locations/rockville)).',
     ],
     highlights: [
-      'Physical office: 7815 Old Georgetown Rd Ste 201, Bethesda, MD 20814',
-      'Residential and condo packages — scope confirmed before equipment leaves the truck',
-      'Before-and-after register photos texted after every cleaning',
-      'Weekly Montgomery County routes from Friendship Heights through Frederick',
+      'NIH / Wisconsin Ave corridor + Woodmont condo risers',
+      'DEP IAQ + DHCA rental resources cited — no overclaiming',
+      'Staffed Suite 201 — flat-rate photo jobs',
+      '(301) 809-4544',
     ],
   },
-  offersTitle: 'Bethesda Office Published Packages',
+  offersTitle: 'Bethesda & Maryland dispatch packages',
   services: {
-    heading: 'Duct, Dryer, and Mold Services Staged From Suite 201',
-    intro: 'Every Maryland package dispatches from this Bethesda office — same HEPA equipment, same trained crew, same published scope whether the job is in Chevy Chase or [Columbia](/locations/columbia).',
+    heading: 'Scopes we run from Old Georgetown Road',
+    intro:
+      'Condo stacked laundry, townhome party walls, and mid-century ramblers south of Democracy share one published rate card — different floor plans and vent runs, same flat-rate pricing.',
     items: [
       {
-        title: 'Air Duct Cleaning & Sanitization',
-        text: 'Source-removal cleaning with HEPA-filtered negative pressure through every supply run, return plenum, and floor register in the system. Specialized tools dislodge decades of settled pollen and basement condensation film so the vacuum extracts it — nothing re-enters your living space. Full scope on our [air duct cleaning](/air-duct-cleaning) page.',
+        title: 'Air duct cleaning (source removal)',
+        text: 'HEPA negative pressure through supplies, returns, and registers — including tight closet handlers common in Bethesda townhomes. [EPA](https://www.epa.gov/indoor-air-quality-iaq/should-you-have-air-ducts-your-home-cleaned) still cautions on health claims from routine duct cleaning; we remove debris and show photos. [Air duct cleaning](/air-duct-cleaning).',
       },
       {
-        title: 'Dryer Vent Cleaning',
-        text: 'Complete lint and debris removal from the dryer connection through the entire vent run to the exterior termination cap. Downtown condos near the Bethesda Metro and Woodmont Triangle stacked units often route vents through multiple floors — we measure, brush, and verify airflow regardless of length. Schedule at [dryer vent cleaning](/dryer-vent-cleaning).',
+        title: 'Dryer vent cleaning (condo-ready)',
+        text: 'Full brush-out through shared chases to exterior or roof caps — aligned with DEP’s “vent dryers outdoors” mold-prevention theme and [NFPA dryer-fire data](https://www.nfpa.org/education-and-research/research/nfpa-research/fire-statistical-reports/home-fires-involving-clothes-dryers-and-washing-machines). [Dryer vent cleaning](/dryer-vent-cleaning).',
       },
       {
-        title: 'Ventilation & HVAC Mold Treatment',
-        text: 'When visual inspection or a persistent musty odor points to biological growth on evaporator coils or inside trunk lines, we apply EPA-registered antimicrobial treatment along the entire ventilation path. Bethesda basement air handlers sitting below the spring water table are the most common trigger. Read about [mold remediation for air ducts](/mold-remediation-air-ducts).',
+        title: 'Combo + optional duct antimicrobial',
+        text: 'Ducts and dryer in one visit: [combo package](/air-duct-and-dryer-vent-cleaning). After mechanical cleaning, optional EPA-registered product on hard metal when inspection supports it — not DHCA enforcement and not whole-home mold remediation. [Mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
     ],
   },
   why: {
-    heading: 'Why Bethesda Is the Staging Point for Every Maryland Appointment',
+    heading: 'Why homeowners in Bethesda book us',
     items: [
       {
-        title: 'Staffed Office With a Scheduling Desk',
-        text: 'Suite 201 handles bookings, parts inventory, and crew dispatch for every Maryland city on our list — not a mail drop.',
+        title: 'Renters: landlord / DHCA steps before duct scope',
+        text: 'When mold or maintenance is a landlord issue, start with written notice and County [Landlord & Tenant](https://www.montgomerycountymd.gov/DHCA/housing/landlordtenant/) / [DHCA Code Enforcement](https://www.montgomerycountymd.gov/department-housing-community-affairs/dhca-code-enforcement) guidance. We clean trunks and vents you hire us for — we do not file complaints for you.',
       },
       {
-        title: 'Bradley Boulevard to NIH — Streets We Drive Daily',
-        text: 'Ramblers south of Democracy Boulevard, condos near the Metro, and colonials along Burning Tree Road are part of the regular weekly rotation.',
+        title: 'DEP humidity advice applies to your trunks',
+        text: 'DEP [IAQ](https://www.montgomerycountymd.gov/DEP/air/indoor-air.html) and mold pages push dehumidification and exhaust habits. Cleaning removes what is already in the system; moisture repair slows the return.',
       },
       {
-        title: 'Scope-Locked Pricing Before Equipment Leaves the Truck',
-        text: 'Residential duct and dryer packages are confirmed during the phone call at (301) 809-4544. The number does not change once the crew arrives.',
+        title: 'Building access is scoped up front',
+        text: 'Loading dock, elevator windows, and condo board rules go on the work order — especially Woodmont and Friendship Heights high-rises.',
       },
       {
-        title: 'Guaranteed Results With Photo Documentation',
-        text: 'Every trunk and register is photographed before and after. If the Bethesda result falls short, contact us within 7 days — we re-perform or refund per our refund policy.',
+        title: 'Price locked before equipment runs',
+        text: 'Residential packages confirmed on (301) 809-4544; before/after photos at close-out.',
       },
     ],
   },
   communities: {
-    heading: 'Maryland Cities Covered From Suite 201',
-    intro: 'Use city pages for neighborhood names; this hub is for the Maryland office itself.',
+    heading: 'Maryland cities staged from Suite 201',
+    intro: 'City pages carry neighborhood detail; this hub is the staffed Bethesda desk.',
     groups: [
       {
         title: 'Close-in Montgomery',
@@ -84,63 +88,66 @@ export const bethesda: LocationContentSeed = {
       },
       {
         title: 'West & north',
-        places:
-          '[Potomac](/locations/potomac), [Olney](/locations/olney), [Frederick](/locations/frederick)',
+        places: '[Potomac](/locations/potomac), [Olney](/locations/olney), [Frederick](/locations/frederick)',
       },
       {
-        title: 'Prince George\'s & Howard',
+        title: "Prince George's & Howard",
         places:
           '[College Park](/locations/college-park), [Hyattsville](/locations/hyattsville), [Columbia](/locations/columbia), [Ellicott City](/locations/ellicott-city)',
       },
     ],
   },
   process: {
-    heading: 'Bethesda Intake, Then I-270 and Beltway Routes',
-    intro: 'Arrival windows reflect the drive from Bethesda to Bethesda.',
+    heading: 'Bethesda intake — then I-270 and Beltway routes',
+    intro: 'We plan around your building’s rules and stay in touch so the visit matches what you booked.',
     steps: [
       {
-        title: 'Walkthrough and quote',
-        text: 'In Bethesda we ask about pets, renovations, and condo / stacked-laundry layouts common around Bethesda before locking a flat-rate number for this MD address.',
+        title: 'Phone scope on the Bethesda line',
+        text: 'Call (301) 809-4544. Stacked laundry, NIH-area dust concerns, basement vs closet handlers — we note it before dispatch.',
       },
       {
-        title: 'Arrival window',
-        text: 'Morning-of text with a realistic ETA from the Bethesda office to your Bethesda street — not a vague all-day window.',
+        title: 'Condo / HOA access notes',
+        text: 'If your building needs elevator, loading-dock, or board clearance, tell us when you book — we work with those rules so the crew is not turned away at the door.',
       },
       {
-        title: 'Agree the package',
-        text: 'For this Bethesda home: ducts, dryer vent, or both — scoped on site, quoted before equipment starts, paid after you are satisfied.',
+        title: 'Agreed arrival window',
+        text: 'We schedule a time window with you and stay reachable if traffic or building delays shift the day — no silent no-shows.',
       },
       {
-        title: 'HEPA source-removal cleaning',
-        text: 'We agitate and vacuum supplies, returns, and registers in this Bethesda system under negative pressure so debris leaves in the vacuum.',
+        title: 'On-site package lock',
+        text: 'Dryer, ducts, or both — flat-rate scope confirmed before agitation starts.',
       },
       {
         title: 'Photos and handoff',
-        text: 'Before/after photos, filter tips, and a dryer-vent interval for Bethesda seasons. Questions go to (301) 809-4544.',
+        text: 'Before/after set, filter cadence, DEP humidity reminder, and (301) 809-4544 for follow-up.',
       },
     ],
   },
-  faqIntro: 'Bethesda questions — call (301) 809-4544 (dispatch: Bethesda).',
+  faqIntro: 'Bethesda office + NIH-corridor housing — book (301) 809-4544.',
   faq: [
     {
-      q: 'Which office books jobs for Bethesda?',
-      a: 'Bethesda appointments leave from Bethesda, MD (7815 Old Georgetown Rd Ste 201). Call (301) 809-4544 for air duct or dryer vent cleaning on your street.',
+      q: 'Does Montgomery County DEP clean my air ducts?',
+      a: 'No. DEP’s [Indoor Air Quality](https://www.montgomerycountymd.gov/DEP/air/indoor-air.html) pages educate on humidity, mold prevention, and ventilation — they are not a residential HVAC cleaning service. We are a private flat-rate duct and dryer-vent cleaner from Suite 201.',
     },
     {
-      q: 'What access do you need before arrival?',
-      a: 'In Bethesda, clear a path to the air handler and dryer — condo closets and stacked laundry especially. Share gate or parking notes for your block.',
+      q: 'I’m a renter near NIH with mold — duct cleaning or DHCA first?',
+      a: 'If moisture or mold is a housing-condition issue, follow [Landlord & Tenant](https://www.montgomerycountymd.gov/DHCA/housing/landlordtenant/) and [DHCA Code Enforcement](https://www.montgomerycountymd.gov/department-housing-community-affairs/dhca-code-enforcement) steps after written landlord notice. Duct cleaning can help when trunks hold debris; it does not fix leaks or replace landlord remediation.',
     },
     {
-      q: 'How long is a typical visit?',
-      a: 'Most Bethesda single-system houses finish in about 2–3 hours. High-rise dryer risers can add time after inspection.',
+      q: 'Do you handle Woodmont / Friendship Heights condo risers?',
+      a: 'Yes — multi-floor dryer chases and elevator access are routine Bethesda jobs. Share the building name and any board rules when you book.',
     },
     {
-      q: 'Is pricing flat-rate or by the vent?',
-      a: 'Bethesda residential packages are flat-rate from Bethesda. We scope during the walkthrough, confirm before equipment starts, and that is what you pay — no per-vent counting.',
+      q: 'How is Bethesda different from Rockville on your site?',
+      a: 'Rockville emphasizes **city** code vs County DHCA jurisdiction. Bethesda emphasizes **dense** Wisconsin/NIH corridor housing and condo logistics from the same Bethesda office.',
     },
     {
-      q: 'Can ducts and the dryer vent be done in one visit?',
-      a: 'Yes for Bethesda — book the combined package up front. Call (301) 809-4544; the Bethesda crew brings both tool sets for one stop.',
+      q: 'How do I verify this office?',
+      a: '7815A Old Georgetown Rd Ste 201, Bethesda MD 20814 — match our Google Business pin. (301) 809-4544 rings this desk.',
+    },
+    {
+      q: 'Need Northern Virginia instead?',
+      a: 'Book [Burke](/locations/burke) at (571) 460-0001 — same packages and pricing, separate Google Business listing.',
     },
   ],
 }

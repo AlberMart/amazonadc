@@ -1,76 +1,84 @@
 import type { LocationContentSeed } from '@/utilities/locations'
 
+/**
+ * Takoma Park — Tree City bungalows, DC border, MoCo DEP + DHCA.
+ * Links used:
+ * - https://www.montgomerycountymd.gov/DEP/air/indoor-air.html
+ * - https://www.montgomerycountymd.gov/propertycare/air-quality-law/indoor-air-quality/mold
+ * - https://www.montgomerycountymd.gov/DHCA/housing/landlordtenant/
+ * - https://www.montgomerycountymd.gov/department-housing-community-affairs/dhca-code-enforcement
+ */
 export const takomaPark: LocationContentSeed = {
   slug: 'takoma-park',
-  title: 'Air Duct Cleaning in Takoma Park, MD',
-  headline: 'Air duct and dryer vent cleaning for Old Takoma bungalows along the DC line',
+  title: 'Takoma Park Air Duct Cleaning',
+  headline: 'Bungalows and crawl-space humidity near the DC line — from Bethesda',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Takoma Park, MD. Flat rates from our Bethesda office for bungalows, older ducts, and tree-lined humidity. Call (301) 809-4544.',
+    'Air duct & dryer vent cleaning in Takoma Park, MD. Flat rates for bungalows & crawl-space retrofits. Call (301) 809-4544.',
   intro:
-    'Amazon Air Duct Cleaning serves Takoma Park from our Bethesda office. Bungalows on the DC line, older ductwork, and a heavy tree canopy all take on humidity and leaf-season dust. Call (301) 809-4544.',
+    'Takoma Park’s “Tree City” canopy is not marketing — it shapes what returns pull in: leaf debris, organic dust, and crawl-space moisture under Carroll Avenue bungalows where central air was retrofitted through plaster and tight crawl bays. The DC line and Sligo Creek watershed add humidity without Bethesda’s condo stacks. DEP publishes IAQ guidance; DHCA handles many rental complaints. Bethesda crews know the one-ways. (301) 809-4544.',
   heroImage: '/img/locations/takoma-park.webp',
   heroAlt: 'Air duct cleaning in Takoma Park, MD — Amazon Air Duct Cleaning',
   city: 'Takoma Park',
   state: 'MD',
   servedBy: 'bethesda',
-  sectionLayout: 'faqEarly',
+  sectionLayout: 'offersLate',
   about: {
-    heading: 'Carroll Avenue Bungalows, Crawl-Space Ductwork, and Tree-City Moisture',
+    heading: 'Bungalow crawl spaces — border humidity and field-fit trunks',
     paragraphs: [
-      'Takoma Park earned its "Tree City USA" designation for a reason — the residential canopy along Carroll Avenue, Laurel Avenue, and the streets between Takoma Junction and the District line is among the densest in the metro area. Beneath that canopy sit early-1900s bungalows, Craftsman cottages, and brick duplexes where central air was retrofitted decades after original construction. The ductwork threads through shallow crawl spaces and between plaster walls using connections that were field-fitted, not factory-sealed. Every joint that was left loose has been collecting leaf debris, organic dust, and crawl-space moisture for generations.',
-      'The Montgomery–Prince George\'s–District triple border means Takoma Park homes share humidity from the Sligo Creek watershed to the east and Piney Branch to the north without the elevation relief that drier Montgomery neighborhoods enjoy. Dryer vents in these bungalows were often punched through later additions — pantry bump-outs, enclosed porches, and rear mudrooms — creating long, multi-bend runs that trap lint in places you cannot see from the laundry area.',
-      'We dispatch Takoma Park from [Bethesda](/locations/bethesda). [Silver Spring](/locations/silver-spring) borders to the north, [Hyattsville](/locations/hyattsville) to the east, and the [Washington, DC](/locations/washington-dc) line is steps away. Read more in our post on [Takoma Park bungalow humidity and air ducts](/blog/takoma-park-bungalow-humidity-air-ducts).',
+      'Silver Spring pages emphasize downtown brick and Georgia Avenue film; Takoma Park emphasizes **Old Takoma, Takoma Junction, Carroll and Laurel Avenues** — early-1900s bungalows and duplexes where ductwork was field-fit decades after original construction. Shallow crawls hold moisture into fall; handlers mounted there develop coil and plenum film faster than above-grade closets.',
+      'Dryer vents routed through enclosed porches, mudrooms, and rear additions create multi-bend runs invisible from the laundry nook. Montgomery DEP [Indoor Air Quality](https://www.montgomerycountymd.gov/DEP/air/indoor-air.html) and [mold](https://www.montgomerycountymd.gov/propertycare/air-quality-law/indoor-air-quality/mold) pages stress humidity bands, exhausting dryers outdoors, and filter maintenance — paired with [NFPA](https://www.nfpa.org/education-and-research/research/nfpa-research/fire-statistical-reports/home-fires-involving-clothes-dryers-and-washing-machines) fire context for packed vents.',
+      'Renters use [Landlord & Tenant](https://www.montgomerycountymd.gov/DHCA/housing/landlordtenant/) and [DHCA Code Enforcement](https://www.montgomerycountymd.gov/department-housing-community-affairs/dhca-code-enforcement) when maintenance is disputed — we clean booked trunks and vents from [Bethesda](/locations/bethesda). Read [Takoma Park bungalow humidity and air ducts](/blog/takoma-park-bungalow-humidity-air-ducts).',
     ],
     highlights: [
-      'Old Takoma, Takoma Junction, Carroll Avenue, and Laurel Avenue bungalows',
-      'Flat-rate scopes covering crawl-space and retrofitted plaster-wall ductwork',
-      'Before-and-after photos for every trunk line and register',
-      'Portable HEPA equipment for narrow lot access and tight crawl entries',
+      'Tree City canopy + crawl-space retrofits',
+      'DC-border streets the crew navigates weekly',
+      'DEP IAQ + DHCA rental links',
+      '(301) 809-4544',
     ],
   },
-  offersTitle: 'Takoma Park Bungalow and Duplex Cleaning Rates',
+  offersTitle: 'Takoma Park bungalow packages',
   services: {
-    heading: 'Takoma Park Services for Crawl-Space Systems and Addition-Routed Vents',
-    intro: 'Retrofitted bungalow ductwork requires a careful scope walk before pricing — the trunk layout in a 1920s Takoma Park cottage does not follow any builder template.',
+    heading: 'Cleaning retrofitted bungalow systems',
+    intro: 'Crawl entry and plaster-wall supplies are scoped before pricing — flat rate still locks before agitation.',
     items: [
       {
-        title: 'Air Duct Cleaning & Sanitization',
-        text: 'HEPA negative pressure and mechanical agitation through crawl-space trunks, plaster-wall supply lines, and floor registers that were cut into original hardwood decades after the house was built. Takoma Park\'s organic canopy debris and crawl-space moisture create a combination that standard filter replacement alone cannot manage. Scope details at [air duct cleaning](/air-duct-cleaning).',
+        title: 'Air duct cleaning',
+        text: 'HEPA negative pressure through crawl trunks, floor registers in original hardwood, and return plenums. [EPA](https://www.epa.gov/indoor-air-quality-iaq/should-you-have-air-ducts-your-home-cleaned). [Air duct cleaning](/air-duct-cleaning).',
       },
       {
-        title: 'Dryer Vent Cleaning',
-        text: 'Bungalow dryer vents punched through enclosed porches and rear additions take unpredictable paths to the exterior. We trace the entire run with a flexible brush system, extract compacted lint from every bend, and confirm proper airflow at the cap. Book at [dryer vent cleaning](/dryer-vent-cleaning).',
+        title: 'Dryer vent cleaning',
+        text: 'Trace porch and addition routes to exterior caps — full brush-out and draw test. [Dryer vent cleaning](/dryer-vent-cleaning).',
       },
       {
-        title: 'Ventilation & HVAC Mold Treatment',
-        text: 'Shaded crawl spaces under Takoma Park bungalows hold moisture well into fall, and air handlers mounted in those spaces develop coil and plenum colonization faster than above-grade installations. EPA-registered antimicrobial treatment covers the affected ventilation path when inspection confirms growth. Details at [mold remediation for air ducts](/mold-remediation-air-ducts).',
+        title: 'Optional duct antimicrobial',
+        text: 'Hard metal after mechanical cleaning when crawl humidity left biological film — not whole-home remediation. [Mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
     ],
   },
   why: {
-    heading: 'Why Takoma Park Retrofitted Trunks Hold Organic Debris Year-Round',
+    heading: 'Why Takoma Park trunks hold organic debris year-round',
     items: [
       {
-        title: 'Bethesda Dispatch Familiar With DC-Border Streets',
-        text: 'Our crew navigates the Carroll Avenue one-ways, Takoma Junction parking, and the District-line grid regularly — no guessing at routes or dead ends.',
+        title: 'Canopy debris is continuous',
+        text: 'Tree City shade feeds returns from spring through late fall — not a single pollen week.',
       },
       {
-        title: 'Crawl-Space Access Priced Into the Standard Package',
-        text: 'Bungalow crawl entries are tighter than basement stairs, but the flat-rate quote at (301) 809-4544 already accounts for that access requirement.',
+        title: 'Crawl spaces and tight joist bays',
+        text: 'Many Takoma Park bungalows run horizontal duct through joist bays and crawl handlers — we scope access before the flat rate locks.',
       },
       {
-        title: 'Retrofitted Ductwork Inspected Joint by Joint',
-        text: 'Field-fitted connections in plaster walls and crawl ceilings are checked for integrity before the vacuum seals the system. Leaky joints get noted and addressed.',
+        title: 'Joint-by-joint on retrofits',
+        text: 'Field-fit connections checked before vacuum seal — leaky bays noted on the walk.',
       },
       {
-        title: 'Guaranteed Cleaning With Photo Documentation',
-        text: 'Before-and-after images of every trunk section are standard. If the photos do not show meaningful improvement, we return on our own time.',
+        title: 'Border-city logistics',
+        text: 'Carroll one-ways and Junction parking planned on the work order — flat rate from (301) 809-4544.',
       },
     ],
   },
   communities: {
-    heading: 'Carroll Avenue Corridor and Tree Streets',
-    intro: 'Silver Spring and Hyattsville sit nearby; Takoma Park keeps its own notes.',
+    heading: 'Takoma Park streets from Bethesda',
+    intro: 'Hyattsville east, Silver Spring north — this page stays bungalow-focused.',
     groups: [
       {
         title: 'Old Takoma & Carroll Avenue',
@@ -78,62 +86,46 @@ export const takomaPark: LocationContentSeed = {
       },
       {
         title: 'Takoma Junction',
-        places: 'Takoma Junction, Laurel Avenue, streets toward the Metro and the District line',
+        places: 'Takoma Junction, Laurel Avenue, Metro-adjacent blocks toward the DC line',
       },
       {
-        title: 'Long Branch & the county edge',
-        places:
-          'Long Branch, New Hampshire Avenue edge, streets toward Silver Spring and Hyattsville — ask if your block is not listed',
+        title: 'Long Branch & county edge',
+        places: 'Long Branch, New Hampshire Avenue edge, streets toward Silver Spring and Hyattsville',
       },
     ],
   },
   process: {
-    heading: 'Border-City Scheduling From Bethesda',
-    intro: 'From booking at (301) 809-4544 to photos at the Takoma Park door.',
+    heading: 'Bethesda → Takoma Park bungalow visit',
+    intro: 'Crawl clearance and dryer path tracing come first.',
     steps: [
-      {
-        title: 'Book from the office line',
-        text: 'Call (301) 809-4544 or use the form — we confirm Takoma Park availability the next business day from Bethesda.',
-      },
-      {
-        title: 'Protect floors and living spaces',
-        text: 'In Takoma Park we cover work paths and keep living spaces clear while equipment runs.',
-      },
-      {
-        title: 'Source-removal cleaning',
-        text: 'Source-removal agitation under HEPA negative pressure for this Takoma Park system — dust leaves in the vacuum, not your rooms.',
-      },
-      {
-        title: 'Optional sanitizing',
-        text: 'Complimentary Envirocon when you request it or when the Takoma Park inspection supports it.',
-      },
-      {
-        title: 'Close out the visit',
-        text: 'Photos on file, flat-rate invoice for Takoma Park, and seasonal tips. Call (301) 809-4544 anytime.',
-      },
+      { title: 'Crawl / handler access', text: 'Note hatch size, finished-room paths, and pets — bungalow crawls are tighter than Burke basements.' },
+      { title: 'Dryer path mapped', text: 'Porch and addition bends included on the scope sheet.' },
+      { title: 'Package locked', text: 'Flat residential rate before hoses run.' },
+      { title: 'Source removal + photos', text: 'Negative-pressure agitation; trunk images before we leave.' },
+      { title: 'Handoff', text: 'DEP humidity reminder; (301) 809-4544 for combo booking.' },
     ],
   },
-  faqIntro: 'Takoma Park questions — call (301) 809-4544 (dispatch: Bethesda).',
+  faqIntro: 'Takoma Park Tree City housing — (301) 809-4544 (Bethesda).',
   faq: [
     {
-      q: 'Where does the Takoma Park appointment leave from?',
-      a: 'Takoma Park appointments leave from Bethesda, MD (7815 Old Georgetown Rd Ste 201). Call (301) 809-4544 for air duct or dryer vent cleaning on your street.',
+      q: 'Is Takoma Park the same as Silver Spring for rental complaints?',
+      a: 'Many Takoma Park rentals use [DHCA Code Enforcement](https://www.montgomerycountymd.gov/department-housing-community-affairs/dhca-code-enforcement) after landlord notice. Bungalow crawl-space housing and tight joist-bay ducts are the usual scope we quote here.',
     },
     {
-      q: 'Anything to clear before the crew shows up?',
-      a: 'For this Takoma Park, MD home we need clear runs to the air handler. Put HOA codes on the confirmation text.',
+      q: 'Does the City of Takoma Park clean ducts?',
+      a: 'No municipal duct service — DEP [IAQ](https://www.montgomerycountymd.gov/DEP/air/indoor-air.html) educates on humidity and ventilation. We are a private flat-rate cleaner from Bethesda.',
     },
     {
-      q: 'What is a realistic job length for one system?',
-      a: 'One Takoma Park system usually takes 2–3 hours. Multi-system or packed dryer vents are scoped before we start so the quote stays locked.',
+      q: 'How long for one bungalow system?',
+      a: 'Most single-handler bungalows run about **2–3 hours** — packed crawl access or long dryer paths are scoped before agitation so the flat rate stays locked.',
     },
     {
-      q: 'Will the price change once equipment is out?',
-      a: 'The Bethesda crew prices Takoma Park jobs as published flat-rate packages. Scoped on site, confirmed before unload, paid after you are satisfied.',
+      q: 'Can ducts and dryer be one visit?',
+      a: 'Yes — book the combo up front on (301) 809-4544 so both tool sets ride from Bethesda.',
     },
     {
-      q: 'Can ducts and the dryer vent be done in one visit?',
-      a: 'Yes for Takoma Park — book the combined package up front. Call (301) 809-4544; the Bethesda crew brings both tool sets for one stop.',
+      q: 'Walk to DC — which office?',
+      a: 'Many DC-adjacent addresses still dispatch from Bethesda for Maryland-side Takoma Park; pure DC pages: [Washington, DC](/locations/washington-dc). Virginia: [Burke](/locations/burke).',
     },
   ],
 }

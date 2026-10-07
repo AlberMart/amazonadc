@@ -1,140 +1,153 @@
 import type { LocationContentSeed } from '@/utilities/locations'
 
+/**
+ * Mt Vernon — unincorporated Fairfax County along GW Parkway; NOT City of Alexandria.
+ * Links used:
+ * - https://www.fairfaxcounty.gov/health/environment/mold
+ * - https://www.fairfaxcounty.gov/health/environment/healthy-homes-fairfax
+ * - https://www.fairfaxcounty.gov/code/property-maintenance
+ * - https://www.vdh.virginia.gov/environmental-health/2018/07/17/who-do-i-contact-for-help-with-mold-removal/
+ */
 export const mountVernon: LocationContentSeed = {
   slug: 'mount-vernon',
   title: 'Air Duct Cleaning in Mt Vernon, VA',
-  headline:
-    'Air duct and dryer vent cleaning for Fort Hunt, the GW Parkway, and Mt Vernon river streets',
+  headline: 'Fort Hunt and Parkway-side homes — river humidity and mid-century trunks from Burke',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Mt Vernon, VA. Flat rates from our Burke office for Fort Hunt houses, Parkway humidity, and older river-side homes. Call (571) 460-0001.',
+    'Air duct & dryer vent cleaning in Mount Vernon, VA. Flat rates for Parkway homes & colonials. Photos. Call (571) 460-0001.',
   intro:
-    'Amazon Air Duct Cleaning serves Mt Vernon from our Burke office \u2014 scheduled from our serving office. Fort Hunt colonials, Hollin Hills mid-century houses, and older streets toward the Potomac all take on river humidity and pollen. Call (571) 460-0001.',
+    'Mt Vernon is the **Fairfax County** residential community along the George Washington Memorial Parkway — Fort Hunt, Waynewood, Hollin Hills — not the historic estate and not City of Alexandria jurisdiction. River humidity loads mid-century metal in joist bays; County Health explains mold prevention but does not test indoor air or remediate for you. We clean ducts and dryer vents from Burke with flat rates and photos. (571) 460-0001.',
   heroImage: '/img/locations/mount-vernon.webp',
-  heroAlt: 'Air duct cleaning in Mt Vernon, VA \u2014 Amazon Air Duct Cleaning',
+  heroAlt: 'Air duct cleaning in Mt Vernon, VA — Amazon Air Duct Cleaning',
   city: 'Mt Vernon',
   state: 'VA',
   servedBy: 'burke',
   sectionLayout: 'faqEarly',
   about: {
-    heading: 'GW Parkway Humidity, Mid-Century Trunks, and Wooded Fort Hunt Lots',
+    heading: 'Fairfax County along the Parkway — humidity and mid-century ducts',
     paragraphs: [
-      'The Mt Vernon community \u2014 the Fairfax County residential area, not the historic estate \u2014 stretches along the George Washington Memorial Parkway through Fort Hunt, Waynewood, Stratford Landing, Hollin Hills, and Mount Vernon Woods. Most of the housing stock predates the west-county HOA boom: 1950s\u201370s brick colonials, ramblers, and mid-century moderns with original metal ductwork routed through tight crawl spaces and joist bays that were not designed for forced-air systems.',
-      'The Potomac sits close enough to push river humidity inland year-round. Summer moisture condenses on cold supply metal and on evaporator coils, creating a damp film that traps Parkway dust, oak pollen, and fine soil particles from surrounding wooded lots. Hollin Hills houses and similar mid-century streets have returns that were never sized for modern living \u2014 later central-air additions snake through tight joists and accumulate debris at every elbow. Fort Hunt dryer runs often travel the full length of an exterior wall before reaching a cap hidden behind vegetation.',
-      'Our Burke crew serves Mt Vernon alongside [Alexandria](/locations/alexandria), [Lorton](/locations/lorton), and [Springfield](/locations/springfield). Read about [Mount Vernon Potomac humidity and air ducts](/blog/mount-vernon-potomac-humidity-air-ducts).',
+      'If your mailing address says Alexandria but your parcel is **south of the city** along the Parkway, you may still be in Fairfax County — this page is for **Mt Vernon, Fort Hunt, Hollin Hills, Stratford Landing**, and similar county streets. City of Alexandria’s mold and IAQ hubs apply inside city limits; here, [Fairfax County Health’s mold page](https://www.fairfaxcounty.gov/health/environment/mold) is the usual civic baseline: control moisture, fix leaks, reduce humidity — and understand the Health Department **does not** perform indoor air testing or mold remediation.',
+      'GW Parkway corridor humidity pushes river dew inland year-round. Summer air meets cool crawl-space and basement supply metal; Hollin Hills ramblers and Fort Hunt brick colonials often carry **retrofit duct** through tight joists where debris stacks at every elbow. Long exterior-wall dryer runs hide caps behind vegetation on wooded lots. [Healthy Homes Fairfax](https://www.fairfaxcounty.gov/health/environment/healthy-homes-fairfax) repeats the same moisture-first habits countywide.',
+      'Burke dispatch serves Mt Vernon with [Alexandria](/locations/alexandria) city jobs and [Lorton](/locations/lorton) on the same southern loop. Local read: [Mount Vernon Potomac humidity and air ducts](/blog/mount-vernon-potomac-humidity-air-ducts). [VDH](https://www.vdh.virginia.gov/environmental-health/2018/07/17/who-do-i-contact-for-help-with-mold-removal/) does not recommend specific mold contractors.',
     ],
     highlights: [
-      'Fort Hunt, Waynewood, Hollin Hills, Stratford Landing, and GW Parkway streets',
-      'Flat-rate pricing \u2014 no per-vent surcharges',
-      'Before-and-after photo documentation on every job',
-      'Same Burke crew running Alexandria and Lorton routes weekly',
+      'Fairfax County — not Alexandria city code',
+      'Parkway humidity + mid-century trunks',
+      'County Health mold cited honestly',
+      'Burke: (571) 460-0001',
     ],
   },
-  offersTitle: 'Mt Vernon Duct & Dryer Vent Packages',
+  offersTitle: 'Mt Vernon flat-rate packages',
   services: {
-    heading: 'What We Clean in Mt Vernon Parkway and Fort Hunt Homes',
-    intro: 'Older metal trunks and long wooded-lot dryer runs receive flat-rate residential scopes.',
+    heading: 'What we clean on Parkway-side county homes',
+    intro:
+      'Wooded-lot dryer caps, Hollin Hills joist bays, and Fort Hunt basement handlers — scoped before price locks.',
     items: [
       {
-        title: 'Air Duct Cleaning for Mt Vernon Homes',
-        text: 'HEPA-filtered negative-pressure equipment seals to the trunk while specialized tools agitate every supply line, return, and register \u2014 including tight joist-bay runs in mid-century houses. Sanitizing follows when the walkthrough reveals biological growth. You keep the complete photo set. Schedule [air duct cleaning](/air-duct-cleaning).',
+        title: 'Air duct cleaning (source removal)',
+        text: 'HEPA negative pressure on the trunk, agitation through supplies and returns, registers included. [EPA duct guidance](https://www.epa.gov/indoor-air-quality-iaq/should-you-have-air-ducts-your-home-cleaned) on health expectations. [Air duct cleaning](/air-duct-cleaning).',
       },
       {
-        title: 'Dryer Vent Service',
-        text: 'Wooded Fort Hunt lots and second-floor laundry in older ramblers create long, bent dryer runs that pack with lint behind exterior siding. We rod-brush and vacuum the entire path to the cap so the appliance vents efficiently and fire risk is reduced. Book [dryer vent cleaning](/dryer-vent-cleaning).',
+        title: 'Dryer vent cleaning',
+        text: 'Second-floor laundry and long exterior-wall runs pack lint before the dryer feels slow. [NFPA dryer-fire research](https://www.nfpa.org/education-and-research/research/nfpa-research/fire-statistical-reports/home-fires-involving-clothes-dryers-and-washing-machines). Full brush-out to the cap. [Dryer vent cleaning](/dryer-vent-cleaning).',
       },
       {
-        title: 'Mold Treatment in Mt Vernon Ductwork',
-        text: 'Parkway humidity and cool crawl spaces keep moisture close to the air handler, letting mold colonize coils and dead-end duct branches. We clean mechanically first, then apply EPA-registered antimicrobial treatment along the ventilation path. Details at [mold remediation for air ducts](/mold-remediation-air-ducts).',
+        title: 'Optional antimicrobial on hard duct surfaces',
+        text: 'After mechanical cleaning when inspection shows biological film on hard metal — not County Health remediation and not a substitute for fixing water intrusion. [Mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
     ],
   },
   why: {
-    heading: 'Why Potomac-Side Trunks Carry Heavier Moisture Loads',
+    heading: 'Why homeowners in Mt Vernon book us',
     items: [
       {
-        title: 'River-Side Routes From Fairfax Dispatch',
-        text: 'The Burke crew already works the Parkway side of the county weekly. Mt Vernon is a familiar stop, not a one-off detour into unfamiliar territory.',
+        title: 'If your address is in Fairfax County',
+        text: 'Parkway blocks in Fort Hunt and Hollin Hills use Fairfax Health education and [property maintenance code](https://www.fairfaxcounty.gov/code/property-maintenance) context (mold alone is not a standalone violation while failing systems causing moisture may be). City of Alexandria mold and Alex311 paths apply inside city limits — we do not file Code cases for you.',
       },
       {
-        title: 'Mid-Century Retrofit Trunks Inspected First',
-        text: 'Fort Hunt brick colonials and Hollin Hills add-on ductwork are walkthrough-scoped before any price is quoted. No surprise per-vent fees based on building age.',
+        title: 'Parkway humidity loads metal trunks',
+        text: 'Potomac-side lots see heavier dew and pollen under oak canopy than inland Fairfax subdivisions. Cleaning removes accumulated film; dehumidification and leak repair slow return per [Healthy Homes Fairfax](https://www.fairfaxcounty.gov/health/environment/healthy-homes-fairfax).',
       },
       {
-        title: 'Flat Rate Locked Before We Start',
-        text: 'Residential duct and dryer packages are quoted at a flat rate. The number on your confirmation is the number on the invoice.',
+        title: 'Mid-century retrofit is routine here',
+        text: 'Hollin Hills and Fort Hunt add-on ductwork is walkthrough-scoped before quote — not surprise per-vent math after the first register opens.',
       },
       {
-        title: 'Guaranteed Results',
-        text: 'If the Mt Vernon cleaning falls short, contact us within 7 days — we re-perform or refund per our refund policy.',
+        title: 'Photo-backed flat rate from Burke',
+        text: 'Price confirmed before agitation; before/after images at close-out. Gate codes and long driveways are easier when you flag them at booking.',
       },
     ],
   },
   communities: {
-    heading: 'Fort Hunt, Hollin Hills Edge, and Parkway Streets',
-    intro: 'Alexandria and Lorton are nearby pages; Mt Vernon keeps its river focus.',
+    heading: 'Parkway neighborhoods we stage from Burke',
+    intro: 'If your parcel is inside City of Alexandria limits, see our [Alexandria](/locations/alexandria) page for city resources; this list covers Fairfax County Parkway neighborhoods.',
     groups: [
       {
-        title: 'Fort Hunt',
+        title: 'Fort Hunt & river blocks',
         places: 'Fort Hunt, Waynewood, Stratford Landing, Fort Hunt Park streets',
       },
       {
-        title: 'GW Parkway & river',
-        places: 'Parkway-adjacent lots, Mount Vernon Woods, streets toward the estate area',
+        title: 'GW Parkway corridor',
+        places: 'Parkway-adjacent lots, Mount Vernon Woods, estate-area fringe (residential county)',
       },
       {
-        title: 'Hollin Hills & west',
+        title: 'Hollin Hills & west edges',
         places:
-          'Hollin Hills, blocks toward [Alexandria](/locations/alexandria), [Lorton](/locations/lorton), and [Springfield](/locations/springfield)',
+          'Hollin Hills, blocks toward [Springfield](/locations/springfield) and [Lorton](/locations/lorton) — confirm county vs city if unsure',
       },
     ],
   },
   process: {
-    heading: 'Southern Fairfax Route Notes From Burke',
-    intro: 'From booking at (571) 460-0001 to photos at the Mt Vernon door.',
+    heading: 'Burke → Mt Vernon visit flow',
+    intro: 'We separate County housing moisture issues from duct and dryer scope on the walkthrough.',
     steps: [
       {
-        title: 'Book from the office line',
-        text: 'Call (571) 460-0001 or use the form — we confirm Mt Vernon availability the next business day from Burke.',
+        title: 'Confirm county vs city',
+        text: 'Parkway addresses sometimes confuse Alexandria city mail with Fairfax parcels — civic links change; flat-rate menu does not.',
       },
       {
-        title: 'Protect floors and living spaces',
-        text: 'In Mt Vernon we cover work paths and keep living spaces clear while equipment runs.',
+        title: 'Building type',
+        text: 'Mid-century joist bay, Fort Hunt crawl handler, or long exterior dryer run? Sets hose plan and time — not upsell bait.',
       },
       {
-        title: 'Source-removal cleaning',
-        text: 'Source-removal agitation under HEPA negative pressure for this Mt Vernon system — dust leaves in the vacuum, not your rooms.',
+        title: 'Lock scope and price',
+        text: 'Ducts, dryer vent, or both — number confirmed before tools run; antimicrobial only with your OK.',
       },
       {
-        title: 'Optional sanitizing',
-        text: 'Complimentary Envirocon when you request it or when the Mt Vernon inspection supports it.',
+        title: 'Source-removal + photos',
+        text: 'Negative-pressure HEPA cleaning and full dryer brush-out when booked; images before we leave.',
       },
       {
-        title: 'Close out the visit',
-        text: 'Photos on file, flat-rate invoice for Mt Vernon, and seasonal tips. Call (571) 460-0001 anytime.',
+        title: 'Handoff',
+        text: 'Filter cadence, humidity reminder from County mold tips, (571) 460-0001 for follow-up.',
       },
     ],
   },
-  faqIntro: 'Mt Vernon questions — call (571) 460-0001 (dispatch: Burke).',
+  faqIntro:
+    'Mt Vernon county questions — Fairfax Health linked where useful. Book: (571) 460-0001 (Burke).',
   faq: [
     {
-      q: 'Where does the Mt Vernon appointment leave from?',
-      a: 'Mt Vernon appointments leave from Burke, VA (5641 Burke Centre Pkwy Ste 119). Call (571) 460-0001 for air duct or dryer vent cleaning on your street.',
+      q: 'Should I use City of Alexandria mold resources for my Fort Hunt home?',
+      a: 'If you are in **Fairfax County** (Fort Hunt, Waynewood, Hollin Hills, etc.), Alexandria’s Alex311 and City mold pages are the wrong door. Start with [Fairfax County Health mold guidance](https://www.fairfaxcounty.gov/health/environment/mold) and moisture repair; hire us for duct/dryer mechanical cleaning when you want debris removed with photos.',
     },
     {
-      q: 'Anything to clear before the crew shows up?',
-      a: 'For this Mt Vernon, VA home we need clear runs to the air handler. Put HOA codes on the confirmation text.',
+      q: 'Does Fairfax County Health test my ducts or recommend a contractor?',
+      a: 'No. The [County mold page](https://www.fairfaxcounty.gov/health/environment/mold) states the Health Department does not perform indoor air testing or mold remediation. [VDH](https://www.vdh.virginia.gov/environmental-health/2018/07/17/who-do-i-contact-for-help-with-mold-removal/) does not endorse specific specialists either.',
     },
     {
-      q: 'What is a realistic job length for one system?',
-      a: 'One Mt Vernon system usually takes 2–3 hours. Multi-system or packed dryer vents are scoped before we start so the quote stays locked.',
+      q: 'Why mention the GW Parkway on a duct page?',
+      a: 'Parkway-side lots get river-influenced humidity and heavy tree pollen on outdoor intakes — the same moisture logic County Health describes, applied to mid-century metal trunks and long dryer runs.',
     },
     {
-      q: 'Will the price change once equipment is out?',
-      a: 'The Burke crew prices Mt Vernon jobs as published flat-rate packages. Scoped on site, confirmed before unload, paid after you are satisfied.',
+      q: 'I’m in Hollin Hills with a musty basement — ducts first?',
+      a: '[Healthy Homes Fairfax](https://www.fairfaxcounty.gov/health/environment/healthy-homes-fairfax) prioritizes dehumidification and leak repair. Duct cleaning helps when trunks hold debris; it does not replace whole-home mold remediation.',
     },
     {
-      q: 'Can ducts and the dryer vent be done in one visit?',
-      a: 'Yes for Mt Vernon — book the combined package up front. Call (571) 460-0001; the Burke crew brings both tool sets for one stop.',
+      q: 'Which office serves Mt Vernon?',
+      a: 'Burke, VA (5641 Burke Centre Pkwy Ste 119). Call (571) 460-0001.',
+    },
+    {
+      q: 'More reading on Parkway humidity?',
+      a: '[Mount Vernon Potomac humidity and air ducts](/blog/mount-vernon-potomac-humidity-air-ducts). Official: [Fairfax County Health — mold](https://www.fairfaxcounty.gov/health/environment/mold).',
     },
   ],
 }

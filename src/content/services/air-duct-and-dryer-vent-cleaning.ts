@@ -2,11 +2,11 @@ import type { ServiceContent } from '@/utilities/services'
 
 export const airDuctAndDryerVentCleaning: ServiceContent = {
   slug: 'air-duct-and-dryer-vent-cleaning',
-  title: 'Air Duct Cleaning, Dryer Vent Cleaning & Sanitization',
+  title: 'Air Duct & Dryer Vent Cleaning Combo',
   description:
-    'Complete air duct and dryer vent cleaning for $399. Unlimited vents, dryer duct brushing, sanitization, and before/after photos. Serving Virginia, Maryland & Washington DC.',
+    'Combo air duct & dryer vent cleaning from $399. Unlimited vents, dryer brush-out, photos. Serving VA, MD & Washington DC.',
   summary:
-    'Complete air duct system cleaning plus dryer vent cleaning and sanitization — our most popular package.',
+    'Complete air duct system cleaning plus dryer vent cleaning — our most popular package. Optional antimicrobial on request.',
   price: 399,
   orderUrl: 'https://buy.stripe.com/4gM00k18z6zvdpJeb64AU02',
   heroImage: '/img/Amazon_DRYER_VENT_CLEANING.webp',
@@ -24,7 +24,6 @@ export const airDuctAndDryerVentCleaning: ServiceContent = {
     'Complimentary Sanitization of Air Ducts with Envirocon (Upon Request)',
     'Brushing and vacuuming the entire length of the dryer duct',
     'Proof of Cleaning with Before/After photos',
-    'Satisfaction Guaranteed or Your Money Back',
     'NO EXTRA FEES, NO EXTRA CHARGES',
   ],
   beforeAfter: [
@@ -34,35 +33,35 @@ export const airDuctAndDryerVentCleaning: ServiceContent = {
     { src: '/img/before_after/dryer_after.webp', alt: 'Dryer vent after cleaning' },
   ],
   why: {
-    heading: 'Complete home air quality and fire safety in one visit',
+    heading: 'Two systems, one visit — debris removal and dryer fire risk',
     paragraphs: [
-      'Your HVAC system and your dryer vent are two separate sources of indoor air quality problems and fire risk — and both are easy to overlook. Dust, pollen, pet dander, and mold spores accumulate inside air ducts and recirculate through every room in your home. Meanwhile, lint builds up deep inside the dryer vent, restricting airflow and creating a serious fire hazard.',
-      'Booking both services together in a single visit means your home gets comprehensive protection at the best value. Amazon Air Duct Cleaning handles both systems with professional-grade equipment, leaving your home cleaner, safer, and more energy-efficient.',
+      'Your HVAC ducts and your dryer vent are separate systems. Dust and debris can collect inside air ducts; [EPA](https://www.epa.gov/indoor-air-quality-iaq/should-you-have-air-ducts-your-home-cleaned) does not treat routine duct cleaning as a proven health treatment. Separately, lint in dryer vents is a documented fire-related hazard — [NFPA’s 2014–2018 home dryer fire analysis](https://www.nfpa.org/education-and-research/research/nfpa-research/fire-statistical-reports/home-fires-involving-clothes-dryers-and-washing-machines) finds failure to clean in about 32% of dryer fires.',
+      'Booking both in one visit is efficient: we source-remove debris from the duct system and brush/vacuum the full dryer run, with before/after photos. Optional antimicrobial on ducts is available on request — not a medical claim.',
     ],
     image: '/img/blog/7-signs-air-ducts-need-cleaning.webp',
     imageAlt: 'Professional air duct and dryer vent cleaning service',
   },
   listBlocks: [
     {
-      heading: 'Signs you need both services',
+      heading: 'Signs you may want both services',
       items: [
-        'Visible dust around vents and surfaces despite regular cleaning',
-        'Increased allergy symptoms or respiratory irritation at home',
-        'Musty or stale odor when the HVAC system runs',
-        'Clothes taking more than one cycle to fully dry',
-        'The dryer or laundry room feels unusually hot during operation',
-        'More than 1–3 years since the last professional duct cleaning',
+        'Visible dust around vents or debris discharging from supplies',
+        'Clothes needing more than one dryer cycle',
+        'Musty HVAC odor or renovation dust in the home',
+        'Dryer or laundry room running unusually hot',
+        'More than a year since the last dryer vent cleaning',
+        'You prefer one flat-rate visit for ducts and the dryer vent',
       ],
     },
     {
-      heading: 'Benefits of the complete bundle',
+      heading: 'What the bundle covers',
       items: [
-        'Improved indoor air quality — fewer allergens and irritants circulating at home',
-        'Dryer fire risk reduced — lint buildup removed from the full duct length',
-        'Systems may run more efficiently after cleaning when airflow was restricted',
-        'Extended lifespan of your HVAC system and dryer appliance',
-        'One visit, two systems — saves time compared to booking separately',
-        'Peace of mind backed by before/after photo documentation for both systems',
+        'Source-removal cleaning of one complete air duct system',
+        'Full-length dryer vent brushing and vacuuming',
+        'Optional EPA-registered antimicrobial on ducts upon request',
+        'Before/after photos for both systems',
+        'Addresses lint-related dryer fire hazard (see NFPA dryer-fire data)',
+        'Does not claim to cure allergies or prevent all fires',
       ],
     },
   ],
@@ -87,8 +86,8 @@ export const airDuctAndDryerVentCleaning: ServiceContent = {
         text: 'A drill-powered brush travels up to 40 feet through the dryer duct, loosening compacted lint while industrial vacuums capture it completely.',
       },
       {
-        title: 'Sanitization',
-        text: 'Envirocon sanitizer is applied to the air duct system upon request at no additional charge.',
+        title: 'Optional antimicrobial',
+        text: 'Envirocon antimicrobial may be applied to the air duct system upon request at no additional charge — after mechanical cleaning, not as a medical treatment.',
       },
       {
         title: 'Final Verification',
@@ -101,19 +100,19 @@ export const airDuctAndDryerVentCleaning: ServiceContent = {
   faq: [
     {
       q: 'What is included in the $399 bundle service?',
-      a: 'The $399 bundle covers one complete air duct system and one dryer vent: unlimited supply vents, unlimited intake vents, unlimited main duct lines, agitating and vacuuming of the entire duct system, brushing and vacuuming the full length of the dryer duct, complimentary Envirocon sanitization upon request, before/after photos, and a satisfaction guarantee. No extra fees, no hidden charges.',
+      a: 'The $399 bundle covers one complete air duct system and one dryer vent: unlimited supply vents, unlimited intake vents, unlimited main duct lines, agitating and vacuuming of the entire duct system, brushing and vacuuming the full length of the dryer duct, complimentary Envirocon antimicrobial upon request, and before/after photos. No extra fees, no hidden charges.',
     },
     {
-      q: 'Why should I clean both my air ducts and dryer vent at the same time?',
-      a: 'Combining both services in one visit saves time and money compared to booking separately. Both services address different contaminant sources — air ducts collect dust, pollen, and allergens while dryer vents accumulate highly flammable lint. Cleaning both at once gives you comprehensive indoor air quality improvement and fire risk reduction in a single appointment.',
+      q: 'Why book ducts and the dryer vent together?',
+      a: 'One visit is often more convenient and usually costs less than two separate appointments. Duct cleaning removes debris from the HVAC; dryer vent cleaning addresses lint buildup linked to dryer fires in NFPA statistics. EPA does not treat routine duct cleaning as a proven health treatment — we are clear about that.',
     },
     {
       q: 'Is sanitization included in the bundle?',
-      a: 'Yes. Complimentary sanitization of air ducts with Envirocon is included upon request as part of the $399 bundle service, at no additional cost.',
+      a: 'Complimentary Envirocon antimicrobial for air ducts is available upon request as part of the $399 bundle — after mechanical cleaning, at no additional cost. It is not a sterilizing or medical claim.',
     },
     {
       q: 'Do you provide proof that both systems were cleaned?',
-      a: 'Yes. Amazon Air Duct Cleaning provides before and after photos of both the air duct system and the dryer vent as proof of cleaning with every service.',
+      a: 'Yes. Amazon Air Duct Cleaning provides before and after photos of both the air duct system and the dryer vent with every service.',
     },
     {
       q: 'Which areas do you serve?',

@@ -45,6 +45,32 @@ function isEmail(value: string) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)
 }
 
+/** Form Builder Emails tab uses {{fieldName}} placeholders. */
+function replaceCurlys(template: string, values: Record<string, string>): string {
+  return template.replace(/\{\{\s*([a-zA-Z0-9_-]+)\s*\}\}/g, (_, key: string) => values[key] ?? '')
+}
+
+/**
+ * Payload form-builder hides the `emails` array unless `req.user` exists
+ * (field-level access). Public /api/contact must load with overrideAccess
+ * and send mail itself — the FormSubmissions afterChange hook sees empty emails.
+ */
+async function loadForm(
+  payload: Awaited<ReturnType<typeof getPayload>>,
+  id: number,
+): Promise<Form | null> {
+  try {
+    return (await payload.findByID({
+      collection: 'forms',
+      id,
+      depth: 0,
+      overrideAccess: true,
+    })) as Form
+  } catch {
+    return null
+  }
+}
+
 export async function POST(req: NextRequest) {
   try {
     if (!isAllowedOrigin(req)) {
@@ -86,23 +112,19 @@ export async function POST(req: NextRequest) {
 
     let form: Form | null = null
     if (data.formId) {
-      try {
-        form = (await payload.findByID({ collection: 'forms', id: data.formId, depth: 0 })) as Form
-      } catch {
-        form = null
-      }
+      form = await loadForm(payload, data.formId)
     }
 
     if (!form) {
-      const settings = await payload.findGlobal({ slug: 'site-settings', depth: 0 })
+      const settings = await payload.findGlobal({
+        slug: 'site-settings',
+        depth: 0,
+        overrideAccess: true,
+      })
       const related = settings.contactForm
       const relatedId = typeof related === 'number' ? related : related?.id
       if (relatedId) {
-        try {
-          form = (await payload.findByID({ collection: 'forms', id: relatedId, depth: 0 })) as Form
-        } catch {
-          form = null
-        }
+        form = await loadForm(payload, relatedId)
       }
     }
 
@@ -167,6 +189,7 @@ export async function POST(req: NextRequest) {
           form: form.id,
           submissionData,
         },
+        overrideAccess: true,
       })
     }
 
@@ -183,17 +206,71 @@ export async function POST(req: NextRequest) {
         ip,
         status: 'new',
       },
+      overrideAccess: true,
     })
 
-    if ((!form?.emails || form.emails.length === 0) && process.env.CONTACT_TO_EMAIL) {
-      const rows = submissionData
-        .map((row) => `<p><strong>${row.field}:</strong> ${row.value}</p>`)
-        .join('')
+    const curlyValues: Record<string, string> = {
+      ...values,
+      name,
+      email: email || '',
+      phone: phone || '',
+      address: address || '',
+      message,
+      sourcePage: data.sourcePage || '',
+    }
+
+    const htmlRows = submissionData
+      .map((row) => `<p><strong>${row.field}:</strong> ${row.value}</p>`)
+      .join('')
+
+    const emailConfigs =
+      form?.emails && form.emails.length > 0
+        ? form.emails
+        : process.env.CONTACT_TO_EMAIL
+          ? [
+              {
+                emailTo: process.env.CONTACT_TO_EMAIL,
+                subject: `New website inquiry from ${name}`,
+                message: null,
+                replyTo: email && isEmail(email) ? email : undefined,
+              },
+            ]
+          : []
+
+    for (const cfg of emailConfigs) {
+      const to = replaceCurlys(cfg.emailTo || '', curlyValues).trim()
+      if (!to) continue
+
+      const subject = replaceCurlys(
+        cfg.subject || `New website inquiry from ${name}`,
+        curlyValues,
+      )
+      const bodyFromConfig = cfg.message ? lexicalPlainText(cfg.message) : ''
+      const textBody = bodyFromConfig
+        ? replaceCurlys(bodyFromConfig, curlyValues)
+        : message
+      const htmlBody = bodyFromConfig
+        ? `<div>${replaceCurlys(bodyFromConfig, curlyValues)
+            .split(/\n+/)
+            .map((line) => `<p>${line}</p>`)
+            .join('')}</div>`
+        : htmlRows || `<p>${message}</p>`
+
+      const replyToRaw = cfg.replyTo
+        ? replaceCurlys(cfg.replyTo, curlyValues).trim()
+        : email && isEmail(email)
+          ? email
+          : undefined
+
       await payload.sendEmail({
-        to: process.env.CONTACT_TO_EMAIL,
-        subject: `New website inquiry from ${name}`,
-        html: rows || `<p>${message}</p>`,
-        text: message,
+        to,
+        ...(cfg.emailFrom ? { from: replaceCurlys(cfg.emailFrom, curlyValues) } : {}),
+        ...(cfg.cc ? { cc: replaceCurlys(cfg.cc, curlyValues) } : {}),
+        ...(cfg.bcc ? { bcc: replaceCurlys(cfg.bcc, curlyValues) } : {}),
+        ...(replyToRaw && isEmail(replyToRaw) ? { replyTo: replyToRaw } : {}),
+        subject,
+        html: htmlBody,
+        text: textBody,
       })
     }
 

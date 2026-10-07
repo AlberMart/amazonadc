@@ -60,7 +60,7 @@ export const themeFields: Field = {
         colorField('cardMuted', 'Card muted background', { defaultValue: '#f8fafc' }),
         colorField('heading', 'Heading text', { defaultValue: '#0b1c2c' }),
         colorField('body', 'Body text', { defaultValue: '#516579' }),
-        colorField('mutedText', 'Muted text', { defaultValue: '#7a8b9c' }),
+        colorField('mutedText', 'Muted text', { defaultValue: '#5a6b7c' }),
         colorField('onDark', 'Text on dark', { defaultValue: '#ffffff' }),
         colorField('onDarkMuted', 'Muted text on dark', { defaultValue: 'rgba(240, 249, 255, 0.85)' }),
         colorField('link', 'Link', { defaultValue: '#0369a1' }),

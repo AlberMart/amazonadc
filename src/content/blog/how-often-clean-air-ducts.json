@@ -1,112 +1,106 @@
 {
   "slug": "how-often-clean-air-ducts",
   "title": "How Often Should You Clean Your Air Ducts?",
-  "headline": "How Often Should You Clean Your Air Ducts? Expert Recommendations for Homeowners",
-  "description": "Every 1–3 years is the baseline — but pets, renovations, and allergies shorten that window. Find your home's ideal air duct cleaning schedule.",
+  "headline": "There is no official calendar — here’s how homeowners decide when to book",
+  "description": "How often should you clean air ducts? EPA sets no health interval — signs, dryer vents, and realistic booking timing.",
   "heroImage": "/img/blog/how-often-clean-air-ducts.webp",
   "sections": [
     {
       "id": "how_often",
-      "heading": "The short answer: every 1–3 years, with exceptions",
+      "heading": "There is no universal schedule",
       "paragraphs": [
-        "Your HVAC system pushes heated or cooled air through every duct in the house hundreds of times a day. Each cycle picks up whatever has settled inside — dust, pollen, pet hair, construction debris — and delivers it straight to your living spaces.",
-        "For an average household with no pets, no renovations, and no allergy concerns, a professional cleaning every 1 to 3 years keeps that buildup from affecting comfort or efficiency. But \"average\" doesn't describe every home, and the real question is which end of that range fits yours."
+        "Your HVAC system moves air through the duct network hundreds of times a day. Debris can settle on interior surfaces between filter changes — dust, pollen, pet hair, renovation grit. How often that calls for a professional clean depends on what you see and how the house is used, not on a single industry rule.",
+        "[EPA](https://www.epa.gov/indoor-air-quality-iaq/should-you-have-air-ducts-your-home-cleaned) does **not** set a mandatory health-based interval. It also states that duct cleaning has **not been shown to prevent health problems**. Timing should follow visible contamination, renovation dust, moisture history, and system condition — not a promise that a calendar date equals cleaner lungs."
       ],
       "listItems": [],
       "image": "/img/blog/clogged-dryer-vent-lint.webp"
     },
     {
-      "id": "recommended_frequency",
-      "heading": "What moves you to the 2–3 year end of the range",
+      "id": "typical_intervals",
+      "heading": "Intervals many households actually use",
       "paragraphs": [
-        "The 1–3 year recommendation is a starting point. Several factors can cut that interval nearly in half:",
-        "Homes that check two or more of these boxes often see visible dust return to registers within 2–3 years of cleaning. If that describes your household, the shorter interval pays for itself in comfort and filter savings."
+        "As a **practical habit from our Burke and Bethesda routes** — not an official standard — quieter households often wait several years between full cleans when filters are kept up and trunks look light. Pets, renovations, or humid basements usually mean looking sooner. Treat any year-range as a conversation starter after a walkthrough, never as a medical or regulatory requirement.",
+        "Treat those ranges as conversation starters with a technician after a walkthrough, not as a medical or regulatory requirement."
       ],
       "listItems": [
-        "Pets — Dog and cat hair bypass standard filters and coat trunk lines faster than anything else.",
-        "Allergies or asthma — Sensitive respiratory systems react to particle levels that most people never notice.",
-        "Smokers in the home — Tar residue bonds to duct walls and produces persistent odors long after the smoke clears.",
-        "Nearby construction — Drywall dust, sawdust, and insulation fibers travel through open windows and settle into returns.",
-        "High-traffic households — More people track in more pollen, shed more skin cells, and generate more debris."
+        "Quieter homes with regular filter changes — often inspect or clean on a multi-year cadence",
+        "Pets, smokers, or heavy occupancy — debris builds faster; look sooner",
+        "Recent drywall, sanding, or remodel dust — clean after the mess, not years later",
+        "Damp basements or past leaks — moisture plus dust sticks; fix moisture and consider cleaning"
       ]
     },
     {
       "id": "signs",
-      "heading": "5 signals your ducts are due now, regardless of schedule",
+      "heading": "Signals that matter more than the calendar",
       "paragraphs": [
-        "Timelines are guidelines. These symptoms override any calendar:",
-        "If dust reappears on shelves and registers within a few days of wiping, the ducts — not your cleaning habits — are the source.",
-        "Sneezing or congestion that eases when you leave the house and flares when you return points to airborne irritants cycling through the HVAC system.",
-        "A stale or musty smell every time the blower kicks on usually means organic material — dust, moisture, or worse — has accumulated in the trunk lines.",
-        "When some rooms won't cool or heat no matter how long the system runs, partial blockages in the ductwork are a likely culprit.",
-        "Drywall sanding and demolition debris can coat the inside of ducts in a single afternoon. Don't wait years to address it."
+        "These observations usually outweigh any “every X years” guess:"
       ],
       "listItems": [
-        "Dust returns faster than you can clean it",
-        "Indoor allergy symptoms that vanish when you step outside",
-        "Musty startup smell from the vents",
-        "Rooms that stay stuffy while others feel fine",
-        "Any renovation involving sanding, painting, or demolition"
+        "Dust returns on shelves and registers within days of wiping — the system may be recirculating debris",
+        "Visible dust rings at supplies, or debris discharging when the blower starts",
+        "Musty smell when the system first kicks on — often moisture-related; also check humidity and leaks",
+        "Some rooms stay stuffy while others feel fine — may be ducts, dampers, or airflow balance",
+        "Any renovation involving sanding, painting, or demolition — construction fines settle deep in returns"
       ]
     },
     {
       "id": "benefits",
-      "heading": "What clean ducts actually change in your home",
+      "heading": "What cleaning actually changes",
       "paragraphs": [
-        "Duct cleaning isn't maintenance theater. When trunk lines are clear:",
-        "The Department of Energy notes that clean HVAC components reduce the workload on blowers and compressors. That means shorter run times, lower electricity draw, and less wear on parts that cost thousands to replace.",
-        "Most homeowners also notice something simpler: the house stays cleaner between dustings, and the air smells neutral when the system cycles on — not stale."
+        "Professional cleaning removes debris from trunks and branches. That can help airflow when restriction was debris-related. It is **not** a promised utility-bill cut or allergy cure.",
+        "[EPA guidance](https://www.epa.gov/indoor-air-quality-iaq/should-you-have-air-ducts-your-home-cleaned) notes that cleaning HVAC **components** (coils, fans, heat exchangers) may improve efficiency, while **little evidence** supports efficiency gains from cleaning ducts alone. For leak losses, [ENERGY STAR](https://www.energystar.gov/saveathome/heating-cooling/duct-sealing) estimates about **20–30% of the air** in a typical duct system can be lost to leaks — sealing is a separate job from brush-and-vacuum cleaning.",
+        "Most homeowners notice something simpler after a thorough clean: less refilm on registers between dustings, and a more neutral smell when the system cycles on — when debris was the issue."
       ],
       "listItems": [
-        "Airflow reaches every register without restriction — no more hot-and-cold rooms",
-        "Filters last closer to their rated lifespan instead of clogging early",
-        "The blower motor runs shorter cycles to hit the thermostat set point",
-        "Allergen recirculation drops, and so do the sneezing fits"
+        "Airflow can feel more even when debris was restricting paths",
+        "Filters may last closer to their rated life instead of clogging early from system grit",
+        "Coil and blower maintenance still matter more for efficiency than duct-only cleaning",
+        "We document debris removal with before/after photos — not health outcomes"
       ]
     },
     {
       "id": "cleaning_process",
-      "heading": "What happens during a professional duct cleaning visit",
+      "heading": "What a professional visit looks like",
       "paragraphs": [
-        "A typical residential visit with Amazon Air Duct Cleaning takes 2–4 hours for a single-system home. Here's the sequence:"
+        "A typical residential visit with Amazon Air Duct Cleaning takes about 2–4 hours for a single-system home:"
       ],
       "listItems": [
-        "Walk-through inspection — Technicians check every register, the air handler, and the trunk lines to map the system and flag problem areas.",
-        "Furniture and floor protection — Drop cloths go down before any equipment comes out.",
-        "Negative-pressure hookup — A truck-mounted or portable vacuum connects to the main trunk, pulling air through the entire duct network so loosened debris has nowhere to go but into the collection unit.",
-        "Mechanical agitation — Specialized push-and-pull tools and compressed-air whips travel through each run, breaking loose compacted dust, pet hair, and construction grit.",
-        "Register and grille cleaning — Every vent cover comes off, gets cleaned, and goes back on.",
-        "Final airflow check — Technicians confirm that every register delivers strong, even airflow before packing up."
+        "Walk-through — registers, air handler, and accessible trunks; map problem spots",
+        "Protection — drop cloths before equipment comes out",
+        "Negative pressure — HEPA vacuum on the main trunk so loosened debris goes into containment",
+        "Agitation — tools and compressed-air whips through each run",
+        "Register cleaning — covers off, cleaned, reinstalled",
+        "Close-out — airflow check and before/after photos"
       ]
     },
     {
       "id": "cleaning_vs_diy",
-      "heading": "Why a shop vac and a brush kit fall short",
+      "heading": "Why a shop vac usually is not enough",
       "paragraphs": [
-        "A hardware-store brush can reach a few feet past the register opening. The trunk line that feeds your entire second floor may run 30 feet through the attic with two elbows along the way. Without commercial negative pressure and full-length agitation tools, you're cleaning the doorway and leaving the hallway untouched.",
-        "DIY also risks pushing debris deeper into the system or disconnecting flex duct joints in an attic — creating a leak that wastes energy and goes unnoticed for months."
+        "A hardware-store brush can reach a few feet past the register. Trunk lines often run much farther through attics or basements with elbows along the way. Without commercial negative pressure and full-length tools, you clean the opening and leave the run untouched.",
+        "DIY also risks pushing debris deeper or disconnecting flex joints. [ENERGY STAR](https://www.energystar.gov/saveathome/heating-cooling/duct-sealing) treats leaky ducts as a major efficiency issue — sealing them is separate from cleaning."
       ],
       "listItems": []
     },
     {
       "id": "maintain_clean_ducts",
-      "heading": "Keep ducts cleaner between professional visits",
+      "heading": "Habits that slow the reload",
       "paragraphs": [
-        "You can't eliminate accumulation, but you can slow it down:"
+        "You cannot eliminate accumulation, but you can slow it:"
       ],
       "listItems": [
-        "Swap filters on schedule — Every 60–90 days for standard filters, every 30–45 days in pet or allergy homes.",
-        "Don't skip annual HVAC tune-ups — A technician catches coil buildup, refrigerant issues, and blower problems before they dirty the ducts downstream.",
-        "Dust vent covers when you dust furniture — Registers are the visible mouth of the duct. Keeping them clear helps.",
-        "Run a dehumidifier in damp basements — Moisture in trunk lines feeds mold. Keep indoor humidity under 50%."
+        "Change filters on schedule — more often with pets or construction dust",
+        "Keep annual HVAC tune-ups — coils and blowers dirty the air stream downstream",
+        "Dust vent covers when you dust furniture",
+        "Control basement humidity where practical — moisture helps debris stick; EPA and County IAQ pages often cite roughly 30–50% indoor humidity as a comfort target"
       ]
     },
     {
       "id": "conclusion",
-      "heading": "Schedule based on your home, not a generic calendar",
+      "heading": "Book from what you see, not from a slogan",
       "paragraphs": [
-        "Three to five years works as a default, but pets, allergies, renovations, and high humidity all accelerate the buildup. If you see the warning signs — or if you simply can't remember the last cleaning — that's enough reason to book.",
-        "Amazon Air Duct Cleaning offers flat-rate residential packages from our Burke, VA and Bethesda, MD offices. Call [(800) 606-3334](tel:8006063334), browse [air duct cleaning packages](/air-duct-cleaning), or find your city on the [locations page](/locations) to get started."
+        "There is no official “every 3–5 years” rule from EPA. Use visible debris, renovation history, pets, and moisture as your guide. If you cannot remember the last full clean and the system looks loaded, an inspection is a reasonable next step.",
+        "Amazon Air Duct Cleaning offers flat-rate residential packages from Burke, VA and Bethesda, MD. Call [(800) 606-3334](tel:8006063334), see [air duct cleaning](/air-duct-cleaning), or pick your city on [locations](/locations)."
       ],
       "listItems": []
     }
@@ -114,11 +108,15 @@
   "faq": [
     {
       "q": "How often should most homes clean air ducts?",
-      "a": "Every 1–3 years is typical. Pets, renovations, smokers, or allergy households often need the shorter end of that range."
+      "a": "EPA does not set a health-based interval. Many homes clean every few years for maintenance; pets, renovations, or visible debris often mean sooner. Decide from inspection, not a universal slogan."
+    },
+    {
+      "q": "Does regular duct cleaning lower energy bills?",
+      "a": "EPA says little evidence shows cleaning only the ducts improves efficiency; coil/component cleaning may help more. ENERGY STAR focuses on sealing leaky ducts for air-loss savings. See our energy-bills article for linked sources."
     },
     {
       "q": "How often should dryer vents be cleaned?",
-      "a": "About once a year for most homes. High laundry volume or long vent runs may need service every six months."
+      "a": "About once a year is a common fire-safety habit for many homes. High laundry volume or long vent runs may need service more often. See NFPA dryer-fire research linked from our dryer vent page."
     },
     {
       "q": "Does a dirty filter mean the ducts need cleaning?",

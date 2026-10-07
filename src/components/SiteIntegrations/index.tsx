@@ -1,6 +1,8 @@
 import Script from 'next/script'
 import React from 'react'
 
+import { DeferredAnalytics } from '@/components/DeferredAnalytics'
+import { DeferredChatra } from '@/components/DeferredChatra'
 import type { SiteSetting } from '@/payload-types'
 import {
   sanitizeChatId,
@@ -34,55 +36,37 @@ export function SiteIntegrations({ settings }: SiteIntegrationsProps) {
 
   return (
     <>
+      {gaId || gtmId ? <DeferredAnalytics gaId={gaId} adsId={adsId} gtmId={gtmId} /> : null}
       {gtmId ? (
-        <>
-          <Script id="gtm" strategy="afterInteractive">
-            {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':Date.now(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${gtmId}');`}
-          </Script>
-          <noscript>
-            <iframe
-              src={`https://www.googletagmanager.com/ns.html?id=${gtmId}`}
-              height="0"
-              width="0"
-              className="hidden"
-              title="Google Tag Manager"
-            />
-          </noscript>
-        </>
-      ) : null}
-
-      {gaId ? (
-        <>
-          <Script
-            src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
-            strategy="afterInteractive"
+        <noscript>
+          <iframe
+            src={`https://www.googletagmanager.com/ns.html?id=${gtmId}`}
+            height="0"
+            width="0"
+            className="hidden"
+            title="Google Tag Manager"
           />
-          <Script id="ga-gtag" strategy="afterInteractive">
-            {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${gaId}');${adsId && adsId !== gaId ? `gtag('config','${adsId}');` : ''}`}
-          </Script>
-        </>
+        </noscript>
       ) : null}
 
       {chat?.provider === 'chatra' && chatId ? (
-        <Script id="chatra" strategy="afterInteractive">
-          {`window.ChatraID='${chatId}';window.ChatraSetup={colors:{buttonText:'${chatButtonText}',buttonBg:'${chatButtonBg}'}};(function(d,w,c){var s=d.createElement('script');w[c]=w[c]||function(){(w[c].q=w[c].q||[]).push(arguments)};s.async=true;s.src='https://call.chatra.io/chatra.js';if(d.head)d.head.appendChild(s)})(document,window,'Chatra');`}
-        </Script>
+        <DeferredChatra chatId={chatId} buttonBg={chatButtonBg} buttonText={chatButtonText} />
       ) : null}
 
       {chat?.provider === 'tawk' && chatId ? (
-        <Script id="tawk" strategy="afterInteractive">
+        <Script id="tawk" strategy="lazyOnload">
           {`var Tawk_API=Tawk_API||{},Tawk_LoadStart=new Date();(function(){var s=document.createElement('script'),e=document.getElementsByTagName('script')[0];s.async=true;s.src='https://embed.tawk.to/${chatId}';s.charset='UTF-8';s.setAttribute('crossorigin','*');e.parentNode.insertBefore(s,e)})();`}
         </Script>
       ) : null}
 
       {chat?.provider === 'crisp' && chatId ? (
-        <Script id="crisp" strategy="afterInteractive">
+        <Script id="crisp" strategy="lazyOnload">
           {`window.$crisp=[];window.CRISP_WEBSITE_ID='${chatId}';(function(){var d=document,s=d.createElement('script');s.src='https://client.crisp.chat/l.js';s.async=true;d.getElementsByTagName('head')[0].appendChild(s)})();`}
         </Script>
       ) : null}
 
       {chat?.provider === 'tidio' && chatId ? (
-        <Script src={`https://code.tidio.co/${chatId}.js`} strategy="afterInteractive" />
+        <Script src={`https://code.tidio.co/${chatId}.js`} strategy="lazyOnload" />
       ) : null}
 
       {userwayId ? (

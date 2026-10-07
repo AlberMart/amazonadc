@@ -1,9 +1,12 @@
 import configPromise from '@payload-config'
 import { getPayload } from 'payload'
 
+import { airDuctAndDryerVentCleaning } from '@/content/services/air-duct-and-dryer-vent-cleaning'
+import { airDuctCleaning } from '@/content/services/air-duct-cleaning'
+import { dryerVentCleaning } from '@/content/services/dryer-vent-cleaning'
+import { moldRemediationAirDucts } from '@/content/services/mold-remediation-air-ducts'
 import { resolveCmsImage, resolveCmsImageAlt } from '@/utilities/cmsImage'
 import { mapRawSections, type HomeSection } from '@/utilities/homeSections'
-import { loadPageSections } from '@/utilities/partials'
 import { withDbRetry } from '@/utilities/dbRetry'
 
 export type ServiceFaq = { q: string; a: string }
@@ -285,6 +288,51 @@ function mapService(doc: Record<string, unknown>): ServiceContent {
   }
 }
 
+const SERVICE_CONTENT_SEEDS: ServiceContent[] = [
+  dryerVentCleaning,
+  airDuctCleaning,
+  airDuctAndDryerVentCleaning,
+  moldRemediationAirDucts,
+]
+
+/**
+ * Marketing copy lives in `src/content/services/*`.
+ * CMS keeps live price / checkout URL / card order; seed wins for claims & FAQ text.
+ * Clearing sections forces ServicePage to render structured seed fields.
+ */
+function applyServiceSeedOverlay(service: ServiceContent): ServiceContent {
+  const seed = SERVICE_CONTENT_SEEDS.find((item) => item.slug === service.slug)
+  if (!seed) return service
+  return {
+    ...service,
+    title: seed.title,
+    description: seed.description,
+    summary: seed.summary,
+    heroImage: seed.heroImage || service.heroImage,
+    heroAlt: seed.heroAlt || service.heroAlt,
+    includesIntro: seed.includesIntro,
+    includesImage: seed.includesImage || service.includesImage,
+    includesImageAlt: seed.includesImageAlt || service.includesImageAlt,
+    includes: seed.includes,
+    beforeAfter: seed.beforeAfter || service.beforeAfter,
+    why: seed.why,
+    columns: seed.columns,
+    listBlocks: seed.listBlocks,
+    process: seed.process,
+    processAside: seed.processAside,
+    scheduleCta: seed.scheduleCta,
+    faqIntro: seed.faqIntro,
+    faq: seed.faq,
+    meta: {
+      ...(service.meta || {}),
+      title: seed.title,
+      description: seed.description,
+      image: seed.heroImage || service.meta?.image,
+    },
+    sections: [],
+  }
+}
+
 export async function getServiceContent(slug: string): Promise<ServiceContent | null> {
   const payload = await getPayload({ config: configPromise })
   const result = await payload.find({
@@ -296,11 +344,7 @@ export async function getServiceContent(slug: string): Promise<ServiceContent | 
   })
   const doc = result.docs[0]
   if (!doc) return null
-  const mapped = mapService(doc as unknown as Record<string, unknown>)
-  mapped.sections = await loadPageSections(
-    (doc as unknown as Record<string, unknown>).sections,
-  )
-  return mapped
+  return applyServiceSeedOverlay(mapService(doc as unknown as Record<string, unknown>))
 }
 
 export async function getAllServiceSlugs(): Promise<string[]> {
@@ -329,9 +373,22 @@ export async function getAllServiceCards(): Promise<ServiceCard[]> {
 
   const cards = result.docs.map((doc) => {
     const mapped = mapService(doc as unknown as Record<string, unknown>)
+    const seed = SERVICE_CONTENT_SEEDS.find((item) => item.slug === mapped.slug)
     const thumb =
+      seed?.heroImage ||
       resolveCmsImage(doc.thumbMedia, typeof doc.thumbImage === 'string' ? doc.thumbImage : undefined) ||
       mapped.heroImage
+    // Prefer seed cardOrder so dryer ($199) appears before ducts ($299) even if CMS order is stale.
+    const seedOrder =
+      mapped.slug === 'dryer-vent-cleaning'
+        ? 10
+        : mapped.slug === 'air-duct-cleaning'
+          ? 20
+          : mapped.slug === 'air-duct-and-dryer-vent-cleaning'
+            ? 30
+            : mapped.slug === 'mold-remediation-air-ducts'
+              ? 40
+              : null
     return {
       slug: mapped.slug,
       title: mapped.title,
@@ -339,10 +396,10 @@ export async function getAllServiceCards(): Promise<ServiceCard[]> {
       compareAtPrice: mapped.compareAtPrice,
       emptyPriceDisplay: mapped.emptyPriceDisplay,
       emptyPriceText: mapped.emptyPriceText,
-      cardOrder: mapped.cardOrder ?? 100,
+      cardOrder: seedOrder ?? mapped.cardOrder ?? 100,
       thumb,
       href: `/${mapped.slug}`,
-      summary: mapped.summary,
+      summary: seed?.summary || mapped.summary,
     }
   })
 

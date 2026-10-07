@@ -2,6 +2,8 @@ import Link from 'next/link'
 import React from 'react'
 
 import { BrandMark } from '@/components/BrandMark'
+import { footerCityNavRows } from '@/content/footerCities'
+import { officesSeedSource } from '@/content/offices'
 import { getCachedGlobalSafe } from '@/utilities/getGlobals'
 import { resolveBrandMark } from '@/utilities/brandMark'
 import { resolveCmsLink } from '@/utilities/cmsLink'
@@ -25,7 +27,7 @@ function FooterDetail({ text }: { text: string }) {
           <span key={`${line}-${index}`}>
             {index > 0 ? <br /> : null}
             {href ? (
-              <a className="hover:text-[var(--site-accent)]" href={href}>
+              <a className="inline-flex min-h-11 items-center hover:text-[var(--site-accent)]" href={href}>
                 {line}
               </a>
             ) : (
@@ -64,46 +66,57 @@ function ColumnHeading({ children }: { children: React.ReactNode }) {
   )
 }
 
-function withLocationLinks<T extends { title?: string | null; type?: string | null; links?: unknown[] | null }>(
+function withCuratedCitiesColumn<T extends { title?: string | null; type?: string | null; links?: unknown[] | null }>(
   columns: T[],
-  cityPages: Array<{ slug: string; city: string; state: string }>,
 ): T[] {
   const citiesIndex = columns.findIndex(
     (column) => column.type === 'links' && (column.title || '').trim().toLowerCase() === 'cities',
   )
   if (citiesIndex < 0) return columns
-
-  const hrefs = new Set<string>()
-  for (const column of columns) {
-    for (const row of column.links || []) {
-      const resolved = resolveCmsLink((row as { link?: unknown }).link)
-      if (resolved?.href) hrefs.add(resolved.href.replace(/\/$/, '') || resolved.href)
-    }
+  const next = [...columns]
+  next[citiesIndex] = {
+    ...columns[citiesIndex],
+    links: footerCityNavRows(),
   }
+  return next
+}
 
-  const extras = cityPages.filter((page) => !hrefs.has(`/locations/${page.slug}`))
-  if (!extras.length) return columns
+/** Keep footer Offices NAP in sync with `src/content/offices` (CMS detail text often stale). */
+function withSeedOfficeDetails<
+  T extends {
+    title?: string | null
+    type?: string | null
+    links?: Array<{ link?: unknown; detail?: string | null } | null> | null
+  },
+>(columns: T[]): T[] {
+  const officesIndex = columns.findIndex(
+    (column) => column.type === 'links' && (column.title || '').trim().toLowerCase() === 'offices',
+  )
+  if (officesIndex < 0) return columns
 
-  const citiesColumn = columns[citiesIndex]
-  const existingLinks = [...(citiesColumn.links || [])]
-  const allLocationsIndex = existingLinks.findIndex((row) => {
-    const resolved = resolveCmsLink((row as { link?: unknown }).link)
-    return resolved?.href === '/locations' || /all locations/i.test(resolved?.label || '')
+  const bySlug = new Map(
+    officesSeedSource.map((office) => [
+      office.slug,
+      `${office.streetAddress}\n${office.phoneDisplay}`,
+    ]),
+  )
+
+  const column = columns[officesIndex]
+  const links = (column.links || []).map((row) => {
+    if (!row) return row
+    const href =
+      typeof row.link === 'object' && row.link && 'url' in row.link
+        ? String((row.link as { url?: string | null }).url || '')
+        : ''
+    const match = href.match(/\/locations\/([^/?#]+)/i)
+    const slug = match?.[1]?.toLowerCase()
+    const detail = slug ? bySlug.get(slug) : undefined
+    if (!detail) return row
+    return { ...row, detail }
   })
-  const extraLinks = extras.map((page) => ({
-    link: {
-      type: 'custom' as const,
-      label: page.state === 'DC' ? `${page.city}, DC` : `${page.city}, ${page.state}`,
-      url: `/locations/${page.slug}`,
-    },
-  }))
-  const links =
-    allLocationsIndex >= 0
-      ? [...existingLinks.slice(0, allLocationsIndex), ...extraLinks, ...existingLinks.slice(allLocationsIndex)]
-      : [...existingLinks, ...extraLinks]
 
   const next = [...columns]
-  next[citiesIndex] = { ...citiesColumn, links }
+  next[officesIndex] = { ...column, links }
   return next
 }
 
@@ -128,22 +141,23 @@ export async function Footer() {
   const copyright =
     footerData?.copyrightText?.trim() || `© ${year} ${site.siteName}. All rights reserved.`
 
-  // Curated Cities column from CMS/seed only — do not auto-append every city page.
-  const columns = withLocationLinks(
-    footerData?.columns?.length
-      ? footerData.columns
-      : [
-          {
-            title: 'Explore',
-            type: 'links' as const,
-            links: [
-              { link: { type: 'custom' as const, label: 'Blog', url: '/blog' } },
-              { link: { type: 'custom' as const, label: 'Locations', url: '/locations' } },
-            ],
-          },
-          { title: 'Our Social Networks', type: 'social' as const, links: [] },
-        ],
-    [],
+  // Curated Cities hubs + Offices NAP from file seeds — full list is on /locations.
+  const columns = withSeedOfficeDetails(
+    withCuratedCitiesColumn(
+      footerData?.columns?.length
+        ? footerData.columns
+        : [
+            {
+              title: 'Explore',
+              type: 'links' as const,
+              links: [
+                { link: { type: 'custom' as const, label: 'Blog', url: '/blog' } },
+                { link: { type: 'custom' as const, label: 'Locations', url: '/locations' } },
+              ],
+            },
+            { title: 'Our Social Networks', type: 'social' as const, links: [] },
+          ],
+    ),
   )
 
   return (
@@ -157,12 +171,17 @@ export async function Footer() {
           />
           {tagline ? <p className="mt-3 max-w-sm text-sm text-[var(--site-on-dark-muted)]">{tagline}</p> : null}
           {showContactInBrand ? (
-            <p className="mt-5 text-sm">
-              <a className="hover:text-[var(--site-accent)]" href={toTelHref(site.phone)}>
+            <p className="mt-5 flex flex-col text-sm">
+              <a
+                className="inline-flex min-h-11 items-center hover:text-[var(--site-accent)]"
+                href={toTelHref(site.phone)}
+              >
                 {site.phoneDisplay}
               </a>
-              <br />
-              <a className="hover:text-[var(--site-accent)]" href={`mailto:${site.email}`}>
+              <a
+                className="inline-flex min-h-11 items-center hover:text-[var(--site-accent)]"
+                href={`mailto:${site.email}`}
+              >
                 {site.email}
               </a>
             </p>
@@ -200,11 +219,17 @@ export async function Footer() {
               return (
                 <div key={key}>
                   <ColumnHeading>{column.title}</ColumnHeading>
-                  <div className="mt-4 space-y-2 text-sm text-white/80">
-                    <a className="block hover:text-[var(--site-accent)]" href={toTelHref(site.phone)}>
+                  <div className="mt-4 flex flex-col text-sm text-white/80">
+                    <a
+                      className="inline-flex min-h-11 items-center hover:text-[var(--site-accent)]"
+                      href={toTelHref(site.phone)}
+                    >
                       {site.phoneDisplay}
                     </a>
-                    <a className="block hover:text-[var(--site-accent)]" href={`mailto:${site.email}`}>
+                    <a
+                      className="inline-flex min-h-11 items-center hover:text-[var(--site-accent)]"
+                      href={`mailto:${site.email}`}
+                    >
                       {site.email}
                     </a>
                   </div>
@@ -232,7 +257,14 @@ export async function Footer() {
                     return (
                       <li key={`${item.label}-${item.href}`}>
                         {external ? (
-                          <a className="hover:text-[var(--site-accent)]" href={item.href}>
+                          <a
+                            className={
+                              /^(tel:|mailto:)/i.test(item.href)
+                                ? 'inline-flex min-h-11 items-center hover:text-[var(--site-accent)]'
+                                : 'hover:text-[var(--site-accent)]'
+                            }
+                            href={item.href}
+                          >
                             {item.label}
                           </a>
                         ) : (

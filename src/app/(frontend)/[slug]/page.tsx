@@ -15,11 +15,12 @@ import { JsonLd } from '@/components/JsonLd'
 import { generateMeta } from '@/utilities/generateMeta'
 import { getAllLegalSlugs, getLegalPage } from '@/utilities/legal'
 import { getAllServiceSlugs, getServiceContent } from '@/utilities/services'
-import { faqItemsFromSections } from '@/utilities/homeSections'
+import { faqItemsFromSections, processStepsFromSections } from '@/utilities/homeSections'
 import {
   absoluteUrl,
   breadcrumb,
   faqNode,
+  howToNode,
   getSiteSeo,
   jsonLd,
   pageTitle,
@@ -87,6 +88,17 @@ export default async function Page({ params: paramsPromise }: Args) {
       ],
       path,
     )
+    const faqItems =
+      faqItemsFromSections(serviceContent.sections || []).length > 0
+        ? faqItemsFromSections(serviceContent.sections || [])
+        : serviceContent.faq
+    const processSteps =
+      processStepsFromSections(serviceContent.sections || []).length > 0
+        ? processStepsFromSections(serviceContent.sections || [])
+        : (serviceContent.process?.steps || []).map((step) => ({
+            title: step.title,
+            text: step.text,
+          }))
     const structuredData = jsonLd([
       webPageNode({
         path,
@@ -107,7 +119,14 @@ export default async function Page({ params: paramsPromise }: Args) {
         site,
         idMode: 'page',
       }),
-      faqNode(faqItemsFromSections(serviceContent.sections || []).length ? faqItemsFromSections(serviceContent.sections || []) : serviceContent.faq, {
+      howToNode({
+        name: serviceContent.process?.heading || `${serviceContent.title} process`,
+        description: serviceContent.process?.intro || serviceContent.description,
+        steps: processSteps,
+        pagePath: path,
+        image: serviceContent.heroImage,
+      }),
+      faqNode(faqItems, {
         pagePath: path,
         aboutId: businessId,
         publisherId: `${absoluteUrl('/')}#organization`,

@@ -88,45 +88,56 @@ export function mapOffice(doc: Record<string, unknown>): OfficeContent {
     ...(seed?.areaServedCities || []),
   ]
 
+  // NAP + geo: file seed is SoT (CMS often lags after address corrections).
   return {
     id: (doc.id as number | string) ?? '',
     slug,
-    name: String(doc.name || ''),
-    streetAddress: String(doc.streetAddress || ''),
-    city: String(doc.city || ''),
-    state: String(doc.state || ''),
-    postalCode: String(doc.postalCode || ''),
-    phone: String(doc.phone || ''),
-    phoneDisplay: String(doc.phoneDisplay || ''),
-    email: String(doc.email || 'support@amazonadc.com'),
-    description: String(doc.description || ''),
-    latitude: Number(doc.latitude || 0),
-    longitude: Number(doc.longitude || 0),
-    geoRadiusMeters: Number(doc.geoRadiusMeters || 30000),
-    hasMapUrl: String(doc.hasMapUrl || ''),
-    googleBusinessUrl: String(doc.googleBusinessUrl || ''),
+    name: seed?.name || String(doc.name || ''),
+    streetAddress: seed?.streetAddress || String(doc.streetAddress || ''),
+    city: seed?.city || String(doc.city || ''),
+    state: seed?.state || String(doc.state || ''),
+    postalCode: seed?.postalCode || String(doc.postalCode || ''),
+    phone: seed?.phone || String(doc.phone || ''),
+    phoneDisplay: seed?.phoneDisplay || String(doc.phoneDisplay || ''),
+    email: String(doc.email || seed?.email || 'support@amazonadc.com'),
+    description: String(doc.description || seed?.description || ''),
+    latitude: Number(seed?.latitude ?? doc.latitude ?? 0),
+    longitude: Number(seed?.longitude ?? doc.longitude ?? 0),
+    geoRadiusMeters: Number(doc.geoRadiusMeters || seed?.geoRadiusMeters || 30000),
+    hasMapUrl: seed?.hasMapUrl || String(doc.hasMapUrl || ''),
+    googleBusinessUrl: seed?.googleBusinessUrl || String(doc.googleBusinessUrl || ''),
     sameAs: [...new Set(sameAs)],
     areaServedCities: [...new Set(areaServedCities)],
-    aggregateRatingValue: Number(doc.aggregateRatingValue || 5),
-    aggregateReviewCount: Number(doc.aggregateReviewCount || 0),
-    weekdayOpens: String(doc.weekdayOpens || '08:00'),
-    weekdayCloses: String(doc.weekdayCloses || '20:00'),
-    saturdayOpens: String(doc.saturdayOpens || '09:00'),
-    saturdayCloses: String(doc.saturdayCloses || '20:00'),
-    priceRange: String(doc.priceRange || '$$'),
-    featuredReviews: reviewRows
-      .filter(Boolean)
-      .map((row) => {
-        const author = String(row?.author || '')
-        return {
-          initials: initialsFrom(author, row?.initials),
-          author,
-          text: String(row?.text || ''),
-          rating: Number(row?.rating || 5),
-          googleUrl: String(row?.googleUrl || ''),
-        }
-      })
-      .filter((row) => row.author && row.text),
+    aggregateRatingValue: Number(doc.aggregateRatingValue || seed?.aggregateRatingValue || 5),
+    aggregateReviewCount: Number(doc.aggregateReviewCount || seed?.aggregateReviewCount || 0),
+    weekdayOpens: String(doc.weekdayOpens || seed?.weekdayOpens || '08:00'),
+    weekdayCloses: String(doc.weekdayCloses || seed?.weekdayCloses || '20:00'),
+    saturdayOpens: String(doc.saturdayOpens || seed?.saturdayOpens || '09:00'),
+    saturdayCloses: String(doc.saturdayCloses || seed?.saturdayCloses || '20:00'),
+    priceRange: String(doc.priceRange || seed?.priceRange || '$$'),
+    featuredReviews: (() => {
+      const fromCms = reviewRows
+        .filter(Boolean)
+        .map((row) => {
+          const author = String(row?.author || '')
+          return {
+            initials: initialsFrom(author, row?.initials),
+            author,
+            text: String(row?.text || ''),
+            rating: Number(row?.rating || 5),
+            googleUrl: String(row?.googleUrl || ''),
+          }
+        })
+        .filter((row) => row.author && row.text)
+      if (fromCms.length) return fromCms
+      return (seed?.featuredReviews || []).map((row) => ({
+        initials: initialsFrom(row.author, row.initials),
+        author: row.author,
+        text: row.text,
+        rating: row.rating,
+        googleUrl: row.googleUrl,
+      }))
+    })(),
   }
 }
 

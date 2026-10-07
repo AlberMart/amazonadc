@@ -51,7 +51,7 @@ function buildFaq(city, state, office, phone, slug, h) {
     a:
       office === 'Burke'
         ? `${city} appointments leave from Burke, VA (5641 Burke Centre Pkwy Ste 119). Call ${phone} for air duct or dryer vent cleaning on your street.`
-        : `${city} appointments leave from Bethesda, MD (7815 Old Georgetown Rd Ste 201). Call ${phone} for air duct or dryer vent cleaning on your street.`,
+        : `${city} appointments leave from Bethesda, MD (7815A Old Georgetown Rd Ste 201). Call ${phone} for air duct or dryer vent cleaning on your street.`,
   })
 
   items.push({

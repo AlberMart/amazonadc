@@ -1,106 +1,93 @@
 {
   "slug": "can-dirty-air-ducts-cause-allergies",
   "title": "Can Dirty Air Ducts Cause Allergies?",
-  "headline": "Can Dirty Air Ducts Cause Allergies? What Homeowners Need to Know",
-  "description": "Your HVAC may be recirculating dust mites, pet dander, and mold spores with every cycle. Here's how contaminated ducts trigger indoor allergy symptoms — and what stops the cycle.",
+  "headline": "What dirty ducts can hold — and what EPA does (and does not) say about health",
+  "description": "Can dirty air ducts cause allergies? What EPA says, what ducts can and cannot fix, and when cleaning still makes sense.",
   "heroImage": "/img/blog/can-dirty-air-ducts-cause-allergies.webp",
   "sections": [
     {
       "id": "allergens_in_ducts",
-      "heading": "What's actually living inside your ductwork",
+      "heading": "What can collect inside ductwork",
       "paragraphs": [
-        "Duct contamination builds invisibly. By the time anyone in the household notices symptoms, the allergen load inside the trunk lines may represent years of accumulation. The most common culprits:"
+        "Over time, HVAC ducts can collect dust, pollen tracked indoors, pet dander, and other debris on interior surfaces. That buildup is real — and source-removal cleaning is designed to remove it.",
+        "What is **not** established is a simple medical claim that dirty ducts cause allergies or that cleaning cures them. [EPA guidance](https://www.epa.gov/indoor-air-quality-iaq/should-you-have-air-ducts-your-home-cleaned) states that duct cleaning has **not been shown to prevent health problems**, and that studies have not conclusively shown that dirty ducts raise particle levels in living spaces."
       ],
       "listItems": [
-        "Dust mite debris — Microscopic waste particles settle through the home and get drawn into returns, where they accumulate and recirculate with every blower cycle.",
-        "Pet dander — Skin flakes from dogs and cats travel through the air and coat duct walls. Dander stays airborne far longer than visible pet hair.",
-        "Mold and mildew spores — Condensation or high humidity inside ductwork creates conditions for active growth. Every HVAC cycle pushes fresh spores into living spaces.",
-        "Pollen — Tracked indoors on shoes and clothing, pollen settles into return ducts and gets redistributed long after the outdoor season ends.",
-        "Pest debris — Cockroach and rodent droppings inside ducts are potent allergen sources that require professional removal.",
-        "VOC residues — Traces of cleaning products, paint, and adhesives can settle in ducts and irritate sensitive airways."
+        "Dust and fine debris — settle on duct surfaces between filter changes and blower cycles",
+        "Pet dander — can coat returns and trunks in multi-pet homes",
+        "Pollen — tracked indoors, then redistributed when the system runs",
+        "Visible mold — EPA says consider cleaning when substantial mold is present on hard surfaces (moisture must still be fixed)",
+        "Pest debris — droppings or nesting material need inspection and removal, not a DIY wipe"
       ]
     },
     {
       "id": "symptoms",
-      "heading": "Symptoms that point to your ductwork, not the season",
+      "heading": "Symptoms deserve a careful look — not a guarantee",
       "paragraphs": [
-        "Seasonal allergies come and go with pollen counts. Duct-driven symptoms are different — they follow the HVAC schedule, not the forecast. Watch for these patterns:",
-        "Sneezing that flares specifically when the system runs — and calms when it cycles off — is the clearest indoor-air signal.",
-        "Red, watery eyes that improve at the office and return when you get home suggest airborne particles circulating through your living spaces, not an outdoor trigger.",
-        "A persistent dry cough with no cold or virus behind it can result from continuous inhalation of fine particulate matter blown through contaminated trunk lines.",
-        "Asthma patients exposed to duct-borne allergens often see an increase in rescue inhaler use. If episodes cluster at home, the air supply deserves investigation.",
-        "Nasal congestion that doesn't respond to antihistamines — especially when it's worst in bedrooms served by the HVAC — points to an indoor source.",
-        "Dust mite particles and mold spores are documented eczema triggers. Elevated levels recirculating through ductwork can keep skin flare-ups active year-round."
+        "Some households notice sneezing, congestion, or irritation that seems worse when the HVAC runs. That pattern can have many causes: filters, humidity, outdoor pollen, carpet dust, or other indoor sources — not only ducts.",
+        "We do not diagnose allergies or claim that cleaning will stop symptoms. If symptoms cluster at home, talk with a clinician and consider broader indoor-air steps (filtration, humidity, source control) alongside any HVAC inspection. For general indoor mold and moisture context, see [EPA mold guidance](https://www.epa.gov/mold) and [CDC mold basics](https://www.cdc.gov/mold/about/index.html)."
       ],
       "listItems": [
-        "Sneezing and runny nose tied to HVAC cycles",
-        "Itchy or watery eyes that clear up away from home",
-        "Dry cough and throat irritation with no infection",
-        "More frequent asthma episodes indoors",
-        "Persistent congestion unresponsive to medication",
-        "Eczema or skin flare-ups that worsen at home"
+        "Symptoms that track HVAC cycles may warrant an inspection — they do not prove ducts are the cause",
+        "EPA does not treat routine duct cleaning as a proven allergy treatment",
+        "Visible dust discharging from supplies or substantial mold are clearer reasons to clean"
       ]
     },
     {
       "id": "high_risk_households",
-      "heading": "Households where duct allergens hit hardest",
+      "heading": "When inspection (and cleaning) makes more sense",
       "paragraphs": [
-        "Every home accumulates duct contamination over time, but these factors multiply the allergen load and its impact:"
+        "EPA suggests considering duct cleaning when there is substantial visible mold, pest contamination, or debris discharging into living spaces — not because every home needs a calendar-based “allergy clean.”"
       ],
       "listItems": [
-        "Homes with pets — Dander is one of the stickiest indoor allergens. In multi-pet households, duct walls coat fast and re-contaminate the air with every cycle.",
-        "Previous water damage or high humidity — Moisture inside ducts feeds mold colonies. Homes in the DC-area humidity corridor or with basement HVAC trunks face elevated spore risk.",
-        "Young children or elderly residents — Developing and aging immune systems are more vulnerable to chronic low-level allergen exposure.",
-        "Recent renovations — Drywall dust and insulation fibers enter the duct system during construction and remain suspended in the air supply long after the crew leaves.",
-        "Overdue filter changes — A saturated filter lets allergens pass straight into the ducts instead of trapping them."
+        "Pets and heavy occupancy — more debris load on returns and trunks",
+        "Recent renovations — drywall dust and construction debris in the system",
+        "Known moisture or visible mold on hard duct surfaces",
+        "Overdue filters — change filters first; a clogged filter is often the primary issue"
       ]
     },
     {
       "id": "cleaning_process",
-      "heading": "How professional cleaning removes the allergen load",
+      "heading": "What professional cleaning actually does",
       "paragraphs": [
-        "Surface cleaning — wiping registers, vacuuming near vents — doesn't reach the trunk lines where allergens concentrate. A professional allergy-focused cleaning includes:"
+        "A thorough job focuses on mechanical source removal — not medical promises:"
       ],
       "listItems": [
-        "Contamination assessment — Technicians inspect the trunk lines, branch runs, and air handler to map the buildup and identify moisture or mold.",
-        "Containment setup — Floors and furniture are protected. The system is sealed so loosened particles are captured, not redistributed into your living space.",
-        "Negative-pressure extraction — A commercial vacuum creates suction throughout the duct network, pulling dislodged allergens into a sealed collection unit.",
-        "Mechanical agitation — Specialized push-and-pull tools and compressed-air whips travel through each run, breaking loose the compacted layer of dander, dust mite debris, and pollen that clings to duct walls.",
-        "Antimicrobial treatment — Where inspection confirms mold or heavy biological contamination, a sanitizing agent is applied after mechanical cleaning to neutralize residual spores.",
-        "Post-cleaning verification — Technicians confirm airflow through every register and review findings with the homeowner."
+        "Inspection — map accessible trunks, returns, and the air handler",
+        "Containment and HEPA negative pressure — capture loosened debris instead of blowing it into rooms",
+        "Agitation — tools loosen compacted debris from hard duct surfaces",
+        "Optional antimicrobial — EPA-registered product on suitable hard surfaces after cleaning when requested; not a sterilizing or medical claim",
+        "Before/after photos — so you can see what was removed"
       ]
     },
     {
       "id": "prevention",
-      "heading": "Slow the recontamination between cleanings",
+      "heading": "Habits that matter between visits",
       "paragraphs": [
-        "A professional cleaning resets the allergen load to near zero. These habits keep it low:"
+        "Cleaning resets debris in the system. Keeping filters current and humidity reasonable usually matters more day-to-day than any claim about “allergy-free air.”"
       ],
       "listItems": [
-        "Replace filters every 30–60 days in allergy or pet households — don't stretch to the standard 90-day interval.",
-        "Use MERV 8–11 filters — They capture dander, pollen, and mold spores without starving airflow on residential blowers.",
-        "Hold indoor humidity between 30–50% — A basement dehumidifier is often all it takes to keep duct-interior conditions hostile to mold.",
-        "Groom pets regularly and keep them out of bedrooms — Less dander entering the system means slower re-accumulation.",
-        "Vacuum with a HEPA-filter machine — Surface allergens that go airborne end up in the return ducts. Trapping them at the floor keeps them out of the HVAC.",
-        "Book duct cleaning annually for allergy homes — Tighter than the standard 1–3 year interval, and worth the investment."
+        "Replace filters on schedule — more often with pets or construction dust",
+        "Hold indoor humidity roughly 30–50% where practical — helps limit mold-friendly conditions",
+        "Vacuum with a HEPA-capable machine — less surface dust pulled into returns",
+        "Schedule ducts when inspection or renovation debris justifies it — not as a guaranteed health cure"
       ]
     },
     {
       "id": "conclusion",
-      "heading": "Stop recirculating what makes you sneeze",
+      "heading": "Clear expectations beat overpromises",
       "paragraphs": [
-        "Dirty ducts turn your HVAC system into an allergen distribution network. Dust mites, dander, pollen, and mold spores accumulate invisibly inside the trunk lines and get pushed into every room, every cycle, every day. For allergy and asthma sufferers, the home that should be a refuge becomes a persistent trigger.",
-        "Professional cleaning removes the accumulated load and breaks the recirculation cycle. Combined with better filter habits and humidity control, clean ductwork is one of the most effective indoor-air improvements an allergy household can make.",
-        "Call [(800) 606-3334](tel:8006063334) or visit the [air duct cleaning page](/air-duct-cleaning) to book. Find your nearest service area on the [locations page](/locations) — we dispatch from Burke, VA and Bethesda, MD across the DMV."
+        "Dirty ducts can hold and move debris. That is a maintenance and cleanliness issue. EPA is explicit that routine duct cleaning is not a proven way to prevent health problems.",
+        "If you want source-removal cleaning with before/after proof — or inspection shows substantial mold or debris — call [(800) 606-3334](tel:8006063334) or visit the [air duct cleaning page](/air-duct-cleaning). We dispatch from Burke, VA and Bethesda, MD across the DMV."
       ],
       "listItems": []
     },
     {
       "id": "air_ducts_and_allergies",
-      "heading": "Your HVAC is also your allergen delivery system",
+      "heading": "Your HVAC moves air — it is not a medical device",
       "paragraphs": [
-        "Every room in your home receives air from the same duct network. When that network is clean, the system delivers comfort. When it's contaminated, it delivers dust mite particles, pet dander, mold spores, and pollen directly into your breathing space — on repeat, every time the blower cycles on.",
-        "For allergy sufferers, this invisible recirculation can make indoor air more problematic than outdoor air during peak pollen season. The home becomes the trigger instead of the escape."
+        "Every room shares the same duct network. When the system is dirty, cleaning can remove visible debris. When someone has allergies, a doctor and broader IAQ steps belong in the plan — duct cleaning alone is not a diagnosis or a cure.",
+        "Primary source: [EPA — Should you have the air ducts in your home cleaned?](https://www.epa.gov/indoor-air-quality-iaq/should-you-have-air-ducts-your-home-cleaned)."
       ],
       "listItems": [],
       "image": "/img/blog/clogged-dryer-vent-lint.webp"
@@ -109,15 +96,15 @@
   "faq": [
     {
       "q": "Can dirty ducts worsen allergy symptoms?",
-      "a": "Ducts can recirculate dust, pollen, pet dander, and mold spores. Cleaning reduces that load; it is not a medical treatment."
+      "a": "Ducts can recirculate dust, pollen, and pet dander. That does not prove they cause allergies. EPA says cleaning has not been shown to prevent health problems — we remove debris; we do not treat medical conditions."
     },
     {
       "q": "Should allergy households clean ducts more often?",
-      "a": "Often yes — every 2–4 years is common when pets, pollen, or humid basements are in the mix. Ask after an inspection."
+      "a": "Often they inspect sooner after pets, pollen seasons, or humid basements. Timing should follow what you see in the system, not a health guarantee."
     },
     {
       "q": "Does sanitizing help allergy homes?",
-      "a": "Antimicrobial treatment is complimentary on request when inspection supports it. Mechanical cleaning still comes first."
+      "a": "Optional EPA-registered antimicrobial is available on request after mechanical cleaning. It is not a sterilizing or allergy-cure claim."
     },
     {
       "q": "How do I book for Northern Virginia or Maryland?",

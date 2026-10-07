@@ -1,77 +1,84 @@
 import type { LocationContentSeed } from '@/utilities/locations'
 
+/**
+ * Lorton — former prison / Laurel Hill new build dust + I-95 + Occoquan humidity; not Springfield Mixing Bowl or Mt Vernon Parkway.
+ * Links used:
+ * - https://www.fairfaxcounty.gov/health/environment/mold
+ * - https://www.fairfaxcounty.gov/health/environment/healthy-homes-fairfax
+ * - https://www.fairfaxcounty.gov/code/property-maintenance
+ * - https://www.vdh.virginia.gov/environmental-health/2018/07/17/who-do-i-contact-for-help-with-mold-removal/
+ */
 export const lorton: LocationContentSeed = {
   slug: 'lorton',
   title: 'Air Duct Cleaning in Lorton, VA',
-  headline:
-    'Air duct and dryer vent cleaning for Lorton Station, Laurel Hill, and the I-95 corridor',
+  headline: 'Lorton Station, Laurel Hill, and Occoquan-edge homes — short hop from Burke',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Lorton, VA. Flat rates from our Burke office for new HOAs, older homes, and Occoquan-humidity streets. Call (571) 460-0001.',
+    'Air duct & dryer vent cleaning in Lorton, VA. Flat rates for Laurel Hill & Occoquan-area homes. Call (571) 460-0001.',
   intro:
-    'Amazon Air Duct Cleaning serves Lorton from our Burke office \u2014 scheduled from our serving office. I-95 corridor houses, Laurel Hill HOAs, and older streets toward the Occoquan all take on traffic dust and river humidity. Call (571) 460-0001.',
+    'Lorton is **south Fairfax** along I-95 and the VRE — Lorton Station, Laurel Hill on former prison grounds, Gunston toward the Occoquan. New-build gypsum and grading dust still loads first-owner trunks; I-95 film and river humidity meet on the same supply metal. Burke is minutes up the county. (571) 460-0001.',
   heroImage: '/img/locations/lorton.webp',
-  heroAlt: 'Air duct cleaning in Lorton, VA \u2014 Amazon Air Duct Cleaning',
+  heroAlt: 'Air duct cleaning in Lorton, VA — Amazon Air Duct Cleaning',
   city: 'Lorton',
   state: 'VA',
   servedBy: 'burke',
   sectionLayout: 'leanNoOffers',
   about: {
-    heading: 'I-95 Particulates, Occoquan Moisture, and Two Generations of Housing Stock',
+    heading: 'Redevelopment dust, interstate particulate, and Occoquan moisture',
     paragraphs: [
-      'Lorton sits south of Springfield along I-95 where interstate traffic, the VRE corridor, and the Occoquan River converge. Lorton Station and Laurel Hill represent the newer wave \u2014 2000s\u20132010s HOA townhomes and single-family streets built on the former prison grounds, many with stacked laundry closets and attic air handlers. Older pockets along Lorton Road predate the HOA era with 1970s split-levels and ramblers whose original trunks carry decades of accumulated debris.',
-      'I-95 keeps a constant film of fine road particles in the outdoor air, and the Occoquan adds a humid air mass that the Springfield Mixing Bowl corridor does not quite replicate. That combination means cool supply metal sweats inside both new and older homes, trapping the highway dust along with spring pollen. A Lorton Station dryer that takes two cycles is almost always a lint-packed chase running to a roof cap, not a failing machine.',
-      'Our Burke crew serves Lorton alongside [Springfield](/locations/springfield), [Mount Vernon](/locations/mount-vernon), and [Prince William](/locations/prince-william). Read about [Lorton, I-95, and Occoquan air duct conditions](/blog/lorton-i95-occoquan-air-ducts).',
+      'Laurel Hill and Lorton Station represent a **second-generation Lorton**: 2000s–2010s HOAs and singles on land that once held the Fairfax County prison complex and Workhouse Arts Center adjacency — fine grading dust, drywall fines, and disturbed soil particulate can sit in ducts before landscaping fully stabilizes. Older Lorton Road split-levels and 1970s ramblers predate the HOAs with decades of trunk accumulation and basement handlers near damp soil.',
+      'I-95 maintains a steady load of road-surface particulate; the **Occoquan** adds humid air that keeps basement and crawl supply metal sweating through summer. Highway dust and spring pollen cement to trunk walls. Lorton Station townhome dryers that need two cycles are usually lint-packed vertical chases to roof caps — not failing appliances.',
+      'Fairfax County’s [mold page](https://www.fairfaxcounty.gov/health/environment/mold) does not test indoor air or perform remediation; [Healthy Homes Fairfax](https://www.fairfaxcounty.gov/health/environment/healthy-homes-fairfax) focuses on moisture control. [Property maintenance](https://www.fairfaxcounty.gov/code/property-maintenance) separates moisture defects from “mold alone.” Local pattern: [Lorton, I-95, and Occoquan air ducts](/blog/lorton-i95-occoquan-air-ducts). Burke serves Lorton with [Prince William](/locations/prince-william) southbound routes.',
     ],
     highlights: [
-      'Lorton Station, Laurel Hill, Gunston, and I-95-corridor streets',
-      'Flat-rate pricing from the Burke office up the road',
-      'Before-and-after photo set included with every job',
-      'Same crew working Springfield and Mount Vernon routes weekly',
+      'Laurel Hill / prison-site redevelopment angle',
+      'I-95 film plus Occoquan humidity',
+      'County Health mold boundaries cited',
+      'Burke: (571) 460-0001',
     ],
   },
-  offersTitle: 'Lorton Duct & Dryer Vent Packages',
+  offersTitle: 'Lorton flat-rate packages',
   services: {
-    heading: 'What We Clean in Lorton HOA and Older Corridor Homes',
-    intro: 'Newer HOA stacks and older split-level trunks receive the same published flat-rate scope.',
+    heading: 'New HOA stacks and older corridor split-levels',
+    intro: 'Vinyl-sided Laurel Hill and 1970s Lorton Road both get walkthrough scope before price locks.',
     items: [
       {
-        title: 'Air Duct Cleaning for Lorton Homes',
-        text: 'We seal HEPA-filtered negative-pressure equipment to the trunk and agitate every supply line, return, and register with specialized agitation tools. Sanitizing is included when the on-site walkthrough identifies biological growth \u2014 common where Occoquan humidity meets cool basement metal. You receive the before-and-after photos. Schedule [air duct cleaning](/air-duct-cleaning).',
+        title: 'Air duct cleaning (source removal)',
+        text: 'HEPA negative pressure and agitation through supplies, returns, and registers — including post-construction fines on new streets and I-95 film on older trunks. [EPA duct guidance](https://www.epa.gov/indoor-air-quality-iaq/should-you-have-air-ducts-your-home-cleaned). [Air duct cleaning](/air-duct-cleaning).',
       },
       {
-        title: 'Dryer Vent Service',
-        text: 'Lorton Station and Laurel Hill townhome dryer chases run vertically through shared walls and pack with lint faster than ground-level suburban runs. We rod-brush and vacuum the full path to the roof cap so the appliance vents safely. Book [dryer vent cleaning](/dryer-vent-cleaning).',
+        title: 'Dryer vent cleaning',
+        text: 'Vertical townhome chases to roof caps cleared with rod-brush and vacuum; draw verified before close-out. [NFPA dryer-fire research](https://www.nfpa.org/education-and-research/research/nfpa-research/fire-statistical-reports/home-fires-involving-clothes-dryers-and-washing-machines). [Dryer vent cleaning](/dryer-vent-cleaning).',
       },
       {
-        title: 'Mold Treatment in Lorton Ductwork',
-        text: 'River humidity and basement air handlers sitting near damp soil create conditions for mold on evaporator coils and inside dead-end supply branches. We clean mechanically first, then apply EPA-registered antimicrobial treatment along the ventilation path. Details at [mold remediation for air ducts](/mold-remediation-air-ducts).',
+        title: 'Optional antimicrobial on hard duct surfaces',
+        text: 'After mechanical cleaning when Occoquan-season humidity left biological film on hard metal or coils — not river flood remediation. [Mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
     ],
   },
   why: {
-    heading: 'Why Lorton Homes Combine Highway Film With River Moisture',
+    heading: 'How we work jobs in Lorton',
     items: [
       {
-        title: 'Up I-95 From Burke \u2014 a Fairfax County Run',
-        text: 'Burke to Lorton is a short drive down the same county. The truck is not crossing the river from Maryland for a Lorton Station townhome.',
+        title: 'I-95 and redevelopment dust',
+        text: 'Laurel Hill first-owner trunks and older Lorton Road split-levels both see highway film and post-construction fines — scoped on the walkthrough, same flat-rate menu after confirmation.',
       },
       {
-        title: 'New HOA and Older Stock on One Route',
-        text: 'Laurel Hill vinyl siding and a 1970s Lorton Road split-level are both standard jobs. We inspect the actual trunks before quoting \u2014 no assumptions based on curb appearance.',
+        title: 'Occoquan-edge humidity',
+        text: 'River-influenced air keeps cool supply metal sweating; County Health moisture guidance still applies — cleaning removes trunk debris, dehumidification slows return.',
       },
       {
-        title: 'Price Locked Before Equipment Comes Off the Truck',
-        text: 'Residential duct and dryer packages are flat-rate. The number on the confirmation is the number on the invoice.',
+        title: 'New vs old stock, one flat-rate menu',
+        text: 'First-owner Laurel Hill and older split-level trunks quote from the same published packages after on-site scope.',
       },
       {
-        title: 'Satisfaction Guarantee',
-        text: 'If the Lorton result falls short, contact us within 7 days — we re-perform the work or refund per our refund policy.',
+        title: 'Short Burke hop',
+        text: 'South Fairfax dispatch from Burke — a short hop, with a booked window you can plan around, not a cross-state trek.',
       },
     ],
   },
   communities: {
-    heading: 'Lorton Station, Occoquan Edge, and Laurel Hill',
-    intro: 'Springfield and Prince William pages sit nearby on the corridor.',
+    heading: 'Lorton Station, Laurel Hill, and Occoquan edge',
+    intro: 'Springfield and Prince William are neighboring corridor pages.',
     groups: [
       {
         title: 'Lorton Station',
@@ -82,63 +89,58 @@ export const lorton: LocationContentSeed = {
         places: 'Laurel Hill HOAs, former prison-site streets, newer single-family clusters',
       },
       {
-        title: 'Occoquan & Gunston',
-        places:
-          'Gunston, Occoquan-edge streets, blocks toward [Mt Vernon](/locations/mount-vernon) and [Prince William](/locations/prince-william)',
+        title: 'Gunston & Occoquan',
+        places: 'Gunston, Occoquan-edge streets, blocks toward [Mt Vernon](/locations/mount-vernon) and [Prince William](/locations/prince-william)',
       },
     ],
   },
   process: {
-    heading: 'South Fairfax Dispatch From Burke',
-    intro: 'Arrival windows reflect the drive from Burke to Lorton.',
+    heading: 'Burke → Lorton visit flow',
+    intro: 'Redevelopment-era dust and river-humidity basements scoped before negative pressure.',
     steps: [
       {
-        title: 'Walkthrough and quote',
-        text: 'In Lorton we ask about pets, renovations, and longer drive-time homes where arrival windows matter in Lorton before locking a flat-rate number for this VA address.',
+        title: 'Era of construction',
+        text: 'Laurel Hill first-owner vs 1970s split-level changes expected trunk load — scoped on walkthrough, not assumed from siding age.',
       },
       {
-        title: 'Arrival window',
-        text: 'Morning-of text with a realistic ETA from the Burke office to your Lorton street — not a vague all-day window.',
+        title: 'Moisture vs mechanical scope',
+        text: 'Active groundwater or unresolved leak stays with repair contractors. We clean ducts and dryer vents you book today.',
       },
       {
-        title: 'Agree the package',
-        text: 'For this Lorton home: ducts, dryer vent, or both — scoped on site, quoted before equipment starts, paid after you are satisfied.',
+        title: 'Lock package and price',
+        text: 'Ducts, dryer vent, or both — confirmed before tools run; antimicrobial only with your OK.',
       },
       {
-        title: 'HEPA source-removal cleaning',
-        text: 'We agitate and vacuum supplies, returns, and registers in this Lorton system under negative pressure so debris leaves in the vacuum.',
+        title: 'Source-removal + photos',
+        text: 'HEPA agitation through scoped runs; before/after images at close-out.',
       },
       {
-        title: 'Photos and handoff',
-        text: 'Before/after photos, filter tips, and a dryer-vent interval for Lorton seasons. Questions go to (571) 460-0001.',
+        title: 'Handoff',
+        text: 'Filter tips, [Healthy Homes Fairfax](https://www.fairfaxcounty.gov/health/environment/healthy-homes-fairfax) humidity reminder, and (571) 460-0001.',
       },
     ],
   },
-  faqIntro: 'Lorton questions — call (571) 460-0001 (dispatch: Burke).',
+  faqIntro: 'Lorton booking questions — call (571) 460-0001 (Burke).',
   faq: [
     {
-      q: 'Which office books jobs for Lorton?',
-      a: 'Lorton appointments leave from Burke, VA (5641 Burke Centre Pkwy Ste 119). Call (571) 460-0001 for air duct or dryer vent cleaning on your street.',
+      q: 'Should I use the Springfield page for Lorton Station?',
+      a: 'Use this **Lorton** page for Lorton Station, Laurel Hill, and Gunston. [Springfield](/locations/springfield) covers the Mixing Bowl, Franconia, and West Springfield — a different dust and housing story.',
     },
     {
-      q: 'What access do you need before arrival?',
-      a: 'In Lorton, clear a path to the air handler and dryer — basement trunks and dryer closets especially. Share gate or parking notes for your block.',
+      q: 'Does Fairfax County test mold in my Lorton townhome?',
+      a: 'No. County [mold guidance](https://www.fairfaxcounty.gov/health/environment/mold) does not perform indoor air testing or remediation. [VDH](https://www.vdh.virginia.gov/environmental-health/2018/07/17/who-do-i-contact-for-help-with-mold-removal/) does not recommend specific contractors.',
     },
     {
-      q: 'How long is a typical visit?',
-      a: 'Most Lorton single-system houses finish in about 2–3 hours. Older trunks with additions can add time after inspection.',
+      q: 'We bought new on Laurel Hill — why is there dust in the ducts?',
+      a: 'Grading, drywall, and punch-list construction on former prison-site pads can leave fines in trunks before move-in. Mechanical cleaning removes that load — see [Lorton, I-95, and Occoquan air ducts](/blog/lorton-i95-occoquan-air-ducts).',
     },
     {
-      q: 'Is pricing flat-rate or by the vent?',
-      a: 'Lorton residential packages are flat-rate from Burke. We scope during the walkthrough, confirm before equipment starts, and that is what you pay — no per-vent counting.',
+      q: 'Which office serves Lorton?',
+      a: 'Burke, VA (5641 Burke Centre Pkwy Ste 119). Call (571) 460-0001 — typically a short south-county drive.',
     },
     {
       q: 'Can ducts and the dryer vent be done in one visit?',
-      a: 'Yes for Lorton — book the combined package up front. Call (571) 460-0001; the Burke crew brings both tool sets for one stop.',
-    },
-    {
-      q: 'How far ahead should I book?',
-      a: 'Lorton is a longer run from Burke. Book several days ahead for realistic windows; call (571) 460-0001 for the next open Lorton slot.',
+      a: 'Yes when booked together — common for Lorton Station stacked chases. Call (571) 460-0001.',
     },
   ],
 }

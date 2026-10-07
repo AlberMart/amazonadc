@@ -34,7 +34,8 @@ const FALLBACK_SITE: SiteSeo = {
     'Professional air duct, dryer vent, and HVAC cleaning in Virginia, Maryland, and Washington DC.',
   priceRange: '$$-$$$',
   logoPath: '/img/logo.png',
-  defaultOgImage: '/img/Amazon.webp',
+  // JPEG (not WebP): WhatsApp / Telegram / iMessage often skip WebP OG cards.
+  defaultOgImage: '/img/og-default.jpg',
   defaultMetaTitle: SEO_META_TITLE,
   defaultMetaDescription: SEO_META_DESCRIPTION,
   titleSuffix: 'Amazon Air Duct Cleaning',
@@ -80,6 +81,26 @@ export function absoluteUrl(path = '/') {
   return `${origin}${path.startsWith('/') ? path : `/${path}`}`
 }
 
+/** Prefer a messenger-safe JPEG share card over legacy WebP defaults in CMS. */
+function resolveDefaultOgImage(path?: string | null): string {
+  const value = (path || '').trim()
+  if (!value) return FALLBACK_SITE.defaultOgImage
+  // Seed / early CMS used Amazon.webp — WhatsApp & Telegram often show no card for WebP.
+  if (value === '/img/Amazon.webp' || value.endsWith('/img/Amazon.webp')) {
+    return FALLBACK_SITE.defaultOgImage
+  }
+  return value
+}
+
+function ogImageType(path: string): string | undefined {
+  const lower = path.toLowerCase()
+  if (lower.endsWith('.jpg') || lower.endsWith('.jpeg')) return 'image/jpeg'
+  if (lower.endsWith('.png')) return 'image/png'
+  if (lower.endsWith('.webp')) return 'image/webp'
+  if (lower.endsWith('.gif')) return 'image/gif'
+  return undefined
+}
+
 function rollPriceValidUntil(value?: string | null): string {
   const nextYear = new Date().getUTCFullYear() + 1
   const rolled = `${nextYear}-12-31`
@@ -108,11 +129,12 @@ export async function getSiteSeo(): Promise<SiteSeo> {
           (settings as { logo?: unknown }).logo,
           settings.logoPath,
         ) || FALLBACK_SITE.logoPath,
-      defaultOgImage:
+      defaultOgImage: resolveDefaultOgImage(
         resolveCmsImage(
           (settings as { defaultOgImageUpload?: unknown }).defaultOgImageUpload,
           settings.defaultOgImage,
-        ) || FALLBACK_SITE.defaultOgImage,
+        ),
+      ),
       defaultMetaTitle: settings.defaultMetaTitle || FALLBACK_SITE.defaultMetaTitle,
       defaultMetaDescription:
         settings.defaultMetaDescription || FALLBACK_SITE.defaultMetaDescription,
@@ -131,8 +153,14 @@ export async function getSiteSeo(): Promise<SiteSeo> {
 }
 
 export function pageTitle(title: string, suffix = FALLBACK_SITE.titleSuffix) {
-  if (!title) return suffix
-  return title.includes(suffix) ? title : `${title} | ${suffix}`
+  const base = title.replace(/\s+/g, ' ').trim()
+  if (!base) return clampMetaTitle(suffix, DOCUMENT_TITLE_MAX)
+  if (base.includes(suffix)) return clampMetaTitle(base, DOCUMENT_TITLE_MAX)
+  const combined = `${base} | ${suffix}`
+  // Keep the visible <title> within ~60 chars (Bing/Google SERP-friendly).
+  if (combined.length <= DOCUMENT_TITLE_MAX) return combined
+  if (base.length <= DOCUMENT_TITLE_MAX) return base
+  return clampMetaTitle(base, DOCUMENT_TITLE_MAX)
 }
 
 export type PageMetaInput = {
@@ -153,13 +181,42 @@ export type PageMetaInput = {
   site?: SiteSeo
 }
 
+/** Google/Bing typically display ~50–60 characters; keep unique titles SERP-safe. */
+export const META_TITLE_MAX = 60
+/** Absolute <title> budget (Bing flags titles over ~60). Brand suffix only if it fits. */
+export const DOCUMENT_TITLE_MAX = 60
+
+/** Google typically displays ~150–160 characters; keep SERP snippets intact. */
+export const META_DESCRIPTION_MAX = 155
+
+export function clampMetaTitle(text: string, max = META_TITLE_MAX): string {
+  const clean = text.replace(/\s+/g, ' ').trim()
+  if (clean.length <= max) return clean
+  const sliced = clean.slice(0, max - 1)
+  const lastSpace = sliced.lastIndexOf(' ')
+  const base = lastSpace > Math.floor(max * 0.55) ? sliced.slice(0, lastSpace) : sliced
+  return base.replace(/[.,;:!\-–—|/]+$/u, '').trim()
+}
+
+export function clampMetaDescription(text: string, max = META_DESCRIPTION_MAX): string {
+  const clean = text.replace(/\s+/g, ' ').trim()
+  if (clean.length <= max) return clean
+  const sliced = clean.slice(0, max - 1)
+  const lastSpace = sliced.lastIndexOf(' ')
+  const base = lastSpace > Math.floor(max * 0.6) ? sliced.slice(0, lastSpace) : sliced
+  return `${base.replace(/[.,;:!\-–—\s]+$/u, '')}…`
+}
+
 export function resolvePageMeta(input: PageMetaInput, site: SiteSeo = FALLBACK_SITE): Metadata {
-  const titleBase =
-    input.meta?.title?.trim() || input.fallbackTitle?.trim() || site.defaultMetaTitle
-  const description =
+  const titleBase = clampMetaTitle(
+    input.meta?.title?.trim() || input.fallbackTitle?.trim() || site.defaultMetaTitle,
+  )
+  const rawDescription =
     input.meta?.description?.trim() ||
     input.fallbackDescription?.trim() ||
     site.defaultMetaDescription
+  /** Google typically truncates snippets around 155–160 characters. */
+  const description = clampMetaDescription(rawDescription)
   const image =
     (typeof input.meta?.image === 'string' && input.meta.image) ||
     input.fallbackImage ||
@@ -169,6 +226,7 @@ export function resolvePageMeta(input: PageMetaInput, site: SiteSeo = FALLBACK_S
   const imageUrl = absoluteUrl(image)
   const isProduct = Boolean(input.ogTypeProduct)
   const articleType = input.type === 'article'
+  const imageType = ogImageType(image)
 
   const metadata: Metadata = {
     title: { absolute: fullTitle },
@@ -189,9 +247,11 @@ export function resolvePageMeta(input: PageMetaInput, site: SiteSeo = FALLBACK_S
       images: [
         {
           url: imageUrl,
+          secureUrl: imageUrl,
           alt: input.imageAlt || titleBase,
           width: 1200,
           height: 630,
+          type: imageType || 'image/jpeg',
         },
       ],
     },
@@ -200,6 +260,11 @@ export function resolvePageMeta(input: PageMetaInput, site: SiteSeo = FALLBACK_S
       title: fullTitle,
       description,
       images: [imageUrl],
+    },
+    // Helps Facebook/Messenger scrapers that still look for these explicitly.
+    other: {
+      'og:image:secure_url': imageUrl,
+      'content-rev': '2026-10-03-meta-og',
     },
   }
 
@@ -347,6 +412,46 @@ export function faqNode(
   }
 }
 
+export function howToNode({
+  name,
+  description,
+  steps,
+  pagePath,
+  image,
+}: {
+  name: string
+  description?: string
+  steps: Array<{ title: string; text: string }>
+  pagePath: string
+  image?: string | null
+}) {
+  const clean = steps.filter((step) => step.title && step.text)
+  if (!clean.length) return null
+  const pageUrl = absoluteUrl(pagePath)
+  return {
+    '@type': 'HowTo',
+    '@id': `${pageUrl}#howto`,
+    name,
+    ...(description ? { description } : {}),
+    ...(image
+      ? {
+          image: {
+            '@type': 'ImageObject',
+            url: absoluteUrl(image),
+          },
+        }
+      : {}),
+    totalTime: 'PT3H',
+    step: clean.map((step, index) => ({
+      '@type': 'HowToStep',
+      position: index + 1,
+      name: step.title,
+      text: step.text,
+      url: `${pageUrl}#step-${index + 1}`,
+    })),
+  }
+}
+
 function officeSameAs(office: OfficeContent, site: SiteSeo) {
   const links = [
     office.googleBusinessUrl,
@@ -426,11 +531,20 @@ function cityAreaServed(office: OfficeContent) {
   return nodes
 }
 
-export function officeBranchNode(office: OfficeContent, site: SiteSeo) {
+export function officeBranchNode(
+  office: OfficeContent,
+  site: SiteSeo,
+  options?: { image?: string | null; description?: string | null },
+) {
   const path = `/locations/${office.slug}`
   const url = absoluteUrl(path)
   const orgId = `${absoluteUrl('/')}#organization`
   const sameAs = officeSameAs(office, site)
+  const image = options?.image || site.defaultOgImage
+  const description =
+    options?.description ||
+    office.description ||
+    `${site.siteName} in ${office.city}, ${office.state}`
 
   return {
     '@type': ['HVACBusiness', 'HomeAndConstructionBusiness', 'LocalBusiness'],
@@ -438,7 +552,7 @@ export function officeBranchNode(office: OfficeContent, site: SiteSeo) {
     parentOrganization: { '@id': orgId },
     branchOf: { '@id': orgId },
     name: office.name,
-    description: office.description || `${site.siteName} in ${office.city}, ${office.state}`,
+    description,
     telephone: office.phone,
     email: office.email || site.email,
     url,
@@ -446,7 +560,7 @@ export function officeBranchNode(office: OfficeContent, site: SiteSeo) {
       '@type': 'WebPage',
       '@id': url,
     },
-    image: absoluteUrl(site.defaultOgImage),
+    image: absoluteUrl(image),
     ...(office.hasMapUrl ? { hasMap: office.hasMapUrl } : {}),
     ...(sameAs.length ? { sameAs } : {}),
     address: officeAddress(office),
@@ -743,7 +857,7 @@ export function blogPostingNode({
     '@id': `${url}#article`,
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': url,
+      '@id': `${url}#webpage`,
     },
     headline,
     description,
@@ -769,6 +883,64 @@ export function blogPostingNode({
     articleSection,
     ...(keywords?.length ? { keywords } : {}),
     isPartOf: { '@id': `${absoluteUrl('/')}#website` },
+  }
+}
+
+/**
+ * Satellite city page (service area, not a storefront).
+ * Honest NAP: city/region only — real street + geo + hours + reviews live on the office hub.
+ */
+export function serviceAreaLocationNode({
+  city,
+  state,
+  path,
+  description,
+  image,
+  telephone,
+  email,
+  officeId,
+  site,
+  priceRange,
+}: {
+  city: string
+  state: string
+  path: string
+  description: string
+  image: string
+  telephone: string
+  email: string
+  officeId: string
+  site: SiteSeo
+  priceRange?: string | null
+}) {
+  const pageUrl = absoluteUrl(path)
+  const cityName = state === 'DC' ? 'Washington, DC' : city
+  const regionName =
+    state === 'MD' ? 'Maryland' : state === 'DC' ? 'Washington DC' : 'Virginia'
+  const regionCode = state === 'DC' ? 'DC' : state
+
+  return {
+    '@type': ['HVACBusiness', 'LocalBusiness'],
+    '@id': `${pageUrl}#local`,
+    name: `${site.siteName} — ${cityName}`,
+    url: pageUrl,
+    telephone,
+    email,
+    image: absoluteUrl(image),
+    description,
+    parentOrganization: { '@id': `${absoluteUrl('/')}#organization` },
+    provider: { '@id': officeId },
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: cityName,
+      addressRegion: regionCode,
+      addressCountry: 'US',
+    },
+    areaServed: [
+      { '@type': 'City', name: cityName },
+      { '@type': 'State', name: regionName },
+    ],
+    priceRange: priceRange || site.priceRange,
   }
 }
 

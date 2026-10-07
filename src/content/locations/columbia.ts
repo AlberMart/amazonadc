@@ -1,144 +1,112 @@
 import type { LocationContentSeed } from '@/utilities/locations'
 
+/**
+ * Columbia — Howard County Health mold (no county testing) + Tenant Mold Protection Act 15/45 via landlord-tenant pub.
+ */
 export const columbia: LocationContentSeed = {
   slug: 'columbia',
-  title: 'Air Duct Cleaning in Columbia, MD',
-  headline:
-    'Air duct and dryer vent cleaning for Rouse village centers, townhomes, and lake streets',
+  title: 'Columbia MD Air Duct & Dryer Vent Cleaning',
+  headline: 'Village townhomes and lake-edge basements — scheduled from our Bethesda office',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Columbia, MD. Flat rates from our Bethesda office for Howard County village townhomes and lake-side humidity. Call (301) 809-4544.',
+    'Air duct & dryer vent cleaning in Columbia, MD. Flat rates for village townhomes & lake-edge homes. Call (301) 809-4544.',
   intro:
-    'Amazon Air Duct Cleaning serves Columbia from our Bethesda office — an Howard County drive. Rouse village townhomes and houses near the lakes take on pollen and damp-season film. Call (301) 809-4544.',
+    'Howard County Health Department says it has no program to evaluate mold concerns. Village townhomes and lake-adjacent houses still load ducts with pollen and damp-season film. We clean ducts and dryer vents from Bethesda with flat rates and photos. Call (301) 809-4544.',
   heroImage: '/img/locations/columbia.webp',
   heroAlt: 'Air duct cleaning in Columbia, MD — Amazon Air Duct Cleaning',
   city: 'Columbia',
   state: 'MD',
   servedBy: 'bethesda',
-  sectionLayout: 'servicesFirst',
+  sectionLayout: 'faqMid',
   about: {
-    heading: 'Ten-Village Planned City, Lake-Path Humidity, and 1970s Mechanical Closets',
+    heading: 'Rouse villages + County honesty',
     paragraphs: [
-      'Columbia spans ten named villages across Howard County — Wilde Lake, Hickory Ridge, Owen Brown, Oakland Mills, Kings Contrivance, Long Reach, Harper\'s Choice, Dorsey\'s Search, River Hill, and Town Center connecting them. James Rouse\'s 1960s plan meant most of the original housing went up between the early 1970s and mid-1990s: townhomes on village courts, colonials on path-adjacent lots, and condos near the commercial centers. Mechanical closets in those townhomes were sized for the equipment of their era, and dryer vents were routed through party walls and between-floor chases with bends that modern high-efficiency machines push lint through harder and faster than the original design anticipated.',
-      'Lake Kittamaqundi, Wilde Lake, and the path system\'s stream valleys keep the local microclimate wetter than open Howard County farmland. That humidity enters lower-level living spaces through return grilles, and cool trunk surfaces below finished floors trap it alongside oak pollen from the path-side canopy. Clarksville is a nearby community on the same dispatch, and [Ellicott City](/locations/ellicott-city) is the adjacent Howard County page.',
-      'We dispatch Columbia from [Bethesda](/locations/bethesda) — a longer drive that we schedule with transparent arrival windows. Our post on [Columbia village townhomes and air ducts](/blog/columbia-village-townhomes-air-ducts) covers the planned-community duct challenges.',
+      'Columbia’s ten villages mean party-wall townhomes, path-adjacent colonials, and lake-edge humidity pockets — mechanical closets sized for 1970s–90s equipment with dryer chases that modern machines pack harder. That planned-community layout is what we walk through on most Howard County jobs from Bethesda.',
+      'Howard County’s [Mold](https://www.howardcountymd.gov/health/mold) page is blunt: the Health Department does not evaluate mold concerns or provide assistance programs for them; inspect for water damage, control humidity (at or below about 50% is the common target they discuss), and use trained specialists for testing if you choose it. County Inspections also states mold inspections are not performed by County personnel.',
+      'Maryland’s Tenant Mold Protection Act — summarized in Howard County’s [landlord-tenant publication](https://www.howardcountymd.gov/consumer-protection/landlord-tenant-publication) — expects landlords to assess after written notice on short clocks and remediate when mold is found. Duct cleaning does not replace that housing-law path. We schedule Columbia from Bethesda with [Ellicott City](/locations/ellicott-city) nearby.',
     ],
     highlights: [
-      'Town Center, Wilde Lake, Hickory Ridge, Owen Brown, Kings Contrivance, and Long Reach',
-      'Flat-rate packages for village townhomes through single-family colonials',
-      'Before-and-after photos documenting every trunk and register',
-      'HOA-aware scheduling with coordinated arrival and equipment placement',
+      'Howard County “no mold evaluation program” cited',
+      'Village townhome + lake humidity angle',
+      'Tenant mold timelines pointed to County pub',
+      'Bethesda: (301) 809-4544',
     ],
   },
-  offersTitle: 'Columbia Village Townhome and Colonial Rates',
+  offersTitle: 'Columbia packages',
   services: {
-    heading: 'Columbia Services for Rouse-Era Townhomes and Lake-Adjacent Homes',
-    intro: 'Village townhome closets and path-side colonials share the Columbia microclimate but present different access challenges — both are scoped and priced individually before work begins.',
+    heading: 'What we clean in village housing',
+    intro: 'Townhomes and singles share the rate card; dryer chase geometry differs.',
     items: [
       {
-        title: 'Air Duct Cleaning & Sanitization',
-        text: 'HEPA negative pressure and mechanical agitation through townhome trunk lines concealed behind finished walls and colonial supply runs radiating from lower-level air handlers. Columbia\'s lake-path humidity binds oak pollen and household fibers into a film that filter changes alone cannot clear from the trunk walls. Scope details at [air duct cleaning](/air-duct-cleaning).',
+        title: 'Air duct cleaning',
+        text: 'Source removal for compact village systems. [EPA](https://www.epa.gov/indoor-air-quality-iaq/should-you-have-air-ducts-your-home-cleaned). [Air duct cleaning](/air-duct-cleaning).',
       },
       {
-        title: 'Dryer Vent Cleaning',
-        text: 'Rouse-era townhome dryer chases thread through party walls and between-floor cavities with bends that compress lint into solid plugs over a few high-use seasons. We trace the entire path, brush every bend, and test draw at the exterior cap before packing up. Schedule at [dryer vent cleaning](/dryer-vent-cleaning).',
+        title: 'Dryer vent cleaning',
+        text: 'Party-wall and between-floor chases common in Rouse-era townhomes. [NFPA](https://www.nfpa.org/education-and-research/research/nfpa-research/fire-statistical-reports/home-fires-involving-clothes-dryers-and-washing-machines). [Dryer vent cleaning](/dryer-vent-cleaning).',
       },
       {
-        title: 'Ventilation & HVAC Mold Treatment',
-        text: 'Lower-level air handlers near Lake Kittamaqundi and the Wilde Lake basin sit in spaces where summer dew points keep coil surfaces perpetually damp. When the scope walk confirms microbial presence on coils, plenum walls, or trunk interiors, we treat the affected ventilation path with EPA-registered antimicrobials. More at [mold remediation for air ducts](/mold-remediation-air-ducts).',
+        title: 'Optional duct antimicrobial',
+        text: 'After mechanical cleaning when film is present — not a County mold evaluation. [Mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
     ],
   },
   why: {
-    heading: 'Why Columbia\'s Planned-Community Layout Creates Unique Duct Challenges',
+    heading: 'Why homeowners in Columbia book us',
     items: [
       {
-        title: 'Howard County Drive Disclosed at Booking',
-        text: 'Columbia is farther than our Montgomery County stops. We say so when you call (301) 809-4544 and build the drive into a realistic arrival window.',
+        title: 'Health Dept will not “clear” you',
+        text: 'No County mold evaluation program — photos from a cleaning visit are private documentation, not a health-department certificate.',
       },
       {
-        title: 'Village Court Access Coordinated With HOA Rules',
-        text: 'Townhome courts in Columbia villages have specific parking and noise requirements. Our crew confirms access details before the appointment so HOA compliance is not an afterthought.',
+        title: 'Columbia Association vs duct cleaning',
+        text: 'Columbia Association context matters for leases; it does not clean your trunks. We do when hired.',
       },
       {
-        title: 'Party-Wall Chases and Tight Closets Handled as Standard',
-        text: 'Rouse-era mechanical closets and shared dryer chases are the norm in Columbia, not a premium add-on. The flat-rate package covers that access pattern.',
+        title: 'Lake-edge humidity',
+        text: 'County humidity advice maps cleanly onto lake-adjacent basements and crawl spaces.',
       },
       {
-        title: 'Photo-Documented Satisfaction Guarantee',
-        text: 'Before-and-after images of every trunk section and register are shared at close-out. If you are not satisfied, we return and re-clean at no cost.',
+        title: 'Flat rate from Bethesda',
+        text: 'Howard County drive — we set a clear appointment window and stay reachable if traffic stretches it.',
       },
     ],
   },
   communities: {
-    heading: 'Village Clusters We Already Route Through',
-    intro: 'Farther than Montgomery core; Ellicott City is the next Howard page.',
+    heading: 'Villages we commonly stage',
+    intro: 'Named villages keep this list Columbia — not generic “Howard County.”',
     groups: [
-      {
-        title: 'Town Center & Wilde Lake',
-        places: 'Columbia Town Center, Wilde Lake, Lake Kittamaqundi, Symphony Woods edge',
-      },
-      {
-        title: 'Hickory Ridge, Owen Brown & Oakland Mills',
-        places: 'Hickory Ridge, Owen Brown, Oakland Mills, Long Reach',
-      },
-      {
-        title: 'Kings Contrivance & toward Clarksville',
-        places:
-          'Kings Contrivance, River Hill edge, streets toward Clarksville — ask if your village is not listed',
-      },
+      { title: 'Central & west', places: 'Town Center, Wilde Lake, Harper’s Choice, Hickory Ridge' },
+      { title: 'South & east', places: 'Owen Brown, Oakland Mills, Long Reach, Kings Contrivance' },
+      { title: 'North & newer edges', places: 'River Hill, Dorsey’s Search, lake-adjacent streets' },
     ],
   },
   process: {
-    heading: 'Howard County Drive From Bethesda — Planned',
-    intro: 'Arrival windows reflect the drive from Bethesda to Columbia.',
+    heading: 'Bethesda → Columbia',
+    intro: 'Share village and parking notes when you book so the crew knows the court layout.',
     steps: [
-      {
-        title: 'Walkthrough and quote',
-        text: 'In Columbia we ask about pets, renovations, and longer drive-time homes where arrival windows matter in Columbia before locking a flat-rate number for this MD address.',
-      },
-      {
-        title: 'Arrival window',
-        text: 'Morning-of text with a realistic ETA from the Bethesda office to your Columbia street — not a vague all-day window.',
-      },
-      {
-        title: 'Agree the package',
-        text: 'For this Columbia home: ducts, dryer vent, or both — scoped on site, quoted before equipment starts, paid after you are satisfied.',
-      },
-      {
-        title: 'HEPA source-removal cleaning',
-        text: 'We agitate and vacuum supplies, returns, and registers in this Columbia system under negative pressure so debris leaves in the vacuum.',
-      },
-      {
-        title: 'Photos and handoff',
-        text: 'Before/after photos, filter tips, and a dryer-vent interval for Columbia seasons. Questions go to (301) 809-4544.',
-      },
+      { title: 'Village / parking', text: 'Court parking vs open lot — tell us which.' },
+      { title: 'Scope', text: 'Ducts, dryer chase, or both; flat rate first.' },
+      { title: 'Clean + photos', text: 'Source removal and dryer brush-out.' },
+      { title: 'Handoff', text: 'Humidity target from County mold reading; (301) 809-4544.' },
     ],
   },
-  faqIntro: 'Columbia questions — call (301) 809-4544 (dispatch: Bethesda).',
+  faqIntro: 'Howard County links. Book: (301) 809-4544.',
   faq: [
     {
-      q: 'Which office books jobs for Columbia?',
-      a: 'Columbia appointments leave from Bethesda, MD (7815 Old Georgetown Rd Ste 201). Call (301) 809-4544 for air duct or dryer vent cleaning on your street.',
+      q: 'Will Howard County inspect mold in my Columbia townhome?',
+      a: 'The Health Department [mold page](https://www.howardcountymd.gov/health/mold) says it has no program to evaluate mold concerns. County Inspections also does not perform mold inspections.',
     },
     {
-      q: 'What access do you need before arrival?',
-      a: 'In Columbia, clear a path to the air handler and dryer — basement trunks and dryer closets especially. Share gate or parking notes for your block.',
+      q: 'What are landlord mold timelines in Maryland?',
+      a: 'Howard County’s [landlord-tenant publication](https://www.howardcountymd.gov/consumer-protection/landlord-tenant-publication) summarizes Tenant Mold Protection Act duties — including assessment after written notice and remediation windows when mold is found. Read that page for the live summary; we do not enforce it.',
     },
     {
-      q: 'How long is a typical visit?',
-      a: 'Most Columbia single-system houses finish in about 2–3 hours. Older trunks with additions can add time after inspection.',
+      q: 'Do you clean Columbia Association properties?',
+      a: 'We clean resident-hired HVAC ducts and dryer vents in Columbia addresses. CA facilities are out of residential scope unless separately contracted.',
     },
     {
-      q: 'Is pricing flat-rate or by the vent?',
-      a: 'Columbia residential packages are flat-rate from Bethesda. We scope during the walkthrough, confirm before equipment starts, and that is what you pay — no per-vent counting.',
-    },
-    {
-      q: 'Can ducts and the dryer vent be done in one visit?',
-      a: 'Yes for Columbia — book the combined package up front. Call (301) 809-4544; the Bethesda crew brings both tool sets for one stop.',
-    },
-    {
-      q: 'How far ahead should I book?',
-      a: 'Columbia is a longer run from Bethesda. Book several days ahead for realistic windows; call (301) 809-4544 for the next open Columbia slot.',
+      q: 'Which office serves Columbia?',
+      a: 'Bethesda, MD. Call (301) 809-4544.',
     },
   ],
 }

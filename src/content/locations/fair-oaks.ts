@@ -1,77 +1,84 @@
 import type { LocationContentSeed } from '@/utilities/locations'
 
+/**
+ * Fair Oaks CDP — Fair Oaks Mall / Fair Lakes corridor; not City of Fairfax.
+ * Links used:
+ * - https://www.fairfaxcounty.gov/health/environment/mold
+ * - https://www.fairfaxcounty.gov/health/environment/healthy-homes-fairfax
+ * - https://www.fairfaxcounty.gov/code/property-maintenance
+ * - https://www.vdh.virginia.gov/environmental-health/2018/07/17/who-do-i-contact-for-help-with-mold-removal/
+ */
 export const fairOaks: LocationContentSeed = {
   slug: 'fair-oaks',
-  title: 'Air Duct Cleaning in Fair Oaks, VA',
-  headline:
-    'Air duct and dryer vent cleaning for Fair Oaks Mall, Fair Lakes, and the 50/66 townhome grid',
+  title: 'Fair Oaks & Fair Lakes Air Duct Cleaning',
+  headline: 'Mall-corridor townhomes and Route 50/I-66 dust — flat rates from Burke',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Fair Oaks, VA. Flat rates from our Burke office for mall-area townhomes, Fair Lakes HOAs, and Route 50/I-66 dust. Call (571) 460-0001.',
+    'Air duct & dryer vent cleaning in Fair Oaks & Fair Lakes, VA. Flat rates, before/after photos. Call (571) 460-0001.',
   intro:
-    'Amazon Air Duct Cleaning serves Fair Oaks from our Burke office. Townhomes along 50 and 66, Fair Lakes clusters, and streets next to Fairfax Corner all take on corridor dust. This is not a duplicate of the City of Fairfax page. Call (571) 460-0001.',
+    'Fair Oaks is the **Fairfax County** community around Fair Oaks Mall, Fair Lakes, and the Route 50 / I-66 knot — not the independent [City of Fairfax](/locations/fairfax) jurisdiction. Attic-mounted handlers, stacked laundry closets, and highway-adjacent returns load faster than quiet county subdivisions. County Health explains mold prevention but does not test indoor air or remediate for you. Burke dispatch: (571) 460-0001.',
   heroImage: '/img/locations/fair-oaks.webp',
-  heroAlt: 'Air duct cleaning in Fair Oaks, VA \u2014 Amazon Air Duct Cleaning',
+  heroAlt: 'Air duct cleaning in Fair Oaks, VA — Amazon Air Duct Cleaning',
   city: 'Fair Oaks',
   state: 'VA',
   servedBy: 'burke',
   sectionLayout: 'faqMid',
   about: {
-    heading: 'Mall-Grid Townhomes, Attic Handlers, and Route 50 Construction Particulates',
+    heading: 'Mall-grid HOAs meet County mold honesty',
     paragraphs: [
-      'Fair Oaks is the Fairfax County community anchored by Fair Oaks Mall, the West Ox Road corridor, and the I-66 / Route 50 interchange \u2014 distinct from the independent City of Fairfax. The housing is predominantly 1980s\u20132000s HOA townhomes and single-family homes with attic-mounted air handlers, stacked laundry closets, and visitor parking lots that sit in highway-adjacent traffic film. Fair Lakes fills the grid to the north; Fairfax Corner marks the boundary where jobs may belong on the [Fairfax](/locations/fairfax) page if the address is inside city limits.',
-      'Attic handlers run hot from May through September, pulling humid outdoor air through returns already coated with Beltway-adjacent dust and Route 50 construction particulates. When that hot air hits cold supply metal, the temperature gap creates condensation that cements dust to trunk interiors. Townhome dryer chases climb through interior walls and pack with lint far faster than single-story runs. A unit that looks too new to need cleaning often still harbors original builder drywall dust that was never vacuumed from the supply trunks.',
-      'Our Burke crew serves Fair Oaks alongside [Fairfax](/locations/fairfax), [Oakton](/locations/oakton), and [Chantilly](/locations/chantilly). Read about [Fair Oaks townhome dust and air ducts](/blog/fair-oaks-townhomes-dust-air-ducts).',
+      '1980s–2000s townhomes and singles dominate Fair Oaks and Fair Lakes — attic handlers under hot roofs, mall/West Ox traffic film, and brake dust from visitor lots. Fairfax Corner and Monument Drive may sit **inside City of Fairfax** limits; if your HOA says “City of Fairfax,” use [Fairfax](/locations/fairfax).',
+      'County [mold guidance](https://www.fairfaxcounty.gov/health/environment/mold): Health does **not** test indoor air or remediate mold. [Healthy Homes](https://www.fairfaxcounty.gov/health/environment/healthy-homes-fairfax) stresses moisture control; [Property Maintenance](https://www.fairfaxcounty.gov/code/property-maintenance) notes mold alone is not a code violation — leaks that cause moisture may be. We clear trunks and dryer runs; we do not replace a Code case about water.',
+      'Many Fair Oaks homes still hold **original builder drywall fines** in attic plenums while registers look clean. Detail: [Fair Oaks townhome dust and air ducts](/blog/fair-oaks-townhomes-dust-air-ducts). Burke runs this corridor with [Oakton](/locations/oakton) and [Chantilly](/locations/chantilly).',
     ],
     highlights: [
-      'Fair Oaks Mall area, Fair Lakes, West Ox, Pender, and 50/66 townhomes',
-      'Separate from the City of Fairfax page \u2014 same Burke crew',
-      'Flat-rate pricing \u2014 confirmed before work begins',
-      'Before-and-after photo set on every job',
+      'Fair Lakes / West Ox mall-corridor HOAs',
+      'County Health does not test/remediate',
+      'Attic handlers + stacked dryer chases',
+      'Burke: (571) 460-0001',
     ],
   },
-  offersTitle: 'Fair Oaks Duct & Dryer Vent Packages',
+  offersTitle: 'Fair Oaks & Fair Lakes flat-rate packages',
   services: {
-    heading: 'What We Clean in Fair Oaks Townhomes and Fair Lakes Houses',
-    intro: 'Townhome attic handlers and single-family trunks receive the same published flat-rate scope.',
+    heading: 'Attic trunks, HOA gates, and vertical dryer chases',
+    intro: 'Townhome mechanical closets and single-family attic packs share the published scopes — access notes differ.',
     items: [
       {
-        title: 'Air Duct Cleaning for Fair Oaks Homes',
-        text: 'HEPA-filtered negative-pressure equipment seals to the attic or basement trunk while specialized tools agitate every supply line, return, and register. Sanitizing follows when the walkthrough confirms biological buildup. You keep the complete before-and-after photo set. Schedule [air duct cleaning](/air-duct-cleaning).',
+        title: 'Air duct cleaning (source removal)',
+        text: 'HEPA negative pressure on attic or basement trunk, agitation through supplies, returns, and boots — including corridor construction and Route 50 particulate load. [EPA duct guidance](https://www.epa.gov/indoor-air-quality-iaq/should-you-have-air-ducts-your-home-cleaned). [Air duct cleaning](/air-duct-cleaning).',
       },
       {
-        title: 'Dryer Vent Service',
-        text: 'Stacked Fair Oaks and Fair Lakes laundry closets push lint up interior-wall chases that clog long before a ground-level suburban run would. We rod-brush and vacuum the full path to the exterior or roof cap so the dryer vents safely and efficiently. Book [dryer vent cleaning](/dryer-vent-cleaning).',
+        title: 'Dryer vent cleaning',
+        text: 'Stacked Fair Lakes laundry closets push lint up interior-wall chases to roof caps. Full rod-brush and vacuum with draw test. [NFPA dryer-fire research](https://www.nfpa.org/education-and-research/research/nfpa-research/fire-statistical-reports/home-fires-involving-clothes-dryers-and-washing-machines). [Dryer vent cleaning](/dryer-vent-cleaning).',
       },
       {
-        title: 'Mold Treatment in Fair Oaks Ductwork',
-        text: 'Attic air handlers that bake in summer heat and then pull humid return air create conditions for mold on coils and inside supply plenums. We clean mechanically first, then apply EPA-registered antimicrobial product along the ventilation path. Details at [mold remediation for air ducts](/mold-remediation-air-ducts).',
+        title: 'Optional antimicrobial on hard duct surfaces',
+        text: 'After mechanical cleaning when coils or hard metal show biological film — not whole-home remediation per County Health boundaries. [Mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
     ],
   },
   why: {
-    heading: 'Why Fair Lakes and Fair Oaks Attic Handlers Hold More Dust Than You Expect',
+    heading: 'Why homeowners in Fair Oaks book us',
     items: [
       {
-        title: 'Mall Grid \u2014 Not City Hall',
-        text: 'We maintain separate pages for Fair Oaks and the City of [Fairfax](/locations/fairfax) so you land on content relevant to your streets. The truck comes from Burke either way.',
+        title: 'Confirm jurisdiction before you book',
+        text: 'Fair Oaks **CDP** vs **City of Fairfax** changes which official links apply — Burke dispatch and flat-rate menus stay the same. Edge blocks near Fairfax Corner: ask when you call.',
       },
       {
-        title: 'Townhome Chases Cleared Routinely',
-        text: 'West Ox stacked dryers and Fair Lakes HOA gate codes are part of our regular route notes \u2014 not logistics we solve for the first time at your building.',
+        title: 'HOA gate codes on the work order',
+        text: 'West Ox and Fair Lakes recurring routes mean stacked dryers and visitor-parking access are routine logistics — noted the morning of the visit.',
       },
       {
-        title: 'Flat Rate Before Equipment Unloads',
-        text: 'The number on your confirmation is the number on the invoice. No per-register surcharges added after we see the attic handler.',
+        title: 'Highway film + hot attic cycle',
+        text: 'Returns catch Beltway-adjacent dust; hot attic handlers meet humid return air — cleaning removes interior load; filters and moisture control slow return per [Healthy Homes Fairfax](https://www.fairfaxcounty.gov/health/environment/healthy-homes-fairfax).',
       },
       {
-        title: 'Guaranteed Results',
-        text: 'If Fair Oaks results fall short of the agreed scope, contact us within 7 days — we re-perform or refund per our refund policy.',
+        title: 'Flat rate locked before unload',
+        text: 'Quote confirmed on walkthrough before agitation starts; before/after photos at close-out.',
       },
     ],
   },
   communities: {
-    heading: 'Fair Oaks Mall Edge, Fair Lakes, Fairfax Corner Living',
-    intro: 'This is Fair Oaks / Fair Lakes \u2014 the City of Fairfax has its own page.',
+    heading: 'Mall edge, Fair Lakes, and 50/66 corridors',
+    intro: 'If your address is inside City of Fairfax limits, use our [Fairfax](/locations/fairfax) page; this list covers Fair Oaks and Fair Lakes in Fairfax County.',
     groups: [
       {
         title: 'Mall & Fair Lakes',
@@ -79,62 +86,61 @@ export const fairOaks: LocationContentSeed = {
       },
       {
         title: '50/66 corridors',
-        places: 'Route 50, I-66, Pender, Government Center-edge streets still in the Fair Oaks CDP',
+        places: 'Route 50, I-66, Pender, Government Center-adjacent county streets',
       },
       {
         title: 'Toward Fairfax Corner & Chantilly',
-        places:
-          'Blocks toward Fairfax Corner (see [Fairfax](/locations/fairfax) if you are in the city), [Oakton](/locations/oakton), [Chantilly](/locations/chantilly)',
+        places: 'Blocks toward Fairfax Corner (verify city vs county), [Oakton](/locations/oakton), [Chantilly](/locations/chantilly)',
       },
     ],
   },
   process: {
-    heading: 'Western Fairfax Scheduling From Burke',
-    intro: 'From booking at (571) 460-0001 to photos at the Fair Oaks door.',
+    heading: 'Burke → Fair Oaks visit flow',
+    intro: 'HOA access and attic-handler safety checked before negative pressure starts.',
     steps: [
       {
-        title: 'Book from the office line',
-        text: 'Call (571) 460-0001 or use the form — we confirm Fair Oaks availability the next business day from Burke.',
+        title: 'City vs county address',
+        text: 'Fairfax City limits vs Fair Oaks CDP — we mention the right County Health links when you book.',
       },
       {
-        title: 'Protect floors and living spaces',
-        text: 'In Fair Oaks we cover work paths and keep living spaces clear while equipment runs.',
+        title: 'Attic pack or basement trunk',
+        text: 'Stacked laundry closet and roof-cap dryer? Hose runs and ladder time are scoped — not upsell bait.',
       },
       {
-        title: 'Source-removal cleaning',
-        text: 'Source-removal agitation under HEPA negative pressure for this Fair Oaks system — dust leaves in the vacuum, not your rooms.',
+        title: 'Lock scope and price',
+        text: 'Ducts, dryer vent, or both — number confirmed before tools run; antimicrobial only with your OK.',
       },
       {
-        title: 'Optional sanitizing',
-        text: 'Complimentary Envirocon when you request it or when the Fair Oaks inspection supports it.',
+        title: 'Source-removal + photos',
+        text: 'HEPA negative pressure through scoped runs; images before we leave.',
       },
       {
-        title: 'Close out the visit',
-        text: 'Photos on file, flat-rate invoice for Fair Oaks, and seasonal tips. Call (571) 460-0001 anytime.',
+        title: 'Handoff',
+        text: 'Filter cadence, [Healthy Homes Fairfax](https://www.fairfaxcounty.gov/health/environment/healthy-homes-fairfax) humidity reminder, and (571) 460-0001.',
       },
     ],
   },
-  faqIntro: 'Fair Oaks questions — call (571) 460-0001 (dispatch: Burke).',
+  faqIntro: 'Fair Oaks booking questions — County vs City when it helps. Call (571) 460-0001 (Burke).',
   faq: [
     {
-      q: 'Where does the Fair Oaks appointment leave from?',
-      a: 'Fair Oaks appointments leave from Burke, VA (5641 Burke Centre Pkwy Ste 119). Call (571) 460-0001 for air duct or dryer vent cleaning on your street.',
+      q: 'Is Fair Oaks the same as the City of Fairfax?',
+      a: 'No. **Fair Oaks / Fair Lakes** is an unincorporated Fairfax County corridor around the mall and West Ox. The **City of Fairfax** is a separate jurisdiction — use our [Fairfax city page](/locations/fairfax) if your parcel is inside city limits.',
     },
     {
-      q: 'Anything to clear before the crew shows up?',
-      a: 'For this Fair Oaks, VA home we need clear runs to the air handler and unfinished spaces still shedding construction dust. Put HOA codes on the confirmation text.',
+      q: 'Will Fairfax County Health recommend a duct cleaner?',
+      a: 'No. County [mold guidance](https://www.fairfaxcounty.gov/health/environment/mold) does not endorse vendors. [VDH](https://www.vdh.virginia.gov/environmental-health/2018/07/17/who-do-i-contact-for-help-with-mold-removal/) is similarly neutral — judge us on scope, photos, and flat-rate terms.',
     },
     {
-      q: 'What is a realistic job length for one system?',
-      a: 'One Fair Oaks system usually takes 2–3 hours. Multi-system or packed dryer vents are scoped before we start so the quote stays locked.',
+      q: 'Why do attic handlers here feel “too new” to need cleaning?',
+      a: 'Many 1990s–2000s builds never had post-construction duct vacuuming — drywall fines sit in the plenum while registers look fine. See [Fair Oaks townhome dust and air ducts](/blog/fair-oaks-townhomes-dust-air-ducts).',
     },
     {
-      q: 'Will the price change once equipment is out?',
-      a: 'The Burke crew prices Fair Oaks jobs as published flat-rate packages. Scoped on site, confirmed before unload, paid after you are satisfied.',
+      q: 'Can ducts and the dryer vent be one visit?',
+      a: 'Yes when booked together — common for stacked chases that share attic access. Call (571) 460-0001 from Burke.',
     },
     {
-      q: 'Is antimicrobial sanitizing included?',
-      a: 'On Fair Oaks jobs Envirocon is complimentary when you request it or when inspection supports it — confirmed on site before anything is applied.',
+      q: 'Which office serves Fair Oaks?',
+      a: 'Burke, VA (5641 Burke Centre Pkwy Ste 119). Call (571) 460-0001.',
     },
   ],
 }

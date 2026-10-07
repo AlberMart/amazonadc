@@ -1,75 +1,48 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
 import { ContactForm } from '@/components/ContactForm'
-import { ServiceArea } from '@/components/ServiceArea'
-import { SpecialOffers } from '@/components/SpecialOffers'
 import type { LegalPageContent } from '@/utilities/legal'
-import { getAllServiceCards } from '@/utilities/services'
 
+/**
+ * Legal pages stay document-first: policy body + contact.
+ * No marketing chrome (offers / service-area maps) — those belong on service and location pages.
+ */
 export async function LegalPage({ page }: { page: LegalPageContent }) {
-  const cards = await getAllServiceCards()
-  const offers = cards.map((service) => ({
-    id: service.slug,
-    title: service.title,
-    slug: service.slug,
-    price: service.price,
-    compareAtPrice: service.compareAtPrice,
-    summary: service.summary,
-    thumb: service.thumb,
-  }))
-
   return (
     <article>
-      <section className="site-hero">
-        <div
-          aria-hidden
-          className="site-hero-wash"
-        />
-        <div className="container relative grid gap-10 py-16 md:grid-cols-[1.05fr_0.95fr] md:items-center md:py-20">
-          <div>
-            <h1 className="font-display text-3xl leading-tight font-semibold tracking-tight sm:text-4xl md:text-5xl">
-              {page.title}
-            </h1>
-            <p className="mt-5 max-w-xl text-base site-copy-on-dark sm:text-lg">{page.intro}</p>
-            <div className="mt-8 flex flex-wrap gap-4">
-              <a
-                href="tel:+18006063334"
-                className="site-btn site-btn-primary"
-              >
-                (800) 606-3334
-              </a>
-              <Link
-                href="/#contact"
-                className="rounded-md border border-white/30 px-5 py-3 text-sm font-semibold text-white transition hover:border-white/60"
-              >
-                Contact us
-              </Link>
-            </div>
-          </div>
-          <div className="relative aspect-[4/3] site-media shadow-[0_24px_60px_rgba(0,0,0,0.35)]">
-            <Image
-              src="/img/Amazon.webp"
-              alt={`${page.title} — Amazon Air Duct Cleaning`}
-              fill
-              priority
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 520px"
-            />
+      <header className="border-b border-[var(--site-border)] bg-[var(--site-muted)]">
+        <div className="container max-w-3xl py-12 md:py-16">
+          <p className="text-sm font-medium tracking-wide text-[var(--site-body)] uppercase">
+            Legal
+          </p>
+          <h1 className="mt-3 font-display text-3xl leading-tight font-semibold tracking-tight text-[var(--site-heading)] sm:text-4xl">
+            {page.title}
+          </h1>
+          <p className="mt-4 max-w-2xl text-base site-body sm:text-lg">{page.intro}</p>
+          <div className="mt-6 flex flex-wrap gap-4 text-sm">
+            <Link href="/privacy-policy" className="site-link">
+              Privacy Policy
+            </Link>
+            <Link href="/terms-of-service" className="site-link">
+              Terms of Service
+            </Link>
+            <Link href="/refund-policy" className="site-link">
+              Refund Policy
+            </Link>
           </div>
         </div>
-      </section>
+      </header>
 
-      <section className="bg-[var(--site-muted)] py-16 md:py-20">
-        <div className="container max-w-4xl">
-          <h2 className="font-display text-3xl font-semibold tracking-tight text-[var(--site-heading)]">
+      <section className="py-14 md:py-16">
+        <div className="container max-w-3xl">
+          <h2 className="font-display text-2xl font-semibold tracking-tight text-[var(--site-heading)] md:text-3xl">
             {page.detailsHeading}
           </h2>
 
           <div className="mt-10 space-y-8">
             {page.sections.map((section) => (
-              <div key={section.heading} className="site-card p-6">
+              <div key={section.heading}>
                 <h3 className="font-display text-xl font-semibold text-[var(--site-heading)]">
                   {section.heading}
                 </h3>
@@ -110,11 +83,11 @@ export async function LegalPage({ page }: { page: LegalPageContent }) {
           </div>
 
           {page.closing ? (
-            <p className="mt-8 font-medium text-[var(--site-heading)]">{page.closing}</p>
+            <p className="mt-10 font-medium text-[var(--site-heading)]">{page.closing}</p>
           ) : null}
 
           <p className="mt-6 text-sm site-body">
-            Questions? Email{' '}
+            Questions about this page? Email{' '}
             <a className="site-link" href="mailto:support@amazonadc.com">
               support@amazonadc.com
             </a>{' '}
@@ -127,8 +100,6 @@ export async function LegalPage({ page }: { page: LegalPageContent }) {
         </div>
       </section>
 
-      <SpecialOffers services={offers} title="Current Offers" />
-      <ServiceArea />
       <ContactForm sourcePage={`/${page.slug}`} />
     </article>
   )

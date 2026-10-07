@@ -1,77 +1,83 @@
 import type { LocationContentSeed } from '@/utilities/locations'
 
+/**
+ * Great Falls, VA — large-lot Fairfax; Potomac-adjacent canopy; not McLean grid or Potomac MD estates page.
+ * Links used:
+ * - https://www.fairfaxcounty.gov/health/environment/mold
+ * - https://www.fairfaxcounty.gov/health/environment/healthy-homes-fairfax
+ * - https://www.vdh.virginia.gov/environmental-health/2018/07/17/who-do-i-contact-for-help-with-mold-removal/
+ */
 export const greatFalls: LocationContentSeed = {
   slug: 'great-falls',
-  title: 'Air Duct Cleaning in Great Falls, VA',
-  headline:
-    'Air duct and dryer vent cleaning for Great Falls estates, river lots, and large-lot colonials',
+  title: 'Great Falls VA Air Duct Cleaning',
+  headline: 'Large-lot homes, long dryer runs, and walk-out basements — staged from Burke',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Great Falls, VA. Flat rates from our Burke office for large lots, long dryer runs, and Potomac-humidity homes. Call (571) 460-0001.',
+    'Air duct & dryer vent cleaning in Great Falls, VA. Flat rates for large-lot homes & long dryer runs. Call (571) 460-0001.',
   intro:
-    'Amazon Air Duct Cleaning serves Great Falls from our Burke office. Large-lot estates, Georgetown Pike houses, and river-edge properties all take on Potomac humidity and a heavy tree canopy. Call (571) 460-0001.',
+    'Great Falls is **Fairfax County** wooded acreage between Georgetown Pike and the Potomac — Walker Road, Springvale, River Bend — with multi-zone HVAC, walk-out basement handlers, and dryer runs that can exceed fifty feet. River-influenced humidity and oak-hickory canopy load returns every spring and summer. If your address is in **Potomac, Maryland**, see our [Potomac, MD](/locations/potomac) page for Montgomery DEP resources. County Health does not test indoor air; we clean from Burke with photos and a booked arrival window that respects Pike drive time. (571) 460-0001.',
   heroImage: '/img/locations/great-falls.webp',
-  heroAlt: 'Air duct cleaning in Great Falls, VA \u2014 Amazon Air Duct Cleaning',
+  heroAlt: 'Air duct cleaning in Great Falls, VA — Amazon Air Duct Cleaning',
   city: 'Great Falls',
   state: 'VA',
   servedBy: 'burke',
-  sectionLayout: 'whyFirst',
+  sectionLayout: 'offersLate',
   about: {
-    heading: 'Multi-Zone Estates, River-Edge Lots, and Canopy Pollen That Reaches Every Return',
+    heading: 'Large-lot Fairfax County — humidity, pollen, and long dryer runs',
     paragraphs: [
-      'Great Falls spreads across wooded acreage between Georgetown Pike and the Potomac \u2014 houses set far back from Walker Road and Springvale on lots large enough to carry two or three HVAC zones. Many properties use walk-out basements for the primary air handler, placing the mechanical heart of the home at grade level where soil moisture migrates through foundation walls. Long supply trunks run from that basement up through two or three finished floors, collecting debris at every branch point along the way.',
-      'The Potomac is close enough to influence indoor humidity even when the river itself is out of sight. Summer moisture moves inland under the oak and hickory canopy, condenses on cold supply metal, and creates a sticky film that traps the heavy spring pollen load Great Falls is known for. Dryer vents in estate homes often travel fifty feet or more from a second-floor laundry to an exterior wall or gable cap, packing with lint long before a shorter suburban run would show symptoms.',
-      'We serve Great Falls from [Burke](/locations/burke) \u2014 there is no Great Falls office. Nearby [McLean](/locations/mclean), [Reston](/locations/reston), and [Loudoun](/locations/loudoun) use the same dispatch. Read about [Great Falls estate humidity and air ducts](/blog/great-falls-estates-humidity-air-ducts).',
+      'Homeowners sometimes confuse **Potomac, Maryland** ([our MD page](/locations/potomac) cites Montgomery DEP) with **Great Falls, Virginia** along Georgetown Pike. Here, [Fairfax County Health’s mold page](https://www.fairfaxcounty.gov/health/environment/mold) and [Healthy Homes Fairfax](https://www.fairfaxcounty.gov/health/environment/healthy-homes-fairfax) are the civic baseline: dry spaces, humidity control, fix leaks — and no County indoor air testing or remediation for hire.',
+      'Lots large enough for two or three zones often place the primary air handler in a walk-out basement at grade, where soil moisture and Difficult Run humidity migrate toward foundation walls. Long supply trunks rise through multiple finished floors; debris stacks at branch points. Guest-wing and second-floor laundry push lint through extended interior paths before a gable or sidewall cap.',
+      'Burke dispatch — no Great Falls storefront — serves this area with [McLean](/locations/mclean) and [Reston](/locations/reston) on overlapping western tickets. Local read: [Great Falls estate humidity and air ducts](/blog/great-falls-estates-humidity-air-ducts). [VDH](https://www.vdh.virginia.gov/environmental-health/2018/07/17/who-do-i-contact-for-help-with-mold-removal/) does not endorse contractors.',
     ],
     highlights: [
-      'Georgetown Pike, River Bend, Walker Road, Springvale, and large-lot estates',
-      'Flat-rate quotes \u2014 even on multi-zone estate systems',
-      'Before-and-after photos of every trunk and return cleaned',
-      'Dispatched from our Burke office with realistic drive-time windows',
+      'Fairfax County VA — check MD vs VA if mail says Potomac',
+      'Multi-zone + long dryer runs',
+      'County Health cited honestly',
+      'Burke: (571) 460-0001',
     ],
   },
-  offersTitle: 'Great Falls Estate-Scale Cleaning Packages',
+  offersTitle: 'Great Falls estate-scale packages',
   services: {
-    heading: 'What We Clean in Great Falls Estate and River-Edge Homes',
-    intro: 'Multi-zone systems and fifty-foot dryer runs are quoted at published flat rates.',
+    heading: 'Multi-zone ducts and long-run dryer service',
+    intro: 'Every zone and every dryer elbow scoped before flat rate locks — estate scale, published rate card.',
     items: [
       {
-        title: 'Estate Air Duct Cleaning',
-        text: 'We connect HEPA-filtered negative-pressure equipment at the plenum and work through every supply line, return, and register across all zones. Sanitizing follows when the walkthrough identifies biological growth in trunks or on coils. The complete before-and-after photo set is yours. Schedule [air duct cleaning](/air-duct-cleaning).',
+        title: 'Air duct cleaning (source removal)',
+        text: 'HEPA negative pressure at each plenum served, agitation through supplies and returns across zones booked. [EPA duct guidance](https://www.epa.gov/indoor-air-quality-iaq/should-you-have-air-ducts-your-home-cleaned). [Air duct cleaning](/air-duct-cleaning).',
       },
       {
-        title: 'Long-Run Dryer Vent Service',
-        text: 'Guest-wing laundry rooms and second-floor installations in Great Falls estates push lint through extended interior paths that conventional DIY brushes cannot reach. We rod-brush and vacuum to the exterior termination so the appliance runs safely and efficiently. Book [dryer vent cleaning](/dryer-vent-cleaning).',
+        title: 'Dryer vent cleaning',
+        text: 'Extended interior paths from guest wings and second-floor laundry brushed to exterior termination. [NFPA dryer-fire research](https://www.nfpa.org/education-and-research/research/nfpa-research/fire-statistical-reports/home-fires-involving-clothes-dryers-and-washing-machines). [Dryer vent cleaning](/dryer-vent-cleaning).',
       },
       {
-        title: 'Mold Remediation in Estate Ductwork',
-        text: 'Walk-out basements near damp soil and river-influenced humidity let mold colonize coils and dead-end branches that rarely see direct airflow. We mechanically clean the affected sections, then apply EPA-registered antimicrobial treatment to halt regrowth. Details at [mold remediation for air ducts](/mold-remediation-air-ducts).',
+        title: 'Optional antimicrobial on hard duct surfaces',
+        text: 'After mechanical cleaning when walk-out basement humidity left film on hard metal — not whole-estate mold remediation. [Mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
     ],
   },
   why: {
-    heading: 'Why Large-Lot Homes Require Longer Inspection Windows',
+    heading: 'Why Great Falls needs longer walkthroughs',
     items: [
       {
-        title: 'Multi-Zone Systems Scoped Up Front',
-        text: 'Multiple air handlers, long trunk runs, and guest-wing branches are all included in the walkthrough before we quote. You receive a flat-rate number, not a per-vent estimate that grows after we open the mechanical room.',
+        title: 'Estate-scale walkthroughs',
+        text: 'Multi-zone handlers, guest-wing laundry, and fifty-foot dryer paths are scoped up front — flat rate still locked before agitation.',
       },
       {
-        title: 'Extended Dryer Runs Cleared to the Cap',
-        text: 'The crew that works Great Falls already handles fifty-foot-plus dryer lines and basement handlers along Difficult Run and the Potomac side of Georgetown Pike.',
+        title: 'Canopy pollen + river dew',
+        text: 'Oak-hickory canopy and Potomac-side dew load outdoor intakes; cleaning removes trunk film humidity control slows from returning per [Healthy Homes Fairfax](https://www.fairfaxcounty.gov/health/environment/healthy-homes-fairfax).',
       },
       {
-        title: 'Burke Office Dispatch \u2014 No Local Storefront',
-        text: 'Great Falls does not have our office. The truck comes from 5641 Burke Centre Pkwy Ste 119, and the drive time is built into your arrival window.',
+        title: 'County Health boundaries',
+        text: 'We remove HVAC debris and lint — we do not replace County environmental health or indoor mold assessment services.',
       },
       {
-        title: 'Guaranteed to Your Standards',
-        text: 'If the Great Falls job does not match the photos we promised, contact us within 7 days — we re-perform or refund per our refund policy.',
+        title: 'Drive time said up front',
+        text: 'Crews leave from Burke Centre Parkway; we book a clear window that accounts for Pike travel and keep you updated if the day moves.',
       },
     ],
   },
   communities: {
-    heading: 'Georgetown Pike and River-Edge Properties',
-    intro: 'McLean and Reston are closer-in pages; Great Falls is scheduled deliberately.',
+    heading: 'Georgetown Pike and river-edge neighborhoods',
+    intro: 'We stage Great Falls from Burke alongside McLean and Reston — tell us your Pike neighborhood when you book.',
     groups: [
       {
         title: 'Village & Georgetown Pike',
@@ -79,62 +85,65 @@ export const greatFalls: LocationContentSeed = {
       },
       {
         title: 'River Bend & Potomac lots',
-        places: 'River Bend, Seneca Road, river-edge streets toward the Parkway',
+        places: 'River Bend, Seneca Road, Parkway-adjacent acreage',
       },
       {
         title: 'Toward Reston & McLean',
-        places:
-          'Utterback Store Road, edges toward [Reston](/locations/reston) and [McLean](/locations/mclean) \u2014 ask if your lane is not listed',
+        places: 'Utterback Store Road, edges toward [Reston](/locations/reston) and [McLean](/locations/mclean)',
       },
     ],
   },
   process: {
-    heading: 'Longer Drive Planning From Burke \u2014 Said Up Front',
-    intro: 'From booking at (571) 460-0001 to photos at the Great Falls door.',
+    heading: 'Burke → Great Falls planning',
+    intro: 'Multi-zone homes get zone-by-zone scope before the flat rate locks.',
     steps: [
       {
-        title: 'Book from the office line',
-        text: 'Call (571) 460-0001 or use the form — we confirm Great Falls availability the next business day from Burke.',
+        title: 'Count zones and handlers',
+        text: 'Guest wing, pool house, main house — booked scope matches walkthrough, not surprise add-ons.',
       },
       {
-        title: 'Protect floors and living spaces',
-        text: 'In Great Falls we cover work paths and keep living spaces clear while equipment runs.',
+        title: 'Map longest dryer path',
+        text: 'Fifty-foot runs are routine here — full brush-out included when dryer service is on the ticket.',
       },
       {
-        title: 'Source-removal cleaning',
-        text: 'Source-removal agitation under HEPA negative pressure for this Great Falls system — dust leaves in the vacuum, not your rooms.',
+        title: 'Confirm flat rate before unload',
+        text: 'Antimicrobial only with your OK after mechanical cleaning.',
       },
       {
-        title: 'Optional sanitizing',
-        text: 'Complimentary Envirocon when you request it or when the Great Falls inspection supports it.',
+        title: 'Source-removal + photos',
+        text: 'Each zone documented; lint cleared to cap when booked.',
       },
       {
-        title: 'Close out the visit',
-        text: 'Photos on file, flat-rate invoice for Great Falls, and seasonal tips. Call (571) 460-0001 anytime.',
+        title: 'Handoff',
+        text: 'Humidity habits from County mold tips; (571) 460-0001 for a second zone visit later.',
       },
     ],
   },
-  faqIntro: 'Great Falls questions — call (571) 460-0001 (dispatch: Burke).',
+  faqIntro: 'Great Falls VA — Fairfax Health context. Book: (571) 460-0001 (Burke).',
   faq: [
     {
-      q: 'Where does the Great Falls appointment leave from?',
-      a: 'Great Falls appointments leave from Burke, VA (5641 Burke Centre Pkwy Ste 119). Call (571) 460-0001 for air duct or dryer vent cleaning on your street.',
+      q: 'Is Great Falls the same service area as Potomac, Maryland?',
+      a: 'No. [Potomac, MD](/locations/potomac) is Montgomery County with DEP IAQ links. **Great Falls, VA** is Fairfax County along Georgetown Pike — use [Fairfax County Health mold guidance](https://www.fairfaxcounty.gov/health/environment/mold) for civic context here.',
     },
     {
-      q: 'Anything to clear before the crew shows up?',
-      a: 'For this Great Falls, VA home we need clear runs to the air handler. Put HOA codes on the confirmation text.',
+      q: 'How is this different from your McLean page?',
+      a: '[McLean](/locations/mclean) focuses closer-in McLean/Langley patterns. Great Falls is large-lot, multi-zone, long dryer runs, and longer Burke drives — same phone, different building and scheduling notes.',
     },
     {
-      q: 'What is a realistic job length for one system?',
-      a: 'One Great Falls system usually takes 2–3 hours. Multi-system or packed dryer vents are scoped before we start so the quote stays locked.',
+      q: 'Does Fairfax County Health recommend our company?',
+      a: 'No. The [County mold page](https://www.fairfaxcounty.gov/health/environment/mold) does not endorse vendors. [VDH](https://www.vdh.virginia.gov/environmental-health/2018/07/17/who-do-i-contact-for-help-with-mold-removal/) is similarly neutral — judge us on scope, photos, and flat-rate terms.',
     },
     {
-      q: 'Will the price change once equipment is out?',
-      a: 'The Burke crew prices Great Falls jobs as published flat-rate packages. Scoped on site, confirmed before unload, paid after you are satisfied.',
+      q: 'Multi-zone home — one flat rate?',
+      a: 'Walkthrough counts handlers and zones **before** price locks. Estate scale uses the same published package discipline — not open-ended per-vent math.',
     },
     {
-      q: 'Can ducts and the dryer vent be done in one visit?',
-      a: 'Yes for Great Falls — book the combined package up front. Call (571) 460-0001; the Burke crew brings both tool sets for one stop.',
+      q: 'Which office serves Great Falls?',
+      a: 'Burke, VA (5641 Burke Centre Pkwy Ste 119). Call (571) 460-0001.',
+    },
+    {
+      q: 'More on estate humidity locally?',
+      a: '[Great Falls estate humidity and air ducts](/blog/great-falls-estates-humidity-air-ducts). Official: [Healthy Homes Fairfax](https://www.fairfaxcounty.gov/health/environment/healthy-homes-fairfax).',
     },
   ],
 }

@@ -139,7 +139,7 @@
   --site-card-muted: #f8fafc;
   --site-heading: #0b1c2c;
   --site-body: #516579;
-  --site-muted-text: #7a8b9c;
+  --site-muted-text: #5a6b7c;
   --site-on-dark: #ffffff;
   --site-on-dark-muted: rgba(240, 249, 255, 0.85);
   --site-link: #0369a1;
@@ -256,6 +256,7 @@
 
 html {
   opacity: 0;
+  color-scheme: light;
 }
 
 html[data-theme='dark'],
@@ -280,6 +281,8 @@ html[data-theme='light'] {
 
 .site-section {
   background: var(--section-bg, var(--site-bg));
+  content-visibility: auto;
+  contain-intrinsic-size: auto 480px;
 }
 
 .site-section-edge-top {
@@ -335,7 +338,7 @@ html[data-theme='light'] {
 .site-form-label {
   display: block;
   margin-bottom: 0.35rem;
-  color: var(--site-heading);
+  color: #0b1c2c;
   font-size: 0.875rem;
   font-weight: 600;
   line-height: 1.3;

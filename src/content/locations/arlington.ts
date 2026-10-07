@@ -1,144 +1,150 @@
 import type { LocationContentSeed } from '@/utilities/locations'
 
+/**
+ * Arlington — multi-source civic angle (not one mold URL repeated).
+ * Links used:
+ * - https://www.arlingtonva.us/Government/Programs/Health/Environmental-Health/Mold
+ * - https://www.arlingtonva.us/Residents/Housing/Home-Health-and-Safety
+ * - https://www.arlingtonva.us/Government/Programs/Health/Environmental-Health
+ * - https://www.arlingtonva.us/Government/Programs/Building/Enforcement-Appeals/Code
+ * - https://www.arlingtonva.us/Government/Programs/Building/Enforcement-Appeals/Code/Violations
+ * - https://www.arlingtonva.us/Government/Programs/Housing/Housing-Assistance/Tenant-Landlord-Rights-Responsibilities
+ * - https://www.arlingtonva.us/Government/Departments/Fire/Office-of-the-Fire-Marshal/Community-Engagement/Fire-Safety/Free-Home-Safety-Checks
+ * - https://www.vdh.virginia.gov/environmental-health/2018/07/17/who-do-i-contact-for-help-with-mold-removal/
+ * - https://law.lis.virginia.gov/vacode/title8.01/chapter3/section8.01-226.12/
+ * - https://www.epa.gov/indoor-air-quality-iaq/should-you-have-air-ducts-your-home-cleaned
+ * - https://www.nfpa.org/education-and-research/research/nfpa-research/fire-statistical-reports/home-fires-involving-clothes-dryers-and-washing-machines
+ */
 export const arlington: LocationContentSeed = {
   slug: 'arlington',
-  title: 'Air Duct Cleaning & Mold Remediation in Arlington, VA',
-  headline: 'Professional air duct, dryer vent, and mold treatment across Arlington County',
+  title: 'Arlington Air Duct & Dryer Vent Cleaning',
+  headline: 'High-rise laundry chases and North Arlington basements — booked on the Burke office line',
   description:
-    'Professional air duct cleaning, dryer vent maintenance, and mold remediation in Arlington, VA. Flat rates, certified technicians, and a photo-backed satisfaction policy.',
+    'Air duct & dryer vent cleaning in Arlington, VA. Flat rates for corridor condos & homes. Before/after photos. Call (571) 460-0001.',
   intro:
-    'Amazon Air Duct Cleaning serves condos, townhomes, and older brick houses across Arlington — from Rosslyn and Clarendon to Crystal City and Columbia Pike. Our Burke-based technicians bring professional HVAC cleaning, dryer vent service, and ventilation mold treatment to Arlington homes. Call (571) 460-0001.',
+    'Arlington is dense: Rosslyn–Ballston high-rises with long dryer risers, Columbia Pike garden apartments, and North Arlington singles with basement handlers. County pages are unusually honest about mold — they will not inspect or remove it — and they point renters to written landlord notice, Code Enforcement for leaks, and Housing Division advice. We clean ducts and dryer vents with flat rates and photos from Burke. Call (571) 460-0001.',
   heroImage: '/img/locations/arlington.webp',
   heroAlt: 'Air duct cleaning in Arlington, VA — Amazon Air Duct Cleaning',
   city: 'Arlington',
   state: 'VA',
   servedBy: 'burke',
-  sectionLayout: 'communitiesFirst',
+  sectionLayout: 'faqMid',
   about: {
-    heading: 'Condo Risers, Brick Basements, and the Potomac Pushing Moisture Inland',
+    heading: 'What County pages actually say — and who to call for what',
     paragraphs: [
-      'Arlington County packs more housing types per square mile than almost anywhere else in Northern Virginia. Rosslyn and Crystal City stack condos with long vertical dryer risers. Clarendon and Lyon Village mix 1920s brick bungalows with newer infill townhomes. Columbia Pike and Shirlington have garden-style apartments whose shared air handlers serve multiple units at once. Each layout traps dust differently, but Potomac River humidity is the common thread — it condenses on cold supply metal and gives pollen, drywall particles, and pet dander a sticky surface to cling to.',
-      'Ballston and Virginia Square sit under an urban canopy that drops oak pollen directly into rooftop intake grilles every April. Pentagon City and National Landing are still surrounded by active construction, so fine gypsum dust rides the same air as river moisture. A condo that looks clean on the surface can have returns coated in years of layered film that only shows up when you pull a register cover.',
-      'Our Burke crew drives Arlington routes every week — Courthouse, Cherrydale, East Falls Church, Douglas Park — so scheduling is straightforward. Read how [Potomac humidity affects Arlington indoor air](/blog/how-potomac-humidity-affects-arlington-air-quality), then book [air duct cleaning](/air-duct-cleaning) and [dryer vent cleaning](/dryer-vent-cleaning) together or separately. Nearby [Falls Church](/locations/falls-church) and [McLean](/locations/mclean) share the same dispatch.',
+      'Arlington’s [Mold](https://www.arlingtonva.us/Government/Programs/Health/Environmental-Health/Mold) page (also under [Home Health and Safety](https://www.arlingtonva.us/Residents/Housing/Home-Health-and-Safety)) is unusually direct: the County **cannot inspect, test, or remove mold**, and there are no “safe” mold-level standards. The civic message is moisture control — A/C or dehumidifiers in humid summers, bath/kitchen fans, fast leak cleanup.',
+      'Renters: put water or mold **in writing** to the landlord and keep copies. [Code Enforcement](https://www.arlingtonva.us/Government/Programs/Building/Enforcement-Appeals/Code) (703-228-3232 / Permit Arlington) can look at moisture defects like leaks or peeling paint, but **does not address mold complaints as such** — see also [Violations](https://www.arlingtonva.us/Government/Programs/Building/Enforcement-Appeals/Code/Violations). Process basics: [Tenant–Landlord Rights & Responsibilities](https://www.arlingtonva.us/Government/Programs/Housing/Housing-Assistance/Tenant-Landlord-Rights-Responsibilities); Housing Division advice 703-228-3765.',
+      'Virginia [§ 8.01-226.12](https://law.lis.virginia.gov/vacode/title8.01/chapter3/section8.01-226.12/) covers landlord duties after proper mold notice — context, not a sales pitch. Our Burke crew clears HVAC trunks and dryer risers, shows photos, and does not pretend to be County inspectors. More on humidity: [Potomac humidity and Arlington air quality](/blog/how-potomac-humidity-affects-arlington-air-quality). Neighbors: [Alexandria](/locations/alexandria), [Falls Church](/locations/falls-church), [Washington, DC](/locations/washington-dc).',
     ],
     highlights: [
-      'Rosslyn, Clarendon, Ballston, Crystal City, Columbia Pike, and Shirlington',
-      'Flat-rate packages — the quote you receive is the price you pay',
-      'Before-and-after photos documenting every trunk and return',
-      'Same-day and next-day windows from our Burke office',
+      'Mold + Code Enforcement + tenant–landlord links — not one recycled URL',
+      'Corridors, garden apartments, North Arlington singles',
+      'Flat-rate ducts / dryer vents with before/after photos',
+      'Burke: (571) 460-0001',
     ],
   },
-  offersTitle: 'Arlington Duct & Dryer Vent Packages',
+  offersTitle: 'Arlington flat-rate packages',
   services: {
-    heading: 'Three Services We Bring to Arlington Condos and Houses',
+    heading: 'What we clean on Arlington jobs',
     intro:
-      'High-rise risers and pre-war brick basements each get the same published flat-rate scope.',
+      'Ducts, dryer vents, optional antimicrobial on hard duct surfaces — mechanical work beside County moisture guidance, not instead of it.',
     items: [
       {
-        title: 'Residential Air Duct Cleaning',
-        text: 'We connect a HEPA-filtered negative-pressure machine to the trunk, then agitate every supply line, return, and register with specialized agitation tools. Sanitizing is included when the on-site inspection reveals biological growth. You keep the before-and-after photos. Schedule [air duct cleaning](/air-duct-cleaning) for your Arlington home.',
+        title: 'Air duct cleaning',
+        text: 'HEPA negative pressure and full-system agitation through supplies, returns, and registers — including tight closet handlers in townhomes and stacked condo trunks. [EPA](https://www.epa.gov/indoor-air-quality-iaq/should-you-have-air-ducts-your-home-cleaned) still cautions against health overclaims for routine cleaning; we remove debris and document it. [Air duct cleaning](/air-duct-cleaning).',
       },
       {
-        title: 'Dryer Vent Clearing',
-        text: 'A clogged dryer vent is one of the top fire hazards in dense Arlington housing — especially in Rosslyn and Pentagon City condos where the lint path runs vertically through multiple floors. We rod-brush and vacuum the entire run from the dryer connection to the rooftop or wall cap. Book [dryer vent cleaning](/dryer-vent-cleaning).',
+        title: 'Dryer vent cleaning (corridor-ready)',
+        text: 'Rosslyn–Ballston and Pentagon City laundry closets pack lint in long vertical risers; slow dry times and overheating are the honest booking drivers. Arlington’s Fire Marshal [free home safety checklist](https://www.arlingtonva.us/Government/Departments/Fire/Office-of-the-Fire-Marshal/Community-Engagement/Fire-Safety/Free-Home-Safety-Checks) literally asks whether your clothes dryer vent is clean and properly installed — same theme as [NFPA dryer-fire research](https://www.nfpa.org/education-and-research/research/nfpa-research/fire-statistical-reports/home-fires-involving-clothes-dryers-and-washing-machines). Full brush-out to the exterior or roof cap. [Dryer vent cleaning](/dryer-vent-cleaning).',
       },
       {
-        title: 'Mold Treatment Inside Ductwork',
-        text: 'When river humidity condenses inside the air-handling system, mold can colonize coils, plenums, and dead-end branches. We apply EPA-registered antimicrobial treatment after mechanical cleaning and then verify airflow so moisture does not pool in the same spots again. Details at [mold remediation for air ducts](/mold-remediation-air-ducts).',
+        title: 'Optional duct antimicrobial',
+        text: 'After mechanical cleaning, EPA-registered product on hard metal when inspection shows film — not whole-home mold remediation and not a substitute for fixing the water problem the County [mold page](https://www.arlingtonva.us/Government/Programs/Health/Environmental-Health/Mold) says must be fixed or mold returns. [Mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
     ],
   },
   why: {
-    heading: 'Why Arlington Indoor Air Loads Up Faster Than Suburbs',
+    heading: 'Why Arlington homeowners book us',
     items: [
       {
-        title: 'Quoted Before the Truck Opens',
-        text: 'Every Arlington job gets a flat-rate number before equipment leaves the truck. Condos and large colonials use the same pricing structure — no per-vent surcharges after the fact.',
+        title: 'Mold education is not mold inspection',
+        text: '[Environmental Health](https://www.arlingtonva.us/Government/Programs/Health/Environmental-Health) publishes mold guidance; it does not clear your HVAC or certify indoor air. Hire us for debris and lint — use County pages when you need the official moisture story.',
       },
       {
-        title: 'Photo Documentation You Can Verify',
-        text: 'We photograph trunk interiors, register cavities, and dryer vent caps so you see exactly what was removed. That documentation matters in older Clarendon brick where dust has been layering for decades.',
+        title: 'Leaks → Code Enforcement; mold spores → not their ticket',
+        text: 'File moisture defects through [Code Enforcement](https://www.arlingtonva.us/Government/Programs/Building/Enforcement-Appeals/Code). The County is explicit that mold complaints themselves are outside that lane. Do not expect our cleaning invoice to substitute for an enforcement case.',
       },
       {
-        title: 'A Crew That Already Knows Arlington Parking',
-        text: 'Rosslyn loading docks, Ballston garage elevators, and Columbia Pike street parking are part of our weekly rotation from Burke — not logistics we figure out for the first time at your building.',
+        title: 'Renters have a Housing Division, not just a duct cleaner',
+        text: '[Tenant–Landlord Rights & Responsibilities](https://www.arlingtonva.us/Government/Programs/Housing/Housing-Assistance/Tenant-Landlord-Rights-Responsibilities) covers written maintenance requests, VUSBC basics, and when Code Enforcement applies. Housing Division contact is also on the mold page for advice — separate from booking Burke.',
       },
       {
-        title: 'Guaranteed Results',
-        text: 'If the Arlington result falls short, contact us within 7 days — we re-perform the work or refund per our refund policy.',
+        title: 'Dryer vents show up on Fire Marshal safety lists',
+        text: 'The [home safety check](https://www.arlingtonva.us/Government/Departments/Fire/Office-of-the-Fire-Marshal/Community-Engagement/Fire-Safety/Free-Home-Safety-Checks) checklist includes dryer-vent condition. Corridor risers are where we spend the most hose length in Arlington.',
       },
     ],
   },
   communities: {
-    heading: 'Corridors We Drive Weekly in Arlington',
-    intro: 'From Rosslyn high-rises to Columbia Pike splits — ask if your building is gated.',
+    heading: 'Arlington corridors we stage for',
+    intro: 'Same packages; different hose runs, garage heights, and quiet hours.',
     groups: [
-      {
-        title: 'Rosslyn to Ballston',
-        places: 'Rosslyn, Courthouse, Clarendon, Virginia Square, Ballston, Lyon Village',
-      },
-      {
-        title: 'Crystal City & the river',
-        places: 'Crystal City, Pentagon City, Aurora Highlands, Arlington Ridge, National Landing',
-      },
-      {
-        title: 'Columbia Pike & south',
-        places: 'Columbia Pike, Penrose, Barcroft, Shirlington, Douglas Park, Green Valley',
-      },
-      {
-        title: 'North Arlington',
-        places:
-          'Cherrydale, Westover, East Falls Church, Yorktown, Williamsburg, Tara-Leeway Heights',
-      },
+      { title: 'Rosslyn–Ballston corridor', places: 'Rosslyn, Court House, Clarendon, Virginia Square, Ballston' },
+      { title: 'Columbia Pike & Pentagon City', places: 'Columbia Pike, Pentagon City, Crystal City, Pentagon-area apartments' },
+      { title: 'North Arlington', places: 'Cherrydale, Lyon Park, Ashton Heights, East Falls Church-adjacent streets' },
     ],
   },
   process: {
-    heading: 'Metro-Adjacent Scheduling From the Burke Office',
-    intro: 'Arrival windows reflect the drive from Burke to Arlington.',
+    heading: 'Burke → Arlington visit flow',
+    intro: 'We separate civic moisture cases from mechanical cleaning scope on the walkthrough.',
     steps: [
       {
-        title: 'Walkthrough and quote',
-        text: 'In Arlington we ask about pets, renovations, and condo / stacked-laundry layouts common around Arlington before locking a flat-rate number for this VA address.',
+        title: 'Building type',
+        text: 'High-rise riser, garden apt, or single-family basement handler? That sets time and access notes, not the rate card.',
       },
       {
-        title: 'Arrival window',
-        text: 'Morning-of text with a realistic ETA from the Burke office to your Arlington street — not a vague all-day window.',
+        title: 'Scope check',
+        text: 'Active leak or landlord dispute stays on the County/landlord path ([Code Enforcement](https://www.arlingtonva.us/Government/Programs/Building/Enforcement-Appeals/Code) / written notice). We quote ducts and/or dryer vent for today.',
       },
       {
-        title: 'Agree the package',
-        text: 'For this Arlington home: ducts, dryer vent, or both — scoped on site, quoted before equipment starts, paid after you are satisfied.',
+        title: 'Lock the number',
+        text: 'Flat rate confirmed before agitation; antimicrobial only with your OK.',
       },
       {
-        title: 'HEPA source-removal cleaning',
-        text: 'We agitate and vacuum supplies, returns, and registers in this Arlington system under negative pressure so debris leaves in the vacuum.',
+        title: 'Clean and photograph',
+        text: 'Source-removal ducts and/or full dryer brush-out, then before/after images.',
       },
       {
-        title: 'Photos and handoff',
-        text: 'Before/after photos, filter tips, and a dryer-vent interval for Arlington seasons. Questions go to (571) 460-0001.',
+        title: 'Handoff',
+        text: 'Filter tips, humidity reminder aligned with County summer advice, (571) 460-0001 for follow-up.',
       },
     ],
   },
-  faqIntro: 'Arlington questions — call (571) 460-0001 (dispatch: Burke).',
+  faqIntro:
+    'Arlington questions with real County links. Book: (571) 460-0001.',
   faq: [
     {
-      q: 'Which office books jobs for Arlington?',
-      a: 'Arlington appointments leave from Burke, VA (5641 Burke Centre Pkwy Ste 119). Call (571) 460-0001 for air duct or dryer vent cleaning on your street.',
+      q: 'Will Arlington County inspect mold in my apartment?',
+      a: 'No. The County [Mold page](https://www.arlingtonva.us/Government/Programs/Health/Environmental-Health/Mold) says Arlington cannot inspect, test, or remove mold. [Code Enforcement](https://www.arlingtonva.us/Government/Programs/Building/Enforcement-Appeals/Code) can look at moisture-related building defects (leaks, peeling paint, holes), but not mold complaints as such.',
     },
     {
-      q: 'What access do you need before arrival?',
-      a: 'In Arlington, clear a path to the air handler and dryer — condo closets and stacked laundry especially. Share gate or parking notes for your block.',
+      q: 'I’m a renter — who do I contact before calling a duct cleaner?',
+      a: 'Put moisture or mold in writing to the landlord and keep copies ([Mold](https://www.arlingtonva.us/Government/Programs/Health/Environmental-Health/Mold)). For process and maintenance rights, read [Tenant–Landlord Rights & Responsibilities](https://www.arlingtonva.us/Government/Programs/Housing/Housing-Assistance/Tenant-Landlord-Rights-Responsibilities). Housing Division advice: 703-228-3765. Book us when you want ducts or dryer vents cleaned — that does not replace landlord duties.',
     },
     {
-      q: 'How long is a typical visit?',
-      a: 'Most Arlington single-system houses finish in about 2–3 hours. High-rise dryer risers can add time after inspection.',
+      q: 'How do I file a Code Enforcement complaint for a leak?',
+      a: 'Use the [Code Enforcement](https://www.arlingtonva.us/Government/Programs/Building/Enforcement-Appeals/Code) hub: Permit Arlington online complaint, or call 703-228-3232. Emergency complaints are investigated quickly per County wording on [Violations](https://www.arlingtonva.us/Government/Programs/Building/Enforcement-Appeals/Code/Violations). We do not file those cases for you.',
     },
     {
-      q: 'Is pricing flat-rate or by the vent?',
-      a: 'Arlington residential packages are flat-rate from Burke. We scope during the walkthrough, confirm before equipment starts, and that is what you pay — no per-vent counting.',
+      q: 'Do you test for mold?',
+      a: 'No lab testing from us. Arlington’s mold page notes testing is often unnecessary when mold is visible or musty, and there are no standards for “safe” levels. We clean ducts/vents and document with photos.',
     },
     {
-      q: 'Can ducts and the dryer vent be done in one visit?',
-      a: 'Yes for Arlington — book the combined package up front. Call (571) 460-0001; the Burke crew brings both tool sets for one stop.',
+      q: 'Why mention the Fire Marshal on a duct-cleaning page?',
+      a: 'Their [free home safety checklist](https://www.arlingtonva.us/Government/Departments/Fire/Office-of-the-Fire-Marshal/Community-Engagement/Fire-Safety/Free-Home-Safety-Checks) includes whether the clothes dryer vent is clean and properly installed — especially relevant for tall corridor risers. National fire context: [NFPA dryer-fire research](https://www.nfpa.org/education-and-research/research/nfpa-research/fire-statistical-reports/home-fires-involving-clothes-dryers-and-washing-machines).',
+    },
+    {
+      q: 'Which office serves Arlington?',
+      a: 'Burke, VA (5641 Burke Centre Pkwy Ste 119). Call (571) 460-0001. Combined duct + dryer packages available in one visit. [VDH](https://www.vdh.virginia.gov/environmental-health/2018/07/17/who-do-i-contact-for-help-with-mold-removal/) does not recommend specific contractors — judge us on scope and photos.',
     },
   ],
 }

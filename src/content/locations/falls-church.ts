@@ -1,143 +1,152 @@
 import type { LocationContentSeed } from '@/utilities/locations'
 
+/**
+ * City of Falls Church — independent city + Fairfax County Health contract angle.
+ * Links used:
+ * - https://www.fallschurchva.gov/691/Tenant-Landlord-Property-Assistance
+ * - https://www.fairfaxcounty.gov/health/environment/mold
+ * - https://www.fallschurchva.gov/1846/Code-Administration
+ * - https://www.vdh.virginia.gov/environmental-health/2018/07/17/who-do-i-contact-for-help-with-mold-removal/
+ */
 export const fallsChurch: LocationContentSeed = {
   slug: 'falls-church',
-  title: 'Air Duct Cleaning in Falls Church, VA',
-  headline: 'Air duct and dryer vent cleaning for the City of Falls Church and close-in streets',
+  title: 'Falls Church Air Duct Cleaning',
+  headline: 'City lots and close-in Fairfax County streets — ducts and dryer vents from Burke',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Falls Church, VA. Flat rates from our Burke office for older close-in houses, small lots, and Beltway-dust homes. Call (571) 460-0001.',
+    'Air duct & dryer vent cleaning in Falls Church, VA. Flat rates for City lots & close-in homes. Photos. Call (571) 460-0001.',
   intro:
-    'Amazon Air Duct Cleaning serves the City of Falls Church from our Burke office. Older close-in houses on small lots and streets toward Arlington all take on Beltway dust and humid summers. Call (571) 460-0001.',
+    'The City of Falls Church is its own jurisdiction — separate from Fairfax County addresses that share a Falls Church mailing name. City staff can mediate some landlord–tenant disputes, but mediation cannot order mold remediation or duct work. Fairfax County Health handles mold and pest questions under contract. We clean ducts and dryer vents in bungalows on compact lots and West End streets with flat rates and photos. Burke dispatch: (571) 460-0001.',
   heroImage: '/img/locations/falls-church.webp',
-  heroAlt: 'Air duct cleaning in Falls Church, VA \u2014 Amazon Air Duct Cleaning',
+  heroAlt: 'Air duct cleaning in Falls Church, VA — Amazon Air Duct Cleaning',
   city: 'Falls Church',
   state: 'VA',
   servedBy: 'burke',
-  sectionLayout: 'communitiesFirst',
+  sectionLayout: 'faqEarly',
   about: {
-    heading: 'Independent City, Compact Lots, and Beltway Particulates on Every Porch',
+    heading: 'Independent city housing — and who answers mold questions',
     paragraphs: [
-      'The City of Falls Church is one of Virginia\u2019s smallest independent cities \u2014 Broad Street, Washington Street, Tinner Hill, and a tight grid of older houses on compact lots. This page covers the independent city and the blocks immediately touching it, not the sprawling Census-designated Falls Church area across Fairfax County. Homes here range from 1920s bungalows to 1960s ramblers, most of which received central air systems years after construction. That means metal trunks threaded through existing joist bays, with bends and joints where decades of particulates accumulate.',
-      'Route 7 and the I-66 / Beltway interchange sit close enough that traffic-generated particulates settle on porches and work their way into returns. Street trees along Broad and Washington add a seasonal pollen load on top of that road film. Second-floor laundry closets on small-lot homes route dryer exhaust through tight interior walls, creating long bent paths that pack with lint faster than a straight first-floor run would.',
-      'We serve Falls Church from [Burke](/locations/burke). Nearby [Arlington](/locations/arlington), [McLean](/locations/mclean), and [Vienna](/locations/vienna) use the same dispatch. Read about [close-in Falls Church dust and air ducts](/blog/falls-church-close-in-dust-air-ducts).',
+      'Falls Church is a tight grid of 1920s–1960s bungalows on small lots, close enough to Route 7 and the Beltway that road film lands in returns. This page is the **City of Falls Church**, not the larger Fairfax County mailing area — if your HOA says Fairfax County, see [Fairfax](/locations/fairfax) or [Arlington](/locations/arlington).',
+      'For mold and pest, the City points to [Fairfax County Health mold](https://www.fairfaxcounty.gov/health/environment/mold): moisture control first; Health does not test indoor air or remediate. City [Code Administration](https://www.fallschurchva.gov/1846/Code-Administration) handles permits and property standards — we are not inspectors and do not file City complaints.',
+      'Renters: [Tenant, Landlord & Property Assistance](https://www.fallschurchva.gov/691/Tenant-Landlord-Property-Assistance) may offer **mediation**, but mediation **cannot order** mold abatement or HVAC work. When you want trunks or dryer chases cleaned, book Burke — nearby routes also cover [Vienna](/locations/vienna) and [McLean](/locations/mclean).',
     ],
     highlights: [
-      'City of Falls Church: Broad Street, Tinner Hill, West End, and edge streets',
-      'Flat-rate pricing \u2014 no per-vent counting',
-      'Before-and-after photo documentation on every job',
-      'Same Burke crew servicing Arlington and McLean weekly',
+      'City vs county address — we quote the right page when you call',
+      'Fairfax County Health mold guidance cited honestly',
+      'Compact-lot trunks, Beltway dust, stacked laundry chases',
+      'Burke: (571) 460-0001',
     ],
   },
-  offersTitle: 'Falls Church Duct & Dryer Vent Packages',
+  offersTitle: 'Falls Church flat-rate packages',
   services: {
-    heading: 'What We Clean in Falls Church Compact-Lot Homes',
-    intro: 'Smaller footprints with older trunks get the same full-scope cleaning at published rates.',
+    heading: 'What we clean in the City of Falls Church',
+    intro:
+      'Retrofit metal in joist bays and tight dryer bends — same published scopes as county neighbors, different parking notes.',
     items: [
       {
-        title: 'Air Duct Cleaning for Falls Church Houses',
-        text: 'We seal HEPA-filtered negative-pressure equipment to the trunk and agitate every supply line, return, and register with specialized agitation tools sized for the tighter joist bays common in pre-war and mid-century Falls Church homes. Sanitizing is included when the walkthrough identifies biological growth. Schedule [air duct cleaning](/air-duct-cleaning).',
+        title: 'Air duct cleaning (source removal)',
+        text: 'HEPA negative pressure on the trunk, agitation through supplies and returns, registers included. [EPA duct guidance](https://www.epa.gov/indoor-air-quality-iaq/should-you-have-air-ducts-your-home-cleaned) still cautions against health overclaims — we remove debris and show photos. [Air duct cleaning](/air-duct-cleaning).',
       },
       {
-        title: 'Dryer Vent Service',
-        text: 'Compact lots and second-floor laundry on small-lot houses mean bent interior dryer runs that pack with lint quickly. We rod-brush and vacuum the entire path to the exterior cap so airflow and exhaust are fully restored. Book [dryer vent cleaning](/dryer-vent-cleaning).',
+        title: 'Dryer vent cleaning',
+        text: 'Small-lot homes often route dryers through bent interior walls; lint packs elbows before the dryer “feels” slow. Fire risk is the other honest driver — see [NFPA dryer-fire research](https://www.nfpa.org/education-and-research/research/nfpa-research/fire-statistical-reports/home-fires-involving-clothes-dryers-and-washing-machines). Full brush-out to the exterior cap. [Dryer vent cleaning](/dryer-vent-cleaning).',
       },
       {
-        title: 'Mold Treatment in Falls Church Ductwork',
-        text: 'Older basements in the city hold moisture close to the air handler, and summer humidity compounds the problem. When mold is found on coils or inside dead-end branches, we clean mechanically, then apply EPA-registered antimicrobial product along the ventilation path. Details at [mold remediation for air ducts](/mold-remediation-air-ducts).',
+        title: 'Optional antimicrobial on hard duct surfaces',
+        text: 'After mechanical cleaning, EPA-registered product on hard metal when inspection shows biological film — not whole-home mold remediation and not a substitute for fixing water intrusion Fairfax County Health describes. [Mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
     ],
   },
   why: {
-    heading: 'Why Close-In Falls Church Homes Recirculate Road Film',
+    heading: 'What usually brings us to Falls Church homes',
     items: [
       {
-        title: 'Independent City, Accurate Dispatch',
-        text: 'We distinguish the City of Falls Church from the broader Census area. The truck comes from Burke \u2014 close enough for a Broad Street morning window without the ambiguity of a generic \u201cFalls Church\u201d service zone.',
+        title: 'Mediation does not order mold work',
+        text: 'City [tenant–landlord assistance](https://www.fallschurchva.gov/691/Tenant-Landlord-Property-Assistance) can facilitate conversation; it does not compel landlords to remediate mold or clean ducts. Separate housing disputes from the mechanical scope you hire us for.',
       },
       {
-        title: 'Older Retrofit Trunks Are Routine',
-        text: '1920s\u20131960s houses with later-added central air have ductwork routed through existing structure. Those tight runs with multiple elbows are a standard job for this crew, not an excuse for add-on line items.',
+        title: 'County Health, city streets',
+        text: 'Mold education and referral paths run through [Fairfax County Health](https://www.fairfaxcounty.gov/health/environment/mold) for Falls Church residents. We clean HVAC pathways — we do not replace County environmental health services.',
       },
       {
-        title: 'Price Set Before Work Begins',
-        text: 'Residential duct and dryer packages are flat-rate. The number on your confirmation is the number on the invoice.',
+        title: 'Beltway particulate on short runs',
+        text: 'Traffic dust plus street-tree pollen loads returns on pre-war and mid-century trunks retrofitted after walls were closed. Cleaning removes what is already inside; filters and humidity control slow the return.',
       },
       {
-        title: 'Satisfaction Guarantee',
-        text: 'If the cleaning does not meet your expectations, we come back and redo the work without additional charge.',
+        title: 'Flat rate + photos from Burke',
+        text: 'Quote locked before agitation; before/after images at close-out. Alley parking and narrow driveways go on the work order the morning of the visit.',
       },
     ],
   },
   communities: {
-    heading: 'City of Falls Church Streets and Near-Edge Blocks',
-    intro: 'Arlington and Fairfax pages are nearby; this is the City of Falls Church.',
+    heading: 'City streets we stage for from Burke',
+    intro: 'Confirm city limits when you book — edge blocks touch Arlington and Fairfax County.',
     groups: [
       {
-        title: 'City core',
-        places: 'Broad Street, Washington Street, City Hall area, downtown blocks',
+        title: 'Downtown & Broad Street',
+        places: 'Broad Street, Washington Street, City Hall blocks, Eden Center edge',
       },
       {
         title: 'West End & Tinner Hill',
-        places: 'Tinner Hill, West End, Cherry Hill, Lincoln Park streets',
+        places: 'Tinner Hill, West End, Cherry Hill, Lincoln Park area',
       },
       {
-        title: 'Close-in edges',
-        places:
-          'Streets toward [Arlington](/locations/arlington), [McLean](/locations/mclean), and [Vienna](/locations/vienna) \u2014 ask if your block is city or county',
+        title: 'City edges',
+        places: 'Streets toward [Arlington](/locations/arlington), Seven Corners-adjacent blocks — ask if your parcel is city or county',
       },
     ],
   },
   process: {
-    heading: 'Tight-Lot Staging From the Burke Office',
-    intro: 'Same flat-rate flow from Burke — scoped for Falls Church housing.',
+    heading: 'Burke → Falls Church visit flow',
+    intro: 'We separate City/landlord pathways from duct and dryer scope on the walkthrough.',
     steps: [
       {
-        title: 'Inspect access and dryer path',
-        text: 'We walk returns and the dryer run typical of Falls Church housing (basement or attic air-handler access typical in Falls Church) so nothing is surprise-priced later.',
+        title: 'Confirm jurisdiction',
+        text: 'City of Falls Church vs Fairfax County address changes which civic links we mention — not the flat-rate menu.',
       },
       {
-        title: 'Stage the right equipment',
-        text: 'Tight Falls Church streets get portable HEPA from Burke; larger lots may use truck-mounted vacuum when access allows.',
+        title: 'Building type',
+        text: 'Basement handler, attic trunk, or second-floor laundry closet? Tight joist bays are routine here, not upsell bait.',
       },
       {
-        title: 'Clean ducts end to end',
-        text: 'Specialized tools plus negative-pressure vacuum through the trunks serving this Falls Church, VA home.',
+        title: 'Lock scope and price',
+        text: 'Ducts, dryer vent, or both — number confirmed before tools run; antimicrobial only with your OK.',
       },
       {
-        title: 'Clear the dryer run',
-        text: 'Full-length brushing to the exterior cap when dryer service is on the Falls Church ticket.',
+        title: 'Source-removal + photos',
+        text: 'Negative-pressure HEPA cleaning and full dryer brush-out when booked; images before we leave.',
       },
       {
-        title: 'Final walk-through',
-        text: 'Review Falls Church photos together and leave booking notes for (571) 460-0001 if you want a follow-up.',
+        title: 'Handoff',
+        text: 'Moisture tips aligned with County Health summer advice, filter interval, (571) 460-0001 for follow-up.',
       },
     ],
   },
-  faqIntro: 'Falls Church questions — call (571) 460-0001 (dispatch: Burke).',
+  faqIntro:
+    'Falls Church City questions — mediation limits and County Health links included. Book: (571) 460-0001 (Burke).',
   faq: [
     {
-      q: 'Who dispatches the crew to Falls Church, VA?',
-      a: 'Falls Church appointments leave from Burke, VA (5641 Burke Centre Pkwy Ste 119). Call (571) 460-0001 for air duct or dryer vent cleaning on your street.',
+      q: 'Can the City of Falls Church order my landlord to fix mold or clean ducts?',
+      a: 'No. [Tenant, Landlord & Property Assistance](https://www.fallschurchva.gov/691/Tenant-Landlord-Property-Assistance) explains that mediation **cannot order** remedies. Mold questions are steered to [Fairfax County Health](https://www.fairfaxcounty.gov/health/environment/mold), which does not test indoor air or perform remediation for you. We are a private duct and dryer-vent cleaner.',
     },
     {
-      q: 'How should I prep the house for the visit?',
-      a: 'Falls Church prep: open returns and the dryer, move fragile items near vents, mention pets or renovations when you book at (571) 460-0001.',
+      q: 'Does Falls Church inspect mold inside my HVAC system?',
+      a: 'City [Code Administration](https://www.fallschurchva.gov/1846/Code-Administration) handles city permits and property standards; mold prevention materials are part of broader housing guidance. Neither Code nor County Health certifies duct cleanliness on a service visit — we document our mechanical cleaning with photos.',
     },
     {
-      q: 'How much time should I block on the calendar?',
-      a: 'Block roughly half a morning for a typical Falls Church home. Dryer-vent add-ons are often possible the same day if booked together.',
+      q: 'I live in “Falls Church” but my mail says Fairfax — is this the right page?',
+      a: 'Many addresses use Falls Church mailing names while sitting in Fairfax County. This page targets the **independent City**. If you are county-only, see [Fairfax](/locations/fairfax) or call (571) 460-0001 and we will match the right service area.',
     },
     {
-      q: 'How does the quote work for this address?',
-      a: 'For this Falls Church, VA address we quote a flat package from Burke. Walkthrough first, locked number second — not priced by counting vents.',
+      q: 'Why mention EPA and NFPA on a city page?',
+      a: '[EPA](https://www.epa.gov/indoor-air-quality-iaq/should-you-have-air-ducts-your-home-cleaned) frames routine duct cleaning carefully on health claims; [NFPA](https://www.nfpa.org/education-and-research/research/nfpa-research/fire-statistical-reports/home-fires-involving-clothes-dryers-and-washing-machines) documents dryer-fire patterns. Honest drivers: debris removal, lint fire risk, airflow — not “County approved.”',
     },
     {
-      q: 'Can ducts and the dryer vent be done in one visit?',
-      a: 'Yes for Falls Church — book the combined package up front. Call (571) 460-0001; the Burke crew brings both tool sets for one stop.',
+      q: 'Will VDH recommend your company for mold?',
+      a: '[VDH mold contact guidance](https://www.vdh.virginia.gov/environmental-health/2018/07/17/who-do-i-contact-for-help-with-mold-removal/) does not recommend specific contractors. Judge us on flat-rate scope and before/after photos.',
     },
     {
-      q: 'How far ahead should I book?',
-      a: 'Falls Church fills fast in pollen and humid months. Same-week openings are common — call (571) 460-0001 for the next Burke window.',
+      q: 'Which office dispatches Falls Church jobs?',
+      a: 'Burke, VA (5641 Burke Centre Pkwy Ste 119). Call (571) 460-0001. Combined duct + dryer packages available when both are booked up front.',
     },
   ],
 }

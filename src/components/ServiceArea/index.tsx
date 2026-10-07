@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 
+import { TextWithLinks } from '@/components/TextWithLinks'
 import { getCityPageLinks } from '@/utilities/locations'
 import { getAllOffices } from '@/utilities/offices'
 import { getCachedGlobalSafe } from '@/utilities/getGlobals'
@@ -74,13 +75,14 @@ export async function ServiceArea({
   officesHeading = 'Our offices',
   mapEmbedUrl,
   mapTitle,
-  estimateHref = '/#contact',
+  estimateHref = '#contact',
   estimateLabel = 'Free estimate',
   regions: regionsProp,
   tone,
   appearance,
   anchorId = 'service_area',
   compact = false,
+  seoCityScope = 'all',
 }: {
   callHref?: string
   callLabel?: string
@@ -98,6 +100,8 @@ export async function ServiceArea({
   anchorId?: string
   /** Skip full state lists, SEO city dump, and map — used on city pages. */
   compact?: boolean
+  /** Hub pages: only list MD or VA cities in the intro dump. */
+  seoCityScope?: 'all' | 'MD' | 'VA' | 'none'
 }) {
   const [offices, cityPages, site, settings, defaultPartial] = await Promise.all([
     getAllOffices(),
@@ -145,7 +149,13 @@ export async function ServiceArea({
   const cityLinks = Object.fromEntries(
     cityPages.map((page) => [page.city, `/locations/${page.slug}`]),
   )
-  const seoCities = cityPages.filter((page) => !offices.some((o) => o.slug === page.slug))
+  const seoCities = cityPages.filter((page) => {
+    if (offices.some((o) => o.slug === page.slug)) return false
+    if (seoCityScope === 'none') return false
+    if (seoCityScope === 'MD') return page.state === 'MD'
+    if (seoCityScope === 'VA') return page.state === 'VA' || page.state === 'DC'
+    return true
+  })
   const featuredSeoCities = seoCities.slice(0, 12)
   const resolvedIntro =
     intro ||
@@ -162,7 +172,7 @@ export async function ServiceArea({
               {resolvedHeading}
             </h2>
             <p className="mt-4 site-body leading-relaxed">
-              {resolvedIntro}{' '}
+              <TextWithLinks text={resolvedIntro} />{' '}
               <Link href="/locations" className="site-link">
                 See all cities we serve
               </Link>
@@ -214,9 +224,9 @@ export async function ServiceArea({
             <a href={`mailto:${resolvedEmail}`} className="site-btn site-btn-tertiary">
               {resolvedEmail}
             </a>
-            <Link href={estimateHref} className="site-btn site-btn-secondary">
+            <a href={estimateHref} className="site-btn site-btn-secondary">
               {estimateLabel}
-            </Link>
+            </a>
           </div>
         </div>
       </section>
@@ -231,10 +241,11 @@ export async function ServiceArea({
             {resolvedHeading}
           </h2>
           <p className="mt-4 site-body leading-relaxed">
-            {resolvedIntro}
+            <TextWithLinks text={resolvedIntro} />
             {featuredSeoCities.length > 0 ? (
               <>
-                , including{' '}
+                {' '}
+                Communities we often stage from this desk include{' '}
                 {featuredSeoCities.map((page, index) => (
                   <React.Fragment key={page.slug}>
                     {index > 0
@@ -362,12 +373,12 @@ export async function ServiceArea({
           >
             {resolvedEmail}
           </a>
-          <Link
+          <a
             href={estimateHref}
             className="site-btn site-btn-secondary"
           >
             {estimateLabel}
-          </Link>
+          </a>
         </div>
       </div>
     </section>

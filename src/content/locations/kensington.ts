@@ -1,77 +1,83 @@
 import type { LocationContentSeed } from '@/utilities/locations'
 
+/**
+ * Kensington — historic Antique Row village, canopy colonials, quieter than Bethesda density.
+ * Links used:
+ * - https://www.montgomerycountymd.gov/DEP/air/indoor-air.html
+ * - https://www.montgomerycountymd.gov/propertycare/air-quality-law/indoor-air-quality/mold
+ * - https://www.montgomerycountymd.gov/DHCA/housing/landlordtenant/
+ */
 export const kensington: LocationContentSeed = {
   slug: 'kensington',
-  title: 'Air Duct Cleaning in Kensington, MD',
-  headline:
-    'Air duct and dryer vent cleaning for Antique Row, Connecticut Avenue, and close-in colonials',
+  title: 'Kensington MD Air Duct & Dryer Vent Cleaning',
+  headline: 'Close-in Montgomery colonials — short run from Old Georgetown Road',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Kensington, MD. Flat rates from our Bethesda office for close-in colonials, Antique Row, and Connecticut Avenue pollen. Call (301) 809-4544.',
+    'Air duct & dryer vent cleaning in Kensington, MD. Flat rates for colonials & basement handlers. Photos. Call (301) 809-4544.',
   intro:
-    'Amazon Air Duct Cleaning serves Kensington from our Bethesda office — up Connecticut Avenue. Close-in colonials and older brick take on Montgomery pollen and street dust. Call (301) 809-4544.',
+    'Kensington is a compact town between Bethesda and Wheaton — Howard Avenue antiques, weekend foot traffic, and one of the county’s older residential canopies over 1930s–1960s colonials. Short basement trunk runs still concentrate pollen and street dust; finished rec-room handlers sweat in humid summers. DEP publishes indoor-air guidance; we clean ducts and dryer vents minutes up Connecticut Avenue. (301) 809-4544.',
   heroImage: '/img/locations/kensington.webp',
   heroAlt: 'Air duct cleaning in Kensington, MD — Amazon Air Duct Cleaning',
   city: 'Kensington',
   state: 'MD',
   servedBy: 'bethesda',
-  sectionLayout: 'communitiesFirst',
+  sectionLayout: 'processFirst',
   about: {
-    heading: 'Antique Row Charm, Connecticut Avenue Canopy, and Basement Systems That Sweat',
+    heading: 'Village canopy colonials and short basement trunks',
     paragraphs: [
-      'Kensington is a compact Montgomery County town between [Bethesda](/locations/bethesda) and [Wheaton](/locations/wheaton) where Connecticut Avenue and Knowles Avenue intersect beneath one of the county\'s oldest residential tree canopies. Homes along Howard Avenue near Antique Row, through Kensington Heights, and toward the Rock Creek edge are predominantly 1930s through 1960s colonials with full basements, original plaster walls, and HVAC systems that were installed — or substantially updated — sometime after the houses were built. The trunk lines in these basements run short distances compared to larger Montgomery homes, but the cool below-grade air keeps them sweating through every humid Maryland summer.',
-      'Connecticut Avenue acts as a pollen and particulate corridor. Street trees drop debris directly onto stoops and window sills from late March through June, and the returns pull that material inward before it settles on porches. Weekend foot traffic to Antique Row and the surrounding restaurants stirs fine street-level dust that enters open windows and finds its way into return grilles. The result is a layered film inside supply trunks — part organic pollen, part road particulate, part household fibers.',
-      'We dispatch Kensington from [Bethesda](/locations/bethesda) — just a few minutes up Connecticut Avenue. [Wheaton](/locations/wheaton) continues east, [Silver Spring](/locations/silver-spring) south. Our post on [Kensington colonials and pollen in air ducts](/blog/kensington-colonials-pollen-air-ducts) goes deeper into the seasonal cycle.',
+      'Kensington is **village scale**: Antique Row, Knowles Avenue, Kensington Heights, and Rock Creek–adjacent streets where Connecticut Avenue drops pollen onto stoops from late March through June. Returns pull that organic load into **short basement trunks** — sometimes only a few feet from the air handler — so the first supply registers often carry the heaviest film even on modest lot sizes.',
+      'Weekend shoppers and restaurant traffic stir fine street-level dust that finds open windows and return grilles. Finished basements keep handlers cool and prone to condensation; Montgomery DEP’s [Indoor Air Quality](https://www.montgomerycountymd.gov/DEP/air/indoor-air.html) and [mold](https://www.montgomerycountymd.gov/propertycare/air-quality-law/indoor-air-quality/mold) pages push humidity control and venting dryers outdoors — the same habits that slow mold risk on coils and metal trunks.',
+      'Duplex renters near the town center may use [Landlord & Tenant](https://www.montgomerycountymd.gov/DHCA/housing/landlordtenant/) resources when maintenance is disputed. We dispatch from [Bethesda](/locations/bethesda) — one of the shortest drives on the calendar — with [Wheaton](/locations/wheaton) east and [Silver Spring](/locations/silver-spring) south. Seasonal detail: [Kensington colonials and pollen in air ducts](/blog/kensington-colonials-pollen-air-ducts).',
     ],
     highlights: [
-      'Antique Row, Connecticut Avenue, Knowles Avenue, and Kensington Heights',
-      'Flat-rate packages for colonials with finished and unfinished basements',
-      'Before-and-after register photos included with every service',
-      'Minutes from Bethesda — one of the shortest dispatch drives on the schedule',
+      'Antique Row / Connecticut Avenue canopy',
+      'Short basement trunks + finished rec-room handlers',
+      'DEP IAQ cited; flat-rate photos',
+      'Minutes from Suite 201 — (301) 809-4544',
     ],
   },
-  offersTitle: 'Kensington Colonial and Basement System Rates',
+  offersTitle: 'Kensington colonial packages',
   services: {
-    heading: 'Kensington Services for Close-In Colonials and Finished Basements',
-    intro: 'Short basement trunk runs still collect heavy seasonal loads — the scope walk determines what has accumulated, not the footage alone.',
+    heading: 'What we clean in Kensington bungalows and colonials',
+    intro: 'Basement laundry sidewall caps and bump-out first-floor dryers — scoped before equipment moves.',
     items: [
       {
-        title: 'Air Duct Cleaning & Sanitization',
-        text: 'HEPA negative pressure and mechanical agitation through basement supply trunks, return plenums, and floor registers in Kensington\'s close-in colonials. Shorter trunk lengths concentrate pollen and particulate near the air handler, which means the first few feet of supply carry the heaviest load. Full scope at [air duct cleaning](/air-duct-cleaning).',
+        title: 'Air duct cleaning',
+        text: 'HEPA negative pressure through basement supplies, returns, and floor registers. [EPA](https://www.epa.gov/indoor-air-quality-iaq/should-you-have-air-ducts-your-home-cleaned). [Air duct cleaning](/air-duct-cleaning).',
       },
       {
-        title: 'Dryer Vent Cleaning',
-        text: 'Colonial laundry rooms in Kensington are typically in the basement or on a bump-out first floor. Vents exit through the foundation wall or a short sidewall run, but even these shorter paths accumulate compacted lint at the cap over time. We brush, vacuum, and test draw. Schedule at [dryer vent cleaning](/dryer-vent-cleaning).',
+        title: 'Dryer vent cleaning',
+        text: 'Foundation-wall and short sidewall runs common in colonials — full brush-out and draw test. [NFPA dryer fires](https://www.nfpa.org/education-and-research/research/nfpa-research/fire-statistical-reports/home-fires-involving-clothes-dryers-and-washing-machines). [Dryer vent cleaning](/dryer-vent-cleaning).',
       },
       {
-        title: 'Ventilation & HVAC Mold Treatment',
-        text: 'Kensington\'s tree-shaded lots keep basements cooler than open-sky neighborhoods, and that temperature gap produces persistent coil and trunk condensation during Montgomery County\'s humid months. When inspection reveals microbial presence, we treat with EPA-registered antimicrobials along the ventilation path. More at [mold remediation for air ducts](/mold-remediation-air-ducts).',
+        title: 'Optional duct antimicrobial',
+        text: 'Hard metal after mechanical cleaning when inspection shows biological film — not whole-home remediation. [Mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
     ],
   },
   why: {
-    heading: 'Why Kensington\'s Shaded Colonials Concentrate Pollen in Short Trunk Runs',
+    heading: 'Why shaded colonials concentrate load in short runs',
     items: [
       {
-        title: 'Shortest Bethesda Dispatch — Minutes Up Connecticut Avenue',
-        text: 'Kensington is one of the closest city pages to our office. The crew reaches Antique Row without touching a highway.',
+        title: 'Spring tree pollen on short runs',
+        text: 'Street trees and Antique Row foot traffic add organic particulate that loads returns fast in compact colonials.',
       },
       {
-        title: 'Basement Systems Checked for Condensation and Joint Leaks',
-        text: 'Colonial trunks under finished rec rooms get a moisture and joint-integrity check during the scope walk — sealed systems extract better, and Kensington basements stay damp enough to matter.',
+        title: 'Basement temperature gap',
+        text: 'Cool below-grade handlers condensate in humid months — DEP humidity guidance applies even in small homes.',
       },
       {
-        title: 'Pricing Locked at Booking',
-        text: 'Residential duct and dryer packages are confirmed when you call (301) 809-4544. The price does not adjust once the crew arrives.',
+        title: 'Joint integrity on retrofits',
+        text: 'Plaster-cut trunks get a seal check during the walk — negative pressure only works when the system holds.',
       },
       {
-        title: 'Photo-Verified Satisfaction Guarantee',
-        text: 'Every trunk and register is documented. If Kensington before/after photos do not show clear improvement, contact us within 7 days — we re-perform or refund per our refund policy.',
+        title: 'Flat rate from the closest office',
+        text: 'Price confirmed on (301) 809-4544 before agitation; photos at close-out.',
       },
     ],
   },
   communities: {
-    heading: 'Connecticut Avenue and Neighborhood Courts',
-    intro: 'Wheaton and Bethesda hub pages are nearby.',
+    heading: 'Kensington streets on the Bethesda route',
+    intro: 'Quiet residential grids — not the medical corridor.',
     groups: [
       {
         title: 'Antique Row & downtown',
@@ -83,62 +89,38 @@ export const kensington: LocationContentSeed = {
       },
       {
         title: 'Kensington Heights & east',
-        places:
-          'Kensington Heights, streets toward Wheaton and Silver Spring — ask if your block is not listed',
+        places: 'Kensington Heights, streets toward Wheaton and Silver Spring',
       },
     ],
   },
   process: {
-    heading: 'Short Bethesda Run Into Kensington',
-    intro: 'Same flat-rate flow from Bethesda — scoped for Kensington housing.',
+    heading: 'Short Connecticut Avenue run from Bethesda',
+    intro: 'Colonial basements drive the visit plan — access before agitation.',
     steps: [
-      {
-        title: 'Inspect access and dryer path',
-        text: 'We walk returns and the dryer run typical of Kensington housing (basement or attic air-handler access typical in Kensington) so nothing is surprise-priced later.',
-      },
-      {
-        title: 'Stage the right equipment',
-        text: 'Tight Kensington streets get portable HEPA from Bethesda; larger lots may use truck-mounted vacuum when access allows.',
-      },
-      {
-        title: 'Clean ducts end to end',
-        text: 'Specialized tools plus negative-pressure vacuum through the trunks serving this Kensington, MD home.',
-      },
-      {
-        title: 'Clear the dryer run',
-        text: 'Full-length brushing to the exterior cap when dryer service is on the Kensington ticket.',
-      },
-      {
-        title: 'Final walk-through',
-        text: 'Review Kensington photos together and leave booking notes for (301) 809-4544 if you want a follow-up.',
-      },
+      { title: 'Handler location', text: 'Basement vs closet bump-out — we note stair clearance and finished-room paths.' },
+      { title: 'Dryer path traced', text: 'Sidewall cap or foundation exit — full length scoped, not just behind the dryer.' },
+      { title: 'Package locked', text: 'Flat residential rate confirmed before hoses run.' },
+      { title: 'Source removal + photos', text: 'Agitation under negative pressure; register images before we leave.' },
+      { title: 'Handoff', text: 'Filter cadence for pollen season; (301) 809-4544 for combo follow-up.' },
     ],
   },
-  faqIntro: 'Kensington questions — call (301) 809-4544 (dispatch: Bethesda).',
+  faqIntro: 'Kensington village housing — (301) 809-4544 (Bethesda).',
   faq: [
     {
-      q: 'Who dispatches the crew to Kensington, MD?',
-      a: 'Kensington appointments leave from Bethesda, MD (7815 Old Georgetown Rd Ste 201). Call (301) 809-4544 for air duct or dryer vent cleaning on your street.',
+      q: 'How is Kensington different from Bethesda on your site?',
+      a: 'Bethesda emphasizes NIH/Wisconsin **density and condo risers**. Kensington emphasizes **village canopy colonials**, Antique Row foot traffic, and short basement trunk runs.',
     },
     {
-      q: 'How should I prep the house for the visit?',
-      a: 'Kensington prep: open returns and the dryer, move fragile items near vents, mention pets or renovations when you book at (301) 809-4544.',
+      q: 'Does DEP recommend duct cleaning for pollen?',
+      a: 'DEP [IAQ](https://www.montgomerycountymd.gov/DEP/air/indoor-air.html) focuses on humidity, ventilation, and mold prevention — not endorsing vendors. We provide mechanical source removal with photos when you hire us.',
     },
     {
-      q: 'How much time should I block on the calendar?',
-      a: 'Block roughly half a morning for a typical Kensington home. Dryer-vent add-ons are often possible the same day if booked together.',
+      q: 'My basement rec room smells musty — ducts only?',
+      a: 'Musty basements often trace to moisture or drainage, not ducts alone. Fix water sources first; duct cleaning removes debris already in the trunk when booked.',
     },
     {
-      q: 'How does the quote work for this address?',
-      a: 'For this Kensington, MD address we quote a flat package from Bethesda. Walkthrough first, locked number second — not priced by counting vents.',
-    },
-    {
-      q: 'Can ducts and the dryer vent be done in one visit?',
-      a: 'Yes for Kensington — book the combined package up front. Call (301) 809-4544; the Bethesda crew brings both tool sets for one stop.',
-    },
-    {
-      q: 'How far ahead should I book?',
-      a: 'Kensington fills fast in pollen and humid months. Same-week openings are common — call (301) 809-4544 for the next Bethesda window.',
+      q: 'Time to reach Kensington from your office?',
+      a: 'Usually one of the shortest Bethesda drives — Connecticut Avenue straight to Knowles/Howard. Same-day windows depend on the calendar; call (301) 809-4544.',
     },
   ],
 }

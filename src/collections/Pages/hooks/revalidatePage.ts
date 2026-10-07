@@ -4,6 +4,7 @@ import { revalidatePath } from 'next/cache'
 
 import type { Page } from '../../../payload-types'
 import { scheduleRevalidate } from '@/utilities/scheduleRevalidate'
+import { scheduleIndexNow } from '@/utilities/indexNow'
 
 export const revalidatePage: CollectionAfterChangeHook<Page> = ({
   doc,
@@ -20,6 +21,7 @@ export const revalidatePage: CollectionAfterChangeHook<Page> = ({
         revalidatePath(path)
         revalidatePath('/sitemap.xml')
       })
+      scheduleIndexNow([path])
     }
 
     if (previousDoc?._status === 'published' && doc._status !== 'published') {
@@ -31,6 +33,7 @@ export const revalidatePage: CollectionAfterChangeHook<Page> = ({
         revalidatePath(oldPath)
         revalidatePath('/sitemap.xml')
       })
+      scheduleIndexNow([oldPath])
     }
   }
   return doc
@@ -43,6 +46,7 @@ export const revalidateDelete: CollectionAfterDeleteHook<Page> = ({ doc, req: { 
       revalidatePath(path)
       revalidatePath('/sitemap.xml')
     })
+    scheduleIndexNow([path])
   }
 
   return doc

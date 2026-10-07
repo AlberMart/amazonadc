@@ -4,6 +4,12 @@
   "description": "Amazon Air Duct Cleaning — Next.js + Payload CMS",
   "license": "MIT",
   "type": "module",
+  "browserslist": [
+    "chrome >= 111",
+    "edge >= 111",
+    "firefox >= 111",
+    "safari >= 16.4"
+  ],
   "scripts": {
     "build": "cross-env NODE_OPTIONS=--no-deprecation next build",
     "dev": "cross-env NODE_OPTIONS=--no-deprecation next dev",

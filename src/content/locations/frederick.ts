@@ -1,143 +1,112 @@
 import type { LocationContentSeed } from '@/utilities/locations'
 
+/**
+ * Frederick — County Housing livability does NOT mold-inspect; Health FAQ points to EPA contacts.
+ */
 export const frederick: LocationContentSeed = {
   slug: 'frederick',
-  title: 'Air Duct Cleaning in Frederick, MD',
-  headline:
-    'Air duct and dryer vent cleaning for downtown Frederick, Urbana, and the I-270 north end',
+  title: 'Air Duct & Dryer Vent Cleaning in Frederick, MD',
+  headline: 'Downtown cellars and newer Urbana pads — longer Bethesda hop, same flat rates',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Frederick, MD. Flat rates from our Bethesda office for downtown brick, newer suburbs. Call (301) 809-4544.',
+    'Air duct & dryer vent cleaning in Frederick, MD. Flat rates for downtown & newer suburbs. Photos. Call (301) 809-4544.',
   intro:
-    'Amazon Air Duct Cleaning serves Frederick from our Bethesda office — farther up I-270 than Germantown. Older city houses and newer Urbana streets all take on humidity and mixed dust. Call (301) 809-4544.',
+    'Frederick County Division of Housing says mold inspections are not performed by County Housing personnel — even while Livability Code covers rental maintenance. Downtown brick and Urbana-edge suburbs still need clear ducts and dryer vents. We run from Bethesda with flat rates and photos. Call (301) 809-4544.',
   heroImage: '/img/locations/frederick.webp',
   heroAlt: 'Air duct cleaning in Frederick, MD — Amazon Air Duct Cleaning',
   city: 'Frederick',
   state: 'MD',
   servedBy: 'bethesda',
-  sectionLayout: 'servicesFirst',
+  sectionLayout: 'whyFirst',
   about: {
-    heading: 'Carroll Creek Cellars, Market Street Brick, and Urbana\'s Rapid Suburban Fill',
+    heading: 'I-270 end of the line — different County voice',
     paragraphs: [
-      'Frederick occupies the I-270 corridor\'s northern end where the Piedmont meets the Catoctin foothills — the historic downtown grid around Market Street and Carroll Creek, Baker Park\'s neighborhood edge, mid-century sections north and west, and the rapidly filling Urbana and Adamstown subdivisions that stretch back toward [Clarksburg](/locations/clarksburg). Downtown buildings carry brick and stone cellars that predate mechanical ventilation. When HVAC was retrofitted, ductwork was threaded around old masonry, creating irregular trunk paths with dead-end pockets that trap humidity from the Carroll Creek watershed year-round.',
-      'Urbana and the new I-270 south clusters present the opposite timeline — construction-era drywall dust sealed inside ductwork before the first occupant changed a filter. Piedmont humidity across both eras of housing keeps trunk surfaces damp from late May through September, and Frederick\'s position at the valley mouth concentrates airborne agricultural particulate that mixes with tree pollen every spring. Mt Airy sits east as a community on the same dispatch route.',
-      'We dispatch Frederick from [Bethesda](/locations/bethesda) — the longest regular Maryland run on our schedule. [Clarksburg](/locations/clarksburg) and [Germantown](/locations/germantown) are closer I-270 pages. Read more in our post on [Frederick downtown humidity and air ducts](/blog/frederick-downtown-humidity-air-ducts).',
+      'Downtown Frederick brick and rowhouse stock carries retrofitted trunks; newer clusters toward Urbana and Ballenger Creek bring townhome closets and longer dryer runs. The drive from Bethesda is longer than Rockville — we say so up front and still keep flat-rate residential packages.',
+      'Frederick County [Livability Code Enforcement](https://frederickcountymd.gov/6376/Livability-Code-Enforcement) adopted property-maintenance standards for rentals and states clearly that mold inspections are **not** performed by Division of Housing staff, pointing residents to EPA mold resources. That boundary is the civic hook for this page.',
+      'The Frederick County Health Department FAQ on mold steers people toward EPA Air Quality contacts rather than a local mold-inspection desk. We clean ducts and dryer vents; we do not replace Livability complaint processes for leaks and sanitation. Corridor neighbors on the same Bethesda dispatch include [Germantown](/locations/germantown) and [Gaithersburg](/locations/gaithersburg).',
     ],
     highlights: [
-      'Downtown Frederick, Carroll Creek, Baker Park edge, Urbana, Adamstown, and Mt Airy',
-      'Flat-rate pricing for downtown brick cellars through new Urbana construction',
-      'Before-and-after photos documenting every duct section and register',
-      'Longest regular Maryland drive — arrival windows reflect the distance',
+      'Housing “no mold inspections” cited from Livability page',
+      'Downtown brick vs newer suburb building split',
+      'Flat-rate photo jobs despite longer ETA',
+      'Bethesda: (301) 809-4544',
     ],
   },
-  offersTitle: 'Frederick Downtown and Suburb Rates — Bethesda Office',
+  offersTitle: 'Frederick packages',
   services: {
-    heading: 'Frederick Services for Historic Brick, Carroll Creek Cellars, and Urbana New Builds',
-    intro: 'A Market Street cellar retrofit and an Urbana first-owner townhome are different inspections under the same flat-rate framework — both scoped before pricing.',
+    heading: 'What we clean in Frederick',
+    intro: 'Same menu as closer MD cities — honest travel window from Bethesda.',
     items: [
       {
-        title: 'Air Duct Cleaning & Sanitization',
-        text: 'mechanical agitation under HEPA negative pressure through cellar-routed trunks in downtown Frederick and standard suburban runs in Urbana and Adamstown. Historic trunk paths with dead-end pockets receive flexible tooling to reach areas rigid equipment cannot access. Agricultural particulate and Piedmont pollen are extracted from supply surfaces, returns, and register boots. Full scope at [air duct cleaning](/air-duct-cleaning).',
+        title: 'Air duct cleaning',
+        text: 'Source removal for brick-home trunks and newer systems. [EPA](https://www.epa.gov/indoor-air-quality-iaq/should-you-have-air-ducts-your-home-cleaned). [Air duct cleaning](/air-duct-cleaning).',
       },
       {
-        title: 'Dryer Vent Cleaning',
-        text: 'Downtown Frederick row houses and historic additions often hide dryer vents behind masonry walls and through irregular chases. Urbana HOA townhomes route vents through party walls with tight bends. Both patterns receive full-length brushing, vacuum extraction, and draw verification at the exterior cap. Schedule at [dryer vent cleaning](/dryer-vent-cleaning).',
+        title: 'Dryer vent cleaning',
+        text: 'Horizontal downtown runs and suburban townhome chases. [NFPA](https://www.nfpa.org/education-and-research/research/nfpa-research/fire-statistical-reports/home-fires-involving-clothes-dryers-and-washing-machines). [Dryer vent cleaning](/dryer-vent-cleaning).',
       },
       {
-        title: 'Ventilation & HVAC Mold Treatment',
-        text: 'Carroll Creek watershed humidity and Piedmont summer dew points keep downtown cellar coils and Urbana lower-level handlers damp enough to support microbial colonization between filter changes. EPA-registered antimicrobial treatment covers coils, plenum walls, and affected trunk sections after visual documentation. Details at [mold remediation for air ducts](/mold-remediation-air-ducts).',
+        title: 'Optional duct antimicrobial',
+        text: 'After cleaning when film is on hard metal — not a County mold inspection. [Mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
     ],
   },
   why: {
-    heading: 'Why Frederick\'s Piedmont Position Concentrates Humidity in Older and Newer Systems',
+    heading: 'Why Frederick homeowners book us',
     items: [
       {
-        title: 'Longest Regular Maryland Drive — Scheduled Clearly',
-        text: 'Frederick is not a short hop from Bethesda. We build the I-270 north drive into a realistic arrival window so you know when to expect the crew.',
+        title: 'Housing complaints vs mold testing',
+        text: 'County Housing can work rental maintenance complaints under adopted property-maintenance code; it will not mold-inspect. Know which ask you are making.',
       },
       {
-        title: 'Historic Cellars and New Suburbs on One Flat-Rate Menu',
-        text: 'A Market Street stone cellar and an Urbana HOA townhome both receive a locked quote at (301) 809-4544. No mileage surcharge, no downtown premium.',
+        title: 'Two housing eras',
+        text: 'Downtown brick retrofit trunks vs newer suburb closets — we ask which before quoting time on site.',
       },
       {
-        title: 'Agricultural and Urban Particulate Both Accounted For',
-        text: 'Frederick sits at the junction of Piedmont farmland and suburban development. Our scoping process anticipates the mixed-source debris load typical of this corridor.',
+        title: 'Distance honesty',
+        text: 'Bethesda to Frederick is a real drive — we say so up front and schedule a window that respects the hop, not a fake “nearby” claim.',
       },
       {
-        title: 'Guaranteed Cleaning With Before-and-After Proof',
-        text: 'Every trunk section is documented. If improvement is not visible for this Frederick job, contact us within 7 days — we re-perform or refund per our refund policy.',
+        title: 'Flat rate still holds',
+        text: 'Travel does not turn into per-vent math on residential packages.',
       },
     ],
   },
   communities: {
-    heading: 'Downtown, North End, and Newer Southern Suburbs',
-    intro: 'Farther than Clarksburg; we schedule Frederick deliberately.',
+    heading: 'Frederick areas we stage',
+    intro: 'City core and south/east growth corridors.',
     groups: [
-      {
-        title: 'Downtown & Carroll Creek',
-        places: 'Downtown Frederick, Carroll Creek, Market Street, Baker Park edge',
-      },
-      {
-        title: 'Urbana & I-270 south',
-        places: 'Urbana, I-270 south clusters, streets toward Clarksburg',
-      },
-      {
-        title: 'Adamstown, Mt Airy & east',
-        places: 'Adamstown, Mt Airy, east-county lanes — ask if your subdivision is not listed',
-      },
+      { title: 'Downtown & historic', places: 'Downtown Frederick, Market Street corridor, historic brick blocks' },
+      { title: 'North & west', places: 'Fort Detrick-adjacent residential, Yellow Springs-adjacent' },
+      { title: 'South & east growth', places: 'Ballenger Creek, Urbana-edge, I-270 south approaches' },
     ],
   },
   process: {
-    heading: 'Longest Regular Maryland Run From Bethesda',
-    intro: 'Arrival windows reflect the drive from Bethesda to Frederick.',
+    heading: 'Bethesda → Frederick',
+    intro: 'Longer hop — we confirm address, parking, and access details when you book so the visit is not a guess.',
     steps: [
-      {
-        title: 'Walkthrough and quote',
-        text: 'In Frederick we ask about pets, renovations, and longer drive-time homes where arrival windows matter in Frederick before locking a flat-rate number for this MD address.',
-      },
-      {
-        title: 'Arrival window',
-        text: 'Morning-of text with a realistic ETA from the Bethesda office to your Frederick street — not a vague all-day window.',
-      },
-      {
-        title: 'Agree the package',
-        text: 'For this Frederick home: ducts, dryer vent, or both — scoped on site, quoted before equipment starts, paid after you are satisfied.',
-      },
-      {
-        title: 'HEPA source-removal cleaning',
-        text: 'We agitate and vacuum supplies, returns, and registers in this Frederick system under negative pressure so debris leaves in the vacuum.',
-      },
-      {
-        title: 'Photos and handoff',
-        text: 'Before/after photos, filter tips, and a dryer-vent interval for Frederick seasons. Questions go to (301) 809-4544.',
-      },
+      { title: 'Address class', text: 'Downtown parking vs suburban driveway.' },
+      { title: 'Scope', text: 'Ducts, dryer, or both; flat rate locked.' },
+      { title: 'Clean + photos', text: 'Source removal and dryer brush-out.' },
+      { title: 'Handoff', text: 'Filter tips; Livability/EPA links if moisture remains; (301) 809-4544.' },
     ],
   },
-  faqIntro: 'Frederick questions — call (301) 809-4544 (dispatch: Bethesda).',
+  faqIntro: 'Frederick County Livability + Health FAQ context. Book: (301) 809-4544.',
   faq: [
     {
-      q: 'Which office books jobs for Frederick?',
-      a: 'Frederick appointments leave from Bethesda, MD (7815 Old Georgetown Rd Ste 201). Call (301) 809-4544 for air duct or dryer vent cleaning on your street.',
+      q: 'Will Frederick County Housing inspect mold for me?',
+      a: 'No. [Livability Code Enforcement](https://frederickcountymd.gov/6376/Livability-Code-Enforcement) states mold inspections are not performed by Division of Housing personnel and points to EPA mold resources.',
     },
     {
-      q: 'What access do you need before arrival?',
-      a: 'In Frederick, clear a path to the air handler and dryer — basement trunks and dryer closets especially. Share gate or parking notes for your block.',
+      q: 'Who does the Health Department say to call about mold?',
+      a: 'County Health FAQs steer mold questions toward EPA Air Quality contacts rather than a local mold-inspection program. Verify the live FAQ for current numbers.',
     },
     {
-      q: 'How long is a typical visit?',
-      a: 'Most Frederick single-system houses finish in about 2–3 hours. Older trunks with additions can add time after inspection.',
+      q: 'Is travel added to the price?',
+      a: 'Residential packages stay flat-rate as quoted. We are clear that Frederick is a longer Bethesda run for scheduling, not a surcharge surprise after the walkthrough.',
     },
     {
-      q: 'Is pricing flat-rate or by the vent?',
-      a: 'Frederick residential packages are flat-rate from Bethesda. We scope during the walkthrough, confirm before equipment starts, and that is what you pay — no per-vent counting.',
-    },
-    {
-      q: 'Do you charge extra for Envirocon sanitizing?',
-      a: 'No upcharge for Envirocon on Frederick work when requested or when inspection supports it. We never spray without your OK.',
-    },
-    {
-      q: 'When should I call for the next opening?',
-      a: 'Frederick is a longer run from Bethesda. Book several days ahead for realistic windows; call (301) 809-4544 for the next open Frederick slot.',
+      q: 'Which office serves Frederick?',
+      a: 'Bethesda, MD. Call (301) 809-4544.',
     },
   ],
 }

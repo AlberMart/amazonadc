@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useMemo, useState } from 'react'
 
 import { BrandMark } from '@/components/BrandMark'
 import { MobileCallButton } from '@/components/MobileCallButton'
@@ -10,7 +10,13 @@ import { useHeaderTheme } from '@/providers/HeaderTheme'
 import type { ResolvedBrandMark } from '@/utilities/brandMark'
 import type { ResolvedNavLink } from '@/utilities/cmsLink'
 import type { ResolvedMobileCall } from '@/utilities/mobileCall'
-import { scrollToId, scrollWindowToTop } from '@/utilities/scrollToId'
+import { withMobileCallPhone } from '@/utilities/mobileCall'
+import {
+  isSectionSpyPaused,
+  pauseSectionSpy,
+  scrollToId,
+  scrollWindowToTop,
+} from '@/utilities/scrollToId'
 
 export type HeaderBottomEdge = 'none' | 'hairline' | 'scrolled'
 
@@ -38,6 +44,18 @@ function showInHeader(call: ResolvedMobileCall | null) {
 
 function showFloating(call: ResolvedMobileCall | null) {
   return Boolean(call?.enabled && (call.placement === 'floating' || call.placement === 'both'))
+}
+
+function hashTargetsForPath(navItems: ResolvedNavLink[], pathname: string) {
+  const ids: string[] = []
+  for (const item of navItems) {
+    const hashIndex = item.href.indexOf('#')
+    if (hashIndex === -1) continue
+    const pathPart = item.href.slice(0, hashIndex) || '/'
+    const id = item.href.slice(hashIndex + 1)
+    if (pathPart === pathname && id && !ids.includes(id)) ids.push(id)
+  }
+  return ids
 }
 
 export const HeaderClient: React.FC<{
@@ -71,11 +89,11 @@ export const HeaderClient: React.FC<{
   const locationPhone = locationSlug ? locationPhones[decodeURIComponent(locationSlug)] : null
   const activePhoneDisplay = locationPhone?.display || phoneDisplay
   const activePhoneHref = locationPhone?.href || phoneHref
-  const activeMobileCall = locationPhone
-    ? mobileCall
-      ? { ...mobileCall, phoneDisplay: locationPhone.display, phoneHref: locationPhone.href }
-      : mobileCall
-    : mobileCall
+  // ResolvedMobileCall uses href/label — never phoneDisplay/phoneHref.
+  const activeMobileCall =
+    mobileCall && locationPhone ? withMobileCallPhone(mobileCall, locationPhone) : mobileCall
+
+  const sectionIds = useMemo(() => hashTargetsForPath(navItems, pathname), [navItems, pathname])
 
   useEffect(() => {
     setHeaderTheme(null)
@@ -97,6 +115,52 @@ export const HeaderClient: React.FC<{
     window.addEventListener('hashchange', syncHash)
     return () => window.removeEventListener('hashchange', syncHash)
   }, [pathname])
+
+  // Keep yellow nav in sync with the section under the sticky header while scrolling.
+  useEffect(() => {
+    if (!sectionIds.length) return
+
+    const syncFromScroll = () => {
+      if (isSectionSpyPaused()) return
+
+      const headerOffsetPx = 96
+      let next = ''
+      for (const id of sectionIds) {
+        const el = document.getElementById(id)
+        if (!el) continue
+        if (el.getBoundingClientRect().top <= headerOffsetPx) next = id
+      }
+
+      // Near the top of the page → Home (no hash), not the first section.
+      if (window.scrollY < 48) next = ''
+
+      setHash((prev) => (prev === next ? prev : next))
+
+      const expected = next ? `#${next}` : ''
+      if (window.location.hash !== expected) {
+        const url = next ? `${pathname}#${next}` : pathname
+        window.history.replaceState(null, '', url)
+      }
+    }
+
+    let ticking = false
+    const onScroll = () => {
+      if (ticking) return
+      ticking = true
+      window.requestAnimationFrame(() => {
+        ticking = false
+        syncFromScroll()
+      })
+    }
+
+    syncFromScroll()
+    window.addEventListener('scroll', onScroll, { passive: true })
+    window.addEventListener('resize', onScroll)
+    return () => {
+      window.removeEventListener('scroll', onScroll)
+      window.removeEventListener('resize', onScroll)
+    }
+  }, [pathname, sectionIds])
 
   useEffect(() => {
     document.body.style.overflow = open ? 'hidden' : ''
@@ -120,8 +184,12 @@ export const HeaderClient: React.FC<{
     const pathPart = (hashIndex === -1 ? href : href.slice(0, hashIndex)) || '/'
     const id = hashIndex === -1 ? '' : href.slice(hashIndex + 1)
     if (pathPart !== pathname) return
+    // ScrollOnNavigate already handles same-page hashes in capture phase.
+    if (event.defaultPrevented) return
 
     event.preventDefault()
+    // Smooth scroll would fight the spy; pause it briefly after a click.
+    pauseSectionSpy(2800)
     const move = () => {
       if (id && scrollToId(id, 'smooth')) {
         window.history.pushState(null, '', `${pathPart}#${id}`)

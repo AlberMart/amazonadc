@@ -17,6 +17,11 @@ function sharedDisallows() {
   ]
 }
 
+/** Explicit allow so AI crawlers that scan robots.txt for llms.* find the paths. */
+function llmsAllows() {
+  return ['Allow: /llms.txt', 'Allow: /llms-full.txt']
+}
+
 function buildRobotsTxt() {
   const sitemap = absoluteUrl('/sitemap.xml')
   const host = absoluteUrl('/')
@@ -26,14 +31,39 @@ function buildRobotsTxt() {
   const aiAgents = [
     'User-agent: OAI-SearchBot',
     'Allow: /',
+    ...llmsAllows(),
+    '',
+    'User-agent: ChatGPT-User',
+    'Allow: /',
+    ...llmsAllows(),
     '',
     'User-agent: GPTBot',
     'Allow: /',
+    ...llmsAllows(),
+    'Disallow: /admin/',
+    'Disallow: /api/',
+    '',
+    'User-agent: ClaudeBot',
+    'Allow: /',
+    ...llmsAllows(),
+    'Disallow: /admin/',
+    'Disallow: /api/',
+    '',
+    'User-agent: PerplexityBot',
+    'Allow: /',
+    ...llmsAllows(),
+    'Disallow: /admin/',
+    'Disallow: /api/',
+    '',
+    'User-agent: Applebot-Extended',
+    'Allow: /',
+    ...llmsAllows(),
     'Disallow: /admin/',
     'Disallow: /api/',
     '',
     'User-agent: Google-Extended',
     'Allow: /',
+    ...llmsAllows(),
     'Disallow: /admin/',
     'Disallow: /api/',
   ]
@@ -42,6 +72,7 @@ function buildRobotsTxt() {
     return [
       'User-agent: *',
       'Allow: /',
+      ...llmsAllows(),
       ...sharedDisallows(),
       '',
       ...aiAgents,
@@ -55,6 +86,7 @@ function buildRobotsTxt() {
   return [
     'User-agent: *',
     'Allow: /',
+    ...llmsAllows(),
     ...sharedDisallows(),
     '',
     ...aiAgents,

@@ -1,139 +1,113 @@
 import type { LocationContentSeed } from '@/utilities/locations'
 
+/**
+ * Gaithersburg — City jurisdiction (DHCA out) + MoCo DEP IAQ + Kentlands/Crown building types.
+ */
 export const gaithersburg: LocationContentSeed = {
   slug: 'gaithersburg',
-  title: 'Air Duct Cleaning in Gaithersburg, MD',
-  headline: 'Air duct and dryer vent cleaning for Kentlands, Lakelands, and the I-270 corridor',
+  title: 'Gaithersburg Air Duct Cleaning',
+  headline: 'Kentlands basements and I-270 corridor townhomes — from the Bethesda office',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Gaithersburg, MD. Flat rates from our Bethesda office for Kentlands, Crown, and Montgomery Village. Call (301) 809-4544.',
+    'Air duct & dryer vent cleaning in Gaithersburg, MD. Flat rates for Kentlands & I-270 homes. Photos. Call (301) 809-4544.',
   intro:
-    'Amazon Air Duct Cleaning serves Gaithersburg from our Bethesda office — up I-270 from Bethesda. Colonials, Kentlands and Lakelands townhomes, and Crown condos all take on Montgomery County pollen and basement humidity. Call (301) 809-4544.',
+    'Gaithersburg is a municipality — Montgomery County DHCA does not cover city interiors the way it covers much of Silver Spring. DEP still publishes countywide mold and IAQ guidance. We clean ducts and dryer vents in Kentlands, Lakelands, and Crown from Bethesda. Call (301) 809-4544.',
   heroImage: '/img/locations/gaithersburg.webp',
   heroAlt: 'Air duct cleaning in Gaithersburg, MD — Amazon Air Duct Cleaning',
   city: 'Gaithersburg',
   state: 'MD',
   servedBy: 'bethesda',
-  sectionLayout: 'faqEarly',
+  sectionLayout: 'processFirst',
   about: {
-    heading: 'Kentlands Grid, Lakelands Alleys, and 1970s Split-Level Basements Along Quince Orchard',
+    heading: 'New-urbanist townhomes meet municipal code lines',
     paragraphs: [
-      'Gaithersburg\'s residential stock spans the full I-270 timeline: 1960s split-levels with below-grade family rooms near Summit Hall, 1980s colonials around Olde Towne, the new-urbanist grid of Kentlands and Lakelands where alley-loaded garages sit tight against mechanical rooms, and Crown mid-rise condos with interior dryer closets above the Washingtonian Center. Each era loaded ducts differently — the older homes collected canopy pollen in sweating basement trunks, while the newer townhomes packed construction-period drywall dust into ductwork before the first occupant moved in.',
-      'The NIST campus and Shady Grove corridor contribute fine particulate that merges with Montgomery County tree pollen every spring, and the combined load rides return grilles into systems that were often sized for a different generation of air filtration. Crown and Rio-area stacked units add vertical dryer vents that lint compresses over a few laundry-heavy seasons.',
-      'We dispatch Gaithersburg from [Bethesda](/locations/bethesda). [Rockville](/locations/rockville) is the next page south, [Montgomery Village](/locations/montgomery-village) and [Germantown](/locations/germantown) continue north. Our post on [Gaithersburg Kentlands basement humidity](/blog/gaithersburg-kentlands-basement-humidity-air-ducts) covers the moisture side in detail.',
+      'Kentlands and Lakelands pack mechanical closets into party-wall footprints; Crown adds condo stacks; older Gaithersburg colonials keep basement handlers. I-270 particulate mixes with canopy pollen — a combination we see on most western-route jobs from Bethesda.',
+      '[DHCA](https://www.montgomerycountymd.gov/department-housing-community-affairs/dhca-code-enforcement) states it lacks jurisdiction inside Gaithersburg. Housing maintenance complaints inside the City go through City channels after landlord notice. County DEP [mold](https://www.montgomerycountymd.gov/propertycare/air-quality-law/indoor-air-quality/mold) and [IAQ](https://www.montgomerycountymd.gov/propertycare/air-quality-law/indoor-air-quality) pages still teach 30–50% humidity and venting dryers outdoors for every MoCo address.',
+      'Bethesda dispatch pairs Gaithersburg with [Germantown](/locations/germantown) and [Rockville](/locations/rockville). Local reading: [Gaithersburg Kentlands basement humidity](/blog/gaithersburg-kentlands-basement-humidity-air-ducts).',
     ],
     highlights: [
-      'Kentlands, Lakelands, Crown, Washingtonian, and Olde Towne coverage',
-      'Flat-rate packages covering split-level basements through mid-rise condos',
-      'Before-and-after photos sent after every appointment',
-      'Same crew that services Rockville mornings and Germantown afternoons',
+      'City jurisdiction called out (DHCA out)',
+      'Kentlands / Crown building types',
+      'DEP humidity + dryer vent tips',
+      'Bethesda: (301) 809-4544',
     ],
   },
-  offersTitle: 'Gaithersburg Flat-Rate Duct and Dryer Packages',
+  offersTitle: 'Gaithersburg packages',
   services: {
-    heading: 'Gaithersburg Services for New-Urbanist Townhomes and Older Split-Levels',
-    intro: 'Kentlands alley-access closets and Summit Hall below-grade handlers are different jobs — both priced before any equipment comes off the truck.',
+    heading: 'Scopes for townhome and condo stock',
+    intro: 'Party-wall dryer routes are the local specialty.',
     items: [
       {
-        title: 'Air Duct Cleaning & Sanitization',
-        text: 'mechanical agitation under HEPA negative pressure through supply trunks, return plenums, and individual register boots. Split-level lower levels around Quince Orchard accumulate Montgomery County canopy pollen on cold trunk surfaces, while Kentlands homes often retain builder-era gypsum dust in their first-floor runs. Scope details at [air duct cleaning](/air-duct-cleaning).',
+        title: 'Air duct cleaning',
+        text: 'Source removal in compact townhome systems and older singles. [EPA](https://www.epa.gov/indoor-air-quality-iaq/should-you-have-air-ducts-your-home-cleaned). [Air duct cleaning](/air-duct-cleaning).',
       },
       {
-        title: 'Dryer Vent Cleaning',
-        text: 'Full-length lint extraction from the dryer connection to the exterior cap or rooftop termination. Crown mid-rise units and Lakelands alley-loaded laundry closets both push vents through tight chases that accumulate blockage well before you notice longer dry times. Schedule at [dryer vent cleaning](/dryer-vent-cleaning).',
+        title: 'Dryer vent cleaning',
+        text: 'Angular party-wall chases pack lint — DEP wants dryers vented outside; we clear the run. [NFPA](https://www.nfpa.org/education-and-research/research/nfpa-research/fire-statistical-reports/home-fires-involving-clothes-dryers-and-washing-machines). [Dryer vent cleaning](/dryer-vent-cleaning).',
       },
       {
-        title: 'Ventilation & HVAC Mold Treatment',
-        text: 'Lower-level air handlers in Gaithersburg split-levels sweat through every humid July and August, and that moisture film gives microbial growth a foothold on evaporator coils and plenum walls. Treatment uses EPA-registered antimicrobials applied along the affected ventilation path. More at [mold remediation for air ducts](/mold-remediation-air-ducts).',
+        title: 'Optional duct antimicrobial',
+        text: 'After cleaning when film is on hard metal. [Mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
     ],
   },
   why: {
-    heading: 'Why Gaithersburg Housing Packs Both Builder Dust and Canopy Pollen',
+    heading: 'What usually brings us to Gaithersburg homes',
     items: [
       {
-        title: 'I-270 Dispatch With Consistent Route Knowledge',
-        text: 'Our Bethesda crew runs the Gaithersburg segment of I-270 regularly — Quince Orchard, Kentlands, and Crown are stops on the existing rotation, not once-a-quarter detours.',
+        title: 'City vs County complaint paths',
+        text: 'If your address is inside Gaithersburg city limits, housing maintenance complaints go through City channels after landlord notice — not Montgomery County DHCA. DEP humidity and mold guidance still applies countywide.',
       },
       {
-        title: 'Published Scope, Not a Per-Vent Calculation',
-        text: 'Residential duct and dryer packages are quoted before we arrive. A Kentlands townhome and a Summit Hall colonial both receive a locked price at booking.',
+        title: 'Party-wall dryer chases',
+        text: 'Kentlands-era angular chases pack lint fast — full brush-out to the exterior cap is the usual fix when dry times slip.',
       },
       {
-        title: 'HOA-Friendly Scheduling and Cleanup',
-        text: 'Kentlands and Crown HOAs have noise and parking rules. We coordinate arrival times and equipment placement so you stay compliant.',
+        title: 'I-270 corridor dust',
+        text: 'Filters and returns near the corridor take a finer particulate load.',
       },
       {
-        title: 'Satisfaction Guarantee With Visual Proof',
-        text: 'Before-and-after register photos are part of the close-out. If the improvement is not visible, we come back and redo the work.',
+        title: 'Flat rate + photos',
+        text: 'Confirmed before work; documented after.',
       },
     ],
   },
   communities: {
-    heading: 'Kentlands, Lakelands, Crown, and Old Town Edge',
-    intro: 'Germantown and Montgomery Village are separate pages on the same corridor.',
+    heading: 'Gaithersburg clusters',
+    intro: 'New-urbanist cores and older grids.',
     groups: [
-      {
-        title: 'Kentlands, Lakelands & Crown',
-        places: 'Kentlands, Lakelands, Crown, Washingtonian Center, Rio edge',
-      },
-      {
-        title: 'Town Center & Olde Towne',
-        places: 'Gaithersburg Town Center, Olde Towne, Frederick Avenue, Summit Hall',
-      },
-      {
-        title: 'Montgomery Village & north',
-        places:
-          'Montgomery Village, Quince Orchard, streets toward Germantown and Clarksburg — ask if you do not see your neighborhood',
-      },
+      { title: 'Kentlands & Lakelands', places: 'Kentlands, Lakelands, Washingtonian-adjacent' },
+      { title: 'Crown & downtown', places: 'Crown, Olde Towne, Frederick Avenue corridor' },
+      { title: 'North & west', places: 'Quince Orchard-adjacent, Muddy Branch-adjacent, Montgomery Village-edge when routed together' },
     ],
   },
   process: {
-    heading: 'I-270 North Dispatch From Bethesda',
-    intro: 'From booking at (301) 809-4544 to photos at the Gaithersburg door.',
+    heading: 'Bethesda → Gaithersburg flow',
+    intro: 'Process-first layout: logistics before pitch.',
     steps: [
-      {
-        title: 'Book from the office line',
-        text: 'Call (301) 809-4544 or use the form — we confirm Gaithersburg availability the next business day from Bethesda.',
-      },
-      {
-        title: 'Protect floors and living spaces',
-        text: 'In Gaithersburg we cover work paths and keep living spaces clear while equipment runs.',
-      },
-      {
-        title: 'Source-removal cleaning',
-        text: 'Source-removal agitation under HEPA negative pressure for this Gaithersburg system — dust leaves in the vacuum, not your rooms.',
-      },
-      {
-        title: 'Optional sanitizing',
-        text: 'Complimentary Envirocon when you request it or when the Gaithersburg inspection supports it.',
-      },
-      {
-        title: 'Close out the visit',
-        text: 'Photos on file, flat-rate invoice for Gaithersburg, and seasonal tips. Call (301) 809-4544 anytime.',
-      },
+      { title: 'Townhome vs condo vs single', text: 'Sets hose runs and dryer path expectations.' },
+      { title: 'Jurisdiction note', text: 'If you also have a landlord issue, City — not DHCA — for interiors.' },
+      { title: 'Flat-rate confirm', text: 'Ducts, dryer, or both.' },
+      { title: 'Clean + photos', text: 'Source removal and full dryer brush-out as booked.' },
+      { title: 'Handoff', text: 'DEP humidity band + filter tip; (301) 809-4544.' },
     ],
   },
-  faqIntro: 'Gaithersburg questions — call (301) 809-4544 (dispatch: Bethesda).',
+  faqIntro: 'City Gaithersburg + MoCo DEP. Book: (301) 809-4544.',
   faq: [
     {
-      q: 'Where does the Gaithersburg appointment leave from?',
-      a: 'Gaithersburg appointments leave from Bethesda, MD (7815 Old Georgetown Rd Ste 201). Call (301) 809-4544 for air duct or dryer vent cleaning on your street.',
+      q: 'Can I file a Gaithersburg rental mold complaint with DHCA?',
+      a: 'DHCA [states](https://www.montgomerycountymd.gov/department-housing-community-affairs/dhca-code-enforcement) it does not have jurisdiction inside Gaithersburg. Use landlord notice and City reporting channels.',
     },
     {
-      q: 'Anything to clear before the crew shows up?',
-      a: 'For this Gaithersburg, MD home we need clear runs to the air handler. Put HOA codes on the confirmation text.',
+      q: 'Where do humidity recommendations come from?',
+      a: 'Montgomery County DEP [IAQ](https://www.montgomerycountymd.gov/propertycare/air-quality-law/indoor-air-quality) cites about **30–50%** RH and venting dryers outdoors.',
     },
     {
-      q: 'What is a realistic job length for one system?',
-      a: 'One Gaithersburg system usually takes 2–3 hours. Multi-system or packed dryer vents are scoped before we start so the quote stays locked.',
+      q: 'Do you need HOA approval in Kentlands?',
+      a: 'Sometimes for parking/exterior access — send rules when you book so we bring COI if required.',
     },
     {
-      q: 'Will the price change once equipment is out?',
-      a: 'The Bethesda crew prices Gaithersburg jobs as published flat-rate packages. Scoped on site, confirmed before unload, paid after you are satisfied.',
-    },
-    {
-      q: 'Is antimicrobial sanitizing included?',
-      a: 'On Gaithersburg jobs Envirocon is complimentary when you request it or when inspection supports it — confirmed on site before anything is applied.',
+      q: 'Which office serves Gaithersburg?',
+      a: 'Bethesda, MD. Call (301) 809-4544.',
     },
   ],
 }

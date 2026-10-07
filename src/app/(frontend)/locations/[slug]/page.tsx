@@ -15,6 +15,7 @@ import {
   jsonLd,
   officeBranchNode,
   resolvePageMeta,
+  serviceAreaLocationNode,
   webPageNode,
 } from '@/utilities/seo'
 
@@ -49,81 +50,22 @@ export default async function Page({ params }: Args) {
   const publicPhone = resolveLocationPublicPhone(location, site)
 
   const localBusiness = location.isOfficeHub
-    ? officeBranchNode(office, site)
-    : {
-        '@type': ['HVACBusiness', 'LocalBusiness'],
-        '@id': localId,
-        name: `${site.siteName} — ${location.city}`,
-        url: pageUrl,
+    ? officeBranchNode(office, site, {
+        image: location.heroImage,
+        description: location.description,
+      })
+    : serviceAreaLocationNode({
+        city: location.city,
+        state: location.state,
+        path,
+        description: location.description,
+        image: location.heroImage,
         telephone: publicPhone.e164,
         email: office.email || site.email,
-        image: absoluteUrl(location.heroImage),
-        parentOrganization: { '@id': `${absoluteUrl('/')}#organization` },
-        provider: { '@id': officeId },
-        address: {
-          '@type': 'PostalAddress',
-          streetAddress: office.streetAddress,
-          addressLocality: office.city,
-          addressRegion: office.state,
-          postalCode: office.postalCode,
-          addressCountry: 'US',
-        },
-        ...(office.latitude && office.longitude
-          ? {
-              geo: {
-                '@type': 'GeoCoordinates',
-                latitude: office.latitude,
-                longitude: office.longitude,
-              },
-            }
-          : {}),
-        ...(office.hasMapUrl ? { hasMap: office.hasMapUrl } : {}),
-        ...(office.weekdayOpens
-          ? {
-              openingHoursSpecification: [
-                {
-                  '@type': 'OpeningHoursSpecification',
-                  dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-                  opens: office.weekdayOpens,
-                  closes: office.weekdayCloses,
-                },
-                ...(office.saturdayOpens
-                  ? [
-                      {
-                        '@type': 'OpeningHoursSpecification',
-                        dayOfWeek: 'Saturday',
-                        opens: office.saturdayOpens,
-                        closes: office.saturdayCloses,
-                      },
-                    ]
-                  : []),
-              ],
-            }
-          : {}),
-        areaServed: [
-          { '@type': 'City', name: location.state === 'DC' ? 'Washington, DC' : location.city },
-          {
-            '@type': 'State',
-            name: location.state === 'MD' ? 'Maryland' : location.state === 'DC' ? 'Washington DC' : 'Virginia',
-          },
-          ...office.areaServedCities
-            .filter((city) => city.toLowerCase() !== location.city.toLowerCase())
-            .slice(0, 12)
-            .map((name) => ({ '@type': 'City', name })),
-        ],
-        priceRange: office.priceRange || '$$',
-        ...(office.aggregateReviewCount > 0
-          ? {
-              aggregateRating: {
-                '@type': 'AggregateRating',
-                ratingValue: String(office.aggregateRatingValue),
-                reviewCount: String(office.aggregateReviewCount),
-                bestRating: '5',
-                worstRating: '1',
-              },
-            }
-          : {}),
-      }
+        officeId,
+        site,
+        priceRange: office.priceRange,
+      })
 
   const crumbs = breadcrumb(
     [

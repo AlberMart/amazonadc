@@ -134,6 +134,49 @@ type LocationSectionParts = {
   process: HomeSection
   faq: HomeSection | null
   contact: HomeSection
+  reviews: HomeSection | null
+  serviceArea: HomeSection | null
+}
+
+function hubServiceAreaSection(
+  location: LocationContent | LocationContentSeed,
+): HomeSection | null {
+  const office = 'office' in location ? location.office : null
+  if (!office) return null
+  const cities = office.areaServedCities.length
+    ? office.areaServedCities
+    : [office.city]
+  const isMd = office.state === 'MD'
+  const regionName = isMd
+    ? 'Maryland communities from this office'
+    : office.state === 'VA'
+      ? 'Virginia & DC communities from this office'
+      : 'Service area'
+  const mapQuery =
+    office.latitude && office.longitude
+      ? `${office.latitude},${office.longitude}`
+      : `${office.streetAddress}, ${office.city}, ${office.state} ${office.postalCode}`
+  const sister = isMd
+    ? 'Northern Virginia books our [Burke, VA office](/locations/burke) — same packages, separate line.'
+    : 'Maryland books our [Bethesda, MD office](/locations/bethesda) — same packages, separate line.'
+  return {
+    type: 'serviceArea',
+    anchorId: 'service_area',
+    tone: 'white',
+    heading: `${office.city} office dispatch area`,
+    intro: `Residential jobs for this desk leave from ${office.streetAddress}, ${office.city}, ${office.state}. ${sister} Linked cities below are communities we commonly stage from this office — not a claim that one phone number covers the whole DMV.`,
+    mapEmbedUrl: `https://maps.google.com/maps?q=${encodeURIComponent(mapQuery)}&z=10&output=embed`,
+    mapTitle: `${office.city} dispatch area`,
+    seoCityScope: isMd ? 'MD' : 'VA',
+    regions: [
+      {
+        name: regionName,
+        cities: cities.slice(0, 18),
+        href: `/locations/${office.slug}`,
+        linkLabel: `${office.city} office`,
+      },
+    ],
+  }
 }
 
 function locationSectionParts(
@@ -150,6 +193,8 @@ function locationSectionParts(
     (location.slug === 'washington-dc'
       ? 'our Burke and Bethesda offices'
       : `our ${officeCity} office`)
+  const isHub = location.slug === 'burke' || location.slug === 'bethesda'
+  const office = 'office' in location ? location.office : null
 
   return {
     about: {
@@ -199,6 +244,21 @@ function locationSectionParts(
       })),
       gridCols: 3,
     },
+    reviews: isHub
+      ? {
+          type: 'reviews',
+          tone: 'white',
+          anchorId: 'reviews',
+          heading:
+            location.slug === 'burke'
+              ? 'Google reviews for the Burke, VA office'
+              : 'Google reviews for the Bethesda, MD office',
+          intro: office
+            ? `${office.aggregateRatingValue}★ average from ${office.aggregateReviewCount} Google reviews for this office — not a network-wide mashup.`
+            : 'Recent Google reviews for this office.',
+        }
+      : null,
+    serviceArea: isHub ? hubServiceAreaSection(location) : null,
     nearby: (() => {
       const nearbyPacks = [
         {
@@ -378,13 +438,40 @@ function orderForLayout(layout: LocationSectionLayout, parts: LocationSectionPar
     case 'hub':
       return push([
         parts.about,
+        parts.reviews,
         parts.services,
         parts.why,
         parts.communities,
+        parts.serviceArea,
         parts.process,
         parts.faq,
         parts.offers,
-        parts.nearby,
+        parts.contact,
+      ])
+    case 'hubBurke':
+      return push([
+        parts.about,
+        parts.offers,
+        parts.services,
+        parts.reviews,
+        parts.communities,
+        parts.why,
+        parts.serviceArea,
+        parts.process,
+        parts.faq,
+        parts.contact,
+      ])
+    case 'hubBethesda':
+      return push([
+        parts.about,
+        parts.offers,
+        parts.services,
+        parts.reviews,
+        parts.communities,
+        parts.why,
+        parts.process,
+        parts.serviceArea,
+        parts.faq,
         parts.contact,
       ])
     case 'default':
@@ -408,6 +495,10 @@ export function locationContentToSections(
 ): HomeSection[] {
   const layout: LocationSectionLayout =
     location.sectionLayout ||
-    (location.slug === 'burke' || location.slug === 'bethesda' ? 'hub' : 'default')
+    (location.slug === 'burke'
+      ? 'hubBurke'
+      : location.slug === 'bethesda'
+        ? 'hubBethesda'
+        : 'default')
   return orderForLayout(layout, locationSectionParts(location))
 }

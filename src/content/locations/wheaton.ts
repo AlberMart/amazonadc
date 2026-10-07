@@ -1,143 +1,131 @@
 import type { LocationContentSeed } from '@/utilities/locations'
 
+/**
+ * Wheaton — Metro/urban renewal dust, garden apartments, Wheaton mall hub identity.
+ * Links used:
+ * - https://www.montgomerycountymd.gov/DEP/air/indoor-air.html
+ * - https://www.montgomerycountymd.gov/propertycare/air-quality-law/indoor-air-quality/mold
+ * - https://www.montgomerycountymd.gov/DHCA/housing/landlordtenant/
+ * - https://www.montgomerycountymd.gov/department-housing-community-affairs/dhca-code-enforcement
+ */
 export const wheaton: LocationContentSeed = {
   slug: 'wheaton',
-  title: 'Air Duct Cleaning in Wheaton, MD',
-  headline:
-    'Air duct and dryer vent cleaning for Wheaton Westfield, Glenmont, and close-in Montgomery',
+  title: 'Wheaton MD Air Duct & Dryer Vent Cleaning',
+  headline: 'Veirs Mill corridor housing — urban dust and older trunks from Bethesda',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Wheaton, MD. Flat rates from our Bethesda office for older brick, mixed housing, and urban pollen. Call (301) 809-4544.',
+    'Air duct & dryer vent cleaning in Wheaton, MD. Flat rates for mid-century brick & Metro-corridor homes. Call (301) 809-4544.',
   intro:
-    'Amazon Air Duct Cleaning serves Wheaton from our Bethesda office — up Veirs Mill and Georgia Avenue. Older brick, split-levels, and stacked units all take on close-in Montgomery pollen and urban dust. Call (301) 809-4544.',
+    'Wheaton’s identity is the Georgia–Veirs Mill crossroads: Westfield Wheaton, the Metro, and decades of urban renewal that left mid-century brick next to stacked rentals. Garden apartments near Glenmont share dryer risers; bus-corridor film loads returns on Veirs Mill. County DEP publishes IAQ science; DHCA handles many rental complaints. We dispatch from Bethesda with photos and flat rates. (301) 809-4544.',
   heroImage: '/img/locations/wheaton.webp',
   heroAlt: 'Air duct cleaning in Wheaton, MD — Amazon Air Duct Cleaning',
   city: 'Wheaton',
   state: 'MD',
   servedBy: 'bethesda',
-  sectionLayout: 'processFirst',
+  sectionLayout: 'whyFirst',
   about: {
-    heading: 'Veirs Mill Brick Ranches, Glenmont Gardens, and Georgia Avenue Bus-Corridor Film',
+    heading: 'Mall-Metro hub housing — renewal dust and shared laundry stacks',
     paragraphs: [
-      'Wheaton clusters around the intersection of Georgia Avenue and Veirs Mill Road — Westfield Wheaton to the north, the Metro and Glenmont to the east, Kemp Mill tucked behind residential grids, and Aspen Hill stretching toward Olney. The housing dates primarily from the 1940s through the 1960s: brick Cape Cods, ramblers, and small colonials with basements that were finished later and ductwork that was cut through plaster walls and floor joists without the sealing standards modern codes require. Those leaky joints have spent decades pulling Georgia Avenue bus-corridor particulate, Veirs Mill traffic film, and Montgomery County tree pollen into the trunk system.',
-      'Garden apartments near Glenmont Metro and stacked rental units along Randolph Road introduce a different failure mode — shared dryer vent risers that serve multiple units and accumulate lint from high-occupancy laundry use faster than single-family homes. Basement air handlers in the older brick stock sit in cool spaces that sweat through every Maryland summer, binding whatever the returns deliver into a persistent film on supply surfaces.',
-      'We dispatch Wheaton from [Bethesda](/locations/bethesda). [Silver Spring](/locations/silver-spring) borders to the south, [Kensington](/locations/kensington) to the west. Our post on [Wheaton urban dust and air ducts](/blog/wheaton-urban-dust-air-ducts) explains the particulate mix in more detail.',
+      'Silver Spring gets the downtown label; Wheaton gets the **mall–Metro knot** — Westfield Wheaton, Wheaton Metro, Glenmont to the east, Kemp Mill and Aspen Hill on the spokes. Housing is mostly 1940s–1960s brick Cape Cods and ramblers with basement handlers, plus garden-style rentals along Randolph and Connecticut Avenue edges where **one dryer riser serves multiple units** and lint compacts faster than in a single-family chase.',
+      'Urban renewal and constant corridor traffic add a particulate mix Silver Spring pages describe differently: Georgia Avenue bus film, Veirs Mill grit, and Montgomery pollen layered in leaky mid-century joints. DEP’s [Indoor Air Quality](https://www.montgomerycountymd.gov/DEP/air/indoor-air.html) and [mold](https://www.montgomerycountymd.gov/propertycare/air-quality-law/indoor-air-quality/mold) pages recommend humidity control, venting dryers outside, and filter changes — practical context when cool basements sweat through humid summers.',
+      'Renters with maintenance disputes should use County [Landlord & Tenant](https://www.montgomerycountymd.gov/DHCA/housing/landlordtenant/) and [DHCA Code Enforcement](https://www.montgomerycountymd.gov/department-housing-community-affairs/dhca-code-enforcement) — not our intake line. We clean ducts and vents from [Bethesda](/locations/bethesda) alongside [Kensington](/locations/kensington); deeper local reading: [Wheaton urban dust and air ducts](/blog/wheaton-urban-dust-air-ducts).',
     ],
     highlights: [
-      'Westfield Wheaton, Glenmont, Kemp Mill, Veirs Mill, and Aspen Hill edge',
-      'Flat-rate packages for brick ranches through garden-apartment systems',
-      'Before-and-after photos shared after every service visit',
-      'Portable HEPA staging for streets where full-size truck access is limited',
+      'Westfield / Metro / Glenmont garden-apartment identity',
+      'Shared risers + corridor particulate called out',
+      'DEP IAQ + DHCA rental resources linked',
+      'Bethesda: (301) 809-4544',
     ],
   },
-  offersTitle: 'Wheaton Residential and Garden-Apartment Rates',
+  offersTitle: 'Wheaton packages (flat-rate)',
   services: {
-    heading: 'Wheaton Services for Mid-Century Brick and Stacked Rental Units',
-    intro: 'A Veirs Mill brick rambler and a Glenmont garden apartment are different access problems — both get scoped and priced before any equipment moves.',
+    heading: 'Cleaning scopes for Wheaton brick and stacked units',
+    intro: 'A Veirs Mill rambler and a Glenmont garden apartment need different access notes — same published rates.',
     items: [
       {
-        title: 'Air Duct Cleaning & Sanitization',
-        text: 'mechanical agitation under HEPA negative pressure through supply trunks cut into plaster and joist bays, return plenums, and individual register boots. Wheaton\'s mid-century brick stock carries a layered mix of bus-corridor soot, tree pollen, and pet dander that standard filter changes do not address. Complete scope at [air duct cleaning](/air-duct-cleaning).',
+        title: 'Air duct cleaning',
+        text: 'Source removal with HEPA negative pressure through plaster-cut trunks and basement plenums. [EPA](https://www.epa.gov/indoor-air-quality-iaq/should-you-have-air-ducts-your-home-cleaned) on health expectations. [Air duct cleaning](/air-duct-cleaning).',
       },
       {
-        title: 'Dryer Vent Cleaning',
-        text: 'Basement laundry in brick ramblers and shared risers in Glenmont-area garden apartments both accumulate lint steadily. We brush and vacuum the full run from the appliance connection to the exterior or rooftop cap and test draw before signing off. Schedule at [dryer vent cleaning](/dryer-vent-cleaning).',
+        title: 'Dryer vent cleaning',
+        text: 'Basement laundry in brick stock and shared risers in Glenmont-area apartments — full brush-out to cap, aligned with DEP dryer-venting guidance and [NFPA](https://www.nfpa.org/education-and-research/research/nfpa-research/fire-statistical-reports/home-fires-involving-clothes-dryers-and-washing-machines). [Dryer vent cleaning](/dryer-vent-cleaning).',
       },
       {
-        title: 'Ventilation & HVAC Mold Treatment',
-        text: 'Older Wheaton basements with deferred maintenance and limited ventilation are especially prone to coil and trunk colonization during humid stretches. When the scope walk or musty odor suggests microbial presence, we document and treat affected surfaces with EPA-registered products. More at [mold remediation for air ducts](/mold-remediation-air-ducts).',
+        title: 'Optional duct antimicrobial',
+        text: 'After mechanical cleaning on hard metal when inspection shows film — not DHCA housing enforcement. [Mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
     ],
   },
   why: {
-    heading: 'Why Mid-Century Wheaton Trunks Carry Decades of Layered Grit',
+    heading: 'Wheaton-only reasons trunks load faster than “close-in Montgomery”',
     items: [
       {
-        title: 'Close-In Route From the Bethesda Office',
-        text: 'Wheaton is a quick drive east from Old Georgetown Road — our crew works the Georgia Avenue and Veirs Mill grid without any highway driving.',
+        title: 'Metro-adjacent garden apartments',
+        text: 'High-occupancy laundry on shared risers is a Wheaton pattern — we scope the full run, not just the first elbow from the unit.',
       },
       {
-        title: 'Older Ductwork Inspected for Joint Integrity',
-        text: 'Brick ramblers with plaster-cut trunk connections get a joint check during the scope walk. Negative pressure only works when the system is sealed, and Wheaton\'s housing often needs attention at the seams.',
+        title: 'Corridor film is local geography',
+        text: 'Georgia–Veirs Mill traffic and renewal-era construction dust are baseline here, not a footnote borrowed from Silver Spring.',
       },
       {
-        title: 'One Price for the Whole System',
-        text: 'Residential duct and dryer packages are quoted before we arrive. A Kemp Mill colonial and a Glenmont ranch both receive the same locked-price treatment at (301) 809-4544.',
+        title: 'Renters: DHCA before blaming ducts',
+        text: 'Landlord notice and [DHCA](https://www.montgomerycountymd.gov/department-housing-community-affairs/dhca-code-enforcement) complaint steps apply when moisture or mold is a housing condition — duct cleaning does not pause those clocks.',
       },
       {
-        title: 'Cleaning Guarantee Backed by Photos',
-        text: 'Every register and trunk is documented. If the Wheaton result does not satisfy, contact us within 7 days — we re-perform or refund per our refund policy.',
+        title: 'Short eastbound run from Bethesda',
+        text: 'Flat rate locked before tools run; portable HEPA when street parking is tight.',
       },
     ],
   },
   communities: {
-    heading: 'Wheaton CBD Edge and Neighborhood Grids',
-    intro: 'Silver Spring and Kensington are adjacent pages.',
+    heading: 'Wheaton grids we stage from Bethesda',
+    intro: 'Silver Spring is south; Kensington is west — this page stays on the mall–Metro ring.',
     groups: [
       {
         title: 'Downtown Wheaton & Westfield',
         places: 'Wheaton CBD, Westfield Wheaton, Georgia Avenue, Veirs Mill Road',
       },
       {
-        title: 'Glenmont & the Metro ring',
-        places: 'Glenmont, Randolph Road, Connecticut Avenue edge, garden-apartment streets',
+        title: 'Glenmont & Metro ring',
+        places: 'Glenmont, Randolph Road, Connecticut Avenue edge, garden-apartment courts',
       },
       {
-        title: 'Kemp Mill & toward Aspen Hill',
+        title: 'Kemp Mill & Aspen Hill edge',
         places: 'Kemp Mill, Arcola, streets toward Aspen Hill — ask if your block is not listed',
       },
     ],
   },
   process: {
-    heading: 'Inside-Beltway Timing From Bethesda',
-    intro: 'Same flat-rate flow from Bethesda — scoped for Wheaton housing.',
+    heading: 'Bethesda → Wheaton visit',
+    intro: 'We ask building type first — rambler basement vs shared riser — so access time is honest.',
     steps: [
-      {
-        title: 'Inspect access and dryer path',
-        text: 'We walk returns and the dryer run typical of Wheaton housing (basement or attic air-handler access typical in Wheaton) so nothing is surprise-priced later.',
-      },
-      {
-        title: 'Stage the right equipment',
-        text: 'Tight Wheaton streets get portable HEPA from Bethesda; larger lots may use truck-mounted vacuum when access allows.',
-      },
-      {
-        title: 'Clean ducts end to end',
-        text: 'Specialized tools plus negative-pressure vacuum through the trunks serving this Wheaton, MD home.',
-      },
-      {
-        title: 'Clear the dryer run',
-        text: 'Full-length brushing to the exterior cap when dryer service is on the Wheaton ticket.',
-      },
-      {
-        title: 'Final walk-through',
-        text: 'Review Wheaton photos together and leave booking notes for (301) 809-4544 if you want a follow-up.',
-      },
+      { title: 'Building type on the phone', text: 'Rambler, split-level, or garden apartment with shared chase? That drives hose plan — not the flat-rate menu.' },
+      { title: 'Rental vs owner paths', text: 'If DHCA is in play for moisture, we still scope ducts/dryer you want cleaned today.' },
+      { title: 'Confirm price before tools', text: 'Ducts, dryer, or combo — locked on site before agitation.' },
+      { title: 'Clean + photos', text: 'Negative-pressure source removal and full dryer brush-out when booked.' },
+      { title: 'Handoff', text: 'Filter tips, DEP humidity reminder, (301) 809-4544 for follow-up.' },
     ],
   },
-  faqIntro: 'Wheaton questions — call (301) 809-4544 (dispatch: Bethesda).',
+  faqIntro: 'Wheaton Metro hub questions — book (301) 809-4544 (Bethesda).',
   faq: [
     {
-      q: 'Who dispatches the crew to Wheaton, MD?',
-      a: 'Wheaton appointments leave from Bethesda, MD (7815 Old Georgetown Rd Ste 201). Call (301) 809-4544 for air duct or dryer vent cleaning on your street.',
+      q: 'Is Wheaton the same service area as Silver Spring on your site?',
+      a: 'Same Bethesda office and rates — different housing story. Wheaton emphasizes **Westfield/Metro**, Glenmont garden apartments, and shared dryer risers. Silver Spring emphasizes downtown Georgia Avenue brick and DHCA-heavy rental corridors.',
     },
     {
-      q: 'How should I prep the house for the visit?',
-      a: 'Wheaton prep: open returns and the dryer, move fragile items near vents, mention pets or renovations when you book at (301) 809-4544.',
+      q: 'Who handles rental mold complaints in Wheaton?',
+      a: 'Most Wheaton addresses fall under County [DHCA Code Enforcement](https://www.montgomerycountymd.gov/department-housing-community-affairs/dhca-code-enforcement) after landlord written notice — see [Landlord & Tenant](https://www.montgomerycountymd.gov/DHCA/housing/landlordtenant/). DEP [IAQ](https://www.montgomerycountymd.gov/DEP/air/indoor-air.html) educates on humidity and ventilation; it does not replace DHCA.',
     },
     {
-      q: 'How much time should I block on the calendar?',
-      a: 'Block roughly half a morning for a typical Wheaton home. Dryer-vent add-ons are often possible the same day if booked together.',
+      q: 'Do you clean shared dryer risers in Glenmont-area apartments?',
+      a: 'Yes — tell us the building and unit layout when you book so we plan access through the full chase.',
     },
     {
-      q: 'How does the quote work for this address?',
-      a: 'For this Wheaton, MD address we quote a flat package from Bethesda. Walkthrough first, locked number second — not priced by counting vents.',
+      q: 'What humidity range does County DEP cite?',
+      a: 'Montgomery DEP [mold/IAQ](https://www.montgomerycountymd.gov/propertycare/air-quality-law/indoor-air-quality/mold) materials emphasize keeping indoor humidity in a healthy band (often cited around **30–50%**) and venting dryers outdoors.',
     },
     {
-      q: 'Can ducts and the dryer vent be done in one visit?',
-      a: 'Yes for Wheaton — book the combined package up front. Call (301) 809-4544; the Bethesda crew brings both tool sets for one stop.',
-    },
-    {
-      q: 'How far ahead should I book?',
-      a: 'Wheaton fills fast in pollen and humid months. Same-week openings are common — call (301) 809-4544 for the next Bethesda window.',
+      q: 'Which office dispatches Wheaton?',
+      a: 'Bethesda — 7815A Old Georgetown Rd Ste 201. (301) 809-4544.',
     },
   ],
 }

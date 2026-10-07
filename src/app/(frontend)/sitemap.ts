@@ -2,6 +2,7 @@ import type { MetadataRoute } from 'next'
 import { getPayload } from 'payload'
 
 import config from '@payload-config'
+import { redirects as getRedirects } from '../../../redirects'
 import { getAllBlogSlugs } from '@/utilities/blog'
 import { getAllLocationSlugs } from '@/utilities/locations'
 import { absoluteUrl } from '@/utilities/seo'
@@ -15,9 +16,29 @@ function isNoIndex(meta: unknown): boolean {
   return Boolean((meta as { noIndex?: boolean | null }).noIndex)
 }
 
+/** Exact redirect sources (no patterns). Those URLs 301 and must not be submitted. */
+function staticRedirectPaths(rules: { source: string }[]): Set<string> {
+  const paths = new Set<string>()
+  for (const rule of rules) {
+    const source = rule.source
+    if (!source || /[:()*]/.test(source)) continue
+    paths.add(source.startsWith('/') ? source : `/${source}`)
+  }
+  return paths
+}
+
+function pathnameOf(url: string): string {
+  try {
+    return new URL(url).pathname
+  } catch {
+    return url
+  }
+}
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const payload = await getPayload({ config })
   const now = new Date()
+  const redirected = staticRedirectPaths(await getRedirects())
 
   const [services, locations, posts, pages] = await Promise.all([
     payload.find({ collection: 'services', limit: 100, pagination: false, depth: 0 }),
@@ -124,5 +145,5 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     })
   }
 
-  return entries
+  return entries.filter((entry) => !redirected.has(pathnameOf(entry.url)))
 }

@@ -33,11 +33,14 @@ export function isPhoneLine(value: string): boolean {
   return PHONE_LINE.test(trimmed)
 }
 
-/** True for in-app paths Next.js <Link> can route; false for tel/mailto/http/etc. */
+/** True for in-app paths Next.js <Link> can route; false for tel/mailto/http/hash/etc. */
 export function isNextLinkHref(href: string): boolean {
   const value = href.trim()
   if (!value) return false
-  if (value.startsWith('#')) return true
+  // Hash-only must stay native <a> — Next Link often skips scroll-to-id on mobile.
+  if (value.startsWith('#')) return false
+  // Home hash shortcuts (/#contact) also need native scroll after load / same-path clicks.
+  if (/^\/#[\w-]+$/.test(value)) return false
   if (value.startsWith('/') && !value.startsWith('//')) return true
   return false
 }

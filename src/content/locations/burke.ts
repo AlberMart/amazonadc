@@ -1,77 +1,84 @@
 import type { LocationContentSeed } from '@/utilities/locations'
 
+/**
+ * Burke hub — company home base: Lake Braddock, Fairfax Station canopy, I-495 corridor, County Health mold page.
+ * Links used:
+ * - https://www.fairfaxcounty.gov/health/environment/mold
+ * - https://www.fairfaxcounty.gov/code/property-maintenance
+ * - https://www.epa.gov/indoor-air-quality-iaq/should-you-have-air-ducts-your-home-cleaned
+ */
 export const burke: LocationContentSeed = {
   slug: 'burke',
-  title: 'Air Duct Cleaning in Burke, VA',
-  headline: 'Our Northern Virginia office \u2014 air duct and dryer vent cleaning from Burke Centre',
+  title: 'Burke Air Duct Cleaning — Fairfax Office & Local Dispatch',
+  headline: 'Staffed desk on Burke Centre Parkway for Lake Braddock, Fairfax Station, and Northern Virginia routes',
   description:
-    'Amazon Air Duct Cleaning\u2019s Burke, VA office at 5641 Burke Centre Pkwy Ste 119. Flat-rate air duct cleaning, dryer vent cleaning, and HVAC mold treatment for Fairfax County and nearby cities. Call (571) 460-0001.',
+    'Air duct & dryer vent cleaning from our Burke, VA office. Fairfax dispatch, flat rates, before/after photos. Call (571) 460-0001.',
   intro:
-    'This is our Northern Virginia office at Burke Centre. From here we schedule residential and light-commercial jobs across Fairfax County, Arlington, Alexandria, Reston, and into Washington, DC when we are the closer crew. Book at (571) 460-0001 \u2014 the office line is (571) 460-0001.',
+    '5641 Burke Centre Pkwy Ste 119 is not a virtual office — trucks stage here, the (571) 460-0001 line rings this desk, and Burke Centre / Lake Braddock / Fairfax Station streets are often the **shortest drive** on the board. Oak canopy, humid Fairfax summers, and I-495 corridor dust load returns on colonials and townhomes we photograph every week. County Health explains what it does not do for mold; we clean ducts and dryer vents with flat rates. (571) 460-0001.',
   heroImage: '/img/locations/burke.webp',
-  heroAlt: 'Burke, VA office \u2014 Amazon Air Duct Cleaning',
+  heroAlt: 'Burke, VA office — Amazon Air Duct Cleaning on Burke Centre Parkway',
   city: 'Burke',
   state: 'VA',
   servedBy: 'burke',
-  sectionLayout: 'hub',
+  sectionLayout: 'hubBurke',
   about: {
-    heading: 'Suite 119 on Burke Centre Parkway \u2014 Where Northern Virginia Jobs Begin',
+    heading: 'Home-base honesty — this is where the Fairfax calendar starts',
     paragraphs: [
-      'This is the physical staging point for every Virginia-side job we run. Trucks load at 5641 Burke Centre Pkwy, Suite 119, Burke, VA 22015, then fan out across Fairfax County and beyond \u2014 [Springfield](/locations/springfield) down Old Keene Mill, [Fairfax](/locations/fairfax) and [Oakton](/locations/oakton) up Route 123, [Reston](/locations/reston) and [Herndon](/locations/herndon) on the Dulles corridor, [Arlington](/locations/arlington) and [Alexandria](/locations/alexandria) inside the Beltway. When a [Washington, DC](/locations/washington-dc) address is closer to Virginia than to our Maryland office, the Burke crew takes that call too.',
-      'Burke Centre itself is colonials, townhomes, and split-levels under a thick deciduous canopy. The combination of humid Fairfax County summers and mature trees means returns here collect oak pollen, traffic particulates from the Fairfax County Parkway, and moisture-film dust that builds up faster than most homeowners realize. The same climate conditions extend into [Springfield](/locations/springfield) and neighboring communities.',
-      'Need Maryland-side service instead? Our [Bethesda](/locations/bethesda) office covers Montgomery County, Prince George\u2019s County, and the Maryland suburbs with the same flat-rate packages and equipment standards.',
+      'National brands hide behind toll-free numbers; our Burke listing is the **address we drive past** to reach Lake Braddock, Fairfax Station, Burke Centre, and the Robinson Secondary / I-495 fringe. Split-levels, 1970s–90s colonials, and townhome rows under heavy oak canopy are the weekly default — not occasional “service area” copy. When we say before/after photos, many reference jobs are **blocks from this parkway**, not stock imagery from another state.',
+      'Fairfax County Health’s [mold, mildew, and fungi](https://www.fairfaxcounty.gov/health/environment/mold) page is the civic baseline: keep spaces dry, reduce humidity, fix leaks — and understand the Health Department **does not** perform indoor air testing or mold remediation. [Code Compliance — Property Maintenance](https://www.fairfaxcounty.gov/code/property-maintenance) notes mold alone is not a standalone violation while failing systems that cause moisture may be. We remove debris from HVAC trunks and lint from dryer runs; we do not replace County environmental health or file Code cases for you.',
+      'Maryland jobs leave from [Bethesda](/locations/bethesda) at (301) 809-4544 — same packages, separate Google listing. From Burke we fan out to [Springfield](/locations/springfield), [Fairfax](/locations/fairfax), [Oakton](/locations/oakton), [Alexandria](/locations/alexandria), and the Dulles corridor on the regular rotation.',
     ],
     highlights: [
-      'Walk-in office: 5641 Burke Centre Pkwy Ste 119, Burke, VA 22015',
-      'Flat-rate duct and dryer vent packages \u2014 price confirmed before work begins',
-      'Before-and-after photo documentation on every job',
-      'Same-day and next-day scheduling when the calendar allows',
+      'HQ on Burke Centre Pkwy — shortest drives locally',
+      'Lake Braddock / Fairfax Station canopy housing',
+      'County Health mold page — honest scope boundaries',
+      '(571) 460-0001 staffed desk',
     ],
   },
-  offersTitle: 'Burke Centre Flat-Rate Service Packages',
+  offersTitle: 'Burke & Northern Virginia packages',
   services: {
-    heading: 'Services Dispatched From the Burke Office',
+    heading: 'Services staged from Suite 119',
     intro:
-      'Three published scopes \u2014 residential duct cleaning, dryer vent clearing, and ventilation mold treatment. Nothing off-menu.',
+      'Burke Centre townhome dryer chases and Lake Braddock basement handlers share the published rate card with Reston high-rises — different access, same flat-rate discipline.',
     items: [
       {
-        title: 'Whole-Home Air Duct Cleaning',
-        text: 'We seal a HEPA-filtered negative-pressure unit to the main trunk, then agitate every supply line, return, and register with specialized agitation tools. Sanitizing is applied when the on-site inspection confirms biological buildup. Every job includes a photo set showing the before and after condition. Schedule [air duct cleaning](/air-duct-cleaning).',
+        title: 'Air duct cleaning',
+        text: 'HEPA negative pressure and agitation through supplies, returns, and registers — including 1990s additions on original Fairfax colonials. [EPA](https://www.epa.gov/indoor-air-quality-iaq/should-you-have-air-ducts-your-home-cleaned). [Air duct cleaning](/air-duct-cleaning).',
       },
       {
-        title: 'Dryer Vent Clearing',
-        text: 'Burke Centre townhomes and Springfield stacked-laundry layouts send lint through long, bent paths to a rear wall or roof cap. We rod-brush and vacuum the entire run so airflow is restored and fire risk drops. Book [dryer vent cleaning](/dryer-vent-cleaning).',
+        title: 'Dryer vent cleaning',
+        text: 'Long horizontal runs to rear walls and roof caps in Burke Centre — full brush-out, not the first elbow only. [NFPA](https://www.nfpa.org/education-and-research/research/nfpa-research/fire-statistical-reports/home-fires-involving-clothes-dryers-and-washing-machines). [Dryer vent cleaning](/dryer-vent-cleaning).',
       },
       {
-        title: 'Ventilation Mold Treatment',
-        text: 'When our inspection reveals mold on evaporator coils or inside dead-end duct branches, we mechanically clean the affected sections and apply EPA-registered antimicrobial product along the ventilation path. Details at [mold remediation for air ducts](/mold-remediation-air-ducts).',
+        title: 'Combo + optional duct antimicrobial',
+        text: '[Combo package](/air-duct-and-dryer-vent-cleaning) for one stop. Optional EPA-registered product on hard metal after cleaning — not County remediation. [Mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
     ],
   },
   why: {
-    heading: 'Why the Burke Centre Address Matters for Your Job',
+    heading: 'Why Burke matters as an office — not just a ZIP on a map',
     items: [
       {
-        title: 'Verifiable Office, Not a P.O. Box',
-        text: 'Suite 119 is a real workspace where technicians prep equipment and confirm schedules. You can drive by Burke Centre Parkway and see the operation.',
+        title: 'Photos from real nearby jobs',
+        text: 'Canopy colonials and Parkway-adjacent splits around Lake Braddock are routine — the crew knows your street type before GPS finishes.',
       },
       {
-        title: 'Fairfax County Routes Run Weekly',
-        text: 'Mixing Bowl traffic patterns, Reston HOA gates, and McLean estate driveways are part of the regular rotation \u2014 not routes we learn on your appointment day.',
+        title: 'County mold guidance sets expectations',
+        text: '[Health mold page](https://www.fairfaxcounty.gov/health/environment/mold) does not certify contractors — we match that honesty with flat-rate scope and images.',
       },
       {
-        title: 'Price Locked Before the First Hose Unrolls',
-        text: 'Residential duct and dryer vent packages are flat-rate. The number on the quote is the number on the invoice \u2014 no per-register surcharges added on site.',
+        title: 'Local dispatch, not a distant call center',
+        text: 'Scheduling runs from the Burke office line — we aim for windows that fit real Fairfax drive times and keep you updated if the day shifts.',
       },
       {
-        title: 'We Come Back If You Are Not Satisfied',
-        text: 'If the result does not meet expectations after the walk-through, we reschedule and redo the work at no additional charge.',
+        title: 'Price locked before hoses unroll',
+        text: 'Residential duct and dryer packages confirmed on (571) 460-0001; before/after photos every visit.',
       },
     ],
   },
   communities: {
-    heading: 'Virginia Cities Staged From Suite 119',
-    intro: 'This page is the office hub. City pages below carry the neighborhood detail.',
+    heading: 'Virginia cities from Burke Centre Parkway',
+    intro: 'City pages carry neighborhood FAQs; this hub is the staffed Burke desk.',
     groups: [
       {
         title: 'Next door',
@@ -90,58 +97,61 @@ export const burke: LocationContentSeed = {
       },
       {
         title: 'Farther south & the District',
-        places:
-          '[Prince William](/locations/prince-william), [Washington, DC](/locations/washington-dc)',
+        places: '[Prince William](/locations/prince-william), [Washington, DC](/locations/washington-dc)',
       },
     ],
   },
   process: {
-    heading: 'Office Intake at Burke Centre \u2014 Then On the Road',
-    intro: 'Arrival windows reflect the drive from Burke to Burke.',
+    heading: 'Burke Centre intake — then Fairfax routes',
+    intro: 'When you live in Burke itself, dispatch is often same-day friendly — farther west gets I-495/I-66 math.',
     steps: [
       {
-        title: 'Walkthrough and quote',
-        text: 'In Burke we ask about pets, renovations, and basement or attic air-handler access typical in Burke before locking a flat-rate number for this VA address.',
+        title: 'Phone scope on the Burke line',
+        text: 'Call (571) 460-0001 — basement vs attic handler, townhome party-wall dryer, pets, and gate codes for west-county HOAs.',
       },
       {
-        title: 'Arrival window',
-        text: 'Morning-of text with a realistic ETA from the Burke office to your Burke street — not a vague all-day window.',
+        title: 'Stay on the agreed window',
+        text: 'We book a clear arrival window and stay reachable if Mixing Bowl traffic or an HOA gate slows the crew — nearby Burke jobs often land earlier in the day when the route allows.',
       },
       {
-        title: 'Agree the package',
-        text: 'For this Burke home: ducts, dryer vent, or both — scoped on site, quoted before equipment starts, paid after you are satisfied.',
+        title: 'On-site package lock',
+        text: 'Ducts, dryer, or both — flat-rate before equipment starts.',
       },
       {
-        title: 'HEPA source-removal cleaning',
-        text: 'We agitate and vacuum supplies, returns, and registers in this Burke system under negative pressure so debris leaves in the vacuum.',
+        title: 'HEPA source-removal',
+        text: 'Negative pressure, agitation, vacuum extraction — debris leaves in the machine, not your rooms.',
       },
       {
         title: 'Photos and handoff',
-        text: 'Before/after photos, filter tips, and a dryer-vent interval for Burke seasons. Questions go to (571) 460-0001.',
+        text: 'Before/after set, filter tips for oak pollen season, dryer interval reminder, (571) 460-0001 for follow-up.',
       },
     ],
   },
-  faqIntro: 'Burke questions — call (571) 460-0001 (dispatch: Burke).',
+  faqIntro: 'Burke HQ questions — Fairfax County context. (571) 460-0001.',
   faq: [
     {
-      q: 'Which office books jobs for Burke?',
-      a: 'Burke appointments leave from Burke, VA (5641 Burke Centre Pkwy Ste 119). Call (571) 460-0001 for air duct or dryer vent cleaning on your street.',
+      q: 'Is Burke really your main Virginia office?',
+      a: 'Yes — 5641 Burke Centre Pkwy Ste 119 is staffed for booking and dispatch. Many crews start here; Burke/Lake Braddock addresses are typically the **shortest** drives on the calendar.',
     },
     {
-      q: 'What access do you need before arrival?',
-      a: 'In Burke, clear a path to the air handler and dryer — basement trunks and dryer closets especially. Share gate or parking notes for your block.',
+      q: 'Does Fairfax County Health clean air ducts or test mold for me?',
+      a: 'No. The County [mold page](https://www.fairfaxcounty.gov/health/environment/mold) states Health does not perform indoor air testing or mold remediation. We are a private flat-rate duct and dryer-vent cleaner.',
     },
     {
-      q: 'How long is a typical visit?',
-      a: 'Most Burke single-system houses finish in about 2–3 hours. Older trunks with additions can add time after inspection.',
+      q: 'Why emphasize Lake Braddock and Fairfax Station?',
+      a: 'That is the immediate canopy housing around the office — the housing stock we see most often in Burke-area photos and weekly routes, not generic “Northern Virginia.”',
     },
     {
-      q: 'Is pricing flat-rate or by the vent?',
-      a: 'Burke residential packages are flat-rate from Burke. We scope during the walkthrough, confirm before equipment starts, and that is what you pay — no per-vent counting.',
+      q: 'Do you handle Reston / McLean HOA gates from Burke?',
+      a: 'Yes — share gate codes when you book. Those routes run weekly from this office.',
     },
     {
-      q: 'Is antimicrobial sanitizing included?',
-      a: 'On Burke jobs Envirocon is complimentary when you request it or when inspection supports it — confirmed on site before anything is applied.',
+      q: 'Need Maryland service?',
+      a: '[Bethesda](/locations/bethesda) at (301) 809-4544 — same packages and pricing, separate Google Business listing.',
+    },
+    {
+      q: 'Can ducts and dryer vent be one visit?',
+      a: 'Yes — ask for the combo on (571) 460-0001 so the truck carries both tool sets.',
     },
   ],
 }

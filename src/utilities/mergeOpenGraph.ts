@@ -1,17 +1,24 @@
 import type { Metadata } from 'next'
+import { OG_DEFAULT_DESCRIPTION } from './serviceCopy'
 import { getServerSideURL } from './getURL'
 
 const defaultOpenGraph: Metadata['openGraph'] = {
   type: 'website',
-  description:
-    'Professional air duct and dryer vent cleaning in Virginia, Maryland, and Washington DC. Flat-rate pricing and 100% satisfaction guarantee.',
+  description: OG_DEFAULT_DESCRIPTION,
   images: [
     {
-      url: `${getServerSideURL()}/img/Amazon.webp`,
+      url: `${getServerSideURL()}/img/og-default.jpg`,
+      secureUrl: `${getServerSideURL()}/img/og-default.jpg`,
+      width: 1200,
+      height: 630,
+      type: 'image/jpeg',
+      alt: 'Amazon Air Duct Cleaning',
     },
   ],
   siteName: 'Amazon Air Duct Cleaning',
-  title: 'Amazon Air Duct Cleaning',
+  title: 'Air Duct Cleaning in VA, MD & Washington DC',
+  url: getServerSideURL(),
+  locale: 'en_US',
 }
 
 export const mergeOpenGraph = (og?: Metadata['openGraph']): Metadata['openGraph'] => {

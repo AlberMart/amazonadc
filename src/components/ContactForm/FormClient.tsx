@@ -54,6 +54,8 @@ type ContactFormClientProps = {
   submitLabel?: string
   submittingLabel?: string
   successMessage?: string
+  /** Anchor for in-page CTAs (#contact). Pass empty string to omit when a parent already owns the id. */
+  anchorId?: string
   form: PublicForm | null
   formToken: string
   turnstileSiteKey?: string | null
@@ -166,6 +168,7 @@ export function ContactFormClient({
   submitLabel = 'Send',
   submittingLabel = 'Sending…',
   successMessage = 'Your message has been sent. Thank you!',
+  anchorId = 'contact',
   form,
   formToken,
   turnstileSiteKey,
@@ -281,7 +284,11 @@ export function ContactFormClient({
   const telHref = phoneHref ? toTelHref(phoneHref) : undefined
 
   return (
-    <section className="container py-16">
+    <section
+      {...(anchorId ? { id: anchorId } : {})}
+      className="scroll-mt-[calc(var(--site-header-height)+1.25rem)] bg-[var(--site-bg)] py-16"
+    >
+      <div className="container">
       <div className="mx-auto max-w-2xl">
         <h2 className="site-heading mb-2 text-3xl font-semibold tracking-tight">{heading}</h2>
         <p className="site-body mb-6">
@@ -360,6 +367,7 @@ export function ContactFormClient({
             {status === 'loading' ? submittingLabel : form?.submitButtonLabel || submitLabel}
           </button>
         </form>
+      </div>
       </div>
     </section>
   )

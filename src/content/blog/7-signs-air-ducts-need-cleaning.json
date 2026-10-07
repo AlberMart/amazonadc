@@ -1,16 +1,16 @@
 {
   "slug": "7-signs-air-ducts-need-cleaning",
-  "title": "7 Signs Your Air Ducts Need Professional Cleaning",
-  "headline": "7 Signs Your Air Ducts Need Professional Cleaning",
-  "description": "Dust rings on registers, rooms that won't cool, mystery odors — seven warning signs your ductwork is overdue for professional cleaning.",
+  "title": "7 Signs Your Air Ducts Need Cleaning",
+  "headline": "Practical clues your system is loaded — without turning every symptom into a medical claim",
+  "description": "Seven practical signs your air ducts may need cleaning — from dusty vents to musty startup smells. What to check before you book.",
   "heroImage": "/img/blog/7-signs-air-ducts-need-cleaning.webp",
   "sections": [
     {
       "id": "overview",
-      "heading": "How your ductwork tells you it's dirty",
+      "heading": "How dirty ducts usually announce themselves",
       "paragraphs": [
-        "Air ducts don't fail suddenly — they deteriorate gradually. Dust thickens on the walls, allergens concentrate, airflow narrows, and your HVAC works harder every month. By the time you notice the symptoms, the ductwork has usually been underperforming for a while.",
-        "These seven signs are the most reliable early indicators that a professional cleaning is overdue."
+        "Air ducts rarely fail overnight. Debris builds gradually: film on trunk walls, weaker registers, longer run times, musty startup smells. By the time dust rings reappear days after wiping, the system has often been carrying that load for a while.",
+        "These seven signs are practical reasons to **inspect** — not medical proof that ducts are making anyone sick. [EPA](https://www.epa.gov/indoor-air-quality-iaq/should-you-have-air-ducts-your-home-cleaned) does not treat routine duct cleaning as a proven health treatment, and it recommends cleaning on an as-needed basis when contamination is clear."
       ],
       "listItems": [],
       "image": "/img/blog/The-Hidden-Cost-of-Dirty-Air-Ducts.webp"
@@ -19,32 +19,32 @@
       "id": "sign-1",
       "heading": "1. Dust keeps coming back no matter how often you clean",
       "paragraphs": [
-        "You wipe the registers on Monday. By Wednesday, grey residue is back. That cycle points to a supply-side problem: the HVAC system is pulling dust out of contaminated trunk lines and blowing it straight onto your surfaces every time the blower runs.",
-        "Look for dark streaks on walls near registers, dust rings on vent covers, and a fine film on furniture that reappears within days of a thorough cleaning."
+        "You wipe the registers on Monday. By Wednesday, grey residue is back — even after a fresh filter. That cycle often points to debris already inside supply trunks recirculating when the blower runs.",
+        "Look for dark streaks on walls near registers, dust rings on vent covers, and a fine film on furniture that returns within days of a thorough surface cleaning."
       ],
       "listItems": [],
       "image": "/img/blog/Allergies.webp"
     },
     {
       "id": "sign-2",
-      "heading": "2. Allergy or asthma symptoms get worse at home",
+      "heading": "2. Allergy-like symptoms that seem worse at home (investigate — don't assume)",
       "paragraphs": [
-        "Sneezing, itchy eyes, congestion, and tight breathing that ease when you leave the house and flare when you come back are a classic indoor-air signal. Contaminated ducts recirculate the triggers with every HVAC cycle:",
-        "If over-the-counter antihistamines help less at home than they do at the office, the ductwork deserves an inspection."
+        "Sneezing, itchy eyes, or congestion that ease when you leave can have many indoor causes: filters, carpets, humidity, outdoor pollen — and sometimes contaminated ducts.",
+        "EPA states duct cleaning has **not been shown to prevent health problems**. If symptoms cluster at home, talk with a clinician and consider an HVAC inspection. Cleaning removes debris; it is not a diagnosis or treatment. Broader mold context: [EPA mold](https://www.epa.gov/mold) and [CDC mold basics](https://www.cdc.gov/mold/about/index.html)."
       ],
       "listItems": [
-        "Dust mite debris — the single most common indoor allergen",
-        "Pet dander that stays airborne long after the animal leaves the room",
-        "Pollen tracked indoors on shoes and clothing, then trapped in return ducts",
-        "Mold spores growing in damp sections of metal ductwork"
+        "Dust discharging from supplies — a clearer cleaning trigger than symptoms alone",
+        "Heavy pet dander on returns in multi-pet homes",
+        "Pollen season after windows stay open — filters matter as much as trunks",
+        "Visible mold on damp hard surfaces — EPA says consider cleaning; fix moisture too"
       ]
     },
     {
       "id": "sign-3",
       "heading": "3. A musty or stale smell hits when the system kicks on",
       "paragraphs": [
-        "A quick burst of stale air every time the blower starts is not normal. It usually means organic material — moisture-laden dust, mold, rodent debris, or smoke residue — has settled inside the ducts and off-gasses when airflow resumes.",
-        "Air fresheners mask the symptom without touching the cause. If the smell returns every season, the ducts need physical cleaning."
+        "A short burst of stale air every time the blower starts is worth checking. It can mean moisture-laden dust, visible mold on hard surfaces, pest debris, or smoke residue inside the ducts.",
+        "Air fresheners mask the symptom. If the smell returns every season, schedule an inspection — and address humidity or leaks if the basement or crawl stays damp."
       ],
       "listItems": []
     },
@@ -52,9 +52,8 @@
       "id": "sign-4",
       "heading": "4. Energy bills creep up with no change in usage",
       "paragraphs": [
-        "Dust-lined duct walls narrow the effective diameter of every run. The blower compensates by running longer cycles, the compressor works harder, and your electricity bill reflects it.",
-        "A gradual upward trend — especially one that doesn't track with rate increases or seasonal swings — is worth investigating. Duct contamination won't appear on the utility company's explanation, but it's one of the most common hidden culprits.",
-        "After a professional cleaning, many homeowners notice shorter HVAC run times within the first billing cycle."
+        "Rising bills can have many causes — rate changes, thermostat settings, leaky ducts, dirty filters, or restricted airflow. [EPA](https://www.epa.gov/indoor-air-quality-iaq/should-you-have-air-ducts-your-home-cleaned) says **little evidence** shows cleaning **only the ducts** improves system efficiency, though cleaning coils/fans/heat exchangers may help more.",
+        "[ENERGY STAR](https://www.energystar.gov/saveathome/heating-cooling/duct-sealing) notes typical homes can lose about **20–30% of the air** moving through ducts to leaks — sealing is a separate efficiency step from debris cleaning. Full sourced take: [Do Dirty Air Ducts Raise Energy Bills?](/blog/do-dirty-air-ducts-raise-energy-bills)."
       ],
       "listItems": []
     },
@@ -62,8 +61,8 @@
       "id": "sign-5",
       "heading": "5. Airflow is strong in some rooms and weak in others",
       "paragraphs": [
-        "In a clean system, every register in the house should deliver roughly similar airflow for its size. When one bedroom barely puts out a breeze while the living room blasts, a partial blockage in the branch run is the most likely explanation.",
-        "Debris, collapsed flex duct, or even a rodent nest can choke a single run while the rest of the system appears fine. A professional inspection pinpoints the exact location."
+        "Uneven airflow can mean debris in a branch run — or closed dampers, crushed flex, disconnected joints, or design issues. A professional walkthrough separates those causes.",
+        "If one bedroom barely puts out a breeze while the living room blasts, do not guess from the thermostat alone. Inspection before a full clean saves surprises."
       ],
       "listItems": []
     },
@@ -71,8 +70,8 @@
       "id": "sign-6",
       "heading": "6. Mold is visible on or near vent covers",
       "paragraphs": [
-        "Black, green, or white discoloration on register grilles, inside the visible portion of a duct boot, or on the ceiling around a supply vent means moisture and organic material have met inside the system.",
-        "Mold in ductwork is not a DIY project. Spores spread through the entire home when the blower runs, and improper removal can make the problem worse. Specialized containment, cleaning, and antimicrobial treatment are required."
+        "Discoloration on register grilles, inside a visible duct boot, or on the ceiling around a supply can mean moisture and organic material have met inside or near the system.",
+        "EPA and CDC describe mold as a potential source of allergens and irritants; reactions vary. Substantial visible mold on hard duct surfaces is a reason to consider professional cleaning with containment — and to fix the moisture source so growth does not return ([EPA: Should you have ducts cleaned?](https://www.epa.gov/indoor-air-quality-iaq/should-you-have-air-ducts-your-home-cleaned))."
       ],
       "listItems": []
     },
@@ -80,8 +79,8 @@
       "id": "sign-7",
       "heading": "7. You hear scratching or find droppings near vents",
       "paragraphs": [
-        "Ductwork provides a warm, sheltered highway for mice, insects, and even birds. Once inside, pests leave droppings, nesting material, and carcasses that contaminate the air supply and produce unmistakable odors.",
-        "If you hear scratching behind a wall, see droppings on a register, or smell decay from a specific vent, schedule both pest control and professional duct cleaning — the biological residue needs to be fully removed."
+        "Ductwork can shelter mice, insects, and sometimes birds. Droppings, nesting material, or carcasses contaminate the air path and produce unmistakable odors.",
+        "If you hear scratching, see droppings on a register, or smell decay from a specific vent, schedule pest control **and** professional duct cleaning — biological residue needs full removal once the entry is sealed."
       ],
       "listItems": []
     },
@@ -92,19 +91,19 @@
         "One sign is worth a closer look. Two or more make a strong case for professional service."
       ],
       "listItems": [
-        "Check your filter first — A saturated filter accelerates every problem on this list. Replace it immediately.",
-        "Book a professional inspection — A technician can scope the ducts and tell you exactly what's inside before committing to a full clean.",
-        "Don't delay mold or pest situations — Both introduce health hazards that worsen the longer the blower circulates contaminated air.",
-        "Skip the shop-vac approach — Consumer equipment can't reach the trunk lines where the real buildup lives. Professional negative-pressure vacuums and full-length agitation tools are designed for the job.",
-        "Ask about sanitization — For mold, rodent contamination, or heavy biological debris, antimicrobial treatment after cleaning is a smart add-on."
+        "Check your filter first — a saturated filter accelerates every problem on this list",
+        "Book a professional inspection — we scope accessible trunks before locking a full clean",
+        "Do not delay mold or pest situations — moisture and entry points still have to be fixed",
+        "Skip the shop-vac approach — consumer tools rarely reach the trunk where buildup lives",
+        "Ask about optional antimicrobial — after mechanical cleaning on suitable hard surfaces when inspection supports it; not a medical claim"
       ]
     },
     {
       "id": "conclusion",
-      "heading": "Recognize the signs — then act on them",
+      "heading": "Recognize the signs — then book the right scope",
       "paragraphs": [
-        "Dirty ducts announce themselves through dust, smells, symptoms, and utility bills long before they cause a system failure. The earlier you respond, the cheaper and simpler the fix.",
-        "Amazon Air Duct Cleaning serves Northern Virginia, Maryland, and Washington, DC from our Burke and Bethesda offices. Call [(800) 606-3334](tel:8006063334) or view [air duct cleaning packages](/air-duct-cleaning) to schedule an inspection."
+        "Dirty ducts announce themselves through dust, smells, uneven airflow, and sometimes longer run times. Bills alone are not proof ducts are the cause — check filters, leaks, and equipment too.",
+        "Amazon Air Duct Cleaning serves Northern Virginia, Maryland, and Washington, DC from Burke and Bethesda. Call [(800) 606-3334](tel:8006063334), view [air duct cleaning packages](/air-duct-cleaning), or open your city on [locations](/locations)."
       ],
       "listItems": []
     }
@@ -112,11 +111,15 @@
   "faq": [
     {
       "q": "What is the most common sign ducts need cleaning?",
-      "a": "Dust returning onto surfaces within days of wiping registers — especially when filters are already being changed on schedule."
+      "a": "Dust returning onto surfaces within days of wiping registers — especially when filters are already changed on schedule."
     },
     {
       "q": "Can allergies alone prove ducts are dirty?",
-      "a": "Not by themselves. Allergies plus visible dust, musty startup smells, or uneven airflow are a stronger signal to inspect."
+      "a": "Not by themselves. Allergies plus visible dust, musty startup smells, or uneven airflow are a stronger signal to inspect. EPA does not treat cleaning as a proven health treatment."
+    },
+    {
+      "q": "Do rising energy bills mean my ducts need cleaning?",
+      "a": "Not by themselves. EPA says little evidence shows duct-only cleaning improves efficiency. ENERGY STAR highlights sealing leaky ducts. See our energy bills article for sources."
     },
     {
       "q": "Should I clean ducts after renovations?",
@@ -124,7 +127,7 @@
     },
     {
       "q": "How do I book after noticing these signs?",
-      "a": "Call (800) 606-3334 or open air duct cleaning packages for Virginia, Maryland, and DC."
+      "a": "Call (800) 606-3334 or open air duct cleaning packages. Flat-rate residential service from Burke, VA and Bethesda, MD."
     }
   ]
 }

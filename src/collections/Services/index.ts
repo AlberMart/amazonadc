@@ -6,6 +6,7 @@ import { slugField } from 'payload'
 import { seoMetaTabFields } from '../../fields/seoMeta'
 import { INLINE_LINKS_HINT } from '../../fields/inlineLinksHint'
 import { pageSectionsFields } from '../../fields/pageSections'
+import { revalidateService, revalidateServiceDelete } from './hooks/revalidateService'
 
 const hiddenLegacy = {
   condition: () => false,
@@ -45,6 +46,10 @@ export const Services: CollectionConfig = {
   admin: {
     defaultColumns: ['title', 'slug', 'price', 'updatedAt'],
     useAsTitle: 'title',
+  },
+  hooks: {
+    afterChange: [revalidateService],
+    afterDelete: [revalidateServiceDelete],
   },
   fields: [
     {

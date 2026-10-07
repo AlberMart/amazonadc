@@ -1,3 +1,13 @@
+import {
+  ABOUT_TRUST_CLOSING,
+  DRYER_LINT_GUARANTEE,
+  DUCT_CLEANING_FREQUENCY_FAQ,
+  REVIEWS_INTRO,
+  SATISFACTION_HEADLINE,
+  SATISFACTION_PRICING_PARAGRAPH,
+  SATISFACTION_TAGLINE,
+  SATISFACTION_WHY_CARD,
+} from '@/utilities/serviceCopy'
 import { SEO_HOME_H1 } from '@/utilities/seoCopy'
 
 export type HomeContent = {
@@ -67,8 +77,7 @@ export type HomeContent = {
 export const homeContentSeed: HomeContent = {
   heroEyebrow: '',
   heroHeadline: SEO_HOME_H1,
-  heroSubheadline:
-    'Flat-rate air duct and dryer vent cleaning with before/after proof and a 100% satisfaction guarantee.',
+  heroSubheadline: SATISFACTION_TAGLINE,
   heroCtaLabel: 'Get a Free Estimate',
   heroCtaHref: '#contact',
   heroPhoneDisplay: '(800) 606-3334',
@@ -77,7 +86,7 @@ export const homeContentSeed: HomeContent = {
   heroImageAlt: 'Amazon Air Duct Cleaning team providing professional HVAC services',
   aboutHeading: 'About Us',
   aboutParagraphs: [
-    'Amazon Air Duct Cleaning provides professional air duct cleaning and dryer vent cleaning services throughout Washington, DC, Maryland, and Virginia. Our certified technicians help homeowners and businesses improve indoor air quality, reduce dust and allergens, and keep HVAC systems running efficiently. We offer reliable residential and commercial duct cleaning services and mold removal, as well as upfront flat-rate pricing and a 100% satisfaction guarantee. With the latest equipment and over 40 years of combined industry experience, our team delivers exceptional results on every job.',
+    `Amazon Air Duct Cleaning provides professional air duct cleaning and dryer vent cleaning throughout Washington, DC, Maryland, and Virginia. We remove dust and debris from HVAC duct systems with source-removal methods, clear lint from dryer vents, and document every job with before/after photos. EPA does not treat routine duct cleaning as a proven health treatment — ${ABOUT_TRUST_CLOSING}`,
   ],
   aboutClosing: 'Call today for a detailed, no-obligation estimate at',
   aboutPhoneDisplay: '(800) 606-3334',
@@ -88,17 +97,17 @@ export const homeContentSeed: HomeContent = {
   pricingIntro: 'No hidden fees. No surprises. Just honest, flat-rate pricing.',
   pricingHighlights: [
     'Flat-Rate Pricing for Air Duct & Dryer Vent Cleaning Services',
-    '100% Satisfaction Guarantee',
+    SATISFACTION_HEADLINE,
   ],
   pricingParagraphs: [
     'At Amazon Air Duct Cleaning, we believe in clear and transparent pricing for every service. Unlike companies that rely on hidden fees or aggressive upselling, we provide straightforward flat-rate pricing so you know exactly what to expect before we begin. No counting vents, no extra charges based on square footage, and no unexpected add-ons — the price you\'re quoted is the price you pay.',
-    'We stand behind the quality of our work and prioritize customer satisfaction. Payment is only required after the job is completed to your satisfaction. If something falls short, contact us within 7 days — we will re-perform the work or issue a refund per our refund policy.',
+    SATISFACTION_PRICING_PARAGRAPH,
   ],
   airDuctHeading: 'Air Duct Cleaning',
   airDuctParagraphs: [
-    'Amazon Air Duct Cleaning provides professional air duct cleaning services using industry-recognized best practices to ensure safe, thorough, and effective results. Our process removes dust, debris, and contaminants from your HVAC system while improving indoor air quality and system performance.',
-    'We use the proven Source Removal method — placing your HVAC system under negative pressure with a powerful HEPA-filtered vacuum, then using specialized tools to dislodge dirt and debris so contaminants are fully extracted instead of blown back into your home.',
-    'To ensure transparency and quality, we can provide before-and-after duct camera inspection so you can clearly see the results.',
+    'Amazon Air Duct Cleaning provides professional air duct cleaning using source-removal methods: HEPA negative pressure plus agitation so debris is extracted from the system rather than blown into living spaces.',
+    'EPA notes that light dust in ducts is common and that duct cleaning has not been shown to prevent health problems. We clean when you want debris removed, after renovations, or when inspection shows substantial buildup or visible mold — and we show the results with before/after photos.',
+    'To ensure transparency, we can provide before-and-after duct camera documentation so you can clearly see what was removed.',
   ],
   airDuctImage: '/img/Amazon_AIR_DUCT_CLEANING.webp',
   airDuctImageAlt: 'Professional air duct cleaning service',
@@ -106,12 +115,13 @@ export const homeContentSeed: HomeContent = {
   airDuctCtaHref: '/air-duct-cleaning',
   dryerHeading: 'Protect Your Home With Professional Dryer Vent Cleaning',
   dryerParagraphs: [
-    'Regular dryer vent inspection and cleaning is essential for both home safety and dryer performance. Failure to clean is a leading cause of home fires involving clothes dryers.',
-    'Lint buildup is not only a fire hazard — it also reduces dryer efficiency, increases energy use, and shortens appliance life. We use a drill-powered rotary brush system paired with a high-powered vacuum to thoroughly clean the vent and remove built-up lint.',
-    "We stand behind our work: if we don't get the lint out, your service is free.",
+    'Regular dryer vent inspection and cleaning matters for safety and dryer performance. [NFPA’s analysis of home dryer fires (2014–2018)](https://www.nfpa.org/education-and-research/research/nfpa-research/fire-statistical-reports/home-fires-involving-clothes-dryers-and-washing-machines) finds failure to clean in about 32% of those fires — lint buildup is a documented, preventable factor.',
+    'A packed vent also makes the dryer run longer and hotter. We use a drill-powered rotary brush paired with a high-powered vacuum to clear the full length of the run.',
+    DRYER_LINT_GUARANTEE,
   ],
-  dryerImage: '/img/Amazon_DRYER_VENT_CLEANING.webp',
-  dryerImageAlt: 'Professional dryer vent cleaning',
+  dryerImage: '/img/dryer-vent-cleaning-tech-van.jpg',
+  dryerImageAlt:
+    'Technician unloading dryer vent cleaning hose and tools from a service van at a home',
   dryerCtaLabel: 'Learn more',
   dryerCtaHref: '/dryer-vent-cleaning',
   whyHeading: 'Why Choose Us?',
@@ -128,8 +138,8 @@ export const homeContentSeed: HomeContent = {
       text: 'We provide real before-and-after photos of your ductwork, so you can clearly see the results and the improvement in your HVAC system.',
     },
     {
-      title: '100% Satisfaction Guarantee',
-      text: "Your satisfaction is our priority. If you're not completely satisfied, we'll make it right — re-perform the work or refund per our refund policy.",
+      title: SATISFACTION_HEADLINE,
+      text: SATISFACTION_WHY_CARD,
     },
     {
       title: 'Top-Rated Local Service in the DMV',
@@ -144,7 +154,7 @@ export const homeContentSeed: HomeContent = {
   processSteps: [
     {
       title: 'HEPA Vacuum Setup',
-      text: 'We connect a powerful HEPA-filtered vacuum system to your ductwork to create negative pressure and safely capture dust, allergens, and airborne particles.',
+      text: 'We connect a powerful HEPA-filtered vacuum to your ductwork to create negative pressure and capture dust and debris as it is loosened.',
     },
     {
       title: 'Agitation & Deep Cleaning',
@@ -152,11 +162,11 @@ export const homeContentSeed: HomeContent = {
     },
     {
       title: 'Complete Contaminant Removal',
-      text: 'All contaminants are fully extracted through the vacuum system, ensuring your vents and ductwork are thoroughly cleaned.',
+      text: 'Dislodged debris is extracted through the vacuum system so vents and ductwork are thoroughly cleaned of buildup.',
     },
     {
-      title: 'Optional Anti-Microbial Treatment',
-      text: 'We offer an additional treatment to help reduce bacteria, mold, and odors inside your air ducts for improved air quality.',
+      title: 'Optional Antimicrobial Treatment',
+      text: 'On request, we may apply an EPA-registered antimicrobial to hard duct surfaces after mechanical cleaning — an optional step, not a medical or sterilizing claim.',
     },
   ],
   servicesHeading: 'Our Air Duct Cleaning Services',
@@ -164,7 +174,7 @@ export const homeContentSeed: HomeContent = {
   serviceItems: [
     {
       title: 'Residential Air Duct Cleaning',
-      text: 'Expert air duct cleaning for homes throughout VA, MD & DC to improve air quality and reduce allergens.',
+      text: 'Source-removal air duct cleaning for homes throughout VA, MD & DC — debris removal with before/after proof.',
     },
     {
       title: 'Commercial Air Duct Cleaning',
@@ -172,19 +182,19 @@ export const homeContentSeed: HomeContent = {
     },
     {
       title: 'Dryer Vent Cleaning',
-      text: 'Remove lint build-up to increase dryer efficiency and prevent fire hazards.',
+      text: 'Remove lint buildup to restore dryer airflow and reduce lint-related fire risk.',
     },
     {
-      title: 'Mold & Allergen Removal',
-      text: 'Safe, thorough removal of mold and biological contaminants from ducts.',
+      title: 'Mold Remediation for Air Ducts',
+      text: 'Contamination-focused cleaning when inspection shows substantial visible mold — moisture source still matters.',
     },
     {
       title: 'HVAC System Cleaning',
-      text: 'Full HVAC cleaning for peak system efficiency and cleaner airflow.',
+      text: 'Full HVAC cleaning for clearer airflow and less debris in the system.',
     },
   ],
   blogHeading: 'Blog',
-  blogIntro: 'Expert tips on air duct cleaning, HVAC maintenance, and indoor air quality.',
+  blogIntro: 'Tips on air duct cleaning, dryer vent maintenance, and HVAC care.',
   blogViewAllLabel: 'View all articles →',
   faqHeading: 'Frequently Asked Questions',
   faqIntro: 'Have questions about air duct and dryer vent cleaning? Call',
@@ -193,11 +203,15 @@ export const homeContentSeed: HomeContent = {
   faqItems: [
     {
       q: 'Why is professional air duct cleaning important?',
-      a: 'Professional air duct cleaning removes dust, debris, pet dander, and allergens that accumulate inside HVAC systems. A cleaner system can help airflow and may reduce how hard equipment works to heat or cool the home. Regular cleaning improves indoor air quality for many households and supports HVAC maintenance — results vary by home and system condition.',
+      a: 'Professional air duct cleaning removes dust, debris, and other buildup from HVAC duct surfaces. A clearer system can help airflow when ducts were restricted. EPA states that duct cleaning has not been shown to prevent health problems — we do not claim medical or allergy-cure results. See our air duct cleaning page for EPA-aligned expectations.',
     },
     {
       q: 'How often should air ducts and dryer vents be cleaned?',
-      a: 'Most homes should have air ducts professionally cleaned every 1 to 3 years. Homes with pets, smokers, allergies, or recent renovations may require more frequent service. Dryer vents should be cleaned once per year to prevent lint buildup and reduce the risk of dryer fires.',
+      a: DUCT_CLEANING_FREQUENCY_FAQ,
+    },
+    {
+      q: 'Does air duct cleaning lower energy bills?',
+      a: 'Not as a promised percentage savings. EPA says little evidence shows cleaning only the ducts improves efficiency; coil/component cleaning may help more. ENERGY STAR highlights sealing leaky ducts (typical homes can lose about 20–30% of air to leaks). See our article: Do Dirty Air Ducts Raise Energy Bills?',
     },
     {
       q: 'What method do you use to clean air ducts?',
@@ -205,7 +219,7 @@ export const homeContentSeed: HomeContent = {
     },
     {
       q: 'Do you use chemicals during the cleaning process?',
-      a: 'We do not apply chemicals by default. On request — or when inspection supports it — we apply complimentary Envirocon antimicrobial sanitization to the duct system at no additional charge. It is a low-toxicity, EPA-registered product.',
+      a: 'We do not apply chemicals by default. On request, complimentary Envirocon antimicrobial may be applied to hard duct surfaces after mechanical cleaning — an EPA-registered product step, not a sterilizing or medical claim.',
     },
     {
       q: 'How long does the cleaning process take?',
@@ -225,8 +239,7 @@ export const homeContentSeed: HomeContent = {
     },
   ],
   reviewsHeading: 'What Our Clients Say About Us',
-  reviewsIntro:
-    'Real reviews from customers who trusted our air duct & dryer vent cleaning services.',
+  reviewsIntro: REVIEWS_INTRO,
   reviews: [
     {
       initials: 'II',

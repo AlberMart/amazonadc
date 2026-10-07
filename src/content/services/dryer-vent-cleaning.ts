@@ -1,16 +1,18 @@
 import type { ServiceContent } from '@/utilities/services'
+import { DRYER_LINT_GUARANTEE } from '@/utilities/serviceCopy'
 
 export const dryerVentCleaning: ServiceContent = {
   slug: 'dryer-vent-cleaning',
   title: 'Dryer Vent Cleaning',
   description:
-    'Professional dryer vent cleaning for $199. Flat-rate brushing and vacuuming of the full duct length with before/after photos. Serving Virginia, Maryland & Washington DC.',
+    'Dryer vent cleaning from $199. Full-length brush-out, before/after photos, flat rates. Serving Virginia, Maryland & Washington DC.',
   summary:
     'Professional dryer vent cleaning with rotary brush and high-powered vacuum to reduce fire risk and improve dryer efficiency.',
   price: 199,
   orderUrl: 'https://buy.stripe.com/14AfZicRh8HD99t1ok4AU01',
-  heroImage: '/img/101221_AmazonDC-227.webp',
-  heroAlt: 'Dryer vent cleaning service in Virginia, Maryland & Washington DC',
+  heroImage: '/img/dryer-vent-cleaning-tech-van.jpg',
+  heroAlt:
+    'Technician unloading dryer vent cleaning hose and tools from a service van at a home',
   includesImage: '/img/101221_AmazonDC-299.webp',
   includesImageAlt:
     'Dryer vent cleaning service includes brushing and vacuuming the entire length of the dryer duct',
@@ -39,16 +41,16 @@ export const dryerVentCleaning: ServiceContent = {
       { title: 'Document before and after', text: 'We provide before and after pictures of the vent.' },
       {
         title: 'Lint-removal guarantee',
-        text: 'We guarantee to remove all the lint, or the service is free.',
+        text: DRYER_LINT_GUARANTEE,
       },
     ],
   },
   why: {
-    heading: 'Why Dryer Vent Cleaning Is Essential for Home Safety',
+    heading: 'Why Dryer Vent Cleaning Matters for Fire Safety',
     paragraphs: [
-      'Most homeowners clean the lint trap after every load — but the trap captures only a fraction of the lint produced during drying. The rest travels deep into the vent duct, where it accumulates over time, restricts airflow, and creates a serious fire hazard.',
-      'According to USFA/FEMA, there are approximately 2,900 clothes dryer fires in the U.S. every year, resulting in 5 deaths, 100 injuries, and $35 million in property damage. Failure to clean the dryer is the leading cause, responsible for 31% of all dryer fires.',
-      'Beyond fire risk, clogged dryer vents force your appliance to work harder, increasing energy consumption and shortening its lifespan. For gas dryers, a blocked vent can also allow dangerous carbon monoxide to back up into the living space. Regular professional cleaning substantially reduces these risks and helps your dryer run more safely and efficiently.',
+      'Most homeowners clean the lint trap after every load — but the trap only catches part of the lint. The rest travels into the vent duct, where it can accumulate, restrict airflow, and create a fire hazard.',
+      'According to the [National Fire Protection Association (NFPA) analysis of home dryer fires for 2014–2018](https://www.nfpa.org/education-and-research/research/nfpa-research/fire-statistical-reports/home-fires-involving-clothes-dryers-and-washing-machines), U.S. fire departments responded to an estimated average of about **13,820 home dryer fires per year**. **Failure to clean** was a factor in about **32%** of those fires, and **dust, fiber, or lint** was the item first ignited in about **27%**. USFA’s dedicated topical report still covers only [2008–2010](https://www.usfa.fema.gov/downloads/pdf/statistics/v13i7.pdf) (~2,900 residential dryer fires/year, narrower scope). CPSC’s [2020–2022 residential fire-loss estimates](https://www.cpsc.gov/s3fs-public/2020-2022_Residential_Fire_Loss_Estimates-Annual_Fire_Loss_Report.pdf) put clothes-dryer fires near **~5,100/year** on average — newer counts, but without NFPA’s failure-to-clean breakdown.',
+      'Beyond fire risk, a clogged vent can make clothes take longer to dry and increase dryer wear. For gas dryers, restricted exhaust can also raise concern about combustion products not leaving the home properly — clear venting supports safer operation. Professional cleaning removes packed lint along the run and restores airflow; it reduces a preventable hazard but does not make a dryer “fireproof.”',
     ],
   },
   columns: [
@@ -64,21 +66,21 @@ export const dryerVentCleaning: ServiceContent = {
       ],
     },
     {
-      heading: 'Benefits of professional dryer vent cleaning',
+      heading: 'What professional vent cleaning helps with',
       items: [
-        'Eliminates the primary cause of dryer fires — lint buildup',
-        'Clothes dry faster, saving energy and reducing utility bills',
-        'Reduces wear on the dryer motor and heating element',
-        'Prevents dangerous carbon monoxide buildup for gas dryer owners',
-        'Extends the overall lifespan of your dryer appliance',
-        'Peace of mind backed by before/after photo documentation',
+        'Removes lint that NFPA identifies as a common first material ignited in dryer fires',
+        'Restores exhaust airflow so clothes can dry in fewer cycles',
+        'May reduce strain on the dryer when airflow was restricted',
+        'Supports safer exhaust for gas dryers when the vent was blocked',
+        'Documents the run with before/after photos',
+        'Does not claim to eliminate all fire risk from mechanical or electrical faults',
       ],
     },
   ],
   scheduleCta: {
     heading: 'Schedule Your Dryer Vent Cleaning Service Today',
     paragraphs: [
-      'At Amazon Air Duct Cleaning, we believe clear pricing and careful work are our greatest strengths. Techs respect your property and clean up after themselves. If you are not satisfied, contact us within 7 days — we will re-perform the work or issue a refund per our [refund policy](/refund-policy). Order dryer vent cleaning online or call (800) 606-3334. We serve Virginia, Maryland, and Washington, DC from our Burke and Bethesda offices.',
+      'At Amazon Air Duct Cleaning, we believe clear pricing and careful work are our greatest strengths. Techs respect your property, clean up after themselves, and document every dryer vent job with before/after photos. Order dryer vent cleaning online or call (800) 606-3334. We serve Virginia, Maryland, and Washington, DC from our Burke and Bethesda offices.',
     ],
   },
   faqIntro:
@@ -94,15 +96,15 @@ export const dryerVentCleaning: ServiceContent = {
     },
     {
       q: 'Are fires the only risk from clogged dryer vents?',
-      a: 'Unfortunately, no. Gas dryer vents also release carbon monoxide, but if the vent is clogged, it may cause a dangerous buildup of carbon monoxide, putting you and your family at risk.',
+      a: 'Fire risk from lint and restricted airflow is the main safety reason to keep vents clear (see NFPA dryer-fire statistics). A blocked vent can also make the dryer run longer and hotter. Gas dryers need a clear path for exhaust; if you suspect combustion-gas issues, stop use and have the vent and appliance checked.',
     },
     {
       q: 'Do you clean dryer vents in Arlington, VA?',
       a: 'Yes. Schedule flat-rate dryer vent cleaning in [Arlington](/locations/arlington) or [Alexandria](/locations/alexandria) from our Burke office, or call (800) 606-3334.',
     },
     {
-      q: 'Does air duct cleaning improve indoor air quality?',
-      a: 'Yes — removing dust and allergens can significantly improve air quality and HVAC efficiency.',
+      q: 'Does air duct cleaning prevent health problems?',
+      a: 'EPA states that duct cleaning has not been shown to prevent health problems. We remove debris from HVAC ducts when you want source-removal cleaning or when inspection shows substantial buildup or visible mold. See [EPA duct-cleaning guidance](https://www.epa.gov/indoor-air-quality-iaq/should-you-have-air-ducts-your-home-cleaned).',
     },
   ],
 }

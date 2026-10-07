@@ -1,14 +1,21 @@
 import type { LocationContentSeed } from '@/utilities/locations'
 
+/**
+ * Clarksburg — MoCo I-270 north new-town construction dust + DEP.
+ * Links used:
+ * - https://www.montgomerycountymd.gov/propertycare/air-quality-law/indoor-air-quality
+ * - https://www.montgomerycountymd.gov/propertycare/air-quality-law/indoor-air-quality/mold
+ * - https://www.montgomerycountymd.gov/department-housing-community-affairs/dhca-code-enforcement
+ * - https://www.montgomerycountymd.gov/DHCA/housing/landlordtenant/
+ */
 export const clarksburg: LocationContentSeed = {
   slug: 'clarksburg',
-  title: 'Air Duct Cleaning in Clarksburg, MD',
-  headline:
-    'Air duct and dryer vent cleaning for new-construction HOAs and I-270 north drywall dust',
+  title: 'Clarksburg Air Duct Cleaning for Newer Homes',
+  headline: 'Cabin Branch and Village townhomes — first-owner construction dust and stacked laundry from Bethesda',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Clarksburg, MD. Flat rates from our Bethesda office for new-construction dust, HOA townhomes, and I-270 north. Call (301) 809-4544.',
+    'Air duct & dryer vent cleaning in Clarksburg, MD. Flat rates for newer homes & townhomes. Photos included. Call (301) 809-4544.',
   intro:
-    'Amazon Air Duct Cleaning serves Clarksburg from our Bethesda office — farther up I-270 than Germantown. New pads, HOA townhomes, and first-owner houses all take on drywall dust. Call (301) 809-4544.',
+    'Clarksburg is Montgomery County’s **I-270 north frontier** — Clarksburg Village, Cabin Branch, Town Center, Skylark — where nearly every home is post-2000 and many ducts still hold **builder gypsum** from the first occupancy. DEP teaches humidity and mold prevention; DHCA handles many rental disputes in unincorporated county. Bethesda dispatch with realistic north-270 drive time. (301) 809-4544.',
   heroImage: '/img/locations/clarksburg.webp',
   heroAlt: 'Air duct cleaning in Clarksburg, MD — Amazon Air Duct Cleaning',
   city: 'Clarksburg',
@@ -16,62 +23,62 @@ export const clarksburg: LocationContentSeed = {
   servedBy: 'bethesda',
   sectionLayout: 'offersLate',
   about: {
-    heading: 'First-Owner Trunks Still Carrying Builder Gypsum and Tape Residue',
+    heading: 'New-town pads, taped registers, and County IAQ that does not pick vendors',
     paragraphs: [
-      'Clarksburg represents Montgomery County\'s newest residential frontier along I-270 north — Clarksburg Village, Cabin Branch, the Town Center cluster, Skylark, and the streets extending toward Damascus. Nearly every home here was built within the last two decades, and many are first- or second-owner. Builders tape register openings during construction, but fine gypsum powder still migrates through gaps in the ductwork during framing, drywall finishing, and painting. That residue sat in your trunks before you unpacked a single box.',
-      'HOA townhome layouts compound the problem with mechanical closets wedged under staircases and dryer vents threaded through party walls to distant exterior caps. The first few humid Maryland summers cause condensation on cool supply surfaces, and that moisture binds the gypsum film into a harder coating that standard vacuuming cannot dislodge. Meanwhile, I-270 traffic north of Germantown continues depositing road particulate onto every outdoor surface.',
-      'We dispatch Clarksburg from [Bethesda](/locations/bethesda). [Germantown](/locations/germantown) is one exit south, and [Frederick](/locations/frederick) continues farther up the corridor. Our post on [Clarksburg new construction dust and air ducts](/blog/clarksburg-new-construction-dust-air-ducts) covers the builder-dust problem in more depth.',
+      'Builders often tape registers during drywall, but gypsum fines still reach ducts when seals are imperfect — [EPA](https://www.epa.gov/sites/default/files/2020-06/documents/2019.07_tech_bulletin_duct_protection_during_construction.pdf) flags construction dust in HVAC as a known risk. Many Clarksburg first-owner homes have **never** had mechanical source removal. HOA townhomes tuck handlers under stairs and push dryer vents through party walls; humid summers make that chalky film stickier than a filter change fixes.',
+      'Montgomery DEP [Indoor Air Quality](https://www.montgomerycountymd.gov/propertycare/air-quality-law/indoor-air-quality) and [mold](https://www.montgomerycountymd.gov/propertycare/air-quality-law/indoor-air-quality/mold) guidance: vent dryers outdoors, roughly **30–50%** humidity, keep filters clean — prevention science, not a hire mandate. Renters may use [DHCA Code Enforcement](https://www.montgomerycountymd.gov/department-housing-community-affairs/dhca-code-enforcement) and [Landlord & Tenant](https://www.montgomerycountymd.gov/DHCA/housing/landlordtenant/) for maintenance disputes; we clean when hired, we do not file County complaints.',
+      'Bethesda reaches Clarksburg after [Germantown](/locations/germantown) on I-270 — Germantown is older townhomes; Clarksburg is new-pad drywall dust and Cabin Branch stacks. Detail: [Clarksburg new construction dust and air ducts](/blog/clarksburg-new-construction-dust-air-ducts).',
     ],
     highlights: [
-      'Clarksburg Village, Cabin Branch, Skylark, Town Center, and Damascus lanes',
-      'Flat-rate pricing locked at booking — no builder-dust surcharge',
-      'Before-and-after photos documenting post-construction residue removal',
-      'First-clean packages for homes that have never had duct service',
+      'First-owner builder dust in post-2000 trunks',
+      'DEP + DHCA with clear boundaries',
+      'Cabin Branch / Village party-wall dryers',
+      'Bethesda: (301) 809-4544',
     ],
   },
-  offersTitle: 'Clarksburg New-Home and Routine Cleaning Rates',
+  offersTitle: 'Clarksburg flat-rate packages',
   services: {
-    heading: 'Clarksburg Services for Post-Construction and Occupied HOA Homes',
-    intro: 'First-clean gypsum removal and routine maintenance packages both start with a scope walk — new does not mean clean inside the ductwork.',
+    heading: 'Post-construction source removal and occupied HOA homes',
+    intro: '“New house” does not mean clean ducts — scope walk before price locks.',
     items: [
       {
-        title: 'Air Duct Cleaning & Sanitization',
-        text: 'mechanical agitation under HEPA negative pressure strips builder-era gypsum, joint compound dust, and paint overspray from supply trunks, return plenums, and register boots throughout Clarksburg\'s newer housing stock. Post-construction trunks often hold more debris than decade-old systems because the dust was sealed in from day one. Full details at [air duct cleaning](/air-duct-cleaning).',
+        title: 'Air duct cleaning (source removal)',
+        text: 'HEPA negative pressure and agitation through supplies, returns, and boots — gypsum, tape dust, and I-270 north corridor particulate. [EPA duct guidance](https://www.epa.gov/indoor-air-quality-iaq/should-you-have-air-ducts-your-home-cleaned). [Air duct cleaning](/air-duct-cleaning).',
       },
       {
-        title: 'Dryer Vent Cleaning',
-        text: 'Cabin Branch and Clarksburg Village townhome dryer runs thread through party walls and turn multiple corners before reaching an exterior cap. Lint compacts at every bend, and new-construction homes start accumulating from the first load of laundry. We brush, vacuum, and verify draw end to end. Book at [dryer vent cleaning](/dryer-vent-cleaning).',
+        title: 'Dryer vent cleaning',
+        text: 'Cabin Branch and Village townhome runs with multiple bends cleared end to end; draw verified at the cap. [NFPA dryer-fire research](https://www.nfpa.org/education-and-research/research/nfpa-research/fire-statistical-reports/home-fires-involving-clothes-dryers-and-washing-machines). [Dryer vent cleaning](/dryer-vent-cleaning).',
       },
       {
-        title: 'Ventilation & HVAC Mold Treatment',
-        text: 'Even brand-new Clarksburg homes sweat at the trunk joints during their first Maryland summers. That condensation combined with trapped gypsum dust creates a surface where microbial growth can establish before the house feels old. EPA-registered treatment covers coils and affected trunk sections. More at [mold remediation for air ducts](/mold-remediation-air-ducts).',
+        title: 'Optional antimicrobial on hard duct surfaces',
+        text: 'After mechanical cleaning when first-summer condensation left biological film on hard metal — not whole-home remediation per DEP boundaries. [Mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
     ],
   },
   why: {
-    heading: 'Why New Clarksburg Houses Already Have Dust Packed in the Trunks',
+    heading: 'What usually brings us to Clarksburg homes',
     items: [
       {
-        title: 'North I-270 Reached From a Real Bethesda Office',
-        text: 'Clarksburg is the farthest regular Montgomery County stop on our I-270 dispatch. The crew stages from 7815 Old Georgetown Rd with a realistic drive window.',
+        title: 'Newer construction, builder dust in trunks',
+        text: 'Clarksburg’s **2000s–2020s** pads often still show chalky construction-style fines in supply runs from move-in — source removal with photos shows what filters never pulled back.',
       },
       {
-        title: 'Builder Dust Priced Like Any Other Residential Clean',
-        text: 'Post-construction residue does not trigger an upcharge. The flat-rate quote at (301) 809-4544 covers the gypsum load the same as an older home\'s pollen accumulation.',
+        title: 'Builder dust, same flat rate',
+        text: 'Post-construction gypsum does not trigger a surcharge — quoted before equipment starts at (301) 809-4544.',
       },
       {
-        title: 'New-Construction Inspections We Perform Weekly',
-        text: 'First-owner cleans along the [Germantown](/locations/germantown) and Clarksburg corridor are a recurring part of the schedule — builder dust in fresh trunks is an expected finding, not a discovery.',
+        title: 'DEP does not endorse cleaners',
+        text: 'County [IAQ/mold](https://www.montgomerycountymd.gov/propertycare/air-quality-law/indoor-air-quality/mold) pages teach prevention — we provide mechanical removal with photos when you hire us.',
       },
       {
-        title: 'Guaranteed Outcome With Photographic Proof',
-        text: 'Before-and-after images of every trunk and register are part of the close-out. Unsatisfied with the result? We return on our dime.',
+        title: 'North I-270 ETA honesty',
+        text: 'Clarksburg is among the farther regular Bethesda runs — we set a window that accounts for I-270 north, not an all-day block.',
       },
     ],
   },
   communities: {
-    heading: 'Clarksburg Village and Nearby New Streets',
-    intro: 'Germantown and Frederick are neighboring farther/closer pages.',
+    heading: 'Clarksburg Village, Cabin Branch, and north lanes',
+    intro: 'Germantown is one exit south; Frederick County continues north.',
     groups: [
       {
         title: 'Clarksburg Village & Town Center',
@@ -79,66 +86,61 @@ export const clarksburg: LocationContentSeed = {
       },
       {
         title: 'Cabin Branch',
-        places: 'Cabin Branch, West Old Baltimore Road, new HOA clusters west of I-270',
+        places: 'Cabin Branch, West Old Baltimore Road, HOA clusters west of I-270',
       },
       {
-        title: 'Skylark, Damascus & north',
-        places:
-          'Skylark, streets toward Damascus and Frederick County — ask if your HOA is not listed',
+        title: 'Skylark & toward Damascus',
+        places: 'Skylark, streets toward Damascus and Frederick County — ask if your HOA is not listed',
       },
     ],
   },
   process: {
-    heading: 'North I-270 Dispatch From Bethesda',
-    intro: 'Same flat-rate flow from Bethesda — scoped for Clarksburg housing.',
+    heading: 'Bethesda → Clarksburg visit flow',
+    intro: 'First-clean jobs often find more chalky construction dust than owners expect — scoped before agitation.',
     steps: [
       {
-        title: 'Inspect access and dryer path',
-        text: 'We walk returns and the dryer run typical of Clarksburg housing (newer-build drywall fines still sitting in Clarksburg returns) so nothing is surprise-priced later.',
+        title: 'First clean or maintenance',
+        text: 'Move-in year and whether registers were ever vacuumed steers time on site — not the flat-rate menu.',
       },
       {
-        title: 'Stage the right equipment',
-        text: 'Tight Clarksburg streets get portable HEPA from Bethesda; larger lots may use truck-mounted vacuum when access allows.',
+        title: 'Townhome access',
+        text: 'Party-wall dryer paths and stairwell handlers noted on the work order — standard for Village and Cabin Branch.',
       },
       {
-        title: 'Clean ducts end to end',
-        text: 'Specialized tools plus negative-pressure vacuum through the trunks serving this Clarksburg, MD home.',
+        title: 'Lock scope and price',
+        text: 'Ducts, dryer vent, or both — confirmed before tools run; antimicrobial only with your OK.',
       },
       {
-        title: 'Clear the dryer run',
-        text: 'Full-length brushing to the exterior cap when dryer service is on the Clarksburg ticket.',
+        title: 'Source-removal + photos',
+        text: 'HEPA negative pressure through scoped runs; before/after images at close-out.',
       },
       {
-        title: 'Final walk-through',
-        text: 'Review Clarksburg photos together and leave booking notes for (301) 809-4544 if you want a follow-up.',
+        title: 'Handoff',
+        text: 'DEP-aligned humidity/filter tips and (301) 809-4544 for follow-up.',
       },
     ],
   },
-  faqIntro: 'Clarksburg questions — call (301) 809-4544 (dispatch: Bethesda).',
+  faqIntro: 'Clarksburg booking questions — DEP links where useful. Call (301) 809-4544 (Bethesda).',
   faq: [
     {
-      q: 'Who dispatches the crew to Clarksburg, MD?',
-      a: 'Clarksburg appointments leave from Bethesda, MD (7815 Old Georgetown Rd Ste 201). Call (301) 809-4544 for air duct or dryer vent cleaning on your street.',
+      q: 'How is Clarksburg different from Germantown on your site?',
+      a: '[Germantown](/locations/germantown) covers Milestone, Town Center, and pre-2000 townhome geometry. **Clarksburg** is new-construction pads, Cabin Branch stacks, and first-owner gypsum — farther north on 270.',
     },
     {
-      q: 'How should I prep the house for the visit?',
-      a: 'Clarksburg prep: open returns and the dryer, move fragile items near vents, mention pets or renovations when you book at (301) 809-4544.',
+      q: 'Does Montgomery County require duct cleaning after construction?',
+      a: 'DEP [IAQ](https://www.montgomerycountymd.gov/propertycare/air-quality-law/indoor-air-quality) and [mold](https://www.montgomerycountymd.gov/propertycare/air-quality-law/indoor-air-quality/mold) focus on humidity, venting dryers outdoors, and maintenance — they do not endorse vendors or mandate duct cleaning. We are a private flat-rate service with photos.',
     },
     {
-      q: 'How much time should I block on the calendar?',
-      a: 'Block roughly half a morning for a typical Clarksburg home. Dryer-vent add-ons are often possible the same day if booked together.',
+      q: 'We never cleaned ducts in our new Clarksburg home — is that normal?',
+      a: 'Common. Builder dust often sits sealed in trunks from day one. See [Clarksburg new construction dust and air ducts](/blog/clarksburg-new-construction-dust-air-ducts).',
     },
     {
-      q: 'How does the quote work for this address?',
-      a: 'For this Clarksburg, MD address we quote a flat package from Bethesda. Walkthrough first, locked number second — not priced by counting vents.',
+      q: 'Which office serves Clarksburg?',
+      a: 'Bethesda, MD (7815A Old Georgetown Rd Ste 201). Call (301) 809-4544 — book ahead for north-270 windows.',
     },
     {
-      q: 'Can ducts and the dryer vent be done in one visit?',
-      a: 'Yes for Clarksburg — book the combined package up front. Call (301) 809-4544; the Bethesda crew brings both tool sets for one stop.',
-    },
-    {
-      q: 'How far ahead should I book?',
-      a: 'Clarksburg fills fast in pollen and humid months. Same-week openings are common — call (301) 809-4544 for the next Bethesda window.',
+      q: 'Can ducts and the dryer vent be one visit?',
+      a: 'Yes when booked together — efficient for Cabin Branch stacked closets. Call (301) 809-4544.',
     },
   ],
 }

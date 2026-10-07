@@ -1,129 +1,154 @@
 import type { LocationContentSeed } from '@/utilities/locations'
 
+/**
+ * Alexandria pilot — civic IAQ / mold angle with city + VDH sources.
+ * Links used (only high-fit):
+ * - https://www.alexandriava.gov/Mold
+ * - https://www.alexandriava.gov/environmental-health/indoor-air-quality-alexandria-va
+ * - https://www.alexandriava.gov/news-ahd/alexandrias-healthy-homes-network-releases-city-wide-action-plan-to-tackle-mold-pests
+ * - https://www.vdh.virginia.gov/environmental-health/2018/07/17/who-do-i-contact-for-help-with-mold-removal/
+ * Skipped: food-establishment HVAC code, school mold reporting, HB2195 (bill), duplicate code-admin hub.
+ */
 export const alexandria: LocationContentSeed = {
   slug: 'alexandria',
-  title: 'Air Duct Cleaning & Mold Remediation in Alexandria, VA',
-  headline: 'Air duct cleaning, ventilation maintenance, and mold treatment in Alexandria, VA',
+  title: 'Air Duct Cleaning in Alexandria, VA',
+  headline: 'Old Town row houses, Del Ray bungalows, and condo dryer risers — flat-rate cleaning from Burke',
   description:
-    'Professional air duct cleaning, dryer vent maintenance, and mold remediation services in Alexandria, VA. Flat rates, certified techs, photo-backed satisfaction policy.',
+    'Air duct & dryer vent cleaning in Alexandria, VA. Flat rates for Old Town, Del Ray & condos. Photos included. Call (571) 460-0001.',
   intro:
-    'Amazon Air Duct Cleaning is the local crew for HVAC cleaning, dryer vent maintenance, and indoor air quality in Alexandria, Virginia. Whether you live in a historic home in Old Town, a condo near the waterfront, or a house in Del Ray, our technicians keep the air fresh and the system running. Call (571) 460-0001.',
+    'Alexandria treats indoor moisture and mold as a real local issue — not a generic “DMV humidity” line. We clean ducts and dryer vents for Old Town row houses, Del Ray bungalows, and Potomac Yard condos, document the work with photos, and stay clear about what City of Alexandria and VDH resources cover versus what a duct cleaning visit actually does. Book from Burke at (571) 460-0001.',
   heroImage: '/img/locations/alexandria.webp',
   heroAlt: 'Air duct cleaning in Alexandria, VA — Amazon Air Duct Cleaning',
   city: 'Alexandria',
   state: 'VA',
   servedBy: 'burke',
-  sectionLayout: 'servicesFirst',
+  sectionLayout: 'whyFirst',
   about: {
-    heading: 'Waterfront Brick, Del Ray Row Houses, and Potomac Yard Stacks',
+    heading: 'City IAQ resources and what duct cleaning covers',
     paragraphs: [
-      'Alexandria straddles the Potomac with housing that spans three centuries. Old Town colonial brick buildings and narrow row houses along King Street and Prince Street carry ductwork that was often retrofitted decades after the walls went up — metal trunks threaded through plaster walls and tight joist bays where dust accumulates at every bend. Rosemont and Del Ray add early-twentieth-century bungalows with finished attics and basement air handlers sitting on damp concrete.',
-      'Potomac Yard, Carlyle, and the West End tell a different story: newer condos with rooftop HVAC packs, stacked laundry closets, and dryer vents that climb several stories before reaching the cap. Humidity off the river does not care about building age — it condenses on cold coils and supply metal in a 2020 condo the same way it does in an 1820 row house. That moisture layer traps pollen from tree-lined streets, Eisenhower Avenue traffic particles, and pet dander until the system is cleaned.',
-      'Our Burke team runs Alexandria routes alongside [Arlington](/locations/arlington) and [Mount Vernon](/locations/mount-vernon), so waterfront parking logistics and Old Town alley access are already in the playbook. Read how [Potomac humidity affects Alexandria air quality](/blog/how-potomac-humidity-affects-alexandria-air-quality), or schedule [air duct cleaning](/air-duct-cleaning) and [dryer vent cleaning](/dryer-vent-cleaning) for the same visit.',
+      'The [City of Alexandria’s indoor air quality hub](https://www.alexandriava.gov/environmental-health/indoor-air-quality-alexandria-va) lists mold among the hazards residents are steered to for help — and states plainly that mold is a big problem here. Our job is narrower: remove debris from HVAC trunks and clear dryer runs, then document results. We are not a substitute for Alex311, landlord obligations, or whole-home mold remediation.',
+      'Old Town and Del Ray still carry retrofitted metal trunks through plaster and joist bays; Potomac Yard and Carlyle add stacked laundry closets and multi-story dryer chases. River humidity loads both eras the same way — condensation on cold metal, sticky film on trunks, lint that packs elbows. Deeper read: [how Potomac humidity shows up in Alexandria homes](/blog/how-potomac-humidity-affects-alexandria-air-quality).',
+      'The City’s [Healthy Homes Network action plan news](https://www.alexandriava.gov/news-ahd/alexandrias-healthy-homes-network-releases-city-wide-action-plan-to-tackle-mold-pests) underscores that mold and pests are a city-wide priority. That context is useful for renters and owners alike: if moisture or visible mold is a housing-condition issue, start with the City’s mold pathway; if you want debris out of ducts or lint out of a dryer vent, that is the visit we schedule from Burke alongside [Arlington](/locations/arlington) and [Mount Vernon](/locations/mount-vernon).',
     ],
     highlights: [
-      'Old Town, Del Ray, Rosemont, Potomac Yard, West End, and Carlyle',
-      'Flat-rate packages — the quoted number is the final price',
-      'Before-and-after photos on every residential job',
-      'Burke crew with weekly Alexandria route experience',
+      'Aligned with City IAQ / mold resources — without overclaiming we replace them',
+      'Old Town alleys, Del Ray basements, Potomac Yard laundry chases',
+      'Flat-rate residential packages; before/after photos on every job',
+      'Burke dispatch: (571) 460-0001',
     ],
   },
-  offersTitle: 'Alexandria Duct & Vent Cleaning Packages',
+  offersTitle: 'Alexandria packages (flat-rate)',
   services: {
-    heading: 'What We Clean in Alexandria Historic and Modern Homes',
-    intro: 'Colonial brick and glass-tower condos get the same published scope and flat rate.',
+    heading: 'What we actually clean on Alexandria jobs',
+    intro:
+      'Three scopes — ducts, dryer vents, and antimicrobial on hard duct surfaces when inspection supports it. Same published flat rates for row house or condo.',
     items: [
       {
-        title: 'Full-System Air Duct Cleaning',
-        text: 'Negative-pressure HEPA equipment seals onto the trunk while specialized tools agitate every supply line, return, and register. An antimicrobial sanitizing pass follows when our on-site inspection finds biological buildup. You receive the before-and-after photo set. Schedule [air duct cleaning](/air-duct-cleaning).',
+        title: 'Air duct cleaning (source removal)',
+        text: 'HEPA negative pressure on the trunk, agitation through supplies and returns, registers included. [EPA guidance](https://www.epa.gov/indoor-air-quality-iaq/should-you-have-air-ducts-your-home-cleaned) still frames routine duct cleaning carefully on health claims — we remove debris and show photos, we do not sell medical results. Details: [air duct cleaning](/air-duct-cleaning).',
       },
       {
-        title: 'Dryer Vent Cleaning',
-        text: 'Old Town row houses often route dryer exhaust through interior walls, and Potomac Yard condos send it up multi-story chases. Both designs pack with lint and restrict airflow — raising fire risk and forcing the appliance to overwork. We rod-brush and vacuum the entire run to the exterior cap. Book [dryer vent cleaning](/dryer-vent-cleaning).',
+        title: 'Dryer vent cleaning',
+        text: 'Alexandria’s own [mold prevention tips](https://www.alexandriava.gov/Mold) include cleaning laundry vents regularly — lint-packed runs also raise dryer fire risk (see [NFPA dryer-fire research](https://www.nfpa.org/education-and-research/research/nfpa-research/fire-statistical-reports/home-fires-involving-clothes-dryers-and-washing-machines)). We brush and vacuum the full length to the exterior cap, including long condo risers. Book [dryer vent cleaning](/dryer-vent-cleaning).',
       },
       {
-        title: 'Mold Treatment Inside Air Ducts',
-        text: 'River-adjacent Alexandria homes are prime candidates for mold inside ductwork. When condensation forms on evaporator coils and supply metal, spores establish colonies that blow into living spaces each cooling cycle. We mechanically clean first, then apply EPA-registered antimicrobial treatment along the ventilation path. Learn more at [mold remediation for air ducts](/mold-remediation-air-ducts).',
+        title: 'Antimicrobial on hard duct surfaces (optional)',
+        text: 'After mechanical cleaning, optional EPA-registered product on hard duct metal when inspection shows biological film — not a whole-house mold remediation and not a substitute for fixing water intrusion. Scope and limits: [mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
     ],
   },
   why: {
-    heading: 'Why Alexandria Ductwork Collects More Than Suburban Systems',
+    heading: 'Why Alexandria homeowners book us',
     items: [
       {
-        title: 'Flat-Rate Pricing — No Vent Math',
-        text: 'Your Alexandria job is quoted at a fixed price before any equipment leaves the truck. Old Town row houses and Potomac Yard high-rises use the same rate structure.',
+        title: 'Renters: City complaint steps first when mold is a housing issue',
+        text: 'Alexandria’s [Mold Information & Assistance](https://www.alexandriava.gov/Mold) page tells renters to report to the landlord in writing, then escalate via Alex311 if there is no follow-up in about 10–15 days. Code Administration may look for water intrusion; the City states it does **not** inspect or test for mold itself. We clean ducts/vents when you hire us — we do not file Alex311 for you or replace landlord duties.',
       },
       {
-        title: 'Photo Proof of Every Trunk',
-        text: 'We document the interior of the ductwork before and after cleaning so you can see exactly what was removed — particularly useful in older homes where debris has been compacting for years.',
+        title: 'VDH does not pick your contractor',
+        text: 'The [Virginia Department of Health](https://www.vdh.virginia.gov/environmental-health/2018/07/17/who-do-i-contact-for-help-with-mold-removal/) explains who to contact for mold questions and is clear that VDH does not assess or recommend specific mold specialists. That honesty is the bar we match: flat-rate duct/vent work with photos, not a “health department approved” badge.',
       },
       {
-        title: 'Experience With Fragile and Modern Systems',
-        text: 'The same Burke crew handles delicate plaster-wall trunk access in Old Town and tight condo closets at Carlyle. They carry the right brush heads and fittings for both scenarios.',
+        title: 'Humidity target the City already cites',
+        text: 'City mold guidance points residents toward keeping indoor humidity below about 50% and using exhaust fans — the same moisture logic that loads duct metal near the Potomac. Cleaning removes what is already in the trunks; dehumidification and leak repair slow the return.',
       },
       {
-        title: 'Satisfaction Guarantee',
-        text: 'If you are not satisfied after the Alexandria cleaning, contact us within 7 days — we re-perform or refund per our refund policy.',
+        title: 'Photo-backed flat rate from Burke',
+        text: 'Quote before equipment starts, before/after photos at close-out, no per-vent math. Old Town parking and condo access notes go on the work order the morning of the visit.',
       },
     ],
   },
   communities: {
-    heading: 'Old Town, Del Ray, and West End Stops',
-    intro: 'Waterfront, Eisenhower, and West End streets are on the Burke dispatch list.',
+    heading: 'Neighborhoods we stage for from Burke',
+    intro:
+      'Same published packages; different access notes — alleys in Old Town, basement handlers in Del Ray, rooftop packs and laundry risers at Potomac Yard.',
     groups: [
-      { title: 'Old Town & downtown', places: 'Old Town, Downtown Alexandria, waterfront' },
-      { title: 'Del Ray & Rosemont', places: 'Del Ray, Rosemont, Arlandria' },
-      { title: 'West End & Potomac Yard', places: 'West End, Potomac Yard, Carlyle' },
+      {
+        title: 'Waterfront & Old Town',
+        places: 'Old Town, Old Town North, waterfront, Robinson Landing area',
+      },
+      {
+        title: 'Del Ray, Rosemont, Arlandria',
+        places: 'Del Ray, Rosemont, Arlandria, Braddock-adjacent streets',
+      },
+      {
+        title: 'West End, Carlyle, Potomac Yard',
+        places: 'West End, Carlyle, Potomac Yard, Eisenhower corridor',
+      },
     ],
   },
   process: {
-    heading: 'Narrow-Street Staging Notes for Alexandria Visits',
-    intro: 'Arrival windows reflect the drive from Burke to Alexandria.',
+    heading: 'What a Burke → Alexandria visit looks like',
+    intro: 'Logistics first, then scope — especially when mold or moisture is part of the story you tell us.',
     steps: [
       {
-        title: 'Walkthrough and quote',
-        text: 'In Alexandria we ask about pets, renovations, and condo / stacked-laundry layouts common around Alexandria before locking a flat-rate number for this VA address.',
+        title: 'Tell us the building type',
+        text: 'Row house with plaster chases, Del Ray basement handler, or condo laundry riser? That changes hose runs and time — not the flat-rate menu.',
       },
       {
-        title: 'Arrival window',
-        text: 'Morning-of text with a realistic ETA from the Burke office to your Alexandria street — not a vague all-day window.',
+        title: 'Separate City issues from duct scope',
+        text: 'Active leak, landlord dispute, or Alex311 case stays on the City/landlord path. We scope ducts and dryer vents you want cleaned today.',
       },
       {
-        title: 'Agree the package',
-        text: 'For this Alexandria home: ducts, dryer vent, or both — scoped on site, quoted before equipment starts, paid after you are satisfied.',
+        title: 'Confirm price before tools run',
+        text: 'Ducts, dryer vent, or both — number locked before agitation starts; Envirocon only with your OK.',
       },
       {
-        title: 'HEPA source-removal cleaning',
-        text: 'We agitate and vacuum supplies, returns, and registers in this Alexandria system under negative pressure so debris leaves in the vacuum.',
+        title: 'Source-removal + photos',
+        text: 'Negative-pressure HEPA cleaning, full dryer brush-out when booked, before/after images before we leave.',
       },
       {
-        title: 'Photos and handoff',
-        text: 'Before/after photos, filter tips, and a dryer-vent interval for Alexandria seasons. Questions go to (571) 460-0001.',
+        title: 'Handoff tips that match City advice',
+        text: 'Filter interval, humidity reminder (City cites ~50%), and when to revisit the dryer vent — plus (571) 460-0001 for follow-up.',
       },
     ],
   },
-  faqIntro: 'Alexandria questions — call (571) 460-0001 (dispatch: Burke).',
+  faqIntro:
+    'Common Alexandria booking questions — City resources linked where they help. Call (571) 460-0001 (Burke).',
   faq: [
     {
-      q: 'Which office books jobs for Alexandria?',
-      a: 'Alexandria appointments leave from Burke, VA (5641 Burke Centre Pkwy Ste 119). Call (571) 460-0001 for air duct or dryer vent cleaning on your street.',
+      q: 'Does the City of Alexandria clean air ducts or test mold in my unit?',
+      a: 'No. Alexandria’s [mold page](https://www.alexandriava.gov/Mold) explains renter reporting (landlord, then Alex311) and states Code Administration does not inspect or test for mold. The [City IAQ hub](https://www.alexandriava.gov/environmental-health/indoor-air-quality-alexandria-va) covers hazards and programs like ALX Breathes. We are a private flat-rate duct and dryer-vent cleaner — not a City service.',
     },
     {
-      q: 'What access do you need before arrival?',
-      a: 'In Alexandria, clear a path to the air handler and dryer — condo closets and stacked laundry especially. Share gate or parking notes for your block.',
+      q: 'I’m a renter with mold — should I book duct cleaning first?',
+      a: 'If the issue is moisture or visible mold as a housing condition, follow the City’s steps first: written notice to the landlord, then Alex311 if needed ([Mold Information & Assistance](https://www.alexandriava.gov/Mold)). Duct cleaning can still help when trunks hold debris, but it does not fix water intrusion or replace landlord remediation duties.',
     },
     {
-      q: 'How long is a typical visit?',
-      a: 'Most Alexandria single-system houses finish in about 2–3 hours. High-rise dryer risers can add time after inspection.',
+      q: 'Why do you mention laundry vents on an Alexandria page?',
+      a: 'Alexandria’s [mold prevention tips](https://www.alexandriava.gov/Mold) include cleaning laundry vents regularly. Packed dryer vents also raise fire risk. We brush and vacuum the full run — including tall condo chases — as a separate or combined flat-rate service.',
     },
     {
-      q: 'Is pricing flat-rate or by the vent?',
-      a: 'Alexandria residential packages are flat-rate from Burke. We scope during the walkthrough, confirm before equipment starts, and that is what you pay — no per-vent counting.',
+      q: 'Will VDH recommend Amazon Air Duct Cleaning?',
+      a: 'No. [VDH’s mold contact guidance](https://www.vdh.virginia.gov/environmental-health/2018/07/17/who-do-i-contact-for-help-with-mold-removal/) says the department does not recommend specific mold specialists. We cite that so expectations stay honest — judge us on scope, photos, and flat-rate terms.',
     },
     {
-      q: 'Do you charge extra for Envirocon sanitizing?',
-      a: 'No upcharge for Envirocon on Alexandria work when requested or when inspection supports it. We never spray without your OK.',
+      q: 'Which office serves Alexandria?',
+      a: 'Burke, VA (5641 Burke Centre Pkwy Ste 119). Call (571) 460-0001. Same-day duct + dryer packages are available when both are booked up front.',
+    },
+    {
+      q: 'Where can I read more about humidity in Alexandria homes?',
+      a: 'Our article on [Potomac humidity and Alexandria air ducts](/blog/how-potomac-humidity-affects-alexandria-air-quality). Official City context: [Indoor Air Quality](https://www.alexandriava.gov/environmental-health/indoor-air-quality-alexandria-va) and [Mold Information & Assistance](https://www.alexandriava.gov/Mold).',
     },
   ],
 }

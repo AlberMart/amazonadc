@@ -1,14 +1,21 @@
 import type { LocationContentSeed } from '@/utilities/locations'
 
+/**
+ * Ellicott City — Historic Main Street flood/humidity + Howard County Health mold limits (Columbia sibling page).
+ * Links used:
+ * - https://www.howardcountymd.gov/health/mold
+ * - https://www.howardcountymd.gov/consumer-protection/landlord-tenant-publication
+ * - https://www.howardcountymd.gov/county-executive/flood-safety-initiatives
+ * - https://www.howardcountymd.gov/county-executive/flood-mitigation-projects
+ */
 export const ellicottCity: LocationContentSeed = {
   slug: 'ellicott-city',
   title: 'Air Duct Cleaning in Ellicott City, MD',
-  headline:
-    'Air duct and dryer vent cleaning for historic Main Street, mill houses, and flood-side humidity',
+  headline: 'Historic Main Street humidity and hillside suburbs — Howard County jobs from Bethesda',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Ellicott City, MD. Flat rates from our Bethesda office for old stone and wood, Main Street humidity, and flood-prone lower levels. Call (301) 809-4544.',
+    'Air duct & dryer vent cleaning in Ellicott City, MD. Flat rates for Main Street & hillside homes. Photos. Call (301) 809-4544.',
   intro:
-    'Amazon Air Duct Cleaning serves Ellicott City from our Bethesda office — an Howard County drive. Historic mill houses and later suburbs take on flood-side humidity and old-duct dust. Call (301) 809-4544.',
+    'Ellicott City is **Patapsco valley** housing — historic Main Street stone, Tiber Branch low spots, then hillside Dorsey Hall and Turf Valley. Howard County Health says it has no program to evaluate mold concerns; flash-flood history on Main Street means moisture in lower levels needs honest repair before ducts alone fix a musty lower level. We clean ducts and dryer vents with flat rates and photos. (301) 809-4544.',
   heroImage: '/img/locations/ellicott-city.webp',
   heroAlt: 'Air duct cleaning in Ellicott City, MD — Amazon Air Duct Cleaning',
   city: 'Ellicott City',
@@ -16,129 +23,128 @@ export const ellicottCity: LocationContentSeed = {
   servedBy: 'bethesda',
   sectionLayout: 'servicesFirst',
   about: {
-    heading: 'Patapsco Mill Town, Stone Cellars With Flood Memory, and Hillside Suburb Pollen',
+    heading: 'Floodplain humidity vs hillside pollen — same County mold boundaries as Columbia',
     paragraphs: [
-      'Ellicott City sits where the Patapsco River cut a granite valley — historic Main Street with its stone and timber structures rising from the floodplain, the Tiber Branch valley, then newer suburban neighborhoods like Dorsey Hall, Centennial, and Turf Valley climbing the surrounding hillsides. The historic core\'s buildings carry stone cellars and timber-framed lower levels that remember every flood event. HVAC systems installed in these older structures route ductwork through irregular stone passages and around timber obstacles, creating dead-end pockets where moisture and debris collect without any natural air movement.',
-      'Hillside neighborhoods above the valley present a different set of conditions: 1980s and 1990s colonials with finished lower levels on sloped lots where the rear wall sits partially below grade. The grade-contact section stays cool enough to condensate through Howard County\'s humid months, and the mature canopy on those slopes deposits pollen into return grilles from March through June. Catonsville borders to the east as a next-door community, and [Columbia](/locations/columbia) is the adjacent Howard County page.',
-      'We dispatch Ellicott City from [Bethesda](/locations/bethesda) with Howard County drive time built into the schedule. Our post on [Ellicott City flood humidity and air ducts](/blog/ellicott-city-flood-humidity-air-ducts) examines the persistent moisture issue.',
+      'Historic Main Street sits in a granite valley where tributaries meet. Howard County [flood safety](https://www.howardcountymd.gov/county-executive/flood-safety-initiatives) and [Safe and Sound mitigation](https://www.howardcountymd.gov/county-executive/flood-mitigation-projects) manage storm risk on Lower Main — they do not dry ductwork. Stone cellars can stay damp long after surface water recedes; fix intrusion before antimicrobial on metal will last.',
+      'Above the valley, Dorsey Hall, Centennial, and Turf Valley put below-grade walls against cool earth through humid months, and slope canopy dumps pollen each spring. Older Main Street HVAC runs through irregular stone bays with dead-end pockets — scoped on walkthrough, not from the curb.',
+      'Howard County [Mold](https://www.howardcountymd.gov/health/mold): Health does **not** evaluate mold concerns; control humidity (~50%), fix leaks, hire specialists if you want testing. Tenant timelines: [landlord-tenant publication](https://www.howardcountymd.gov/consumer-protection/landlord-tenant-publication). Local read: [Ellicott City flood humidity and air ducts](/blog/ellicott-city-flood-humidity-air-ducts).',
     ],
     highlights: [
-      'Historic Main Street, Tiber valley, Dorsey Hall, Centennial, and Turf Valley',
-      'Flat-rate pricing for stone-cellar historic and hillside suburban systems alike',
-      'Before-and-after photos of every duct section and register',
-      'Moisture-aware scoping — flood-zone trunks inspected for persistent dampness',
+      'Main Street flood and valley humidity context',
+      'Howard Health “no mold evaluation program”',
+      'Historic stone vs hillside suburban trunks',
+      'Bethesda: (301) 809-4544',
     ],
   },
-  offersTitle: 'Ellicott City Historic and Suburban Cleaning Rates',
+  offersTitle: 'Ellicott City flat-rate packages',
   services: {
-    heading: 'Ellicott City Services for Stone-Cellar Historic Homes and Hillside Colonials',
-    intro: 'A Main Street stone building and a Dorsey Hall colonial are fundamentally different duct environments — both receive an on-site scope walk and locked price before equipment starts.',
+    heading: 'Stone passages, timber bays, and hillside supply runs',
+    intro: 'Main Street historic and Turf Valley colonial are different duct environments — price locks after on-site scope.',
     items: [
       {
-        title: 'Air Duct Cleaning & Sanitization',
-        text: 'mechanical agitation under HEPA negative pressure through stone-cellar passages, timber-framed trunk bays, and suburban supply runs in Ellicott City\'s hillside neighborhoods. Historic structures require flexible tooling to navigate irregular passages and dead-end pockets that standard rigid equipment cannot reach. Complete scope at [air duct cleaning](/air-duct-cleaning).',
+        title: 'Air duct cleaning (source removal)',
+        text: 'HEPA negative pressure and flexible agitation through irregular historic passages and suburban trunks. [EPA duct guidance](https://www.epa.gov/indoor-air-quality-iaq/should-you-have-air-ducts-your-home-cleaned) — debris removal with photos, not medical claims. [Air duct cleaning](/air-duct-cleaning).',
       },
       {
-        title: 'Dryer Vent Cleaning',
-        text: 'Historic Main Street additions and hillside colonials both hide dryer vents behind finished walls, through crawl spaces, and around stone or block obstacles. We map the full path before brushing, vacuum the extracted lint, and test exterior-cap draw before signing off. Book at [dryer vent cleaning](/dryer-vent-cleaning).',
+        title: 'Dryer vent cleaning',
+        text: 'Hillside laundry rooms often push long, bent runs to distant exterior walls; historic additions hide caps behind finished surfaces. Full brush-out and draw test. [NFPA dryer-fire research](https://www.nfpa.org/education-and-research/research/nfpa-research/fire-statistical-reports/home-fires-involving-clothes-dryers-and-washing-machines). [Dryer vent cleaning](/dryer-vent-cleaning).',
       },
       {
-        title: 'Ventilation & HVAC Mold Treatment',
-        text: 'Ellicott City\'s flood-zone cellars retain dampness long after surface water recedes, and hillside lower levels with grade contact condensate through every humid season. When inspection reveals coil or trunk colonization, we treat the affected ventilation path with EPA-registered antimicrobials documented in before-and-after photos. More at [mold remediation for air ducts](/mold-remediation-air-ducts).',
+        title: 'Optional antimicrobial on hard duct surfaces',
+        text: 'After mechanical cleaning when inspection shows film on hard metal — not County mold clearance and not flood remediation. [Mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
     ],
   },
   why: {
-    heading: 'Why Patapsco Valley Moisture Persists in Ellicott City Duct Systems',
+    heading: 'Historic Main Street humidity — separate from Columbia village grids',
     items: [
       {
-        title: 'Howard County Drive Planned With Honest Windows',
-        text: 'Ellicott City is a longer run from Bethesda. We schedule the drive into the arrival window so the crew arrives as expected.',
+        title: 'County will not “clear” mold',
+        text: 'Howard [Health mold guidance](https://www.howardcountymd.gov/health/mold) offers education, not home evaluations or vendor endorsements. Photos from our visit are job documentation — not a health-department certificate.',
       },
       {
-        title: 'Historic and Suburban Systems Priced Under the Same Framework',
-        text: 'A stone-cellar Main Street building and a Turf Valley colonial both receive a flat-rate quote at (301) 809-4544. No heritage-building premium.',
+        title: 'Flood-zone moisture checked, not assumed dry',
+        text: 'Lower Main and Tiber-adjacent levels get a moisture conversation on the walkthrough. Active water intrusion belongs in repair and County flood-safety awareness — not duct agitation alone.',
       },
       {
-        title: 'Flood-Zone Moisture Inspected, Not Assumed Away',
-        text: 'Lower levels in the historic core get a moisture check as part of the scope walk. If trunk conditions suggest persistent dampness, we adjust the service approach before starting.',
+        title: 'Tenant mold law is separate',
+        text: 'County [landlord-tenant publication](https://www.howardcountymd.gov/consumer-protection/landlord-tenant-publication) summarizes Maryland mold protection timelines — we clean trunks when hired, we do not enforce landlord clocks.',
       },
       {
-        title: 'Guaranteed Results With Full Documentation',
-        text: 'Every duct section and register is photographed before and after. Unsatisfied? We return at no additional cost.',
+        title: 'Howard County drive from Bethesda',
+        text: 'Ellicott City is a longer Howard run than Silver Spring — we plan the window for I-495/29 travel; flat rate stays the same.',
       },
     ],
   },
   communities: {
-    heading: 'Historic Main Street Edge and Hillside Neighborhoods',
-    intro: 'Columbia is the sister Howard County page; both dispatch from Bethesda.',
+    heading: 'Historic core and hillside neighborhoods',
+    intro: 'Columbia villages are on the sister Howard County page.',
     groups: [
       {
         title: 'Historic Main Street & mill district',
-        places: 'Historic Main Street, Tiber Alley, mill district, Ellicott\'s Mills',
+        places: 'Historic Main Street, Tiber Alley, mill district, Old Ellicott City',
       },
       {
         title: 'Dorsey Hall & Route 40',
         places: 'Dorsey Hall, Route 40, Centennial, streets toward Columbia',
       },
       {
-        title: 'Turf Valley & toward Catonsville',
-        places:
-          'Turf Valley, Bethany, streets toward Catonsville — ask if your subdivision is not listed',
+        title: 'Turf Valley & slopes',
+        places: 'Turf Valley, Bethany, hillside streets toward Catonsville — ask if your subdivision is not listed',
       },
     ],
   },
   process: {
-    heading: 'Howard County Scheduling From Bethesda',
-    intro: 'Same flat-rate flow from Bethesda — scoped for Ellicott City housing.',
+    heading: 'Bethesda → Ellicott City visit flow',
+    intro: 'Flood-history homes get moisture separated from mechanical scope before tools run.',
     steps: [
       {
-        title: 'Inspect access and dryer path',
-        text: 'We walk returns and the dryer run typical of Ellicott City housing (longer drive-time homes where arrival windows matter in Ellicott City) so nothing is surprise-priced later.',
+        title: 'Historic vs suburban layout',
+        text: 'Stone cellar trunk, walk-out basement handler, or Turf Valley attic pack? Access and tooling differ — not the published rate card.',
       },
       {
-        title: 'Stage the right equipment',
-        text: 'Tight Ellicott City streets get portable HEPA from Bethesda; larger lots may use truck-mounted vacuum when access allows.',
+        title: 'Moisture vs duct debris',
+        text: 'Active leak or post-flood remediation in progress stays with contractors and insurers. We scope supply/return cleaning and dryer vents you book today.',
       },
       {
-        title: 'Clean ducts end to end',
-        text: 'Specialized tools plus negative-pressure vacuum through the trunks serving this Ellicott City, MD home.',
+        title: 'Lock price before agitation',
+        text: 'Combined duct + dryer available; antimicrobial only with your OK after inspection.',
       },
       {
-        title: 'Clear the dryer run',
-        text: 'Full-length brushing to the exterior cap when dryer service is on the Ellicott City ticket.',
+        title: 'Source-removal + photos',
+        text: 'HEPA negative pressure through scoped runs; before/after images at close-out.',
       },
       {
-        title: 'Final walk-through',
-        text: 'Review Ellicott City photos together and leave booking notes for (301) 809-4544 if you want a follow-up.',
+        title: 'Handoff',
+        text: 'Humidity targets aligned with County mold page, filter interval, and (301) 809-4544 for follow-up.',
       },
     ],
   },
-  faqIntro: 'Ellicott City questions — call (301) 809-4544 (dispatch: Bethesda).',
+  faqIntro: 'Ellicott City questions — Howard County mold and flood context linked. Booking: (301) 809-4544 (Bethesda).',
   faq: [
     {
-      q: 'Who dispatches the crew to Ellicott City, MD?',
-      a: 'Ellicott City appointments leave from Bethesda, MD (7815 Old Georgetown Rd Ste 201). Call (301) 809-4544 for air duct or dryer vent cleaning on your street.',
+      q: 'Will Howard County Health evaluate mold in my Ellicott City home?',
+      a: 'No. The County [mold page](https://www.howardcountymd.gov/health/mold) states the Health Department does not evaluate mold concerns or provide assistance programs. County Inspections also does not perform mold inspections.',
     },
     {
-      q: 'How should I prep the house for the visit?',
-      a: 'Ellicott City prep: open returns and the dryer, move fragile items near vents, mention pets or renovations when you book at (301) 809-4544.',
+      q: 'Does duct cleaning fix Main Street flood damage?',
+      a: 'No. County [flood safety](https://www.howardcountymd.gov/county-executive/flood-safety-initiatives) and [mitigation projects](https://www.howardcountymd.gov/county-executive/flood-mitigation-projects) address watershed risk and public safety — we remove debris from HVAC pathways after intrusion is repaired and systems are safe to service.',
     },
     {
-      q: 'How much time should I block on the calendar?',
-      a: 'Block roughly half a morning for a typical Ellicott City home. Arrival windows already reflect the drive from Bethesda.',
+      q: 'How is this page different from Columbia?',
+      a: '[Columbia](/locations/columbia) is Rouse village townhomes and lake-edge humidity. Ellicott City is Patapsco valley floods, historic stone lower levels, and Dorsey Hall hillsides — same County mold honesty, different building stock.',
     },
     {
-      q: 'How does the quote work for this address?',
-      a: 'For this Ellicott City, MD address we quote a flat package from Bethesda. Walkthrough first, locked number second — not priced by counting vents.',
+      q: 'I’m a renter with mold — should I book ducts first?',
+      a: 'Follow landlord written notice and County [landlord-tenant publication](https://www.howardcountymd.gov/consumer-protection/landlord-tenant-publication) timelines for housing-condition mold. Duct cleaning can help when trunks hold debris after moisture is fixed — it does not replace remediation duties.',
     },
     {
-      q: 'Can ducts and the dryer vent be done in one visit?',
-      a: 'Yes for Ellicott City — book the combined package up front. Call (301) 809-4544; the Bethesda crew brings both tool sets for one stop.',
+      q: 'Which office serves Ellicott City?',
+      a: 'Bethesda, MD (7815A Old Georgetown Rd Ste 201). Call (301) 809-4544 — book several days ahead for realistic Howard County windows.',
     },
     {
-      q: 'How far ahead should I book?',
-      a: 'Ellicott City is a longer run from Bethesda. Book several days ahead for realistic windows; call (301) 809-4544 for the next open Ellicott City slot.',
+      q: 'Where can I read more about valley humidity and ducts?',
+      a: '[Ellicott City flood humidity and air ducts](/blog/ellicott-city-flood-humidity-air-ducts). Official mold context: [Howard County Health — Mold](https://www.howardcountymd.gov/health/mold).',
     },
   ],
 }

@@ -4,6 +4,7 @@ import { revalidatePath } from 'next/cache'
 
 import type { Location } from '../../../payload-types'
 import { scheduleRevalidate } from '@/utilities/scheduleRevalidate'
+import { scheduleIndexNow } from '@/utilities/indexNow'
 
 function revalidateLocationPaths(slug?: string | null) {
   if (!slug) return
@@ -27,6 +28,7 @@ export const revalidateLocation: CollectionAfterChangeHook<Location> = ({
       revalidateLocationPaths(previousDoc.slug)
     }
   })
+  scheduleIndexNow([doc.slug ? `/locations/${doc.slug}` : null, '/locations', '/'])
   return doc
 }
 
@@ -36,6 +38,7 @@ export const revalidateLocationDelete: CollectionAfterDeleteHook<Location> = ({
 }) => {
   if (!context.disableRevalidate) {
     scheduleRevalidate(() => revalidateLocationPaths(doc?.slug))
+    scheduleIndexNow([doc?.slug ? `/locations/${doc.slug}` : null, '/locations'])
   }
   return doc
 }

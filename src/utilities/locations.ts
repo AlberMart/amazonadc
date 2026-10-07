@@ -41,7 +41,6 @@ import { wheaton } from '@/content/locations/wheaton'
 import { getAllOffices, officeFromSeedSlug, type OfficeContent } from './offices'
 import { mapRawSections, type HomeSection } from '@/utilities/homeSections'
 import { loadPageSections } from '@/utilities/partials'
-import { locationContentToSections } from '@/utilities/sectionSeeds'
 
 export type LocationFaq = { q: string; a: string }
 
@@ -57,6 +56,8 @@ export type LocationSectionLayout =
   | 'leanNoOffers'
   | 'faqMid'
   | 'hub'
+  | 'hubBurke'
+  | 'hubBethesda'
 
 export type LocationContent = {
   slug: string
@@ -195,7 +196,7 @@ export function locationFromSeed(
     process: seed.process,
     faqIntro: seed.faqIntro,
     faq: seed.faq,
-    sections: locationContentToSections(seed),
+    sections: [],
     meta: seed.meta || {
       title: seed.title,
       description: seed.description,
@@ -412,6 +413,38 @@ function applySeedMedia(location: LocationContent, heroMedia?: unknown): Locatio
   }
 }
 
+/** Prefer `src/content/locations/*` for marketing copy. CMS keeps NAP via offices. */
+function applyLocationSeedOverlay(location: LocationContent): LocationContent {
+  const seed = LOCATION_SEEDS.find((item) => item.slug === location.slug)
+  if (!seed) return location
+  return {
+    ...location,
+    title: seed.title,
+    headline: seed.headline,
+    description: seed.description,
+    intro: seed.intro,
+    offersTitle: seed.offersTitle,
+    sectionLayout: seed.sectionLayout || location.sectionLayout,
+    about: seed.about,
+    services: seed.services,
+    why: seed.why,
+    communities: seed.communities,
+    process: seed.process,
+    faqIntro: seed.faqIntro,
+    faq: seed.faq,
+    heroImage: seed.heroImage || location.heroImage,
+    heroAlt: seed.heroAlt || location.heroAlt,
+    meta: {
+      ...(location.meta || {}),
+      title: seed.title,
+      description: seed.description,
+      image: seed.heroImage || location.meta?.image,
+    },
+    // Empty → LocationPage rebuilds from seed fields via locationContentToSections.
+    sections: [],
+  }
+}
+
 export async function getLocationContent(slug: string): Promise<LocationContent | null> {
   try {
     const payload = await getPayload({ config: configPromise })
@@ -441,7 +474,10 @@ export async function getLocationContent(slug: string): Promise<LocationContent 
       }
       if (mapped) {
         mapped = applySeedMedia(mapped, raw.heroMedia)
-        mapped.sections = await loadPageSections(raw.sections)
+        mapped = applyLocationSeedOverlay(mapped)
+        if (mapped.sections?.length) {
+          mapped.sections = await loadPageSections(raw.sections)
+        }
         return mapped
       }
     }

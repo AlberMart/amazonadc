@@ -9,17 +9,31 @@ import { SpecialOffers, type OfferItem } from '@/components/SpecialOffers'
 import { TextWithLinks } from '@/components/TextWithLinks'
 import type { BlogPost, BlogSection } from '@/utilities/blog'
 
+function formatArticleDate(iso: string): string {
+  return new Date(iso).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+    timeZone: 'America/New_York',
+  })
+}
+
 function ListItem({ text }: { text: string }) {
-  const colon = text.indexOf(':')
-  if (colon > 0 && colon < 80) {
-    const label = text.slice(0, colon + 1)
-    const rest = text.slice(colon + 1).trim()
+  // "Label: rest" only — not URL schemes like https:// or tel:
+  const labeled = text.match(/^(.{1,80}?):\s+(.+)$/s)
+  const labelCore = labeled?.[1]?.trim() ?? ''
+  const isLabel =
+    labeled && labelCore.length > 0 && !/https?$|tel$/i.test(labelCore) && !labelCore.includes('](')
+
+  if (isLabel && labeled) {
+    const label = `${labeled[1]}:`
+    const rest = labeled[2]
     return (
       <li className="flex gap-3 text-[var(--site-heading)]">
         <span className="site-list-marker" />
         <span>
-          <span className="font-semibold">{label}</span>
-          {rest ? ` ${rest}` : null}
+          <span className="font-semibold">{label}</span>{' '}
+          <TextWithLinks text={rest} />
         </span>
       </li>
     )
@@ -28,7 +42,9 @@ function ListItem({ text }: { text: string }) {
   return (
     <li className="flex gap-3 text-[var(--site-heading)]">
       <span className="site-list-marker" />
-      <span>{text}</span>
+      <span>
+        <TextWithLinks text={text} />
+      </span>
     </li>
   )
 }
@@ -71,16 +87,16 @@ function SectionBlock({ section }: { section: BlogSection }) {
       {section.listItems.length > 0 ? (
         isToc ? (
           <ol className="mt-5 list-decimal space-y-2 pl-5 text-[var(--site-heading)]">
-            {section.listItems.map((item) => (
-              <li key={item} className="pl-1">
-                {item}
+            {section.listItems.map((item, i) => (
+              <li key={`${section.id || 'toc'}-${i}`} className="pl-1">
+                <TextWithLinks text={item} />
               </li>
             ))}
           </ol>
         ) : (
           <ul className="mt-5 space-y-3">
-            {section.listItems.map((item) => (
-              <ListItem key={item} text={item} />
+            {section.listItems.map((item, i) => (
+              <ListItem key={`${section.id || 'list'}-${i}`} text={item} />
             ))}
           </ul>
         )
@@ -136,16 +152,30 @@ export async function BlogArticle({
             <h1 className="mt-4 font-display text-3xl leading-tight font-semibold tracking-tight sm:text-4xl md:text-5xl">
               {post.headline || post.title}
             </h1>
+            {post.publishedAt ? (
+              <p className="mt-4 text-sm site-copy-on-dark">
+                <time dateTime={post.publishedAt}>{formatArticleDate(post.publishedAt)}</time>
+                {post.updatedAt &&
+                post.updatedAt !== post.publishedAt &&
+                Date.parse(post.updatedAt) > Date.parse(post.publishedAt) ? (
+                  <>
+                    {' '}
+                    · Updated{' '}
+                    <time dateTime={post.updatedAt}>{formatArticleDate(post.updatedAt)}</time>
+                  </>
+                ) : null}
+              </p>
+            ) : null}
             {post.description ? (
               <p className="mt-5 max-w-xl text-base site-copy-on-dark sm:text-lg">{post.description}</p>
             ) : null}
             <div className="mt-8 flex flex-wrap gap-4">
-              <Link
-                href="/#contact"
+              <a
+                href="#contact"
                 className="site-btn site-btn-primary"
               >
                 Get a Free Estimate
-              </Link>
+              </a>
               <a
                 href="tel:+18006063334"
                 className="rounded-md border border-white/30 px-5 py-3 text-sm font-semibold text-white transition hover:border-white/60"
@@ -211,12 +241,12 @@ export async function BlogArticle({
           <Link href="/blog" className="text-sm site-link">
             ← All articles
           </Link>
-          <Link
-            href="/#contact"
+          <a
+            href="#contact"
             className="site-btn site-btn-secondary"
           >
             Book now
-          </Link>
+          </a>
         </div>
       </ArticleColumn>
 

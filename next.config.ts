@@ -24,6 +24,24 @@ const nextConfig: NextConfig = {
   sassOptions: {
     loadPaths: ['./node_modules/@payloadcms/ui/dist/scss/'],
   },
+  async headers() {
+    return [
+      {
+        // Facebook/Messenger/WhatsApp/Telegram preview images — long cache + explicit type.
+        source: '/img/og-default.jpg',
+        headers: [
+          { key: 'Cache-Control', value: 'public, max-age=86400, stale-while-revalidate=604800' },
+          { key: 'Content-Type', value: 'image/jpeg' },
+        ],
+      },
+      {
+        source: '/img/:path*',
+        headers: [
+          { key: 'Cache-Control', value: 'public, max-age=86400, stale-while-revalidate=604800' },
+        ],
+      },
+    ]
+  },
   images: {
     localPatterns: [
       {
@@ -36,7 +54,10 @@ const nextConfig: NextConfig = {
         pathname: '/media/**',
       },
     ],
-    qualities: [100],
+    qualities: [60, 65, 70, 75, 85, 100],
+    // Prefer card/thumb widths so sizes="300px" can select ~300/384 instead of 640.
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 300, 384],
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920],
     remotePatterns: [
       ...[NEXT_PUBLIC_SERVER_URL /* 'https://example.com' */].map((item) => {
         const url = new URL(item)
@@ -53,6 +74,13 @@ const nextConfig: NextConfig = {
       '.cjs': ['.cts', '.cjs'],
       '.js': ['.ts', '.tsx', '.js', '.jsx'],
       '.mjs': ['.mts', '.mjs'],
+    }
+    // Next 15 ships baseline polyfills Lighthouse flags as legacy (~12KiB).
+    // Safe for modern Chrome/Safari/Firefox targets this site actually serves.
+    webpackConfig.resolve.alias = {
+      ...webpackConfig.resolve.alias,
+      '../build/polyfills/polyfill-module': false,
+      'next/dist/build/polyfills/polyfill-module': false,
     }
 
     return webpackConfig

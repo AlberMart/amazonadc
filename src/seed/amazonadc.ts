@@ -1,3 +1,4 @@
+import { footerCityNavRows } from '@/content/footerCities'
 import { SEO_META_DESCRIPTION, SEO_META_TITLE } from '@/utilities/seoCopy'
 import { themeSeed } from '@/utilities/theme'
 import { overlayFromAltOrSrc } from '@/utilities/galleryOverlay'
@@ -63,7 +64,7 @@ export const siteSettingsSeed = {
     'Professional air duct, dryer vent, and HVAC cleaning in Virginia, Maryland, and Washington DC.',
   priceRange: '$$-$$$',
   logoPath: '/img/logo.png',
-  defaultOgImage: '/img/Amazon.webp',
+  defaultOgImage: '/img/og-default.jpg',
   defaultMetaTitle: SEO_META_TITLE,
   defaultMetaDescription: SEO_META_DESCRIPTION,
   titleSuffix: 'Amazon Air Duct Cleaning',
@@ -244,45 +245,21 @@ export const footerSeed = {
         customNav(
           'Bethesda, MD',
           '/locations/bethesda',
-          '7815 Old Georgetown Rd Ste 201\n(301) 809-4544',
+          '7815A Old Georgetown Rd Ste 201\n(301) 809-4544',
         ),
       ],
     },
     {
       title: 'Cities',
       type: 'links' as const,
-      links: [
-        customNav('Arlington, VA', '/locations/arlington'),
-        customNav('Alexandria, VA', '/locations/alexandria'),
-        customNav('McLean, VA', '/locations/mclean'),
-        customNav('Fairfax, VA', '/locations/fairfax'),
-        customNav('Reston, VA', '/locations/reston'),
-        customNav('Herndon, VA', '/locations/herndon'),
-        customNav('Vienna, VA', '/locations/vienna'),
-        customNav('Falls Church, VA', '/locations/falls-church'),
-        customNav('Springfield, VA', '/locations/springfield'),
-        customNav('Loudoun, VA', '/locations/loudoun'),
-        customNav('Prince William, VA', '/locations/prince-william'),
-        customNav('Washington, DC', '/locations/washington-dc'),
-        customNav('Rockville, MD', '/locations/rockville'),
-        customNav('Silver Spring, MD', '/locations/silver-spring'),
-        customNav('Gaithersburg, MD', '/locations/gaithersburg'),
-        customNav('Germantown, MD', '/locations/germantown'),
-        customNav('Wheaton, MD', '/locations/wheaton'),
-        customNav('Olney, MD', '/locations/olney'),
-        customNav('Potomac, MD', '/locations/potomac'),
-        customNav('College Park, MD', '/locations/college-park'),
-        customNav('Columbia, MD', '/locations/columbia'),
-        customNav('Frederick, MD', '/locations/frederick'),
-        customNav('All locations', '/locations'),
-      ],
+      links: footerCityNavRows(),
     },
     {
       title: 'Explore',
       type: 'links' as const,
       links: [
-        customNav('Air Duct Cleaning', '/air-duct-cleaning'),
         customNav('Dryer Vent Cleaning', '/dryer-vent-cleaning'),
+        customNav('Air Duct Cleaning', '/air-duct-cleaning'),
         customNav('Combo Package', '/air-duct-and-dryer-vent-cleaning'),
         customNav('Mold Remediation for Air Ducts', '/mold-remediation-air-ducts'),
         customNav('Blog', '/blog'),
@@ -300,10 +277,11 @@ export const footerSeed = {
 }
 
 const serviceThumbs: Record<string, string> = {
+  'dryer-vent-cleaning': '/img/dryer-vent-cleaning-tech-van.jpg',
   'air-duct-cleaning': '/img/services/Amazon_AIR_DUCT_CLEANING_small.webp',
-  'dryer-vent-cleaning': '/img/services/AmazonDC-179_small.webp',
   'air-duct-and-dryer-vent-cleaning': '/img/services/Amazon_DRYER_VENT_CLEANING_small.webp',
-  'mold-remediation-air-ducts': '/img/services/Amazon_AIR_DUCT_CLEANING_small.webp',
+  // Former dryer preview card art — now mold (distinct from air-duct thumb)
+  'mold-remediation-air-ducts': '/img/services/AmazonDC-179_small.webp',
 }
 
 function mapService(service: ServiceContent, cardOrder = 100) {
@@ -430,8 +408,9 @@ function mapLocation(location: LocationContentSeed) {
 }
 
 export const servicesSeed = [
-  mapService(airDuctCleaning, 10),
-  mapService(dryerVentCleaning, 20),
+  // cardOrder ascending with price: dryer $199 → ducts $299 → combo $399 → mold estimate
+  mapService(dryerVentCleaning, 10),
+  mapService(airDuctCleaning, 20),
   mapService(airDuctAndDryerVentCleaning, 30),
   mapService(moldRemediationAirDucts, 40),
 ]

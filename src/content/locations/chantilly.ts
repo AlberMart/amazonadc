@@ -1,76 +1,83 @@
 import type { LocationContentSeed } from '@/utilities/locations'
 
+/**
+ * Chantilly / Sully — Dulles freight, warehouse, Route 28 corridor dust.
+ * Links used:
+ * - https://www.fairfaxcounty.gov/health/environment/mold
+ * - https://www.fairfaxcounty.gov/health/environment/healthy-homes-fairfax
+ * - https://www.epa.gov/indoor-air-quality-iaq/should-you-have-air-ducts-your-home-cleaned
+ */
 export const chantilly: LocationContentSeed = {
   slug: 'chantilly',
   title: 'Air Duct Cleaning in Chantilly, VA',
-  headline: 'Air duct and dryer vent cleaning for Sully, Route 28, and Chantilly HOA homes',
+  headline: 'Sully Station townhomes and Route 28 corridor homes — flat rates from Burke',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Chantilly, VA. Flat rates from our Burke office for 1990s\u20132010s HOAs, Route 28 houses, and airport-corridor dust. Call (571) 460-0001.',
+    'Air duct & dryer vent cleaning in Chantilly, VA. Flat rates for Sully Station & Route 28 homes. Photos. Call (571) 460-0001.',
   intro:
-    'Amazon Air Duct Cleaning serves Chantilly from our Burke office. Sully Station townhomes, Greenbriar colonials, and Centreville-adjacent HOAs all take on airport and construction dust. Call (571) 460-0001.',
+    'Chantilly covers Fairfax’s **Sully** area between Route 28 and Centreville — Sully Station, Greenbriar, Westfields — where Dulles-bound freight, warehouse operations, and ongoing commercial grading add a particulate mix tree canopy alone does not explain. Many 1990s–2010s HOAs still hold gypsum and insulation fines in trunks never cleaned after move-in. County Health teaches moisture control; we clean ducts and dryer vents from Burke with flat rates and photos. (571) 460-0001.',
   heroImage: '/img/locations/chantilly.webp',
-  heroAlt: 'Air duct cleaning in Chantilly, VA \u2014 Amazon Air Duct Cleaning',
+  heroAlt: 'Air duct cleaning in Chantilly, VA — Amazon Air Duct Cleaning',
   city: 'Chantilly',
   state: 'VA',
   servedBy: 'burke',
   sectionLayout: 'whyFirst',
   about: {
-    heading: 'HOA Townhomes, Airport-Corridor Film, and Builder Dust That Never Got Cleaned Out',
+    heading: 'Corridor dust in HOA returns — Herndon and Loudoun are different western stories',
     paragraphs: [
-      'Chantilly covers the Sully area of Fairfax County between Route 28 and Centreville \u2014 a landscape dominated by 1990s\u20132010s HOA communities like Sully Station, Greenbriar, Franklin Farm edge, and the townhome clusters near Westfields. Many of these homes were built during overlapping construction phases where adjacent sections were still grading foundations while residents moved in next door. Fine gypsum particles and insulation fibers from that era often remain in supply trunks that were never professionally cleaned after the builders finished.',
-      'The airport corridor adds its own particulate mix: Dulles-bound traffic on Route 28, jet-exhaust residue on windy days, and ongoing data-center and commercial construction west of Stringfellow Road. Chantilly HOA townhomes stack laundry closets and route dryer exhaust up shared chases, while single-family houses along Stringfellow and Pleasant Valley sit under enough tree canopy that pollen coats the same registers the construction dust found first.',
-      'Our Burke crew serves Chantilly alongside [Fairfax](/locations/fairfax), [Fair Oaks](/locations/fair-oaks), and [Loudoun](/locations/loudoun). Read about [Chantilly Route 28 dust and air ducts](/blog/chantilly-route-28-dust-air-ducts) for the full corridor picture.',
+      'Western Fairfax is not one narrative. [Herndon](/locations/herndon) emphasizes Dulles Town Center stacks and data-center fringe; [Loudoun](/locations/loudoun) carries its own ash-burn and Route 7 growth angles. **Chantilly** is Route 28, Stringfellow, Pleasant Valley, and Centreville-adjacent pads where **freight traffic**, air-cargo support roads, and **warehouse/logistics** sites stir fine dust that finds open windows and rooftop intakes — layered on top of normal pollen.',
+      'Sully Station and Greenbriar townhomes stack laundry closets and route dryer exhaust through shared chases; single-family streets under partial canopy still show registers graying days after wiping because film sits **inside** trunks. [Fairfax County Health mold guidance](https://www.fairfaxcounty.gov/health/environment/mold) and [Healthy Homes Fairfax](https://www.fairfaxcounty.gov/health/environment/healthy-homes-fairfax) focus on humidity and leak repair — attic handlers that bake in summer then meet humid return air can grow biological film on coils; that is a moisture story, not proof ducts alone fix every smell.',
+      'Burke crews run Chantilly with [Fair Oaks](/locations/fair-oaks) and [Fairfax](/locations/fairfax) on western tickets. Corridor detail: [Chantilly Route 28 dust and air ducts](/blog/chantilly-route-28-dust-air-ducts).',
     ],
     highlights: [
-      'Sully Station, Greenbriar, Route 28, Westfields, and Centreville-adjacent streets',
-      'Flat-rate pricing \u2014 confirmed before any work starts',
-      'Before-and-after photo set included with every cleaning',
-      'Same Burke team covering Fair Oaks and Loudoun weekly',
+      'Freight / warehouse corridor dust',
+      'Sully HOA townhome chases',
+      'County Health — honest scope',
+      'Burke: (571) 460-0001',
     ],
   },
-  offersTitle: 'Chantilly Duct & Dryer Vent Packages',
+  offersTitle: 'Chantilly flat-rate packages',
   services: {
-    heading: 'What We Clean in Chantilly HOA Homes and Houses',
-    intro: 'Townhome chases and single-family trunks both receive published flat-rate scopes.',
+    heading: 'HOA townhomes and Stringfellow single-family scopes',
+    intro: 'Shared dryer chases and attic handlers quoted flat-rate before equipment unloads.',
     items: [
       {
-        title: 'Air Duct Cleaning for Chantilly Homes',
-        text: 'HEPA-filtered negative-pressure equipment seals to the trunk while specialized tools agitate every supply line, return, and register. Sanitizing follows when the on-site inspection confirms biological buildup \u2014 common in attic handlers that run hot all summer. You keep the before-and-after photos. Schedule [air duct cleaning](/air-duct-cleaning).',
+        title: 'Air duct cleaning (source removal)',
+        text: 'HEPA negative pressure and agitation through supplies, returns, and registers — including post-construction fines still sitting in 1990s-era trunks. [EPA duct guidance](https://www.epa.gov/indoor-air-quality-iaq/should-you-have-air-ducts-your-home-cleaned). [Air duct cleaning](/air-duct-cleaning).',
       },
       {
-        title: 'Dryer Vent Service',
-        text: 'Sully Station and Greenbriar townhome dryer chases climb through shared walls and pack with lint faster than ground-level runs. We rod-brush and vacuum the entire path to the exterior or roof cap so the appliance exhausts safely. Book [dryer vent cleaning](/dryer-vent-cleaning).',
+        title: 'Dryer vent cleaning',
+        text: 'Vertical shared chases in Sully/Greenbriar townhomes pack lint faster than slab-side runs. [NFPA dryer-fire research](https://www.nfpa.org/education-and-research/research/nfpa-research/fire-statistical-reports/home-fires-involving-clothes-dryers-and-washing-machines). Brush-out to roof or sidewall cap. [Dryer vent cleaning](/dryer-vent-cleaning).',
       },
       {
-        title: 'Mold Treatment in Chantilly Ductwork',
-        text: 'Attic air handlers that bake in summer heat and then meet humid return air create conditions for mold on coils and inside supply plenums. We clean mechanically first, then apply EPA-registered antimicrobial treatment along the ventilation path. Details at [mold remediation for air ducts](/mold-remediation-air-ducts).',
+        title: 'Optional antimicrobial on hard duct surfaces',
+        text: 'After mechanical cleaning when attic plenum or coil inspection supports it — not whole-home mold remediation. [Mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
     ],
   },
   why: {
-    heading: 'Why Newer-Looking Chantilly Houses Still Hold Builder Dust',
+    heading: 'Why homeowners in Chantilly book us',
     items: [
       {
-        title: 'Route 28 HOAs Are Part of Our Weekly Rotation',
-        text: 'Sully gates, Stringfellow parking restrictions, and Greenbriar visitor lot rules are already in our route notes. The crew is not guessing how a 2004 townhome chase is laid out.',
+        title: 'Dulles corridor particulate is local',
+        text: 'Freight and warehouse operations west of Stringfellow add road and industrial fines — we clean trunk interiors where wiping registers alone fails.',
       },
       {
-        title: 'Airport and Construction Particulates Addressed',
-        text: 'Dulles-corridor dust is why registers look dirty days after wiping. We clean the trunk interior where that film actually sits \u2014 not just the register covers.',
+        title: 'Builder dust still in older HOA phases',
+        text: 'Homes occupied while adjacent pads graded often never had post-construction duct cleaning — scoped as normal load, not premium bait.',
       },
       {
-        title: 'Flat Rate Set Before Equipment Unloads',
-        text: 'The number on your confirmation is the number on the invoice. No per-vent math after we see the attic handler.',
+        title: 'HOA gate rules on the work order',
+        text: 'Sully and Westfields visitor parking notes are routine on Burke western routes — not first-time guesswork.',
       },
       {
-        title: 'Guaranteed Results',
-        text: 'If the Chantilly result falls short, contact us within 7 days — we re-perform the work or refund per our refund policy.',
+        title: 'Flat rate + photos',
+        text: 'Price locked before agitation; before/after images; antimicrobial only with your OK.',
       },
     ],
   },
   communities: {
-    heading: 'Sully Station, Greenbriar, Westfields, Stringfellow',
-    intro: 'Fair Oaks and Loudoun pages are neighbors; Chantilly stays Route 28\u2013focused.',
+    heading: 'Sully, Greenbriar, and Route 28 pads',
+    intro: 'Fair Oaks and Centreville edges share dispatch; this page stays 28-corridor focused.',
     groups: [
       {
         title: 'Sully & Route 28',
@@ -83,57 +90,61 @@ export const chantilly: LocationContentSeed = {
       {
         title: 'Toward Fair Oaks & Centreville',
         places:
-          'Streets toward [Fair Oaks](/locations/fair-oaks), Centreville-adjacent blocks, [Loudoun](/locations/loudoun) edge \u2014 ask if your HOA is not listed',
+          'Blocks toward [Fair Oaks](/locations/fair-oaks), Centreville-adjacent streets — not [Loudoun](/locations/loudoun) unless your HOA maps there',
       },
     ],
   },
   process: {
-    heading: 'Western Fairfax Dispatch Notes From Burke',
-    intro: 'From booking at (571) 460-0001 to photos at the Chantilly door.',
+    heading: 'Burke → Chantilly western Fairfax flow',
+    intro: 'HOA access and attic handler location confirmed before tools run.',
     steps: [
       {
-        title: 'Book from the office line',
-        text: 'Call (571) 460-0001 or use the form — we confirm Chantilly availability the next business day from Burke.',
+        title: 'HOA codes and chase type',
+        text: 'Shared vertical chase vs single-family sidewall — sets dryer hose plan.',
       },
       {
-        title: 'Protect floors and living spaces',
-        text: 'In Chantilly we cover work paths and keep living spaces clear while equipment runs.',
+        title: 'Attic vs closet handler',
+        text: 'Summer-baked attic units need safe access path noted before quote locks.',
       },
       {
-        title: 'Source-removal cleaning',
-        text: 'Source-removal agitation under HEPA negative pressure for this Chantilly system — dust leaves in the vacuum, not your rooms.',
+        title: 'Lock scope and price',
+        text: 'Ducts, dryer, or both — confirmed before unload.',
       },
       {
-        title: 'Optional sanitizing',
-        text: 'Complimentary Envirocon when you request it or when the Chantilly inspection supports it.',
+        title: 'Source-removal + photos',
+        text: 'HEPA collection; full dryer brush when booked.',
       },
       {
-        title: 'Close out the visit',
-        text: 'Photos on file, flat-rate invoice for Chantilly, and seasonal tips. Call (571) 460-0001 anytime.',
+        title: 'Handoff',
+        text: 'Filter cadence, [Healthy Homes Fairfax](https://www.fairfaxcounty.gov/health/environment/healthy-homes-fairfax) humidity reminder; (571) 460-0001.',
       },
     ],
   },
-  faqIntro: 'Chantilly questions — call (571) 460-0001 (dispatch: Burke).',
+  faqIntro: 'Chantilly Sully area — corridor dust + County Health. Book: (571) 460-0001 (Burke).',
   faq: [
     {
-      q: 'Where does the Chantilly appointment leave from?',
-      a: 'Chantilly appointments leave from Burke, VA (5641 Burke Centre Pkwy Ste 119). Call (571) 460-0001 for air duct or dryer vent cleaning on your street.',
+      q: 'Is Chantilly the same story as Herndon or Loudoun duct pages?',
+      a: 'No. [Herndon](/locations/herndon) centers Dulles Town Center and data-center fringe; [Loudoun](/locations/loudoun) is a different county narrative. Chantilly is **Fairfax Sully** — Route 28 freight, warehouse corridor film, and 1990s HOA builder dust.',
     },
     {
-      q: 'Anything to clear before the crew shows up?',
-      a: 'For this Chantilly, VA home we need clear runs to the air handler and unfinished spaces still shedding construction dust. Put HOA codes on the confirmation text.',
+      q: 'Does Fairfax County Health require duct cleaning for corridor dust?',
+      a: 'County [mold](https://www.fairfaxcounty.gov/health/environment/mold) and [Healthy Homes Fairfax](https://www.fairfaxcounty.gov/health/environment/healthy-homes-fairfax) focus on moisture and maintenance — not endorsing vendors. We remove debris when hired and show photos.',
     },
     {
-      q: 'What is a realistic job length for one system?',
-      a: 'One Chantilly system usually takes 2–3 hours. Multi-system or packed dryer vents are scoped before we start so the quote stays locked.',
+      q: 'Why mention Dulles freight on a residential page?',
+      a: 'Air-cargo and warehouse logistics west of residential pads add particulate that standard filters and register wiping do not remove from **inside** supply trunks — especially in homes occupied during adjacent construction.',
     },
     {
-      q: 'Will the price change once equipment is out?',
-      a: 'The Burke crew prices Chantilly jobs as published flat-rate packages. Scoped on site, confirmed before unload, paid after you are satisfied.',
+      q: 'Townhome shared chase — can you reach the roof cap?',
+      a: 'We scope vertical shared chases on walkthrough; full brush-out to termination is flat-rate dryer service when booked — lint fire risk is the other honest driver per [NFPA](https://www.nfpa.org/education-and-research/research/nfpa-research/fire-statistical-reports/home-fires-involving-clothes-dryers-and-washing-machines).',
     },
     {
-      q: 'Can ducts and the dryer vent be done in one visit?',
-      a: 'Yes for Chantilly — book the combined package up front. Call (571) 460-0001; the Burke crew brings both tool sets for one stop.',
+      q: 'Which office serves Chantilly?',
+      a: 'Burke, VA (5641 Burke Centre Pkwy Ste 119). Call (571) 460-0001.',
+    },
+    {
+      q: 'More on Route 28 dust locally?',
+      a: '[Chantilly Route 28 dust and air ducts](/blog/chantilly-route-28-dust-air-ducts). Official: [Fairfax County Health — mold](https://www.fairfaxcounty.gov/health/environment/mold).',
     },
   ],
 }

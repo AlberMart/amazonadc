@@ -18,6 +18,8 @@ type ContactFormProps = {
   submittingLabel?: string
   successMessage?: string
   formId?: number | null
+  /** Anchor for in-page CTAs. Default `contact`. Pass `''` when a parent already sets the id. */
+  anchorId?: string
 }
 
 export async function ContactForm({
@@ -31,6 +33,7 @@ export async function ContactForm({
   submittingLabel,
   successMessage,
   formId,
+  anchorId = 'contact',
 }: ContactFormProps) {
   const [form, site, settings] = await Promise.all([
     getCachedPublicContactForm(formId)(),
@@ -53,6 +56,7 @@ export async function ContactForm({
       successMessage={
         successMessage || settings?.contactSuccessMessage || form?.confirmationMessage
       }
+      anchorId={anchorId}
       form={form}
       formToken={issueFormToken()}
       turnstileSiteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || null}

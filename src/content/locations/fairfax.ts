@@ -1,139 +1,114 @@
 import type { LocationContentSeed } from '@/utilities/locations'
 
+/**
+ * Fairfax (City) — county Health + Code Compliance mold boundaries.
+ * Links: fairfaxcounty.gov mold; code property-maintenance mold note; Healthy Homes.
+ */
 export const fairfax: LocationContentSeed = {
   slug: 'fairfax',
-  title: 'Air Duct Cleaning in Fairfax, VA',
-  headline: 'Air duct and dryer vent cleaning for the City of Fairfax, Fairfax Corner, and Mosaic',
+  title: 'Air Duct & Dryer Vent Cleaning in Fairfax, VA',
+  headline: 'City of Fairfax colonials and GMU-area rentals — short dispatch from Burke',
   description:
-    'Professional air duct cleaning, dryer vent cleaning, and HVAC mold treatment in Fairfax, VA. Flat rates from our Burke office for ramblers, townhomes, and GMU-area rentals. Call (571) 460-0001.',
+    'Air duct & dryer vent cleaning in Fairfax, VA. Flat rates for City homes & GMU-area rentals. Photos. Call (571) 460-0001.',
   intro:
-    'Amazon Air Duct Cleaning serves the City of Fairfax from our Burke office \u2014 a short run up 123, a short run from Burke. Old Town brick, Fairfax Corner townhomes, and houses near George Mason all take on Fairfax County pollen and humid summers. Call (571) 460-0001.',
+    'Fairfax County Health Department says plainly it does not perform indoor air testing or mold remediation. Code Compliance adds that mold alone is not a property-maintenance violation — leaks and failed building systems can be. We clean ducts and dryer vents in Old Town Fairfax, Fairfax Corner, and GMU-area rentals with flat rates and photos. Call (571) 460-0001.',
   heroImage: '/img/locations/fairfax.webp',
-  heroAlt: 'Air duct cleaning in Fairfax, VA \u2014 Amazon Air Duct Cleaning',
+  heroAlt: 'Air duct cleaning in Fairfax, VA — Amazon Air Duct Cleaning',
   city: 'Fairfax',
   state: 'VA',
   servedBy: 'burke',
-  sectionLayout: 'whyFirst',
+  sectionLayout: 'faqEarly',
   about: {
-    heading: 'Independent City Ramblers, Fairfax Corner Stacks, and GMU-Area Rentals',
+    heading: 'What City of Fairfax homes face — and what County Health says',
     paragraphs: [
-      'The City of Fairfax is a compact independent city wrapped by Fairfax County \u2014 Old Town along Chain Bridge Road, the historic courthouse, Fairfax Corner, and residential streets running toward the Mosaic District and Merrifield. Housing ranges from 1950s\u201380s ramblers and split-levels with full basements to newer Fairfax Corner townhomes and GMU-area rental properties. The ramblers have original metal trunks that often branched into additions over the decades, collecting debris at every junction point.',
-      'Fairfax County\u2019s oak and maple canopy delivers heavy spring pollen that settles into returns at the same time Route 50 and Route 29 infill construction contributes gypsum dust. Basement air handlers in older ramblers stay cool all summer, and when humid outdoor air enters the system, the temperature difference produces condensation that cements particulates to trunk interiors. GMU-area stacked townhomes add long dryer runs that pack with lint well before residents notice reduced drying performance.',
-      'Our Burke crew serves the City of Fairfax alongside [Springfield](/locations/springfield), [Oakton](/locations/oakton), and [Arlington](/locations/arlington). Read about [Fairfax ramblers, pollen, and air ducts](/blog/fairfax-ramblers-pollen-air-ducts).',
+      'The Fairfax County Health page on [mold, mildew, and fungi](https://www.fairfaxcounty.gov/health/environment/mold) points residents to EPA, CDC, and VDH resources and states the Health Department does not test indoor air or remediate mold. Keep spaces dry, reduce humidity, restore airflow after water events — then hire cleanup when mold appears. That is the civic baseline we build from, not a “we partner with the County” claim.',
+      'Fairfax County [Code Compliance — Property Maintenance](https://www.fairfaxcounty.gov/code/property-maintenance) receives many mold reports but notes mold by itself is not a VPMC violation. Leaks or malfunctioning systems that cause moisture may be. Fixing the source can count as compliance even if mold residue remains. Useful distinction for renters near GMU and for owners in older City of Fairfax stock.',
+      '[Healthy Homes Fairfax](https://www.fairfaxcounty.gov/health/environment/healthy-homes-fairfax) repeats the same moisture-first message. Our Burke crew is minutes up Route 123 — we stage for City of Fairfax addresses on the same calendar as [Reston](/locations/reston) and [McLean](/locations/mclean).',
     ],
     highlights: [
-      'City of Fairfax, Fairfax Corner, Mosaic District edge, and GMU-area homes',
-      'Flat-rate pricing \u2014 confirmed before any work begins',
-      'Before-and-after photo documentation on every job',
-      'Same Burke crew covering Fairfax County routes weekly',
+      'Health Dept does not test/remediate — we cite that, not hide it',
+      'Old Town, Fairfax Corner, GMU-area rentals',
+      'Flat-rate ducts and dryer vents with photo proof',
+      'Burke: (571) 460-0001',
     ],
   },
-  offersTitle: 'City of Fairfax Duct & Dryer Vent Packages',
+  offersTitle: 'City of Fairfax packages',
   services: {
-    heading: 'What We Clean in City of Fairfax Ramblers and Townhomes',
-    intro: 'Ramblers with basement handlers and Fairfax Corner stacked closets receive the same published flat rate.',
+    heading: 'Cleaning scopes for Fairfax homes and rentals',
+    intro: 'Mechanical cleaning of air paths — separate from County code cases about leaks.',
     items: [
       {
-        title: 'Air Duct Cleaning for Fairfax Homes',
-        text: 'HEPA-filtered negative-pressure equipment seals to the trunk while specialized tools agitate every supply line, return, and register \u2014 including branches where 1980s additions connect to 1950s original metal. Sanitizing follows when the walkthrough identifies biological growth. You receive the full photo set. Schedule [air duct cleaning](/air-duct-cleaning).',
+        title: 'Air duct cleaning',
+        text: 'Full-system source removal under HEPA negative pressure. Health claims stay inside [EPA duct-cleaning guidance](https://www.epa.gov/indoor-air-quality-iaq/should-you-have-air-ducts-your-home-cleaned). [Air duct cleaning](/air-duct-cleaning).',
       },
       {
-        title: 'Dryer Vent Service',
-        text: 'Fairfax Corner townhomes and second-floor GMU-area laundry rooms push lint through long interior-wall paths. We rod-brush and vacuum the entire run to the exterior cap so the dryer vents efficiently and safely. Book [dryer vent cleaning](/dryer-vent-cleaning).',
+        title: 'Dryer vent cleaning',
+        text: 'Townhome and condo laundry closets pack lint fast. Fire risk framing from [NFPA](https://www.nfpa.org/education-and-research/research/nfpa-research/fire-statistical-reports/home-fires-involving-clothes-dryers-and-washing-machines). [Dryer vent cleaning](/dryer-vent-cleaning).',
       },
       {
-        title: 'Mold Treatment in Fairfax Ductwork',
-        text: 'Basement air handlers in older ramblers sit in cool, damp environments where mold colonies establish on coils and inside dead-end duct branches. We clean mechanically, then apply EPA-registered antimicrobial treatment along the full ventilation path. Details at [mold remediation for air ducts](/mold-remediation-air-ducts).',
+        title: 'Optional antimicrobial on ducts',
+        text: 'Hard-surface treatment after cleaning when inspection shows film — not whole-structure mold remediation Code Compliance would still call a moisture problem. [Mold remediation for air ducts](/mold-remediation-air-ducts).',
       },
     ],
   },
   why: {
-    heading: 'Why City of Fairfax Trunks Accumulate Spring Pollen Faster',
+    heading: 'Why homeowners in Fairfax book us',
     items: [
       {
-        title: 'Down Route 123 From Burke',
-        text: 'Burke sits minutes from the City of Fairfax on the same road. Your Old Town or Fairfax Corner appointment is dispatched from a nearby staging point, not a distant office.',
+        title: 'County guidance spelled out honestly',
+        text: 'We cite Fairfax Health and Code Compliance pages when moisture or mold questions come up — so you know what the County does and does not do before we clean ducts or dryer vents.',
       },
       {
-        title: 'Flat Rate Set Before Work Begins',
-        text: 'Residential duct and dryer packages are flat-rate. The number on your confirmation is the number on the invoice \u2014 no per-register add-ons after we open the first vent.',
+        title: 'Mold alone is not a code violation',
+        text: 'Code Compliance’s note matters for renters: escalate leaks and failed systems; do not expect a “mold ticket” by itself.',
       },
       {
-        title: 'Rambler Additions and Corner Stacks Are Routine',
-        text: 'Split-level basement handlers, 1980s rec-room duct branches, and Fairfax Corner stacked laundry closets are everyday work for this crew \u2014 not uncommon layouts that require improvising on site.',
+        title: 'Short dispatch from Burke',
+        text: 'City of Fairfax is a near Burke run — we book a specific window and stay in touch rather than an all-day hold.',
       },
       {
-        title: 'Satisfaction Guarantee',
-        text: 'Not satisfied after the Fairfax walk-through? Contact us within 7 days — we re-perform or refund per our refund policy.',
+        title: 'Photo-backed flat rate',
+        text: 'Number locked before tools start; before/after set at close-out.',
       },
     ],
   },
   communities: {
-    heading: 'Old Town Fairfax, GMU Edge, Fairfax Corner Living',
-    intro: 'This page is the City of Fairfax. Fair Oaks and Oakton have their own pages.',
+    heading: 'Fairfax neighborhoods on the Burke list',
+    intro: 'City addresses and immediately adjacent county streets we commonly stage for.',
     groups: [
-      {
-        title: 'Old Town & downtown',
-        places: 'Old Town Fairfax, courthouse area, Chain Bridge Road, University Drive',
-      },
-      {
-        title: 'Fairfax Corner & Mosaic',
-        places: 'Fairfax Corner, Mosaic District edge, Merrifield, Government Center',
-      },
-      {
-        title: 'Toward GMU & the Beltway',
-        places:
-          'George Mason area, Pickett Road, streets toward Oakton and Fair Oaks \u2014 ask if your block is not listed',
-      },
+      { title: 'Old Town & downtown', places: 'Old Town Fairfax, Chain Bridge Road corridor, historic core' },
+      { title: 'Corner & University', places: 'Fairfax Corner, GMU-adjacent rentals, University Drive area' },
+      { title: 'Residential grids', places: 'Mosby Woods-adjacent, Mantua-edge, Fairfax Station-adjacent when routed with City jobs' },
     ],
   },
   process: {
-    heading: 'Short Run Up 123 From the Burke Office',
-    intro: 'From booking at (571) 460-0001 to photos at the Fairfax door.',
+    heading: 'Visit flow for Fairfax',
+    intro: 'Walkthrough separates County moisture issues from today’s duct/dryer scope.',
     steps: [
-      {
-        title: 'Book from the office line',
-        text: 'Call (571) 460-0001 or use the form — we confirm Fairfax availability the next business day from Burke.',
-      },
-      {
-        title: 'Protect floors and living spaces',
-        text: 'In Fairfax we cover work paths and keep living spaces clear while equipment runs.',
-      },
-      {
-        title: 'Source-removal cleaning',
-        text: 'Source-removal agitation under HEPA negative pressure for this Fairfax system — dust leaves in the vacuum, not your rooms.',
-      },
-      {
-        title: 'Optional sanitizing',
-        text: 'Complimentary Envirocon when you request it or when the Fairfax inspection supports it.',
-      },
-      {
-        title: 'Close out the visit',
-        text: 'Photos on file, flat-rate invoice for Fairfax, and seasonal tips. Call (571) 460-0001 anytime.',
-      },
+      { title: 'Access notes', text: 'Townhome closets, Old Town alleys, or apartment loading — captured before arrival.' },
+      { title: 'Scope', text: 'Ducts, dryer, or both; antimicrobial only if you approve after inspection.' },
+      { title: 'Confirm price', text: 'Flat rate before agitation.' },
+      { title: 'Clean + photos', text: 'Source removal and dryer brush-out as booked.' },
+      { title: 'Handoff', text: 'Humidity and filter tips that match County “keep it dry” messaging; (571) 460-0001.' },
     ],
   },
-  faqIntro: 'Fairfax questions — call (571) 460-0001 (dispatch: Burke).',
+  faqIntro: 'Fairfax County links where they clarify scope. Book: (571) 460-0001.',
   faq: [
     {
-      q: 'Where does the Fairfax appointment leave from?',
-      a: 'Fairfax appointments leave from Burke, VA (5641 Burke Centre Pkwy Ste 119). Call (571) 460-0001 for air duct or dryer vent cleaning on your street.',
+      q: 'Does Fairfax County Health test my home for mold?',
+      a: 'No. The County [mold page](https://www.fairfaxcounty.gov/health/environment/mold) states the Health Department does not perform indoor air testing or mold remediation.',
     },
     {
-      q: 'Anything to clear before the crew shows up?',
-      a: 'For this Fairfax, VA home we need clear runs to the air handler. Put HOA codes on the confirmation text.',
+      q: 'Is mold itself a Code Compliance violation?',
+      a: 'Usually not by itself. [Property Maintenance](https://www.fairfaxcounty.gov/code/property-maintenance) notes mold alone is not a violation; leaks or malfunctioning systems that cause moisture may be.',
     },
     {
-      q: 'What is a realistic job length for one system?',
-      a: 'One Fairfax system usually takes 2–3 hours. Multi-system or packed dryer vents are scoped before we start so the quote stays locked.',
+      q: 'Can you replace a whole-home mold remediator?',
+      a: 'No. We clean ducts and dryer vents. Large structural mold still belongs with moisture repair and appropriate remediation — County pages point to EPA/CDC/VDH for that path.',
     },
     {
-      q: 'Will the price change once equipment is out?',
-      a: 'The Burke crew prices Fairfax jobs as published flat-rate packages. Scoped on site, confirmed before unload, paid after you are satisfied.',
-    },
-    {
-      q: 'Do you charge extra for Envirocon sanitizing?',
-      a: 'No upcharge for Envirocon on Fairfax work when requested or when inspection supports it. We never spray without your OK.',
+      q: 'Which office serves the City of Fairfax?',
+      a: 'Burke, VA (5641 Burke Centre Pkwy Ste 119). Call (571) 460-0001.',
     },
   ],
 }

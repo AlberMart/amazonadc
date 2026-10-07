@@ -117,7 +117,8 @@ export const refundPolicy: LegalPageContent = {
   title: 'Refund Policy',
   description:
     'Refund and satisfaction policy for Amazon Air Duct Cleaning. Contact us within 7 days if you are not satisfied with service.',
-  intro: 'At Amazon Air Duct Cleaning, customer satisfaction is our top priority.',
+  intro:
+    'We quote flat-rate scope before work begins, document jobs with before/after photos, and collect payment after you approve completed work on site. This policy explains what happens if you are not satisfied.',
   detailsHeading: 'Refund Policy Details',
   sections: [
     {

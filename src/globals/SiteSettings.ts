@@ -81,8 +81,11 @@ export const SiteSettings: GlobalConfig = {
             {
               name: 'defaultOgImage',
               type: 'text',
-              defaultValue: '/img/Amazon.webp',
-              admin: { description: 'Or public path used when no upload is set' },
+              defaultValue: '/img/og-default.jpg',
+              admin: {
+                description:
+                  'Public path when no upload is set. Prefer JPEG/PNG 1200×630 — many messengers skip WebP previews.',
+              },
             },
           ],
         },

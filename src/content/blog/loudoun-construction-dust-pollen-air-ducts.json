@@ -1,8 +1,8 @@
 {
   "slug": "loudoun-construction-dust-pollen-air-ducts",
-  "title": "New-build gypsum, Leesburg basements, and why Ashburn returns fill faster than they should",
-  "headline": "New-build gypsum, Leesburg basements, and why Ashburn returns fill faster than they should",
-  "description": "Loudoun County's mix of historic Leesburg homes and active Ashburn development creates two distinct duct challenges. Learn the difference — and how to address each.",
+  "title": "Ashburn Construction Dust vs Leesburg Basement Humidity",
+  "headline": "Ashburn Construction Dust vs Leesburg Basement Humidity",
+  "description": "Ashburn construction dust vs Leesburg basement humidity — two Loudoun duct patterns homeowners ask about often.",
   "heroImage": "/img/blog/heroes/loudoun-construction-dust-pollen-air-ducts.webp",
   "sections": [
     {
@@ -19,7 +19,8 @@
       "heading": "Leesburg basements and the slow accumulation pattern",
       "paragraphs": [
         "Older Leesburg homes have full basements where stone or block walls absorb and release ground moisture in a seasonal rhythm. The air handler and trunk lines run through that space, staying cool in summer and cold in winter. During the humid months, supply trunks regularly drop below the dew point. Condensation forms. Pollen from Loudoun's remaining farmland tree lines and residential street plantings sticks to the wet surface.",
-        "This is a slow-moving problem. One season of condensation is trivial. Ten or twenty seasons of it produce a layered deposit that restricts airflow and supports microbial growth in the absence of light and air movement. The house looks and feels fine until someone lifts a register and sees the inside of the trunk for the first time."
+        "This is a slow-moving problem. One humid season is usually minor. Over many seasons, moisture-bonded debris can build into a layered film that homeowners first notice when a register comes off. Musty startup smells are a reason to inspect for moisture — [EPA](https://www.epa.gov/indoor-air-quality-iaq/should-you-have-air-ducts-your-home-cleaned) ties substantial visible mold or debris discharging into living spaces to considering cleaning, and stresses fixing moisture so growth is less likely to return.",
+        "Dryer vents are a separate line from supply ducts — [NFPA research](https://www.nfpa.org/education-and-research/research/nfpa-research/fire-statistical-reports/home-fires-involving-clothes-dryers-and-washing-machines) ties many home dryer fires to failure to clean lint from the full run."
       ],
       "listItems": [],
       "image": "/img/blog/clogged-dryer-vent-lint.webp"
@@ -29,7 +30,7 @@
       "heading": "Ashburn and Brambleton: what the data-center corridor leaves behind",
       "paragraphs": [
         "Loudoun County hosts the densest concentration of data centers in the world, and the construction required to build them — along with the residential subdivisions that house the workers — keeps heavy earthmoving equipment and drywall crews active year-round. Fine particulate from those sites drifts downwind across occupied neighborhoods.",
-        "On top of the ambient construction dust, each new home's own HVAC system was loaded during the build phase. Gypsum fines, joint compound dust, and insulation fibers deposited on trunk walls before the first owner changed the first filter. Unlike organic debris, these mineral particles do not break down. They form a hard film that airflow alone does not dislodge, and they persist until mechanically removed."
+        "On top of nearby construction dust, many new homes also collect fines during their own build phase — gypsum / joint-compound dust and insulation fibers can settle on trunk walls before the first owner’s first filter change. [EPA Indoor airPLUS](https://www.epa.gov/sites/default/files/2020-06/documents/2019.07_tech_bulletin_duct_protection_during_construction.pdf) and [DOE Building America](https://basc.pnnl.gov/resource-guides/removing-construction-debris-ducts) treat construction debris in ducts as something to protect against during build and to remove before occupancy when openings were not covered. On Ashburn jobs those deposits often feel chalkier than soft household lint and usually need mechanical cleaning rather than filter changes alone — we do not claim a unique “hard film chemistry” beyond that practical pattern."
       ],
       "listItems": []
     },
@@ -49,8 +50,9 @@
       "id": "next_steps",
       "heading": "Addressing the county's dual duct challenges",
       "paragraphs": [
-        "Leesburg moisture homes benefit from a dehumidifier and periodic duct cleaning timed to the end of the humid season. Ashburn construction homes benefit from a single thorough post-occupancy cleaning followed by standard maintenance intervals. Either scenario starts with a professional assessment that determines what the trunk walls are holding and how much airflow the buildup has compromised.",
-        "Flat-rate scheduling for all Loudoun communities is on the [Loudoun County service page](/locations/loudoun). Stacked townhomes in Ashburn and Brambleton should pair duct work with [dryer vent cleaning](/dryer-vent-cleaning) — long vent runs in three-story construction commonly trap lint at bends that are inaccessible from either end without professional equipment."
+        "Leesburg moisture homes benefit from humidity control and cleaning when inspection shows substantial debris or musty trunks. Ashburn construction homes often benefit from a post-occupancy clean when pale dust keeps refilming supplies — then normal filter habits afterward. Either scenario starts with looking in the trunks, not assuming a fixed county-wide calendar. [EPA](https://www.epa.gov/indoor-air-quality-iaq/should-you-have-air-ducts-your-home-cleaned) does not treat routine duct cleaning as a proven efficiency or health cure.",
+        "Flat-rate scheduling for all Loudoun communities is on the [Loudoun County service page](/locations/loudoun). Stacked townhomes in Ashburn and Brambleton should pair duct work with [dryer vent cleaning](/dryer-vent-cleaning) — long vent runs in three-story construction commonly trap lint at bends that are inaccessible from either end without professional equipment.",
+        "Call [(800) 606-3334](tel:8006063334) for Loudoun scheduling, or see [air duct cleaning](/air-duct-cleaning) and [Loudoun](/locations/loudoun)."
       ],
       "listItems": []
     }

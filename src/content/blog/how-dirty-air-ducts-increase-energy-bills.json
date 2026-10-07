@@ -1,133 +1,128 @@
 {
-  "slug": "how-dirty-air-ducts-increase-energy-bills",
-  "title": "How Dirty Air Ducts Increase Your Energy Bills",
-  "headline": "How Dirty Air Ducts Increase Your Energy Bills",
-  "description": "Clogged ducts force longer HVAC cycles, strain coils, and leak conditioned air. Here's exactly how dirty ductwork inflates your utility bill — and what restores efficiency.",
+  "slug": "do-dirty-air-ducts-raise-energy-bills",
+  "title": "Do Dirty Air Ducts Raise Energy Bills?",
+  "headline": "What EPA, ENERGY STAR, and DOE actually say — and when cleaning still makes sense",
+  "description": "Do dirty air ducts raise energy bills? What EPA, ENERGY STAR, and DOE actually say — and when cleaning still helps.",
   "heroImage": "/img/blog/dirty-air-ducts-energy-bills.webp",
   "sections": [
     {
-      "id": "how_ducts_affect_efficiency",
-      "heading": "Why restricted ducts cost you money every cycle",
+      "id": "overview",
+      "heading": "Start with what federal guidance actually says",
       "paragraphs": [
-        "A clean duct system lets conditioned air travel from your HVAC unit to every room with minimal resistance. When dust, pet dander, and debris coat the duct walls, that resistance climbs — and so does your electric bill.",
-        "The HVAC system responds to reduced airflow the way a car engine responds to a clogged intake: it compensates by working harder. That extra workload shows up as longer run times, higher electricity draw, and faster component wear.",
-        "Heating and cooling already account for nearly half of the average home's energy use (U.S. Department of Energy). Any factor that forces the system to run longer has an outsized impact on total costs."
+        "Heating and cooling use a large share of home energy. The [U.S. Department of Energy](https://www.energy.gov/energysaver/home-heating-systems) treats them as major end uses — so anything that makes the system run longer is worth understanding.",
+        "[EPA guidance on duct cleaning](https://www.epa.gov/indoor-air-quality-iaq/should-you-have-air-ducts-your-home-cleaned) draws a clear line: some research suggests cleaning **heating and cooling system components** (cooling coils, fans, heat exchangers) may improve efficiency. EPA also states that **little evidence exists that cleaning only the ducts** will improve system efficiency. We follow that distinction when we talk about bills."
+      ],
+      "listItems": [],
+      "image": "/img/blog/Allergies.webp"
+    },
+    {
+      "id": "how_ducts_affect_efficiency",
+      "heading": "What can raise energy use in the air path",
+      "paragraphs": [
+        "Several air-path issues are well established as efficiency problems — even when routine duct cleaning alone is not proven to cut bills:"
       ],
       "listItems": [
-        "The blower motor runs at higher capacity to push air through narrowed ducts",
-        "Heating and cooling cycles stretch to reach the thermostat set point",
-        "Components wear faster under sustained strain, compounding the efficiency loss"
+        "Clogged filters — restrict airflow; change them on schedule ([EPA Indoor airPLUS filtration notes](https://www.epa.gov/sites/default/files/2020-06/documents/2019.11_tech_bulletin_filtration.pdf))",
+        "Leaky ducts — [ENERGY STAR](https://www.energystar.gov/saveathome/heating-cooling/duct-sealing) notes that in a typical house about **20–30% of the air** moving through the duct system can be lost to leaks, holes, and poor connections; sealing and insulating accessible ducts is a primary efficiency step",
+        "Dirty coils / fans / heat exchangers — EPA notes cleaning these components may improve efficiency more than cleaning ducts alone",
+        "Closed supply vents — can unbalance the system and force longer run times"
       ]
     },
     {
       "id": "restricted_airflow",
-      "heading": "Longer run times, room by room",
+      "heading": "When debris in ducts may still matter",
       "paragraphs": [
-        "When trunk lines are partially blocked, rooms at the far end of a duct run receive a fraction of the airflow they were designed for. The thermostat — usually in a central hallway — may not register the imbalance, so the system keeps running.",
-        "Instead of hitting the set temperature and cycling off, the HVAC runs continuously — consuming energy the entire time. Over a month, those extended cycles add measurably to a utility bill, depending on system size and climate.",
-        "Short, efficient cycles are the hallmark of a healthy HVAC system. Long, labored cycles are the first sign something in the airpath is restricting performance."
+        "Heavy debris in ducts can narrow the effective path and contribute to uneven airflow room to room. An EPA field study of mechanical duct cleaning reported increased supply airflow in most study homes after cleaning — but the study did **not** establish a clear, meaningful reduction in energy use from duct cleaning alone.",
+        "Honest framing: cleaning can remove debris and may improve measured airflow in some systems. It is not a guaranteed utility-bill reduction, and EPA does not treat duct-only cleaning as a proven efficiency upgrade."
       ],
       "listItems": []
     },
     {
       "id": "dirty_coils",
-      "heading": "Dust reaches the coils — and heat transfer drops",
+      "heading": "Coils and equipment — the stronger efficiency angle",
       "paragraphs": [
-        "Contamination doesn't stay in the ducts. Over time, fine particles reach the evaporator coil, condenser coil, and heat exchanger — the surfaces responsible for actual heating and cooling.",
-        "A dust-coated evaporator coil absorbs heat less efficiently, which means the compressor runs longer to achieve the same cooling. A filmed heat exchanger in a furnace can't radiate heat effectively, extending burn times and raising gas consumption.",
-        "Coil cleaning during an annual HVAC tune-up helps, but it treats the downstream symptom. Removing the source — contaminated ductwork — slows recontamination and keeps coils cleaner between maintenance visits."
+        "Fine dust that reaches the evaporator coil, blower, or heat exchanger can interfere with heat transfer. That is closer to what EPA highlights when discussing possible efficiency benefits from cleaning HVAC **components**.",
+        "Annual HVAC maintenance that includes coil and blower inspection addresses those surfaces directly. Duct cleaning removes upstream debris that can recontaminate components over time — useful maintenance, not a promise of lower bills."
       ],
       "listItems": []
     },
     {
       "id": "duct_leaks",
-      "heading": "How debris accelerates duct leaks and air loss",
+      "heading": "Sealing leaks vs cleaning dirt",
       "paragraphs": [
-        "Heavy buildup inside ducts can contribute to physical deterioration over time. Moisture trapped by organic debris accelerates corrosion in metal joints, and back-pressure from restricted airflow stresses seams and connections.",
-        "Once a duct develops a leak, the energy problem compounds: conditioned air escapes into the attic, crawlspace, or wall cavity before it ever reaches a register. The system runs even longer to compensate for the lost volume, and your utility bill absorbs the waste.",
-        "Professional inspection identifies both contamination and structural damage, so you're not chasing one problem while the other persists."
+        "Leaks in attic or crawlspace ducts waste conditioned air. [ENERGY STAR's duct sealing guidance](https://www.energystar.gov/saveathome/heating-cooling/duct-sealing) puts typical losses around **20–30% of the air** moving through the system — and lists high bills, hard-to-condition rooms, and ducts in attics/crawlspaces/garages as common red flags. That is a clearer energy play than cleaning light dust from ducts.",
+        "During a cleaning visit we may notice disconnected joints or obvious gaps and flag them. Sealing is a separate step from mechanical debris removal — ask if you want both scoped."
       ],
       "listItems": []
     },
     {
       "id": "signs_efficiency_loss",
-      "heading": "Signs your ducts are inflating your energy costs",
+      "heading": "Signs to investigate — without assuming ducts are the cause",
       "paragraphs": [
-        "These indicators suggest duct contamination may be driving your bill higher:"
+        "These symptoms can have many causes (filters, refrigerant, sizing, leaks, thermostat). They are reasons to inspect, not proof that duct cleaning will cut your bill:"
       ],
       "listItems": [
-        "Energy costs have crept up over several months without a rate change or usage shift",
-        "The HVAC runs almost continuously during mild shoulder-season weather",
-        "Certain rooms stay stuffy or fail to hit the thermostat setting",
-        "Dust accumulates on surfaces faster than normal",
-        "Air filters clog weeks before their rated replacement date",
-        "The system is 5+ years old and has never had a professional duct cleaning"
+        "Utility costs rising without a rate change or major usage shift",
+        "HVAC running nearly continuously in mild weather",
+        "Rooms that stay stuffy or never hit the set point",
+        "Filters clogging far ahead of schedule",
+        "Visible dust discharging from supplies"
       ]
     },
     {
       "id": "how_cleaning_helps",
-      "heading": "What professional cleaning restores — and why it matters for your bill",
+      "heading": "What we can honestly say cleaning does",
       "paragraphs": [
-        "Clearing the trunk lines and branch runs restores the original cross-section of the ductwork, letting conditioned air reach every register at designed volume. The result is measurable:",
-        "The equipment used — truck-mounted vacuums, full-length agitation tools, and compressed-air whips — extracts compacted debris without pushing it deeper or leaving residue. We also inspect duct integrity during every job, flagging leaks or disconnected joints that waste conditioned air."
+        "Professional source-removal cleaning removes debris from duct surfaces and documents the work with before/after photos. In some homes, airflow at registers feels stronger afterward — consistent with EPA field observations of airflow gains in many study houses.",
+        "We do **not** claim a fixed percentage bill reduction from duct cleaning alone. For energy savings with stronger official backing, prioritize filter changes, duct sealing/insulation where ducts are leaky, and coil/equipment maintenance — then book duct cleaning when inspection shows substantial debris."
       ],
       "listItems": [
-        "The thermostat is satisfied faster, so the blower cycles off sooner",
-        "The blower motor draws less power because resistance is lower",
-        "Coils downstream stay cleaner longer, preserving heat-transfer efficiency",
-        "Leak points identified during cleaning can be sealed, recapturing wasted output"
+        "Removes built-up debris from hard duct surfaces",
+        "May improve measured or perceived airflow when ducts were restricted",
+        "Supports cleaner coils longer when upstream dust was heavy",
+        "Does not replace sealing leaky attic/crawlspace ducts"
       ]
     },
     {
       "id": "maintenance_tips",
-      "heading": "Habits that keep efficiency high between cleanings",
+      "heading": "Habits that matter more month to month",
       "paragraphs": [
-        "Professional cleaning resets the clock, but daily habits determine how fast contamination returns:"
+        "These steps align with federal efficiency guidance more closely than routine duct cleaning:"
       ],
       "listItems": [
-        "Change filters before they look dirty — A restricted filter is the fastest way to choke airflow. Follow the manufacturer's interval, not the \"it still looks OK\" test.",
-        "Upgrade to a MERV 8–11 filter — It captures more particles before they reach the ducts without restricting airflow the way MERV 13+ can on residential blowers.",
-        "Keep every register open — Closing vents doesn't save energy; it increases system pressure and forces the blower to work harder.",
-        "Seal accessible duct joints — Mastic or metal-foil tape on visible seams prevents conditioned air from leaking into unconditioned spaces.",
-        "Book annual HVAC maintenance — A tune-up catches coil buildup, refrigerant issues, and belt wear before they drag efficiency down."
+        "Change filters on schedule — a clogged filter is a fast way to choke airflow",
+        "Use a filter MERV rating your blower can handle — higher is not always better on residential systems",
+        "Keep supply registers open — closing vents often worsens balance",
+        "Seal and insulate ducts in attics/crawlspaces when accessible ([ENERGY STAR](https://www.energystar.gov/saveathome/heating-cooling/duct-sealing))",
+        "Book HVAC tune-ups that include coil and blower inspection"
       ]
     },
     {
       "id": "conclusion",
-      "heading": "Lower your bill by clearing the path",
+      "heading": "Clear expectations — then book if the system is loaded",
       "paragraphs": [
-        "The link between dirty ducts and higher energy costs is mechanical: restricted airflow → longer cycles → more electricity → bigger bill. Cleaning the ducts removes the restriction and lets the system operate the way it was designed to.",
-        "If your utility costs have been creeping up, or if the HVAC has never had a professional duct cleaning, call [(800) 606-3334](tel:8006063334) or visit the [air duct cleaning page](/air-duct-cleaning) for flat-rate residential packages. We serve Northern Virginia, Maryland, and DC from our [Burke and Bethesda offices](/locations)."
+        "Dirty ducts can hold debris and affect airflow. Leaky ducts and dirty coils have clearer ties to wasted energy than light dust alone. EPA does not treat duct-only cleaning as a proven efficiency fix — and we will not sell you one.",
+        "If you want debris removed and documented — or inspection shows substantial buildup — call [(800) 606-3334](tel:8006063334) or visit [air duct cleaning](/air-duct-cleaning). Combo packages with [dryer vent cleaning](/dryer-vent-cleaning) are available. Find your city on [locations](/locations)."
       ],
       "listItems": []
-    },
-    {
-      "id": "overview",
-      "heading": "The hidden cost most homeowners overlook",
-      "paragraphs": [
-        "Rate hikes, aging appliances, a brutal summer — homeowners reach for familiar explanations when the power bill spikes. What most overlook is the duct system sitting behind every wall and above every ceiling.",
-        "When that network is coated with years of dust and debris, the HVAC unit pushes harder, runs longer, and consumes more energy to deliver the same comfort. The extra cost shows up every month, quietly compounding."
-      ],
-      "listItems": [],
-      "image": "/img/blog/Allergies.webp"
     }
   ],
   "faq": [
     {
       "q": "Can dirty ducts raise energy bills?",
-      "a": "Restricted airflow can make equipment run longer to hit the thermostat. Results vary by home, filter habits, and system condition — cleaning is not a guaranteed bill cut."
+      "a": "Restricted airflow can make equipment run longer. EPA says little evidence shows cleaning only the ducts improves efficiency; cleaning coils/fans/heat exchangers may help more. Cleaning is not a guaranteed bill cut."
+    },
+    {
+      "q": "What do official sources emphasize for duct energy losses?",
+      "a": "ENERGY STAR highlights sealing leaky ducts (typical homes can lose about 20–30% of the air moving through the system to leaks). That is separate from cleaning dust inside ducts."
     },
     {
       "q": "Will a filter change fix high bills?",
-      "a": "Fresh filters help. They do not remove debris already coating trunks and coils downstream of the filter."
-    },
-    {
-      "q": "What should I check before calling a cleaner?",
-      "a": "Filter condition, closed supply vents, and thermostat settings. If airflow still feels weak, schedule an inspection."
+      "a": "Fresh filters help airflow. They do not remove debris already on trunks or coils, and they do not seal duct leaks."
     },
     {
       "q": "How do I schedule service?",
-      "a": "Call (800) 606-3334 for flat-rate residential packages from Burke or Bethesda."
+      "a": "Call (800) 606-3334 for flat-rate residential packages from Burke, VA or Bethesda, MD — or open your city under Locations."
     }
   ]
 }

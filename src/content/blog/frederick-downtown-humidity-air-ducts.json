@@ -1,8 +1,8 @@
 {
   "slug": "frederick-downtown-humidity-air-ducts",
-  "title": "Carroll Creek cellars, Urbana pads, and why the I-270 north end is two indoor-air problems",
+  "title": "Frederick Humidity & Air Ducts Near Carroll Creek",
   "headline": "Carroll Creek cellars, Urbana pads, and why the I-270 north end is two indoor-air problems",
-  "description": "Frederick combines downtown brick cellars with Urbana-corridor new construction — two distinct duct problems under one city name. Here's what each one looks like inside the HVAC.",
+  "description": "Frederick downtown humidity vs Urbana new pads — two duct problems under one city name, and when cleaning helps.",
   "heroImage": "/img/blog/heroes/frederick-downtown-humidity-air-ducts.webp",
   "sections": [
     {
@@ -19,7 +19,8 @@
       "heading": "Carroll Creek cellars and what brick does to indoor humidity",
       "paragraphs": [
         "Frederick's historic core sits along Carroll Creek, a waterway that once flooded regularly before the city rerouted it. The cellars beneath Market Street, East Patrick, and the surrounding blocks were built with local limestone and mortar that has absorbed and released moisture for over two centuries. Central air was added generations later, and the ductwork often threads between joists only inches above a cellar floor that never fully dries.",
-        "When the AC cycles on a July afternoon, the supply trunks drop well below the dew point of the cellar air. Moisture condenses on both the interior and exterior of the metal. Organic dust — pollen, fabric fibers, skin cells — bonds to that wet surface. Over several seasons the buildup becomes a visible dark film that no amount of filter changes will reach."
+        "When the AC cycles on a July afternoon, the supply trunks drop well below the dew point of the cellar air. Moisture condenses on both the interior and exterior of the metal. Organic dust — pollen, fabric fibers, skin cells — bonds to that wet surface. Over several seasons the buildup becomes a visible dark film that filter changes alone usually cannot reach.",
+        "Dryer vents are a separate line from supply ducts — [NFPA research](https://www.nfpa.org/education-and-research/research/nfpa-research/fire-statistical-reports/home-fires-involving-clothes-dryers-and-washing-machines) ties many home dryer fires to failure to clean lint from the full run."
       ],
       "listItems": [],
       "image": "/img/blog/The-Hidden-Cost-of-Dirty-Air-Ducts.webp"
@@ -28,8 +29,8 @@
       "id": "urbana_gypsum",
       "heading": "Urbana pads and the gypsum that outlasts the builder's warranty",
       "paragraphs": [
-        "South and east of downtown, Urbana, Adamstown, and Lake Linganore have added thousands of homes in the past fifteen years. During construction the HVAC system runs to control humidity while drywall tape cures and paint dries. That air is loaded with gypsum fines — particles light enough to travel through return ducts and settle on every interior surface downstream of the filter.",
-        "Builders often tape registers shut during this phase, but tape lifts at the edges and fines enter anyway. First owners discover the problem when they notice a chalky residue on shelving weeks after move-in, or when the brand-new filter turns gray in half the expected time. The gypsum is already embedded in trunk seams where airflow turbulence deposited it. Standard filter replacement only catches what passes the filter going forward."
+        "South and east of downtown, Urbana, Adamstown, and Lake Linganore have added thousands of homes in the past fifteen years. During finishing, drywall and paint work generate fines that can enter ducts — [EPA](https://www.epa.gov/sites/default/files/2020-06/documents/2019.07_tech_bulletin_duct_protection_during_construction.pdf) warns construction dust can reach HVAC systems even when equipment sits idle if openings are open. Builders sometimes run the air handler for humidity control during cure; either way, chalky residue often shows up on first-owner supplies.",
+        "Builders may tape registers during dusty work, but tape can lift and fines still enter. First owners often notice chalky residue on shelving weeks after move-in, or a new filter that looks dirty sooner than expected. Standard filter replacement only catches what passes the filter going forward — not what already sits on trunk walls ([DOE Building America](https://basc.pnnl.gov/resource-guides/removing-construction-debris-ducts))."
       ],
       "listItems": []
     },
@@ -49,8 +50,9 @@
       "id": "next_steps",
       "heading": "Matching the maintenance to the problem",
       "paragraphs": [
-        "A cellar-humidity home needs a dehumidifier running through the warm months plus periodic duct cleaning to remove what the damp seasons deposited. A new-construction home needs an initial post-occupancy cleaning to clear gypsum and then benefits from standard maintenance intervals afterward. Either way, the cleaning resets the system to a state that filters can actually maintain.",
-        "Scheduling and flat-rate details for both scenarios are on the [Frederick, MD service page](/locations/frederick). If the dryer closet stays warm after a cycle finishes, pair your duct appointment with a [dryer vent cleaning](/dryer-vent-cleaning) — especially relevant in Urbana townhomes where vent runs are long and kinked."
+        "A cellar-humidity home needs moisture control through the warm months plus cleaning when inspection shows substantial debris. A new-construction home often needs a post-occupancy clean when chalky construction dust keeps refilming supplies — then ordinary filter habits afterward. Either way, the goal is a system filters can keep up with, not a promised energy outcome ([EPA](https://www.epa.gov/indoor-air-quality-iaq/should-you-have-air-ducts-your-home-cleaned) finds little evidence that duct-only cleaning improves efficiency).",
+        "Scheduling and flat-rate details for both scenarios are on the [Frederick, MD service page](/locations/frederick). If the dryer closet stays warm after a cycle finishes, pair your duct appointment with a [dryer vent cleaning](/dryer-vent-cleaning) — especially relevant in Urbana townhomes where vent runs are long and kinked.",
+        "Call [(800) 606-3334](tel:8006063334) for Frederick scheduling, or see [air duct cleaning](/air-duct-cleaning) and [Frederick](/locations/frederick)."
       ],
       "listItems": []
     }
